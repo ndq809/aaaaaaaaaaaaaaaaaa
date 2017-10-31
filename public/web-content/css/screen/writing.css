@@ -1,0 +1,13 @@
+.writing-tab>li.active>a, .writing-tab>li.active>a:focus, .writing-tab>li.active>a:hover{
+	background: #563d7c;
+    color: #fff;
+}
+
+#practice label{
+	text-align: center;
+	display: block;
+}
+
+.example-header{
+	
+}

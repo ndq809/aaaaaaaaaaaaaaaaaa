@@ -1,0 +1,63 @@
+.Relax-tab>li.active>a, .Relax-tab>li.active>a:focus, .Relax-tab>li.active>a:hover{
+	background: #563d7c;
+    color: #fff;
+}
+
+#practice label{
+	text-align: center;
+	display: block;
+}
+
+.example-header{
+	
+}
+
+.example-header h5{
+	text-align: center;
+	font-weight: bold;
+	color: green;
+}
+
+.relax-table tbody tr td{
+	text-align: center;
+}
+
+.relax-table tbody:not(.activeItem) tr:hover{
+	background-color: #fff;
+}
+
+.relax-table .activeItem tr:nth-child(2):hover{
+	background-color: #555;
+}
+
+.relax-table tbody tr:nth-child(1) a img{
+	border: 1px solid #aaa;
+	max-height: 150px;
+	max-width: 100%;
+}
+
+.relax-header h5{
+	color: green;
+	font-size: 16;
+	font-weight: bold;
+}
+
+.relax-header h5 i{
+	color: red;
+	text-decoration: none;
+	
+}
+
+.image{
+	text-align: center;
+}
+
+.image img{
+	border: 1px solid #aaa;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+#rating-value{
+	display: none;
+}

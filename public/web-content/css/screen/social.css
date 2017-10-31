@@ -1,0 +1,31 @@
+.social-tab>li.active>a, .social-tab>li.active>a:focus, .social-tab>li.active>a:hover{
+	background: #563d7c;
+    color: #fff;
+}
+
+#practice label{
+	text-align: center;
+	display: block;
+}
+
+.example-header{
+	
+}
+
+
+#rating-value{
+	display: none;
+}
+
+.question-header h5{
+	color: blue;
+	text-decoration: underline;
+	font-size: 16;
+	font-weight: bold;
+}
+
+.question-header h5 i{
+	color: red;
+	text-decoration: none;
+	
+}

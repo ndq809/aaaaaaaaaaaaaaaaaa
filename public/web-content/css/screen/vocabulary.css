@@ -1,0 +1,40 @@
+.choose_slider_items .next_item{
+	top:120px;
+}
+
+.choose_slider_items .previous_item{
+	top:120px;
+}
+
+.choose_slider {
+	height: 320px;
+	width: 100%;
+}
+
+#mySlider1 li a img{
+	width: 300px;
+	height: 250px;
+	box-shadow: 1px 0px 1px 1px grey;
+}
+
+.hint-text{
+	text-align: center;
+	color: red;
+	margin-top: 15px;
+}
+
+.vocabulary-box *{
+	margin-top: 5px;
+	text-align: center;
+	border-radius: 0px;
+	font-size: 14px;
+}
+
+.vocabulary-box input:nth-child(1){
+	color: #009688;
+	font-size: 16px;
+}
+
+.vocabulary-box textarea{
+	resize: none;
+}

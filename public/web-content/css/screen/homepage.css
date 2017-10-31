@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'itemfont1'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/calibrib.ttf'); /*URL to font*/
+}
+
+.option-item{
+	font-family: itemfont1;
+}
+
+.option{
+	position: relative;
+}
+
+.option-body{
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	cursor: pointer;
+}
+
+.option-item i{
+	color: red;
+}
