@@ -78,6 +78,7 @@ function initEvent() {
         if ($('.right-tab .tab-content').length != 0) {
             $('.right-tab .tab-content').height($('.web-main').height() - $('.select-group').height() - 31);
         }
+        setFooter();
     })
 
     $(document).on('change','.media-select',function(){
