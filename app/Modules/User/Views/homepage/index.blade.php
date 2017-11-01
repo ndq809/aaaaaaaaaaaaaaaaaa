@@ -28,7 +28,7 @@
         </table>
     </div>
     <div class=" col-xs-12 no-padding right-content">
-        <div class="col-md-12 collapse in no-padding" id="menu-body">
+        <div class="col-md-12 collapse in no-padding open-when-small" id="menu-body">
             <div class="col-md-2 col-sm-2 col-xs-4 option">
                 <div class="option-header">
                     <h5>
@@ -42,7 +42,6 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đa dạng</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều chủ đề</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Cập nhật liên tục</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Giao diện trực quan</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Dễ học dễ nhớ</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ hình ảnh</h5>
                 </div>
@@ -60,7 +59,6 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Chi tiết,dễ hiểu</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Dễ dàng tra cứu</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Ví dụ rõ ràng</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Giao diện trực quan</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ bài tập</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Bình luận, trao đổi</h5>
                 </div>
@@ -78,7 +76,6 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều mức độ</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều chủ đề</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Cập nhật liên tục</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Giao diện trực quan</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ đánh giá</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" style="opacity: 0"></i> kết quả nghe được</h5>
                 </div>
@@ -95,7 +92,6 @@
                 <div class="option-body" option-link="/writing">
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Xem bài viết mẫu</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Bố cục tùy chỉnh</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Giao diện trực quan</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Gợi ý ngữ pháp</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Kiểm tra chính tả</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Chia sẻ bài viết</h5>
@@ -144,7 +140,7 @@
             Hôm nay có gì mới???
         </h5>
     </div>
-        <div class="col-md-6 col-sm-6 no-padding">
+        <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
             <table class="table table-hover table-center">
                 <tbody>
                     @for($i=1;$i<=3;$i++)
@@ -177,7 +173,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-md-6 col-sm-6 no-padding">
+        <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
             <table class="table table-hover table-center">
                 <tbody>
                     @for($i=1;$i<=3;$i++)
@@ -210,7 +206,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-lg-12">
+        <div class="col-xs-12">
             <ul class="pager">
                 <li>
                     <a href="#">

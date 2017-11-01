@@ -8,16 +8,9 @@
 	display: block;
 }
 
-.example-header{
-	
+.non-link{
+	display: none;
 }
-
-.example-header h5{
-	text-align: center;
-	font-weight: bold;
-	color: green;
-}
-
 .relax-table tbody tr td{
 	text-align: center;
 }
@@ -60,4 +53,8 @@
 
 #rating-value{
 	display: none;
+}
+
+.ratemate {
+	height: 30px;
 }

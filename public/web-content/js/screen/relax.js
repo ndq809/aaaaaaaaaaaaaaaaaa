@@ -59,14 +59,14 @@ function initListener(){
 
 
 function nextRelax(){
-	var currentItemId=setNextItem("");
+	var currentItemId=setNextItem("",1);
 	image_link=$(".activeItem tr td:nth-child(1)").find("img").attr("src");
 	$(".main-content").first().find("img").attr("src",image_link);
 	
 }
 
 function previousRelax(){
-	var currentItemId=setPreviousItem("");
+	var currentItemId=setPreviousItem("",1);
 	image_link=$(".activeItem tr td:nth-child(1)").find("a img").attr("src");
 	$(".main-content").first().find("img").attr("src",image_link);
 }

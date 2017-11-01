@@ -100,8 +100,8 @@
             </ul>
             <div class="tab-content">
                 <div id="example" class="tab-pane fade in active">
-                    <div class="example-header">
-                        <span>Chủ Ngữ</span>
+                    <div class="example-header title-header">
+                        <span>Chủ Ngữ !</span>
                     </div>
                     <div class="main-content" id="noiDungNP">
                         <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
@@ -119,14 +119,15 @@
                         <p>It is the fact that the earth goes around the sun.</p>
                     </div>
                 </div>
-                <div id="practice" class="tab-pane fade">
-                    <label class="margin-top">Tiêu đề bài viết</label>
+                <div id="practice" class="tab-pane fade input-tab">
+                    <label class="title-header">Tiêu đề bài viết</label>
                     <input type="text" class="form-control input-sm margin-bottom" name="">
+                    <label class="title-header">Nội dung bài viết</label>
                     <textarea name="practice-area" col-xs-12 no-paddings="5"></textarea>
                     <script type="text/javascript">
                       var editor = CKEDITOR.replace('practice-area',{language:"vi"});
                     </script>
-                    <div class="margin-top">
+                    <div class="margin-top margin-bottom">
                         <button class="btn btn-sm btn-default" >Làm Mới Trang</button>
                         <button class="btn btn-sm btn-primary" style="float: right;">Lưu Lại</button>
                     </div>

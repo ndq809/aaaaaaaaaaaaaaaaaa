@@ -22,6 +22,16 @@
     font-family: 'NokioRegular'; /*a name to be used later*/
     src: url('/web-content/css/common/fonts/FS NokioRegular.ttf'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'titlefont'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/FontDep.com-UVNBaiHoc_BI.TTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'textfont'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/FontDep.com-UVNThoiDai2.TTF'); /*URL to font*/
+}
 html,body{
   height: 100%;
 }
@@ -220,7 +230,9 @@ body {
 .text-slogan{
     display: block;
 }
-
+.input-tab{
+    padding: 0px 5px;
+}
 .text-slogan{
     font-family: OstrichSansDashed;
     font-size: 35px;
@@ -228,7 +240,7 @@ body {
     padding-top: 15px;
     color: white;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .top-header{
@@ -241,12 +253,21 @@ body {
 }
 
 .example-header{
-    font-family: NokioRegular;
-    text-decoration: underline;
-    font-size: 18px;
     margin-left: 5px;
-    color: green;
     margin-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+
+.title-header{
+    font-family: titlefont;
+    font-size: 23px;
+}
+
+.text-header{
+    font-family: textfont;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .header-right button {
@@ -260,13 +281,13 @@ body {
 }
 
 .navbar-brand {
-    padding: 4px 15px;
+    padding: 4px 10px;
     height: auto;
     font-size: 16px;
 }
 
 .navbar-brand:nth-child(1){
-    padding: 4px 15px;
+    padding: 4px 10px;
     padding-right: 25px;
 }
 
@@ -275,7 +296,7 @@ body {
 }
 
 .navbar-nav>li>a {
-    padding: 7px 15px;
+    padding: 7px 10px;
 }
 
 .navbar-nav>li{
@@ -308,7 +329,7 @@ body {
 
 .web-main{
     padding: 0px;
-    padding-right: 15px;
+    padding-right: 10px;
     border-left: 1px solid #ccc;
 }
 
@@ -359,6 +380,7 @@ body {
 
 .container-fluid {
     background: #777;
+    padding: -1px 10px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -416,7 +438,7 @@ body {
 }
 
 .left-header h5 {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
@@ -453,7 +475,7 @@ body {
 
 .left-hint h6 {
     color: white;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
@@ -486,7 +508,7 @@ td .radio-inline {
 }
 
 .right-header h5 {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
     font-size: 12px;
@@ -580,13 +602,12 @@ td .radio-inline {
 
 .title-bar label {
     color: white;
-    margin-left: 15px!important;
+    margin-left: 10px!important;
 }
 
 
 .title-bar h5{
     color: white;
-    margin-left: 15px;
     margin-bottom: 4px;
     margin-top: 2px;
     font-size: 12px;
@@ -680,7 +701,7 @@ td .radio-inline {
 }
 
 .modal-header, .modal-body, .modal-footer{
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 
 button .is-icon{

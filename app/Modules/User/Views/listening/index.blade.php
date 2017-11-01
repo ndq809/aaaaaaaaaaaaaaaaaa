@@ -121,7 +121,7 @@
 	<div class="col-md-8 col-md-pull-4 web-main">
 		<div class="col-xs-12 no-padding">
 			<div class="col-lg-12 title-bar">
-                <h5><i class="glyphicon glyphicon-flag"></i> Nghe kỹ bài nghe sau đó nghi lại những gì bạn nghe được rồi so sánh với đáp án!!!</h5>
+                <h5>Nghe kỹ bài nghe sau đó nghi lại những gì bạn nghe được rồi so sánh với đáp án !!!</h5>
             </div>
 		</div>
 		<div class="col-xs-12 no-padding margin-top">

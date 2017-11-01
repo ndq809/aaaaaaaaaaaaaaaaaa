@@ -32,7 +32,7 @@
                     </select>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top">Xem bài viết</button>
+            <button class="btn btn-sm btn-primary full-width margin-top">Xem bài viết / Làm mới</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Bài Bạn Chưa Xem</a></li>
@@ -107,8 +107,8 @@
             </ul>
             <div class="tab-content">
                 <div id="example" class="tab-pane fade in active">
-                    <div class="example-header">
-                        <span>Chủ Ngữ</span>
+                    <div class="example-header title-header">
+                        <span>Chủ Ngữ !</span>
                     </div>
                     <div class="main-content" id="noiDungNP">
                         <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
@@ -127,8 +127,8 @@
                     </div>
                 </div>
                 <div id="question" class="tab-pane fade">
-                    <div class="question-header">
-                        <h5><i class="glyphicon glyphicon-chevron-right"></i> Tại sao trái đất vẫn quay</h5>
+                    <div class="example-header text-header">
+                        <span>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ ?</span>
                     </div>
                     <div class="main-content" id="noiDungNP">
                         <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
@@ -149,11 +149,11 @@
             </div>
 		</div>
         <div class=" col-xs-12 no-padding rate-bar">
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><i class="glyphicon glyphicon-king is-icon"></i><span style="font-weight: bold;">Đánh giá</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><span style="font-weight: bold;">Đánh giá</span></button>
             <div class="col-md-6 col-sm-6 col-xs-7">
                 <input max="5.0" min="0.0" name="rating" type="number" value="0.0" id="rating-value">
             </div>
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><i class="glyphicon glyphicon-info-sign is-icon"></i><span style="font-weight: bold;">Báo Cáo Bài Viết</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
         </div>
 		<div class="col-xs-12 no-padding margin-top control-btn">
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>

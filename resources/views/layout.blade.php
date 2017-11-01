@@ -77,7 +77,7 @@
                                 ×
                             </button>
                             <h5 class="modal-title">
-                                TỪ ĐiỂN
+                                Từ Điển
                             </h5>
                         </div>
                         <div class="modal-body">
@@ -263,21 +263,23 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="left-content question collapse in">
+                        <div class="collapse in question close-when-small">
+                            <div class="left-content ">
                             <label class="radio-inline"><input type="radio" name="optradio">Thời tiết</label>
-                        </div>
-                        <div class="left-content question collapse in">
-                            <label class="radio-inline"><input type="radio" name="optradio">Gia đình</label>
-                        </div>
-                        <div class="left-content question collapse in">
-                            <label class="radio-inline"><input type="radio" name="optradio">Chào buổi sáng</label>
-                        </div>
-                        <div class="left-content question collapse in">
-                            <label class="radio-inline"><input type="radio" name="optradio">Xin chào</label>
-                        </div>
-                        <button class="btn btn-sm btn-primary answer-btn question collapse in" type="button">Trả Lời</button>
-                        <div class="left-hint question collapse in">
-                            <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
+                            </div>
+                            <div class="left-content ">
+                                <label class="radio-inline"><input type="radio" name="optradio">Gia đình</label>
+                            </div>
+                            <div class="left-content ">
+                                <label class="radio-inline"><input type="radio" name="optradio">Chào buổi sáng</label>
+                            </div>
+                            <div class="left-content ">
+                                <label class="radio-inline"><input type="radio" name="optradio">Xin chào</label>
+                            </div>
+                            <button class="btn btn-sm btn-primary answer-btn " type="button">Trả Lời</button>
+                            <div class="left-hint ">
+                                <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
+                            </div>
                         </div>
                         <div class="left-header" data-target=".new-question" data-toggle="collapse">
                             <table style="width: 100%">
@@ -291,7 +293,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="new-question collapse in">
+                        <div class="new-question collapse in close-when-small">
                             <label >Tiêu đề</label>
                             <textarea class="form-control input-sm" rows="2"></textarea>
                              <label >Nội dung</label>
@@ -312,7 +314,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="rank collapse in">
+                        <div class="rank collapse in close-when-small">
                             <table class="table table-hover table-left">
                                 <tbody>
                                     @for($i=1;$i<=5;$i++)
@@ -340,7 +342,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="news collapse in">
+                        <div class="news collapse in close-when-small">
                             <table class="table table-hover table-center">
                                 <tbody>
                                     @for($i=1;$i<=3;$i++)
@@ -376,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-12 no-padding">
+            <div class="col-lg-9 col-md-12 no-padding change-content">
                 @yield('content')
             </div>
 

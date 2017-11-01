@@ -5,6 +5,7 @@
     {!!WebFunctions::public_url('web-content/js/common/library/jquery.ratemate.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/raphael-min.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/relax.css')!!}
+    <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 @stop
 
 @section('content')
@@ -24,7 +25,7 @@
                     </select>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top">Tìm kiếm</button>
+            <button class="btn btn-sm btn-primary full-width margin-top">Xem bài viết / Làm mới</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Hình Ảnh</a></li>
@@ -139,8 +140,8 @@
             </ul>
             <div class="tab-content">
                 <div id="example" class="tab-pane fade in active">
-                    <div class="example-header">
-                        <span> Chủ Ngữ</span>
+                    <div class="example-header title-header">
+                        <span>Chủ Ngữ !</span>
                     </div>
                     <div class="main-content" id="noiDungNP">
                         <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
@@ -149,34 +150,49 @@
                         </div>
                     </div>
                 </div>
-                <div id="question" class="tab-pane fade">
-                    <div class="example-header">
-                        <span>Tại sao trái đất vẫn quay</span>
+                <div id="question" class="tab-pane fade input-tab">
+                    <div class="form-group">
+                        <label class="title-header" style="display: inline-block;">Loại bài viết</label>
+                        <div class="input-group">
+                            <select class="form-control input-sm media-select">
+                                <option value="1">Hình ảnh</option>
+                                <option value="2">Video</option>
+                                <option value="3">Truyện</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="main-content" id="noiDungNP">
-                        <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
-                        Chú ý rằng mọi câu trong tiếng Anh đều có chủ ngữ (Trong câu mệnh lệnh, chủ ngữ được ngầm hiểu là người nghe. Ví dụ: “Don't move!” = Đứng im!).&nbsp;<br>
-                        &nbsp;Milk is delicious. (một danh từ)&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-                        <p>That new, red car is mine. (một ngữ danh từ)&nbsp;&nbsp;<br>
-                        Đôi khi câu không có chủ ngữ thật sự, trong trường hợp đó, It hoặc There đóng vai trò chủ ngữ giả.&nbsp;<br>
-                        It is a nice day today.&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-                        <p>There is a fire in that building.&nbsp;&nbsp;&nbsp;</p>
-
-                        <p>There were many students in the room.&nbsp;</p>
-
-                        <p>It is the fact that the earth goes around the sun.</p>
+                    <div class="form-group">
+                        <label class="title-header">Tiêu đề bài viết</label>
+                        <input type="text" class="form-control input-sm margin-bottom" name="">
+                    </div>
+                    <div class="form-group">
+                        <label class="title-header">Mô tả</label>
+                        <textarea class="form-control input-sm margin-bottom" rows="4"></textarea>
+                    </div>
+                    <div class="form-group link">
+                        <label class="title-header">Đường dẫn ảnh / video</label>
+                        <input type="text" class="form-control input-sm margin-bottom" name="">
+                    </div>
+                    <div class="form-group non-link">
+                        <label class="title-header">Nội dung bài viết</label>
+                        <textarea name="practice-area" col-xs-12 no-paddings="5"></textarea>
+                        <script type="text/javascript">
+                          var editor = CKEDITOR.replace('practice-area',{language:"vi"});
+                        </script>
+                    </div>
+                    <div class="margin-top margin-bottom">
+                        <button class="btn btn-sm btn-default" >Làm Mới Trang</button>
+                        <button class="btn btn-sm btn-primary" style="float: right;">Lưu Lại</button>
                     </div>
                 </div>
             </div>
 		</div>
         <div class=" col-xs-12 no-padding rate-bar">
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><i class="glyphicon glyphicon-king is-icon"></i><span style="font-weight: bold;">Đánh giá</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><span style="font-weight: bold;">Đánh giá</span></button>
             <div class="col-md-6 col-sm-6 col-xs-7">
                 <input max="5.0" min="0.0" name="rating" type="number" value="0.0" id="rating-value">
             </div>
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><i class="glyphicon glyphicon-info-sign is-icon"></i><span style="font-weight: bold;">Báo Cáo Bài Viết</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
         </div>
 		<div class="col-xs-12 no-padding margin-top router-btn">
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
