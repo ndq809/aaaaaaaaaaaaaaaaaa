@@ -40,6 +40,10 @@ a{
     cursor: pointer;
 }
 
+.width-50{
+    width: 50%!important;
+}
+
 .text-center {
     text-align: center;
 }
@@ -445,6 +449,42 @@ body {
 
 .left-header h5 span {
     font-weight: bold;
+}
+
+.modal-header.login-modal{
+    padding: 4px 15px;
+}
+
+.modal-title.login-modal{
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.login-with{
+    display: inline-block;
+    float: right;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.login-with>i{
+    margin-left: 10px;
+}
+
+.login-with>i:hover{
+    cursor: pointer;
+}
+
+.login-with>i:nth-child(1){
+    color: #3a589b;
+}
+
+.login-with>i:nth-child(2){
+    color: #5caae1;
+}
+
+.login-with>i:nth-child(3){
+    color: #d84c28;
 }
 
 .left-content {}

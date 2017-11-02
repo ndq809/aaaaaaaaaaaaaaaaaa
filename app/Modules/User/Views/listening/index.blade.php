@@ -163,12 +163,6 @@
                             </ul>
                         </div>
 
-                        <div class="jp-no-solution">
-                            <span>Update Required</span> To play the media you will need to
-                            either update your bcol-xs-12 no-paddingser to a recent version or update your <a
-                                href="http://get.adobe.com/flashplayer/" target="_blank">Flash
-                                plugin</a>.
-                        </div>
                     </div>
                 </div>
 		</div>

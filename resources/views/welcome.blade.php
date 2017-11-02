@@ -52,7 +52,7 @@
             </div>
             <div class="col-lg-2">
                 <div class="form-group">
-                    <label >Datetimepicker</label>
+                    <label >Datepicker</label>
                     <div class="input-group picker">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         <input type="text" name="" class="form-control input-sm" data-field="date" value="this is Datepicker" readonly="">
@@ -62,7 +62,7 @@
             </div>
             <div class="col-lg-2">
                 <div class="form-group">
-                    <label >Datetimepicker</label>
+                    <label >Timepicker</label>
                     <div class="input-group picker">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                         <input type="text" name="" class="form-control input-sm" data-field="time" value="this is timepicker" readonly="">

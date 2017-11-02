@@ -26,13 +26,18 @@
                 <div class="modal-dialog">
                 <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header login-modal">
                             <button class="close" data-dismiss="modal" type="button">
                                 ×
                             </button>
-                            <h5 class="modal-title">
-                                ĐĂNG NHẬP E+
-                            </h5>
+                            <div class="modal-title login-modal">
+                                <span>ĐĂNG NHẬP E+</span>
+                            </div>
+                            <div class="login-with">
+                                <i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i>
+                                <i class="fa fa-twitter" title='Đăng nhập với twitter'></i> 
+                                <i class="fa fa-google-plus" title='Đăng nhập với google +'></i>  
+                            </div>
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
@@ -55,10 +60,10 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-danger btn-sm float-left" data-dismiss="modal" type="button">
+                            <a class="btn btn-danger btn-sm float-left" href="/register">
                                 Tạo Tài Khoản
-                            </button>
-                            <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
+                            </a>
+                            <button class="btn btn-primary btn-sm" type="button">
                                 Đăng Nhập
                             </button>
                             <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">

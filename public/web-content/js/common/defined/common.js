@@ -41,7 +41,6 @@ function initEvent() {
     $(window).resize(function() {
         menuController();
         setFooter();
-        setCollapse();
     });
     $(document).on('click', '#btn-dictonary', function(e) {
         e.preventDefault();
@@ -90,6 +89,7 @@ function initEvent() {
             $('.non-link').show();
         }
     })
+
 }
 
 function setFooter() {

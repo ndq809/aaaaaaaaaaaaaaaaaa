@@ -182,7 +182,7 @@
                     </div>
                     <div class="margin-top margin-bottom">
                         <button class="btn btn-sm btn-default" >Làm Mới Trang</button>
-                        <button class="btn btn-sm btn-primary" style="float: right;">Lưu Lại</button>
+                        <button class="btn btn-sm btn-primary" style="float: right;">Đóng Góp</button>
                     </div>
                 </div>
             </div>
