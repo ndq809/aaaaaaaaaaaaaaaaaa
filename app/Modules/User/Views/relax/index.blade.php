@@ -25,6 +25,14 @@
                     </select>
                 </div>
             </div>
+            <div class="form-group">
+                <label>Ngôn ngữ</label>
+                <div class="input-group">
+                    <select class="form-control input-sm">
+                        <option>this is select box</option>
+                    </select>
+                </div>
+            </div>
             <button class="btn btn-sm btn-primary full-width margin-top">Xem bài viết / Làm mới</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
@@ -151,13 +159,22 @@
                     </div>
                 </div>
                 <div id="question" class="tab-pane fade input-tab">
-                    <div class="form-group">
+                    <div class="form-group width-50 inline-block float-left">
                         <label class="title-header" style="display: inline-block;">Loại bài viết</label>
                         <div class="input-group">
                             <select class="form-control input-sm media-select">
                                 <option value="1">Hình ảnh</option>
                                 <option value="2">Video</option>
                                 <option value="3">Truyện</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group width-50 inline-block float-left">
+                        <label class="title-header" style="display: inline-block;">Ngôn ngữ</label>
+                        <div class="input-group">
+                            <select class="form-control input-sm media-select">
+                                <option value="1">Tiếng anh</option>
+                                <option value="2">Tiếng Việt</option>
                             </select>
                         </div>
                     </div>

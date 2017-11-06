@@ -3,7 +3,7 @@
 
 return  [
     'modules' => [
-       'Admin',
+       'Master',
        'User',
        'Popup'
     ]

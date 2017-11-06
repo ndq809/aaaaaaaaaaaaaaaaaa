@@ -14,11 +14,11 @@
 			<h5><i class="fa fa-hand-grab-o"></i> ĐĂNG KÝ TRỞ THÀNH EPLUSER</h5>
 		</div>
 	</div>
-	<div class="col-sm-6 col-xs-12 no-padding web-main">
-		<div class="col-xs-12 no-padding">
-			<div class="example-header title-header">
-                <span>Thông Tin Bắt Buộc !</span>
-            </div>
+	<div class="col-sm-6 col-xs-12 no-padding web-main main-content">
+        <div class="example-header title-header">
+            <span>Thông Tin Bắt Buộc !</span>
+        </div>
+		<div class="col-xs-12 main-content">
             <div class="form-group">
                 <label>Tên Của Bạn</label>
                 <div class="input-group">
@@ -72,18 +72,38 @@
                 <label>Ảnh Đại Diện</label>
                 <div id="imageContainer"></div>
             </div>
+		</div>
+	</div>
+    <div class="col-sm-6 col-xs-12 no-padding web-main main-content">
+        <div class="example-header title-header">
+            <span>Thông Tin Thêm !</span>
+        </div>
+        <div class="col-xs-12 main-content">
+            <div class="form-group width-50 inline-block float-left">
+                <label>Nghề Nghiệp</label>
+                <div class="input-group">
+                    <select class="form-control input-sm">
+                        <option>Kỹ sư</option>
+                        <option>Công chức nhà nước</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group width-50 inline-block float-left">
+                <label>Trình Độ Tiếng Anh</label>
+                <div class="input-group">
+                    <select class="form-control input-sm">
+                        <option>Toleic 600</option>
+                        <option>Bằng A</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+            </div>
             <div class="form-group">
                 <label>Slogan Của Bạn</label>
                 <div class="input-group">
                     <textarea name="" class="form-control input-sm" rows="3"></textarea>
                 </div>
-            </div>
-		</div>
-	</div>
-    <div class="col-sm-6 col-xs-12 no-padding web-main">
-        <div class="col-xs-12 no-padding">
-            <div class="example-header title-header">
-                <span>Thông Tin Thêm !</span>
             </div>
         </div>
         
