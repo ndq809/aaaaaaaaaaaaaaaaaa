@@ -22,77 +22,20 @@
 }
 
 @media screen and (max-width:680px) {
-    #mySlider1 .previous_item {
-        display: none;
-    }
-    #mySlider1 .next_item {
-        display: none;
-    }
-    .choose_slider {
-        height: 250px!important;
-    }
-    #jp_container_2 {
-        width: 300px;
-    }
-
-    .jp-controls{
-        width: 300px!important;
-    }
-    .jp-audio .jp-type-playlist .jp-progress {
-        width: 150px!important;
-    }
-    .jp-volume-controls {
-        left: 123px!important;
-    }
-
-    .jp-volume-controls {
-        top: 9px!important;
-        width: 150px!important;
-    }
-    .jp-audio .jp-type-playlist .jp-time-holder {
-        width: 150px!important;
-    }
-    .navbar-nav>li {
-        width: 160px;
-    }
-    .hint-text {
-        margin-top: 5px!important;
-    }
      .navbar-brand:nth-child(1) {
         padding-right: 0px;
     }
 }
 
 @media screen and (max-width:550px) {
-    .web-slogan :nth-child(1) {
-        font-size: 5vw;
-    }
-    .web-slogan :nth-child(2) {
-        font-size: 6vw!important;
-    }
     .menu-btn {
         display: unset;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .logo-box {
-        width: 100%;
-        text-align: center;
-        border-right: none;
-    }
-    .text-slogan {
-        overflow: unset;
-        text-align: center;
-        padding-top: 0px;
-        margin-right: 0px;
-    }
-    .slogan-box {
-        width: 100%;
-    }
-
-    .rate-bar button:nth-child(1){
-        margin-bottom: 5px;
+    .change-content{
+        padding: 0px 53px 0px 0px;
     }
 }
 
@@ -107,31 +50,7 @@
 }
 
 @media screen and (max-width: 440px) {
-    .logo-box {
-        text-align: center;
-    }
-    .logo-box-text {
-        padding-left: 0px;
-    }
-    .logo-box-text:nth-child(2) {
-        padding-left: 0px;
-    }
-    .slogan-box {
-        display: none;
-    }
-    .option {
-        padding: 0px;
-    }
-    .option-body {
-        left: 5px!important;
-    }
 }
 
 @media screen and (max-width: 319px) {
-    .logo-box-text {
-        display: none;
-    }
-    .logo-box-text1 {
-        padding-left: 0px;
-    }
 }

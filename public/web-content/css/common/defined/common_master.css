@@ -287,17 +287,23 @@ body {
 .navbar-brand {
     padding: 4px 10px;
     height: auto;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .navbar-brand:nth-child(1){
-    padding: 4px 10px;
-    padding-right: 25px;
+    padding: 8px 10px;
+    padding-right: 50px;
 }
 
 
 .navbar-nav>li>a {
     padding: 7px 10px;
+    font-weight: bold;
+}
+
+.navbar-nav>li>a:hover{
+    background: #fff!important;
+    color: green!important;
 }
 
 .navbar-nav>li{
@@ -332,6 +338,16 @@ body {
     padding: 0px;
     padding-right: 10px;
     border-left: 1px solid #ccc;
+}
+
+.main-panel{
+    border-radius: 0px;
+    padding: 10px 10px;
+    border-color:#ddd;
+}
+
+.panel-title{
+    font-weight: 700;
 }
 
 .bottom-content{
@@ -380,22 +396,32 @@ body {
 }
 
 .container-fluid {
-    background: #777;
+    background: #f2f2f2;
     padding: -1px 10px;
+    border-bottom: 3px solid #fff;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: white;
+    color: green;
+    font-family: titlefont;
+    font-size: 18px;
 }
 
 .navbar-default .navbar-brand {
-    font-family: NokioRegular;
-    background: #777;
+    font-family: 'ToetheLineless';
     color: white;
+    text-shadow: 0 0 2px #111;
 }
 
 .navbar-default .navbar-brand:hover {
+    cursor: pointer;
     color: white;
+    text-shadow: 0 0 2px #111;
+    font-size: 35px;
+}
+
+.change-content{
+    padding: 10px 60px 0px 7px;
 }
 
 .btn-search {
