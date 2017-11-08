@@ -121,7 +121,6 @@
 						<li class="current_item"><a> <img
 								src="web-content/images/vocabulary/agreement.jpg" />
 						</a></li>
-						
 						@endfor
 					</ul>
 				</div>

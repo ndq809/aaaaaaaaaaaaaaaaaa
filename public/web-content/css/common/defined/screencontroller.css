@@ -97,12 +97,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    .navbar-nav {
-        float: left;
-        margin: 0px -15px;
-    }
     .title-bar h5{
         margin:4px 15px;
+    }
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
     }
 }
 

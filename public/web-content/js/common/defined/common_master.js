@@ -9,7 +9,7 @@ $(function() {
 
 function initCommonMaster() {
     initEvent();
-    setMenuRight();
+    setLayout();
     menuController();
 }
 
@@ -35,7 +35,7 @@ function initEvent() {
         return element;
     };
     $('.top-header').sizeChanged(function() {
-        setMenuRight();
+        setLayout();
     })
 
     $(window).resize(function(){
@@ -48,13 +48,14 @@ function initEvent() {
     })
 }
 
-function setMenuRight(){
+function setLayout(){
     $('.gw-sidebar').css('top',$('.top-header').height());
+    $('.change-content').css('padding-top',$('.top-header').height()+10);
 }
 
 function menuController() {
     if ($(window).width() < 680) {
-        var temp = Math.floor((145 / $('.container-fluid ul').width()) * 100);
+        var temp = Math.floor((140 / $('.container-fluid ul').width()) * 100);
         $('.navbar-nav>li').css('width', temp + '%');
     } else {
         $('.navbar-nav>li').css('width', 'auto');

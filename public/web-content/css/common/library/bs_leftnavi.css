@@ -10,9 +10,9 @@
   background-color: #F2F2F2;
   bottom: 0;
   top: 41px;
-  right: -267px;
+  right: -268px;
   transition: right 0.3s linear;
-  border-left: 5px solid #fff;
+  border-left: 3px solid #fff;
 }
 
 .gw-sidebar.visible {

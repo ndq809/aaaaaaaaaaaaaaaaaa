@@ -126,6 +126,15 @@ label {
     margin-bottom: 0px;
 }
 
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.navbar-nav{
+    margin: 0px -10px;
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     background: #4CAF50;
     color: #fff;
@@ -292,7 +301,7 @@ body {
 
 .navbar-brand:nth-child(1){
     padding: 4px 10px;
-    padding-right: 25px;
+    padding-right: 35px;
 }
 
 .navbar-brand:nth-child(1):hover{
@@ -384,7 +393,8 @@ body {
 
 .container-fluid {
     background: #777;
-    padding: -1px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -393,7 +403,6 @@ body {
 
 .navbar-default .navbar-brand {
     font-family: NokioRegular;
-    background: #777;
     color: white;
 }
 
@@ -643,6 +652,10 @@ td .radio-inline {
 .title-bar label {
     color: white;
     margin-left: 10px!important;
+}
+
+.title-bar input[type='checkbox'] {
+    color: black;
 }
 
 

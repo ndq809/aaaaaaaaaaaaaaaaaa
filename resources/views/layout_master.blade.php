@@ -27,46 +27,25 @@
             <div class="row top-header">
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid">
-                        <div class="navbar-header">
-                            <span class="navbar-brand">
-                                EPLUS
-                            </span>
+                        <ul class="nav navbar-nav collapse in" id="menu">
+                            @yield('button')
+                        </ul>
+                         <div class="navbar-header navbar-right">
+                            <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
+                                <img src="/web-content/images/icon/title-icon3.png" height="30px">
+                                <span>Admin<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                              <li role="presentation" class="divider"></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                            </ul>
                             <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
                                 <i class="fa fa-reorder"></i>
                             </a>
                         </div>
-                        <ul class="nav navbar-nav collapse in" id="menu">
-                            <li>
-                                <a href="/">
-                                    Xem danh sách
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vocabulary">
-                                    Thêm mới
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/grammar">
-                                    Sửa chữa
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/listening">
-                                    Xóa
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/writing">
-                                    Tìm kiếm
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/social">
-                                    Xuất file
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </nav>
             </div>

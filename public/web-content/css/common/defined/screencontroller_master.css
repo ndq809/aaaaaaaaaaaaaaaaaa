@@ -35,15 +35,11 @@
 
 @media screen and (max-width: 768px) {
     .change-content{
-        padding: 0px 53px 0px 0px;
+        padding: 0px 52px 0px 0px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .navbar-nav {
-        float: left;
-        margin: 0px -15px;
-    }
     .title-bar h5{
         margin:4px 15px;
     }

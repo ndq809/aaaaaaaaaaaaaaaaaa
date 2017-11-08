@@ -230,6 +230,7 @@ return [
 
         'WebFunctions' => App\Helpers\WebFunctions::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Button' => App\Helpers\Button::class,
 
     ],
 

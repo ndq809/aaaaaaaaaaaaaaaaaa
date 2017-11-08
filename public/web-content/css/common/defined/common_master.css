@@ -179,6 +179,15 @@ body {
 
 .row{
     margin-right: 0px;
+    margin-left: 0px;
+}
+
+.panel{
+    margin-bottom: 10px;
+}
+
+.panel-header{
+    padding-bottom: 10px;
 }
 
 .logo-box{
@@ -248,8 +257,11 @@ body {
 }
 
 .top-header{
-    margin: 0px;
-    background-color: #666;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 500;
 }
 
 .border-left{
@@ -287,14 +299,28 @@ body {
 .navbar-brand {
     padding: 4px 10px;
     height: auto;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.navbar-brand:nth-child(1){
-    padding: 8px 10px;
-    padding-right: 50px;
+.navbar-brand:nth-child(1) {
+    padding-right: 45px;
 }
 
+.navbar-brand img{
+    display: inline-block;
+}
+
+.navbar-brand span{
+    vertical-align: middle;
+}
+
+.navbar-brand.dropdown-toggle:hover{
+    color: #d9534f;
+}
+
+#menu{
+    padding-right: 20px;
+}
 
 .navbar-nav>li>a {
     padding: 7px 10px;
@@ -314,6 +340,14 @@ body {
     min-height: auto;
     border-radius: 0px;
     margin-bottom: 0px;
+}
+
+.navbar-nav{
+    margin: 0px -15px!important;
+}
+
+.dropdown-menu li a:hover{
+    background: #f2f2f2;
 }
 
 .search-box {
@@ -409,19 +443,12 @@ body {
 
 .navbar-default .navbar-brand {
     font-family: 'ToetheLineless';
-    color: white;
-    text-shadow: 0 0 2px #111;
+    color: green;
 }
 
-.navbar-default .navbar-brand:hover {
-    cursor: pointer;
-    color: white;
-    text-shadow: 0 0 2px #111;
-    font-size: 35px;
-}
 
 .change-content{
-    padding: 10px 60px 0px 7px;
+    padding: 51px 59px 0px 7px;
 }
 
 .btn-search {
