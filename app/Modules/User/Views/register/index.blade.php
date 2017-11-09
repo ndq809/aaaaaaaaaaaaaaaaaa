@@ -20,7 +20,7 @@
         </div>
 		<div class="col-xs-12 main-content">
             <div class="form-group">
-                <label>Tên Của Bạn</label>
+                <label>Họ Tên Của Bạn</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm width-50" placeholder ="Họ">
                     <input type="text" name="" class="form-control input-sm width-50" placeholder="Tên">
@@ -109,6 +109,7 @@
         
     </div>
 </div>
+<button class="btn btn-sm btn-primary col-xs-12 margin-top" type="button">TRỞ THÀNH EPLUSER</button>
 
 @stop
 

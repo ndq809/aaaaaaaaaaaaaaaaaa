@@ -12,6 +12,7 @@ $namespace = 'App\Modules\Master\Controllers';
 Route::group(
 	['namespace' => $namespace,'prefix'=>'master','middleware'=>['web']],
 	function() {
-		Route::get('index','Example1Controller@getIndex');	
+		Route::get('index','Example1Controller@getIndex');
+		Route::get('v001l','v001lController@getIndex');		
 	}
 );

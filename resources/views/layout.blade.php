@@ -22,149 +22,7 @@
     </head>
     <body>
         <div class="col-xs-12 web-panel header-content">
-            <div id="popup-box" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header login-modal">
-                            <button class="close" data-dismiss="modal" type="button">
-                                ×
-                            </button>
-                            <div class="modal-title login-modal">
-                                <span>ĐĂNG NHẬP E+</span>
-                            </div>
-                            <div class="login-with">
-                                <i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i>
-                                <i class="fa fa-twitter" title='Đăng nhập với twitter'></i> 
-                                <i class="fa fa-google-plus" title='Đăng nhập với google +'></i>  
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>
-                                    Tên Đăng Nhập
-                                </label>
-                                <div class="input-group">
-                                    <input class="form-control input-sm" name="" type="type">
-                                    </input>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                    Mật Khẩu
-                                </label>
-                                <div class="input-group">
-                                    <input class="form-control input-sm" name="" type="password">
-                                    </input>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="btn btn-danger btn-sm float-left" href="/register">
-                                Tạo Tài Khoản
-                            </a>
-                            <button class="btn btn-primary btn-sm" type="button">
-                                Đăng Nhập
-                            </button>
-                            <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                                Hủy
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="popup-box1" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close" data-dismiss="modal" type="button">
-                                ×
-                            </button>
-                            <h5 class="modal-title">
-                                Từ Điển
-                            </h5>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>
-                                    Nhập Từ Cần Tra
-                                </label>
-                                <div class="input-group">
-                                    <input class="form-control input-sm" name="" type="type">
-                                    </input>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                                Tra cứu
-                            </button>
-                            <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                                Hủy
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="popup-box2" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                     <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close" data-dismiss="modal" type="button">
-                                ×
-                            </button>
-                            <h5 class="modal-title">
-                                BÁO CÁO BÀI VIẾT
-                            </h5>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>
-                                    Các Lỗi Vi Phạm
-                                </label>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Nội dung sai lệch</label>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Spam bài viết</label>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Chứa nội dung phản động</label>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xxx xxx xxx</label>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xx xx xx xxxxxx </label>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xxx x xxxxxx xxxxx</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>
-                                    Ghi chú thêm
-                                </label>
-                                <div class="input-group">
-                                   <textarea class="form-control input-sm" rows="2" ></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                                Gửi Báo Cáo
-                            </button>
-                            <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                                Hủy
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('popup')
             <div class="row top-header">
                 <div class="logo-box">
                     <div>
@@ -183,9 +41,23 @@
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid">
                         <div class="navbar-header hover-item">
-                            <a class="navbar-brand" id="btn-login">
+                            @if(isset($user))
+                            <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
+                                <img src="/web-content/images/icon/title-icon3.png" height="30px" style="display: inline-block;">
+                                <span>{{$user}}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
+                            </a>
+                            <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/index">Trang Quản Trị</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                              <li role="presentation" class="divider"></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Đăng Xuất</a></li>
+                            </ul>
+                            @else
+                            <a class="navbar-brand btn-popup" popup-id="popup-box0">
                                 ĐĂNG NHẬP / ĐĂNG KÝ
                             </a>
+                            @endif
                             <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
                                 <i class="fa fa-reorder"></i>
                             </a>
@@ -222,7 +94,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a id='btn-dictonary'>
+                                <a class="btn-popup" popup-id="popup-box1">
                                     Tra từ
                                 điển
                                 </a>

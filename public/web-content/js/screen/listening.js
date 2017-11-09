@@ -34,6 +34,14 @@ function initListener(){
 		}
 	});
 
+	$(document).on('click', '.btn-popup', function(e) {
+        e.preventDefault();
+        var popupId=$(this).attr('popup-id');
+        if(popupId=='popup-box3'){
+        	$('.listen_result').text('100%')
+        }
+    })
+
 	$(document ).on("click",".focusable table tbody tr",function(){
 		selectListening($(this));
 	});

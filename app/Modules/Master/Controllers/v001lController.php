@@ -1,10 +1,10 @@
 <?php 
-namespace App\Modules\User\Controllers;
+namespace App\Modules\Master\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class HomePageController extends Controller
+class v001lController extends Controller
 {
 	/**
      * Show the application index.
@@ -12,15 +12,9 @@ class HomePageController extends Controller
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-	public function getIndex(Request $request)
+	public function getIndex()
 	{
-          $data = $request-> except('_token');
-          if(isset($data['user'])){
-               return view('User::homepage.index')->with('user',$data['user']);
-          }else{
-               return view('User::homepage.index');
-          }
-		
+		return view('Master::vocabulary.v001l');
 	}
 
 

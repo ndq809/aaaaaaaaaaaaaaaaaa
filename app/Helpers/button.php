@@ -6,11 +6,20 @@ class Button
 
     //register button
     protected static $button_val = array(
-        'btn-list' => array('id' => 'btn-list', 'class' => '', 'icon' => 'fa fa-list', 'label' => 'Danh Sách', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-list' => array('id' => 'btn-list', 'class' => '', 'icon' => 'fa fa-file-text', 'label' => 'Danh Sách', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-list-dis' => array('id' => 'btn-list', 'class' => 'btn-disable', 'icon' => 'fa fa-file-text', 'label' => 'Danh Sách', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-add' => array('id' => 'btn-add', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-add-dis' => array('id' => 'btn-add', 'class' => 'btn-disable', 'icon' => 'fa fa-plus', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-update' => array('id' => 'btn-update', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-update-dis' => array('id' => 'btn-update', 'class' => 'btn-disable', 'icon' => 'fa fa-refresh', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-delete' => array('id' => 'btn-delete', 'class' => '', 'icon' => 'fa fa-remove', 'label' => 'Xóa', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-delete-dis' => array('id' => 'btn-delete', 'class' => 'btn-disable', 'icon' => 'fa fa-remove', 'label' => 'Xóa', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-search' => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-search', 'label' => 'Tìm Kiếm', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-search-dis' => array('id' => 'btn-search', 'class' => 'btn-disable', 'icon' => 'fa fa-search', 'label' => 'Tìm Kiếm', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-save' => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-save-dis' => array('id' => 'btn-search', 'class' => 'btn-disable', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-print' => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-print-dis' => array('id' => 'btn-search', 'class' => 'btn-disable', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)
@@ -19,8 +28,8 @@ class Button
         foreach ($array as $key => $value) {
             if (array_key_exists($value, self::$button_val)) {
                 $btn_lang_tootip = 'tooltip.' . self::$button_val[$value]['id'];
-                echo '<li tabindex="0" class="' . 'cl-' . self::$button_val[$value]['id'] . '" id="' . self::$button_val[$value]['id'] . '">';
-                echo '<a class="btn btn-link">';
+                echo '<li tabindex="0" class="' . 'cl-' . self::$button_val[$value]['id'] . ' ' . self::$button_val[$value]['class'] . '" id="' . self::$button_val[$value]['id'] . '">';
+                echo '<a class="">';
                 echo '<i class="' . self::$button_val[$value]['icon'] . ' ' . self::$button_val[$value]['color'] . ' ">' . '</i><span class="' . self::$button_val[$value]['color'] . ' ">';
                 echo ' ' . self::$button_val[$value]['label'];
                 echo '</span></a></li>';

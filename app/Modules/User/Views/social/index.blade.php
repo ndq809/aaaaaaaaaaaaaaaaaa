@@ -153,7 +153,7 @@
             <div class="col-md-6 col-sm-6 col-xs-7">
                 <input max="5.0" min="0.0" name="rating" type="number" value="0.0" id="rating-value">
             </div>
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
         </div>
 		<div class="col-xs-12 no-padding margin-top control-btn">
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>

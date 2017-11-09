@@ -67,7 +67,7 @@
                             </tr>
                         </tbody>
                         @else
-                        <tbody id="{{$i}}" class="activeItem">
+                        <tbody id="{{$i}}">
                             <tr>
                                 <td><a><img alt="loadIcon" src="https://em.wattpad.com/eb561e9fdaaba1f8c44ffb1056263e39ddf6aa39/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5370696e526755417930576344673d3d2d3335373536333234362e313439393932656337353031383837323934303339393937393537332e6a7067?s=fit&amp;amp;w=1280&amp;amp;h=1280"></a></td>
                             </tr>
@@ -209,7 +209,7 @@
             <div class="col-md-6 col-sm-6 col-xs-7">
                 <input max="5.0" min="0.0" name="rating" type="number" value="0.0" id="rating-value">
             </div>
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12" id="btn-report"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
+            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
         </div>
 		<div class="col-xs-12 no-padding margin-top router-btn">
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>

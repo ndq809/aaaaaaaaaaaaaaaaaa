@@ -40,6 +40,18 @@ a{
     cursor: pointer;
 }
 
+.no-padding-left{
+    padding-left: 0px!important;
+}
+
+.no-padding-right{
+    padding-right: 0px!important;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 4px;
+}
+
 .width-50{
     width: 50%!important;
 }
@@ -162,7 +174,39 @@ textarea {
 }
 
 .table-hover tbody tr:hover {
-    background: #ddd;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.btn-disable {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    /*Button disabled - CSS color class*/
+    color: #c0c0c0;
+}
+
+.btn-disable a{
+    color: #c0c0c0!important;
+}
+
+input[type=checkbox], input[type=radio]{
+    vertical-align: middle;
+}
+
+table input[type=checkbox], input[type=radio]{
+    margin: 0px;
+}
+
+table{
+    margin-bottom:0px!important;
+}
+
+table tbody tr td.td-1-line{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .hover-item {
@@ -188,6 +232,10 @@ body {
 
 .panel-header{
     padding-bottom: 10px;
+}
+
+.table-fixed-width{
+    overflow: auto;
 }
 
 .logo-box{
@@ -377,7 +425,12 @@ body {
 .main-panel{
     border-radius: 0px;
     padding: 10px 10px;
+    padding-left: 0px;
     border-color:#ddd;
+}
+
+.main-panel>div{
+    padding-left: 10px;
 }
 
 .panel-title{
@@ -448,7 +501,7 @@ body {
 
 
 .change-content{
-    padding: 51px 59px 0px 7px;
+    padding: 51px 57px 0px 5px;
 }
 
 .btn-search {

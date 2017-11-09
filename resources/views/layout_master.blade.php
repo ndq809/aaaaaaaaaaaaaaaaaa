@@ -36,11 +36,11 @@
                                 <span>Admin<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
                             </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/?user=Quy Nguyen">Trang User</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đăng Xuất</a></li>
                             </ul>
                             <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
                                 <i class="fa fa-reorder"></i>
@@ -54,44 +54,7 @@
             <div class="change-content">
                 @yield('content')
             </div>
-            <div class="gw-sidebar">
-              <div id="gw-sidebar" class="gw-sidebar">
-                <div class="nano-content">
-                  <ul class="gw-nav gw-nav-list">
-                    <li class="init-un-active"> 
-                        <a class="btn left-menu-btn"><i class="fa fa-reorder"></i></a>
-                        <a> <span class="gw-menu-text">MENU QUẢN TRỊ</span> </a> 
-                    </li>
-                    <li > <a ><i class="fa fa-book"></i> <span class="gw-menu-text">Quản Lý Từ Vựng</span></a>
-                      <ul class="gw-submenu">
-                        <li> <a >Menu 1</a> </li>
-                      </ul>
-                    </li>
-                    <li > <a ><i class="fa fa-bookmark"></i><span class="gw-menu-text"> Quản Lý Ngữ Pháp</span></a>
-                      <ul class="gw-submenu">
-                        <li> <a >Menu 1</a> </li>
-                        <li> <a >Menu 2</a> </li>
-                        <li> <a >Menu 3</a> </li>
-                      </ul>
-                    </li>
-                    <li > <a ><i class=" fa fa-assistive-listening-systems"></i> <span class="gw-menu-text">Quản Lý Bài Nghe</span></a>
-                      <ul class="gw-submenu">
-                        <li> <a >Menu 1</a> </li>
-                        <li> <a >Menu 2</a> </li>
-                        <li> <a >Menu 3</a> </li>
-                      </ul>
-                    </li>
-                    <li > <a><i class="fa fa-paint-brush"></i><span class="gw-menu-text"> Quản Lý Bài Viết</span></a>
-                      <ul class="gw-submenu">
-                        <li> <a >Menu 1</a> </li>
-                        <li> <a >Menu 2</a> </li>
-                        <li> <a >Menu 3</a> </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            @include('right_menu')
         </div>
     </body>
 </html>

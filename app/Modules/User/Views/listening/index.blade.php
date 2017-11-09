@@ -10,32 +10,6 @@
 
 @section('content')
 <div class="col-xs-12 no-padding">
-    <div id="popup-box3" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-        <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" data-dismiss="modal" type="button">
-                        ×
-                    </button>
-                    <h5 class="modal-title">
-                        KẾT QUẢ BÀI NGHE
-                    </h5>
-                </div>
-                <div class="modal-body">
-                    <h5>Bạn đã nghe được <span class="listen_result"></span> của bài nghe!!!</h5>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                        <i class="glyphicon glyphicon-thumbs-up"></i> Tiếp Tục Nghe 
-                    </button>
-                    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                        <i class="glyphicon glyphicon-thumbs-down"></i> Xem Đáp Án
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 	<div class="col-md-12 no-padding">
 		<div class="right-header">
 			<h5><i class="glyphicon glyphicon-education"></i> HỌC NGHE TIẾNG ANH</h5>
@@ -194,9 +168,9 @@
 			<button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
 		<div class="col-xs-12 no-padding listen-check-box">
-			<textarea class="form-control input-sm margin-top" col-xs-12 no-paddings="3">tôn trọng, tuân theo, giữ (lời)</textarea>
-            <button class="btn btn-sm btn-primary margin-top" id="check-listen-btn">Kiểm tra kết quả</button>
-			<textarea class="form-control input-sm margin-top" col-xs-12 no-paddings="3" readonly=""></textarea>
+			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="2">tôn trọng, tuân theo, giữ (lời)</textarea>
+            <button class="btn btn-sm btn-primary margin-top btn-popup" popup-id="popup-box3">Kiểm tra kết quả</button>
+			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="3" readonly=""></textarea>
 		</div>
 	</div>
 </div>
