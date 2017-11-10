@@ -13,6 +13,7 @@ Route::group(
 	['namespace' => $namespace,'prefix'=>'master','middleware'=>['web']],
 	function() {
 		Route::get('index','Example1Controller@getIndex');
-		Route::get('v001l','v001lController@getIndex');		
+		Route::get('v001','v001Controller@getIndex');	
+		Route::get('v002','v002Controller@getIndex');		
 	}
 );

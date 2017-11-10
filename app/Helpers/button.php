@@ -20,6 +20,10 @@ class Button
         'btn-save-dis' => array('id' => 'btn-search', 'class' => 'btn-disable', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-print' => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-print-dis' => array('id' => 'btn-search', 'class' => 'btn-disable', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-cancel' => array('id' => 'btn-cancel', 'class' => '', 'icon' => 'fa fa-minus-circle', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-cancel-dis' => array('id' => 'btn-cancel', 'class' => 'btn-disable', 'icon' => 'fa fa-minus-circle', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-new-row' => array('id' => 'btn-new-row', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Hàng', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-new-row-dis' => array('id' => 'btn-new-row', 'class' => 'btn-disable', 'icon' => 'fa fa-plus', 'Thêm Hàng' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

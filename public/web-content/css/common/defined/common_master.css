@@ -49,7 +49,7 @@ a{
 }
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 4px;
+    padding: 2px 4px;
 }
 
 .width-50{
@@ -91,6 +91,10 @@ label {
 
 .form-control.required {
     border: 1px solid red;
+}
+
+.form-control {
+    border-radius: 0px;
 }
 
 .form-control.required:focus {
@@ -173,6 +177,14 @@ textarea {
     color: #fff;
 }
 
+.table tbody tr td * {
+    vertical-align: middle;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
 .table-hover tbody tr:hover {
     background: #f2f2f2;
     cursor: pointer;
@@ -188,6 +200,10 @@ textarea {
 
 .btn-disable a{
     color: #c0c0c0!important;
+}
+
+.show-on-click{
+    display: none;
 }
 
 input[type=checkbox], input[type=radio]{
@@ -235,7 +251,8 @@ body {
 }
 
 .table-fixed-width{
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .logo-box{
@@ -433,6 +450,10 @@ body {
     padding-left: 10px;
 }
 
+.panel-content>div{
+    padding-left: 10px;
+}
+
 .panel-title{
     font-weight: 700;
 }
@@ -508,6 +529,15 @@ body {
     background: #555;
     border-color: white;
     color: white;
+}
+
+::-webkit-file-upload-button {
+    background-color: #fff;
+    padding: 2px 12px;
+}
+
+.active-row{
+    background: #f2f2f2;
 }
 
 .btn-search:hover {

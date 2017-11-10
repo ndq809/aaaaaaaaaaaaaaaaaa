@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class v001lController extends Controller
+class v001Controller extends Controller
 {
 	/**
      * Show the application index.
@@ -14,7 +14,7 @@ class v001lController extends Controller
      */
 	public function getIndex()
 	{
-		return view('Master::vocabulary.v001l');
+		return view('Master::vocabulary.v001');
 	}
 
 

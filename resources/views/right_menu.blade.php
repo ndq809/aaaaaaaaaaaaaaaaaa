@@ -8,8 +8,10 @@
         </li>
         <li > <a ><i class="fa fa-book"></i> <span class="gw-menu-text">Quản Lý Từ Vựng</span></a>
           <ul class="gw-submenu">
-            <li> <a href="/master/v001l">Danh sách từ vựng</a> </li>
-            <li> <a >Thêm mới từ vựng</a> </li>
+            <li> <a href="/master/v001">Danh sách từ vựng</a> </li>
+            <li> <a href="/master/v002">Quản lý danh mục</a> </li>
+            <li> <a >Quản lý nhóm</a> </li>
+            <li> <a >Quản lý từ vựng</a> </li>
             <li> <a >Lịch sử thao tác</a> </li>
           </ul>
         </li>
