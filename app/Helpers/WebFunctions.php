@@ -25,7 +25,7 @@ class WebFunctions
         static function file_cached($path, $bustQuery = false)
         {
             // Get the full path to the file.
-            $realPath = public_path($path);
+            $realPath = ($path);
 
             if ( ! file_exists($realPath)) {
                 throw new \LogicException("File not found at [{$realPath}]");

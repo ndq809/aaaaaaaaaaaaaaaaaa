@@ -12,9 +12,11 @@
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/defined/common.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/fileinput.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/common.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller.css')!!}
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}

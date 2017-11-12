@@ -80,10 +80,8 @@
             </table>
         </div>
         <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">Next</a></li>
+            <li><a href="#">Hàng Trước</a></li>
+            <li><a href="#">Hàng Tiếp</a></li>
         </ul>
 	</div>
 	<div class="panel-bottom">
@@ -150,11 +148,11 @@
         </div>
         <div class="col-xs-12"></div>
         <div class="col-xs-12"></div>
-            <div class="col-sm-6 no-padding-right">
+            <div class="col-sm-12 no-padding-right">
             <div class="form-group">
                 <label>Giải thích</label>
                 <div class="input-group">
-                    <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="5"></textarea>
+                    <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="3"></textarea>
                 </div>
             </div>
         </div>
@@ -162,7 +160,7 @@
             <div class="form-group">
                 <label>Hình ảnh</label>
                 <div class="input-group">
-                    <input type="file" name="" class="" size="5" value="">
+                    <input type="file" class="input-image" name=""  value="">
                 </div>
             </div>
         </div>
@@ -170,7 +168,7 @@
             <div class="form-group">
                 <label>Âm thanh</label>
                 <div class="input-group">
-                    <input type="file" name="" class="" placeholder="ID của từ vựng">
+                    <input type="file" name="" class="input-audio" placeholder="ID của từ vựng">
                 </div>
             </div>
         </div>

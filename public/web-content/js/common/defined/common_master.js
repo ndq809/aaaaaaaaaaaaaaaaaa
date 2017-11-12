@@ -12,6 +12,18 @@ function initCommonMaster() {
     setLayout();
     menuController();
     $('.table-fixed-width table').css('min-width',$('.table-fixed-width').attr('min-width'));
+    $(".input-image").fileinput({
+        browseIcon : "<i class=\"glyphicon glyphicon-picture\"></i> ",
+        browseLabel : "Duyệt ảnh",
+        allowedFileTypes:['image'],
+        showFileFooterCaption:false,
+    });
+    $(".input-audio").fileinput({
+        browseIcon : "<i class=\"glyphicon glyphicon-headphones\"></i> ",
+        browseLabel : "Duyệt audio",
+        allowedFileTypes:['audio'],
+        showFileFooterCaption:true,
+    });
 }
 
 function initEvent() {
