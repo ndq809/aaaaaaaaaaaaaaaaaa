@@ -21,6 +21,10 @@
   transition: right 0.3s linear;
 }
 
+.gw-nav > li > a>i{
+  width: 12px;
+}
+
 .gw-sidebar .nano-pane {
   background: rgba(255, 255, 255, 0);
   font-size: 15px;
@@ -259,7 +263,7 @@ z-index:3
   display: block;
   position: relative;
   color: #616161;
-  padding: 7px 0 9px 43px;
+  padding: 7px 0 9px 51px;
   margin: 0;
   border-top: 1px dotted #e4e4e4;
   font-size: 14px;

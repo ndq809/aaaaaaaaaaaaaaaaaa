@@ -1,17 +1,21 @@
 @extends('layout_master')
 @section('title','Danh Sách Từ Vựng')
+@section('asset_header')
+    {!!WebFunctions::public_url('web-content/js/screen_master/v001.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/v001.css')!!}
+@stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-add','btn-update-dis','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis'))}}
 @endsection
 @section('content')
 <div class="panel main-panel col-xs-12">
 	<div class="panel-header">
-		<h5 class="panel-title">Điều Kiện Lọc Danh Sách</h5>
+		<h5 class="panel-title">Lọc Danh Sách</h5>
 	</div>
     <div class="panel-content no-padding-left">
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
-    	        <label>Danh mục từ vựng</label>
+    	        <label>Danh Mục Từ Vựng</label>
     	        <div class="input-group">
     	            <select class="form-control input-sm">
     	                <option>this is select box</option>
@@ -21,7 +25,7 @@
     	</div>
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
-    	        <label>Nhóm từ vựng</label>
+    	        <label>Nhóm Từ Vựng</label>
     	        <div class="input-group">
     	            <select class="form-control input-sm">
     	                <option>this is select box</option>
@@ -31,7 +35,7 @@
     	</div>
     	<div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Từ khóa</label>
+                <label>Từ Khóa</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm" placeholder="Từ khóa của từ vựng">
                 </div>
@@ -85,7 +89,7 @@
         </ul>
 	</div>
 	<div class="panel-bottom">
-		<i class="fa fa-spinner fa-spin" style="font-size:24px;text-align: center;width: 100%;display: none;"></i>
+		<i class="fa fa-spinner fa-spin"></i>
 	</div>
 </div>
 <div class="panel main-panel col-xs-12 show-on-click" click-btn='btn-update'>
@@ -103,7 +107,7 @@
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Tên từ vựng</label>
+                <label>Tên Từ Vựng</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
                 </div>
@@ -111,7 +115,7 @@
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Danh mục từ vựng</label>
+                <label>Danh Mục Của Từ Vựng</label>
                 <div class="input-group">
                     <select class="form-control input-sm">
                         <option>this is select box</option>
@@ -121,7 +125,7 @@
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Nhóm từ vựng</label>
+                <label>Nhóm Của Từ Vựng</label>
                 <div class="input-group">
                     <select class="form-control input-sm">
                         <option>this is select box</option>
@@ -132,7 +136,7 @@
         <div class="col-xs-12"></div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Phiên âm</label>
+                <label>Phiên Âm</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm" placeholder="Phiên âm từ vựng">
                 </div>
@@ -150,7 +154,7 @@
         <div class="col-xs-12"></div>
             <div class="col-sm-12 no-padding-right">
             <div class="form-group">
-                <label>Giải thích</label>
+                <label>Giải Thích</label>
                 <div class="input-group">
                     <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="3"></textarea>
                 </div>
@@ -158,7 +162,7 @@
         </div>
         <div class="col-sm-6 no-padding-right">
             <div class="form-group">
-                <label>Hình ảnh</label>
+                <label>Hình Ảnh</label>
                 <div class="input-group">
                     <input type="file" class="input-image" name=""  value="">
                 </div>
@@ -166,7 +170,7 @@
         </div>
         <div class="col-sm-6 no-padding-right">
             <div class="form-group">
-                <label>Âm thanh</label>
+                <label>Âm Thanh</label>
                 <div class="input-group">
                     <input type="file" name="" class="input-audio" placeholder="ID của từ vựng">
                 </div>
@@ -174,7 +178,7 @@
         </div>
     </div>
     <div class="panel-bottom">
-        <i class="fa fa-spinner fa-spin" style="font-size:24px;text-align: center;width: 100%;display: none;"></i>
+        <i class="fa fa-spinner fa-spin"></i>
     </div>
 </div>
 @stop

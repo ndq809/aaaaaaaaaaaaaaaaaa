@@ -6,13 +6,17 @@
             <a class="btn left-menu-btn"><i class="fa fa-reorder"></i></a>
             <a> <span class="gw-menu-text">MENU QUẢN TRỊ</span> </a> 
         </li>
+        <li > <a><i class="fa fa-home"></i> <span class="gw-menu-text">Quản Lý Chung</span></a>
+          <ul class="gw-submenu">
+            <li> <a href="/master/v005">Lịch sử thao tác</a> </li>
+          </ul>
+        </li>
         <li > <a ><i class="fa fa-book"></i> <span class="gw-menu-text">Quản Lý Từ Vựng</span></a>
           <ul class="gw-submenu">
-            <li> <a href="/master/v001">Danh sách từ vựng</a> </li>
             <li> <a href="/master/v002">Quản lý danh mục</a> </li>
-            <li> <a >Quản lý nhóm</a> </li>
-            <li> <a >Quản lý từ vựng</a> </li>
-            <li> <a >Lịch sử thao tác</a> </li>
+            <li> <a href="/master/v003">Quản lý nhóm</a> </li>
+            <li> <a href="/master/v001">Quản lý từ vựng</a> </li>
+            <li> <a href="/master/v004">Thêm mới từ vựng</a> </li>
           </ul>
         </li>
         <li > <a ><i class="fa fa-bookmark"></i><span class="gw-menu-text"> Quản Lý Ngữ Pháp</span></a>

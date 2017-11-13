@@ -11,12 +11,19 @@ function initCommonMaster() {
     initEvent();
     setLayout();
     menuController();
-    $('.table-fixed-width table').css('min-width',$('.table-fixed-width').attr('min-width'));
+    $("#dtBox").DateTimePicker();
+    $(".datetimepicker").on("click", function() {
+        $("#dtBox").DateTimePicker();
+    })
+    $('.table-fixed-width table').each(function(){
+        $(this).css('min-width',$(this).parent().attr('min-width'))
+    });
     $(".input-image").fileinput({
         browseIcon : "<i class=\"glyphicon glyphicon-picture\"></i> ",
         browseLabel : "Duyệt ảnh",
         allowedFileTypes:['image'],
         showFileFooterCaption:false,
+        previewClass: 'no-footer-caption',
     });
     $(".input-audio").fileinput({
         browseIcon : "<i class=\"glyphicon glyphicon-headphones\"></i> ",
@@ -24,6 +31,8 @@ function initCommonMaster() {
         allowedFileTypes:['audio'],
         showFileFooterCaption:true,
     });
+
+    $('.fa-spin').hide();
 }
 
 function initEvent() {
@@ -62,6 +71,9 @@ function initEvent() {
     $(document).on('change','.super-checkbox',function(){
         if(this.checked){
             $('.sub-checkbox').prop('checked', true);
+            if($(this).parents('table').hasClass('update-table')){
+                $(this).parents('table').find('tbody tr').addClass('active-update');
+            }
         }else{
             $('.sub-checkbox').prop('checked', false);
         }
@@ -73,7 +85,7 @@ function initEvent() {
             $('.super-checkbox').prop('checked', true);
         }
     })
-    $(document).on('click','#btn-list,#btn-update',function(){
+    $(document).on('click','#btn-list,#btn-update,#btn-search',function(){
         showContent($(this));
     })
 
@@ -99,9 +111,16 @@ function initEvent() {
         }
     })
 
+    $(document).on('click','.delete-tr-row',function(){
+        if(confirm("Delete selected row?")){
+            $(this).closest('tr').remove();
+        }
+    })
+
     $(document).on('click','#btn-new-row',function(){
         $('.new-row-table tbody').append("<tr></tr>");
         $('.new-row-table tbody tr:last-child').append($('.new-row-table tbody tr:first').html());
+        reIndex();
     })
 
     $(document).on('click','#btn-update',function(){
@@ -131,6 +150,10 @@ function initEvent() {
         $('.focus-table tbody tr.active-row td').each(function(i){
             updateInput.eq(i).val($(this).text());
         })
+    })
+
+    $(document).on('change','.update-table tbody tr td input,.update-table tbody tr td select,.update-table tbody tr td textarea',function(){
+        $(this).parents('tr').addClass('active-update');
     })
 
 }
@@ -165,5 +188,15 @@ function showContent(click_btn){
         $('.fa-spin').hide();
         $('.btn-disable').removeClass('btn-disable');
     }, 500);
+}
+
+function reIndex()
+{
+    var tab=0;
+    $(document).find('.new-row-table > tbody > tr:not(:first)').each(function(i) {
+        var index = ('00' + (i+1)).slice(-4);
+        $(this).find('td:nth-child(2)').html('').html(index);
+        
+    });
 }
 

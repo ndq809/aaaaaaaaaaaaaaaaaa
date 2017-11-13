@@ -14,6 +14,9 @@ Route::group(
 	function() {
 		Route::get('index','Example1Controller@getIndex');
 		Route::get('v001','v001Controller@getIndex');	
-		Route::get('v002','v002Controller@getIndex');		
+		Route::get('v002','v002Controller@getIndex');
+		Route::get('v003','v003Controller@getIndex');
+		Route::get('v004','v004Controller@getIndex');
+		Route::get('v005','v005Controller@getIndex');		
 	}
 );

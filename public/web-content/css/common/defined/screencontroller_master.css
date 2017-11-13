@@ -45,7 +45,14 @@
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 479px) {
+    audio{
+        width: 230px;
+    }
+    .file-preview-frame{
+        width: 230px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 319px) {
