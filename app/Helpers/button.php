@@ -23,7 +23,11 @@ class Button
         'btn-cancel' => array('id' => 'btn-cancel', 'class' => '', 'icon' => 'fa fa-minus-circle', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-cancel-dis' => array('id' => 'btn-cancel', 'class' => 'btn-disable', 'icon' => 'fa fa-minus-circle', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-new-row' => array('id' => 'btn-new-row', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Hàng', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-new-row-dis' => array('id' => 'btn-new-row', 'class' => 'btn-disable', 'icon' => 'fa fa-plus', 'Thêm Hàng' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-new-row-dis' => array('id' => 'btn-new-row', 'class' => 'btn-disable', 'icon' => 'fa fa-plus', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-manager-page' => array('id' => 'btn-manager', 'class' => '', 'icon' => 'fa fa-share', 'label' => 'Quản Lý', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-manager-page-dis' => array('id' => 'btn-manager', 'class' => 'btn-disable', 'icon' => 'fa fa-share', 'label' => 'Quản Lý', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-add-page' => array('id' => 'btn-add-page', 'class' => '', 'icon' => 'fa fa-share', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-add-page-dis' => array('id' => 'btn-add-page', 'class' => 'btn-disable', 'icon' => 'fa fa-share', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

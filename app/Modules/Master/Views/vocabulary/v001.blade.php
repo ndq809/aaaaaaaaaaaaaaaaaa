@@ -5,9 +5,10 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/v001.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-list','btn-add','btn-update-dis','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis'))}}
+{{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
 @endsection
 @section('content')
+<div class="link-div" btn-add-page-link='/master/v004'></div>
 <div class="panel main-panel col-xs-12">
 	<div class="panel-header">
 		<h5 class="panel-title">Lọc Danh Sách</h5>
@@ -50,7 +51,7 @@
 	</div>
 	<div class="panel-content padding-10-l show-on-click" click-btn='btn-list'>
 		<div class="table-fixed-width no-padding-left" min-width='1160px'>
-            <table class="table table-hover table-bordered table-checkbox">
+            <table class="table table-hover table-bordered table-focus">
                 <thead>
                     <tr>
                         <th><input type="checkbox" name="" class="super-checkbox"></th>
@@ -66,18 +67,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                	@for($i=1;$i<=20;$i++)
+                	@for($i=1;$i<=15;$i++)
                     <tr>
                         <td><input type="checkbox" name="" class="sub-checkbox"></td>
-                        <td>{{$i}}</td>
-                        <td>Abide by</td>
-                        <td>600 từ vựng toleic</td>
-                        <td>business</td>
-                        <td>/ə'baid/</td>
-                        <td>tôn trọng, tuân theo, giữ (lời)</td>
-                        <td class="td-1-line">to accept and act according to a law, an agreement</td>
-                        <td>Abide_by.jpg</td>
-                        <td>Abide_by.mp3</td>
+                        <td class="update-item">{{$i}}</td>
+                        <td class="update-item">Abide by</td>
+                        <td class="update-item">600 từ vựng toleic</td>
+                        <td class="update-item">business</td>
+                        <td class="update-item">/ə'baid/</td>
+                        <td class="update-item">tôn trọng, tuân theo, giữ (lời)</td>
+                        <td class="td-1-line update-item">to accept and act according to a law, an agreement</td>
+                        <td class="update-item">Abide_by.jpg</td>
+                        <td class="update-item">Abide_by.mp3</td>
                     </tr>
                     @endfor
                 </tbody>
@@ -92,7 +93,7 @@
 		<i class="fa fa-spinner fa-spin"></i>
 	</div>
 </div>
-<div class="panel main-panel col-xs-12 show-on-click" click-btn='btn-update'>
+<div class="panel main-panel col-xs-12 show-on-click" click-btn='btn-list'>
     <div class="panel-header padding-10-l">
         <h5 class="panel-title">Cập Nhật Từ Vựng</h5>
     </div>

@@ -25,6 +25,7 @@
         @yield('asset_header')
     </head>
     <body>
+        <div id="dtBox"></div>
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <nav class="navbar navbar-default ">

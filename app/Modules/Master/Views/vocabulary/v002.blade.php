@@ -5,66 +5,35 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/v002.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-save','btn-delete','btn-cancel','btn-print'))}}
+{{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
 @endsection
 @section('content')
+<div class="link-div" btn-add-page-link='/master/v005'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
-        <h5 class="panel-title">Thêm Mới Danh Mục</h5>
+        <h5 class="panel-title">Lọc Danh Sách</h5>
     </div>
     <div class="panel-content no-padding-left">
-        <div class="col-lg-5 col-md-6 col-sm-8 no-padding-right">
+        <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
             <div class="form-group">
-                <label>Tên Danh Mục Mới</label>
+                <label>Từ Khóa</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên danh mục cần tạo">
-                    <div class="input-group-btn">
-                        <button class="btn btn-sm btn-danger" id="btn-new-row"><span class="fa fa-plus"></span> Thêm Danh Mục</button>
-                    </div>
+                    <input type="text" name="" class="form-control input-sm" placeholder="Nhập từ khóa">
                 </div>
             </div>
         </div>
-        <div class="col-xs-12"></div>
-        <div class="col-lg-5 col-md-6 col-sm-8 col-xs-12 no-padding-right">
-            <div class="table-fixed-width no-padding-left" min-width='400px'>
-            <table class="table table-hover table-bordered new-row-table">
-                <thead>
-                    <tr>
-                        <th width="50px">Xóa</th>
-                        <th width="50px">ID</th>
-                        <th>Tên Danh Mục</th>
-                        <th width="123px"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="hidden">
-                        <td><button class="btn btn-sm btn-warning delete-tr-row"><i class="fa fa-remove"></i></button></td>
-                        <td></td>
-                        <td class="text-left">600 từ vựng toleic</td>
-                        <td><a href="/master/v003" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
-                    </tr>
-                    @for($i=1;$i<=2;$i++)
-                    <tr>
-                        <td><button class="btn btn-sm btn-warning delete-tr-row"><i class="fa fa-remove"></i></button></td>
-                        <td>00{{$i}}</td>
-                        <td class="text-left">600 từ vựng toleic</td>
-                        <td><a href="/master/v003" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
-                    </tr>
-                    @endfor
-                </tbody>
-            </table>
-        </div>
-        </div>
     </div>
-    <div class="panel-bottom"></div>
+    <div class="panel-bottom">
+        
+    </div>
 </div>
-<div class="panel main-panel col-xs-12">
+<div class="panel main-panel col-xs-12 ">
 	<div class="panel-header">
-		<h5 class="panel-title">Quản Lý Danh Mục</h5>
+		<h5 class="panel-title">Danh Sách Danh Mục</h5>
 	</div>
-    <div class="panel-content padding-10-l">
+    <div class="panel-content padding-10-l show-on-click" click-btn='btn-list'>
 	   <div class="table-fixed-width no-padding-left" min-width='700px'>
-            <table class="table table-hover table-bordered update-table">
+            <table class="table table-hover table-bordered table-update table-focus">
                 <thead>
                     <tr>
                         <th width="50px"><input type="checkbox" name="" class="super-checkbox"></th>
@@ -76,14 +45,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for($i=1;$i<=20;$i++)
+                    @for($i=1;$i<=15;$i++)
                     <tr>
                         <td><input type="checkbox" name="" class="sub-checkbox"></td>
                         <td>{{$i}}</td>
-                        <td class="text-left">DM00{{$i}}</td>
-                        <td class="text-left"><input type="text" name="" class="form-control input-sm" value="600 từ vựng toleic"></td>
+                        <td class="text-left update-item">DM00{{$i}}</td>
+                        <td class="text-left update-item">600 từ vựng toleic</td>
                         <td>23</td>
-                        <td><a href="/master/v003" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
+                        <td><a href="/master/v006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
                     </tr>
                     @endfor
                 </tbody>
@@ -100,6 +69,37 @@
             <li><a href="#">Cuối</a></li>
         </ul>
     </div>
-	<div class="panel-bottom"></div>
+	<div class="panel-bottom">
+     <i class="fa fa-spinner fa-spin"></i>   
+    </div>
+</div>
+<div class="panel main-panel col-xs-12 show-on-click" click-btn="btn-list">
+    <div class="panel-header padding-10-l">
+        <h5 class="panel-title">Cập Nhật Danh Mục</h5>
+    </div>
+    <div class="panel-content no-padding-left update-content">
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Mã Danh Mục</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" value="DM001" readonly="">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Tên Danh Mục</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Cập nhật tên danh mục" value="600 từ vựng toleic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-xs-12 panel-bottom">
+        <ul class="pager mobile-pager">
+            <li><a href="#">Hàng Trước</a></li>
+            <li><a href="#">Hàng Tiếp</a></li>
+        </ul>
+    </div>
 </div>
 @stop

@@ -49,8 +49,9 @@ a{
 }
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    padding: 2px 4px;
+    padding: 4px 4px;
 }
+
 
 .width-50{
     width: 50%!important;
@@ -237,8 +238,9 @@ input[type=checkbox], input[type=radio]{
 }
 
 table input[type=checkbox], input[type=radio]{
-    margin: 0px;
+    margin-bottom: 4px;
 }
+
 
 table{
     margin-bottom:0px!important;
@@ -359,6 +361,10 @@ body {
     border-left: 1px solid #ccc;
 }
 
+.mobile-pager{
+    display: none;
+}
+
 .example-header{
     margin-left: 5px;
     margin-bottom: 5px;
@@ -407,10 +413,6 @@ body {
 
 .navbar-brand.dropdown-toggle:hover{
     color: #d9534f;
-}
-
-#menu{
-    padding-right: 20px;
 }
 
 .navbar-nav>li>a {
@@ -563,7 +565,7 @@ body {
 }
 
 .active-row{
-    background: #f2f2f2;
+    background: #f2f2f2!important;
 }
 
 .active-update{

@@ -37,6 +37,9 @@
     .change-content{
         padding: 0px 52px 0px 0px;
     }
+    .mobile-pager{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -53,6 +56,7 @@
         width: 230px;
         height: auto;
     }
+
 }
 
 @media screen and (max-width: 319px) {

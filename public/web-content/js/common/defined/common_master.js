@@ -33,6 +33,11 @@ function initCommonMaster() {
     });
 
     $('.fa-spin').hide();
+
+    $('.link-div').each(function(){
+        $('#btn-manager a').attr('href',$(this).attr('btn-manager-page-link'));
+        $('#btn-add-page a').attr('href',$(this).attr('btn-add-page-link'));
+    })
 }
 
 function initEvent() {
@@ -71,7 +76,7 @@ function initEvent() {
     $(document).on('change','.super-checkbox',function(){
         if(this.checked){
             $('.sub-checkbox').prop('checked', true);
-            if($(this).parents('table').hasClass('update-table')){
+            if($(this).parents('table').hasClass('table-update')){
                 $(this).parents('table').find('tbody tr').addClass('active-update');
             }
         }else{
@@ -95,7 +100,7 @@ function initEvent() {
 
     $(document).on('click','.table-checkbox tr td',function(){
         if($(this).find('input[type=checkbox]').length==0){
-            checkbox=$(this).parent().find('input[type=checkbox]');
+            checkbox=$(this).parent().find('input[type=checkbox]:first');
             if(checkbox.is(':checked')){
                 checkbox.prop('checked', false);
             }else{
@@ -117,43 +122,29 @@ function initEvent() {
         }
     })
 
-    $(document).on('click','#btn-new-row',function(){
-        $('.new-row-table tbody').append("<tr></tr>");
-        $('.new-row-table tbody tr:last-child').append($('.new-row-table tbody tr:first').html());
+    $(document).on('click','#btn-new-row,#btn-add',function(){
+        $('.table-new-row tbody').append("<tr></tr>");
+        $('.table-new-row tbody tr:last-child').append($('.table-new-row tbody tr:first').html());
         reIndex();
     })
 
-    $(document).on('click','#btn-update',function(){
-        if(confirm("update all selected item?")){
-            $('.sub-checkbox:not(:checked)').closest('tr').remove();
-            $('.sub-checkbox').closest('td').remove();
-            $('.super-checkbox').closest('th').remove();
-            $('.table-checkbox').addClass('focus-table');
-            $('.focus-table tbody tr:first').addClass('active-row');
-            updateInput=$('.update-content').find('input,textarea,select');
-            $('.focus-table tbody tr:first td').each(function(i){
-                updateInput.eq(i).val($(this).text());
-            })
-        }
-    })
-
-    $(document).on('click','.focus-table tbody tr',function(){
+    $(document).on('click','.table-focus tbody tr',function(){
         updateInput=$('.update-content').find('input,textarea,select');
         if($(this).hasClass('active-row')){
             return;
         }
-        $('.focus-table tbody tr.active-row td').each(function(i){
+        $('.table-focus tbody tr.active-row .update-item').each(function(i){
             $(this).text(updateInput.eq(i).val());
         })
-        $('.focus-table tbody tr.active-row').removeClass('active-row');
+        $('.table-focus tbody tr.active-row').removeClass('active-row');
         $(this).addClass('active-row');
-        $('.focus-table tbody tr.active-row td').each(function(i){
+        $('.table-focus tbody tr.active-row .update-item').each(function(i){
             updateInput.eq(i).val($(this).text());
         })
     })
 
-    $(document).on('change','.update-table tbody tr td input,.update-table tbody tr td select,.update-table tbody tr td textarea',function(){
-        $(this).parents('tr').addClass('active-update');
+    $(document).on('change','.update-content input,.update-content select,.update-content textarea',function(){
+        $('.table-focus').find('.active-row').addClass('active-update');
     })
 
 }
@@ -171,7 +162,7 @@ function menuController() {
         $('#menu>li').css('width', 'auto');
     }
 
-    if ($(window).width() < 845) {
+    if ($(window).width() < 900) {
         $('.navbar-right').width('100%');
     }else{
         $('.navbar-right').width('auto');
@@ -188,12 +179,17 @@ function showContent(click_btn){
         $('.fa-spin').hide();
         $('.btn-disable').removeClass('btn-disable');
     }, 500);
+    $('.table-focus tbody tr:first').addClass('active-row');
+    updateInput=$('.update-content').find('input,textarea,select');
+    $('.table-focus tbody tr:first .update-item').each(function(i){
+        updateInput.eq(i).val($(this).text());
+    })
 }
 
 function reIndex()
 {
     var tab=0;
-    $(document).find('.new-row-table > tbody > tr:not(:first)').each(function(i) {
+    $(document).find('.table-new-row > tbody > tr:not(:first)').each(function(i) {
         var index = ('00' + (i+1)).slice(-4);
         $(this).find('td:nth-child(2)').html('').html(index);
         

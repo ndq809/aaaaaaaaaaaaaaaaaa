@@ -1,10 +1,10 @@
 <?php 
-namespace App\Modules\Master\Controllers;
+namespace App\Modules\Master\Controllers\Vocabulary;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class v004Controller extends Controller
+class v005Controller extends Controller
 {
 	/**
      * Show the application index.
@@ -14,7 +14,7 @@ class v004Controller extends Controller
      */
 	public function getIndex()
 	{
-		return view('Master::vocabulary.v004');
+		return view('Master::vocabulary.v005');
 	}
 
 

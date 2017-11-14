@@ -5,9 +5,10 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/v004.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-new-row','btn-delete','btn-print'))}}
+{{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}
 @endsection
 @section('content')
+<div class="link-div" btn-manager-page-link='/master/v001'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
         <h5 class="panel-title">Thêm Mới Từ Vựng</h5>
@@ -87,10 +88,10 @@
         <div class="col-xs-12"></div>
         <div class="col-xs-12 no-padding-right">
             <div class="table-fixed-width no-padding-left" min-width='1160px'>
-            <table class="table table-hover table-bordered table-checkbox new-row-table">
+            <table class="table table-hover table-bordered table-checkbox table-new-row">
                 <thead>
                     <tr>
-                        <th><input type="checkbox" name="" class="super-checkbox"></th>
+                        <th width="50px"><input type="checkbox" name="" class="super-checkbox"></th>
                         <th>ID</th>
                         <th>Tên</th>
                         <th>Danh Mục</th>
