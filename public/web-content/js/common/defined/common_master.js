@@ -76,15 +76,12 @@ function initEvent() {
     $(document).on('change','.super-checkbox',function(){
         if(this.checked){
             $('.sub-checkbox').prop('checked', true);
-            if($(this).parents('table').hasClass('table-update')){
-                $(this).parents('table').find('tbody tr').addClass('active-update');
-            }
         }else{
             $('.sub-checkbox').prop('checked', false);
         }
     })
     $(document).on('change','.sub-checkbox',function(){
-        if($("input.sub-checkbox:not(:checked)").length!=0){
+        if($("input.sub-checkbox:visible:not(:checked)").length!=0){
             $('.super-checkbox').prop('checked', false);
         }else{
             $('.super-checkbox').prop('checked', true);
@@ -100,14 +97,14 @@ function initEvent() {
 
     $(document).on('click','.table-checkbox tr td',function(){
         if($(this).find('input[type=checkbox]').length==0){
-            checkbox=$(this).parent().find('input[type=checkbox]:first');
+            checkbox=$(this).parent().find('input.sub-checkbox');
             if(checkbox.is(':checked')){
                 checkbox.prop('checked', false);
             }else{
                 checkbox.prop('checked', true);
             }
             checkbox.trigger('change');
-            }
+        }
     })
 
     $(document).on('click','#btn-delete',function(){
@@ -147,6 +144,36 @@ function initEvent() {
         $('.table-focus').find('.active-row').addClass('active-update');
     })
 
+    $(document).on('click', '.btn-popup', function(e) {
+        e.preventDefault();
+        var popupId=$(this).attr('popup-id');
+        $('#'+popupId).modal('show')
+    })
+
+    $(document).on('click','#btn-role',function(){
+        text_role='';
+        checked_role=$(this).parents('.modal-content').find('input[type=checkbox]:checked');
+        checked_role.each(function(){
+            text_role+=$(this).val();
+        })
+        $('.table-focus tbody tr.active-row .update-role').text(text_role);
+        $('#'+$(this).parents('.modal').attr('id')).modal('hide')
+        
+    })
+
+    $(document).on('keydown',function(e){
+        e.preventDefault();
+        switch(e.which){
+            case 38 :
+                prevRow($('.table-focus tbody'));
+                break;
+            case 40 :
+                nextRow($('.table-focus tbody'));
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 function setLayout(){
@@ -194,5 +221,41 @@ function reIndex()
         $(this).find('td:nth-child(2)').html('').html(index);
         
     });
+}
+
+function nextRow(tr_list){
+    current_row=tr_list.find('.active-row');
+    $('.table-focus tbody tr.active-row .update-item').each(function(i){
+            $(this).text(updateInput.eq(i).val());
+        })
+    if(!tr_list.find('tr:last-child').hasClass('active-row')){
+        current_row.next().addClass('active-row');
+        current_row.removeClass('active-row'); 
+    }else{
+        tr_list.find('tr:first').addClass('active-row');
+        current_row.removeClass('active-row');
+    }
+
+    $('.table-focus tbody tr.active-row .update-item').each(function(i){
+        updateInput.eq(i).val($(this).text());
+    })
+    
+}
+
+function prevRow(tr_list){
+    current_row=tr_list.find('.active-row');
+    $('.table-focus tbody tr.active-row .update-item').each(function(i){
+            $(this).text(updateInput.eq(i).val());
+        })
+    if(!tr_list.find('tr:first').hasClass('active-row')){
+        current_row.prev().addClass('active-row');
+        current_row.removeClass('active-row'); 
+    }else{
+        tr_list.find('tr:last-child').addClass('active-row');
+        current_row.removeClass('active-row');
+    }
+    $('.table-focus tbody tr.active-row .update-item').each(function(i){
+        updateInput.eq(i).val($(this).text());
+    })
 }
 

@@ -52,9 +52,20 @@ function initListener(){
 	$(window).resize(function(){
 		slidePositionController();
 	});
+
+	$(document).on('keydown',function(e){
+        switch(e.which){
+            case 37 :
+                previousSocial();
+                break;
+            case 39 :
+                nextSocial();
+                break;
+            default:
+                break;
+        }
+    })
 }
-
-
 
 function nextSocial(){
 	var currentItemId=setNextItem();

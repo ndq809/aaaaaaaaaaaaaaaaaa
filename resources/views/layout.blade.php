@@ -23,8 +23,8 @@
         @yield('asset_header')
     </head>
     <body>
+        @include('popup')
         <div class="col-xs-12 web-panel header-content">
-            @include('popup')
             <div class="row top-header">
                 <div class="logo-box">
                     <div>
@@ -45,11 +45,11 @@
                         <div class="navbar-header hover-item">
                             @if(isset($user))
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
-                                <img src="/web-content/images/icon/title-icon3.png" height="30px" style="display: inline-block;">
+                                <img src="/web-content/images/avarta/avarta.jpg" height="30px" style="display: inline-block;border: 2px solid #eee;">
                                 <span>{{$user}}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/index">Trang Quản Trị</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/g002">Trang Quản Trị</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>

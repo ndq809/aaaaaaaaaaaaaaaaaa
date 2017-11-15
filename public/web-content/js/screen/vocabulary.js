@@ -48,6 +48,19 @@ function initListener(){
 	$(window).resize(function(){
 		slidePositionController();
 	});
+
+	$(document).on('keydown',function(e){
+        switch(e.which){
+            case 37 :
+                previousVocalbulary();
+                break;
+            case 39 :
+                nextVocalbulary();
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 function installSlide(){

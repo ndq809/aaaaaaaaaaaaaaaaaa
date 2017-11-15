@@ -24,7 +24,9 @@
                 <label>Thao Tác</label>
                 <div class="input-group">
                     <select class="form-control input-sm">
-                        <option>this is select box</option>
+                        <option>Cập nhật</option>
+                        <option>Thêm mới</option>
+                        <option>Xóa</option>
                     </select>
                 </div>
             </div>
@@ -46,7 +48,9 @@
                 <label>Đối Tượng Thao Tác</label>
                 <div class="input-group">
                     <select class="form-control input-sm">
-                        <option>this is select box</option>
+                        <option>Từ vựng</option>
+                        <option>Ngữ pháp</option>
+                        <option>Thành Viên</option>
                     </select>
                 </div>
             </div>

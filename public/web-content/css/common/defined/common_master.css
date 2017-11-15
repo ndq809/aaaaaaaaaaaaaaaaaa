@@ -203,6 +203,10 @@ textarea {
     color: #c0c0c0!important;
 }
 
+.update-role:hover{
+    border-color: inherit; 
+}
+
 .input-group-text {
     padding: 6px 12px;
     font-size: 14px;
@@ -236,9 +240,8 @@ textarea {
 input[type=checkbox], input[type=radio]{
     vertical-align: middle;
 }
-
-table input[type=checkbox], input[type=radio]{
-    margin-bottom: 4px;
+input[type=checkbox], input[type=radio]{
+        margin: 1px 0 0;
 }
 
 

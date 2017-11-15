@@ -39,14 +39,14 @@ $.DateTimePicker = $.DateTimePicker || {
 		mode: "date",
 		defaultDate: null,
 	
-		dateSeparator: "-",
+		dateSeparator: "/",
 		timeSeparator: ":",
 		timeMeridiemSeparator: " ",
 		dateTimeSeparator: " ",
 		monthYearSeparator: " ",
 	
-		dateTimeFormat: "dd-MM-yyyy HH:mm",
-		dateFormat: "dd-MM-yyyy",
+		dateTimeFormat: "dd/MM/yyyy HH:mm",
+		dateFormat: "dd/MM/yyyy",
 		timeFormat: "HH:mm",
 	
 		maxDate: null,

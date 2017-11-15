@@ -27,6 +27,7 @@ Route::group(
 	['namespace' => $namespace1,'prefix'=>'master','middleware'=>['web']],
 	function() {
 		Route::get('g001','g001Controller@getIndex');	
-		Route::get('g002','g002Controller@getIndex');		
+		Route::get('g002','g002Controller@getIndex');
+		Route::get('g003','g003Controller@getIndex');		
 	}
 );

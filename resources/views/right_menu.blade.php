@@ -8,7 +8,7 @@
         </li>
         <li > <a><i class="fa fa-home"></i> <span class="gw-menu-text">Quản Lý Chung</span></a>
           <ul class="gw-submenu">
-            <li> <a href="/master/g001">Quản trị viên</a> </li>
+            <li> <a href="/master/g002">Quản trị viên</a> </li>
             <li> <a href="/master/g001">Thêm quản trị viên</a> </li>
             <li> <a href="/master/g001">Lịch sử thao tác</a> </li>
           </ul>

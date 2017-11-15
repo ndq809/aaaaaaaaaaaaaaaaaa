@@ -7,40 +7,56 @@
                     ×
                 </button>
                 <div class="modal-title login-modal">
-                    <span>ĐĂNG NHẬP E+</span>
-                </div>
-                <div class="login-with">
-                    <i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i>
-                    <i class="fa fa-twitter" title='Đăng nhập với twitter'></i> 
-                    <i class="fa fa-google-plus" title='Đăng nhập với google +'></i>  
+                    <span>CÀI ĐẶT QUYỀN</span>
                 </div>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label>
-                        Tên Đăng Nhập
-                    </label>
-                    <div class="input-group">
-                        <input class="form-control input-sm" name="" type="type">
-                        </input>
+                <div class="width-50 inline-block float-left">
+                    <div class="form-group">
+                        <label>
+                            Trang Người Dùng 
+                        </label>
+                        <div class="input-group ">
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="1" checked="">Khóa tài khoản (1)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="2">Xóa bình luận (2)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="3">Chỉnh sửa (3)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="4">Ghim bài viết (4)</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label>
-                        Mật Khẩu
-                    </label>
-                    <div class="input-group">
-                        <input class="form-control input-sm" name="" type="password">
-                        </input>
+                <div class="width-50 inline-block">
+                    <div class="form-group">
+                        <label>
+                            Trang Quản Trị
+                        </label>
+                        <div class="input-group ">
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="5">Thêm mới (5)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="6">Cập nhật (6)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="7" checked="">Xóa (7)</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" value="8" checked="">In Dữ Liệu (8)</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-danger btn-sm float-left" href="/register">
-                    Tạo Tài Khoản
-                </a>
-                <button class="btn btn-primary btn-sm" type="button">
-                    Đăng Nhập
+                <button class="btn btn-primary btn-sm" id="btn-role" type="button">
+                    Lưu lại
                 </button>
                 <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
                     Hủy
@@ -49,7 +65,7 @@
         </div>
     </div>
 </div>
-<div id="popup-box1" class="modal fade" role="dialog" tabindex='-1'>
+<div id="popup-box1" class="modal fade" role="dialog">
     <div class="modal-dialog">
     <!-- Modal content-->
         <div class="modal-content">
@@ -83,7 +99,7 @@
         </div>
     </div>
 </div>
-<div id="popup-box2" class="modal fade" role="dialog" tabindex='-1'>
+<div id="popup-box2" class="modal fade" role="dialog">
     <div class="modal-dialog">
          <!-- Modal content-->
         <div class="modal-content">
@@ -141,7 +157,7 @@
         </div>
     </div>
 </div>
-<div id="popup-box3" class="modal fade" role="dialog" tabindex='-1'>
+<div id="popup-box3" class="modal fade" role="dialog">
     <div class="modal-dialog">
     <!-- Modal content-->
         <div class="modal-content">

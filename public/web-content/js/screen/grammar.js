@@ -38,6 +38,18 @@ function initListener(){
 	$(window).resize(function(){
 		slidePositionController();
 	});
+	$(document).on('keydown',function(e){
+        switch(e.which){
+            case 37 :
+                previousGrammar();
+                break;
+            case 39 :
+                nextGrammar();
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 

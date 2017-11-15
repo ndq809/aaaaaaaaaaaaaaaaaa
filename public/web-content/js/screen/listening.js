@@ -61,6 +61,19 @@ function initListener(){
         $('#popup-box3 .listen_result').text("100%");
         $('#popup-box3').modal('show')
     })
+
+    $(document).on('keydown',function(e){
+        switch(e.which){
+            case 37 :
+                previousListening();
+                break;
+            case 39 :
+                nextListening();
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 function installplayer(){
