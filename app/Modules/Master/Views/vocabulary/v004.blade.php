@@ -85,9 +85,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12"></div>
-        <div class="col-xs-12 no-padding-right">
-            <div class="table-fixed-width no-padding-left" min-width='1160px'>
+    </div>
+    <div class="panel-bottom"></div>
+</div>
+<div class="panel main-panel col-xs-12">
+    <div class="panel-header">
+        <h5 class="panel-title">Danh Sách Đã Thêm</h5>
+    </div>
+    <div class="panel-content padding-10-l">
+        <div class="table-fixed-width no-padding-left" min-width='1160px'>
             <table class="table table-hover table-bordered table-checkbox table-new-row">
                 <thead>
                     <tr>
@@ -132,7 +138,6 @@
                     @endfor
                 </tbody>
             </table>
-        </div>
         </div>
     </div>
     <div class="panel-bottom"></div>

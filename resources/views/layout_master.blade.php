@@ -14,6 +14,7 @@
         {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
@@ -57,6 +58,7 @@
         <div class="col-xs-12 web-panel middle-content">
             <div class="change-content">
                 @yield('content')
+                <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button>
             </div>
             @include('right_menu')
         </div>
