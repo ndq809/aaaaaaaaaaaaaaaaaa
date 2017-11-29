@@ -24,6 +24,7 @@
 @media screen and (max-width:680px) {
      .navbar-brand:nth-child(1) {
         padding-right: 0px;
+        display: block;
     }
 }
 

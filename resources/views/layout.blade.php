@@ -107,17 +107,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="col-lg-2 pull-right search-box no-padding">
-                            <div class="input-group">
-                                <input class="form-control input-sm" placeholder="Nhập từ khóa" type="text">
-                                    <div class="input-group-btn">
-                                        <a class="btn btn-search btn-sm">
-                                            Tìm kiếm
-                                        </a>
-                                    </div>
-                                </input>
-                            </div>
-                        </div>
                     </div>
                 </nav>
             </div>

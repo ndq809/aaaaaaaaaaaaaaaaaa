@@ -58,7 +58,7 @@
         <div class="col-xs-12 web-panel middle-content">
             <div class="change-content">
                 @yield('content')
-                <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button>
+                <!-- <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button> -->
             </div>
             @include('right_menu')
         </div>

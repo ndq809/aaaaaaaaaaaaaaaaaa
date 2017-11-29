@@ -32,7 +32,13 @@
                     </select>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top">Xem bài viết / Làm mới</button>
+            <div class="form-group">
+                <label>Từ Khóa</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm">
+                </div>
+            </div>
+            <button class="btn btn-sm btn-primary full-width margin-top">Tìm kiếm bài đăng</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Bài Bạn Chưa Xem</a></li>

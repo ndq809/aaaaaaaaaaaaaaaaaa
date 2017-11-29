@@ -162,12 +162,13 @@ function initEvent() {
     })
 
     $(document).on('keydown',function(e){
-        e.preventDefault();
         switch(e.which){
             case 38 :
+                e.preventDefault();
                 prevRow($('.table-focus tbody'));
                 break;
             case 40 :
+                e.preventDefault();
                 nextRow($('.table-focus tbody'));
                 break;
             default:

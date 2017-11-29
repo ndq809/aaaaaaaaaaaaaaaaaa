@@ -32,7 +32,13 @@
                     </select>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top">Bắt đầu học</button>
+            <div class="form-group">
+                <label>Từ Khóa</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm">
+                </div>
+            </div>
+            <button class="btn btn-sm btn-primary full-width margin-top">Tìm kiếm bài học</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Từ Vựng Chưa Thuộc</a></li>
