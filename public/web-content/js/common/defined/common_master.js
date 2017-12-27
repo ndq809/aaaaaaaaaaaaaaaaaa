@@ -140,7 +140,7 @@ function initEvent() {
         })
     })
 
-    $(document).on('change','.update-content input,.update-content select,.update-content textarea',function(){
+     $(document).on('input propertychange paste change','.update-content input,.update-content textarea,.update-content select',function(){
         $('.table-focus').find('.active-row').addClass('active-update');
     })
 
