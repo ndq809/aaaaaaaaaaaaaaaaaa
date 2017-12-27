@@ -103,7 +103,11 @@ function menuController() {
     }
 }
 
-function setNextItem(item_of_table = 'tr',show_index=0) {
+function setNextItem(item_of_table,show_index) {
+	if(typeof item_of_table =='undefined')
+		item_of_table="tr";
+	if(typeof show_index =='undefined')
+		show_index=0;
     listItem = $(selectedTab + " table tbody " + item_of_table);
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
@@ -128,7 +132,11 @@ function setNextItem(item_of_table = 'tr',show_index=0) {
     return nextItem.attr("id");
 }
 
-function setPreviousItem(item_of_table = "tr",show_index=0) {
+function setPreviousItem(item_of_table,show_index) {
+	if(typeof item_of_table =='undefined')
+		item_of_table="tr";
+	if(typeof show_index =='undefined')
+		show_index=0;
     listItem = $(selectedTab + " table tbody " + item_of_table);
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
