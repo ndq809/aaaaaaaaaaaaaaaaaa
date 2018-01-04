@@ -13,8 +13,10 @@
             <div class="form-group">
                 <label>Người Thực Hiện</label>
                 <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
+                    <select class="form-control input-sm flexselect" data-placeholder="This is selectbox">
+                        <option>a</option>
+                        <option>b</option>
+                        <option>c</option>
                     </select>
                 </div>
             </div>

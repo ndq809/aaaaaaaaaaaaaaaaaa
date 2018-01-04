@@ -31,7 +31,7 @@ function initCommonMaster() {
         allowedFileTypes:['audio'],
         showFileFooterCaption:true,
     });
-
+    $("select.flexselect").flexselect();
     $('.fa-spin').hide();
 
     $('.link-div').each(function(){

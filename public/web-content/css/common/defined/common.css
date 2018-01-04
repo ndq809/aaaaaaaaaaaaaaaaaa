@@ -795,3 +795,7 @@ button .is-icon{
 #btn_prev{
     width: 80px;
 }
+
+select.input-sm{
+    padding-left: 5px;
+}

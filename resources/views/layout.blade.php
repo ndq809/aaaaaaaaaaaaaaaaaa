@@ -14,8 +14,11 @@
         {!!WebFunctions::public_url('web-content/js/common/defined/common.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery.flexselect.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/flexselect.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/common.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller.css')!!}
@@ -112,7 +115,7 @@
             </div>
         </div>
         <div class="col-xs-12 web-panel middle-content">
-            <div class="col-lg-3 col-md-12 no-padding" style="padding-right: 1px;">
+            <div class="col-lg-3 col-md-12 no-padding left-tab" style="padding-right: 1px;">
                 <ul class="nav nav-tabs nav-justified">
                     <li class="active col-sm-6 no-padding"><a data-toggle="tab" href="#sectionA" aria-expanded="true">Góc Học Tập</a></li>
                     <li class="col-sm-6 no-padding"><a data-toggle="tab" href="#sectionB" aria-expanded="false">Tin Tức Mới</a></li>

@@ -15,8 +15,11 @@
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         {!!WebFunctions::public_url('web-content/js/common/library/jquery.flexselect.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/flexselect.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/common_master.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller_master.css')!!}
