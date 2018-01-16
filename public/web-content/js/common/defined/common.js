@@ -19,6 +19,11 @@ function initCommon() {
     setRightMenuHeight();
     $("select.flexselect").flexselect();
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
+    if($(window).width() < 550){
+        $('.menu-btn').css('display','inline-block');
+    }else{
+        $('.menu-btn').css('display','none');
+    }
 }
 
 function initEvent() {
@@ -40,6 +45,11 @@ function initEvent() {
     $(window).resize(function() {
         menuController();
         setFooter();
+        if($(window).width() < 550){
+            $('.menu-btn').css('display','inline-block');
+        }else{
+            $('.menu-btn').css('display','none');
+        }
     });
     $(document).on('click', '.div-link', function(e) {
         e.preventDefault();
@@ -98,7 +108,7 @@ function setFooter() {
 
 function menuController() {
     if ($(window).width() < 680) {
-        var temp = Math.floor((130 / $('.container-fluid #menu').width()) * 100);
+        var temp = Math.floor((130 / $('.container-fluid').width()) * 100);
         $('#menu>li').css('width', temp + '%');
     } else {
         $('#menu>li').css('width', 'auto');

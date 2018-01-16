@@ -6,6 +6,20 @@
     }
 }
 
+@media screen and (max-width:1024px) {
+    .navbar-right {
+    float: left!important;
+    margin-right: 10px;
+}
+
+    .screen-name{
+        display: block;
+        width: 100%;
+        float: left;
+        padding-top: 0px;
+    }
+}
+
 @media screen and (max-width:990px) {
     .right-tab .tab-content {
         height: 200px!important;
@@ -21,6 +35,12 @@
     }
 }
 
+@media screen and (max-width:900px) {
+    .screen-name{
+        padding-top: 0px;
+    }
+}
+
 @media screen and (max-width:680px) {
      .navbar-brand:nth-child(1) {
         padding-right: 0px;
@@ -29,8 +49,9 @@
 }
 
 @media screen and (max-width:550px) {
-    .menu-btn {
-        display: unset;
+    .screen-name{
+        display: inline-block;
+        width: auto;
     }
 }
 
@@ -58,7 +79,4 @@
         height: auto;
     }
 
-}
-
-@media screen and (max-width: 319px) {
 }

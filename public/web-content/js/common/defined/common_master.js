@@ -38,6 +38,11 @@ function initCommonMaster() {
         $('#btn-manager a').attr('href',$(this).attr('btn-manager-page-link'));
         $('#btn-add-page a').attr('href',$(this).attr('btn-add-page-link'));
     })
+    if($(window).width() < 550){
+        $('.menu-btn').css('display','inline-block');
+    }else{
+        $('.menu-btn').css('display','none');
+    }
 }
 
 function initEvent() {
@@ -65,6 +70,10 @@ function initEvent() {
         setLayout();
     })
 
+    $('.menu-btn-list').sizeChanged(function() {
+        setLayout();
+    })
+
     $(window).resize(function(){
         if ($(window).width() >550) {
             if(!$('#menu').hasClass('in')){
@@ -72,6 +81,11 @@ function initEvent() {
             }
         }
         menuController();
+        if($(window).width() < 550){
+            $('.menu-btn').css('display','inline-block');
+        }else{
+            $('.menu-btn').css('display','none');
+        }
     })
     $(document).on('change','.super-checkbox',function(){
         if(this.checked){
@@ -178,23 +192,27 @@ function initEvent() {
 }
 
 function setLayout(){
-    $('.gw-sidebar').css('top',$('.top-header').height());
-    $('.change-content').css('padding-top',$('.top-header').height()+10);
+    $('.change-content').css('padding-top',$('.menu-btn-list').height()+50);
 }
 
 function menuController() {
-    if ($(window).width() < 680) {
-        var temp = Math.floor((140 / $('.container-fluid #menu').width()) * 100);
-        $('#menu>li').css('width', temp + '%');
-    } else {
-        $('#menu>li').css('width', 'auto');
-    }
+    try{
+        if ($(window).width() < 680) {
+            var temp = Math.floor((100 / $('.menu-btn-list').width()) * 100);
+            $('#menu>li').css('width', temp + '%');
+        } else {
+            $('#menu>li').css('width', '100px');
+        }
 
-    if ($(window).width() < 900) {
-        $('.navbar-right').width('100%');
-    }else{
-        $('.navbar-right').width('auto');
+        if ($(window).width() < 900) {
+            $('.navbar-right').width('100%');
+        }else{
+            $('.navbar-right').width('auto');
+        }
+    }catch(e){
+        alert('menuController:'+ e);
     }
+    
 }
 
 function showContent(click_btn){

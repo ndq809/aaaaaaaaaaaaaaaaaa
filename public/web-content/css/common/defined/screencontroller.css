@@ -70,9 +70,6 @@
     .web-slogan :nth-child(2) {
         font-size: 6vw!important;
     }
-    .menu-btn {
-        display: unset;
-    }
 }
 
 @media screen and (max-width: 768px) {

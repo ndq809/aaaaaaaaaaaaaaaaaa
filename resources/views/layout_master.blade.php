@@ -35,10 +35,7 @@
             <div class="row top-header">
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid">
-                        <ul class="nav navbar-nav collapse in" id="menu">
-                            @yield('button')
-                        </ul>
-                         <div class="navbar-header navbar-right">
+                         <div class="navbar-header">
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
                                 <img src="/web-content/images/icon/title-icon3.png" height="30px">
                                 <span>Admin<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
@@ -50,10 +47,22 @@
                               <li role="presentation" class="divider"></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đăng Xuất</a></li>
                             </ul>
-                            <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
-                                <i class="fa fa-reorder"></i>
-                            </a>
                         </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="row top-header" style="margin-top: 42px;z-index: 400">
+                <nav class="navbar navbar-default ">
+                    <div class="container-fluid menu-btn-list">
+                        <ul class="nav navbar-nav collapse in navbar-right" id="menu">
+                            @yield('button')
+                        </ul>
+                         <ul class="nav navbar-nav screen-name">
+                            @yield('title','English Plus Master')
+                        </ul>
+                         <a class="btn btn-sm navbar-brand menu-btn hidden-md" data-target="#menu" data-toggle="collapse">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </a>
                     </div>
                 </nav>
             </div>

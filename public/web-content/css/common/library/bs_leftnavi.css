@@ -9,11 +9,11 @@
   border-width: 0 1px 0 0;
   background-color: #F2F2F2;
   bottom: 0;
-  top: 41px;
+  top: 0px;
   right: -268px;
   transition: right 0.3s linear;
   border-left: 3px solid #fff;
-  z-index: 10;
+  z-index: 510;
 }
 
 .gw-sidebar.visible {
