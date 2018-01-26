@@ -10,7 +10,7 @@ $(function() {
 function initCommonMaster() {
     initEvent();
     setLayout();
-    menuController();
+    menuController()
     $("#dtBox").DateTimePicker();
     $(".datetimepicker").on("click", function() {
         $("#dtBox").DateTimePicker();
@@ -124,6 +124,7 @@ function initEvent() {
     $(document).on('click','#btn-delete',function(){
         if(confirm("Delete all selected item?")){
             $('.sub-checkbox:checked').closest('tr').remove();
+            $('.table-focus tbody tr:first').addClass('active-row');
         }
     })
 
@@ -277,4 +278,5 @@ function prevRow(tr_list){
         updateInput.eq(i).val($(this).text());
     })
 }
+
 

@@ -306,6 +306,14 @@ z-index:3
   background-color: #FFF
 }
 
+.active-submenu{
+  background-color: #fbe6df;
+}
+
+.active-submenu a{
+  color: #dd4814!important;
+}
+
 .gw-nav-list>li .gw-submenu>li.active>a>[class*="icon-"]:first-child,
 .gw-nav-list>li .gw-submenu>li:hover>a>[class*="icon-"]:first-child { display: inline-block }
 

@@ -203,6 +203,10 @@ textarea {
     color: #c0c0c0!important;
 }
 
+.btn-disable a span{
+    color: #c0c0c0!important;
+}
+
 .update-role:hover{
     border-color: inherit; 
 }
