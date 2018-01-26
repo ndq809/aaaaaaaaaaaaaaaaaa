@@ -31,6 +31,11 @@ $(document).ready(function() {
             })
         }
     })
+    $(document).on('click','.btn-mobile',function(){
+        $('.gw-sidebar').show();
+        $('.gw-sidebar').addClass('visible');
+        $('.gw-sidebar').css('right','-320px');
+    })
 });
 
 function checkActive(a_tag) {

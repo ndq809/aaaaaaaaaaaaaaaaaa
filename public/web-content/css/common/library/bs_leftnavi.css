@@ -17,7 +17,7 @@
 }
 
 .gw-sidebar.visible {
-  right: 0;
+  right: 0!important;
   transition: right 0.3s linear;
 }
 

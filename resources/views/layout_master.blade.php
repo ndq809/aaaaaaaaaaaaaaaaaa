@@ -48,6 +48,11 @@
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đăng Xuất</a></li>
                             </ul>
                         </div>
+                        <ul class="nav menu-btn-mobile">
+                           <li class="visible-xs">
+                               <a class="btn-mobile"><span class="fa fa-reorder"></span></a>
+                           </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -59,10 +64,10 @@
                         </ul>
                          <ul class="nav navbar-nav screen-name">
                             @yield('title','English Plus Master')
+                            <a class="btn btn-sm navbar-brand menu-btn hidden-md" data-target="#menu" data-toggle="collapse">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </a>
                         </ul>
-                         <a class="btn btn-sm navbar-brand menu-btn hidden-md" data-target="#menu" data-toggle="collapse">
-                            <i class="fa fa-ellipsis-v"></i>
-                        </a>
                     </div>
                 </nav>
             </div>

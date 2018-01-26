@@ -48,25 +48,53 @@
     }
 }
 
-@media screen and (max-width:550px) {
-    .screen-name{
-        display: inline-block;
-        width: auto;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .change-content{
-        padding: 0px 52px 0px 0px;
+        padding: 0px 0px 0px 0px;
     }
     .mobile-pager{
         display: block;
+    }
+
+    .container-fluid{
+        margin-right: 0px;
+    }
+    .menu-btn-mobile{
+        display: inline-block;
+        float: right;
+    }
+
+    .menu-btn-mobile li:hover{
+        background: unset!important;
+    }
+
+    .btn-mobile{
+        padding:3px 0px!important;
+        color: #a94442;
+        font-family: titlefont;
+        font-size: 20px;
+    }
+
+    .navbar-header{
+        display: inline-block;
+    }
+
+    .gw-sidebar{
+        display: none;
+    }
+
+    .btn-mobile:hover{
+        background: unset!important;
     }
 }
 
 @media screen and (min-width: 768px) {
     .title-bar h5{
         margin:4px 15px;
+    }
+    .gw-sidebar{
+        display: block;
     }
 }
 
