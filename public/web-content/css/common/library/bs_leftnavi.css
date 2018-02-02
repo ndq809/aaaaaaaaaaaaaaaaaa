@@ -275,7 +275,7 @@ z-index:3
 .gw-nav-list>li .gw-submenu>li>a:hover {
   text-decoration: none;
   color: #dd4814;
-  background-color: rgba(25,25,50,0.1);
+  background-color: #fff2e6;
 }
 
 .gw-nav-list>li .gw-submenu>li.active:after {
