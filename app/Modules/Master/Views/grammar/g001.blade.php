@@ -1,14 +1,14 @@
 @extends('layout_master')
-@section('title','Danh Sách Từ Vựng')
+@section('title','Danh Sách Ngữ Pháp')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v001.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v001.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g001.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g001.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
 @endsection
 @section('content')
-<div class="link-div" btn-add-page-link='/master/v004'></div>
+<div class="link-div" btn-add-page-link='/master/g004'></div>
 <div class="panel main-panel col-xs-12">
 	<div class="panel-header">
 		<h5 class="panel-title">Lọc Danh Sách</h5>
@@ -16,7 +16,7 @@
     <div class="panel-content no-padding-left">
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
-    	        <label>Danh Mục Từ Vựng</label>
+    	        <label>Danh Mục Ngữ Pháp</label>
     	        <div class="input-group">
     	            <select class="form-control input-sm">
     	                <option>this is select box</option>
@@ -26,7 +26,7 @@
     	</div>
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
-    	        <label>Nhóm Từ Vựng</label>
+    	        <label>Nhóm Ngữ Pháp</label>
     	        <div class="input-group">
     	            <select class="form-control input-sm">
     	                <option>this is select box</option>
@@ -47,7 +47,7 @@
 </div>
 <div class="panel main-panel col-xs-12">
 	<div class="panel-header padding-10-l">
-		<h5 class="panel-title">Danh Sách Từ Vựng</h5>
+		<h5 class="panel-title">Danh Sách Ngữ Pháp</h5>
 	</div>
 	<div class="panel-content padding-10-l show-on-click" click-btn='btn-list'>
 		<div class="table-fixed-width no-padding-left" min-width='1160px'>
@@ -56,7 +56,7 @@
                     <tr>
                         <th><input type="checkbox" name="" class="super-checkbox"></th>
                         <th>ID</th>
-                        <th>Tên</th>
+                        <th>Tiêu Đề</th>
                         <th>Danh Mục</th>
                         <th>Nhóm</th>
                         <th>Phiên Âm</th>

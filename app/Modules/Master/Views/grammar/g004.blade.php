@@ -1,93 +1,87 @@
 @extends('layout_master')
-@section('title','Thêm quản trị viên')
+@section('title','Thêm Mới Ngữ Pháp')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/v004.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/v004.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g004.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g004.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}
 @endsection
 @section('content')
-<div class="link-div" btn-manager-page-link='/master/g002'></div>
+<div class="link-div" btn-manager-page-link='/master/v001'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
-        <h5 class="panel-title">Thêm Quản Trị Viên</h5>
+        <h5 class="panel-title">Thêm Mới Từ Vựng</h5>
     </div>
     <div class="panel-content no-padding-left">
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Tên Đăng Nhập</label>
+                <label>Tên Từ Vựng</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" value="Quy Nguyen" >
+                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
                 </div>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Họ Tên</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Nhập mật khẩu mới">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Email</label>
-                <div class="input-group">
-                    <input type="email" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Nhập email">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Số Điện Thoại</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Nhập số điện thoại">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Giới Tính</label>
+                <label>Danh Mục Của Từ Vựng</label>
                 <div class="input-group">
                     <select class="form-control input-sm">
-                        <option>Nam</option>
-                        <option>Nữ</option>
-                        <option>Khác</option>
+                        <option>this is select box</option>
                     </select>
                 </div>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Ngày Sinh</label>
+                <label>Nhóm Của Từ Vựng</label>
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                    <input type="text" name="" class="form-control input-sm" data-field="date" placeholder="this is Datepicker">
+                    <select class="form-control input-sm">
+                        <option>this is select box</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12"></div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Phiên Âm</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Phiên âm từ vựng">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 no-padding-right">
+            <div class="form-group">
+                <label>Nghĩa</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Nghĩa của từ vựng">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12"></div>
+        <div class="col-xs-12"></div>
+            <div class="col-sm-12 no-padding-right">
+            <div class="form-group">
+                <label>Giải Thích</label>
+                <div class="input-group">
+                    <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="3"></textarea>
                 </div>
             </div>
         </div>
         <div class="col-sm-6 no-padding-right">
             <div class="form-group">
-                <label>Địa Chỉ</label>
+                <label>Hình Ảnh</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Nhập địa chỉ">
+                    <input type="file" class="input-image" name=""  value="">
                 </div>
             </div>
         </div>
-        <div class="col-sm-3 no-padding-right">
+        <div class="col-sm-6 no-padding-right">
             <div class="form-group">
-                <label>Mật Khẩu Mới</label>
+                <label>Âm Thanh</label>
                 <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm" class="form-control input-sm">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Xác Nhận Mật Khẩu Mới</label>
-                <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm" class="form-control input-sm">
+                    <input type="file" name="" class="input-audio" placeholder="ID của từ vựng">
                 </div>
             </div>
         </div>

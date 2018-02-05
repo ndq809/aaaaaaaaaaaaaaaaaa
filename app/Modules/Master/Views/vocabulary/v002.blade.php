@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Quản lý danh mục')
+@section('title','Quản Lý Danh Mục')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/v002.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/v002.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v002.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v002.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}

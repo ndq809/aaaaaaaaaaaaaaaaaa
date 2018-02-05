@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Thêm mới danh mục')
+@section('title','Thêm Mới Danh Mục')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/v002.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/v002.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v005.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v005.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-cancel','btn-print','btn-manager-page'))}}

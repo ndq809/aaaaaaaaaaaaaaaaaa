@@ -1,5 +1,9 @@
 @extends('layout_master')
-@section('title','Lịch sử thao tac')
+@section('title','Lịch Sử Thao Tác')
+@section('asset_header')
+    {!!WebFunctions::public_url('web-content/js/screen_master/popular/p001.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/popular/p001.css')!!}
+@stop
 @section('button')
 {{Button::menu_button(array('btn-search','btn-print'))}}
 @endsection

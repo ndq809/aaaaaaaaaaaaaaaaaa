@@ -187,7 +187,7 @@ textarea {
 }
 
 .table-hover tbody tr:hover {
-    background: #f2f2f2;
+    background: unset;
     cursor: pointer;
 }
 
@@ -608,6 +608,11 @@ body {
 .active-update{
     background: #def;
 }
+
+.update-row{
+    background: #fff2e6!important;
+}
+
 
 .btn-search:hover {
     background: #e7e7e7;

@@ -1,8 +1,8 @@
 @extends('layout_master')
 @section('title','Thêm Mới Nhóm')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v006.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v006.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g006.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g006.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-cancel','btn-print','btn-manager-page'))}}

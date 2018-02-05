@@ -1,8 +1,8 @@
 @extends('layout_master')
 @section('title','Quản Lý Nhóm')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v003.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v003.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g003.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g003.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}

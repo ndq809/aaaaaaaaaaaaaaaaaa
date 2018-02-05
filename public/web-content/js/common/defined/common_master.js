@@ -140,19 +140,28 @@ function initEvent() {
         reIndex();
     })
 
+    $(document).on('dblclick','.table-focus tbody tr',function(){
+        updateInput=$('.update-content').find('input,textarea,select');
+        if($('.table-focus tbody tr.update-row' ).length!=0){
+            $('.table-focus tbody tr.update-row .update-item').each(function(i){
+                $(this).text(updateInput.eq(i).val());
+            })
+        }
+        $('.table-focus tbody tr.active-row .update-item').each(function(i){
+            updateInput.eq(i).val($(this).text());
+        })
+        updateInput.eq(0).focus();
+        $('.table-focus tbody tr.update-row').removeClass('update-row');
+        $('.table-focus tbody tr.active-row').addClass('update-row');
+    })
+
     $(document).on('click','.table-focus tbody tr',function(){
         updateInput=$('.update-content').find('input,textarea,select');
         if($(this).hasClass('active-row')){
             return;
         }
-        $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            $(this).text(updateInput.eq(i).val());
-        })
         $('.table-focus tbody tr.active-row').removeClass('active-row');
         $(this).addClass('active-row');
-        $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            updateInput.eq(i).val($(this).text());
-        })
     })
 
      $(document).on('input propertychange paste change','.update-content input,.update-content textarea,.update-content select',function(){
@@ -183,6 +192,21 @@ function initEvent() {
                 prevRow($('.table-focus tbody'));
                 break;
             case 40 :
+                if(e.ctrlKey){
+                    e.preventDefault();
+                    if($('.table-focus tbody tr.update-row' ).length!=0){
+                        $('.table-focus tbody tr.update-row .update-item').each(function(i){
+                            $(this).text(updateInput.eq(i).val());
+                        })
+                    }
+                    $('.table-focus tbody tr.active-row .update-item').each(function(i){
+                        updateInput.eq(i).val($(this).text());
+                    })
+                    updateInput.eq(0).focus();
+                    $('.table-focus tbody tr.update-row').removeClass('update-row');
+                    $('.table-focus tbody tr.active-row').addClass('update-row');
+                    break;
+                }
                 e.preventDefault();
                 nextRow($('.table-focus tbody'));
                 break;
@@ -245,9 +269,6 @@ function reIndex()
 
 function nextRow(tr_list){
     current_row=tr_list.find('.active-row');
-    $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            $(this).text(updateInput.eq(i).val());
-        })
     if(!tr_list.find('tr:last-child').hasClass('active-row')){
         current_row.next().addClass('active-row');
         current_row.removeClass('active-row'); 
@@ -256,17 +277,10 @@ function nextRow(tr_list){
         current_row.removeClass('active-row');
     }
 
-    $('.table-focus tbody tr.active-row .update-item').each(function(i){
-        updateInput.eq(i).val($(this).text());
-    })
-    
 }
 
 function prevRow(tr_list){
     current_row=tr_list.find('.active-row');
-    $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            $(this).text(updateInput.eq(i).val());
-        })
     if(!tr_list.find('tr:first').hasClass('active-row')){
         current_row.prev().addClass('active-row');
         current_row.removeClass('active-row'); 
@@ -274,9 +288,6 @@ function prevRow(tr_list){
         tr_list.find('tr:last-child').addClass('active-row');
         current_row.removeClass('active-row');
     }
-    $('.table-focus tbody tr.active-row .update-item').each(function(i){
-        updateInput.eq(i).val($(this).text());
-    })
 }
 
 
