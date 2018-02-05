@@ -94,6 +94,7 @@
     }
     .gw-sidebar{
         display: block;
+        right: -268px!important;
     }
 }
 

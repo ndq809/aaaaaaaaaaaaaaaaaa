@@ -23,7 +23,7 @@ $(document).ready(function() {
             checkMenuBar();
         }
     })
-    $('.gw-sidebar').mouseleave(function() {
+    $('.sidebar-cover').mouseleave(function() {
         if (!$('.gw-sidebar').hasClass('pin-menu')) {
             $('.gw-sidebar').removeClass('visible');
             $('.gw-nav > li.active').each(function() {
@@ -35,6 +35,11 @@ $(document).ready(function() {
         $('.gw-sidebar').show();
         $('.gw-sidebar').addClass('visible');
         $('.gw-sidebar').css('right','-320px');
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('.sidebar-cover').hover();
+            checkMenuBar();
+         // some code..
+        }
     })
 });
 
