@@ -79,5 +79,44 @@
             </div>
             @include('right_menu')
         </div>
+        <div class="col-xs-12 no-padding bottom-content">
+            <div class=" col-lg-3 col-sm-4 bottom-left">
+                <span>Eplus</span>
+                <span>©Eplus 2018 , all rights reserved</span>
+                <span>Phiên bản : v2.0 - 2017/22/12</span>
+                <span>Miễn Phí Và Sẽ Luôn Như Vậy <i class="fa fa-hand-peace-o"></i></span></span>
+            </div>
+            <div class="col-lg-7 col-sm-5 bottom-right ">
+                <span class="block">Contact</span>
+                <div class="inline-block">
+                    <a><i class="fa fa-facebook-official"></i> Https://facebook.com/Eplus</a>
+                </div>
+                <div class="inline-block">
+                    <a><i class="fa fa-google-plus"></i> Https://plus.google.com/Eplus</a>
+                </div>
+                <div class="inline-block">
+                    <a><i class="fa fa-twitter"></i> Https://twitter.com/Eplus</a>
+                </div>
+                <div class="block"></div>
+                <div class="inline-block">
+                    <a><i class="fa fa-volume-control-phone"></i> +84 30 6969 69</a>
+                </div>
+                <div class="inline-block">
+                    <a><i class="fa fa-envelope"></i> Eplus@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 bottom-right ">
+                <span class="block">Infor</span>
+                <div class="block">
+                    <a>Birthday : 2016/09/08 <i class="fa fa-birthday-cake"></i></a>
+                </div>
+                <div class="block">
+                    <a>Epluser : 1,183,547 <i class="fa fa-users"></i></a>
+                </div>
+                <div class="block">
+                    <a>Privacy & Cookies <i class=" fa fa-legal"></i></a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

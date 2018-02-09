@@ -10,6 +10,7 @@ $(function() {
 function initCommonMaster() {
     initEvent();
     setLayout();
+    setFooter();
     menuController()
     $("#dtBox").DateTimePicker();
     $(".datetimepicker").on("click", function() {
@@ -74,6 +75,10 @@ function initEvent() {
         setLayout();
     })
 
+    $('.main-panel').sizeChanged(function() {
+        setFooter();
+    })
+
     $(window).resize(function(){
         if ($(window).width() >550) {
             if(!$('#menu').hasClass('in')){
@@ -86,6 +91,7 @@ function initEvent() {
         }else{
             $('.menu-btn').css('display','none');
         }
+        setFooter();
     })
     $(document).on('change','.super-checkbox',function(){
         if(this.checked){
@@ -225,6 +231,7 @@ function showContent(click_btn){
         $(showElement).show();
         $('.fa-spin').hide();
         $('.btn-disable').removeClass('btn-disable');
+        setFooter();
     }, 500);
     $('.table-focus tbody tr:first').addClass('active-row');
     updateInput=$('.update-content').find('input,textarea,select');
@@ -277,6 +284,15 @@ function prevRow(tr_list){
     $('.table-focus tbody tr.active-row .update-item').each(function(i){
         updateInput.eq(i).val($(this).text());
     })
+}
+
+function setFooter() {
+    var temp = $('.header-content').height() + $('.middle-content').height() + $('.bottom-content').height()+10;
+    if (temp < $('body').height()) {
+        $('.bottom-content').addClass('pin-footer');
+    } else {
+        $('.bottom-content').removeClass('pin-footer');
+    }
 }
 
 

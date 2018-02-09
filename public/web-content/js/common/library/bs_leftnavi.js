@@ -36,8 +36,7 @@ $(document).ready(function() {
         $('.gw-sidebar').addClass('visible');
         $('.gw-sidebar').css('right','-320px');
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            $('.sidebar-cover').hover();
-            checkMenuBar();
+            $('.sidebar-cover').trigger('mouseenter');
          // some code..
         }
     })

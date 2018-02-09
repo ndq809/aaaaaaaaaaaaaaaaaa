@@ -36,9 +36,18 @@ html,body{
   height: 100%;
 }
 
+body {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+body::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+}
+
 a{
     cursor: pointer;
 }
+
 
 .no-padding-left{
     padding-left: 0px!important;
