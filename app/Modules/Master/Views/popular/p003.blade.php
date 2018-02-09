@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Thêm quản trị viên')
+@section('title','Thêm Quản Trị Viên')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/v004.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/v004.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/popular/p003.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/popular/p003.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}

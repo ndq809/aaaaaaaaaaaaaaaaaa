@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Quản Lý Danh Mục Từ Vựng')
+@section('title','Quản Lý Danh Mục Ngữ Pháp')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v002.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v002.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g002.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g002.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
@@ -52,7 +52,7 @@
                         <td class="text-left update-item">DM00{{$i}}</td>
                         <td class="text-left update-item">600 từ vựng toleic</td>
                         <td>23</td>
-                        <td><a href="/master/v006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
+                        <td><a href="/master/g006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
                     </tr>
                     @endfor
                 </tbody>

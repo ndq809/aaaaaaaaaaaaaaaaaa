@@ -3,7 +3,6 @@
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen/writing.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/writing.css')!!}
-    <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 @stop
 
 @section('content')

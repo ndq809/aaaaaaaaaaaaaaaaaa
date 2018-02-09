@@ -1,8 +1,8 @@
 @extends('layout_master')
 @section('title','Danh Sách Quản Trị Viên')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/g002.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/g002.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/popular/p002.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/popular/p002.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-change-pass-dis','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}

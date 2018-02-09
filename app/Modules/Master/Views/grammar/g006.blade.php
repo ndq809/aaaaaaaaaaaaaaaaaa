@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Thêm Mới Nhóm Từ Vựng')
+@section('title','Thêm Mới Nhóm Ngữ Pháp')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v006.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v006.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g006.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g006.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-cancel','btn-print','btn-manager-page'))}}
@@ -48,7 +48,7 @@
                         <th width="50px">ID</th>
                         <th>Tên Danh Mục</th>
                         <th>Tên Nhóm</th>
-                        <th width="100px"></th>
+                        <th width="120px"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,7 +57,7 @@
                         <td></td>
                         <td class="text-left">600 từ vựng toleic</td>
                         <td class="text-left">Business</td>
-                        <td><a href="/master/v004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm từ vựng</a></td>
+                        <td><a href="/master/v004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm ngữ pháp</a></td>
                     </tr>
                     @for($i=1;$i<=2;$i++)
                     <tr>
@@ -65,7 +65,7 @@
                         <td>00{{$i}}</td>
                         <td class="text-left">600 từ vựng toleic</td>
                         <td class="text-left">Business</td>
-                        <td><a href="/master/v004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm từ vựng</a></td>
+                        <td><a href="/master/g004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm ngữ pháp</a></td>
                     </tr>
                     @endfor
                 </tbody>

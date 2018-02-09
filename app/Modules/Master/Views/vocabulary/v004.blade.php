@@ -1,8 +1,8 @@
 @extends('layout_master')
-@section('title','Thêm mới từ vựng')
+@section('title','Thêm Mới Từ Vựng')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen_master/v004.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen_master/v004.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v004.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v004.css')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}
@@ -11,17 +11,9 @@
 <div class="link-div" btn-manager-page-link='/master/v001'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
-        <h5 class="panel-title">Thêm Mới Từ Vựng</h5>
+        <h5 class="panel-title">Nội Dung Thêm Mới</h5>
     </div>
     <div class="panel-content no-padding-left">
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Tên Từ Vựng</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
-                </div>
-            </div>
-        </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Danh Mục Của Từ Vựng</label>
@@ -39,6 +31,14 @@
                     <select class="form-control input-sm">
                         <option>this is select box</option>
                     </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Tên Từ Vựng</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
                 </div>
             </div>
         </div>
