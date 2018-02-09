@@ -1,5 +1,5 @@
 @extends('layout_master')
-@section('title','Thêm Mới Nhóm')
+@section('title','Thêm Mới Nhóm Từ Vựng')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v006.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v006.css')!!}

@@ -23,6 +23,7 @@
         {!!WebFunctions::public_url('web-content/css/common/defined/common.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller.css')!!}
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
+        <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         @yield('asset_header')
     </head>
     <body>
@@ -52,7 +53,7 @@
                                 <span>{{$user}}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/g002">Trang Quản Trị</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/p002">Trang Quản Trị</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>

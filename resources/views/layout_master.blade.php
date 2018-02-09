@@ -10,12 +10,13 @@
             @yield('title','English Plus Master')
         </title>
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-         {!!WebFunctions::public_url('web-content/js/common/library/jquery.flexselect.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery.flexselect.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
@@ -26,6 +27,8 @@
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bs_leftnavi.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bs_leftnavi.css')!!}
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         @yield('asset_header')
     </head>
     <body>

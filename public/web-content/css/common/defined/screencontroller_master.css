@@ -108,3 +108,9 @@
     }
 
 }
+
+@media screen and (min-width: 550px) {
+    .menu-btn-list ul{
+        height: auto!important;
+    }
+}

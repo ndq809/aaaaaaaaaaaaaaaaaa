@@ -1,5 +1,5 @@
 @extends('layout_master')
-@section('title','Quản Lý Nhóm')
+@section('title','Quản Lý Nhóm Từ Vựng')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v003.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v003.css')!!}

@@ -1,5 +1,5 @@
 @extends('layout_master')
-@section('title','Quản Lý Nhóm')
+@section('title','Quản Lý Nhóm Ngữ Pháp')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g003.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g003.css')!!}
@@ -51,8 +51,8 @@
                         <th width="100px">Mã Nhóm</th>
                         <th>Tên Danh Mục</th>
                         <th>Tên Nhóm</th>
-                        <th width="100px">Số Từ Vựng</th>
-                        <th width="100px"></th>
+                        <th width="100px">Số Ngữ Pháp</th>
+                        <th width="120px"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,22 +66,22 @@
                         </td>
                         <td class="text-left update-item">Business</td>
                         <td>23</td>
-                        <td><a href="/master/v004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm từ vựng</a></td>
+                        <td><a href="/master/g004" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm ngữ pháp</a></td>
                     </tr>
                     @endfor
                 </tbody>
             </table>
         </div>
-        <ul class="pager">
-            <li><a href="#">Đầu</a></li>
-            <li><a href="#">Trước</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">...</a></li>
-            <li><a href="#">17</a></li>
-            <li><a href="#">Tiếp</a></li>
-            <li><a href="#">Cuối</a></li>
-        </ul>
+        @if(!isset($paging))
+            @php
+                $paging=array('page' => 1,'pagesize' => 15,'totalRecord' => 100,'pageMax'=>10 )
+            @endphp
+        @endif
+        @if($paging['totalRecord'] != 0)
+            <div class=" text-center">
+                {!!Paging::show($paging,0)!!}
+            </div>
+        @endif
     </div>
 	<div class="panel-bottom">
      <i class="fa fa-spinner fa-spin"></i>   

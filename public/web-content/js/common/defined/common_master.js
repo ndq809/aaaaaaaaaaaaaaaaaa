@@ -43,6 +43,13 @@ function initCommonMaster() {
     }else{
         $('.menu-btn').css('display','none');
     }
+    $(".ckeditor").each(function(){
+        try{
+          CKEDITOR.replace($(this).attr('name'),{language:"vi"});  
+        }catch(e){
+
+        }
+    })
 }
 
 function initEvent() {
@@ -79,6 +86,9 @@ function initEvent() {
             if(!$('#menu').hasClass('in')){
                $('#menu').addClass('in'); 
             }
+        }else{
+            if($('.menu-btn-list ul').height()==0)
+                $('#menu').removeClass('in'); 
         }
         menuController();
         if($(window).width() < 550){
@@ -148,7 +158,26 @@ function initEvent() {
             })
         }
         $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            updateInput.eq(i).val($(this).text());
+            if(updateInput.eq(i).attr('type')!='file'){
+                updateInput.eq(i).val($(this).text());
+            }
+        })
+        updateInput.eq(0).focus();
+        $('.table-focus tbody tr.update-row').removeClass('update-row');
+        $('.table-focus tbody tr.active-row').addClass('update-row');
+    })
+
+    $(document).on('doubletap','.table-focus tbody tr.active-row',function(e){
+        updateInput=$('.update-content').find('input,textarea,select');
+        if($('.table-focus tbody tr.update-row' ).length!=0){
+            $('.table-focus tbody tr.update-row .update-item').each(function(i){
+                $(this).text(updateInput.eq(i).val());
+            })
+        }
+        $('.table-focus tbody tr.active-row .update-item').each(function(i){
+            if(updateInput.eq(i).attr('type')!='file'){
+                updateInput.eq(i).val($(this).text());
+            }
         })
         updateInput.eq(0).focus();
         $('.table-focus tbody tr.update-row').removeClass('update-row');
@@ -165,7 +194,7 @@ function initEvent() {
     })
 
      $(document).on('input propertychange paste change','.update-content input,.update-content textarea,.update-content select',function(){
-        $('.table-focus').find('.active-row').addClass('active-update');
+        $('.table-focus').find('.update-row').addClass('active-update');
     })
 
     $(document).on('click', '.btn-popup', function(e) {
@@ -200,7 +229,9 @@ function initEvent() {
                         })
                     }
                     $('.table-focus tbody tr.active-row .update-item').each(function(i){
-                        updateInput.eq(i).val($(this).text());
+                        if(updateInput.eq(i).attr('type')!='file'){
+                            updateInput.eq(i).val($(this).text());
+                        }
                     })
                     updateInput.eq(0).focus();
                     $('.table-focus tbody tr.update-row').removeClass('update-row');
@@ -223,7 +254,7 @@ function setLayout(){
 function menuController() {
     try{
         if ($(window).width() < 680) {
-            var temp = Math.floor((100 / $('.menu-btn-list').width()) * 100);
+            var temp = Math.floor((90 / $('.menu-btn-list').width()) * 100);
             $('#menu>li').css('width', temp + '%');
         } else {
             $('#menu>li').css('width', '100px');
@@ -252,9 +283,6 @@ function showContent(click_btn){
     }, 500);
     $('.table-focus tbody tr:first').addClass('active-row');
     updateInput=$('.update-content').find('input,textarea,select');
-    $('.table-focus tbody tr:first .update-item').each(function(i){
-        updateInput.eq(i).val($(this).text());
-    })
 }
 
 function reIndex()

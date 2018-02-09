@@ -1,5 +1,5 @@
 @extends('layout_master')
-@section('title','Thêm Mới Danh Mục')
+@section('title','Thêm Mới Danh Mục Ngữ Pháp')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/grammar/g005.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/grammar/g005.css')!!}
@@ -45,14 +45,14 @@
                         <td><input type="checkbox" name="" class="sub-checkbox"></td>
                         <td></td>
                         <td class="text-left">600 từ vựng toleic</td>
-                        <td><a href="/master/v003" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
+                        <td><a href="/master/g006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
                     </tr>
                     @for($i=1;$i<=2;$i++)
                     <tr>
                         <td><input type="checkbox" name="" class="sub-checkbox"></td>
                         <td>00{{$i}}</td>
                         <td class="text-left">600 từ vựng toleic</td>
-                        <td><a href="/master/v006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
+                        <td><a href="/master/g006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
                     </tr>
                     @endfor
                 </tbody>
