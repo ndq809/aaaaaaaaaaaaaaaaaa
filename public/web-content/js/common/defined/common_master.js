@@ -10,7 +10,6 @@ $(function() {
 function initCommonMaster() {
     initEvent();
     setLayout();
-    setFooter();
     menuController()
     $("#dtBox").DateTimePicker();
     $(".datetimepicker").on("click", function() {
@@ -51,6 +50,7 @@ function initCommonMaster() {
 
         }
     })
+    setFooter();
 }
 
 function initEvent() {
@@ -82,7 +82,7 @@ function initEvent() {
         setLayout();
     })
 
-    $('.main-panel').sizeChanged(function() {
+    $('.middle-content').sizeChanged(function() {
         setFooter();
     })
 
