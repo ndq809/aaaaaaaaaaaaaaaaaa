@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .title-bar h5{
         margin:4px 15px;
     }
@@ -100,17 +100,32 @@
 
 @media screen and (max-width: 479px) {
     audio{
-        width: 230px;
+        width: 110px;
     }
     .file-preview-frame{
-        width: 230px;
+        width: 110px!important;
         height: auto;
+        text-align: left;
+    }
+    .kv-fileinput-caption{
+        display: none!important;
     }
 
+    .file-preview{
+        width: 110px;
+    }
+
+    .file-footer-caption{
+        width: 110px!important;
+    }
 }
 
 @media screen and (min-width: 550px) {
     .menu-btn-list ul{
         height: auto!important;
+    }
+
+    .file-preview-frame{
+        width: 102px!important;
     }
 }

@@ -21,6 +21,12 @@
     border: none;
 }
 
+.file-input{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
 .file-object {
     margin: 0 0 -5px 0;
     padding: 0;
@@ -87,7 +93,6 @@
 .file-preview-frame {
     display: table;
     margin: 0px;
-    
     border: 1px solid #aaa;
     box-shadow: 1px 1px 0px 0 #a2958a;
     padding: 0px;
@@ -177,9 +182,6 @@
 
 .file-footer-caption {
     display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 160px;
     text-align: center;
     padding-top: 0px;

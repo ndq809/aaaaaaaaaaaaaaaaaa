@@ -72,7 +72,7 @@ function checkActive(a_tag) {
 
 function checkMenuBar(tr_list){
     current_link=location.href.split('/');
-    current_menu=current_link[current_link.length-1];
+    current_menu=current_link[current_link.length-1].replace('#','');
     $('.gw-submenu a').each(function(){
         if(typeof $(this).attr('href')!='undefined'){
             if($(this).attr('href').indexOf(current_menu)>0){

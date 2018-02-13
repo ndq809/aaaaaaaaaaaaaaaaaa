@@ -70,6 +70,20 @@ a{
     text-align: center;
 }
 
+.invisible{
+    opacity: 0;
+}
+
+.pager{
+    display: inline-block;
+    margin-top: 10px;
+}
+.pager li{
+    display: table-cell;
+    padding: 0px 1px;
+}
+
+
 .pager li>a, .pager li>span {
     font-size: 12px;
     border-radius: 0px;
@@ -981,4 +995,42 @@ button .is-icon{
 
 #btn_prev{
     width: 80px;
+}
+
+.old-item{
+    float: left;
+    width: 140px;
+}
+
+.old-item .file-subitem{
+    width: 140px;
+    height: 139px;
+    border:2px solid #777;
+}
+
+.new-item{
+    width: auto;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+.new-item .file-subitem{
+    height: 139px;
+}
+
+.file-subitem img{
+    width: 136px;
+    height: 135px;
+}
+
+.file-subitem .audio-title{
+    height: 93px;
+}
+
+.file-subitem .audio-source{
+    height: 32px;
+}
+
+.audio-source audio{
+    width: 136px;
 }

@@ -161,18 +161,37 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 no-padding-right">
-            <div class="form-group">
-                <label>Hình Ảnh</label>
-                <div class="input-group">
+        <div class="col-md-6 col-sm-12 no-padding-right">
+            <div class="form-group old-item">
+                <label>Hình Ảnh Cũ</label>
+                <div class="input-group file-subitem">
+                    <img src="/web-content/images/avarta/avarta.jpg">
+                </div>
+            </div>
+            <div class="form-group new-item">
+                <label class="invisible">.</label>
+                <div class="input-group file-subitem">
                     <input type="file" class="input-image" name=""  value="">
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 no-padding-right">
-            <div class="form-group">
-                <label>Âm Thanh</label>
-                <div class="input-group">
+        <div class="col-md-6 col-sm-12 no-padding-right">
+            <div class="form-group old-item">
+                <label>Âm Thanh Cũ</label>
+                <div class="input-group file-subitem">
+                    <div class="audio-title text-center">
+                        <h6>Em Gái Mưa (Cover) Anh Khang Lyric Loi bai hat _ cogmVVx0q0As.mp3</h6>
+                    </div>
+                    <div class="audio-source">
+                        <audio controls>
+                          <source src="/web-content/audio/listeningAudio/Em Gái Mưa (Cover) Anh Khang Lyric Loi bai hat _ cogmVVx0q0As.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group new-item">
+                <label class="invisible">.</label>
+                <div class="input-group file-subitem">
                     <input type="file" name="" class="input-audio" placeholder="ID của từ vựng">
                 </div>
             </div>

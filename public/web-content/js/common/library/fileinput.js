@@ -2390,7 +2390,7 @@
         msgFileNotReadable: 'File "{name}" là file không thể đọc.',
         msgFilePreviewAborted: 'Xem trước đã bị hủy đối với file "{name}".',
         msgFilePreviewError: 'Lỗi đã xảy ra khi đọc file "{name}".',
-        msgInvalidFileType: 'File "{name}" có kiểu không đúng . Chỉ có file kiểu "{types}" mới hợp lệ!',
+        msgInvalidFileType: 'File có kiểu không đúng . Chỉ cho phép file kiểu "{types}"!',
         msgInvalidFileExtension: 'Phần mở rộng của file "{name}" không hợp lệ. Chỉ có "{extensions}" mới hợp lệ',
         msgValidationError: 'Upload lỗi',
         msgLoading: 'Đang tải {index} của {files} &hellip;',
