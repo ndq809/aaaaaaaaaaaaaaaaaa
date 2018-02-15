@@ -1,105 +1,160 @@
 @extends('layout_master')
-@section('title','Quản Lý Danh Mục Từ Vựng')
+@section('title','Thêm Mới Từ Vựng')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/vocabulary/v002.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v002.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
+{{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}
 @endsection
 @section('content')
-<div class="link-div" btn-add-page-link='/master/v005'></div>
+<div class="link-div" btn-manager-page-link='/master/v001'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
-        <h5 class="panel-title">Lọc Danh Sách</h5>
+        <h5 class="panel-title">Nội Dung Thêm Mới</h5>
     </div>
     <div class="panel-content no-padding-left">
-        <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
+        <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Từ Khóa</label>
+                <label>Danh Mục Của Từ Vựng</label>
+                <select>
+                    <option>Tất cả</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Nhóm Của Từ Vựng</label>
+                <select>
+                    <option>Tất cả</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Tên Từ Vựng</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Nhập từ khóa">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12"></div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Phiên Âm</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Phiên âm từ vựng">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 no-padding-right">
+            <div class="form-group">
+                <label>Nghĩa</label>
+                <div class="input-group">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Nghĩa của từ vựng">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12"></div>
+        <div class="col-xs-12"></div>
+            <div class="col-sm-12 no-padding-right">
+            <div class="form-group">
+                <label>Giải Thích</label>
+                <div class="input-group">
+                    <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 no-padding-right">
+            <div class="form-group old-item">
+                <label>Hình Ảnh Mặc Định</label>
+                <div class="input-group file-subitem">
+                    <img src="/web-content/images/avarta/avarta.jpg">
+                </div>
+            </div>
+            <div class="form-group new-item">
+                <label class="invisible">.</label>
+                <div class="input-group file-subitem">
+                    <input type="file" class="input-image" name=""  value="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 no-padding-right">
+            <div class="form-group old-item">
+                <label>Âm Thanh Mặc Định</label>
+                <div class="input-group file-subitem">
+                    <div class="audio-title text-center">
+                        <h6>Em Gái Mưa (Cover) Anh Khang Lyric Loi bai hat _ cogmVVx0q0As.mp3</h6>
+                    </div>
+                    <div class="audio-source">
+                        <audio controls>
+                          <source src="/web-content/audio/listeningAudio/Em Gái Mưa (Cover) Anh Khang Lyric Loi bai hat _ cogmVVx0q0As.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group new-item">
+                <label class="invisible">.</label>
+                <div class="input-group file-subitem">
+                    <input type="file" name="" class="input-audio" placeholder="ID của từ vựng">
                 </div>
             </div>
         </div>
     </div>
-    <div class="panel-bottom">
-        
-    </div>
+    <div class="panel-bottom"></div>
 </div>
-<div class="panel main-panel col-xs-12 ">
-	<div class="panel-header">
-		<h5 class="panel-title">Danh Sách Danh Mục</h5>
-	</div>
-    <div class="panel-content padding-10-l show-on-click" click-btn='btn-list'>
-	   <div class="table-fixed-width no-padding-left" min-width='700px'>
-            <table class="table table-hover table-bordered table-update table-focus">
+<div class="panel main-panel col-xs-12">
+    <div class="panel-header">
+        <h5 class="panel-title">Danh Sách Đã Thêm</h5>
+    </div>
+    <div class="panel-content padding-10-l">
+        <div class="table-fixed-width no-padding-left" min-width='1160px'>
+            <table class="table table-hover table-bordered table-checkbox table-new-row">
                 <thead>
                     <tr>
                         <th width="50px"><input type="checkbox" name="" class="super-checkbox"></th>
-                        <th width="50px">ID</th>
-                        <th width="100px">Mã Danh Mục</th>
-                        <th>Tên Danh Mục</th>
-                        <th width="100px">Số Nhóm</th>
-                        <th width="100px"></th>
+                        <th>ID</th>
+                        <th>Tên</th>
+                        <th>Danh Mục</th>
+                        <th>Nhóm</th>
+                        <th>Phiên Âm</th>
+                        <th>Nghĩa</th>
+                        <th>Giải Thích</th>
+                        <th>Hình Ảnh</th>
+                        <th>Âm Thanh</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @for($i=1;$i<=15;$i++)
+                    <tr class="hidden">
+                        <td><input type="checkbox" name="" class="sub-checkbox"></td>
+                        <td></td>
+                        <td>Abide by</td>
+                        <td>600 từ vựng toleic</td>
+                        <td>business</td>
+                        <td>/ə'baid/</td>
+                        <td>tôn trọng, tuân theo, giữ (lời)</td>
+                        <td class="td-1-line">to accept and act according to a law, an agreement</td>
+                        <td>Abide_by.jpg</td>
+                        <td>Abide_by.mp3</td>
+                    </tr>
+                    @for($i=1;$i<=5;$i++)
                     <tr>
                         <td><input type="checkbox" name="" class="sub-checkbox"></td>
-                        <td>{{$i}}</td>
-                        <td class="text-left update-item">DM00{{$i}}</td>
-                        <td class="text-left update-item">600 từ vựng toleic</td>
-                        <td>23</td>
-                        <td><a href="/master/v006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
+                        <td>00{{$i}}</td>
+                        <td>Abide by</td>
+                        <td>600 từ vựng toleic</td>
+                        <td>business</td>
+                        <td>/ə'baid/</td>
+                        <td>tôn trọng, tuân theo, giữ (lời)</td>
+                        <td class="td-1-line">to accept and act according to a law, an agreement</td>
+                        <td>Abide_by.jpg</td>
+                        <td>Abide_by.mp3</td>
                     </tr>
                     @endfor
                 </tbody>
             </table>
         </div>
-        <ul class="pager">
-            <li><a href="#">Đầu</a></li>
-            <li><a href="#">Trước</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">...</a></li>
-            <li><a href="#">17</a></li>
-            <li><a href="#">Tiếp</a></li>
-            <li><a href="#">Cuối</a></li>
-        </ul>
     </div>
-	<div class="panel-bottom">
-     <i class="fa fa-spinner fa-spin"></i>   
-    </div>
-</div>
-<div class="panel main-panel col-xs-12 show-on-click" click-btn="btn-list">
-    <div class="panel-header padding-10-l">
-        <h5 class="panel-title">Cập Nhật Danh Mục</h5>
-    </div>
-    <div class="panel-content no-padding-left update-content">
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Mã Danh Mục</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" value="DM001" readonly="">
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Tên Danh Mục</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Cập nhật tên danh mục" value="600 từ vựng toleic">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class=" col-xs-12 panel-bottom">
-        <ul class="pager mobile-pager">
-            <li><a href="#">Hàng Trước</a></li>
-            <li><a href="#">Hàng Tiếp</a></li>
-        </ul>
-    </div>
+    <div class="panel-bottom"></div>
 </div>
 @stop

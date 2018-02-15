@@ -17,21 +17,17 @@
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
     	        <label>Danh Mục Từ Vựng</label>
-    	        <div class="input-group">
-    	            <select class="form-control input-sm">
-    	                <option>this is select box</option>
-    	            </select>
-    	        </div>
+    	        <select>
+                    <option>Tất cả</option>
+                </select>
     	    </div>
     	</div>
     	<div class="col-sm-3 no-padding-right">
     	    <div class="form-group">
     	        <label>Nhóm Từ Vựng</label>
-    	        <div class="input-group">
-    	            <select class="form-control input-sm">
-    	                <option>this is select box</option>
-    	            </select>
-    	        </div>
+    	        <select>
+                    <option>Tất cả</option>
+                </select>
     	    </div>
     	</div>
     	<div class="col-sm-3 no-padding-right">
@@ -84,10 +80,16 @@
                 </tbody>
             </table>
         </div>
-        <ul class="pager">
-            <li><a href="#">Hàng Trước</a></li>
-            <li><a href="#">Hàng Tiếp</a></li>
-        </ul>
+        @if(!isset($paging))
+            @php
+                $paging=array('page' => 6,'pagesize' => 15,'totalRecord' => 100,'pageMax'=>10 )
+            @endphp
+        @endif
+        @if($paging['totalRecord'] != 0)
+            <div class=" text-center no-padding-left">
+                {!!Paging::show($paging,0)!!}
+            </div>
+        @endif
 	</div>
 	<div class="panel-bottom">
 		<i class="fa fa-spinner fa-spin"></i>
@@ -117,21 +119,17 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Danh Mục Của Từ Vựng</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
-                    </select>
-                </div>
+                <select>
+                    <option>Tất cả</option>
+                </select>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Nhóm Của Từ Vựng</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
-                    </select>
-                </div>
+                <select>
+                    <option>Tất cả</option>
+                </select>
             </div>
         </div>
         <div class="col-xs-12"></div>

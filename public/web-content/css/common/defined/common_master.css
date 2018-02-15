@@ -61,6 +61,13 @@ a{
     padding: 4px 4px;
 }
 
+.table-input>tbody>tr>td, .table-input>tbody>tr>th, .table-input>tfoot>tr>td, .table-input>tfoot>tr>th, .table-input>thead>tr>td, .table-input>thead>tr>th {
+    padding: 2px 4px;
+}
+
+.table-input input{
+    height: 25px;
+}
 
 .width-50{
     width: 50%!important;
@@ -83,6 +90,11 @@ a{
     padding: 0px 1px;
 }
 
+.pager select.input-sm{
+    height: 27px;
+    padding-top: 1px;
+    text-align: center;
+}
 
 .pager li>a, .pager li>span {
     font-size: 12px;
@@ -94,11 +106,11 @@ a{
 }
 
 .pager li>a:hover, .pager li>span:hover {
-    background: #aaa;
+    background: #d9734f;
     color: #fff;
 }
 
-.pager li>a:focus, .pager li>span:focus {
+.pager li.active>a, .pager li.active>span {
     background: #d9534f;
     color: #fff;
     border: 1px solid #ddd;
@@ -114,9 +126,13 @@ label {
 }
 
 .form-control.required {
-    border: 1px solid red;
+    border: 1px solid #d9534f;
 }
-
+label.required:after{
+    content: '*';
+    color: #d9534f;
+    padding-left: 2px;
+}
 .form-control {
     border-radius: 0px;
 }
@@ -190,6 +206,14 @@ textarea {
     font-size: 14px;
 }
 
+a.btn-add{
+    display: block;
+}
+
+a.btn-add span{
+    color: #fff;
+}
+
 .table {
     font-size: 12px;
     text-align: center;
@@ -201,6 +225,10 @@ textarea {
     color: #fff;
 }
 
+.table-input thead th{
+    background-color: #006898;
+}
+
 .table tbody tr td * {
     vertical-align: middle;
 }
@@ -209,11 +237,13 @@ textarea {
     vertical-align: middle;
 }
 
-.table-hover tbody tr:hover {
+.table-update tbody tr:hover {
     background: unset;
     cursor: pointer;
 }
-
+.table-hover tbody tr:hover {
+    cursor: pointer;
+}
 .btn-disable {
     cursor: not-allowed;
     pointer-events: none;
@@ -627,7 +657,7 @@ body {
 }
 
 .active-update{
-    background: #def;
+    background: #def!important;
 }
 
 .update-row{

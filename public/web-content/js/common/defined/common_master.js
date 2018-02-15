@@ -31,7 +31,13 @@ function initCommonMaster() {
         allowedFileTypes:['audio'],
         showFileFooterCaption:true,
     });
-    $("select.flexselect").flexselect();
+    $("select").selectize({
+        allowEmptyOption: true,
+        create: false
+    });
+    $('.selectize-control.required .selectize-input').css('border','1px solid #d9534f');
+    $('select.required').prev('label').addClass('required');
+    $('input.required,textarea.required').parent().prev('label').addClass('required');
     $('.fa-spin').hide();
 
     $('.link-div').each(function(){
@@ -150,45 +156,56 @@ function initEvent() {
         }
     })
 
-    $(document).on('click','#btn-new-row,#btn-add',function(){
+    $(document).on('click','#btn-new-row',function(){
+        $(this).parents('table').find('tbody').append("<tr></tr>");
+        $(this).parents('table').find('tbody tr:last-child').append($(this).parents('table').find('tbody tr:first').html());
+        reIndex($(this).parents('table'));
+    })
+
+    $(document).on('click','#btn-add',function(){
         $('.table-new-row tbody').append("<tr></tr>");
         $('.table-new-row tbody tr:last-child').append($('.table-new-row tbody tr:first').html());
-        reIndex();
+        reIndex($('.table-new-row'));
     })
 
     $(document).on('dblclick','.table-focus tbody tr',function(){
-        updateInput=$('.update-content').find('input,textarea,select');
-        if($('.table-focus tbody tr.update-row' ).length!=0){
-            $('.table-focus tbody tr.update-row .update-item').each(function(i){
-                $(this).text(updateInput.eq(i).val());
+        if(!$(this).hasClass('update-row')){
+            updateInput=$('.update-content').find('input,textarea,select');
+            if($('.table-focus tbody tr.update-row' ).length!=0){
+                $('.table-focus tbody tr.update-row .update-item').each(function(i){
+                    $(this).text(updateInput.eq(i).val());
+                })
+            }
+            $('.table-focus tbody tr.active-row .update-item').each(function(i){
+                if(updateInput.eq(i).attr('type')!='file'){
+                    updateInput.eq(i).val($(this).text());
+                }
             })
+            updateInput.eq(0).focus();
+            $('.table-focus tbody tr.update-row').removeClass('update-row');
+            $('.table-focus tbody tr.active-row').addClass('update-row');
         }
-        $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            if(updateInput.eq(i).attr('type')!='file'){
-                updateInput.eq(i).val($(this).text());
+    })
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(document).on('doubletap','.table-focus tbody tr.active-row',function(e){
+            if(!$(this).hasClass('update-row')){
+                updateInput=$('.update-content').find('input,textarea,select');
+                if($('.table-focus tbody tr.update-row' ).length!=0){
+                    $('.table-focus tbody tr.update-row .update-item').each(function(i){
+                        $(this).text(updateInput.eq(i).val());
+                    })
+                }
+                $('.table-focus tbody tr.active-row .update-item').each(function(i){
+                    if(updateInput.eq(i).attr('type')!='file'){
+                        updateInput.eq(i).val($(this).text());
+                    }
+                })
+                updateInput.eq(0).focus();
+                $('.table-focus tbody tr.update-row').removeClass('update-row');
+                $('.table-focus tbody tr.active-row').addClass('update-row');
             }
         })
-        updateInput.eq(0).focus();
-        $('.table-focus tbody tr.update-row').removeClass('update-row');
-        $('.table-focus tbody tr.active-row').addClass('update-row');
-    })
-
-    $(document).on('doubletap','.table-focus tbody tr.active-row',function(e){
-        updateInput=$('.update-content').find('input,textarea,select');
-        if($('.table-focus tbody tr.update-row' ).length!=0){
-            $('.table-focus tbody tr.update-row .update-item').each(function(i){
-                $(this).text(updateInput.eq(i).val());
-            })
-        }
-        $('.table-focus tbody tr.active-row .update-item').each(function(i){
-            if(updateInput.eq(i).attr('type')!='file'){
-                updateInput.eq(i).val($(this).text());
-            }
-        })
-        updateInput.eq(0).focus();
-        $('.table-focus tbody tr.update-row').removeClass('update-row');
-        $('.table-focus tbody tr.active-row').addClass('update-row');
-    })
+    }
 
     $(document).on('click','.table-focus tbody tr',function(){
         updateInput=$('.update-content').find('input,textarea,select');
@@ -223,8 +240,10 @@ function initEvent() {
     $(document).on('keydown',function(e){
         switch(e.which){
             case 38 :
-                e.preventDefault();
-                prevRow($('.table-focus tbody'));
+                if(!$('input').is(':focus')){
+                    e.preventDefault();
+                    prevRow($('.table-focus tbody'));
+                }
                 break;
             case 40 :
                 if(e.ctrlKey){
@@ -244,8 +263,10 @@ function initEvent() {
                     $('.table-focus tbody tr.active-row').addClass('update-row');
                     break;
                 }
-                e.preventDefault();
-                nextRow($('.table-focus tbody'));
+                if(!$('input').is(':focus')){
+                    e.preventDefault();
+                    nextRow($('.table-focus tbody'));
+                }
                 break;
             default:
                 break;
@@ -292,12 +313,15 @@ function showContent(click_btn){
     updateInput=$('.update-content').find('input,textarea,select');
 }
 
-function reIndex()
+function reIndex(table)
 {
     var tab=0;
-    $(document).find('.table-new-row > tbody > tr:not(:first)').each(function(i) {
-        var index = ('00' + (i+1)).slice(-4);
-        $(this).find('td:nth-child(2)').html('').html(index);
+    var col=2;
+    if(table.find('input[type=checkbox]').length==0){
+        col=1;
+    }
+    table.find('tbody > tr:not(:first)').each(function(i) {
+        $(this).find('td:nth-child('+col+')').html('').html(i+1);
         
     });
 }

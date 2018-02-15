@@ -100,12 +100,12 @@ class Paging
         $page5 = ($pageMax <= $page + 1) ? '' : $page + 2;
         $disabledlast = ($page >= $pageMax) ? 'pagging-disable' : '';
 
-        $paging = '<ul class="pager">';
+        $paging = '<ul class="pager hidden-xs">';
         $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="1">Đầu</a></li>'; // DuyTP 2017/02/16
         $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="' . $page2 . '">Trước</a></li>'; // QuyND 2017/12/07
         if ($page1 != '' && $page1 > 2 && $pageMax > 5) {
             $paging .= '    <li><a page="1">1</a></li>';
-            $paging .= '    <li class="pagging-disable"><a>...</a></li>';
+            $paging .= '    <li class="pagging-disable"><a>..</a></li>';
         }
         if ($page < 5) {
             if ($pageMax < 5) {
@@ -148,9 +148,28 @@ class Paging
         }
 
         if (($page5 != '' && $pageMax > $page5 && $pageMax > 5 && (!($pageMax == ($page + 3))) || ($pageMax == 6 && $page < 5)) || ($page == 4 && $pageMax == 7)) {
-            $paging .= '    <li class="pagging-disable"><a>...</a></li>';
+            $paging .= '    <li class="pagging-disable"><a>..</a></li>';
             $paging .= '    <li><a page="' . $pageMax . '">' . $pageMax . '</a></li>';
         }
+        $paging .= '    <li class="' . $disabledlast . '"><a class="' . $disabledlast . '" page="' . $page4 . '">Tiếp</a></li>'; // QuyND 2017/12/07
+        $paging .= '    <li class="' . $disabledlast . '"><a page="' . $pageMax . '" class="' . $disabledlast . '">Cuối</a></li>'; // DuyTP 2017/02/16
+        $paging .= '</ul>';
+
+
+        $paging .= '<ul class="pager visible-xs">';
+        $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="1">Đầu</a></li>'; // DuyTP 2017/02/16
+        $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="' . $page2 . '">Trước</a></li>'; // QuyND 2017/12/07
+        $paging .= '    <li>';
+        $paging .= '    <select class="form-control input-sm">';
+        for($i=1;$i<=$pageMax;$i++){
+            if($i!=$page){
+                $paging .= '    <option>Trang '.$i.'</option>';
+            }else{
+                $paging .= '    <option selected="selected">Trang '.$i.'</option>';
+            }
+        }
+        $paging .= '    </select>';
+        $paging .= '    </li>';
         $paging .= '    <li class="' . $disabledlast . '"><a class="' . $disabledlast . '" page="' . $page4 . '">Tiếp</a></li>'; // QuyND 2017/12/07
         $paging .= '    <li class="' . $disabledlast . '"><a page="' . $pageMax . '" class="' . $disabledlast . '">Cuối</a></li>'; // DuyTP 2017/02/16
         $paging .= '</ul>';
