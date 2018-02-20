@@ -43,6 +43,7 @@ function initCommon() {
     });
     setCollapse();
     initEvent();
+    setFooter();
     $("#dtBox").DateTimePicker();
     $(".datetimepicker").on("click", function() {
         $("#dtBox").DateTimePicker();
