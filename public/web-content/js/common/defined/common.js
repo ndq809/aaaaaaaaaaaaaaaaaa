@@ -49,10 +49,14 @@ function initCommon() {
     })
     menuController();
     setRightMenuHeight();
-    $("select").selectize({
-        allowEmptyOption: true,
-        create: false
-    });
+   if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $("select").selectize({
+            allowEmptyOption: true,
+            create: false
+        });
+    }else{
+        $("select").addClass("form-control input-sm");
+    }
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');
