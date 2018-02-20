@@ -56,7 +56,6 @@ function initCommonMaster() {
 
         }
     })
-    setFooter();
 }
 
 function initEvent() {
@@ -307,7 +306,6 @@ function showContent(click_btn){
         $(showElement).show();
         $('.fa-spin').hide();
         $('.btn-disable').removeClass('btn-disable');
-        setFooter();
     }, 500);
     $('.table-focus tbody tr:first').addClass('active-row');
     updateInput=$('.update-content').find('input,textarea,select');
@@ -352,9 +350,9 @@ function prevRow(tr_list){
 function setFooter() {
     var temp = $('.header-content').height() + $('.middle-content').height() + $('.bottom-content').height()+10;
     if (temp < $('body').height()) {
-        $('.bottom-content').addClass('pin-footer');
+        $('.bottom-content').css('position','absolute');
     } else {
-        $('.bottom-content').removeClass('pin-footer');
+        $('.bottom-content').css('position','relative');
     }
 }
 

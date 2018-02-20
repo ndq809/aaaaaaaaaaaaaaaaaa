@@ -19,11 +19,9 @@
 	 	<div class="col-md-12 no-padding select-group">
 	 		<div class="form-group">
                 <label>Độ khó bài nghe</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Từ Khóa</label>
@@ -178,6 +176,27 @@
             <button class="btn btn-sm btn-primary margin-top btn-popup" popup-id="popup-box3">Kiểm tra kết quả</button>
 			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="3" readonly=""></textarea>
 		</div>
+        <div class="col-xs-12 no-padding">
+            <div class="commentbox">
+                <div class="titleBox">
+                    <label>Bình luận</label>
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                </div>
+                <div class="actionBox" style="padding: 0px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm"
+                            placeholder="Bình luận của bạn" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn-sm btn-comment" id="btBinhLuan">Bình Luận </button>
+                        </div>
+                    </div>
+                    <a href="" class="hidden see-back">Xem bình luận trước đó</a>
+                    <ul class="commentList">
+                    </ul>
+                    <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt">Hiện thêm bình luận</button>
+                </div>
+            </div>
+        </div>
 	</div>
 </div>
 

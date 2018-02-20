@@ -138,62 +138,26 @@
             <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
 		<div class="col-xs-12 no-padding">
-			<div class="margin-top commentbox">
+            <div class="commentbox">
                 <div class="titleBox">
                     <label>Bình luận</label>
                     <button type="button" class="close" aria-hidden="true">&times;</button>
                 </div>
-
                 <div class="actionBox" style="padding: 0px;">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control input-sm" id="noiDungBL"
-                                placeholder="Bình luận của bạn" />
-                            <div class="input-group-btn">
-                                <a class="btn btn-default btn-sm" id="btBinhLuan">Bình Luận </a>
-                            </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm"
+                            placeholder="Bình luận của bạn" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn-sm btn-comment" id="btBinhLuan">Bình Luận </button>
                         </div>
-                    </form>
-                    <ul class="commentList" id="commentList">
-                        <li id="bl3059">
-                            <div class="commenterImage">
-                                <img src="web-content/images/avarta/avarta.jpg">
-                            </div>
-                            <div class="commentText">
-                                <p>quý nguyễn</p><span class="date sub-text">29-07-2017 17:09:40</span>
-                            </div>
-                        </li>
-                        <li id="bl3059">
-                            <div class="commenterImage">
-                                <img src="web-content/images/avarta/avarta.jpg">
-                            </div>
-                            <div class="commentText">
-                                <p>Bài viết rất hay</p><span class="date sub-text">29-07-2017 17:09:40</span>
-                            </div>
-                        </li>
-                        <li id="bl3059">
-                            <div class="commenterImage">
-                                <img src="web-content/images/avarta/avarta.jpg">
-                            </div>
-                            <div class="commentText">
-                                <p>hình như có chỗ chưa đúng</p><span class="date sub-text">29-07-2017 17:09:40</span>
-                            </div>
-                        </li>
-                        <li id="bl3059">
-                            <div class="commenterImage">
-                                <img src="web-content/images/avarta/avarta.jpg">
-                            </div>
-                            <div class="commentText">
-                                <p>đã học hehe</p><span class="date sub-text">29-07-2017 17:09:40</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="form-group">
-                        <button class="btn btn-default btn-sm full-width">Hiện thêm bình luận</button>
                     </div>
+                    <a href="" class="hidden see-back">Xem bình luận trước đó</a>
+                    <ul class="commentList">
+                    </ul>
+                    <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt">Hiện thêm bình luận</button>
                 </div>
             </div>
-		</div>
+        </div>
 	</div>
 </div>
 
