@@ -29,5 +29,6 @@ Route::group(
 		Route::get('register','RegisterController@getIndex');
 		Route::post('upload-image', 'RegisterController@postUpload');
 		Route::post('crop-image', 'RegisterController@postCrop');
+		Route::post('common/getcomment', 'CommonController@getComment');
 	}
 );

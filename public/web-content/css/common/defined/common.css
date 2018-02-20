@@ -60,10 +60,6 @@ a{
     display: none;
 }
 
-.bottom-content{
-    display: none;
-}
-
 .pager li>a, .pager li>span {
     font-size: 12px;
     border-radius: 0px;
@@ -91,6 +87,10 @@ label {
 
 .input-group {
     width: 100%;
+}
+
+.form-control{
+    border-radius: 0px!important;
 }
 
 .form-control.required {
@@ -122,6 +122,11 @@ label {
 .dropdown-menu {
     border-radius: 0px;
     border: 1px solid #aaa;
+    padding: 0px 0px;
+}
+
+.dropdown-menu>li>a{
+    padding: 3px 8px;
 }
 
 .dropdown-menu li a:hover {
@@ -155,6 +160,12 @@ label {
     background: #4CAF50;
     color: #fff;
 }
+
+.comment-tabs>li.active>a, .comment-tabs>li.active>a:focus, .comment-tabs>li.active>a:hover{
+    background: dimgray;
+    color: #fff;
+}
+
 
 .tab-content {
     border: 1px solid #bbb;
@@ -381,6 +392,8 @@ body {
     border-bottom:1px #fff solid;
     color: white;
     margin-top: 10px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .bottom-content a{
@@ -709,38 +722,109 @@ td .radio-inline {
 .commentList{
     padding: 0;
     list-style: none;
-    max-height: 300px;
-    overflow: auto;
+    margin-bottom: 0px;
 }
 
-.commentList li{
+.commentList .commentItem{
     margin: 0;
-    margin-top: 10px;
-}
-.commentList li>div{
-    display: table-cell;
+    border-bottom: 1px solid #ddd;
 }
 
 .commenterImage{
-    width: 30px;
-    margin-right: 5px;
-    height: 100%;
+    display: inline-block;
     float: left;
+    padding-top: 3px;
+    padding-right: 5px;
 }
 
 .commenterImage img{
-    width: 100%;
-    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #aaa;
 }
 
-.commentText p{
-    margin: 0px;
+
+.commentContent a{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.commentContent{
+    padding-left: 42px;
+}
+
+
+.commentText{
+    display: block;
+    font-size: 12px;
+    text-align: justify;
+}
+.bottomContent{
+    display: block;
+    margin-top: -5px;
+}
+
+.commentHeader{
+    display: block;
+    width: 100%;
+}
+
+.commentHeader a,.commentHeader span{
+    display: inline-block!important;
+    padding-right: 2px;
+}
+
+.commentHeader .rank{
+    font-family: 'ToetheLineless';
+    color: red;
+    font-size: 12px;
+}
+
+.commentHeader .dropdown{
+    float: right;
+}
+
+.commentHeader .dropdown ul{
+    left: -156px;
+    top: 15px;
+}
+
+.commentHeader .dropdown ul li a{
+    width: 100%!important;
+}
+
+.commentHeader .setting{
+    font-size: 12px;
+    float: right;
+    padding-top: 4px;
+    font-weight: normal;
+}
+.bottomContent *{
+    display: inline-block!important;
+    padding-right: 2px;
+}
+
+.bottomContent a{
+    font-size: 11px;
+}
+
+.bottomContent .like{
+    color: firebrick;
+}
+
+.bottomContent .dislike{
+    color: blueviolet;
+}
+
+a.see-back{
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .sub-text {
-    color: #aaa;
-    font-family: verdana;
+    color: #999;
     font-size: 11px;
+    display: block;
 }
 
 .margin-bottom{

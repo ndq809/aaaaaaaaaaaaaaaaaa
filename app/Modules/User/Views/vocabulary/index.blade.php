@@ -18,19 +18,15 @@
 	 	<div class="col-md-12 no-padding select-group">
 	 		<div class="form-group">
                 <label>Danh mục từ vựng</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Nhóm từ vựng</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>this is select box</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Từ Khóa</label>

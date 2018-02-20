@@ -60,13 +60,9 @@
             </div>
             <div class="form-group width-50 inline-block float-left">
                 <label>Giới Tính</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>Nam</option>
-                        <option>Nữ</option>
-                        <option>Khác</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Ảnh Đại Diện</label>
@@ -81,23 +77,15 @@
         <div class="col-xs-12 main-content">
             <div class="form-group width-50 inline-block float-left">
                 <label>Nghề Nghiệp</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>Kỹ sư</option>
-                        <option>Công chức nhà nước</option>
-                        <option>Khác</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group width-50 inline-block float-left">
                 <label>Trình Độ Tiếng Anh</label>
-                <div class="input-group">
-                    <select class="form-control input-sm">
-                        <option>Toleic 600</option>
-                        <option>Bằng A</option>
-                        <option>Khác</option>
-                    </select>
-                </div>
+                <select>
+                    <option>this is select box</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Slogan Của Bạn</label>

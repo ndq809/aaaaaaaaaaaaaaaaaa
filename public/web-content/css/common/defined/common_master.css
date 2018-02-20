@@ -557,6 +557,8 @@ body {
 .bottom-content{
     background: #f1f1f1;
     border-top:2px #fff solid;
+    position: absolute;
+    bottom: 0px;
 }
 
 .bottom-content h5{

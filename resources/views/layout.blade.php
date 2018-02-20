@@ -27,7 +27,8 @@
         @yield('asset_header')
     </head>
     <body>
-        @include('popup')
+        @include('add_on')
+        @include('comment')
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <div class="logo-box">
@@ -115,7 +116,7 @@
                 </nav>
             </div>
         </div>
-        <div class="col-xs-12 web-panel middle-content">
+        <div class="col-xs-12 web-panel middle-content" >
             <div class="col-lg-3 col-md-12 no-padding left-tab" style="padding-right: 1px;">
                 <ul class="nav nav-tabs nav-justified">
                     <li class="active col-sm-6 no-padding"><a data-toggle="tab" href="#sectionA" aria-expanded="true">Góc Học Tập</a></li>

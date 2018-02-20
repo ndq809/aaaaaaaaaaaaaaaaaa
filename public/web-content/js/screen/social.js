@@ -9,8 +9,12 @@ $(function(){
 })
 
 function initSocial(){
+	var comment_content=$('.new-comment').html();
 	initListener();
 	rating=$('input[name="rating"]').ratemate();
+	for (var i = 0; i < 6; i++) {
+		$('#chemgio').find('.commentList:first').append(comment_content);
+	}
 }
 
 function initListener(){
