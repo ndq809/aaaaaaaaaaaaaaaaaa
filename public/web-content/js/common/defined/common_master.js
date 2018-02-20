@@ -31,10 +31,14 @@ function initCommonMaster() {
         allowedFileTypes:['audio'],
         showFileFooterCaption:true,
     });
-    $("select").selectize({
-        allowEmptyOption: true,
-        create: false
-    });
+    if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $("select").selectize({
+            allowEmptyOption: true,
+            create: false
+        });
+    }else{
+        $("select").addClass("form-control input-sm");
+    }
     $('.selectize-control.required .selectize-input').css('border','1px solid #d9534f');
     $('select.required').prev('label').addClass('required');
     $('input.required,textarea.required').parent().prev('label').addClass('required');

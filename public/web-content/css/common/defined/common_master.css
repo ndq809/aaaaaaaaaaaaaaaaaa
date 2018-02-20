@@ -91,8 +91,8 @@ a{
 }
 
 .pager select.input-sm{
-    height: 27px;
-    padding-top: 1px;
+    height: 28px;
+    padding-top: -1px;
     text-align: center;
 }
 
