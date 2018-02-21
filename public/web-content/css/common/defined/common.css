@@ -97,6 +97,10 @@ label {
     border: 1px solid red;
 }
 
+.required .form-control{
+    border: 1px solid red;
+}
+
 .form-control.required:focus {
     border: 1px solid #ccc;
 }
@@ -392,7 +396,7 @@ body {
     border-bottom:1px #fff solid;
     color: white;
     margin-top: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0px;
 }
 

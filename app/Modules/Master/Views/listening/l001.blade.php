@@ -103,7 +103,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Danh Mục Của Bài Nghe</label>
-                <select>
+                <select class="required">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -111,7 +111,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Nhóm Của Bài Nghe</label>
-                <select>
+                <select class="required">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -120,7 +120,7 @@
             <div class="form-group">
                 <label>Tiêu Đề Bài Nghe</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
+                    <input type="text" name="" class="form-control input-sm required" placeholder="Tên từ vựng">
                 </div>
             </div>
         </div>
@@ -128,13 +128,13 @@
             <div class="form-group">
                 <label>Nội Dung Bài Nghe</label>
                 <div class="input-group">
-                    <textarea name="gra-content" class="form-control input-sm" rows="7"></textarea>
+                    <textarea name="gra-content" class="form-control input-sm required" rows="7"></textarea>
                 </div>
             </div>
         </div>
         <div class="col-md-6 col-sm-12 no-padding-right">
             <div class="form-group old-item">
-                <label>Âm Thanh Mặc Định</label>
+                <label>Âm Thanh Cũ</label>
                 <div class="input-group file-subitem">
                     <div class="audio-title text-center">
                         <h6>Em Gái Mưa (Cover) Anh Khang Lyric Loi bai hat _ cogmVVx0q0As.mp3</h6>

@@ -8,7 +8,7 @@
 {{Button::menu_button(array('btn-add','btn-delete','btn-cancel','btn-print','btn-manager-page'))}}
 @endsection
 @section('content')
-<div class="link-div" btn-manager-page-link='/master/w003'></div>
+<div class="link-div" btn-manager-page-link='/master/g003'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
         <h5 class="panel-title">Thêm Mới Nhóm</h5>
@@ -17,7 +17,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục Của Nhóm</label>
-                <select>
+                <select class="required">
                     <option>Ko đc chọn tất cả</option>
                 </select>
             </div>
@@ -25,7 +25,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Danh Mục Của Nhóm</label>
-                <select>
+                <select class="required">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label>Tên Nhóm Mới</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên nhóm cần tạo">
+                    <input type="text" name="" class="form-control input-sm required" placeholder="Tên nhóm cần tạo">
                 </div>
             </div>
         </div>

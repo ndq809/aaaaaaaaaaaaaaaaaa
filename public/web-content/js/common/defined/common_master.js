@@ -31,6 +31,9 @@ function initCommonMaster() {
         allowedFileTypes:['audio'],
         showFileFooterCaption:true,
     });
+    if($('.file-caption').parents('.file-subitem').hasClass('required')){
+        $('.file-caption').addClass('required');
+    }
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $("select").selectize({
             allowEmptyOption: true,
@@ -60,6 +63,7 @@ function initCommonMaster() {
 
         }
     })
+    $.LoadingOverlay("show");
 }
 
 function initEvent() {
@@ -154,9 +158,11 @@ function initEvent() {
     })
 
     $(document).on('click','.delete-tr-row',function(){
+        tableTemp=$(this).parents('table');
         if(confirm("Delete selected row?")){
             $(this).closest('tr').remove();
         }
+        reIndex(tableTemp);
     })
 
     $(document).on('click','#btn-new-row',function(){

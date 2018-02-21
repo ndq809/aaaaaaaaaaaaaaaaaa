@@ -64,6 +64,9 @@ function initCommon() {
     }else{
         $('.menu-btn').css('display','none');
     }
+    if($('.file-caption').parents('.new-item').hasClass('required')){
+        $('.file-caption').addClass('required');
+    }
 }
 
 function initEvent() {

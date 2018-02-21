@@ -17,7 +17,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Danh Mục Của Từ Vựng</label>
-                <select>
+                <select class="required">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -25,7 +25,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Nhóm Của Từ Vựng</label>
-                <select>
+                <select class="required">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label>Tên Từ Vựng</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên từ vựng">
+                    <input type="text" name="" class="form-control input-sm required" placeholder="Tên từ vựng">
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
             <div class="form-group">
                 <label>Phiên Âm</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Phiên âm từ vựng">
+                    <input type="text" name="" class="form-control input-sm required" placeholder="Phiên âm từ vựng">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             <div class="form-group">
                 <label>Nghĩa</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Nghĩa của từ vựng">
+                    <input type="text" name="" class="form-control input-sm required" placeholder="Nghĩa của từ vựng">
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
             <div class="form-group">
                 <label>Giải Thích</label>
                 <div class="input-group">
-                    <textarea class="form-control input-sm" placeholder="Giải thích về từ vựng" rows="3"></textarea>
+                    <textarea class="form-control input-sm required" placeholder="Giải thích về từ vựng" rows="3"></textarea>
                 </div>
             </div>
         </div>

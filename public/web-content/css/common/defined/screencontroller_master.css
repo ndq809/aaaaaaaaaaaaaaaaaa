@@ -32,6 +32,19 @@
     .web-main {
         padding-right: 0px;
     }
+    .invisible{
+        display: none;
+    }
+
+    .file-input{
+        position: relative;
+    }
+    .new-item{
+        padding-left: 0px;
+    }
+    .fileinput-remove-button{
+        margin-left: 0px!important;
+    }
 }
 
 @media screen and (max-width:900px) {

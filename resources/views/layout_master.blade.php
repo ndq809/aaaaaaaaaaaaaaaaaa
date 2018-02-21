@@ -18,6 +18,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
