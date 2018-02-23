@@ -48,6 +48,14 @@
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
+                <label>Quyền Hạn</label>
+                <select class="required">
+                    <option>Tất cả</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
                 <label>Giới Tính</label>
                 <select>
                     <option>Tất cả</option>
@@ -63,7 +71,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 no-padding-right">
+        <div class="col-sm-12 no-padding-right">
             <div class="form-group">
                 <label>Địa Chỉ</label>
                 <div class="input-group">
@@ -109,7 +117,7 @@
                         <th>Ngày Sinh</th>
                         <th>Giới Tính</th>
                         <th>Địa Chỉ</th>
-                        <th></th>
+                        <th>Quyền</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -123,7 +131,7 @@
                         <td>08/09/1993</td>
                         <td>Nam</td>
                         <td class="td-1-line">Tết tết tết tết đến rồi </td>
-                        <td><a href="/master/v006" target="_blank"><span class="fa fa-anchor" style="padding-bottom: 2px;"></span> Cấp quyền</a></td>
+                        <td>Giám đốc</td>
                     </tr>
                     @for($i=1;$i<=5;$i++)
                     <tr>
@@ -136,7 +144,7 @@
                         <td>08/09/1993</td>
                         <td>Nam</td>
                         <td class="td-1-line">Tết tết tết tết đến rồi </td>
-                        <td><a href="/master/v006" target="_blank"><span class="fa fa-anchor" style="padding-bottom: 2px;"></span> Cấp quyền</a></td>
+                        <td>Giám đốc</td>
                     </tr>
                     @endfor
                 </tbody>

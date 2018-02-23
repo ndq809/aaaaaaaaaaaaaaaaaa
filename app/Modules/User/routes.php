@@ -29,6 +29,13 @@ Route::group(
 		Route::get('register','RegisterController@getIndex');
 		Route::post('upload-image', 'RegisterController@postUpload');
 		Route::post('crop-image', 'RegisterController@postCrop');
-		Route::post('common/getcomment', 'CommonController@getComment');
+	}
+);
+$namespace2 = 'App\Modules\Master\Controllers\Common';
+Route::group(
+	['namespace' => $namespace2,'prefix'=>'common','middleware'=>['web']],
+	function() {
+		Route::post('getcomment', 'CommonController@getComment');
+		Route::post('changepass', 'CommonController@changePass');
 	}
 );

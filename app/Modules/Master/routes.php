@@ -62,3 +62,12 @@ Route::group(
 		Route::get('u002','u002Controller@getIndex');
 	}
 );
+
+$namespace6 = 'App\Modules\Master\Controllers\Common';
+Route::group(
+	['namespace' => $namespace6,'prefix'=>'common','middleware'=>['web']],
+	function() {
+		Route::post('getcomment', 'CommonController@getComment');
+		Route::post('changepass', 'CommonController@changePass');
+	}
+);

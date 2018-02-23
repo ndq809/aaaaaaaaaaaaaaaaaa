@@ -184,7 +184,7 @@
                             <a href="" class="hidden see-back">Xem bình luận trước đó</a>
                             <ul class="commentList">
                             </ul>
-                            <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt">Hiện thêm bình luận</button>
+                            <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt">Hiện thêm bình luận<span class="load-icon"></span></button>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                             <a href="" class="hidden see-back">Xem bình luận trước đó</a>
                             <ul class="commentList">
                             </ul>
-                            <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt" type="button">Hiện thêm bình luận</button>
+                            <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt" type="button">Hiện thêm bình luận<span class="load-icon"></span></button>
                         </div>
                     </div>
                 </div>

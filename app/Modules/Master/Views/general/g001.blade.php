@@ -73,7 +73,7 @@
                         <td>{{$i}}</td>
                         <td class="update-item">TV00{{$i}}</td>
                         <td class="update-item">Quy Nguyen</td>
-                        <td class="update-role btn-link btn-popup" popup-id='popup-box0'>178</td>
+                        <td class="update-role">Giám đốc</td>
                         <td class="update-item">Nguyen Quy</td>
                         <td class="update-item">quy@gmail.com</td>
                         <td class="update-item">0123456789</td>
@@ -137,12 +137,21 @@
                 </div>
             </div>
         </div>
+        <div class="col-xs-12"></div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Số Điện Thoại</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm required" placeholder="Nhập số điện thoại">
                 </div>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Quyền Hạn</label>
+                <select class="required">
+                    <option>Tất cả</option>
+                </select>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
@@ -162,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3 no-padding-right">
+        <div class="col-sm-12 no-padding-right">
             <div class="form-group">
                 <label>Địa Chỉ</label>
                 <div class="input-group">

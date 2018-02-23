@@ -8,6 +8,67 @@ $(function() {
 })
 
 function initCommonMaster() {
+    $(document).ajaxComplete(function (evt, jqXHR, settings) {
+      if (settings.loading) {
+        if(settings.container){
+            $(settings.container).LoadingOverlay("hide");
+        }else{
+            $.LoadingOverlay("hide");
+        }
+    }
+    });
+
+    $(document).ajaxError(function (evt, jqXHR, settings, err) {
+      if (settings.loading) {
+        if(settings.container){
+            $(settings.container).LoadingOverlay("hide");
+        }else{
+            $.LoadingOverlay("hide");
+        }
+    }
+    });
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+
+        //HungNV add
+        beforeSend: function () {
+            if (this.loading) {
+                if(this.container){
+                    $(this.container).LoadingOverlay("show");
+                }else{
+                    $.LoadingOverlay("show");
+                }
+            }
+        },
+        success: function (res) {
+            if(this.container){
+                $(this.container).LoadingOverlay("hide");
+            }else{
+                $.LoadingOverlay("hide");
+            }
+        },
+        error: function (response) {
+            if(this.container){
+                $(this.container).LoadingOverlay("hide");
+            }else{
+                $.LoadingOverlay("hide");
+            }
+            return false;
+        },
+        // DuyTP 2017/02/09 Add event back to login when session expires
+        complete: function (res) {
+            if (res.status != null && res.status == 404) {
+                location.href = '/';
+            } else if (res.status == 409) {
+                location.href = '/example';
+            }
+            // if (res.status != null && res.status == 401) {
+            //     location.href = '/';
+            // }
+        }
+    });
     initEvent();
     setLayout();
     menuController()
@@ -63,7 +124,6 @@ function initCommonMaster() {
 
         }
     })
-    $.LoadingOverlay("show");
 }
 
 function initEvent() {
@@ -364,6 +424,21 @@ function setFooter() {
     } else {
         $('.bottom-content').css('position','relative');
     }
+}
+
+function changePassword(username){
+    $.ajax({
+        type: 'POST',
+        url: '/common/changepass',
+        dataType: 'json',
+        data: {},
+        success: function (res) {
+            alert("Đã gửi email bao gồm mk mới");
+        },
+        // Ajax error
+        error: function (res) {
+        }
+    });
 }
 
 

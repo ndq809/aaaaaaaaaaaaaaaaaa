@@ -160,7 +160,7 @@ class Paging
         $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="1">Đầu</a></li>'; // DuyTP 2017/02/16
         $paging .= '    <li class="' . $disabledfirst . '"><a class="' . $disabledfirst . '" page="' . $page2 . '">Trước</a></li>'; // QuyND 2017/12/07
         $paging .= '    <li>';
-        $paging .= '    <select class="form-control input-sm">';
+        $paging .= '    <select class="">';
         for($i=1;$i<=$pageMax;$i++){
             if($i!=$page){
                 $paging .= '    <option>Trang '.$i.'</option>';

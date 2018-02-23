@@ -12,12 +12,13 @@ class CommonController extends Controller
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-	public function getIndex()
-	{
-		return view('Master::general.g001');
-	}
+     public function getComment(){
+          return view('comment');
+     }
 
-
+     public function changePass(){
+          return view('comment');
+     }
 	/**
      * Show the application index.
      * @author mail@ans-asia.com 

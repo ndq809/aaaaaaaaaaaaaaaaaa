@@ -24,7 +24,8 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         // Background
         "backgroundClass"   : "",
         "backgroundCss"     : {
-            "background-color"   : "rgba(255, 255, 255, 0.8)"
+            "background-color"   : "#eee",
+            "opacity": "0.3",
         },
         // Image
         "image"             : "/web-content/images/plugin-icon/loading.gif",
@@ -34,7 +35,8 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
             "animation-duration"        : "2000ms",
             "animation-timing-function" : "linear",
             "animation-iteration-count" : "infinite",
-            "fill"                      : "#202020"
+            "fill"                      : "#202020",
+            "position"                  : "absolute",
         },
         
         
@@ -42,8 +44,8 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         "fade"              : [400, 200],
         "fontawesome"       : "",
         "imagePosition"     : "center center",
-        "maxSize"           : 50,
-        "minSize"           : 20,
+        "maxSize"           : 20,
+        "minSize"           : 10,
         "resizeInterval"    : 50,
         "size"              : "50%",
         "zIndex"            : 2147483647
@@ -237,7 +239,9 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         }
         overlay.children(".loadingoverlay_element").css({
             "width"  : size,
-            "height" : size
+            "height" : size,
+            "top"    : "50%",
+            "left"   : "50%"
         });
         overlay.children(".loadingoverlay_fontawesome").css("font-size", size);
     }

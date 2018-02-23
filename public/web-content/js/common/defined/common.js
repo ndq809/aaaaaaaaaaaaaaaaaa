@@ -9,6 +9,25 @@ $(function() {
 })
 
 function initCommon() {
+    $(document).ajaxComplete(function (evt, jqXHR, settings) {
+      if (settings.loading) {
+        if(settings.container){
+            $(settings.container).LoadingOverlay("hide");
+        }else{
+            $.LoadingOverlay("hide");
+        }
+    }
+    });
+
+    $(document).ajaxError(function (evt, jqXHR, settings, err) {
+      if (settings.loading) {
+        if(settings.container){
+            $(settings.container).LoadingOverlay("hide");
+        }else{
+            $.LoadingOverlay("hide");
+        }
+    }
+    });
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -17,16 +36,26 @@ function initCommon() {
         //HungNV add
         beforeSend: function () {
             if (this.loading) {
-                //callWaiting();
+                if(this.container){
+                    $(this.container).LoadingOverlay("show");
+                }else{
+                    $.LoadingOverlay("show");
+                }
             }
         },
         success: function (res) {
-            // console.log('suces');
-            //removeError();
-            //closeWaiting();
+            if(this.container){
+                $(this.container).LoadingOverlay("hide");
+            }else{
+                $.LoadingOverlay("hide");
+            }
         },
         error: function (response) {
-            //closeWaiting();
+            if(this.container){
+                $(this.container).LoadingOverlay("hide");
+            }else{
+                $.LoadingOverlay("hide");
+            }
             return false;
         },
         // DuyTP 2017/02/09 Add event back to login when session expires
@@ -336,6 +365,8 @@ function getComment(btn_show){
     $.ajax({
         type: 'POST',
         url: '/common/getcomment',
+        loading:true,
+        container:'.commentbox',
         dataType: 'html',
         data: {},
         success: function (res) {
@@ -343,6 +374,21 @@ function getComment(btn_show){
             btn_show.prev(".commentList:first").empty();
             btn_show.prev(".commentList:first").append(temp[0].children);
             $('a.see-back').removeClass('hidden');
+        },
+        // Ajax error
+        error: function (res) {
+        }
+    });
+}
+
+function changePassword(username){
+    $.ajax({
+        type: 'POST',
+        url: '/common/changepass',
+        dataType: 'json',
+        data: {},
+        success: function (res) {
+            alert("Đã gửi email bao gồm mk mới");
         },
         // Ajax error
         error: function (res) {
