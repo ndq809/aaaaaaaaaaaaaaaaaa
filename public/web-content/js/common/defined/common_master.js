@@ -255,6 +255,10 @@ function initEvent() {
             $('.table-focus tbody tr.active-row').addClass('update-row');
         }
     })
+
+    $(document).on('click','#btn-change-pass',function(){
+        changePassword('Khoai lang nướng');
+    })
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $(document).on('doubletap','.table-focus tbody tr.active-row',function(e){
             if(!$(this).hasClass('update-row')){
@@ -431,12 +435,25 @@ function changePassword(username){
         type: 'POST',
         url: '/common/changepass',
         dataType: 'json',
-        data: {},
+        loading:true,
+        data: {
+            username:username,
+        },
         success: function (res) {
-            alert("Đã gửi email bao gồm mk mới");
+            switch(res.status){
+                case 200:
+                    alert("Đã gửi email bao gồm mk mới");
+                    break;
+                case 201:
+                    alert('lỗi hệ thống');
+                    break;
+                default :
+                    break;
+            }
         },
         // Ajax error
-        error: function (res) {
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
         }
     });
 }

@@ -232,6 +232,7 @@ return [
         'Image'        => Intervention\Image\Facades\Image::class,
         'Button'       => App\Helpers\Button::class,
         'Paging'       => App\Helpers\Paging::class,
+        'DAO'          => App\Helpers\DAO::class,
 
     ],
 

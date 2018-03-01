@@ -68,6 +68,6 @@ Route::group(
 	['namespace' => $namespace6,'prefix'=>'common','middleware'=>['web']],
 	function() {
 		Route::post('getcomment', 'CommonController@getComment');
-		Route::post('changepass', 'CommonController@changePass');
+		Route::get('changepass', 'CommonController@changePass');
 	}
 );
