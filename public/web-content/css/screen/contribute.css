@@ -1,0 +1,36 @@
+.left-tab{
+	display: none;
+}
+
+#example1{
+	border-top: 1px solid pink;
+	border-right: 1px solid pink;
+}
+
+/*.sub-block .sp-caption-container{
+	display: none;
+}*/
+.sub-block .sp-mask{
+	height: 266px!important;
+	border: 1px solid #ddd;
+}
+
+.brain-title{
+	margin-top: 5px;
+	margin-bottom: 3px;
+	font-weight: bold;
+	color: green;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.brain-detail{
+	font-size: 13px;
+	 display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

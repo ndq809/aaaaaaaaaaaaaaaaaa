@@ -12,7 +12,7 @@ $namespace = 'App\Modules\User\Controllers';
 Route::group(
 	['namespace' => $namespace,'prefix'=>'','middleware'=>['web']],
 	function() {
-		Route::get('advertisement','AdvertisementController@getIndex');	
+		Route::get('contribute','ContributeController@getIndex');	
 		Route::get('','HomePageController@getIndex');
 		Route::get('vocabulary','VocabularyController@getIndex');
 		Route::any('vocabulary/getData','VocabularyController@getData');

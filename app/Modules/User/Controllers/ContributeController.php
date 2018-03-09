@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class AdvertisementController extends Controller
+class ContributeController extends Controller
 {
 	/**
      * Show the application index.
@@ -14,7 +14,7 @@ class AdvertisementController extends Controller
      */
 	public function getIndex()
 	{
-		return view('User::advertisement.index');
+		return view('User::contribute.index');
 	}
 
 

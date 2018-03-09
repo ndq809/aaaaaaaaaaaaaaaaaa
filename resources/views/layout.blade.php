@@ -17,6 +17,8 @@
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
+        {!!WebFunctions::public_url('web-content/slider/dist/js/jquery.sliderPro.js')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
@@ -24,6 +26,8 @@
         {!!WebFunctions::public_url('web-content/css/common/defined/common.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller.css')!!}
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
+        {!!WebFunctions::public_url('web-content/slider/dist/css/slider-pro.css')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.css')!!}
         <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         @yield('asset_header')
     </head>
