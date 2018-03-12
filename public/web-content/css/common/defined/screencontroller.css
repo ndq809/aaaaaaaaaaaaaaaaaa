@@ -4,6 +4,27 @@
     .search-box {
         width: 100%;
     }
+
+    .watched-ad{
+        height: auto;
+    }
+
+    .watched-ad .sp-mask{
+        height: 266px!important;
+        border: 1px solid #ddd;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .watched-ad .brain-title{
+        position: absolute!important;
+        top: 0px!important;
+    }
+
+    .watched-ad .brain-detail{
+        position: absolute!important;
+        top: 20px!important;
+    }
 }
 
 @media screen and (max-width:990px) {

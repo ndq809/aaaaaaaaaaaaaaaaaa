@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-<div class="col-xs-12 no-padding">
+<div class="col-lg-9 col-md-12 no-padding change-content">
 	<div class="col-md-12 no-padding">
 		<div class="right-header">
 			<h5><i class="fa fa-hand-grab-o"></i> ĐĂNG KÝ TRỞ THÀNH EPLUSER</h5>

@@ -903,3 +903,7 @@ button .is-icon{
 select.input-sm{
     padding-left: 5px;
 }
+
+.watched-ad{
+    height: 685px;
+}

@@ -34,3 +34,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+input[type=checkbox], input[type=radio]{
+	margin: 1px 0 0;
+}
+
+.watched-ad{
+	padding: 0px 10px;
+	background: #fff;
+}
