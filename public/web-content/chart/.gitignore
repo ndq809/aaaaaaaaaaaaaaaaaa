@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ project files
+.idea
+out
+gen
+node_modules
+build

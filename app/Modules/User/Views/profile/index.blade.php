@@ -1,24 +1,28 @@
 @extends('layout')
-@section('title','E+ Đăng Ký')
+@section('title','E+ Trang Cá Nhân')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/common/library/croppic.js')!!}
     {!!WebFunctions::public_url('web-content/css/common/library/croppic.css')!!}
-    {!!WebFunctions::public_url('web-content/js/screen/register.js')!!}
-    {!!WebFunctions::public_url('web-content/css/screen/register.css')!!}
+    {!!WebFunctions::public_url('web-content/chart/dist/jquery.charts.js')!!}
+    {!!WebFunctions::public_url('web-content/chart/dist/utils.js')!!}
+    {!!WebFunctions::public_url('web-content/js/screen/profile.js')!!}
+    {!!WebFunctions::public_url('web-content/css/screen/profile.css')!!}
 @stop
-
+@section('extension')
+    @include('left_tab_1')
+@stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
-	<div class="col-md-12 no-padding">
-		<div class="right-header">
-			<h5><i class="fa fa-hand-grab-o"></i> ĐĂNG KÝ TRỞ THÀNH EPLUSER</h5>
-		</div>
-	</div>
-	<div class="col-sm-6 col-xs-12 no-padding web-main main-content">
+    <div class="col-md-12 no-padding">
+        <div class="right-header">
+            <h5><i class="fa fa-hand-grab-o"></i> ĐĂNG KÝ TRỞ THÀNH EPLUSER</h5>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12 no-padding web-main main-content">
         <div class="example-header title-header">
             <span>Thông Tin Bắt Buộc !</span>
         </div>
-		<div class="col-xs-12 main-content">
+        <div class="col-xs-12 main-content">
             <div class="form-group">
                 <label>Họ Tên Của Bạn</label>
                 <div class="input-group">
@@ -68,8 +72,8 @@
                 <label>Ảnh Đại Diện</label>
                 <div id="imageContainer"></div>
             </div>
-		</div>
-	</div>
+        </div>
+    </div>
     <div class="col-sm-6 col-xs-12 no-padding web-main main-content">
         <div class="example-header title-header">
             <span>Thông Tin Thêm !</span>

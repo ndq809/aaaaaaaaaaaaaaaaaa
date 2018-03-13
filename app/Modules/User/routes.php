@@ -27,6 +27,7 @@ Route::group(
 		Route::get('relax','RelaxController@getIndex');
 		Route::any('relax/getData','RelaxController@getData');
 		Route::get('register','RegisterController@getIndex');
+		Route::get('profile','ProfileController@getIndex');
 		Route::post('upload-image', 'RegisterController@postUpload');
 		Route::post('crop-image', 'RegisterController@postCrop');
 	}
