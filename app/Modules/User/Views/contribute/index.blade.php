@@ -4,7 +4,7 @@
     {!!WebFunctions::public_url('web-content/js/screen/contribute.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/contribute.css')!!}
 @stop
-@section('extension')
+@section('left-tab')
 	<div class="col-lg-3 col-md-12 col-lg-push-9 no-padding">
 		<div id="sectionA" class="tab-pane fade active in">
             <div class="left-header" data-target=".question" data-toggle="collapse">

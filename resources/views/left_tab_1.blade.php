@@ -10,7 +10,7 @@
                     <tbody>
                         <tr>
                             <td width="95%">
-                                <h5>Thứ Hạng Hiện Tại</h5>
+                                <h5>Thứ Hạng Của Bạn</h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
@@ -25,7 +25,7 @@
                     <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_meter2"></canvas></div>
                 </div>
                 <div class="left-hint ">
-                    <h6 style="font-size: 18px"><span style="font-family: 'headerfont1'">Rank </span>: <span style="font-family: 'ToetheLineless'">S+++</span></h6>
+                    <h6 style="font-size: 16px"><span style="font-family: titlefont">Cấp Độ</span> : <span style="font-family: 'headerfont1'">S+++</span></h6>
                 </div>
             </div>
             <div class="left-header" data-target=".question" data-toggle="collapse">
@@ -33,7 +33,7 @@
                     <tbody>
                         <tr>
                             <td width="90%">
-                                <h5>Nghĩa của từ "<span>Hello</span>" là gì?</h5>
+                                <h5>Biểu Đồ Năng Lực</h5>
                             </td>
                             <td class="collapse-icon" width="10%"></td>
                         </tr>
@@ -41,21 +41,8 @@
                 </table>
             </div>
             <div class="collapse in question close-when-small">
-                <div class="left-content ">
-                <label class="radio-inline"><input type="radio" name="optradio">Thời tiết</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Gia đình</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Chào buổi sáng</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Xin chào</label>
-                </div>
-                <button class="btn btn-sm btn-primary answer-btn " type="button">Trả Lời</button>
-                <div class="left-hint ">
-                    <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
+                <div class="full-width inline-block" style="text-align: center;">
+                    <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_radar"></canvas></div>
                 </div>
             </div>
             <div class="left-header" data-target=".new-question" data-toggle="collapse">

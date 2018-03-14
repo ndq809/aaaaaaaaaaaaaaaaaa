@@ -43,7 +43,7 @@ function initProfile(){
 	    },
 	    subTitle: {
 	        text: 'Điểm Kinh Nghiệm',   
-	        fontSize: 18,          
+	        fontSize: 15,          
 	        fontFamily: 'textfont', 
 	        color: 'red'
 	    },
@@ -108,7 +108,7 @@ function initProfile(){
 	    },
 	    subTitle: {
 	        text: 'Điểm Đóng Góp',   
-	        fontSize: 20,          
+	        fontSize: 15,          
 	        fontFamily: 'textfont', 
 	        color: 'red'            
 	    },
@@ -138,6 +138,49 @@ function initProfile(){
 	        type: 0,   // 0 or 1
 	        color: '#333333',
 	        precision: 2
+	    }
+	}).draw();
+
+	var canvas_radar = $('#canvas_radar');
+
+	canvas_radar.css({
+	    width: 250,
+	    height: 250
+	}).Radar({
+	    data: [8, 8, 6, 4, 7],
+	    background: 'transparent',  //背景颜色
+	    min: 0,
+	    max: 10,
+	    dimensions: {
+	        data: ['Từ vựng', 'Ngữ pháp', 'Nghe', 'Đọc', 'Viết'],
+	        fontSize: 13,                                   //文字大小
+	        fontFamily: 'textfont',                  //字体
+	        color: '#666666',                              //文字颜色
+	        margin: 5
+	    },
+	    colors: {
+	        base: {
+	            line: '#ced0d1',
+	            background: '#e2f6ff'
+	        },
+	        data: {
+	            line: '#1799d3',
+	            background: '#1799d3',
+	            opacity:0.5
+	        }
+	    },
+
+	    frames: 60,        //帧数
+	    isAnimation: true,  //是否启用动画
+	    animationTime: 5,   //动画时间
+	    isDebug: false,     //是否调试模式
+	    events: {                                           //绘图事件
+	        start: function (options) {                     //开始绘图
+	        },
+	        drawing: function (cValue, tValue, options) {   //没帧开始
+	        },
+	        end: function (options) {                       //绘图结束
+	        }
 	    }
 	}).draw();
 }

@@ -8,7 +8,7 @@
     {!!WebFunctions::public_url('web-content/js/screen/profile.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/profile.css')!!}
 @stop
-@section('extension')
+@section('left-tab')
     @include('left_tab_1')
 @stop
 @section('content')

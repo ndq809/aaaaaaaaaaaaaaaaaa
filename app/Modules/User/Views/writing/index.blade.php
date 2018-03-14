@@ -5,7 +5,9 @@
     {!!WebFunctions::public_url('web-content/css/screen/writing.css')!!}
     <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 @stop
-
+@section('left-tab')
+    @include('left_tab')
+@stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
 	<div class="col-md-12 no-padding">

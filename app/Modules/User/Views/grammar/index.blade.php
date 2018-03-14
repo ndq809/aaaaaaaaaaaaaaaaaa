@@ -4,7 +4,9 @@
     {!!WebFunctions::public_url('web-content/js/screen/grammar.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/grammar.css')!!}
 @stop
-
+@section('left-tab')
+    @include('left_tab')
+@stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
 	<div class="col-md-12 no-padding">
