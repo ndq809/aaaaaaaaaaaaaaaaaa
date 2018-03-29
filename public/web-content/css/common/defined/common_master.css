@@ -1,36 +1,41 @@
 @font-face {
     font-family: 'headerfont1'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/ALGER.TTF'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/ALGER.TTF') format('truetype'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'headerfont2'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/CHILLER.TTF'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/CHILLER.TTF') format('truetype'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'OstrichSansDashed'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/OstrichSans-Light.otf'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/ostrich_sans_light.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'ToetheLineless'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/ToetheLineless.ttf'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/ToetheLineless.ttf') format('truetype'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'NokioRegular'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/FS NokioRegular.ttf'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/FS_NokioRegular.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'titlefont'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/FontDep.com-UVNBaiHoc_BI.TTF'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/FontDep.com_UVNBaiHoc_BI.TTF') format('truetype'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'textfont'; /*a name to be used later*/
-    src: url('/web-content/css/common/fonts/FontDep.com-UVNThoiDai2.TTF'); /*URL to font*/
+    src: url('/web-content/css/common/fonts/FontDep.com_UVNThoiDai2.TTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'ariavh'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/UVF%20Aria%20Pro.otf'); /*URL to font*/
 }
 html,body{
   height: 100%;

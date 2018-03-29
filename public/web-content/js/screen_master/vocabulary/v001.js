@@ -7,5 +7,5 @@ $(function(){
 })
 
 function init_v001(){
-	$('#btn-add a').attr('href','/master/v004');
+	
 }

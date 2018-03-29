@@ -16,6 +16,7 @@
         {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
@@ -28,6 +29,7 @@
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bs_leftnavi.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bs_leftnavi.css')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         @yield('asset_header')

@@ -4,7 +4,9 @@
    {!!WebFunctions::public_url('web-content/js/screen/homepage.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/homepage.css')!!}
 @stop
-
+@section('left-tab')
+    @include('left_tab')
+@stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content border-left">
     <div class="col-xs-12 no-padding right-header" data-target="#menu-body" data-toggle="collapse">

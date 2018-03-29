@@ -18,7 +18,6 @@ function initCommon() {
         }
     }
     });
-    console.log($('textarea'));
     $(document).ajaxError(function (evt, jqXHR, settings, err) {
       if (settings.loading) {
         if(settings.container){

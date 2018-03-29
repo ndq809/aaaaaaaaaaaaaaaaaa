@@ -153,15 +153,13 @@
                 <table class="table vocabulary-table">
                     <tbody>
                         <tr>
-                            <td>Hello</td>
-                            <td>Xin Chào</td>
-                            <td>Hello</td>
+                            <td width="33%">Hello</td>
+                            <td width="33%">hə'lou</td>
                             <td>Xin Chào</td>
                         </tr>
                         <tr>
-                            <td>Hello</td>
-                            <td>Xin Chào</td>
-                            <td>Hello</td>
+                            <td width="33%">Hello</td>
+                            <td width="33%">hə'lou</td>
                             <td>Xin Chào</td>
                         </tr>
                     </tbody>

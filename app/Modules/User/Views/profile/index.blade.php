@@ -15,7 +15,7 @@
 <div class="col-lg-9 col-md-12 no-padding change-content">
     <div class="col-md-12 no-padding">
         <div class="right-header">
-            <h5><i class="fa fa-hand-grab-o"></i> ĐĂNG KÝ TRỞ THÀNH EPLUSER</h5>
+            <h5><i class="fa fa-hand-grab-o"></i> THÔNG TIN CÁ NHÂN</h5>
         </div>
     </div>
     <div class="col-sm-6 col-xs-12 no-padding web-main main-content">
@@ -34,18 +34,6 @@
                 <label>Tên Tài Khoản</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control input-sm" placeholder="Tên dùng để đăng nhập">
-                </div>
-            </div>
-            <div class="form-group width-50 inline-block float-left">
-                <label>Mật Khẩu</label>
-                <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm" placeholder="Mật khẩu">
-                </div>
-            </div>
-            <div class="form-group width-50 inline-block float-left">
-                <label>Xác Nhận Mật Khẩu</label>
-                <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm" placeholder="Xác nhận mật khẩu">
                 </div>
             </div>
             <div class="form-group">
@@ -100,7 +88,25 @@
         </div>
         
     </div>
-    <button class="btn btn-sm btn-primary col-xs-12 margin-top" type="button">TRỞ THÀNH EPLUSER</button>
+    <button class="btn btn-sm btn-primary col-xs-12 margin-top" type="button">Cập Nhật Thông Tin</button>
+    <div class="col-xs-12 no-padding">
+        <div class="right-header">
+            <h5><i class="fa fa-hand-grab-o"></i> CẬP NHẬT MẬT KHẨU</h5>
+        </div>
+    </div>
+    <div class="form-group width-50 inline-block float-left">
+        <label>Mật Khẩu</label>
+        <div class="input-group">
+            <input type="password" name="" class="form-control input-sm" placeholder="Mật khẩu">
+        </div>
+    </div>
+    <div class="form-group width-50 inline-block float-left">
+        <label>Xác Nhận Mật Khẩu</label>
+        <div class="input-group">
+            <input type="password" name="" class="form-control input-sm" placeholder="Xác nhận mật khẩu">
+        </div>
+    </div>
+    <button class="btn btn-sm btn-primary col-xs-12" type="button">Cập Nhật Mật Khẩu</button>
 </div>
 
 @stop

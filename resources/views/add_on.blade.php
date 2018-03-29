@@ -1,3 +1,4 @@
+<div id="dtBox"></div>
 <div id="popup-box0" class="modal fade" role="dialog" tabindex='-1'>
     <div class="modal-dialog">
     <!-- Modal content-->
@@ -162,6 +163,75 @@
                 </button>
                 <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
                     <i class="glyphicon glyphicon-thumbs-down"></i> Xem Đáp Án
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-box4" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">
+                    ×
+                </button>
+                <h5 class="modal-title">
+                    ĐĂNG KÝ NHIỆM VỤ
+                </h5>
+            </div>
+            <div class="modal-body" style="padding: 0px 10px">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label><span style="color: #009688;font-family: 'textfont';font-size: 20px">Nhiệm Vụ Từ Vựng</span></label>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <label>Danh Mục: <span style="color: #d9534f">600 từ vựng toleic</span></label>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <label>Nhóm: <span style="color: #d9534f">Business</span></label>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <label>Số từ cần phải học <span style="color: #d9534f">69</span></label>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <label>Điểm kinh nghiệm sẽ nhận được: <span style="color: #d9534f">2114</span></label>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Thời Gian</label>
+                            <div class="input-group picker">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input type="text" name="" class="form-control input-sm" data-field="date" value="this is Datepicker" readonly="">
+                                <span class="input-group-text">~</span>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                <input type="text" name="" class="form-control input-sm" data-field="date" value="this is Datepicker" readonly="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>Lịch Trình Mỗi Ngày</label>
+                            <div class="input-group">
+                                <select style="width: 100px" class="inline-block">
+                                    <option>5</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                </select>
+                                <span class="input-group-text text-follow">(Mặc định là 5 từ vựng)</span>
+                            </div>
+                            <label class="text-danger"><span class="fa fa-exclamation-triangle"></span> Nếu không hoàn thành đkn nhận được sẽ bị trừ 1 điểm / 1 lần</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
+                     Xác Nhận 
+                </button>
+                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+                    Hủy
                 </button>
             </div>
         </div>

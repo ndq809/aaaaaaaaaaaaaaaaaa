@@ -1,4 +1,4 @@
-<div class="col-lg-3 col-md-12 no-padding" style="padding-right: 1px;">
+<div class="col-lg-3 col-md-12 no-padding left-tab" style="padding-right: 1px;">
     <ul class="nav nav-tabs nav-justified">
         <li class="active col-sm-6 no-padding"><a data-toggle="tab" href="#sectionA" aria-expanded="true">Thông tin chung</a></li>
         <li class="col-sm-6 no-padding"><a data-toggle="tab" href="#sectionB" aria-expanded="false">Thống kê</a></li>
@@ -28,7 +28,7 @@
                     <h6 style="font-size: 16px"><span style="font-family: titlefont">Cấp Độ</span> : <span style="font-family: 'headerfont1'">S+++</span></h6>
                 </div>
             </div>
-            <div class="left-header" data-target=".question" data-toggle="collapse">
+            <div class="left-header" data-target=".radar-chart" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
@@ -40,29 +40,90 @@
                     </tbody>
                 </table>
             </div>
-            <div class="collapse in question close-when-small">
+            <div class="collapse in radar-chart close-when-small">
                 <div class="full-width inline-block" style="text-align: center;">
                     <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_radar"></canvas></div>
                 </div>
             </div>
-            <div class="left-header" data-target=".new-question" data-toggle="collapse">
+            <div class="left-header" data-target=".mission" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
                             <td width="95%">
-                                <h5>Đặt câu hỏi / Chủ đề mới</h5>
+                                <h5>Thành Tích Của Bạn</h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="new-question collapse in close-when-small">
-                <label >Tiêu đề</label>
-                <textarea class="form-control input-sm" rows="2"></textarea>
-                 <label >Nội dung</label>
-                <textarea class="form-control input-sm" rows="5"></textarea>
-                <button class="btn btn-sm btn-primary margin-top margin-bottom" type="button">Gửi Câu Hỏi</button>
+            <div class="mission collapse in close-when-small">
+                <table class="table table-hover table-mission table-bordered">
+                    <thead>
+                        <th>Nhiệm vụ</th>
+                        <th>Hoàn thành</th>
+                        <th>Thất bại</th>
+                        <th>Đã đạt được</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label >Từ vựng</label>
+                            </td>
+                            <td>
+                                <label >10</label>
+                            </td>
+                            <td>
+                                <label >7</label>
+                            </td>
+                            <td>
+                                <label >1234</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label >Nghe</label>
+                            </td>
+                            <td>
+                                <label >10</label>
+                            </td>
+                            <td>
+                                <label >7</label>
+                            </td>
+                            <td>
+                                <label >125</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label >Ngữ pháp</label>
+                            </td>
+                            <td>
+                                <label >10</label>
+                            </td>
+                            <td>
+                                <label >7</label>
+                            </td>
+                            <td>
+                                <label >33</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label >Viết</label>
+                            </td>
+                            <td>
+                                <label >10</label>
+                            </td>
+                            <td>
+                                <label >7</label>
+                            </td>
+                            <td>
+                                <label >20</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div id="sectionB" class="tab-pane fade">

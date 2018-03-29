@@ -89,6 +89,32 @@ label {
     width: 100%;
 }
 
+.input-group-addon{
+    border-radius: 0px;
+}
+
+.input-group-text {
+    padding: 6px 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: 0px;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.text-follow{
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+}
+
+.text-danger{
+    color: #fe1601;
+}
+
 .form-control{
     border-radius: 0px!important;
 }
@@ -224,6 +250,10 @@ body {
 
 .row{
     margin-right: 0px;
+}
+
+.selectize-control{
+    height: 30px;
 }
 
 .logo-box{
@@ -388,7 +418,7 @@ body {
 .web-main{
     padding: 0px;
     padding-right: 10px;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 .bottom-content{
@@ -483,6 +513,10 @@ body {
 
 .search-box input {
     border-radius: 0px;
+}
+
+.left-tab{
+    border-right: 1px solid #ddd;
 }
 
 .left-header {

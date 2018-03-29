@@ -49,7 +49,7 @@
                         @endfor
                     </tbody>
                 </table>
-                <a class="btn btn-sm btn-default full-width btn-refresh">Làm Mới Thông Báo</a>
+                <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>
             </div>
             <div class="left-header" data-target=".question" data-toggle="collapse">
                 <table style="width: 100%">

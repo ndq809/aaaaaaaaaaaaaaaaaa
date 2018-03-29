@@ -18,7 +18,7 @@ function initProfile(){
 	}).Meter({
 	    target: 80,                
 	    min: 0,                    
-	    max: 100,                  
+	    max: 500,                  
 	    background: 'transparent', 
 	    frames: 60,                 
 	    startAngle: 0.8,           
@@ -36,7 +36,7 @@ function initProfile(){
 	    },
 	    colors: ['#ff6131', '#ffad1f', '#4ebf42', '#317fff'],
 	    title: {                   
-	        text: 'E-Point',           
+	        // text: 'E-Point',           
 	        fontSize: 18,               
 	        fontFamily: 'Roboto', 
 	        color: '#333333'            
@@ -81,9 +81,9 @@ function initProfile(){
 	    width: 150,
 	    height: 150
 	}).Meter({
-	    target: 80,                
+	    target: 130,                
 	    min: 0,                    
-	    max: 100,                  
+	    max: 300,                  
 	    background: 'transparent', 
 	    frames: 60,                 
 	    startAngle: 0.8,           
@@ -101,7 +101,7 @@ function initProfile(){
 	    },
 	    colors: ['#ff6131', '#ffad1f', '#4ebf42', '#317fff'],
 	    title: {                   
-	        text: 'E-Point',           
+	        // text: 'E-Point',           
 	        fontSize: 18,               
 	        fontFamily: 'Roboto', 
 	        color: '#333333'            

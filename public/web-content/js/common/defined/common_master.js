@@ -211,10 +211,21 @@ function initEvent() {
     })
 
     $(document).on('click','#btn-delete',function(){
-        if(confirm("Delete all selected item?")){
-            $('.sub-checkbox:checked').closest('tr').remove();
-            $('.table-focus tbody tr:first').addClass('active-row');
-        }
+       $.sweetModal({
+            title:'thành công',
+            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            icon: $.sweetModal.ICON_SUCCESS,
+            buttons: [
+                {
+                    label: 'That\'s fine',
+                    classes: 'btn btn-sm btn-danger'
+                },
+                {
+                    label: 'That\'s bad',
+                    classes: 'btn btn-sm btn-warning'
+                }
+            ]
+        });
     })
 
     $(document).on('click','.delete-tr-row',function(){
