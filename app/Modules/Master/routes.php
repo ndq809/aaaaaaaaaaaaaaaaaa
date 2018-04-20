@@ -10,7 +10,7 @@
 
 $namespace = 'App\Modules\Master\Controllers\Vocabulary';
 Route::group(
-	['namespace' => $namespace,'prefix'=>'master','middleware'=>['web']],
+	['namespace' => $namespace,'prefix'=>'master/vocabulary','middleware'=>['web']],
 	function() {
 		Route::get('index','Example1Controller@getIndex');
 		Route::get('v001','v001Controller@getIndex');	
@@ -20,7 +20,7 @@ Route::group(
 
 $namespace1 = 'App\Modules\Master\Controllers\General';
 Route::group(
-	['namespace' => $namespace1,'prefix'=>'master','middleware'=>['web']],
+	['namespace' => $namespace1,'prefix'=>'master/general','middleware'=>['web']],
 	function() {
 		Route::get('g001','g001Controller@getIndex');	
 		Route::get('g002','g002Controller@getIndex');
@@ -35,7 +35,7 @@ Route::group(
 
 $namespace3 = 'App\Modules\Master\Controllers\Listening';
 Route::group(
-	['namespace' => $namespace3,'prefix'=>'master','middleware'=>['web']],
+	['namespace' => $namespace3,'prefix'=>'master/listening','middleware'=>['web']],
 	function() {
 		Route::get('index','Example1Controller@getIndex');
 		Route::get('l001','l001Controller@getIndex');
@@ -45,7 +45,7 @@ Route::group(
 
 $namespace4 = 'App\Modules\Master\Controllers\Writing';
 Route::group(
-	['namespace' => $namespace4,'prefix'=>'master','middleware'=>['web']],
+	['namespace' => $namespace4,'prefix'=>'master/writing','middleware'=>['web']],
 	function() {
 		Route::get('index','Example1Controller@getIndex');
 		Route::get('w001','w001Controller@getIndex');	
@@ -53,15 +53,15 @@ Route::group(
 	}
 );
 
-$namespace5 = 'App\Modules\Master\Controllers\UserPost';
-Route::group(
-	['namespace' => $namespace5,'prefix'=>'master','middleware'=>['web']],
-	function() {
-		Route::get('index','Example1Controller@getIndex');
-		Route::get('u001','u001Controller@getIndex');	
-		Route::get('u002','u002Controller@getIndex');
-	}
-);
+// $namespace5 = 'App\Modules\Master\Controllers\UserPost';
+// Route::group(
+// 	['namespace' => $namespace5,'prefix'=>'master/','middleware'=>['web']],
+// 	function() {
+// 		Route::get('index','Example1Controller@getIndex');
+// 		Route::get('u001','u001Controller@getIndex');	
+// 		Route::get('u002','u002Controller@getIndex');
+// 	}
+// );
 
 $namespace6 = 'App\Modules\Master\Controllers\Common';
 Route::group(
@@ -71,3 +71,26 @@ Route::group(
 		Route::get('changepass', 'CommonController@changePass');
 	}
 );
+
+$namespace7 = 'App\Modules\Master\Controllers\MasterData';
+Route::group(
+	['namespace' => $namespace7,'prefix'=>'master/data','middleware'=>['web']],
+	function() {
+		Route::get('m001','m001Controller@getIndex');	
+		Route::get('m002','m002Controller@getIndex');
+		Route::get('m003','m003Controller@getIndex');	
+		Route::get('m004','m004Controller@getIndex');
+		Route::get('m005','m005Controller@getIndex');	
+		Route::get('m006','m006Controller@getIndex');
+		Route::get('m007','m007Controller@getIndex');
+	}
+);
+
+$namespace8 = 'App\Modules\Master\Controllers\System';
+Route::group(
+	['namespace' => $namespace8,'prefix'=>'master/system','middleware'=>['web']],
+	function() {
+		Route::get('s001','s001Controller@getIndex');	
+	}
+);
+

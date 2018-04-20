@@ -26,6 +26,8 @@ Route::group(
 		Route::any('social/getData','SocialController@getData');
 		Route::get('relax','RelaxController@getIndex');
 		Route::any('relax/getData','RelaxController@getData');
+		Route::get('reading','ReadingController@getIndex');
+		Route::any('reading/getData','ReadingController@getData');
 		Route::get('register','RegisterController@getIndex');
 		Route::get('profile','ProfileController@getIndex');
 		Route::post('upload-image', 'RegisterController@postUpload');

@@ -1,5 +1,5 @@
 @extends('layout_master')
-@section('title','Danh Sách Quản Trị Viên')
+@section('title','Trang Cá Nhân')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/general/g001.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/general/g001.css')!!}
@@ -11,96 +11,57 @@
 <div class="link-div" btn-add-page-link='/master/p003'></div>
 <div class="panel main-panel col-xs-12">
 	<div class="panel-header">
-		<h5 class="panel-title">Lọc Danh Sách</h5>
+		<h5 class="panel-title">Thống Kê Công Việc Của Bạn</h5>
 	</div>
     <div class="panel-content no-padding-left">
-    	<div class="col-sm-3 no-padding-right">
-    	    <div class="form-group">
-    	        <label>Quyền</label>
-	            <select>
-	                <option>Tất cả</option>
-                    <option>Thêm</option>
-                    <option>Sửa</option>
-                    <option>Xóa</option>
-	            </select>
-    	    </div>
-    	</div>
-        <div class="col-sm-3 no-padding-right">
+    	<div class="col-sm-6 no-padding-right">
             <div class="form-group">
-                <label>Loại Quản Trị</label>
-                <select>
-                    <option>Tất cả</option>
-                </select>
+                <label>Thời Gian Tra Cứu</label>
+                <div class="input-group picker">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input type="text" name="" class="form-control input-sm" data-field="date" data-format="MM/yyyy" value="{{date('m/Y')}}" readonly="">
+                    <span class="input-group-text">~</span>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input type="text" name="" class="form-control input-sm" data-field="date" data-format="MM/yyyy" value="{{date('m/Y')}}" readonly="">
+                </div>
             </div>
         </div>
-    	<div class="col-sm-3 no-padding-right">
-            <div class="form-group">
-                <label>Từ Khóa</label>
-                <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" class="form-control input-sm" placeholder="Từ khóa của từ vựng">
-                </div>
+    	 <div class="col-xs-12 no-padding-right show-on-click" click-btn="btn-list">
+            <div class="table-fixed-width no-padding-left" min-width='1160px'>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Hạng Mục Thao Tác</th>
+                            <th>Nhóm Đã Tạo</th>
+                            <th>Đã Phê Duyệt</th>
+                            <th>Chưa Phê Duyệt</th>
+                            <th>Thu Nhập Nhận Được</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for($i=1;$i<=5;$i++)
+                        <tr>
+                            <td>00{{$i}}</td>
+                            <td>Từ Vựng</td>
+                            <td>11 (1000 mục)</td>
+                            <td>7 (800 mục)</td>
+                            <td>4 (200 mục)</td>
+                            <td>150,000 VND</td>
+                        </tr>
+                        @endfor
+                        <tr>
+                            <td colspan="5" class="text-right">Tổng Thu Nhập: </td>
+                            <td>750,000 VND</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 	<div class="panel-bottom"></div>
 </div>
 <div class="panel main-panel col-xs-12">
-	<div class="panel-header padding-10-l">
-		<h5 class="panel-title">Danh Sách Quản Trị Viên</h5>
-	</div>
-	<div class="panel-content padding-10-l show-on-click" click-btn='btn-list'>
-		<div class="table-fixed-width no-padding-left" min-width='1160px'>
-            <table class="table table-hover table-bordered table-focus">
-                <thead>
-                    <tr>
-                        <th><input type="checkbox" name="" class="super-checkbox"></th>
-                        <th>ID</th>
-                        <th width="100px">Mã Thành Viên</th>
-                        <th>Tên Đăng Nhập</th>
-                        <th>Quyền</th>
-                        <th>Họ Tên</th>
-                        <th>Email</th>
-                        <th width="120px">Số Điện Thoại</th>
-                        <th>Giới Tính</th>
-                        <th width="150px">Ngày Sinh</th>
-                        <th>Địa Chỉ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                	@for($i=1;$i<=10;$i++)
-                    <tr>
-                        <td><input type="checkbox" name="" class="sub-checkbox"></td>
-                        <td>{{$i}}</td>
-                        <td class="update-item">TV00{{$i}}</td>
-                        <td class="update-item">Quy Nguyen</td>
-                        <td class="update-role">Giám đốc</td>
-                        <td class="update-item">Nguyen Quy</td>
-                        <td class="update-item">quy@gmail.com</td>
-                        <td class="update-item">0123456789</td>
-                        <td class="update-item"> Nam </td>
-                        <td class="update-item"> 05/12/2017 </td>
-                        <td class="td-1-line update-item">k94/56 lê hữu trác sơn trà đà nẵng</td>                        
-                    </tr>
-                    @endfor
-                </tbody>
-            </table>
-        </div>
-        @if(!isset($paging))
-            @php
-                $paging=array('page' => 6,'pagesize' => 15,'totalRecord' => 100,'pageMax'=>10 )
-            @endphp
-        @endif
-        @if($paging['totalRecord'] != 0)
-            <div class=" text-center no-padding-left">
-                {!!Paging::show($paging,0)!!}
-            </div>
-        @endif
-	</div>
-	<div class="panel-bottom">
-		<i class="fa fa-spinner fa-spin"></i>
-	</div>
-</div>
-<div class="panel main-panel col-xs-12 show-on-click" click-btn="btn-list">
     <div class="panel-header padding-10-l">
         <h5 class="panel-title">Cập Nhật Thông Tin</h5>
     </div>
@@ -187,7 +148,7 @@
         </ul>
     </div>
 </div>
-<div class="panel main-panel col-xs-12 show-on-click" click-btn="btn-list">
+<div class="panel main-panel col-xs-12">
     <div class="panel-header padding-10-l">
         <h5 class="panel-title">Cập Nhật Mật Khẩu</h5>
     </div>

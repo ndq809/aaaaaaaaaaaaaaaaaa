@@ -163,6 +163,38 @@
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
             <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
+        <div class="col-xs-12 no-padding margin-top margin-bottom list-panel">
+            <div class="right-header">
+                <h5><i class="glyphicon glyphicon-star-empty"></i> Từ Mới</h5>
+            </div>
+            <div class="panel-group" id="example-list">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse1">
+                    <h5 class="panel-title">
+                      <span>Danh Sách Từ Mới Của Bài Viết</span>
+                    </h5>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="">
+                        <table class="table vocabulary-table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+        </div>
 		<div class="col-xs-12 no-padding">
             <ul class="nav nav-tabs nav-justified comment-tabs">
                 <li class="active"><a data-toggle="tab" href="#chemgio" aria-expanded="true">Bình Luận ,Chém Gió</a></li>

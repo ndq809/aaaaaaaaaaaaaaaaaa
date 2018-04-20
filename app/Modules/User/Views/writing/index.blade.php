@@ -131,6 +131,81 @@
                     <script type="text/javascript">
                       var editor = CKEDITOR.replace('practice-area',{language:"vi"});
                     </script>
+                    <div class="col-xs-12 no-padding margin-top margin-bottom add-panel">
+                        <div class="panel-group" id="add-list">
+                            <div class="panel panel-default panel-contribute">
+                             <div class="panel-heading" data-toggle="collapse" data-parent="#add-list" href="#collapse6">
+                                <h5 class="panel-title">
+                                  <span>Thêm Từ Vựng Cho Bài Viết</span>
+                                </h5>
+                              </div>
+                              <div id="collapse6" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="col-sm-12 no-padding">
+                                        <div class="form-group table-fixed-width" min-width="600px">
+                                            <label>Danh Sách Từ Vựng</label>
+                                            <table class="table table-bordered table-input" style="min-width: 600px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th><a id="btn-new-row" class="btn-add"><span class="fa fa-plus"></span></a></th>
+                                                        <th>Tên</th>
+                                                        <th>Phiên Âm</th>
+                                                        <th>Nghĩa</th>
+                                                        <th>Xóa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="hidden">
+                                                        <td></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                            <tr>
+                                                        <td>1</td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                            <tr>
+                                                        <td>2</td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                            <tr>
+                                                        <td>3</td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                            <tr>
+                                                        <td>4</td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                            <tr>
+                                                        <td>5</td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="abide by"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="ə'baid"></td>
+                                                        <td><input type="text" name="" class="form-control input-sm" value="Tôn trọng, tuân theo, giữ (lời)"></td>
+                                                        <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
+                                                    </tr>
+                                                                        </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
                     <div class="margin-top margin-bottom">
                         <button class="btn btn-sm btn-default" >Làm Mới Trang</button>
                         <button class="btn btn-sm btn-primary" style="float: right;">Lưu Lại</button>
@@ -142,6 +217,38 @@
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
             <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
+        <div class="col-xs-12 no-padding margin-top list-panel">
+            <div class="right-header">
+                <h5><i class="glyphicon glyphicon-star-empty"></i> Từ Mới , Bài Tập</h5>
+            </div>
+            <div class="panel-group" id="example-list">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse1">
+                    <h5 class="panel-title">
+                      <span>Danh Sách Từ Mới Của Bài Viết</span>
+                    </h5>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="">
+                        <table class="table vocabulary-table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+        </div>
 		<div class="col-xs-12 no-padding">
             <div class="commentbox">
                 <div class="titleBox">

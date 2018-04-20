@@ -1,0 +1,10 @@
+#example-list .panel-heading .panel-title span:before{
+    content: "\f03a"; /* FontAwesome Unicode */
+}
+
+#example-list .panel-contribute .panel-title span:before{
+    content: "\f11e"; /* FontAwesome Unicode */
+}
+
+
+

@@ -101,7 +101,11 @@ function switchTabPractice(current_li_tag){
 	selectedPracticeTab = current_li_tag.find("a").attr("href");
 	if(selectedPracticeTab=="#example"){
 		$(".commentbox,.control-btn").show();
+		$(".list-panel").show();
+		$(".add-panel").hide();
 	}else{
 		$(".commentbox,.control-btn").hide();
+		$(".list-panel").hide();
+		$(".add-panel").show();
 	}
 }

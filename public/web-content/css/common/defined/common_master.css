@@ -64,13 +64,14 @@ a{
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     padding: 4px 4px;
+    vertical-align: middle;
 }
 
 .table-input>tbody>tr>td, .table-input>tbody>tr>th, .table-input>tfoot>tr>td, .table-input>tfoot>tr>th, .table-input>thead>tr>td, .table-input>thead>tr>th {
     padding: 2px 4px;
 }
 
-.table-input input{
+table input[type='text']{
     height: 25px;
 }
 
@@ -142,10 +143,6 @@ label.required:after{
     border-radius: 0px;
 }
 
-.form-control.required:focus {
-    border: 1px solid #ccc;
-}
-
 .btn {
     border-radius: 0px;
 }
@@ -209,6 +206,11 @@ textarea {
 
 .checkbox-inline, .radio-inline {
     font-size: 14px;
+}
+
+table .checkbox-inline, .radio-inline{
+    font-size: 12px;
+    font-weight: bold;
 }
 
 a.btn-add{
@@ -288,6 +290,10 @@ a.btn-add span{
     display: table-cell;
 }
 
+.input-group-addon, .input-group-btn{
+    border-radius: 0px;
+}
+
 .show-on-click{
     display: none;
 }
@@ -303,10 +309,12 @@ input[type=checkbox], input[type=radio]{
     vertical-align: middle;
 }
 input[type=checkbox], input[type=radio]{
-        margin: 1px 0 0;
+        margin: 4px 0 0;
 }
 
-
+table input[type=checkbox], input[type=radio]{
+    margin: 1px;
+}
 table{
     margin-bottom:0px!important;
 }
@@ -349,10 +357,9 @@ body {
 }
 
 .logo-box{
-    height: 38px;
     padding: 0px;
     padding-right: 10px;
-    float: left;
+    cursor: default;
 }
 
 .logo-box>div{
@@ -361,18 +368,18 @@ body {
 
 .logo-icon{
     font-size: 30px!important;
-    color: #eee;
 }
 
 .slogan-box{
     width: auto;
     overflow: hidden;
-    text-align: right;
+    margin-top: -20px;
+    cursor: default;
 }
 .logo-box-text{
     display: block;
     padding-left: 10px;
-    color:white;
+    color:#d9524e;
 }
 
 .logo-box-text:nth-child(1){
@@ -389,14 +396,10 @@ body {
 .logo-box-text1{
     padding-left: 20px;
     font-family:'ToetheLineless';
-    font-size: 30px;
+    font-size: 63px;
     color: #f47c48;
 }
 
-.logo-box-text1:hover{
-    cursor: pointer;
-    font-size: 32px;
-}
 .text-slogan{
     display: block;
 }
@@ -406,11 +409,8 @@ body {
 .text-slogan{
     font-family: OstrichSansDashed;
     font-size: 35px;
-    text-align: right;
-    padding-top: 15px;
-    color: white;
     font-weight: bold;
-    margin-right: 15px;
+
 }
 
 .top-header{

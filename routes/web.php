@@ -16,3 +16,6 @@
 Route::get('/template', function () {
     return view('welcome');
 });
+
+Route::get('master/', 'Auth\AccessController@getLogin');
+Route::post('master/checkLogin', 'Auth\AccessController@checkLogin');

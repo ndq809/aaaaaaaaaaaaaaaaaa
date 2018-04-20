@@ -128,6 +128,111 @@
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
 			<button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
+        <div class="col-xs-12 no-padding margin-top">
+            <div class="right-header">
+                <h5><i class="glyphicon glyphicon-star-empty"></i> Ví Dụ Thực Tế</h5>
+            </div>
+            <div class="panel-group" id="example-list">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse1">
+                    <h5 class="panel-title">
+                      <span>There were many students in the room. There were many students in the room. </span>
+                    </h5>
+                    <span class="number-clap">1,5k</span>
+                    <a href="" class="fa fa-signing claped" title="Hay quá ! Vỗ tay!!!"></a>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">Đã có nhiều học sinh ở trong phòng</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse2">
+                    <h5 class="panel-title">
+                      <span>There is a fire in that building.</span>
+                    </h5>
+                    <span class="number-clap">800</span>
+                    <a href="" class="fa fa-signing"></a>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Lửa cháy ở trong tòa nhà đó</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                 <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse3">
+                    <h5 class="panel-title">
+                      <span>It is the fact that the earth goes around the sun.</span>
+                    </h5>
+                    <span class="number-clap">12</span>
+                    <a href="" class="fa fa-signing"></a>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Trái đất quay quanh mặt trời là sự thật</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                 <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse4">
+                    <h5 class="panel-title">
+                      <span>It is the fact that the earth goes around the sun.</span>
+                    </h5>
+                    <span class="number-clap">12</span>
+                    <a href="" class="fa fa-signing"></a>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">Trái đất quay quanh mặt trời là sự thật</div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                 <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse5">
+                    <h5 class="panel-title">
+                      <span>It is the fact that the earth goes around the sun.</span>
+                    </h5>
+                    <span class="number-clap">12</span>
+                    <a href="" class="fa fa-signing"></a>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">Trái đất quay quanh mặt trời là sự thật</div>
+                  </div>
+                </div>
+                <div class="panel panel-default panel-contribute">
+                 <div class="panel-heading " data-toggle="collapse" data-parent="#example-list" href="#collapse6">
+                    <h5 class="panel-title">
+                      <span>Đóng góp ví dụ cho ngữ pháp này</span>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="col-xs-12 no-padding">
+                            <div class="form-group">
+                                <label>Câu Tiếng Anh</label>
+                                 <div class="input-group">
+                                    <input type="text" name="" class="form-control input-sm" placeholder="Nội dung câu tiếng anh">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 no-padding">
+                            <div class="form-group">
+                                <label>Dịch Nghĩa</label>
+                                 <div class="input-group">
+                                    <input type="text" name="" class="form-control input-sm" placeholder="Nghĩa của câu đã nhập">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-danger">Đóng Góp</button>
+                    </div>
+                  </div>
+                </div>
+                @if(!isset($paging))
+                    @php
+                        $paging=array('page' => 6,'pagesize' => 15,'totalRecord' => 100,'pageMax'=>10 )
+                    @endphp
+                @endif
+                @if($paging['totalRecord'] != 0)
+                    <div class=" text-center no-padding-left margin-bottom">
+                        {!!Paging::show($paging,0)!!}
+                    </div>
+                @endif
+              </div> 
+        </div>
 		<div class="col-xs-12 no-padding">
 			<div class="commentbox">
                 <div class="titleBox">

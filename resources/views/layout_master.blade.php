@@ -85,7 +85,7 @@
             </div>
             @include('right_menu')
         </div>
-        <div class="col-xs-12 no-padding bottom-content">
+        <div class="col-xs-12 no-padding bottom-content hidden">
             <h5 class="text-center">COPYRIGHT BY EPLUS.COM 2018 ALL RIGHTS RESERVED</h5>
         </div>
     </body>

@@ -14,6 +14,8 @@ class CommonController extends Controller
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
+    
+
     public function getComment()
     {
         // try {

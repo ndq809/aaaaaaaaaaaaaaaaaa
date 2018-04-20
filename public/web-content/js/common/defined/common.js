@@ -95,6 +95,13 @@ function initCommon() {
     if($('.file-caption').parents('.new-item').hasClass('required')){
         $('.file-caption').addClass('required');
     }
+
+    $('#menu li').each(function(){
+        if(typeof $(this).find('a').attr('href')!='undefined'&&$(this).find('a').attr('href').split('/')[1]===window.location.href.split('/')[3].replace('#','')){
+            $(this).addClass('active-menu');
+        }
+    })
+     
 }
 
 function initEvent() {
@@ -175,6 +182,30 @@ function initEvent() {
 
     $(document).on('click','.btn-more-cmt',function(){
         getComment($(this));
+    })
+
+    $('.close-when-small').on('show.bs.collapse', function (e) {
+        if ($(window).width() <=550) {
+            $('.close-when-small').each(function(){
+                if($(this).attr('class').split(" ")[0]!=e.currentTarget.className.split(" ")[0]){
+                    $(this).collapse("hide");
+                    $(this).prev().find(".collapse-icon").find("i").removeClass("glyphicon-menu-down");
+                    $(this).prev().find(".collapse-icon").find("i").addClass("glyphicon-menu-up");
+                }
+            })
+        }
+    })
+
+    $(document).on('click','#btn-new-row',function(){
+        $(this).parents('table').find('tbody').append("<tr></tr>");
+        $(this).parents('table').find('tbody tr:last-child').append($(this).parents('table').find('tbody tr:first').html());
+        reIndex($(this).parents('table'));
+    })
+
+    $(document).on('click','.delete-tr-row',function(){
+        tableTemp=$(this).parents('table');
+        $(this).closest('tr').remove();
+        reIndex(tableTemp);
     })
 
 }
@@ -392,5 +423,18 @@ function changePassword(username){
         // Ajax error
         error: function (res) {
         }
+    });
+}
+
+function reIndex(table)
+{
+    var tab=0;
+    var col=2;
+    if(table.find('input[type=checkbox]').length==0){
+        col=1;
+    }
+    table.find('tbody > tr:not(:first)').each(function(i) {
+        $(this).find('td:nth-child('+col+')').html('').html(i+1);
+        
     });
 }

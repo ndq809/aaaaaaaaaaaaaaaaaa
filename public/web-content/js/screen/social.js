@@ -110,4 +110,9 @@ function forgetSocial(forget_btn){
 
 function switchTabMain(current_li_tag){
 	selectedPracticeTab = current_li_tag.find("a").attr("href");
+	if(selectedPracticeTab=="#example"){
+		$(".list-panel").show();
+	}else{
+		$(".list-panel").hide();
+	}
 }

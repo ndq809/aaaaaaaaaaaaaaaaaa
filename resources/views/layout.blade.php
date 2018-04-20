@@ -102,6 +102,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="/reading">
+                                    Đọc Hiểu
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/social">
                                     Cộng Đồng E+
                                 </a>

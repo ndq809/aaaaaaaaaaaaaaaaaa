@@ -7,25 +7,22 @@
 	text-align: center;
 }
 
-.vocabulary-table tbody tr td{
-	padding : 3px;
-}
-
-.vocabulary-table tbody tr td:nth-child(2){
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-}
-
-.vocabulary-table tbody tr td:nth-child(odd){
-	font-weight: bold;
-	font-style: italic;
-	color: #2e6da4;
-}
-
 .listen-check-box textarea{
 	text-align: center;
 }
 
 .listen-check-box{
 	text-align: center;
+}
+
+#example-list .panel-heading .panel-title span:before{
+    content: "\f03a"; /* FontAwesome Unicode */
+}
+
+#example-list .panel-contribute .panel-title span:before{
+    content: "\f11e"; /* FontAwesome Unicode */
+}
+
+#example-list{
+	margin-left: 0px;
 }

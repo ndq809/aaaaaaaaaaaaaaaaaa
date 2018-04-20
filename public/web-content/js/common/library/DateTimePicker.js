@@ -43,7 +43,7 @@ $.DateTimePicker = $.DateTimePicker || {
 		timeSeparator: ":",
 		timeMeridiemSeparator: " ",
 		dateTimeSeparator: " ",
-		monthYearSeparator: " ",
+		monthYearSeparator: "/",
 	
 		dateTimeFormat: "dd/MM/yyyy HH:mm",
 		dateFormat: "dd/MM/yyyy",
@@ -71,12 +71,12 @@ $.DateTimePicker = $.DateTimePicker || {
 		roundOffSeconds: true,
 	
 		showHeader: true,
-		titleContentDate: "Cài Đặt Ngày",
-		titleContentTime: "Cài Đặt Thời Gian",
-		titleContentDateTime: "Cài Đặt Ngày Và Thời Gian",
+		titleContentDate: "Thiết Lập Ngày",
+		titleContentTime: "Thiết Lập Thời Gian",
+		titleContentDateTime: "Thiết Lập Ngày Và Thời Gian",
 	
 		buttonsToDisplay: ["HeaderCloseButton", "SetButton", "ClearButton"],
-		setButtonContent: "Cài đặt",
+		setButtonContent: "Thiết Lập",
 		clearButtonContent: "Hủy",
     	incrementButtonContent: "+",
     	decrementButtonContent: "-",
@@ -1301,6 +1301,7 @@ $.cf = {
 				{
 					iNumberOfColumns = 2;
 					sArrFields = ["month", "year"];
+					sTitleContent = 'Thiết Lập Tháng';
 				}
 				else if(oDTP.oData.bArrMatchFormat[5])  // "MMM yyyy"
 				{

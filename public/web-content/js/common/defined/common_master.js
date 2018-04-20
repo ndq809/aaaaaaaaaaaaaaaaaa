@@ -73,9 +73,6 @@ function initCommonMaster() {
     setLayout();
     menuController()
     $("#dtBox").DateTimePicker();
-    $(".datetimepicker").on("click", function() {
-        $("#dtBox").DateTimePicker();
-    })
     $('.table-fixed-width table').each(function(){
         $(this).css('min-width',$(this).parent().attr('min-width'))
     });
@@ -96,7 +93,7 @@ function initCommonMaster() {
         $('.file-caption').addClass('required');
     }
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $("select").selectize({
+        $("select:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
             create: false
         });
@@ -177,17 +174,49 @@ function initEvent() {
         setFooter();
     })
     $(document).on('change','.super-checkbox',function(){
-        if(this.checked){
-            $('.sub-checkbox').prop('checked', true);
-        }else{
-            $('.sub-checkbox').prop('checked', false);
-        }
+        setCheckBox(this);
+        
     })
     $(document).on('change','.sub-checkbox',function(){
-        if($("input.sub-checkbox:visible:not(:checked)").length!=0){
-            $('.super-checkbox').prop('checked', false);
+        var _this=$(this);
+        if(typeof _this.attr('group')=='undefined'){
+            if($('.sub-checkbox:visible').not(':checked').length!=0){
+                $('.super-checkbox').prop('checked',false);
+            }else{
+                $('.super-checkbox').prop('checked',true);
+            }
+        }else if(this.checked){
+            var temp=Number($(this).attr('group'));
+            if(temp>100){
+                var sub_item=$('.sub-checkbox th tr input.abc').filter(function(){
+                    return parseInt($(this).not(':checked').attr('group')/10)===parseInt(_this.attr('group')/10);
+                })
+                if(sub_item.length==0){
+                    $(".super-checkbox[group="+parseInt(temp/10)+"]").prop('checked',true);
+                    sub_item=$('.sub-checkbox').filter(function(){
+                        return parseInt($(this).not(':checked').attr('group')/100)===parseInt(_this.attr('group')/100);
+                    })
+                    if(sub_item.length==0){
+                        $(".super-checkbox[group="+parseInt(temp/100)+"]").prop('checked',true);
+                    }
+                }
+            }else if(temp>10){
+                 var sub_item=$('.sub-checkbox').filter(function(){
+                    return parseInt($(this).not(':checked').attr('group')/10)===parseInt(_this.attr('group')/10);
+                })
+                if(sub_item.length==0){
+                    $(".super-checkbox[group="+parseInt(temp/10)+"]").prop('checked',true);
+                }
+            }
         }else{
-            $('.super-checkbox').prop('checked', true);
+            var temp=Number($(this).attr('group'));
+            if(temp>100){
+                $(".super-checkbox[group="+parseInt(temp/100)+"]").prop('checked',false);
+                 $(".super-checkbox[group="+parseInt(temp/10)+"]").prop('checked',false);
+            }else
+            if(temp>10){
+                 $(".super-checkbox[group="+parseInt(temp/10)+"]").prop('checked',false);
+            }
         }
     })
     $(document).on('click','#btn-list,#btn-update,#btn-search',function(){
@@ -196,6 +225,10 @@ function initEvent() {
 
     $(document).on('click','#btn-cancel',function(){
         location.reload();
+    })
+
+    $(document).on('click','#btn_login',function(){
+        checkLogin('Quy Nguyen');
     })
 
     $(document).on('click','.table-checkbox tr td',function(){
@@ -211,21 +244,9 @@ function initEvent() {
     })
 
     $(document).on('click','#btn-delete',function(){
-       $.sweetModal({
-            title:'thành công',
-            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
-            icon: $.sweetModal.ICON_SUCCESS,
-            buttons: [
-                {
-                    label: 'That\'s fine',
-                    classes: 'btn btn-sm btn-danger'
-                },
-                {
-                    label: 'That\'s bad',
-                    classes: 'btn btn-sm btn-warning'
-                }
-            ]
-        });
+       showMessage(3,function(){
+            $('.sub-checkbox:checked').closest('tr').remove();
+       });
     })
 
     $(document).on('click','.delete-tr-row',function(){
@@ -324,7 +345,7 @@ function initEvent() {
     $(document).on('keydown',function(e){
         switch(e.which){
             case 38 :
-                if(!$('input').is(':focus')){
+                if(e.altKey){
                     e.preventDefault();
                     prevRow($('.table-focus tbody'));
                 }
@@ -347,7 +368,7 @@ function initEvent() {
                     $('.table-focus tbody tr.active-row').addClass('update-row');
                     break;
                 }
-                if(!$('input').is(':focus')){
+                if(e.altKey){
                     e.preventDefault();
                     nextRow($('.table-focus tbody'));
                 }
@@ -439,6 +460,7 @@ function setFooter() {
     } else {
         $('.bottom-content').css('position','relative');
     }
+    $('.bottom-content').removeClass('hidden');
 }
 
 function changePassword(username){
@@ -468,5 +490,130 @@ function changePassword(username){
         }
     });
 }
+
+function showMessage(message_code,ok_callback,cancel_callback){
+    switch(message_code){
+        case 1:
+           $.sweetModal({
+            title:'xác nhận',
+            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            icon: $.sweetModal.ICON_CONFIRM,
+            buttons: [
+                {
+                    label: 'Đồng ý',
+                    classes: 'btn btn-sm btn-danger float-left',
+                    action: ok_callback,
+                },
+                {
+                    label: 'Từ chối',
+                    classes: 'btn btn-sm btn-warning float-right',
+                    action: cancel_callback,
+                }
+            ]
+        });
+        break;
+        case 2:
+           $.sweetModal({
+            title:'Thao tác thành công',
+            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            icon: $.sweetModal.ICON_SUCCESS,
+            buttons: [
+                {
+                    label: 'Ok',
+                    classes: 'btn btn-sm btn-danger',
+                },
+            ]
+        });
+        break; 
+        case 3:
+           $.sweetModal({
+            title:'cảnh báo',
+            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            icon: $.sweetModal.ICON_WARNING,
+            buttons: [
+                {
+                    label: 'Thực hiện',
+                    classes: 'btn btn-sm btn-danger float-left',
+                    action: ok_callback,
+                },
+                {
+                    label: 'Hủy',
+                    classes: 'btn btn-sm btn-warning float-right',
+                    action: cancel_callback,
+                }
+            ]
+        });
+        break; 
+        case 4:
+           $.sweetModal({
+            title:'thao tác thất bại',
+            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            icon: $.sweetModal.ICON_ERROR,
+            buttons: [
+                {
+                    label: 'Đã hiểu',
+                    classes: 'btn btn-sm btn-danger',
+                },
+            ]
+        });
+        break;  
+    }
+}
+
+function checkLogin(username){
+    $.ajax({
+        type: 'POST',
+        url: '/master/checkLogin',
+        dataType: 'json',
+        loading:true,
+        data: {
+            username:username,
+        },
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    window.location.href='/master/general/g001';
+                    break;
+                case 201:
+                    alert('lỗi hệ thống');
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function setCheckBox(super_checkbox){
+    if(super_checkbox.checked){
+        if(typeof $(super_checkbox).attr('group')=='undefined'){
+            $('.sub-checkbox').prop('checked', true);
+        }else{
+            var temp=Number($(super_checkbox).attr('group'));
+            $(".sub-checkbox").each(function(){
+                if(parseInt(Number($(this).attr('group'))/100)==temp||parseInt(Number($(this).attr('group'))/10)==temp){
+                    $(this).prop('checked', true);
+                }
+            });
+        }
+    }else{
+        if(typeof $(super_checkbox).attr('group')=='undefined'){
+            $('.sub-checkbox').prop('checked', false);
+        }else{
+            var temp=Number($(super_checkbox).attr('group'));
+            $(".sub-checkbox").each(function(){
+                if(parseInt(Number($(this).attr('group'))/100)==temp||parseInt(Number($(this).attr('group'))/10)==temp){
+                    $(this).prop('checked', false);
+
+                }
+            });
+        }
+    }
+}
+
 
 

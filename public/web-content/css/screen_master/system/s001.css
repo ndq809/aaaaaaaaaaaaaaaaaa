@@ -1,0 +1,3 @@
+.table-multicheckbox>tbody>tr>td, .table-multicheckbox>tbody>tr>th, .table-multicheckbox>tfoot>tr>td, .table-multicheckbox>tfoot>tr>th, .table-multicheckbox>thead>tr>td, .table-multicheckbox>thead>tr>th {
+	padding: 1px 4px;
+}

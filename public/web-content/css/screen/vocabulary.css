@@ -38,3 +38,7 @@
 .vocabulary-box textarea{
 	resize: none;
 }
+
+#example-list{
+	margin-left: 0px;
+}

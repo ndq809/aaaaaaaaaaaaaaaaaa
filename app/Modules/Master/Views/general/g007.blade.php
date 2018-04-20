@@ -40,7 +40,7 @@
                     <input type="text" name="" class="form-control input-sm" data-field="date" value="this is Datepicker" readonly="">
                     <span class="input-group-text">~</span>
                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                    <input type="text" name="" class="form-control input-sm" data-field="date" value="this is Datepicker" readonly="">
+                    <input type="text" name="" class="form-control input-sm" data-field="date" data-format="MM/yyyy" value="this is Datepicker" readonly="">
                 </div>
             </div>
         </div>

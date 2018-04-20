@@ -102,7 +102,7 @@
             </div>
         </div>
         <div id="sectionB" class="tab-pane fade">
-            <div class="left-header" data-target=".rank" data-toggle="collapse">
+            <div class="left-header" data-target=".top-rank" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
@@ -114,7 +114,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="rank collapse in close-when-small">
+            <div class="top-rank collapse in close-when-small">
                 <table class="table table-hover table-left">
                     <tbody>
                         @for($i=1;$i<=5;$i++)

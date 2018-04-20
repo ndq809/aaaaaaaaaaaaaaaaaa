@@ -32,6 +32,11 @@
     font-family: 'textfont'; /*a name to be used later*/
     src: url('/web-content/css/common/fonts/FontDep.com_UVNThoiDai2.TTF'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'ariavh'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/UVF%20Aria%20Pro.otf'); /*URL to font*/
+}
 html,body{
   height: 100%;
 }
@@ -231,6 +236,18 @@ textarea {
     background: #ddd;
 }
 
+.table-input>tbody>tr>td, .table-input>tbody>tr>th, .table-input>tfoot>tr>td, .table-input>tfoot>tr>th, .table-input>thead>tr>td, .table-input>thead>tr>th {
+    padding: 2px 4px;
+}
+
+.table-input input[type='text']{
+    height: 25px;
+}
+
+.table-input thead th{
+    background-color: #006898;
+}
+
 .hover-item {
     cursor: pointer;
 }
@@ -239,10 +256,85 @@ textarea {
     padding : 0px 1px;
 }
 
+.panel-group{
+    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.panel-group .panel{
+    border-radius: 0px;
+}
+
+.panel-group .panel-heading{
+    padding: 5px 10px;
+    cursor: pointer;
+    display: table;
+    width: 100%;
+}
+
+.panel-group .panel-body{
+    padding: 7px 10px;
+}
+
+.panel-group .panel-title{
+    font-size: 14px;
+    display: table-cell;
+    padding-top: 3px;
+}
+
+.panel-group .panel-heading .panel-title span:before{
+    content: "\f212"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+    width: 1.3em; /* same as padding-left set on li */
+    color: #d9534f;
+}
+
+.panel-group .panel-contribute .panel-title span:before{
+    content: "\f11e"; /* FontAwesome Unicode */
+}
+
+
+.panel-group .panel-heading a{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 13px;
+}
+
+.panel-group .panel-heading .number-clap{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    border-left: 1px solid #ddd;
+    padding-right: 10px;
+    padding-left: 5px;
+    width: 50px;
+}
+
+.panel-group .panel-body:before{
+    content: "\f0a4"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+    width: 1.3em; /* same as padding-left set on li */
+    color: #d9534f;
+}
+
+.panel-group .panel-contribute .panel-body:before{
+    content: none; /* FontAwesome Unicode */
+    
+}
+
 body {
     background-image: url('/web-content/images/background/body-background.gif');
 }
 
+.claped{
+    color: firebrick;
+}
 .user-menu{
     top: 34px!important;
     left: 10px!important;
@@ -610,6 +702,29 @@ body {
     margin-top: 5px;
 }
 
+.vocabulary-table {
+    margin-bottom: 0px;
+}
+
+.vocabulary-table>tbody>tr:hover{
+    background-color: #fff2e6;
+}
+
+.vocabulary-table tbody tr td{
+    padding : 3px;
+}
+
+.vocabulary-table tbody tr td:nth-child(2){
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.vocabulary-table tbody tr td:nth-child(odd){
+    font-weight: bold;
+    font-style: italic;
+    color: #2e6da4;
+}
+
 .table-left {
     text-align: left;
     margin-bottom: 0px;
@@ -940,4 +1055,24 @@ select.input-sm{
 
 .watched-ad{
     height: 685px;
+}
+
+.practice-qs label{
+    display: block;
+}
+
+.practice-qs .checkbox-inline,.practice-qs .radio-inline{
+    margin-left: 10px;
+}
+
+a.btn-add span {
+    color: #fff;
+}
+
+.active-menu{
+    background: #f5f5f5!important;
+}
+
+.active-menu a{
+    color: black!important;
 }

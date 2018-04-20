@@ -147,35 +147,46 @@
                 </div>
 		</div>
 		<div class="col-xs-12 no-padding">
-			<h5 class="hint-text">Danh sách từ mới của bài nghe</h5>
-            <div class="col-md-2 col-sm-2"></div>
-            <div class="col-md-8 col-sm-8">
-                <table class="table vocabulary-table">
-                    <tbody>
-                        <tr>
-                            <td width="33%">Hello</td>
-                            <td width="33%">hə'lou</td>
-                            <td>Xin Chào</td>
-                        </tr>
-                        <tr>
-                            <td width="33%">Hello</td>
-                            <td width="33%">hə'lou</td>
-                            <td>Xin Chào</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-2 col-sm-2"></div>
-		</div>
-		<div class="col-xs-12 no-padding">
 			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
 			<button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 		</div>
 		<div class="col-xs-12 no-padding listen-check-box">
-			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="2">tôn trọng, tuân theo, giữ (lời)</textarea>
+			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="3">tôn trọng, tuân theo, giữ (lời)</textarea>
             <button class="btn btn-sm btn-primary margin-top btn-popup" popup-id="popup-box3">Kiểm tra kết quả</button>
 			<textarea class="form-control input-sm margin-top col-xs-12 no-padding" rows="3" readonly=""></textarea>
 		</div>
+        <div class="col-xs-12 no-padding margin-top">
+            <div class="right-header">
+                <h5><i class="glyphicon glyphicon-star-empty"></i> Từ Mới</h5>
+            </div>
+            <div class="panel-group" id="example-list">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse1">
+                    <h5 class="panel-title">
+                      <span>Danh Sách Từ Mới Của Bài Nghe</span>
+                    </h5>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="">
+                        <table class="table vocabulary-table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                                <tr>
+                                    <td width="33%">Hello</td>
+                                    <td width="33%">hə'lou</td>
+                                    <td>Xin Chào</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+        </div>
         <div class="col-xs-12 no-padding">
             <div class="commentbox">
                 <div class="titleBox">

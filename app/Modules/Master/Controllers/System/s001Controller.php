@@ -1,10 +1,10 @@
 <?php 
-namespace App\Modules\Master\Controllers\UserPost;
+namespace App\Modules\Master\Controllers\System;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class u002Controller extends Controller
+class s001Controller extends Controller
 {
 	/**
      * Show the application index.
@@ -14,7 +14,7 @@ class u002Controller extends Controller
      */
 	public function getIndex()
 	{
-		return view('Master::userpost.u002');
+		return view('Master::system.s001');
 	}
 
 
