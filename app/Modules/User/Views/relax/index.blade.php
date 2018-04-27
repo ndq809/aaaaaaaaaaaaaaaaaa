@@ -203,8 +203,8 @@
 		</div>
         <div class=" col-xs-12 no-padding rate-bar">
             <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><span style="font-weight: bold;">Đánh giá</span></button>
-            <div class="col-md-6 col-sm-6 col-xs-7">
-                <input max="5.0" min="0.0" name="rating" type="number" value="0.0" id="rating-value">
+            <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar">
+                <div class="rateit" data-rateit-resetable="false" data-rateit-mode="font"  style="font-size:36px"> </div>
             </div>
             <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
         </div>

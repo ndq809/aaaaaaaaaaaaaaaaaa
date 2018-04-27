@@ -17,5 +17,7 @@ Route::get('/template', function () {
     return view('welcome');
 });
 
-Route::get('master/', 'Auth\AccessController@getLogin');
-Route::post('master/checkLogin', 'Auth\AccessController@checkLogin');
+Route::get('master/', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('master/checkLogin', 'Auth\LoginController@login');
+Route::get('master/logout', 'Auth\LoginController@logout')->name('logout');
+

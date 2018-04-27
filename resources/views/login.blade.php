@@ -51,11 +51,11 @@
                 </div>
                 <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
                     <div class="form-group ">
-                        <input type="text" class="form-control login-input " name="name" id="user_id" placeholder="Email đăng nhập" value="" tabindex="1" maxlength="12">
+                        <input type="text" class="form-control login-input " name="name" id="email" placeholder="Email đăng nhập" value="" tabindex="1">
                     </div>
 
                     <div class="form-group ">
-                        <input type="password" class="form-control login-input " name="password" id="password" placeholder="Mật khẩu" value=" " tabindex="2" maxlength="12">
+                        <input type="password" class="form-control login-input " name="password" id="password" placeholder="Mật khẩu" value=" " tabindex="2">
                     </div>
                     <div class="form-group">
                         <button type="button" id="btn_login" class="btn btn-primary btn-block btn-login-size" tabindex="3"><img src="/web-content/images/icon/login-icon.png" height="20px"> Đăng Nhập Hệ Thống</button>

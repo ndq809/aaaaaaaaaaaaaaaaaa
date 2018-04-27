@@ -318,7 +318,10 @@ function rememberItem(tr_Element, btn_label) {
     var cloneTr = tr_Element.clone();
     cloneTr.find("button").attr("type-btn", "btn-forget");
     cloneTr.find("button").text(btn_label);
-    tr_Element.remove();
+    tr_Element.addClass('animated fadeOutRight');
+    tr_Element.delay(0).fadeOut(500, function(){
+        tr_Element.remove();
+    });
     if (selectedTab == "#tab1") {
         $("#tab2 table tbody").prepend(cloneTr);
     } else {
@@ -331,7 +334,10 @@ function forgetItem(tr_Element, btn_label) {
     var cloneTr = tr_Element.clone();
     cloneTr.find("button").attr("type-btn", "btn-remember");
     cloneTr.find("button").text(btn_label);
-    tr_Element.remove();
+    tr_Element.addClass('animated fadeOutRight');
+    tr_Element.delay(0).fadeOut(500, function(){
+        tr_Element.remove();
+    });
     if (selectedTab == "#tab1") {
         $("#tab2 table tbody").prepend(cloneTr);
     } else {

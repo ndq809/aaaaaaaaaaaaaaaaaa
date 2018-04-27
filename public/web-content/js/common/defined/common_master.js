@@ -188,7 +188,7 @@ function initEvent() {
         }else if(this.checked){
             var temp=Number($(this).attr('group'));
             if(temp>100){
-                var sub_item=$('.sub-checkbox th tr input.abc').filter(function(){
+                var sub_item=$('.sub-checkbox').filter(function(){
                     return parseInt($(this).not(':checked').attr('group')/10)===parseInt(_this.attr('group')/10);
                 })
                 if(sub_item.length==0){
@@ -561,21 +561,26 @@ function showMessage(message_code,ok_callback,cancel_callback){
 }
 
 function checkLogin(username){
+    var data={};
+        data['email']=$('#email').val();
+        data['password']=$('#password').val();
     $.ajax({
         type: 'POST',
         url: '/master/checkLogin',
         dataType: 'json',
         loading:true,
-        data: {
-            username:username,
-        },
+        data: data,
         success: function (res) {
             switch(res.status){
                 case 200:
                     window.location.href='/master/general/g001';
                     break;
                 case 201:
-                    alert('lỗi hệ thống');
+                    // alert('lỗi validate');
+                    showFailedValidate(res.error);
+                    break;
+                case 202:
+                    alert('sai tên đăng nhập hoặc mật khẩu');
                     break;
                 default :
                     break;
@@ -586,6 +591,17 @@ function checkLogin(username){
             alert(jqXHR.status);
         }
     });
+}
+
+function showFailedValidate(error_array){
+    $.each( error_array, function( key, value ) {
+      $('#'+key).css('background','#d9534f');
+      $('#'+key).attr('data-toggle','tooltip');
+      $('#'+key).attr('data-placement','top');
+      $('#'+key).attr('data-original-title',value);
+    });
+    $('[data-toggle="tooltip"]').tooltip(); 
+    console.log();
 }
 
 function setCheckBox(super_checkbox){

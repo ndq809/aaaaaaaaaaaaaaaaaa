@@ -33,9 +33,9 @@ function initListener(){
 		selectRelax($(this));
 	});
 
-	$(document ).on("change","#rating-value",function(){
-		if($(this).val()!="0"){
-			$(this).parent().prev("button").find("span").text(" Bạn đánh giá "+$(this).val()+" sao");
+	$(document ).on("rated",".rateit",function(){
+		if($(this).rateit('value')!="0"){
+			$(this).parent().prev("button").find("span").text(" Bạn đánh giá "+$(this).rateit('value')+" sao");
 			$(this).parent().prev("button").addClass("btn-success"); 
 		}else{
 			$(this).parent().prev("button").find("span").text(" Đánh giá bài viết !");

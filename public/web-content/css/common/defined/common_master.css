@@ -53,6 +53,12 @@ a{
     cursor: pointer;
 }
 
+.tooltip .tooltip-inner {
+    background-color:red;
+}
+.tooltip .tooltip-arrow {
+      border-top:5px solid red!important;
+}
 
 .no-padding-left{
     padding-left: 0px!important;

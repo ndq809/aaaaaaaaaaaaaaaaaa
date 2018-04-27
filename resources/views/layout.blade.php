@@ -17,6 +17,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery.rateit.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
         {!!WebFunctions::public_url('web-content/slider/dist/js/jquery.sliderPro.js')!!}
         {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
@@ -24,6 +25,8 @@
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/animate.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/rateit.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/common.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller.css')!!}
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}

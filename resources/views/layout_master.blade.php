@@ -51,7 +51,7 @@
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đăng Xuất</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/logout">Đăng Xuất</a></li>
                             </ul>
                         </div>
                         <ul class="nav menu-btn-mobile">
