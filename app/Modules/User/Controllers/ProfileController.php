@@ -1,10 +1,10 @@
 <?php 
 namespace App\Modules\User\Controllers;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ControllerUser;
 use Illuminate\Support\Facades\DB;
 
-class ProfileController extends Controller
+class ProfileController extends ControllerUser
 {
 	/**
      * Show the application index.

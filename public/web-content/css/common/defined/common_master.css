@@ -1077,3 +1077,28 @@ button .is-icon{
 .audio-source audio{
     width: 136px;
 }
+
+.login-message{
+    color: #E5224C;
+    display: block;
+}
+
+.not-found{
+    height: 100%;
+    width: 100%; 
+    object-fit: contain;
+    max-width: 800px;
+}
+
+.input-error:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #E5224C inset;
+}
+
+.input-error{
+    background: #E5224C;
+    color: white;
+}
+
+.input-error:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}

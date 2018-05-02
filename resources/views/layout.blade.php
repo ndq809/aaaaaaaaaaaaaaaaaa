@@ -21,6 +21,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
         {!!WebFunctions::public_url('web-content/slider/dist/js/jquery.sliderPro.js')!!}
         {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
@@ -32,12 +33,14 @@
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
         {!!WebFunctions::public_url('web-content/slider/dist/css/slider-pro.css')!!}
         {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.css')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
         <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
         @yield('asset_header')
     </head>
     <body>
         @include('add_on')
         @include('comment')
+        <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}">
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <div class="logo-box">
@@ -57,17 +60,17 @@
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid">
                         <div class="navbar-header hover-item">
-                            @if(isset($user))
+                            @if(isset(Auth::user()->name))
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
                                 <img src="/web-content/images/avarta/avarta.jpg" height="30px" style="display: inline-block;border: 2px solid #eee;">
-                                <span>{{$user}}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
+                                <span>{{ Auth::user()->name }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/p002">Trang Quản Trị</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/">Đăng Xuất</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" id="btn-logout">Đăng Xuất</a></li>
                             </ul>
                             @else
                             <a class="navbar-brand btn-popup" popup-id="popup-box0">

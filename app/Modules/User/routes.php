@@ -34,7 +34,7 @@ Route::group(
 		Route::post('crop-image', 'RegisterController@postCrop');
 	}
 );
-$namespace2 = 'App\Modules\Master\Controllers\Common';
+$namespace2 = 'App\Modules\User\Controllers';
 Route::group(
 	['namespace' => $namespace2,'prefix'=>'common','middleware'=>['web']],
 	function() {

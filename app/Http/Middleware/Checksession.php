@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
-class RedirectIfAuthenticated
+class Checksession
 {
     /**
      * Handle an incoming request.
@@ -17,8 +17,11 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->check()) {
-            return redirect()->intended('/master/general/g001');
+        if (Auth::guard($guard)->check()&&Auth::guard()->user()!==null&&\Session::getId()!==Auth::guard()->user()->session_id) {
+            Auth::guard()->logout();
+             $request->session()->invalidate();
+            return redirect()->back()->with('error', ['status'       => 206,
+                                                      'statusText'   => 'account duplicate']);
         }
 
         return $next($request);

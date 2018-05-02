@@ -9,12 +9,19 @@ $(function() {
 
 function initCommonMaster() {
     $(document).ajaxComplete(function (evt, jqXHR, settings) {
-      if (settings.loading) {
+    if (settings.loading) {
         if(settings.container){
             $(settings.container).LoadingOverlay("hide");
         }else{
             $.LoadingOverlay("hide");
         }
+    }
+    if(jqXHR.responseJSON.status==204){
+        window.location.href='/master';
+    }
+
+    if(jqXHR.responseJSON.status==205){
+        window.location.href='/master';
     }
     });
 
@@ -121,6 +128,7 @@ function initCommonMaster() {
 
         }
     })
+    setInterval(keepTokenAlive, 1000 * 30); // every 15 mins
 }
 
 function initEvent() {
@@ -229,6 +237,10 @@ function initEvent() {
 
     $(document).on('click','#btn_login',function(){
         checkLogin('Quy Nguyen');
+    })
+
+    $(document).on('click','#btn-logout',function(){
+        logout('Quy Nguyen');
     })
 
     $(document).on('click','.table-checkbox tr td',function(){
@@ -466,7 +478,7 @@ function setFooter() {
 function changePassword(username){
     $.ajax({
         type: 'POST',
-        url: '/common/changepass',
+        url: '/master/common/changepass',
         dataType: 'json',
         loading:true,
         data: {
@@ -564,6 +576,7 @@ function checkLogin(username){
     var data={};
         data['email']=$('#email').val();
         data['password']=$('#password').val();
+        data['remember']=$('#remember').val();
     $.ajax({
         type: 'POST',
         url: '/master/checkLogin',
@@ -573,14 +586,100 @@ function checkLogin(username){
         success: function (res) {
             switch(res.status){
                 case 200:
-                    window.location.href='/master/general/g001';
+                    window.location.reload();
                     break;
                 case 201:
                     // alert('lỗi validate');
+                    clearFailedValidate();
                     showFailedValidate(res.error);
                     break;
                 case 202:
-                    alert('sai tên đăng nhập hoặc mật khẩu');
+                    // alert('sai tên đăng nhập hoặc mật khẩu');
+                    $.each( $('input'), function( key) {
+                      $(this).addClass('input-error');
+                      $(this).attr('data-toggle','tooltip');
+                      $(this).attr('data-placement','top');
+                      $(this).attr('data-original-title','sai tên đăng nhập hoặc mật khẩu');
+                    });
+                    $('[data-toggle="tooltip"]').tooltip();
+                    $('input').first().focus();
+                    break;
+                 case 203:
+                    var counter = parseInt(res.seconds);
+                    $('.login-message').removeClass('hidden');
+                    $('.login-message').html("Tài khoản đã bị khóa <span class='countdown'>"+counter+"</span>s do đăng nhập sai quá nhiều lần");
+                    if(counter==60||typeof interval==='undefined'){
+                        var interval = setInterval(function() {
+                        counter--;
+                        // Display 'counter' wherever you want to display it.
+                        $('.login-message .countdown').text(counter);
+                        if (counter == 0) {
+                            // Display a login box
+                            $('.login-message').addClass('hidden');
+                            clearInterval(interval);
+                        }
+                    }, 1000);
+                    }
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+             $.sweetModal({
+            title:'thao tác thất bại',
+            content: 'Phát sinh lỗi hệ thống không thể đăng nhập!!!',
+            icon: $.sweetModal.ICON_ERROR,
+            buttons: [
+                {
+                    label: 'Đã hiểu',
+                    classes: 'btn btn-sm btn-danger',
+                },
+            ]
+        });
+        }
+    });
+}
+
+function showFailedValidate(error_array){
+    console.log(error_array);
+    debugger;
+    $.each( error_array, function( key, value ) {
+      $('#'+key).addClass('input-error');
+      $('#'+key).attr('data-toggle','tooltip');
+      $('#'+key).attr('data-placement','top');
+      $('#'+key).attr('data-original-title',value);
+    });
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.input-error').first().focus(); 
+}
+
+function clearFailedValidate(){
+    $('input:not([readonly],[disabled],:hidden)').each(function(){
+        $(this).removeClass('input-error');
+        $(this).removeAttr('data-toggle');
+        $(this).removeAttr('data-placement');
+        $(this).removeAttr('data-original-title');
+    })
+}
+
+function logout(username){
+    $.ajax({
+        type: 'POST',
+        url: '/master/logout',
+        dataType: 'json',
+        loading:true,
+        data: {
+            username:username,
+        },
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    window.location.reload();
+                    break;
+                case 201:
+                    alert('lỗi hệ thống');
                     break;
                 default :
                     break;
@@ -591,17 +690,6 @@ function checkLogin(username){
             alert(jqXHR.status);
         }
     });
-}
-
-function showFailedValidate(error_array){
-    $.each( error_array, function( key, value ) {
-      $('#'+key).css('background','#d9534f');
-      $('#'+key).attr('data-toggle','tooltip');
-      $('#'+key).attr('data-placement','top');
-      $('#'+key).attr('data-original-title',value);
-    });
-    $('[data-toggle="tooltip"]').tooltip(); 
-    console.log();
 }
 
 function setCheckBox(super_checkbox){
@@ -629,6 +717,18 @@ function setCheckBox(super_checkbox){
             });
         }
     }
+}
+
+function keepTokenAlive() {
+    $.ajax({
+        url: '/keep-token-alive', //https://stackoverflow.com/q/31449434/470749
+        type: 'post',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    }).then(function (result) {
+        // console.log(new Date() + ' ' + result + ' ' + $('meta[name="csrf-token"]').attr('content'));
+    });
 }
 
 

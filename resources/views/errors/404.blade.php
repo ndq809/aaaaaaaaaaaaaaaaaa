@@ -7,7 +7,7 @@
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
         <link rel="shortcut icon" href="/web-content/images/icon/title-icon2.ico"/>
         <title>
-            @yield('title','Đăng Nhập Hệ Thống')
+            @yield('title','Không Tìm Thấy Trang')
         </title>
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
@@ -32,6 +32,15 @@
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                if(window.location.href.split('/')[3]==='master'){
+                    $(".back-home").attr('href','/master/general/g001');
+                }else{
+                    $(".back-home").attr('href','/');
+                }
+            });
+        </script>
 
     </head>
     <body>
@@ -49,21 +58,11 @@
                 <div class="slogan-box">
                     <span class="text-slogan">LEARN , PLAY AND EXPERIENCE</span>
                 </div>
-                <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
-                    <div class="form-group ">
-                        <input type="text" class="form-control login-input " id="email" placeholder="Email đăng nhập" tabindex="1">
-                    </div>
-
-                    <div class="form-group ">
-                        <input type="password" class="form-control login-input " id="password" placeholder="Mật khẩu" tabindex="2">
-                    </div>
-                    <div class="form-group">
-                        <button type="button" id="btn_login" class="btn btn-primary btn-block btn-login-size" tabindex="3"><img src="/web-content/images/icon/login-icon.png" height="20px"> Đăng Nhập Hệ Thống</button>
-                    </div>
+                <div class="login-form" style="margin: 0 auto;padding: 0px 10px;">
+                    <img class="not-found" src="/web-content/images/icon/404.png">
                     <div class="text-center">
-                        <label class="checkbox-inline"><input type="checkbox" checked="" tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
+                        <a href="/master/general/g001" class="fa fa-hand-o-right back-home" style="font-size: 20px;text-decoration: underline;"><span style="font-family: textfont"> Quay Lại Trang Chủ</span> </a>
                     </div>
-                    <span class="login-message hidden"></span>
                 </div>
             </div>
             

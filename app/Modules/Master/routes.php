@@ -65,10 +65,10 @@ Route::group(
 
 $namespace6 = 'App\Modules\Master\Controllers\Common';
 Route::group(
-	['namespace' => $namespace6,'prefix'=>'common','middleware'=>['web']],
+	['namespace' => $namespace6,'prefix'=>'master/common','middleware'=>['web']],
 	function() {
 		Route::post('getcomment', 'CommonController@getComment');
-		Route::get('changepass', 'CommonController@changePass');
+		Route::post('changepass', 'CommonController@changePass');
 	}
 );
 

@@ -22,7 +22,7 @@
                         Tên Đăng Nhập
                     </label>
                     <div class="input-group">
-                        <input class="form-control input-sm" name="" type="type">
+                        <input class="form-control input-sm" id="email" type="type">
                         </input>
                     </div>
                 </div>
@@ -31,19 +31,21 @@
                         Mật Khẩu
                     </label>
                     <div class="input-group">
-                        <input class="form-control input-sm" name="" type="password">
+                        <input class="form-control input-sm" name="" type="password" id="password">
                         </input>
                     </div>
                 </div>
+                <label class="checkbox-inline"><input type="checkbox" checked="" tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
+                <span class="login-message hidden"></span>
             </div>
             <div class="modal-footer">
                 <a class="btn btn-danger btn-sm float-left" href="/register">
                     Tạo Tài Khoản
                 </a>
-                <button class="btn btn-primary btn-sm" type="button">
+                <button class="btn btn-primary btn-sm" id="btn_login" type="button">
                     Đăng Nhập
                 </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+                <button class="btn btn-default btn-sm"  data-dismiss="modal" type="button">
                     Hủy
                 </button>
             </div>

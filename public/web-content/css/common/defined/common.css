@@ -90,6 +90,13 @@ label {
     font-size: 12px;
 }
 
+.tooltip .tooltip-inner {
+    background-color:red;
+}
+.tooltip .tooltip-arrow {
+      border-top:5px solid red!important;
+}
+
 .input-group {
     width: 100%;
 }
@@ -1082,4 +1089,29 @@ a.btn-add span {
 
 .active-menu a{
     color: black!important;
+}
+
+.not-found{
+    height: 100%;
+    width: 100%; 
+    object-fit: contain;
+    max-width: 800px;
+}
+
+.login-message{
+    color: #E5224C;
+    display: block;
+}
+
+.input-error:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #E5224C inset;
+}
+
+.input-error{
+    background: #E5224C;
+    color: white;
+}
+
+.input-error:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
 }

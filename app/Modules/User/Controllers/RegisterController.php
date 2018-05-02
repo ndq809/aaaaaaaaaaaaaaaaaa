@@ -1,7 +1,7 @@
 <?php 
 namespace App\Modules\User\Controllers;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ControllerUser;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\File;
 
-class RegisterController extends Controller
+class RegisterController extends ControllerUser
 {
 	/**
      * Show the application index.
