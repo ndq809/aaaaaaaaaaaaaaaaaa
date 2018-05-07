@@ -1088,6 +1088,7 @@ button .is-icon{
     width: 100%; 
     object-fit: contain;
     max-width: 800px;
+    max-height: 370px;
 }
 
 .input-error:-webkit-autofill {
@@ -1096,9 +1097,27 @@ button .is-icon{
 
 .input-error{
     background: #E5224C;
-    color: white;
+    color: pink;
 }
 
 .input-error:-webkit-autofill {
-    -webkit-text-fill-color: white !important;
+    -webkit-text-fill-color: pink !important;
+}
+
+.input-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+.input-error::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+.input-error:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+.input-error:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+.tooltip-inner {
+    max-width: 350px;
+    width: auto;
+    border-radius: 0px;
 }

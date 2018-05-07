@@ -1,7 +1,7 @@
-vendor/
 node_modules/
 npm-debug.log
-
+/vendor/*
+!/vendor/laravel
 # Laravel 4 specific
 bootstrap/compiled.php
 app/storage/
@@ -12,7 +12,6 @@ public/hot
 storage/*.key
 .env.*.php
 .env.php
-.env
 Homestead.yaml
 Homestead.json
 
