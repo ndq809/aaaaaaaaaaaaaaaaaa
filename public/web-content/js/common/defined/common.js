@@ -102,7 +102,7 @@ function initCommon() {
         }
     })
     checkError();
-    setInterval(keepTokenAlive, 1000 * 30); // every 15 mins
+    setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
 }
 
 function initEvent() {
@@ -456,7 +456,7 @@ function reIndex(table)
 
 function checkLogin(username){
     var data={};
-        data['email']=$('#email').val();
+        data['acount_nm']=$('#acount_nm').val();
         data['password']=$('#password').val();
         data['remember']=$('#remember').val();
     $.ajax({
@@ -477,14 +477,14 @@ function checkLogin(username){
                     break;
                 case 202:
                     // alert('sai tên đăng nhập hoặc mật khẩu');
-                    $.each( $('#email,#password'), function( key) {
+                    $.each( $('#acount_nm,#password'), function( key) {
                       $(this).addClass('input-error');
                       $(this).attr('data-toggle','tooltip');
                       $(this).attr('data-placement','top');
                       $(this).attr('data-original-title','sai tên đăng nhập hoặc mật khẩu');
                     });
                     $('[data-toggle="tooltip"]').tooltip();
-                    $('#email,#password').first().focus();
+                    $('#acount_nm,#password').first().focus();
                     break;
                  case 203:
                     var counter = parseInt(res.seconds);

@@ -16,6 +16,7 @@
         {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
@@ -51,7 +52,7 @@
                 </div>
                 <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
                     <div class="form-group ">
-                        <input type="text" class="form-control login-input " id="email" placeholder="Email đăng nhập" tabindex="1">
+                        <input type="text" class="form-control login-input " id="acount_nm" placeholder="Email đăng nhập" tabindex="1">
                     </div>
 
                     <div class="form-group ">

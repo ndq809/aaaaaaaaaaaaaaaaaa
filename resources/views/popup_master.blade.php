@@ -1,185 +1,68 @@
-<div id="popup-box0" class="modal fade" role="dialog" tabindex='-1'>
-    <div class="modal-dialog">
-    <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header login-modal">
-                <button class="close" data-dismiss="modal" type="button">
-                    ×
-                </button>
-                <div class="modal-title login-modal">
-                    <span>CÀI ĐẶT QUYỀN</span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="width-50 inline-block float-left">
-                    <div class="form-group">
-                        <label>
-                            Trang Người Dùng 
-                        </label>
-                        <div class="input-group ">
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="1" checked="">Khóa tài khoản (1)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="2">Xóa bình luận (2)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="3">Chỉnh sửa (3)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="4">Ghim bài viết (4)</label>
-                            </div>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="{{ csrf_token() }}" name="csrf-token"/>
+        <link rel="shortcut icon" href="/web-content/images/icon/title-icon2.ico"/>
+        <title>
+            @yield('title','English Plus Master')
+        </title>
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
+        {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/defined/common_master.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller_master.css')!!}
+        {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.css')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/bs_leftnavi.js')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/bs_leftnavi.css')!!}
+        {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+        @yield('asset_header')
+    </head>
+    <body>
+        <div id="dtBox"></div>
+        <div class="col-xs-12 web-panel header-content">
+            <div class="row top-header" style="z-index: 400">
+                <nav class="navbar navbar-default ">
+                    <div class="container-fluid menu-btn-list" style="margin-right: 0px;">
+                        <ul class="nav navbar-nav collapse in navbar-right" id="menu">
+                            @yield('button')
+                        </ul>
+                         <ul class="nav navbar-nav screen-name">
+                            @yield('title','English Plus Master')
+                            <a class="btn btn-sm navbar-brand menu-btn hidden-md" data-target="#menu" data-toggle="collapse">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </a>
+                        </ul>
                     </div>
-                </div>
-                <div class="width-50 inline-block">
-                    <div class="form-group">
-                        <label>
-                            Trang Quản Trị
-                        </label>
-                        <div class="input-group ">
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="5">Thêm mới (5)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="6">Cập nhật (6)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="7" checked="">Xóa (7)</label>
-                            </div>
-                            <div class="checkbox">
-                              <label><input type="checkbox" value="8" checked="">In Dữ Liệu (8)</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-sm" id="btn-role" type="button">
-                    Lưu lại
-                </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                    Hủy
-                </button>
+                </nav>
             </div>
         </div>
-    </div>
-</div>
-<div id="popup-box1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal" type="button">
-                    ×
-                </button>
-                <h5 class="modal-title">
-                    Từ Điển
-                </h5>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>
-                        Nhập Từ Cần Tra
-                    </label>
-                    <div class="input-group">
-                        <input class="form-control input-sm" name="" type="type">
-                        </input>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                    Tra cứu
-                </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                    Hủy
-                </button>
+        <div class="col-xs-12 web-panel middle-content" style="margin-top: 62px">
+            <div class="">
+                @yield('content')
+                <!-- <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button> -->
             </div>
         </div>
-    </div>
-</div>
-<div id="popup-box2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-         <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal" type="button">
-                    ×
-                </button>
-                <h5 class="modal-title">
-                    BÁO CÁO BÀI VIẾT
-                </h5>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>
-                        Các Lỗi Vi Phạm
-                    </label>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Nội dung sai lệch</label>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Spam bài viết</label>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Chứa nội dung phản động</label>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xxx xxx xxx</label>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xx xx xx xxxxxx </label>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">xxx x xxxxxx xxxxx</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>
-                        Ghi chú thêm
-                    </label>
-                    <div class="input-group">
-                       <textarea class="form-control input-sm" rows="2" ></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                    Gửi Báo Cáo
-                </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                    Hủy
-                </button>
-            </div>
+        <div class="col-xs-12 no-padding bottom-content hidden">
+            <h5 class="text-center">COPYRIGHT BY EPLUS.COM 2018 ALL RIGHTS RESERVED</h5>
         </div>
-    </div>
-</div>
-<div id="popup-box3" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" data-dismiss="modal" type="button">
-                    ×
-                </button>
-                <h5 class="modal-title">
-                    KẾT QUẢ BÀI NGHE
-                </h5>
-            </div>
-            <div class="modal-body">
-                <h5>Bạn đã nghe được <span class="listen_result"></span> của bài nghe!!!</h5>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                    <i class="glyphicon glyphicon-thumbs-up"></i> Tiếp Tục Nghe 
-                </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-                    <i class="glyphicon glyphicon-thumbs-down"></i> Xem Đáp Án
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
+    </body>
+</html>

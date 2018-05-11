@@ -83,6 +83,7 @@ Route::group(
 		Route::get('m005','m005Controller@getIndex');	
 		Route::get('m006','m006Controller@getIndex');
 		Route::get('m007','m007Controller@getIndex');
+		Route::post('m004','m004Controller@execute');
 	}
 );
 
@@ -91,6 +92,15 @@ Route::group(
 	['namespace' => $namespace8,'prefix'=>'master/system','middleware'=>['web']],
 	function() {
 		Route::get('s001','s001Controller@getIndex');	
+	}
+);
+
+$namespace9 = 'App\Modules\Master\Controllers\Popup';
+Route::group(
+	['namespace' => $namespace9,'prefix'=>'master/popup','middleware'=>['web']],
+	function() {
+		Route::get('p001','p001Controller@getIndex');
+		Route::post('p001','p001Controller@p001_search');	
 	}
 );
 

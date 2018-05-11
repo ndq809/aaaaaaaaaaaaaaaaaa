@@ -17,6 +17,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
@@ -27,6 +28,7 @@
         {!!WebFunctions::public_url('web-content/css/common/defined/common_master.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/screencontroller_master.css')!!}
         {!!WebFunctions::public_url('web-content/font-awesome-4.7.0/css/font-awesome.css')!!}
+        {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.css')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bs_leftnavi.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bs_leftnavi.css')!!}
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
@@ -36,7 +38,6 @@
     </head>
     <body>
         <div id="dtBox"></div>
-        @include('popup_master')
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <nav class="navbar navbar-default ">
@@ -44,7 +45,7 @@
                          <div class="navbar-header">
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
                                 <img src="/web-content/images/icon/title-icon3.png" height="30px">
-                                <span>Admin<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
+                                <span>{{ Auth::user()->acount_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
                             </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="/?user=Quy Nguyen">Trang User</a></li>

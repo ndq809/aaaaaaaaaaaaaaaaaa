@@ -1096,7 +1096,12 @@ button .is-icon{
 }
 
 .input-error{
-    background: #E5224C;
+    background-color: #E5224C!important;
+    background-image: none!important;
+    color: pink;
+}
+
+.input-error *{
     color: pink;
 }
 

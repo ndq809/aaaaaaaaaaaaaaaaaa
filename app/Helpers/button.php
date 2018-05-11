@@ -30,6 +30,7 @@ class Button
         'btn-add-page-dis' => array('id' => 'btn-add-page', 'class' => 'btn-disable', 'icon' => 'fa fa-share', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-change-pass' => array('id' => 'btn-change-pass', 'class' => '', 'icon' => 'fa fa-key', 'label' => 'Đổi MK', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-change-pass-dis' => array('id' => 'btn-change-pass', 'class' => 'btn-disable', 'icon' => 'fa fa-key', 'label' => 'Đổi MK', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-refresh' => array('id' => 'btn-refresh', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Làm Mới', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

@@ -16,11 +16,11 @@ function initCommonMaster() {
             $.LoadingOverlay("hide");
         }
     }
-    if(jqXHR.responseJSON.status==204){
+    if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==204){
         window.location.href='/master';
     }
 
-    if(jqXHR.responseJSON.status==205){
+    if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==205){
         window.location.href='/master';
     }
     });
@@ -99,8 +99,9 @@ function initCommonMaster() {
     if($('.file-caption').parents('.file-subitem').hasClass('required')){
         $('.file-caption').addClass('required');
     }
+    $("select:not('.allow-selectize')").addClass("form-control input-sm");
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $("select:not([class*='new-allow'])").selectize({
+        $("select.allow-selectize:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
             create: false
         });
@@ -110,7 +111,6 @@ function initCommonMaster() {
     $('.selectize-control.required .selectize-input').css('border','1px solid #d9534f');
     $('select.required').prev('label').addClass('required');
     $('input.required,textarea.required').parent().prev('label').addClass('required');
-    $('.fa-spin').hide();
 
     $('.link-div').each(function(){
         $('#btn-manager a').attr('href',$(this).attr('btn-manager-page-link'));
@@ -128,7 +128,7 @@ function initCommonMaster() {
 
         }
     })
-    setInterval(keepTokenAlive, 1000 * 30); // every 15 mins
+    setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
 }
 
 function initEvent() {
@@ -227,9 +227,6 @@ function initEvent() {
             }
         }
     })
-    $(document).on('click','#btn-list,#btn-update,#btn-search',function(){
-        showContent($(this));
-    })
 
     $(document).on('click','#btn-cancel',function(){
         location.reload();
@@ -242,6 +239,19 @@ function initEvent() {
     $(document).on('click','#btn-logout',function(){
         logout('Quy Nguyen');
     })
+
+    //  $(document).on('click','.btn-popup',function(){
+    //     loadPopup('p001');
+    // })
+
+     $(".btn-popup").fancybox({
+        'width'         : '75%',
+        'height'        : '75%',
+        'autoScale'     : false,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'type'          : 'iframe'
+    });
 
     $(document).on('click','.table-checkbox tr td',function(){
         if($(this).find('input[type=checkbox]').length==0){
@@ -275,11 +285,11 @@ function initEvent() {
         reIndex($(this).parents('table'));
     })
 
-    $(document).on('click','#btn-add',function(){
-        $('.table-new-row tbody').append("<tr></tr>");
-        $('.table-new-row tbody tr:last-child').append($('.table-new-row tbody tr:first').html());
-        reIndex($('.table-new-row'));
-    })
+    // $(document).on('click','#btn-add',function(){
+    //     $('.table-new-row tbody').append("<tr></tr>");
+    //     $('.table-new-row tbody tr:last-child').append($('.table-new-row tbody tr:first').html());
+    //     reIndex($('.table-new-row'));
+    // })
 
     $(document).on('dblclick','.table-focus tbody tr',function(){
         if(!$(this).hasClass('update-row')){
@@ -415,19 +425,6 @@ function menuController() {
     
 }
 
-function showContent(click_btn){
-    _this=click_btn;
-    showElement=".show-on-click[click-btn='"+_this.attr('id')+"']";
-    $('.fa-spin').show();
-    $(showElement).hide();
-    setTimeout(function() {
-        $(showElement).show();
-        $('.fa-spin').hide();
-        $('.btn-disable').removeClass('btn-disable');
-    }, 500);
-    $('.table-focus tbody tr:first').addClass('active-row');
-    updateInput=$('.update-content').find('input,textarea,select');
-}
 
 function reIndex(table)
 {
@@ -574,7 +571,7 @@ function showMessage(message_code,ok_callback,cancel_callback){
 
 function checkLogin(username){
     var data={};
-        data['email']=$('#email').val();
+        data['acount_nm']=$('#acount_nm').val();
         data['password']=$('#password').val();
         data['remember']=$('#remember').val();
     $.ajax({
@@ -643,20 +640,23 @@ function checkLogin(username){
 }
 
 function showFailedValidate(error_array){
-    console.log(error_array);
-    debugger;
     $.each( error_array, function( key, value ) {
-      $('#'+key).addClass('input-error');
-      $('#'+key).attr('data-toggle','tooltip');
-      $('#'+key).attr('data-placement','top');
-      $('#'+key).attr('data-original-title',value);
+        var target=$('#'+key);
+        if(target.prop('type') ==='select-one'&&$('#'+key).hasClass('.allow-selectize')){
+            target=target.next('.selectize-control').find('.selectize-input');
+            console.log(target);
+        }
+      target.addClass('input-error');
+      target.attr('data-toggle','tooltip');
+      target.attr('data-placement','top');
+      target.attr('data-original-title',value);
     });
     $('[data-toggle="tooltip"]').tooltip();
     $('.input-error').first().focus(); 
 }
 
 function clearFailedValidate(){
-    $('input:not([readonly],[disabled],:hidden)').each(function(){
+    $('input:not([readonly],[disabled],:hidden),.selectize-input').each(function(){
         $(this).removeClass('input-error');
         $(this).removeAttr('data-toggle');
         $(this).removeAttr('data-placement');
@@ -730,6 +730,39 @@ function keepTokenAlive() {
         // console.log(new Date() + ' ' + result + ' ' + $('meta[name="csrf-token"]').attr('content'));
     });
 }
+
+function getInputData(){
+    var data={};
+    var value;
+    $('input.submit-item,select.submit-item').each(function(){
+        if($(this).val()===null){
+            value='';
+        }else{
+            value=$(this).val().trim();
+        }
+        data[$(this).attr('id').trim()]=value;
+    })
+    return data;
+}
+
+function loadPopup(screen_name){
+    $(".btn-popup").fancybox({
+        'width'         : '75%',
+        'height'        : '75%',
+        'autoScale'     : false,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'type'          : 'iframe'
+    });
+}
+
+function clearDataSearch(){
+    $('input.submit-item,select.submit-item').val('');
+    $('#result table tbody').html('<tr><td colspan="7">Xin nhập điều kiện tìm kiếm</td></tr>');
+    $('.paging').remove();
+    $('input.submit-item,select.submit-item').first().focus();
+}
+
 
 
 

@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'acount_nm', 'password',
     ];
 
     /**
@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $table = 'S001';
+    protected $primaryKey='accout_id';
+    // public $timestamps=false;
+    public $incrementing = false;
+    const CREATED_AT = 'cre_date';
+    const UPDATED_AT = 'upd_date';
 }

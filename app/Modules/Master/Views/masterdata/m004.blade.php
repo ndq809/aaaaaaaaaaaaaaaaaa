@@ -5,10 +5,10 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/masterdata/m004.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-add','btn-delete','btn-print','btn-manager-page'))}}
+{{Button::menu_button(array('btn-add','btn-delete','btn-manager-page'))}}
 @endsection
 @section('content')
-<div class="link-div" btn-manager-page-link='/master/p002'></div>
+<div class="link-div" btn-manager-page-link='/master/data/m003'></div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
         <h5 class="panel-title">Thêm Nhân Viên</h5>
@@ -16,17 +16,17 @@
     <div class="panel-content no-padding-left">
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Tên Đăng Nhập</label>
+                <label>Họ Và tên Lót</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm required" value="Quy Nguyen" >
+                    <input id="family_nm" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập họ và tên lót" maxlength="50">
                 </div>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Họ Tên</label>
+                <label>Tên</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm required" placeholder="Nhập mật khẩu mới">
+                    <input id="first_name" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập tên" maxlength="20">
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label>Email</label>
                 <div class="input-group">
-                    <input type="email" name="" class="form-control input-sm required" placeholder="Nhập email">
+                    <input id="email" type="email" name="" class="form-control input-sm submit-item" placeholder="Nhập email" maxlength="50">
                 </div>
             </div>
         </div>
@@ -42,22 +42,14 @@
             <div class="form-group">
                 <label>Số Điện Thoại</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm required" placeholder="Nhập số điện thoại">
+                    <input id="cellphone" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập số điện thoại" maxlength="15">
                 </div>
             </div>
         </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Quyền Hạn</label>
-                <select class="required">
-                    <option>Tất cả</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-sm-3 no-padding-right">
-            <div class="form-group">
                 <label>Giới Tính</label>
-                <select>
+                <select id="sex" class="submit-item">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -67,24 +59,69 @@
                 <label>Ngày Sinh</label>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                    <input type="text" name="" class="form-control input-sm" data-field="date" placeholder="this is Datepicker">
+                    <input id="birth_date" type="text" name="" class="form-control input-sm submit-item" data-field="date" placeholder="this is Datepicker">
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 no-padding-right">
+        <div class="col-sm-3 no-padding-right">
             <div class="form-group">
-                <label>Địa Chỉ</label>
+                <label>Phòng Ban</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Nhập địa chỉ">
+                    <input class="form-control input-sm" placeholder="Search for..." > 
+                    <span class="input-group-btn"> 
+                        <a class="btn btn-primary btn-sm btn-popup" type="button" href="/master/popup/p001">Tìm Kiếm</a> 
+                    </span> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Loại Nhân Viên</label>
+                <select class="required submit-item" id="employee_div">
+                    <option> </option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 no-padding-right">
+            <div class="form-group old-item">
+                <label>Hình Ảnh Mặc Định</label>
+                <div class="input-group file-subitem">
+                    <img src="/web-content/images/avarta/avarta.jpg">
+                </div>
+            </div>
+            <div class="form-group new-item">
+                <label class="invisible">.</label>
+                <div class="input-group file-subitem">
+                    <input type="file" class="input-image" name=""  value="">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 no-padding-right">
+            <div class="form-group">
+                <label>Ghi Chú</label>
+                <div class="input-group">
+                    <textarea id="remark" class="form-control input-sm submit-item" placeholder="Nhập địa chỉ" rows="7"></textarea>
                 </div>
             </div>
         </div>
         <div class="col-xs-12"></div>
+         <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Tên Đăng Nhập</label>
+                <div class="input-group">
+                    <input id="account_nm" type="text" name="" class="form-control input-sm required submit-item" placeholder="Nhập tên tài khoản" >
+                </div>
+            </div>
+        </div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Mật Khẩu</label>
                 <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm required">
+                    <input id="password" type="password" name="" class="form-control input-sm required submit-item" maxlength="100" placeholder="Nhập mật khẩu">
                 </div>
             </div>
         </div>
@@ -92,7 +129,7 @@
             <div class="form-group">
                 <label>Xác Nhận Mật Khẩu</label>
                 <div class="input-group">
-                    <input type="password" name="" class="form-control input-sm required" >
+                    <input id="password_confirm" type="password" name="" class="form-control input-sm required submit-item" maxlength="100" placeholder="Xác nhận lại mật khẩu đã nhập">
                 </div>
             </div>
         </div>
