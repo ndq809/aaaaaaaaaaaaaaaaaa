@@ -2,8 +2,8 @@
     <h5 class="panel-title">Danh Sách Phòng Ban</h5>
 </div>
 <div class="panel-content padding-10-l">
-    <div class="table-fixed-width no-padding-left" min-width='1160px'>
-        <table class="table table-hover table-bordered">
+    <div class="table-fixed-width no-padding-left" min-width='700px'>
+        <table class="table table-hover table-bordered table-refer">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -19,11 +19,11 @@
                 @foreach($data[0] as $value=>$row)
                 <tr>
                     <td>{{$value+1}}</td>
-                    <td class="update-item">{!! $row['department_id'] !!}</td>
-                    <td class="update-item">{!! $row['department_nm'] !!}</td>
-                    <td class="update-role">{!! $row['department_ab_nm'] !!}</td>
-                    <td class="update-item">{!! $row['section_nm'] !!}</td>
-                    <td class="update-item">{!! $row['remark'] !!}</td>
+                    <td class="refer-item">{!! $row['department_id'] !!}</td>
+                    <td class="refer-item">{!! $row['department_nm'] !!}</td>
+                    <td>{!! $row['department_ab_nm'] !!}</td>
+                    <td>{!! $row['section_nm'] !!}</td>
+                    <td>{!! $row['remark'] !!}</td>
                 </tr>
                 @endforeach
                 @else

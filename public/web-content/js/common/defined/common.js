@@ -456,7 +456,7 @@ function reIndex(table)
 
 function checkLogin(username){
     var data={};
-        data['acount_nm']=$('#acount_nm').val();
+        data['account_nm']=$('#account_nm').val();
         data['password']=$('#password').val();
         data['remember']=$('#remember').val();
     $.ajax({
@@ -477,14 +477,14 @@ function checkLogin(username){
                     break;
                 case 202:
                     // alert('sai tên đăng nhập hoặc mật khẩu');
-                    $.each( $('#acount_nm,#password'), function( key) {
+                    $.each( $('#account_nm,#password'), function( key) {
                       $(this).addClass('input-error');
                       $(this).attr('data-toggle','tooltip');
                       $(this).attr('data-placement','top');
                       $(this).attr('data-original-title','sai tên đăng nhập hoặc mật khẩu');
                     });
                     $('[data-toggle="tooltip"]').tooltip();
-                    $('#acount_nm,#password').first().focus();
+                    $('#account_nm,#password').first().focus();
                     break;
                  case 203:
                     var counter = parseInt(res.seconds);
@@ -558,7 +558,7 @@ function logout(username){
                 case 200:
                     window.location.reload();
                     break;
-                case 201:
+                case 208:
                     alert('lỗi hệ thống');
                     break;
                 default :

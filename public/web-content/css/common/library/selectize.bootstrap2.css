@@ -249,6 +249,7 @@
 .selectize-dropdown [data-selectable] {
   cursor: pointer;
   overflow: hidden;
+  height: 26px;
 }
 .selectize-dropdown [data-selectable] .highlight {
   background: rgba(255, 237, 40, 0.4);

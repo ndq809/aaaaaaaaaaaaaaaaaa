@@ -12,7 +12,6 @@ $namespace = 'App\Modules\Master\Controllers\Vocabulary';
 Route::group(
 	['namespace' => $namespace,'prefix'=>'master/vocabulary','middleware'=>['web']],
 	function() {
-		Route::get('index','Example1Controller@getIndex');
 		Route::get('v001','v001Controller@getIndex');	
 		Route::get('v002','v002Controller@getIndex');
 	}
@@ -37,7 +36,6 @@ $namespace3 = 'App\Modules\Master\Controllers\Listening';
 Route::group(
 	['namespace' => $namespace3,'prefix'=>'master/listening','middleware'=>['web']],
 	function() {
-		Route::get('index','Example1Controller@getIndex');
 		Route::get('l001','l001Controller@getIndex');
 		Route::get('l002','l002Controller@getIndex');	
 	}
@@ -47,7 +45,6 @@ $namespace4 = 'App\Modules\Master\Controllers\Writing';
 Route::group(
 	['namespace' => $namespace4,'prefix'=>'master/writing','middleware'=>['web']],
 	function() {
-		Route::get('index','Example1Controller@getIndex');
 		Route::get('w001','w001Controller@getIndex');	
 		Route::get('w002','w002Controller@getIndex');
 	}
@@ -57,7 +54,6 @@ Route::group(
 // Route::group(
 // 	['namespace' => $namespace5,'prefix'=>'master/','middleware'=>['web']],
 // 	function() {
-// 		Route::get('index','Example1Controller@getIndex');
 // 		Route::get('u001','u001Controller@getIndex');	
 // 		Route::get('u002','u002Controller@getIndex');
 // 	}
@@ -69,6 +65,10 @@ Route::group(
 	function() {
 		Route::post('getcomment', 'CommonController@getComment');
 		Route::post('changepass', 'CommonController@changePass');
+		Route::post('refer', 'CommonController@refer');
+		Route::post('upload-image', 'CommonController@postUpload');
+		Route::post('crop-image', 'CommonController@postCrop');
+		Route::post('checkvalidate', 'CommonController@com_validate');
 	}
 );
 
@@ -83,7 +83,11 @@ Route::group(
 		Route::get('m005','m005Controller@getIndex');	
 		Route::get('m006','m006Controller@getIndex');
 		Route::get('m007','m007Controller@getIndex');
-		Route::post('m004','m004Controller@execute');
+		Route::post('m004/addnew','m004Controller@m004_addnew');
+		Route::post('m004/delete','m004Controller@m004_delete');
+		Route::post('m003/list','m003Controller@m003_list');
+		Route::post('m003/update','m003Controller@m003_update');
+		Route::post('m003/delete','m003Controller@m003_delete');
 	}
 );
 
@@ -91,7 +95,14 @@ $namespace8 = 'App\Modules\Master\Controllers\System';
 Route::group(
 	['namespace' => $namespace8,'prefix'=>'master/system','middleware'=>['web']],
 	function() {
-		Route::get('s001','s001Controller@getIndex');	
+		Route::get('s001','s001Controller@getIndex');
+		Route::get('s002','s002Controller@getIndex');	
+		Route::get('s003','s003Controller@getIndex');
+		Route::post('s003/addnew','s003Controller@s003_addnew');
+		Route::post('s003/delete','s003Controller@s003_delete');
+		Route::post('s002/list'  ,'s002Controller@s002_list');
+		Route::post('s002/update','s002Controller@s002_update');
+		Route::post('s002/delete','s002Controller@s002_delete');	
 	}
 );
 
@@ -100,7 +111,9 @@ Route::group(
 	['namespace' => $namespace9,'prefix'=>'master/popup','middleware'=>['web']],
 	function() {
 		Route::get('p001','p001Controller@getIndex');
-		Route::post('p001','p001Controller@p001_search');	
+		Route::post('p001','p001Controller@p001_search');
+		Route::get('p002','p002Controller@getIndex');
+		Route::post('p002','p002Controller@p002_search');	
 	}
 );
 

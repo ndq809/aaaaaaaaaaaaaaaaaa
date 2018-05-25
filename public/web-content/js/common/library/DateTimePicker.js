@@ -77,7 +77,7 @@ $.DateTimePicker = $.DateTimePicker || {
 	
 		buttonsToDisplay: ["HeaderCloseButton", "SetButton", "ClearButton"],
 		setButtonContent: "Thiết Lập",
-		clearButtonContent: "Hủy",
+		clearButtonContent: "Xóa Trắng",
     	incrementButtonContent: "+",
     	decrementButtonContent: "-",
 		setValueInTextboxOnEveryClick: false,
@@ -599,15 +599,16 @@ $.cf = {
 			var oDTP = e.data.obj;
 			oDTP.showDateTimePicker(this);
 			oDTP.oData.bMouseDown = false;
+			oDTP.settings.inputElement=$(this);
 		},
 
 		_inputFieldClick: function(e)
 		{
-          	var oDTP = e.data.obj;
 			if(!$.cf._compare($(this).prop("tagName"), "input"))
 			{
 				oDTP.showDateTimePicker(this);
 			}
+			oDTP.settings.inputElement=$(this);
 			e.stopPropagation();
 		},
 
@@ -741,23 +742,20 @@ $.cf = {
 		_setButtonAction: function(bFromTab)
 		{
 			var oDTP = this;
-		
-			if(oDTP.oData.oInputElement !== null)
+			var input_value=oDTP._setOutput();
+			oDTP._setValueOfElement(input_value,oDTP.settings.inputElement);
+			
+			if(bFromTab)
 			{
-				oDTP._setValueOfElement(oDTP._setOutput());
-				
-				if(bFromTab)
-				{
-					if(oDTP.settings.buttonClicked)
-						oDTP.settings.buttonClicked.call(oDTP, "TAB", oDTP.oData.oInputElement);
-					if(!oDTP.settings.isInline)
-						oDTP._hidePicker(0);
-				}
-				else
-				{
-					if(!oDTP.settings.isInline)
-						oDTP._hidePicker("");
-				}
+				if(oDTP.settings.buttonClicked)
+					oDTP.settings.buttonClicked.call(oDTP, "TAB", oDTP.oData.oInputElement);
+				if(!oDTP.settings.isInline)
+					oDTP._hidePicker(0);
+			}
+			else
+			{
+				if(!oDTP.settings.isInline)
+					oDTP._hidePicker("");
 			}
 		},
 
@@ -922,11 +920,7 @@ $.cf = {
 		_clearButtonAction: function()
 		{
 			var oDTP = this;
-		
-			if(oDTP.oData.oInputElement !== null)
-			{
-				oDTP._setValueOfElement("");
-			}
+			oDTP._setValueOfElement("",oDTP.settings.inputElement);
 			if(!oDTP.settings.isInline)
 				oDTP._hidePicker("");
 		},
@@ -1215,6 +1209,7 @@ $.cf = {
 						oDTP.settings.afterShow.call(oDTP, oElement);
 					}, oDTP.settings.animationDuration);	
 				}
+				$('.dtpicker-compValue').first().focus();
 			}
 		},
 	
@@ -1495,9 +1490,9 @@ $.cf = {
 			var sDTPickerButtons = "";
 			sDTPickerButtons += "<div class='dtpicker-buttonCont" + sButtonContClass + "'>";
 			if(bDisplaySetButton)
-				sDTPickerButtons += "<a class='dtpicker-button dtpicker-buttonSet'>" + oDTP.settings.setButtonContent + "</a>";
+				sDTPickerButtons += "<button class='dtpicker-button dtpicker-buttonSet btn'>" + oDTP.settings.setButtonContent + "</button>";
 			if(bDisplayClearButton)
-				sDTPickerButtons += "<a class='dtpicker-button dtpicker-buttonClear'>" + oDTP.settings.clearButtonContent + "</a>";
+				sDTPickerButtons += "<button class='dtpicker-button dtpicker-buttonClear btn'>" + oDTP.settings.clearButtonContent + "</button>";
 			sDTPickerButtons += "</div>";
 		
 			//--------------------------------------------------------------------
@@ -1526,13 +1521,7 @@ $.cf = {
 			$(document).on("keydown.DateTimePicker", function(e)
 			{
 				keyCode = parseInt(e.keyCode ? e.keyCode : e.which);
-				if(! $(".dtpicker-compValue").is(":focus") && keyCode === 9) // TAB
-				{
-					oDTP._setButtonAction(true);
-					$("[tabIndex=" + (oDTP.oData.iTabIndex + 1) + "]").focus();
-					return false;
-				}
-				else if($(".dtpicker-compValue").is(":focus"))
+				if($(".dtpicker-compValue").is(":focus"))
 				{
 					/*if(keyCode === 37) // Left Arrow
 					{
@@ -1566,6 +1555,10 @@ $.cf = {
 						oDTP._incrementDecrementActionsUsingArrowAndMouse(classType, "dec");
 						return false;
 					}
+				}else if($(".dtpicker-buttonClear").is(":focus")&& keyCode === 9){
+					oDTP._setButtonAction(true);
+					oDTP.settings.inputElement.parents('.form-group').parent().next().find('input').focus();
+					return false;
 				}
 			});
 
@@ -1612,7 +1605,7 @@ $.cf = {
 					{
 						if($oParentElem.is(":last-child") && !oDTP.oData.bElemFocused)
 						{
-							oDTP._setButtonAction(false);
+							// oDTP._setButtonAction(false);
 						}
 					}, 50);			
 				});
@@ -1635,11 +1628,11 @@ $.cf = {
 					}
 					else if($oTextField.parent().hasClass("month"))
 					{
-						if(iLength > 3)
-						{
-							sNewTextBoxVal = sTextBoxVal.slice(0, 3);
-							$oTextField.val(sNewTextBoxVal);
-						}
+						// if(iLength > 3)
+						// {
+						// 	sNewTextBoxVal = sTextBoxVal.slice(0, 3);
+						// 	$oTextField.val(sNewTextBoxVal);
+						// }
 					}
 					else if($oTextField.parent().hasClass("year"))
 					{
@@ -1683,6 +1676,7 @@ $.cf = {
 					oDTP.settings.buttonClicked.call(oDTP, "CLOSE", oDTP.oData.oInputElement);
 				if(!oDTP.settings.isInline)
 					oDTP._hidePicker("");
+				oDTP.settings.inputElement.parents('.form-group').parent().next().find('input').focus();
 			});
 		
 			$(oDTP.element).find(".dtpicker-buttonSet").click(function(e)
@@ -1690,6 +1684,7 @@ $.cf = {
 				if(oDTP.settings.buttonClicked)
 					oDTP.settings.buttonClicked.call(oDTP, "SET", oDTP.oData.oInputElement);
 				oDTP._setButtonAction(false);
+				oDTP.settings.inputElement.parents('.form-group').parent().next().find('input').focus();
 			});
 		
 			$(oDTP.element).find(".dtpicker-buttonClear").click(function(e)
@@ -1697,6 +1692,7 @@ $.cf = {
 				if(oDTP.settings.buttonClicked)
 					oDTP.settings.buttonClicked.call(oDTP, "CLEAR", oDTP.oData.oInputElement);
 				oDTP._clearButtonAction();
+				oDTP.settings.inputElement.parents('.form-group').parent().next().find('input').focus();
 			});
 		
 			// ----------------------------------------------------------------------------
@@ -1862,10 +1858,6 @@ $.cf = {
 		_setValueOfElement: function(sElemValue, $oElem)
 		{
 			var oDTP = this;
-		
-			if(!$.cf._isValid($oElem))
-				$oElem = $(oDTP.oData.oInputElement);
-		
 			if($.cf._compare($oElem.prop("tagName"), "INPUT"))
 				$oElem.val(sElemValue);
 			else

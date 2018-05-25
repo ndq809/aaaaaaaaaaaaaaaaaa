@@ -233,6 +233,8 @@ return [
         'Button'       => App\Helpers\Button::class,
         'Paging'       => App\Helpers\Paging::class,
         'DAO'          => App\Helpers\DAO::class,
+        'SQLXML'       => App\Helpers\Sqlxml::class,
+        'Common'       => App\Modules\Master\Controllers\Common\CommonController::class,
 
     ],
 

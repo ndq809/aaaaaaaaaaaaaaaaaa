@@ -3,8 +3,11 @@ namespace App\Modules\Master\Controllers\MasterData;
 
 use App\Http\Controllers\Controller;
 use DAO;
+use Auth;
 use Illuminate\Http\Request;
 use Validator;
+use SQLXML;
+use Common;
 
 class m004Controller extends Controller
 {
@@ -16,44 +19,64 @@ class m004Controller extends Controller
      */
     public function getIndex()
     {
-        return view('Master::masterdata.m004');
+        $data = Dao::call_stored_procedure('SPC_M004_FND1');
+        return view('Master::masterdata.m004.index')->with('data',$data);
     }
 
-    public function execute(Request $request)
+    public function m004_addnew(Request $request)
     {
-        if ($this->m004_validate($request)) {
-            $data = Dao::call_stored_procedure('test');
-            return response()->json
-                (['data'     => $data,
-                'status'     => 200,
-                'statusText' => 'execute success']);
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        // var_dump($param);die;
+        if (common::checkValidate($request)['result']) {
+            $data = Dao::call_stored_procedure('SPC_M004_ACT1',$param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status' => 200,
+                    'data' => $data[1],
+                    'statusText' => 'success',
+                );
+            }
         } else {
-            return response()->json
-                (['error'    => $this->validator->errors()->all(),
+           $result = array('error'    => common::checkValidate($request)['error'],
                 'status'     => 201,
-                'statusText' => 'validate failed']);
+                'statusText' => 'validate failed');
         }
+        return response()->json($result);
     }
 
-    public function m004_validate(Request $request)
+    public function m004_delete(Request $request)
     {
-        // var_dump($request->all());die;
-        $this->validator = Validator::make($request->all(), [
-            'family_nm'        => 'max:50',
-            'first_name'       => 'max:20',
-            'email'            => 'max:50',
-            'cellphone'        => 'nullable|numeric|max:15',
-            'birth_date'       => 'nullable|date',
-            'employee_div'     => 'required',
-            'account_nm'       => 'required|max:30',
-            'password'         => 'required|max:100|min:8',
-            'password_confirm' => 'required|same:password|min:8|max:100',
-        ]);
-        if (!$this->validator->passes()) {
-            return false;
-        } else {
-            return true;
+        $data        = $request->all();
+        $xml         = new SQLXML();
+        $param['xml']    = $xml->xml($data);
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $result_query       = DAO::call_stored_procedure("SPC_M004_ACT2", $param);
+        if($result_query[0][0]['Id']==''){
+            $result = array(
+                'status' => 200,
+                'statusText' => 'success',
+            );
+        }else{
+            $result = array(
+                'status' => 200,
+                'error' => $result_query[0],
+                'statusText' => 'failed',
+            );
         }
+        return response()->json($result);
     }
 
     /**

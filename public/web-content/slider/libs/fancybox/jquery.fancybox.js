@@ -689,8 +689,8 @@
 					// Ignore key combinations and key events within form elements
 					if (!e.ctrlKey && !e.altKey && !e.shiftKey && !e.metaKey && !(target && (target.type || $(target).is('[contenteditable]')))) {
 						$.each(keys, function(i, val) {
-							if (current.group.length > 1 && val[ code ] !== undefined) {
-								F[ i ]( val[ code ] );
+							if (current.group.length > 1 && val[ i ] !== undefined) {
+								F[ i ]( val[ i ] );
 
 								e.preventDefault();
 								return false;

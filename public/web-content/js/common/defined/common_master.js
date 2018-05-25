@@ -1,4 +1,9 @@
 var selectedTab = "#tab1";
+var _pageSize=50;
+var _selectize;
+var _data_delete=[];
+var _data_edit=[];
+var cropperBox;
 $(function() {
     try {
         initCommonMaster();
@@ -9,20 +14,24 @@ $(function() {
 
 function initCommonMaster() {
     $(document).ajaxComplete(function (evt, jqXHR, settings) {
-    if (settings.loading) {
-        if(settings.container){
-            $(settings.container).LoadingOverlay("hide");
-        }else{
-            $.LoadingOverlay("hide");
+        if (settings.loading) {
+            if(settings.container){
+                $(settings.container).LoadingOverlay("hide");
+            }else{
+                $.LoadingOverlay("hide");
+            }
         }
-    }
-    if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==204){
-        window.location.href='/master';
-    }
+        if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==204){
+            window.location.href='/master';
+        }
 
-    if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==205){
-        window.location.href='/master';
-    }
+        if(typeof jqXHR.responseJSON!='undefined'&&jqXHR.responseJSON.status==205){
+            window.location.href='/master';
+        }
+        $('.table-fixed-width table').each(function(){
+            $(this).css('min-width',$(this).parent().attr('min-width'));
+        })
+        // $('.table-focus tbody tr').first().addClass('active-row');
     });
 
     $(document).ajaxError(function (evt, jqXHR, settings, err) {
@@ -101,7 +110,7 @@ function initCommonMaster() {
     }
     $("select:not('.allow-selectize')").addClass("form-control input-sm");
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $("select.allow-selectize:not([class*='new-allow'])").selectize({
+        _selectize=$("select.allow-selectize:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
             create: false
         });
@@ -128,6 +137,7 @@ function initCommonMaster() {
 
         }
     })
+    $(":input:not([readonly],[disabled],:hidden)").first().focus();
     setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
 }
 
@@ -152,7 +162,7 @@ function initEvent() {
         }, 100);
         return element;
     };
-    $('.top-header').sizeChanged(function() {
+    $('.top-header,.popup-header').sizeChanged(function() {
         setLayout();
     })
 
@@ -180,6 +190,9 @@ function initEvent() {
             $('.menu-btn').css('display','none');
         }
         setFooter();
+        $('.table-fixed-width table').each(function(){
+            $(this).css('min-width',$(this).parent().attr('min-width'))
+        });
     })
     $(document).on('change','.super-checkbox',function(){
         setCheckBox(this);
@@ -240,14 +253,25 @@ function initEvent() {
         logout('Quy Nguyen');
     })
 
+    $(document).on('focus','.input-refer',function(){
+        if($(this).val()!==''){
+            $(this).val($(this).val().split('_')[0]);
+        }
+    })
+
+     $(document).on('blur','.input-refer',function(){
+        if($(this).val()!==''){
+            refer_value($(this));
+        }
+    })
     //  $(document).on('click','.btn-popup',function(){
     //     loadPopup('p001');
     // })
 
      $(".btn-popup").fancybox({
-        'width'         : '75%',
-        'height'        : '75%',
-        'autoScale'     : false,
+        'width'         : '80%',
+        'height'        : '80%',
+        'autoScale'     : true,
         'transitionIn'  : 'none',
         'transitionOut' : 'none',
         'type'          : 'iframe'
@@ -265,11 +289,11 @@ function initEvent() {
         }
     })
 
-    $(document).on('click','#btn-delete',function(){
-       showMessage(3,function(){
-            $('.sub-checkbox:checked').closest('tr').remove();
-       });
-    })
+    // $(document).on('click','#btn-delete',function(){
+    //    showMessage(3,function(){
+    //         $('.sub-checkbox:checked').closest('tr').remove();
+    //    });
+    // })
 
     $(document).on('click','.delete-tr-row',function(){
         tableTemp=$(this).parents('table');
@@ -277,6 +301,10 @@ function initEvent() {
             $(this).closest('tr').remove();
         }
         reIndex(tableTemp);
+    })
+
+    $(document).on('refer-image','.update-block #avarta',function(){
+        $('#imageContainer').attr('style', 'background-image: url("' + $(this).val() +'")');
     })
 
     $(document).on('click','#btn-new-row',function(){
@@ -292,45 +320,41 @@ function initEvent() {
     // })
 
     $(document).on('dblclick','.table-focus tbody tr',function(){
-        if(!$(this).hasClass('update-row')){
-            updateInput=$('.update-content').find('input,textarea,select');
-            if($('.table-focus tbody tr.update-row' ).length!=0){
-                $('.table-focus tbody tr.update-row .update-item').each(function(i){
-                    $(this).text(updateInput.eq(i).val());
-                })
-            }
-            $('.table-focus tbody tr.active-row .update-item').each(function(i){
-                if(updateInput.eq(i).attr('type')!='file'){
-                    updateInput.eq(i).val($(this).text());
+        clearUpdateBlock();
+        $(this).find('td[refer-id]').each(function(){
+            _this=$(this);
+            var temp=$('.update-block #'+$(this).attr('refer-id'));
+            if(temp.prop('tagName')!=='SELECT'){
+                temp.val($(this).text());
+                if(temp.attr('id')=='avarta'){
+                    temp.trigger('refer-image');
                 }
-            })
-            updateInput.eq(0).focus();
-            $('.table-focus tbody tr.update-row').removeClass('update-row');
-            $('.table-focus tbody tr.active-row').addClass('update-row');
-        }
+            }else{
+                if(temp.hasClass('allow-selectize')){
+                    var selectize_temp=temp[0].selectize;
+                    selectize_temp.setValue(selectize_temp.getValueByText(_this.text()));
+                }else{
+                    temp.find("option").prop("selected", false);
+                    temp.find("option").filter(function() {
+                        return this.innerHTML.trim() == _this.text().trim();
+                    }).prop("selected", true);
+                }
+            }
+        })
+        $('.table-focus tbody tr.update-row').removeClass('update-row');
+        $('.table-focus tbody tr.active-row').addClass('update-row');
     })
 
     $(document).on('click','#btn-change-pass',function(){
-        changePassword('Khoai lang nướng');
+        if($('.table-focus tbody tr.update-row').length!=0){
+            showMessage(8,function(){
+                changePassword();
+           });
+        }
     })
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $(document).on('doubletap','.table-focus tbody tr.active-row',function(e){
-            if(!$(this).hasClass('update-row')){
-                updateInput=$('.update-content').find('input,textarea,select');
-                if($('.table-focus tbody tr.update-row' ).length!=0){
-                    $('.table-focus tbody tr.update-row .update-item').each(function(i){
-                        $(this).text(updateInput.eq(i).val());
-                    })
-                }
-                $('.table-focus tbody tr.active-row .update-item').each(function(i){
-                    if(updateInput.eq(i).attr('type')!='file'){
-                        updateInput.eq(i).val($(this).text());
-                    }
-                })
-                updateInput.eq(0).focus();
-                $('.table-focus tbody tr.update-row').removeClass('update-row');
-                $('.table-focus tbody tr.active-row').addClass('update-row');
-            }
+            $('.table-focus tbody tr.active-row').trigger('dblclick');
         })
     }
 
@@ -343,8 +367,14 @@ function initEvent() {
         $(this).addClass('active-row');
     })
 
-     $(document).on('input propertychange paste change','.update-content input,.update-content textarea,.update-content select',function(){
-        $('.table-focus').find('.update-row').addClass('active-update');
+     $(document).on('click','.edit-save',function(e){
+        if($('.table-focus tbody tr.update-row').length!=0){
+            checkValidate();
+        }
+    })
+
+    $(document).on('input propertychange paste change','.submit-item',function(){
+        $('.identity-item').val('');
     })
 
     $(document).on('click', '.btn-popup', function(e) {
@@ -366,34 +396,24 @@ function initEvent() {
 
     $(document).on('keydown',function(e){
         switch(e.which){
+            case 13 :
+                e.preventDefault();
+                $('#btn_login').trigger('click');
+                if($('.fancybox-opened').length!=0)
+                $('#btn-list').trigger('click');
+                break;
             case 38 :
-                if(e.altKey){
-                    e.preventDefault();
-                    prevRow($('.table-focus tbody'));
-                }
+                e.preventDefault();
+                prevRow($('.table-focus tbody'));
                 break;
             case 40 :
                 if(e.ctrlKey){
                     e.preventDefault();
-                    if($('.table-focus tbody tr.update-row' ).length!=0){
-                        $('.table-focus tbody tr.update-row .update-item').each(function(i){
-                            $(this).text(updateInput.eq(i).val());
-                        })
-                    }
-                    $('.table-focus tbody tr.active-row .update-item').each(function(i){
-                        if(updateInput.eq(i).attr('type')!='file'){
-                            updateInput.eq(i).val($(this).text());
-                        }
-                    })
-                    updateInput.eq(0).focus();
-                    $('.table-focus tbody tr.update-row').removeClass('update-row');
-                    $('.table-focus tbody tr.active-row').addClass('update-row');
+                    $('.table-focus tbody tr.active-row').trigger('dblclick');
                     break;
                 }
-                if(e.altKey){
-                    e.preventDefault();
-                    nextRow($('.table-focus tbody'));
-                }
+                e.preventDefault();
+                nextRow($('.table-focus tbody'));
                 break;
             default:
                 break;
@@ -403,6 +423,7 @@ function initEvent() {
 
 function setLayout(){
     $('.change-content').css('padding-top',$('.menu-btn-list').height()+50);
+    $('.change-content-popup').css('padding-top',$('.popup-header .menu-btn-list').height()+7);
 }
 
 function menuController() {
@@ -414,7 +435,7 @@ function menuController() {
             $('#menu>li').css('width', '100px');
         }
 
-        if ($(window).width() < 900) {
+        if ($(window).width() < 680) {
             $('.navbar-right').width('100%');
         }else{
             $('.navbar-right').width('auto');
@@ -438,7 +459,6 @@ function reIndex(table)
         
     });
 }
-
 function nextRow(tr_list){
     current_row=tr_list.find('.active-row');
     if(!tr_list.find('tr:last-child').hasClass('active-row')){
@@ -472,21 +492,22 @@ function setFooter() {
     $('.bottom-content').removeClass('hidden');
 }
 
-function changePassword(username){
+function changePassword(){
+    var user_id=$('#account_id').val();
     $.ajax({
         type: 'POST',
         url: '/master/common/changepass',
         dataType: 'json',
         loading:true,
         data: {
-            username:username,
+            user_id:user_id,
         },
         success: function (res) {
             switch(res.status){
                 case 200:
-                    alert("Đã gửi email bao gồm mk mới");
+                    showMessage(7);
                     break;
-                case 201:
+                case 208:
                     alert('lỗi hệ thống');
                     break;
                 default :
@@ -501,21 +522,21 @@ function changePassword(username){
 }
 
 function showMessage(message_code,ok_callback,cancel_callback){
-    switch(message_code){
+    switch(_type[message_code]){
         case 1:
            $.sweetModal({
-            title:'xác nhận',
-            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            title:_title[message_code],
+            content: _text[message_code],
             icon: $.sweetModal.ICON_CONFIRM,
             buttons: [
                 {
                     label: 'Đồng ý',
-                    classes: 'btn btn-sm btn-danger float-left',
+                    classes: 'btn btn-sm btn-info float-left',
                     action: ok_callback,
                 },
                 {
                     label: 'Từ chối',
-                    classes: 'btn btn-sm btn-warning float-right',
+                    classes: 'btn btn-sm btn-default float-right',
                     action: cancel_callback,
                 }
             ]
@@ -523,31 +544,31 @@ function showMessage(message_code,ok_callback,cancel_callback){
         break;
         case 2:
            $.sweetModal({
-            title:'Thao tác thành công',
-            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            title:_title[message_code],
+            content: _text[message_code],
             icon: $.sweetModal.ICON_SUCCESS,
             buttons: [
                 {
                     label: 'Ok',
-                    classes: 'btn btn-sm btn-danger',
+                    classes: 'btn btn-sm btn-success',
                 },
             ]
         });
         break; 
         case 3:
            $.sweetModal({
-            title:'cảnh báo',
-            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            title:_title[message_code],
+            content: _text[message_code],
             icon: $.sweetModal.ICON_WARNING,
             buttons: [
                 {
                     label: 'Thực hiện',
-                    classes: 'btn btn-sm btn-danger float-left',
+                    classes: 'btn btn-sm btn-warning float-left',
                     action: ok_callback,
                 },
                 {
                     label: 'Hủy',
-                    classes: 'btn btn-sm btn-warning float-right',
+                    classes: 'btn btn-sm btn-default float-right',
                     action: cancel_callback,
                 }
             ]
@@ -555,8 +576,8 @@ function showMessage(message_code,ok_callback,cancel_callback){
         break; 
         case 4:
            $.sweetModal({
-            title:'thao tác thất bại',
-            content: 'Đây chỉ là bản demo thôi nhá người theo hương hoa mây mù giăng lối làn sương khói phôi pha lê bước ai xa rồi',
+            title:_title[message_code],
+            content: _text[message_code],
             icon: $.sweetModal.ICON_ERROR,
             buttons: [
                 {
@@ -571,7 +592,7 @@ function showMessage(message_code,ok_callback,cancel_callback){
 
 function checkLogin(username){
     var data={};
-        data['acount_nm']=$('#acount_nm').val();
+        data['account_nm']=$('#account_nm').val();
         data['password']=$('#password').val();
         data['remember']=$('#remember').val();
     $.ajax({
@@ -639,18 +660,38 @@ function checkLogin(username){
     });
 }
 
-function showFailedValidate(error_array){
+function showFailedValidate(error_array,exe_mode){
+    var parent_div='.update-block';
+    if(exe_mode===1)
+        parent_div='.search-block';
     $.each( error_array, function( key, value ) {
-        var target=$('#'+key);
-        if(target.prop('type') ==='select-one'&&$('#'+key).hasClass('.allow-selectize')){
+        var target=$(parent_div).find('#'+key);
+        if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')){
             target=target.next('.selectize-control').find('.selectize-input');
-            console.log(target);
         }
       target.addClass('input-error');
       target.attr('data-toggle','tooltip');
       target.attr('data-placement','top');
       target.attr('data-original-title',value);
     });
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.input-error').first().focus(); 
+}
+
+function showFailedData(error_array,exe_mode){
+    var parent_div='.update-block';
+    if(exe_mode===1)
+        parent_div='.search-block';
+    for (var i = 0; i < error_array.length; i++) {
+        var target=$(parent_div).find('#'+error_array[i]['Data']);
+        if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')){
+            target=target.next('.selectize-control').find('.selectize-input');
+        }
+        target.addClass('input-error');
+        target.attr('data-toggle','tooltip');
+        target.attr('data-placement','top');
+        target.attr('data-original-title',_text[error_array[i]['Code']]);
+    }
     $('[data-toggle="tooltip"]').tooltip();
     $('.input-error').first().focus(); 
 }
@@ -678,7 +719,7 @@ function logout(username){
                 case 200:
                     window.location.reload();
                     break;
-                case 201:
+                case 208:
                     alert('lỗi hệ thống');
                     break;
                 default :
@@ -731,14 +772,20 @@ function keepTokenAlive() {
     });
 }
 
-function getInputData(){
+function getInputData(exe_mode){
     var data={};
     var value;
-    $('input.submit-item,select.submit-item').each(function(){
+    var parent_div='.search-block';
+    if(exe_mode===1)
+        parent_div='.update-block';
+    $(parent_div).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
         if($(this).val()===null){
             value='';
         }else{
             value=$(this).val().trim();
+            if($(this).hasClass('input-refer')){
+                value=$(this).val().split('_')[0];
+            }
         }
         data[$(this).attr('id').trim()]=value;
     })
@@ -763,6 +810,197 @@ function clearDataSearch(){
     $('input.submit-item,select.submit-item').first().focus();
 }
 
+function refer_value(input_refer){
+    var data={};
+    data['key']=input_refer.attr('data-refer');
+    data['value']=input_refer.val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/common/refer',
+        dataType: 'json',
+        // loading:true,
+        data: data,
+        success: function (res) {
+            var temp='';
+            for(x in res.refer_data[0][0]){
+                temp+=res.refer_data[0][0][x]+"_";
+            }
+            temp=temp.substring(0,temp.length-1);
+            if(temp==='_'){
+                temp='';
+                input_refer.focus();
+            }
+            input_refer.val(temp);
+            input_refer.trigger('change');
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
 
+function addNewRecordRow(){
+    var refer_id='';
+    $('.table-new-row tbody tr:first td[refer-id]').each(function(){
+        refer_id=$(this).attr('refer-id');
+        if($('#'+refer_id).prop("tagName")!='SELECT'){
+            $(this).text($('#'+refer_id).val());
+        }else{
+            $(this).text($('#'+refer_id +' option:selected').text());
+        }
+    })
+    $('.table-new-row tbody').append("<tr></tr>");
+    $('.table-new-row tbody tr:last-child').append($('.table-new-row tbody tr:first').html());
+    reIndex($('.table-new-row'));
+}
+
+function initImageUpload(){
+    var imageContainer = $('#imageContainer');
+    var croppedOptions = {
+        uploadUrl: '/master/common/upload-image',
+        cropUrl: '/master/common/crop-image',
+        cropData:{
+            'width' : imageContainer.width(),
+            'height': imageContainer.height()
+        },
+        onAfterImgCrop:function(){
+            $('#avarta').val($('#imageContainer .croppedImg').attr('src'));
+        },
+    };
+    cropperBox = new Croppic('imageContainer', croppedOptions);
+}
+
+function updateDeleteArray(checkbox){
+    var item_id=$(checkbox).parent().next().next().text();
+    var element = {};
+    var notIn=-1;
+    element.id=item_id;
+    for(i=0;i<_data_delete.length;i++){
+        if(JSON.stringify(_data_delete[i])===JSON.stringify(element)){
+            notIn=i;
+            break;
+        }
+    }
+    if(checkbox.checked){
+        if(notIn==-1){
+            _data_delete[_data_delete.length]=element;
+        }
+    }else{
+        if(notIn!==-1){
+            _data_delete.splice(notIn,1);
+        }
+    }
+}
+
+function updateEditArray(){
+    var element = {};
+    var key_item={};
+    var notIn=-1;
+    $('.update-block .submit-item[id]').each(function(){
+        if($(this).hasClass('input-refer')){
+            element[$(this).attr('id')]=$(this).val().split('_')[0];
+        }else{
+            element[$(this).attr('id')]=$(this).val();
+        }
+    })
+    $('.update-block .key-item[id]').each(function(){
+        if($(this).hasClass('input-refer')){
+            key_item[$(this).attr('id')]=$(this).val().split('_')[0];
+        }else{
+            key_item[$(this).attr('id')]=$(this).val();
+        }
+    })
+    for(i=0;i<_data_edit.length;i++){
+        for(check in key_item){
+            if(key_item[check]==_data_edit[i][check]){
+                continue;
+            }
+            notIn=0;
+        }
+        if(notIn==-1){
+            notIn=i;
+            break;
+        }else{
+            notIn=-1;
+        }
+    }
+    if(notIn==-1){
+        _data_edit[_data_edit.length]=element;
+    }
+    if(notIn!==-1){
+        _data_edit.splice(notIn,1);
+        _data_edit[_data_edit.length]=element;
+    }
+}
+
+function clearUpdateBlock(){
+    $('.update-block .submit-item[id]').each(function(){
+        if($(this).prop("tagName")!='SELECT'){
+            if($(this).attr('id')!='avarta'){
+                $(this).val('');
+            }else{
+                $(this).val('/web-content/images/avarta/default_avarta.jpg');
+            }
+        }else{
+            if($(this).hasClass('allow-selectize')){
+                var selectize_temp=this.selectize;
+                selectize_temp.setValue(0);
+            }else{
+                $(this).val(0);
+            }
+        }
+    })
+    if($('.cropControlRemoveCroppedImage:visible').length !=0)
+        cropperBox.cropControlRemoveCroppedImage.trigger('click');
+    $('#imageContainer').attr('style', 'background-image: url("/web-content/images/avarta/default_avarta.jpg")');
+}
+
+function checkValidate(){
+    data=getInputData(1);
+     $.ajax({
+        type: 'POST',
+        url: '/master/common/checkvalidate',
+        dataType: 'json',
+        data: data,
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.table-focus tbody tr.update-row td[refer-id]').each(function(){
+                        var temp=$('.update-block #'+$(this).attr('refer-id'));
+                        if(temp.prop('tagName')!=='SELECT'){
+                            $(this).text(temp.val());
+                        }else{
+                            $(this).text(temp.find('option:selected').text());
+                        }
+                    })
+                    $('.table-focus').find('.update-row td.edit-flag').addClass('edit-row');
+                    $('.table-focus').find('.update-row td.edit-flag').text('Đã sửa');
+                    break;
+                case 201:
+                    // alert('lỗi validate');
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+             $.sweetModal({
+            title:'thao tác thất bại',
+            content: 'Phát sinh lỗi hệ thống!!!',
+            icon: $.sweetModal.ICON_ERROR,
+            buttons: [
+                {
+                    label: 'Đã hiểu',
+                    classes: 'btn btn-sm btn-danger',
+                },
+            ]
+        });
+        }
+    });
+}
 
 

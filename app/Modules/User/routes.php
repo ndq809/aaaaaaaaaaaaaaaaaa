@@ -30,8 +30,7 @@ Route::group(
 		Route::any('reading/getData','ReadingController@getData');
 		Route::get('register','RegisterController@getIndex');
 		Route::get('profile','ProfileController@getIndex');
-		Route::post('upload-image', 'RegisterController@postUpload');
-		Route::post('crop-image', 'RegisterController@postCrop');
+		
 	}
 );
 $namespace2 = 'App\Modules\User\Controllers';
@@ -40,5 +39,7 @@ Route::group(
 	function() {
 		Route::post('getcomment', 'CommonController@getComment');
 		Route::post('changepass', 'CommonController@changePass');
+		Route::post('upload-image', 'CommonController@postUpload');
+		Route::post('crop-image', 'CommonController@postCrop');
 	}
 );

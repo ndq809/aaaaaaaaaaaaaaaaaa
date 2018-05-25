@@ -21,26 +21,11 @@ class p001Controller extends Controller
 
     public function p001_search(Request $request)
     {
-          $param = $request->all();
-          if ($this->p001_validate($request)) {
-            $data  = Dao::call_stored_procedure('SPC_P001_LST1', $param);
-            return view('Master::popup.p001.search')
-                ->with('data', $data)
-                ->with('paging', $data[1][0]);
-        }
-    }
-
-    public function p001_validate(Request $request)
-    {
-        // var_dump($request->all());die;
-        $this->validator = Validator::make($request->all(), [
-            'department_nm' => 'max:50',
-        ]);
-        if (!$this->validator->passes()) {
-            return false;
-        } else {
-            return true;
-        }
+        $param = $request->all();
+        $data  = Dao::call_stored_procedure('SPC_P001_LST1', $param);
+        return view('Master::popup.p001.search')
+            ->with('data', $data)
+            ->with('paging', $data[1][0]);
     }
 
     /**

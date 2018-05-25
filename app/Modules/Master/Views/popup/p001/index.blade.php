@@ -13,7 +13,7 @@
 	<div class="panel-header">
 		<h5 class="panel-title">Lọc Danh Sách</h5>
 	</div>
-    <div class="panel-content no-padding-left">
+    <div class="panel-content no-padding-left search-block">
     	<div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Từ Khóa</label>

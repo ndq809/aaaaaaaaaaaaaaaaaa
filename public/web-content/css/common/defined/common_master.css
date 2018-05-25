@@ -670,11 +670,11 @@ body {
 }
 
 .active-update{
-    background: #def!important;
+    background: #def;
 }
 
 .update-row{
-    background: #fff2e6!important;
+    background: #fff2e6;
 }
 
 
@@ -1125,4 +1125,29 @@ button .is-icon{
     max-width: 350px;
     width: auto;
     border-radius: 0px;
+}
+
+.pagging-disable *{
+    cursor: not-allowed;
+    pointer-events: none;
+    background:#c0c0c0!important; 
+}
+
+.avarta-block{
+    width: 230px;
+    float: left;
+    display: table-cell;
+}
+
+.infor-block{
+    display: table-cell;
+}
+
+#imageContainer{
+    border: 1px solid #ddd;
+}
+
+.edit-row{
+    font-weight: bold;
+    color: red;
 }

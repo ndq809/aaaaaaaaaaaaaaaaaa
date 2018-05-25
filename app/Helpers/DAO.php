@@ -77,7 +77,8 @@ class Dao{
                 $debug_sql = $this_->interpolateQuery($sProcedure);
             }
 
-            $log_path =  dirname ( __FILE__ ) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'log';
+            $log_path =  storage_path() . DIRECTORY_SEPARATOR . 'log';
+            // var_dump(storage_path());die;
             if (!file_exists($log_path)) {
                 if (!mkdir($log_path, 0777, true)) {
                     die("Failed to create folder $log_path");
@@ -85,7 +86,7 @@ class Dao{
             }
             $file_name = date("Ymd");
             $time = date("Y-m-d H:i:s");
-            $file_path = 'log' . DIRECTORY_SEPARATOR . $file_name . '.log';
+            $file_path = $log_path . DIRECTORY_SEPARATOR . $file_name . '.log';
             file_put_contents($file_path, $time . ' ' . $debug_sql . PHP_EOL, FILE_APPEND);
 
             //    Debug
@@ -126,7 +127,7 @@ class Dao{
                 'Message' => 'PHP: '.$e->getMessage()
             );
             // Write log error
-            $log_path =  dirname ( __FILE__ ) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'log';
+            $log_path =  storage_path() . DIRECTORY_SEPARATOR . 'log';
             if (!file_exists($log_path)) {
                 if (!mkdir($log_path, 0777, true)) {
                     die("Failed to create folder $log_path");
@@ -134,7 +135,7 @@ class Dao{
             }
             $file_name = date("Ymd");
             $time = date("Y-m-d H:i:s");
-            $file_path = 'log' . DIRECTORY_SEPARATOR . $file_name . '.log';
+            $file_path = $log_path . DIRECTORY_SEPARATOR . $file_name . '.log';
             file_put_contents($file_path, $time . ' ' . $e->getMessage() . PHP_EOL, FILE_APPEND);
         }
         return $result;

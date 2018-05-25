@@ -37,7 +37,7 @@
     </head>
     <body>
         <div class="col-xs-12 web-panel header-content" style="text-align: center;">
-            <div class="login-wrap" style="width: 100%">
+            <div class="login-wrap update-block" style="width: 100%">
                 <div class="logo-box" >
                     <div>
                         <span class="logo-box-text">ENGLISH</span>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
                     <div class="form-group ">
-                        <input type="text" class="form-control login-input " id="acount_nm" placeholder="Email đăng nhập" tabindex="1">
+                        <input type="text" class="form-control login-input " id="account_nm" placeholder="Email đăng nhập" tabindex="1">
                     </div>
 
                     <div class="form-group ">

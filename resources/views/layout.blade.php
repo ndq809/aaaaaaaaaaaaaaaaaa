@@ -60,10 +60,10 @@
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid">
                         <div class="navbar-header hover-item">
-                            @if(isset(Auth::user()->acount_nm))
+                            @if(isset(Auth::user()->account_nm))
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
                                 <img src="/web-content/images/avarta/avarta.jpg" height="30px" style="display: inline-block;border: 2px solid #eee;">
-                                <span>{{ Auth::user()->acount_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
+                                <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/p002">Trang Quản Trị</a></li>

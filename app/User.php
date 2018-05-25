@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'acount_nm', 'password',
+        'account_nm', 'password',
     ];
 
     /**
@@ -28,7 +28,7 @@ class User extends Authenticatable
     ];
 
     protected $table = 'S001';
-    protected $primaryKey='accout_id';
+    protected $primaryKey='account_id';
     // public $timestamps=false;
     public $incrementing = false;
     const CREATED_AT = 'cre_date';

@@ -254,7 +254,7 @@
                             }
                         }
                     };
-                })(this)).delay(100).queue(function() {
+                })(this)).delay(10).queue(function() {
                     $(this).addClass('open');
                     return scope.params.onOpen(scope.tojQueryObject());
                 });
@@ -378,7 +378,7 @@
                     return function() {
                         return $overlay.remove();
                     };
-                })(this), 300);
+                })(this), 150);
                 return this;
             };
             return SweetModal;

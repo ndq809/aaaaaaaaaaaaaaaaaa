@@ -4,7 +4,7 @@ namespace Illuminate\Foundation\Auth;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Validator;
+use Common;
 use Session;
 
 trait AuthenticatesUsers
@@ -64,10 +64,7 @@ trait AuthenticatesUsers
      */
     protected function validateLogin(Request $request)
     {
-        $this->validator = Validator::make($request->all(), [
-            $this->username() => 'required|string',
-            'password'        => 'required|string|min:6',
-        ]);
+        // $this->validator = common::checkValidate($request);
     }
 
     /**
@@ -105,6 +102,7 @@ trait AuthenticatesUsers
         $request->session()->regenerate();
         $this->clearLoginAttempts($request);
         $this->authenticated($request, $this->guard()->user());
+        common::getMessage();
         return response()->json(['status'       => 200,
                                  'statusText'   => 'login success',
                                  ]);
@@ -132,8 +130,8 @@ trait AuthenticatesUsers
      */
     protected function sendFailedLoginResponse(Request $request)
     {
-        if (!$this->validator->passes()) {
-            return response()->json(['error'        => $this->validator->errors()->all(),
+        if (!common::checkValidate($request)['result']) {
+            return response()->json(['error'        => common::checkValidate($request)['error'],
                                      'status'       => 201,
                                      'statusText'   => 'validate failed']);
         }

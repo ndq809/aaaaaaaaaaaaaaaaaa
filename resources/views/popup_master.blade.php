@@ -39,7 +39,7 @@
     <body>
         <div id="dtBox"></div>
         <div class="col-xs-12 web-panel header-content">
-            <div class="row top-header" style="z-index: 400">
+            <div class="row top-header popup-header" style="z-index: 400">
                 <nav class="navbar navbar-default ">
                     <div class="container-fluid menu-btn-list" style="margin-right: 0px;">
                         <ul class="nav navbar-nav collapse in navbar-right" id="menu">
@@ -55,8 +55,8 @@
                 </nav>
             </div>
         </div>
-        <div class="col-xs-12 web-panel middle-content" style="margin-top: 62px">
-            <div class="">
+        <div class="col-xs-12 web-panel middle-content">
+            <div class="change-content-popup" style="padding: 0px 5px">
                 @yield('content')
                 <!-- <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button> -->
             </div>

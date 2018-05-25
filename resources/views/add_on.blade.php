@@ -22,7 +22,7 @@
                         Tên Đăng Nhập
                     </label>
                     <div class="input-group">
-                        <input class="form-control input-sm" id="acount_nm" type="type">
+                        <input class="form-control input-sm" id="account_nm" type="type">
                         </input>
                     </div>
                 </div>

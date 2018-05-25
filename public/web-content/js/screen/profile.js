@@ -10,6 +10,7 @@ $(function(){
 
 function initProfile(){
 	initListener();
+	initImageUpload();
 	var canvas_meter = $('#canvas_meter1');
 
 	canvas_meter.css({
@@ -225,40 +226,15 @@ function initListener(){
     })
 }
 
-
-function nextProfile(){
-	var currentItemId=setNextItem();
-	slider.setItem(currentItemId - 1);
-	slidePositionController();
-}
-
-function previousProfile(){
-	var currentItemId=setPreviousItem();
-	slider.setItem(currentItemId - 1);
-	slidePositionController();
-}
-
-function selectProfile(selectTrTag){
-	currentItemId = selectItem(selectTrTag);
-	slider.setItem(currentItemId - 1);
-	slidePositionController();
-}
-
-function switchTabVocalbulary(current_li_tag){
-	selectedTab = current_li_tag.find("a").attr("href");
-	selectProfile($(selectedTab+" table tbody tr" ).first());
-}
-
-function getProfileData(){
-	var data = getDataCommon(1,"Profile/getData");
-}
-
-function rememberProfile(remember_btn){
-	currentItem = remember_btn.parents("tr");
-	selectProfile(rememberItem(currentItem,"Đã quên"));
-}
-
-function forgetProfile(forget_btn){
-	currentItem = forget_btn.parents("tr");
-	selectProfile(forgetItem(currentItem,"Đã thuộc"));
+function initImageUpload(){
+	var imageContainer = $('#imageContainer');
+	var croppedOptions = {
+	    uploadUrl: 'common/upload-image',
+	    cropUrl: 'common/crop-image',
+	    cropData:{
+	        'width' : imageContainer.width(),
+	        'height': imageContainer.height()
+	    }
+	};
+	var cropperBox = new Croppic('imageContainer', croppedOptions);
 }

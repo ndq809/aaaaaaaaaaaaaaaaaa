@@ -12,7 +12,7 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_P001_LST1]
 	@P_department_nm		NVARCHAR(50)		=	'' 
-,	@P_page_size			INT					=	1
+,	@P_page_size			INT					=	50
 ,	@P_page					INT					=	1
 
 AS
@@ -38,14 +38,14 @@ BEGIN
 	INSERT INTO #P001
 	SELECT 
 		M008.department_id
-	,	M013.content
+	,	M999.content
 	,	M008.department_nm 
 	,	M008.department_ab_nm 
 	,	M008.remark  
 	FROM M008
-	LEFT JOIN M013 ON
-		M008.section_id=M013.number_id
-	AND M013.name_div = 1 
+	LEFT JOIN M999 ON
+		M008.section_id=M999.number_id
+	AND M999.name_div = 3 
 	WHERE 
 		(	(@P_department_nm	= '')
 		OR	(M008.department_nm	LIKE '%' + @P_department_nm + '%'))

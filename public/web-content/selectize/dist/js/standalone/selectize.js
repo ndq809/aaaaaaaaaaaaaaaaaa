@@ -1403,6 +1403,7 @@
 			if (settings.preload === true) {
 				self.onSearchChange('');
 			}
+			self.refreshOptions(false);
 	
 		},
 	
@@ -1913,6 +1914,16 @@
 				this.clear(silent);
 				this.addItems(value, silent);
 			});
+		},
+
+		getValueByText: function(text) {
+			var value;
+			this.$dropdown_content.find('[data-selectable]').each(function(){
+				if(this.innerHTML==text){
+					value= $(this).attr('data-value');
+				}
+			})
+			return value;
 		},
 	
 		/**

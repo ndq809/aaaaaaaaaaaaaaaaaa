@@ -30,6 +30,8 @@
         <li > <a class="menu-title"><i class="fa fa-balance-scale"></i> <span class="gw-menu-text">Quản Lý Hệ Thống</span></a>
           <ul class="gw-submenu">
             <li> <a href="/master/system/s001">Quản Lý Phân Quyền</a> </li>
+            <li> <a href="/master/system/s002">Danh Sách Tài Khoản</a> </li>
+            <li> <a href="/master/system/s003">Thêm Tài Khoản</a> </li>
           </ul>
         </li>
         <li > <a class="menu-title"><i class="fa fa-book"></i> <span class="gw-menu-text">Quản Lý Từ Vựng</span></a>
