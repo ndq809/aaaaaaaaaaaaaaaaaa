@@ -16,7 +16,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Lựa Chọn Đối Tượng</label>
-                <select class="new-allow">
+                <select class="new-allow custom-selectized">
                     <option>Tất cả</option>
                     <option>DC</option>
                     <option>UC</option>

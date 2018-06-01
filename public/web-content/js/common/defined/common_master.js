@@ -87,7 +87,7 @@ function initCommonMaster() {
     });
     initEvent();
     setLayout();
-    menuController()
+    menuController();
     $("#dtBox").DateTimePicker();
     $('.table-fixed-width table').each(function(){
         $(this).css('min-width',$(this).parent().attr('min-width'))
@@ -108,16 +108,15 @@ function initCommonMaster() {
     if($('.file-caption').parents('.file-subitem').hasClass('required')){
         $('.file-caption').addClass('required');
     }
-    $("select:not('.allow-selectize')").addClass("form-control input-sm");
+    $("select:not('.allow-selectize,.custom-selectized')").addClass("form-control input-sm");
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         _selectize=$("select.allow-selectize:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
             create: false
         });
     }else{
-        $("select").addClass("form-control input-sm");
+        $("select:not('.custom-selectized')").addClass("form-control input-sm");
     }
-    $('.selectize-control.required .selectize-input').css('border','1px solid #d9534f');
     $('select.required').prev('label').addClass('required');
     $('input.required,textarea.required').parent().prev('label').addClass('required');
 
@@ -138,7 +137,8 @@ function initCommonMaster() {
         }
     })
     $(":input:not([readonly],[disabled],:hidden)").first().focus();
-    setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
+    setInterval(keepTokenAlive, 1000 * 60*100); // every 100 mins
+    checkError();
 }
 
 function initEvent() {
@@ -594,7 +594,7 @@ function checkLogin(username){
     var data={};
         data['account_nm']=$('#account_nm').val();
         data['password']=$('#password').val();
-        data['remember']=$('#remember').val();
+        data['remember']=$('#remember').prop('checked');
     $.ajax({
         type: 'POST',
         url: '/master/checkLogin',
@@ -666,7 +666,7 @@ function showFailedValidate(error_array,exe_mode){
         parent_div='.search-block';
     $.each( error_array, function( key, value ) {
         var target=$(parent_div).find('#'+key);
-        if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')){
+        if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')||target.hasClass('custom-selectized')){
             target=target.next('.selectize-control').find('.selectize-input');
         }
       target.addClass('input-error');
@@ -1003,4 +1003,11 @@ function checkValidate(){
     });
 }
 
+function checkError(){
+    switch($('#check-error').val()){
+        case '209':
+            showMessage(10);
+            break;
+    }
+}
 

@@ -22,6 +22,7 @@
         {!!WebFunctions::public_url('web-content/slider/dist/js/jquery.sliderPro.js')!!}
         {!!WebFunctions::public_url('web-content/slider/libs/fancybox/jquery.fancybox.js')!!}
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/defined/message.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
@@ -66,7 +67,7 @@
                                 <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master/p002">Trang Quản Trị</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master">Trang Quản Trị</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>

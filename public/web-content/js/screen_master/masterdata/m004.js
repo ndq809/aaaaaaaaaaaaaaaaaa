@@ -28,6 +28,11 @@ function initevent_m004(){
     $(document).on('change','.sub-checkbox',function(){
         updateDeleteArray(this);
     })
+
+    $(document).off('click','#btn-add');
+    $( "#btn-add" ).removeClass(function() {
+      alert( $( this ).prev().attr( "class" ));
+    });
 }
 
 function m004_addNew(){

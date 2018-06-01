@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Common;
 use Session;
+use Illuminate\Cookie\CookieJar;
 
 trait AuthenticatesUsers
 {
@@ -102,7 +103,6 @@ trait AuthenticatesUsers
         $request->session()->regenerate();
         $this->clearLoginAttempts($request);
         $this->authenticated($request, $this->guard()->user());
-        common::getMessage();
         return response()->json(['status'       => 200,
                                  'statusText'   => 'login success',
                                  ]);
@@ -119,7 +119,17 @@ trait AuthenticatesUsers
     {
         Auth::user()->session_id = \Session::getId();
         Auth::user()->save();
-        // return redirect()->intended($this->redirectPath());
+        $remember_me = $request->remember;
+        $year = time() + 31536000;
+        if ($remember_me == 'true') {
+            setcookie('remember_me', $remember_me, $year);
+            setcookie('account_nm', $request->account_nm, $year);
+            setcookie('password', $request->password, $year);
+        } else {
+            setcookie('remember_me', NULL, $year);
+            setcookie('account_nm', '', $year);
+            setcookie('password', '', $year);
+        }       
     }
 
     /**

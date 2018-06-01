@@ -20,7 +20,6 @@ class RedirectIfAuthenticated
         if (Auth::guard($guard)->check()) {
             return redirect()->intended('/master/general/g001');
         }
-
         return $next($request);
     }
 }

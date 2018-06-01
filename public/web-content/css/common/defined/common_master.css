@@ -1151,3 +1151,7 @@ button .is-icon{
     font-weight: bold;
     color: red;
 }
+
+.selectize-control.required .selectize-input{
+    border: 1px solid #d9534f!important;
+}

@@ -41,6 +41,7 @@
     </head>
     <body>
         <div id="dtBox"></div>
+        <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}">
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <nav class="navbar navbar-default ">

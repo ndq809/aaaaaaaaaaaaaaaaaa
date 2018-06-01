@@ -11,6 +11,6 @@ class ControllerUser extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function __construct(){
-	    $this->middleware(['checksession']);
+	    $this->middleware(['CheckMultiAccess']);
 	}
 }

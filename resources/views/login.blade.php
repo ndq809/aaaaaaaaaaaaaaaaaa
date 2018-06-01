@@ -52,17 +52,17 @@
                 </div>
                 <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
                     <div class="form-group ">
-                        <input type="text" class="form-control login-input " id="account_nm" placeholder="Email đăng nhập" tabindex="1">
+                        <input type="text" class="form-control login-input " id="account_nm" placeholder="Email đăng nhập" tabindex="1" value="<?php if(isset($_COOKIE['account_nm'])){echo($_COOKIE['account_nm']); } ?>">
                     </div>
 
                     <div class="form-group ">
-                        <input type="password" class="form-control login-input " id="password" placeholder="Mật khẩu" tabindex="2">
+                        <input type="password" class="form-control login-input " id="password" placeholder="Mật khẩu" tabindex="2" value="<?php if(isset($_COOKIE['password'])){echo($_COOKIE['password']); } ?>">
                     </div>
                     <div class="form-group">
                         <button type="button" id="btn_login" class="btn btn-primary btn-block btn-login-size" tabindex="3"><img src="/web-content/images/icon/login-icon.png" height="20px"> Đăng Nhập Hệ Thống</button>
                     </div>
                     <div class="text-center">
-                        <label class="checkbox-inline"><input type="checkbox" checked="" tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
+                        <label class="checkbox-inline"><input type="checkbox" <?php if(isset($_COOKIE['remember_me'])){echo('checked'); } ?> tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
                     </div>
                     <span class="login-message hidden"></span>
                 </div>

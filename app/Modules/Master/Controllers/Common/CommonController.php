@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\URL;
 
 class CommonController extends Controller
 {
@@ -116,6 +117,15 @@ class CommonController extends Controller
             }
             $bytes_written = File::put($lang_file_path, $script);
         }
+
+    }
+
+     public static function getPermission($account_div)
+    {
+        // var_dump(URL::current());die;
+        $screen_id= explode("/",URL::current());
+        $screen_id=$screen_id[Count($screen_id)-1];
+        return Dao::call_stored_procedure('SPC_COM_PERMISSION', array($account_div,$screen_id))[0][0];
 
     }
 
@@ -276,6 +286,8 @@ class CommonController extends Controller
         }
         return response()->json($result);
     }
+
+
     /**
      * Show the application index.
      * @author mail@ans-asia.com

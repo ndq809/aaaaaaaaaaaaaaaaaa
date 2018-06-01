@@ -22,7 +22,7 @@
                         Tên Đăng Nhập
                     </label>
                     <div class="input-group">
-                        <input class="form-control input-sm" id="account_nm" type="type">
+                        <input class="form-control input-sm" id="account_nm" type="type" value="<?php if(isset($_COOKIE['account_nm'])){echo($_COOKIE['account_nm']); } ?>">
                         </input>
                     </div>
                 </div>
@@ -31,11 +31,11 @@
                         Mật Khẩu
                     </label>
                     <div class="input-group">
-                        <input class="form-control input-sm" name="" type="password" id="password">
+                        <input class="form-control input-sm" name="" type="password" id="password" value="<?php if(isset($_COOKIE['password'])){echo($_COOKIE['password']); } ?>">
                         </input>
                     </div>
                 </div>
-                <label class="checkbox-inline"><input type="checkbox" checked="" tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
+                <label class="checkbox-inline"><input type="checkbox" <?php if(isset($_COOKIE['remember_me'])){echo('checked'); } ?> tabindex="3" id="remember" maxlength="">Lưu mật khẩu đăng nhập</label>
                 <span class="login-message hidden"></span>
             </div>
             <div class="modal-footer">

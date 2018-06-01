@@ -102,7 +102,9 @@ Route::group(
 		Route::post('s003/delete','s003Controller@s003_delete');
 		Route::post('s002/list'  ,'s002Controller@s002_list');
 		Route::post('s002/update','s002Controller@s002_update');
-		Route::post('s002/delete','s002Controller@s002_delete');	
+		Route::post('s002/delete','s002Controller@s002_delete');
+		Route::post('s001/list'  ,'s001Controller@s001_list');
+		Route::post('s001/update','s001Controller@s001_update');	
 	}
 );
 

@@ -575,17 +575,8 @@ function logout(username){
 function checkError(){
     switch($('#check-error').val()){
         case '206':
-            $.sweetModal({
-            title:'CẢNH BÁO TRUY CẬP',
-            content: 'Tài khoản của bạn đã bị đăng nhập ở 1 nơi khác hiện tại bạn sẽ bị đăng xuất khỏi hệ thống xin vui lòng kiểm tra và đăng nhập lại sau!',
-            icon: $.sweetModal.ICON_ERROR,
-            buttons: [
-                {
-                    label: 'Đã hiểu',
-                    classes: 'btn btn-sm btn-danger',
-                },
-            ]
-        });
+            showMessage(9);
+            break;
     }
 }
 
@@ -599,4 +590,73 @@ function keepTokenAlive() {
     }).then(function (result) {
         // console.log(new Date() + ' ' + result + ' ' + $('meta[name="csrf-token"]').attr('content'));
     });
+}
+
+function showMessage(message_code,ok_callback,cancel_callback){
+    switch(_type[message_code]){
+        case 1:
+           $.sweetModal({
+            title:_title[message_code],
+            content: _text[message_code],
+            icon: $.sweetModal.ICON_CONFIRM,
+            buttons: [
+                {
+                    label: 'Đồng ý',
+                    classes: 'btn btn-sm btn-info float-left',
+                    action: ok_callback,
+                },
+                {
+                    label: 'Từ chối',
+                    classes: 'btn btn-sm btn-default float-right',
+                    action: cancel_callback,
+                }
+            ]
+        });
+        break;
+        case 2:
+           $.sweetModal({
+            title:_title[message_code],
+            content: _text[message_code],
+            icon: $.sweetModal.ICON_SUCCESS,
+            buttons: [
+                {
+                    label: 'Ok',
+                    classes: 'btn btn-sm btn-success',
+                },
+            ]
+        });
+        break; 
+        case 3:
+           $.sweetModal({
+            title:_title[message_code],
+            content: _text[message_code],
+            icon: $.sweetModal.ICON_WARNING,
+            buttons: [
+                {
+                    label: 'Thực hiện',
+                    classes: 'btn btn-sm btn-warning float-left',
+                    action: ok_callback,
+                },
+                {
+                    label: 'Hủy',
+                    classes: 'btn btn-sm btn-default float-right',
+                    action: cancel_callback,
+                }
+            ]
+        });
+        break; 
+        case 4:
+           $.sweetModal({
+            title:_title[message_code],
+            content: _text[message_code],
+            icon: $.sweetModal.ICON_ERROR,
+            buttons: [
+                {
+                    label: 'Đã hiểu',
+                    classes: 'btn btn-sm btn-danger',
+                },
+            ]
+        });
+        break;  
+    }
 }

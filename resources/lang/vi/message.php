@@ -42,5 +42,15 @@ return [
             'message_title' => 'Đổi Mật Khẩu',
             'message_content' => 'Bạn có chắc chắn muốn đổi mật khẩu của tài khoản này?',
         ],
+        9 => [
+            'message_div' => 4,
+            'message_title' => 'Cảnh Báo Truy Cập',
+            'message_content' => 'Tài khoản của bạn đã bị đăng nhập ở 1 nơi khác hiện tại bạn sẽ bị đăng xuất khỏi hệ thống xin vui lòng kiểm tra và đăng nhập lại sau!',
+        ],
+        10 => [
+            'message_div' => 4,
+            'message_title' => 'Cảnh Báo Truy Cập',
+            'message_content' => 'Truy cập vừa thực hiện bị từ chối bạn đã được đưa quay trở lại trang trước đó!',
+        ],
     ],
 ];
