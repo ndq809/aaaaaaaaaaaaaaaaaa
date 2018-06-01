@@ -10,7 +10,7 @@
 
 $namespace = 'App\Modules\Master\Controllers\Vocabulary';
 Route::group(
-	['namespace' => $namespace,'prefix'=>'master/vocabulary','middleware'=>['web']],
+	['namespace' => $namespace,'prefix'=>'master/vocabulary','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('v001','v001Controller@getIndex');	
 		Route::get('v002','v002Controller@getIndex');
@@ -19,7 +19,7 @@ Route::group(
 
 $namespace1 = 'App\Modules\Master\Controllers\General';
 Route::group(
-	['namespace' => $namespace1,'prefix'=>'master/general','middleware'=>['web']],
+	['namespace' => $namespace1,'prefix'=>'master/general','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('g001','g001Controller@getIndex');	
 		Route::get('g002','g002Controller@getIndex');
@@ -34,7 +34,7 @@ Route::group(
 
 $namespace3 = 'App\Modules\Master\Controllers\Listening';
 Route::group(
-	['namespace' => $namespace3,'prefix'=>'master/listening','middleware'=>['web']],
+	['namespace' => $namespace3,'prefix'=>'master/listening','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('l001','l001Controller@getIndex');
 		Route::get('l002','l002Controller@getIndex');	
@@ -43,7 +43,7 @@ Route::group(
 
 $namespace4 = 'App\Modules\Master\Controllers\Writing';
 Route::group(
-	['namespace' => $namespace4,'prefix'=>'master/writing','middleware'=>['web']],
+	['namespace' => $namespace4,'prefix'=>'master/writing','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('w001','w001Controller@getIndex');	
 		Route::get('w002','w002Controller@getIndex');
@@ -74,7 +74,7 @@ Route::group(
 
 $namespace7 = 'App\Modules\Master\Controllers\MasterData';
 Route::group(
-	['namespace' => $namespace7,'prefix'=>'master/data','middleware'=>['web']],
+	['namespace' => $namespace7,'prefix'=>'master/data','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('m001','m001Controller@getIndex');	
 		Route::get('m002','m002Controller@getIndex');
@@ -93,7 +93,7 @@ Route::group(
 
 $namespace8 = 'App\Modules\Master\Controllers\System';
 Route::group(
-	['namespace' => $namespace8,'prefix'=>'master/system','middleware'=>['web']],
+	['namespace' => $namespace8,'prefix'=>'master/system','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('s001','s001Controller@getIndex');
 		Route::get('s002','s002Controller@getIndex');	
