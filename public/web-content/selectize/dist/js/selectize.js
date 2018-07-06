@@ -404,7 +404,7 @@
 	 */
 	var autoGrow = function($input) {
 		var currentWidth = null;
-	
+		alert();
 		var update = function(e, options) {
 			var value, keyCode, printable, placeholder, width;
 			var shift, character, selection;

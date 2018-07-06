@@ -170,9 +170,14 @@ trait AuthenticatesUsers
         $this->guard()->logout();
 
         $request->session()->invalidate();
-
-        return response()->json(['status'       => 200,
+        if($request->ajax()){
+            return response()->json(['status'       => 200,
                                  'statusText'   => 'logout success']);
+        }else{
+            return redirect('/master')->with('error', ['status'       => 210,
+                                                          'statusText'   => 'access denied']);
+        }
+        
     }
 
     /**

@@ -57,6 +57,7 @@
 <div id="result" class="panel main-panel col-xs-12">
 	@include('Master::masterdata.m003.search')
 </div>
+@if(Session::get('permission')['edit_per']==1)
 <div class="panel main-panel col-xs-12">
     <div class="panel-header padding-10-l">
         <h5 class="panel-title inline-block">Cập Nhật Thông Tin</h5>
@@ -102,7 +103,7 @@
                 <div class="form-group">
                     <label>Số Điện Thoại</label>
                     <div class="input-group">
-                        <input id="cellphone" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập số điện thoại" maxlength="15">
+                        <input id="cellphone" type="text" name="" class="form-control input-sm submit-item numberic tel" placeholder="Nhập số điện thoại" maxlength="15">
                     </div>
                 </div>
             </div>
@@ -157,4 +158,5 @@
         </div>
     </div>
 </div>
+@endif
 @stop

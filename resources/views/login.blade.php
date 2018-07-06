@@ -21,6 +21,7 @@
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/defined/message.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
@@ -36,6 +37,7 @@
 
     </head>
     <body>
+        <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}">
         <div class="col-xs-12 web-panel header-content" style="text-align: center;">
             <div class="login-wrap update-block" style="width: 100%">
                 <div class="logo-box" >

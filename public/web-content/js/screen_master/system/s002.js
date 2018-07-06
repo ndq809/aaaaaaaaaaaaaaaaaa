@@ -18,7 +18,7 @@ function initevent_s002(){
 
 	$(document).on('click','#btn-save',function(){
         if($('.table-focus tbody tr td.edit-row').length!=0){
-            showMessage(3,function(){
+            showMessage(1,function(){
                 s002_update();
            });
         }

@@ -18,7 +18,7 @@ class s002Controller extends Controller
      */
     public function getIndex()
     {
-        $data = Dao::call_stored_procedure('SPC_S003_FND1');
+        $data = Dao::call_stored_procedure('SPC_S002_FND1');
         return view('Master::system.s002.index')->with('data_default',$data);
     }
 

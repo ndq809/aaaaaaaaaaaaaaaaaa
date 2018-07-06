@@ -16,9 +16,9 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Tài Khoản</label>
-                <select id="account_div" class="submit-item custom-selectized required">
+                <select id="account_div" class="submit-item allow-selectize required">
                     @foreach($data_default[0] as $item)
-                        <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
+                        <option value="{{$item['number_id']==0?'':$item['number_id']}}" {{$item['number_id']==Session::get('account_div')?'selected':''}}>{{$item['content']}}</option>
                     @endforeach
                 </select>
             </div>

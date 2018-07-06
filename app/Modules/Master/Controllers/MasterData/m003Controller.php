@@ -46,7 +46,7 @@ class m003Controller extends Controller
             );
         }else{
             $result = array(
-                'status' => 200,
+                'status' => 208,
                 'error' => $result_query[0],
                 'statusText' => 'failed',
             );
@@ -69,7 +69,7 @@ class m003Controller extends Controller
             );
         }else{
             $result = array(
-                'status' => 200,
+                'status' => 208,
                 'error' => $result_query[0],
                 'statusText' => 'failed',
             );

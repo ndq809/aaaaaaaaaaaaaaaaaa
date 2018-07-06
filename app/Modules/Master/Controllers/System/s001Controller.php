@@ -53,6 +53,7 @@ class s001Controller extends Controller
                     'data' => $data[0],
                 );
             } else {
+                \Session::put('account_div',$request->only('account_div')['account_div']);
                 $result = array(
                     'status' => 200,
                     'statusText' => 'success',

@@ -1,4 +1,3 @@
-var data_delete=[];
 $(function(){
 	try{
 		init_s003();

@@ -8,10 +8,9 @@ $(function(){
 
 function init_s001(){
 	initevent_s001();
-    $("#account_div").selectize({
-        allowEmptyOption: true,
-        create: false
-    });
+    if($('#account_div').val()!=0){
+        $('#account_div').trigger('change');
+    }
 }
 
 function initevent_s001(){
@@ -59,7 +58,9 @@ function setPermission(){
             switch(res.status){
                 case 200:
                     clearFailedValidate();
-                    showMessage(2);
+                    showMessage(2,function(){
+                        window.location.reload();
+                    });
                     break;
                 case 201:
                     clearFailedValidate();

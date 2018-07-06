@@ -120,12 +120,31 @@ class CommonController extends Controller
 
     }
 
-     public static function getPermission($account_div)
+     public static function getPermission($account_div,$url)
     {
         // var_dump(URL::current());die;
-        $screen_id= explode("/",URL::current());
+        $screen_id= explode("/",$url);
         $screen_id=$screen_id[Count($screen_id)-1];
         return Dao::call_stored_procedure('SPC_COM_PERMISSION', array($account_div,$screen_id))[0][0];
+
+    }
+
+     public function getcatalogue(Request $request)
+    {
+          $data        = $request->all();    
+          $data = Dao::call_stored_procedure('SPC_COMMON_CATALORUE',$data);
+          $result = array(
+                'status' => 200,
+                'data' => $data[0],
+                'statusText' => 'success',
+            );
+          return response()->json($result);
+
+    }
+
+     public static function getMenu($account_div)
+    {
+        return Dao::call_stored_procedure('SPC_COM_MENU', array($account_div));
 
     }
 

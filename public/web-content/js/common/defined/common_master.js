@@ -4,6 +4,9 @@ var _selectize;
 var _data_delete=[];
 var _data_edit=[];
 var cropperBox;
+var _character=[81, 231, 69, 82, 84, 89, 85, 73, 79, 80, 65, 83, 68, 70, 71, 72, 74, 75, 76, 90, 88, 67, 86, 66, 78, 77,32,188, 190, 191, 226, 187, 186, 221, 192, 219, 111, 106, 109, 107, 110, 220, 222, 189,87];
+var _number=[49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105];
+
 $(function() {
     try {
         initCommonMaster();
@@ -112,7 +115,21 @@ function initCommonMaster() {
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         _selectize=$("select.allow-selectize:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
-            create: false
+            create: false,
+            openOnFocus: false,
+            onInitialize: function () {
+                this.clear();
+            }
+        });
+
+        _selectize=$("select.allow-selectize.new-allow").selectize({
+            allowEmptyOption: true,
+            create: true,
+            openOnFocus: false,
+            isDisabled: true,
+            onInitialize: function () {
+                this.clear();
+            }
         });
     }else{
         $("select:not('.custom-selectized')").addClass("form-control input-sm");
@@ -297,9 +314,7 @@ function initEvent() {
 
     $(document).on('click','.delete-tr-row',function(){
         tableTemp=$(this).parents('table');
-        if(confirm("Delete selected row?")){
-            $(this).closest('tr').remove();
-        }
+        $(this).closest('tr').remove();
         reIndex(tableTemp);
     })
 
@@ -419,6 +434,73 @@ function initEvent() {
                 break;
         }
     })
+
+    $(document).on('blur','input',function (e) {
+        if($(this).hasClass('money')){
+            var value=$(this).val().split('.');
+            var valueLength = value[0].length;
+            for(var i=valueLength-3;i>0;i=i-3){
+                value[0]=value[0].substr(0, i) + ',' + value[0].substr(i);
+            }
+            if(typeof value[1] !='undefined')
+                $(this).val(value[0]+'.'+value[1]);
+            else
+                $(this).val(value[0]);
+        }else
+        if($(this).hasClass('tel')){
+            var value=$(this).val();
+            var valueLength = value.length;
+            if(valueLength<12&&valueLength>8){
+                for(var i=valueLength-3;i>=3;i=i-3){
+                    value=value.substr(0, i) + '-' + value.substr(i);
+                }
+            }else{
+                value='';
+            }
+            $(this).val(value);
+        }else
+        if($(e.target).hasClass('numberic')){
+            // if(e.shiftKey){
+            //     if($.inArray(e.which,character)>=0||$.inArray(e.which,number)>=0){
+            //         e.preventDefault();
+            //     }
+            // }else{
+            //     if($.inArray(e.which,character)>=0){
+            //         e.preventDefault();
+            //     }
+            // }
+        }
+        // special_char.push(e.which);
+        // console.log(special_char);
+    })
+
+    $(document).on('focus','input',function (e) {
+        if($(this).hasClass('money')){
+            var text = jQuery.grep($(this).val().split(','), function(value) {
+                  return value;
+                });
+            $(this).val(text.join(''));
+        }else
+        if($(this).hasClass('tel')){
+            var text = jQuery.grep($(this).val().split('-'), function(value) {
+                  return value;
+                });
+            $(this).val(text.join(''));
+        }else
+        if($(e.target).hasClass('numberic')){
+            // if(e.shiftKey){
+            //     if($.inArray(e.which,character)>=0||$.inArray(e.which,number)>=0){
+            //         e.preventDefault();
+            //     }
+            // }else{
+            //     if($.inArray(e.which,character)>=0){
+            //         e.preventDefault();
+            //     }
+            // }
+        }
+        // special_char.push(e.which);
+        // console.log(special_char);
+    })
 }
 
 function setLayout(){
@@ -454,7 +536,7 @@ function reIndex(table)
     if(table.find('input[type=checkbox]').length==0){
         col=1;
     }
-    table.find('tbody > tr:not(:first)').each(function(i) {
+    table.find('tbody > tr:visible').each(function(i) {
         $(this).find('td:nth-child('+col+')').html('').html(i+1);
         
     });
@@ -551,6 +633,7 @@ function showMessage(message_code,ok_callback,cancel_callback){
                 {
                     label: 'Ok',
                     classes: 'btn btn-sm btn-success',
+                    action: ok_callback,
                 },
             ]
         });
@@ -665,6 +748,9 @@ function showFailedValidate(error_array,exe_mode){
     if(exe_mode===1)
         parent_div='.search-block';
     $.each( error_array, function( key, value ) {
+        if(key.includes('.')){
+            var target=$(parent_div+' table tbody tr:visible').eq(Number(key.split('.')[0])).find('#'+key.split('.')[1]);
+        }else
         var target=$(parent_div).find('#'+key);
         if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')||target.hasClass('custom-selectized')){
             target=target.next('.selectize-control').find('.selectize-input');
@@ -675,6 +761,9 @@ function showFailedValidate(error_array,exe_mode){
       target.attr('data-original-title',value);
     });
     $('[data-toggle="tooltip"]').tooltip();
+    if($('.input-error').first().hasClass('selectize-input')){
+        $('.input-error').first().parent().prev('select')[0].selectize.focus();
+    }else
     $('.input-error').first().focus(); 
 }
 
@@ -693,6 +782,9 @@ function showFailedData(error_array,exe_mode){
         target.attr('data-original-title',_text[error_array[i]['Code']]);
     }
     $('[data-toggle="tooltip"]').tooltip();
+    if($('.input-error').first().hasClass('selectize-input')){
+        $('.input-error').first().parent().prev('select')[0].selectize.focus();
+    }else
     $('.input-error').first().focus(); 
 }
 
@@ -779,17 +871,59 @@ function getInputData(exe_mode){
     if(exe_mode===1)
         parent_div='.update-block';
     $(parent_div).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
-        if($(this).val()===null){
-            value='';
+        if($(this).hasClass('money')){
+            var text = jQuery.grep($(this).val().split(','), function(item) {
+              return item;
+            });
+            value=text.join('');
+        }else
+        if($(this).hasClass('tel')){
+            var text = jQuery.grep($(this).val().split('-'), function(item) {
+              return item;
+            });
+            value=text.join('');
         }else{
-            value=$(this).val().trim();
-            if($(this).hasClass('input-refer')){
-                value=$(this).val().split('_')[0];
+            if($(this).val()===null){
+                value='';
+            }else{
+                value=$(this).val().trim();
+                if($(this).hasClass('input-refer')){
+                    value=$(this).val().split('_')[0];
+                }
             }
         }
         data[$(this).attr('id').trim()]=value;
     })
     return data;
+}
+
+function getTableData(table){
+    var data=[];
+    table.find('tbody tr:visible').each(function(){
+        var row_data={};
+        $(this).find('input,select').each(function(){
+            if($(this).hasClass('money')){
+                var text = jQuery.grep($(this).val().split(','), function(value) {
+                  return value;
+                });
+                row_data[$(this).attr('id')]=text.join('');
+            }else
+            if($(this).hasClass('tel')){
+                var text = jQuery.grep($(this).val().split('-'), function(value) {
+                  return value;
+                });
+                row_data[$(this).attr('id')]=text.join('');
+            }else{
+                row_data[$(this).attr('id')]=$(this).val();
+            }
+        })
+        data.push(row_data);
+    })
+    if(data.length==0){
+        return null;
+    }else{
+        return $.extend({}, data);
+    }
 }
 
 function loadPopup(screen_name){
@@ -1008,6 +1142,53 @@ function checkError(){
         case '209':
             showMessage(10);
             break;
+        case '210':
+            showMessage(11);
+            break;
     }
 }
+
+document.addEventListener('keydown', function (e) {
+    var character = _character;
+    var number = _number;
+    var dotIndex = 1000;
+    if($(e.target).hasClass('money')){
+        var decimal=Number($(e.target).attr('decimal'));
+        if(e.shiftKey){
+            if($.inArray(e.which,character)>=0||$.inArray(e.which,number)>=0){
+                e.preventDefault();
+            }
+        }else{
+            if(typeof $(e.target).attr('decimal')!='undefined' && $(e.target).val().indexOf('.')==-1){
+                character = jQuery.grep(character, function(value) {
+                  return value != 190 && value != 110;
+                });
+            }else{
+                dotIndex=$(e.target).val().indexOf('.');
+            }
+            if(typeof $(e.target).attr('negative')!='undefined' && $(e.target).val().indexOf('-')==-1){
+                 character = jQuery.grep(character, function(value) {
+                  return value != 189 && value != 109;
+                });
+            }
+            if($.inArray(e.which,character)>=0||($.inArray(e.which,number)>=0&&$(e.target).val().length>dotIndex+decimal)){
+                e.preventDefault();
+            }
+        }
+    }else
+    if($(e.target).hasClass('numberic')){
+        if(e.shiftKey){
+            if($.inArray(e.which,character)>=0||$.inArray(e.which,number)>=0){
+                e.preventDefault();
+            }
+        }else{
+            if($.inArray(e.which,character)>=0){
+                e.preventDefault();
+            }
+        }
+    }
+})
+
+
+
 

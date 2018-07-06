@@ -48,7 +48,7 @@ class Button
                         }
                         break;
                     case 'export':
-                        if($permission['export_per']==0){
+                        if($permission['report_per']==0){
                             $disable='btn-disable';
                             self::$button_val[$value]['id']='disable';
                         }

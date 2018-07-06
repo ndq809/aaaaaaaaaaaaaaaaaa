@@ -27,7 +27,12 @@ Route::group(
 		Route::get('g004','g004Controller@getIndex');	
 		Route::get('g005','g005Controller@getIndex');
 		Route::get('g006','g006Controller@getIndex');
-		Route::get('g007','g007Controller@getIndex');			
+		Route::get('g007','g007Controller@getIndex');	
+		Route::post('g004/addnew','g004Controller@g004_addnew');
+		Route::post('g004/delete','g004Controller@g004_delete');
+		Route::post('g003/list'  ,'g003Controller@g003_list');
+		Route::post('g003/update','g003Controller@g003_update');
+		Route::post('g003/delete','g003Controller@g003_delete');
 	}
 );
 
@@ -69,6 +74,7 @@ Route::group(
 		Route::post('upload-image', 'CommonController@postUpload');
 		Route::post('crop-image', 'CommonController@postCrop');
 		Route::post('checkvalidate', 'CommonController@com_validate');
+		Route::post('getcatalogue', 'CommonController@getcatalogue');
 	}
 );
 
@@ -88,6 +94,8 @@ Route::group(
 		Route::post('m003/list','m003Controller@m003_list');
 		Route::post('m003/update','m003Controller@m003_update');
 		Route::post('m003/delete','m003Controller@m003_delete');
+		Route::post('m007/list','m007Controller@m007_list');
+		Route::post('m007/save','m007Controller@m007_save');
 	}
 );
 

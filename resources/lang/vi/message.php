@@ -50,7 +50,12 @@ return [
         10 => [
             'message_div' => 4,
             'message_title' => 'Cảnh Báo Truy Cập',
-            'message_content' => 'Truy cập vừa thực hiện bị từ chối bạn đã được đưa quay trở lại trang trước đó!',
+            'message_content' => 'Truy cập vừa thực hiện bị từ chối!',
+        ],
+        11 => [
+            'message_div' => 4,
+            'message_title' => 'Cảnh Báo Truy Cập',
+            'message_content' => 'Quyền truy cập hệ thống đã bị khóa ,tài khoản của bạn đã bị đăng xuất tự động!',
         ],
     ],
 ];

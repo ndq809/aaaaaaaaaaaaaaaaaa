@@ -59,6 +59,7 @@
 <div id="result" class="panel main-panel col-xs-12">
 	@include('Master::system.s002.search')
 </div>
+@if(Session::get('permission')['edit_per']==1)
 <div class="panel main-panel col-xs-12">
     <div class="panel-header padding-10-l">
         <h5 class="panel-title inline-block">Cập Nhật Thông Tin</h5>
@@ -125,4 +126,5 @@
         </div>
     </div>
 </div>
+@endif
 @stop

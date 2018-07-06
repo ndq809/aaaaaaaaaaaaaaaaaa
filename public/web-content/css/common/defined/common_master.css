@@ -1092,34 +1092,13 @@ button .is-icon{
 }
 
 .input-error:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #E5224C inset;
+    -webkit-box-shadow: 0 0 0 30px #F697A3 inset;
 }
 
 .input-error{
-    background-color: #E5224C!important;
+    background-color: #F697A3!important;
     background-image: none!important;
-    color: pink;
-}
-
-.input-error *{
-    color: pink;
-}
-
-.input-error:-webkit-autofill {
-    -webkit-text-fill-color: pink !important;
-}
-
-.input-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
-}
-.input-error::-moz-placeholder { /* Firefox 19+ */
-  color: pink;
-}
-.input-error:-ms-input-placeholder { /* IE 10+ */
-  color: pink;
-}
-.input-error:-moz-placeholder { /* Firefox 18- */
-  color: pink;
+    color: white;
 }
 .tooltip-inner {
     max-width: 350px;

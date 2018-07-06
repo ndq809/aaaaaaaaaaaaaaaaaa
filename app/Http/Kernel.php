@@ -58,5 +58,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'CheckMultiAccess' => \App\Http\Middleware\CheckMultiAccess::class,
         'CheckPermission' => \App\Http\Middleware\CheckPermission::class,
+        'Initialize' => \App\Http\Middleware\Initialize::class,
     ];
 }
