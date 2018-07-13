@@ -33,10 +33,10 @@ class w002Controller extends Controller
         $validate=common::checkValidate((array)json_decode($data['header_data']));
         if ($validate['result']) {
             $param['header']    = (array)json_decode($data['header_data']);
-            // $param['xml_detail']    = $xml->xml((array)json_decode($data['detail_data']));
+            $param['xml_detail']    = $xml->xml((array)json_decode($data['detail_data']));
             $param['user_id']=Auth::user()->account_nm;
             $param['ip']=$request->ip();
-            var_dump((array)json_decode($data['detail_data']));die;
+            var_dump($param);die;
             $data = Dao::call_stored_procedure('SPC_w002_ACT1',$param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
