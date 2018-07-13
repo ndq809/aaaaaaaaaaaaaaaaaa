@@ -123,23 +123,20 @@
 }
 
 @media screen and (max-width: 479px) {
-    audio{
-        width: 110px;
-    }
-    .file-preview-frame{
+    .input-image .file-preview-frame{
         width: 110px!important;
         height: auto;
         text-align: left;
     }
-    .kv-fileinput-caption{
+    .input-image .kv-fileinput-caption{
         display: none!important;
     }
 
-    .file-preview{
+    .input-image .file-preview{
         width: 110px;
     }
 
-    .file-footer-caption{
+    .input-image .file-footer-caption{
         width: 110px!important;
     }
 }
@@ -149,7 +146,7 @@
         height: auto!important;
     }
 
-    .file-preview-frame{
+    .input-image .file-preview-frame{
         width: 102px!important;
     }
 }

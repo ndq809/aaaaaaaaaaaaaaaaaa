@@ -324,7 +324,7 @@
 }
 .selectize-dropdown {
   margin: 0px 0 0 0;
-  z-index: 1000;
+  z-index: 300;
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
@@ -449,7 +449,7 @@
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
 }
-.selectize-control.single .selectize-input.disabled {
+.selectize-control.single .selectize-input.disabled:not(.input-error) {
   background: #e6e6e6 !important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

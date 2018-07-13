@@ -25,7 +25,7 @@ BEGIN
 
 	--
 	SELECT
-		 M002.catalogue_nm	 AS value
+		 M002.catalogue_id	 AS value
 	,	 M002.catalogue_nm   AS text	    
 	FROM M002
 	WHERE M002.del_flg = 0 

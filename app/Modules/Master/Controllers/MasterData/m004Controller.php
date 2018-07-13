@@ -29,7 +29,7 @@ class m004Controller extends Controller
         $param['user_id']=Auth::user()->account_nm;
         $param['ip']=$request->ip();
         // var_dump($param);die;
-        if (common::checkValidate($request)['result']) {
+        if (common::checkValidate($request->all())['result']) {
             $data = Dao::call_stored_procedure('SPC_M004_ACT1',$param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
@@ -49,7 +49,7 @@ class m004Controller extends Controller
                 );
             }
         } else {
-           $result = array('error'    => common::checkValidate($request)['error'],
+           $result = array('error'    => common::checkValidate($request->all())['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }

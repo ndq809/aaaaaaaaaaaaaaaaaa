@@ -13,12 +13,12 @@
                         <th rowspan="2">Ghi Chú</th>
                     </tr>
                     <tr>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="1">Truy Cập</label></th>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="2">Hiển Thị Menu</label></th>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="3">Thêm Dữ Liệu</label></th>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="4">Sửa Dữ Liệu</label></th>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="5">Xóa Dữ Liệu</label></th>
-                        <th><label class="checkbox-inline"><input type="checkbox" class="super-checkbox" group="6">Xuất Dữ Liệu</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="1">Truy Cập</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="2">Hiển Thị Menu</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="3">Thêm Dữ Liệu</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="4">Sửa Dữ Liệu</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="5">Xóa Dữ Liệu</label></th>
+                        <th><label class="checkbox-inline"><input type="checkbox" class="super-all-checkbox" group="6">Xuất Dữ Liệu</label></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,12 +26,12 @@
                     @for($i=1;$i<=Count($data[0]);$i++)
                     <tr style="background: #ebeae1" class="tr-header">
                         <td colspan="2" style="font-weight: bold;">{{$data[0][$i-1]['screen_group_nm']}}</td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="1{{$i}}"></td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="2{{$i}}"></td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="3{{$i}}"></td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="4{{$i}}"></td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="5{{$i}}"></td>
-                        <td><input type="checkbox" name="" class="sub-checkbox super-checkbox" group="6{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="1{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="2{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="3{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="4{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="5{{$i}}"></td>
+                        <td><input type="checkbox" name="" class="super-checkbox" group="6{{$i}}"></td>
                         <td></td>
                     </tr>
                     @for($j=1;$j<=Count($data[1]);$j++)

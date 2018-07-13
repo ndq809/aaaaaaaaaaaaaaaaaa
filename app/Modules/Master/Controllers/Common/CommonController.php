@@ -142,6 +142,19 @@ class CommonController extends Controller
 
     }
 
+     public function getgroup(Request $request)
+    {
+          $data        = $request->all();    
+          $data = Dao::call_stored_procedure('SPC_COMMON_GROUP',$data);
+          $result = array(
+                'status' => 200,
+                'data' => $data[0],
+                'statusText' => 'success',
+            );
+          return response()->json($result);
+
+    }
+
      public static function getMenu($account_div)
     {
         return Dao::call_stored_procedure('SPC_COM_MENU', array($account_div));
@@ -274,16 +287,15 @@ class CommonController extends Controller
         return $filename;
     }
 
-    public static function checkValidate(Request $request)
+    public static function checkValidate($data)
     {
         $rule=Lang::get('validaterule.rules');
-        $data=$request->all();
         foreach ($rule as $key => $value) {
             if(!array_key_exists($key,$data)){
                 unset($rule[$key]);
             }
         }
-        $validator = Validator::make($request->all(), $rule);
+        $validator = Validator::make($data, $rule);
         if (!$validator->passes()) {
             return array('result' => false,'error'=>$validator->errors()->all());
         } else {

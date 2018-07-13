@@ -12,11 +12,10 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_S001_LST1]
 	
-	@P_account_div			INT				=	100 
+	@P_account_div			INT				=	0
 AS
 BEGIN
 	SET NOCOUNT ON;
-	print @P_account_div
 	--
 	DECLARE 
 		@ERR_TBL			ERRTABLE
@@ -31,26 +30,19 @@ BEGIN
 	,	 screen_url	   NVARCHAR(MAX)
 	)
 
-	CREATE TABLE #S001
-	(	 account_div		int
-
-	)
-
-	INSERT INTO #S001
-	SELECT DISTINCT
-		 S001.account_div
-	FROM S001
-
 	INSERT INTO #S003
 	SELECT
-		 #S001.account_div
+		 M999.number_id
 	,	 S003.screen_id
 	,	 S003.screen_nm
 	,	 S003.screen_group
 	,	 S003.screen_url
 	FROM S003
-	CROSS JOIN #S001
+	CROSS JOIN M999
 	WHERE S003.del_flg = 0
+	AND M999.name_div = 5
+	AND M999.number_id != 0
+	AND M999.del_flg = 0
 
 	SELECT DISTINCT
 		 S003.screen_group
@@ -78,7 +70,7 @@ BEGIN
 	ON #S003.account_div=S002.account_div
 	AND #S003.screen_id=S002.screen_id
 	WHERE 
-		@P_account_div=100
-	OR #S003.account_div=@P_account_div
+		#S003.account_div=@P_account_div
+	DROP TABLE #S003
 END
 

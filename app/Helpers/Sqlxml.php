@@ -40,10 +40,10 @@ class SqlXml
         // return $result;
         // $result = array();
         $xml = '';
-        if (!empty($data)) {
-            foreach ($data as $key => $value) {
+        if (!empty((array)$data)) {
+            foreach ((array)$data as $key => $value) {
                 $xml .= '<row ';
-                foreach ($data[$key] as $rowKey => $rowValue) {
+                foreach ((array)$data[$key] as $rowKey => $rowValue) {
                     $xml .= $rowKey . '="' . $this->_convert($rowValue) . '" ';
                 }
                 $xml .= '/>';

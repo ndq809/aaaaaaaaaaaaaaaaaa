@@ -34,7 +34,7 @@ class s001Controller extends Controller
     public function s001_update(Request $request)
     {
         
-         if (common::checkValidate($request)['result']) {
+         if (common::checkValidate($request->all())['result']) {
             $permission           = $request->except('account_div');
             $xml                  = new SQLXML();
             $param['account_div'] = $request->only('account_div')['account_div'];
@@ -60,7 +60,7 @@ class s001Controller extends Controller
                 );
             }
         } else {
-           $result = array('error'    => common::checkValidate($request)['error'],
+           $result = array('error'    => common::checkValidate($request->all())['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }

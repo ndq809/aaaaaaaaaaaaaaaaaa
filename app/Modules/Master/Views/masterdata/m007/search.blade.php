@@ -21,42 +21,42 @@
             <tbody>
                 <tr class="hidden">
                     <td></td>
-                    <td><input type="text" id="number_id" name="" class="form-control input-sm required number_id numberic" value="" decimal='2' negative='1'></td>
-                    <td><input type="text" id="content" name="" class="form-control input-sm content" value=""></td>
-                    <td><input type="text" id="num_remark1" name="" class="form-control input-sm num_remark1" value=""></td>
-                    <td><input type="text" id="num_remark2" name="" class="form-control input-sm num_remark2" value=""></td>
-                    <td><input type="text" id="num_remark3" name="" class="form-control input-sm num_remark3" value=""></td>
-                    <td><input type="text" id="text_remark1" name="" class="form-control input-sm text_remark1" value=""></td>
-                    <td><input type="text" id="text_remark2" name="" class="form-control input-sm text_remark2" value=""></td>
-                    <td><input type="text" id="text_remark3" name="" class="form-control input-sm text_remark3" value=""></td>
+                    <td><input type="text" refer-id="number_id" name="" class="form-control input-sm required number_id numberic" value=""></td>
+                    <td><input type="text" refer-id="content" name="" class="form-control input-sm content" value=""></td>
+                    <td><input type="text" refer-id="num_remark1" name="" class="form-control input-sm num_remark1" value=""></td>
+                    <td><input type="text" refer-id="num_remark2" name="" class="form-control input-sm num_remark2" value=""></td>
+                    <td><input type="text" refer-id="num_remark3" name="" class="form-control input-sm num_remark3" value=""></td>
+                    <td><input type="text" refer-id="text_remark1" name="" class="form-control input-sm text_remark1" value=""></td>
+                    <td><input type="text" refer-id="text_remark2" name="" class="form-control input-sm text_remark2" value=""></td>
+                    <td><input type="text" refer-id="text_remark3" name="" class="form-control input-sm text_remark3" value=""></td>
                     <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
                 </tr>
                 @if(isset($data)&&$data[0][0]['name_div'] != '')
                 @foreach($data[0] as $index => $row)
                 <tr>
                     <td>{{$index+1}}</td>
-                    <td><input type="text" id="number_id" name="" class="form-control input-sm required number_id numberic" value="{{$row['number_id']}}"></td>
-                    <td><input type="text" id="content" name="" class="form-control input-sm content" value="{{$row['content']}}"></td>
-                    <td><input type="text" id="num_remark1" name="" class="form-control input-sm num_remark1" value="{{$row['num_remark1']}}"></td>
-                    <td><input type="text" id="num_remark2" name="" class="form-control input-sm num_remark2" value="{{$row['num_remark2']}}"></td>
-                    <td><input type="text" id="num_remark3" name="" class="form-control input-sm num_remark3" value="{{$row['num_remark3']}}"></td>
-                    <td><input type="text" id="text_remark1" name="" class="form-control input-sm text_remark1" value="{{$row['text_remark1']}}"></td>
-                    <td><input type="text" id="text_remark2" name="" class="form-control input-sm text_remark2" value="{{$row['text_remark2']}}"></td>
-                    <td><input type="text" id="text_remark3" name="" class="form-control input-sm text_remark3" value="{{$row['text_remark3']}}"></td>
+                    <td><input type="text" refer-id="number_id" name="" class="form-control input-sm required number_id numberic" value="{{$row['number_id']}}"></td>
+                    <td><input type="text" refer-id="content" name="" class="form-control input-sm content" value="{{$row['content']}}"></td>
+                    <td><input type="text" refer-id="num_remark1" name="" class="form-control input-sm num_remark1" value="{{$row['num_remark1']}}"></td>
+                    <td><input type="text" refer-id="num_remark2" name="" class="form-control input-sm num_remark2" value="{{$row['num_remark2']}}"></td>
+                    <td><input type="text" refer-id="num_remark3" name="" class="form-control input-sm num_remark3" value="{{$row['num_remark3']}}"></td>
+                    <td><input type="text" refer-id="text_remark1" name="" class="form-control input-sm text_remark1" value="{{$row['text_remark1']}}"></td>
+                    <td><input type="text" refer-id="text_remark2" name="" class="form-control input-sm text_remark2" value="{{$row['text_remark2']}}"></td>
+                    <td><input type="text" refer-id="text_remark3" name="" class="form-control input-sm text_remark3" value="{{$row['text_remark3']}}"></td>
                     <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
                 </tr>
                 @endforeach
                  @else
                  <tr>
                     <td>1</td>
-                    <td><input type="text" id="number_id" name="" class="form-control input-sm required number_id numberic" value=""></td>
-                    <td><input type="text" id="content" name="" class="form-control input-sm content" value=""></td>
-                    <td><input type="text" id="num_remark1" name="" class="form-control input-sm num_remark1" value=""></td>
-                    <td><input type="text" id="num_remark2" name="" class="form-control input-sm num_remark2" value=""></td>
-                    <td><input type="text" id="num_remark3" name="" class="form-control input-sm num_remark3" value=""></td>
-                    <td><input type="text" id="text_remark1" name="" class="form-control input-sm text_remark1" value=""></td>
-                    <td><input type="text" id="text_remark2" name="" class="form-control input-sm text_remark2" value=""></td>
-                    <td><input type="text" id="text_remark3" name="" class="form-control input-sm text_remark3" value=""></td>
+                    <td><input type="text" refer-id="number_id" name="" class="form-control input-sm required number_id numberic" value="0"></td>
+                    <td><input type="text" refer-id="content" name="" class="form-control input-sm content" value=""></td>
+                    <td><input type="text" refer-id="num_remark1" name="" class="form-control input-sm num_remark1" value=""></td>
+                    <td><input type="text" refer-id="num_remark2" name="" class="form-control input-sm num_remark2" value=""></td>
+                    <td><input type="text" refer-id="num_remark3" name="" class="form-control input-sm num_remark3" value=""></td>
+                    <td><input type="text" refer-id="text_remark1" name="" class="form-control input-sm text_remark1" value=""></td>
+                    <td><input type="text" refer-id="text_remark2" name="" class="form-control input-sm text_remark2" value=""></td>
+                    <td><input type="text" refer-id="text_remark3" name="" class="form-control input-sm text_remark3" value=""></td>
                     <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
                 </tr>
                 @endif

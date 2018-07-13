@@ -31,6 +31,74 @@ class m007Controller extends Controller
             ->with('data', $data);
     }
 
+     public function m007_add(Request $request)
+    {
+        $data = $request->all();
+        $param['name_div'] = $data['name_div'];
+        $param['user_id']  = Auth::user()->account_nm;
+        $param['ip']       = $request->ip();
+        $validate          = common::checkValidate($request->all());
+        if ($validate['result']) {
+            $data = Dao::call_stored_procedure('SPC_M007_ACT2', $param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'data'       => $data[1],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            $result = array('error' => array_merge(isset($validate['error']) ? $validate['error'] : array()),
+                'status'                => 201,
+                'statusText'            => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
+     public function m007_delete(Request $request)
+    {
+        $data = $request->all();
+        $param['name_div'] = $data['name_div'];
+        $param['user_id']  = Auth::user()->account_nm;
+        $param['ip']       = $request->ip();
+        $validate          = common::checkValidate($request->all());
+        if ($validate['result']) {
+            $data = Dao::call_stored_procedure('SPC_M007_ACT3', $param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'data'       => $data[1],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            $result = array('error' => array_merge(isset($validate['error']) ? $validate['error'] : array()),
+                'status'                => 201,
+                'statusText'            => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
     public function m007_save(Request $request)
     {
         $data = $request->all();
@@ -40,7 +108,7 @@ class m007Controller extends Controller
         $param['xml']      = $xml->xml($data[0]);
         $param['user_id']  = Auth::user()->account_nm;
         $param['ip']       = $request->ip();
-        $validate          = common::checkValidate($request);
+        $validate          = common::checkValidate($request->all());
         $validateMulti     = $this->checkValidateMulti($data[0]);
         if ($validate['result'] && $validateMulti['result']) {
             $data = Dao::call_stored_procedure('SPC_M007_ACT1', $param);

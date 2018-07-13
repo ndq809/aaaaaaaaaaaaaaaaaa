@@ -31,7 +31,7 @@ class s003Controller extends Controller
         $param['ip']=$request->ip();
         $param['password']=Hash::make($param['password']);
         // var_dump($param);die;
-        if (common::checkValidate($request)['result']) {
+        if (common::checkValidate($request->all())['result']) {
             $data = Dao::call_stored_procedure('SPC_S003_ACT1',$param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
@@ -51,7 +51,7 @@ class s003Controller extends Controller
                 );
             }
         } else {
-           $result = array('error'    => common::checkValidate($request)['error'],
+           $result = array('error'    => common::checkValidate($request->all())['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }
@@ -66,16 +66,16 @@ class s003Controller extends Controller
         $param['user_id']=Auth::user()->account_nm;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_S003_ACT2", $param);
-        if($result_query[0][0]['Id']==''){
+       if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){
             $result = array(
-                'status' => 200,
-                'statusText' => 'success',
+                 'status' => 208,
+                'error' => $result_query[0],
+                'statusText' => 'failed',
             );
         }else{
             $result = array(
-                'status' => 208,
-                'error' => $result_query[0],
-                'statusText' => 'failed',
+                'status' => 200,
+                'statusText' => 'success',
             );
         }
         return response()->json($result);

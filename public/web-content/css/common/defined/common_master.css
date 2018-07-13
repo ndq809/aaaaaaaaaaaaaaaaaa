@@ -81,6 +81,15 @@ table input[type='text']{
     height: 25px;
 }
 
+table select{
+    height: 25px!important;
+}
+
+table a[type='button']{
+    height: 25px;
+    padding: 3px 10px;
+}
+
 .width-50{
     width: 50%!important;
 }
@@ -1067,15 +1076,19 @@ button .is-icon{
 }
 
 .file-subitem .audio-title{
-    height: 93px;
+    height: 91px;
+}
+
+.file-subitem .audio-title h6{
+    margin-top: 14px;
 }
 
 .file-subitem .audio-source{
-    height: 32px;
+    height: 30px;
 }
 
-.audio-source audio{
-    width: 136px;
+audio{
+    max-height: 50px;
 }
 
 .login-message{

@@ -122,6 +122,7 @@ function updateCatalogue(change_item){
         success: function (res) {
             switch(res.status){
                 case 200:
+                    $('.update-block #catalogue_nm')[0].selectize.setValue('');
                     $('.update-block #catalogue_nm')[0].selectize.clearOptions();
                     $('.update-block #catalogue_nm')[0].selectize.addOption(res.data);
                     if($(change_item).val()==0){

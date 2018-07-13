@@ -15,9 +15,10 @@ BEGIN
 	SET NOCOUNT ON;
 	--[0]: 
 	SELECT
-		M999.number_id
-	,	M999.content
+		M999.number_id AS [value]
+	,	M999.content	AS [text]
 	FROM M999
 	WHERE M999.name_div	= 999
+	AND M999.del_flg = 0
 END
 GO

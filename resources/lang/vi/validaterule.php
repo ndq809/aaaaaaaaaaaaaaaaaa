@@ -18,5 +18,7 @@ return [
         'catalogue_nm'     => 'required|max:200',
         'catalogue_div'    => 'required',
         'name_div'         => 'required',
+        'group_nm'         => 'required',
+        'post_title'       => 'required',
     ],
 ];

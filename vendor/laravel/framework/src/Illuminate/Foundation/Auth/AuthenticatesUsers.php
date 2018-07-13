@@ -65,7 +65,7 @@ trait AuthenticatesUsers
      */
     protected function validateLogin(Request $request)
     {
-        // $this->validator = common::checkValidate($request);
+        // $this->validator = common::checkValidate($request->all());
     }
 
     /**
@@ -140,8 +140,8 @@ trait AuthenticatesUsers
      */
     protected function sendFailedLoginResponse(Request $request)
     {
-        if (!common::checkValidate($request)['result']) {
-            return response()->json(['error'        => common::checkValidate($request)['error'],
+        if (!common::checkValidate($request->all())['result']) {
+            return response()->json(['error'        => common::checkValidate($request->all())['error'],
                                      'status'       => 201,
                                      'statusText'   => 'validate failed']);
         }

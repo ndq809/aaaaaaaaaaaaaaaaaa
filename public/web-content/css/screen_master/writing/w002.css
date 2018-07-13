@@ -1,0 +1,35 @@
+.file-input{
+	position: relative;
+}
+
+.image-custom-cover-w .file-preview-image{
+	width: 100%!important;
+	height: auto!important;
+}
+
+.image-custom-cover-w .file-preview-frame{
+	width: 100%!important;
+}
+
+.image-custom-cover-h .file-preview-image{
+	width: auto!important;
+	height: 100%!important;
+	max-height: 500px!important;
+	min-height: 320px!important;
+}
+
+.image-custom-cover-h .file-preview-frame{
+	width: 100%!important;
+}
+
+.file-preview-image{
+	border: 1px solid #ddd;
+}
+
+.audio-custom-cover .file-preview-frame{
+	width: 100%!important;
+}
+
+.transform-content{
+	display: none;
+}

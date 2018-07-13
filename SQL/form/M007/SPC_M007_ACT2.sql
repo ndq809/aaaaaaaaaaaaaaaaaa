@@ -1,43 +1,105 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_M004_ACT2]') AND type IN (N'P', N'PC'))
-/****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
-DROP PROCEDURE [dbo].[SPC_M004_ACT2]
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_M007_ACT2]') AND type IN (N'P', N'PC'))
+DROP PROCEDURE [dbo].[SPC_M007_ACT2]
 GO
-/****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_M004_ACT2]
-	 @P_emp_id_xml			XML				=   ''
-,	 @P_user_id				VARCHAR(10)		=	''
-,	 @P_ip					VARCHAR(20)		=	''
+CREATE PROCEDURE [dbo].[SPC_M007_ACT2]
+     @P_lib_nm	     		NVARCHAR(200)		= ''
+,	 @P_user_id				NVARCHAR(15)		= ''
+,	 @P_ip					NVARCHAR(50)		= ''
+
 AS
 BEGIN
 	SET NOCOUNT ON;
-	--
 	DECLARE 
 		@ERR_TBL				ERRTABLE
-	,	@w_time					DATETIME		=  SYSDATETIME()
-	,   @w_prs_user_id			VARCHAR(6)		= @P_user_id
-	,   @w_prs_prg				VARCHAR(10)		= 'M004'
-	,   @w_prs_prg_nm			VARCHAR(50)		= 'Thêm Nhân Viên'
-	,   @w_prs_mode				VARCHAR(10)		= 'Delete PSC'
-	,   @w_prs_key				VARCHAR(1000)	= ''
-	,	@w_prs_result			VARCHAR(20)		= ''
-	,	@w_remarks				VARCHAR(200)	= ''
-	--
+	,	@w_time					DATETIME			= SYSDATETIME()
+	,	@w_program_id			NVARCHAR(50)		= 'M007'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= 'Thêm library'
+	,	@w_result				TINYINT				= 0
+	,	@w_message				TINYINT				= 0
+	,	@w_prs_key				NVARCHAR(1000)		= ''
+	,	@w_inserted_key			VARCHAR(15)			= ''
+	,	@w_insert_date			DATE				= NULL
+	,	@w_mode					TINYINT				= 0
+	,	@w_number_id			INT					= 0
+
 	BEGIN TRANSACTION
 	BEGIN TRY
-		SET @w_prs_result = 'OK'
+	IF EXISTS(SELECT 1
+			  FROM M999 
+			  WHERE 
+				  M999.content		=	@P_lib_nm
+			  AND M999.del_flg		=	0
+	)
+	BEGIN
 		--
-		DELETE FROM M009
-		WHERE M009.employee_id IN (
-		SELECT
-			role_id		=	T.C.value('@id', 'nvarchar(15)')
-		FROM @P_emp_id_xml.nodes('row') T(C))
-	--EXEC SPC_S999_ACT1 @P_company_cd_u,@w_prs_user_id,@w_prs_prg,@w_prs_prg_nm,@w_prs_mode,@w_prs_key,@w_prs_result,@w_remarks
-
+		SET @w_mode    = 1
+		SET @w_result  = 1
+		SET @w_message = 5
+	
+		--
+		INSERT INTO	@ERR_TBL
+		SELECT	
+			0
+		,	6
+		,	'group_nm'
+		,	''
+	END
+	
+	--
+	SELECT @w_number_id= MAX(M999.number_id)+1 FROM M999 WHERE M999.name_div = 999 AND M999.number_id != 999
+	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+	INSERT INTO M999(
+		M999.name_div
+	,	M999.number_id
+	,	M999.content
+	,	M999.num_remark1
+	,	M999.num_remark2
+	,	M999.num_remark3
+	,	M999.text_remark1
+	,	M999.text_remark2
+	,	M999.text_remark3     	   
+	,	M999.cre_user
+	,	M999.cre_prg
+	,	M999.cre_ip
+	,	M999.cre_date
+	,	M999.upd_user
+	,	M999.upd_prg
+	,	M999.upd_ip
+	,	M999.upd_date
+	,	M999.del_user
+	,	M999.del_prg
+	,	M999.del_ip
+	,	M999.del_date
+	,	M999.del_flg	
+	)
+	SELECT
+		999	
+	,	@w_number_id 	
+	,	@P_lib_nm 	
+	,	NULL 
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	@P_user_id
+	,	@w_program_id
+	,	@P_ip
+	,	@w_time
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	 0
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL
@@ -51,8 +113,11 @@ BEGIN
 				'Line : '      + ISNULL(CAST(ERROR_LINE() AS NVARCHAR(10)), '0') + CHAR(13) + CHAR(10) +
 				'Message : '   + ISNULL(ERROR_MESSAGE(), 'An unexpected error occurred.')
 	END CATCH
+EXIT_SPC:
+	--INSERT S999
+	EXEC SPC_S999_ACT1 @P_user_id,@w_program_id,@w_prs_prg_nm,0,@w_prs_key,@w_result,@w_message
+
 	--
-COMPLETE_QUERY:
 	IF EXISTS(SELECT 1 FROM @ERR_TBL AS ERR_TBL WHERE ERR_TBL.Data = 'Exception')
 	BEGIN
 		IF @@TRANCOUNT >0
@@ -72,7 +137,7 @@ COMPLETE_QUERY:
 		,	[Message]
 	FROM @ERR_TBL
 	ORDER BY Code
-
+	--[1]
+	EXEC SPC_M007_FND1
 END
-
 GO
