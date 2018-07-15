@@ -355,7 +355,7 @@ function initEvent() {
             }else{
                 if(temp.hasClass('allow-selectize')){
                     var selectize_temp=temp[0].selectize;
-                    //selectize_temp.setValue(selectize_temp.getValueByText(_this.text()));
+                    selectize_temp.setValue(selectize_temp.getValueByText(_this.text()));
                 }else{
                     temp.find("option").prop("selected", false);
                     temp.find("option").filter(function() {

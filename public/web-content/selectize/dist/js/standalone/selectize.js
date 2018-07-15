@@ -1413,6 +1413,7 @@
 			if (settings.preload === true) {
 				self.onSearchChange('');
 			}
+			self.refreshOptions(false);
 	
 		},
 	
@@ -1913,6 +1914,23 @@
 			} else {
 				return this.items.join(this.settings.delimiter);
 			}
+		},
+		/**
+		 * Returns the value of the control by text. If multiple items
+		 * can be selected (e.g. <select multiple>), this returns
+		 * an array. If only one item can be selected, this
+		 * returns a string.
+		 *
+		 * @returns {mixed}
+		 */
+		getValueByText: function(text) {
+			var value;
+			this.$dropdown_content.find('[data-selectable]').each(function(){
+				if(this.innerHTML==text){
+					value= $(this).attr('data-value');
+				}
+			})
+			return value;
 		},
 	
 		/**
