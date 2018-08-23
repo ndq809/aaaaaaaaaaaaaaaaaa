@@ -1,7 +1,7 @@
 			#imageContainer {
-			    width: 200px;
+			    width: 211px;
 			    /* MANDATORY */
-			    height: 200px;
+			    height: 211px;
 			    /* MANDATORY */
 			    position: relative;
 			    /* MANDATORY */
@@ -10,9 +10,11 @@
 			    -moz-box-sizing: content-box;
 			    border-radius: 2px;
 			    background-image: url(/web-content/images/avarta/default_avarta.jpg);
+			    background-size: cover;
 			    background-repeat: no-repeat;
 			    background-position: center;
-			    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.1);
+			    /*box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.1);*/
+			    border: 1px solid #555;
 			}
 			/* DO NOT CHANGE FROM HERE ( unless u know what u are doing) */
 			
@@ -46,8 +48,8 @@
 			    position: absolute;
 			    height: 30px;
 			    display: block;
-			    /* top: -31px; */
-			    top: -1px;
+			     top: -31px; 
+			    /*top: -1px;*/
 			    right: -1px;
 			    font-family: sans-serif;
 			    background-color: rgba(0, 0, 0, 0.35);

@@ -32,10 +32,10 @@
                     <td refer-id='first_name'>{{$row['first_name']}}</td>
                     <td refer-id='email'>{{$row['email']}}</td>
                     <td refer-id='cellphone'>{{$row['cellphone']}}</td>
-                    <td refer-id='sex'>{{$row['sex']}}</td>
+                    <td refer-id='sex'><span>{{$row['sex']}}</span></td>
                     <td refer-id='birth_date'>{{$row['birth_date']}}</td>
-                    <td refer-id='department_id' class="td-1-line">{{$row['department_nm']}}</td>
-                    <td refer-id='employee_div' class="td-1-line">{{$row['employee_div_nm']}}</td>
+                    <td refer-id='department_id' class="td-1-line"><span>{{$row['department_nm']}}</span></td>
+                    <td refer-id='employee_div' class="td-1-line"><span>{{$row['employee_div_nm']}}</span></td>
                     <td refer-id='remark'>{{$row['remark']}}</td>
                     <td class="edit-flag">Không</td>
                     <td refer-id='avarta' class="hidden">{{$row['avarta']}}</td>

@@ -33,7 +33,7 @@ function initListener(){
 	});
 
 	$(document ).on("click",".right-tab ul li",function(){
-		switchTabVocalbulary($(this));
+		switchTabVocabulary($(this));
 	});
 	$(window).resize(function(){
 		slidePositionController();
@@ -71,7 +71,7 @@ function selectReading(selectTrTag){
 	slidePositionController();
 }
 
-function switchTabVocalbulary(current_li_tag){
+function switchTabVocabulary(current_li_tag){
 	selectedTab = current_li_tag.find("a").attr("href");
 	selectReading($(selectedTab+" table tbody tr" ).first());
 }

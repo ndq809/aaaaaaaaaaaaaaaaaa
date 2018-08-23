@@ -3,6 +3,7 @@
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/popup/p003.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/popup/p003.css')!!}
+    {!!WebFunctions::public_url('web-content/js/common/library/imagepreview.js')!!}
 @stop
 @section('button')
 {{Button::menu_button(array('btn-list','btn-refresh'))}}
@@ -40,7 +41,6 @@
             </div>
         </div>
     </div>
-	<div class="panel-bottom"></div>
 </div>
 <div id="result" class="panel main-panel col-xs-12 ">
     @include('Master::popup.p003.search')

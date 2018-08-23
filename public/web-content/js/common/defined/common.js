@@ -78,14 +78,20 @@ function initCommon() {
     })
     menuController();
     setRightMenuHeight();
-   if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $("select").selectize({
-            allowEmptyOption: true,
-            create: false
+    $("select:visible.allow-selectize").each(function() {
+        var select = $(this).selectize({
+            allowEmptyOption: false,
+            create: false,
+            openOnFocus: false,
         });
-    }else{
-        $("select").addClass("form-control input-sm");
-    }
+        var selectize = select[0].selectize;
+        selectize.on('blur', function() {
+            if (selectize.getValue() === '') {
+                var defaultOption = selectize.options[Object.keys(selectize.options)[0]];
+                selectize.setValue(defaultOption.value);
+            }
+        });
+    });
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');
@@ -203,10 +209,32 @@ function initEvent() {
         reIndex($(this).parents('table'));
     })
 
+    $(document).on('dblclick','.table-click tbody tr:not(.no-data)',function(){
+        $('.table-click tbody tr').removeClass('selected-row');
+        $(this).addClass('selected-row');
+        var selectize_temp= $('#catalogue_nm')[0].selectize;
+        selectize_temp.setValue(selectize_temp.getValueByText($(this).find('td').eq(1).text().trim()),true);
+        updateGroup($('#catalogue_nm'),$(this).find('td').eq(2).text().trim());
+    })
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(document).on('doubletap','.table-click tbody tr',function(e){
+            $(this).trigger('dblclick');
+        })
+    }
+
     $(document).on('click','.delete-tr-row',function(){
         tableTemp=$(this).parents('table');
         $(this).closest('tr').remove();
         reIndex(tableTemp);
+    })
+
+    $(document).on('click','.btn-del-lesson',function(){
+        _this=this;
+        showMessage(3,function(){
+            deleteLesson($(_this).parents('tr'));
+        })
+
     })
 
      $(document).on('click','#btn_login',function(){
@@ -323,36 +351,292 @@ function getDataCommon(data_Array, excute_link) {
     });
 }
 
-function rememberItem(tr_Element, btn_label) {
-    var cloneTr = tr_Element.clone();
-    cloneTr.find("button").attr("type-btn", "btn-forget");
-    cloneTr.find("button").text(btn_label);
-    tr_Element.addClass('animated fadeOutRight');
-    tr_Element.delay(0).fadeOut(500, function(){
-        tr_Element.remove();
+function rememberItem(tr_Element, btn_label ,item_infor) {
+    data=item_infor;
+    $.ajax({
+        type: 'POST',
+        url: '/common/remembervoc',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    var cloneTr = tr_Element.clone();
+                    cloneTr.find("button").attr("type-btn", "btn-forget");
+                    cloneTr.find("button").text(btn_label);
+                    tr_Element.addClass('animated fadeOutRight');
+                    tr_Element.delay(0).fadeOut(150, function(){
+                        tr_Element.remove();
+                    });
+                    if (selectedTab == "#tab1") {
+                        $("#tab2 table tbody").prepend(cloneTr);
+                    } else {
+                        $("#tab1 table tbody").prepend(cloneTr);
+                    }
+                    return true;
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    return false;
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    return false;
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
     });
-    if (selectedTab == "#tab1") {
-        $("#tab2 table tbody").prepend(cloneTr);
-    } else {
-        $("#tab1 table tbody").prepend(cloneTr);
-    }
-    return $(selectedTab + " table tbody tr").first();
 }
 
-function forgetItem(tr_Element, btn_label) {
-    var cloneTr = tr_Element.clone();
-    cloneTr.find("button").attr("type-btn", "btn-remember");
-    cloneTr.find("button").text(btn_label);
-    tr_Element.addClass('animated fadeOutRight');
-    tr_Element.delay(0).fadeOut(500, function(){
-        tr_Element.remove();
+function forgetItem(tr_Element, btn_label ,item_infor) {
+    data=item_infor;
+    $.ajax({
+        type: 'POST',
+        url: '/common/forgetvoc',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    var cloneTr = tr_Element.clone();
+                    cloneTr.find("button").attr("type-btn", "btn-remember");
+                    cloneTr.find("button").text(btn_label);
+                    tr_Element.addClass('animated fadeOutRight');
+                    tr_Element.delay(0).fadeOut(150, function(){
+                        tr_Element.remove();
+                    });
+                    if (selectedTab == "#tab1") {
+                        $("#tab2 table tbody").prepend(cloneTr);
+                    } else {
+                        $("#tab1 table tbody").prepend(cloneTr);
+                    }
+                    return true;
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    return false;
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    return false;
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
     });
-    if (selectedTab == "#tab1") {
-        $("#tab2 table tbody").prepend(cloneTr);
-    } else {
-        $("#tab1 table tbody").prepend(cloneTr);
-    }
-    return $(selectedTab + " table tbody tr").first();
+    
+}
+
+function addLesson(screen_div, catalogue_nm , group_nm) {
+    var data=[];
+    data.push(screen_div);
+    data.push(catalogue_nm);
+    data.push(group_nm);
+    $.ajax({
+        type: 'POST',
+        url: '/common/addLesson',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.table-click tbody tr').remove();
+                    for(i=0;i<res.data.length;i++){
+                        if(catalogue_nm==res.data[i].item_1 && group_nm==res.data[i].item_2){
+                            $('.table-click tbody').append('<tr class="selected-row"></tr>');
+                        }else{
+                            $('.table-click tbody').append('<tr></tr>');
+                        }
+                        $('.table-click tbody tr:last-child').append('<td></td><td></td><td></td><td></td>');
+                        $('.table-click tbody tr:last-child td:nth-child(1)').html('<input type="hidden" class="lesson-id"/><i class="glyphicon glyphicon-hand-right"></i>');
+                        $('.table-click tbody tr:last-child td:nth-child(1) .lesson-id').attr('value',res.data[i].id);
+                        $('.table-click tbody tr:last-child td:nth-child(2)').text(res.data[i].catalogue_nm);
+                        $('.table-click tbody tr:last-child td:nth-child(3)').text(res.data[i].group_nm);
+                        $('.table-click tbody tr:last-child td:nth-child(4)').html('<button type="button" class="btn-danger btn-del-lesson"><span class="fa fa-close"></span></button>');
+                    }
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function deleteLesson(lession_row){
+    var data=[];
+    data.push(lession_row.find('.lesson-id').attr('value'));
+    $.ajax({
+        type: 'POST',
+        url: '/common/deleteLesson',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    lession_row.delay(0).fadeOut(500, function(){
+                        if(lession_row.next().length != 0){
+                            lession_row.next().addClass('selected-row');
+                            lession_row.next().trigger('dblclick');
+                        }else {
+                            if(lession_row.prev().length != 0){
+                            lession_row.prev().addClass('selected-row');
+                            lession_row.prev().trigger('dblclick');
+                            }else{
+                                lession_row.parent().append('<tr class="no-data"><td><i class="glyphicon glyphicon-hand-right"></i></td><td colspan="3">Bạn chưa đăng nhập hoặc chưa đăng ký mục nào</td></tr>')
+                            }
+                        }
+                        lession_row.remove();
+                    });
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getExample(page,item_infor,callback){
+    var data=item_infor;
+    $.ajax({
+        type: 'POST',
+        url: '/common/getExample',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data) ,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('#example-list .example-item:visible').remove();
+                    $('#example-list .panel-contribute').remove();
+                    $('#example-list').prepend(res.view1);
+                    $('.paging-list .paging-item:visible').remove();
+                    $('.paging-list').prepend(res.view2);
+                    callback();
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function addExample(item_infor,callback){
+    var data=item_infor;
+    $.ajax({
+        type: 'POST',
+        url: '/common/addExample',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    callback();
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function toggleEffect(item_infor,callback){
+    var data=item_infor;
+    $.ajax({
+        type: 'POST',
+        url: '/common/toggleEffect',
+        dataType: 'json',
+        // loading:true,
+        data:$.extend({}, data),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    callback(res.data[0]['effected_count']);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }
 
 function setCollapse() {
@@ -532,6 +816,31 @@ function showFailedValidate(error_array){
       $('#'+key).attr('data-original-title',value);
     });
     $('[data-toggle="tooltip"]').tooltip();
+    $('.input-error').first().focus(); 
+}
+
+function showFailedData(error_array){
+    for (var i = 0; i < error_array.length; i++) {
+        if(error_array[i]['Id']==0){
+            var target=$('#'+error_array[i]['Data']);
+        }else if(error_array[i]['Id']==1){
+            var target=$('.'+error_array[i]['Data']+' tbody tr:visible').eq(error_array[i]['Message']);
+        }else{
+            showMessage(Number(error_array[i]['Code']));
+            return;
+        }
+        if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')){
+            target=target.next('.selectize-control').find('.selectize-input');
+        }
+        target.addClass('input-error');
+        target.attr('data-toggle','tooltip');
+        target.attr('data-placement','top');
+        target.attr('data-original-title',_text[error_array[i]['Code']]);
+    }
+    $('[data-toggle="tooltip"]').tooltip();
+    if($('.input-error').first().hasClass('selectize-input')){
+        $('.input-error').first().parent().prev('select')[0].selectize.focus();
+    }else
     $('.input-error').first().focus(); 
 }
 

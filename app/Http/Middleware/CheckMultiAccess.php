@@ -5,6 +5,8 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 use Common;
+use DAO;
+use Illuminate\Support\Facades\View;
 
 class CheckMultiAccess
 {
@@ -18,13 +20,14 @@ class CheckMultiAccess
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        common::getMessage();
         if (Auth::guard($guard)->check()&&Auth::guard()->user()!==null&&\Session::getId()!==Auth::guard()->user()->session_id) {
             Auth::guard()->logout();
              $request->session()->invalidate();
             return redirect()->back()->with('error', ['status'       => 206,
                                                       'statusText'   => 'account duplicate']);
         }
+        $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_nm:''));
+        View::share('raw_data', $data);
         return $next($request);
     }
 }

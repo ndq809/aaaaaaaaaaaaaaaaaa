@@ -25,7 +25,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục</label>
-                <select class="allow-selectize required" id="catalogue_div">
+                <select class="allow-selectize required submit-item" id="catalogue_div">
                      @foreach($data[0] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach

@@ -32,7 +32,6 @@ function initevent_m004(){
 
 function m004_addNew(){
 	var data_addnew=getInputData(1);
-
 	$.ajax({
         type: 'POST',
         url: '/master/data/m004/addnew',
@@ -50,6 +49,10 @@ function m004_addNew(){
                 case 201:
                     clearFailedValidate();
                     showFailedValidate(res.error);
+                    break;
+                 case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
                     break;
                 case 208:
                     clearFailedValidate();

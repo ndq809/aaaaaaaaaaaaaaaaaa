@@ -39,10 +39,10 @@ class Paging
             $start = min(($page['page'] - 1) * $page['pagesize'] + 1, $page['totalRecord']);
             $end = min(($page['page'] - 1) * $page['pagesize'] + 50, $page['totalRecord']);
             $label = $showLabel == 1 ? self::_displayCount($start, $end, $page['totalRecord']) : '';
-            $strpage = '<label class="panel-title inline-block">' . $label . '</label>';
+            $strpage = '<label class="panel-title hidden">' . $label . '</label>';
             $strpage .= self::_showPage($page['page'], $page['pageMax'], $page['totalRecord']);
         } else {
-            $strpage = '<label class="panel-title inline-block"></label>';
+            $strpage = '<label class="panel-title hidden"></label>';
             $strpage .= '<ul class="pagination pagination-xs pagination-location">';
             $strpage .= '   <li class="pagging-disable"><a href=""><i class="fa fa-caret-left"></i></a></li>';
             $strpage .= '   <li class="pagging-disable"><a href=""><i class="fa fa-angle-left"></i></a></li>';
@@ -63,7 +63,7 @@ class Paging
             $end = min(($page['page'] - 1) * $page['pagesize'] + 50, $page['totalRecord']);
             $label = $showLabel == 1 ? self::_displayCount($start, $end, $page['totalRecord']) : '';
         } else {
-            $strpage = '<label class="panel-title inline-block"></label>';
+            $strpage = '<label class="panel-title hidden"></label>';
             $strpage .= '<ul class="pagination pagination-xs pagination-location">';
             $strpage .= '   <li class="pagging-disable"><a href=""><i class="fa fa-caret-left"></i></a></li>';
             $strpage .= '   <li class="active"><a href="">1</a></li>';
@@ -85,6 +85,9 @@ class Paging
      */
     private static function _showPage($page, $pageMax, $totalRecord)
     {
+        $page = (int)$page;
+        $pageMax = (int)$pageMax;
+        $totalRecord = (int)$totalRecord;
         if ($totalRecord == 0) {
             return '';
         }

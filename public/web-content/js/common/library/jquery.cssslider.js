@@ -122,6 +122,7 @@
     };
 
     Plugin.prototype.setItem = function(n) {
+        n=Number(n);
         var sliderItems = this.items;
         // remove existing state classes
         sliderItems.removeClass();
@@ -152,16 +153,16 @@
             sliderItems.eq(this._wrapIndex(n - 1)).removeClass().addClass("previous_item");
             sliderItems.eq(this._wrapIndex(n + 1)).removeClass().addClass("next_item");
 
-            if (this.options.visibleItems == 3) {
-                sliderItems.eq(this._wrapIndex(n - 2)).removeClass().addClass("previous_hidden");
-                sliderItems.eq(this._wrapIndex(n + 2)).removeClass().addClass("next_hidden");
-            } else if (this.options.visibleItems == 5) {
-                sliderItems.eq(this._wrapIndex(n - 2)).removeClass().addClass("previous_item_2");
-                sliderItems.eq(this._wrapIndex(n + 2)).removeClass().addClass("next_item_2");
+            // if (this.options.visibleItems == 3) {
+            //     sliderItems.eq(this._wrapIndex(n - 2)).removeClass().addClass("previous_hidden");
+            //     sliderItems.eq(this._wrapIndex(n + 2)).removeClass().addClass("next_hidden");
+            // } else if (this.options.visibleItems == 5) {
+            //     sliderItems.eq(this._wrapIndex(n - 2)).removeClass().addClass("previous_item_2");
+            //     sliderItems.eq(this._wrapIndex(n + 2)).removeClass().addClass("next_item_2");
 
-                sliderItems.eq(this._wrapIndex(n - 3)).removeClass().addClass("previous_hidden");
-                sliderItems.eq(this._wrapIndex(n + 3)).removeClass().addClass("next_hidden");
-            }
+            //     sliderItems.eq(this._wrapIndex(n - 3)).removeClass().addClass("previous_hidden");
+            //     sliderItems.eq(this._wrapIndex(n + 3)).removeClass().addClass("next_hidden");
+            // }
 
         } else {
             if (n - 1 >= 0)

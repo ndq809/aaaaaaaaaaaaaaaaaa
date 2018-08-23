@@ -1,0 +1,10 @@
+#imageContainer{
+	width: 300px;
+	height: 253px;
+	box-shadow : none;
+	border: 1px solid #aaa;
+}
+.file-preview-frame {
+    width: 100%!important;
+    height: 102px;
+}

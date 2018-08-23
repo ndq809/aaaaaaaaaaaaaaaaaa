@@ -38,7 +38,7 @@ function initevent_p001(){
                 refer_text+=$(this).text();
             }
         })
-        parents = parent.$('[data-refer=p001]');
+        parents = parent._popup_transfer_array['called_item'];
         parents.val(refer_text);
         parents.trigger('change');
         parent.jQuery.fancybox.close();

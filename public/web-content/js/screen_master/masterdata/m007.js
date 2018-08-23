@@ -33,10 +33,6 @@ function initevent_m007(){
         m007_list();
     })
 
-   $('.search-block #name_div')[0].selectize.on('option_add',function(){
-        this.off('change');
-   })
-
 }
 
 function m007_save(){
@@ -97,9 +93,6 @@ function m007_delete(){
                         $('.search-block #name_div')[0].selectize.clearOptions();
                         $('.search-block #name_div')[0].selectize.addOption(res.data);
                         $('.search-block #name_div')[0].selectize.removeOption(0);
-                        $('.search-block #name_div')[0].selectize.on('change',function(){
-                            m007_list();
-                        });
                     });
                     break;
                 case 201:
@@ -140,9 +133,6 @@ function m007_add(){
                         $('.search-block #name_div')[0].selectize.addOption(res.data);
                         $('.search-block #name_div')[0].selectize.removeOption(0)
                         $('.search-block #name_div')[0].selectize.setValue(res.data[res.data.length-2].value);
-                        $('.search-block #name_div')[0].selectize.on('change',function(){
-                            m007_list();
-                        });
                     });
                     break;
                 case 201:

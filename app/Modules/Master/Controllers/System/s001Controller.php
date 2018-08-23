@@ -36,9 +36,10 @@ class s001Controller extends Controller
         
          if (common::checkValidate($request->all())['result']) {
             $permission           = $request->except('account_div');
+            // var_dump($permission);die;
             $xml                  = new SQLXML();
             $param['account_div'] = $request->only('account_div')['account_div'];
-            $param['xml']         = $xml->xml($permission['data']);
+            $param['xml']         = $xml->xml(isset($permission['data'])?$permission['data']:array());
             $param['user_id']     = Auth::user()->account_nm;
             $param['ip']          = $request->ip();
             $data = Dao::call_stored_procedure('SPC_S001_ACT1',$param);

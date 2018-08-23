@@ -139,7 +139,7 @@
 			var that = this;
 			
 			// CREATE UPLOAD IMG FORM
-            var formHtml = '<form class="' + that.id + '_imgUploadForm" style="visibility: hidden;">  <input type="file" name="img" id="' + that.id + '_imgUploadField">  </form>';
+            var formHtml = '<form class="' + that.id + '_imgUploadForm" style="display: none;">  <input type="file" name="img" id="' + that.id + '_imgUploadField">  </form>';
 			that.outputDiv.append(formHtml);
 			that.form = that.outputDiv.find('.'+that.id+'_imgUploadForm');
 			
@@ -158,26 +158,43 @@
 			});						
 			
 			if( !$.isEmptyObject(that.croppedImg)){
-			
+				
 				that.cropControlRemoveCroppedImage.on('click',function(){ 
 					if (typeof (that.options.onBeforeRemoveCroppedImg) === typeof(Function)) {
 						that.options.onBeforeRemoveCroppedImg.call(that);
 					}
-					
-					that.croppedImg.remove();
-					that.croppedImg = {};
-					$(this).hide();
-					
-					if (typeof (that.options.onAfterRemoveCroppedImg) === typeof(Function)) {
-						that.options.onAfterRemoveCroppedImg.call(that);
-					}
-					
-					if( !$.isEmptyObject(that.defaultImg)){ 
-						that.obj.append(that.defaultImg);
-					}
-					
-					if(that.options.outputUrlId !== ''){	$('#'+that.options.outputUrlId).val('');	}
-				
+					// console.log(that.croppedImg);
+					$.ajax({
+				        type: 'POST',
+				        url: '/master/common/delete-image',
+				        dataType: 'json',
+				        data: {image:that.croppedImg.attr('src')},//convert to object
+				        success: function (res) {
+				            switch(res.status){
+				                case 'success':
+				                    that.croppedImg.remove();
+									that.croppedImg = {};
+									$(this).hide();
+									
+									if (typeof (that.options.onAfterRemoveCroppedImg) === typeof(Function)) {
+										that.options.onAfterRemoveCroppedImg.call(that);
+									}
+									
+									if( !$.isEmptyObject(that.defaultImg)){ 
+										that.obj.append(that.defaultImg);
+									}
+									
+									if(that.options.outputUrlId !== ''){	$('#'+that.options.outputUrlId).val('');	}
+				                    break;
+				                default :
+				                    break;
+				            }
+				        },
+				        // Ajax error
+				        error: function (jqXHR, textStatus, errorThrown) {
+				            alert(jqXHR.status);
+				        }
+				    }); 
 				});	
 			
 			}
@@ -185,7 +202,9 @@
 			that.form.find('input[type="file"]').change(function(){
 				
 				if (that.options.onBeforeImgUpload) that.options.onBeforeImgUpload.call(that);
-				
+				if(typeof that.croppedImg.length!='undefined'){
+					that.cropControlRemoveCroppedImage.trigger('click');
+				}
 				that.showLoader();
 				that.imgUploadControl.hide();
 				
@@ -443,7 +462,28 @@
 			that.cropControlCrop.on('click',function(){ that.crop(); });
 
 			that.cropControlReset = that.cropControlsCrop.find('.cropControlReset');
-			that.cropControlReset.on('click',function(){ that.reset(); });				
+			that.cropControlReset.on('click',function(){ 
+				
+				$.ajax({
+			        type: 'POST',
+			        url: '/master/common/delete-image',
+			        dataType: 'json',
+			        data: {image:$('.cropImgWrapper').find('img').attr('src')},//convert to object
+			        success: function (res) {
+			            switch(res.status){
+			                case 'success':
+			                   that.reset();
+			                    break;
+			                default :
+			                    break;
+			            }
+			        },
+			        // Ajax error
+			        error: function (jqXHR, textStatus, errorThrown) {
+			            alert(jqXHR.status);
+			        }
+			    }); 
+			});				
 			
 		},
 		initDrag:function(){
@@ -737,6 +777,9 @@
 			if( !$.isEmptyObject(that.croppedImg)){ 
 				that.obj.append(that.croppedImg); 
 				if(that.options.outputUrlId !== ''){	$('#'+that.options.outputUrlId).val(that.croppedImg.attr('url'));	}
+				that.croppedImg.remove();
+				that.croppedImg = {};
+				that.cropControlRemoveCroppedImage.hide();
 			}
 			if (typeof that.options.onReset == 'function')
                 that.options.onReset.call(that);

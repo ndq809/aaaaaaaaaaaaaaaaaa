@@ -68,6 +68,11 @@ class s002Controller extends Controller
                 'error' => $result_query[0],
                 'statusText' => 'failed',
             );
+         } else if ($result_query[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $result_query[0],
+                );
         }else{
             $result = array(
                 'status' => 200,

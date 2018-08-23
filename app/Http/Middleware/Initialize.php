@@ -23,6 +23,7 @@ class Initialize
              $menu = common::getMenu(Auth::user()->account_div);
             \Session::put('menu',$menu);
         }
+       
         return $next($request);
     }
 }

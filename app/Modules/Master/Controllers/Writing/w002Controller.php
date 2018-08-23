@@ -1,97 +1,148 @@
-<?php 
+<?php
 namespace App\Modules\Master\Controllers\Writing;
 use App\Http\Controllers\Controller;
-use DAO;
 use Auth;
-use Illuminate\Http\Request;
-use Validator;
-use SQLXML;
 use Common;
-use Hash;
+use DAO;
+use Illuminate\Http\Request;
+use SQLXML;
+use File;
 
 class w002Controller extends Controller
 {
-     /**
+    /**
      * Show the application index.
-     * @author mail@ans-asia.com 
+     * @author mail@ans-asia.com
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-     public function getIndex()
-     {
-          $data = Dao::call_stored_procedure('SPC_COM_M999_INQ1',array(7));
-        return view('Master::writing.w002.index')->with('data',$data);
-     }
-
-       public function w002_addnew(Request $request)
+    public function getIndex()
     {
-        $file = $request->file();
-        $data = $request->all();
-        $xml         = new SQLXML();
-        // var_dump(json_decode($param));die;
-        
-        $validate=common::checkValidate((array)json_decode($data['header_data']));
+        $data = Dao::call_stored_procedure('SPC_W002_FND1');
+        return view('Master::writing.w002.index')->with('data', $data);
+    }
+
+    public function w002_addnew(Request $request)
+    {
+        $data  = $request->all();
+        $media = '';
+        $media_div = 0;
+        $name = '';
+        $xml   = new SQLXML();
+        $file = $request->file('post_media');
+        // var_dump($file);die;
+
+        $validate = common::checkValidate((array) json_decode($data['header_data']));
         if ($validate['result']) {
-            $param['header']    = (array)json_decode($data['header_data']);
-            $param['xml_detail']    = $xml->xml((array)json_decode($data['detail_data']));
-            $param['user_id']=Auth::user()->account_nm;
-            $param['ip']=$request->ip();
-            var_dump($param);die;
-            $data = Dao::call_stored_procedure('SPC_w002_ACT1',$param);
+            $param               = (array) json_decode($data['header_data']);
+            // var_dump($param);die;
+            //upload audio file
+            if ($param['catalogue_div'] == '3' && !is_null($file)) {
+                if ($file->getClientSize() > 20971520) {
+                    $result = array(
+                        'status'     => 209,
+                        'statusText' => 'upload failed');
+                    return response()->json($result);
+                }
+                $name = 'audio_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('/web-content/audio/listeningAudio/'), $name);
+                $media = '/web-content/audio/listeningAudio/' . $name;
+                $media_div = 1;
+            }
+            //upload image file
+            if ($param['catalogue_div'] == '7' && !is_null($file)) {
+                if ($file->getClientSize() > 20971520) {
+                    $result = array(
+                        'status'     => 209,
+                        'statusText' => 'upload failed');
+                    return response()->json($result);
+                }
+                $name = 'image_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('/web-content/images/relax_image/'), $name);
+                $media = '/web-content/images/relax_image/' . $name;
+                $media_div = 2;
+            }
+            if ($param['catalogue_div'] == '8') {
+                $media_div = 3;
+            }
+            $param['post_media'] = $media=='no data'?'':$media;
+            $param['post_media_nm'] = $name;
+            $param['post_media_div'] = $media_div;
+            $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_data']));
+            $param['xml_detail1'] = $xml->xml((array) json_decode($data['detail_body_data']));
+            $param['user_id']    = Auth::user()->account_nm;
+            $param['ip']         = $request->ip();
+
+            $data = Dao::call_stored_procedure('SPC_w002_ACT1', $param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                File::delete($media);
                 $result = array(
                     'status' => 208,
-                    'data' => $data[0],
+                    'data'   => $data[0],
                 );
             } else if ($data[0][0]['Data'] != '') {
+                File::delete($media);
                 $result = array(
                     'status' => 207,
-                    'data' => $data[0],
+                    'data'   => $data[0],
                 );
             } else {
                 $result = array(
-                    'status' => 200,
-                    'data' => $data[1],
+                    'status'     => 200,
+                    'data'       => $data[1],
                     'statusText' => 'success',
                 );
             }
         } else {
-           $result = array('error'    => $validate['error'],
-                'status'     => 201,
-                'statusText' => 'validate failed');
+            $result = array('error' => $validate['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
         }
         return response()->json($result);
     }
 
     public function w002_delete(Request $request)
     {
-        $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $result_query       = DAO::call_stored_procedure("SPC_w002_ACT2", $param);
-       if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){
+        $param             = $request->all();
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_w002_ACT2", $param);
+        if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
-                 'status' => 208,
-                'error' => $result_query[0],
+                'status'     => 208,
+                'error'      => $result_query[0],
                 'statusText' => 'failed',
             );
-        }else{
+        } else {
             $result = array(
-                'status' => 200,
+                'status'     => 200,
                 'statusText' => 'success',
             );
         }
         return response()->json($result);
     }
 
+    public function w002_refer(Request $request)
+    {
+        $data             = $request->all();
+        $result_query     = DAO::call_stored_procedure("SPC_W002_LST1", $data);
+        $view1 = view('Master::writing.w002.refer_voc')->with('data', $result_query)->render();
+        $view2 = view('Master::writing.w002.refer_exa')->with('data', $result_query)->render();
+        $result = array(
+            'status'     => 200,
+            'data'       => $result_query,
+            'table_voc'      => $view1,
+            'table_exa'      => $view2,
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
 
-     /**
+    /**
      * Show the application index.
-     * @author mail@ans-asia.com 
+     * @author mail@ans-asia.com
      * @created at 2017-08-16 03:29:46
      * @return void
      */
-   
+
 }

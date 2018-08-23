@@ -2345,6 +2345,7 @@
 			if ($.isArray(data)) {
 				for (i = 0, n = data.length; i < n; i++) {
 					self.addOption(data[i]);
+					self.refreshOptions(false);
 				}
 				return;
 			}
@@ -2765,7 +2766,7 @@
 				self.setTextboxValue('');
 				self.addOption(data);
 				self.setCaret(caret);
-				self.addItem(value);
+				self.addItem(value,true);
 				self.refreshOptions(triggerDropdown && self.settings.mode !== 'single');
 				callback(data);
 			});

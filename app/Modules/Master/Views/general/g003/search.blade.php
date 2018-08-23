@@ -11,7 +11,8 @@
                     <th width="100px">Mã Danh Mục</th>
                     <th width="150px">Loại Danh Mục</th>
                     <th>Tên Danh Mục</th>
-                    <th width="100px">Số Nhóm</th>
+                    <th width="80px">Số Nhóm</th>
+                    <th width="100px">Thao Tác</th>
                     <th width="80px">Chỉnh Sửa?</th>
                 </tr>
             </thead>
@@ -22,9 +23,10 @@
                     <td><input type="checkbox" name="" class="sub-checkbox"></td>
                     <td>{{$index+1}}</td>
                     <td refer-id='catalogue_id'>{{$row['catalogue_id']}}</td>
-                    <td refer-id='catalogue_div'>{{$row['catalogue_div']}}</td>
-                    <td refer-id='catalogue_nm' class="text-left">{{$row['catalogue_nm']}}</td>
+                    <td refer-id='catalogue_div'><span>{{$row['catalogue_div']}}</span></td>
+                    <td refer-id='catalogue_nm' class="text-left"><span>{{$row['catalogue_nm']}}</span></td>
                     <td>{{$row['group_count']}}</td>
+                    <td><a href="/master/general/g006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm nhóm</a></td>
                     <td class="edit-flag">Không</td>
                 </tr>
                 @endforeach

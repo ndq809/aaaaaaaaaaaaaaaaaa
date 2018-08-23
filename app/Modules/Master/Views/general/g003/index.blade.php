@@ -17,7 +17,7 @@
         <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục</label>
-                <select id="catalogue_div" class=" submit-item allow-selectize ">
+                <select id="catalogue_div_s" class=" submit-item allow-selectize ">
                     @foreach($data_default[0] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -27,9 +27,9 @@
         <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
             <div class="form-group">
                 <label>Tên Danh Mục</label>
-                <div class="input-group">
-                    <input id="catalogue_nm" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập tên danh mục">
-                </div>
+                <select class="submit-item allow-selectize new-allow" id="catalogue_nm_s">
+                    <option></option>
+                </select>
             </div>
         </div>
     </div>
@@ -64,9 +64,9 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Tên Danh Mục</label>
-                <div class="input-group">
-                    <input id="catalogue_nm" type="text" name="" class="form-control input-sm required submit-item" placeholder="Nhập tên danh mục">
-                </div>
+                <select class="submit-item allow-selectize new-allow get-text required" id="catalogue_nm" placeholder="Lưu ý: Sửa với giá trị ngoài danh sách bên dưới">
+                    <option></option>
+                </select>
             </div>
         </div>
     </div>

@@ -1,0 +1,1765 @@
+2018-08-16 00:02:40 EXEC SPC_COM_DATA '';
+2018-08-16 00:02:44 EXEC SPC_COM_DATA '';
+2018-08-16 00:02:44 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:04:00 EXEC SPC_COM_DATA '';
+2018-08-16 00:04:00 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:04:43 EXEC SPC_COM_DATA '';
+2018-08-16 00:04:43 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:04:56 EXEC SPC_COM_DATA '';
+2018-08-16 00:04:56 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:08:50 EXEC SPC_COM_DATA '';
+2018-08-16 00:08:50 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:10:02 EXEC SPC_COM_PERMISSION '1','g001';
+2018-08-16 00:10:02 EXEC SPC_COM_MENU '1';
+2018-08-16 00:10:05 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 00:10:05 EXEC SPC_COM_MENU '1';
+2018-08-16 00:10:05 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:10:06 EXEC SPC_COM_MENU '1';
+2018-08-16 00:10:06 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 00:10:06 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 00:10:06 EXEC SPC_COM_MENU '1';
+2018-08-16 00:10:06 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 00:23:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 00:23:23 EXEC SPC_COM_MENU '1';
+2018-08-16 00:23:23 EXEC SPC_VOCABULARY_LST1
+2018-08-16 00:23:24 EXEC SPC_COM_MENU '1';
+2018-08-16 00:23:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 00:23:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 00:23:24 EXEC SPC_COM_MENU '1';
+2018-08-16 00:23:24 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:02:12 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 01:02:12 EXEC SPC_COM_MENU '1';
+2018-08-16 01:02:12 EXEC SPC_V002_FND1
+2018-08-16 01:02:13 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 01:02:13 EXEC SPC_COM_MENU '1';
+2018-08-16 01:02:13 EXEC SPC_V002_FND1
+2018-08-16 01:02:25 EXEC SPC_COM_MENU '1';
+2018-08-16 01:02:25 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 01:03:32 EXEC SPC_COM_MENU '1';
+2018-08-16 01:03:32 EXEC SPC_V002_ACT1 '5','1','cry','4','kurai','Khóc','/uploads/cropped-babies-cry-01_20180815 0202080851511534298931315.jpg','action when hurt','none','','<row language1_content="i&amp;#39;m cry when i feel hurt" language2_content="tôi khóc khi tôi cảm thấy đau" /><row language1_content="smile always better than cry" language2_content="cười lúc nào cũng hơn khóc" />','ndq809','127.0.0.1';
+2018-08-16 01:03:33 EXEC SPC_COM_MENU '1';
+2018-08-16 01:03:33 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 01:07:54 EXEC SPC_COM_MENU '1';
+2018-08-16 01:07:54 EXEC SPC_v002_LST1 '6','1';
+2018-08-16 01:08:31 EXEC SPC_COM_MENU '1';
+2018-08-16 01:08:31 EXEC SPC_V002_ACT1 '6','1','hello','3','helou','Xin chào','/uploads/cropped-image5b6a6b6562b55_20180815 0202080854541534299054307.jpg','action meet someone','none','','<row language1_content="hello my love" language2_content="chào người tôi yêu &amp;lt;3" />','ndq809','127.0.0.1';
+2018-08-16 01:08:32 EXEC SPC_COM_MENU '1';
+2018-08-16 01:08:32 EXEC SPC_v002_LST1 '6','1';
+2018-08-16 01:18:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:18:21 EXEC SPC_COM_MENU '1';
+2018-08-16 01:18:21 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:18:22 EXEC SPC_COM_MENU '1';
+2018-08-16 01:18:22 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:18:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:18:22 EXEC SPC_COM_MENU '1';
+2018-08-16 01:18:22 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:25:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:25:04 EXEC SPC_COM_MENU '1';
+2018-08-16 01:25:04 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:25:04 EXEC SPC_COM_MENU '1';
+2018-08-16 01:25:04 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:25:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:25:04 EXEC SPC_COM_MENU '1';
+2018-08-16 01:25:04 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:27:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:27:38 EXEC SPC_COM_MENU '1';
+2018-08-16 01:27:38 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:27:38 EXEC SPC_COM_MENU '1';
+2018-08-16 01:27:38 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:27:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:27:38 EXEC SPC_COM_MENU '1';
+2018-08-16 01:27:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:28:02 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:28:02 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:02 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:28:02 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:02 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:28:02 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:28:02 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:02 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:28:30 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:28:30 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:30 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:28:30 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:30 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:28:30 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:28:30 EXEC SPC_COM_MENU '1';
+2018-08-16 01:28:30 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:29:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:29:11 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:11 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:29:12 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:12 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:29:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:29:12 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:12 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:29:24 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 01:29:24 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:24 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 01:29:25 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:25 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 01:29:36 EXEC SPC_COM_PERMISSION '1','g003';
+2018-08-16 01:29:36 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:36 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 01:29:37 EXEC SPC_COM_MENU '1';
+2018-08-16 01:29:37 EXEC SPC_G003_LST1 '','','10','1';
+2018-08-16 01:33:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:33:27 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:27 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:33:28 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:33:28 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:33:28 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:28 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:33:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:33:38 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:38 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:33:39 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:39 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:33:39 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:33:39 EXEC SPC_COM_MENU '1';
+2018-08-16 01:33:39 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:35:15 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:35:15 EXEC SPC_COM_MENU '1';
+2018-08-16 01:35:15 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:35:15 EXEC SPC_COM_MENU '1';
+2018-08-16 01:35:15 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:35:15 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:35:15 EXEC SPC_COM_MENU '1';
+2018-08-16 01:35:15 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:36:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:36:20 EXEC SPC_COM_MENU '1';
+2018-08-16 01:36:20 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:37:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:01 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:01 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:37:01 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:01 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:37:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:01 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:01 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:37:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:36 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:36 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:37:36 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:36 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:37:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:36 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:36 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:37:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:48 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:48 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:37:49 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:49 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:37:49 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:37:49 EXEC SPC_COM_MENU '1';
+2018-08-16 01:37:49 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:45:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:45:26 EXEC SPC_COM_MENU '1';
+2018-08-16 01:45:26 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:45:27 EXEC SPC_COM_MENU '1';
+2018-08-16 01:45:27 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:45:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:45:27 EXEC SPC_COM_MENU '1';
+2018-08-16 01:45:27 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:49:07 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:49:07 EXEC SPC_COM_MENU '1';
+2018-08-16 01:49:07 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:49:08 EXEC SPC_COM_MENU '1';
+2018-08-16 01:49:08 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:49:08 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:49:08 EXEC SPC_COM_MENU '1';
+2018-08-16 01:49:08 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:52:40 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:52:40 EXEC SPC_COM_MENU '1';
+2018-08-16 01:52:40 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:52:41 EXEC SPC_COM_MENU '1';
+2018-08-16 01:52:41 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:52:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:52:41 EXEC SPC_COM_MENU '1';
+2018-08-16 01:52:41 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:53:07 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:53:07 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:07 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:53:07 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:07 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:53:07 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:53:07 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:07 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:53:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:53:54 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:54 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:53:54 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:54 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:53:55 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:53:55 EXEC SPC_COM_MENU '1';
+2018-08-16 01:53:55 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:54:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:54:34 EXEC SPC_COM_MENU '1';
+2018-08-16 01:54:34 EXEC SPC_VOCABULARY_LST1
+2018-08-16 01:54:34 EXEC SPC_COM_MENU '1';
+2018-08-16 01:54:34 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 01:54:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 01:54:34 EXEC SPC_COM_MENU '1';
+2018-08-16 01:54:34 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 01:55:26 EXEC SPC_COM_MENU '1';
+2018-08-16 01:55:26 EXEC SPC_G003_LST1 '','','10','1';
+2018-08-16 02:30:14 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:30:14 EXEC SPC_COM_MENU '1';
+2018-08-16 02:30:14 EXEC SPC_VOCABULARY_LST1
+2018-08-16 02:30:15 EXEC SPC_COM_MENU '1';
+2018-08-16 02:30:15 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 02:30:15 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:30:15 EXEC SPC_COM_MENU '1';
+2018-08-16 02:30:15 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 02:31:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:31:12 EXEC SPC_COM_MENU '1';
+2018-08-16 02:31:12 EXEC SPC_VOCABULARY_LST1
+2018-08-16 02:31:13 EXEC SPC_COM_MENU '1';
+2018-08-16 02:31:13 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 02:31:13 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:31:13 EXEC SPC_COM_MENU '1';
+2018-08-16 02:31:13 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 02:57:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:57:23 EXEC SPC_COM_MENU '1';
+2018-08-16 02:57:23 EXEC SPC_VOCABULARY_LST1
+2018-08-16 02:57:23 EXEC SPC_COM_MENU '1';
+2018-08-16 02:57:23 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 02:57:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:57:23 EXEC SPC_COM_MENU '1';
+2018-08-16 02:57:23 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 02:58:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:58:11 EXEC SPC_COM_MENU '1';
+2018-08-16 02:58:11 EXEC SPC_VOCABULARY_LST1
+2018-08-16 02:58:11 EXEC SPC_COM_MENU '1';
+2018-08-16 02:58:11 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 02:58:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 02:58:12 EXEC SPC_COM_MENU '1';
+2018-08-16 02:58:12 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:02:10 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:02:10 EXEC SPC_COM_MENU '1';
+2018-08-16 04:02:10 EXEC SPC_V002_FND1
+2018-08-16 04:02:12 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:02:12 EXEC SPC_COM_MENU '1';
+2018-08-16 04:02:12 EXEC SPC_V002_FND1
+2018-08-16 04:02:22 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:02:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:02:22 EXEC SPC_V002_FND1
+2018-08-16 04:02:22 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:02:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:02:22 EXEC SPC_V002_FND1
+2018-08-16 04:02:28 EXEC SPC_COM_MENU '1';
+2018-08-16 04:02:28 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:06:00 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:06:00 EXEC SPC_COM_MENU '1';
+2018-08-16 04:06:00 EXEC SPC_V002_FND1
+2018-08-16 04:06:00 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:06:00 EXEC SPC_COM_MENU '1';
+2018-08-16 04:06:00 EXEC SPC_V002_FND1
+2018-08-16 04:06:03 EXEC SPC_COM_MENU '1';
+2018-08-16 04:06:03 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:07:48 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:07:48 EXEC SPC_COM_MENU '1';
+2018-08-16 04:07:48 EXEC SPC_V002_FND1
+2018-08-16 04:07:48 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:07:48 EXEC SPC_COM_MENU '1';
+2018-08-16 04:07:48 EXEC SPC_V002_FND1
+2018-08-16 04:08:06 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:08:06 EXEC SPC_COM_MENU '1';
+2018-08-16 04:08:06 EXEC SPC_V002_FND1
+2018-08-16 04:08:07 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:08:07 EXEC SPC_COM_MENU '1';
+2018-08-16 04:08:07 EXEC SPC_V002_FND1
+2018-08-16 04:08:10 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:08:10 EXEC SPC_COM_MENU '1';
+2018-08-16 04:08:10 EXEC SPC_V002_FND1
+2018-08-16 04:08:11 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:08:11 EXEC SPC_COM_MENU '1';
+2018-08-16 04:08:11 EXEC SPC_V002_FND1
+2018-08-16 04:18:50 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:18:50 EXEC SPC_COM_MENU '1';
+2018-08-16 04:18:50 EXEC SPC_V002_FND1
+2018-08-16 04:18:51 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:18:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:18:51 EXEC SPC_V002_FND1
+2018-08-16 04:18:56 EXEC SPC_COM_MENU '1';
+2018-08-16 04:18:56 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:19:14 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:14 EXEC SPC_V002_ACT1 '5','1','cry','4','kurai','Khóc','/uploads/cropped-babies-cry-01_20180815 0202080851511534298931315.jpg','action when hurt','none','','<row language1_content="i&amp;#39;m cry when i feel hurt" language2_content="tôi khóc khi tôi cảm thấy đau" /><row language1_content="smile always better than cry" language2_content="cười lúc nào cũng hơn khóc" />','ndq809','127.0.0.1';
+2018-08-16 04:19:15 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:15 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:19:28 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:28 EXEC SPC_V002_ACT1 '5','1','cry','4','kurai','Khóc','/uploads/cropped-babies-cry-01_20180815 0202080851511534298931315.jpg','action when hurt','none','/web-content/audio/listeningAudio/audio_5b74fb50c494a.mp3','<row language1_content="i&amp;#39;m cry when i feel hurt" language2_content="tôi khóc khi tôi cảm thấy đau" /><row language1_content="smile always better than cry" language2_content="cười lúc nào cũng hơn khóc" />','ndq809','127.0.0.1';
+2018-08-16 04:19:30 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:30 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:19:41 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:41 EXEC SPC_v002_LST1 '5','10';
+2018-08-16 04:19:41 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:19:41 EXEC SPC_COM_MENU '1';
+2018-08-16 04:19:41 EXEC SPC_V002_FND1
+2018-08-16 04:20:33 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:20:33 EXEC SPC_COM_MENU '1';
+2018-08-16 04:20:33 EXEC SPC_V002_FND1
+2018-08-16 04:20:34 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:20:34 EXEC SPC_COM_MENU '1';
+2018-08-16 04:20:34 EXEC SPC_V002_FND1
+2018-08-16 04:21:10 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:21:10 EXEC SPC_COM_MENU '1';
+2018-08-16 04:21:10 EXEC SPC_V002_FND1
+2018-08-16 04:21:10 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:21:10 EXEC SPC_COM_MENU '1';
+2018-08-16 04:21:10 EXEC SPC_V002_FND1
+2018-08-16 04:21:15 EXEC SPC_COM_MENU '1';
+2018-08-16 04:21:15 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 04:21:20 EXEC SPC_COM_MENU '1';
+2018-08-16 04:21:20 EXEC SPC_v002_LST1 '5','2';
+2018-08-16 04:23:56 EXEC SPC_COM_MENU '1';
+2018-08-16 04:24:04 EXEC SPC_COM_MENU '1';
+2018-08-16 04:24:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:24:35 EXEC SPC_V002_ACT1 '','','king','1','king','Vua','/uploads/cropped-cartoon-king_20180816 0404080856561534393436711.jpg','a person who top of the country','lalala','','<row language1_content="i&amp;#39;m the king" language2_content="tôi là vua" />','ndq809','127.0.0.1';
+2018-08-16 04:24:37 EXEC SPC_COM_MENU '1';
+2018-08-16 04:24:37 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:25:22 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 04:25:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:22 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:25:28 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 04:25:28 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:28 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 04:25:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:29 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-08-16 04:25:34 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:25:34 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:34 EXEC SPC_W002_FND1
+2018-08-16 04:25:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:35 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:25:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:35 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:25:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:25:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:40 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:25:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:25:40 EXEC SPC_p003_LST1 '','','','50';
+2018-08-16 04:26:28 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:28 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" /><row row_id="5" edit-confirm="1" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="kinger" spelling="kingou" mean="Vua chúa" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:26:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:29 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:26:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:29 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:26:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:29 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:26:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:26:34 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:34 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:26:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:26:35 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:26:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:26:35 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:27:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:21 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:27:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:22 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:27:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:22 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:27:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:22 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:27:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:24 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:27:25 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:25 EXEC SPC_p003_LST1 '1','king','Vua','50';
+2018-08-16 04:27:38 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 04:27:38 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:38 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:27:39 EXEC SPC_COM_MENU '1';
+2018-08-16 04:27:39 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 04:28:01 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:01 EXEC SPC_V001_ACT1 '<row id="9" dtl_id="2" />','ndq809','127.0.0.1';
+2018-08-16 04:28:05 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:28:05 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:05 EXEC SPC_V002_FND1
+2018-08-16 04:28:06 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:28:06 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:06 EXEC SPC_V002_FND1
+2018-08-16 04:28:11 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:11 EXEC SPC_v002_LST1 '7','1';
+2018-08-16 04:28:15 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:15 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:28:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:24 EXEC SPC_V002_ACT1 '9','1','king','1','king','Vua','/uploads/cropped-cartoon-king_20180816 0404080856561534393436711.jpg','a person who top of the country','lalala','/web-content/audio/listeningAudio/audio_5b74fd6866d32.mp3','','ndq809','127.0.0.1';
+2018-08-16 04:28:25 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:25 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:28:44 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:44 EXEC SPC_v002_LST1 '9','2';
+2018-08-16 04:28:44 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:28:44 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:44 EXEC SPC_V002_FND1
+2018-08-16 04:28:48 EXEC SPC_COM_MENU '1';
+2018-08-16 04:28:48 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:31:58 EXEC SPC_COM_MENU '1';
+2018-08-16 04:31:58 EXEC SPC_V002_ACT1 '9','1','king','1','king','Vua','/uploads/cropped-cartoon-king_20180816 0404080856561534393436711.jpg','a person who top of the country','lalala','','<row language1_content="i&amp;#39;m the king" language2_content="tôi là vua" />','ndq809','127.0.0.1';
+2018-08-16 04:31:59 EXEC SPC_COM_MENU '1';
+2018-08-16 04:31:59 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:33:26 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 04:33:26 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:26 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 04:33:27 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:27 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-08-16 04:33:29 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:33:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:29 EXEC SPC_W002_FND1
+2018-08-16 04:33:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:29 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:33:30 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:30 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:33:30 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:30 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:33:52 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:52 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" /><row row_id="5" edit-confirm="1" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="kinger" spelling="kinger" mean="Vuaer" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:33:53 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:53 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:33:53 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:53 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:33:53 EXEC SPC_COM_MENU '1';
+2018-08-16 04:33:53 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:34:49 EXEC SPC_COM_MENU '1';
+2018-08-16 04:34:49 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:34:49 EXEC SPC_COM_MENU '1';
+2018-08-16 04:34:49 EXEC SPC_p003_LST1 '1','kinger','Vuaer','50';
+2018-08-16 04:35:08 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:08 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:35:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:09 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:35:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:09 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:35:10 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:10 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:35:14 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 04:35:14 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:15 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:35:15 EXEC SPC_COM_MENU '1';
+2018-08-16 04:35:15 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 04:36:11 EXEC SPC_COM_MENU '1';
+2018-08-16 04:36:11 EXEC SPC_V001_ACT1 '<row id="9" dtl_id="3" />','ndq809','127.0.0.1';
+2018-08-16 04:36:24 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:36:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:36:24 EXEC SPC_V002_FND1
+2018-08-16 04:36:24 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:36:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:36:24 EXEC SPC_V002_FND1
+2018-08-16 04:36:28 EXEC SPC_COM_MENU '1';
+2018-08-16 04:36:28 EXEC SPC_v002_LST1 '9','1';
+2018-08-16 04:40:15 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 04:40:15 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:15 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 04:40:16 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:16 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-08-16 04:40:21 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:40:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:21 EXEC SPC_W002_FND1
+2018-08-16 04:40:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:21 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:40:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:21 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:40:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:40:38 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:38 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" /><row row_id="5" edit-confirm="1" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="kinger" spelling="kinger" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:40:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:40 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:40:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:40 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:40:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:40:40 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:45:18 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:18 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:45:23 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:45:23 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:23 EXEC SPC_W002_FND1
+2018-08-16 04:45:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:24 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:45:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:24 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:45:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:45:29 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:29 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:45:30 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:30 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:45:30 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:30 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:45:31 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:31 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:45:40 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 04:45:40 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:40 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 04:45:41 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:41 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 04:45:45 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:45 EXEC SPC_V001_ACT1 '<row id="9" dtl_id="4" />','ndq809','127.0.0.1';
+2018-08-16 04:45:50 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:45:50 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:50 EXEC SPC_V002_FND1
+2018-08-16 04:45:50 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 04:45:50 EXEC SPC_COM_MENU '1';
+2018-08-16 04:45:50 EXEC SPC_V002_FND1
+2018-08-16 04:46:14 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:46:14 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:14 EXEC SPC_W002_FND1
+2018-08-16 04:46:21 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 04:46:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:21 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 04:46:22 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:22 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-08-16 04:46:24 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 04:46:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:24 EXEC SPC_W002_FND1
+2018-08-16 04:46:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:24 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:46:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:24 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:46:24 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:46:34 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:34 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" /><row row_id="5" edit-confirm="1" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="kinger" spelling="kinger" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:46:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:35 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:46:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:35 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:46:35 EXEC SPC_COM_MENU '1';
+2018-08-16 04:46:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:50:04 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:04 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 04:50:05 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:05 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 04:50:05 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:05 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 04:50:05 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:05 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:50:09 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:50:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:09 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:50:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:09 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:50:09 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:50:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:50:09 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:53:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:53:20 EXEC SPC_COM_MENU '1';
+2018-08-16 04:53:20 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:53:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:53:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:53:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:53:21 EXEC SPC_COM_MENU '1';
+2018-08-16 04:53:21 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:54:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:54:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:54:51 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:54:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:54:51 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:54:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:54:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:54:51 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:55:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:55:25 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:25 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:55:25 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:25 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:55:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:55:25 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:25 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:55:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:55:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:51 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:55:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:51 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:55:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:55:51 EXEC SPC_COM_MENU '1';
+2018-08-16 04:55:51 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:56:08 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:56:08 EXEC SPC_COM_MENU '1';
+2018-08-16 04:56:08 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:56:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:56:09 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:56:09 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:56:09 EXEC SPC_COM_MENU '1';
+2018-08-16 04:56:09 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:58:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:58:38 EXEC SPC_COM_MENU '1';
+2018-08-16 04:58:38 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:58:38 EXEC SPC_COM_MENU '1';
+2018-08-16 04:58:38 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:58:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:58:38 EXEC SPC_COM_MENU '1';
+2018-08-16 04:58:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 04:59:55 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:59:55 EXEC SPC_COM_MENU '1';
+2018-08-16 04:59:55 EXEC SPC_VOCABULARY_LST1
+2018-08-16 04:59:56 EXEC SPC_COM_MENU '1';
+2018-08-16 04:59:56 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 04:59:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 04:59:56 EXEC SPC_COM_MENU '1';
+2018-08-16 04:59:56 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:00:33 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:00:33 EXEC SPC_COM_MENU '1';
+2018-08-16 05:00:33 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:00:33 EXEC SPC_COM_MENU '1';
+2018-08-16 05:00:33 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:00:33 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:00:33 EXEC SPC_COM_MENU '1';
+2018-08-16 05:00:33 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:02:06 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:02:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:02:06 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:02:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:02:07 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:02:07 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:02:07 EXEC SPC_COM_MENU '1';
+2018-08-16 05:02:07 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:03:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:03:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:12 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:03:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:12 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:03:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:03:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:12 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:03:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:03:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:21 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:03:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:03:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:03:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:03:21 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:04:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:04:25 EXEC SPC_COM_MENU '1';
+2018-08-16 05:04:25 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:04:25 EXEC SPC_COM_MENU '1';
+2018-08-16 05:04:25 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:04:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:04:25 EXEC SPC_COM_MENU '1';
+2018-08-16 05:04:25 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:09:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:09:23 EXEC SPC_COM_MENU '1';
+2018-08-16 05:09:23 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:09:24 EXEC SPC_COM_MENU '1';
+2018-08-16 05:09:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:09:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:09:24 EXEC SPC_COM_MENU '1';
+2018-08-16 05:09:24 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:14:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:14:36 EXEC SPC_COM_MENU '1';
+2018-08-16 05:14:36 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:14:36 EXEC SPC_COM_MENU '1';
+2018-08-16 05:14:36 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:14:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:14:37 EXEC SPC_COM_MENU '1';
+2018-08-16 05:14:37 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:21:06 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:21:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:06 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:21:08 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:08 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:21:08 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:21:08 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:08 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:21:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:21:26 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:26 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:21:27 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:27 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:21:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:21:27 EXEC SPC_COM_MENU '1';
+2018-08-16 05:21:27 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:35:19 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:35:19 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:19 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:35:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:35:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:35:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:21 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:35:27 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 05:35:27 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:27 EXEC SPC_W002_FND1
+2018-08-16 05:35:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:29 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 05:35:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:29 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 05:35:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:29 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:35:34 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:34 EXEC SPC_w002_ACT1 'POST-4','1','CAT-12','GRO-5','','','','','0','<row row_id="0" vocabulary_id="5" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="cry" spelling="kurai" mean="Khóc" explain="action when hurt" /><row row_id="1" vocabulary_id="6" vocabulary_dtl_id="1" vocabulary_div="3" vocabulary_nm="hello" spelling="helou" mean="Xin chào" explain="action meet someone" /><row row_id="2" vocabulary_id="7" vocabulary_dtl_id="1" vocabulary_div="4" vocabulary_nm="communicate" spelling="kumiuniketa" mean="Giao tiếp" explain="meet and talk to some one" /><row row_id="3" vocabulary_id="8" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="invisible" spelling="invisibou" mean="vô hình" explain="something that can&amp;#39;t be see" /><row row_id="4" vocabulary_id="9" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="Vua" explain="a person who top of the country" />','','ndq809','127.0.0.1';
+2018-08-16 05:35:35 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:35 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 05:35:35 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:35 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 05:35:35 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:35:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:35:37 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:37 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:35:38 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:38 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:35:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:35:38 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:35:53 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 05:35:53 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:53 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:35:54 EXEC SPC_COM_MENU '1';
+2018-08-16 05:35:54 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 05:36:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:36:00 EXEC SPC_V001_ACT1 '<row id="9" dtl_id="6" />','ndq809','127.0.0.1';
+2018-08-16 05:36:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:36:06 EXEC SPC_V001_ACT1 '<row id="9" dtl_id="5" />','ndq809','127.0.0.1';
+2018-08-16 05:36:10 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 05:36:10 EXEC SPC_COM_MENU '1';
+2018-08-16 05:36:10 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:36:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:36:12 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 05:38:09 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 05:38:09 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:09 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 05:38:10 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:10 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-08-16 05:38:12 EXEC SPC_COM_PERMISSION '1','w002';
+2018-08-16 05:38:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:12 EXEC SPC_W002_FND1
+2018-08-16 05:38:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:12 EXEC SPC_W002_LST1 'POST-4';
+2018-08-16 05:38:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:12 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 05:38:12 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:12 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:38:14 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:14 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:38:14 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:14 EXEC SPC_p003_LST1 '1','king','Vua','50';
+2018-08-16 05:38:18 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:18 EXEC SPC_p003_LST1 '','','','50','1';
+2018-08-16 05:38:45 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 05:38:45 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:45 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:38:46 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:46 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 05:38:58 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 05:38:58 EXEC SPC_COM_MENU '1';
+2018-08-16 05:38:58 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:39:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:39:00 EXEC SPC_V001_LST1 '0','','','50','1';
+2018-08-16 05:40:38 EXEC SPC_COM_PERMISSION '1','w001';
+2018-08-16 05:40:38 EXEC SPC_COM_MENU '1';
+2018-08-16 05:40:38 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 05:40:41 EXEC SPC_COM_PERMISSION '1','v001';
+2018-08-16 05:40:41 EXEC SPC_COM_MENU '1';
+2018-08-16 05:40:41 EXEC SPC_COM_M999_INQ1 '8';
+2018-08-16 05:40:42 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:40:42 EXEC SPC_COM_MENU '1';
+2018-08-16 05:40:42 EXEC SPC_V002_FND1
+2018-08-16 05:40:42 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:40:42 EXEC SPC_COM_MENU '1';
+2018-08-16 05:40:42 EXEC SPC_V002_FND1
+2018-08-16 05:42:03 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:42:03 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:03 EXEC SPC_V002_FND1
+2018-08-16 05:42:03 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:42:03 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:03 EXEC SPC_V002_FND1
+2018-08-16 05:42:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:06 EXEC SPC_v002_LST1 '1','1';
+2018-08-16 05:42:08 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:08 EXEC SPC_v002_LST1 '1','2';
+2018-08-16 05:42:10 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:10 EXEC SPC_v002_LST1 '1','3';
+2018-08-16 05:42:16 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:16 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 05:42:18 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:18 EXEC SPC_v002_LST1 '5','2';
+2018-08-16 05:42:18 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:42:18 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:18 EXEC SPC_V002_FND1
+2018-08-16 05:42:21 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:21 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 05:42:25 EXEC SPC_COM_MENU '1';
+2018-08-16 05:42:25 EXEC SPC_v002_LST1 '6','1';
+2018-08-16 05:45:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:45:00 EXEC SPC_v002_LST1 '1','1';
+2018-08-16 05:45:00 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:45:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:45:00 EXEC SPC_V002_FND1
+2018-08-16 05:45:02 EXEC SPC_COM_MENU '1';
+2018-08-16 05:45:02 EXEC SPC_v002_LST1 '2','2';
+2018-08-16 05:45:02 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:45:02 EXEC SPC_COM_MENU '1';
+2018-08-16 05:45:02 EXEC SPC_V002_FND1
+2018-08-16 05:45:06 EXEC SPC_COM_MENU '1';
+2018-08-16 05:45:06 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 05:46:14 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:46:14 EXEC SPC_COM_MENU '1';
+2018-08-16 05:46:14 EXEC SPC_V002_FND1
+2018-08-16 05:46:14 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:46:14 EXEC SPC_COM_MENU '1';
+2018-08-16 05:46:14 EXEC SPC_V002_FND1
+2018-08-16 05:46:19 EXEC SPC_COM_MENU '1';
+2018-08-16 05:46:19 EXEC SPC_v002_LST1 '5','1';
+2018-08-16 05:47:45 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:47:45 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:45 EXEC SPC_V002_FND1
+2018-08-16 05:47:45 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:47:45 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:45 EXEC SPC_V002_FND1
+2018-08-16 05:47:54 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:47:54 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:54 EXEC SPC_V002_FND1
+2018-08-16 05:47:55 EXEC SPC_COM_PERMISSION '1','v002';
+2018-08-16 05:47:55 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:55 EXEC SPC_V002_FND1
+2018-08-16 05:47:57 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:47:57 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:57 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:47:58 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:58 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:47:58 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:47:58 EXEC SPC_COM_MENU '1';
+2018-08-16 05:47:58 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:53:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:53:24 EXEC SPC_COM_MENU '1';
+2018-08-16 05:53:24 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:53:24 EXEC SPC_COM_MENU '1';
+2018-08-16 05:53:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:53:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:53:24 EXEC SPC_COM_MENU '1';
+2018-08-16 05:53:24 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:54:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:00 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:54:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:00 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:54:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:00 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:00 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:54:29 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:29 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:54:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:29 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:54:29 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:29 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:29 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 05:54:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:46 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:46 EXEC SPC_VOCABULARY_LST1
+2018-08-16 05:54:46 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:46 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 05:54:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 05:54:46 EXEC SPC_COM_MENU '1';
+2018-08-16 05:54:46 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 06:29:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 06:29:47 EXEC SPC_COM_MENU '1';
+2018-08-16 06:29:47 EXEC SPC_VOCABULARY_LST1
+2018-08-16 06:29:47 EXEC SPC_COM_MENU '1';
+2018-08-16 06:29:47 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 06:29:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 06:29:47 EXEC SPC_COM_MENU '1';
+2018-08-16 06:29:47 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 06:30:19 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 06:30:19 EXEC SPC_COM_MENU '1';
+2018-08-16 06:30:19 EXEC SPC_VOCABULARY_LST1
+2018-08-16 06:30:19 EXEC SPC_COM_MENU '1';
+2018-08-16 06:30:19 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 06:30:19 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 06:30:19 EXEC SPC_COM_MENU '1';
+2018-08-16 06:30:19 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 07:51:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:51:36 EXEC SPC_COM_MENU '1';
+2018-08-16 07:51:36 EXEC SPC_VOCABULARY_LST1
+2018-08-16 07:51:37 EXEC SPC_COM_MENU '1';
+2018-08-16 07:51:37 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 07:51:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:51:38 EXEC SPC_COM_MENU '1';
+2018-08-16 07:51:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 07:57:59 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:57:59 EXEC SPC_COM_MENU '1';
+2018-08-16 07:57:59 EXEC SPC_VOCABULARY_LST1
+2018-08-16 07:57:59 EXEC SPC_COM_MENU '1';
+2018-08-16 07:58:00 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 07:58:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:58:00 EXEC SPC_COM_MENU '1';
+2018-08-16 07:58:00 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 07:58:08 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:58:08 EXEC SPC_COM_MENU '1';
+2018-08-16 07:58:08 EXEC SPC_VOCABULARY_LST1
+2018-08-16 07:58:09 EXEC SPC_COM_MENU '1';
+2018-08-16 07:58:09 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 07:58:09 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:58:09 EXEC SPC_COM_MENU '1';
+2018-08-16 07:58:09 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 07:59:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:59:11 EXEC SPC_COM_MENU '1';
+2018-08-16 07:59:11 EXEC SPC_VOCABULARY_LST1
+2018-08-16 07:59:12 EXEC SPC_COM_MENU '1';
+2018-08-16 07:59:12 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 07:59:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 07:59:12 EXEC SPC_COM_MENU '1';
+2018-08-16 07:59:12 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 08:27:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 08:27:34 EXEC SPC_COM_MENU '1';
+2018-08-16 08:27:34 EXEC SPC_VOCABULARY_LST1
+2018-08-16 08:27:34 EXEC SPC_COM_MENU '1';
+2018-08-16 08:27:34 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 08:27:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 08:27:34 EXEC SPC_COM_MENU '1';
+2018-08-16 08:27:34 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:00:05 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:00:05 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:05 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:00:05 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:05 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:00:05 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:00:05 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:05 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:00:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:00:25 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:25 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:00:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:26 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:00:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:00:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:00:26 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:01:10 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:01:10 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:10 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:01:11 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:11 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:01:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:01:11 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:11 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:01:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:01:23 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:23 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:01:24 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:24 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:01:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:01:24 EXEC SPC_COM_MENU '1';
+2018-08-16 09:01:24 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:02:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:02:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:02:34 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:02:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:02:34 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:02:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:02:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:02:34 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:04:07 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:04:07 EXEC SPC_COM_MENU '1';
+2018-08-16 09:04:07 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:04:08 EXEC SPC_COM_MENU '1';
+2018-08-16 09:04:08 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:04:08 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:04:08 EXEC SPC_COM_MENU '1';
+2018-08-16 09:04:08 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:08:49 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:08:49 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:49 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:08:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:50 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:08:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:08:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:50 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:08:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:51 EXEC SPC_COMMON_GROUP '1','5','1';
+2018-08-16 09:08:52 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_COMMON_GROUP に指定された引数が多すぎます。
+2018-08-16 09:08:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:52 EXEC SPC_COMMON_GROUP '1','5','1';
+2018-08-16 09:08:52 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_COMMON_GROUP に指定された引数が多すぎます。
+2018-08-16 09:08:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:52 EXEC SPC_COMMON_GROUP '1','5','1';
+2018-08-16 09:08:52 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_COMMON_GROUP に指定された引数が多すぎます。
+2018-08-16 09:08:53 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:53 EXEC SPC_COMMON_GROUP '1','5','1';
+2018-08-16 09:08:53 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_COMMON_GROUP に指定された引数が多すぎます。
+2018-08-16 09:08:53 EXEC SPC_COM_MENU '1';
+2018-08-16 09:08:53 EXEC SPC_COMMON_GROUP '1','5','1';
+2018-08-16 09:08:53 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_COMMON_GROUP に指定された引数が多すぎます。
+2018-08-16 09:12:35 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:12:35 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:35 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:12:35 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:12:35 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:12:35 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:35 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:12:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:12:37 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:37 EXEC SPC_VOCABULARY_LST2 '1','5','1';
+2018-08-16 09:12:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:12:38 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:38 EXEC SPC_VOCABULARY_LST2 '1','5','1';
+2018-08-16 09:12:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:12:38 EXEC SPC_COM_MENU '1';
+2018-08-16 09:12:38 EXEC SPC_VOCABULARY_LST2 '1','5','1';
+2018-08-16 09:14:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:04 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:04 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:14:04 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:04 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:14:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:04 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:04 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:14:06 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:06 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:06 EXEC SPC_VOCABULARY_LST3 '1','5','1';
+2018-08-16 09:14:17 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:17 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:17 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:14:17 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:17 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:14:17 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:17 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:17 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:14:19 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:19 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:19 EXEC SPC_VOCABULARY_LST3 '1','5','1';
+2018-08-16 09:14:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:26 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:14:27 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:27 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:14:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:27 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:27 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:14:32 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:32 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:32 EXEC SPC_VOCABULARY_LST3 '1','5','1';
+2018-08-16 09:14:58 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:58 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:58 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:14:58 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:58 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:14:58 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:14:58 EXEC SPC_COM_MENU '1';
+2018-08-16 09:14:58 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:15:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:15:00 EXEC SPC_COM_MENU '1';
+2018-08-16 09:15:00 EXEC SPC_VOCABULARY_LST3 '1','5','1';
+2018-08-16 09:15:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:15:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:15:50 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:15:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:15:51 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:15:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:15:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:15:51 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:15:52 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:15:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:15:52 EXEC SPC_VOCABULARY_LST3 '1','5','1';
+2018-08-16 09:18:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:18:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:18:26 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:18:27 EXEC SPC_COM_MENU '1';
+2018-08-16 09:18:27 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:18:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:18:27 EXEC SPC_COM_MENU '1';
+2018-08-16 09:18:27 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:18:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:18:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:18:34 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:19:16 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:19:16 EXEC SPC_COM_MENU '1';
+2018-08-16 09:19:16 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:19:17 EXEC SPC_COM_MENU '1';
+2018-08-16 09:19:17 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:19:17 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:19:17 EXEC SPC_COM_MENU '1';
+2018-08-16 09:19:17 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:19:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:19:20 EXEC SPC_COM_MENU '1';
+2018-08-16 09:19:20 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:19:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:19:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:19:26 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:22:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:21 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:21 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:22:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:22 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:22:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:22 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:22:24 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:24 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:24 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:22:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:25 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:25 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:22:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:26 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:26 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:22:33 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:33 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:33 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:22:33 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:33 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:22:33 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:33 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:33 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:22:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:22:56 EXEC SPC_COM_MENU '1';
+2018-08-16 09:22:56 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:40 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:40 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:40 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:23:40 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:40 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:23:40 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:40 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:40 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:23:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:43 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:43 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:44 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:44 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:44 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:44 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:45 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:45 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:45 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:23:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:23:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:23:45 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:24:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:24:11 EXEC SPC_COM_MENU '1';
+2018-08-16 09:24:11 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:24:11 EXEC SPC_COM_MENU '1';
+2018-08-16 09:24:11 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:24:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:24:11 EXEC SPC_COM_MENU '1';
+2018-08-16 09:24:11 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:24:14 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:24:14 EXEC SPC_COM_MENU '1';
+2018-08-16 09:24:14 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:36 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:36 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:30:36 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:36 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:30:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:36 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:36 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:30:39 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:39 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:39 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:41 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:41 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:30:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:41 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:41 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:43 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:43 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:30:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:44 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:45 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:30:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:46 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:46 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:47 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:47 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:30:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:48 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:48 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:30:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:50 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:30:52 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:30:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:30:52 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:31:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:31:37 EXEC SPC_COM_MENU '1';
+2018-08-16 09:31:37 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:31:37 EXEC SPC_COM_MENU '1';
+2018-08-16 09:31:37 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:31:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:31:37 EXEC SPC_COM_MENU '1';
+2018-08-16 09:31:37 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:33:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:33:47 EXEC SPC_COM_MENU '1';
+2018-08-16 09:33:47 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:33:47 EXEC SPC_COM_MENU '1';
+2018-08-16 09:33:47 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:33:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:33:47 EXEC SPC_COM_MENU '1';
+2018-08-16 09:33:47 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:34:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:34:38 EXEC SPC_COM_MENU '1';
+2018-08-16 09:34:38 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:34:38 EXEC SPC_COM_MENU '1';
+2018-08-16 09:34:38 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:34:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:34:38 EXEC SPC_COM_MENU '1';
+2018-08-16 09:34:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:34:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:34:41 EXEC SPC_COM_MENU '1';
+2018-08-16 09:34:41 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:34:42 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:34:42 EXEC SPC_COM_MENU '1';
+2018-08-16 09:34:42 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:44 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:35:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:45 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:35:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:45 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:35:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:46 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:46 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:47 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:47 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:47 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:48 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:48 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:48 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:48 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:49 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:49 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:49 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:49 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:49 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:49 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:50 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:50 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:50 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:51 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:51 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:51 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:51 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:52 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:52 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:52 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:52 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:52 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:55 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:55 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:55 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:56 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:56 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:35:58 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:58 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:58 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:35:59 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:35:59 EXEC SPC_COM_MENU '1';
+2018-08-16 09:35:59 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:36:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:36:00 EXEC SPC_COM_MENU '1';
+2018-08-16 09:36:00 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:36:15 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:36:15 EXEC SPC_COM_MENU '1';
+2018-08-16 09:36:15 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:36:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:36:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:36:22 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:36:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:36:23 EXEC SPC_COM_MENU '1';
+2018-08-16 09:36:23 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:37:03 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:37:03 EXEC SPC_COM_MENU '1';
+2018-08-16 09:37:03 EXEC SPC_VOCABULARY_LST3 '1','5','1','1';
+2018-08-16 09:37:03 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:37:03 EXEC SPC_COM_MENU '1';
+2018-08-16 09:37:03 EXEC SPC_VOCABULARY_LST3 '1','5','1','2';
+2018-08-16 09:37:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:37:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:37:44 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:37:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:37:45 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:37:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:37:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:37:45 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:40:32 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:40:32 EXEC SPC_COM_MENU '1';
+2018-08-16 09:40:32 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:43:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:43:43 EXEC SPC_COM_MENU '1';
+2018-08-16 09:43:43 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:43:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:43:44 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:43:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:43:44 EXEC SPC_COM_MENU '1';
+2018-08-16 09:43:44 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:44:33 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:44:33 EXEC SPC_COM_MENU '1';
+2018-08-16 09:44:33 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:44:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:44:34 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:44:34 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:44:34 EXEC SPC_COM_MENU '1';
+2018-08-16 09:44:34 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:49:18 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:49:18 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:18 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:49:18 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:18 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:49:18 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:49:18 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:18 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:49:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:49:45 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:45 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:49:46 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:46 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:49:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:49:46 EXEC SPC_COM_MENU '1';
+2018-08-16 09:49:46 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:55:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:55:56 EXEC SPC_COM_MENU '1';
+2018-08-16 09:55:56 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:55:57 EXEC SPC_COM_MENU '1';
+2018-08-16 09:55:57 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:55:57 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:55:57 EXEC SPC_COM_MENU '1';
+2018-08-16 09:55:57 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:57:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:57:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:57:22 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:57:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:57:22 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:57:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:57:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:57:22 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:58:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:58:21 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:21 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:58:21 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:58:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:58:22 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:22 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 09:58:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:58:54 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:54 EXEC SPC_VOCABULARY_LST1
+2018-08-16 09:58:54 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:54 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 09:58:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 09:58:54 EXEC SPC_COM_MENU '1';
+2018-08-16 09:58:54 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:01:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:01:20 EXEC SPC_COM_MENU '1';
+2018-08-16 10:01:20 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:01:21 EXEC SPC_COM_MENU '1';
+2018-08-16 10:01:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:01:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:01:21 EXEC SPC_COM_MENU '1';
+2018-08-16 10:01:21 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:03:25 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:03:25 EXEC SPC_COM_MENU '1';
+2018-08-16 10:03:25 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:03:26 EXEC SPC_COM_MENU '1';
+2018-08-16 10:03:26 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:03:26 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:03:26 EXEC SPC_COM_MENU '1';
+2018-08-16 10:03:26 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:04:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:04:54 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:04:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:04:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:04:54 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:04:57 EXEC SPC_COM_MENU '1';
+2018-08-16 10:04:57 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:04:57 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:04:57 EXEC SPC_COM_MENU '1';
+2018-08-16 10:04:57 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:05:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:01 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:05:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:01 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:05:03 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:03 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:05:03 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:03 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:03 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:05:12 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:12 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:12 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:05:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:13 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:05:13 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:13 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:05:15 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:15 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:05:15 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:15 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:15 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:05:16 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:16 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:05:16 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:16 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:16 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:05:29 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:29 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:05:29 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:29 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:29 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:05:32 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:32 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:05:32 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:05:32 EXEC SPC_COM_MENU '1';
+2018-08-16 10:05:32 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:07:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:07:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:07:54 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:07:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:07:54 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:07:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:07:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:07:54 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:07:57 EXEC SPC_COM_MENU '1';
+2018-08-16 10:07:57 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:07:57 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:07:57 EXEC SPC_COM_MENU '1';
+2018-08-16 10:07:57 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:08:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:01 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:08:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:08:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:01 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:08:21 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:21 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:08:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:08:21 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:21 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:08:22 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:22 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:08:22 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:08:22 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:22 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:08:36 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:08:36 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:36 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:08:37 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:37 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:08:37 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:08:37 EXEC SPC_COM_MENU '1';
+2018-08-16 10:08:37 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:10:18 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:10:18 EXEC SPC_COM_MENU '1';
+2018-08-16 10:10:18 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:10:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:10:50 EXEC SPC_COM_MENU '1';
+2018-08-16 10:10:50 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:10:50 EXEC SPC_COM_MENU '1';
+2018-08-16 10:10:50 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:10:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:10:50 EXEC SPC_COM_MENU '1';
+2018-08-16 10:10:50 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:12:29 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:12:29 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:29 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:12:30 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:30 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:12:30 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:12:30 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:30 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:12:32 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:32 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:12:32 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:12:32 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:32 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:12:35 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:35 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:12:35 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:12:35 EXEC SPC_COM_MENU '1';
+2018-08-16 10:12:35 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:12:58 EXEC SPC_COM_PERMISSION '1','g001';
+2018-08-16 10:12:58 EXEC SPC_COM_MENU '1';
+2018-08-16 10:13:01 EXEC SPC_COM_PERMISSION '1','g003';
+2018-08-16 10:13:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:13:01 EXEC SPC_COM_M999_INQ1 '7';
+2018-08-16 10:13:06 EXEC SPC_COM_MENU '1';
+2018-08-16 10:13:06 EXEC SPC_COMMON_CATALORUE '1';
+2018-08-16 10:13:10 EXEC SPC_COM_MENU '1';
+2018-08-16 10:13:10 EXEC SPC_G003_LST1 '1','CAT-12','10','1';
+2018-08-16 10:14:40 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:14:40 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:40 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:14:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:41 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:14:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:14:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:41 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:14:42 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:42 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:14:42 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:14:42 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:42 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:14:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:54 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:14:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:14:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:14:54 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:15:13 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:13 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:15:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:13 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:15:13 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:13 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:15:20 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:20 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:15:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:20 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:20 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:15:27 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:27 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:15:27 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:27 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:27 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:15:29 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:29 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:15:29 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:29 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:29 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:15:31 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:31 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:31 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:15:31 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:31 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:15:31 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:31 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:31 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:15:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:48 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:48 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:15:48 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:48 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:15:48 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:15:48 EXEC SPC_COM_MENU '1';
+2018-08-16 10:15:48 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:16:02 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:02 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:16:02 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:16:02 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:02 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:16:03 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:03 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:16:03 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:16:03 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:03 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:16:09 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:09 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:16:09 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:16:09 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:09 EXEC SPC_VOCABULARY_LST2 '','','ndq809';
+2018-08-16 10:16:10 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:10 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:16:10 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:16:10 EXEC SPC_COM_MENU '1';
+2018-08-16 10:16:10 EXEC SPC_VOCABULARY_LST2 'CAT-12','','ndq809';
+2018-08-16 10:18:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:18:45 EXEC SPC_COM_MENU '1';
+2018-08-16 10:18:45 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:18:45 EXEC SPC_COM_MENU '1';
+2018-08-16 10:18:45 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:18:54 EXEC SPC_COM_MENU '1';
+2018-08-16 10:18:54 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:19:17 EXEC SPC_COM_MENU '1';
+2018-08-16 10:19:17 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:21:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:21:00 EXEC SPC_COM_MENU '1';
+2018-08-16 10:21:00 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:21:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:21:01 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:21:06 EXEC SPC_COM_MENU '1';
+2018-08-16 10:21:06 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:21:39 EXEC SPC_COM_MENU '1';
+2018-08-16 10:21:39 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:22:49 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:22:49 EXEC SPC_COM_MENU '1';
+2018-08-16 10:22:49 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:22:50 EXEC SPC_COM_MENU '1';
+2018-08-16 10:22:50 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:22:56 EXEC SPC_COM_MENU '1';
+2018-08-16 10:22:56 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:22:58 EXEC SPC_COM_MENU '1';
+2018-08-16 10:22:58 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:23:08 EXEC SPC_COM_MENU '1';
+2018-08-16 10:23:08 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:23:09 EXEC SPC_COM_MENU '1';
+2018-08-16 10:23:09 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:24:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:24:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:41 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:24:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:41 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:24:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:24:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:41 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:24:43 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:43 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:24:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:24:43 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:43 EXEC SPC_VOCABULARY_LST2 '','GRO-5','ndq809';
+2018-08-16 10:24:44 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:44 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:24:44 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:24:44 EXEC SPC_COM_MENU '1';
+2018-08-16 10:24:44 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:27:19 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:27:19 EXEC SPC_COM_MENU '1';
+2018-08-16 10:27:19 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:27:20 EXEC SPC_COM_MENU '1';
+2018-08-16 10:27:20 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:27:20 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:27:20 EXEC SPC_COM_MENU '1';
+2018-08-16 10:27:20 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:28:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:43 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:43 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:28:43 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:43 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:28:43 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:43 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:43 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:28:45 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:45 EXEC SPC_COMMON_GROUP '';
+2018-08-16 10:28:45 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:45 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:45 EXEC SPC_VOCABULARY_LST2 '','GRO-5','ndq809';
+2018-08-16 10:28:46 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:46 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:28:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:46 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:46 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:28:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:56 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:56 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:28:56 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:56 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:28:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:28:56 EXEC SPC_COM_MENU '1';
+2018-08-16 10:28:56 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:29:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:29:01 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:29:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:29:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:29:01 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:29:23 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:29:23 EXEC SPC_COM_MENU '1';
+2018-08-16 10:29:23 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-7','ndq809';
+2018-08-16 10:29:38 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:29:38 EXEC SPC_COM_MENU '1';
+2018-08-16 10:29:38 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-7','ndq809';
+2018-08-16 10:30:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:30:51 EXEC SPC_COM_MENU '1';
+2018-08-16 10:30:51 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:30:51 EXEC SPC_COM_MENU '1';
+2018-08-16 10:30:51 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:30:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:30:51 EXEC SPC_COM_MENU '1';
+2018-08-16 10:30:51 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:30:56 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:30:56 EXEC SPC_COM_MENU '1';
+2018-08-16 10:30:56 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-14','ndq809';
+2018-08-16 10:31:50 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:31:50 EXEC SPC_COM_MENU '1';
+2018-08-16 10:31:50 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:31:51 EXEC SPC_COM_MENU '1';
+2018-08-16 10:31:51 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:31:51 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:31:51 EXEC SPC_COM_MENU '1';
+2018-08-16 10:31:51 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:31:54 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:31:55 EXEC SPC_COM_MENU '1';
+2018-08-16 10:31:55 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-7','ndq809';
+2018-08-16 10:33:00 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:00 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:00 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:33:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:01 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:33:01 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:01 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:01 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:33:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:04 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:04 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-7','ndq809';
+2018-08-16 10:33:11 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:11 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:11 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-14','ndq809';
+2018-08-16 10:33:13 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:13 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:13 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:33:46 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:33:46 EXEC SPC_COM_MENU '1';
+2018-08-16 10:33:46 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-7','ndq809';
+2018-08-16 10:34:21 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:34:21 EXEC SPC_COM_MENU '1';
+2018-08-16 10:34:21 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:39:28 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:39:28 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:28 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:39:28 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:39:28 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:39:28 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:28 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:39:55 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:39:55 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:55 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:39:55 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:55 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:39:55 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:39:55 EXEC SPC_COM_MENU '1';
+2018-08-16 10:39:55 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:40:03 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:40:03 EXEC SPC_COM_MENU '1';
+2018-08-16 10:40:03 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:40:04 EXEC SPC_COM_MENU '1';
+2018-08-16 10:40:04 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:40:04 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:40:04 EXEC SPC_COM_MENU '1';
+2018-08-16 10:40:04 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';
+2018-08-16 10:49:41 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:49:41 EXEC SPC_COM_MENU '1';
+2018-08-16 10:49:41 EXEC SPC_VOCABULARY_LST1
+2018-08-16 10:49:42 EXEC SPC_COM_MENU '1';
+2018-08-16 10:49:42 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-08-16 10:49:42 EXEC SPC_COM_DATA 'ndq809';
+2018-08-16 10:49:42 EXEC SPC_COM_MENU '1';
+2018-08-16 10:49:42 EXEC SPC_VOCABULARY_LST2 'CAT-12','GRO-5','ndq809';

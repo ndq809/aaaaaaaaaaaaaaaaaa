@@ -207,7 +207,7 @@ function initListener(){
 	});
 
 	$(document ).on("click",".right-tab ul li",function(){
-		switchTabVocalbulary($(this));
+		switchTabVocabulary($(this));
 	});
 	$(window).resize(function(){
 		slidePositionController();

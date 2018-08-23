@@ -18,7 +18,7 @@ function initevent_m003(){
 
 	$(document).on('click','#btn-save',function(){
         if($('.table-focus tbody tr td.edit-row').length!=0){
-            showMessage(3,function(){
+            showMessage(1,function(){
                 m003_update();
            });
         }
@@ -30,7 +30,7 @@ function initevent_m003(){
     $(document).on('click', '.pager li a', function () {
         var page = $(this).attr('page');
         if($('.table-focus tbody tr td.edit-row').length!=0&&!$(this).parent('li').hasClass('active')){
-            showMessage(3,function(){
+            showMessage(13,function(){
                 m003_update(false);
                 m003_execute(parseInt(page, 10));
            });
@@ -114,6 +114,7 @@ function m003_delete(){
 }
 
 function m003_update(trigger){
+    clearFailedDataTable();
     if(typeof trigger=='undefined')
         trigger=true;
     $.ajax({
@@ -132,6 +133,10 @@ function m003_update(trigger){
                 case 201:
                     clearFailedValidate();
                     showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedDataTable(res.data);
                     break;
                 case 208:
                     clearFailedValidate();

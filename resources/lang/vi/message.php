@@ -57,5 +57,25 @@ return [
             'message_title' => 'Cảnh Báo Truy Cập',
             'message_content' => 'Quyền truy cập hệ thống đã bị khóa ,tài khoản của bạn đã bị đăng xuất tự động!',
         ],
+        12 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Upload File',
+            'message_content' => 'Kích thước của file không được vượt quá 20MB ,xin hay kiểm tra lại!',
+        ],
+        13 => [
+            'message_div' => 3,
+            'message_title' => 'Xác Nhận Chuyển Trang',
+            'message_content' => 'Dữ liệu đã sửa sẽ được lưu khi chuyển trang Bạn có muốn chuyển?',
+        ],
+        14 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Upload File',
+            'message_content' => 'Đã xảy ra lỗi không thể upload file!',
+        ],
+        15 => [
+            'message_div' => 3,
+            'message_title' => 'Thêm Phiên Bản',
+            'message_content' => 'Bạn có muốn lưu dữ liệu hiện tại dưới dạng 1 phiên bản khác?',
+        ],
     ],
 ];

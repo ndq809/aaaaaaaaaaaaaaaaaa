@@ -14,6 +14,13 @@ Route::group(
 	function() {
 		Route::get('v001','v001Controller@getIndex');	
 		Route::get('v002','v002Controller@getIndex');
+		Route::post('v002/addnew','v002Controller@v002_addnew');
+		Route::post('v002/upgrage','v002Controller@v002_upgrage');
+		Route::post('v002/delete','v002Controller@v002_delete');
+		Route::post('v002/refer','v002Controller@v002_refer');
+		Route::post('v001/list'  ,'v001Controller@v001_list');
+		Route::post('v001/update','v001Controller@v001_update');
+		Route::post('v001/delete','v001Controller@v001_delete');
 	}
 );
 
@@ -59,6 +66,10 @@ Route::group(
 		Route::get('w002','w002Controller@getIndex');
 		Route::post('w002/addnew','w002Controller@w002_addnew');
 		Route::post('w002/delete','w002Controller@w002_delete');
+		Route::post('w002/refer','w002Controller@w002_refer');
+		Route::post('w001/list'  ,'w001Controller@w001_list');
+		Route::post('w001/update','w001Controller@w001_update');
+		Route::post('w001/delete','w001Controller@w001_delete');
 	}
 );
 
@@ -80,6 +91,7 @@ Route::group(
 		Route::post('refer', 'CommonController@refer');
 		Route::post('upload-image', 'CommonController@postUpload');
 		Route::post('crop-image', 'CommonController@postCrop');
+		Route::post('delete-image', 'CommonController@postCropDelete');
 		Route::post('checkvalidate', 'CommonController@com_validate');
 		Route::post('getcatalogue', 'CommonController@getcatalogue');
 		Route::post('getgroup', 'CommonController@getgroup');
@@ -135,7 +147,9 @@ Route::group(
 		Route::get('p002','p002Controller@getIndex');
 		Route::post('p002','p002Controller@p002_search');
 		Route::get('p003','p003Controller@getIndex');
-		Route::post('p003','p003Controller@p003_search');	
+		Route::post('p003','p003Controller@p003_search');
+		Route::get('p004','p004Controller@getIndex');
+		Route::post('p004','p004Controller@p004_search');	
 	}
 );
 

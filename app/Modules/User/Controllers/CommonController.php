@@ -5,6 +5,7 @@ use App\Http\Controllers\ControllerUser;
 use Illuminate\Http\Request;
 use Mail;
 use DAO;
+use Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
@@ -75,6 +76,181 @@ class CommonController extends ControllerUser
         }
         return $pass;
     }
+
+    public function addLesson(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $data = Dao::call_stored_procedure('SPC_COM_ADD_LESSON',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'data'      => $data[1],
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
+
+    public function deleteLesson(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $data = Dao::call_stored_procedure('SPC_COM_DELETE_LESSON',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'data'      => $data[0],
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
+
+    public function remembervoc(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $data = Dao::call_stored_procedure('SPC_COM_REMEMBER',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'data'      => $data[0],
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
+
+   public function forgetvoc(Request $request)
+   {
+        $param = $request->all();
+        $data = Dao::call_stored_procedure('SPC_COM_FORGET',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'data'      => $data[0],
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
+
+   public function getExample(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $data = Dao::call_stored_procedure('SPC_COM_EXAM_LIST',$param);
+        $view1 = view('exam_content')->with('data', $data)->render();
+        $view2 = view('paging_content')->with('data', $data)->render();
+        $result = array(
+          'status'     => 200,
+          'view1'      => $view1,
+          'view2'      => $view2,
+          'statusText' => 'success',
+        );
+      return response()->json($result);
+   }
+
+   public function addExample(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $data = Dao::call_stored_procedure('SPC_COM_ADD_EXAM',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
+
+   public function toggleEffect(Request $request)
+   {
+        $param = $request->all();
+        $param['user_id']=Auth::user()->account_nm;
+        $param['ip']=$request->ip();
+        $data = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT',$param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data' => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data' => $data[0],
+                );
+            } else {
+                $result = array(
+                'status'     => 200,
+                'data'       => $data[1],
+                'statusText' => 'success',
+              );
+            }
+        
+      return response()->json($result);
+   }
 
     public function postUpload()
     {

@@ -2212,7 +2212,11 @@
                     }
                     break;
                 case 'browse':
-                    tmplt = self.getLayoutTemplate('btnBrowse');
+                    if (!self.showBrowse) {
+                        return '';
+                    }else{
+                        tmplt = self.getLayoutTemplate('btnBrowse');
+                    }
                     break;
                 default:
                     return '';
@@ -2262,6 +2266,7 @@
         showRemove: true,
         showUpload: false,
         showCancel: true,
+        showBrowse : true,
         showUploadedThumbs: true,
         autoReplace: false,
         mainClass: '',

@@ -5,51 +5,69 @@
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade active in">
-            <div class="left-header" data-target=".newsfeed" data-toggle="collapse">
+             <div class="left-header" data-target=".lesson-list" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
                             <td width="95%">
-                                <h5>Thông báo của bạn</h5>
+                               <h5>Bài Học Đã Đăng Ký</h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="newsfeed collapse in close-when-small">
-                <table class="table table-hover table-center">
+            <div class="lesson-list collapse in close-when-small">
+                <table class="table table-hover table-bordered table-click">
+                    <thead>
+                        <th width="30px"></th>
+                        <th width="50%">Danh Mục</th>
+                        <th>Nhóm</th>
+                        <th width="30px">Xóa</th>
+                    </thead>
                     <tbody>
-                        @for($i=1;$i<=3;$i++)
-                        <tr>
-                            <td>
-                                <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Nhóm từ vựng
-                                    <span>
-                                        Thiên nhiên
-                                    </span>
-                                    đã được thêm
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Cập nhật ngữ pháp
-                                    <span>
-                                        Trợ động từ
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                        @endfor
+                        @if(isset($data_default)&&$data_default[1][0]['catalogue_nm'] != '')
+                            @foreach($data_default[1] as $index=>$item)
+                            @if($index==0)
+                            <tr class="selected-row">
+                                <td>
+                                    <input type="hidden" name="" class="lesson-id" value="{{$item['id']}}">
+                                    <i class="glyphicon glyphicon-hand-right"></i>
+                                </td>
+                                <td>
+                                    {{$item['catalogue_nm']}}
+                                </td>
+                                <td>
+                                    {{$item['group_nm']}}
+                                </td>
+                                <td><button type="button" class="btn-danger btn-del-lesson"><span class="fa fa-close"></span></button></td>
+                            </tr>
+                            @else
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="" class="lesson-id" value="{{$item['id']}}">
+                                    <i class="glyphicon glyphicon-hand-right"></i>
+                                </td>
+                                <td>
+                                    {{$item['catalogue_nm']}}
+                                </td>
+                                <td>
+                                    {{$item['group_nm']}}
+                                </td>
+                                <td><button type="button" class="btn-danger btn-del-lesson"><span class="fa fa-close"></span></button></td>
+                            </tr>
+                            @endif
+                            @endforeach
+                        @else
+                            <tr class="no-data">
+                                <td>
+                                    <i class="glyphicon glyphicon-hand-right"></i>
+                                </td>
+                                <td colspan="3">Bạn chưa đăng nhập hoặc chưa đăng ký mục nào</td>
+                            </tr>
+                        @endif
                     </tbody>
                 </table>
-                <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>
             </div>
             <div class="left-header" data-target=".question" data-toggle="collapse">
                 <table style="width: 100%">
@@ -102,6 +120,52 @@
             </div>
         </div>
         <div id="sectionB" class="tab-pane fade">
+            <div class="left-header" data-target=".newsfeed" data-toggle="collapse">
+                <table style="width: 100%">
+                    <tbody>
+                        <tr>
+                            <td width="95%">
+                                <h5>Thông báo của bạn</h5>
+                            </td>
+                            <td class="collapse-icon" width="5%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="newsfeed collapse in close-when-small">
+                <table class="table table-hover table-center">
+                    <tbody>
+                        @for($i=1;$i<=3;$i++)
+                        <tr>
+                            <td>
+                                <a>
+                                    <i class="glyphicon glyphicon-hand-right">
+                                    </i>
+                                    Nhóm từ vựng
+                                    <span>
+                                        Thiên nhiên
+                                    </span>
+                                    đã được thêm
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a>
+                                    <i class="glyphicon glyphicon-hand-right">
+                                    </i>
+                                    Cập nhật ngữ pháp
+                                    <span>
+                                        Trợ động từ
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        @endfor
+                    </tbody>
+                </table>
+                <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>
+            </div>
             <div class="left-header" data-target=".top-rank" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>

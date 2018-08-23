@@ -66,6 +66,10 @@ function setPermission(){
                     clearFailedValidate();
                     showFailedValidate(res.error,1);
                     break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data,1);
+                    break;
                 case 208:
                     clearFailedValidate();
                     showMessage(4);

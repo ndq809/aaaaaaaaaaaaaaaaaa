@@ -63,7 +63,7 @@ return [
         'string' => 'Trường này phải có tối thiểu :min ký tự.',
         'array' => 'Trường này phải có tối thiểu :min phần tử.',
     ],
-    'not_in' => 'Giá trị đã chọn trong trường này không hợp lệ.',
+    'not_in' => 'Trường này không được bỏ trống.',
     'not_regex' => 'Trường này có định dạng không hợp lệ.',
     'numeric' => 'Trường này phải là một số.',
     'present' => 'Trường này phải được cung cấp.',

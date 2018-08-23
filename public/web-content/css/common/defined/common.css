@@ -65,6 +65,21 @@ a{
     display: none;
 }
 
+.pager{
+    display: inline-block;
+    margin-top: 10px;
+}
+.pager li{
+    display: table-cell;
+    padding: 0px 1px;
+}
+
+.pager select.input-sm{
+    height: 28px;
+    padding-top: -1px;
+    text-align: center;
+}
+
 .pager li>a, .pager li>span {
     font-size: 12px;
     border-radius: 0px;
@@ -75,11 +90,11 @@ a{
 }
 
 .pager li>a:hover, .pager li>span:hover {
-    background: #aaa;
+    background: #d9734f;
     color: #fff;
 }
 
-.pager li>a:focus, .pager li>span:focus {
+.pager li.active>a, .pager li.active>span {
     background: #d9534f;
     color: #fff;
     border: 1px solid #ddd;
@@ -233,6 +248,28 @@ textarea {
     text-align: center;
 }
 
+.table-click {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.table-click thead tr th{
+    background: unset;
+    color: black;
+    border-bottom: 1px solid #ccc!important;
+    text-align: left;
+}
+
+.table-click tbody tr{
+    cursor: pointer;
+    color: #337ab7;
+}
+
+.table-click>tbody>tr>td, .table-click>tbody>tr>th, .table-click>tfoot>tr>td, .table-click>tfoot>tr>th, .table-click>thead>tr>td, .table-click>thead>tr>th{
+    padding: 3px;
+}
+
 .table thead th {
     text-align: center;
     background: #563d7c;
@@ -340,6 +377,9 @@ body {
 }
 
 .claped{
+    color: firebrick;
+}
+.claped:hover{
     color: firebrick;
 }
 .user-menu{
@@ -524,7 +564,7 @@ body {
 .web-main{
     padding: 0px;
     padding-right: 10px;
-    border-right: 1px solid #ccc;
+    /*border-right: 1px solid #ccc;*/
 }
 
 .bottom-content{
@@ -850,7 +890,7 @@ td .radio-inline {
 }
 
 .activeItem td a i{
-    color: white!important;
+    color: #f78a8a!important;
     font-weight: bold;
 }
 
@@ -1105,33 +1145,67 @@ a.btn-add span {
 }
 
 .input-error:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #E5224C inset;
+    -webkit-box-shadow: 0 0 0 30px #F697A3 inset;
 }
 
 .input-error{
-    background: #E5224C;
-    color: pink;
+    background-color: #F697A3!important;
+    background-image: none!important;
+    color: white;
 }
-
-.input-error:-webkit-autofill {
-    -webkit-text-fill-color: pink !important;
-}
-
-.input-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
-}
-.input-error::-moz-placeholder { /* Firefox 19+ */
-  color: pink;
-}
-.input-error:-ms-input-placeholder { /* IE 10+ */
-  color: pink;
-}
-.input-error:-moz-placeholder { /* Firefox 18- */
-  color: pink;
+.input-error .file-caption{
+    background-color: #F697A3!important;
+    background-image: none!important;
+    color: white;
 }
 
 .tooltip-inner {
     max-width: 350px;
     width: auto;
     border-radius: 0px;
+}
+
+.selected-row{
+    background-color: #777!important;
+}
+
+.selected-row td{
+    color: white;
+    font-weight: bold;
+}
+
+.selected-row td:first-child i{
+    color: #f78a8a!important;
+    font-weight: bold;
+}
+
+.pagging-disable *{
+    cursor: not-allowed;
+    pointer-events: none;
+    background:#c0c0c0!important; 
+}
+
+.btn-del-lesson{
+    height: 17px;
+    width: 100%;
+    padding:0px 0px!important;
+    border-width: 0px;
+}
+
+.select-header{
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    border: none;
+    background: #d9534f;
+}
+
+.select-header:focus{
+    border: none;
+    outline: none;
+}
+
+.select-header *{
+    border: none;
+    outline: none;
 }

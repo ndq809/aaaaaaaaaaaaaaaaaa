@@ -1,0 +1,964 @@
+2018-07-27 00:08:44 EXEC SPC_COM_PERMISSION '1','g001';
+2018-07-27 00:08:44 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:10 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:11:10 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:10 EXEC SPC_W002_FND1
+2018-07-27 00:11:19 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:19 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 00:11:21 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:21 EXEC SPC_COMMON_GROUP 'CAT-16';
+2018-07-27 00:11:26 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:26 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 00:11:26 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:26 EXEC SPC_COMMON_GROUP '';
+2018-07-27 00:11:30 EXEC SPC_COM_MENU '1';
+2018-07-27 00:11:30 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 00:13:44 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:13:44 EXEC SPC_COM_MENU '1';
+2018-07-27 00:13:44 EXEC SPC_W002_FND1
+2018-07-27 00:13:47 EXEC SPC_COM_MENU '1';
+2018-07-27 00:13:47 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 00:13:55 EXEC SPC_COM_MENU '1';
+2018-07-27 00:13:55 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:14:14 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:14:14 EXEC SPC_COM_MENU '1';
+2018-07-27 00:14:14 EXEC SPC_W002_FND1
+2018-07-27 00:14:17 EXEC SPC_COM_MENU '1';
+2018-07-27 00:14:17 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:14:20 EXEC SPC_COM_MENU '1';
+2018-07-27 00:15:00 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:15:00 EXEC SPC_COM_MENU '1';
+2018-07-27 00:15:00 EXEC SPC_W002_FND1
+2018-07-27 00:20:16 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:20:16 EXEC SPC_COM_MENU '1';
+2018-07-27 00:20:16 EXEC SPC_W002_FND1
+2018-07-27 00:20:19 EXEC SPC_COM_MENU '1';
+2018-07-27 00:20:19 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:20:22 EXEC SPC_COM_MENU '1';
+2018-07-27 00:20:57 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:20:57 EXEC SPC_COM_MENU '1';
+2018-07-27 00:20:57 EXEC SPC_W002_FND1
+2018-07-27 00:21:00 EXEC SPC_COM_MENU '1';
+2018-07-27 00:21:00 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:23:42 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:23:42 EXEC SPC_COM_MENU '1';
+2018-07-27 00:23:42 EXEC SPC_W002_FND1
+2018-07-27 00:23:45 EXEC SPC_COM_MENU '1';
+2018-07-27 00:23:45 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:23:52 EXEC SPC_COM_MENU '1';
+2018-07-27 00:24:16 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:24:16 EXEC SPC_COM_MENU '1';
+2018-07-27 00:24:16 EXEC SPC_W002_FND1
+2018-07-27 00:24:20 EXEC SPC_COM_MENU '1';
+2018-07-27 00:24:20 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:24:22 EXEC SPC_COM_MENU '1';
+2018-07-27 00:24:57 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:24:57 EXEC SPC_COM_MENU '1';
+2018-07-27 00:24:57 EXEC SPC_W002_FND1
+2018-07-27 00:24:59 EXEC SPC_COM_MENU '1';
+2018-07-27 00:25:00 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:25:01 EXEC SPC_COM_MENU '1';
+2018-07-27 00:33:05 EXEC SPC_COM_MENU '1';
+2018-07-27 00:33:31 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:33:31 EXEC SPC_COM_MENU '1';
+2018-07-27 00:33:31 EXEC SPC_W002_FND1
+2018-07-27 00:33:34 EXEC SPC_COM_MENU '1';
+2018-07-27 00:33:34 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:40:19 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:40:19 EXEC SPC_COM_MENU '1';
+2018-07-27 00:40:19 EXEC SPC_W002_FND1
+2018-07-27 00:40:25 EXEC SPC_COM_MENU '1';
+2018-07-27 00:40:25 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 00:40:28 EXEC SPC_COM_MENU '1';
+2018-07-27 00:40:28 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 00:42:56 EXEC SPC_COM_MENU '1';
+2018-07-27 00:42:56 EXEC SPC_COMMON_GROUP 'CAT-1025';
+2018-07-27 00:43:07 EXEC SPC_COM_MENU '1';
+2018-07-27 00:43:07 EXEC SPC_w002_ACT1 '7','CAT-1025','GRO-14','gfegrtgergg','/web-content/images/relax_image/image_5b5a6a9bacdd5.jpg','','','ndq809','127.0.0.1';
+2018-07-27 00:47:18 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:47:18 EXEC SPC_COM_MENU '1';
+2018-07-27 00:47:18 EXEC SPC_W002_FND1
+2018-07-27 00:47:20 EXEC SPC_COM_MENU '1';
+2018-07-27 00:47:20 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 00:47:22 EXEC SPC_COM_MENU '1';
+2018-07-27 00:47:22 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 00:47:47 EXEC SPC_COM_MENU '1';
+2018-07-27 00:47:51 EXEC SPC_COM_MENU '1';
+2018-07-27 00:59:56 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 00:59:56 EXEC SPC_COM_MENU '1';
+2018-07-27 00:59:56 EXEC SPC_W002_FND1
+2018-07-27 01:00:01 EXEC SPC_COM_MENU '1';
+2018-07-27 01:00:01 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 01:00:02 EXEC SPC_COM_MENU '1';
+2018-07-27 01:00:02 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 01:00:23 EXEC SPC_COM_MENU '1';
+2018-07-27 01:00:23 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-4','さよなら大好きな人','audio_5b5a6ea77f9ca.mp3','','/web-content/audio/listeningAudio/audio_5b5a6ea77f9ca.mp3','','ndq809','127.0.0.1';
+2018-07-27 01:01:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:01:43 EXEC SPC_COM_MENU '1';
+2018-07-27 01:01:51 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:01:51 EXEC SPC_COM_MENU '1';
+2018-07-27 01:01:51 EXEC SPC_W002_FND1
+2018-07-27 01:01:52 EXEC SPC_COM_MENU '1';
+2018-07-27 01:01:52 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 01:01:54 EXEC SPC_COM_MENU '1';
+2018-07-27 01:01:54 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 01:01:59 EXEC SPC_COM_MENU '1';
+2018-07-27 01:02:08 EXEC SPC_COM_MENU '1';
+2018-07-27 01:02:08 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-4','dsadsa','/web-content/audio/listeningAudio/audio_5b5a6f10b471b.mp3','','audio_5b5a6f10b471b.mp3','','ndq809','127.0.0.1';
+2018-07-27 01:03:29 EXEC SPC_COM_MENU '1';
+2018-07-27 01:03:29 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-4','dsadsa','/web-content/audio/listeningAudio/audio_5b5a6f612df7b.mp3','','audio_5b5a6f612df7b.mp3','','ndq809','127.0.0.1';
+2018-07-27 01:04:17 EXEC SPC_COM_MENU '1';
+2018-07-27 01:04:17 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:04:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:04:18 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 01:04:49 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:04:49 EXEC SPC_COM_MENU '1';
+2018-07-27 01:04:49 EXEC SPC_W002_FND1
+2018-07-27 01:04:56 EXEC SPC_COM_MENU '1';
+2018-07-27 01:04:56 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 01:04:58 EXEC SPC_COM_MENU '1';
+2018-07-27 01:04:58 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 01:05:40 EXEC SPC_COM_MENU '1';
+2018-07-27 01:05:40 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:05:40 EXEC SPC_COM_MENU '1';
+2018-07-27 01:05:40 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 01:06:20 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:06:20 EXEC SPC_COM_MENU '1';
+2018-07-27 01:06:20 EXEC SPC_W002_FND1
+2018-07-27 01:06:23 EXEC SPC_COM_MENU '1';
+2018-07-27 01:06:25 EXEC SPC_COM_MENU '1';
+2018-07-27 01:07:22 EXEC SPC_COM_PERMISSION '1','g001';
+2018-07-27 01:07:22 EXEC SPC_COM_MENU '1';
+2018-07-27 01:07:35 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:07:35 EXEC SPC_COM_MENU '1';
+2018-07-27 01:07:35 EXEC SPC_W002_FND1
+2018-07-27 01:07:40 EXEC SPC_COM_MENU '1';
+2018-07-27 01:07:40 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 01:07:42 EXEC SPC_COM_MENU '1';
+2018-07-27 01:07:42 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 01:09:06 EXEC SPC_COM_MENU '1';
+2018-07-27 01:09:06 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-4','hôn nhân bền vững','/web-content/audio/listeningAudio/audio_5b5a70b2b7d42.mp3','<p>khi hai ta về 1 nh&agrave; kh&eacute;p đ&ocirc;i mi c&ugrave;ng 1 giường</p>
+','audio_5b5a70b2b7d42.mp3','<row edit-confirm="1" vocabulary_id="" vocabulary_dtl_id="" vocabulary_div="1" vocabulary_nm="abide by" spelling="ə&amp;apos;baid" mean="tôn trọng, tuân theo, giữ (lời)" explain="to accept and act according to a law, an agreement" />','ndq809','127.0.0.1';
+2018-07-27 01:11:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:11:18 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:11:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:11:18 EXEC SPC_p003_LST1 '1','abide by','tôn trọng, tuân theo, giữ (lời)','50';
+2018-07-27 01:12:59 EXEC SPC_COM_MENU '1';
+2018-07-27 01:12:59 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:13:00 EXEC SPC_COM_MENU '1';
+2018-07-27 01:13:00 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 01:13:41 EXEC SPC_COM_MENU '1';
+2018-07-27 01:13:41 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-4','hôn nhân bền vững','/web-content/audio/listeningAudio/audio_5b5a71c5817ee.mp3','<p>khi hai ta về 1 nh&agrave; kh&eacute;p đ&ocirc;i mi c&ugrave;ng 1 giường</p>
+','audio_5b5a71c5817ee.mp3','<row vocabulary_id="" vocabulary_dtl_id="" vocabulary_div="1" vocabulary_nm="abide by" spelling="ə&amp;#39;baid" mean="tôn trọng, tuân theo, giữ (lời)" explain="to accept and act according to a law, an agreement" /><row edit-confirm="1" vocabulary_id="VOC-1" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="abide by" spelling="ə&amp;#39;baid" mean="tôn trọng, tuân theo, giữ (lời)" explain="to accept and act according to a law, an agreement" />','ndq809','127.0.0.1';
+2018-07-27 01:15:05 EXEC SPC_COM_MENU '1';
+2018-07-27 01:15:05 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:15:06 EXEC SPC_COM_MENU '1';
+2018-07-27 01:15:06 EXEC SPC_p003_LST1 '1','abide by','tôn trọng, tuân theo, giữ (lời)','50';
+2018-07-27 01:16:59 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:16:59 EXEC SPC_COM_MENU '1';
+2018-07-27 01:16:59 EXEC SPC_W002_FND1
+2018-07-27 01:53:15 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:53:15 EXEC SPC_COM_MENU '1';
+2018-07-27 01:53:15 EXEC SPC_W002_FND1
+2018-07-27 01:53:20 EXEC SPC_COM_MENU '1';
+2018-07-27 01:53:20 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 01:53:22 EXEC SPC_COM_MENU '1';
+2018-07-27 01:53:22 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 01:53:24 EXEC SPC_COM_MENU '1';
+2018-07-27 01:53:24 EXEC SPC_COMMON_GROUP 'CAT-1025';
+2018-07-27 01:55:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:55:18 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:55:18 EXEC SPC_COM_MENU '1';
+2018-07-27 01:55:18 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 01:57:21 EXEC SPC_COM_MENU '1';
+2018-07-27 01:57:21 EXEC SPC_w002_ACT1 '7','CAT-1025','GRO-14','Đi du học có vui ko?','/web-content/images/relax_image/image_5b5a7c01866e2.jpg','<p><strong>Mỗi năm c&oacute; h&agrave;ng ng&agrave;n, h&agrave;ng triệu người tr&ecirc;n thế giới sẵn s&agrave;ng rời bỏ &ldquo;v&ugrave;ng tiện nghi&rdquo; của m&igrave;nh để l&ecirc;n đường du học (điển h&igrave;nh như học tiếng Anh ở những nước như Mỹ, Canada, Vương quốc Anh v&agrave; &Uacute;c). Tại sao họ phải đi du học? Đơn giản v&igrave; họ tin rằng việc học ng&ocirc;n ngữ ở đất nước m&agrave; n&oacute; l&agrave; ng&ocirc;n ngữ bản xứ sẽ gi&uacute;p họ th&agrave;nh thạo nhanh ch&oacute;ng. Những người kh&aacute;c lại cho rằng việc học ở nước ngo&agrave;i sẽ gi&uacute;p họ c&oacute; c&aacute;i nh&igrave;n tr&acirc;n trọng hơn về đất nước của ch&iacute;nh m&igrave;nh. Một số lại nghĩ du học gi&uacute;p ta kiếm việc l&agrave;m tốt hơn. V&agrave; tr&ecirc;n thực tế, rất &iacute;t người chọn đi du học chỉ để cho&hellip;vui!</strong></p>
+
+<p>&gt;&gt;&nbsp;<a href="https://www.hotcourses.vn/study-abroad-info/choosing-a-university/co-nen-di-du-hoc-neu-truot-dai-hoc/" target="_blank">C&oacute; n&ecirc;n đi du học nếu trượt Đại học?</a></p>
+
+<p>&gt;&gt;&nbsp;<a href="https://www.hotcourses.vn/study-abroad-info/student-finance/co-nen-vay-muon-tien-di-du-hoc/" target="_blank">C&oacute; n&ecirc;n vay mượn tiền đi du học?</a></p>
+
+<p>Tuy nhi&ecirc;n, sinh sống v&agrave; học tập ở nước ngo&agrave;i c&oacute; thể l&agrave; khởi nguồn của những rắc rối. Hầu như ai cũng sẽ rơi v&agrave;o trạng th&aacute;i nhớ nh&agrave;. Một số người thậm ch&iacute; kh&ocirc;ng chịu nổi m&agrave; phải quay về nh&agrave; sớm hơn dự định.</p>
+
+<p>Vậy th&igrave; đi học tiếng Anh ở nước ngo&agrave;i c&oacute; phải l&agrave; niềm y&ecirc;u th&iacute;ch của bạn? H&atilde;y đọc một số &quot;cảnh b&aacute;o&quot; (cả t&iacute;ch cực lẫn ti&ecirc;u cực) dưới đ&acirc;y để đưa ra quyết định ch&iacute;nh x&aacute;c cho ri&ecirc;ng bạn.</p>
+
+<p><strong>Những kh&oacute; khăn của việc đi du học</strong></p>
+
+<p><strong>Du học kh&ocirc;ng c&oacute; nghĩa l&agrave; bạn học tiếng Anh một c&aacute;ch thần tốc:</strong>Rất nhiều người nghĩ rằng chỉ việc sống ở nước ngo&agrave;i l&agrave; c&oacute; thể học được ng&ocirc;n ngữ bản địa. Điều n&agrave;y kh&ocirc;ng phải đ&uacute;ng ho&agrave;n to&agrave;n. Bạn sẽ cần phải tập trung th&igrave; mới học được. C&oacute; rất nhiều người sống ở nước ngo&agrave;i mấy chục năm nhưng cũng đ&acirc;u c&oacute; n&oacute;i tốt ng&ocirc;n ngữ của nơi họ sinh sống! Tuy nhi&ecirc;n, phải c&ocirc;ng nhận rằng việc đi nước ngo&agrave;i học ngoại ngữ l&uacute;c n&agrave;o cũng tốt hơn l&agrave; học ở trong nước.</p>
+
+<p><strong>Du học rất kh&oacute;.&nbsp;</strong>Bạn sẽ nhớ nh&agrave;, nhớ gia đ&igrave;nh, bạn b&egrave;, ẩm thực v&agrave; mọi thứ đ&atilde; từng quen thuộc với bạn. Hầu như ai ai cũng từng sống qua một v&agrave;i trải nghiệm sốc văn ho&aacute;. Bạn sẽ phải nhận ra v&agrave; chấp nhận một sự thật l&agrave; m&igrave;nh phải điều chỉnh ch&iacute;nh bản th&acirc;n m&igrave;nh mới c&oacute; thể ho&agrave; nhập v&agrave;o cuộc sống mới. &nbsp;</p>
+
+<p>&gt;&gt;&nbsp;<a href="https://www.hotcourses.vn/study-abroad-info/choosing-a-university/nhung-kho-khan-trong-hoc-tap-khi-di-du-hoc/" target="_blank">Những kh&oacute; khăn trong học tập khi đi du học</a></p>
+
+<p>&gt;&gt;&nbsp;<a href="https://www.hotcourses.vn/study-abroad-info/student-life/10-khoanh-khac-kho-khan-ma-du-hoc-sinh-co-the-se-phai-doi-dien/" target="_blank">10 khoảnh khắc kh&oacute; khăn m&agrave; du học sinh (c&oacute; thể) sẽ phải đối diện</a></p>
+
+<p><strong>Du học đắt đỏ.&nbsp;</strong>Kh&ocirc;ng c&oacute; g&igrave; phải b&agrave;n c&atilde;i về sự tốn k&eacute;m khi đi du học. Chi ph&iacute; n&agrave;y c&oacute; thể dao động từ mức đắt đỏ cho đến&hellip; si&ecirc;u đắt đỏ. C&oacute; nhiều điểm đến du học kh&ocirc;ng cho ph&eacute;p sinh vi&ecirc;n nước ngo&agrave;i l&agrave;m th&ecirc;m, thế n&ecirc;n bạn phải chuẩn bị đầy đủ khoản tiền cần thiết trước khi l&ecirc;n đường, hoặc phải c&oacute; một ai đ&oacute; hỗ trợ bạn ở nh&agrave;. H&atilde;y tự trả lời cho c&acirc;u hỏi &ldquo;liệu gia đ&igrave;nh m&igrave;nh c&oacute; lo liệu đủ số tiền n&agrave;y kh&ocirc;ng?&rdquo;</p>
+
+<p><strong>Đi du học v&agrave; những &iacute;ch lợi</strong></p>
+
+<p><strong>Bạn được sống trong m&ocirc;i trường tiếng Anh.&nbsp;</strong>Dẫu rằng bạn phải tập trung học h&agrave;nh, nhưng mọi thứ sẽ đến nhanh ch&oacute;ng hơn những c&aacute;ch học th&ocirc;ng thường ở Việt Nam, đơn giản v&igrave; tiếng Anh l&agrave; ng&ocirc;n ngữ được sử dụng rộng r&atilde;i, ở mọi nơi &ndash; tr&ecirc;n đường phố, trong c&aacute;c cửa h&agrave;ng, tr&ecirc;n tivi&hellip; T&oacute;m lại l&agrave; bạn kh&ocirc;ng thể &ldquo;trốn khỏi&rdquo; tiếng Anh trong đời sống h&agrave;ng ng&agrave;y.</p>
+
+<p><strong>Bạn cởi mở với thế giới.&nbsp;</strong>Sống trong một nền văn h&oacute;a mới sẽ khiến ta l&agrave;m quen những c&aacute;ch tư duy, h&agrave;nh động mới mẻ v&agrave; qua đ&oacute; sẽ gi&uacute;p ta nhận ra d&ugrave; c&oacute; kh&aacute;c biệt đến mấy th&igrave; con người ở đ&acirc;u cũng như nhau m&agrave; th&ocirc;i. Khi đi du học, bạn sẽ kh&ocirc;ng chỉ được l&agrave;m quen với bạn b&egrave; bản xứ m&agrave; cả những người bạn c&ugrave;ng lớp đến từ mọi miền thế giới.</p>
+
+<p><strong>Bạn học c&aacute;ch chăm s&oacute;c ch&iacute;nh m&igrave;nh.</strong>&nbsp;Sống ở một nước kh&aacute;c, d&ugrave; cho bạn được ở chung trong một m&ocirc;i trường gia đ&igrave;nh, th&igrave; vẫn đồng nghĩa với việc bạn sẽ phải đối diện với những điều mới mẻ m&agrave; bản th&acirc;n c&oacute; thể chưa từng trải qua khi c&ograve;n ở trong nước. Những điều n&agrave;y bao gồm nấu ăn, dọn dẹp, mua sắm, giặt đồ, lựa chọn c&aacute;c phương tiện c&ocirc;ng cộng, sắp xếp cuộc sống, thiết lập t&agrave;i khoản điện thoại v&agrave; c&aacute;c tiện &iacute;ch kh&aacute;c&hellip; C&oacute; thể bạn sẽ cho những việc n&agrave;y l&agrave; phiền phức, nhưng sau khi trở về, rất nhiều sinh vi&ecirc;n nước ngo&agrave;i đ&atilde; rất tự h&agrave;o v&igrave; trở th&agrave;nh con người tự lập.</p>
+
+<p><strong>Cuộc sống của bạn sẽ thay đổi m&atilde;i m&atilde;i.</strong>&nbsp;Một trong những điều tuyệt vời nhất của trải nghiệm du học l&agrave; &ldquo;bạn trở th&agrave;nh một người đ&atilde; c&oacute; sự thay đổi&rdquo;. Khi đ&oacute;, c&aacute;ch nh&igrave;n nhận của bạn về cuộc đời rất kh&aacute;c v&agrave; sự ch&iacute;n chắn sẽ dẫn bạn đến những nơi chốn mới mẻ trong đời.</p>
+
+<p><strong>Bạn tạo n&ecirc;n những &ldquo;k&yacute; ức đời người&rdquo;.&nbsp;</strong>Những h&igrave;nh ảnh, s&aacute;ch b&aacute;o, kỷ niệm sẽ gi&uacute;p bạn ghi dấu lại trải nghiệm cuộc sống ở nước ngo&agrave;i, nhưng những k&yacute; ức của khoảng thời gian n&agrave;y sẽ trở th&agrave;nh một phần của cuộc đời, cho đến nhiều năm th&aacute;ng sau nữa.</p>
+','image_5b5a7c01866e2.jpg','<row edit-confirm="1" vocabulary_id="" vocabulary_dtl_id="" vocabulary_div="1" vocabulary_nm="go" spelling="gou" mean="Đi" explain="go some where" /><row edit-confirm="1" vocabulary_id="" vocabulary_dtl_id="" vocabulary_div="2" vocabulary_nm="beautiful" spelling="&amp;#39;bju:tifl" mean="đẹp" explain="very attractive in a physical way" />','ndq809','127.0.0.1';
+2018-07-27 01:58:16 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 01:58:16 EXEC SPC_COM_MENU '1';
+2018-07-27 01:58:16 EXEC SPC_W002_FND1
+2018-07-27 01:58:42 EXEC SPC_COM_MENU '1';
+2018-07-27 01:58:42 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 01:58:43 EXEC SPC_COM_MENU '1';
+2018-07-27 01:58:43 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 02:02:32 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 02:02:32 EXEC SPC_COM_MENU '1';
+2018-07-27 02:02:32 EXEC SPC_W002_FND1
+2018-07-27 02:02:39 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 02:02:39 EXEC SPC_COM_MENU '1';
+2018-07-27 02:02:39 EXEC SPC_W002_FND1
+2018-07-27 02:02:42 EXEC SPC_COM_MENU '1';
+2018-07-27 02:02:42 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 02:02:44 EXEC SPC_COM_MENU '1';
+2018-07-27 02:02:44 EXEC SPC_COMMON_GROUP 'CAT-8';
+2018-07-27 02:04:38 EXEC SPC_COM_MENU '1';
+2018-07-27 02:04:38 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 02:04:38 EXEC SPC_COM_MENU '1';
+2018-07-27 02:04:38 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 02:04:46 EXEC SPC_COM_MENU '1';
+2018-07-27 02:04:46 EXEC SPC_COM_M999_INQ1 '8';
+2018-07-27 02:04:46 EXEC SPC_COM_MENU '1';
+2018-07-27 02:04:46 EXEC SPC_p003_LST1 '','','','50';
+2018-07-27 02:05:23 EXEC SPC_COM_MENU '1';
+2018-07-27 02:05:23 EXEC SPC_w002_ACT1 '3','CAT-8','GRO-6','tình yêu là gì?','/web-content/audio/listeningAudio/audio_5b5a7de354096.mp3','<h2><strong>T&igrave;nh y&ecirc;u l&agrave; g&igrave;?</strong></h2>
+
+<p>Nếu t&ocirc;i cho bạn một c&acirc;u hỏi đ&ograve;i &ldquo;<strong>T&igrave;nh y&ecirc;u l&agrave; g&igrave;</strong>&rdquo; đ&ograve;i bạn phải trả lời, bạn sẽ n&oacute;i sao? T&ocirc;i chắc chắn rằng bạn sẽ n&oacute;i:&nbsp;<a href="http://emdep.vn/tinh-yeu-gioi-tinh.htm">t&igrave;nh y&ecirc;u</a>&nbsp;l&agrave; khi được ở b&ecirc;n nhau, chia sẻ quan t&acirc;m lẫn nhau, nấu cho nhau những m&oacute;n ăn ngon, c&ugrave;ng xem phim với nhau&hellip;v&agrave; sẽ c&oacute; rất nhiều c&acirc;u trả lời&nbsp;na n&aacute; nhau như vậy. Mỗi người tự cảm nhận vị ngọt của t&igrave;nh y&ecirc;u kh&aacute;c nhau, n&oacute; thật đơn giản nhưng s&acirc;u sắc.</p>
+
+<p>Ai cũng t&igrave;m thấy cho m&igrave;nh một nửa của ri&ecirc;ng m&igrave;nh, nếu họ kh&aacute;t khao y&ecirc;u v&agrave; được y&ecirc;u. Phải t&igrave;m đ&uacute;ng cho m&igrave;nh 3 con người xứng đ&aacute;ng để được gọi l&agrave; y&ecirc;u. Người đ&oacute; trước hết l&agrave; người bạn y&ecirc;u&nbsp; nhất, thứ 2 đ&oacute; l&agrave; người y&ecirc;u bạn&nbsp; nhất v&agrave; người thứ 3 ch&iacute;nh l&agrave; bạn đồng h&agrave;nh của bạn trong suốt cuộc đời, người đ&oacute; sẽ l&agrave; người đầu gối tay ấp với bạn.</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/tinh-yeu-la-gi-153708441.jpg" /></p>
+
+<p>Vậy n&ecirc;n trước khi bạn gặp được người y&ecirc;u bạn nhất, bạn phải gặp người đem lại cảm gi&aacute;c y&ecirc;u cho bạn, đ&oacute; ch&iacute;nh l&agrave; việc để bạn hiểu được y&ecirc;u l&agrave; như thế n&agrave;o. Sau khi trải qua hai trạng th&aacute;i kh&aacute;c nhau y&ecirc;u v&agrave; được y&ecirc;u, bạn mới thực sự c&oacute; những kinh nghiệm, những x&aacute;c định chin chắn trong việc chọn bạn đời của m&igrave;nh sau n&agrave;y.</p>
+
+<p>Tuy nhi&ecirc;n, bạn biết kh&ocirc;ng trong cuộc sống kh&ocirc;ng thể 3 c&oacute; chuyện 3 người&nbsp; n&agrave;y ch&iacute;nh l&agrave; một người được. Bạn c&oacute; gặp t&igrave;nh trạng n&agrave;y kh&ocirc;ng? Người bạn y&ecirc;u lại kh&ocirc;ng y&ecirc;u bạn, người y&ecirc;u bạn nhất kh&ocirc;ng phải l&agrave; người bạn y&ecirc;u. Vậy&nbsp; n&ecirc;n người m&agrave; thực sự đến v&agrave; gắn b&oacute; khăng kh&iacute;t với cuộc đời của bạn ch&iacute;nh l&agrave; người đến b&ecirc;n bạn, xuất hiện v&agrave;o l&uacute;c th&iacute;ch hợp nhất.</p>
+
+<p>Vậy c&acirc;u hỏi đặt ra l&agrave;: bạn sẽ l&agrave; người thứ bao nhi&ecirc;u trong cuộc đời của t&ocirc;i.</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/tinh-yeu-la-gi-em-biet-khong-161735438.jpg" /></p>
+
+<p><em>Bạn c&oacute; định nghĩa được t&igrave;nh y&ecirc;u l&agrave; g&igrave; kh&ocirc;ng?</em></p>
+
+<p>Đ&oacute; ch&iacute;nh l&agrave; việc bạn phải v&agrave; đang kiếm t&igrave;m. T&igrave;nh y&ecirc;u s&eacute;t đ&aacute;nh hay &quot;c&aacute;i duy&ecirc;n c&aacute;i số n&oacute; vồ lấy nhau&quot;.</p>
+
+<p>Y&ecirc;u hay kh&ocirc;ng y&ecirc;u cũng sẽ dễ d&agrave;ng thay đổi. V&igrave; thế việc t&igrave;m cho m&igrave;nh một người thật sự quan t&acirc;m, săn s&oacute;c v&agrave; hiểu bạn&nbsp; v&agrave; nhất l&agrave; xuất ph&aacute;t từ cả hai ph&iacute;a l&agrave; điều rất kh&oacute; nhưng kh&ocirc;ng phải l&agrave; kh&ocirc;ng thể xảy ra.</p>
+
+<p>Người đ&oacute; y&ecirc;u bạn ch&iacute;nh l&agrave; l&uacute;c người đ&oacute; thực sự y&ecirc;u bạn, nếu người đ&oacute; kh&ocirc;ng y&ecirc;u th&igrave; cũng kh&ocirc;ng thể giả vờ rằng đang y&ecirc;u bạn. Vậy n&ecirc;n đ&oacute; l&agrave; điều kh&ocirc;ng thể gượng &eacute;p được.</p>
+
+<h3><strong>T&igrave;nh y&ecirc;u l&agrave; điều đẹp nhất trong cuộc sống</strong></h3>
+
+<p>&nbsp;</p>
+
+<p><strong>T&igrave;nh y&ecirc;u l&agrave; một t&igrave;nh cảm thi&ecirc;ng li&ecirc;ng v&agrave; cao qu&yacute;.</strong>&nbsp;Hay n&oacute;i c&aacute;ch kh&aacute;c&nbsp;t&igrave;nh y&ecirc;u l&agrave; một sự kết nối, được h&igrave;nh th&agrave;nh bởi d&ograve;ng chảy cảm x&uacute;c t&iacute;ch cực m&agrave; bạn muốn chia sẻ với bất cứ ai.&nbsp;V&igrave; thế khi người y&ecirc;u bạn muốn rời xa bạn, th&igrave; bạn h&atilde;y tự hỏi bản th&acirc;n m&igrave;nh xem bạn c&oacute; thật sự y&ecirc;u người đ&oacute; kh&ocirc;ng. Đ&ocirc;i khi ch&iacute;nh sự hờ hững, lạnh nhạt của bạn l&agrave;m cho đối phương cảm thấy mất hi vọng v&agrave; quyết định ra đi, đ&ocirc;i khi họ cảm thấy rằng ch&iacute;nh họ đang xen giữa v&agrave;o quan hệ của bạn với một ai đ&oacute;, họ sẽ tự tr&aacute;ch v&agrave; dằn vặt m&igrave;nh nhiều lắm. Bạn h&atilde;y trả lời c&acirc;u hỏi của ch&iacute;nh bản th&acirc;n bạn đi, giải tho&aacute;t họ hay n&oacute;i k&eacute;o họ.</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/dinh-nghia-tinh-yeu-la-gi-154016254.jpg" /></p>
+
+<p><em>T&igrave;nh y&ecirc;u l&agrave; g&igrave; v&agrave; bạn c&oacute; phải l&agrave; người hiểu r&otilde; t&igrave;nh y&ecirc;u của m&igrave;nh?</em></p>
+
+<p>T&igrave;nh y&ecirc;u kh&ocirc;ng để đ&ocirc;i co, gi&agrave;nh giật v&igrave; thế nếu khi kh&ocirc;ng thật sự kh&ocirc;ng c&ograve;n cảm gi&aacute;c y&ecirc;u đương m&agrave; người kia đ&atilde; t&igrave;m thấy nửa ho&agrave;n hảo của m&igrave;nh, bạn h&atilde;y rộng lượng mở đường cho họ. Nếu bạn quyết t&acirc;m d&agrave;nh lại cho bằng được những thứ kh&ocirc;ng thuộc về m&igrave;nh, bạn c&agrave;ng thảm hại hơn, v&agrave; bị khinh thường hơn.</p>
+
+<p>Khi bạn thực sự y&ecirc;u một người, bạn phải biết chấp nhận những c&aacute;i thuộc về người đ&oacute; bao gồm cả khuyết điểm. Kh&ocirc;ng c&oacute; người n&agrave;o l&agrave; tuyệt đối, kh&ocirc;ng c&oacute; người n&agrave;o ho&agrave;n hảo cả. Ch&iacute;nh việc b&ugrave; trừa lẫn nhau, c&aacute;i thiếu của người n&agrave;y b&ugrave; cho c&aacute;i thiếu của người kia mới l&agrave;m n&ecirc;n cặp đ&ocirc;i to&agrave;n diện.</p>
+
+<p>C&oacute; bao giờ bạn trả lời được v&igrave; sao bạn lại y&ecirc;u người n&agrave;y?&nbsp;Thật kh&oacute; để trả lời, v&igrave; n&oacute; nằm trong cảm nhận của bạn, c&aacute;i thiếu m&agrave; bạn cảm thấy phải b&ugrave; đắp. Những l&uacute;c t&acirc;m trạng bạn xuống dốc, nhưng l&uacute;c bạn gặp phải vấn đề g&igrave;, những l&uacute;c bạn muốn chia sẻ niềm vui, những l&uacute;c bạn cần người t&acirc;m sự&hellip;bạn lu&ocirc;n nghĩ về người ấy, nghĩ về việc họ sẽ xuất hiện một c&aacute;ch bất ngờ l&agrave;m điều n&agrave;y điều nọ cho bạn, chỉ thế th&ocirc;i.</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/tinh-yeu-la-gi-va-the-nao-la-tinh-yeu-dich-thuc-161118011.jpg" /></p>
+
+<p>Y&ecirc;u l&agrave; phải trải qua thử th&aacute;ch, thử th&aacute;ch với thời gian để chứng tỏ niềm tin của người đ&oacute; v&agrave;o t&igrave;nh y&ecirc;u. Đi xa, người nơi n&agrave;y người nơi kh&aacute;c m&agrave; vẫn hẹn thề, vẫn n&oacute;i chuyện với nhau trong 2 năm, 3 năm m&agrave; kh&ocirc;ng hề o&aacute;n than, hai nửa mong muốn ng&agrave;y đo&agrave;n tụ với nhau. Đ&oacute; mới thực sự l&agrave; t&igrave;nh y&ecirc;u ch&acirc;n ch&iacute;nh. Thời nay việc chờ đợi nhau một thời gian d&agrave;i quả l&agrave; rất hiếm, bởi n&oacute;i l&agrave; một đường, l&agrave;m một nẻo.&nbsp; Những đ&ocirc;i y&ecirc;u nhau thực sự, họ sẽ đơn giản v&agrave; chấp nhận việc xa nhau bởi ch&iacute;nh đ&oacute; l&agrave; sự tin tưởng m&atilde;nh liệt v&agrave;o t&igrave;nh y&ecirc;u, bởi sự nồng&nbsp; nhiệt hay l&agrave; đ&oacute; ch&iacute;nh l&agrave; t&igrave;nh cảm d&agrave;nh cho nhau qu&aacute; lớn.</p>
+
+<p>T&igrave;nh y&ecirc;u l&agrave; g&igrave;? Đến đ&acirc;y bạn đ&atilde; thực sự c&oacute; c&acirc;u trả lời của m&igrave;nh chưa? Ai rồi cũng muốn t&igrave;m thấy nửa đ&iacute;ch thực của m&igrave;nh, quan trọng l&agrave; ở bạn, niềm tin v&agrave;o t&igrave;nh y&ecirc;u ch&acirc;n ch&iacute;nh, v&agrave;o vẻ đẹp của t&igrave;nh y&ecirc;u. Nhưng quan trọng hơn l&agrave; phải thực sự hiểu nhau, biết chấp nhận v&agrave; b&ugrave; đắp cho nhau.</p>
+
+<h2><strong>Thế n&agrave;o l&agrave; một t&igrave;nh y&ecirc;u đ&iacute;ch thực?</strong></h2>
+
+<p>&nbsp;</p>
+
+<p>T&ocirc;i vẫn thường vẩn vơ tự vấn &ldquo;t&igrave;nh y&ecirc;u thế n&agrave;o mới gọi l&agrave; t&igrave;nh y&ecirc;u đ&iacute;ch thực? Romeo v&agrave; Juliet chết v&igrave; nhau, thi&ecirc;n t&igrave;nh sử m&agrave; nh&acirc;n loại ấy ca ngợi liệu c&oacute; thể gọi đ&oacute; l&agrave; t&igrave;nh y&ecirc;u đ&iacute;ch thực hay kh&ocirc;ng?</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/tinh-yeu-dich-thuc-162020096.jpg" /></p>
+
+<p>Lương Sơn B&aacute; Ch&uacute;c Anh Đ&agrave;i nằm chung một huyệt mộ liệu c&oacute; phải l&agrave; t&igrave;nh y&ecirc;u đ&iacute;ch thực? Bỏ qua những yếu tố lịch sử chi phối khiến con người hạn chế về mặt nhận thức, g&acirc;y t&aacute;c động lớn để bi kịch t&igrave;nh y&ecirc;u của hai đ&ocirc;i trẻ tr&ecirc;n, ta chỉ ngẫm c&aacute;ch y&ecirc;u của họ, c&aacute;ch m&agrave; họ hết l&ograve;ng v&igrave; nhau, lấy c&aacute;i chết để m&atilde;i m&atilde;i ở b&ecirc;n nhau, sống trọn vẹn một chữ t&igrave;nh, d&ugrave; x&uacute;c động thật nhưng th&uacute; thực t&ocirc;i vẫn thấy sợ h&atilde;i&hellip;</p>
+
+<p>Thời xưa những cặp đ&ocirc;i &ldquo;l&uacute; t&igrave;nh&rdquo; đ&atilde; đi v&agrave;o sử s&aacute;ch, thời nay cũng kh&ocirc;ng &iacute;t những cặp đ&ocirc;i v&igrave; những l&yacute; do rất &ldquo;trời ơi&rdquo; cũng buộc tay nhau v&agrave;o nhảy xuống cầu c&ugrave;ng tự vẫn, giết nhau trong nh&agrave; nghỉ rồi tự vẫn&hellip;đủ kiểu c&ugrave;ng chết để chứng minh t&igrave;nh y&ecirc;u. Tự dưng thấy việc nam nữ y&ecirc;u nhau gặp cấm cản l&agrave; lấy c&aacute;i chết ra để chứng minh t&igrave;nh y&ecirc;u trọn đời, t&ocirc;i thấy tội nghiệp cho t&igrave;nh y&ecirc;u qu&aacute;&hellip;</p>
+
+<p><a href="http://emdep.vn/tinh-yeu-gioi-tinh/tinh-yeu-la-gi-va-the-nao-la-mot-tinh-yeu-dich-thuc-20150909104449781.htm" target="_blank"><img alt="Tình yêu là gì? Và thế nào là một tình yêu đích thực?" src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/the-nao-la-tinh-yeu-dich-thuc-162047786.jpg" /></a></p>
+
+<p>C&oacute; thật những con người &ldquo;kh&ocirc;ng sinh c&ugrave;ng năm c&ugrave;ng th&aacute;ng c&ugrave;ng ng&agrave;y nhưng nguyện chết c&ugrave;ng ng&agrave;y c&ugrave;ng th&aacute;ng c&ugrave;ng năm&rdquo; họ y&ecirc;u nhau đến độ muốn b&ecirc;n nhau trọn đời? T&ocirc;i cứ hồ nghi dăm ba c&aacute;i chuyện nếu họ kh&ocirc;ng bị yếu tố kh&aacute;ch quan cấm cản, họ đến với nhau n&ecirc;n vợ n&ecirc;n chồng th&igrave; sao nhỉ? Liệu c&aacute;i t&igrave;nh y&ecirc;u m&agrave; họ tưởng m&atilde;i m&atilde;i ấy n&oacute; c&oacute; bị biến thể đi hoặc nhạt bớt đi khi m&agrave; hai con người trải qua giai đoạn hết mơ mộng v&agrave; thổn thức về nhau? T&ocirc;i kh&ocirc;ng nghi ngờ v&agrave; đổ vấy mọi thứ tội lỗi cho t&igrave;nh y&ecirc;u, bản chất của t&igrave;nh y&ecirc;u lu&ocirc;n đẹp v&agrave; hướng thiện, nếu như c&aacute;i chết c&oacute; thể chứng minh l&agrave; n&oacute; đẹp, n&oacute; thiện v&agrave; kh&ocirc;ng khiến cho những người ở lại cảm thấy đau l&ograve;ng v&agrave; day dứt kh&ocirc;n ngu&ocirc;i th&igrave; được, c&ograve;n nếu như cặp đ&ocirc;i chết tr&ugrave;m kia lấy c&aacute;i chết ngo&agrave;i việc chứng m&igrave;nh họ y&ecirc;u nhau c&ograve;n để dằn mặt hai họ v&agrave; những người cấm cản họ phải đau khổ, phải s&aacute;ng mắt ra th&igrave; bản chất trong c&acirc;u chuyện n&agrave;y đ&atilde; vơi đi &iacute;t nhiều sự th&aacute;nh thiện m&agrave; t&igrave;nh y&ecirc;u vốn c&oacute;.</p>
+
+<p><img alt="Thế nào là một tình yêu đúng nghĩa?" src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/the-nao-la-mot-tinh-yeu-dung-nghia-3-105635073.jpg" /></p>
+
+<p>C&oacute; c&acirc;u chuyện tr&ecirc;n mạng, hai vợ chồng đi tr&ecirc;n một con t&agrave;u, con t&agrave;u chẳng may bị&nbsp;đắm, hai vợ chồng chỉ một người được cứu, v&agrave; người chồng đ&atilde; bỏ lại vợ m&igrave;nh tr&ecirc;n t&agrave;u, c&acirc;u n&oacute;i cuối c&ugrave;ng m&agrave; người vợ n&oacute;i với người chồng l&agrave; g&igrave;? Mọi người c&ugrave;ng đo&aacute;n, mọi người c&ugrave;ng d&egrave; bỉu người chồng ham sống sợ chết, bỏ lại vợ m&igrave;nh để chọn tho&aacute;t th&acirc;n, mọi người lại lấy ch&agrave;ng Jack v&agrave; n&agrave;ng Rose trong thi&ecirc;n t&igrave;nh sử Titanic ra để so s&aacute;nh v&agrave; miệt thị người đ&agrave;n &ocirc;ng kia, rồi o&aacute;n th&aacute;n &ldquo;tr&ecirc;n đời chỉ c&oacute; người d&aacute;m hi sinh cả mạng sống v&igrave; ta mới l&agrave; người y&ecirc;u ta hết l&ograve;ng!&rdquo;.</p>
+
+<p>Sự thật sau c&acirc;u chuyện ấy l&agrave;, người vợ biết m&igrave;nh mắc bệnh nan y kh&ocirc;ng thể sống được n&ecirc;n đ&atilde; bảo người chồng phải sống để c&ograve;n chăm s&oacute;c những đứa con, l&agrave; kết tinh t&igrave;nh y&ecirc;u của họ. Y&ecirc;u kh&ocirc;ng phải l&agrave; hi sinh mạng sống của m&igrave;nh để chứng minh n&oacute; l&agrave; thứ t&igrave;nh cảm tuyệt đ&iacute;ch, m&agrave; y&ecirc;u nghĩa l&agrave; mong cho người m&igrave;nh y&ecirc;u lu&ocirc;n sống an nhi&ecirc;n tự tại, hạnh ph&uacute;c m&atilde;i m&atilde;i, ấy mới l&agrave; y&ecirc;u.</p>
+
+<p><img src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/dinh-nghia-tinh-yeu-dich-thuc-162711671.jpg" /></p>
+
+<p>Y&ecirc;u l&agrave; để sống, sống l&agrave; để y&ecirc;u, t&igrave;nh y&ecirc;u tuyệt nhi&ecirc;n kh&ocirc;ng phải l&agrave; vế đối phải trả gi&aacute; bằng mạng sống để chứng minh điều g&igrave; cả. Sau c&aacute;i chết sẽ kết th&uacute;c tất cả, bạn đừng mong thi&ecirc;n hạ sẽ đời đời ghi nhớ c&acirc;u chuyện t&igrave;nh đẫm lệ của bạn khi bạn l&igrave;a đời. Đời chỉ một lần được sống, c&aacute;ch m&agrave; c&aacute;c bạn tự khước từ đi cuộc sống để chạy trốn thực tại chẳng phải l&agrave; thứ t&igrave;nh y&ecirc;u cao đẹp g&igrave; m&agrave; chỉ l&agrave; sự h&egrave;n nh&aacute;t, kh&ocirc;ng d&aacute;m đương đầu, kh&ocirc;ng d&aacute;m đấu tranh để c&oacute; được thứ m&igrave;nh muốn, rủ nhau kết liễu cuộc đời để lại cho những người th&acirc;n sự đau khổ, dằn vặt, những con người trẻ người non dạ ấy, một ng&agrave;n lần kh&ocirc;ng xứng được nhắc t&ecirc;n v&agrave; nhắc về c&aacute;ch họ y&ecirc;u&hellip;</p>
+
+<p>Đừng v&iacute; m&igrave;nh với Lương Sơn B&aacute; Ch&uacute;c Anh Đ&agrave;i hay Romeo v&agrave; Juliet, cuộc đời chẳng bao giờ l&agrave; tiểu thuyết cả, đằng sau c&acirc;u chuyện m&agrave; tiểu thuyết muốn n&oacute;i, ấy l&agrave; sự tha thứ, sự h&oacute;a giải hận th&ugrave;, v&agrave; sự tiếc nuối cho đ&ocirc;i trẻ ở thời xưa, tuyệt nhi&ecirc;n kh&ocirc;ng thể &aacute;p dụng n&oacute; v&agrave;o thời đại n&agrave;y!</p>
+
+<p><img alt="Thế nào là một tình yêu đúng nghĩa?" src="http://thumb.connect360.vn/unsafe/0x0/imgs.emdep.vn/Share/Image/2015/09/09/the-nao-la-mot-tinh-yeu-dung-nghia-4-105642452.jpg" /></p>
+
+<p>Một t&igrave;nh y&ecirc;u đ&iacute;ch thực được thể hiện th&ocirc;ng qua h&agrave;nh động v&agrave; t&igrave;nh cảm.&nbsp;Chưa bao giờ chết v&igrave; nhau l&agrave; c&aacute;ch chứng minh một t&igrave;nh y&ecirc;u đ&iacute;ch thực.&nbsp;Sống tốt v&igrave; nhau, hướng đến những ng&agrave;y tươi s&aacute;ng, b&igrave;nh y&ecirc;n ph&iacute;a trước, c&ugrave;ng vượt qua những gập ghềnh tr&ecirc;n đường đời, nắm chặt tay nhau c&ugrave;ng bước v&agrave; thấy m&igrave;nh lu&ocirc;n trong mắt nhau, ấy l&agrave; y&ecirc;u&hellip;</p>
+','audio_5b5a7de354096.mp3','<row edit-confirm="1" vocabulary_id="VOC-1" vocabulary_dtl_id="1" vocabulary_div="1" vocabulary_nm="love" spelling="lʌv" mean="Yêu" explain="a feeling of strong or constant affection for a person" />','ndq809','127.0.0.1';
+2018-07-27 02:11:55 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 02:11:55 EXEC SPC_COM_MENU '1';
+2018-07-27 02:11:55 EXEC SPC_W002_FND1
+2018-07-27 02:11:56 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:11:56 EXEC SPC_COM_MENU '1';
+2018-07-27 02:29:34 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:29:34 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:03 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:35:03 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:34 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:35:34 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:37 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 02:35:37 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:37 EXEC SPC_W002_FND1
+2018-07-27 02:35:40 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:35:40 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:41 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 02:35:41 EXEC SPC_COM_MENU '1';
+2018-07-27 02:35:41 EXEC SPC_W002_FND1
+2018-07-27 02:36:18 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:36:18 EXEC SPC_COM_MENU '1';
+2018-07-27 02:54:38 EXEC SPC_COM_PERMISSION '1','g001';
+2018-07-27 02:54:38 EXEC SPC_COM_MENU '1';
+2018-07-27 02:54:41 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:54:41 EXEC SPC_COM_MENU '1';
+2018-07-27 02:55:05 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 02:55:05 EXEC SPC_COM_MENU '1';
+2018-07-27 02:55:05 EXEC SPC_W002_FND1
+2018-07-27 04:40:31 EXEC SPC_COM_PERMISSION '1','w002';
+2018-07-27 04:40:31 EXEC SPC_COM_MENU '1';
+2018-07-27 04:40:31 EXEC SPC_W002_FND1
+2018-07-27 04:49:28 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:49:28 EXEC SPC_COM_MENU '1';
+2018-07-27 04:49:28 EXEC SPC_W002_FND1
+2018-07-27 04:50:01 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:50:01 EXEC SPC_COM_MENU '1';
+2018-07-27 04:50:01 EXEC SPC_W002_FND1
+2018-07-27 04:51:45 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:51:45 EXEC SPC_COM_MENU '1';
+2018-07-27 04:51:45 EXEC SPC_W002_FND1
+2018-07-27 04:52:16 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:52:16 EXEC SPC_COM_MENU '1';
+2018-07-27 04:52:16 EXEC SPC_W002_FND1
+2018-07-27 04:58:01 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:58:01 EXEC SPC_COM_MENU '1';
+2018-07-27 04:58:01 EXEC SPC_W002_FND1
+2018-07-27 04:58:18 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:58:18 EXEC SPC_COM_MENU '1';
+2018-07-27 04:58:18 EXEC SPC_W002_FND1
+2018-07-27 04:58:45 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 04:58:45 EXEC SPC_COM_MENU '1';
+2018-07-27 04:58:45 EXEC SPC_W002_FND1
+2018-07-27 05:01:40 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:01:40 EXEC SPC_COM_MENU '1';
+2018-07-27 05:01:40 EXEC SPC_W002_FND1
+2018-07-27 05:04:17 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:04:17 EXEC SPC_COM_MENU '1';
+2018-07-27 05:04:17 EXEC SPC_W002_FND1
+2018-07-27 05:05:05 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 05:05:05 EXEC SPC_COM_MENU '1';
+2018-07-27 05:05:05 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 05:05:37 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:05:37 EXEC SPC_COM_MENU '1';
+2018-07-27 05:05:37 EXEC SPC_W002_FND1
+2018-07-27 05:23:04 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:23:04 EXEC SPC_COM_MENU '1';
+2018-07-27 05:23:04 EXEC SPC_W002_FND1
+2018-07-27 05:23:50 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:23:50 EXEC SPC_COM_MENU '1';
+2018-07-27 05:23:50 EXEC SPC_W002_FND1
+2018-07-27 05:25:38 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:25:38 EXEC SPC_COM_MENU '1';
+2018-07-27 05:25:38 EXEC SPC_W002_FND1
+2018-07-27 05:35:46 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 05:35:46 EXEC SPC_COM_MENU '1';
+2018-07-27 05:35:46 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 05:35:53 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 05:35:53 EXEC SPC_COM_MENU '1';
+2018-07-27 05:35:53 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 05:36:02 EXEC SPC_COM_PERMISSION '1','v001';
+2018-07-27 05:36:02 EXEC SPC_COM_MENU '1';
+2018-07-27 05:36:06 EXEC SPC_COM_PERMISSION '1','w001';
+2018-07-27 05:36:06 EXEC SPC_COM_MENU '1';
+2018-07-27 05:36:06 EXEC SPC_W002_FND1
+2018-07-27 05:53:06 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 05:53:06 EXEC SPC_COM_MENU '1';
+2018-07-27 05:53:06 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 05:58:43 EXEC SPC_COM_MENU '1';
+2018-07-27 05:58:43 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 05:58:47 EXEC SPC_COM_MENU '1';
+2018-07-27 05:58:47 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 05:58:49 EXEC SPC_COM_MENU '1';
+2018-07-27 05:58:49 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 05:58:56 EXEC SPC_COM_MENU '1';
+2018-07-27 05:58:56 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 05:59:02 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:02 EXEC SPC_COMMON_CATALORUE '';
+2018-07-27 05:59:05 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:05 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 05:59:07 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:07 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 05:59:10 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 05:59:10 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:10 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 05:59:15 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:15 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 05:59:34 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:34 EXEC SPC_G005_LST1 '','giải trí','','10','1';
+2018-07-27 05:59:42 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:42 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 05:59:53 EXEC SPC_COM_MENU '1';
+2018-07-27 05:59:53 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 06:00:05 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:05 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:00:06 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:06 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:00:08 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:08 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:00:09 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:09 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:00:10 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:10 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:00:11 EXEC SPC_COM_MENU '1';
+2018-07-27 06:00:11 EXEC SPC_G005_LST1 '','Giải Trí','','10','1';
+2018-07-27 06:01:45 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:01:45 EXEC SPC_COM_MENU '1';
+2018-07-27 06:01:45 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:01:51 EXEC SPC_COM_MENU '1';
+2018-07-27 06:01:51 EXEC SPC_G003_LST1 '1','','10','1';
+2018-07-27 06:01:55 EXEC SPC_COM_MENU '1';
+2018-07-27 06:01:55 EXEC SPC_G003_LST1 '2','','10','1';
+2018-07-27 06:01:58 EXEC SPC_COM_MENU '1';
+2018-07-27 06:01:58 EXEC SPC_G003_LST1 '5','','10','1';
+2018-07-27 06:02:02 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:02 EXEC SPC_G003_LST1 '3','','10','1';
+2018-07-27 06:02:06 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:06 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 06:02:13 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:13 EXEC SPC_G003_LST1 '','o','10','1';
+2018-07-27 06:02:20 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:20 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 06:02:34 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:34 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 06:02:40 EXEC SPC_COM_MENU '1';
+2018-07-27 06:02:40 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 06:03:36 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:03:36 EXEC SPC_COM_MENU '1';
+2018-07-27 06:03:36 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:03:46 EXEC SPC_COM_MENU '1';
+2018-07-27 06:03:46 EXEC SPC_G003_LST1 'dáddsads','','10','1';
+2018-07-27 06:03:46 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]データ型 nvarchar を tinyint に変換中にエラーが発生しました。
+2018-07-27 06:03:52 EXEC SPC_COM_MENU '1';
+2018-07-27 06:03:52 EXEC SPC_G003_LST1 'dáddsads','','10','1';
+2018-07-27 06:03:52 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]データ型 nvarchar を tinyint に変換中にエラーが発生しました。
+2018-07-27 06:04:06 EXEC SPC_COM_MENU '1';
+2018-07-27 06:04:06 EXEC SPC_G003_LST1 '6','','10','1';
+2018-07-27 06:09:43 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:09:43 EXEC SPC_COM_MENU '1';
+2018-07-27 06:09:43 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:26:42 EXEC SPC_COM_MENU '1';
+2018-07-27 06:26:42 EXEC SPC_G003_LST1 '','dsadasdsad','10','1';
+2018-07-27 06:26:50 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:26:50 EXEC SPC_COM_MENU '1';
+2018-07-27 06:26:50 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:26:59 EXEC SPC_COM_MENU '1';
+2018-07-27 06:26:59 EXEC SPC_G003_LST1 '','hôn','10','1';
+2018-07-27 06:27:11 EXEC SPC_COM_MENU '1';
+2018-07-27 06:27:11 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 06:27:22 EXEC SPC_COM_MENU '1';
+2018-07-27 06:27:22 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 06:28:37 EXEC SPC_COM_MENU '1';
+2018-07-27 06:28:37 EXEC SPC_G003_LST1 '','hôn','10','1';
+2018-07-27 06:33:43 EXEC SPC_COM_MENU '1';
+2018-07-27 06:33:43 EXEC SPC_G003_LST1 '','khóc','10','1';
+2018-07-27 06:33:47 EXEC SPC_COM_MENU '1';
+2018-07-27 06:33:47 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 06:33:50 EXEC SPC_COM_MENU '1';
+2018-07-27 06:33:50 EXEC SPC_G003_LST1 '','hôn','10','1';
+2018-07-27 06:33:53 EXEC SPC_COM_MENU '1';
+2018-07-27 06:33:53 EXEC SPC_G003_LST1 '','khóc','10','1';
+2018-07-27 06:33:56 EXEC SPC_COM_MENU '1';
+2018-07-27 06:33:56 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 06:35:22 EXEC SPC_COM_PERMISSION '1','g004';
+2018-07-27 06:35:22 EXEC SPC_COM_MENU '1';
+2018-07-27 06:35:22 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:35:25 EXEC SPC_COM_MENU '1';
+2018-07-27 06:35:25 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 06:35:36 EXEC SPC_COM_MENU '1';
+2018-07-27 06:35:36 EXEC SPC_G004_ACT1 '1','CAT-12','ndq809','127.0.0.1';
+2018-07-27 06:37:33 EXEC SPC_COM_PERMISSION '1','g004';
+2018-07-27 06:37:33 EXEC SPC_COM_MENU '1';
+2018-07-27 06:37:33 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:37:38 EXEC SPC_COM_MENU '1';
+2018-07-27 06:37:38 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 06:37:41 EXEC SPC_COM_MENU '1';
+2018-07-27 06:37:41 EXEC SPC_G004_ACT1 '2','CAT-7','ndq809','127.0.0.1';
+2018-07-27 06:37:44 EXEC SPC_COM_PERMISSION '1','g004';
+2018-07-27 06:37:44 EXEC SPC_COM_MENU '1';
+2018-07-27 06:37:44 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:40:24 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:40:24 EXEC SPC_COM_MENU '1';
+2018-07-27 06:40:24 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:40:25 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:40:25 EXEC SPC_COM_MENU '1';
+2018-07-27 06:40:25 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:40:30 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:40:30 EXEC SPC_COM_MENU '1';
+2018-07-27 06:40:30 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:40:34 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:40:34 EXEC SPC_COM_MENU '1';
+2018-07-27 06:40:34 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:41:56 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:41:56 EXEC SPC_COM_MENU '1';
+2018-07-27 06:41:56 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:43:21 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:43:21 EXEC SPC_COM_MENU '1';
+2018-07-27 06:43:21 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:45:10 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:45:10 EXEC SPC_COM_MENU '1';
+2018-07-27 06:45:10 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:45:39 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:45:39 EXEC SPC_COM_MENU '1';
+2018-07-27 06:45:39 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:45:55 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:45:55 EXEC SPC_COM_MENU '1';
+2018-07-27 06:45:55 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:46:20 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:46:20 EXEC SPC_COM_MENU '1';
+2018-07-27 06:46:20 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:46:33 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:46:33 EXEC SPC_COM_MENU '1';
+2018-07-27 06:46:33 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:46:52 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:46:52 EXEC SPC_COM_MENU '1';
+2018-07-27 06:46:52 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:47:24 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:47:24 EXEC SPC_COM_MENU '1';
+2018-07-27 06:47:24 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:47:51 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:47:51 EXEC SPC_COM_MENU '1';
+2018-07-27 06:47:51 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:48:30 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:48:30 EXEC SPC_COM_MENU '1';
+2018-07-27 06:48:30 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:48:52 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 06:48:52 EXEC SPC_COM_MENU '1';
+2018-07-27 06:48:52 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 06:48:55 EXEC SPC_COM_MENU '1';
+2018-07-27 06:48:55 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 06:48:58 EXEC SPC_COM_MENU '1';
+2018-07-27 06:48:58 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 06:49:02 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:02 EXEC SPC_COMMON_CATALORUE '5';
+2018-07-27 06:49:05 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:05 EXEC SPC_G003_LST1 '5','CAT-9','10','1';
+2018-07-27 06:49:14 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:14 EXEC SPC_G003_LST1 '5','','10','1';
+2018-07-27 06:49:18 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:18 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 06:49:19 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:19 EXEC SPC_G003_LST1 '1','','10','1';
+2018-07-27 06:49:22 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:22 EXEC SPC_G003_LST1 '1','CAT-12','10','1';
+2018-07-27 06:49:26 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:26 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 06:49:31 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:31 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 06:49:34 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:34 EXEC SPC_G003_LST1 '4','','10','1';
+2018-07-27 06:49:38 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:38 EXEC SPC_G003_LST1 '4','CAT-16','10','1';
+2018-07-27 06:49:42 EXEC SPC_COM_MENU '1';
+2018-07-27 06:49:42 EXEC SPC_G003_LST1 '4','','10','1';
+2018-07-27 06:50:42 EXEC SPC_COM_MENU '1';
+2018-07-27 06:50:42 EXEC SPC_G003_LST1 '4','','10','1';
+2018-07-27 07:13:48 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:13:48 EXEC SPC_COM_MENU '1';
+2018-07-27 07:13:48 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:13:51 EXEC SPC_COM_MENU '1';
+2018-07-27 07:13:51 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:13:54 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:13:54 EXEC SPC_COM_MENU '1';
+2018-07-27 07:13:54 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:14:22 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:14:22 EXEC SPC_COM_MENU '1';
+2018-07-27 07:14:22 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:14:27 EXEC SPC_COM_MENU '1';
+2018-07-27 07:14:27 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:14:29 EXEC SPC_COM_MENU '1';
+2018-07-27 07:14:29 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:23:40 EXEC SPC_COM_MENU '1';
+2018-07-27 07:24:03 EXEC SPC_COM_MENU '1';
+2018-07-27 07:24:03 EXEC SPC_G003_ACT1 '<row row_id="1" catalogue_id="CAT-6" catalogue_div="4" catalogue_nm="sdadsaddsa" />','ndq809','127.0.0.1';
+2018-07-27 07:24:03 EXEC SPC_COM_MENU '1';
+2018-07-27 07:24:03 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:25:51 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:25:51 EXEC SPC_COM_MENU '1';
+2018-07-27 07:25:51 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:25:53 EXEC SPC_COM_MENU '1';
+2018-07-27 07:25:53 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:25:54 EXEC SPC_COM_MENU '1';
+2018-07-27 07:25:54 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:26:04 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:26:04 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:04 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:26:07 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:07 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:26:08 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:26:08 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:08 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:26:09 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:09 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:26:10 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:10 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:26:25 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:26:25 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:25 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:26:57 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:26:57 EXEC SPC_COM_MENU '1';
+2018-07-27 07:26:57 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:27:00 EXEC SPC_COM_MENU '1';
+2018-07-27 07:27:00 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:27:01 EXEC SPC_COM_MENU '1';
+2018-07-27 07:27:01 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:27:55 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 07:27:55 EXEC SPC_COM_MENU '1';
+2018-07-27 07:27:55 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:27:58 EXEC SPC_COM_MENU '1';
+2018-07-27 07:27:58 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 07:27:59 EXEC SPC_COM_MENU '1';
+2018-07-27 07:27:59 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:28:01 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:01 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:28:03 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:03 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:28:05 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:05 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:28:07 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:07 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 07:28:38 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:28:38 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:38 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:28:41 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:41 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:28:42 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:42 EXEC SPC_COMMON_CATALORUE '5';
+2018-07-27 07:28:48 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:28:48 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:48 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:28:50 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:50 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:28:52 EXEC SPC_COM_MENU '1';
+2018-07-27 07:28:52 EXEC SPC_COMMON_CATALORUE '5';
+2018-07-27 07:29:36 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:29:36 EXEC SPC_COM_MENU '1';
+2018-07-27 07:29:36 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:29:38 EXEC SPC_COM_MENU '1';
+2018-07-27 07:29:38 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:29:40 EXEC SPC_COM_MENU '1';
+2018-07-27 07:29:40 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:31:06 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:31:06 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:06 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:31:09 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:09 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:31:11 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:11 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 07:31:46 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:46 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:31:48 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:48 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:31:50 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:50 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:31:53 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:53 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:31:55 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:55 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:31:57 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:57 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:31:59 EXEC SPC_COM_MENU '1';
+2018-07-27 07:31:59 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 07:32:01 EXEC SPC_COM_MENU '1';
+2018-07-27 07:32:01 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:32:02 EXEC SPC_COM_MENU '1';
+2018-07-27 07:32:02 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:34:09 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:34:09 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:09 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:34:11 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:11 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:34:13 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:13 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:34:14 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:14 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:34:16 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:16 EXEC SPC_COMMON_CATALORUE '5';
+2018-07-27 07:34:18 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:18 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:34:58 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:58 EXEC SPC_COMMON_CATALORUE '7';
+2018-07-27 07:34:59 EXEC SPC_COM_MENU '1';
+2018-07-27 07:34:59 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:35:00 EXEC SPC_COM_MENU '1';
+2018-07-27 07:35:00 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:35:03 EXEC SPC_COM_MENU '1';
+2018-07-27 07:35:03 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:37:10 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:37:10 EXEC SPC_COM_MENU '1';
+2018-07-27 07:37:10 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:37:13 EXEC SPC_COM_MENU '1';
+2018-07-27 07:37:13 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 07:37:16 EXEC SPC_COM_MENU '1';
+2018-07-27 07:37:16 EXEC SPC_G003_LST1 '2','CAT-7','10','1';
+2018-07-27 07:37:28 EXEC SPC_COM_MENU '1';
+2018-07-27 07:37:28 EXEC SPC_COMMON_CATALORUE '';
+2018-07-27 07:38:46 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:38:46 EXEC SPC_COM_MENU '1';
+2018-07-27 07:38:46 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:38:50 EXEC SPC_COM_MENU '1';
+2018-07-27 07:38:50 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:38:55 EXEC SPC_COM_MENU '1';
+2018-07-27 07:38:55 EXEC SPC_COMMON_CATALORUE '';
+2018-07-27 07:39:28 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:28 EXEC SPC_G003_LST1 '','dsadas','10','1';
+2018-07-27 07:39:36 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:36 EXEC SPC_G003_LST1 '','khóc','10','1';
+2018-07-27 07:39:43 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:43 EXEC SPC_G003_LST1 '','hôn','10','1';
+2018-07-27 07:39:48 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:48 EXEC SPC_G003_LST1 '','gia','10','1';
+2018-07-27 07:39:54 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:54 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 07:39:57 EXEC SPC_COM_MENU '1';
+2018-07-27 07:39:57 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 07:40:14 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:18 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:18 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:40:28 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:31 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:31 EXEC SPC_G003_ACT1 '<row row_id="1" catalogue_id="CAT-7" catalogue_div="2" catalogue_nm="khóc thêm lần nữa" /><row row_id="2" catalogue_id="CAT-16" catalogue_div="4" catalogue_nm="ăn chuối ngủ ngon" />','ndq809','127.0.0.1';
+2018-07-27 07:40:31 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:31 EXEC SPC_G003_LST1 '','2','10','1';
+2018-07-27 07:40:44 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:44 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:40:49 EXEC SPC_COM_MENU '1';
+2018-07-27 07:40:49 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:41:03 EXEC SPC_COM_MENU '1';
+2018-07-27 07:41:03 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 07:41:58 EXEC SPC_COM_MENU '1';
+2018-07-27 07:41:58 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:42:05 EXEC SPC_COM_MENU '1';
+2018-07-27 07:42:08 EXEC SPC_COM_MENU '1';
+2018-07-27 07:42:08 EXEC SPC_G003_ACT1 '<row row_id="1" catalogue_id="CAT-6" catalogue_div="4" catalogue_nm="CAT-16" />','ndq809','127.0.0.1';
+2018-07-27 07:42:09 EXEC SPC_COM_MENU '1';
+2018-07-27 07:42:09 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:42:33 EXEC SPC_COM_MENU '1';
+2018-07-27 07:42:33 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:42:43 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:48 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:48:48 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:48 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:48:49 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:49 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:48:51 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:51 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 07:48:55 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:58 EXEC SPC_COM_MENU '1';
+2018-07-27 07:48:58 EXEC SPC_G003_ACT1 '<row row_id="1" catalogue_id="CAT-6" catalogue_div="4" catalogue_nm="ăn chuối ngủ ngon" />','ndq809','127.0.0.1';
+2018-07-27 07:49:12 EXEC SPC_COM_MENU '1';
+2018-07-27 07:49:15 EXEC SPC_COM_MENU '1';
+2018-07-27 07:49:15 EXEC SPC_G003_ACT1 '<row row_id="1" catalogue_id="CAT-6" catalogue_div="4" catalogue_nm="ăn cơm thau" />','ndq809','127.0.0.1';
+2018-07-27 07:49:15 EXEC SPC_COM_MENU '1';
+2018-07-27 07:49:15 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:50:31 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:50:31 EXEC SPC_COM_MENU '1';
+2018-07-27 07:50:31 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:50:34 EXEC SPC_COM_MENU '1';
+2018-07-27 07:50:34 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:50:51 EXEC SPC_COM_PERMISSION '1','g006';
+2018-07-27 07:50:51 EXEC SPC_COM_MENU '1';
+2018-07-27 07:50:51 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:51:22 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:51:22 EXEC SPC_COM_MENU '1';
+2018-07-27 07:51:22 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:51:40 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:51:40 EXEC SPC_COM_MENU '1';
+2018-07-27 07:51:40 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:51:49 EXEC SPC_COM_MENU '1';
+2018-07-27 07:51:49 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 07:52:12 EXEC SPC_COM_MENU '1';
+2018-07-27 07:52:12 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:52:14 EXEC SPC_COM_MENU '1';
+2018-07-27 07:52:14 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 07:55:12 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:14 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:14 EXEC SPC_G003_ACT1 '<row row_id="3" catalogue_id="CAT-8" catalogue_div="3" catalogue_nm="ăn cơm nhớ kẻ nấu cơm" />','ndq809','127.0.0.1';
+2018-07-27 07:55:15 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:15 EXEC SPC_G003_LST1 '','','10','1';
+2018-07-27 07:55:26 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:26 EXEC SPC_COMMON_CATALORUE '2';
+2018-07-27 07:55:27 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:27 EXEC SPC_G003_LST1 '2','','10','1';
+2018-07-27 07:55:34 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:34 EXEC SPC_G003_LST1 '2','CAT-7','10','1';
+2018-07-27 07:55:38 EXEC SPC_COM_PERMISSION '1','g003';
+2018-07-27 07:55:38 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:38 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 07:55:49 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:49 EXEC SPC_G003_LST1 '','giải trí','10','1';
+2018-07-27 07:55:59 EXEC SPC_COM_MENU '1';
+2018-07-27 07:55:59 EXEC SPC_G003_LST1 '','ăn cơm','10','1';
+2018-07-27 08:40:38 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:40:38 EXEC SPC_COM_MENU '1';
+2018-07-27 08:40:38 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:40:51 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:40:51 EXEC SPC_COM_MENU '1';
+2018-07-27 08:40:52 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:41:17 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:41:17 EXEC SPC_COM_MENU '1';
+2018-07-27 08:41:17 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:41:43 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:41:43 EXEC SPC_COM_MENU '1';
+2018-07-27 08:41:43 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:41:53 EXEC SPC_COM_MENU '1';
+2018-07-27 08:41:53 EXEC SPC_G005_LST1 '2','dsadsd','sdsads','10','1';
+2018-07-27 08:44:02 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:44:02 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:02 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:44:04 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:04 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 08:44:12 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:12 EXEC SPC_G005_LST1 '','','hôn','10','1';
+2018-07-27 08:44:22 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:22 EXEC SPC_G005_LST1 '','','gia','10','1';
+2018-07-27 08:44:29 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:29 EXEC SPC_G005_LST1 '','','ăn','10','1';
+2018-07-27 08:44:34 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:34 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 08:44:44 EXEC SPC_COM_MENU '1';
+2018-07-27 08:44:44 EXEC SPC_G005_LST1 '','','tình','10','1';
+2018-07-27 08:45:41 EXEC SPC_COM_MENU '1';
+2018-07-27 08:45:41 EXEC SPC_COMMON_CATALORUE '4';
+2018-07-27 08:45:46 EXEC SPC_COM_MENU '1';
+2018-07-27 08:45:46 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 08:55:18 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:55:18 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:18 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:55:20 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:20 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 08:55:28 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:55:28 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:28 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:55:30 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:30 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 08:55:32 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:32 EXEC SPC_COMMON_CATALORUE '3';
+2018-07-27 08:55:41 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:44 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:44 EXEC SPC_G005_ACT1 '<row row_id="3" group_id="GRO-6" catalogue_div="3" catalogue_nm="CAT-8" group_nm="khóc đi em" />','ndq809','127.0.0.1';
+2018-07-27 08:55:44 EXEC SPC_COM_MENU '1';
+2018-07-27 08:55:44 EXEC SPC_G005_LST1 '','','','10','1';
+2018-07-27 08:57:04 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 08:57:04 EXEC SPC_COM_MENU '1';
+2018-07-27 08:57:04 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 08:57:06 EXEC SPC_COM_MENU '1';
+2018-07-27 08:57:06 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:02:58 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 09:02:58 EXEC SPC_COM_MENU '1';
+2018-07-27 09:02:58 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 09:03:01 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:01 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:03 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:03 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:08 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:08 EXEC SPC_G005_LST1 '1','CAT-12','','10','1';
+2018-07-27 09:03:10 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:10 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:10 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:10 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:03:11 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:11 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:19 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:19 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:19 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:19 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:19 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:19 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:19 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:03:19 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:25 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:25 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:25 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:25 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:26 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:26 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:26 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:26 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:03:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:28 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:28 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:03:38 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:38 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:03:38 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:39 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:39 EXEC SPC_COM_MENU '1';
+2018-07-27 09:03:39 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:03:39 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:04:21 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:21 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:04:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:04:21 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:21 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:21 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:04:21 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:04:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:04:28 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:04:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:28 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:28 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:04:28 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:04:31 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:31 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:31 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:04:31 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:04:31 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:31 EXEC SPC_COM_MENU '1';
+2018-07-27 09:04:32 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:04:32 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:05:01 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:01 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:05:02 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:02 EXEC SPC_COMMON_GROUP 'CAT-12';
+2018-07-27 09:05:13 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 09:05:13 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:13 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 09:05:17 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:17 EXEC SPC_COMMON_GROUP 'Tất cả';
+2018-07-27 09:05:35 EXEC SPC_COM_PERMISSION '1','g005';
+2018-07-27 09:05:35 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:35 EXEC SPC_COM_M999_INQ1 '7';
+2018-07-27 09:05:46 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:46 EXEC SPC_COMMON_CATALORUE '1';
+2018-07-27 09:05:46 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:46 EXEC SPC_COMMON_GROUP '';
+2018-07-27 09:05:52 EXEC SPC_COM_MENU '1';
+2018-07-27 09:05:52 EXEC SPC_COMMON_GROUP 'CAT-12';

@@ -41,5 +41,12 @@ Route::group(
 		Route::post('changepass', 'CommonController@changePass');
 		Route::post('upload-image', 'CommonController@postUpload');
 		Route::post('crop-image', 'CommonController@postCrop');
+		Route::any('addLesson','CommonController@addLesson');
+		Route::any('deleteLesson','CommonController@deleteLesson');
+		Route::any('remembervoc','CommonController@remembervoc');
+		Route::any('forgetvoc','CommonController@forgetvoc');
+		Route::any('getExample','CommonController@getExample');
+		Route::any('addExample','CommonController@addExample');
+		Route::any('toggleEffect','CommonController@toggleEffect');
 	}
 );

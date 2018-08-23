@@ -9,6 +9,7 @@ $(function(){
 function init_g005(){
 	initevent_g005();
     $('.update-block #catalogue_nm')[0].selectize.disable();
+    $('.update-block #group_nm')[0].selectize.disable();
 }
 
 function initevent_g005(){
@@ -49,12 +50,21 @@ function initevent_g005(){
            }); 
         }
     })
-    $(document).on('click','.edit-save',function(e){
-        updateEditArray();
+
+    $(document).on('change','.search-block #catalogue_div_s',function(){
+        updateCatalogue_s(this);
     })
 
-     $(document).on('change','#catalogue_div',function(){
-        updateCatalogue(this);
+     $(document).on('change','.update-block #catalogue_div',function(){
+        updateCatalogue(this,$('.table-focus .update-row td[refer-id=catalogue_nm]').text());
+    })
+
+     $(document).on('change','#catalogue_nm_s',function(){
+        updateGroup_s(this);
+    })
+
+     $(document).on('change','#catalogue_nm',function(){
+        updateGroup(this,$('.table-focus .update-row td[refer-id=group_nm]').text());
     })
 }
 
@@ -118,6 +128,7 @@ function g005_delete(){
 }
 
 function g005_update(trigger){
+    clearFailedDataTable();
     if(typeof trigger=='undefined')
         trigger=true;
     $.ajax({
@@ -137,6 +148,10 @@ function g005_update(trigger){
                     clearFailedValidate();
                     showFailedValidate(res.error);
                     break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedDataTable(res.data);
+                    break;
                 case 208:
                     clearFailedValidate();
                     showMessage(4);
@@ -152,26 +167,30 @@ function g005_update(trigger){
     });
 }
 
-function updateCatalogue(change_item){
+function updateCatalogue(change_item,sub_item_text){
+    parent_div='.update-block';
+    sub_item='#catalogue_nm';
     var data=$(change_item).val();
     $.ajax({
         type: 'POST',
         url: '/master/common/getcatalogue',
         dataType: 'json',
-        loading:true,
+        // loading:true,
         data:{
             data:data
         } ,//convert to object
         success: function (res) {
             switch(res.status){
                 case 200:
-                    $('.update-block #catalogue_nm')[0].selectize.setValue('');
-                    $('.update-block #catalogue_nm')[0].selectize.clearOptions();
-                    $('.update-block #catalogue_nm')[0].selectize.addOption(res.data);
+                    var selectize_sub=$(parent_div).find(sub_item)[0].selectize;
+                    selectize_sub.setValue('');
+                    selectize_sub.clearOptions();
+                    selectize_sub.addOption(res.data);
                     if($(change_item).val()==0){
-                        $('.update-block #catalogue_nm')[0].selectize.disable();
+                        selectize_sub.disable();
                     }else{
-                        $('.update-block #catalogue_nm')[0].selectize.enable();
+                        selectize_sub.enable();
+                        selectize_sub.setValue(selectize_sub.getValueByText(sub_item_text));
                     }
                     break;
                 case 201:
@@ -193,3 +212,129 @@ function updateCatalogue(change_item){
     });
 }
 
+function updateGroup(change_item,sub_item_text){
+    parent_div='.update-block';
+    sub_item='#group_nm';
+    var data=$(change_item).val();
+    var selectize_sub=$(parent_div).find(sub_item)[0].selectize;
+    if($(change_item).val()==0){
+        selectize_sub.setValue('',true);
+        selectize_sub.clearOptions();
+        selectize_sub.disable();
+        return;
+    }
+    $.ajax({
+        type: 'POST',
+        url: '/master/common/getgroup',
+        dataType: 'json',
+        // loading:true,
+        data:{
+            data:data
+        } ,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    selectize_sub.setValue('',true);
+                    selectize_sub.clearOptions();
+                    selectize_sub.addOption(res.data);
+                    if($(change_item).val()==0){
+                        selectize_sub.disable();
+                    }else{
+                        selectize_sub.enable();
+                        selectize_sub.setValue(selectize_sub.getValueByText(sub_item_text));
+                    }
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function updateCatalogue_s(change_item){
+     var parent_div='.search-block';
+     var sub_item='#catalogue_nm_s';
+    var data=$(change_item).val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/common/getcatalogue',
+        dataType: 'json',
+        // loading:true,
+        data:{
+            data:data
+        } ,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    var selectize_sub=$(parent_div).find(sub_item)[0].selectize;
+                    selectize_sub.clearOptions();
+                    selectize_sub.addOption(res.data);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function updateGroup_s(change_item){
+    var parent_div='.search-block';
+    var sub_item='#group_nm_s';
+    var data=$(change_item).val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/common/getgroup',
+        dataType: 'json',
+        // loading:true,
+        data:{
+            data:data
+        } ,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    var selectize_sub=$(parent_div).find(sub_item)[0].selectize;
+                    selectize_sub.clearOptions();
+                    selectize_sub.addOption(res.data);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}

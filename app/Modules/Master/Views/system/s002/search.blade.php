@@ -24,10 +24,10 @@
                     <td><input type="checkbox" name="" class="sub-checkbox"></td>
                     <td>{{$index+1}}</td>
                     <td refer-id='account_id'>{{$row['account_id']}}</td>
-                    <td refer-id='account_nm'>{{$row['account_nm']}}</td>
-                    <td refer-id='employee_id'>{{$row['employee_nm']}}</td>
-                    <td refer-id='system_div'>{{$row['system_div']}}</td>
-                    <td refer-id='account_div'>{{$row['account_div']}}</td>
+                    <td refer-id='account_nm'><span>{{$row['account_nm']}}</span></td>
+                    <td refer-id='employee_id'><span>{{$row['employee_nm']}}</span></td>
+                    <td refer-id='system_div'><span>{{$row['system_div']}}</span></td>
+                    <td refer-id='account_div'><span>{{$row['account_div']}}</span></td>
                     <td refer-id='remark'>{{$row['remark']}}</td>
                     <td class="edit-flag">Không</td>
                 </tr>

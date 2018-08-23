@@ -8,7 +8,7 @@ class Button
     protected static $button_val = array(
         'btn-list'         => array('id' => 'btn-list', 'class' => '', 'icon' => 'fa fa-file-text', 'label' => 'Danh Sách', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-add'          => array('id' => 'btn-add', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'add'),
-        'btn-update'       => array('id' => 'btn-update', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'edit'),
+        'btn-update'       => array('id' => 'btn-update', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Cập Nhật', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'edit'),
         'btn-delete'       => array('id' => 'btn-delete', 'class' => '', 'icon' => 'fa fa-remove', 'label' => 'Xóa', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'delete'),
         'btn-search'       => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-search', 'label' => 'Tìm Kiếm', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-save'         => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'edit'),
@@ -19,6 +19,8 @@ class Button
         'btn-add-page'     => array('id' => 'btn-add-page', 'class' => '', 'icon' => 'fa fa-share', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-change-pass'  => array('id' => 'btn-change-pass', 'class' => '', 'icon' => 'fa fa-key', 'label' => 'Đổi MK', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-refresh'      => array('id' => 'btn-refresh', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Làm Mới', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-edit'         => array('id' => 'btn-edit', 'class' => '', 'icon' => 'fa fa-wrench', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-upgrade'      => array('id' => 'btn-upgrade', 'class' => '', 'icon' => 'fa fa-line-chart', 'label' => 'Tái Bản', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

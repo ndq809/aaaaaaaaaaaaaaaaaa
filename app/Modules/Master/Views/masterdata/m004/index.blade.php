@@ -15,7 +15,7 @@
     </div>
     <div class="panel-content no-padding-left update-block">
         <div class="no-padding avarta-block">
-            <div class="col-sm-12 no-padding-right">
+            <div class="col-sm-12 no-padding-right padding-left-10">
                 <div class="form-group old-item">
                     <label>Hình Ảnh Mặc Định</label>
                     <div id="imageContainer"></div>

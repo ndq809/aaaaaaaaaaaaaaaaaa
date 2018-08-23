@@ -17,31 +17,29 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục</label>
-                <select class="allow-selectize submit-item" id="catalogue_div">
+                <select class="allow-selectize submit-item" id="catalogue_div_s">
                      @foreach($data_default[0] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
                 </select>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
+        <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Tên Danh Mục</label>
-                <div class="input-group">
-                    <input type="text" id="catalogue_nm" name="" class="form-control input-sm submit-item" placeholder="Nhập tên danh mục">
-                </div>
+                <select class="submit-item allow-selectize new-allow" id="catalogue_nm_s">
+                    <option></option>
+                </select>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
+        <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Tên Nhóm</label>
-                <div class="input-group">
-                    <input type="text" name="" id="group_nm" class="form-control input-sm submit-item" placeholder="Nhập tên nhóm">
-                </div>
+                <select id="group_nm_s" class="submit-item new-allow allow-selectize">
+                        <option value=""></option>
+                </select>
             </div>
         </div>
-    </div>
-    <div class="panel-bottom">
     </div>
 </div>
 <div id="result" class="panel main-panel col-xs-12">
@@ -64,7 +62,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục</label>
-                <select class="allow-selectize submit-item required" id="catalogue_div">
+                <select class="submit-item allow-selectize required" id="catalogue_div">
                      @foreach($data_default[0] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -75,16 +73,16 @@
             <div class="form-group">
                 <label>Tên Danh Mục</label>
                 <select class="submit-item allow-selectize required" id="catalogue_nm">
-                    <option>Tất cả</option>
+                    <option></option>
                 </select>
             </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 no-padding-right">
             <div class="form-group">
                 <label>Tên Nhóm</label>
-                <div class="input-group">
-                    <input type="text" name="" id="group_nm" class="form-control input-sm submit-item required" placeholder="Nhập tên nhóm">
-                </div>
+                <select id="group_nm" class="submit-item new-allow get-text required allow-selectize" placeholder="Lưu ý: Sửa với giá trị ngoài danh sách bên dưới">
+                        <option value=""></option>
+                </select>
             </div>
         </div>
     </div>

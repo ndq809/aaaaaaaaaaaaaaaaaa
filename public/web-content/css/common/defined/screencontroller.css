@@ -152,3 +152,9 @@
         padding-left: 0px;
     }
 }
+
+@media (max-width: 767px){
+    .visible-xs {
+        display: inline-block!important;
+    }
+}

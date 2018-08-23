@@ -10,7 +10,7 @@ use Validator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
-use Illuminate\Support\Facades\File;
+use File;
 use Illuminate\Support\Facades\URL;
 
 class CommonController extends Controller
@@ -187,7 +187,7 @@ class CommonController extends Controller
         $filename_ext = $allowed_filename .'_'.date("Ymd HHmmss").round(microtime(true) * 1000).'.jpg';
 
         $manager = new ImageManager();
-        $image = $manager->make( $photo )->encode('jpg')->save((public_path('uploads')).'/'  . $filename_ext );
+        $image = $manager->make( $photo )->encode('jpg')->save((public_path('uploads')).'/'  . $filename_ext ,100);
         // var_dump(public_path('uploads'));die;
         if( !$image) {
 
@@ -204,7 +204,7 @@ class CommonController extends Controller
         // $database_image->save();
         return Response::json([
             'status'    => 'success',
-            'url'       => 'http://eplus.win'.'/uploads/' . $filename_ext,
+            'url'       => '/uploads/' . $filename_ext,
             'width'     => $image->width(),
             'height'    => $image->height()
         ], 200);
@@ -232,11 +232,11 @@ class CommonController extends Controller
         $filename = $filename_array[sizeof($filename_array)-1];
         $manager = new ImageManager();
         $image = $manager->make( 'uploads/'.$filename );
-
+        // var_dump($form_data);die;
         $image->resize($imgW, $imgH)
-            ->rotate(-$angle)
+            // ->rotate(-$angle)
             ->crop($cropW, $cropH, $imgX1, $imgY1)
-            ->save((public_path('uploads')).'/cropped-'  . $filename);
+            ->save((public_path('uploads')).'/cropped-'  . $filename,100);
 
         if( !$image) {
 
@@ -246,15 +246,23 @@ class CommonController extends Controller
             ], 208);
 
         }
-
+        File::delete((public_path('uploads/'))  . $filename);
         return Response::json([
             'status' => 'success',
-            'url' => 'http://eplus.win' . '/uploads/cropped-' . $filename
+            'url' => '/uploads/cropped-' . $filename
         ], 200);
 
     }
 
+    public function postCropDelete(Request $request)
+    {
+        $data = $request->all();
+        File::delete((public_path('uploads/'))  . explode('/',$data['image'])[2]);
+        return Response::json([
+            'status' => 'success',
+        ], 200);
 
+    }
     private function sanitize($string, $force_lowercase = true, $anal = false)
     {
         $strip = array("~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "=", "+", "[", "{", "]",
@@ -305,13 +313,13 @@ class CommonController extends Controller
 
     public function com_validate(Request $request)
     {
-       if ($this->checkValidate($request)['result']) {
+       if ($this->checkValidate($request->all())['result']) {
             $result = array(
                 'status' => 200,
                 'statusText' => 'success',
             );
         } else {
-           $result = array('error'    => $this->checkValidate($request)['error'],
+           $result = array('error'    => $this->checkValidate($request->all())['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }

@@ -84,7 +84,7 @@ class SqlXml
     private function _convert($str)
     {
         $search = array('<', '>', '"', '\'', '&');
-        $replace = array('&lt;', '&gt;', '&quot;', '&apos;', '&amp;');
+        $replace = array('&lt;', '&gt;', '&quot;', '&#39;', '&amp;');
         return str_replace($search, $replace, $str);
     }
 

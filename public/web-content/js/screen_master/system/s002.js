@@ -49,9 +49,6 @@ function initevent_s002(){
            }); 
         }
     })
-    $(document).on('click','.edit-save',function(e){
-        updateEditArray();
-    })
 }
 
 function s002_execute(page){
@@ -114,6 +111,7 @@ function s002_delete(){
 }
 
 function s002_update(trigger){
+    clearFailedDataTable();
     if(typeof trigger=='undefined')
         trigger=true;
     $.ajax({
@@ -132,6 +130,10 @@ function s002_update(trigger){
                 case 201:
                     clearFailedValidate();
                     showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedDataTable(res.data);
                     break;
                 case 208:
                     clearFailedValidate();
