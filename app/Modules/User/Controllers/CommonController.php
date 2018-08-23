@@ -77,6 +77,32 @@ class CommonController extends ControllerUser
         return $pass;
     }
 
+     public function getcatalogue(Request $request)
+    {
+          $data        = $request->all();    
+          $data = Dao::call_stored_procedure('SPC_COMMON_CATALORUE',$data);
+          $result = array(
+                'status' => 200,
+                'data' => $data[0],
+                'statusText' => 'success',
+            );
+          return response()->json($result);
+
+    }
+
+     public function getgroup(Request $request)
+    {
+          $data        = $request->all();    
+          $data = Dao::call_stored_procedure('SPC_COMMON_GROUP',$data);
+          $result = array(
+                'status' => 200,
+                'data' => $data[0],
+                'statusText' => 'success',
+            );
+          return response()->json($result);
+
+    }
+
     public function addLesson(Request $request)
    {
         $param = $request->all();

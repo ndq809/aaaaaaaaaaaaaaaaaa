@@ -48,5 +48,7 @@ Route::group(
 		Route::any('getExample','CommonController@getExample');
 		Route::any('addExample','CommonController@addExample');
 		Route::any('toggleEffect','CommonController@toggleEffect');
+		Route::post('getcatalogue', 'CommonController@getcatalogue');
+		Route::post('getgroup', 'CommonController@getgroup');
 	}
 );

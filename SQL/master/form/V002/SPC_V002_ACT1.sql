@@ -42,47 +42,6 @@ BEGIN
 	BEGIN TRY
 	IF @P_vocabulary_id = '' OR @P_vocabulary_dtl_id=''
 	BEGIN
-		INSERT INTO M012(
-			target_id
-		,	target_dtl_id
-		,	language1_content
-		,	language2_content
-		,	clap
-		,	del_flg
-		,	cre_user
-		,	cre_prg
-		,	cre_ip
-		,	cre_date
-		,	upd_user
-		,	upd_prg
-		,	upd_ip
-		,	upd_date
-		,	del_user
-		,	del_prg
-		,	del_ip
-		,	del_date
-
-		)
-		SELECT
-			@P_vocabulary_id
-		,	@P_vocabulary_dtl_id
-		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
-		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
-		,	0
-		,	0
-		,	@P_user_id
-		,	@w_program_id
-		,	@P_ip
-		,	@w_time
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		FROM @P_xml_detail.nodes('row') T(C)
 		SELECT @w_inserted_key = ISNULL(MAX(M006.vocabulary_id),0) + 1 FROM M006
 		SELECT @w_inserted_dtl_key= ISNULL(MAX(M006.vocabulary_dtl_id),0)+ 1 FROM M006 WHERE M006.vocabulary_id = @P_vocabulary_id
 		INSERT INTO M006
@@ -111,13 +70,10 @@ BEGIN
 		,	NULL
 		,	NULL
 
-	END
-	ELSE
-	BEGIN
-		DELETE FROM M012 WHERE M012.target_id = @P_vocabulary_id AND M012.target_dtl_id = @P_vocabulary_dtl_id
+		SET @w_inserted_key = scope_identity()
+		
 		INSERT INTO M012(
 			target_id
-		,	target_dtl_id
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -137,8 +93,53 @@ BEGIN
 
 		)
 		SELECT
-			@P_vocabulary_id
-		,	@P_vocabulary_dtl_id
+			@w_inserted_key
+		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
+		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
+		,	0
+		,	0
+		,	@P_user_id
+		,	@w_program_id
+		,	@P_ip
+		,	@w_time
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		FROM @P_xml_detail.nodes('row') T(C)
+		
+
+	END
+	ELSE
+	BEGIN
+		SELECT @w_inserted_key = M006.id FROM M006 WHERE M006.vocabulary_id = @P_vocabulary_id AND M006.vocabulary_dtl_id = @P_vocabulary_dtl_id
+		DELETE FROM M012 WHERE M012.target_id = @P_vocabulary_id
+		INSERT INTO M012(
+			target_id
+		,	language1_content
+		,	language2_content
+		,	clap
+		,	del_flg
+		,	cre_user
+		,	cre_prg
+		,	cre_ip
+		,	cre_date
+		,	upd_user
+		,	upd_prg
+		,	upd_ip
+		,	upd_date
+		,	del_user
+		,	del_prg
+		,	del_ip
+		,	del_date
+
+		)
+		SELECT
+			@w_inserted_key
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0

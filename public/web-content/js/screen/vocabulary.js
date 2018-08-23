@@ -277,9 +277,10 @@ function updateGroup(change_item,sub_item_text){
     var selectize_sub=$('#group_nm')[0].selectize;
     $.ajax({
         type: 'POST',
-        url: '/master/common/getgroup',
+        url: '/common/getgroup',
         dataType: 'json',
         // loading:true,
+        Accept : 'application/json',
         data:{
             data:data
         } ,//convert to object

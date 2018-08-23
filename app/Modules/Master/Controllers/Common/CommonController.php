@@ -187,7 +187,7 @@ class CommonController extends Controller
         $filename_ext = $allowed_filename .'_'.date("Ymd HHmmss").round(microtime(true) * 1000).'.jpg';
 
         $manager = new ImageManager();
-        $image = $manager->make( $photo )->encode('jpg')->save((public_path('uploads')).'/'  . $filename_ext ,100);
+        $image = $manager->make( $photo )->encode('jpg')->save((public_path('web-content/images/vocabulary')).'/'  . $filename_ext ,100);
         // var_dump(public_path('uploads'));die;
         if( !$image) {
 
@@ -204,7 +204,7 @@ class CommonController extends Controller
         // $database_image->save();
         return Response::json([
             'status'    => 'success',
-            'url'       => '/uploads/' . $filename_ext,
+            'url'       => '/web-content/images/vocabulary/' . $filename_ext,
             'width'     => $image->width(),
             'height'    => $image->height()
         ], 200);
@@ -231,12 +231,12 @@ class CommonController extends Controller
         $filename_array = explode('/', $image_url);
         $filename = $filename_array[sizeof($filename_array)-1];
         $manager = new ImageManager();
-        $image = $manager->make( 'uploads/'.$filename );
+        $image = $manager->make( 'web-content/images/vocabulary/'.$filename );
         // var_dump($form_data);die;
         $image->resize($imgW, $imgH)
             // ->rotate(-$angle)
             ->crop($cropW, $cropH, $imgX1, $imgY1)
-            ->save((public_path('uploads')).'/cropped-'  . $filename,100);
+            ->save((public_path('web-content/images/vocabulary')).'/cropped-'  . $filename,100);
 
         if( !$image) {
 
@@ -246,10 +246,10 @@ class CommonController extends Controller
             ], 208);
 
         }
-        File::delete((public_path('uploads/'))  . $filename);
+        File::delete((public_path('web-content/images/vocabulary/'))  . $filename);
         return Response::json([
             'status' => 'success',
-            'url' => '/uploads/cropped-' . $filename
+            'url' => '/web-content/images/vocabulary/cropped-' . $filename
         ], 200);
 
     }
@@ -257,7 +257,7 @@ class CommonController extends Controller
     public function postCropDelete(Request $request)
     {
         $data = $request->all();
-        File::delete((public_path('uploads/'))  . explode('/',$data['image'])[2]);
+        File::delete((public_path('web-content/images/vocabulary/'))  . explode('/',$data['image'])[2]);
         return Response::json([
             'status' => 'success',
         ], 200);

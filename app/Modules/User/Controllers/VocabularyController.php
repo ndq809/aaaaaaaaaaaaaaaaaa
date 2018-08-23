@@ -16,14 +16,14 @@ class VocabularyController extends ControllerUser
      */
 	public function getIndex()
 	{
-        $data = Dao::call_stored_procedure('SPC_VOCABULARY_LST1',array(Auth::user()->account_nm));
+        $data = Dao::call_stored_procedure('SPC_VOCABULARY_LST1',array(isset(Auth::user()->account_nm)?Auth::user()->account_nm:''));
 		return view('User::vocabulary.index')->with('data_default',$data);;
 	}
 
    public function getData(Request $request)
    {
         $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
+        $param['user_id']=isset(Auth::user()->account_nm)?Auth::user()->account_nm:'';
         $data = Dao::call_stored_procedure('SPC_VOCABULARY_LST2',$param);
         // var_dump($data);die;
         $view1 = view('User::vocabulary.right_tab')->with('data', $data[2])->render();

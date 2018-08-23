@@ -40,12 +40,11 @@ BEGIN
 	,	M012.language2_content
 	FROM M012
 	INNER JOIN M006
-	ON M012.target_id				= M006.vocabulary_id
-	AND	M012.target_dtl_id			= M006.vocabulary_dtl_id
+	ON M012.target_id				= M006.id
 	AND M006.del_flg = 0
 	WHERE 
-		M012.target_id				= @P_vocabulary_id
-	AND	M012.target_dtl_id			= @P_vocabulary_dtl_id
+		M006.vocabulary_id				= @P_vocabulary_id
+	AND	M006.vocabulary_dtl_id			= @P_vocabulary_dtl_id
 	AND	M012.del_flg = 0
 
 	--
