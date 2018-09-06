@@ -57,7 +57,7 @@ BEGIN
 	AND	(M999_1.name_div = 4)
 	LEFT JOIN M999 AS M999_2
 	ON	(S001.account_div = M999_2.number_id)
-	AND	(M999_2.name_div = 5)
+	AND	(M999_2.name_div IN (SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 4 AND M999.number_id = S001.system_div AND M999.del_flg = 0))
 	WHERE S001.del_flg = 0 
 	AND		(	(@P_account_nm		= '')
 		OR	(	S001.account_nm	LIKE '%' + @P_account_nm + '%'))

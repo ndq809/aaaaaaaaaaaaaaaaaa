@@ -32,11 +32,11 @@
                     <option></option>
                 </select>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top" id="btn-add-lesson">Lưu bài học này</button>
+            <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}">Lưu bài học này</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Từ Vựng Chưa Thuộc</a></li>
-            <li class=""><a data-toggle="tab" href="#tab2" aria-expanded="false">Từ Vựng Đã Thuộc</a></li>
+            <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Từ Vựng Đã Thuộc</a></li>
         </ul>
         <div class="tab-content focusable" id="result1">
             @include('User::vocabulary.right_tab')

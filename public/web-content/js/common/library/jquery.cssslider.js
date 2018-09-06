@@ -150,8 +150,11 @@
         }
 
         if (this.options.infiniteScroll) {
-            sliderItems.eq(this._wrapIndex(n - 1)).removeClass().addClass("previous_item");
-            sliderItems.eq(this._wrapIndex(n + 1)).removeClass().addClass("next_item");
+            if(this.numSliderItems!=1){
+                sliderItems.eq(this._wrapIndex(n - 1)).removeClass().addClass("previous_item");
+                sliderItems.eq(this._wrapIndex(n + 1)).removeClass().addClass("next_item");
+            }
+            
 
             // if (this.options.visibleItems == 3) {
             //     sliderItems.eq(this._wrapIndex(n - 2)).removeClass().addClass("previous_hidden");

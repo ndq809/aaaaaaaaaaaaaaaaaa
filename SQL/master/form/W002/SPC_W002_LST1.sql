@@ -25,9 +25,9 @@ BEGIN
 
 	EXEC SPC_COM_M999_INQ1 '8'
 
-	SELECT 
-		M006.vocabulary_id
-	,	M006.vocabulary_dtl_id
+	SELECT
+		M006.id AS vocabulary_code
+	,	M006.vocabulary_id
 	,	M006.vocabulary_div
 	,	M006.vocabulary_nm
 	,	M006.spelling
@@ -35,8 +35,7 @@ BEGIN
 	,	M006.explain
 	FROM F009
 	JOIN M006
-	ON F009.vocabulary_id = M006.vocabulary_id
-	AND F009.vocabulary_dtl_id = M006.vocabulary_dtl_id
+	ON F009.vocabulary_code = M006.id
 	AND M006.del_flg = 0 
 	WHERE F009.briged_id 
 	IN (SELECT

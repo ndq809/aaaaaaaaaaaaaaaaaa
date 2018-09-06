@@ -1,0 +1,1002 @@
+2018-09-05 00:03:02 EXEC SPC_COM_PERMISSION '1','g001';
+2018-09-05 00:03:02 EXEC SPC_COM_MENU '1';
+2018-09-05 00:03:08 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 00:03:08 EXEC SPC_COM_MENU '1';
+2018-09-05 00:03:08 EXEC SPC_S001_FND1
+2018-09-05 00:03:12 EXEC SPC_COM_MENU '1';
+2018-09-05 00:03:12 EXEC SPC_S001_FND2 '5';
+2018-09-05 00:03:14 EXEC SPC_COM_MENU '1';
+2018-09-05 00:03:14 EXEC SPC_S001_LST1 '1';
+2018-09-05 00:03:18 EXEC SPC_COM_MENU '1';
+2018-09-05 00:03:18 EXEC SPC_S001_FND2 '14';
+2018-09-05 00:18:46 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 00:18:46 EXEC SPC_COM_MENU '1';
+2018-09-05 00:18:46 EXEC SPC_M007_FND1
+2018-09-05 00:18:52 EXEC SPC_COM_MENU '1';
+2018-09-05 00:18:52 EXEC SPC_m007_LST1 '13';
+2018-09-05 00:18:52 EXEC SPC_M007_FND1
+2018-09-05 00:22:44 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 00:22:44 EXEC SPC_COM_MENU '1';
+2018-09-05 00:22:44 EXEC SPC_M007_FND1
+2018-09-05 00:23:13 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 00:23:13 EXEC SPC_COM_MENU '1';
+2018-09-05 00:23:13 EXEC SPC_M007_FND1
+2018-09-05 00:23:46 EXEC SPC_COM_MENU '1';
+2018-09-05 00:23:46 EXEC SPC_m007_LST1 '13';
+2018-09-05 00:23:46 EXEC SPC_M007_FND1
+2018-09-05 00:37:51 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 00:37:51 EXEC SPC_COM_MENU '1';
+2018-09-05 00:37:51 EXEC SPC_S001_FND1
+2018-09-05 00:37:54 EXEC SPC_COM_MENU '1';
+2018-09-05 00:37:54 EXEC SPC_S001_FND2 '14';
+2018-09-05 00:37:56 EXEC SPC_COM_MENU '1';
+2018-09-05 00:37:56 EXEC SPC_S001_LST2 '1';
+2018-09-05 00:39:41 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 00:39:41 EXEC SPC_COM_MENU '1';
+2018-09-05 00:39:41 EXEC SPC_S001_FND1
+2018-09-05 00:39:44 EXEC SPC_COM_MENU '1';
+2018-09-05 00:39:44 EXEC SPC_S001_FND2 '14';
+2018-09-05 00:39:45 EXEC SPC_COM_MENU '1';
+2018-09-05 00:39:45 EXEC SPC_S001_LST2 '1';
+2018-09-05 00:59:13 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 00:59:13 EXEC SPC_COM_MENU '1';
+2018-09-05 00:59:13 EXEC SPC_S001_FND1
+2018-09-05 00:59:16 EXEC SPC_COM_MENU '1';
+2018-09-05 00:59:16 EXEC SPC_S001_FND2 '14';
+2018-09-05 00:59:17 EXEC SPC_COM_MENU '1';
+2018-09-05 00:59:17 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:00:18 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:00:18 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:18 EXEC SPC_S001_FND1
+2018-09-05 01:00:20 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:20 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:00:21 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:21 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:00:45 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:00:45 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:45 EXEC SPC_S001_FND1
+2018-09-05 01:00:48 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:48 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:00:50 EXEC SPC_COM_MENU '1';
+2018-09-05 01:00:50 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:01:23 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:01:23 EXEC SPC_COM_MENU '1';
+2018-09-05 01:01:23 EXEC SPC_S001_FND1
+2018-09-05 01:01:26 EXEC SPC_COM_MENU '1';
+2018-09-05 01:01:26 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:01:28 EXEC SPC_COM_MENU '1';
+2018-09-05 01:01:28 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:02:10 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:02:10 EXEC SPC_COM_MENU '1';
+2018-09-05 01:02:10 EXEC SPC_S001_FND1
+2018-09-05 01:02:14 EXEC SPC_COM_MENU '1';
+2018-09-05 01:02:14 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:02:16 EXEC SPC_COM_MENU '1';
+2018-09-05 01:02:16 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:04:48 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:04:48 EXEC SPC_COM_MENU '1';
+2018-09-05 01:04:48 EXEC SPC_S001_FND1
+2018-09-05 01:04:50 EXEC SPC_COM_MENU '1';
+2018-09-05 01:04:50 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:04:52 EXEC SPC_COM_MENU '1';
+2018-09-05 01:04:52 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:06:46 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:06:46 EXEC SPC_COM_MENU '1';
+2018-09-05 01:06:46 EXEC SPC_S001_FND1
+2018-09-05 01:06:49 EXEC SPC_COM_MENU '1';
+2018-09-05 01:06:49 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:06:51 EXEC SPC_COM_MENU '1';
+2018-09-05 01:06:51 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:07:23 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:07:23 EXEC SPC_COM_MENU '1';
+2018-09-05 01:07:23 EXEC SPC_S001_FND1
+2018-09-05 01:07:26 EXEC SPC_COM_MENU '1';
+2018-09-05 01:07:26 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:07:27 EXEC SPC_COM_MENU '1';
+2018-09-05 01:07:27 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:09:13 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:09:13 EXEC SPC_COM_MENU '1';
+2018-09-05 01:09:13 EXEC SPC_S001_FND1
+2018-09-05 01:09:22 EXEC SPC_COM_MENU '1';
+2018-09-05 01:09:22 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:09:23 EXEC SPC_COM_MENU '1';
+2018-09-05 01:09:23 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:10:19 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:10:19 EXEC SPC_COM_MENU '1';
+2018-09-05 01:10:19 EXEC SPC_S001_FND1
+2018-09-05 01:10:21 EXEC SPC_COM_MENU '1';
+2018-09-05 01:10:21 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:10:22 EXEC SPC_COM_MENU '1';
+2018-09-05 01:10:22 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:14:11 EXEC SPC_COM_MENU '1';
+2018-09-05 01:14:11 EXEC SPC_S001_ACT1 '1','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 01:14:13 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:14:13 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:14:13 EXEC SPC_COM_PERMISSION '1','g001';
+2018-09-05 01:14:35 EXEC SPC_COM_PERMISSION '2','s001';
+2018-09-05 01:14:35 EXEC SPC_COM_PERMISSION '2','master';
+2018-09-05 01:14:36 EXEC SPC_COM_PERMISSION '2','g001';
+2018-09-05 01:16:26 EXEC SPC_COM_PERMISSION '3','g001';
+2018-09-05 01:16:26 EXEC SPC_COM_MENU '3';
+2018-09-05 01:24:53 EXEC SPC_COM_PERMISSION '3','g001';
+2018-09-05 01:25:23 EXEC SPC_COM_PERMISSION '3','g001';
+2018-09-05 01:25:23 EXEC SPC_COM_MENU '3';
+2018-09-05 01:25:26 EXEC SPC_COM_PERMISSION '3','s001';
+2018-09-05 01:25:26 EXEC SPC_COM_MENU '3';
+2018-09-05 01:25:26 EXEC SPC_S001_FND1
+2018-09-05 01:27:08 EXEC SPC_COM_PERMISSION '3','s001';
+2018-09-05 01:27:08 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:08 EXEC SPC_S001_FND1
+2018-09-05 01:27:09 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:09 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:27:12 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:12 EXEC SPC_S001_FND2 '5';
+2018-09-05 01:27:14 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:14 EXEC SPC_S001_LST1 '1';
+2018-09-05 01:27:24 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:24 EXEC SPC_S001_ACT1 '5','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','khoai','127.0.0.1';
+2018-09-05 01:27:25 EXEC SPC_COM_PERMISSION '3','s001';
+2018-09-05 01:27:25 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:25 EXEC SPC_S001_FND1
+2018-09-05 01:27:28 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:28 EXEC SPC_S001_FND2 '5';
+2018-09-05 01:27:29 EXEC SPC_COM_MENU '3';
+2018-09-05 01:27:29 EXEC SPC_S001_LST1 '1';
+2018-09-05 01:29:35 EXEC SPC_COM_MENU '3';
+2018-09-05 01:29:35 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:29:37 EXEC SPC_COM_MENU '3';
+2018-09-05 01:29:37 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:29:40 EXEC SPC_COM_MENU '3';
+2018-09-05 01:29:40 EXEC SPC_S001_ACT1 '14','1','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" />','khoai','127.0.0.1';
+2018-09-05 01:29:42 EXEC SPC_COM_PERMISSION '3','s001';
+2018-09-05 01:29:42 EXEC SPC_COM_MENU '3';
+2018-09-05 01:29:42 EXEC SPC_S001_FND1
+2018-09-05 01:30:23 EXEC SPC_COM_MENU '3';
+2018-09-05 01:30:23 EXEC SPC_S001_FND2 '5';
+2018-09-05 01:30:24 EXEC SPC_COM_MENU '3';
+2018-09-05 01:30:24 EXEC SPC_S001_LST1 '1';
+2018-09-05 01:30:38 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:30:38 EXEC SPC_COM_MENU '1';
+2018-09-05 01:30:38 EXEC SPC_S001_FND1
+2018-09-05 01:47:56 EXEC SPC_COM_MENU '1';
+2018-09-05 01:47:56 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:47:57 EXEC SPC_COM_MENU '1';
+2018-09-05 01:47:57 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:48:02 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:02 EXEC SPC_S001_ACT1 '14','1','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 01:48:03 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:48:03 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:03 EXEC SPC_S001_FND1
+2018-09-05 01:48:05 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:05 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:48:07 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:07 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:48:10 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:10 EXEC SPC_S001_FND2 '5';
+2018-09-05 01:48:12 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:12 EXEC SPC_S001_LST1 '1';
+2018-09-05 01:48:25 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:48:25 EXEC SPC_COM_MENU '1';
+2018-09-05 01:48:25 EXEC SPC_S001_FND1
+2018-09-05 01:49:51 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:49:51 EXEC SPC_COM_MENU '1';
+2018-09-05 01:49:51 EXEC SPC_S001_FND1
+2018-09-05 01:49:53 EXEC SPC_COM_MENU '1';
+2018-09-05 01:49:53 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:49:55 EXEC SPC_COM_MENU '1';
+2018-09-05 01:49:55 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:49:57 EXEC SPC_COM_MENU '1';
+2018-09-05 01:49:57 EXEC SPC_S001_LST2 '2';
+2018-09-05 01:50:01 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:01 EXEC SPC_S001_FND2 '5';
+2018-09-05 01:50:03 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:03 EXEC SPC_S001_LST1 '1';
+2018-09-05 01:50:04 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:04 EXEC SPC_S001_LST1 '2';
+2018-09-05 01:50:10 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:10 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:50:11 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:11 EXEC SPC_S001_LST2 '3';
+2018-09-05 01:50:14 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:14 EXEC SPC_S001_LST2 '1';
+2018-09-05 01:50:21 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:21 EXEC SPC_S001_ACT1 '14','1','<row screen_id="u001" remark="nothing" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 01:50:24 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 01:50:24 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:24 EXEC SPC_S001_FND1
+2018-09-05 01:50:27 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:27 EXEC SPC_S001_FND2 '14';
+2018-09-05 01:50:28 EXEC SPC_COM_MENU '1';
+2018-09-05 01:50:28 EXEC SPC_S001_LST2 '1';
+2018-09-05 02:02:35 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 02:02:35 EXEC SPC_COM_MENU '1';
+2018-09-05 02:02:35 EXEC SPC_S003_FND1
+2018-09-05 02:02:39 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 02:02:39 EXEC SPC_COM_MENU '1';
+2018-09-05 02:02:39 EXEC SPC_S001_FND1
+2018-09-05 02:31:38 EXEC SPC_COM_MENU '1';
+2018-09-05 02:31:38 EXEC SPC_S001_FND2 '14';
+2018-09-05 02:31:40 EXEC SPC_COM_MENU '1';
+2018-09-05 02:31:40 EXEC SPC_S001_LST2 '2';
+2018-09-05 04:05:27 EXEC SPC_COM_MENU '1';
+2018-09-05 04:05:27 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:05:30 EXEC SPC_COM_MENU '1';
+2018-09-05 04:05:30 EXEC SPC_S001_ACT1 '14','17','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" /><row screen_id="u004" remark="" access_per="1" /><row screen_id="u005" remark="" access_per="1" /><row screen_id="u006" remark="" access_per="1" /><row screen_id="u007" remark="" access_per="1" /><row screen_id="u008" remark="" access_per="1" /><row screen_id="u009" remark="" access_per="1" /><row screen_id="u010" remark="" access_per="1" /><row screen_id="u011" remark="" access_per="1" /><row screen_id="u012" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 04:08:29 EXEC SPC_COM_MENU '1';
+2018-09-05 04:08:29 EXEC SPC_S001_ACT1 '14','17','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" /><row screen_id="u004" remark="" access_per="1" /><row screen_id="u005" remark="" access_per="1" /><row screen_id="u006" remark="" access_per="1" /><row screen_id="u007" remark="" access_per="1" /><row screen_id="u008" remark="" access_per="1" /><row screen_id="u009" remark="" access_per="1" /><row screen_id="u010" remark="" access_per="1" /><row screen_id="u011" remark="" access_per="1" /><row screen_id="u012" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 04:08:45 EXEC SPC_COM_MENU '1';
+2018-09-05 04:08:45 EXEC SPC_S001_ACT1 '14','17','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" /><row screen_id="u004" remark="" access_per="1" /><row screen_id="u005" remark="" access_per="1" /><row screen_id="u006" remark="" access_per="1" /><row screen_id="u007" remark="" access_per="1" /><row screen_id="u008" remark="" access_per="1" /><row screen_id="u009" remark="" access_per="1" /><row screen_id="u010" remark="" access_per="1" /><row screen_id="u011" remark="" access_per="1" /><row screen_id="u012" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 04:08:47 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:08:47 EXEC SPC_COM_MENU '1';
+2018-09-05 04:08:47 EXEC SPC_S001_FND1
+2018-09-05 04:08:51 EXEC SPC_COM_MENU '1';
+2018-09-05 04:08:51 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:08:53 EXEC SPC_COM_MENU '1';
+2018-09-05 04:08:53 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:09:12 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:09:12 EXEC SPC_COM_MENU '1';
+2018-09-05 04:09:12 EXEC SPC_S001_FND1
+2018-09-05 04:09:16 EXEC SPC_COM_MENU '1';
+2018-09-05 04:09:16 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:09:18 EXEC SPC_COM_MENU '1';
+2018-09-05 04:09:18 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:12:32 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:12:32 EXEC SPC_COM_MENU '1';
+2018-09-05 04:12:32 EXEC SPC_S001_FND1
+2018-09-05 04:12:35 EXEC SPC_COM_MENU '1';
+2018-09-05 04:12:35 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:12:38 EXEC SPC_COM_MENU '1';
+2018-09-05 04:12:38 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:14:49 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:14:49 EXEC SPC_COM_MENU '1';
+2018-09-05 04:14:49 EXEC SPC_S001_FND1
+2018-09-05 04:14:51 EXEC SPC_COM_MENU '1';
+2018-09-05 04:14:51 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:14:55 EXEC SPC_COM_MENU '1';
+2018-09-05 04:14:55 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:15:03 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:15:03 EXEC SPC_COM_MENU '1';
+2018-09-05 04:15:03 EXEC SPC_S001_FND1
+2018-09-05 04:15:37 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:15:37 EXEC SPC_COM_MENU '1';
+2018-09-05 04:15:37 EXEC SPC_S001_FND1
+2018-09-05 04:15:39 EXEC SPC_COM_MENU '1';
+2018-09-05 04:15:39 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:15:41 EXEC SPC_COM_MENU '1';
+2018-09-05 04:15:41 EXEC SPC_S001_LST2 '17';
+2018-09-05 04:17:09 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 04:17:09 EXEC SPC_COM_MENU '1';
+2018-09-05 04:17:09 EXEC SPC_S001_FND1
+2018-09-05 04:17:12 EXEC SPC_COM_MENU '1';
+2018-09-05 04:17:12 EXEC SPC_S001_FND2 '14';
+2018-09-05 04:17:14 EXEC SPC_COM_MENU '1';
+2018-09-05 04:17:14 EXEC SPC_S001_LST2 '17';
+2018-09-05 05:04:49 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 05:04:49 EXEC SPC_COM_MENU '1';
+2018-09-05 05:04:49 EXEC SPC_M007_FND1
+2018-09-05 05:04:54 EXEC SPC_COM_MENU '1';
+2018-09-05 05:04:54 EXEC SPC_m007_LST1 '13';
+2018-09-05 05:04:54 EXEC SPC_M007_FND1
+2018-09-05 05:04:59 EXEC SPC_COM_MENU '1';
+2018-09-05 05:04:59 EXEC SPC_m007_LST1 '11';
+2018-09-05 05:04:59 EXEC SPC_M007_FND1
+2018-09-05 05:05:03 EXEC SPC_COM_MENU '1';
+2018-09-05 05:05:03 EXEC SPC_m007_LST1 '13';
+2018-09-05 05:05:03 EXEC SPC_M007_FND1
+2018-09-05 05:06:56 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 05:06:56 EXEC SPC_COM_MENU '1';
+2018-09-05 05:06:56 EXEC SPC_S001_FND1
+2018-09-05 05:06:59 EXEC SPC_COM_MENU '1';
+2018-09-05 05:06:59 EXEC SPC_S001_FND2 '14';
+2018-09-05 05:07:01 EXEC SPC_COM_MENU '1';
+2018-09-05 05:07:01 EXEC SPC_S001_LST2 '1';
+2018-09-05 05:07:05 EXEC SPC_COM_MENU '1';
+2018-09-05 05:07:05 EXEC SPC_S001_LST2 '17';
+2018-09-05 05:16:48 EXEC SPC_COM_MENU '1';
+2018-09-05 05:16:48 EXEC SPC_S001_LST2 '1';
+2018-09-05 05:16:55 EXEC SPC_COM_MENU '1';
+2018-09-05 05:16:55 EXEC SPC_S001_LST2 '17';
+2018-09-05 05:16:57 EXEC SPC_COM_MENU '1';
+2018-09-05 05:16:57 EXEC SPC_S001_FND2 '5';
+2018-09-05 05:16:58 EXEC SPC_COM_MENU '1';
+2018-09-05 05:16:58 EXEC SPC_S001_LST1 '1';
+2018-09-05 05:17:03 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:03 EXEC SPC_S001_LST1 '2';
+2018-09-05 05:17:10 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:10 EXEC SPC_S001_LST1 '3';
+2018-09-05 05:17:20 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:20 EXEC SPC_S001_LST1 '4';
+2018-09-05 05:17:23 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:23 EXEC SPC_S001_LST1 '5';
+2018-09-05 05:17:26 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:26 EXEC SPC_S001_LST1 '1';
+2018-09-05 05:17:31 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:31 EXEC SPC_S001_LST1 '2';
+2018-09-05 05:17:36 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:36 EXEC SPC_S001_LST1 '3';
+2018-09-05 05:17:38 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:38 EXEC SPC_S001_LST1 '4';
+2018-09-05 05:17:40 EXEC SPC_COM_MENU '1';
+2018-09-05 05:17:40 EXEC SPC_S001_LST1 '1';
+2018-09-05 05:25:19 EXEC SPC_COM_DATA 'ndq809';
+2018-09-05 06:16:01 EXEC SPC_COM_DATA 'ndq809';
+2018-09-05 06:16:01 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:04 EXEC SPC_COM_PERMISSION '1','g001';
+2018-09-05 06:16:04 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:15 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:16:15 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:15 EXEC SPC_S001_FND1
+2018-09-05 06:16:18 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 06:16:18 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:18 EXEC SPC_M007_FND1
+2018-09-05 06:16:25 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:25 EXEC SPC_m007_LST1 '11';
+2018-09-05 06:16:25 EXEC SPC_M007_FND1
+2018-09-05 06:16:36 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:36 EXEC SPC_M007_ACT3 '11','ndq809','127.0.0.1';
+2018-09-05 06:16:37 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:37 EXEC SPC_m007_LST1 '';
+2018-09-05 06:16:37 EXEC SPC_M007_FND1
+2018-09-05 06:16:41 EXEC SPC_COM_MENU '1';
+2018-09-05 06:16:41 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:16:41 EXEC SPC_M007_FND1
+2018-09-05 06:18:06 EXEC SPC_COM_MENU '1';
+2018-09-05 06:18:06 EXEC SPC_M007_ACT1 '4','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="2" content="Hệ thống 1" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="3" content="Hệ thống 2" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="4" content="Hệ thống 3" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="1" content="Người dùng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-09-05 06:18:08 EXEC SPC_COM_MENU '1';
+2018-09-05 06:18:08 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:18:08 EXEC SPC_M007_FND1
+2018-09-05 06:18:58 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:18:58 EXEC SPC_COM_MENU '1';
+2018-09-05 06:18:58 EXEC SPC_S001_FND1
+2018-09-05 06:19:49 EXEC SPC_COM_MENU '1';
+2018-09-05 06:19:49 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:20:22 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:20:22 EXEC SPC_COM_MENU '1';
+2018-09-05 06:20:22 EXEC SPC_S001_FND1
+2018-09-05 06:20:24 EXEC SPC_COM_MENU '1';
+2018-09-05 06:20:24 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:20:26 EXEC SPC_COM_MENU '1';
+2018-09-05 06:20:26 EXEC SPC_S001_LST2 '1';
+2018-09-05 06:20:29 EXEC SPC_COM_MENU '1';
+2018-09-05 06:20:29 EXEC SPC_S001_LST2 '2';
+2018-09-05 06:20:32 EXEC SPC_COM_MENU '1';
+2018-09-05 06:20:32 EXEC SPC_S001_LST2 '1';
+2018-09-05 06:23:49 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:23:49 EXEC SPC_COM_MENU '1';
+2018-09-05 06:23:49 EXEC SPC_S001_FND1
+2018-09-05 06:23:51 EXEC SPC_COM_MENU '1';
+2018-09-05 06:23:51 EXEC SPC_S001_FND2 '5';
+2018-09-05 06:24:05 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:24:05 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:05 EXEC SPC_S001_FND1
+2018-09-05 06:24:07 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:07 EXEC SPC_S001_FND2 '5';
+2018-09-05 06:24:10 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:10 EXEC SPC_S001_FND2 '14';
+2018-09-05 06:24:11 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:11 EXEC SPC_S001_LST2 '1';
+2018-09-05 06:24:15 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:15 EXEC SPC_S001_LST2 '17';
+2018-09-05 06:24:17 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:17 EXEC SPC_S001_FND2 '5';
+2018-09-05 06:24:19 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:19 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:24:24 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:24 EXEC SPC_S001_FND2 '5';
+2018-09-05 06:24:26 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:26 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:24:31 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:31 EXEC SPC_S001_FND2 '5';
+2018-09-05 06:24:33 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:33 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:24:43 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:43 EXEC SPC_S001_ACT1 '2','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 06:24:44 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:24:44 EXEC SPC_COM_MENU '1';
+2018-09-05 06:24:44 EXEC SPC_S001_FND1
+2018-09-05 06:26:02 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:26:02 EXEC SPC_COM_MENU '1';
+2018-09-05 06:26:02 EXEC SPC_S001_FND1
+2018-09-05 06:27:27 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 06:27:27 EXEC SPC_COM_MENU '1';
+2018-09-05 06:27:27 EXEC SPC_M007_FND1
+2018-09-05 06:27:31 EXEC SPC_COM_MENU '1';
+2018-09-05 06:27:31 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:27:31 EXEC SPC_M007_FND1
+2018-09-05 06:27:45 EXEC SPC_COM_MENU '1';
+2018-09-05 06:27:46 EXEC SPC_M007_ACT1 '4','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Người dùng" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Hệ thống 1" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Hệ thống 2" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Hệ thống 3" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-09-05 06:27:47 EXEC SPC_COM_MENU '1';
+2018-09-05 06:27:47 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:27:47 EXEC SPC_M007_FND1
+2018-09-05 06:31:25 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:25 EXEC SPC_M007_ACT1 '4','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Người dùng" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Hệ thống 1" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Hệ thống 2" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Hệ thống 3" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-09-05 06:31:26 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:26 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:31:26 EXEC SPC_M007_FND1
+2018-09-05 06:31:31 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:31:31 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:31 EXEC SPC_S001_FND1
+2018-09-05 06:31:34 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:34 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:31:44 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:44 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:31:55 EXEC SPC_COM_PERMISSION '1','m007';
+2018-09-05 06:31:55 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:55 EXEC SPC_M007_FND1
+2018-09-05 06:31:58 EXEC SPC_COM_MENU '1';
+2018-09-05 06:31:58 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:31:59 EXEC SPC_M007_FND1
+2018-09-05 06:32:10 EXEC SPC_COM_MENU '1';
+2018-09-05 06:32:10 EXEC SPC_M007_ACT1 '4','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Người dùng" num_remark1="14" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Hệ thống 1" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Hệ thống 2" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Hệ thống 3" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-09-05 06:32:11 EXEC SPC_COM_MENU '1';
+2018-09-05 06:32:11 EXEC SPC_m007_LST1 '4';
+2018-09-05 06:32:11 EXEC SPC_M007_FND1
+2018-09-05 06:32:18 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:32:18 EXEC SPC_COM_MENU '1';
+2018-09-05 06:32:18 EXEC SPC_S001_FND1
+2018-09-05 06:32:20 EXEC SPC_COM_MENU '1';
+2018-09-05 06:32:20 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:32:26 EXEC SPC_COM_MENU '1';
+2018-09-05 06:32:26 EXEC SPC_S001_LST2 '1';
+2018-09-05 06:47:38 EXEC SPC_COM_MENU '1';
+2018-09-05 06:47:38 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:47:40 EXEC SPC_COM_MENU '1';
+2018-09-05 06:47:40 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:53:31 EXEC SPC_COM_MENU '1';
+2018-09-05 06:53:31 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:53:32 EXEC SPC_COM_MENU '1';
+2018-09-05 06:53:32 EXEC SPC_S001_LST2 '1';
+2018-09-05 06:53:50 EXEC SPC_COM_MENU '1';
+2018-09-05 06:53:50 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:53:51 EXEC SPC_COM_MENU '1';
+2018-09-05 06:53:51 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:54:19 EXEC SPC_COM_MENU '1';
+2018-09-05 06:54:19 EXEC SPC_S001_ACT1 '','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 06:54:39 EXEC SPC_COM_MENU '1';
+2018-09-05 06:54:39 EXEC SPC_S001_ACT1 '','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 06:56:00 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:56:00 EXEC SPC_COM_MENU '1';
+2018-09-05 06:56:00 EXEC SPC_S001_FND1
+2018-09-05 06:56:08 EXEC SPC_COM_MENU '1';
+2018-09-05 06:56:08 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:56:11 EXEC SPC_COM_MENU '1';
+2018-09-05 06:56:11 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:56:13 EXEC SPC_COM_MENU '1';
+2018-09-05 06:56:13 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:56:53 EXEC SPC_COM_MENU '1';
+2018-09-05 06:56:53 EXEC SPC_S001_ACT1 '','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 06:59:15 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:59:15 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:15 EXEC SPC_S001_FND1
+2018-09-05 06:59:17 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:17 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:59:19 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:19 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:59:21 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:21 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:59:39 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:39 EXEC SPC_S001_ACT1 '2','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="0" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 06:59:40 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 06:59:40 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:40 EXEC SPC_S001_FND1
+2018-09-05 06:59:43 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:43 EXEC SPC_S001_FND2 '2';
+2018-09-05 06:59:45 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:45 EXEC SPC_S001_LST1 '1';
+2018-09-05 06:59:50 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:50 EXEC SPC_S001_FND2 '1';
+2018-09-05 06:59:52 EXEC SPC_COM_MENU '1';
+2018-09-05 06:59:52 EXEC SPC_S001_LST2 '1';
+2018-09-05 07:00:00 EXEC SPC_COM_MENU '1';
+2018-09-05 07:00:01 EXEC SPC_S001_ACT1 '1','1','<row screen_id="u001" remark="" access_per="1" /><row screen_id="u002" remark="" access_per="1" /><row screen_id="u003" remark="" access_per="1" />','ndq809','127.0.0.1';
+2018-09-05 07:00:02 EXEC SPC_COM_PERMISSION '1','s001';
+2018-09-05 07:00:02 EXEC SPC_COM_MENU '1';
+2018-09-05 07:00:02 EXEC SPC_S001_FND1
+2018-09-05 07:00:04 EXEC SPC_COM_MENU '1';
+2018-09-05 07:00:04 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:00:06 EXEC SPC_COM_MENU '1';
+2018-09-05 07:00:06 EXEC SPC_S001_LST2 '1';
+2018-09-05 07:08:02 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:08:02 EXEC SPC_COM_MENU '1';
+2018-09-05 07:08:02 EXEC SPC_S003_FND1
+2018-09-05 07:10:50 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:10:50 EXEC SPC_COM_MENU '1';
+2018-09-05 07:10:50 EXEC SPC_S003_FND1
+2018-09-05 07:10:52 EXEC SPC_COM_MENU '1';
+2018-09-05 07:10:52 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:10:57 EXEC SPC_COM_MENU '1';
+2018-09-05 07:10:57 EXEC SPC_S001_FND2 '2';
+2018-09-05 07:11:43 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:11:43 EXEC SPC_COM_MENU '1';
+2018-09-05 07:11:43 EXEC SPC_S003_FND1
+2018-09-05 07:11:45 EXEC SPC_COM_MENU '1';
+2018-09-05 07:11:45 EXEC SPC_S001_FND2 '2';
+2018-09-05 07:11:50 EXEC SPC_COM_MENU '1';
+2018-09-05 07:11:50 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:11:55 EXEC SPC_COM_MENU '1';
+2018-09-05 07:11:55 EXEC SPC_S001_FND2 '3';
+2018-09-05 07:11:57 EXEC SPC_COM_MENU '1';
+2018-09-05 07:11:57 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:13:11 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:13:11 EXEC SPC_COM_MENU '1';
+2018-09-05 07:13:11 EXEC SPC_S003_FND1
+2018-09-05 07:13:31 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:13:31 EXEC SPC_COM_MENU '1';
+2018-09-05 07:13:31 EXEC SPC_S003_FND1
+2018-09-05 07:14:42 EXEC SPC_COM_PERMISSION '1','m004';
+2018-09-05 07:14:42 EXEC SPC_COM_MENU '1';
+2018-09-05 07:14:42 EXEC SPC_M004_FND1
+2018-09-05 07:14:47 EXEC SPC_COM_PERMISSION '1','m005';
+2018-09-05 07:14:47 EXEC SPC_COM_PERMISSION '1','m004';
+2018-09-05 07:14:47 EXEC SPC_COM_PERMISSION '1','m004';
+2018-09-05 07:14:47 EXEC SPC_COM_MENU '1';
+2018-09-05 07:14:47 EXEC SPC_M004_FND1
+2018-09-05 07:14:55 EXEC SPC_COM_PERMISSION '1','m002';
+2018-09-05 07:14:55 EXEC SPC_COM_PERMISSION '1','m004';
+2018-09-05 07:14:56 EXEC SPC_COM_PERMISSION '1','m004';
+2018-09-05 07:14:56 EXEC SPC_COM_MENU '1';
+2018-09-05 07:14:56 EXEC SPC_M004_FND1
+2018-09-05 07:15:03 EXEC SPC_COM_PERMISSION '1','s002';
+2018-09-05 07:15:03 EXEC SPC_COM_MENU '1';
+2018-09-05 07:15:03 EXEC SPC_S002_FND1
+2018-09-05 07:15:07 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:15:07 EXEC SPC_COM_MENU '1';
+2018-09-05 07:15:07 EXEC SPC_S003_FND1
+2018-09-05 07:16:23 EXEC SPC_COM_PERMISSION '1','s003';
+2018-09-05 07:16:23 EXEC SPC_COM_MENU '1';
+2018-09-05 07:16:23 EXEC SPC_S003_FND1
+2018-09-05 07:16:25 EXEC SPC_COM_MENU '1';
+2018-09-05 07:16:25 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:16:54 EXEC SPC_COM_MENU '1';
+2018-09-05 07:16:54 EXEC SPC_S003_ACT1 '1','1','','Quypro','$2y$10$XHFSIn35rh/LB4Eo3NdjKe6ZrjWa0zwCps0YAa30ganZV0MG1zDeW','','ndq809','127.0.0.1';
+2018-09-05 07:17:00 EXEC SPC_COM_DATA 'ndq809';
+2018-09-05 07:17:00 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:17:00 EXEC SPC_COM_MENU '1';
+2018-09-05 07:19:21 EXEC SPC_COM_DATA '';
+2018-09-05 07:19:21 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:34 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:34 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:34 EXEC SPC_COM_MENU '0';
+2018-09-05 07:19:41 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:41 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:41 EXEC SPC_VOCABULARY_LST1 '','Quypro';
+2018-09-05 07:19:42 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:42 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:42 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:19:42 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:42 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:42 EXEC SPC_VOCABULARY_LST2 '2','1','Quypro';
+2018-09-05 07:19:47 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:47 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:47 EXEC SPC_VOCABULARY_LST2 '2','3','Quypro';
+2018-09-05 07:19:53 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:53 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:53 EXEC SPC_COM_MENU '0';
+2018-09-05 07:19:56 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:56 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:56 EXEC SPC_VOCABULARY_LST1 '','Quypro';
+2018-09-05 07:19:57 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:57 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:57 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:19:57 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:19:57 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:19:57 EXEC SPC_VOCABULARY_LST2 '2','1','Quypro';
+2018-09-05 07:21:01 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:21:01 SQLSTATE[42S22]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]列名 'target_div' が無効です。
+2018-09-05 07:25:19 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:25:40 EXEC SPC_COM_PERMISSION '1','g001';
+2018-09-05 07:25:40 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2018-09-05 07:27:04 EXEC SPC_COM_PERMISSION '1','1';
+2018-09-05 07:29:09 EXEC SPC_COM_PERMISSION '1','1','g001';
+2018-09-05 07:29:09 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:19 EXEC SPC_COM_PERMISSION '1','1','s001';
+2018-09-05 07:29:19 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:19 EXEC SPC_S001_FND1
+2018-09-05 07:29:22 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:22 EXEC SPC_S001_FND2 '2';
+2018-09-05 07:29:24 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:24 EXEC SPC_S001_LST1 '1';
+2018-09-05 07:29:41 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:41 EXEC SPC_S001_ACT1 '2','1','<row screen_id="g001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g005" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="g006" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m001" remark="" access_per="1" menu_per="0" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m002" remark="" access_per="1" menu_per="0" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m004" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m005" remark="" access_per="1" menu_per="0" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m006" remark="" access_per="1" menu_per="0" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="m007" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="s003" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="v002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w001" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" /><row screen_id="w002" remark="" access_per="1" menu_per="1" add_per="1" edit_per="1" delete_per="1" report_per="1" />','ndq809','127.0.0.1';
+2018-09-05 07:29:42 EXEC SPC_COM_PERMISSION '1','1','s001';
+2018-09-05 07:29:42 EXEC SPC_COM_MENU '1';
+2018-09-05 07:29:42 EXEC SPC_S001_FND1
+2018-09-05 07:30:09 EXEC SPC_COM_MENU '1';
+2018-09-05 07:30:09 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:30:11 EXEC SPC_COM_MENU '1';
+2018-09-05 07:30:11 EXEC SPC_S001_LST2 '1';
+2018-09-05 07:30:51 EXEC SPC_COM_DATA 'Quypro';
+2018-09-05 07:48:22 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:50:06 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 07:50:06 EXEC SPC_COM_MENU '1';
+2018-09-05 07:50:06 EXEC SPC_S002_FND1
+2018-09-05 07:50:08 EXEC SPC_COM_MENU '1';
+2018-09-05 07:50:08 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 07:50:46 EXEC SPC_COM_PERMISSION '1','1','s003';
+2018-09-05 07:50:46 EXEC SPC_COM_MENU '1';
+2018-09-05 07:50:46 EXEC SPC_S003_FND1
+2018-09-05 07:51:23 EXEC SPC_COM_PERMISSION '1','1','s003';
+2018-09-05 07:51:23 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:23 EXEC SPC_S003_FND1
+2018-09-05 07:51:27 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 07:51:27 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:27 EXEC SPC_S002_FND1
+2018-09-05 07:51:29 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:29 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 07:51:34 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:34 EXEC SPC_S002_ACT2 '<row id="3" />','ndq809','127.0.0.1';
+2018-09-05 07:51:39 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:39 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 07:51:41 EXEC SPC_COM_PERMISSION '1','1','s003';
+2018-09-05 07:51:41 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:41 EXEC SPC_S003_FND1
+2018-09-05 07:51:44 EXEC SPC_COM_MENU '1';
+2018-09-05 07:51:44 EXEC SPC_S001_FND2 '1';
+2018-09-05 07:52:00 EXEC SPC_COM_MENU '1';
+2018-09-05 07:52:00 EXEC SPC_S003_ACT1 '','1','1','quypro','$2y$10$qgZjyuiu3Q131P9BNlgXdeQNjwa2aVFFnSHIfs80jtG0gntP6/doC','','ndq809','127.0.0.1';
+2018-09-05 07:53:56 EXEC SPC_COM_MENU '1';
+2018-09-05 07:53:56 EXEC SPC_S003_ACT1 '','1','1','quypro','$2y$10$XpiEg87u5XXqdmtxqV87p.1xTFevOSxmSLL0OWNgmiGKZo5mdxQxG','','ndq809','127.0.0.1';
+2018-09-05 07:54:12 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 07:54:12 EXEC SPC_COM_MENU '1';
+2018-09-05 07:54:12 EXEC SPC_S002_FND1
+2018-09-05 07:54:14 EXEC SPC_COM_MENU '1';
+2018-09-05 07:54:14 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 07:54:52 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 07:54:52 EXEC SPC_COM_MENU '1';
+2018-09-05 07:54:52 EXEC SPC_S002_FND1
+2018-09-05 07:54:55 EXEC SPC_COM_MENU '1';
+2018-09-05 07:54:55 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 07:56:55 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:13 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:13 EXEC SPC_VOCABULARY_LST1 '1','Quypro';
+2018-09-05 07:57:14 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:14 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:57:14 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:14 EXEC SPC_VOCABULARY_LST2 '2','1','Quypro';
+2018-09-05 07:57:17 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:57:17 EXEC SPC_VOCABULARY_LST1 '1','';
+2018-09-05 07:57:19 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:57:19 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:57:19 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:57:19 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2018-09-05 07:57:58 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:58 EXEC SPC_VOCABULARY_LST1 '1','Quypro';
+2018-09-05 07:57:58 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:58 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:57:59 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:57:59 EXEC SPC_VOCABULARY_LST2 '2','1','Quypro';
+2018-09-05 07:58:15 EXEC SPC_COM_DATA 'Quypro','0','1';
+2018-09-05 07:59:50 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:59:50 EXEC SPC_VOCABULARY_LST1 '1','';
+2018-09-05 07:59:51 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:59:51 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 07:59:51 EXEC SPC_COM_DATA '','','';
+2018-09-05 07:59:52 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2018-09-05 08:00:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:00:04 EXEC SPC_VOCABULARY_LST1 '1','quypro';
+2018-09-05 08:00:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:00:04 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:00:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:00:05 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-09-05 08:00:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:01:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:01:05 EXEC SPC_VOCABULARY_LST1 '1','quypro';
+2018-09-05 08:01:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:01:05 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:01:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:01:06 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-09-05 08:01:35 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 08:01:35 EXEC SPC_COM_MENU '1';
+2018-09-05 08:01:35 EXEC SPC_S002_FND1
+2018-09-05 08:01:39 EXEC SPC_COM_MENU '1';
+2018-09-05 08:01:39 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:03:11 EXEC SPC_COM_PERMISSION '1','1','s002';
+2018-09-05 08:03:11 EXEC SPC_COM_MENU '1';
+2018-09-05 08:03:11 EXEC SPC_S002_FND1
+2018-09-05 08:07:41 EXEC SPC_COM_MENU '1';
+2018-09-05 08:07:41 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:09:18 EXEC SPC_COM_MENU '1';
+2018-09-05 08:09:18 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:09:36 EXEC SPC_COM_MENU '1';
+2018-09-05 08:09:38 EXEC SPC_COM_MENU '1';
+2018-09-05 08:09:38 EXEC SPC_S002_ACT1 '<row row_id="1" account_id="1" account_nm="ndq809" employee_id="1" system_div="2" account_div="1" remark="" />','ndq809','127.0.0.1';
+2018-09-05 08:09:39 EXEC SPC_COM_MENU '1';
+2018-09-05 08:09:39 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:11:02 EXEC SPC_COM_MENU '1';
+2018-09-05 08:11:02 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:14:06 EXEC SPC_COM_MENU '1';
+2018-09-05 08:14:06 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:16:25 EXEC SPC_COM_PERMISSION '1','2','g003';
+2018-09-05 08:16:25 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:25 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-05 08:16:26 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:26 EXEC SPC_G003_LST1 '','','10','1';
+2018-09-05 08:16:29 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:29 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:31 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:31 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:32 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:32 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:36 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:36 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:38 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:38 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:44 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:44 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:51 EXEC SPC_COM_PERMISSION '1','2','g005';
+2018-09-05 08:16:52 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:52 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-05 08:16:53 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:53 EXEC SPC_G005_LST1 '','','','10','1';
+2018-09-05 08:16:54 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:54 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:54 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:54 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:16:56 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:56 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:16:56 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:56 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:16:58 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:58 EXEC SPC_COM_MENU '1';
+2018-09-05 08:16:58 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:16:58 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:00 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:00 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:00 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:00 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:02 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:02 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:02 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:02 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:03 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:03 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:03 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:03 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:05 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:05 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:05 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:05 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:10 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:10 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:10 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:10 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:12 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:12 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:12 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:12 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:14 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:14 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:14 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:14 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:19 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:19 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:19 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:19 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:20 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:20 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:20 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:20 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:21 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:21 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:21 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:21 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:23 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:23 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:23 EXEC SPC_COMMON_GROUP '2';
+';
+2018-09-05 08:17:24 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:24 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:24 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:24 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:26 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:26 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:26 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:26 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:37 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:37 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:37 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:37 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:44 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:44 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:44 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:44 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:45 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:45 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:45 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:45 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:47 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:47 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:47 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:47 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:17:49 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:49 EXEC SPC_COM_MENU '1';
+2018-09-05 08:17:49 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:17:49 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:00 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:00 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-05 08:18:03 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:03 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:05 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:05 EXEC SPC_COMMON_GROUP '3';
+2018-09-05 08:18:08 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:08 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:11 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:11 EXEC SPC_G005_LST1 '1','2','3','10','1';
+2018-09-05 08:18:13 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:13 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:13 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:13 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:15 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:15 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:15 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:15 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:16 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:16 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:16 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:16 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:27 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:27 EXEC SPC_COMMON_CATALORUE '';
+2018-09-05 08:18:31 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:31 EXEC SPC_G005_LST1 '','2','3','10','1';
+2018-09-05 08:18:36 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:36 EXEC SPC_G005_LST1 '','2','3','10','1';
+2018-09-05 08:18:37 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:37 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:37 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:45 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:45 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:49 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:49 EXEC SPC_COMMON_GROUP '';
+2018-09-05 08:18:54 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:54 EXEC SPC_G005_LST1 '','','','10','1';
+2018-09-05 08:18:56 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:56 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:56 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:56 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:58 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:58 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:58 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:18:58 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:59 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:59 EXEC SPC_COM_MENU '1';
+2018-09-05 08:18:59 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:18:59 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:02 EXEC SPC_COM_PERMISSION '1','2','g005';
+2018-09-05 08:19:02 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:02 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-05 08:19:09 EXEC SPC_COM_PERMISSION '1','2','g003';
+2018-09-05 08:19:09 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:09 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-05 08:19:10 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:10 EXEC SPC_G003_LST1 '','','10','1';
+2018-09-05 08:19:13 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:13 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:14 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:14 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:15 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:15 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:15 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:15 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:16 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:16 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:17 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:17 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:17 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:17 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:18 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:18 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:19 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:19 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:19 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:19 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:20 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:20 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:20 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:20 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:21 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:21 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:22 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:22 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-05 08:19:58 EXEC SPC_COM_PERMISSION '1','2','s001';
+2018-09-05 08:19:59 EXEC SPC_COM_MENU '1';
+2018-09-05 08:19:59 EXEC SPC_S001_FND1
+2018-09-05 08:20:02 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:02 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:20:04 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:04 EXEC SPC_S001_LST2 '1';
+2018-09-05 08:20:11 EXEC SPC_COM_PERMISSION '1','2','s001';
+2018-09-05 08:20:11 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:11 EXEC SPC_S001_FND1
+2018-09-05 08:20:15 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-09-05 08:20:15 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:15 EXEC SPC_M007_FND1
+2018-09-05 08:20:18 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:18 EXEC SPC_m007_LST1 '1';
+2018-09-05 08:20:18 EXEC SPC_M007_FND1
+2018-09-05 08:20:26 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:20:26 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:26 EXEC SPC_S002_FND1
+2018-09-05 08:20:28 EXEC SPC_COM_MENU '1';
+2018-09-05 08:20:28 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:22:11 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:22:11 EXEC SPC_COM_MENU '1';
+2018-09-05 08:22:11 EXEC SPC_S002_FND1
+2018-09-05 08:22:13 EXEC SPC_COM_MENU '1';
+2018-09-05 08:22:13 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:24:06 EXEC SPC_COM_MENU '1';
+2018-09-05 08:24:06 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:24:07 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:24:07 EXEC SPC_COM_MENU '1';
+2018-09-05 08:24:07 EXEC SPC_S002_FND1
+2018-09-05 08:24:09 EXEC SPC_COM_MENU '1';
+2018-09-05 08:24:09 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:29:38 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:29:38 EXEC SPC_COM_MENU '1';
+2018-09-05 08:29:38 EXEC SPC_S002_FND1
+2018-09-05 08:30:07 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:30:07 EXEC SPC_COM_MENU '1';
+2018-09-05 08:30:07 EXEC SPC_S002_FND1
+2018-09-05 08:30:16 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:30:16 EXEC SPC_COM_MENU '1';
+2018-09-05 08:30:16 EXEC SPC_S002_FND1
+2018-09-05 08:30:53 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:30:53 EXEC SPC_COM_MENU '1';
+2018-09-05 08:30:53 EXEC SPC_S002_FND1
+2018-09-05 08:30:55 EXEC SPC_COM_MENU '1';
+2018-09-05 08:30:55 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:31:01 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:01 EXEC SPC_S002_LST1 '','','1','12','10','1';
+2018-09-05 08:31:06 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:06 EXEC SPC_S002_LST1 '','','1','1','10','1';
+2018-09-05 08:31:10 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:10 EXEC SPC_S002_LST1 '','','1','2','10','1';
+2018-09-05 08:31:18 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:18 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:31:20 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:20 EXEC SPC_S002_LST1 '','','1','1','10','1';
+2018-09-05 08:31:23 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:23 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:31:27 EXEC SPC_COM_MENU '1';
+2018-09-05 08:31:27 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:35:26 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:35:26 EXEC SPC_COM_MENU '1';
+2018-09-05 08:35:26 EXEC SPC_S002_FND1
+2018-09-05 08:35:29 EXEC SPC_COM_MENU '1';
+2018-09-05 08:35:29 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:35:30 EXEC SPC_COM_MENU '1';
+2018-09-05 08:35:30 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:36:13 EXEC SPC_COM_PERMISSION '1','2','s002';
+2018-09-05 08:36:13 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:13 EXEC SPC_S002_FND1
+2018-09-05 08:36:14 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:14 EXEC SPC_S002_LST1 '','','','','10','1';
+2018-09-05 08:36:16 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:16 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:36:23 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:23 EXEC SPC_S001_FND2 '2';
+2018-09-05 08:36:25 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:25 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:36:32 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:32 EXEC SPC_S001_FND2 '2';
+2018-09-05 08:36:36 EXEC SPC_COM_MENU '1';
+2018-09-05 08:36:36 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:38:37 EXEC SPC_COM_MENU '1';
+2018-09-05 08:38:37 EXEC SPC_S001_FND2 '2';
+2018-09-05 08:38:38 EXEC SPC_COM_MENU '1';
+2018-09-05 08:38:38 EXEC SPC_S001_FND2 '1';
+2018-09-05 08:44:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:44:03 EXEC SPC_COM_ADD_LESSON '1','2','1','quypro','127.0.0.1';
+2018-09-05 08:44:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:44:17 EXEC SPC_COM_DELETE_LESSON '64','quypro','127.0.0.1';
+2018-09-05 08:47:16 EXEC SPC_COM_DATA '','','';
+2018-09-05 08:47:16 EXEC SPC_VOCABULARY_LST1 '1','';
+2018-09-05 08:47:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:47:59 EXEC SPC_VOCABULARY_LST1 '1','quypro';
+2018-09-05 08:48:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:48:00 EXEC SPC_COMMON_GROUP '2';
+2018-09-05 08:48:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:48:00 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-09-05 08:48:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:48:01 EXEC SPC_COM_ADD_LESSON '1','2','1','quypro','127.0.0.1';
+2018-09-05 08:48:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-09-05 08:48:07 EXEC SPC_COM_DELETE_LESSON '65','quypro','127.0.0.1';

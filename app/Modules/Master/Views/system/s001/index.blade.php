@@ -15,10 +15,20 @@
     <div class="panel-content no-padding-left search-block">
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
+                <label>Đối tượng thao tác</label>
+                <select id="target_div" class="required">
+                    @foreach($data_default[0] as $item)
+                        <option value="{{$item['number_id']}}">{{$item['content']}}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
                 <label>Loại Tài Khoản</label>
                 <select id="account_div" class="submit-item allow-selectize required">
-                    @foreach($data_default[0] as $item)
-                        <option value="{{$item['number_id']==0?'':$item['number_id']}}" {{$item['number_id']==Session::get('account_div')?'selected':''}}>{{$item['content']}}</option>
+                    @foreach($data_default[1] as $item)
+                        <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
                 </select>
             </div>

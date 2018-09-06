@@ -33,6 +33,13 @@ function initevent_m007(){
         m007_list();
     })
 
+    $('.search-block #name_div')[0].selectize.on('option_add',function(){
+        $('#btn-add').removeClass('btn-disable-custom');
+        $('#btn-save').addClass('btn-disable-custom');
+        $('#btn-delete').addClass('btn-disable-custom');
+    })
+
+
 }
 
 function m007_save(){
@@ -117,6 +124,7 @@ function m007_delete(){
 function m007_add(){
     var data={};
     data['name_div']=$('.search-block #name_div').val();
+    data['data']=getTableData($('.submit-table'));
     $.ajax({
         type: 'POST',
         url: '/master/data/m007/add',
@@ -132,7 +140,7 @@ function m007_add(){
                         $('.search-block #name_div')[0].selectize.clearOptions();
                         $('.search-block #name_div')[0].selectize.addOption(res.data);
                         $('.search-block #name_div')[0].selectize.removeOption(0)
-                        $('.search-block #name_div')[0].selectize.setValue(res.data[res.data.length-2].value);
+                        $('.search-block #name_div')[0].selectize.setValue(res.data[res.data.length-1].value);
                     });
                     break;
                 case 201:
@@ -163,12 +171,20 @@ function m007_list(){
 	$.ajax({
         type: 'POST',
         url: '/master/data/m007/list',
-        dataType: 'html',
+        dataType: 'json',
         loading:true,
         data: data,
         success: function (res) {
             clearFailedValidate();
-            $('#result').html(res);
+            $('.search-block #name_div')[0].selectize.setValue('',true);
+            $('.search-block #name_div')[0].selectize.clearOptions();
+            $('.search-block #name_div')[0].selectize.addOption(res.data);
+            $('.search-block #name_div')[0].selectize.removeOption(0)
+            $('.search-block #name_div')[0].selectize.setValue(data.name_div,true);
+            $('#result').html(res.view);
+            $('#btn-add').addClass('btn-disable-custom');
+            $('#btn-save').removeClass('btn-disable-custom');
+            $('#btn-delete').removeClass('btn-disable-custom');
             _data_delete=[];
             _data_edit=[];
         },

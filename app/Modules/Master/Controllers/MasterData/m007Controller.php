@@ -27,18 +27,29 @@ class m007Controller extends Controller
     {
         $data = $request->all();
         $data = Dao::call_stored_procedure('SPC_m007_LST1', $data);
-        return view('Master::masterdata.m007.search')
-            ->with('data', $data);
+        $view= view('Master::masterdata.m007.search')
+            ->with('data', $data)->render();
+        $data = Dao::call_stored_procedure('SPC_M007_FND1');
+        $result = array(
+                    'status'     => 200,
+                    'data'       => $data,
+                    'view'       => $view,
+                    'statusText' => 'success',
+                );
+        return response()->json($result);
     }
 
      public function m007_add(Request $request)
     {
         $data = $request->all();
         $param['name_div'] = $data['name_div'];
+         $xml               = new SQLXML();
+        $param['xml']      = $xml->xml($data['data']);
         $param['user_id']  = Auth::user()->account_nm;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());
-        if ($validate['result']) {
+        $validateMulti     = $this->checkValidateMulti($data['data']);
+        if ($validate['result'] && $validateMulti['result']) {
             $data = Dao::call_stored_procedure('SPC_M007_ACT2', $param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
@@ -58,7 +69,7 @@ class m007Controller extends Controller
                 );
             }
         } else {
-            $result = array('error' => array_merge(isset($validate['error']) ? $validate['error'] : array()),
+            $result = array('error' => array_merge(isset($validate['error']) ? $validate['error'] : array(), isset($validateMulti['error']) ? $validateMulti['error'] : array()),
                 'status'                => 201,
                 'statusText'            => 'validate failed');
         }

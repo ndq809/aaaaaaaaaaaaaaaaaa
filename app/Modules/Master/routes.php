@@ -134,7 +134,9 @@ Route::group(
 		Route::post('s002/update','s002Controller@s002_update');
 		Route::post('s002/delete','s002Controller@s002_delete');
 		Route::post('s001/list'  ,'s001Controller@s001_list');
-		Route::post('s001/update','s001Controller@s001_update');	
+		Route::post('s001/list-user'  ,'s001Controller@s001_listUser');
+		Route::post('s001/update','s001Controller@s001_update');
+		Route::post('s001/target','s001Controller@s001_target');	
 	}
 );
 

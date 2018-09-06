@@ -5,6 +5,7 @@
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade active in">
+            @if(isset($data_default[1][0]['catalogue_nm']))
              <div class="left-header" data-target=".lesson-list" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
@@ -27,8 +28,10 @@
                     </thead>
                     <tbody>
                         @if(isset($data_default)&&$data_default[1][0]['catalogue_nm'] != '')
+                        @php($focused = 0)
                             @foreach($data_default[1] as $index=>$item)
-                            @if($index==0)
+                            @if($item['focused']==1 && $focused == 0)
+                            @php($focused = 1)
                             <tr class="selected-row">
                                 <td>
                                     <input type="hidden" name="" class="lesson-id" value="{{$item['id']}}">
@@ -69,6 +72,7 @@
                     </tbody>
                 </table>
             </div>
+            @endif
             <div class="left-header" data-target=".question" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
@@ -94,7 +98,7 @@
                 <div class="left-content ">
                     <label class="radio-inline"><input type="radio" name="optradio">Xin chào</label>
                 </div>
-                <button class="btn btn-sm btn-primary answer-btn " type="button">Trả Lời</button>
+                <button class="btn btn-sm btn-primary margin-bottom margin-left {{$raw_data[0][0]['btn-answer']==1?'btn-answer':'btn-disabled'}}" type="button">Trả Lời</button>
                 <div class="left-hint ">
                     <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
                 </div>
@@ -116,10 +120,11 @@
                 <textarea class="form-control input-sm" rows="2"></textarea>
                  <label >Nội dung</label>
                 <textarea class="form-control input-sm" rows="5"></textarea>
-                <button class="btn btn-sm btn-primary margin-top margin-bottom" type="button">Gửi Câu Hỏi</button>
+                <button class="btn btn-sm btn-primary margin-top margin-bottom {{$raw_data[0][0]['btn-question']==1?'btn-question':'btn-disabled'}}" type="button">Gửi Câu Hỏi</button>
             </div>
         </div>
         <div id="sectionB" class="tab-pane fade">
+             @if(isset(Auth::user()->account_nm))
             <div class="left-header" data-target=".newsfeed" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
@@ -166,6 +171,7 @@
                 </table>
                 <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>
             </div>
+            @endif
             <div class="left-header" data-target=".top-rank" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>

@@ -49,6 +49,14 @@ function initevent_s002(){
            }); 
         }
     })
+
+     $(document).on('change','.search-block #system_div_s',function(){
+        getTarget_s();
+    })
+
+     $(document).on('change','.update-block #system_div',function(){
+        getTarget($('.update-row td:nth-child(7)').text());
+    })
 }
 
 function s002_execute(page){
@@ -141,6 +149,75 @@ function s002_update(trigger){
                     break;
                 default :
                     break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getTarget(sub_item_text){
+    var selectize_sub= $('.update-block #account_div')[0].selectize;
+    if($('.update-block #system_div').val()==0){
+        selectize_sub.setValue('', true);
+        selectize_sub.clearOptions();
+        selectize_sub.disable();
+        return;
+    }
+    var data={};
+    data['system_div'] = $('.update-block #system_div').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/system/s001/target',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            selectize_sub.setValue('', true);
+            selectize_sub.clearOptions();
+            selectize_sub.addOption(res.data);
+            selectize_sub.removeOption(0);
+            if ($('.update-block #system_div').val() == 0) {
+                selectize_sub.disable();
+            } else {
+                selectize_sub.enable();
+                selectize_sub.setValue(selectize_sub.getValueByText(sub_item_text));
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getTarget_s(){
+    var selectize_sub= $('.search-block #account_div_s')[0].selectize;
+    if($('.search-block #system_div_s').val()==0){
+        selectize_sub.setValue('', true);
+        selectize_sub.clearOptions();
+        selectize_sub.disable();
+        return;
+    }
+    var data={};
+    data['system_div'] = $('.search-block #system_div_s').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/system/s001/target',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            selectize_sub.setValue('', true);
+            selectize_sub.clearOptions();
+            selectize_sub.addOption(res.data);
+            selectize_sub.removeOption(0);
+            if ($('.search-block #system_div_s').val() == 0) {
+                selectize_sub.disable();
+            } else {
+                selectize_sub.enable();
             }
         },
         // Ajax error

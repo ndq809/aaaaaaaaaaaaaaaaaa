@@ -81,8 +81,7 @@ BEGIN
 
 	CREATE TABLE #VOCABULARY(
 		row_id	INT
-	,	Vocabulary_id NVARCHAR(15)
-	,	Vocabulary_dtl_id NVARCHAR(15)	
+	,	Vocabulary_code INT	
 	)
 
 	CREATE TABLE #TABLE_DETAIL(
@@ -114,19 +113,18 @@ BEGIN
 	INSERT INTO #VOCABULARY
 	SELECT
 		row_id						=	T.C.value('@row_id 	  ', 'nvarchar(15)')
-	,	Vocabulary_id				=	T.C.value('@vocabulary_id 	  ', 'nvarchar(15)')
-	,	Vocabulary_dtl_id 			=	T.C.value('@vocabulary_dtl_id 	  ', 'tinyint')
+	,	Vocabulary_id				=	T.C.value('@vocabulary_code 	  ', 'INT')
 	FROM @P_xml_detail.nodes('row') T(C)
 	WHERE T.C.value('@edit-confirm 	  ', 'nvarchar(15)') IS NULL
+
 	IF EXISTS(
 	SELECT *
 	FROM #VOCABULARY a
-	JOIN (	SELECT Vocabulary_id, Vocabulary_dtl_id 
+	JOIN (	SELECT Vocabulary_code 
 			FROM #VOCABULARY 
-			GROUP BY Vocabulary_id, Vocabulary_dtl_id 
+			GROUP BY Vocabulary_code 
 			HAVING COUNT(*) > 1 ) b
-	ON a.Vocabulary_id = b.Vocabulary_id
-	   AND a.Vocabulary_dtl_id = b.Vocabulary_dtl_id
+	ON a.Vocabulary_code = b.Vocabulary_code
 	)
 	BEGIN
 	 SET @w_result = 'NG'
@@ -138,17 +136,16 @@ BEGIN
 	 , 'submit-table'
 	 , row_id
 	 FROM #VOCABULARY a
-	JOIN (	SELECT Vocabulary_id, Vocabulary_dtl_id 
+	JOIN (	SELECT Vocabulary_code 
 			FROM #VOCABULARY 
-			GROUP BY Vocabulary_id, Vocabulary_dtl_id 
+			GROUP BY Vocabulary_code 
 			HAVING COUNT(*) > 1 ) b
-	ON a.Vocabulary_id = b.Vocabulary_id
-	   AND a.Vocabulary_dtl_id = b.Vocabulary_dtl_id
+	ON a.Vocabulary_code = b.Vocabulary_code
 	END  
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
 	INSERT INTO M006
-	OUTPUT 0,INSERTED.Vocabulary_id,INSERTED.Vocabulary_dtl_id INTO #VOCABULARY
+	OUTPUT 0,scope_identity() INTO #VOCABULARY
 	SELECT
 		CASE vocabulary_id
 		WHEN 0 THEN (SELECT ISNULL(MAX(M006.vocabulary_id),0) + row_index FROM M006 WHERE M006.vocabulary_id = #TABLE_DETAIL.vocabulary_id)
@@ -189,13 +186,11 @@ BEGIN
 			INSERT INTO F009
 			SELECT 
 				@w_briged_id
-			,	#VOCABULARY.Vocabulary_id
-			,	#VOCABULARY.Vocabulary_dtl_id
+			,	#VOCABULARY.Vocabulary_code
 			FROM #VOCABULARY
 		END
 		INSERT INTO M012(
 			target_id
-		,	target_dtl_id
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -216,7 +211,6 @@ BEGIN
 		)
 		SELECT
 			@P_post_id
-		,	NULL
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0
@@ -316,8 +310,7 @@ BEGIN
 			INSERT INTO F009
 			SELECT 
 				@w_briged_id
-			,	#VOCABULARY.Vocabulary_id
-			,	#VOCABULARY.Vocabulary_dtl_id
+			,	#VOCABULARY.Vocabulary_code
 			FROM #VOCABULARY
 		END
 		DELETE FROM M012 WHERE M012.target_id = @P_post_id

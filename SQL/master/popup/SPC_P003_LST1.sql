@@ -29,7 +29,8 @@ BEGIN
 
 	--
 	CREATE TABLE #P003(
-		vocabulary_id			NVARCHAR(15)
+		vocabulary_code			INT	
+	,	vocabulary_id			NVARCHAR(15)
 	,	vocabulary_dtl_id    	NVARCHAR(15)
 	,	vocabulary_nm           NVARCHAR(50)
 	,	vocabulary_div			INT	
@@ -45,7 +46,8 @@ BEGIN
 	--
 	INSERT INTO #P003
 	SELECT
-		M006.Vocabulary_id		
+		M006.id
+	,	M006.Vocabulary_id		
 	,	M006.Vocabulary_dtl_id  
 	,	M006.Vocabulary_nm
 	,	M999.number_id      

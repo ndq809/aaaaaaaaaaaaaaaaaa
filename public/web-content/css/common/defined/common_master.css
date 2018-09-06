@@ -305,6 +305,22 @@ a.btn-add span{
     color: #c0c0c0!important;
 }
 
+.btn-disable-custom {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    /*Button disabled - CSS color class*/
+    color: #c0c0c0;
+}
+
+.btn-disable-custom a{
+    color: #c0c0c0!important;
+}
+
+.btn-disable-custom a span{
+    color: #c0c0c0!important;
+}
+
 .update-role:hover{
     border-color: inherit; 
 }

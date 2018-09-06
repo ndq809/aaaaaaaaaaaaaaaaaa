@@ -10,7 +10,7 @@
 
 $namespace = 'App\Modules\User\Controllers';
 Route::group(
-	['namespace' => $namespace,'prefix'=>'','middleware'=>['web']],
+	['namespace' => $namespace,'prefix'=>'','middleware'=>['web','CheckMultiAccess']],
 	function() {
 		Route::get('contribute','ContributeController@getIndex');	
 		Route::get('','HomePageController@getIndex');
@@ -35,7 +35,7 @@ Route::group(
 );
 $namespace2 = 'App\Modules\User\Controllers';
 Route::group(
-	['namespace' => $namespace2,'prefix'=>'common','middleware'=>['web']],
+	['namespace' => $namespace2,'prefix'=>'common','middleware'=>['web','CheckMultiAccess']],
 	function() {
 		Route::post('getcomment', 'CommonController@getComment');
 		Route::post('changepass', 'CommonController@changePass');

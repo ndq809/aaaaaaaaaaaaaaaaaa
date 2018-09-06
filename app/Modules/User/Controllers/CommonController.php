@@ -2,14 +2,15 @@
 namespace App\Modules\User\Controllers;
 
 use App\Http\Controllers\ControllerUser;
-use Illuminate\Http\Request;
-use Mail;
-use DAO;
 use Auth;
+use DAO;
+use Hashids\Hashids;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
-use Illuminate\Support\Facades\File;
+use Mail;
 
 class CommonController extends ControllerUser
 {
@@ -19,7 +20,12 @@ class CommonController extends ControllerUser
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-    
+    private $hashids;
+
+    public function __construct()
+    {
+        $this->hashids = new Hashids();
+    }
 
     public function getComment()
     {
@@ -27,7 +33,7 @@ class CommonController extends ControllerUser
         //     $temp=DAO::call_stored_procedure('getData1');
         // } catch (\Exception $e) {
         //     echo($e->getMessage());
-            
+
         // }
         return view('comment');
     }
@@ -77,206 +83,227 @@ class CommonController extends ControllerUser
         return $pass;
     }
 
-     public function getcatalogue(Request $request)
+    public function getcatalogue(Request $request)
     {
-          $data        = $request->all();    
-          $data = Dao::call_stored_procedure('SPC_COMMON_CATALORUE',$data);
-          $result = array(
-                'status' => 200,
-                'data' => $data[0],
-                'statusText' => 'success',
-            );
-          return response()->json($result);
+        $data   = $request->all();
+        $data   = Dao::call_stored_procedure('SPC_COMMON_CATALORUE', $data);
+        $data   = $this->encodeID($data);
+        $result = array(
+            'status'     => 200,
+            'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
 
     }
 
-     public function getgroup(Request $request)
+    public function getgroup(Request $request)
     {
-          $data        = $request->all();    
-          $data = Dao::call_stored_procedure('SPC_COMMON_GROUP',$data);
-          $result = array(
-                'status' => 200,
-                'data' => $data[0],
-                'statusText' => 'success',
-            );
-          return response()->json($result);
+        $data   = $request->all();
+        $data   = $this->hashids->decode($data['data']);
+        $data   = Dao::call_stored_procedure('SPC_COMMON_GROUP', $data);
+        $data   = $this->encodeID($data);
+        $result = array(
+            'status'     => 200,
+            'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
 
     }
 
     public function addLesson(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $data = Dao::call_stored_procedure('SPC_COM_ADD_LESSON',$param);
+    {
+        $param            = $request->all();
+        $param[1]         = $this->hashids->decode($param[1])[0];
+        $param[2]         = $this->hashids->decode($param[2])[0];
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_ADD_LESSON', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
-                'status'     => 200,
-                'data'      => $data[1],
-                'statusText' => 'success',
-              );
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            foreach ($data[1] as $key => $value) {
+                $data[1][$key]['id']     = $this->hashids->encode($value['id']);
+                $data[1][$key]['item_1'] = $this->hashids->encode($value['item_1']);
+                $data[1][$key]['item_2'] = $this->hashids->encode($value['item_2']);
             }
-        
-      return response()->json($result);
-   }
-
-    public function deleteLesson(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $data = Dao::call_stored_procedure('SPC_COM_DELETE_LESSON',$param);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
-                'status'     => 200,
-                'data'      => $data[0],
-                'statusText' => 'success',
-              );
-            }
-        
-      return response()->json($result);
-   }
-
-    public function remembervoc(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $data = Dao::call_stored_procedure('SPC_COM_REMEMBER',$param);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
-                'status'     => 200,
-                'data'      => $data[0],
-                'statusText' => 'success',
-              );
-            }
-        
-      return response()->json($result);
-   }
-
-   public function forgetvoc(Request $request)
-   {
-        $param = $request->all();
-        $data = Dao::call_stored_procedure('SPC_COM_FORGET',$param);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
-                'status'     => 200,
-                'data'      => $data[0],
-                'statusText' => 'success',
-              );
-            }
-        
-      return response()->json($result);
-   }
-
-   public function getExample(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $data = Dao::call_stored_procedure('SPC_COM_EXAM_LIST',$param);
-        $view1 = view('exam_content')->with('data', $data)->render();
-        $view2 = view('paging_content')->with('data', $data)->render();
-        $result = array(
-          'status'     => 200,
-          'view1'      => $view1,
-          'view2'      => $view2,
-          'statusText' => 'success',
-        );
-      return response()->json($result);
-   }
-
-   public function addExample(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $data = Dao::call_stored_procedure('SPC_COM_ADD_EXAM',$param);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
-                'status'     => 200,
-                'statusText' => 'success',
-              );
-            }
-        
-      return response()->json($result);
-   }
-
-   public function toggleEffect(Request $request)
-   {
-        $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
-        $param['ip']=$request->ip();
-        $data = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT',$param);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-                $result = array(
-                    'status' => 208,
-                    'data' => $data[0],
-                );
-            } else if ($data[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $data[0],
-                );
-            } else {
-                $result = array(
+            $result = array(
                 'status'     => 200,
                 'data'       => $data[1],
                 'statusText' => 'success',
-              );
-            }
-        
-      return response()->json($result);
-   }
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function deleteLesson(Request $request)
+    {
+        $param            = $request->all();
+        $param[0]         = $this->hashids->decode($param[0])[0];
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_DELETE_LESSON', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[0],
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function remembervoc(Request $request)
+    {
+        $param            = $request->all();
+        $param[3]         = $this->hashids->decode($param[3])[0];
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_REMEMBER', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[0],
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function forgetvoc(Request $request)
+    {
+        $param    = $request->all();
+        $param[1] = $this->hashids->decode($param[1])[0];
+        $data     = Dao::call_stored_procedure('SPC_COM_FORGET', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[0],
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function getExample(Request $request)
+    {
+        $param            = $request->all();
+        $param[1]         = $this->hashids->decode($param[1])[0];
+        if(Auth::user()!=null){
+            $param['user_id'] = Auth::user()->account_nm;
+        }else{
+            $param['user_id'] = '';
+        }
+        $data             = Dao::call_stored_procedure('SPC_COM_EXAM_LIST', $param);
+        $data             = $this->encodeID($data);
+        $view1            = view('exam_content')->with('data', $data)->render();
+        $view2            = view('paging_content')->with('data', $data)->render();
+        $result           = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            'view2'      => $view2,
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
+
+    public function addExample(Request $request)
+    {
+        $param            = $request->all();
+        $param[1]         = $this->hashids->decode($param[1])[0];
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_ADD_EXAM', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function toggleEffect(Request $request)
+    {
+        $param            = $request->all();
+        $param[1]         = $this->hashids->decode($param[1])[0];
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[1],
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
 
     public function postUpload()
     {
@@ -295,21 +322,21 @@ class CommonController extends ControllerUser
 
         $photo = $form_data['img'];
 
-        $original_name = $photo->getClientOriginalName();
+        $original_name             = $photo->getClientOriginalName();
         $original_name_without_ext = substr($original_name, 0, strlen($original_name) - 4);
 
-        $filename = $this->sanitize($original_name_without_ext);
-        $allowed_filename = $this->createUniqueFilename( $filename );
+        $filename         = $this->sanitize($original_name_without_ext);
+        $allowed_filename = $this->createUniqueFilename($filename);
 
-        $filename_ext = $allowed_filename .'_'.date("Ymd HHmmss").round(microtime(true) * 1000).'.jpg';
+        $filename_ext = $allowed_filename . '_' . date("Ymd HHmmss") . round(microtime(true) * 1000) . '.jpg';
 
         $manager = new ImageManager();
-        $image = $manager->make( $photo )->encode('jpg')->save((public_path('uploads')).'/'  . $filename_ext );
+        $image   = $manager->make($photo)->encode('jpg')->save((public_path('uploads')) . '/' . $filename_ext);
         // var_dump(public_path('uploads'));die;
-        if( !$image) {
+        if (!$image) {
 
             return Response::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
@@ -321,13 +348,12 @@ class CommonController extends ControllerUser
         // $database_image->save();
 
         return Response::json([
-            'status'    => 'success',
-            'url'       => 'uploads/' . $filename_ext,
-            'width'     => $image->width(),
-            'height'    => $image->height()
+            'status' => 'success',
+            'url'    => 'uploads/' . $filename_ext,
+            'width'  => $image->width(),
+            'height' => $image->height(),
         ], 200);
     }
-
 
     public function postCrop()
     {
@@ -347,19 +373,19 @@ class CommonController extends ControllerUser
         $angle = $form_data['rotation'];
 
         $filename_array = explode('/', $image_url);
-        $filename = $filename_array[sizeof($filename_array)-1];
+        $filename       = $filename_array[sizeof($filename_array) - 1];
 
         $manager = new ImageManager();
-        $image = $manager->make( $image_url );
+        $image   = $manager->make($image_url);
         $image->resize($imgW, $imgH)
             ->rotate(-$angle)
             ->crop($cropW, $cropH, $imgX1, $imgY1)
-            ->save((public_path('uploads')).'/cropped-'  . $filename);
+            ->save((public_path('uploads')) . '/cropped-' . $filename);
 
-        if( !$image) {
+        if (!$image) {
 
             return Response::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
@@ -367,11 +393,10 @@ class CommonController extends ControllerUser
 
         return Response::json([
             'status' => 'success',
-            'url' => env('URL') . 'uploads/cropped-' . $filename
+            'url'    => env('URL') . 'uploads/cropped-' . $filename,
         ], 200);
 
     }
-
 
     private function sanitize($string, $force_lowercase = true, $anal = false)
     {
@@ -380,23 +405,21 @@ class CommonController extends ControllerUser
             "â€”", "â€“", ",", "<", ".", ">", "/", "?");
         $clean = trim(str_replace($strip, "", strip_tags($string)));
         $clean = preg_replace('/\s+/', "-", $clean);
-        $clean = ($anal) ? preg_replace("/[^a-zA-Z0-9]/", "", $clean) : $clean ;
+        $clean = ($anal) ? preg_replace("/[^a-zA-Z0-9]/", "", $clean) : $clean;
 
         return ($force_lowercase) ?
-            (function_exists('mb_strtolower')) ?
-                mb_strtolower($clean, 'UTF-8') :
-                strtolower($clean) :
-            $clean;
+        (function_exists('mb_strtolower')) ?
+        mb_strtolower($clean, 'UTF-8') :
+        strtolower($clean) :
+        $clean;
     }
 
-
-    private function createUniqueFilename( $filename )
+    private function createUniqueFilename($filename)
     {
-        $upload_path = env('UPLOAD_PATH');
+        $upload_path     = env('UPLOAD_PATH');
         $full_image_path = $upload_path . $filename . '.jpg';
 
-        if ( File::exists( $full_image_path ) )
-        {
+        if (File::exists($full_image_path)) {
             // Generate token for image
             $image_token = substr(sha1(mt_rand()), 0, 5);
             return $filename . '-' . $image_token;
@@ -410,5 +433,21 @@ class CommonController extends ControllerUser
      * @created at 2017-08-16 03:29:46
      * @return void
      */
+
+    public static function encodeID($data)
+    {
+        $hashids = new Hashids();
+        foreach ($data as $key => $value) {
+            foreach ($value as $key1 => $value1) {
+                foreach ($value1 as $key2 => $value2) {
+                    if($key2!='row_id' && strpos($key2, 'id')!==false || strpos($key2, 'value')!==false ){
+                        $data[$key][$key1][$key2] = $hashids->encode($value2);
+                    }
+                }
+                
+            }
+        }
+        return $data;
+    }
 
 }

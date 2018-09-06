@@ -20,7 +20,7 @@ class CheckPermission
     public function handle($request, Closure $next, $guard = null)
     {
         if ($request->isMethod('get')) {
-            $permission = common::getPermission(Auth::user()->account_div,URL::current());
+            $permission = common::getPermission(Auth::user()->account_div,Auth::user()->system_div,URL::current());
             \Session::put('permission',$permission);
 
             //check permission to access screen
@@ -30,7 +30,7 @@ class CheckPermission
                 if($screen_id=='g001'){
                     return redirect('master/logout');
                 }else{
-                    $permission = common::getPermission(Auth::user()->account_div,URL::previous());
+                    $permission = common::getPermission(Auth::user()->account_div,Auth::user()->system_div,URL::previous());
                     if($permission['access_per']==0){
                         return redirect('master/general/g001')->with('error', ['status'       => 209,
                                                           'statusText'   => 'access denied']);

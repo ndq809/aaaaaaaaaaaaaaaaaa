@@ -8,15 +8,21 @@ $(function(){
 
 function init_s001(){
 	initevent_s001();
-    if($('#account_div').val()!=0){
-        $('#account_div').trigger('change');
-    }
+    $('#target_div').trigger('change');
 }
 
 function initevent_s001(){
 	$(document).on('change','#account_div',function(){
-		getPermission();
+        if($('#target_div').val()==1){
+            getPermissionUser();
+        }else{
+            getPermission();
+        }
 	})
+
+    $(document).on('change','#target_div',function(){
+        getTarget();
+    })
     $(document).on('click','#btn-save',function(){
         showMessage(1,function(){
             setPermission();
@@ -43,6 +49,59 @@ function getPermission(){
     });
 }
 
+function getPermissionUser(){
+    var data=getInputData();
+    $.ajax({
+        type: 'POST',
+        url: '/master/system/s001/list-user',
+        dataType: 'html',
+        loading:true,
+        data: data,
+        success: function (res) {
+            $('#result').html(res);
+            $('.sub-checkbox:not(.super-checkbox)').trigger('change');
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getTarget(){
+    var selectize_sub= $('#account_div')[0].selectize;
+    if($('#target_div').val()==0){
+        selectize_sub.setValue('', true);
+        selectize_sub.clearOptions();
+        selectize_sub.disable();
+        return;
+    }
+    var data={};
+    data['system_div'] = $('#target_div').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/system/s001/target',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            selectize_sub.setValue('', true);
+            selectize_sub.clearOptions();
+            selectize_sub.addOption(res.data);
+            selectize_sub.removeOption(0);
+            if ($('#target_div').val() == 0) {
+                selectize_sub.disable();
+            } else {
+                selectize_sub.enable();
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
 function setPermission(){
     var data=getPermissionArray();
     $.ajax({
@@ -52,6 +111,7 @@ function setPermission(){
         loading:true,
         data: {
             data: $.extend({}, data),
+            system_div:$('#target_div').val(),
             account_div:$('#account_div').val()
         },
         success: function (res) {

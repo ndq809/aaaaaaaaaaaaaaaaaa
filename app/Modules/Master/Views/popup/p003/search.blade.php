@@ -7,6 +7,7 @@
             <thead>
                 <tr>
                     <th width="50px">ID</th>
+                    <th class="hidden"></th>
                     <th width="50px">Mã TV</th>
                     <th width="70px">Phiên Bản</th>
                     <th width="150px">Tên Từ Vựng</th>
@@ -25,8 +26,9 @@
                 @foreach($data[0] as $index => $row)
                 <tr>
                     <td>{{$index+1}}</td>
-                    <td class="refer-item" refer_id="vocabulary_id">{{$row['vocabulary_id']}}</td>
-                    <td class="refer-item" refer_id="vocabulary_dtl_id">{{$row['vocabulary_dtl_id']}}</td>
+                    <td class="refer-item hidden" refer_id="vocabulary_code">{{$row['vocabulary_code']}}</td>
+                    <td >{{$row['vocabulary_id']}}</td>
+                    <td >{{$row['vocabulary_dtl_id']}}</td>
                     <td class="refer-item" refer_id="vocabulary_nm">{{$row['vocabulary_nm']}}</td>
                     <td >{{$row['vocabulary_div_nm']}}</td>
                     <td class="refer-item" refer_id="spelling">{{$row['spelling']}}</td>

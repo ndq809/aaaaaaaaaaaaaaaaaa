@@ -18,7 +18,7 @@
                 <label>Lựa Chọn Đối Tượng</label>
                 <select id="name_div" class="submit-item allow-selectize new-allow required">
                     @foreach($data_default[0] as $item)
-                        <option value="{{$item['value']==0?'':$item['value']}}">{{$item['value']!='0'?$item['value'].'_'.$item['text']:''}}</option>
+                        <option value="{{$item['value']==0?'':$item['value']}}">{{$item['value']!='0'?$item['text']:''}}</option>
                     @endforeach
                 </select>
             </div>

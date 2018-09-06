@@ -27,7 +27,7 @@
                     <td refer-id='account_nm'><span>{{$row['account_nm']}}</span></td>
                     <td refer-id='employee_id'><span>{{$row['employee_nm']}}</span></td>
                     <td refer-id='system_div'><span>{{$row['system_div']}}</span></td>
-                    <td refer-id='account_div'><span>{{$row['account_div']}}</span></td>
+                    <td ><span>{{$row['account_div']}}</span></td>
                     <td refer-id='remark'>{{$row['remark']}}</td>
                     <td class="edit-flag">Không</td>
                 </tr>

@@ -1209,3 +1209,9 @@ a.btn-add span {
     border: none;
     outline: none;
 }
+
+.btn-disabled{
+    cursor: not-allowed!important;
+    opacity: .65;
+}
+

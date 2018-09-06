@@ -43,10 +43,10 @@ function initCommonMaster() {
             $(this).css('min-width',$(this).parent().attr('min-width'));
         })
 
-        if(settings.url.split('/')[settings.url.split('/').length-1]=='list'){
-            var param = parseQueryString(settings.data);
-            history.pushState({}, null, window.location.href.split('?')[0]+'?p='+param.page);
-        }
+        // if(settings.url.split('/')[settings.url.split('/').length-1]=='list'){
+        //     var param = parseQueryString(settings.data);
+        //     history.pushState({}, null, window.location.href.split('?')[0]+'?p='+param.page);
+        // }
         // $('.table-focus tbody tr').first().addClass('active-row');
     });
 
@@ -215,11 +215,13 @@ function initEvent() {
             if(sub_item.length==0){
                 parent_group.find('input').prop('checked',true);
                 parent_group=$('.super-all-checkbox').eq($(this).parent().index()-2);
-                var sub_item=$('.super-checkbox').filter(function(){
+                if(parent_group.length != 0){
+                    var sub_item=$('.super-checkbox').filter(function(){
                     return $(this).attr('group').substring(0,parent_group.attr('group').length)===parent_group.attr('group')&&!$(this).prop('checked');
-                })
-                if(sub_item.length==0){
-                    parent_group.prop('checked',true);
+                    })
+                    if(sub_item.length==0){
+                        parent_group.prop('checked',true);
+                    }
                 }
             }else{
                 parent_group.find('input').prop('checked',false);
@@ -898,11 +900,13 @@ function setCheckBox(super_checkbox){
             })
             sub_item.prop('checked',true);
             parent_group=$('.super-all-checkbox').eq($(super_checkbox).parent().index()-1);
-            var sub_item=$('.super-checkbox').filter(function(){
+            if(parent_group.length != 0){
+                var sub_item=$('.super-checkbox').filter(function(){
                 return $(this).attr('group').substring(0,parent_group.attr('group').length)===parent_group.attr('group')&&!$(this).prop('checked');
-            })
-            if(sub_item.length==0){
-                parent_group.prop('checked',true);
+                })
+                if(sub_item.length==0){
+                    parent_group.prop('checked',true);
+                }
             }
         }
     }else{

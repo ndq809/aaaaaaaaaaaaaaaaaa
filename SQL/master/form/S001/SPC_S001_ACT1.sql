@@ -9,7 +9,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_S001_ACT1]
-	 @P_account_div			TINYINT			=   0
+	 @P_system_div			TINYINT			=   0
+,	 @P_account_div			TINYINT			=   0
 ,	 @P_per_xml				XML				=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
@@ -33,21 +34,39 @@ BEGIN
 		
 		SET @w_result = 'OK'
 		--
-		IF NOT EXISTS (SELECT 1 FROM M999 WHERE M999.name_div = 5 AND M999.number_id = @P_account_div AND M999.del_flg = 0) --code not exits 
+		IF @P_system_div =5
 		BEGIN
-		 SET @w_result = 'NG'
-		 SET @w_message = 5
-		 INSERT INTO @ERR_TBL
-		 SELECT 
-		  0
-		 , @w_message
-		 , 'account_div'
-		 , ''
+			IF NOT EXISTS (SELECT 1 FROM M999 WHERE M999.name_div = 5 AND M999.number_id = @P_account_div AND M999.del_flg = 0) --code not exits 
+			BEGIN
+			 SET @w_result = 'NG'
+			 SET @w_message = 5
+			 INSERT INTO @ERR_TBL
+			 SELECT 
+			  0
+			 , @w_message
+			 , 'account_div'
+			 , ''
+			END
 		END
-		DELETE FROM S002 WHERE S002.account_div = @P_account_div
+		ELSE
+		BEGIN
+			IF NOT EXISTS (SELECT 1 FROM M999 WHERE M999.name_div = 14 AND M999.number_id = @P_account_div AND M999.del_flg = 0) --code not exits 
+			BEGIN
+			 SET @w_result = 'NG'
+			 SET @w_message = 5
+			 INSERT INTO @ERR_TBL
+			 SELECT 
+			  0
+			 , @w_message
+			 , 'account_div'
+			 , ''
+			END
+		END
+		DELETE FROM S002 WHERE S002.system_div = @P_system_div AND S002.account_div = @P_account_div
 
 		INSERT INTO S002(
-			account_div
+			system_div
+		,	account_div
 		,	screen_id
 		,	access_per 		
 		,	menu_per			
@@ -71,8 +90,9 @@ BEGIN
 		,	del_flg
 		)	
 			SELECT
-			account_div			=	@P_account_div
-		,	screen_id 	 		=	T.C.value('@screen_id 	  ', 'nvarchar(20)')
+			system_div			=	@P_system_div
+		,	account_div			=	@P_account_div
+		,	screen_id 	 		=	T.C.value('@screen_id 	  ', 'nvarchar(100)')
 		,	access_per 	 		=	T.C.value('@access_per 	  ', 'tinyint')
 		,	menu_per	 		=	T.C.value('@menu_per	  ', 'tinyint')
 		,	add_per		 		=	T.C.value('@add_per		  ', 'tinyint')

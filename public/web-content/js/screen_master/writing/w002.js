@@ -111,18 +111,6 @@ function initevent_w002(){
         w002_refer($(this).val());
     })
 
-     $(document).on('blur','#post_id',function(){
-        if($(this).val()=='POST-'){
-            $(this).trigger('change');
-        }
-    })
-
-    $(document).on('focus','#post_id',function(){
-        if($(this).val()==''){
-            $(this).val('POST-');
-        }
-    })
-
     $(document).on('change','#post_title',function(){
         if($(this).val()!=''){
             $('.title-header span').text($(this).val());

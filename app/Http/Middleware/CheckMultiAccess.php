@@ -23,10 +23,17 @@ class CheckMultiAccess
         if (Auth::guard($guard)->check()&&Auth::guard()->user()!==null&&\Session::getId()!==Auth::guard()->user()->session_id) {
             Auth::guard()->logout();
              $request->session()->invalidate();
-            return redirect()->back()->with('error', ['status'       => 206,
+             if($request->ajax()){
+                return response()->json(['status'       => 206,
+                                 'statusText'   => 'account duplicate']);
+             }else{
+                return redirect()->back()->with('error', ['status'       => 206,
                                                       'statusText'   => 'account duplicate']);
+             }
+            
         }
-        $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_nm:''));
+        $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_nm:'',Auth::user()!=NULL?Auth::user()->account_div:'',Auth::user()!=NULL?Auth::user()->system_div:''));
+        // var_dump($data);die;
         View::share('raw_data', $data);
         return $next($request);
     }

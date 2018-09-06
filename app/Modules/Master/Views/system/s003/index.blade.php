@@ -22,12 +22,11 @@
                 </div>
             </div>
         </div>
-        
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Mã Nhân Viên</label>
                 <div class="input-group">
-                    <input data-refer="p002" id="employee_id" class="form-control input-sm input-refer submit-item required" placeholder="Nhập mã nhân viên" > 
+                    <input data-refer="p002" id="employee_id" class="form-control input-sm input-refer submit-item" placeholder="Nhập mã nhân viên" > 
                     <span class="input-group-btn"> 
                         <a class="btn btn-primary btn-sm btn-popup" type="button" href="/master/popup/p002">Tìm Kiếm</a> 
                     </span> 
@@ -54,6 +53,7 @@
                 </select>
             </div>
         </div>
+        
         <div class="col-sm-12"></div>
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">

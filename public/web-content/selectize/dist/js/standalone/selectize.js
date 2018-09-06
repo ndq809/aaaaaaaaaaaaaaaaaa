@@ -2601,7 +2601,7 @@
 			for (var i = 0; i < childNodes.length; i++) {
 				this.buffer.appendChild(childNodes[i]);
 			}
-	
+			// console.log(this.buffer);
 			var items = $.isArray(values) ? values : [values];
 			for (var i = 0, n = items.length; i < n; i++) {
 				this.isPending = (i < n - 1);
@@ -2609,7 +2609,9 @@
 			}
 	
 			var control = this.$control[0];
-			control.insertBefore(this.buffer, control.firstChild);
+			if(this.buffer != null){
+				control.insertBefore(this.buffer, control.firstChild);
+			}
 	
 			this.buffer = null;
 		},
@@ -3053,7 +3055,7 @@
 				self.setCaret(caret);
 			}
 			while (values.length) {
-				self.removeItem(values.pop());
+				self.removeItem(values.pop(),true);
 			}
 	
 			self.showInput();

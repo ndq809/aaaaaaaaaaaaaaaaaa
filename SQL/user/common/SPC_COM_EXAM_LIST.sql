@@ -27,7 +27,7 @@ BEGIN
 
 	SELECT
 		@P_row_id AS row_id
-	,	M012.example_id
+	,	M012.example_id AS id
 	,	M012.language1_content
 	,	M012.language2_content
 	,	M012.clap

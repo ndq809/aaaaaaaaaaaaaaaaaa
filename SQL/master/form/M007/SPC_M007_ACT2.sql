@@ -8,6 +8,7 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_M007_ACT2]
      @P_lib_nm	     		NVARCHAR(200)		= ''
+,	 @P_type_xml			XML					= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -98,6 +99,57 @@ BEGIN
 	,	NULL
 	,	NULL
 	,	 0
+
+	DELETE FROM M999 WHERE M999.name_div = @w_number_id
+
+	INSERT INTO M999(
+		M999.name_div
+	,	M999.number_id
+	,	M999.content
+	,	M999.num_remark1
+	,	M999.num_remark2
+	,	M999.num_remark3
+	,	M999.text_remark1
+	,	M999.text_remark2
+	,	M999.text_remark3
+	,	cre_user
+	,	cre_prg
+	,	cre_ip
+	,	cre_date
+	,	upd_user
+	,	upd_prg
+	,	upd_ip
+	,	upd_date
+	,	del_user
+	,	del_prg
+	,	del_ip
+	,	del_date
+	,	del_flg
+	)	
+		SELECT
+		name_div			=	@w_number_id
+	,	number_id 			=	T.C.value('@number_id 	  ', 'tinyint')
+	,	content 			=	T.C.value('@content 	  ', 'nvarchar(MAX)')
+	,	num_remark1 		=	IIF(T.C.value('@num_remark1	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark1	  ', 'nvarchar(10)'))
+	,	num_remark2 		=	IIF(T.C.value('@num_remark2	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark2	  ', 'nvarchar(10)'))
+	,	num_remark3 		=	IIF(T.C.value('@num_remark3	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark3	  ', 'nvarchar(10)'))
+	,	text_remark1		=	T.C.value('@text_remark1  ', 'nvarchar(MAX)')
+	,	text_remark2		=	T.C.value('@text_remark2  ', 'nvarchar(MAX)')
+	,	text_remark3		=	T.C.value('@text_remark3  ', 'nvarchar(MAX)')
+	,	@P_user_id
+	,	@w_program_id
+	,	@P_ip
+	,	@w_time
+	,	''
+	,	''
+	,	''
+	,	NULL
+	,	''
+	,	''
+	,	''
+	,	NULL
+	,	 0
+	FROM @P_type_xml.nodes('row') T(C)
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL

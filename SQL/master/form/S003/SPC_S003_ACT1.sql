@@ -33,7 +33,7 @@ BEGIN
 	BEGIN TRANSACTION
 	BEGIN TRY
 	
-	IF NOT EXISTS (SELECT 1 FROM M009 WHERE M009.employee_id = @P_user_id_in AND M009.del_flg = 0) --code not exits 
+	IF NOT EXISTS (SELECT 1 FROM M009 WHERE M009.employee_id = @P_user_id_in AND M009.del_flg = 0) AND @P_user_id_in <>'' --code not exits 
 	BEGIN
 	 SET @w_result = 'NG'
 	 SET @w_message = 5

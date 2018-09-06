@@ -43,7 +43,7 @@ BEGIN
 	--
 	INSERT INTO #M007
 	SELECT
-		 M007.generate_id
+		 M007.post_id
 	,	 M999.content
 	,	 M007.catalogue_id
 	,	 M002.catalogue_nm

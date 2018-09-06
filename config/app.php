@@ -235,6 +235,7 @@ return [
         'DAO'          => App\Helpers\DAO::class,
         'SQLXML'       => App\Helpers\Sqlxml::class,
         'Common'       => App\Modules\Master\Controllers\Common\CommonController::class,
+        'CommonUser'   => App\Modules\User\Controllers\CommonController::class,
 
     ],
 

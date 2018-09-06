@@ -13,7 +13,7 @@
     <div class="choose_slider vocal-image">
         <div class="choose_slider_items">
             <ul id="mySlider1">
-                @if(isset($data)&&$data[2][0]['vocabulary_id'] != '')
+                @if(isset($data)&&$data[2][0]['id'] != '')
                     @foreach($data[2] as $index => $row)
                         <li class="current_item"><a> <img
                                 src="{{$row['image']}}" />
@@ -31,7 +31,7 @@
     <button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
     <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
 </div>
-@if(isset($data)&&$data[2][0]['vocabulary_id'] != '')
+@if(isset($data)&&$data[2][0]['id'] != '')
     @foreach($data[2] as $index => $row)
         <div class="col-xs-12 no-padding vocabulary-box hidden" word-id="{{$row['row_id']}}">
             <input type="text" name="" class="form-control input-sm vocal-engword" value="{{$row['vocabulary_nm']}}" readonly="readonly">

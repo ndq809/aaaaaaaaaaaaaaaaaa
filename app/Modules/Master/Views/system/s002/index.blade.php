@@ -36,7 +36,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Hệ Thống</label>
-                <select id="system_div" class="submit-item allow-selectize ">
+                <select id="system_div_s" class="submit-item allow-selectize ">
                     @foreach($data_default[0] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -46,7 +46,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Tài Khoản</label>
-                <select id="account_div" class="submit-item allow-selectize ">
+                <select id="account_div_s" class="submit-item allow-selectize ">
                     @foreach($data_default[1] as $item)
                         <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -86,7 +86,7 @@
             <div class="form-group">
                 <label>Mã Nhân Viên</label>
                 <div class="input-group">
-                    <input data-refer="p002" id="employee_id" class="form-control input-sm input-refer submit-item required" placeholder="Nhập mã nhân viên" > 
+                    <input data-refer="p002" id="employee_id" class="form-control input-sm input-refer submit-item" placeholder="Nhập mã nhân viên" > 
                     <span class="input-group-btn"> 
                         <a class="btn btn-primary btn-sm btn-popup" type="button" href="/master/popup/p002">Tìm Kiếm</a> 
                     </span> 

@@ -17,6 +17,13 @@ function initCommon() {
             $.LoadingOverlay("hide");
         }
     }
+    if(jqXHR.responseJSON.status =='206'){
+        showMessage(9,function(){
+            window.location.reload();
+        })
+    }
+    $('.btn-disabled').attr('title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
+    $('.btn-disabled').attr('disabled','');
     });
     $(document).ajaxError(function (evt, jqXHR, settings, err) {
       if (settings.loading) {
@@ -72,6 +79,9 @@ function initCommon() {
     setCollapse();
     initEvent();
     setFooter();
+    $('a.btn-disabled').click(function(e){
+        e.stopPropagation();
+    });
     $("#dtBox").DateTimePicker();
     $(".datetimepicker").on("click", function() {
         $("#dtBox").DateTimePicker();
@@ -103,11 +113,13 @@ function initCommon() {
     }
 
     $('#menu li').each(function(){
-        if(typeof $(this).find('a').attr('href')!='undefined'&&$(this).find('a').attr('href').split('/')[1]===window.location.href.split('/')[3].replace('#','')){
+        if(typeof $(this).find('a').attr('href')!='undefined'&&$(this).find('a').attr('href').split('/')[1]===window.location.href.split('?')[0].split('/')[3].replace('#','')){
             $(this).addClass('active-menu');
         }
     })
     checkError();
+    $('.btn-disabled').attr('disabled','');
+    $('.btn-disabled').attr('title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
     setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
 }
 
@@ -160,7 +172,7 @@ function initEvent() {
         }, 100);
         return element;
     };
-    $('.right-tab .tab-content').sizeChanged(function() {
+    $('.web-main').sizeChanged(function() {
         setRightMenuHeight();
     })
     $('.middle-content').sizeChanged(function() {
@@ -323,7 +335,7 @@ function setPreviousItem(item_of_table,show_index) {
 }
 
 function selectItem(selectItem) {
-    currentSelectItem = $(selectedTab + " table .activeItem");
+    currentSelectItem = $(".activeItem");
     currentSelectItem.removeClass("activeItem");
     selectItem.addClass("activeItem");
     return selectItem.attr("id");
@@ -351,7 +363,7 @@ function getDataCommon(data_Array, excute_link) {
     });
 }
 
-function rememberItem(tr_Element, btn_label ,item_infor) {
+function rememberItem(tr_Element, btn_label ,item_infor,callback) {
     data=item_infor;
     $.ajax({
         type: 'POST',
@@ -374,17 +386,15 @@ function rememberItem(tr_Element, btn_label ,item_infor) {
                     } else {
                         $("#tab1 table tbody").prepend(cloneTr);
                     }
-                    return true;
+                    callback();
                     break;
                 case 207:
                     clearFailedValidate();
                     showFailedData(res.data);
-                    return false;
                     break;
                 case 208:
                     clearFailedValidate();
                     showMessage(4);
-                    return false;
                     break;
                 default :
                     break;
@@ -397,7 +407,7 @@ function rememberItem(tr_Element, btn_label ,item_infor) {
     });
 }
 
-function forgetItem(tr_Element, btn_label ,item_infor) {
+function forgetItem(tr_Element, btn_label ,item_infor,callback) {
     data=item_infor;
     $.ajax({
         type: 'POST',
@@ -420,17 +430,15 @@ function forgetItem(tr_Element, btn_label ,item_infor) {
                     } else {
                         $("#tab1 table tbody").prepend(cloneTr);
                     }
-                    return true;
+                    callback();
                     break;
                 case 207:
                     clearFailedValidate();
                     showFailedData(res.data);
-                    return false;
                     break;
                 case 208:
                     clearFailedValidate();
                     showMessage(4);
-                    return false;
                     break;
                 default :
                     break;
@@ -513,7 +521,8 @@ function deleteLesson(lession_row){
                             lession_row.prev().addClass('selected-row');
                             lession_row.prev().trigger('dblclick');
                             }else{
-                                lession_row.parent().append('<tr class="no-data"><td><i class="glyphicon glyphicon-hand-right"></i></td><td colspan="3">Bạn chưa đăng nhập hoặc chưa đăng ký mục nào</td></tr>')
+                                lession_row.parent().append('<tr class="no-data"><td><i class="glyphicon glyphicon-hand-right"></i></td><td colspan="3">Bạn chưa đăng nhập hoặc chưa đăng ký mục nào</td></tr>');
+                                $('#btn-add-lesson').removeAttr('disabled');
                             }
                         }
                         lession_row.remove();
@@ -660,11 +669,10 @@ function setCollapse() {
 function setRightMenuHeight(){
     var number_of_item;
     if($('.right-tab .tab-content table').hasClass("relax-table")){
-        var item_height=$('.right-tab .tab-content table tbody').first().height();
+        var item_height=$('.right-tab .tab-content table tbody:visible').first().height();
     }else{
-        var item_height=$('.right-tab .tab-content table tbody tr').first().height();
+        var item_height=$('.right-tab .tab-content table tbody tr:visible').first().height();
     }
-    
     if(item_height<50){
         number_of_item=8;
     }else{
@@ -675,7 +683,7 @@ function setRightMenuHeight(){
         number_of_item=number_of_item_temp;
     }
     if ($('.right-tab .tab-content').length != 0) {
-        $('.right-tab .tab-content').height(number_of_item*item_height);
+        $('.right-tab .tab-content').height((number_of_item-1)*item_height);
     }
 
     $('.right-tab .tab-content').css('display','block');
@@ -963,9 +971,20 @@ function showMessage(message_code,ok_callback,cancel_callback){
                 {
                     label: 'Đã hiểu',
                     classes: 'btn btn-sm btn-danger',
+                    action: ok_callback,
                 },
             ]
         });
         break;  
     }
+}
+
+function switchTab(tab_number){
+    $('.right-tab ul li').removeClass('active');
+    $('.right-tab ul li a').attr('aria-expanded',false);
+    $('.right-tab .tab-content .tab-pane').removeClass('active in');
+    $('.right-tab ul li:nth-child('+tab_number+')').addClass('active');
+    $('.right-tab ul li:nth-child('+tab_number+') a').attr('aria-expanded',true);
+    $('.right-tab .tab-content #tab'+tab_number).addClass('active in');
+    selectedTab = "#tab"+tab_number;
 }

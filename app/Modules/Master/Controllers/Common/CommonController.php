@@ -120,12 +120,12 @@ class CommonController extends Controller
 
     }
 
-     public static function getPermission($account_div,$url)
+     public static function getPermission($account_div,$system_div,$url)
     {
         // var_dump(URL::current());die;
         $screen_id= explode("/",$url);
         $screen_id=$screen_id[Count($screen_id)-1];
-        return Dao::call_stored_procedure('SPC_COM_PERMISSION', array($account_div,$screen_id))[0][0];
+        return Dao::call_stored_procedure('SPC_COM_PERMISSION', array($account_div,$system_div,$screen_id))[0][0];
 
     }
 

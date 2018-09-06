@@ -27,8 +27,6 @@ BEGIN
 	CREATE TABLE #VOCABULARY(
 		row_id				INT
 	,	id					INT
-	,	vocabulary_id		NVARCHAR(15)
-	,	vocabulary_dtl_id	NVARCHAR(15)
 	,	vocabulary_nm		NVARCHAR(100)
 	,	vocabulary_div		NVARCHAR(100)
 	,	image				NVARCHAR(MAX)
@@ -52,8 +50,6 @@ BEGIN
 	SELECT
 		ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
 	,	M006.id
-	,	M006.vocabulary_id
-	,	M006.vocabulary_dtl_id
 	,	M006.vocabulary_nm
 	,	M999.content
 	,	M006.image
@@ -65,8 +61,7 @@ BEGIN
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
 	FROM M006
 	INNER JOIN F009
-	ON M006.vocabulary_id = F009.vocabulary_id
-	AND M006.vocabulary_dtl_id = F009.vocabulary_dtl_id
+	ON M006.id = F009.vocabulary_code
 	LEFT JOIN F003
 	ON M006.id = F003.item_1
 	AND F003.connect_div = 2
@@ -86,7 +81,7 @@ BEGIN
 	(	
 	SELECT
 		#VOCABULARY.row_id
-	,	M012.example_id
+	,	M012.example_id		AS id
 	,	M012.language1_content
 	,	M012.language2_content
 	,	M012.clap

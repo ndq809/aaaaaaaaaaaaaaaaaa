@@ -12,8 +12,8 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_VOCABULARY_LST1]
 	
-
-	@P_account_id			NVARCHAR(15)	=	'' 
+	@P_target_id			NVARCHAR(15)	=	'' 
+,	@P_account_id			NVARCHAR(15)	=	''
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -23,22 +23,74 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 
-	EXEC SPC_COMMON_CATALORUE '1'
+	CREATE TABLE #TEMP(
+		post_id	 INT
+	,	catalogue_id INT
+	,	group_id	 INT
+	)
+
+	EXEC SPC_COMMON_CATALORUE_USER '1'
+
+	INSERT INTO #TEMP
+	SELECT 
+		M007.post_id
+	,	M007.catalogue_id
+	,	M007.group_id
+	FROM M007
+	WHERE M007.briged_id IN (
+		SELECT briged_id FROM F009 WHERE F009.vocabulary_code = @P_target_id
+	)
 
 	SELECT
 		F003.id 
 	,	M002.catalogue_nm
 	,	M003.group_nm
+	,	IIF(#TEMP.post_id IS NULL,'0','1') AS focused
 	FROM F003
 	INNER JOIN M002
 	ON F003.item_1 = M002.catalogue_id
 	INNER JOIN M003
 	ON F003.item_2 = M003.group_id
-	WHERE F003.user_id = @P_account_id
-	AND	F003.connect_div = 1
+	LEFT JOIN #TEMP
+	ON M002.catalogue_id = #TEMP.catalogue_id
+	AND M003.group_id = #TEMP.group_id
+	WHERE
+		F003.connect_div = 1
 	AND F003.screen_div = 1
 	AND F003.del_flg = 0
+	AND F003.user_id = @P_account_id
 
+	IF NOT EXISTS(
+		SELECT
+			*
+		FROM F003
+		INNER JOIN #TEMP
+		ON F003.item_1 = #TEMP.catalogue_id
+		AND F003.item_2 = #TEMP.group_id
+		WHERE
+			F003.connect_div = 1
+		AND F003.screen_div = 1
+		AND F003.del_flg = 0
+		AND F003.user_id = @P_account_id
+	)
+	BEGIN
+		SELECT TOP 1 
+			M002.catalogue_nm AS catalogue_tranfer
+		,	M003.group_nm AS group_transfer
+		,	@P_target_id	   AS target_id
+		FROM #TEMP
+		INNER JOIN M002
+		ON #TEMP.catalogue_id = M002.catalogue_id
+		INNER JOIN M003
+		ON #TEMP.group_id = M003.group_id
+	END
+	ELSE
+	BEGIN
+		SELECT
+			''					AS catalogue_tranfer
+		,	''					AS group_transfer
+		,	@P_target_id		AS target_id
+	END
 
 END
 

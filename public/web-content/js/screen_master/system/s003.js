@@ -26,6 +26,10 @@ function initevent_s003(){
     $(document).on('change','.sub-checkbox',function(){
         updateDeleteArray(this);
     })
+
+    $(document).on('change','#system_div',function(){
+        getTarget();
+    })
 }
 
 function s003_addNew(){
@@ -93,6 +97,40 @@ function s003_delete(){
                     break;
                 default :
                     break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getTarget(){
+    var selectize_sub= $('#account_div')[0].selectize;
+    if($('#system_div').val()==0){
+        selectize_sub.setValue('', true);
+        selectize_sub.clearOptions();
+        selectize_sub.disable();
+        return;
+    }
+    var data={};
+    data['system_div'] = $('#system_div').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/system/s001/target',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            selectize_sub.setValue('', true);
+            selectize_sub.clearOptions();
+            selectize_sub.addOption(res.data);
+            selectize_sub.removeOption(0);
+            if ($('#target_div').val() == 0) {
+                selectize_sub.disable();
+            } else {
+                selectize_sub.enable();
             }
         },
         // Ajax error

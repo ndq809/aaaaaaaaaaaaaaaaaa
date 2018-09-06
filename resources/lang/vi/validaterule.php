@@ -14,7 +14,7 @@ return [
         'user_id'          => 'required|max:15',
         'system_div'       => 'required|not_in:0',
         'account_div'      => 'required|not_in:0',
-        'employee_id'      => 'required',
+        // 'employee_id'      => 'required',
         'catalogue_nm'     => 'required|max:200',
         'catalogue_div'    => 'required|not_in:0',
         'name_div'         => 'required|not_in:0',
@@ -24,5 +24,6 @@ return [
         'vocabulary_div'   => 'required|not_in:0',
         'spelling'         => 'required',
         'mean'             => 'required',
+        'target_div'       => 'required',
     ],
 ];

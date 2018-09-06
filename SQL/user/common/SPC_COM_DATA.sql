@@ -12,6 +12,8 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_COM_DATA]
 		@P_account_id			NVARCHAR(15)	=	''
+,		@P_account_div			INT				=	0
+,		@P_system_div			INT				=	0
 ,		@P_screen_div			INT				=	'' 
  
 AS
@@ -23,6 +25,6 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 
-	
+	EXEC SPC_COM_PERMISSION @P_account_div,@P_system_div,'';
 END
 

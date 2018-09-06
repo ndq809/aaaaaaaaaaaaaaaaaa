@@ -21,8 +21,7 @@
                 <td></td>
                 <td><a type="button" href="/master/popup/p003" class="btn btn-sm btn-primary full-width btn-popup">Tìm kiếm</a></td>
                 <td><button type="button" class="btn btn-sm btn-primary full-width btn-copy"><span class="fa fa-copy"></span></button></td>
-                <td class="hidden"><input type="text" name="" refer-id="vocabulary_id" class="vocabulary_id" value=""></td>
-                <td class="hidden"><input type="text" name="" refer-id="vocabulary_dtl_id" class="vocabulary_dtl_id" value=""></td>
+                <td class="hidden"><input type="text" name="" refer-id="vocabulary_code" class="vocabulary_code" value=""></td>
                 <td>
                     <select class="form-control input-sm vocabulary_div" disabled="" refer-id="vocabulary_div">
                         @foreach($data[1] as $item)
@@ -43,8 +42,7 @@
                 <td>{{$index+1}}</td>
                 <td><a type="button" href="/master/popup/p003" class="btn btn-sm btn-primary full-width btn-popup">Tìm kiếm</a></td>
                 <td><button type="button" title="Thêm 1 phiên bản khác của từ đang được chọn khi từ đó không có trong danh sách tìm kiếm và muốn chuyển đổi từ loại,cách dùng...(vd: Game->Gamer)" class="btn btn-primary full-width btn-copy"><span class="fa fa-copy"></span></button></td>
-                <td class="hidden"><input type="text" name="" refer-id="vocabulary_id" class="vocabulary_id" value="{{isset($value)?$value['vocabulary_id']:''}}"></td>
-                <td class="hidden"><input type="text" name="" refer-id="vocabulary_dtl_id" class="vocabulary_dtl_id" value="{{isset($value)?$value['vocabulary_dtl_id']:''}}"></td>
+                <td class="hidden"><input type="text" name="" refer-id="vocabulary_code" class="vocabulary_code" value="{{isset($value)?$value['vocabulary_code']:''}}"></td>
                 <td>
                     <select class="form-control input-sm vocabulary_div" disabled="" refer-id="vocabulary_div">
                         @foreach($data[1] as $item)

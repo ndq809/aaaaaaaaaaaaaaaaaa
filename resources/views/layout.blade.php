@@ -44,6 +44,9 @@
         @include('add_on')
         @include('comment')
         <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}">
+        <input type="hidden" name="" id="target-id" value="{{isset($data_default)?$data_default[2][0]['target_id']:''}}">
+        <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default)?$data_default[2][0]['catalogue_tranfer']:''}}">
+        <input type="hidden" name="" id="group-transfer" value="{{isset($data_default)?$data_default[2][0]['group_transfer']:''}}">
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <div class="logo-box">
