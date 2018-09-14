@@ -93,7 +93,7 @@
 }
 .bookmark > ul > li > a > .bookmark_cd {
     display: inline-block;
-    border-right:1px solid black;
+    border-right:1px solid white;
     padding: 2px 11px;
     margin-right: 5px;
     width: 40px;
@@ -109,7 +109,7 @@
     float:left;
     width: 20%;
     list-style: none;
-    padding: 2px 1px;
+    padding: 1px 1px;
     /* height: 25px; */
     /* margin-bottom: -12px; */
 }

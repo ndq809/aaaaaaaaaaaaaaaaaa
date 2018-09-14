@@ -32,6 +32,9 @@ function initTranslate() {
           }
         });
       },
+      select: function( event, ui ) {
+        getData(ui.item.value);
+      },
       minLength: 3,
       delay: 500,
       autoFocus: true
@@ -98,6 +101,10 @@ function initListener() {
     $(document).on("click", ".right-tab ul li", function() {
         switchTabVocabulary($(this));
     });
+    $(document).on("click", ".history-item", function() {
+        $( "#key-word" ).val($(this).find('.bookmark_nm').text());
+        getData($( "#key-word" ).val());
+    });
     $(window).resize(function() {
         slidePositionController();
     });
@@ -114,9 +121,9 @@ function initListener() {
                     break;
             }
         }
-        if ($(e.target).attr('id') == 'key-word'&&e.which==13&&$(e.target).val()!=''){
-            getData($( "#key-word" ).val());
-        }
+        // if ($(e.target).attr('id') == 'key-word'&&e.which==13&&$(e.target).val()!=''){
+        //     getData($( "#key-word" ).val());
+        // }
     })
     $(document).on('change', '#exam-order', function() {
         var page = 1;

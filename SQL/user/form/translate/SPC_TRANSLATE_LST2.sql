@@ -79,32 +79,33 @@ BEGIN
 	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0)
 
 	SELECT @history_number = COUNT(*) FROM #SEARCH_HISTORY
-	IF NOT EXISTS(SELECT * FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
+	IF EXISTS(SELECT * FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
 	BEGIN
-		IF @history_number = 10
-		BEGIN
-			DELETE F008 WHERE F008.excute_id IN (SELECT TOP 1 #SEARCH_HISTORY.id FROM #SEARCH_HISTORY)
-		END
-		INSERT INTO F008
-		SELECT
-			@vocabylary_code
-		,	@P_account_id
-		,	2
-		,	1
-		,	0
-		,	@P_account_id
-		,	'common'
-		,	@P_ip
-		,	SYSDATETIME()
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
+		DELETE F008 WHERE F008.excute_id IN (SELECT #SEARCH_HISTORY.id FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
 	END
+	IF @history_number = 10
+	BEGIN
+		DELETE F008 WHERE F008.excute_id IN (SELECT TOP 1 #SEARCH_HISTORY.id FROM #SEARCH_HISTORY)
+	END
+	INSERT INTO F008
+	SELECT
+		@vocabylary_code
+	,	@P_account_id
+	,	2
+	,	1
+	,	0
+	,	@P_account_id
+	,	'common'
+	,	@P_ip
+	,	SYSDATETIME()
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+		,	NULL
 
 	INSERT INTO #VOCABULARY
 	SELECT
