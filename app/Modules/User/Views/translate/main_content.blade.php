@@ -26,7 +26,6 @@
 </div>
 <div class="col-xs-12 no-padding hint-text">
     <h6>Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng</h6>
-    <a id="btn-relationship"><span class="fa fa-sitemap"></span> Xem Họ Từ</a>
 </div>
 <div class="col-xs-12 no-padding">
     <button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>

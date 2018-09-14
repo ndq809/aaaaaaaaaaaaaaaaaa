@@ -55,7 +55,7 @@ BEGIN
 
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 	END
-
+	DELETE FROM F003 WHERE F003.user_id = @P_user_id AND F003.item_1 = @P_item_1 AND F003.connect_div = 2
 	INSERT INTO F003 
 	SELECT
 	    @P_user_id	

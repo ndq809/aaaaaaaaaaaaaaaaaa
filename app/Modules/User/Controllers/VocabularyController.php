@@ -25,11 +25,13 @@ class VocabularyController extends ControllerUser
 
     public function getIndex(Request $request)
     {
-        $param            = $request->all();
-        $param['v']       = isset($param['v'])?$this->hashids->decode($param['v'])[0]:'';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
-        $data             = Dao::call_stored_procedure('SPC_VOCABULARY_LST1', $param);
-        $data             = CommonUser::encodeID($data);
+        $param                 = $request->all();
+        $param['v']            = isset($param['v'])&&isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
+        $param['user_id']      = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['catalogue_id'] = $request->session()->get('catalogue_id');
+        $param['group_id']     = $request->session()->get('group_id');
+        $data                  = Dao::call_stored_procedure('SPC_VOCABULARY_LST1', $param);
+        $data                  = CommonUser::encodeID($data);
         return view('User::vocabulary.index')->with('data_default', $data);
     }
 
@@ -39,7 +41,6 @@ class VocabularyController extends ControllerUser
         $param[0]         = $this->hashids->decode($param[0])[0];
         $param[1]         = $this->hashids->decode($param[1])[0];
         $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
-        // var_dump($param);die;
         $data   = Dao::call_stored_procedure('SPC_VOCABULARY_LST2', $param);
         $data   = CommonUser::encodeID($data);
         $view1  = view('User::vocabulary.right_tab')->with('data', $data[2])->render();
@@ -51,6 +52,8 @@ class VocabularyController extends ControllerUser
             'view2'      => $view2,
             'statusText' => 'success',
         );
+        $request->session()->put('catalogue_id', $param[0]);
+        $request->session()->put('group_id', $param[1]);
         return response()->json($result);
     }
     /**

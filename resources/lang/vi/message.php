@@ -77,5 +77,10 @@ return [
             'message_title' => 'Thêm Phiên Bản',
             'message_content' => 'Bạn có muốn lưu dữ liệu hiện tại dưới dạng 1 phiên bản khác?',
         ],
+        16 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Tìm Kiếm',
+            'message_content' => 'Từ bạn vừa tìm kiếm không tồn tại trong hệ thống, xin hãy chọn từ danh sách gợi ý bên dưới và thực hiện lại!',
+        ],
     ],
 ];

@@ -21,6 +21,10 @@ function initListener(){
 	$(document).on("click",".option-body",function(){
 		window.location.href=$(this).attr("option-link");
 	})
+
+	$(document).on("click",".right-header",function(){
+		meniItemController();
+	})
 }
 
 function meniItemController(){

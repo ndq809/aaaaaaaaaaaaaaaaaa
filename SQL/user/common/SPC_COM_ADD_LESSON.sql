@@ -47,7 +47,7 @@ BEGIN
 	END
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
-	IF EXISTS (SELECT 1 FROM F003 WHERE F003.item_1 = @P_catalogue_nm AND F003.item_2 = @P_group_nm AND F003.del_flg = 0) --code not exits 
+	IF EXISTS (SELECT 1 FROM F003 WHERE F003.item_1 = @P_catalogue_nm AND F003.item_2 = @P_group_nm AND F003.user_id = @P_user_id AND F003.del_flg = 0) --code not exits 
 	BEGIN
 	 INSERT INTO @ERR_TBL
 	 SELECT 

@@ -20,7 +20,7 @@
 	 	<div class="col-md-12 no-padding select-group">
 	 		<div class="form-group">
                 <label>Danh mục từ vựng</label>
-                <select class="allow-selectize" id="catalogue_nm">
+                <select class="allow-selectize catalogue_nm" id="catalogue_nm">
                     @foreach($data_default[0] as $item)
                         <option value="{{$item['value']}}">{{$item['text']}}</option>
                     @endforeach
@@ -28,8 +28,10 @@
             </div>
             <div class="form-group">
                 <label>Nhóm từ vựng</label>
-                <select class="allow-selectize" id="group_nm">
-                    <option></option>
+                <select class="allow-selectize group_nm" id="group_nm">
+                    @foreach($data_default[3] as $item)
+                        <option data-data ="{{json_encode( $item)}}" value="{{$item['value']}}">{{$item['text']}}</option>
+                    @endforeach
                 </select>
             </div>
             <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}">Lưu bài học này</button>

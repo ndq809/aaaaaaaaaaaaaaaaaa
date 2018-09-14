@@ -11,6 +11,7 @@
             @yield('title','English Plus')
         </title>
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-ui.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
@@ -26,6 +27,7 @@
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/defined/message.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/jquery-ui.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
@@ -44,9 +46,9 @@
         @include('add_on')
         @include('comment')
         <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}">
-        <input type="hidden" name="" id="target-id" value="{{isset($data_default)?$data_default[2][0]['target_id']:''}}">
-        <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default)?$data_default[2][0]['catalogue_tranfer']:''}}">
-        <input type="hidden" name="" id="group-transfer" value="{{isset($data_default)?$data_default[2][0]['group_transfer']:''}}">
+        <input type="hidden" name="" id="target-id" value="{{isset($data_default[2][0]['target_id'])?$data_default[2][0]['target_id']:''}}">
+        <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
+        <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
         <div class="col-xs-12 web-panel header-content">
             <div class="row top-header">
                 <div class="logo-box">
@@ -73,7 +75,7 @@
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="/master">Trang Quản Trị</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile">Trang Cá Nhân</a></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
                               <li role="presentation" class="divider"></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" id="btn-logout">Đăng Xuất</a></li>
@@ -124,24 +126,23 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="btn-popup" popup-id="popup-box1">
-                                    Tra từ
-                                điển
+                                <a href="/translate">
+                                    Từ Điển E+
                                 </a>
                             </li>
                             <li>
                                 <a href="/relax">
-                                    Giải trí
+                                    Giải Trí
                                 </a>
                             </li>
                             <li>
                                 <a href="/contribute">
-                                    Đóng góp
+                                    Đóng Góp
                                 </a>
                             </li>
                             <li>
                                 <a class="btn-popup" popup-id="popup-box4">
-                                    Nhiệm vụ
+                                    Nhiệm Vụ
                                 </a>
                             </li>
                         </ul>

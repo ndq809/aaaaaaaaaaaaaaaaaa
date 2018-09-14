@@ -25,11 +25,12 @@ BEGIN
 
 	--
 	SELECT
-		 M003.group_id	 AS id
+		 M003.catalogue_id	
+	,	 M003.group_id	 AS value
 	,	 M003.group_nm   AS text	    
 	FROM M003
 	WHERE	M003.del_flg = 0 
-	AND		M003.catalogue_id		= @P_catalogue_id
+	AND		(@P_catalogue_id= 0 OR M003.catalogue_id = @P_catalogue_id)
 
 	--
 END

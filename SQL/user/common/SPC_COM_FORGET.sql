@@ -14,6 +14,7 @@ CREATE PROCEDURE [dbo].[SPC_COM_FORGET]
 	@P_row_id				INT					= 0
 ,   @P_item_1     			NVARCHAR(200)		= ''
 ,   @P_connect_div     		INT					= 1
+,	@P_user_id				NVARCHAR(15)		= ''
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -50,9 +51,9 @@ BEGIN
 		END
 
 	END
-
-	DELETE F003 WHERE F003.item_1 = @P_item_1 AND connect_div = 2
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+
+	DELETE FROM F003 WHERE F003.user_id = @P_user_id AND F003.item_1 = @P_item_1 AND F003.connect_div = 2
 
 	END TRY
 	BEGIN CATCH

@@ -77,7 +77,7 @@
                         <td refer-id='catalogue_div'></td>
                         <td refer-id='catalogue_nm' class="text-left"></td>
                         <td refer-id='group_nm'></td>
-                        <td><a href="/master/general/g006" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm bài viết</a></td>
+                        <td><a href="/master/writing/w002" target="_blank"><span class="fa fa-plus" style="padding-bottom: 2px;"></span> Thêm bài viết</a></td>
                     </tr>
                 </tbody>
             </table>

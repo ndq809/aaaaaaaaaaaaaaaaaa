@@ -299,6 +299,7 @@
                 }
                 this.resize();
                 this.appendListeners();
+                this.$overlay.find('.sweet-modal-buttons a:first').focus();
                 return this;
             };
             SweetModal.prototype.bounce = function() {
@@ -350,6 +351,17 @@
                     $innerOverlay.find('.sweet-modal-tabs-links li').removeClass('active').find('a[href=\'#' + tabHref + '\']').closest('li').addClass('active');
                     return $innerOverlay.find('.sweet-modal-tabs-content .sweet-modal-tab').hide().filter('[data-tab=' + tabHref + ']').show();
                 });
+                $(document).on('keydown',function(e){
+                    if($overlay.find('.sweet-modal-buttons a').length==2){
+                        if(e.which==37){
+                            $overlay.find('.sweet-modal-buttons a:first').focus();
+                        }
+                        if(e.which==39){
+                            $overlay.find('.sweet-modal-buttons a:last').focus();
+                        }
+                    }
+                    e.stopPropagation();
+                })
                 return this;
             };
             /**

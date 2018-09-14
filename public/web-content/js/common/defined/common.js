@@ -93,6 +93,11 @@ function initCommon() {
             allowEmptyOption: false,
             create: false,
             openOnFocus: false,
+            render: {
+                option: function (data, escape) {
+                    return "<div data-parent-id='" + data.catalogue_id + "'>" + data.text + "</div>"
+                }
+            }
         });
         var selectize = select[0].selectize;
         selectize.on('blur', function() {
@@ -282,7 +287,7 @@ function setNextItem(item_of_table,show_index) {
 		item_of_table="tr";
 	if(typeof show_index =='undefined')
 		show_index=0;
-    listItem = $(selectedTab + " table tbody " + item_of_table);
+    listItem = $(selectedTab + " table tbody " + item_of_table +":visible");
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
     var nextItem;
@@ -311,7 +316,7 @@ function setPreviousItem(item_of_table,show_index) {
 		item_of_table="tr";
 	if(typeof show_index =='undefined')
 		show_index=0;
-    listItem = $(selectedTab + " table tbody " + item_of_table);
+    listItem = $(selectedTab + " table tbody " + item_of_table+":visible");
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
     var nextItem;
@@ -369,7 +374,8 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
         type: 'POST',
         url: '/common/remembervoc',
         dataType: 'json',
-        // loading:true,
+        loading:true,
+        container:tr_Element,
         data:$.extend({}, data),//convert to object
         success: function (res) {
             switch(res.status){
@@ -378,14 +384,22 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
                     cloneTr.find("button").attr("type-btn", "btn-forget");
                     cloneTr.find("button").text(btn_label);
                     tr_Element.addClass('animated fadeOutRight');
-                    tr_Element.delay(0).fadeOut(150, function(){
+                    tr_Element.delay(0).fadeOut(120, function(){
                         tr_Element.remove();
+                        if (selectedTab == "#tab1") {
+                            if($("#tab1 table tbody tr:visible").length==0){
+                                $("#tab1 table tbody .no-row").removeClass('hidden');
+                            }
+                            $("#tab2 table tbody .no-row").addClass('hidden');
+                            $("#tab2 table tbody").prepend(cloneTr);
+                        } else {
+                            if($("#tab2 table tbody tr:visible").length==0){
+                                $("#tab2 table tbody tr:last-child").removeClass('hidden');
+                            }
+                            $("#tab1 table tbody .no-row").addClass('hidden');
+                            $("#tab1 table tbody").prepend(cloneTr);
+                        }
                     });
-                    if (selectedTab == "#tab1") {
-                        $("#tab2 table tbody").prepend(cloneTr);
-                    } else {
-                        $("#tab1 table tbody").prepend(cloneTr);
-                    }
                     callback();
                     break;
                 case 207:
@@ -413,7 +427,8 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
         type: 'POST',
         url: '/common/forgetvoc',
         dataType: 'json',
-        // loading:true,
+        loading:true,
+        container:tr_Element,
         data:$.extend({}, data),//convert to object
         success: function (res) {
             switch(res.status){
@@ -422,14 +437,23 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
                     cloneTr.find("button").attr("type-btn", "btn-remember");
                     cloneTr.find("button").text(btn_label);
                     tr_Element.addClass('animated fadeOutRight');
-                    tr_Element.delay(0).fadeOut(150, function(){
+                    tr_Element.delay(0).fadeOut(120, function(){
                         tr_Element.remove();
+                         if (selectedTab == "#tab1") {
+                            if($("#tab1 table tbody tr:visible").length==0){
+                                $("#tab1 table tbody .no-row").removeClass('hidden');
+                            }
+                            $("#tab2 table tbody .no-row").addClass('hidden');
+                            $("#tab2 table tbody").prepend(cloneTr);
+                        } else {
+                            if($("#tab2 table tbody tr:visible").length==0){
+                                $("#tab2 table tbody tr:last-child").removeClass('hidden');
+                            }
+                            $("#tab1 table tbody .no-row").addClass('hidden');
+                            $("#tab1 table tbody").prepend(cloneTr);
+                        }
                     });
-                    if (selectedTab == "#tab1") {
-                        $("#tab2 table tbody").prepend(cloneTr);
-                    } else {
-                        $("#tab1 table tbody").prepend(cloneTr);
-                    }
+                   
                     callback();
                     break;
                 case 207:
@@ -461,7 +485,8 @@ function addLesson(screen_div, catalogue_nm , group_nm) {
         type: 'POST',
         url: '/common/addLesson',
         dataType: 'json',
-        // loading:true,
+        loading:true,
+        container:'.btn-add-lesson',
         data:$.extend({}, data),//convert to object
         success: function (res) {
             switch(res.status){
@@ -522,7 +547,7 @@ function deleteLesson(lession_row){
                             lession_row.prev().trigger('dblclick');
                             }else{
                                 lession_row.parent().append('<tr class="no-data"><td><i class="glyphicon glyphicon-hand-right"></i></td><td colspan="3">Bạn chưa đăng nhập hoặc chưa đăng ký mục nào</td></tr>');
-                                $('#btn-add-lesson').removeAttr('disabled');
+                                $('.btn-add-lesson').removeAttr('disabled');
                             }
                         }
                         lession_row.remove();

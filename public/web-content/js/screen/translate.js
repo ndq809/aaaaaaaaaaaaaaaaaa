@@ -2,37 +2,46 @@ var slider;
 var vocabularyArray;
 $(function() {
     try {
-        initVocabulary();
+        initTranslate();
     } catch (e) {
-        alert("some thing went wrong :" + e);
+        console.log("some thing went wrong :" + e);
     }
 })
 
-function initVocabulary() {
+function initTranslate() {
     initListener();
     installSlide();
     slidePositionController();
-    if ($('.table-click tbody tr').first().hasClass('no-data')) {
-        if($('#catalogue-tranfer').attr('value')!=''){
-            var selectize_temp= $('#catalogue_nm')[0].selectize;
-            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-            updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-        }else{
-            $('#catalogue_nm').trigger('change');
-        }
-    } else {
-        if ($('.table-click tbody tr.selected-row').length == 0) {
-            if($('#catalogue-tranfer').attr('value')!=''){
-                var selectize_temp= $('#catalogue_nm')[0].selectize;
-                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-                updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-            }else{
-                $('.table-click tbody tr:first-child').trigger('dblclick');
+     $( "#key-word" ).autocomplete({
+      source: function( request, response ) {
+        $.ajax({
+          type: 'POST', 
+          url: "/translate/getAutocomplete",
+          dataType: "json",
+          data: {
+            q: request.term
+          },
+          success: function( data ) {
+            var temp = [];
+            if(data[0]['vocabulary_nm']!=''){
+                for (var i = 0; i < data.length; i++) {
+                    temp.push(data[i]['vocabulary_nm']);
+                }
             }
-        } else {
-            $('.table-click tbody tr.selected-row').trigger('dblclick');
-        }
+            response( temp );
+          }
+        });
+      },
+      minLength: 3,
+      delay: 500,
+      autoFocus: true
+    });
+    if($( "#key-word" ).val()!=''){
+        getData($( "#key-word" ).val());
+    }else{
+        $( "#key-word" ).focus();
     }
+
 }
 
 function initListener() {
@@ -76,6 +85,13 @@ function initListener() {
             $("." + $(this).attr("id")).hide();
         }
     });
+    $(document).on("focus", "#key-word", function() {
+        $(this).autocomplete("search",$( this ).val());
+    });
+
+    $(document).on("click", ".btn-filter", function() {
+        getData($( "#key-word" ).val());
+    });
     $(document).on("click", ".focusable table tbody tr", function() {
         selectVocabulary($(this));
     });
@@ -86,7 +102,7 @@ function initListener() {
         slidePositionController();
     });
     $(document).on('keydown', function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
+        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
                 case 37:
                     previousVocabulary();
@@ -98,29 +114,9 @@ function initListener() {
                     break;
             }
         }
-    })
-    $(document).on('change', '#catalogue_nm', function() {
-        if ($('#catalogue_nm').val() != '') updateGroup(this);
-    })
-
-    $(document).on('click', '#btn-relationship', function() {
-        var current_id = $('.activeItem').attr('id');
-        window.open('/translate?v='+vocabularyArray[current_id - 1]['id'], '_blank');
-    })
-
-    $(document).on('change', '#group_nm', function() {
-        $('.table-click tbody tr').removeClass('selected-row');
-        $('.table-click tbody tr').each(function() {
-            if ($(this).find('td').eq(1).text().trim() == $("#catalogue_nm option:selected").text() && $(this).find('td').eq(2).text().trim() == $("#group_nm option:selected").text()) {
-                $(this).addClass('selected-row');
-            }
-        })
-        if($('.table-click tbody tr.selected-row').length!=0){
-            $('.btn-add-lesson').prop('disabled','disabled');
-        }else{
-            $('.btn-add-lesson').removeAttr('disabled');
+        if ($(e.target).attr('id') == 'key-word'&&e.which==13&&$(e.target).val()!=''){
+            getData($( "#key-word" ).val());
         }
-        getData();
     })
     $(document).on('change', '#exam-order', function() {
         var page = 1;
@@ -255,46 +251,47 @@ function forgetVocabulary(forget_btn) {
     voc_infor.push(vocabularyArray[current_id - 1]['id']);
     voc_infor.push(2);
     forgetItem(currentItem, "Đã thuộc", voc_infor, function() {
-        console.log(forget_btn.parents("tr"));
         if (forget_btn.parents("tr").hasClass('activeItem')) {
             nextVocabulary();
         }
     })
 }
 
-function getData() {
+function getData(value) {
+    if(value=='')
+        return;
     var data = [];
-    data.push($('#catalogue_nm').val());
-    data.push($('#group_nm').val());
+    data.push(value);
     $.ajax({
         type: 'POST',
-        url: '/vocabulary/getData',
+        url: '/translate/getData',
         dataType: 'json',
         loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
             switch (res.status) {
                 case 200:
+                    $('.result-box').removeClass('hidden');
                     $('#result1').html(res.view1);
                     $('#result2').html(res.view2);
+                    $('.bookmark').html(res.view3);
                     vocabularyArray = res.voca_array;
                     installSlide();
                     slidePositionController();
-                    if($('#target-id').attr('value')!=''){
-                        $('.table-right tbody tr[id='+getRowId($('#target-id').attr('value'))+']').trigger('click');
-                    }else{
-                        $('#tab1 .table-right tbody tr:first').trigger('click');
-                    }
+                    $('.table-right tbody tr[id='+getRowId(res.selected_id.id)+']').trigger('click');
                     if($('.activeItem').parents('.tab-pane').attr('id')=='tab2'){
                         switchTab(2);
                     }else{
                         switchTab(1);
                     }
                     $('#target-id').attr('value','')
+                    $('#key-word').blur();
                     break;
-                case 201:
-                    clearFailedValidate();
-                    showFailedValidate(res.error);
+                case 207:
+                    $('.result-box').addClass('hidden');
+                    showMessage(16,function(){
+                        $('#key-word').focus();
+                    });
                     break;
                 case 208:
                     clearFailedValidate();

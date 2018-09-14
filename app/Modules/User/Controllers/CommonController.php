@@ -206,6 +206,7 @@ class CommonController extends ControllerUser
     {
         $param    = $request->all();
         $param[1] = $this->hashids->decode($param[1])[0];
+        $param['user_id'] = Auth::user()->account_nm;
         $data     = Dao::call_stored_procedure('SPC_COM_FORGET', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(

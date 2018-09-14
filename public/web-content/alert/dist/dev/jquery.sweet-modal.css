@@ -724,6 +724,12 @@
 .sweet-modal-buttons a.bordered.flat.button, .sweet-modal-buttons button.bordered.flat {
     border-color: transparent;
 }
+.sweet-modal-buttons a:focus, .sweet-modal-buttons button:focus {
+    opacity: 1;
+    border-color: #ddd;
+    outline: none;
+}
+
 @-webkit-keyframes bounce {
     from {
         -webkit-transform: scale(1);

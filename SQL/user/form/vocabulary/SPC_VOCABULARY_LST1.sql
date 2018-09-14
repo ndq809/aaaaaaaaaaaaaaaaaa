@@ -14,6 +14,8 @@ CREATE PROCEDURE [dbo].[SPC_VOCABULARY_LST1]
 	
 	@P_target_id			NVARCHAR(15)	=	'' 
 ,	@P_account_id			NVARCHAR(15)	=	''
+,	@P_catalogue_id			NVARCHAR(15)	=	''
+,	@P_group_id				NVARCHAR(15)	=	''
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -74,15 +76,33 @@ BEGIN
 		AND F003.user_id = @P_account_id
 	)
 	BEGIN
-		SELECT TOP 1 
-			M002.catalogue_nm AS catalogue_tranfer
-		,	M003.group_nm AS group_transfer
-		,	@P_target_id	   AS target_id
-		FROM #TEMP
-		INNER JOIN M002
-		ON #TEMP.catalogue_id = M002.catalogue_id
-		INNER JOIN M003
-		ON #TEMP.group_id = M003.group_id
+		IF @P_catalogue_id <> '' AND @P_group_id <> '' AND EXISTS(SELECT * FROM #TEMP WHERE #TEMP.catalogue_id = @P_catalogue_id AND #TEMP.group_id = @P_group_id)
+		BEGIN
+			SELECT 
+				M002.catalogue_nm AS catalogue_tranfer
+			,	M003.group_nm AS group_transfer
+			,	@P_target_id	   AS target_id
+			FROM #TEMP
+			INNER JOIN M002
+			ON #TEMP.catalogue_id = M002.catalogue_id
+			INNER JOIN M003
+			ON #TEMP.group_id = M003.group_id
+			WHERE #TEMP.catalogue_id = @P_catalogue_id 
+			AND #TEMP.group_id = @P_group_id
+		END
+		ELSE
+		BEGIN
+			SELECT TOP 1 
+				M002.catalogue_nm AS catalogue_tranfer
+			,	M003.group_nm AS group_transfer
+			,	@P_target_id	   AS target_id
+			FROM #TEMP
+			INNER JOIN M002
+			ON #TEMP.catalogue_id = M002.catalogue_id
+			INNER JOIN M003
+			ON #TEMP.group_id = M003.group_id
+		END
+		
 	END
 	ELSE
 	BEGIN
@@ -91,6 +111,8 @@ BEGIN
 		,	''					AS group_transfer
 		,	@P_target_id		AS target_id
 	END
+
+	EXEC SPC_COMMON_GROUP_USER
 
 END
 

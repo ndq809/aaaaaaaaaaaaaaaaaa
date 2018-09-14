@@ -44,7 +44,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         "fade"              : [400, 200],
         "fontawesome"       : "",
         "imagePosition"     : "center center",
-        "maxSize"           : 20,
+        "maxSize"           : 50,
         "minSize"           : 10,
         "resizeInterval"    : 50,
         "size"              : "50%",
@@ -240,8 +240,8 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         overlay.children(".loadingoverlay_element").css({
             "width"  : size,
             "height" : size,
-            "top"    : "50%",
-            "left"   : "50%"
+            "top"    : (container.innerHeight()/2)-(size/2),
+            "left"   : (container.innerWidth()/2)-(size/2),
         });
         overlay.children(".loadingoverlay_fontawesome").css("font-size", size);
     }

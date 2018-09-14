@@ -23,6 +23,15 @@
 	margin-top: 15px;
 }
 
+
+.hint-text h6{
+	margin-bottom: 0px;
+}
+
+.hint-text a{
+	font-weight: bold;
+}
+
 .vocabulary-box *{
 	margin-top: 5px;
 	text-align: center;
