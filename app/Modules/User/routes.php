@@ -53,5 +53,7 @@ Route::group(
 		Route::any('toggleEffect','CommonController@toggleEffect');
 		Route::post('getcatalogue', 'CommonController@getcatalogue');
 		Route::post('getgroup', 'CommonController@getgroup');
+		Route::any('getQuestion','CommonController@getQuestion');
+
 	}
 );

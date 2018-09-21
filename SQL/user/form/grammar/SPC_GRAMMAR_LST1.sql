@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_VOCABULARY_LST1]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_GRAMMAR_LST1]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001L_FND1]    Script Date: 2017/11/23 16:46:46 ******/
-DROP PROCEDURE [dbo].[SPC_VOCABULARY_LST1]
+DROP PROCEDURE [dbo].[SPC_GRAMMAR_LST1]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPC_M001L_FND1]    Script Date: 2017/11/23 16:46:46 ******/
@@ -10,7 +10,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_VOCABULARY_LST1]
+CREATE PROCEDURE [dbo].[SPC_GRAMMAR_LST1]
 	
 	@P_target_id			NVARCHAR(15)	=	'' 
 ,	@P_account_id			NVARCHAR(15)	=	''
@@ -31,7 +31,7 @@ BEGIN
 	,	group_id	 INT
 	)
 
-	EXEC SPC_COMMON_CATALORUE_USER '1'
+	EXEC SPC_COMMON_CATALORUE_USER '2'
 
 	INSERT INTO #TEMP
 	SELECT 
@@ -39,9 +39,8 @@ BEGIN
 	,	M007.catalogue_id
 	,	M007.group_id
 	FROM M007
-	WHERE M007.briged_id IN (
-		SELECT briged_id FROM F009 WHERE F009.vocabulary_code = @P_target_id
-	)
+	WHERE 
+		M007.post_id = @P_target_id
 
 	SELECT
 		F003.id 
@@ -58,7 +57,7 @@ BEGIN
 	AND M003.group_id = #TEMP.group_id
 	WHERE
 		F003.connect_div = 1
-	AND F003.screen_div = 1
+	AND F003.screen_div = 2
 	AND F003.del_flg = 0
 	AND F003.user_id = @P_account_id
 
@@ -112,7 +111,7 @@ BEGIN
 		,	@P_target_id		AS target_id
 	END
 
-	EXEC SPC_COMMON_GROUP_USER '1'
+	EXEC SPC_COMMON_GROUP_USER '2'
 
 END
 

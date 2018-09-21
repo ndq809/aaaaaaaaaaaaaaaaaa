@@ -176,7 +176,8 @@ function w002_addNew(){
     header_data.post_media=($('input[name=post_media]').val()!='')?$('input[name=post_media]').val():'no data';
 	data_addnew.append('header_data',JSON.stringify(header_data));
     data_addnew.append('detail_data',JSON.stringify(getTableData($('.submit-table'))));
-    data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.submit-table-body'))));
+    data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.exa-table-body'))));
+    data_addnew.append('pra_body_data',JSON.stringify(getTableQuestionData($('.pra-table-body'))));
 	$.ajax({
         type: 'POST',
         url: '/master/writing/w002/addnew',
@@ -284,6 +285,7 @@ function w002_refer(post_id){
                     CKEDITOR.instances['post_content'].setData(res.data[0][0]['post_content']);
                     $('#result').html(res.table_voc);
                     $('#result1').html(res.table_exa);
+                    $('#result2').html(res.table_pra);
                     transform();
                      $(".btn-popup").fancybox({
                         'width'         : '90%',

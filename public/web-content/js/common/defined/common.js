@@ -381,7 +381,8 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
             switch(res.status){
                 case 200:
                     var cloneTr = tr_Element.clone();
-                    cloneTr.find("button").attr("type-btn", "btn-forget");
+                    cloneTr.find("button").removeClass("btn-remember");
+                    cloneTr.find("button").addClass("btn-forget");
                     cloneTr.find("button").text(btn_label);
                     tr_Element.addClass('animated fadeOutRight');
                     tr_Element.delay(0).fadeOut(120, function(){
@@ -434,7 +435,8 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
             switch(res.status){
                 case 200:
                     var cloneTr = tr_Element.clone();
-                    cloneTr.find("button").attr("type-btn", "btn-remember");
+                    cloneTr.find("button").addClass("btn-remember");
+                    cloneTr.find("button").removeClass("btn-forget");
                     cloneTr.find("button").text(btn_label);
                     tr_Element.addClass('animated fadeOutRight');
                     tr_Element.delay(0).fadeOut(120, function(){

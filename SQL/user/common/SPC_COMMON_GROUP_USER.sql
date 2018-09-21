@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_COMMON_GROUP_USER]
-		@P_catalogue_id			NVARCHAR(15)				=	0
+		@P_catalogue_div			INT				=	0
 
 AS
 BEGIN
@@ -30,7 +30,7 @@ BEGIN
 	,	 M003.group_nm   AS text	    
 	FROM M003
 	WHERE	M003.del_flg = 0 
-	AND		(@P_catalogue_id= 0 OR M003.catalogue_id = @P_catalogue_id)
+	AND		M003.catalogue_div = @P_catalogue_div
 
 	--
 END

@@ -126,6 +126,9 @@
         <div class="col-sm-12 no-padding-right transform-content" transform-div='-1' id="result1">
             @include('Master::writing.w002.refer_exa')
         </div>
+        <div class="col-sm-12 no-padding-right transform-content" transform-div='-1' id="result2">
+            @include('Master::writing.w002.refer_pra')
+        </div>
     </div>
 </div>
 @stop

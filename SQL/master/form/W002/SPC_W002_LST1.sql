@@ -53,6 +53,15 @@ BEGIN
 	M012.target_id		= @P_post_id
 	AND	M012.del_flg = 0
 
+	SELECT
+		M004.question_id 
+	,	M004.question_content
+	,	M005.answer_content
+	,	M005.verify
+	FROM M004
+	JOIN M005
+	ON M004.question_id = M005.question_id
+	WHERE M004.post_id = @P_post_id
 	--
 END
 

@@ -1035,6 +1035,8 @@ function getTableBodyData(table){
             if($(this).is(":checkbox")){
                 if(this.checked){
                     row_data[$(this).attr('refer-id')]=1;
+                }else{
+                    row_data[$(this).attr('refer-id')]=0;
                 }
             }else{
                 row_data[$(this).attr('refer-id')]=$(this).val();
@@ -1047,6 +1049,58 @@ function getTableBodyData(table){
         })
         if(temp!='')
         data.push(row_data);
+    })
+    if(data.length==0){
+        return null;
+    }else{
+        return $.extend({}, data);
+    }
+}
+
+function getTableQuestionData(table){
+    var data=[];
+    table.find('tbody:visible').each(function(i){
+        var count = $(this).find('input[type=checkbox]:checked').length;
+        $(this).find('tr:visible').each(function(){
+            var row_data={};
+            var temp='';
+            row_data['row_id'] = i+1;
+            $(this).find('input[refer-id],select[refer-id],input[type=checkbox]').each(function(){
+                if($(this).hasClass('money')){
+                    var text = jQuery.grep($(this).val().split(','), function(value) {
+                      return value;
+                    });
+                    row_data[$(this).attr('refer-id')]=text.join('');
+                }else
+                if($(this).hasClass('tel')){
+                    var text = jQuery.grep($(this).val().split('-'), function(value) {
+                      return value;
+                    });
+                    row_data[$(this).attr('refer-id')]=text.join('');
+                }else
+                if($(this).is(":checkbox")){
+                    if(this.checked){
+                        row_data[$(this).attr('refer-id')]=1;
+                    }else{
+                        row_data[$(this).attr('refer-id')]=0;
+                    }
+                }else{
+                    row_data[$(this).attr('refer-id')]=$(this).val();
+                }
+                if(($(this).prop("tagName")=='SELECT' && $(this).val()==0)||$(this).is(":checkbox")){
+                    temp+='';
+                }else{
+                    temp+=$(this).val().trim();
+                }
+            })
+            if(count>1){
+                row_data['question_div'] =1;
+            }else{
+                row_data['question_div'] =0;
+            }
+            if(temp!='')
+            data.push(row_data);
+        })
     })
     if(data.length==0){
         return null;

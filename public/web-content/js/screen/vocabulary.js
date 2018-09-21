@@ -60,6 +60,7 @@ function initListener() {
                 voc_infor = [];
                 voc_infor.push(vocabularyArray[current_id - 1]['row_id']);
                 voc_infor.push(vocabularyArray[current_id - 1]['id']);
+                voc_infor.push(1);
                 voc_infor.push($('#eng-clause').val());
                 voc_infor.push($('#vi-clause').val());
                 addExample(voc_infor, function() {
@@ -325,11 +326,11 @@ function updateGroup(change_item, sub_item_text) {
 
 function setContentBox(word_id) {
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
-    $('.vocabulary-box[word-id=' + (word_id) + ']').removeClass('hidden');
+    $('.vocabulary-box[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.example-item:not(.hidden)').addClass('hidden');
-    $('.example-item[word-id=' + (word_id) + ']').removeClass('hidden');
+    $('.example-item[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');
-    $('.paging-item[word-id=' + (word_id) + ']').removeClass('hidden');
+    $('.paging-item[target-id=' + (word_id) + ']').removeClass('hidden');
     if($('#mySlider1 li').length==1){
         $('.choose_slider').height('235');
     }

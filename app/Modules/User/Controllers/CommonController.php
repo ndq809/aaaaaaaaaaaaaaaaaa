@@ -306,6 +306,22 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function getQuestion(Request $request)
+    {
+        $param            = $request->all();
+        $param[0]         = $this->hashids->decode($param[0])[0];
+        $data             = Dao::call_stored_procedure('SPC_COM_QUESTION_LIST', $param);
+        $data             = $this->encodeID($data);
+        $view1            = view('practice')->with('data', $data)->render();
+        $result           = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
+
     public function postUpload()
     {
         $form_data = Input::all();

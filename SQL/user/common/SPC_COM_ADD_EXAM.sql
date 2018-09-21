@@ -14,6 +14,7 @@ CREATE PROCEDURE [dbo].[SPC_COM_ADD_EXAM]
 
     @P_row_id				TINYINT				= 0
 ,   @P_target_id   			NVARCHAR(200)		= ''
+,   @P_screen_div   		INT					= ''
 ,   @P_language_1    		NVARCHAR(200)		= ''
 ,   @P_language_2     		NVARCHAR(200)		= ''
 ,	@P_user_id				NVARCHAR(15)		= ''
@@ -31,6 +32,7 @@ BEGIN
 	
 	INSERT INTO M012(
 			target_id
+		,	target_div
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -51,6 +53,7 @@ BEGIN
 		)
 		SELECT
 			@P_target_id
+		,	@P_screen_div
 		,	@P_language_1
 		,	@P_language_2
 		,	0

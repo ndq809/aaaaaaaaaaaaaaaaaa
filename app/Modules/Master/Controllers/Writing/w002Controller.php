@@ -70,6 +70,7 @@ class w002Controller extends Controller
             $param['post_media_div'] = $media_div;
             $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_data']));
             $param['xml_detail1'] = $xml->xml((array) json_decode($data['detail_body_data']));
+            $param['xml_detail2'] = $xml->xml((array) json_decode($data['pra_body_data']));
             $param['user_id']    = Auth::user()->account_nm;
             $param['ip']         = $request->ip();
 
@@ -128,11 +129,13 @@ class w002Controller extends Controller
         $result_query     = DAO::call_stored_procedure("SPC_W002_LST1", $data);
         $view1 = view('Master::writing.w002.refer_voc')->with('data', $result_query)->render();
         $view2 = view('Master::writing.w002.refer_exa')->with('data', $result_query)->render();
+        $view3 = view('Master::writing.w002.refer_pra')->with('data', $result_query)->render();
         $result = array(
             'status'     => 200,
             'data'       => $result_query,
             'table_voc'      => $view1,
             'table_exa'      => $view2,
+            'table_pra'      => $view3,
             'statusText' => 'success',
         );
         return response()->json($result);

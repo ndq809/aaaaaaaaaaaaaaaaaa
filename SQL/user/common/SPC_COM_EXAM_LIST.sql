@@ -31,6 +31,8 @@ BEGIN
 	,	M012.language1_content
 	,	M012.language2_content
 	,	M012.clap
+	,	IIF(M012.cre_prg <> 'W002',M012.cre_user,N'Hệ thống') AS cre_user
+	,	FORMAT(M012.cre_date,'dd/MM/yyyy HH:mm') AS cre_date
 	,	@P_order_div AS order_div
 	,	IIF(F008.target_id IS NULL,0,1) AS effected
 	FROM M012

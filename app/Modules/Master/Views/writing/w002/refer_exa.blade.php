@@ -1,6 +1,6 @@
 <div class="form-group table-fixed-width" min-width="1024px">
     <label>Danh Sách Ví Dụ</label>
-    <table class="table table-bordered table-input submit-table-body">
+    <table class="table table-bordered table-input exa-table-body">
        <thead>
            <th width="50px"><a id="btn-new-body" class="btn-add"><span class="fa fa-plus"></span></a></th>
            <th width="100px"></th>

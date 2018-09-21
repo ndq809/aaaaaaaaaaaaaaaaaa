@@ -18,6 +18,7 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_post_media_div     	TINYINT				= 0
 ,    @P_xml_detail   		XML					= ''
 ,    @P_xml_detail1   		XML					= ''
+,    @P_xml_detail2   		XML					= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -95,6 +96,38 @@ BEGIN
 	,	explain NVARCHAR(MAX)
 	,	row_index INT		
 	)
+
+	CREATE TABLE #TABLE_DETAIL1(
+		vocabulary_id INT
+	,	vocabulary_dtl_id TINYINT
+	,	edit_confirm INT
+	,	vocabulary_div INT
+	,	vocabulary_nm NVARCHAR(200)
+	,	spelling NVARCHAR(200)
+	,	mean NVARCHAR(MAX)
+	,	explain NVARCHAR(MAX)
+	,	row_index INT		
+	)
+
+	CREATE TABLE #TABLE_DETAIL2(
+		row_id INT
+	,	content NVARCHAR(MAX)
+	,	verify TINYINT
+	,	question_div TINYINT
+	)
+
+	CREATE TABLE #TABLE_QUESTION(
+		row_id INT
+	,	question_id INT
+	)
+
+	INSERT INTO #TABLE_DETAIL2
+	SELECT
+		row_id	=	T.C.value('@row_id 		  ', 'int')
+	,	content	=	T.C.value('@content 	  ', 'nvarchar(max)')
+	,	verify	=	T.C.value('@verify	  ', 'tinyint')
+	,	question_div	=	T.C.value('@question_div	  ', 'tinyint')
+	FROM @P_xml_detail2.nodes('row') T(C)
 
 	INSERT INTO #TABLE_DETAIL
 	SELECT
@@ -189,45 +222,6 @@ BEGIN
 			,	#VOCABULARY.Vocabulary_code
 			FROM #VOCABULARY
 		END
-		INSERT INTO M012(
-			target_id
-		,	language1_content
-		,	language2_content
-		,	clap
-		,	del_flg
-		,	cre_user
-		,	cre_prg
-		,	cre_ip
-		,	cre_date
-		,	upd_user
-		,	upd_prg
-		,	upd_ip
-		,	upd_date
-		,	del_user
-		,	del_prg
-		,	del_ip
-		,	del_date
-
-		)
-		SELECT
-			@P_post_id
-		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
-		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
-		,	0
-		,	0
-		,	@P_user_id
-		,	@w_program_id
-		,	@P_ip
-		,	@w_time
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		FROM @P_xml_detail1.nodes('row') T(C)
  
 		INSERT INTO M007 (
 			 catalogue_div     
@@ -283,6 +277,48 @@ BEGIN
 
 	SET @w_inserted_key = scope_identity()
 
+		INSERT INTO M012(
+			target_id
+		,	target_div
+		,	language1_content
+		,	language2_content
+		,	clap
+		,	del_flg
+		,	cre_user
+		,	cre_prg
+		,	cre_ip
+		,	cre_date
+		,	upd_user
+		,	upd_prg
+		,	upd_ip
+		,	upd_date
+		,	del_user
+		,	del_prg
+		,	del_ip
+		,	del_date
+
+		)
+		SELECT
+			@w_inserted_key
+		,	@P_catalogue_div
+		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
+		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
+		,	0
+		,	0
+		,	@P_user_id
+		,	@w_program_id
+		,	@P_ip
+		,	@w_time
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		FROM @P_xml_detail1.nodes('row') T(C)
+
 	END
 	ELSE
 	BEGIN
@@ -316,6 +352,7 @@ BEGIN
 		DELETE FROM M012 WHERE M012.target_id = @P_post_id
 		INSERT INTO M012(
 			target_id
+		,	target_div
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -336,6 +373,7 @@ BEGIN
 		)
 		SELECT
 			@P_post_id
+		,	@P_catalogue_div
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0
@@ -370,7 +408,78 @@ BEGIN
 		WHERE M007.post_id = @P_post_id
 
 		SET @w_inserted_key = @P_post_id
+		DELETE M004
+		OUTPUT DELETED.question_id INTO #TABLE_QUESTION(question_id)
+		WHERE M004.post_id = @w_inserted_key
 
+		DELETE M005 WHERE M005.question_id IN (SELECT #TABLE_QUESTION.question_id FROM #TABLE_QUESTION)
+
+		DELETE #TABLE_QUESTION
+
+		MERGE INTO M004 _m004 USING #TABLE_DETAIL2 _tbl_detail2 ON 1 = 0
+		WHEN NOT MATCHED AND _tbl_detail2.verify IS NULL THEN
+			INSERT (
+				question_content
+			,	question_div
+			,	post_id
+			,	del_flg
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+			,	upd_user
+			,	upd_prg
+			,	upd_ip
+			,	upd_date
+			,	del_user
+			,	del_prg
+			,	del_ip
+			,	del_date
+			)
+			VALUES (
+				_tbl_detail2.content
+			,	_tbl_detail2.question_div
+			,	@w_inserted_key
+			,	0
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	@w_time
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			)
+			OUTPUT _tbl_detail2.row_id,INSERTED.question_id
+			INTO #TABLE_QUESTION;
+
+			INSERT INTO M005
+			SELECT
+				#TABLE_QUESTION.question_id
+			,	#TABLE_DETAIL2.content
+			,	#TABLE_DETAIL2.verify
+			,	NULL
+			,	0
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	@w_time
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			FROM #TABLE_DETAIL2
+			JOIN #TABLE_QUESTION
+			ON #TABLE_DETAIL2.row_id = #TABLE_QUESTION.row_id
+			WHERE #TABLE_DETAIL2.verify IS NOT NULL
 	END
 	END TRY
 	BEGIN CATCH

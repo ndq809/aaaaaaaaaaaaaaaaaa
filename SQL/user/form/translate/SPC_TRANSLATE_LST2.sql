@@ -74,7 +74,8 @@ BEGIN
 	 , 'key-word'
 	 , ''
 	END
-	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC 
+	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+	
 	SET @vocabylary_id =(SELECT TOP 1 M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0)
 	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0)
 
@@ -85,28 +86,30 @@ BEGIN
 	END
 	IF @history_number = 10
 	BEGIN
-		DELETE F008 WHERE F008.excute_id IN (SELECT TOP 1 #SEARCH_HISTORY.id FROM #SEARCH_HISTORY)
+	DELETE F008 WHERE F008.excute_id IN (SELECT TOP 1 #SEARCH_HISTORY.id FROM #SEARCH_HISTORY)
 	END
-	INSERT INTO F008
-	SELECT
-		@vocabylary_code
-	,	@P_account_id
-	,	2
-	,	1
-	,	0
-	,	@P_account_id
-	,	'common'
-	,	@P_ip
-	,	SYSDATETIME()
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
+	IF @P_account_id <> ''
+	BEGIN 
+		INSERT INTO F008
+		SELECT
+			@vocabylary_code
+		,	@P_account_id
+		,	2
+		,	1
+		,	0
+		,	@P_account_id
+		,	'common'
+		,	@P_ip
+		,	SYSDATETIME()
 		,	NULL
-
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+	END
 	INSERT INTO #VOCABULARY
 	SELECT
 		ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
@@ -125,6 +128,7 @@ BEGIN
 	ON M006.id = F003.item_1
 	AND F003.connect_div = 2
 	AND F003.user_id = @P_account_id
+	AND F003.item_2 IS NULL
 	INNER JOIN M999
 	ON M006.vocabulary_div = M999.number_id
 	AND M999.name_div = 8
@@ -140,6 +144,8 @@ BEGIN
 	,	M012.example_id		AS id
 	,	M012.language1_content
 	,	M012.language2_content
+	,	IIF(M012.cre_prg <> 'W002',M012.cre_user,N'Hệ thống') AS cre_user
+	,	FORMAT(M012.cre_date,'dd/MM/yyyy HH:mm') AS cre_date
 	,	M012.clap
 	,	ROW_NUMBER() OVER(partition by #VOCABULARY.row_id ORDER BY #VOCABULARY.row_id ASC) AS count_row_id
 	,	IIF(F008.target_id IS NULL,0,1) AS effected
@@ -151,6 +157,8 @@ BEGIN
 	AND F008.user_id = @P_account_id
 	AND F008.execute_div = 1
 	AND F008.execute_target_div = 1
+	WHERE
+		M012.target_div = 1
 	)temp
 	WHERE temp.count_row_id <6
 	ORDER BY temp.clap

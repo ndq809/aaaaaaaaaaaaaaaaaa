@@ -53,7 +53,7 @@
     </div>
 </div>
 <div id="popup-box1" class="modal fade" role="dialog" tabindex='-1'>
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
     <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -61,23 +61,18 @@
                     ×
                 </button>
                 <h5 class="modal-title">
-                    Từ Điển
+                    BÀI TẬP VẬN DỤNG
                 </h5>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label>
-                        Nhập Từ Cần Tra
-                    </label>
-                    <div class="input-group">
-                        <input class="form-control input-sm" name="" type="type">
-                        </input>
-                    </div>
-                </div>
+                
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
-                    Tra cứu
+                <button class="btn btn-primary btn-sm btn-refresh" type="button">
+                    Làm mới câu hỏi
+                </button>
+                <button class="btn btn-danger btn-sm btn-check-answer" type="button">
+                    Xem kết quả
                 </button>
                 <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
                     Hủy

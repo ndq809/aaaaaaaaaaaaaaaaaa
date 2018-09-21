@@ -33,7 +33,7 @@
 </div>
 @if(isset($data)&&$data[2][0]['id'] != '')
     @foreach($data[2] as $index => $row)
-        <div class="col-xs-12 no-padding vocabulary-box hidden" word-id="{{$row['row_id']}}">
+        <div class="col-xs-12 no-padding vocabulary-box hidden" target-id="{{$row['row_id']}}">
             <input type="text" name="" class="form-control input-sm vocal-engword" value="{{$row['vocabulary_nm']}}" disabled="">
             <input type="text" name="" class="form-control input-sm vocal-spell" value="/{{$row['spelling']}}/" disabled="">
             <input type="text" name="" class="form-control input-sm vocal-div" value="{{$row['vocabulary_div']}}" disabled="">

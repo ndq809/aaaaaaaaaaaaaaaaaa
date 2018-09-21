@@ -27,8 +27,8 @@ BEGIN
 	DECLARE 
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			= SYSDATETIME()
-	,	@w_program_id			NVARCHAR(50)		= 'W002'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Thêm bài viết'
+	,	@w_program_id			NVARCHAR(50)		= 'V002'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Thêm từ vựng'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'insert'
 	,	@w_prs_key				NVARCHAR(1000)		= ''
@@ -74,6 +74,7 @@ BEGIN
 		
 		INSERT INTO M012(
 			target_id
+		,	target_div
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -94,6 +95,7 @@ BEGIN
 		)
 		SELECT
 			@w_inserted_key
+		,	1
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0
@@ -120,6 +122,7 @@ BEGIN
 		DELETE FROM M012 WHERE M012.target_id = @P_vocabulary_id
 		INSERT INTO M012(
 			target_id
+		,	target_div
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -140,6 +143,7 @@ BEGIN
 		)
 		SELECT
 			@w_inserted_key
+		,	1
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0

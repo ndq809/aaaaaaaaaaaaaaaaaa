@@ -168,7 +168,7 @@ label {
 
 .pager {
     margin: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .dropdown button {
@@ -1219,3 +1219,52 @@ a.btn-add span {
     margin-bottom: 0px!important;
 }
 
+#example-list{
+    margin-left: 0px;
+}
+
+.panel.example-item{
+    margin-bottom: 5px;
+}
+
+.answer-box{
+    border-bottom: 1px double #ddd;
+    position: relative;
+    margin-top: -10px;
+}
+
+.answer-box .result-icon{
+    display: none;
+}
+
+.answer-box .radio,.answer-box .checkbox{
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+.answer-box .radio input,.answer-box .checkbox input{
+    top: -2px;
+}
+
+.panel-contribute{
+    margin-bottom: 5px!important;
+}
+
+.right-answer{
+    background-color: #caf1ca;
+}
+
+.wrong-answer{
+    background-color: #ef9f9f;
+}
+
+.right-answer .result-icon,.wrong-answer .result-icon{
+    display: block;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    vertical-align: middle;
+    right: 30px;
+    top: 20px;
+    opacity: 0.7;
+}
