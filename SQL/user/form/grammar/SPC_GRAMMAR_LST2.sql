@@ -52,6 +52,7 @@ BEGIN
 	ON M007.post_id = F003.item_1
 	AND F003.connect_div = 1
 	AND F003.user_id = @P_account_id
+	AND F003.item_2 IS NULL
 	WHERE M007.del_flg = 0
 	AND M007.catalogue_div = 2
 	AND M007.catalogue_id = @P_catalogue_id
