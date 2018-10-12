@@ -5,6 +5,7 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Common;
+use DAO;
 use Session;
 use Illuminate\Cookie\CookieJar;
 
@@ -121,6 +122,8 @@ trait AuthenticatesUsers
         Auth::user()->save();
         $remember_me = $request->remember;
         $year = time() + 31536000;
+        $data   = Dao::call_stored_procedure('SPC_COMMON_ACCOUNT', array(Auth::user()->user_id,Auth::user()->system_div));
+        Session::put('logined_data',$data[0]);
         if ($remember_me == 'true') {
             setcookie('remember_me', $remember_me, $year);
             setcookie('account_nm', $request->account_nm, $year);

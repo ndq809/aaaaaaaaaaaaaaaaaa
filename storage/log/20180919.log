@@ -1,0 +1,694 @@
+2018-09-19 00:04:13 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:18 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:18 EXEC SPC_VOCABULARY_LST1 '','','','';
+2018-09-19 00:04:18 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:18 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2018-09-19 00:04:20 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:20 EXEC SPC_GRAMMAR_LST1 '','','2','1';
+2018-09-19 00:04:21 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:21 EXEC SPC_GRAMMAR_LST2 '6','6','';
+2018-09-19 00:04:31 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:31 EXEC SPC_GRAMMAR_LST1 '6','','6','6';
+2018-09-19 00:04:32 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:04:32 EXEC SPC_GRAMMAR_LST2 '6','6','';
+2018-09-19 00:06:14 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:06:14 EXEC SPC_TRANSLATE_LST1 '','';
+2018-09-19 00:07:14 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:07:14 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:08:01 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:08:01 EXEC SPC_TRANSLATE_LST1 '1','';
+2018-09-19 00:08:02 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:08:02 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:31:54 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:31:54 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:35:07 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:35:09 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:35:09 EXEC SPC_TRANSLATE_LST1 '','';
+2018-09-19 00:35:14 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:35:14 EXEC SPC_TRANSLATE_LST3 'hel';
+2018-09-19 00:35:15 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:35:15 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:38:15 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:38:15 EXEC SPC_TRANSLATE_LST1 '','';
+2018-09-19 00:38:27 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:38:27 EXEC SPC_TRANSLATE_LST1 '','';
+2018-09-19 00:38:32 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:38:32 EXEC SPC_TRANSLATE_LST3 'hel';
+2018-09-19 00:38:33 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:38:33 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:39:39 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:39:39 EXEC SPC_TRANSLATE_LST3 'Hello';
+2018-09-19 00:39:40 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:39:40 EXEC SPC_TRANSLATE_LST2 'Hello','','127.0.0.1';
+2018-09-19 00:39:52 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:39:52 EXEC SPC_TRANSLATE_LST3 'Hello';
+2018-09-19 00:39:56 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:39:56 EXEC SPC_TRANSLATE_LST3 'kin';
+2018-09-19 00:39:57 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:39:57 EXEC SPC_TRANSLATE_LST2 'king','','127.0.0.1';
+2018-09-19 00:40:23 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:40:23 EXEC SPC_TRANSLATE_LST3 'king';
+2018-09-19 00:40:51 EXEC SPC_COM_DATA '','','';
+2018-09-19 00:40:51 EXEC SPC_TRANSLATE_LST3 'king';
+2018-09-19 01:06:41 EXEC SPC_COM_PERMISSION '1','2','g005';
+2018-09-19 01:06:41 EXEC SPC_COM_MENU '1';
+2018-09-19 01:06:41 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-19 01:06:51 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-09-19 01:06:51 EXEC SPC_COM_MENU '1';
+2018-09-19 01:06:51 EXEC SPC_COM_M999_INQ1 '7';
+2018-09-19 01:06:53 EXEC SPC_COM_MENU '1';
+2018-09-19 01:06:53 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-09-19 01:06:58 EXEC SPC_COM_MENU '1';
+2018-09-19 01:06:58 EXEC SPC_COM_M999_INQ1 '8';
+2018-09-19 01:06:59 EXEC SPC_COM_MENU '1';
+2018-09-19 01:06:59 EXEC SPC_p004_LST1 '6';
+2018-09-19 01:07:05 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:07:05 EXEC SPC_COM_MENU '1';
+2018-09-19 01:07:05 EXEC SPC_W002_FND1
+2018-09-19 01:07:06 EXEC SPC_COM_MENU '1';
+2018-09-19 01:07:06 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:07:06 EXEC SPC_COM_MENU '1';
+2018-09-19 01:07:06 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:07:07 EXEC SPC_COM_MENU '1';
+2018-09-19 01:07:07 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:13:05 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:13:05 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:05 EXEC SPC_W002_FND1
+2018-09-19 01:13:06 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:06 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:13:06 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:06 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:13:07 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:07 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:13:48 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:13:48 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:48 EXEC SPC_W002_FND1
+2018-09-19 01:13:49 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:49 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:13:49 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:49 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:13:49 EXEC SPC_COM_MENU '1';
+2018-09-19 01:13:49 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:14:10 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:14:10 EXEC SPC_COM_MENU '1';
+2018-09-19 01:14:10 EXEC SPC_W002_FND1
+2018-09-19 01:14:11 EXEC SPC_COM_MENU '1';
+2018-09-19 01:14:11 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:14:11 EXEC SPC_COM_MENU '1';
+2018-09-19 01:14:11 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:14:11 EXEC SPC_COM_MENU '1';
+2018-09-19 01:14:12 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:19:31 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:19:31 EXEC SPC_COM_MENU '1';
+2018-09-19 01:19:31 EXEC SPC_W002_FND1
+2018-09-19 01:19:32 EXEC SPC_COM_MENU '1';
+2018-09-19 01:19:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:19:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:19:33 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:19:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:19:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:20:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:20:15 EXEC SPC_COM_MENU '1';
+2018-09-19 01:20:15 EXEC SPC_W002_FND1
+2018-09-19 01:20:16 EXEC SPC_COM_MENU '1';
+2018-09-19 01:20:16 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:20:16 EXEC SPC_COM_MENU '1';
+2018-09-19 01:20:16 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:20:16 EXEC SPC_COM_MENU '1';
+2018-09-19 01:20:16 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:21:04 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:21:04 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:04 EXEC SPC_W002_FND1
+2018-09-19 01:21:05 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:05 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:21:05 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:05 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:21:05 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:05 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:21:32 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:21:32 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:32 EXEC SPC_W002_FND1
+2018-09-19 01:21:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:33 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:21:34 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:34 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:21:34 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:34 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:21:51 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:21:51 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:51 EXEC SPC_W002_FND1
+2018-09-19 01:21:52 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:52 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:21:52 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:52 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:21:53 EXEC SPC_COM_MENU '1';
+2018-09-19 01:21:53 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:23:18 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:23:18 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:18 EXEC SPC_W002_FND1
+2018-09-19 01:23:19 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:19 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:23:20 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:20 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:23:20 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:20 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:23:48 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:23:48 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:48 EXEC SPC_W002_FND1
+2018-09-19 01:23:49 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:49 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:23:50 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:50 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:23:50 EXEC SPC_COM_MENU '1';
+2018-09-19 01:23:50 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:24:31 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:24:31 EXEC SPC_COM_MENU '1';
+2018-09-19 01:24:31 EXEC SPC_W002_FND1
+2018-09-19 01:24:32 EXEC SPC_COM_MENU '1';
+2018-09-19 01:24:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:24:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:24:33 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:24:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:24:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:52:23 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:52:23 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:23 EXEC SPC_W002_FND1
+2018-09-19 01:52:24 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:24 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:52:25 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:25 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:52:25 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:25 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:52:29 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:29 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','<p>(countable and uncountable nouns)</p>
+
+<p><strong>Danh từ đếm được (Countable nouns)</strong>: l&agrave; danh từ m&agrave; ch&uacute;ng ta c&oacute; thể đếm trực tiếp người hay vật ấy. Phần lớn&nbsp;danh từ&nbsp;cụ thể đều thuộc v&agrave;o loại đếm được.</p>
+
+<p>VD: boy (cậu b&eacute;), apple (quả t&aacute;o), book (quyển s&aacute;ch), tree (c&acirc;y)&hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được (Uncountable nouns</strong>): l&agrave; danh từ m&agrave; ch&uacute;ng ta kh&ocirc;ng đếm trực tiếp người hay vật ấy. Muốn đếm, ta phải th&ocirc;ng qua một đơn vị đo lường th&iacute;ch hợp. Phần lớn&nbsp;<em>danh từ</em>&nbsp;trừu tượng đều thuộc v&agrave;o loại kh&ocirc;ng đếm được.</p>
+
+<p>VD: meat (thịt), ink (mực), chalk (phấn), water (nước)&hellip;</p>
+','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','','ndq809','127.0.0.1';
+2018-09-19 01:52:31 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:31 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:52:31 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:31 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:52:32 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:32 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:52:50 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:50 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','<p>(countable and uncountable nouns)</p>
+
+<p><strong>Danh từ đếm được (Countable nouns)</strong>: l&agrave; danh từ m&agrave; ch&uacute;ng ta c&oacute; thể đếm trực tiếp người hay vật ấy. Phần lớn&nbsp;danh từ&nbsp;cụ thể đều thuộc v&agrave;o loại đếm được.</p>
+
+<p>VD: boy (cậu b&eacute;), apple (quả t&aacute;o), book (quyển s&aacute;ch), tree (c&acirc;y)&hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được (Uncountable nouns</strong>): l&agrave; danh từ m&agrave; ch&uacute;ng ta kh&ocirc;ng đếm trực tiếp người hay vật ấy. Muốn đếm, ta phải th&ocirc;ng qua một đơn vị đo lường th&iacute;ch hợp. Phần lớn&nbsp;<em>danh từ</em>&nbsp;trừu tượng đều thuộc v&agrave;o loại kh&ocirc;ng đếm được.</p>
+
+<p>VD: meat (thịt), ink (mực), chalk (phấn), water (nước)&hellip;</p>
+','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','','ndq809','127.0.0.1';
+2018-09-19 01:52:55 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:55 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:52:56 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:56 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:52:56 EXEC SPC_COM_MENU '1';
+2018-09-19 01:52:56 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:53:58 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:53:58 EXEC SPC_COM_MENU '1';
+2018-09-19 01:53:58 EXEC SPC_W002_FND1
+2018-09-19 01:54:17 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:54:17 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:17 EXEC SPC_W002_FND1
+2018-09-19 01:54:18 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:18 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:54:18 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:18 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:54:18 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:18 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:54:31 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:31 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','<p>(countable and uncountable nouns)</p>
+
+<p><strong>Danh từ đếm được (Countable nouns)</strong>: l&agrave; danh từ m&agrave; ch&uacute;ng ta c&oacute; thể đếm trực tiếp người hay vật ấy. Phần lớn&nbsp;danh từ&nbsp;cụ thể đều thuộc v&agrave;o loại đếm được.</p>
+
+<p>VD: boy (cậu b&eacute;), apple (quả t&aacute;o), book (quyển s&aacute;ch), tree (c&acirc;y)&hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được (Uncountable nouns</strong>): l&agrave; danh từ m&agrave; ch&uacute;ng ta kh&ocirc;ng đếm trực tiếp người hay vật ấy. Muốn đếm, ta phải th&ocirc;ng qua một đơn vị đo lường th&iacute;ch hợp. Phần lớn&nbsp;<em>danh từ</em>&nbsp;trừu tượng đều thuộc v&agrave;o loại kh&ocirc;ng đếm được.</p>
+
+<p>VD: meat (thịt), ink (mực), chalk (phấn), water (nước)&hellip;</p>
+','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','','ndq809','127.0.0.1';
+2018-09-19 01:54:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:33 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:54:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:33 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:54:33 EXEC SPC_COM_MENU '1';
+2018-09-19 01:54:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:55:35 EXEC SPC_COM_MENU '1';
+2018-09-19 01:55:35 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','<p>(countable and uncountable nouns)</p>
+
+<p><strong>Danh từ đếm được (Countable nouns)</strong>: l&agrave; danh từ m&agrave; ch&uacute;ng ta c&oacute; thể đếm trực tiếp người hay vật ấy. Phần lớn&nbsp;danh từ&nbsp;cụ thể đều thuộc v&agrave;o loại đếm được.</p>
+
+<p>VD: boy (cậu b&eacute;), apple (quả t&aacute;o), book (quyển s&aacute;ch), tree (c&acirc;y)&hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được (Uncountable nouns</strong>): l&agrave; danh từ m&agrave; ch&uacute;ng ta kh&ocirc;ng đếm trực tiếp người hay vật ấy. Muốn đếm, ta phải th&ocirc;ng qua một đơn vị đo lường th&iacute;ch hợp. Phần lớn&nbsp;<em>danh từ</em>&nbsp;trừu tượng đều thuộc v&agrave;o loại kh&ocirc;ng đếm được.</p>
+
+<p>VD: meat (thịt), ink (mực), chalk (phấn), water (nước)&hellip;</p>
+','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','<row question="lalala demacia" answer1="garen " verify1="1" answer2="darius " answer3="xinzao" verify3="1" answer4="lux " verify4="1" />','ndq809','127.0.0.1';
+2018-09-19 01:55:37 EXEC SPC_COM_MENU '1';
+2018-09-19 01:55:37 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:55:37 EXEC SPC_COM_MENU '1';
+2018-09-19 01:55:37 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:55:38 EXEC SPC_COM_MENU '1';
+2018-09-19 01:55:38 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:58:21 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 01:58:21 EXEC SPC_COM_MENU '1';
+2018-09-19 01:58:21 EXEC SPC_W002_FND1
+2018-09-19 01:58:22 EXEC SPC_COM_MENU '1';
+2018-09-19 01:58:22 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:58:22 EXEC SPC_COM_MENU '1';
+2018-09-19 01:58:22 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:58:23 EXEC SPC_COM_MENU '1';
+2018-09-19 01:58:23 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 01:58:59 EXEC SPC_COM_MENU '1';
+2018-09-19 01:58:59 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','<p>(countable and uncountable nouns)</p>
+
+<p><strong>Danh từ đếm được (Countable nouns)</strong>: l&agrave; danh từ m&agrave; ch&uacute;ng ta c&oacute; thể đếm trực tiếp người hay vật ấy. Phần lớn&nbsp;danh từ&nbsp;cụ thể đều thuộc v&agrave;o loại đếm được.</p>
+
+<p>VD: boy (cậu b&eacute;), apple (quả t&aacute;o), book (quyển s&aacute;ch), tree (c&acirc;y)&hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được (Uncountable nouns</strong>): l&agrave; danh từ m&agrave; ch&uacute;ng ta kh&ocirc;ng đếm trực tiếp người hay vật ấy. Muốn đếm, ta phải th&ocirc;ng qua một đơn vị đo lường th&iacute;ch hợp. Phần lớn&nbsp;<em>danh từ</em>&nbsp;trừu tượng đều thuộc v&agrave;o loại kh&ocirc;ng đếm được.</p>
+
+<p>VD: meat (thịt), ink (mực), chalk (phấn), water (nước)&hellip;</p>
+','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','<row question="lalala decia" answer1="gareb" verify1="1" answer2="darius " verify2="0" answer3="nocton" verify3="0" answer4="lux" verify4="1" />','ndq809','127.0.0.1';
+2018-09-19 01:59:01 EXEC SPC_COM_MENU '1';
+2018-09-19 01:59:01 EXEC SPC_W002_LST1 '6';
+2018-09-19 01:59:01 EXEC SPC_COM_MENU '1';
+2018-09-19 01:59:01 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 01:59:01 EXEC SPC_COM_MENU '1';
+2018-09-19 01:59:01 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 03:02:20 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 03:02:20 EXEC SPC_COM_MENU '1';
+2018-09-19 03:02:20 EXEC SPC_W002_FND1
+2018-09-19 03:02:21 EXEC SPC_COM_MENU '1';
+2018-09-19 03:02:21 EXEC SPC_W002_LST1 '6';
+2018-09-19 03:02:22 EXEC SPC_COM_MENU '1';
+2018-09-19 03:02:22 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 03:02:22 EXEC SPC_COM_MENU '1';
+2018-09-19 03:02:22 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 03:03:07 EXEC SPC_COM_MENU '1';
+2018-09-19 03:03:07 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','<row row_id="1" question="lalal demacia" /><row row_id="1" answer1="gareb " verify1="1" /><row row_id="1" answer2="lux" verify2="1" /><row row_id="1" answer3="darius " verify3="0" /><row row_id="1" answer4="galio" verify4="1" />','ndq809','127.0.0.1';
+2018-09-19 03:03:09 EXEC SPC_COM_MENU '1';
+2018-09-19 03:03:09 EXEC SPC_W002_LST1 '6';
+2018-09-19 03:03:09 EXEC SPC_COM_MENU '1';
+2018-09-19 03:03:09 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 03:03:09 EXEC SPC_COM_MENU '1';
+2018-09-19 03:03:09 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:07:30 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 04:07:30 EXEC SPC_COM_MENU '1';
+2018-09-19 04:07:30 EXEC SPC_W002_FND1
+2018-09-19 04:07:31 EXEC SPC_COM_MENU '1';
+2018-09-19 04:07:31 EXEC SPC_W002_LST1 '6';
+2018-09-19 04:07:32 EXEC SPC_COM_MENU '1';
+2018-09-19 04:07:32 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:07:32 EXEC SPC_COM_MENU '1';
+2018-09-19 04:07:32 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:08:30 EXEC SPC_COM_MENU '1';
+2018-09-19 04:08:30 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" />','<row row_id="1" content="lalala demacia" /><row row_id="1" content="lux" verify="1" /><row row_id="1" content="garen" verify="1" /><row row_id="1" content="lucian" verify="1" /><row row_id="1" content="threst" verify="0" />','ndq809','127.0.0.1';
+2018-09-19 04:08:32 EXEC SPC_COM_MENU '1';
+2018-09-19 04:08:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 04:08:33 EXEC SPC_COM_MENU '1';
+2018-09-19 04:08:33 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:08:33 EXEC SPC_COM_MENU '1';
+2018-09-19 04:08:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:30:27 EXEC SPC_COM_MENU '1';
+2018-09-19 04:30:27 EXEC SPC_w002_ACT1 '6','2','6','6','Danh từ đếm được và không đếm được','','','','0','','<row language1_content="I am Quy" language2_content="tôi là Quý" /><row language1_content="The teachers are the boss" language2_content="Giáo viên là trùm" /><row language1_content="i can&amp;#39;t believe" language2_content="méo thể tin đc" />','<row row_id="1" content="lalala demacia" /><row row_id="1" content="lux" verify="1" /><row row_id="1" content="garen" verify="1" /><row row_id="1" content="lucian" verify="1" /><row row_id="1" content="threst" verify="0" />','ndq809','127.0.0.1';
+2018-09-19 04:30:29 EXEC SPC_COM_MENU '1';
+2018-09-19 04:30:29 EXEC SPC_W002_LST1 '6';
+2018-09-19 04:30:29 EXEC SPC_COM_MENU '1';
+2018-09-19 04:30:29 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:30:30 EXEC SPC_COM_MENU '1';
+2018-09-19 04:30:30 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:31:06 EXEC SPC_COM_MENU '1';
+2018-09-19 04:31:06 EXEC SPC_W002_LST1 '';
+2018-09-19 04:31:07 EXEC SPC_COM_MENU '1';
+2018-09-19 04:31:07 EXEC SPC_COMMON_CATALORUE '';
+2018-09-19 04:31:10 EXEC SPC_COM_MENU '1';
+2018-09-19 04:31:10 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:31:12 EXEC SPC_COM_MENU '1';
+2018-09-19 04:31:12 EXEC SPC_COMMON_GROUP '7';
+2018-09-19 04:31:15 EXEC SPC_COM_MENU '1';
+2018-09-19 04:31:15 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:32:09 EXEC SPC_COM_MENU '1';
+2018-09-19 04:32:09 EXEC SPC_w002_ACT1 '','2','6','7','động cmn từ','<p>động từ is za b&eacute;t</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','<row row_id="1" content="lalala demacia" /><row row_id="1" content="lux" verify="1" /><row row_id="1" content="garen" verify="1" /><row row_id="1" content="lucian" verify="1" /><row row_id="1" content="threst" verify="0" />','ndq809','127.0.0.1';
+2018-09-19 04:32:11 EXEC SPC_COM_MENU '1';
+2018-09-19 04:32:11 EXEC SPC_W002_LST1 '7';
+2018-09-19 04:32:11 EXEC SPC_COM_MENU '1';
+2018-09-19 04:32:11 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:32:11 EXEC SPC_COM_MENU '1';
+2018-09-19 04:32:11 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:33:55 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 04:33:55 EXEC SPC_COM_MENU '1';
+2018-09-19 04:33:55 EXEC SPC_W002_FND1
+2018-09-19 04:33:56 EXEC SPC_COM_MENU '1';
+2018-09-19 04:33:56 EXEC SPC_W002_LST1 '6';
+2018-09-19 04:33:56 EXEC SPC_COM_MENU '1';
+2018-09-19 04:33:56 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:33:57 EXEC SPC_COM_MENU '1';
+2018-09-19 04:33:57 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:34:03 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:03 EXEC SPC_W002_LST1 '';
+2018-09-19 04:34:03 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:03 EXEC SPC_COMMON_CATALORUE '';
+2018-09-19 04:34:06 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:06 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:34:07 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:07 EXEC SPC_COMMON_GROUP '7';
+2018-09-19 04:34:10 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:10 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:34:46 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:46 EXEC SPC_w002_ACT1 '','2','6','7','động từ bất quy tắc','<p>l&agrave; động từ m&eacute;o c&oacute; c&aacute;i quy cmn tắc g&igrave; hết</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','','ndq809','127.0.0.1';
+2018-09-19 04:34:48 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:48 EXEC SPC_W002_LST1 '8';
+2018-09-19 04:34:48 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:48 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:34:48 EXEC SPC_COM_MENU '1';
+2018-09-19 04:34:48 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:35:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 04:35:15 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:15 EXEC SPC_W002_FND1
+2018-09-19 04:35:16 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:16 EXEC SPC_W002_LST1 '6';
+2018-09-19 04:35:16 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:16 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:35:16 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:16 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:35:21 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:21 EXEC SPC_W002_LST1 '7';
+2018-09-19 04:35:22 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:22 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:35:22 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:22 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 04:35:27 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:27 EXEC SPC_W002_LST1 '8';
+2018-09-19 04:35:27 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:27 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 04:35:28 EXEC SPC_COM_MENU '1';
+2018-09-19 04:35:28 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 07:39:06 EXEC SPC_COM_MENU '1';
+2018-09-19 07:39:06 EXEC SPC_w002_ACT1 '8','2','6','7','động từ bất quy tắc','<p>l&agrave; động từ m&eacute;o c&oacute; c&aacute;i quy cmn tắc g&igrave; hết</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','<row row_id="1" content="lalala demacia" /><row row_id="1" content="a" verify="1" /><row row_id="1" content="b" verify="1" /><row row_id="1" content="c" verify="0" /><row row_id="1" content="d" verify="0" /><row row_id="2" content="noxus" /><row row_id="2" content="x" verify="0" /><row row_id="2" content="y" verify="0" /><row row_id="2" content="z" verify="0" /><row row_id="2" content="m" verify="1" /><row row_id="3" content="targon" /><row row_id="3" content="p" verify="0" /><row row_id="3" content="b" verify="1" /><row row_id="3" content="h" verify="0" /><row row_id="3" content="n" verify="0" />','ndq809','127.0.0.1';
+2018-09-19 07:39:08 EXEC SPC_COM_MENU '1';
+2018-09-19 07:39:08 EXEC SPC_W002_LST1 '8';
+2018-09-19 07:39:08 EXEC SPC_COM_MENU '1';
+2018-09-19 07:39:08 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 07:39:09 EXEC SPC_COM_MENU '1';
+2018-09-19 07:39:09 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 07:40:26 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 07:40:26 EXEC SPC_COM_MENU '1';
+2018-09-19 07:40:26 EXEC SPC_W002_FND1
+2018-09-19 07:40:27 EXEC SPC_COM_MENU '1';
+2018-09-19 07:40:27 EXEC SPC_W002_LST1 '6';
+2018-09-19 07:40:28 EXEC SPC_COM_MENU '1';
+2018-09-19 07:40:28 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 07:40:28 EXEC SPC_COM_MENU '1';
+2018-09-19 07:40:28 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 07:41:14 EXEC SPC_COM_MENU '1';
+2018-09-19 07:41:14 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wtf" question_div="0" /><row row_id="1" content="q" verify="0" question_div="0" /><row row_id="1" content="w" verify="1" question_div="0" /><row row_id="1" content="e" verify="0" question_div="0" /><row row_id="1" content="r" verify="0" question_div="0" /><row row_id="2" content="wth" question_div="0" /><row row_id="2" content="a" verify="1" question_div="0" /><row row_id="2" content="s" verify="1" question_div="0" /><row row_id="2" content="d" verify="0" question_div="0" /><row row_id="2" content="f" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 07:41:16 EXEC SPC_COM_MENU '1';
+2018-09-19 07:41:16 EXEC SPC_W002_LST1 '6';
+2018-09-19 07:41:16 EXEC SPC_COM_MENU '1';
+2018-09-19 07:41:16 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 07:41:16 EXEC SPC_COM_MENU '1';
+2018-09-19 07:41:16 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:21:30 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:21:30 EXEC SPC_COM_MENU '1';
+2018-09-19 08:21:30 EXEC SPC_W002_FND1
+2018-09-19 08:21:48 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:21:48 EXEC SPC_COM_MENU '1';
+2018-09-19 08:21:48 EXEC SPC_W002_FND1
+2018-09-19 08:21:49 EXEC SPC_COM_MENU '1';
+2018-09-19 08:21:49 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:21:49 EXEC SPC_COM_MENU '1';
+2018-09-19 08:21:49 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:21:49 EXEC SPC_COM_MENU '1';
+2018-09-19 08:21:49 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:22:07 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:22:07 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:07 EXEC SPC_W002_FND1
+2018-09-19 08:22:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:08 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:22:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:08 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:22:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:08 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:22:36 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:22:36 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:36 EXEC SPC_W002_FND1
+2018-09-19 08:22:36 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:37 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:22:37 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:37 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:22:37 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:37 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:22:54 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:22:54 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:54 EXEC SPC_W002_FND1
+2018-09-19 08:22:55 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:55 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:22:55 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:55 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:22:55 EXEC SPC_COM_MENU '1';
+2018-09-19 08:22:55 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:23:00 EXEC SPC_COM_MENU '1';
+2018-09-19 08:23:00 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:23:00 EXEC SPC_COM_MENU '1';
+2018-09-19 08:23:00 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:23:01 EXEC SPC_COM_MENU '1';
+2018-09-19 08:23:01 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:29:08 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:29:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:29:08 EXEC SPC_W002_FND1
+2018-09-19 08:29:09 EXEC SPC_COM_MENU '1';
+2018-09-19 08:29:09 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:29:29 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:29:29 EXEC SPC_COM_MENU '1';
+2018-09-19 08:29:29 EXEC SPC_W002_FND1
+2018-09-19 08:29:30 EXEC SPC_COM_MENU '1';
+2018-09-19 08:29:30 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:31:24 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:31:24 EXEC SPC_COM_MENU '1';
+2018-09-19 08:31:24 EXEC SPC_W002_FND1
+2018-09-19 08:31:25 EXEC SPC_COM_MENU '1';
+2018-09-19 08:31:25 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:31:25 EXEC SPC_COM_MENU '1';
+2018-09-19 08:31:25 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:31:25 EXEC SPC_COM_MENU '1';
+2018-09-19 08:31:25 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:33:33 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:33:33 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:33 EXEC SPC_W002_FND1
+2018-09-19 08:33:34 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:34 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:33:34 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:34 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:33:34 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:34 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:33:49 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:49 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wtf" question_div="1" /><row row_id="1" content="q" verify="0" question_div="1" /><row row_id="1" content="w" verify="1" question_div="1" /><row row_id="1" content="e" verify="0" question_div="1" /><row row_id="1" content="r" verify="1" question_div="1" /><row row_id="2" content="wth" question_div="1" /><row row_id="2" content="a" verify="1" question_div="1" /><row row_id="2" content="s" verify="1" question_div="1" /><row row_id="2" content="d" verify="0" question_div="1" /><row row_id="2" content="f" verify="0" question_div="1" />','ndq809','127.0.0.1';
+2018-09-19 08:33:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:51 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:33:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:51 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:33:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:33:51 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:34:03 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:03 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="0" question_div="1" /><row row_id="2" content="wtf" question_div="1" /><row row_id="2" content="q" verify="1" question_div="1" /><row row_id="2" content="w" verify="1" question_div="1" /><row row_id="2" content="e" verify="0" question_div="1" /><row row_id="2" content="r" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-09-19 08:34:04 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:04 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:34:05 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:05 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:34:05 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:05 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:34:15 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:15 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="0" question_div="1" /><row row_id="2" content="wtf" question_div="0" /><row row_id="2" content="q" verify="0" question_div="0" /><row row_id="2" content="w" verify="1" question_div="0" /><row row_id="2" content="e" verify="0" question_div="0" /><row row_id="2" content="r" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 08:34:17 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:17 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:34:17 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:17 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:34:17 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:17 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:34:24 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:24 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" /><row row_id="2" content="wtf" question_div="0" /><row row_id="2" content="q" verify="0" question_div="0" /><row row_id="2" content="w" verify="1" question_div="0" /><row row_id="2" content="e" verify="0" question_div="0" /><row row_id="2" content="r" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 08:34:25 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:25 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:34:26 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:26 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:34:26 EXEC SPC_COM_MENU '1';
+2018-09-19 08:34:26 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:35:30 EXEC SPC_COM_MENU '1';
+2018-09-19 08:35:30 EXEC SPC_w002_ACT1 '6','2','6','6','Danh t? ??m ???c va khong ??m ???c','','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="meo th? tin ?c" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-09-19 08:35:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:35:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:35:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:35:32 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:35:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:35:32 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:36:00 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:00 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:36:01 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:01 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:36:01 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:01 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:36:11 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:11 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:36:12 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:12 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:36:12 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:12 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:36:16 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:16 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:36:17 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:17 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:36:17 EXEC SPC_COM_MENU '1';
+2018-09-19 08:36:17 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:42:32 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:42:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:32 EXEC SPC_W002_FND1
+2018-09-19 08:42:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:42:33 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:33 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:42:33 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:42:39 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:39 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:42:39 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:39 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:42:39 EXEC SPC_COM_MENU '1';
+2018-09-19 08:42:39 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:43:31 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:43:31 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:31 EXEC SPC_W002_FND1
+2018-09-19 08:43:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:32 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:43:32 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:32 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:43:33 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:33 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:43:35 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:35 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:43:36 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:36 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:43:36 EXEC SPC_COM_MENU '1';
+2018-09-19 08:43:36 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:44:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:10 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:44:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:10 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:44:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:10 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:44:21 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:21 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:44:21 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:21 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:44:21 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:21 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:44:29 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:29 EXEC SPC_w002_ACT1 '8','2','6','7','động từ bất quy tắc','<p>l&agrave; động từ m&eacute;o c&oacute; c&aacute;i quy cmn tắc g&igrave; hết</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','<row row_id="1" content="lalala demacia" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="b" verify="1" question_div="1" /><row row_id="1" content="c" verify="0" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="2" content="noxus" question_div="0" /><row row_id="2" content="x" verify="0" question_div="0" /><row row_id="2" content="y" verify="0" question_div="0" /><row row_id="2" content="z" verify="0" question_div="0" /><row row_id="2" content="m" verify="1" question_div="0" /><row row_id="3" content="targon" question_div="0" /><row row_id="3" content="p" verify="0" question_div="0" /><row row_id="3" content="b" verify="1" question_div="0" /><row row_id="3" content="h" verify="0" question_div="0" /><row row_id="3" content="n" verify="0" question_div="0" /><row row_id="4" content="dsa" question_div="0" /><row row_id="5" content="dsad" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 08:44:31 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:31 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:44:31 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:31 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:44:31 EXEC SPC_COM_MENU '1';
+2018-09-19 08:44:31 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:46:06 EXEC SPC_COM_MENU '1';
+2018-09-19 08:46:06 EXEC SPC_w002_ACT1 '8','2','6','7','động từ bất quy tắc','<p>l&agrave; động từ m&eacute;o c&oacute; c&aacute;i quy cmn tắc g&igrave; hết</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','<row row_id="1" content="lalala demacia" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="b" verify="1" question_div="1" /><row row_id="1" content="c" verify="0" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="2" content="noxus" question_div="0" /><row row_id="2" content="x" verify="0" question_div="0" /><row row_id="2" content="y" verify="0" question_div="0" /><row row_id="2" content="z" verify="0" question_div="0" /><row row_id="2" content="m" verify="1" question_div="0" /><row row_id="3" content="targon" question_div="0" /><row row_id="3" content="p" verify="0" question_div="0" /><row row_id="3" content="b" verify="1" question_div="0" /><row row_id="3" content="h" verify="0" question_div="0" /><row row_id="3" content="n" verify="0" question_div="0" /><row row_id="4" content="bitwater" question_div="1" /><row row_id="4" content="h" verify="0" question_div="1" /><row row_id="4" content="g" verify="1" question_div="1" /><row row_id="4" content="j" verify="1" question_div="1" /><row row_id="4" content="u" verify="0" question_div="1" /><row row_id="5" content="quần đảo bóng đêm" question_div="0" /><row row_id="5" content="y" verify="1" question_div="0" /><row row_id="5" content="j" verify="0" question_div="0" /><row row_id="5" content="h" verify="0" question_div="0" /><row row_id="5" content="m" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 08:46:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:46:08 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:46:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:46:08 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:46:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:46:08 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:47:09 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:09 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:47:09 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:09 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:47:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:10 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:47:13 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:13 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:47:13 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:13 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:47:13 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:13 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:47:49 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:49 EXEC SPC_w002_ACT1 '8','2','6','7','động từ bất quy tắc','<p>l&agrave; động từ m&eacute;o c&oacute; c&aacute;i quy cmn tắc g&igrave; hết</p>
+','','','0','','<row language1_content="i go to school" language2_content="tôi đi học" />','<row row_id="1" content="lalala demacia" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="b" verify="1" question_div="1" /><row row_id="1" content="c" verify="0" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="2" content="noxus" question_div="0" /><row row_id="2" content="x" verify="0" question_div="0" /><row row_id="2" content="y" verify="0" question_div="0" /><row row_id="2" content="z" verify="0" question_div="0" /><row row_id="2" content="m" verify="1" question_div="0" /><row row_id="3" content="targon" question_div="0" /><row row_id="3" content="p" verify="0" question_div="0" /><row row_id="3" content="b" verify="1" question_div="0" /><row row_id="3" content="h" verify="0" question_div="0" /><row row_id="3" content="n" verify="0" question_div="0" /><row row_id="4" content="bitwater" question_div="1" /><row row_id="4" content="h" verify="1" question_div="1" /><row row_id="4" content="g" verify="1" question_div="1" /><row row_id="4" content="j" verify="1" question_div="1" /><row row_id="4" content="u" verify="0" question_div="1" /><row row_id="5" content="quần đảo bóng đêm" question_div="0" /><row row_id="5" content="y" verify="1" question_div="0" /><row row_id="5" content="j" verify="0" question_div="0" /><row row_id="5" content="h" verify="0" question_div="0" /><row row_id="5" content="m" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-09-19 08:47:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:51 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:47:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:51 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:47:51 EXEC SPC_COM_MENU '1';
+2018-09-19 08:47:51 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:49:18 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:49:18 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:18 EXEC SPC_W002_FND1
+2018-09-19 08:49:19 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:19 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:49:19 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:19 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:49:20 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:20 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:49:25 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:25 EXEC SPC_W002_LST1 '8';
+2018-09-19 08:49:26 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:26 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:49:26 EXEC SPC_COM_MENU '1';
+2018-09-19 08:49:26 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:54:08 EXEC SPC_COM_MENU '1';
+2018-09-19 08:54:08 EXEC SPC_COMMON_CATALORUE '1';
+2018-09-19 08:54:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:54:10 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:54:10 EXEC SPC_COM_MENU '1';
+2018-09-19 08:54:10 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:55:03 EXEC SPC_COM_MENU '1';
+2018-09-19 08:55:03 EXEC SPC_W002_LST1 '7';
+2018-09-19 08:55:12 EXEC SPC_COM_MENU '1';
+2018-09-19 08:55:12 EXEC SPC_W002_LST1 '';
+2018-09-19 08:56:28 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-09-19 08:56:28 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:28 EXEC SPC_W002_FND1
+2018-09-19 08:56:29 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:29 EXEC SPC_W002_LST1 '6';
+2018-09-19 08:56:30 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:30 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:56:30 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:30 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:56:35 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:35 EXEC SPC_W002_LST1 '7';
+2018-09-19 08:56:35 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:35 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:56:36 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:36 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:56:41 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:41 EXEC SPC_W002_LST1 '1';
+2018-09-19 08:56:41 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:41 EXEC SPC_COMMON_CATALORUE '';
+2018-09-19 08:56:43 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:43 EXEC SPC_W002_LST1 '2';
+2018-09-19 08:56:44 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:44 EXEC SPC_W002_LST1 '3';
+2018-09-19 08:56:46 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:46 EXEC SPC_W002_LST1 '4';
+2018-09-19 08:56:46 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:46 EXEC SPC_COMMON_CATALORUE '2';
+2018-09-19 08:56:46 EXEC SPC_COM_MENU '1';
+2018-09-19 08:56:46 EXEC SPC_COMMON_GROUP '6';
+2018-09-19 08:59:37 EXEC SPC_COM_DATA '','','';
+2018-09-19 08:59:41 EXEC SPC_COM_DATA '','','';
+2018-09-19 08:59:41 EXEC SPC_GRAMMAR_LST1 '','','','';
+2018-09-19 08:59:42 EXEC SPC_COM_DATA '','','';
+2018-09-19 08:59:42 EXEC SPC_GRAMMAR_LST2 '6','6','';

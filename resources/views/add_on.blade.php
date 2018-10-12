@@ -64,8 +64,9 @@
                     BÀI TẬP VẬN DỤNG
                 </h5>
             </div>
-            <div class="modal-body">
-                
+            <div class="modal-body" style="padding-top: 0px">
+                <div class="form-group" min-width="1024px">
+                </div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary btn-sm btn-refresh" type="button">
@@ -152,13 +153,13 @@
                 </h5>
             </div>
             <div class="modal-body">
-                <h5>Bạn đã nghe được <span class="listen_result"></span> của bài nghe!!!</h5>
+                <h5 class="result-text"></h5>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
                     <i class="glyphicon glyphicon-thumbs-up"></i> Tiếp Tục Nghe 
                 </button>
-                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+                <button class="btn btn-default btn-sm btn-show-answer" data-dismiss="modal" type="button">
                     <i class="glyphicon glyphicon-thumbs-down"></i> Xem Đáp Án
                 </button>
             </div>

@@ -50,10 +50,12 @@ Route::group(
 		Route::any('forgetvoc','CommonController@forgetvoc');
 		Route::any('getExample','CommonController@getExample');
 		Route::any('addExample','CommonController@addExample');
+		Route::any('addcomment','CommonController@addComment');
 		Route::any('toggleEffect','CommonController@toggleEffect');
 		Route::post('getcatalogue', 'CommonController@getcatalogue');
 		Route::post('getgroup', 'CommonController@getgroup');
 		Route::any('getQuestion','CommonController@getQuestion');
+		Route::any('loadMoreComment','CommonController@loadMoreComment');
 
 	}
 );

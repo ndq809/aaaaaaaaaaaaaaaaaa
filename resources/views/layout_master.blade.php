@@ -5,7 +5,7 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
-        <link rel="shortcut icon" href="/web-content/images/icon/title-icon2.ico"/>
+        <link rel="icon" type="image/png" href="/web-content/images/icon/title-icon2.png" sizes="128x128">
         <title>
             @yield('title','English Plus Master')
         </title>

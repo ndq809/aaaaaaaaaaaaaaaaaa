@@ -77,7 +77,7 @@ BEGIN
 	ON M012.example_id = F008.target_id
 	AND F008.user_id = @P_account_id
 	AND F008.execute_div = 1
-	AND F008.execute_target_div = 1
+	AND F008.execute_target_div = 2
 	)temp
 	WHERE temp.count_row_id <6
 	ORDER BY temp.clap

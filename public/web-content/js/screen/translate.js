@@ -103,8 +103,10 @@ function initListener() {
         switchTabVocabulary($(this));
     });
     $(document).on("click", ".history-item", function() {
-        $( "#key-word" ).val($(this).find('.bookmark_nm').text());
-        getData($( "#key-word" ).val());
+        if($(this).find('.bookmark_nm').text()!=''){
+            $( "#key-word" ).val($(this).find('.bookmark_nm').text());
+            getData($( "#key-word" ).val());
+        }
     });
     $(window).resize(function() {
         slidePositionController();
@@ -134,6 +136,7 @@ function initListener() {
         item_infor.push(vocabularyArray[current_id - 1]['id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });
@@ -158,6 +161,7 @@ function initListener() {
         item_infor.push(vocabularyArray[current_id - 1]['id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });

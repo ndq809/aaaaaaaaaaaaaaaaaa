@@ -131,6 +131,7 @@ function initListener() {
         item_infor.push(vocabularyArray[current_id - 1]['id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });
@@ -155,6 +156,7 @@ function initListener() {
         item_infor.push(vocabularyArray[current_id - 1]['id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });
@@ -256,7 +258,6 @@ function forgetVocabulary(forget_btn) {
     voc_infor.push(vocabularyArray[current_id - 1]['id']);
     voc_infor.push(2);
     forgetItem(currentItem, "Đã thuộc", voc_infor, function() {
-        console.log(forget_btn.parents("tr"));
         if (forget_btn.parents("tr").hasClass('activeItem')) {
             nextVocabulary();
         }

@@ -70,7 +70,7 @@ BEGIN
 		,	NULL
 		,	NULL
 
-		IF @P_execute_target_div = 1
+		IF @P_execute_div = 1
 		BEGIN
 			UPDATE M012 SET
 				M012.clap		= M012.clap + 1
@@ -80,11 +80,22 @@ BEGIN
 			,	M012.upd_date	=	SYSDATETIME()
 			WHERE M012.example_id = @P_target_id
 		END
+
+		IF @P_execute_div = 3
+		BEGIN
+			UPDATE F004 SET
+				F004.cmt_like	= F004.cmt_like + 1
+			,	F004.upd_user	=	@P_user_id
+			,	F004.upd_prg	=	'common'
+			,	F004.upd_ip		=	@P_ip
+			,	F004.upd_date	=	SYSDATETIME()
+			WHERE F004.comment_id = @P_target_id
+		END
 	END
 	ELSE
 	BEGIN
-		DELETE F008 WHERE F008.target_id = @P_target_id
-		IF @P_execute_target_div = 1
+		DELETE F008 WHERE F008.target_id = @P_target_id AND F008.execute_div = @P_execute_div AND F008.execute_target_div = @P_execute_target_div
+		IF @P_execute_div = 1
 		BEGIN
 			UPDATE M012 SET
 				M012.clap		= M012.clap - 1
@@ -93,6 +104,17 @@ BEGIN
 			,	M012.upd_ip		=	@P_ip
 			,	M012.upd_date	=	SYSDATETIME()
 			WHERE M012.example_id = @P_target_id
+		END
+
+		IF @P_execute_div = 3
+		BEGIN
+			UPDATE F004 SET
+				F004.cmt_like	= F004.cmt_like - 1
+			,	F004.upd_user	=	@P_user_id
+			,	F004.upd_prg	=	'common'
+			,	F004.upd_ip		=	@P_ip
+			,	F004.upd_date	=	SYSDATETIME()
+			WHERE F004.comment_id = @P_target_id
 		END
 	END
 	END TRY
@@ -131,11 +153,19 @@ EXIT_SPC:
 		,	[Message]
 	FROM @ERR_TBL
 	ORDER BY Code
-	IF @P_execute_target_div = 1
+
+	IF @P_execute_div = 1
 	BEGIN
 		SELECT clap AS effected_count
 		FROM M012
 		WHERE M012.example_id = @P_target_id
+	END 
+
+	IF @P_execute_div = 3
+	BEGIN
+		SELECT F004.cmt_like AS effected_count
+		FROM F004
+		WHERE F004.comment_id = @P_target_id
 	END 
 	
 END

@@ -70,7 +70,7 @@ BEGIN
 		AND F003.item_2 = #TEMP.group_id
 		WHERE
 			F003.connect_div = 1
-		AND F003.screen_div = 1
+		AND F003.screen_div = 2
 		AND F003.del_flg = 0
 		AND F003.user_id = @P_account_id
 	)

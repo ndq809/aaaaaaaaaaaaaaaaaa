@@ -117,6 +117,8 @@ BEGIN
 	FROM M012
 	INNER JOIN #VOCABULARY
 	ON M012.target_id				= #VOCABULARY.id
+	WHERE
+		M012.target_div = 1
 	GROUP BY 
 		M012.target_id
 

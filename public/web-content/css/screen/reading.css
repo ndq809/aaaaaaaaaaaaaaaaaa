@@ -6,5 +6,10 @@
     content: "\f11e"; /* FontAwesome Unicode */
 }
 
+.panel-bottom{
+	padding: 5px 10px;
+	margin-top: -15px;
+}
+
 
 

@@ -63,6 +63,8 @@ a{
 
 .right-tab .tab-content{
     display: none;
+    max-height: 750px;
+
 }
 
 .pager{
@@ -483,7 +485,7 @@ body {
 
 .title-header{
     font-family: titlefont;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .text-header{
@@ -937,10 +939,18 @@ td .radio-inline {
     border-bottom: 1px solid #ddd;
 }
 
+.commentList .commentItem:last-child{
+    border-bottom: none;
+}
+
+.commentList .commentItem:first-child{
+    border-top: 1px solid #ddd;
+}
+
 .commenterImage{
     display: inline-block;
     float: left;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-right: 5px;
 }
 
@@ -957,7 +967,7 @@ td .radio-inline {
 }
 
 .commentContent{
-    padding-left: 42px;
+    padding-left: 47px;
 }
 
 
@@ -965,6 +975,7 @@ td .radio-inline {
     display: block;
     font-size: 12px;
     text-align: justify;
+    padding-right: 5px;
 }
 .bottomContent{
     display: block;
@@ -1003,8 +1014,13 @@ td .radio-inline {
 .commentHeader .setting{
     font-size: 12px;
     float: right;
-    padding-top: 4px;
+    padding-top: 5px;
     font-weight: normal;
+}
+
+.comment-date{
+    padding-top: 4px;
+    padding-right: 5px!important;
 }
 .bottomContent *{
     display: inline-block!important;
@@ -1015,7 +1031,7 @@ td .radio-inline {
     font-size: 11px;
 }
 
-.bottomContent .like{
+.bottomContent .liked{
     color: firebrick;
 }
 
@@ -1267,4 +1283,18 @@ a.btn-add span {
     right: 30px;
     top: 20px;
     opacity: 0.7;
+}
+
+.load-more{
+    color: #044fe4;
+    opacity: 0.6;
+    font-size: 11px!important;
+    font-style: italic;
+}
+
+.text-overflow{
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

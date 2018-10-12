@@ -193,14 +193,13 @@ function initEvent() {
         }
     })
 
-    $(document).on('click','.btn-comment',function(){
-        addComment($(this));
-    })
     $(document).on('click','.btn-reply',function(){
         if($(this).parents('.commentList').length>1){
+            $(this).parents('.commentList').siblings('.comment-input').removeClass('hidden');
             $(this).parents('.commentList').next().find('.input-sm').focus();
         }else{
-            $(this).parent().next().next().removeClass('hidden');
+            $(this).parent().siblings('.comment-input').removeClass('hidden');
+            $(this).parent().siblings('.comment-input').find('input:first-child').focus();
         }
     })
 
@@ -262,6 +261,18 @@ function initEvent() {
         logout('Quy Nguyen');
     })
 
+     $(document).on('keydown', function(e) {
+        switch (e.which) {
+            case 13:
+                if($('.comment-input:focus').length!=0){
+                    $('.comment-input:focus').next().find('button').trigger('click');
+                }
+                break;
+            default:
+                break;
+        }
+    })
+
 }
 
 function setFooter() {
@@ -270,6 +281,7 @@ function setFooter() {
         $('.bottom-content').css('position','absolute');
     } else {
         $('.bottom-content').css('position','relative');
+        $('.container-fluid .navbar-nav').addClass('in');
     }
 }
 
@@ -716,28 +728,104 @@ function setRightMenuHeight(){
     $('.right-tab .tab-content').css('display','block');
 }
 
-function addComment(btn_comment){
-    var comment_content=$('.new-comment').html();
-    if(btn_comment.closest('.input-group').hasClass('comment-input')){
-        btn_comment.closest('.input-group').prev().append(comment_content);
-    }else{
-        btn_comment.closest('.input-group').next().next().append(comment_content);
-    }
+function addComment(btn_comment,item_infor,callback){
+    $.ajax({
+        type: 'POST',
+        url: '/common/addcomment',
+        loading:true,
+        container:btn_comment,
+        dataType: 'json',
+        data: $.extend({}, item_infor),
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    if(btn_comment.closest('.input-group').hasClass('comment-input')){
+                        btn_comment.closest('.input-group').prev().append(res.view);
+                    }else{
+                        btn_comment.closest('.actionBox').find('.commentList').first().append(res.view);
+                    }
+                    btn_comment.parent().prev().val('');
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (res) {
+        }
+    });
 }
 
-function getComment(btn_show){
+function loadMoreComment(btn_load_more,item_infor,callback){
+    $.ajax({
+        type: 'POST',
+        url: '/common/loadMoreComment',
+        loading:true,
+        container:btn_load_more,
+        dataType: 'json',
+        data: $.extend({}, item_infor),
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    if(btn_load_more.hasClass('prev')){
+                        btn_load_more.next().html(res.view);
+                    }else{
+                        btn_load_more.prev().prev().html(res.view);
+                    }
+                    if(res.data[0]['page_prev']==0){
+                        btn_load_more.parent().find('.load-more.prev').addClass('hidden');
+                    }else{
+                        btn_load_more.parent().find('.load-more.prev').removeClass('hidden');
+                        btn_load_more.parent().find('.load-more.prev').attr('page',res.data[0]['page_prev']);
+                    }
+                    console.log(btn_load_more.parent());
+                    if(res.data[0]['page_next']==0){
+                        btn_load_more.parent().find('.load-more.next').addClass('hidden');
+                    }else{
+                        btn_load_more.parent().find('.load-more.next').removeClass('hidden');
+                        btn_load_more.parent().find('.load-more.next').attr('page',res.data[0]['page_next']);
+                    }
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (res) {
+        }
+    });
+}
+
+function getComment(item_infor,callback){
     $.ajax({
         type: 'POST',
         url: '/common/getcomment',
         loading:true,
-        container:'.commentbox',
-        dataType: 'html',
-        data: {},
+        container:'.commentbox .right-header',
+        dataType: 'json',
+        data: $.extend({}, item_infor),
         success: function (res) {
-            temp=$.parseHTML(res);
-            btn_show.prev(".commentList:first").empty();
-            btn_show.prev(".commentList:first").append(temp[0].children);
-            $('a.see-back').removeClass('hidden');
+            $('.commentList:first .commentItem:visible').remove();
+            $('.commentList:first').prepend(res.view1);
+            $('.paging-list .paging-item:visible').remove();
+            $('.paging-list').prepend(res.view2);
+            // callback();
         },
         // Ajax error
         error: function (res) {

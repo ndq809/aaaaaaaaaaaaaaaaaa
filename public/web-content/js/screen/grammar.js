@@ -136,6 +136,7 @@ function initListener() {
         item_infor.push(GrammarArray[current_id - 1]['post_id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(2);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });
@@ -149,6 +150,7 @@ function initListener() {
         item_infor.push(GrammarArray[current_id - 1]['post_id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
+        item_infor.push(2);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
         });
@@ -161,7 +163,7 @@ function initListener() {
         item_infor.push(GrammarArray[current_id - 1]['row_id']);
         item_infor.push($(this).attr('id'));
         item_infor.push(1);
-        item_infor.push(1);
+        item_infor.push(2);
         if ($(_this).hasClass('claped')) {
             item_infor.push(1);
         } else {
@@ -332,12 +334,12 @@ function getQuestion() {
         url: '/common/getQuestion',
         dataType: 'json',
         loading:true,
-        container:'#popup-box1 .modal-body',
+        container:'#popup-box1 .modal-body>.form-group',
         data: $.extend({}, item_infor), //convert to object
         success: function(res) {
             switch (res.status) {
                 case 200:
-                    $('#popup-box1 .modal-body').html(res.view1);
+                    $('#popup-box1 .modal-body>.form-group').html(res.view1);
                     AnswerArray = res.data;
                     break;
                 case 201:
@@ -378,9 +380,11 @@ function checkAnswer(){
         if(check == 1){
             $(this).addClass('wrong-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-close');
+            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
         }else if(check == 0){
             $(this).addClass('right-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-check');
+            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
         }
     })
 }

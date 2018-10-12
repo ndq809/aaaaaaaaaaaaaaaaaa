@@ -22,8 +22,8 @@
                 <table class="table table-hover table-bordered table-click">
                     <thead>
                         <th width="30px"></th>
-                        <th width="50%">Danh Mục</th>
-                        <th>Nhóm</th>
+                        <th>Danh Mục</th>
+                        <th width="50%">Nhóm</th>
                         <th width="30px">Xóa</th>
                     </thead>
                     <tbody>
@@ -37,10 +37,10 @@
                                     <input type="hidden" name="" class="lesson-id" value="{{$item['id']}}">
                                     <i class="glyphicon glyphicon-hand-right"></i>
                                 </td>
-                                <td>
+                                <td class="text-overflow">
                                     {{$item['catalogue_nm']}}
                                 </td>
-                                <td>
+                                <td class="text-overflow">
                                     {{$item['group_nm']}}
                                 </td>
                                 <td><button type="button" class="btn-danger btn-del-lesson"><span class="fa fa-close"></span></button></td>
@@ -51,10 +51,10 @@
                                     <input type="hidden" name="" class="lesson-id" value="{{$item['id']}}">
                                     <i class="glyphicon glyphicon-hand-right"></i>
                                 </td>
-                                <td>
+                                <td class="text-overflow">
                                     {{$item['catalogue_nm']}}
                                 </td>
-                                <td>
+                                <td class="text-overflow">
                                     {{$item['group_nm']}}
                                 </td>
                                 <td><button type="button" class="btn-danger btn-del-lesson"><span class="fa fa-close"></span></button></td>

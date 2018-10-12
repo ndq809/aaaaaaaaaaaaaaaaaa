@@ -12,6 +12,7 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_COM_QUESTION_LIST]
 		@P_post_id			INT		=	0
+	,	@P_row_id			INT		=	0
  
 AS
 BEGIN
@@ -29,6 +30,8 @@ BEGIN
 	,	M005.answer_id
 	,	M005.answer_content
 	,	M005.verify
+	,	ROW_NUMBER() OVER(partition by M004.post_id ORDER BY M004.post_id ASC) AS question_num	
+	,	@P_row_id AS row_id
 	FROM M004
 	JOIN M005
 	ON M004.question_id = M005.question_id

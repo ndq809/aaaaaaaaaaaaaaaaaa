@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
-        <link rel="shortcut icon" href="/web-content/images/icon/title-icon2.ico"/>
+        <link rel="icon" type="image/png" href="/web-content/images/icon/title-icon2.png" sizes="128x128">
         <title>
             @yield('title','English Plus')
         </title>
@@ -70,7 +70,8 @@
                         <div class="navbar-header hover-item">
                             @if(isset(Auth::user()->account_nm))
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
-                                <img src="/web-content/images/avarta/avarta.jpg" height="30px" style="display: inline-block;border: 2px solid #eee;">
+                                <img src="
+                                {{ session::get('logined_data')[0]['avarta'] }}" height="30px" style="display: inline-block;border: 2px solid #eee;">
                                 <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
                             </a>
                             <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">

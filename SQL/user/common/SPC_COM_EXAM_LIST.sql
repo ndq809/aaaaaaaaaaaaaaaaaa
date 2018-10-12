@@ -15,6 +15,7 @@ CREATE PROCEDURE [dbo].[SPC_COM_EXAM_LIST]
 	,	@P_target_id			INT	=	0
 	,	@P_order_div			INT	=	0
 	,	@P_page					INT	=	0
+	,	@P_target_div			INT	=	0
 	,	@P_account_id			NVARCHAR(15)	=	'' 
 AS
 BEGIN
@@ -40,9 +41,10 @@ BEGIN
 	ON M012.example_id = F008.target_id
 	AND F008.user_id = @P_account_id
 	AND F008.execute_div = 1
-	AND F008.execute_target_div = 1
+	AND F008.execute_target_div = @P_target_div
 	WHERE
 		M012.target_id			= @P_target_id
+	AND M012.target_div			= @P_target_div
 	ORDER BY
 	CASE @P_order_div
 		WHEN 1 THEN M012.cre_date

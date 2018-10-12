@@ -27,15 +27,27 @@ class CommonController extends ControllerUser
         $this->hashids = new Hashids();
     }
 
-    public function getComment()
+    public function getComment(Request $request)
     {
-        // try {
-        //     $temp=DAO::call_stored_procedure('getData1');
-        // } catch (\Exception $e) {
-        //     echo($e->getMessage());
-
-        // }
-        return view('comment');
+        $param            = $request->all();
+        $param[2]         = $this->hashids->decode($param[2])[0];
+        if(Auth::user()!=null){
+            $param['user_id'] = Auth::user()->account_nm;
+        }else{
+            $param['user_id'] = '';
+        }
+        $data             = Dao::call_stored_procedure('SPC_COM_GET_PAGE_COMMENT', $param);
+        // var_dump($data);die;
+        $data             = $this->encodeID($data);
+        $view1            = view('comment')->with('data', $data)->render();
+        $view2            = view('paging_content')->with('data', $data)->render();
+        $result           = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            'view2'      => $view2,
+            'statusText' => 'success',
+        );
+        return response()->json($result);
     }
 
     public function changePass(Request $request)
@@ -278,6 +290,67 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function addComment(Request $request)
+    {
+        $param            = $request->all();
+        $param[2]         = $this->hashids->decode($param[2])[0];
+        $param[4]         = $param[4]!=''?$this->hashids->decode($param[4])[0]:'';
+        $param['user_id'] = Auth::user()->account_nm;
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_COM_ADD_COMMENT', $param);
+        if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[1],
+            );
+        } else if ($data[1][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $data             = $this->encodeID($data);
+            $view = view('comment')->with('data', $data)->render();
+            $result = array(
+                'status'     => 200,
+                'view'       => $view,
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
+    public function loadMoreComment(Request $request)
+    {
+        $param            = $request->all();
+        $param[0]         = $this->hashids->decode($param[0])[0];
+        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $data             = Dao::call_stored_procedure('SPC_COM_GET_MORE_COMMENT', $param);
+        if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[1],
+            );
+        } else if ($data[1][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $data             = $this->encodeID($data);
+            $view = view('comment')->with('data', $data)->render();
+            $result = array(
+                'status'     => 200,
+                'view'       => $view,
+                'data'       => $data[0],
+                'statusText' => 'success',
+            );
+        }
+
+        return response()->json($result);
+    }
+
     public function toggleEffect(Request $request)
     {
         $param            = $request->all();
@@ -312,7 +385,7 @@ class CommonController extends ControllerUser
         $param[0]         = $this->hashids->decode($param[0])[0];
         $data             = Dao::call_stored_procedure('SPC_COM_QUESTION_LIST', $param);
         $data             = $this->encodeID($data);
-        $view1            = view('practice')->with('data', $data)->render();
+        $view1            = view('practice')->with('data', $data[0])->render();
         $result           = array(
             'status'     => 200,
             'view1'      => $view1,
