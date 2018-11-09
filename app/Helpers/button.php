@@ -21,6 +21,7 @@ class Button
         'btn-refresh'      => array('id' => 'btn-refresh', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Làm Mới', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-edit'         => array('id' => 'btn-edit', 'class' => '', 'icon' => 'fa fa-wrench', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-upgrade'      => array('id' => 'btn-upgrade', 'class' => '', 'icon' => 'fa fa-line-chart', 'label' => 'Tái Bản', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-save-user'    => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

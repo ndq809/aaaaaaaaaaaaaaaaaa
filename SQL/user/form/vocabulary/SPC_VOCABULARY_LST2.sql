@@ -61,7 +61,8 @@ BEGIN
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
 	FROM M006
 	INNER JOIN F009
-	ON M006.id = F009.vocabulary_code
+	ON F009.target_id = M006.id
+	AND F009.briged_div = 1
 	LEFT JOIN F003
 	ON M006.id = F003.item_1
 	AND F003.connect_div = 2

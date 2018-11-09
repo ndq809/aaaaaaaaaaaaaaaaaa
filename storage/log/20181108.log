@@ -1,0 +1,1636 @@
+2018-11-08 00:10:42 EXEC SPC_COM_DATA '','','';
+2018-11-08 00:10:49 EXEC SPC_COM_DATA '','','';
+2018-11-08 00:10:49 EXEC SPC_WRITING_LST1 '','','','';
+2018-11-08 00:10:49 EXEC SPC_COM_DATA '','','';
+2018-11-08 00:10:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:10:49 EXEC SPC_COM_DATA '','','';
+2018-11-08 00:10:49 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 00:11:33 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-11-08 00:11:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:11:33 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:11:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:11:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:11:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:11:33 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:14:13 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 00:14:13 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 00:14:15 EXEC SPC_USER_P001_LST1 '0','','','-100','','50','1';
+2018-11-08 00:14:26 EXEC SPC_USER_P001_LST3 '<row row_id="-100" id="2" /><row row_id="-100" id="6" /><row row_id="-100" id="1" />';
+2018-11-08 00:14:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:14:51 EXEC SPC_WRITING_ACT1 '','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','Viet Nam my love','<p>i love Viet Nam so much !&nbsp;</p>
+
+<p>when i have a change i want to come back immediately&nbsp;!</p>','<row row_id="-100" id="2" /><row row_id="-100" id="6" /><row row_id="-100" id="1" />','khoai','127.0.0.1';
+2018-11-08 00:14:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:14:54 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:14:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:14:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:14:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:14:55 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:15:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:03 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:15:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:15:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:04 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:15:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:22 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:15:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:15:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:15:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:28:30 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 00:28:31 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 00:28:33 EXEC SPC_USER_P001_LST1 '0','','','-100','','50','1';
+2018-11-08 00:28:51 EXEC SPC_USER_P001_LST3 '<row row_id="-100" id="2" /><row row_id="-100" id="5" />';
+2018-11-08 00:28:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:28:57 EXEC SPC_WRITING_ACT1 '','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="-100" id="2" /><row row_id="-100" id="5" />','khoai','127.0.0.1';
+2018-11-08 00:29:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:00 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:29:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:29:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:01 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:29:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:47 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 00:29:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:29:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:29:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:53 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:29:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:29:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:29:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:49:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:45 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 00:49:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:49:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:46 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:49:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:56 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 00:49:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:49:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:49:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:50:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:50:00 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 00:50:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:50:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 00:50:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:50:01 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 00:50:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 00:50:49 EXEC SPC_WRITING_ACT1 '16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:03:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:03:31 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:03:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:03:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:03:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:03:32 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:03:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:03:40 EXEC SPC_WRITING_ACT1 '16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','3','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:03:40 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2018-11-08 01:06:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:06:53 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:06:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:06:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:06:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:06:54 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:07:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:07:00 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:10:33 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 01:10:33 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="5" />';
+2018-11-08 01:10:36 EXEC SPC_USER_P001_LST1 '0','','','3','','50','1';
+2018-11-08 01:10:46 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="4" /><row row_id="3" id="5" />';
+2018-11-08 01:10:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:10:58 EXEC SPC_WRITING_ACT1 '3','','<row tag_id="8" is_new="0" /><row tag_id="14" is_new="0" />','why i'm handsome too much?','<p>lol is the best</p>','<row row_id="3" id="4" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:13:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:13:06 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:13:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:13:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:13:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:13:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:13:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:13:27 EXEC SPC_WRITING_ACT2 '17','khoai','127.0.0.1';
+2018-11-08 01:19:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:19:59 EXEC SPC_VOCABULARY_LST1 '','khoai','9','10';
+2018-11-08 01:20:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:00 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2018-11-08 01:20:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:02 EXEC SPC_GRAMMAR_LST1 '','khoai','2','1';
+2018-11-08 01:20:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:02 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-08 01:20:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:06 EXEC SPC_LISTENING_LST1 '','khoai','6','6';
+2018-11-08 01:20:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:06 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-08 01:20:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:17 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-08 01:20:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:20:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:20:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:19 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-11-08 01:20:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:19 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-08 01:20:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:23 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-11-08 01:20:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:20:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:20:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:24 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-11-08 01:20:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:25 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-08 01:20:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:27 EXEC SPC_COM_MENU '2';
+2018-11-08 01:20:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:30 EXEC SPC_TRANSLATE_LST1 '','khoai';
+2018-11-08 01:20:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:33 EXEC SPC_LISTENING_LST1 '','khoai','12','14';
+2018-11-08 01:20:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:20:33 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-08 01:46:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:46:32 EXEC SPC_READING_LST1 '','khoai','8','8';
+2018-11-08 01:46:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:46:33 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-08 01:46:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:46:38 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-11-08 01:46:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:46:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:46:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:46:38 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:57:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:44 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:57:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:57:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:55 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:57:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:57:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:58:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:12 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:58:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:17 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:58:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:58:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:58:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:52 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:58:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:58:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:58:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:58:56 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 01:59:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:59:02 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 01:59:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:59:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 01:59:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:59:03 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 01:59:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 01:59:33 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:02:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:02:31 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:03:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:03:36 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:03:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:03:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:03:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:03:37 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:03:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:03:45 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:04:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:21 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:04:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:04:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:04:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:49 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:04:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:04:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:04:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:04:53 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:05:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:05:36 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:05:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:05:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:05:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:05:36 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:05:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:05:39 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:11:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:11:13 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:11:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:11:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:11:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:11:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:11:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:11:20 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:15:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:15:38 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:15:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:15:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:15:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:15:39 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:15:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:15:43 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:16:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:12 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:16:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:16:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:13 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:16:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:17 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:16:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:22 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:16:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:16:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:16:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:25 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:16:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:16:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:26 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:16:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:16:35 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:18:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:06 EXEC SPC_WRITING_ACT1 '7','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="7" id="2" /><row row_id="7" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:18:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:08 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:18:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:18:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:18:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:12 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:18:26 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:18:27 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="5" />';
+2018-11-08 02:18:31 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="2" /><row row_id="3" id="5" />','50','1';
+2018-11-08 02:18:34 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="2" /><row row_id="3" id="5" /><row row_id="3" id="3" /><row row_id="3" id="4" />';
+2018-11-08 02:18:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:18:43 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" /><row row_id="3" id="3" /><row row_id="3" id="4" />','khoai','127.0.0.1';
+2018-11-08 02:19:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:19:05 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:20:27 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:20:27 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />';
+2018-11-08 02:20:36 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 02:20:43 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:20:44 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />';
+2018-11-08 02:20:48 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="2" /><row row_id="3" id="3" />';
+2018-11-08 02:20:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:20:56 EXEC SPC_WRITING_ACT1 '3','','<row tag_id="1" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="9" is_new="0" />','my name is Quy','<p>this is a bad experience :(&nbsp;</p>','<row row_id="3" id="2" /><row row_id="3" id="3" />','khoai','127.0.0.1';
+2018-11-08 02:21:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:21:12 EXEC SPC_WRITING_LST1 '18','khoai','9','10';
+2018-11-08 02:21:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:21:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:21:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:21:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:21:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:21:50 EXEC SPC_WRITING_ACT2 '18','khoai','127.0.0.1';
+2018-11-08 02:22:08 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:22:08 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />';
+2018-11-08 02:22:12 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="2" /><row row_id="3" id="5" />';
+2018-11-08 02:22:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:22:17 EXEC SPC_WRITING_ACT1 '3','','<row tag_id="1" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="9" is_new="0" />','quy','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 02:23:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:23 EXEC SPC_WRITING_LST1 '19','khoai','9','10';
+2018-11-08 02:23:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:23:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:23:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:27 EXEC SPC_WRITING_ACT2 '19','khoai','127.0.0.1';
+2018-11-08 02:23:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:33 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 02:23:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:23:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:23:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:24:23 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:24:23 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />';
+2018-11-08 02:24:29 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="3" />';
+2018-11-08 02:24:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:24:36 EXEC SPC_WRITING_ACT1 '','','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','<row row_id="3" id="3" />','khoai','127.0.0.1';
+2018-11-08 02:26:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:26:08 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:26:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:26:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:26:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:26:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:27:06 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:27:06 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="3" />';
+2018-11-08 02:27:08 EXEC SPC_USER_P001_LST1 '0','','','4','<row row_id="4" id="3" />','50','1';
+2018-11-08 02:27:11 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="3" /><row row_id="4" id="1" /><row row_id="4" id="4" />';
+2018-11-08 02:27:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:27:15 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','<row row_id="4" id="3" /><row row_id="4" id="1" /><row row_id="4" id="4" />','khoai','127.0.0.1';
+2018-11-08 02:35:16 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:35:16 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:35:21 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="4" />';
+2018-11-08 02:37:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:37:31 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:37:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:37:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:37:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:37:32 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:38:59 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:38:59 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:39:04 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 02:39:10 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="2" /><row row_id="4" id="4" /><row row_id="4" id="1" /><row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="3" /><row row_id="4" id="7" />';
+2018-11-08 02:39:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:39:24 EXEC SPC_WRITING_ACT1 '','','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New, Courier, monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music<img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /><img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /><img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /></span></span></span></span></p>','<row row_id="4" id="2" /><row row_id="4" id="4" /><row row_id="4" id="1" /><row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="3" /><row row_id="4" id="7" />','khoai','127.0.0.1';
+2018-11-08 02:39:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:39:37 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:39:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:39:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:39:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:39:38 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:40:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:40:26 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','khoai','127.0.0.1';
+2018-11-08 02:42:31 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:42:32 EXEC SPC_USER_P001_LST2 '<row row_id="5" id="1" /><row row_id="5" id="2" /><row row_id="5" id="3" /><row row_id="5" id="4" /><row row_id="5" id="5" /><row row_id="5" id="6" /><row row_id="5" id="7" />';
+2018-11-08 02:42:40 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 02:43:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:43:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 02:43:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:43:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:43:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:43:01 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:47:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:47:58 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:47:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:47:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:47:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:47:59 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:48:00 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:48:01 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:48:04 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 02:48:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:48:48 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:48:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:48:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:48:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:48:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:48:53 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:48:54 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:48:57 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 02:52:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:52:09 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:52:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:52:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:52:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:52:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:52:12 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:52:12 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:54:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:13 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:54:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:54:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:13 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:54:15 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:54:15 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:54:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:37 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:54:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:54:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:54:37 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:54:40 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:54:40 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:55:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:55:34 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:55:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:55:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:55:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:55:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:55:37 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:55:37 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:57:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:57:18 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:57:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:57:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:57:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:57:19 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:57:21 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:57:21 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:58:48 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:58:48 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 02:59:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:59:52 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 02:59:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:59:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 02:59:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 02:59:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 02:59:55 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 02:59:56 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 03:01:43 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:01:43 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:01:49 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:01:49 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:03:01 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:03:01 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:03:10 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:03:10 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:03:35 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:03:35 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:03:51 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row 0="4" />';
+2018-11-08 03:03:51 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]XML の解析: 行 1、文字 81。修飾名の文字が無効です。
+2018-11-08 03:05:07 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 03:05:19 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 03:05:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 03:05:23 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 03:05:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 03:05:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 03:05:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 03:05:24 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 03:05:26 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 03:05:27 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 03:05:29 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:01:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:01:17 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:01:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:01:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:01:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:01:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:01:22 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:01:22 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:01:26 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 04:04:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:04:56 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:04:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:04:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:04:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:04:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:07:53 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:07:53 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:07:55 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" />';
+2018-11-08 04:08:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:08:04 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:08:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:08:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:08:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:08:05 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:09:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:09:44 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:09:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:09:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:09:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:09:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:09:47 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:09:47 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:09:51 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 04:11:09 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:11:10 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:11:16 EXEC SPC_USER_P001_LST3 '';
+2018-11-08 04:12:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:12:11 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:12:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:12:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:12:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:12:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:12:14 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:12:14 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:12:18 EXEC SPC_USER_P001_LST3 '','4';
+2018-11-08 04:12:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:12:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:17:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:17:52 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:17:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:17:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:17:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:17:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:17:56 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:17:56 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:18:00 EXEC SPC_USER_P001_LST3 '','4';
+2018-11-08 04:18:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:19:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:19:01 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:19:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:19:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:19:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:19:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:19:05 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:19:05 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:19:09 EXEC SPC_USER_P001_LST3 '','4';
+2018-11-08 04:19:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:20:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:20:28 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:20:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:20:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:20:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:20:28 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:20:30 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:20:31 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-08 04:20:34 EXEC SPC_USER_P001_LST3 '','4';
+2018-11-08 04:20:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:20:39 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','','khoai','127.0.0.1';
+2018-11-08 04:23:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:23:41 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:23:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:23:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:23:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:23:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:23:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:23:49 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','','khoai','127.0.0.1';
+2018-11-08 04:24:00 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:24:00 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 04:24:02 EXEC SPC_USER_P001_LST1 '0','','','4','50','1','';
+2018-11-08 04:24:02 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-08 04:24:22 EXEC SPC_USER_P001_LST3 '','4';
+2018-11-08 04:24:25 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:24:25 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 04:24:26 EXEC SPC_USER_P001_LST1 '0','','','4','50','1','';
+2018-11-08 04:24:26 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-08 04:27:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:27:01 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:27:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:27:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:27:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:27:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:27:05 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:27:06 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 04:27:07 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 04:27:18 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','4';
+2018-11-08 04:27:21 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:27:21 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />';
+2018-11-08 04:27:24 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 04:28:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:06 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:28:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:28:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:28:13 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:28:14 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 04:28:17 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 04:28:20 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" />','4';
+2018-11-08 04:28:26 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:28:26 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" />';
+2018-11-08 04:28:36 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 04:28:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:58 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 04:28:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:28:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:28:59 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:29:00 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:29:01 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 04:29:02 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 04:29:05 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','4';
+2018-11-08 04:29:07 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:29:08 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />';
+2018-11-08 04:29:09 EXEC SPC_USER_P001_LST1 '0','','','4','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','50','1';
+2018-11-08 04:29:12 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','4';
+2018-11-08 04:29:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:29:16 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','khoai','127.0.0.1';
+2018-11-08 04:29:28 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 04:29:28 EXEC SPC_USER_P001_LST2 '<row row_id="5" id="1" /><row row_id="5" id="2" /><row row_id="5" id="3" /><row row_id="5" id="4" /><row row_id="5" id="5" /><row row_id="5" id="6" /><row row_id="5" id="7" />';
+2018-11-08 04:29:30 EXEC SPC_USER_P001_LST1 '0','','','5','<row row_id="5" id="1" /><row row_id="5" id="2" /><row row_id="5" id="3" /><row row_id="5" id="4" /><row row_id="5" id="5" /><row row_id="5" id="6" /><row row_id="5" id="7" />','50','1';
+2018-11-08 04:29:43 EXEC SPC_USER_P001_LST3 '<row row_id="5" id="3" /><row row_id="5" id="4" />','5';
+2018-11-08 04:29:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:29:47 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 04:29:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:29:57 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 04:29:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:29:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:29:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:29:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:34:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:52 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 04:34:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:34:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:52 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:34:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:56 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:34:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:34:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:34:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:36:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:17 EXEC SPC_COM_ADD_COMMENT '2','4','8','méo có quyền thích á?','','khoai','127.0.0.1';
+2018-11-08 04:36:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:23 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','khoai';
+2018-11-08 04:36:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:24 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','khoai';
+2018-11-08 04:36:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:28 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 04:36:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:36:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:36:28 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:44:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:44:55 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','tuổi tí','<p><span style="color:#e74c3c"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px">just be one&nbsp;</span></span></span></p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="5" />','khoai','127.0.0.1';
+2018-11-08 04:51:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:01 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:51:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:51:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:01 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:51:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:10 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:51:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:10 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:51:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:10 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:51:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:52 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:51:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:51:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:51:52 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:52:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:52:58 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:52:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:52:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:52:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:52:59 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:53:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:53:01 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 04:58:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:17 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:58:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:58:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:58:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:26 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:58:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:58:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:27 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:58:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:34 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:58:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:58:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:58:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 04:59:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:59:49 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 04:59:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:59:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 04:59:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 04:59:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:00:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:00:07 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 05:00:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:00:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:00:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:00:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:03:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:02 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 05:03:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:03:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:03:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:28 EXEC SPC_COM_ADD_LESSON '4','9','10','khoai','127.0.0.1';
+2018-11-08 05:03:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:31 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 05:03:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:03:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:03:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:34 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 05:03:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:36 EXEC SPC_WRITING_LST1 '7','khoai','9','11';
+2018-11-08 05:03:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:03:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:37 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:03:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:54 EXEC SPC_COM_DELETE_LESSON '1032','khoai','127.0.0.1';
+2018-11-08 05:03:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:56 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 05:03:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:03:57 EXEC SPC_COM_ADD_LESSON '4','9','11','khoai','127.0.0.1';
+2018-11-08 05:04:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:04:04 EXEC SPC_WRITING_LST1 '7','khoai','9','11';
+2018-11-08 05:04:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:04:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:04:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:04:04 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:04:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:04:09 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 05:04:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:04:19 EXEC SPC_COM_DELETE_LESSON '1033','khoai','127.0.0.1';
+2018-11-08 05:06:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:06:58 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:13:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:13:49 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 05:13:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:13:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:13:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:13:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:14:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:14:02 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 05:14:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:14:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:14:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:14:03 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:17:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:17:27 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 05:17:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:17:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:17:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:17:28 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:31:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:31:41 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 05:31:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:31:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:31:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:31:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 05:50:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:50:20 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 05:50:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:50:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 05:50:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 05:50:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:22:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:22:52 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 06:22:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:22:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:22:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:22:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:23:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:23:00 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:23:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:23:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:23:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:23:24 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:23:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:23:26 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:25:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:25:53 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 06:25:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:25:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:25:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:25:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:27:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:37 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 06:27:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:27:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:38 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:27:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:46 EXEC SPC_COM_ADD_LESSON '4','9','10','khoai','127.0.0.1';
+2018-11-08 06:27:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:50 EXEC SPC_COM_DELETE_LESSON '1034','khoai','127.0.0.1';
+2018-11-08 06:27:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:53 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 06:27:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:27:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:27:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:28:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:28:39 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:28:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:28:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:46:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:46:21 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 06:46:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:46:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:46:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:46:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:46:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:46:36 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:47:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:47:04 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:47:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:47:47 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 06:47:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:47:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:47:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:47:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:48:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:48:03 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:48:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:48:06 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:52:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:52:25 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:57:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:57:44 EXEC SPC_WRITING_LST1 '16','khoai','9','11';
+2018-11-08 06:57:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:57:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:57:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:57:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:58:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:12 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 06:58:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:58:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:13 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:58:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:21 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:58:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:39 EXEC SPC_WRITING_LST1 '16','khoai','9','11';
+2018-11-08 06:58:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:58:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:39 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:58:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:58:49 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:59:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:59:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:12 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 06:59:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:17 EXEC SPC_WRITING_LST1 '7','khoai','9','11';
+2018-11-08 06:59:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 06:59:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 06:59:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 06:59:29 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:00:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:12 EXEC SPC_WRITING_LST1 '16','khoai','9','11';
+2018-11-08 07:00:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:00:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:00:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:19 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 07:00:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:00:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:20 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:00:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:26 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 07:00:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:00:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:27 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:00:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:42 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:00:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:55 EXEC SPC_WRITING_LST1 '16','khoai','9','11';
+2018-11-08 07:00:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:00:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:00:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:01:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:07 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:01:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:01:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:16 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:01:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:01:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:20 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:01:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:01:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:38 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:01:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:01:46 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:02:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:02:07 EXEC SPC_WRITING_LST2 '10','12','khoai';
+2018-11-08 07:02:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:02:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:04:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:33 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 07:04:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:04:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:04:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:46 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 07:04:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:49 EXEC SPC_WRITING_LST2 '10','12','khoai';
+2018-11-08 07:04:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:04:50 EXEC SPC_WRITING_LST2 '10','13','khoai';
+2018-11-08 07:05:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:05:14 EXEC SPC_WRITING_LST2 '10','12','khoai';
+2018-11-08 07:05:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:05:16 EXEC SPC_WRITING_LST1 '21','khoai','10','12';
+2018-11-08 07:05:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:05:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:05:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:05:16 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:06:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:06:30 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 07:06:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:06:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:06:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:06:30 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:10:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:08 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 07:10:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:10:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:10:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:27 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 07:10:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:10:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:10:28 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:12:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:12:18 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 07:12:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:12:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:12:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:12:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:13:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:13:36 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 07:13:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:13:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:13:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:13:37 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:15:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:15:53 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 07:15:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:15:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:15:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:15:54 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:16:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:42 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 07:16:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:16:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:43 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:16:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:57 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 07:16:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:16:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:16:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:17:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:17:07 EXEC SPC_COM_ADD_LESSON '4','9','10','khoai','127.0.0.1';
+2018-11-08 07:17:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:17:09 EXEC SPC_COM_DELETE_LESSON '1035','khoai','127.0.0.1';
+2018-11-08 07:18:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:18:08 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-08 07:18:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:18:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:18:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:18:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:19:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:19:11 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 07:19:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:19:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:19:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:19:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:20:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:33 EXEC SPC_COM_MENU '2';
+2018-11-08 07:20:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:35 EXEC SPC_VOCABULARY_LST1 '','khoai','9','10';
+2018-11-08 07:20:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:35 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2018-11-08 07:20:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:38 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-08 07:20:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:48 EXEC SPC_COM_ADD_LESSON '1','2','3','khoai','127.0.0.1';
+2018-11-08 07:20:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:20:59 EXEC SPC_COM_REMEMBER '1','2','1','2','khoai','127.0.0.1';
+2018-11-08 07:21:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:01 EXEC SPC_COM_REMEMBER '1','2','4','7','khoai','127.0.0.1';
+2018-11-08 07:21:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:03 EXEC SPC_VOCABULARY_LST1 '3','khoai','2','3';
+2018-11-08 07:21:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:04 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-08 07:21:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:16 EXEC SPC_VOCABULARY_LST1 '3','khoai','2','3';
+2018-11-08 07:21:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:16 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-08 07:21:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:19 EXEC SPC_VOCABULARY_LST1 '','khoai','2','3';
+2018-11-08 07:21:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:19 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-08 07:21:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:23 EXEC SPC_GRAMMAR_LST1 '','khoai','2','3';
+2018-11-08 07:21:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:23 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-08 07:21:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:27 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-08 07:21:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:36 EXEC SPC_COM_ADD_LESSON '2','6','6','khoai','127.0.0.1';
+2018-11-08 07:21:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:40 EXEC SPC_COM_DELETE_LESSON '1039','khoai','127.0.0.1';
+2018-11-08 07:21:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:42 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2018-11-08 07:21:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:46 EXEC SPC_COM_ADD_LESSON '2','6','7','khoai','127.0.0.1';
+2018-11-08 07:21:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:47 EXEC SPC_GRAMMAR_LST1 '','khoai','6','7';
+2018-11-08 07:21:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:21:48 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2018-11-08 07:22:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:03 EXEC SPC_COM_DELETE_LESSON '1040','khoai','127.0.0.1';
+2018-11-08 07:22:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:04 EXEC SPC_LISTENING_LST1 '','khoai','6','7';
+2018-11-08 07:22:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:04 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-08 07:22:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:08 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-08 07:22:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:22:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:22:24 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:24 EXEC SPC_WRITING_LST1 '16','','','';
+2018-11-08 07:22:24 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:24 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:24 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:22:39 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:39 EXEC SPC_WRITING_LST1 '','','9','10';
+2018-11-08 07:22:39 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:39 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:39 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:22:42 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:42 EXEC SPC_WRITING_LST1 '','','9','10';
+2018-11-08 07:22:42 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:42 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:42 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:22:43 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:43 EXEC SPC_WRITING_LST1 '','','9','10';
+2018-11-08 07:22:44 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:44 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:44 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:22:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:45 EXEC SPC_WRITING_LST1 '','','9','10';
+2018-11-08 07:22:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:22:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:22:45 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:23:13 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-11-08 07:23:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:23:13 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-08 07:23:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:23:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:23:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:23:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:23:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:23:36 EXEC SPC_WRITING_ACT1 '4','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-08 07:23:37 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2018-11-08 07:23:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:23:49 EXEC SPC_WRITING_ACT1 '4','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-08 07:23:49 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2018-11-08 07:24:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:24:01 EXEC SPC_WRITING_ACT1 '4','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-08 07:24:01 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2018-11-08 07:25:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:25:54 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-08 07:25:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:25:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:25:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:25:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:25:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:25:59 EXEC SPC_WRITING_ACT1 '3','4','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-08 07:26:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:26:29 EXEC SPC_WRITING_ACT1 '3','4','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&#39;t&nbsp;want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-08 07:28:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:28:39 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-08 07:28:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:28:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:28:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:28:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:28:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:28:59 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-08 07:29:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:29:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:00 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:29:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:06 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-08 07:29:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-08 07:29:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:29:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:29:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:30 EXEC SPC_TRANSLATE_LST1 '4','quypro';
+2018-11-08 07:29:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:31 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-08 07:29:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:35 EXEC SPC_TRANSLATE_LST1 '4','quypro';
+2018-11-08 07:29:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:36 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-08 07:29:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:29:54 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-08 07:30:29 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 07:30:30 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-08 07:30:33 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','3';
+2018-11-08 07:30:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:49 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-08 07:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:30:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:52 EXEC SPC_TRANSLATE_LST1 '5','quypro';
+2018-11-08 07:30:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:52 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-11-08 07:30:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:57 EXEC SPC_TRANSLATE_LST1 '6','quypro';
+2018-11-08 07:30:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:30:57 EXEC SPC_TRANSLATE_LST2 'abuse','quypro','127.0.0.1';
+2018-11-08 07:31:03 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 07:31:03 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-08 07:31:05 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','3';
+2018-11-08 07:31:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:31:07 EXEC SPC_TRANSLATE_LST1 '7','quypro';
+2018-11-08 07:31:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:31:08 EXEC SPC_TRANSLATE_LST2 'vicious','quypro','127.0.0.1';
+2018-11-08 07:33:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:33:09 EXEC SPC_TRANSLATE_LST1 '7','quypro';
+2018-11-08 07:33:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:33:09 EXEC SPC_TRANSLATE_LST2 'vicious','quypro','127.0.0.1';
+2018-11-08 07:33:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:33:18 EXEC SPC_TRANSLATE_LST1 '5','quypro';
+2018-11-08 07:33:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:33:19 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-11-08 07:34:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:04 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-08 07:34:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:05 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-08 07:34:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:14 EXEC SPC_TRANSLATE_LST1 '2','quypro';
+2018-11-08 07:34:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:14 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-08 07:34:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:32 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-08 07:34:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:49 EXEC SPC_COM_ADD_COMMENT '2','5','10','this is my country <3','','quypro','127.0.0.1';
+2018-11-08 07:34:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:52 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-08 07:34:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:53 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-08 07:34:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:34:55 EXEC SPC_COM_TOGGLE_EFFECT '2','51','3','3','0','quypro','127.0.0.1';
+2018-11-08 07:35:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:35:10 EXEC SPC_COM_TOGGLE_EFFECT '2','51','3','3','1','quypro','127.0.0.1';
+2018-11-08 07:35:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:35:12 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-08 07:35:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:35:13 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-08 07:35:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:35:14 EXEC SPC_COM_TOGGLE_EFFECT '2','51','3','3','0','quypro','127.0.0.1';
+2018-11-08 07:35:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:35:28 EXEC SPC_COM_MENU '1';
+2018-11-08 07:51:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:51:36 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-11-08 07:51:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:51:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:51:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-08 07:51:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-08 07:51:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:51:45 EXEC SPC_WRITING_LST1 '4','','','';
+2018-11-08 07:51:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:51:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:51:45 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:51:45 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:53:30 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:53:30 EXEC SPC_WRITING_LST1 '4','','9','10';
+2018-11-08 07:53:30 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:53:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:53:30 EXEC SPC_COM_DATA '','','';
+2018-11-08 07:53:30 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-08 07:54:03 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-11-08 07:54:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:54:03 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-08 07:54:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:54:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:54:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:54:04 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:54:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:55:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:56:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:56:08 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 07:56:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:56:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:56:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:56:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:56:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:56:27 EXEC SPC_WRITING_ACT1 '4','20','beautiful girl','','','','khoai','127.0.0.1';
+2018-11-08 07:57:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:00 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 07:57:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:57:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:01 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:57:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:17 EXEC SPC_WRITING_ACT1 '4','20','family','','','','khoai','127.0.0.1';
+2018-11-08 07:57:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:32 EXEC SPC_WRITING_ACT1 '4','20','beautiful girla','','','','khoai','127.0.0.1';
+2018-11-08 07:57:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:54 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 07:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:55 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:57:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:57:59 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-08 07:58:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:58:05 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 07:58:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:58:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 07:58:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:58:05 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 07:58:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 07:58:22 EXEC SPC_WRITING_ACT1 '4','20','family','','','','khoai','127.0.0.1';
+2018-11-08 08:02:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:02:08 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:02:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:02:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:02:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:02:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:02:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:02:21 EXEC SPC_WRITING_ACT1 '4','20','family','','','','khoai','127.0.0.1';
+2018-11-08 08:05:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:05:56 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:05:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:05:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:05:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:05:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:06:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:06:04 EXEC SPC_WRITING_ACT1 '4','20','','family','','','khoai','127.0.0.1';
+2018-11-08 08:06:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:06:19 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:06:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:06:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:06:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:06:19 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:08:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:08:47 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:08:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:08:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:08:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:08:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:09:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:09:05 EXEC SPC_WRITING_ACT1 '4','20','','beautiful girl','','','khoai','127.0.0.1';
+2018-11-08 08:09:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:09:37 EXEC SPC_WRITING_ACT1 '4','20','','family','','','khoai','127.0.0.1';
+2018-11-08 08:09:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:09:53 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:09:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:09:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:09:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:09:54 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:10:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:10:02 EXEC SPC_WRITING_ACT1 '4','20','','beautiful girl','','','khoai','127.0.0.1';
+2018-11-08 08:10:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:10:22 EXEC SPC_WRITING_LST2 '9','11','khoai';
+2018-11-08 08:10:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:10:25 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:12:57 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-08 08:12:57 EXEC SPC_USER_P001_LST2 '';
+2018-11-08 08:12:59 EXEC SPC_USER_P001_LST1 '0','','','4','','50','1';
+2018-11-08 08:13:02 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="3" /><row row_id="4" id="2" /><row row_id="4" id="6" />','4';
+2018-11-08 08:13:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:13:22 EXEC SPC_WRITING_ACT1 '4','20','<row tag_nm="miyuki" is_new="1" />','beautiful girl','','<row row_id="4" id="3" /><row row_id="4" id="2" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-08 08:13:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:13:47 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:13:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:13:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:13:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:13:47 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:17:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:17:22 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="16" is_new="0" /><row tag_nm="mahou" is_new="1" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-08 08:18:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:18:35 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:18:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:18:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:18:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:18:36 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:20:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:20:31 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:20:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:20:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:20:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:20:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:21:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:05 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:21:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:21:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:06 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:21:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:16 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 08:21:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:21:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:21:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:22:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:22:19 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-08 08:22:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:22:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:22:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:22:20 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:22:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:05 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:23:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:23:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:05 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:23:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:16 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:23:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:23:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:16 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:23:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:35 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:23:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:23:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:35 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:23:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:52 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-08 08:23:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:56 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2018-11-08 08:23:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:23:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:23:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:24:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:24:13 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:24:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:24:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:24:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:24:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:24:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:24:28 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="16" is_new="0" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-08 08:33:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:33:42 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:33:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:33:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:33:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:33:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:34:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:34:00 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_nm="test" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:35:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:35:49 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:35:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:35:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:35:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:35:50 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:36:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:36:09 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_nm="test1" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:37:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:37:58 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:37:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:37:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:37:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:37:58 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:38:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:38:07 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_nm="test2" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:38:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:38:47 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:38:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:38:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:38:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:38:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:38:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:38:58 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_nm="test3" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:39:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:39:52 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:39:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:39:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:39:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:39:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:40:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:40:02 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_nm="test4" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:41:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:41:37 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:41:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:41:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:41:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:41:37 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:41:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:41:51 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_nm="test5" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:43:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:24 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:43:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:43:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:24 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:43:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:35 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:43:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:43:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:36 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:43:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:43:45 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_nm="test6" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:47:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:47:44 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:47:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:47:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:47:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:47:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:47:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:47:52 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_nm="test7" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:48:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:48:20 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:48:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:48:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:48:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:48:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:48:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:48:32 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_nm="test8" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:49:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:49:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:49:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:49:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:12 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_nm="test9" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:49:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:44 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:49:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:49:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:49:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:49:48 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:50:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:50:23 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:50:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:50:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:50:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:50:24 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:50:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:50:32 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_nm="test10" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:51:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:51:38 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:51:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:51:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:51:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:51:39 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:51:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:51:42 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:52:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:52:13 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:52:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:52:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:52:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:52:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:52:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:52:17 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:53:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:53:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:53:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:53:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:05 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:53:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:33 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:53:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:53:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:53:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:53:43 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" /><row tag_nm="test11" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:54:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:54:33 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:54:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:54:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:54:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:54:34 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:54:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:54:39 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="29" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:55:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:55:49 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:55:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:55:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:55:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:55:50 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:56:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:56:13 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="29" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 08:59:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:11 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:59:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:59:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:59:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:17 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 08:59:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 08:59:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 08:59:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 08:59:32 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="29" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:00:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:12 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:00:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:00:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:00:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:17 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="29" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:00:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:55 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:00:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:00:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:00:56 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:01:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:01:11 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:01:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:01:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:01:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:01:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:01:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:01:55 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="20" is_new="0" /><row tag_id="21" is_new="0" /><row tag_id="22" is_new="0" /><row tag_id="29" is_new="0" /><row tag_id="23" is_new="0" /><row tag_id="24" is_new="0" /><row tag_id="25" is_new="0" /><row tag_id="26" is_new="0" /><row tag_id="27" is_new="0" /><row tag_id="28" is_new="0" /><row tag_nm="test11" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:01:55 SQLSTATE[42S02]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]オブジェクト名 '#WRITING' が無効です。
+2018-11-08 09:03:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:03:04 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_nm="test12" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:03:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:03:07 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:03:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:03:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:03:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:03:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:03:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:03:30 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="30" is_new="0" /><row tag_nm="test13" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:04:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:24 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:04:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:04:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:24 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:04:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:32 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="30" is_new="0" /><row tag_id="31" is_new="0" /><row tag_nm="test14" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-08 09:04:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:40 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:04:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:04:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:04:41 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:05:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:05:02 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-08 09:05:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:05:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-08 09:05:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:05:03 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-08 09:06:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-08 09:06:00 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="19" is_new="0" /><row tag_id="30" is_new="0" /><row tag_id="31" is_new="0" /><row tag_id="32" is_new="0" /><row tag_nm="test15" is_new="1" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';

@@ -58,7 +58,7 @@ function initListener(){
 		slidePositionController();
 	});
 
-	$(document).on('keydown',function(e){
+	$(document).on('keydown', throttle(function(e) {
         switch(e.which){
             case 37 :
                 previousSocial();
@@ -69,7 +69,7 @@ function initListener(){
             default:
                 break;
         }
-    })
+    },33))
 }
 
 function nextSocial(){

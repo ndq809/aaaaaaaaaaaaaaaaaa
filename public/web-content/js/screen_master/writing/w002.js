@@ -1,6 +1,8 @@
 var catalogue_id=0;
 var group_id=0;
 var media_div = 0;
+var first_time = 0;
+var _vocabularyArray = [];
 $(function(){
 	try{
 		init_w002();
@@ -36,6 +38,7 @@ function init_w002(){
         $('#post_id').trigger('change');
     }else{
         $('#catalogue_div')[0].selectize.focus();
+        $('#catalogue_div').trigger('change');
     }
 }
 
@@ -82,13 +85,13 @@ function initevent_w002(){
 
         }
         _this=$(this);
-        var sub_item=$('.transform-content').filter(function(){
-            return $(this).attr('transform-div').indexOf(_this.val())>=0;
-        })
-        sub_item.show();
-        transform();
-
-        updateCatalogue(this);
+        transform(_this);
+        if(_this.val()!=''){
+            updateCatalogue(this);
+        }
+        else{
+            first_time = 0;
+        }
     })
 
     $(document).on('change','#catalogue_nm',function(){
@@ -96,7 +99,6 @@ function initevent_w002(){
     })
 
     $(document).on('change','.vocabulary_id',function(){
-        console.log($(this).val());
         var temp = $(this).val();
         if(temp!=''){
             $(this).parents('tr').find('td .btn-copy').attr('title','Thêm 1 phiên bản khác của từ đang được chọn khi từ đó không có trong danh sách tìm kiếm và muốn chuyển đổi từ loại,cách dùng...(vd: Game->Gamer)');
@@ -108,6 +110,7 @@ function initevent_w002(){
     })
 
     $(document).on('change','#post_id',function(){
+        first_time = 1;
         w002_refer($(this).val());
     })
 
@@ -160,22 +163,19 @@ function initevent_w002(){
         
     });
 
-    
-
-    $(document).on('click','.table .btn-popup',function(){
-        _popup_transfer_array['row_id']=$(this).parents('tr').index();
-        _popup_transfer_array['vocabulary_div']=$(this).parents('tr').find('.vocabulary_div').val();
-        _popup_transfer_array['vocabulary_nm']=$(this).parents('tr').find('.vocabulary_nm').val();
-        _popup_transfer_array['mean']=$(this).parents('tr').find('.mean').val();
+    $(document).on('click','.btn-popup',function(){
+         _popup_transfer_array['voc_array']=_vocabularyArray;
     })
 }
 
 function w002_addNew(){
     var data_addnew=new FormData($("#upload_form")[0]);
     var header_data=getInputData(1);
-    header_data.post_media=($('input[name=post_media]').val()!='')?$('input[name=post_media]').val():'no data';
+    if($('.old-content:visible').length!=0&&header_data['post_media']==''){
+        header_data['post_media'] = 'no-data';
+    }
 	data_addnew.append('header_data',JSON.stringify(header_data));
-    data_addnew.append('detail_data',JSON.stringify(getTableData($('.submit-table'))));
+    data_addnew.append('detail_data',JSON.stringify(getTableTdData($('.submit-table'))));
     data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.exa-table-body'))));
     data_addnew.append('pra_body_data',JSON.stringify(getTableQuestionData($('.pra-table-body'))));
 	$.ajax({
@@ -275,18 +275,25 @@ function w002_refer(post_id){
                     //     $('#post_id').val('');
                     //     return;
                     // }
+                    _vocabularyArray = res.data[2];
                     $('#post_id').val(res.data[0][0]['post_id']);
                     catalogue_id=res.data[0][0]['catalogue_id'];
                     group_id=res.data[0][0]['group_id'];
-                    setMedia(res.data[0][0]);
+                    setMedia(res.data);
                     $('.update-block #catalogue_div')[0].selectize.setValue(Number(res.data[0][0]['catalogue_div']));
                     $('#post_title').val(res.data[0][0]['post_title']);
                     $('#post_title').trigger('change');
-                    CKEDITOR.instances['post_content'].setData(res.data[0][0]['post_content']);
+                    setTimeout(function(){
+                      CKEDITOR.instances['post_content'].setData(res.data[0][0]['post_content'],function(){
+                        // this.setReadOnly(true);
+                        $('.main-content').html(CKEDITOR.instances['post_content'].getData());
+                    });
+                    }, 100);
+                    
                     $('#result').html(res.table_voc);
                     $('#result1').html(res.table_exa);
                     $('#result2').html(res.table_pra);
-                    transform();
+                    transform($('#catalogue_div'));
                      $(".btn-popup").fancybox({
                         'width'         : '90%',
                         'height'        : '90%',
@@ -320,7 +327,7 @@ function updateCatalogue(change_item){
     var data=$(change_item).val();
     $.ajax({
         type: 'POST',
-        url: '/master/common/getcatalogue',
+        url: '/master/writing/w002/getcatalogue',
         dataType: 'json',
         loading:true,
         data:{
@@ -342,6 +349,24 @@ function updateCatalogue(change_item){
                             $('.update-block #catalogue_nm')[0].selectize.setValue(catalogue_id);
                         }
                     }
+                    if(first_time != 1){
+                        $('#post_tag').selectize()[0].selectize.destroy();
+                        $('#post_tag').html('');
+                        for (var i = 0; i < res.data[1].length; i++) {
+                            $('#post_tag').append('<option value="'+res.data[1][i]['tag_id']+'">'+res.data[1][i]['tag_nm']+'</option>');
+                        }
+                        $('#post_tag').selectize({
+                            delimiter: ',',
+                            persist: false,
+                            create: function(input) {
+                                return {
+                                    value: input+'**++**eplus',
+                                    text: input
+                                }
+                            }
+                        });
+                    }
+                    first_time = 0;
                     break;
                 case 201:
                     clearFailedValidate();
@@ -407,8 +432,8 @@ function updateGroup(change_item){
 }
 
 function setMedia(data){
-    media_div= data['media_div']*1;
-    switch(data['media_div']*1){
+    media_div= data[0][0]['media_div']*1;
+    switch(data[0][0]['media_div']*1){
         case 0:
             break;
         case 1:
@@ -420,9 +445,9 @@ function setMedia(data){
                 showCancel: false,
                 showBrowse : false,
                 showUploadedThumbs: false,
-                initialCaption : data['post_media_nm'],
+                initialCaption : data[0][0]['post_media_nm'],
                 initialPreview: [
-                    '<audio controls=""><source src="'+data['post_media']+'" type="audio/mp3"></audio>'
+                    '<audio controls=""><source src="'+data[0][0]['post_media']+'" type="audio/mp3"></audio>'
                 ],
             });
             $(".old-input-audio").closest('.old-content').removeClass('hidden');
@@ -437,37 +462,58 @@ function setMedia(data){
                 showCancel: false,
                 showBrowse : false,
                 showUploadedThumbs: false,
-                initialCaption : data['post_media_nm'],
+                initialCaption : data[0][0]['post_media_nm'],
                 initialPreview: [
-                    "<img src='"+data['post_media']+"' class='kv-preview-data file-preview-image'>"
+                    "<img src='"+data[0][0]['post_media']+"' class='kv-preview-data file-preview-image'>"
                 ],
             }).trigger('previewloaded');
             $(".old-input-image-custom").closest('.old-content').removeClass('hidden');
             $(".input-image-custom").fileinput('clear');
             break;
     }
-}
-
-function transform(){
-    $('.transform-content').each(function(){
-        if($(this).attr('transform-div')<0){
-            check = $(this).attr('transform-div').indexOf($('#catalogue_div').val()*-1)<0 && $('#catalogue_div').val()!='';
+    $('#post_tag').selectize()[0].selectize.destroy();
+    $('#post_tag').html('');
+    for (var i = 0; i < data[5].length; i++) {
+        if(data[5][i]['selected']==1){
+            $('#post_tag').append('<option value="'+data[5][i]['tag_id']+'" selected = "selected">'+data[5][i]['tag_nm']+'</option>');
         }else{
-            check = $(this).attr('transform-div').indexOf($('#catalogue_div').val())>=0 && $('#catalogue_div').val()!='';
+            $('#post_tag').append('<option value="'+data[5][i]['tag_id']+'">'+data[5][i]['tag_nm']+'</option>');
         }
-        if(check){
-            $(this).show();
-            if($('.old-content:visible').length==0 && ($(this).attr('transform-div')==3||$(this).attr('transform-div')==7)){
-                $(this).addClass('required');
-            }else{
-                $(this).removeClass('required');
+    }
+    $('#post_tag').selectize({
+        delimiter: ',',
+        persist: false,
+        create: function(input) {
+            return {
+                value: input+'**++**eplus',
+                text: input
             }
-            $(this).find('input').removeAttr('disabled');
-            $('.copy-tr').find('input[type=checkbox]').prop('disabled',true);
-
-        }else{
-            $(this).hide();
-            $(this).find('input').prop('disabled',true);
         }
-    })
+    });
 }
+
+function transform(target){
+    var sub_item=$('.transform-content').filter(function(){
+        return $.inArray(target.val(),$(this).attr('transform-div').split(','))!=-1;
+    })
+    sub_item.show();
+    sub_item.each(function(){
+        if($('.old-content:visible').length==0 && ($(this).attr('transform-div')==3||$(this).attr('transform-div')==7)){
+            $(this).addClass('required');
+        }else{
+            $(this).removeClass('required');
+        }
+        $('.copy-tr').find('input[type=checkbox]').prop('disabled',true);
+        $(this).find('select.allow-selectize,#post_media').addClass('submit-item');
+        $(this).find('#post_media').attr('name','post_media');
+    })
+    var sub_item=$('.transform-content').filter(function(){
+        return $.inArray(target.val(),$(this).attr('transform-div').split(','))==-1;
+    })
+     sub_item.each(function(){
+        $(this).find('select.allow-selectize,#post_media').removeClass('submit-item');
+        $(this).find('#post_media').removeAttr('name');
+    })
+    sub_item.hide();
+}
+

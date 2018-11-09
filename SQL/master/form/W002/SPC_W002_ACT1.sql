@@ -12,6 +12,7 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_catalogue_nm     	NVARCHAR(200)		= ''
 ,    @P_group_nm     		NVARCHAR(200)		= ''
 ,    @P_post_title     		NVARCHAR(200)		= ''
+,    @P_post_tag     		XML					= ''
 ,    @P_post_content    	NTEXT				= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
@@ -83,6 +84,10 @@ BEGIN
 	CREATE TABLE #VOCABULARY(
 		row_id	INT
 	,	Vocabulary_code INT	
+	)
+
+	CREATE TABLE #TAG(
+		tag_id INT	
 	)
 
 	CREATE TABLE #TABLE_DETAIL(
@@ -178,7 +183,7 @@ BEGIN
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
 	INSERT INTO M006
-	OUTPUT 0,scope_identity() INTO #VOCABULARY
+	OUTPUT 0,INSERTED.id INTO #VOCABULARY
 	SELECT
 		CASE vocabulary_id
 		WHEN 0 THEN (SELECT ISNULL(MAX(M006.vocabulary_id),0) + row_index FROM M006 WHERE M006.vocabulary_id = #TABLE_DETAIL.vocabulary_id)
@@ -211,22 +216,67 @@ BEGIN
 	,	NULL
 	FROM #TABLE_DETAIL
 	WHERE #TABLE_DETAIL.edit_confirm IS NOT NULL
+
+	INSERT INTO M013
+	SELECT
+		T.C.value('@tag_nm', 'nvarchar(1000)')		
+	,	(SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.number_id = @P_catalogue_div)		
+	,	0
+	,	0
+	,	@P_user_id
+	,	@w_program_id
+	,	@P_ip
+	,	@w_time
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	FROM @P_post_tag.nodes('row') T(C)
+	LEFT JOIN M013
+	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	AND M013.tag_div = (SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.number_id = @P_catalogue_div)
+	WHERE T.C.value('@is_new', 'int') = 1
+	AND M013.tag_id IS NULL
+
+	INSERT INTO #TAG
+	SELECT
+		M013.tag_id
+	FROM @P_post_tag.nodes('row') T(C)
+	INNER JOIN M013
+	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
+
 	IF @P_post_id = ''
 	BEGIN
+		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
 		BEGIN
-			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 			INSERT INTO F009
 			SELECT 
 				@w_briged_id
 			,	#VOCABULARY.Vocabulary_code
+			,	1
 			FROM #VOCABULARY
+		END
+
+		IF EXISTS (SELECT 1 FROM #TAG)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#TAG.tag_id
+			,	2
+			FROM #TAG
 		END
  
 		INSERT INTO M007 (
 			 catalogue_div     
 		,	 catalogue_id
 		,	 group_id
+		,	 post_div
 		,	 briged_id 
 		,	 post_title 
 		,	 post_content 
@@ -251,8 +301,9 @@ BEGIN
 		)
 		SELECT
 		     @P_catalogue_div     
-		,	 @P_catalogue_nm
-		,	 @P_group_nm
+		,	 IIF(@P_catalogue_nm='',NULL,@P_catalogue_nm)
+		,	 IIF(@P_group_nm='',NULL,@P_group_nm)
+		,	 1
 		,	 @w_briged_id 
 		,	 @P_post_title 
 		,	 @P_post_content 
@@ -335,19 +386,32 @@ BEGIN
 		 , ''
 		END
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+		SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
+		IF @w_briged_id IS NULL
+		BEGIN
+			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
+		END
+
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
 		BEGIN
-			SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
-			IF @w_briged_id IS NULL
-			BEGIN
-				SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
-			END
-			DELETE FROM F009 WHERE F009.briged_id = @w_briged_id
 			INSERT INTO F009
 			SELECT 
 				@w_briged_id
 			,	#VOCABULARY.Vocabulary_code
+			,	1
 			FROM #VOCABULARY
+		END
+
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2
+		IF EXISTS (SELECT 1 FROM #TAG)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#TAG.tag_id
+			,	2
+			FROM #TAG
 		END
 		DELETE FROM M012 WHERE M012.target_id = @P_post_id
 		INSERT INTO M012(
@@ -393,8 +457,8 @@ BEGIN
 		FROM @P_xml_detail1.nodes('row') T(C)
 		UPDATE M007 SET 
 			 catalogue_div    =	@P_catalogue_div   
-		,	 catalogue_id	  =	@P_catalogue_nm
-		,	 group_id		  =	@P_group_nm
+		,	 catalogue_id	  =	IIF(@P_catalogue_nm='',NULL,@P_catalogue_nm)
+		,	 group_id		  =	IIF(@P_group_nm='',NULL,@P_group_nm)
 		,	 briged_id 		  =	@w_briged_id 
 		,	 post_title 	  =	@P_post_title 
 		,	 post_content 	  =	@P_post_content 

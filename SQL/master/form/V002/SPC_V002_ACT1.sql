@@ -70,7 +70,6 @@ BEGIN
 		,	NULL
 		,	NULL
 
-		SET @w_inserted_key = scope_identity()
 		
 		INSERT INTO M012(
 			target_id

@@ -50,7 +50,7 @@ BEGIN
 	FROM M007
 	LEFT JOIN F003
 	ON M007.post_id = F003.item_1
-	AND F003.connect_div = 1
+	AND F003.connect_div = 3
 	AND F003.user_id = @P_account_id
 	AND F003.item_2 IS NULL
 	WHERE M007.del_flg = 0
@@ -110,7 +110,7 @@ BEGIN
 	INNER JOIN M003
 	ON F003.item_2 = M003.group_id
 	WHERE F003.user_id = @P_account_id
-	AND	F003.connect_div = 1
+	AND	F003.connect_div = 3
 	AND F003.screen_div = 2
 	AND F003.del_flg = 0
 

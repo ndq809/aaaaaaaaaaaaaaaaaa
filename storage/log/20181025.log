@@ -1,0 +1,1951 @@
+2018-10-25 00:02:44 EXEC SPC_COM_DATA '','','';
+2018-10-25 00:02:47 EXEC SPC_COM_DATA '','','';
+2018-10-25 00:02:47 EXEC SPC_WRITING_LST1 '','','','';
+2018-10-25 00:02:47 EXEC SPC_COM_DATA '','','';
+2018-10-25 00:02:47 EXEC SPC_WRITING_LST2 '9','10','';
+2018-10-25 00:03:00 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-10-25 00:03:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:03:00 EXEC SPC_WRITING_LST1 '12','quypro','9','10';
+2018-10-25 00:03:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:03:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:07:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:07:36 EXEC SPC_WRITING_LST1 '12','quypro','9','10';
+2018-10-25 00:08:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:08:09 EXEC SPC_WRITING_LST1 '12','quypro','9','10';
+2018-10-25 00:08:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:08:10 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:08:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:08:18 EXEC SPC_WRITING_LST1 '12','quypro','9','10';
+2018-10-25 00:08:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:08:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:10:11 EXEC SPC_COM_PERMISSION '2','1','g001';
+2018-10-25 00:10:28 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-25 00:10:53 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-25 00:11:05 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-10-25 00:12:01 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-25 00:12:19 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-25 00:12:19 EXEC SPC_COM_PERMISSION '1','2','g001';
+2018-10-25 00:12:19 EXEC SPC_COM_MENU '1';
+2018-10-25 00:12:30 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-25 00:12:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:12:30 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-25 00:12:40 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:12:40 EXEC SPC_COM_MENU '1';
+2018-10-25 00:12:40 EXEC SPC_W002_FND1
+2018-10-25 00:12:44 EXEC SPC_COM_MENU '1';
+2018-10-25 00:12:44 EXEC SPC_W002_LST2 '4';
+2018-10-25 00:13:58 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:13:58 EXEC SPC_COM_MENU '1';
+2018-10-25 00:13:58 EXEC SPC_W002_FND1
+2018-10-25 00:14:15 EXEC SPC_COM_MENU '1';
+2018-10-25 00:14:15 EXEC SPC_W002_LST2 '4';
+2018-10-25 00:14:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:14:50 EXEC SPC_TRANSLATE_LST1 '3','quypro';
+2018-10-25 00:14:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:14:51 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-10-25 00:16:24 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:16:24 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:24 EXEC SPC_W002_FND1
+2018-10-25 00:16:29 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:29 EXEC SPC_W002_LST1 '15';
+2018-10-25 00:16:29 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:29 EXEC SPC_W002_LST2 '5';
+2018-10-25 00:16:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:30 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 00:16:50 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:50 EXEC SPC_w002_ACT1 '15','5','12','14','3 Reasons Why I Fell in Love with Vietnam','','<p>Sure, there are travel scams in Vietnam. There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&#39;t want to pay their prices. There&#39;s a really big pollution problem, especially in northern cities like Hanoi. <img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /><img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /><img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /></p>
+
+<p>But,&nbsp;these issues are not confined to&nbsp;<a href="https://www.dangerous-business.com/destinations/vietnam/">Vietnam</a>&nbsp;&mdash; you&#39;ll find scammy drivers, pollution/litter, and unfriendly vendors all across Southeast Asia. In my case, I actually encountered LESS of them in Vietnam than anywhere else. Yes, there was smog. Yes, there were touts who would try to hang a shoulder pole on you and then ask you for money. And yes, I could see how a few bad interactions could color your whole travel experience.</p>
+
+<p>Overall, though, I had a fantastic time in Vietnam. I didn&#39;t get scammed. I didn&#39;t&nbsp;feel unsafe, or unwanted because I was American.&nbsp;And,&nbsp;I didn&#39;t find anything to hate about this interesting developing country.</p>
+
+<p>Yes, I am definitely in the&nbsp;<strong>&ldquo;I love Vietnam&rdquo;</strong>&nbsp;camp. And here&#39;s why:</p>
+','','','0','<row row_id="0" vocabulary_code="2" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="vua" explain="someone who leader of a country" />','','<row row_id="1" content="Why I Fell in Love with Vietnam " question_div="1" /><row row_id="1" content=" I didn&amp;#39;t feel unsafe, or unwanted because I was American. And, I didn&amp;#39;t find anything to hate about this interesting developing country." verify="1" question_div="1" /><row row_id="1" content=" I could see how a few bad interactions could color your whole travel experience." verify="1" question_div="1" /><row row_id="1" content="you&amp;#39;ll find scammy drivers, pollution/litter, and unfriendly vendors all across Southeast Asia. In my case, I actually encountered LESS of them in Vietnam than anywhere else." verify="0" question_div="1" /><row row_id="1" content="There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&amp;#39;t want to pay their prices." verify="0" question_div="1" /><row row_id="2" content="There are taxi drivers and touts who will try to rip you off" question_div="1" /><row row_id="2" content="my case, I actually encountered LESS of them in V" verify="0" question_div="1" /><row row_id="2" content="where else. Yes, there was smog. Yes, there were touts who would try to " verify="1" question_div="1" /><row row_id="2" content="am. There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&amp;#39;t " verify="0" question_div="1" /><row row_id="2" content="an anywhere else. Yes, there was smog. Yes, there were touts who would try to hang a shoulder pole on you and then ask you for money. And yes, I could s" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 00:16:51 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:51 EXEC SPC_W002_LST1 '15';
+2018-10-25 00:16:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:52 EXEC SPC_W002_LST2 '5';
+2018-10-25 00:16:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:16:52 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 00:17:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:17:02 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-10-25 00:17:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:17:03 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:17:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:17:21 EXEC SPC_COM_MENU '1';
+2018-10-25 00:17:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:17:22 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-10-25 00:17:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:17:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:21:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:21:28 EXEC SPC_WRITING_LST1 '12','quypro','9','10';
+2018-10-25 00:21:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:21:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:22:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:22:15 EXEC SPC_COM_MENU '1';
+2018-10-25 00:22:15 EXEC SPC_W002_FND1
+2018-10-25 00:22:18 EXEC SPC_COM_MENU '1';
+2018-10-25 00:22:18 EXEC SPC_W002_LST1 '15';
+2018-10-25 00:22:18 EXEC SPC_COM_MENU '1';
+2018-10-25 00:22:18 EXEC SPC_W002_LST2 '5';
+2018-10-25 00:22:18 EXEC SPC_COM_MENU '1';
+2018-10-25 00:22:18 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 00:23:45 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:23:45 EXEC SPC_COM_MENU '1';
+2018-10-25 00:23:45 EXEC SPC_W002_FND1
+2018-10-25 00:23:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:23:49 EXEC SPC_W002_LST1 '15';
+2018-10-25 00:23:50 EXEC SPC_COM_MENU '1';
+2018-10-25 00:23:50 EXEC SPC_W002_LST2 '5';
+2018-10-25 00:23:50 EXEC SPC_COM_MENU '1';
+2018-10-25 00:23:50 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 00:23:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:23:57 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-10-25 00:23:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:23:58 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:24:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:24:09 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-10-25 00:24:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:24:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:24:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:24:19 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-10-25 00:24:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:24:19 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:25:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:31 EXEC SPC_COM_MENU '1';
+2018-10-25 00:25:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:33 EXEC SPC_READING_LST1 '','quypro','12','14';
+2018-10-25 00:25:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:33 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:25:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:34 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-10-25 00:25:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:25:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:36 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-10-25 00:25:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:37 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:25:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:38 EXEC SPC_COM_MENU '1';
+2018-10-25 00:25:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:38 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-10-25 00:25:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:40 EXEC SPC_COM_MENU '1';
+2018-10-25 00:25:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:41 EXEC SPC_READING_LST1 '','quypro','12','14';
+2018-10-25 00:25:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:41 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-10-25 00:25:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:42 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-10-25 00:25:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:25:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:27:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:27:13 EXEC SPC_GRAMMAR_LST1 '','quypro','9','10';
+2018-10-25 00:27:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:27:14 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-10-25 00:27:40 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-25 00:27:40 EXEC SPC_COM_MENU '1';
+2018-10-25 00:27:40 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-25 00:27:44 EXEC SPC_COM_MENU '1';
+2018-10-25 00:27:44 EXEC SPC_COMMON_CATALORUE '2';
+2018-10-25 00:27:46 EXEC SPC_COM_MENU '1';
+2018-10-25 00:27:46 EXEC SPC_w001_LST1 '2','','','','10','1';
+2018-10-25 00:28:04 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:28:04 EXEC SPC_COM_MENU '1';
+2018-10-25 00:28:04 EXEC SPC_W002_FND1
+2018-10-25 00:28:04 EXEC SPC_COM_MENU '1';
+2018-10-25 00:28:04 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:28:04 EXEC SPC_COM_MENU '1';
+2018-10-25 00:28:04 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:28:04 EXEC SPC_COM_MENU '1';
+2018-10-25 00:28:04 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:29:48 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:29:48 EXEC SPC_COM_MENU '1';
+2018-10-25 00:29:48 EXEC SPC_W002_FND1
+2018-10-25 00:29:48 EXEC SPC_COM_MENU '1';
+2018-10-25 00:29:48 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:29:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:29:49 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:29:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:29:49 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:30:02 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:30:02 EXEC SPC_COM_MENU '1';
+2018-10-25 00:30:02 EXEC SPC_W002_FND1
+2018-10-25 00:30:02 EXEC SPC_COM_MENU '1';
+2018-10-25 00:30:02 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:30:03 EXEC SPC_COM_MENU '1';
+2018-10-25 00:30:03 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:30:03 EXEC SPC_COM_MENU '1';
+2018-10-25 00:30:03 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:31:33 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:31:33 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:33 EXEC SPC_W002_FND1
+2018-10-25 00:31:34 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:34 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:31:34 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:34 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:31:34 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:34 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:31:36 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:31:36 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:36 EXEC SPC_W002_FND1
+2018-10-25 00:31:38 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:38 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:31:38 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:38 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:31:39 EXEC SPC_COM_MENU '1';
+2018-10-25 00:31:39 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:32:12 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:32:12 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:12 EXEC SPC_W002_FND1
+2018-10-25 00:32:12 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:12 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:32:13 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:13 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:32:13 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:13 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:32:20 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:32:20 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:20 EXEC SPC_W002_FND1
+2018-10-25 00:32:21 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:21 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:32:21 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:21 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:32:21 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:21 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:32:23 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:32:23 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:23 EXEC SPC_W002_FND1
+2018-10-25 00:32:24 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:24 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:32:24 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:24 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:32:24 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:24 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:32:26 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:32:26 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:26 EXEC SPC_W002_FND1
+2018-10-25 00:32:27 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:27 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:32:27 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:27 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:32:27 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:27 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:32:28 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:32:28 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:28 EXEC SPC_W002_FND1
+2018-10-25 00:32:29 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:29 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:32:29 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:29 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:32:29 EXEC SPC_COM_MENU '1';
+2018-10-25 00:32:29 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:23 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:23 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:23 EXEC SPC_W002_FND1
+2018-10-25 00:35:25 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:25 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:25 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:25 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:25 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:25 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:27 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:27 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:27 EXEC SPC_W002_FND1
+2018-10-25 00:35:28 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:28 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:28 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:28 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:28 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:28 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:30 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:30 EXEC SPC_W002_FND1
+2018-10-25 00:35:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:30 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:30 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:30 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:31 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:32 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:32 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:32 EXEC SPC_W002_FND1
+2018-10-25 00:35:33 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:33 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:33 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:33 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:33 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:33 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:35 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:35 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:35 EXEC SPC_W002_FND1
+2018-10-25 00:35:35 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:35 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:35 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:36 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:36 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:36 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:43 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:43 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:43 EXEC SPC_W002_FND1
+2018-10-25 00:35:44 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:44 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:44 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:44 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:44 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:44 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:46 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:46 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:46 EXEC SPC_W002_FND1
+2018-10-25 00:35:47 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:47 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:47 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:47 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:47 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:47 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:48 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:48 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:48 EXEC SPC_W002_FND1
+2018-10-25 00:35:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:49 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:49 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:49 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:49 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:50 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:50 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:50 EXEC SPC_W002_FND1
+2018-10-25 00:35:50 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:50 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:51 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:51 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:51 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:51 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:52 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:52 EXEC SPC_W002_FND1
+2018-10-25 00:35:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:52 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:52 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:52 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:52 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:53 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:53 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:53 EXEC SPC_W002_FND1
+2018-10-25 00:35:54 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:54 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:54 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:54 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:54 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:54 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:55 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:55 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:55 EXEC SPC_W002_FND1
+2018-10-25 00:35:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:56 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:56 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:56 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:57 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:57 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:57 EXEC SPC_W002_FND1
+2018-10-25 00:35:57 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:57 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:57 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:57 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:35:57 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:57 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:35:58 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:35:58 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:59 EXEC SPC_W002_FND1
+2018-10-25 00:35:59 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:59 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:35:59 EXEC SPC_COM_MENU '1';
+2018-10-25 00:35:59 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:00 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:00 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:00 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:01 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:01 EXEC SPC_W002_FND1
+2018-10-25 00:36:01 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:01 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:01 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:01 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:01 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:01 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:02 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:02 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:02 EXEC SPC_W002_FND1
+2018-10-25 00:36:03 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:03 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:03 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:03 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:03 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:03 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:04 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:04 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:04 EXEC SPC_W002_FND1
+2018-10-25 00:36:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:05 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:05 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:05 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:06 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:07 EXEC SPC_W002_FND1
+2018-10-25 00:36:07 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:07 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:07 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:07 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:07 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:07 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:08 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:08 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:08 EXEC SPC_W002_FND1
+2018-10-25 00:36:09 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:09 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:09 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:09 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:09 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:09 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:10 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:10 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:10 EXEC SPC_W002_FND1
+2018-10-25 00:36:10 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:10 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:11 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:11 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:11 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:11 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:12 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:12 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:12 EXEC SPC_W002_FND1
+2018-10-25 00:36:12 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:12 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:13 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:13 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:13 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:13 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:36:56 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 00:36:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:56 EXEC SPC_W002_FND1
+2018-10-25 00:36:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:56 EXEC SPC_W002_LST1 '4';
+2018-10-25 00:36:56 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:56 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:36:57 EXEC SPC_COM_MENU '1';
+2018-10-25 00:36:57 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 00:37:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:37:50 EXEC SPC_WRITING_LST1 '','quypro','6','6';
+2018-10-25 00:37:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 00:37:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 00:42:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:42:05 EXEC SPC_W002_LST1 '6';
+2018-10-25 00:42:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:42:05 EXEC SPC_W002_LST2 '2';
+2018-10-25 00:42:05 EXEC SPC_COM_MENU '1';
+2018-10-25 00:42:05 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:21:29 EXEC SPC_COM_MENU '1';
+2018-10-25 01:21:29 EXEC SPC_w002_ACT1 '6','2','6','6','danh từ đếm được và không đếm được','<row tag_nm="_s" is_new="1" /><row tag_nm="_es" is_new="1" />','<p><strong>Danh từ đếm được</strong>: L&agrave; danh từ c&oacute; thể d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; c&oacute; 2 h&igrave;nh th&aacute;i số &iacute;t v&agrave; số nhiều. N&oacute; d&ugrave;ng được với&nbsp;<em>a</em>&nbsp;hay với&nbsp;<em>the</em>.</p>
+
+<p>VD: one book, two books, &hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được</strong>: Kh&ocirc;ng d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; kh&ocirc;ng c&oacute; h&igrave;nh th&aacute;i số &iacute;t, số nhiều. N&oacute; kh&ocirc;ng thể d&ugrave;ng được với&nbsp;<em>a</em>, c&ograve;n&nbsp;<em>the</em>&nbsp;chỉ trong một số trường hợp đặc biệt. VD: milk (sữa). Bạn kh&ocirc;ng thể n&oacute;i &ldquo;one milk&rdquo;, &ldquo;two milks&rdquo; &hellip; (Một số vật chất kh&ocirc;ng đếm được c&oacute; thể được chứa trong c&aacute;c b&igrave;nh đựng, bao b&igrave;&hellip; đếm được. VD: one glass of milk &ndash; một cốc sữa).&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; h&igrave;nh th&aacute;i số nhiều đặc biệt. VD: person &ndash; people; child &ndash; children; tooth &ndash; teeth; foot &ndash; feet; mouse &ndash; mice &hellip;&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; dạng số &iacute;t/ số nhiều như nhau chỉ ph&acirc;n biệt bằng c&oacute; &ldquo;a&rdquo; v&agrave; kh&ocirc;ng c&oacute; &ldquo;a&rdquo;:&nbsp;<br />
+an aircraft/ aircraft; a sheep/ sheep; a fish/ fish.&nbsp;</p>
+
+<p>Một số c&aacute;c danh từ kh&ocirc;ng đếm được như food, meat, money, sand, water &hellip; đ&ocirc;i khi được d&ugrave;ng như c&aacute;c danh từ số nhiều để chỉ c&aacute;c dạng, loại kh&aacute;c nhau của vật liệu đ&oacute;.&nbsp;</p>
+
+<p><em>This is&nbsp;one of the foods&nbsp;that my doctor wants me to eat.</em></p>
+
+<p>Danh từ &ldquo;time&rdquo; nếu d&ugrave;ng với nghĩa l&agrave; &ldquo;thời gian&rdquo; l&agrave; kh&ocirc;ng đếm được nhưng khi d&ugrave;ng với nghĩa l&agrave; &ldquo;thời đại&rdquo; hay &ldquo;số lần&rdquo; l&agrave; danh từ đếm được.&nbsp;</p>
+
+<p><em>You have spent too much&nbsp;time&nbsp;on that homework. (thời gian, kh&ocirc;ng đếm được)<br />
+I have seen that movie three&nbsp;times&nbsp;before. (số lần, đếm được)</em></p>
+','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="méo thể tin được" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 01:21:30 EXEC SPC_COM_MENU '1';
+2018-10-25 01:21:30 EXEC SPC_W002_LST1 '6';
+2018-10-25 01:21:30 EXEC SPC_COM_MENU '1';
+2018-10-25 01:21:30 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:21:31 EXEC SPC_COM_MENU '1';
+2018-10-25 01:21:31 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:22:47 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-25 01:22:47 EXEC SPC_COM_MENU '1';
+2018-10-25 01:22:47 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-25 01:22:52 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-25 01:22:52 EXEC SPC_COM_MENU '1';
+2018-10-25 01:22:52 EXEC SPC_M007_FND1
+2018-10-25 01:22:56 EXEC SPC_COM_MENU '1';
+2018-10-25 01:22:56 EXEC SPC_m007_LST1 '7';
+2018-10-25 01:22:56 EXEC SPC_M007_FND1
+2018-10-25 01:30:59 EXEC SPC_COM_MENU '1';
+2018-10-25 01:30:59 EXEC SPC_M007_ACT1 '7','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Từ Vựng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Ngữ Pháp" num_remark1="1" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Nghe" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Học Viết" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Đọc Hiểu" num_remark1="2" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Câu Hỏi Thảo Luận" num_remark1="3" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="7" number_id="7" content="Giải Trí Hình Ảnh" num_remark1="4" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="8" number_id="8" content="Giải Trí Video" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="9" number_id="9" content="Giải Trí Truyện" num_remark1="6" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="10" number_id="10" content="Quảng Cáo" num_remark1="7" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-10-25 01:31:01 EXEC SPC_COM_MENU '1';
+2018-10-25 01:31:01 EXEC SPC_m007_LST1 '7';
+2018-10-25 01:31:01 EXEC SPC_M007_FND1
+2018-10-25 01:32:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 01:32:06 EXEC SPC_COM_MENU '1';
+2018-10-25 01:32:06 EXEC SPC_W002_FND1
+2018-10-25 01:45:41 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 01:45:42 EXEC SPC_COM_MENU '1';
+2018-10-25 01:45:42 EXEC SPC_W002_FND1
+2018-10-25 01:45:46 EXEC SPC_COM_MENU '1';
+2018-10-25 01:45:46 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:48:51 EXEC SPC_COM_MENU '1';
+2018-10-25 01:48:51 EXEC SPC_W002_LST1 '15';
+2018-10-25 01:48:51 EXEC SPC_COM_MENU '1';
+2018-10-25 01:48:51 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:48:52 EXEC SPC_COM_MENU '1';
+2018-10-25 01:48:52 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 01:49:06 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:06 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:49:09 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 01:49:09 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:09 EXEC SPC_W002_FND1
+2018-10-25 01:49:14 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:14 EXEC SPC_W002_LST1 '4';
+2018-10-25 01:49:14 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:14 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:49:14 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:14 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:49:20 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:20 EXEC SPC_W002_LST1 '6';
+2018-10-25 01:49:20 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:20 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:49:20 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:20 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:49:30 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:30 EXEC SPC_w002_ACT1 '6','2','6','6','danh từ đếm được và không đếm được','<row tag_nm="_s" is_new="1" /><row tag_nm="_es" is_new="1" />','<p><strong>Danh từ đếm được</strong>: L&agrave; danh từ c&oacute; thể d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; c&oacute; 2 h&igrave;nh th&aacute;i số &iacute;t v&agrave; số nhiều. N&oacute; d&ugrave;ng được với&nbsp;<em>a</em>&nbsp;hay với&nbsp;<em>the</em>.</p>
+
+<p>VD: one book, two books, &hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được</strong>: Kh&ocirc;ng d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; kh&ocirc;ng c&oacute; h&igrave;nh th&aacute;i số &iacute;t, số nhiều. N&oacute; kh&ocirc;ng thể d&ugrave;ng được với&nbsp;<em>a</em>, c&ograve;n&nbsp;<em>the</em>&nbsp;chỉ trong một số trường hợp đặc biệt. VD: milk (sữa). Bạn kh&ocirc;ng thể n&oacute;i &ldquo;one milk&rdquo;, &ldquo;two milks&rdquo; &hellip; (Một số vật chất kh&ocirc;ng đếm được c&oacute; thể được chứa trong c&aacute;c b&igrave;nh đựng, bao b&igrave;&hellip; đếm được. VD: one glass of milk &ndash; một cốc sữa).&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; h&igrave;nh th&aacute;i số nhiều đặc biệt. VD: person &ndash; people; child &ndash; children; tooth &ndash; teeth; foot &ndash; feet; mouse &ndash; mice &hellip;&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; dạng số &iacute;t/ số nhiều như nhau chỉ ph&acirc;n biệt bằng c&oacute; &ldquo;a&rdquo; v&agrave; kh&ocirc;ng c&oacute; &ldquo;a&rdquo;:&nbsp;<br />
+an aircraft/ aircraft; a sheep/ sheep; a fish/ fish.&nbsp;</p>
+
+<p>Một số c&aacute;c danh từ kh&ocirc;ng đếm được như food, meat, money, sand, water &hellip; đ&ocirc;i khi được d&ugrave;ng như c&aacute;c danh từ số nhiều để chỉ c&aacute;c dạng, loại kh&aacute;c nhau của vật liệu đ&oacute;.&nbsp;</p>
+
+<p><em>This is&nbsp;one of the foods&nbsp;that my doctor wants me to eat.</em></p>
+
+<p>Danh từ &ldquo;time&rdquo; nếu d&ugrave;ng với nghĩa l&agrave; &ldquo;thời gian&rdquo; l&agrave; kh&ocirc;ng đếm được nhưng khi d&ugrave;ng với nghĩa l&agrave; &ldquo;thời đại&rdquo; hay &ldquo;số lần&rdquo; l&agrave; danh từ đếm được.&nbsp;</p>
+
+<p><em>You have spent too much&nbsp;time&nbsp;on that homework. (thời gian, kh&ocirc;ng đếm được)<br />
+I have seen that movie three&nbsp;times&nbsp;before. (số lần, đếm được)</em></p>
+','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="méo thể tin được" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 01:49:32 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:32 EXEC SPC_W002_LST1 '6';
+2018-10-25 01:49:32 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:32 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:49:32 EXEC SPC_COM_MENU '1';
+2018-10-25 01:49:32 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:50:44 EXEC SPC_COM_MENU '1';
+2018-10-25 01:50:44 EXEC SPC_W002_LST1 '7';
+2018-10-25 01:50:44 EXEC SPC_COM_MENU '1';
+2018-10-25 01:50:44 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:50:44 EXEC SPC_COM_MENU '1';
+2018-10-25 01:50:44 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:51:20 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:20 EXEC SPC_w002_ACT1 '7','2','6','7','động cmn từ','<row tag_nm="_ed" is_new="1" /><row tag_nm="_ing" is_new="1" />','<p>động từ is za b&eacute;t</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-25 01:51:21 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:21 EXEC SPC_W002_LST1 '7';
+2018-10-25 01:51:21 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:21 EXEC SPC_W002_LST2 '2';
+2018-10-25 01:51:21 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:21 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 01:51:24 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:24 EXEC SPC_W002_LST1 '15';
+2018-10-25 01:51:25 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:25 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:51:25 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:25 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 01:51:58 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:58 EXEC SPC_w002_ACT1 '15','5','12','14','3 Reasons Why I Fell in Love with Vietnam','<row tag_nm="vietnam" is_new="1" /><row tag_nm="country" is_new="1" />','<p>Sure, there are travel scams in Vietnam. There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&#39;t want to pay their prices. There&#39;s a really big pollution problem, especially in northern cities like Hanoi. <img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /><img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /><img alt="laugh" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/teeth_smile.png" title="laugh" width="23" /></p>
+
+<p>But,&nbsp;these issues are not confined to&nbsp;<a href="https://www.dangerous-business.com/destinations/vietnam/">Vietnam</a>&nbsp;&mdash; you&#39;ll find scammy drivers, pollution/litter, and unfriendly vendors all across Southeast Asia. In my case, I actually encountered LESS of them in Vietnam than anywhere else. Yes, there was smog. Yes, there were touts who would try to hang a shoulder pole on you and then ask you for money. And yes, I could see how a few bad interactions could color your whole travel experience.</p>
+
+<p>Overall, though, I had a fantastic time in Vietnam. I didn&#39;t get scammed. I didn&#39;t&nbsp;feel unsafe, or unwanted because I was American.&nbsp;And,&nbsp;I didn&#39;t find anything to hate about this interesting developing country.</p>
+
+<p>Yes, I am definitely in the&nbsp;<strong>&ldquo;I love Vietnam&rdquo;</strong>&nbsp;camp. And here&#39;s why:</p>
+','','','0','<row row_id="0" vocabulary_code="2" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="vua" explain="someone who leader of a country" />','','<row row_id="1" content="Why I Fell in Love with Vietnam " question_div="1" /><row row_id="1" content=" I didn&amp;#39;t feel unsafe, or unwanted because I was American. And, I didn&amp;#39;t find anything to hate about this interesting developing country." verify="1" question_div="1" /><row row_id="1" content=" I could see how a few bad interactions could color your whole travel experience." verify="1" question_div="1" /><row row_id="1" content="you&amp;#39;ll find scammy drivers, pollution/litter, and unfriendly vendors all across Southeast Asia. In my case, I actually encountered LESS of them in Vietnam than anywhere else." verify="0" question_div="1" /><row row_id="1" content="There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&amp;#39;t want to pay their prices." verify="0" question_div="1" /><row row_id="2" content="There are taxi drivers and touts who will try to rip you off" question_div="1" /><row row_id="2" content="my case, I actually encountered LESS of them in V" verify="0" question_div="1" /><row row_id="2" content="where else. Yes, there was smog. Yes, there were touts who would try to " verify="1" question_div="1" /><row row_id="2" content="am. There are taxi drivers and touts who will try to rip you off. There are market vendors that will swear at you and swat you away if you don&amp;#39;t " verify="0" question_div="1" /><row row_id="2" content="an anywhere else. Yes, there was smog. Yes, there were touts who would try to hang a shoulder pole on you and then ask you for money. And yes, I could s" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 01:51:59 EXEC SPC_COM_MENU '1';
+2018-10-25 01:51:59 EXEC SPC_W002_LST1 '15';
+2018-10-25 01:52:00 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:00 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:52:00 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:00 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 01:52:03 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:03 EXEC SPC_W002_LST1 '16';
+2018-10-25 01:52:03 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:03 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:52:03 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:03 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 01:52:45 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:45 EXEC SPC_W002_LST1 '15';
+2018-10-25 01:52:45 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:45 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:52:45 EXEC SPC_COM_MENU '1';
+2018-10-25 01:52:45 EXEC SPC_COMMON_GROUP '12';
+2018-10-25 01:53:29 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-25 01:53:29 EXEC SPC_COM_MENU '1';
+2018-10-25 01:53:29 EXEC SPC_M007_FND1
+2018-10-25 01:53:32 EXEC SPC_COM_MENU '1';
+2018-10-25 01:53:32 EXEC SPC_m007_LST1 '7';
+2018-10-25 01:53:32 EXEC SPC_M007_FND1
+2018-10-25 01:53:57 EXEC SPC_COM_MENU '1';
+2018-10-25 01:53:57 EXEC SPC_M007_ACT1 '7','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Từ Vựng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Ngữ Pháp" num_remark1="1" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Nghe" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Học Viết" num_remark1="2" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Đọc Hiểu" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Câu Hỏi Thảo Luận" num_remark1="3" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="7" number_id="7" content="Giải Trí Hình Ảnh" num_remark1="4" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="8" number_id="8" content="Giải Trí Video" num_remark1="5" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="9" number_id="9" content="Giải Trí Truyện" num_remark1="6" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="10" number_id="10" content="Quảng Cáo" num_remark1="7" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-10-25 01:53:58 EXEC SPC_COM_MENU '1';
+2018-10-25 01:53:58 EXEC SPC_m007_LST1 '7';
+2018-10-25 01:53:58 EXEC SPC_M007_FND1
+2018-10-25 01:54:18 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 01:54:18 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:18 EXEC SPC_W002_FND1
+2018-10-25 01:54:20 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:20 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:54:28 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:28 EXEC SPC_W002_LST1 '16';
+2018-10-25 01:54:28 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:28 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:54:28 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:28 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 01:54:52 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:52 EXEC SPC_w002_ACT1 '16','4','9','10','Đất nước','<row tag_nm="vietnam" is_new="1" /><row tag_nm="country" is_new="1" />','<p><span dir="rtl"><code><cite><q>Khi ta lớn l&ecirc;n Đất Nước đ&atilde; c&oacute; rồi<br />
+Đất Nước c&oacute; trong những c&aacute;i &ldquo;ng&agrave;y xửa ng&agrave;y xưa...&rdquo; mẹ thường hay kể<br />
+Đất Nước bắt đầu với miếng trầu b&acirc;y giờ b&agrave; ăn<br />
+Đất Nước lớn l&ecirc;n khi d&acirc;n m&igrave;nh biết tr&ograve;ng tre m&agrave; đ&aacute;nh giặc</q></cite></code></span></p>
+
+<p><span dir="rtl"><code><cite><q>T&oacute;c mẹ th&igrave; bới sau đầu<br />
+Cha mẹ thương nhau bằng gừng cay muối mặn<br />
+C&aacute;i k&egrave;o, c&aacute;i cột th&agrave;nh t&ecirc;n<br />
+Hạt gạo phải một nắng hai sương xay, gi&atilde;, giần, s&agrave;ng<br />
+Đất Nước c&oacute; từ ng&agrave;y đ&oacute;...<br />
+<br />
+Đất l&agrave; nơi anh đến trường<br />
+Nước l&agrave; nơi em tắm<br />
+Đất Nước l&agrave; nơi ta h&ograve; hẹn<br />
+Đất Nước l&agrave; nơi em đ&aacute;nh rơi chiếc khăn trong nỗi nhớ thầm<br />
+Đất l&agrave; nơi &ldquo;con chim phượng ho&agrave;ng bay về h&ograve;n n&uacute;i bạc&rdquo;<br />
+Nước l&agrave; nơi &ldquo;con c&aacute; ngư &ocirc;ng m&oacute;ng nước biển khơi&rdquo;<br />
+Thời gian đằng đẵng<br />
+Kh&ocirc;ng gian mệnh m&ocirc;ng<br />
+Đất Nước l&agrave; nơi d&acirc;n m&igrave;nh đo&agrave;n tụ<br />
+Đất l&agrave; nơi Chim về<br />
+Nước l&agrave; nơi Rồng ở<br />
+Lạc Long Qu&acirc;n v&agrave; &Acirc;u Cơ<br />
+Đẻ ra đồng b&agrave;o ta trong bọc trứng<br />
+Những ai đ&atilde; khu&aacute;t<br />
+Những ai b&acirc;y giờ<br />
+Y&ecirc;u nhau v&agrave; sinh con đẻ c&aacute;i<br />
+G&aacute;nh v&aacute;c phần người đi trước để lại<br />
+Dặn d&ograve; con ch&aacute;u chuyện mai sau<br />
+Hằng năm ăn đ&acirc;u l&agrave;m đ&acirc;u<br />
+Cũng biết c&uacute;i đầu nhớ ng&agrave;y giỗ Tổ<br />
+Trong anh v&agrave; em h&ocirc;m nay<br />
+Đều c&oacute; một phần Đất Nước<br />
+Khi hai đứa cầm tay<br />
+Đất Nước trong ch&uacute;ng m&igrave;nh h&agrave;i ho&agrave; nồng thắm<br />
+Khi ch&uacute;ng ta cầm tay mọi người<br />
+Đất nước vẹn tr&ograve;n, to lớn<br />
+<br />
+Mai n&agrave;y con ta lớn l&ecirc;n<br />
+Con sẽ mang đất nước đi xa<br />
+Đến những th&aacute;ng ng&agrave;y mơ mộng<br />
+Em ơi em Đất Nước l&agrave; m&aacute;u xương của m&igrave;nh<br />
+Phải biết gắn b&oacute; san sẻ<br />
+Phải biết ho&aacute; th&acirc;n cho d&aacute;ng h&igrave;nh xứ sở<br />
+L&agrave;m n&ecirc;n Đất Nước mu&ocirc;n đời...</q></cite></code></span><br />
+&nbsp;</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-25 01:54:53 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:53 EXEC SPC_W002_LST1 '16';
+2018-10-25 01:54:53 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:53 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:54:53 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:53 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 01:54:58 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:58 EXEC SPC_W002_LST1 '17';
+2018-10-25 01:54:58 EXEC SPC_COM_MENU '1';
+2018-10-25 01:54:58 EXEC SPC_W002_LST2 '7';
+2018-10-25 01:55:03 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:03 EXEC SPC_W002_LST1 '18';
+2018-10-25 01:55:04 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:04 EXEC SPC_W002_LST2 '7';
+2018-10-25 01:55:08 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:08 EXEC SPC_W002_LST1 '19';
+2018-10-25 01:55:08 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:08 EXEC SPC_W002_LST2 '6';
+2018-10-25 01:55:12 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:12 EXEC SPC_W002_LST1 '120';
+2018-10-25 01:55:17 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:17 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:55:36 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:36 EXEC SPC_W002_LST2 '6';
+2018-10-25 01:55:40 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:40 EXEC SPC_W002_LST2 '5';
+2018-10-25 01:55:55 EXEC SPC_COM_MENU '1';
+2018-10-25 01:55:55 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:56:07 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 01:56:07 EXEC SPC_COM_MENU '1';
+2018-10-25 01:56:07 EXEC SPC_W002_FND1
+2018-10-25 01:56:10 EXEC SPC_COM_MENU '1';
+2018-10-25 01:56:10 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:56:23 EXEC SPC_COM_MENU '1';
+2018-10-25 01:56:23 EXEC SPC_W002_LST2 '1';
+2018-10-25 01:56:25 EXEC SPC_COM_MENU '1';
+2018-10-25 01:56:25 EXEC SPC_W002_LST2 '4';
+2018-10-25 01:57:47 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-25 01:57:47 EXEC SPC_COM_MENU '1';
+2018-10-25 01:57:47 EXEC SPC_M007_FND1
+2018-10-25 01:57:50 EXEC SPC_COM_MENU '1';
+2018-10-25 01:57:50 EXEC SPC_m007_LST1 '7';
+2018-10-25 01:57:50 EXEC SPC_M007_FND1
+2018-10-25 02:05:59 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 02:05:59 EXEC SPC_COM_MENU '1';
+2018-10-25 02:05:59 EXEC SPC_W002_FND1
+2018-10-25 02:06:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:03 EXEC SPC_W002_LST1 '4';
+2018-10-25 02:06:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:03 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:06:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:03 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:06:07 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:07 EXEC SPC_W002_LST1 '6';
+2018-10-25 02:06:07 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:07 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:06:07 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:07 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:06:17 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:17 EXEC SPC_w002_ACT1 '6','2','6','6','danh từ đếm được và không đếm được','<row tag_nm="_s" is_new="1" /><row tag_nm="_es" is_new="1" />','<p><strong>Danh từ đếm được</strong>: L&agrave; danh từ c&oacute; thể d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; c&oacute; 2 h&igrave;nh th&aacute;i số &iacute;t v&agrave; số nhiều. N&oacute; d&ugrave;ng được với&nbsp;<em>a</em>&nbsp;hay với&nbsp;<em>the</em>.</p>
+
+<p>VD: one book, two books, &hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được</strong>: Kh&ocirc;ng d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; kh&ocirc;ng c&oacute; h&igrave;nh th&aacute;i số &iacute;t, số nhiều. N&oacute; kh&ocirc;ng thể d&ugrave;ng được với&nbsp;<em>a</em>, c&ograve;n&nbsp;<em>the</em>&nbsp;chỉ trong một số trường hợp đặc biệt. VD: milk (sữa). Bạn kh&ocirc;ng thể n&oacute;i &ldquo;one milk&rdquo;, &ldquo;two milks&rdquo; &hellip; (Một số vật chất kh&ocirc;ng đếm được c&oacute; thể được chứa trong c&aacute;c b&igrave;nh đựng, bao b&igrave;&hellip; đếm được. VD: one glass of milk &ndash; một cốc sữa).&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; h&igrave;nh th&aacute;i số nhiều đặc biệt. VD: person &ndash; people; child &ndash; children; tooth &ndash; teeth; foot &ndash; feet; mouse &ndash; mice &hellip;&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; dạng số &iacute;t/ số nhiều như nhau chỉ ph&acirc;n biệt bằng c&oacute; &ldquo;a&rdquo; v&agrave; kh&ocirc;ng c&oacute; &ldquo;a&rdquo;:&nbsp;<br />
+an aircraft/ aircraft; a sheep/ sheep; a fish/ fish.&nbsp;</p>
+
+<p>Một số c&aacute;c danh từ kh&ocirc;ng đếm được như food, meat, money, sand, water &hellip; đ&ocirc;i khi được d&ugrave;ng như c&aacute;c danh từ số nhiều để chỉ c&aacute;c dạng, loại kh&aacute;c nhau của vật liệu đ&oacute;.&nbsp;</p>
+
+<p><em>This is&nbsp;one of the foods&nbsp;that my doctor wants me to eat.</em></p>
+
+<p>Danh từ &ldquo;time&rdquo; nếu d&ugrave;ng với nghĩa l&agrave; &ldquo;thời gian&rdquo; l&agrave; kh&ocirc;ng đếm được nhưng khi d&ugrave;ng với nghĩa l&agrave; &ldquo;thời đại&rdquo; hay &ldquo;số lần&rdquo; l&agrave; danh từ đếm được.&nbsp;</p>
+
+<p><em>You have spent too much&nbsp;time&nbsp;on that homework. (thời gian, kh&ocirc;ng đếm được)<br />
+I have seen that movie three&nbsp;times&nbsp;before. (số lần, đếm được)</em></p>
+','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="méo thể tin được" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 02:06:18 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:18 EXEC SPC_W002_LST1 '6';
+2018-10-25 02:06:18 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:18 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:06:19 EXEC SPC_COM_MENU '1';
+2018-10-25 02:06:19 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:15:02 EXEC SPC_COM_MENU '1';
+2018-10-25 02:15:02 EXEC SPC_w002_ACT1 '6','2','6','6','danh từ đếm được và không đếm được','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" />','<p><strong>Danh từ đếm được</strong>: L&agrave; danh từ c&oacute; thể d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; c&oacute; 2 h&igrave;nh th&aacute;i số &iacute;t v&agrave; số nhiều. N&oacute; d&ugrave;ng được với&nbsp;<em>a</em>&nbsp;hay với&nbsp;<em>the</em>.</p>
+
+<p>VD: one book, two books, &hellip;</p>
+
+<p><strong>Danh từ kh&ocirc;ng đếm được</strong>: Kh&ocirc;ng d&ugrave;ng được với số đếm, do đ&oacute; n&oacute; kh&ocirc;ng c&oacute; h&igrave;nh th&aacute;i số &iacute;t, số nhiều. N&oacute; kh&ocirc;ng thể d&ugrave;ng được với&nbsp;<em>a</em>, c&ograve;n&nbsp;<em>the</em>&nbsp;chỉ trong một số trường hợp đặc biệt. VD: milk (sữa). Bạn kh&ocirc;ng thể n&oacute;i &ldquo;one milk&rdquo;, &ldquo;two milks&rdquo; &hellip; (Một số vật chất kh&ocirc;ng đếm được c&oacute; thể được chứa trong c&aacute;c b&igrave;nh đựng, bao b&igrave;&hellip; đếm được. VD: one glass of milk &ndash; một cốc sữa).&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; h&igrave;nh th&aacute;i số nhiều đặc biệt. VD: person &ndash; people; child &ndash; children; tooth &ndash; teeth; foot &ndash; feet; mouse &ndash; mice &hellip;&nbsp;</p>
+
+<p>Một số danh từ đếm được c&oacute; dạng số &iacute;t/ số nhiều như nhau chỉ ph&acirc;n biệt bằng c&oacute; &ldquo;a&rdquo; v&agrave; kh&ocirc;ng c&oacute; &ldquo;a&rdquo;:&nbsp;<br />
+an aircraft/ aircraft; a sheep/ sheep; a fish/ fish.&nbsp;</p>
+
+<p>Một số c&aacute;c danh từ kh&ocirc;ng đếm được như food, meat, money, sand, water &hellip; đ&ocirc;i khi được d&ugrave;ng như c&aacute;c danh từ số nhiều để chỉ c&aacute;c dạng, loại kh&aacute;c nhau của vật liệu đ&oacute;.&nbsp;</p>
+
+<p><em>This is&nbsp;one of the foods&nbsp;that my doctor wants me to eat.</em></p>
+
+<p>Danh từ &ldquo;time&rdquo; nếu d&ugrave;ng với nghĩa l&agrave; &ldquo;thời gian&rdquo; l&agrave; kh&ocirc;ng đếm được nhưng khi d&ugrave;ng với nghĩa l&agrave; &ldquo;thời đại&rdquo; hay &ldquo;số lần&rdquo; l&agrave; danh từ đếm được.&nbsp;</p>
+
+<p><em>You have spent too much&nbsp;time&nbsp;on that homework. (thời gian, kh&ocirc;ng đếm được)<br />
+I have seen that movie three&nbsp;times&nbsp;before. (số lần, đếm được)</em></p>
+','','','0','','<row language1_content="I am Quy" language2_content="toi la Quy" /><row language1_content="The teachers are the boss" language2_content="Giao vien la trum" /><row language1_content="i can&amp;#39;t believe" language2_content="méo thể tin được" />','<row row_id="1" content="wth" question_div="1" /><row row_id="1" content="a" verify="1" question_div="1" /><row row_id="1" content="s" verify="1" question_div="1" /><row row_id="1" content="d" verify="0" question_div="1" /><row row_id="1" content="f" verify="1" question_div="1" />','ndq809','127.0.0.1';
+2018-10-25 02:15:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:15:03 EXEC SPC_W002_LST1 '6';
+2018-10-25 02:15:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:15:03 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:15:03 EXEC SPC_COM_MENU '1';
+2018-10-25 02:15:03 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:20:33 EXEC SPC_COM_MENU '1';
+2018-10-25 02:20:33 EXEC SPC_W002_LST1 '16';
+2018-10-25 02:20:34 EXEC SPC_COM_MENU '1';
+2018-10-25 02:20:34 EXEC SPC_W002_LST2 '4';
+2018-10-25 02:20:34 EXEC SPC_COM_MENU '1';
+2018-10-25 02:20:34 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 02:43:51 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 02:43:51 EXEC SPC_COM_MENU '1';
+2018-10-25 02:43:51 EXEC SPC_W002_FND1
+2018-10-25 02:43:56 EXEC SPC_COM_MENU '1';
+2018-10-25 02:43:56 EXEC SPC_W002_LST2 '1';
+2018-10-25 02:44:00 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:00 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 02:44:01 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:01 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 02:44:06 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:06 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 02:44:06 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:06 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 02:44:11 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:11 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 02:44:11 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:11 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 02:44:16 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:16 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 02:44:17 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:17 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 02:44:27 EXEC SPC_COM_MENU '1';
+2018-10-25 02:44:27 EXEC SPC_COMMON_GROUP '2';
+2018-10-25 02:45:21 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:21 EXEC SPC_w002_ACT1 '','1','2','3','','','','','','0','<row row_id="0" vocabulary_code="1" vocabulary_div="1" vocabulary_nm="Hello" spelling="helou" mean="Xin chào" explain="say when meet someone" /><row row_id="1" vocabulary_code="2" vocabulary_div="1" vocabulary_nm="king" spelling="king" mean="vua" explain="someone who leader of a country" /><row row_id="2" vocabulary_code="3" vocabulary_div="1" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" /><row row_id="3" vocabulary_code="4" vocabulary_div="1" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" />','','','ndq809','127.0.0.1';
+2018-10-25 02:45:22 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:22 EXEC SPC_W002_LST1 '1';
+2018-10-25 02:45:22 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:22 EXEC SPC_W002_LST2 '1';
+2018-10-25 02:45:22 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:22 EXEC SPC_COMMON_GROUP '2';
+2018-10-25 02:45:47 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 02:45:47 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:47 EXEC SPC_W002_FND1
+2018-10-25 02:45:50 EXEC SPC_COM_MENU '1';
+2018-10-25 02:45:50 EXEC SPC_W002_LST2 '1';
+2018-10-25 02:46:02 EXEC SPC_COM_MENU '1';
+2018-10-25 02:46:02 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:49:20 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:20 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:49:25 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:25 EXEC SPC_w002_ACT1 '','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-25 02:49:26 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:26 EXEC SPC_W002_LST1 '2';
+2018-10-25 02:49:27 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:27 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:49:27 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:27 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:49:55 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:55 EXEC SPC_W002_LST1 '';
+2018-10-25 02:49:57 EXEC SPC_COM_MENU '1';
+2018-10-25 02:49:57 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:50:09 EXEC SPC_COM_MENU '1';
+2018-10-25 02:50:09 EXEC SPC_W002_LST2 '3';
+2018-10-25 02:50:11 EXEC SPC_COM_MENU '1';
+2018-10-25 02:50:11 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:53:13 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 02:53:13 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:13 EXEC SPC_W002_FND1
+2018-10-25 02:53:18 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:18 EXEC SPC_W002_LST1 '1';
+2018-10-25 02:53:18 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:18 EXEC SPC_W002_LST2 '1';
+2018-10-25 02:53:18 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:18 EXEC SPC_COMMON_GROUP '2';
+2018-10-25 02:53:31 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:31 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:53:39 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:39 EXEC SPC_W002_LST2 '4';
+2018-10-25 02:53:43 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:43 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:53:48 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:48 EXEC SPC_W002_LST1 '';
+2018-10-25 02:53:50 EXEC SPC_COM_MENU '1';
+2018-10-25 02:53:50 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:54:12 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 02:54:12 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:12 EXEC SPC_W002_FND1
+2018-10-25 02:54:14 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:14 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:54:21 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:21 EXEC SPC_W002_LST1 '2';
+2018-10-25 02:54:21 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:21 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:54:21 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:21 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 02:54:32 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:32 EXEC SPC_W002_LST1 '';
+2018-10-25 02:54:34 EXEC SPC_COM_MENU '1';
+2018-10-25 02:54:34 EXEC SPC_W002_LST2 '2';
+2018-10-25 02:57:21 EXEC SPC_COM_MENU '1';
+2018-10-25 02:57:21 EXEC SPC_COMMON_GROUP '7';
+2018-10-25 02:57:37 EXEC SPC_COM_MENU '1';
+2018-10-25 02:57:37 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 03:01:32 EXEC SPC_COM_MENU '1';
+2018-10-25 03:01:32 EXEC SPC_w002_ACT1 '','2','6','7','ĐỘNG TỪ TRONG TIẾNG ANH','<row tag_nm="_ed" is_new="1" /><row tag_nm="_ing" is_new="1" />','<p><strong>I. Định nghĩa</strong></p>
+
+<p>Đ&ocirc;̣ng từ&nbsp;là từ dùng đ&ecirc;̉ di&ecirc;̃n tả hành đ&ocirc;̣ng hoặc trạng thái của chủ ngữ.</p>
+
+<p>Ví dụ:&nbsp;Tom&nbsp;kicked&nbsp;the ball. &ndash; Tom thực hi&ecirc;̣n hành đ&ocirc;̣ng đá quả bóng. Quả bóng là đ&ocirc;́i tượng nh&acirc;̣n tác đ&ocirc;̣ng của hành đ&ocirc;̣ng (object of the verb).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sky&nbsp;is&nbsp;blue. &ndash;&nbsp;is&nbsp;ở đ&acirc;y kh&ocirc;ng th&ecirc;̉ hi&ecirc;̣n hành đ&ocirc;̣ng mà th&ecirc;̉ hi&ecirc;̣n trạng thái của b&acirc;̀u trời là xanh. &ldquo;Blue&rdquo; ở đ&acirc;y là tính từ.</p>
+
+<p><strong>II. Ph&acirc;n loại đ&ocirc;̣ng từ</strong></p>
+
+<p>Có hai cách ph&acirc;n chia đ&ocirc;̣ng từ:</p>
+
+<p><em>1. Ordinary verb (đ&ocirc;̣ng từ thường) và auxiliary verb (trợ đ&ocirc;̣ng từ).</em></p>
+
+<p>Trợ đ&ocirc;̣ng từ (auxiliary verb)</p>
+
+<p>Ví dụ: to be, to have, to do, can, could, may, might, must, ought, shall, should, will, would, to need, to dare</p>
+
+<p>Loại này có th&ecirc;̉ chia ra làm 3 loại:</p>
+
+<p>to be, to have: vừa có th&ecirc;̉ làm đ&ocirc;̣ng từ thường, vừa có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- Tom&nbsp;is&nbsp;a doctor.</p>
+
+<p>- He&nbsp;has&nbsp;a black beard.</p>
+
+<p>- He&nbsp;is&nbsp;working now.</p>
+
+<p>- I&nbsp;have&nbsp;just finished my homework.</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u: chỉ có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ trong c&acirc;u. Ví dụ: can, may, shall, will, ought to, must</p>
+
+<p>M&ocirc;̣t s&ocirc;́ đ&ocirc;̣ng từ đặc bi&ecirc;̣t: có trường hợp dùng làm đ&ocirc;̣ng từ thường, có trường hợp dùng làm trợ đ&ocirc;̣ng từ. Ví dụ: to dare, to need, to do, used to</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- He doesn&rsquo;t&nbsp;dare&nbsp;to say anything.</p>
+
+<p>- They&nbsp;need&nbsp;new skirts.</p>
+
+<p>-&nbsp;Dare&nbsp;we interrupt?</p>
+
+<p>- I&nbsp;need&nbsp;to go home now.</p>
+
+<p>Đ&ocirc;̣ng từ thường (ordinary verbs)</p>
+
+<p>Những đ&ocirc;̣ng từ kh&ocirc;ng thu&ocirc;̣c loại tr&ecirc;n là đ&ocirc;̣ng từ thường. Ví dụ: to work, to sing, to pray, to play, to study&hellip;</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u (modal verbs)</p>
+
+<p>- Như đã n&ecirc;u ở tr&ecirc;n, đ&acirc;y là m&ocirc;̣t loại của trợ đ&ocirc;̣ng từ. Vì đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u đóng vai trò khá quan trọng trong c&acirc;u n&ecirc;n ta sẽ tách ra m&ocirc;̣t bài ri&ecirc;ng đ&ecirc;̉ tìm hi&ecirc;̉u nhé.</p>
+
+<p>- Đặc đi&ecirc;̉m:</p>
+
+<p>- Chỉ làm trợ đ&ocirc;̣ng từ.</p>
+
+<p>Ví dụ:&nbsp;(+) I&nbsp;can&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (-) I&nbsp;can&rsquo;t&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?)&nbsp;Can&nbsp;you speak English well?</p>
+
+<p>- Ở ng&ocirc;i thứ 3 s&ocirc;́ ít kh&ocirc;ng th&ecirc;m &ldquo;s&rdquo; (như đ&ocirc;̣ng từ thường)</p>
+
+<p>- Ở phủ định th&ecirc;m &ldquo;not&rdquo; vào sau.</p>
+
+<p>- Ở nghi v&acirc;́n đảo ngược đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u l&ecirc;n trước chủ ngữ.</p>
+
+<p><em>2. N&ocirc;̣i đ&ocirc;̣ng từ (intransitive verbs) và ngoại đ&ocirc;̣ng từ (transitive verbs)</em></p>
+
+<p>N&ocirc;̣i đ&ocirc;̣ng từ:</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng n&ocirc;̣i tại của người nói hay người thực hi&ecirc;̣n hành đ&ocirc;̣ng.</p>
+
+<p>Ví dụ:&nbsp;He&nbsp;walks. (Anh &acirc;́y đi b&ocirc;̣. Anh &acirc;́y tự đi chứ kh&ocirc;ng phải là do người hay v&acirc;̣t khác tác đ&ocirc;̣ng)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly. (Chim bay. Con chim tự bay theo bản năng chứ kh&ocirc;ng do người hay v&acirc;̣t tác đ&ocirc;̣ng)</p>
+
+<p>- Kh&ocirc;ng c&acirc;̀n có t&acirc;n ngữ trực ti&ecirc;́p đi kèm. N&ecirc;́u có thì phải có giới từ đi trước và cụm từ này sẽ đóng vai trò ngữ trạng từ chứ kh&ocirc;ng phải là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Ví dụ:&nbsp;She&nbsp;walks&nbsp;in the garden.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly&nbsp;in the sky.</p>
+
+<p>Ngoại đ&ocirc;̣ng từ</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng g&acirc;y ra trực ti&ecirc;́p l&ecirc;n người hoặc v&acirc;̣t.</p>
+
+<p>Ví dụ:&nbsp;The cat&nbsp;killed&nbsp;the mouse.</p>
+
+<p>- Lu&ocirc;n c&acirc;̀n th&ecirc;m y&ecirc;́u t&ocirc;́ b&ecirc;n ngoài là m&ocirc;̣t danh từ hay đại từ theo sau đ&ecirc;̉ hoàn thành nghĩa của c&acirc;u. Danh (đại từ) đi theo sau là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Trong c&acirc;u tr&ecirc;n, chúng ta kh&ocirc;ng th&ecirc;̉ nói &ldquo;The cat killed&rdquo; r&ocirc;̀i dừng lại, bởi c&acirc;u r&acirc;́t t&ocirc;́i nghĩa. Vì th&ecirc;́ phải th&ecirc;m &ldquo;the mouse&rdquo; vào sau.</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-25 03:01:33 EXEC SPC_COM_MENU '1';
+2018-10-25 03:01:33 EXEC SPC_W002_LST1 '3';
+2018-10-25 03:01:33 EXEC SPC_COM_MENU '1';
+2018-10-25 03:01:33 EXEC SPC_W002_LST2 '2';
+2018-10-25 03:01:33 EXEC SPC_COM_MENU '1';
+2018-10-25 03:01:33 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 04:01:41 EXEC SPC_COM_MENU '1';
+2018-10-25 04:01:41 EXEC SPC_w002_ACT1 '3','2','6','7','ĐỘNG TỪ TRONG TIẾNG ANH','<row tag_id="5" is_new="0" /><row tag_id="6" is_new="0" /><row tag_nm="had" is_new="1" />','<p><strong>I. Định nghĩa</strong></p>
+
+<p>Đ&ocirc;̣ng từ&nbsp;là từ dùng đ&ecirc;̉ di&ecirc;̃n tả hành đ&ocirc;̣ng hoặc trạng thái của chủ ngữ.</p>
+
+<p>Ví dụ:&nbsp;Tom&nbsp;kicked&nbsp;the ball. &ndash; Tom thực hi&ecirc;̣n hành đ&ocirc;̣ng đá quả bóng. Quả bóng là đ&ocirc;́i tượng nh&acirc;̣n tác đ&ocirc;̣ng của hành đ&ocirc;̣ng (object of the verb).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sky&nbsp;is&nbsp;blue. &ndash;&nbsp;is&nbsp;ở đ&acirc;y kh&ocirc;ng th&ecirc;̉ hi&ecirc;̣n hành đ&ocirc;̣ng mà th&ecirc;̉ hi&ecirc;̣n trạng thái của b&acirc;̀u trời là xanh. &ldquo;Blue&rdquo; ở đ&acirc;y là tính từ.</p>
+
+<p><strong>II. Ph&acirc;n loại đ&ocirc;̣ng từ</strong></p>
+
+<p>Có hai cách ph&acirc;n chia đ&ocirc;̣ng từ:</p>
+
+<p><em>1. Ordinary verb (đ&ocirc;̣ng từ thường) và auxiliary verb (trợ đ&ocirc;̣ng từ).</em></p>
+
+<p>Trợ đ&ocirc;̣ng từ (auxiliary verb)</p>
+
+<p>Ví dụ: to be, to have, to do, can, could, may, might, must, ought, shall, should, will, would, to need, to dare</p>
+
+<p>Loại này có th&ecirc;̉ chia ra làm 3 loại:</p>
+
+<p>to be, to have: vừa có th&ecirc;̉ làm đ&ocirc;̣ng từ thường, vừa có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- Tom&nbsp;is&nbsp;a doctor.</p>
+
+<p>- He&nbsp;has&nbsp;a black beard.</p>
+
+<p>- He&nbsp;is&nbsp;working now.</p>
+
+<p>- I&nbsp;have&nbsp;just finished my homework.</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u: chỉ có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ trong c&acirc;u. Ví dụ: can, may, shall, will, ought to, must</p>
+
+<p>M&ocirc;̣t s&ocirc;́ đ&ocirc;̣ng từ đặc bi&ecirc;̣t: có trường hợp dùng làm đ&ocirc;̣ng từ thường, có trường hợp dùng làm trợ đ&ocirc;̣ng từ. Ví dụ: to dare, to need, to do, used to</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- He doesn&rsquo;t&nbsp;dare&nbsp;to say anything.</p>
+
+<p>- They&nbsp;need&nbsp;new skirts.</p>
+
+<p>-&nbsp;Dare&nbsp;we interrupt?</p>
+
+<p>- I&nbsp;need&nbsp;to go home now.</p>
+
+<p>Đ&ocirc;̣ng từ thường (ordinary verbs)</p>
+
+<p>Những đ&ocirc;̣ng từ kh&ocirc;ng thu&ocirc;̣c loại tr&ecirc;n là đ&ocirc;̣ng từ thường. Ví dụ: to work, to sing, to pray, to play, to study&hellip;</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u (modal verbs)</p>
+
+<p>- Như đã n&ecirc;u ở tr&ecirc;n, đ&acirc;y là m&ocirc;̣t loại của trợ đ&ocirc;̣ng từ. Vì đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u đóng vai trò khá quan trọng trong c&acirc;u n&ecirc;n ta sẽ tách ra m&ocirc;̣t bài ri&ecirc;ng đ&ecirc;̉ tìm hi&ecirc;̉u nhé.</p>
+
+<p>- Đặc đi&ecirc;̉m:</p>
+
+<p>- Chỉ làm trợ đ&ocirc;̣ng từ.</p>
+
+<p>Ví dụ:&nbsp;(+) I&nbsp;can&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (-) I&nbsp;can&rsquo;t&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?)&nbsp;Can&nbsp;you speak English well?</p>
+
+<p>- Ở ng&ocirc;i thứ 3 s&ocirc;́ ít kh&ocirc;ng th&ecirc;m &ldquo;s&rdquo; (như đ&ocirc;̣ng từ thường)</p>
+
+<p>- Ở phủ định th&ecirc;m &ldquo;not&rdquo; vào sau.</p>
+
+<p>- Ở nghi v&acirc;́n đảo ngược đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u l&ecirc;n trước chủ ngữ.</p>
+
+<p><em>2. N&ocirc;̣i đ&ocirc;̣ng từ (intransitive verbs) và ngoại đ&ocirc;̣ng từ (transitive verbs)</em></p>
+
+<p>N&ocirc;̣i đ&ocirc;̣ng từ:</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng n&ocirc;̣i tại của người nói hay người thực hi&ecirc;̣n hành đ&ocirc;̣ng.</p>
+
+<p>Ví dụ:&nbsp;He&nbsp;walks. (Anh &acirc;́y đi b&ocirc;̣. Anh &acirc;́y tự đi chứ kh&ocirc;ng phải là do người hay v&acirc;̣t khác tác đ&ocirc;̣ng)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly. (Chim bay. Con chim tự bay theo bản năng chứ kh&ocirc;ng do người hay v&acirc;̣t tác đ&ocirc;̣ng)</p>
+
+<p>- Kh&ocirc;ng c&acirc;̀n có t&acirc;n ngữ trực ti&ecirc;́p đi kèm. N&ecirc;́u có thì phải có giới từ đi trước và cụm từ này sẽ đóng vai trò ngữ trạng từ chứ kh&ocirc;ng phải là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Ví dụ:&nbsp;She&nbsp;walks&nbsp;in the garden.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly&nbsp;in the sky.</p>
+
+<p>Ngoại đ&ocirc;̣ng từ</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng g&acirc;y ra trực ti&ecirc;́p l&ecirc;n người hoặc v&acirc;̣t.</p>
+
+<p>Ví dụ:&nbsp;The cat&nbsp;killed&nbsp;the mouse.</p>
+
+<p>- Lu&ocirc;n c&acirc;̀n th&ecirc;m y&ecirc;́u t&ocirc;́ b&ecirc;n ngoài là m&ocirc;̣t danh từ hay đại từ theo sau đ&ecirc;̉ hoàn thành nghĩa của c&acirc;u. Danh (đại từ) đi theo sau là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Trong c&acirc;u tr&ecirc;n, chúng ta kh&ocirc;ng th&ecirc;̉ nói &ldquo;The cat killed&rdquo; r&ocirc;̀i dừng lại, bởi c&acirc;u r&acirc;́t t&ocirc;́i nghĩa. Vì th&ecirc;́ phải th&ecirc;m &ldquo;the mouse&rdquo; vào sau.</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-25 04:01:42 EXEC SPC_COM_MENU '1';
+2018-10-25 04:01:42 EXEC SPC_W002_LST1 '3';
+2018-10-25 04:01:43 EXEC SPC_COM_MENU '1';
+2018-10-25 04:01:43 EXEC SPC_W002_LST2 '2';
+2018-10-25 04:01:43 EXEC SPC_COM_MENU '1';
+2018-10-25 04:01:43 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 04:07:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:07:09 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2018-10-25 04:07:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:07:10 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:11:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:11:33 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2018-10-25 04:11:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:11:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:13:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:13:27 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2018-10-25 04:13:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:13:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:18:29 EXEC SPC_COM_MENU '1';
+2018-10-25 04:18:30 EXEC SPC_W002_LST1 '';
+2018-10-25 04:18:34 EXEC SPC_COM_MENU '1';
+2018-10-25 04:18:34 EXEC SPC_W002_LST2 '4';
+2018-10-25 04:18:38 EXEC SPC_COM_MENU '1';
+2018-10-25 04:18:38 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 04:19:30 EXEC SPC_COM_PERMISSION '1','2','v002';
+2018-10-25 04:19:30 EXEC SPC_COM_MENU '1';
+2018-10-25 04:19:30 EXEC SPC_V002_FND1
+2018-10-25 04:20:31 EXEC SPC_COM_MENU '1';
+2018-10-25 04:20:31 EXEC SPC_V002_ACT1 '','','valuable','1','ˈvæl.jə.bəl','quý giá','','','','','','ndq809','127.0.0.1';
+2018-10-25 04:20:33 EXEC SPC_COM_MENU '1';
+2018-10-25 04:20:33 EXEC SPC_v002_LST1 '5','1';
+2018-10-25 04:20:43 EXEC SPC_COM_MENU '1';
+2018-10-25 04:20:43 EXEC SPC_v002_LST1 '5','2';
+2018-10-25 04:20:48 EXEC SPC_COM_MENU '1';
+2018-10-25 04:20:48 EXEC SPC_v002_LST1 '5','1';
+2018-10-25 04:21:41 EXEC SPC_COM_MENU '1';
+2018-10-25 04:21:41 EXEC SPC_v002_LST1 '4','1';
+2018-10-25 04:21:58 EXEC SPC_COM_PERMISSION '1','2','v002';
+2018-10-25 04:21:58 EXEC SPC_COM_MENU '1';
+2018-10-25 04:21:58 EXEC SPC_V002_FND1
+2018-10-25 04:22:25 EXEC SPC_COM_MENU '1';
+2018-10-25 04:22:25 EXEC SPC_V002_ACT1 '','','abuse','3','əˈbjuːz','sự lạm dụng, lăng mạ, sỉ nhục, ngược đãi','','','','','','ndq809','127.0.0.1';
+2018-10-25 04:22:36 EXEC SPC_COM_MENU '1';
+2018-10-25 04:22:36 EXEC SPC_v002_LST1 '6','1';
+2018-10-25 04:22:40 EXEC SPC_COM_MENU '1';
+2018-10-25 04:22:40 EXEC SPC_v002_LST1 '5','1';
+2018-10-25 04:24:15 EXEC SPC_COM_PERMISSION '1','2','v002';
+2018-10-25 04:24:15 EXEC SPC_COM_MENU '1';
+2018-10-25 04:24:15 EXEC SPC_V002_FND1
+2018-10-25 04:24:43 EXEC SPC_COM_MENU '1';
+2018-10-25 04:24:43 EXEC SPC_V002_ACT1 '','','vicious','1','ˈvɪʃ.əs','xấu xa,hằn học','','','','','','ndq809','127.0.0.1';
+2018-10-25 04:24:45 EXEC SPC_COM_MENU '1';
+2018-10-25 04:24:45 EXEC SPC_v002_LST1 '6','1';
+2018-10-25 04:25:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 04:25:15 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:15 EXEC SPC_W002_FND1
+2018-10-25 04:25:18 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:18 EXEC SPC_W002_LST2 '4';
+2018-10-25 04:25:44 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:44 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 04:25:44 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:44 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 04:25:53 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:53 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 04:25:53 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:53 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 04:25:59 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:59 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-25 04:25:59 EXEC SPC_COM_MENU '1';
+2018-10-25 04:25:59 EXEC SPC_p003_LST1 '','','','50';
+2018-10-25 04:26:11 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:15 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:15 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 04:26:19 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:19 EXEC SPC_w002_ACT1 '','4','9','10','family','<row tag_nm="family" is_new="1" /><row tag_nm="love" is_new="1" />','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>
+','','','0','<row row_id="0" vocabulary_code="5" vocabulary_div="1" vocabulary_nm="valuable" spelling="ˈvæl.jə.bəl" mean="quý giá" explain="" /><row row_id="1" vocabulary_code="6" vocabulary_div="3" vocabulary_nm="abuse" spelling="əˈbjuːz" mean="sự lạm dụng, lăng mạ, sỉ nhục, ngược đãi" explain="" /><row row_id="2" vocabulary_code="7" vocabulary_div="1" vocabulary_nm="vicious" spelling="ˈvɪʃ.əs" mean="xấu xa,hằn học" explain="" />','','','ndq809','127.0.0.1';
+2018-10-25 04:26:20 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:20 EXEC SPC_W002_LST1 '4';
+2018-10-25 04:26:20 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:20 EXEC SPC_W002_LST2 '4';
+2018-10-25 04:26:20 EXEC SPC_COM_MENU '1';
+2018-10-25 04:26:20 EXEC SPC_COMMON_GROUP '9';
+2018-10-25 04:26:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:26:29 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2018-10-25 04:26:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:26:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:26:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:26:33 EXEC SPC_TRANSLATE_LST1 '5','quypro';
+2018-10-25 04:26:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:26:34 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-10-25 04:28:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:12 EXEC SPC_VOCABULARY_LST1 '','quypro','9','10';
+2018-10-25 04:28:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:12 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-10-25 04:28:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:16 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-10-25 04:28:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:30 EXEC SPC_TRANSLATE_LST1 '2','quypro';
+2018-10-25 04:28:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:30 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-10-25 04:28:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:35 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-10-25 04:28:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:37 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-10-25 04:28:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:59 EXEC SPC_WRITING_LST1 '','quypro','2','3';
+2018-10-25 04:28:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:28:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:34:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:34:30 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:34:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:34:31 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:35:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:07 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:35:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:35:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:51 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:35:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:35:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:58 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:35:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:35:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:36:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:36:24 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:37:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:37:27 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:37:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:37:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:52:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:52:48 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:52:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:52:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:53:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:53:01 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:53:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:53:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:54:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:40 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:54:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:54:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:54:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:59 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:54:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:54:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:54:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:55:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:03 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:55:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:55:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:55:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:39 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:55:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:55:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:55:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:56:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:07 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:56:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:56:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:56:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:25 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:56:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:56:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:26 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:56:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:36 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:56:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:56:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:56:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 04:57:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:57:20 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 04:57:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:57:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 04:57:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 04:57:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:03:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:18 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:03:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:03:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:03:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:03:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:29 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:03:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:03:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:10:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:38 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:10:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:10:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:10:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:58 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:10:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:10:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:10:58 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:11:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:11:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:11:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:11:29 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:11:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:11:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:12:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:12:18 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:12:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:12:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:12:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:12:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:15:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:15:47 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:15:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:15:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:15:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:15:48 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:17:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:37 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:17:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:17:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:38 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:17:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:57 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:17:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:17:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:17:58 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:18:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:18:32 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:18:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:18:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:18:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:18:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:23:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:23:05 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:23:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:23:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:23:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:23:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:25:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:25:22 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:25:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:25:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:25:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:25:23 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:37:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:37:55 EXEC SPC_TRANSLATE_LST1 '6','quypro';
+2018-10-25 05:37:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:37:56 EXEC SPC_TRANSLATE_LST2 'abuse','quypro','127.0.0.1';
+2018-10-25 05:38:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:38:10 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-10-25 05:38:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:38:20 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:38:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:38:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:38:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:38:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:40:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:40:54 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:40:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:40:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:40:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:40:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:45:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:45:16 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:45:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:45:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:45:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:45:17 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:47:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:47:25 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:47:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:47:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:47:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:47:26 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:48:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:48:36 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:48:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:48:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:48:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:48:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:51:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:51:03 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:51:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:51:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:51:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:51:04 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:53:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:53:17 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:53:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:53:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:53:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:53:18 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:55:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:55:35 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:55:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:55:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:55:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:55:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:56:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:31 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:56:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:56:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:31 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 05:56:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:46 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 05:56:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 05:56:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 05:56:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:00:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:00:06 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:00:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:00:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:00:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:00:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:08:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:08:03 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:08:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:08:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:08:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:08:04 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:09:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:27 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:09:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:09:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:09:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:41 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:09:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:09:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:09:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:10:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:10:23 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:10:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:10:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:10:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:10:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:13:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:13:45 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:13:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:13:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:13:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:13:46 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:14:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:01 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:14:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:14:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:02 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:14:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:48 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:14:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:14:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:14:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:17:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:03 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:17:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:17:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:04 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:17:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:47 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:17:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:17:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:17:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:19:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:19:17 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:19:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:19:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:19:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:19:17 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:20:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:20:15 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:20:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:20:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:20:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:20:16 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:21:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:07 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:21:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:21:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:21:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:25 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:21:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:21:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:26 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:21:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:21:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:21:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:21:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:22:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:09 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:22:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:22:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:22:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:11 EXEC SPC_GRAMMAR_LST1 '','quypro','9','10';
+2018-10-25 06:22:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:12 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-10-25 06:22:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:40 EXEC SPC_WRITING_LST1 '','quypro','6','6';
+2018-10-25 06:22:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:22:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:22:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:56 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:22:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:22:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:22:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:23:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:23:41 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:23:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:23:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:23:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:23:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:28:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:28:08 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:28:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:28:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:28:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:28:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:48:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:48:52 EXEC SPC_GRAMMAR_LST1 '','quypro','9','10';
+2018-10-25 06:48:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:48:53 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-10-25 06:50:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:18 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','6';
+2018-10-25 06:50:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:19 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-10-25 06:50:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:20 EXEC SPC_WRITING_LST1 '','quypro','6','6';
+2018-10-25 06:50:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:50:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:50:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:45 EXEC SPC_GRAMMAR_LST1 '3','quypro','9','10';
+2018-10-25 06:50:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:45 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-10-25 06:50:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:50:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:50:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:51:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:51:20 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 06:51:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:51:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:51:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:51:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:51:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:51:27 EXEC SPC_GRAMMAR_LST1 '3','quypro','9','10';
+2018-10-25 06:51:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:51:28 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-10-25 06:52:15 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:15 EXEC SPC_W002_LST1 '1';
+2018-10-25 06:52:16 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:16 EXEC SPC_W002_LST2 '1';
+2018-10-25 06:52:16 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:16 EXEC SPC_COMMON_GROUP '2';
+2018-10-25 06:52:18 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:18 EXEC SPC_W002_LST1 '2';
+2018-10-25 06:52:18 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:18 EXEC SPC_W002_LST2 '2';
+2018-10-25 06:52:18 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:18 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 06:52:28 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:28 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="7" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-25 06:52:30 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:30 EXEC SPC_W002_LST1 '2';
+2018-10-25 06:52:30 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:30 EXEC SPC_W002_LST2 '2';
+2018-10-25 06:52:30 EXEC SPC_COM_MENU '1';
+2018-10-25 06:52:30 EXEC SPC_COMMON_GROUP '6';
+2018-10-25 06:52:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:52:36 EXEC SPC_WRITING_LST1 '','quypro','6','7';
+2018-10-25 06:52:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:52:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:52:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:52:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 06:57:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:57:19 EXEC SPC_GRAMMAR_LST1 '3','quypro','9','10';
+2018-10-25 06:57:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:57:20 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-10-25 06:59:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:59:56 EXEC SPC_WRITING_LST1 '4','quypro','6','7';
+2018-10-25 06:59:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:59:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 06:59:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 06:59:57 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:12:46 EXEC SPC_COM_DATA '','','';
+2018-10-25 07:12:46 EXEC SPC_VOCABULARY_LST1 '','','','';
+2018-10-25 07:12:48 EXEC SPC_COM_DATA '','','';
+2018-10-25 07:12:48 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2018-10-25 07:12:59 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-10-25 07:12:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:12:59 EXEC SPC_VOCABULARY_LST1 '','khoai','2','1';
+2018-10-25 07:13:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:13:00 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2018-10-25 07:13:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:13:02 EXEC SPC_WRITING_LST1 '','khoai','2','1';
+2018-10-25 07:13:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:13:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:13:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:13:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-25 07:14:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:14:09 EXEC SPC_COM_MENU '2';
+2018-10-25 07:14:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:14:11 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2018-10-25 07:14:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:14:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:14:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-25 07:14:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-25 07:14:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:14:29 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:14:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:14:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:14:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:14:30 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:17:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:17:34 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:17:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:17:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:17:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:17:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:18:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:18:23 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:18:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:18:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:18:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:18:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:40:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:08 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:40:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:40:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:40:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:27 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:40:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:40:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:40:27 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:42:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:42:39 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:42:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:42:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:42:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:42:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:43:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:43:58 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:43:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:43:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:43:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:43:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:45:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:45:19 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:45:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:45:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:45:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:45:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:50:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:50:30 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:50:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:50:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:50:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:50:31 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:51:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:51:00 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:51:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:51:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:51:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:51:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:56:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:56:22 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:56:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:56:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:56:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:56:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:57:06 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:57:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:57:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 07:59:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:59:41 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 07:59:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:59:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 07:59:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 07:59:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:00:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:00:29 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:00:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:00:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:00:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:00:30 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:01:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:01:21 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:01:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:01:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:01:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:01:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:03:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:03:01 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:03:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:03:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:03:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:03:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:06:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:06:03 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:06:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:06:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:06:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:06:04 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:07:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:07:50 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:07:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:07:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:07:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:07:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:09:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:09:17 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:09:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:09:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:09:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:09:18 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:10:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:31 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:10:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:10:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:32 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:10:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:47 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:10:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:10:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:10:48 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:12:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:09 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:12:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:10 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:12:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:10 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:12:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:32 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:12:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:12:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:12:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:13:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:13:42 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:13:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:13:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:13:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:13:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:15:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:15:06 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:15:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:15:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:15:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:15:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:17:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:17:37 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:17:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:17:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:17:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:17:38 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:24:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:24:08 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:24:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:24:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:24:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:24:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:32:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:12 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:32:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:32:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:25 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:32:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:32:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:48 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:32:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:32:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:32:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:34:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:34:26 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:34:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:34:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:35:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:35:27 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:35:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:35:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:35:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:35:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:36:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:36:19 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:36:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:36:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:36:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:36:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:38:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:38:41 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:38:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:38:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:38:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:38:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:39:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:39:21 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-25 08:39:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:39:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-25 08:39:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-25 08:39:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-25 08:53:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-25 08:53:49 EXEC SPC_COM_MENU '1';
+2018-10-25 08:53:49 EXEC SPC_W002_FND1

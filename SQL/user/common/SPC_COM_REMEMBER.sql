@@ -27,7 +27,7 @@ BEGIN
 	,	@pageMax			INT					=	0
 	BEGIN TRANSACTION
 	BEGIN TRY
-	IF @P_connect_div <> 1
+	IF @P_connect_div = 2 
 	BEGIN
 		IF NOT EXISTS (SELECT 1 FROM M006 WHERE M006.id = @P_item_1 AND M006.del_flg = 0) --code not exits 
 		BEGIN
@@ -41,7 +41,7 @@ BEGIN
 
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 	END
-	ELSE
+	IF @P_connect_div = 3 
 	BEGIN
 		IF NOT EXISTS (SELECT 1 FROM M007 WHERE M007.post_id = @P_item_1 AND M007.del_flg = 0) --code not exits 
 		BEGIN

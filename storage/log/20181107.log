@@ -1,0 +1,1116 @@
+2018-11-07 02:10:19 EXEC SPC_COM_DATA '','','';
+2018-11-07 02:10:22 EXEC SPC_COM_DATA '','','';
+2018-11-07 02:10:22 EXEC SPC_WRITING_LST1 '','','','';
+2018-11-07 02:10:23 EXEC SPC_COM_DATA '','','';
+2018-11-07 02:10:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:10:23 EXEC SPC_COM_DATA '','','';
+2018-11-07 02:10:23 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-07 02:10:36 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-11-07 02:10:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:10:36 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 02:10:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:10:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:10:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:10:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:12:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:12:48 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:12:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:12:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:12:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:12:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:13:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:18 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 02:13:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:13:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:13:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:30 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:13:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:13:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:13:30 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:15:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:15:11 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 02:15:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:15:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:15:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:15:12 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:20:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:20:11 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 02:20:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:20:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:20:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:20:12 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:21:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:21:00 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:21:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:21:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:21:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:21:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:22:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:22:35 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:22:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:22:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:22:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:22:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:23:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:19 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:23:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:23:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:23:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:49 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:23:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:23:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:23:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:24:01 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 02:24:01 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-07 02:24:07 EXEC SPC_USER_P001_LST1 '0','','','4','<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />','50','1';
+2018-11-07 02:24:55 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 02:24:55 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-07 02:24:57 EXEC SPC_USER_P001_LST1 '0','','','4','<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />','50','1';
+2018-11-07 02:25:01 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row row_id="4" id="5" />';
+2018-11-07 02:25:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:23 EXEC SPC_WRITING_ACT1 '14','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family of mine','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row row_id="4" id="5" />','quypro','127.0.0.1';
+2018-11-07 02:25:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:25 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:25:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:25:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:26 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:25:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:56 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:25:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:25:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:25:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:30:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:33 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 02:30:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:30:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:34 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:30:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:41 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 02:30:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:30:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 02:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:50 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 02:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 02:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 02:30:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:02:35 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 04:02:37 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 04:02:45 EXEC SPC_USER_P001_LST1 '0','','','3','50','1','';
+2018-11-07 04:02:46 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-07 04:02:49 EXEC SPC_USER_P001_LST1 '0','','','3','50','1','';
+2018-11-07 04:02:49 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-07 04:02:51 EXEC SPC_USER_P001_LST1 '0','','','3','50','1','';
+2018-11-07 04:02:51 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-07 04:03:00 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 04:03:01 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 04:03:02 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-07 04:03:24 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="4" /><row row_id="3" id="3" /><row row_id="3" id="1" />';
+2018-11-07 04:03:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:03:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:05:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:06:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:07:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:11:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:11:17 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 04:11:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:11:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:11:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:11:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:11:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:11:59 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 04:12:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:12:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:12:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:12:00 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:13:03 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 04:13:03 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 04:13:06 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-07 04:13:13 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="1" /><row row_id="3" id="3" /><row row_id="3" id="4" />';
+2018-11-07 04:13:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:14:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:14:05 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 04:14:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:14:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:14:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:14:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:16:29 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 04:16:30 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 04:16:34 EXEC SPC_USER_P001_LST1 '0','','','3','50','1','';
+2018-11-07 04:16:34 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-07 04:16:43 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 04:16:44 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 04:16:45 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-07 04:16:55 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="1" /><row row_id="3" id="3" /><row row_id="3" id="4" />';
+2018-11-07 04:16:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:16:59 EXEC SPC_WRITING_ACT1 '','<row tag_id="13" is_new="0" /><row tag_nm="manhwa" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="1" /><row row_id="3" id="3" /><row row_id="3" id="4" />','quypro','127.0.0.1';
+2018-11-07 04:17:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:08 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 04:17:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:17:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:17:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:55 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:17:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:17:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:17:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:20:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:33 EXEC SPC_LISTENING_LST1 '','quypro','9','10';
+2018-11-07 04:20:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:34 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-07 04:20:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:38 EXEC SPC_GRAMMAR_LST1 '','quypro','8','8';
+2018-11-07 04:20:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:38 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-07 04:20:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:50 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-07 04:20:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:53 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-07 04:20:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:55 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-07 04:20:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:56 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-07 04:20:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:20:58 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-07 04:21:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:21:03 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-07 04:21:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:21:07 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-07 04:21:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:21:08 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-07 04:25:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:25:35 EXEC SPC_WRITING_LST1 '','quypro','2','3';
+2018-11-07 04:25:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:25:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:25:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:25:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:27:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:09 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 04:27:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:27:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:10 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:27:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:27 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 04:27:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:27:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:27:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:47 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 04:27:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:27:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:27:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:53 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 04:27:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:27:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:27:54 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:31:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:44 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:31:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:31:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:45 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:31:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:58 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:31:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:31:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:31:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:35:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:35:06 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:35:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:35:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:35:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:35:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:36:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:36:18 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:36:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:36:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:36:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:36:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:38:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:38:43 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 04:38:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:38:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:38:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:38:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:50:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:50:31 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:50:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:50:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:50:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:50:32 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:51:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:51:24 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 04:51:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:51:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:51:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:51:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:53:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:53:17 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:53:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:53:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:53:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:53:17 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:55:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:55:32 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 04:55:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:55:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:55:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:55:32 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 04:57:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:57:27 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 04:57:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:57:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 04:57:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 04:57:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:00:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:14 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 05:00:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:00:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:15 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:00:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:30 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:00:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:00:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:00:31 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:02:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:02:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:02:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:02:29 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:02:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:02:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:03:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:03:41 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 05:03:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:03:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:03:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:03:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:04:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:13 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 05:04:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:04:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:14 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:04:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:21 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 05:04:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:04:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:04:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:05:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:05:03 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:05:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:05:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:05:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:05:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:06:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:06:54 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:06:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:06:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:06:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:06:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:08:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:00 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:08:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:08:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:08:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:22 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:08:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:08:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:08:23 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:12:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:12:43 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:12:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:12:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:12:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:12:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:13:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:14 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:13:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:13:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:15 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:13:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:52 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:13:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:13:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:13:52 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:18:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:07 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:18:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:18:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:18:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:27 EXEC SPC_WRITING_ACT1 '14','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family of mine','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" /><row row_id="4" id="5" />','quypro','127.0.0.1';
+2018-11-07 05:18:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:30 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 05:18:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:18:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:18:31 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:20:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:20:43 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 05:20:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:20:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:20:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:20:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:23:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:23:48 EXEC SPC_WRITING_ACT1 '15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="5" id="1" /><row row_id="5" id="3" /><row row_id="5" id="4" />','quypro','127.0.0.1';
+2018-11-07 05:23:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:23:51 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:23:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:23:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:23:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:23:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:30:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:30:55 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:30:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:30:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:30:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:30:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:31:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:31:14 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:31:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:31:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:31:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:31:14 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:37:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:37:43 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 05:37:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:37:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:37:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:37:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:40:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:40:33 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 05:40:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:40:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:40:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:40:34 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:45:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:45:38 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 05:45:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:45:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:45:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:45:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 05:47:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:47:14 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 05:47:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:47:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 05:47:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 05:47:14 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:18:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:18 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 06:18:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:18:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:18:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:42 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:18:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:18:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:18:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:53 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 06:18:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:18:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:18:54 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:19:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:19:54 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 06:19:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:19:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:19:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:19:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:20:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:00 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 06:20:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:20:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:20:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:32 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:20:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:20:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:20:32 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:21:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:21:43 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:21:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:21:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:21:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:21:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:22:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:13 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:22:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:22:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:22:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:27 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:22:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:22:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:22:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:34 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:22:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:22:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:22:34 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:25:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:23 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:25:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:25:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:25:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:40 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:25:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:25:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:25:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:46 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:25:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:25:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:25:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:26:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:20 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:26:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:26:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:26:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:50 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:26:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:26:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:26:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:57 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:26:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:26:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:26:57 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:28:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:04 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 06:28:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:28:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:28:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:10 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:28:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:10 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:28:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:10 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:28:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:13 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:28:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:28:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:28:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:17 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:28:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:28:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:18 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:28:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:23 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:28:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:28:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:28:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:29:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:00 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:29:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:29:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:29:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:40 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:29:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:29:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:29:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:30:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:30:55 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:31:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:05 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:31:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:31:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:20 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:31:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:32:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:04 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 06:32:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:32:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:32:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:15 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 06:32:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:32:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:16 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:32:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:32 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:32:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:32:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:32:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:34:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:34:12 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 06:34:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:34:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:34:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:34:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:49:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:49:21 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 06:49:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:49:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:49:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:49:23 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:50:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:50:21 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:50:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:50:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:50:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:50:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:50:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:50:34 EXEC SPC_COM_ADD_LESSON '4','9','10','quypro','127.0.0.1';
+2018-11-07 06:50:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:50:37 EXEC SPC_COM_DELETE_LESSON '1024','quypro','127.0.0.1';
+2018-11-07 06:51:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:51:59 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:51:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:51:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:51:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:51:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:52:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:52:43 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:52:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:52:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:52:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:52:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:53:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:53:02 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:53:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:53:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:53:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:53:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:54:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:54:07 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:54:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:54:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:54:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:54:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:55:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:14 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:55:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:55:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:15 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:55:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:40 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:55:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:55:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:55:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:56:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:56:39 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:56:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:56:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:56:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:56:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:57:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:57:43 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:57:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:57:44 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:57:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:57:44 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:58:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:47 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:58:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:58:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:58:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:58 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:58:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:58:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:58:59 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:59:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:34 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 06:59:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:59:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:34 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:59:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:43 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 06:59:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:59:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:59:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:47 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 06:59:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:59:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:48 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:59:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:51 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 06:59:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:59:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:52 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 06:59:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:58 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 06:59:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 06:59:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 06:59:58 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:00:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:21 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:00:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:00:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:00:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:27 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:00:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:00:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:27 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:00:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:32 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 07:00:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:00:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:32 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:00:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:36 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 07:00:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:00:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:00:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:41 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:00:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:00:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:00:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:01:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:23 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:01:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:01:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:01:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:49 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:01:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:01:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:01:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:02:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:02:36 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:02:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:02:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:02:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:02:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:03:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:08 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:03:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:03:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:03:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:19 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:03:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:03:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:03:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:33 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:03:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:03:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:03:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:17:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:04 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:17:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:17:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:17:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:10 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:17:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:17:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:17:11 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:20:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:05 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:20:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:20:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:20:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:11 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:20:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:12 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:20:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:12 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:20:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:21 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:20:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:20:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:20:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:26 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:20:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:20:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:20:27 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:21:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:21:49 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:21:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:21:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:21:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:21:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:23:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:23:40 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:23:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:23:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:23:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:23:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:24:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:07 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:24:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:24:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:24:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:19 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:24:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:24:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:24:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:25 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:24:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:24:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:24:25 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:25:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:25:08 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:25:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:25:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:25:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:25:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:26:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:42 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:26:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:26:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:26:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:51 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:26:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:26:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:26:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:28:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:28:19 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:28:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:28:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:28:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:28:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:30:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:30:41 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:30:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:30:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:30:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:30:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:31:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:34 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 07:31:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:31:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:31:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:38 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:31:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:31:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:38 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:31:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:42 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:31:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:31:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:31:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:32:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:32:26 EXEC SPC_COM_ADD_LESSON '4','9','10','quypro','127.0.0.1';
+2018-11-07 07:32:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:32:29 EXEC SPC_COM_DELETE_LESSON '1025','quypro','127.0.0.1';
+2018-11-07 07:32:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:32:36 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:32:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:32:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:32:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:32:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:38:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:38:40 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:38:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:38:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:38:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:38:40 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:39:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:24 EXEC SPC_COM_GET_PAGE_COMMENT '4','4','14','1','quypro';
+2018-11-07 07:39:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:26 EXEC SPC_COM_GET_PAGE_COMMENT '4','4','14','1','quypro';
+2018-11-07 07:39:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:27 EXEC SPC_COM_GET_PAGE_COMMENT '4','4','14','1','quypro';
+2018-11-07 07:39:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:33 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:39:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:39:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:39:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:43:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:24 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:43:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:43:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:25 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:43:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:27 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','quypro';
+2018-11-07 07:43:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:28 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','quypro';
+2018-11-07 07:43:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:29 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','quypro';
+2018-11-07 07:43:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:30 EXEC SPC_COM_GET_PAGE_COMMENT '2','4','8','1','quypro';
+2018-11-07 07:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:39 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 07:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:43:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:46:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:38 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:46:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:38 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:46:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:38 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:46:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:50 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:46:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:46:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:46:51 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:47:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:47:03 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:47:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:47:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:47:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:47:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:48:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:17 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-07 07:48:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:18 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:48:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:18 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:48:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:36 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:48:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:48:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:48:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:51:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:51:37 EXEC SPC_LISTENING_LST1 '','quypro','9','10';
+2018-11-07 07:51:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:51:38 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-07 07:52:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:52:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:52:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:52:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:52:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:52:36 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:52:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:52:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:52:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:52:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:53:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:19 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:53:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:53:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:53:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:35 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:53:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:53:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:53:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:46 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:53:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:53:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:53:47 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:55:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:55:48 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:55:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:55:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:55:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:55:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:56:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:56:54 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-07 07:56:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:56:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:56:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:56:55 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:57:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:05 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 07:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 07:57:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:14 EXEC SPC_LISTENING_LST1 '','quypro','9','10';
+2018-11-07 07:57:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:15 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-07 07:57:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:16 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-07 07:57:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 07:57:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 07:57:17 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:20:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:20:53 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 08:20:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:20:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:20:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:20:54 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:42:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:42:43 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 08:42:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:42:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:42:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:42:45 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:39 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 08:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:43:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:43:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:45 EXEC SPC_WRITING_ACT2 '14','quypro','127.0.0.1';
+2018-11-07 08:43:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:57 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 08:43:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:43:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:43:57 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:47:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:47:25 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-07 08:47:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:47:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:47:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:47:25 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:47:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:47:40 EXEC SPC_WRITING_ACT2 '14','quypro','127.0.0.1';
+2018-11-07 08:49:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:49:18 EXEC SPC_WRITING_LST1 '14','quypro','9','10';
+2018-11-07 08:49:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:49:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 08:49:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:49:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 08:49:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 08:49:24 EXEC SPC_WRITING_ACT2 '14','quypro','127.0.0.1';
+2018-11-07 08:57:15 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 08:57:16 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 08:57:25 EXEC SPC_USER_P001_LST1 '0','','','3','50','1','';
+2018-11-07 08:57:25 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-07 08:57:53 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 08:57:53 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 08:57:55 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-07 09:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:00:28 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 09:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:00:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 09:00:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:00:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 09:00:30 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 09:00:31 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 09:01:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:01:39 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-07 09:01:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:01:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-07 09:01:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-07 09:01:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-07 09:01:41 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-07 09:01:41 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-07 09:01:44 EXEC SPC_USER_P001_LST1 '0','','','3','','50','1';

@@ -57,7 +57,7 @@ BEGIN
 	LEFT JOIN M003
 	ON	M007.group_id = M003.group_id
 	LEFT JOIN M999
-	ON	(M002.catalogue_div = M999.number_id)
+	ON	(M007.catalogue_div = M999.number_id)
 	AND	(M999.name_div = 7)
 	WHERE M007.del_flg = 0
 	AND		(	(@P_post_title		= '')
@@ -67,7 +67,7 @@ BEGIN
 	AND		(	(@P_catalogue_nm		= '')
 		OR	((M002.catalogue_id=@P_catalogue_nm) OR(M002.catalogue_nm	LIKE '%' + @P_catalogue_nm + '%')))
 	AND		(	(@P_catalogue_div	= 0)
-		OR	(	M002.catalogue_div		= @P_catalogue_div))
+		OR	(	M999.number_id		= @P_catalogue_div))
 
 	--
 	SELECT 

@@ -67,6 +67,7 @@ Route::group(
 		Route::post('w002/addnew','w002Controller@w002_addnew');
 		Route::post('w002/delete','w002Controller@w002_delete');
 		Route::post('w002/refer','w002Controller@w002_refer');
+		Route::post('w002/getcatalogue','w002Controller@w002_getcatalogue');
 		Route::post('w001/list'  ,'w001Controller@w001_list');
 		Route::post('w001/update','w001Controller@w001_update');
 		Route::post('w001/delete','w001Controller@w001_delete');
@@ -150,6 +151,8 @@ Route::group(
 		Route::post('p002','p002Controller@p002_search');
 		Route::get('p003','p003Controller@getIndex');
 		Route::post('p003','p003Controller@p003_search');
+		Route::post('p003/load','p003Controller@p003_load');
+		Route::post('p003/refer','p003Controller@p003_refer');
 		Route::get('p004','p004Controller@getIndex');
 		Route::post('p004','p004Controller@p004_search');	
 	}

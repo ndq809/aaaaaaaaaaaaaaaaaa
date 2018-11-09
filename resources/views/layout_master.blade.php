@@ -36,7 +36,9 @@
         {!!WebFunctions::public_url('web-content/css/common/library/croppic.css')!!}
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+        {!!WebFunctions::public_url('web-content/ckeditor/ckeditor.js')!!}
+        {!!WebFunctions::public_url('web-content/ckeditor/custom_config.js')!!}
+        {!!WebFunctions::public_url('web-content/ckeditor/nanospell/autoload.js')!!}
         @yield('asset_header')
     </head>
     <body>

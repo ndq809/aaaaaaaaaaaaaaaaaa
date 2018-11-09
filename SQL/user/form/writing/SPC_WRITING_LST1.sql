@@ -92,13 +92,13 @@ BEGIN
 		ELSE
 		BEGIN
 			SELECT TOP 1 
-				M002.catalogue_nm AS catalogue_tranfer
-			,	M003.group_nm AS group_transfer
+				IIF(M002.catalogue_nm IS NULL,'',M002.catalogue_nm) AS catalogue_tranfer
+			,	IIF(M003.group_nm IS NULL,'',M003.group_nm) AS group_transfer
 			,	@P_target_id	   AS target_id
 			FROM #TEMP
-			INNER JOIN M002
+			LEFT JOIN M002
 			ON #TEMP.catalogue_id = M002.catalogue_id
-			INNER JOIN M003
+			LEFT JOIN M003
 			ON #TEMP.group_id = M003.group_id
 		END
 		

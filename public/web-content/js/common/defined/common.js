@@ -1,5 +1,6 @@
 var selectedTab = "#tab1";
 var countComment = 1;
+var _popup_transfer_array=[];
 $(function() {
     try {
         initCommon();
@@ -107,6 +108,19 @@ function initCommon() {
             }
         });
     });
+    $("select.tag-selectize").each(function() {
+        var select = $(this).selectize({
+            delimiter: ',',
+            persist: false,
+            create: function(input) {
+                return {
+                    value: input+'**++**eplus',
+                    text: input
+                }
+            }
+        });
+    });
+    editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');
@@ -351,8 +365,11 @@ function setPreviousItem(item_of_table,show_index) {
     return nextItem.attr("id");
 }
 
-function selectItem(selectItem) {
-    currentSelectItem = $(".activeItem");
+function selectItem(selectItem,tab) {
+    if(typeof tab =='undefined'){
+        tab ='';
+    }
+    currentSelectItem = $(tab+" .activeItem");
     currentSelectItem.removeClass("activeItem");
     selectItem.addClass("activeItem");
     return selectItem.attr("id");
@@ -393,6 +410,7 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
             switch(res.status){
                 case 200:
                     var cloneTr = tr_Element.clone();
+                    cloneTr.removeClass('activeItem');
                     cloneTr.find("button").removeClass("btn-remember");
                     cloneTr.find("button").addClass("btn-forget");
                     cloneTr.find("button").text(btn_label);
@@ -401,15 +419,15 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
                         tr_Element.remove();
                         if (selectedTab == "#tab1") {
                             if($("#tab1 table tbody tr:visible").length==0){
-                                $("#tab1 table tbody .no-row").removeClass('hidden');
+                                $("#tab1 table tbody .no-row").removeClass('hidden').addClass('activeItem');
                             }
-                            $("#tab2 table tbody .no-row").addClass('hidden');
+                            $("#tab2 table tbody .no-row").addClass('hidden').removeClass('activeItem');
                             $("#tab2 table tbody").prepend(cloneTr);
                         } else {
                             if($("#tab2 table tbody tr:visible").length==0){
-                                $("#tab2 table tbody tr:last-child").removeClass('hidden');
+                                $("#tab2 table tbody tr:last-child").removeClass('hidden').addClass('activeItem');
                             }
-                            $("#tab1 table tbody .no-row").addClass('hidden');
+                            $("#tab1 table tbody .no-row").addClass('hidden').removeClass('activeItem');
                             $("#tab1 table tbody").prepend(cloneTr);
                         }
                     });
@@ -447,6 +465,7 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
             switch(res.status){
                 case 200:
                     var cloneTr = tr_Element.clone();
+                    cloneTr.removeClass('activeItem');
                     cloneTr.find("button").addClass("btn-remember");
                     cloneTr.find("button").removeClass("btn-forget");
                     cloneTr.find("button").text(btn_label);
@@ -455,15 +474,15 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
                         tr_Element.remove();
                          if (selectedTab == "#tab1") {
                             if($("#tab1 table tbody tr:visible").length==0){
-                                $("#tab1 table tbody .no-row").removeClass('hidden');
+                                $("#tab1 table tbody .no-row").removeClass('hidden').addClass('activeItem');
                             }
-                            $("#tab2 table tbody .no-row").addClass('hidden');
+                            $("#tab2 table tbody .no-row").addClass('hidden').removeClass('activeItem');
                             $("#tab2 table tbody").prepend(cloneTr);
                         } else {
                             if($("#tab2 table tbody tr:visible").length==0){
-                                $("#tab2 table tbody tr:last-child").removeClass('hidden');
+                                $("#tab2 table tbody tr:last-child").removeClass('hidden').addClass('activeItem');
                             }
-                            $("#tab1 table tbody .no-row").addClass('hidden');
+                            $("#tab1 table tbody .no-row").addClass('hidden').removeClass('activeItem');
                             $("#tab1 table tbody").prepend(cloneTr);
                         }
                     });
@@ -850,14 +869,8 @@ function changePassword(username){
 
 function reIndex(table)
 {
-    var tab=0;
-    var col=2;
-    if(table.find('input[type=checkbox]').length==0){
-        col=1;
-    }
-    table.find('tbody > tr:not(:first)').each(function(i) {
-        $(this).find('td:nth-child('+col+')').html('').html(i+1);
-        
+    table.find('tbody > tr:visible').each(function(i) {
+        $(this).find('td:visible').first().text(i+1);
     });
 }
 
@@ -1025,11 +1038,11 @@ function keepTokenAlive() {
 }
 
 function showMessage(message_code,ok_callback,cancel_callback){
-    switch(_type[message_code]){
+    switch(typeof _type!='undefined'?_type[message_code]:parent._type[message_code]){
         case 1:
            $.sweetModal({
-            title:_title[message_code],
-            content: _text[message_code],
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_CONFIRM,
             buttons: [
                 {
@@ -1047,21 +1060,22 @@ function showMessage(message_code,ok_callback,cancel_callback){
         break;
         case 2:
            $.sweetModal({
-            title:_title[message_code],
-            content: _text[message_code],
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_SUCCESS,
             buttons: [
                 {
                     label: 'Ok',
                     classes: 'btn btn-sm btn-success',
+                    action: ok_callback,
                 },
             ]
         });
         break; 
         case 3:
            $.sweetModal({
-            title:_title[message_code],
-            content: _text[message_code],
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_WARNING,
             buttons: [
                 {
@@ -1079,14 +1093,13 @@ function showMessage(message_code,ok_callback,cancel_callback){
         break; 
         case 4:
            $.sweetModal({
-            title:_title[message_code],
-            content: _text[message_code],
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_ERROR,
             buttons: [
                 {
                     label: 'Đã hiểu',
                     classes: 'btn btn-sm btn-danger',
-                    action: ok_callback,
                 },
             ]
         });
@@ -1102,4 +1115,60 @@ function switchTab(tab_number){
     $('.right-tab ul li:nth-child('+tab_number+') a').attr('aria-expanded',true);
     $('.right-tab .tab-content #tab'+tab_number).addClass('active in');
     selectedTab = "#tab"+tab_number;
+}
+
+function getInputData(){
+    var data={};
+    var value;
+    $(document).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
+        if($(this).hasClass('ckeditor')){
+            value=CKEDITOR.instances[$(this).attr('id')].getData()
+        }else
+        if($(this).hasClass('money')){
+            var text = jQuery.grep($(this).val().split(','), function(item) {
+              return item;
+            });
+            value=text.join('');
+        }else
+        if($(this).hasClass('tel')){
+            var text = jQuery.grep($(this).val().split('-'), function(item) {
+              return item;
+            });
+            value=text.join('');
+        }else{
+            if($(this).val()===null){
+                value='';
+            }else{
+                value=$(this).val();
+                if(!$.isArray([value]) || $(this).attr('id')!='post_tag'){
+                    value = value.trim();
+                }else{
+                    value = $.map(value, function(val){
+                        if(val.indexOf('**++**eplus')!=-1){
+                            return {'tag_nm':val.split('**++**eplus')[0],'is_new':1};
+                        }else{
+                            return {'tag_id':val,'is_new':0};
+                        }
+                    });
+                }
+                if($(this).hasClass('input-refer')){
+                    value=$(this).val().split('_')[0];
+                }
+            }
+        }
+        data[$(this).attr('id').trim()]=value;
+    })
+    return data;
+}
+
+function throttle(f, delay){
+    var timer = null;
+    return function(){
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = window.setTimeout(function(){
+            f.apply(context, args);
+        },
+        delay || 500);
+    };
 }

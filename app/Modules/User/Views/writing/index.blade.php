@@ -3,7 +3,6 @@
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen/writing.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/writing.css')!!}
-    <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 @stop
 @section('left-tab')
     @include('left_tab')
@@ -39,12 +38,33 @@
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Bài Mẫu Hệ Thống</a></li>
             <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Bài Viết Của Bạn</a></li>
         </ul>
-        <div class="tab-content focusable" id="result1">
-            @include('User::writing.right_tab')
+        <div class="tab-content focusable">
+            <div id="tab1" class="tab-pane fade active in">
+                @include('User::writing.right_tab')
+            </div>
+            <div id="tab2" class="tab-pane fade">
+                @include('User::writing.right_tab1')
+            </div>
         </div>
     </div>
 	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
-        @include('User::writing.main_content')
+        <div class="col-xs-12 no-padding writing-tab">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a data-toggle="tab" href="#tab-custom1">Xem Bài Viết Mẫu</a></li>
+                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled'}} aria-expanded="false" >Bắt Đầu Tập Viết</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-custom1" class="tab-pane fade in active">
+                    @include('User::writing.tab_custom1')
+                </div>
+                <div id="tab-custom2" class="tab-pane fade input-tab">
+                    @include('User::writing.tab_custom2')
+                </div>
+            </div>
+        </div>
+        <div class="example-content">
+            @include('User::writing.main_content')
+        </div>
     </div>
 </div>
 

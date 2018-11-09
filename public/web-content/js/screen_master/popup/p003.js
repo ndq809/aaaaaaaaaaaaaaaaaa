@@ -8,10 +8,7 @@ $(function(){
 
 function init_p003(){
 	initevent_p003();
-    $('#vocabulary_div').val(parent._popup_transfer_array['vocabulary_div']);
-    $('#vocabulary_nm').val(parent._popup_transfer_array['vocabulary_nm']);
-    $('#mean').val(parent._popup_transfer_array['mean']);
-    p003_execute();
+    p003_load();
 }
 
 function initevent_p003(){
@@ -37,31 +34,25 @@ function initevent_p003(){
         $(this).parent().find('audio')[0].play();
     })
 
-    $(document).on('dblclick','.table-refer tr',function(){
-        var refer_text='';
-        _this=$(this);
-        parents = parent.$('[data-refer=p003]');
-        if(_this.find('.refer-item').length==0){
-            return;
-        }
-        $(this).find('.refer-item').each(function(i){
-            var item = parent.$('.table tbody tr').eq(parent._popup_transfer_array['row_id']).find("."+$(this).attr('refer_id'));
-            if(item.prop("tagName")=='SELECT' && $(this).text()==''){
-                item.val(0);
-            }else{
-                item.val($(this).text());
-            }
-            if(item.is(":hidden")){
-                item.attr('value',$(this).text());
-                item.trigger('change');
-            }
-        })
-        parent.jQuery.fancybox.close();
+    $(document).on('click','.btn-add',function(){
+        var tr_clone = $(this).closest('tr');
+        tr_clone.find('.btn-add').find('span').removeClass().addClass('fa fa-close');
+        tr_clone.find('.btn-add').removeClass().addClass('btn btn-danger btn-delete-row');
+        $('.table-refer tbody').append(tr_clone);
+    })
+
+    $(document).on('click','.btn-delete-row',function(){
+        $(this).closest('tr').remove();
+    })
+
+    $(document).on('click','#btn-save',function(){
+        p003_refer();
     })
 }
 
 function p003_execute(page){
 	var data=getInputData();
+    data['selected_list'] = getVocabularyList();
     _pageSize=50;
     data['page_size'] = _pageSize;
     data['page'] = page;
@@ -75,10 +66,10 @@ function p003_execute(page){
             clearFailedValidate();
             $('#result').html(res).promise().done(function(){
                 $('.preview').attr('data-toggle','tooltip');
-                $('.preview').attr('data-placement','top');
+                $('.preview').attr('data-placement','left');
                 $('.preview').tooltip({
                     animated: 'fade',
-                    placement: 'right',
+                    placement: 'left',
                     html: true
                 });
             });
@@ -88,4 +79,63 @@ function p003_execute(page){
             alert(jqXHR.status);
         }
     });
+}
+
+function p003_load(){
+    var data = {};
+    data['voc_array'] =  parent._popup_transfer_array['voc_array'];
+    $.ajax({
+        type: 'POST',
+        url: '/master/popup/p003/load',
+        dataType: 'html',
+        loading:true,
+        data: data,
+        success: function (res) {
+            clearFailedValidate();
+            $('#result1').html(res).promise().done(function(){
+                $('.preview').attr('data-toggle','tooltip');
+                $('.preview').attr('data-placement','left');
+                $('.preview').tooltip({
+                    animated: 'fade',
+                    placement: 'left',
+                    html: true
+                });
+            });
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function p003_refer(){
+    var data = getVocabularyList();
+    $.ajax({
+        type: 'POST',
+        url: '/master/popup/p003/refer',
+        dataType: 'html',
+        loading:true,
+        data: data,
+        success: function (res) {
+            clearFailedValidate();
+            parent.$('#result').html(res);
+            parent.jQuery.fancybox.close();
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getVocabularyList(){
+    var data =[];
+    $('.table-refer tbody tr:visible').each(function(){
+        data.push({'vocabulary_code':$(this).find('td[refer_id=vocabulary_code]').text()});
+    })
+    if(data.length==0){
+        return null;
+    }
+    return $.extend({}, data);
 }

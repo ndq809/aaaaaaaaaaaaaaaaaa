@@ -82,7 +82,7 @@ BEGIN
 	FROM M007
 	LEFT JOIN F003
 	ON M007.post_id = F003.item_1
-	AND F003.connect_div = 1
+	AND F003.connect_div = 3
 	AND F003.user_id = @P_account_id
 	AND F003.item_2 IS NULL
 	WHERE M007.del_flg = 0
@@ -195,7 +195,7 @@ BEGIN
 	INNER JOIN M003
 	ON F003.item_2 = M003.group_id
 	WHERE F003.user_id = @P_account_id
-	AND	F003.connect_div = 1
+	AND	F003.connect_div = 3
 	AND F003.screen_div = 3
 	AND F003.del_flg = 0
 
@@ -208,7 +208,8 @@ BEGIN
 	,	M006.mean
 	FROM F009
 	JOIN M006
-	ON F009.vocabulary_code = M006.id
+	ON F009.target_id = M006.id
+	AND F009.briged_div = 1
 	INNER JOIN #LISTENING
 	ON #LISTENING.briged_id = F009.briged_id
 	ORDER BY 

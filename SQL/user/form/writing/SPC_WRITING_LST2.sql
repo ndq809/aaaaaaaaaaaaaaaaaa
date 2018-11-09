@@ -30,7 +30,8 @@ BEGIN
 	,	briged_id			INT
 	,	post_title			NVARCHAR(100)
 	,	post_content		NVARCHAR(MAX)
-	,	remembered			INT
+	,	my_post				INT
+	,	edit_time			DATETIME2
 	)
 
 	CREATE TABLE #COMMENT(
@@ -69,22 +70,46 @@ BEGIN
 
 	INSERT INTO #WRITING
 	SELECT
-		ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+		0
 	,	M007.post_id
 	,	M007.briged_id
 	,	M007.post_title
 	,	M007.post_content
-	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	0 AS my_post
+	,	NULL
 	FROM M007
-	LEFT JOIN F003
-	ON M007.post_id = F003.item_1
-	AND F003.connect_div = 1
-	AND F003.user_id = @P_account_id
-	AND F003.item_2 IS NULL
 	WHERE M007.del_flg = 0
 	AND M007.catalogue_div = 4
 	AND M007.catalogue_id = @P_catalogue_id
 	AND M007.group_id = @P_group_id
+	AND M007.post_div = 1
+
+	INSERT INTO #WRITING
+	SELECT
+		1
+	,	M007.post_id
+	,	M007.briged_id
+	,	M007.post_title
+	,	M007.post_content
+	,	1 AS my_post
+	,	IIF(M007.upd_date IS NULL,M007.cre_date,M007.upd_date)
+	FROM M007
+	INNER JOIN F003
+	ON M007.post_id = F003.item_1
+	AND F003.connect_div = 4
+	AND F003.user_id = @P_account_id
+	AND F003.item_2 IS NULL
+	WHERE M007.del_flg = 0
+	AND M007.catalogue_div = 4
+	AND M007.post_div = 2
+
+	UPDATE temp
+	SET temp.row_id = temp.new_row_id
+	FROM (
+      SELECT #WRITING.row_id, ROW_NUMBER() OVER(ORDER BY #WRITING.row_id ASC) AS new_row_id
+      FROM #WRITING
+      ) temp
+
 
 	INSERT INTO #COMMENT
 	SELECT *
@@ -180,6 +205,7 @@ BEGIN
 	SELECT * FROM #PAGER
 
 	SELECT * FROM #WRITING
+	ORDER BY #WRITING.edit_time DESC
 
 	SELECT
 		F003.id 
@@ -191,20 +217,22 @@ BEGIN
 	INNER JOIN M003
 	ON F003.item_2 = M003.group_id
 	WHERE F003.user_id = @P_account_id
-	AND	F003.connect_div = 1
+	AND	F003.connect_div = 3
 	AND F003.screen_div = 4
 	AND F003.del_flg = 0
 
 	SELECT
 		#WRITING.row_id
 	,	#WRITING.post_id
+	,	#WRITING.my_post
 	,	M006.id
 	,	M006.vocabulary_nm
 	,	M006.spelling
 	,	M006.mean
 	FROM F009
 	JOIN M006
-	ON F009.vocabulary_code = M006.id
+	ON F009.target_id = M006.id
+	AND F009.briged_div = 1
 	INNER JOIN #WRITING
 	ON #WRITING.briged_id = F009.briged_id
 	ORDER BY 
@@ -226,6 +254,20 @@ BEGIN
 	ON M004.post_id = #WRITING.post_id
 	WHERE 
 		M004.question_id IN (SELECT TOP 5 M004.question_id FROM M004 WHERE M004.post_id IN(SELECT #WRITING.post_id FROM #WRITING) ORDER BY NEWID())
+
+
+	SELECT
+		#WRITING.row_id
+	,	M013.tag_id
+	,	M013.tag_nm
+	FROM M013
+	LEFT JOIN F009
+	ON F009.target_id = M013.tag_id
+	AND F009.briged_div = 2
+	INNER JOIN #WRITING 
+	ON F009.briged_id = #WRITING.briged_id
+	WHERE M013.del_flg = 0
+	AND M013.tag_div = 2
 
 END
 

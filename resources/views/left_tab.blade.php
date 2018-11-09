@@ -119,7 +119,7 @@
                 <label >Tiêu đề</label>
                 <textarea class="form-control input-sm" rows="2"></textarea>
                  <label >Nội dung</label>
-                <textarea class="form-control input-sm" rows="5"></textarea>
+                <textarea class="form-control input-sm" rows="5" name="new-question-content"></textarea>
                 <button class="btn btn-sm btn-primary margin-top margin-bottom {{$raw_data[0][0]['btn-question']==1?'btn-question':'btn-disabled'}}" type="button">Gửi Câu Hỏi</button>
             </div>
         </div>

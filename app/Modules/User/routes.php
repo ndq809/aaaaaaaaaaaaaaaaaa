@@ -25,6 +25,8 @@ Route::group(
 		Route::any('listening/getData','listeningController@getData');
 		Route::get('writing','WritingController@getIndex');
 		Route::any('writing/getData','WritingController@getData');
+		Route::any('writing/save','WritingController@save');
+		Route::any('writing/delete','WritingController@delete');
 		Route::get('social','SocialController@getIndex');
 		Route::any('social/getData','SocialController@getData');
 		Route::get('relax','RelaxController@getIndex');
@@ -56,6 +58,17 @@ Route::group(
 		Route::post('getgroup', 'CommonController@getgroup');
 		Route::any('getQuestion','CommonController@getQuestion');
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
+		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
+	}
+);
 
+$namespace3 = 'App\Modules\User\Controllers';
+Route::group(
+	['namespace' => $namespace3,'prefix'=>'popup','middleware'=>['web']],
+	function() {
+		Route::get('p001','PopupController@getIndex');
+		Route::post('p001','PopupController@p001_search');
+		Route::post('p001/load','PopupController@p001_load');
+		Route::post('p001/refer','PopupController@p001_refer');
 	}
 );

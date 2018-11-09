@@ -68,9 +68,9 @@ function initListener() {
             if($(this).parent().prev().val().trim()!=''){
                 var current_id = $('.activeItem').attr('id');
                 var item_infor = [];
-                item_infor.push(ListeningArray[current_id - 1]['row_id']);
+                item_infor.push(post[0]['row_id']);
                 item_infor.push(3);
-                item_infor.push(ListeningArray[current_id - 1]['post_id']);
+                item_infor.push(post[0]['post_id']);
                 item_infor.push($(this).parent().prev().val());
                 if($(this).closest('.input-group').hasClass('comment-input')){
                     item_infor.push($(this).closest('.commentItem').attr('id'));
@@ -111,7 +111,7 @@ function initListener() {
     $(document).on("click", ".right-tab ul li", function() {
         switchTabListening($(this));
     });
-    $(document).on('keydown', function(e) {
+    $(document).on('keydown', throttle(function(e) {
         if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
                 case 37:
@@ -144,7 +144,7 @@ function initListener() {
                     break;
             }
         }
-    })
+    },33))
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
@@ -168,9 +168,9 @@ function initListener() {
         var page = $(this).attr('page');
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
-        item_infor.push(ListeningArray[current_id - 1]['row_id']);
+        item_infor.push(post[0]['row_id']);
         item_infor.push(3);
-        item_infor.push(ListeningArray[current_id - 1]['post_id']);
+        item_infor.push(post[0]['post_id']);
         item_infor.push(page);
         getComment(item_infor, function() {
             setContentBox(current_id);
@@ -182,7 +182,7 @@ function initListener() {
         var _this = this;
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
-        item_infor.push(ListeningArray[current_id - 1]['row_id']);
+        item_infor.push(post[0]['row_id']);
         item_infor.push($(this).closest('li').attr('id'));
         item_infor.push(3);
         item_infor.push(3);
@@ -249,7 +249,7 @@ function previousListening() {
 }
 
 function selectListening(selectTrTag) {
-    currentItemId = selectItem(selectTrTag);
+    currentItemId = selectItem(selectTrTag,selectedTab);
     player.select(currentItemId - 1);
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
@@ -259,8 +259,11 @@ function selectListening(selectTrTag) {
 
 function switchTabListening(current_li_tag) {
     selectedTab = current_li_tag.find("a").attr("href");
-    $('.activeItem').removeClass('activeItem');
-    selectListening($(selectedTab + " table tbody tr").first());
+    if($(selectedTab+' .activeItem').length==0){
+        selectListening($(selectedTab + " table tbody tr").first());
+    }else{
+        selectListening($(selectedTab + " table tbody tr.activeItem"));
+    }
 }
 
 function rememberListening(remember_btn) {
@@ -268,9 +271,9 @@ function rememberListening(remember_btn) {
     current_id = currentItem.attr('id');
     voc_infor = [];
     voc_infor.push(3);
-    voc_infor.push(1);
-    voc_infor.push(ListeningArray[current_id - 1]['row_id']);
-    voc_infor.push(ListeningArray[current_id - 1]['post_id']);
+    voc_infor.push(3);
+    voc_infor.push(post[0]['row_id']);
+    voc_infor.push(post[0]['post_id']);
     rememberItem(currentItem, "Nghe lại", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextListening();
@@ -282,9 +285,9 @@ function forgetListening(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
     voc_infor = [];
-    voc_infor.push(ListeningArray[current_id - 1]['row_id']);
-    voc_infor.push(ListeningArray[current_id - 1]['post_id']);
-    voc_infor.push(1);
+    voc_infor.push(post[0]['row_id']);
+    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(3);
     forgetItem(currentItem, "Đã nghe", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
             nextListening();
@@ -300,7 +303,7 @@ function getData() {
         type: 'POST',
         url: '/listening/getData',
         dataType: 'json',
-        loading:true,
+        // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
             switch (res.status) {
@@ -368,6 +371,11 @@ function setContentBox(target_id) {
     $('#check-listen-data').val('');
     $('.comment-box:not(.hidden)').addClass('hidden');
     $('.comment-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    if(typeof ListeningArray!='undefined'){
+        post = ListeningArray.filter(function(val){
+            return val['row_id']==Number(target_id);
+        });
+    }
 }
 
 function getRowId(id){

@@ -1,0 +1,285 @@
+2018-11-06 04:37:41 EXEC SPC_COM_DATA '','','';
+2018-11-06 04:37:46 EXEC SPC_COM_DATA '','','';
+2018-11-06 04:37:46 EXEC SPC_WRITING_LST1 '','','','';
+2018-11-06 04:37:47 EXEC SPC_COM_DATA '','','';
+2018-11-06 04:37:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 04:37:47 EXEC SPC_COM_DATA '','','';
+2018-11-06 04:37:47 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-06 04:38:07 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-11-06 04:38:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 04:38:08 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 04:38:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 04:38:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 04:38:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 04:38:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 04:38:14 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-06 04:38:15 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-06 04:38:18 EXEC SPC_USER_P001_LST1 '0','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-06 04:38:24 EXEC SPC_USER_P001_LST1 '','','','3','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','50','1';
+2018-11-06 04:38:29 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" /><row row_id="3" id="1" />';
+2018-11-06 05:18:08 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-11-06 05:18:08 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-06 05:18:08 EXEC SPC_COM_MENU '1';
+2018-11-06 05:18:08 EXEC SPC_W002_FND1
+2018-11-06 05:18:09 EXEC SPC_COM_MENU '1';
+2018-11-06 05:18:09 EXEC SPC_W002_LST1 '17';
+2018-11-06 05:34:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:34:05 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 05:34:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:34:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 05:34:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:34:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 05:58:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:58:55 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 05:58:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:58:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 05:58:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 05:58:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:00:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:05 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:00:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:00:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:06 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:00:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:22 Array to string conversion
+2018-11-06 06:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:28 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:00:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:42 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:00:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:00:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:00:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:00:50 Array to string conversion
+2018-11-06 06:02:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:02:22 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:02:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:02:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:02:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:02:23 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:02:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:02:32 Array to string conversion
+2018-11-06 06:03:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:03:51 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:03:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:03:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:03:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:03:52 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:04:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:04:01 Array to string conversion
+2018-11-06 06:04:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:04:18 Array to string conversion
+2018-11-06 06:05:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:12 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:05:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:05:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:05:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:21 Array to string conversion
+2018-11-06 06:05:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:32 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:05:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:05:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:05:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:06:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:06:41 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:06:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:06:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:06:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:06:41 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:06:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:06:50 Array to string conversion
+2018-11-06 06:08:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:08:48 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:08:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:08:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:08:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:08:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:09:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:09:08 Array to string conversion
+2018-11-06 06:10:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:10:28 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:10:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:10:29 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:10:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:10:29 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:10:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:10:35 EXEC SPC_WRITING_ACT1 '','<row tag_id="5Vondz1DWmGXxLAeNK87O3Jv5RQYkpg265jEMqbZalB9r04Ry9" is_new="0" /><row tag_id="pnYmMg1L8kGbXV7xZJojD59PZDvlpW0aKyN6EBR4rOd2qe3zAj" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="eb8Axzna0rMX9peZ1mY6y2NvlVPR4BoKlJ5G3WdjLgqVDE7Okj" /><row row_id="3" id="6XGYoV83NlrmpJDW92y6M17PqLQjRqKdO0ZAgBkEebnxLza45l" /><row row_id="3" id="ZmkNnazEb5Xy3J7Wel46M0RvnywrD9oq8gALpOG2ZKdYj1VBxY" />','quypro','127.0.0.1';
+2018-11-06 06:16:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:16:14 EXEC SPC_WRITING_ACT1 '','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-06 06:16:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:16:25 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:16:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:16:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:16:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:16:26 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:19:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:19:11 EXEC SPC_WRITING_ACT1 '','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-06 06:19:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:19:13 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:19:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:19:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:19:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:19:15 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:21:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:21:00 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:21:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:21:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:21:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:21:00 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:45:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:50 EXEC SPC_WRITING_ACT1 '','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family of mine','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />','quypro','127.0.0.1';
+2018-11-06 06:45:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:53 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:45:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:45:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:53 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 06:45:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:55 EXEC SPC_COM_ADD_LESSON '4','9','10','quypro','127.0.0.1';
+2018-11-06 06:45:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:45:58 EXEC SPC_COM_DELETE_LESSON '1021','quypro','127.0.0.1';
+2018-11-06 06:46:25 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-06 06:46:25 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" /><row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-06 06:46:31 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-06 06:46:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:46:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:46:46 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 06:46:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:46:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 06:46:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 06:46:46 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:35:31 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-06 08:35:33 EXEC SPC_USER_P001_LST2 '<row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" /><row row_id="3" id="5" /><row row_id="3" id="6" /><row row_id="3" id="7" />';
+2018-11-06 08:35:46 EXEC SPC_USER_P001_LST3 '<row row_id="3" id="6" /><row row_id="3" id="5" /><row row_id="3" id="7" />';
+2018-11-06 08:36:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:36:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:36:52 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:36:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:36:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:36:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:36:54 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:41:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:32 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:41:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:41:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:41:33 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]マルチパート識別子 "M007.post_id" をバインドできませんでした。
+2018-11-06 08:41:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:52 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:41:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:41:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:41:53 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:41:53 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]ウィンドウ関数は、SELECT 句または ORDER BY 句だけで使用できます。
+2018-11-06 08:45:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:45:07 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:45:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:45:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:45:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:45:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:47:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:47:31 EXEC SPC_WRITING_ACT1 '14','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family of mine','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="7" />','quypro','127.0.0.1';
+2018-11-06 08:47:41 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-06 08:47:42 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="7" />';
+2018-11-06 08:47:46 EXEC SPC_USER_P001_LST1 '0','','','4','50','1','';
+2018-11-06 08:47:47 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-06 08:47:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:47:52 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-06 08:47:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:47:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:47:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:47:52 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:48:14 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-06 08:48:14 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="7" />';
+2018-11-06 08:48:34 EXEC SPC_USER_P001_LST1 '0','','','4','<row row_id="4" id="5" /><row row_id="4" id="6" /><row row_id="4" id="7" />','50','1';
+2018-11-06 08:48:42 EXEC SPC_USER_P001_LST3 '<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-06 08:48:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:48:46 EXEC SPC_WRITING_ACT1 '14','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" />','family of mine','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&rsquo;t want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-06 08:48:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:48:49 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-06 08:48:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:48:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:48:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:48:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:53:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:53:41 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:53:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:53:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:53:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:53:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:55:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:55:55 EXEC SPC_WRITING_LST1 '8','quypro','9','10';
+2018-11-06 08:55:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:55:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:55:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:55:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:56:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:56:48 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-11-06 08:56:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:56:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:56:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:56:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-06 08:57:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:57:47 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-06 08:57:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:57:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-06 08:57:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-06 08:57:48 EXEC SPC_WRITING_LST2 '9','10','quypro';

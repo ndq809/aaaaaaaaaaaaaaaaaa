@@ -14,6 +14,7 @@ CREATE PROCEDURE [dbo].[SPC_P003_LST1]
 	@P_vocabulary_div		INT					=	0
 ,	@P_Vocabulary_nm		NVARCHAR(50)		=	''
 ,	@P_mean					NVARCHAR(200)		=	''
+,	@P_selected_list		XML					=	''
 ,	@P_page_size			INT					=	50
 ,	@P_page					INT					=	1
 
@@ -62,6 +63,12 @@ BEGIN
 	LEFT JOIN M999
 	ON	M006.vocabulary_div = M999.number_id
 	AND	M999.name_div = 8
+	LEFT JOIN
+	(SELECT
+		Vocabulary_code	=	T.C.value('@vocabulary_code 		  ', 'int')
+	FROM @P_selected_list.nodes('row') T(C)
+	)TEMP ON
+	TEMP.Vocabulary_code = M006.id
 	WHERE M006.del_flg = 0 
 	AND		(	(@P_Vocabulary_nm		= '')
 		OR	(	M006.Vocabulary_nm	LIKE '%' + @P_Vocabulary_nm + '%'))
@@ -70,6 +77,7 @@ BEGIN
 	AND		(	(@P_vocabulary_div	= 0)
 		OR	(	M006.vocabulary_div		= @P_vocabulary_div))
 	AND	(M006.del_flg = 0)
+	AND TEMP.Vocabulary_code IS NULL
 
 	--
 	SELECT 

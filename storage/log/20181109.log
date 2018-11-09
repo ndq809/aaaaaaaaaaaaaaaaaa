@@ -1,0 +1,2049 @@
+2018-11-09 00:04:17 EXEC SPC_COM_DATA '','','';
+2018-11-09 00:04:20 EXEC SPC_COM_DATA '','','';
+2018-11-09 00:04:20 EXEC SPC_WRITING_LST1 '','','','';
+2018-11-09 00:04:21 EXEC SPC_COM_DATA '','','';
+2018-11-09 00:04:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:04:21 EXEC SPC_COM_DATA '','','';
+2018-11-09 00:04:21 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-09 00:05:18 EXEC SPC_COM_PERMISSION '1','2','g001';
+2018-11-09 00:05:18 EXEC SPC_COM_MENU '1';
+2018-11-09 00:06:00 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-11-09 00:06:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:06:00 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-09 00:06:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:06:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:06:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:06:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:18:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:18:08 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:18:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:18:09 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:18:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:18:09 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:18:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:18:38 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="test16" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:19:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:19:35 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:19:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:19:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:19:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:19:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:19:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:19:56 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_nm="test17" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:21:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:21:24 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:21:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:21:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:21:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:21:25 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:21:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:21:36 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_nm="test18" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:25:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:25:18 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:25:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:25:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:25:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:25:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:25:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:25:28 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_nm="test19" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:26:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:26:16 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:26:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:26:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:26:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:26:16 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:26:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:26:32 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_nm="test20" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:29:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:29:04 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:29:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:29:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:29:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:29:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:29:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:29:13 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_nm="test21" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:30:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:30:35 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:30:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:30:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:30:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:30:36 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:30:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:30:45 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_id="39" is_new="0" /><row tag_nm="test22" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:31:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:31:44 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:31:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:31:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:31:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:31:45 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:33:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:33:23 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:33:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:33:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:33:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:33:24 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:34:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:34:00 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:34:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:34:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:34:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:34:01 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:34:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:34:16 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_id="39" is_new="0" /><row tag_id="40" is_new="0" /><row tag_nm="test23" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:37:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:37:06 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:37:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:37:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:37:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:37:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:37:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:37:17 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_id="39" is_new="0" /><row tag_id="40" is_new="0" /><row tag_id="41" is_new="0" /><row tag_nm="test24" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:39:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:39:43 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:39:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:39:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:39:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:39:43 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:39:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:39:57 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_id="39" is_new="0" /><row tag_id="40" is_new="0" /><row tag_id="41" is_new="0" /><row tag_id="42" is_new="0" /><row tag_nm="test25" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:40:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:40:55 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:40:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:40:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:40:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:40:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:41:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:41:05 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="34" is_new="0" /><row tag_id="35" is_new="0" /><row tag_id="36" is_new="0" /><row tag_id="37" is_new="0" /><row tag_id="38" is_new="0" /><row tag_id="39" is_new="0" /><row tag_id="40" is_new="0" /><row tag_id="41" is_new="0" /><row tag_id="42" is_new="0" /><row tag_id="43" is_new="0" /><row tag_nm="test26" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:42:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:42:38 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:42:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:42:39 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:42:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:42:39 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:43:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:43:07 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:43:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:43:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:43:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:43:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:43:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:43:21 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="test27" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:48:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:48:45 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:48:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:48:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:48:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:48:46 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:48:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:48:57 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="45" is_new="0" /><row tag_nm="test28" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 00:56:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:56:20 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 00:56:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:56:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 00:56:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:56:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 00:56:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 00:56:57 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="45" is_new="0" /><row tag_id="46" is_new="0" /><row tag_nm="test29" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:01:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:01:04 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:01:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:01:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:01:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:01:05 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:02:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:02:07 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:02:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:02:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:02:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:02:08 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:03:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:03:41 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:03:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:03:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:03:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:03:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:07:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:07:15 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:07:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:07:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:07:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:07:16 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:08:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:08:56 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:08:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:08:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:08:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:08:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:09:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:09:16 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="45" is_new="0" /><row tag_id="46" is_new="0" /><row tag_id="47" is_new="0" /><row tag_nm="test30" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:11:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:22 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:11:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:11:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:11:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:34 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:11:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:11:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:11:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:13:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:13:04 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:13:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:13:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:13:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:13:04 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:13:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:13:14 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="45" is_new="0" /><row tag_id="46" is_new="0" /><row tag_id="47" is_new="0" /><row tag_id="48" is_new="0" /><row tag_nm="test31" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:14:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:14:02 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:14:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:14:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:14:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:14:02 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:14:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:14:17 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="45" is_new="0" /><row tag_id="46" is_new="0" /><row tag_id="47" is_new="0" /><row tag_id="48" is_new="0" /><row tag_id="49" is_new="0" /><row tag_nm="test32" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:15:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:15:07 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:15:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:15:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:15:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:15:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:15:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:15:26 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="test33" is_new="1" /><row tag_nm="test34" is_new="1" /><row tag_nm="test35" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:16:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:16:55 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:16:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:16:56 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:16:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:16:56 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:17:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:17:19 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="test36" is_new="1" /><row tag_nm="test37" is_new="1" /><row tag_nm="test38" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:19:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:19:48 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:19:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:19:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:19:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:19:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:20:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:20:11 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="54" is_new="0" /><row tag_id="55" is_new="0" /><row tag_id="56" is_new="0" /><row tag_nm="test39" is_new="1" /><row tag_nm="test40" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:21:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:21:06 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:21:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:21:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:21:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:21:07 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:21:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:21:18 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="54" is_new="0" /><row tag_id="55" is_new="0" /><row tag_id="56" is_new="0" /><row tag_id="57" is_new="0" /><row tag_id="58" is_new="0" /><row tag_nm="test41" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:23:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:23:11 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:23:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:23:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:23:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:23:12 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:23:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:23:29 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="54" is_new="0" /><row tag_id="55" is_new="0" /><row tag_id="56" is_new="0" /><row tag_id="57" is_new="0" /><row tag_id="58" is_new="0" /><row tag_id="59" is_new="0" /><row tag_nm="test42" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:26:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:26:10 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:26:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:26:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:26:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:26:11 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:26:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:26:21 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="54" is_new="0" /><row tag_id="55" is_new="0" /><row tag_id="56" is_new="0" /><row tag_id="57" is_new="0" /><row tag_id="58" is_new="0" /><row tag_id="59" is_new="0" /><row tag_id="60" is_new="0" /><row tag_nm="test43" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:26:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:26:54 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="test44" is_new="1" /><row tag_nm="test45" is_new="1" /><row tag_nm="test46" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:27:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:27:38 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:29:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:29:32 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 01:29:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:29:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:29:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:29:33 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:30:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:30:08 EXEC SPC_WRITING_ACT1 '4','15','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_nm="hacker" is_new="1" /><row tag_nm="RPG" is_new="1" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />','quypro','127.0.0.1';
+2018-11-09 01:30:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:30:53 EXEC SPC_WRITING_ACT1 '1','7','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="65" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="66" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="1" is_new="0" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','','quypro','127.0.0.1';
+2018-11-09 01:31:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:31:08 EXEC SPC_WRITING_ACT1 '1','7','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','the gamer','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','','quypro','127.0.0.1';
+2018-11-09 01:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:31:20 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-09 01:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:31:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:31:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:31:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:32:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:32:13 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-09 01:32:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:32:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:32:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:32:14 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:32:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:32:18 EXEC SPC_WRITING_LST2 '9','11','quypro';
+2018-11-09 01:32:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 01:32:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 01:32:40 EXEC SPC_COM_DATA '','','';
+2018-11-09 01:32:40 EXEC SPC_WRITING_LST1 '7','','','';
+2018-11-09 01:32:41 EXEC SPC_COM_DATA '','','';
+2018-11-09 01:32:41 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:32:41 EXEC SPC_COM_DATA '','','';
+2018-11-09 01:32:41 EXEC SPC_WRITING_LST2 '9','10','';
+2018-11-09 01:33:22 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-11-09 01:33:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:33:22 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-09 01:33:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:33:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:33:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:33:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:33:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:33:43 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="1" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-09 01:33:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:33:58 EXEC SPC_WRITING_ACT1 '2','8','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','beautiful girl','','','khoai','127.0.0.1';
+2018-11-09 01:34:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:34:20 EXEC SPC_WRITING_LST1 '8','khoai','9','10';
+2018-11-09 01:34:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:34:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:34:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:34:20 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:46:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:46:00 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-09 01:46:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:46:10 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-09 01:46:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:46:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:46:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:46:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:46:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:46:39 EXEC SPC_WRITING_ACT1 '1','7','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','','khoai','127.0.0.1';
+2018-11-09 01:48:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:22 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-09 01:48:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:48:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:48:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:52 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-09 01:48:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:53 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:48:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:48:53 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:49:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:49:54 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2018-11-09 01:49:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:49:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:49:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:49:55 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:52:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:52:06 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-09 01:52:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:52:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:52:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:52:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:55:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:55:07 EXEC SPC_WRITING_LST2 '10','12','khoai';
+2018-11-09 01:55:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:55:10 EXEC SPC_WRITING_LST2 '10','13','khoai';
+2018-11-09 01:55:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:55:16 EXEC SPC_WRITING_LST2 '10','12','khoai';
+2018-11-09 01:55:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:55:18 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 01:57:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:57:40 EXEC SPC_WRITING_ACT1 '1','7','<row tag_id="1" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','','khoai','127.0.0.1';
+2018-11-09 01:59:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:59:32 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-09 01:59:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:59:33 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 01:59:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 01:59:33 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:04:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:04:22 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-09 02:04:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:04:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:04:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:04:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:04:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:04:29 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="1" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-09 02:07:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:07:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-09 02:07:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:07:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:07:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:07:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:08:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-11-09 02:08:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:08:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:08:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:14 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-09 02:08:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:31 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-09 02:08:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:08:58 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" />','beautiful girl','','<row row_id="4" id="2" /><row row_id="4" id="3" /><row row_id="4" id="6" />','khoai','127.0.0.1';
+2018-11-09 02:09:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:09:13 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" /><row tag_id="1" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="17" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-09 02:09:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:09:22 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="3" /><row row_id="5" id="4" />','khoai','127.0.0.1';
+2018-11-09 02:10:13 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-11-09 02:10:13 EXEC SPC_COM_PERMISSION '1','2','g001';
+2018-11-09 02:10:13 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:17 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 02:10:17 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:17 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 02:10:20 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 02:10:20 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:20 EXEC SPC_W002_FND1
+2018-11-09 02:10:24 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:24 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:10:31 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 02:10:31 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:31 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 02:10:32 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:32 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:10:35 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:35 EXEC SPC_w001_LST1 '','','','','10','2';
+2018-11-09 02:10:37 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:37 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:10:38 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:38 EXEC SPC_w001_LST1 '','','','','10','2';
+2018-11-09 02:10:40 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:40 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:10:49 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:49 EXEC SPC_w001_LST1 '','','','','10','2';
+2018-11-09 02:10:50 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:50 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:10:53 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 02:10:53 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:53 EXEC SPC_W002_FND1
+2018-11-09 02:10:53 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:53 EXEC SPC_W002_LST1 '7';
+2018-11-09 02:10:54 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:54 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:10:54 EXEC SPC_COM_MENU '1';
+2018-11-09 02:10:54 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:11:54 EXEC SPC_COM_MENU '1';
+2018-11-09 02:11:54 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 02:11:54 EXEC SPC_COM_MENU '1';
+2018-11-09 02:11:54 EXEC SPC_p003_LST2 '<row vocabulary_code="" vocabulary_id="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />';
+2018-11-09 02:11:55 EXEC SPC_COM_MENU '1';
+2018-11-09 02:11:55 EXEC SPC_p003_LST1 '0','','','50','1','';
+2018-11-09 02:11:56 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]OFFSET 句のオフセットに負の値を指定することはできません。
+2018-11-09 02:12:13 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:13 EXEC SPC_w002_ACT1 '7','4','9','10','Bài mẫu số 1','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>
+
+<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love game</span></span></span></span></p>
+
+<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">ilove mine =))</span></span></span></span></p>
+','','','0','<row row_id="0" vocabulary_code="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />','','','ndq809','127.0.0.1';
+2018-11-09 02:12:15 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:15 EXEC SPC_W002_LST1 '7';
+2018-11-09 02:12:15 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:15 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:12:16 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:16 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:12:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:12:23 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-09 02:12:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:12:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:12:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:12:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:12:46 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 02:12:46 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:46 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 02:12:48 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:48 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:12:52 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 02:12:52 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:52 EXEC SPC_W002_FND1
+2018-11-09 02:12:53 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:53 EXEC SPC_W002_LST1 '8';
+2018-11-09 02:12:53 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:53 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:12:53 EXEC SPC_COM_MENU '1';
+2018-11-09 02:12:53 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:14:22 EXEC SPC_COM_MENU '1';
+2018-11-09 02:14:22 EXEC SPC_w002_ACT1 '8','4','9','10','beautiful girl','<row tag_id="16" is_new="0" /><row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" />','<p><img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /><img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /><img alt="heart" height="23" src="http://eplus.win/web-content/ckeditor/plugins/smiley/images/heart.png" title="heart" width="23" /></p>
+
+<p><span style="color:#ffffff"><span style="font-size:48px"><span style="background-color:#2ecc71">ASUNA</span><span style="background-color:#2ecc71"> !</span></span></span></p>
+
+<p>&nbsp;</p>
+','','','0','<row row_id="0" vocabulary_code="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />','','','ndq809','127.0.0.1';
+2018-11-09 02:14:23 EXEC SPC_COM_MENU '1';
+2018-11-09 02:14:23 EXEC SPC_W002_LST1 '8';
+2018-11-09 02:14:23 EXEC SPC_COM_MENU '1';
+2018-11-09 02:14:23 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:14:23 EXEC SPC_COM_MENU '1';
+2018-11-09 02:14:23 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:14:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:14:28 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-09 02:14:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:14:29 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:14:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:14:29 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:15:57 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 02:15:57 EXEC SPC_COM_MENU '1';
+2018-11-09 02:15:57 EXEC SPC_W002_FND1
+2018-11-09 02:15:58 EXEC SPC_COM_MENU '1';
+2018-11-09 02:15:58 EXEC SPC_W002_LST1 '8';
+2018-11-09 02:15:58 EXEC SPC_COM_MENU '1';
+2018-11-09 02:15:58 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:15:58 EXEC SPC_COM_MENU '1';
+2018-11-09 02:15:58 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:15:59 EXEC SPC_COM_MENU '1';
+2018-11-09 02:15:59 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 02:16:00 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:00 EXEC SPC_p003_LST2 '<row vocabulary_code="" vocabulary_id="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />';
+2018-11-09 02:16:01 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:01 EXEC SPC_p003_LST1 '0','','','','50','1';
+2018-11-09 02:16:08 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:08 EXEC SPC_p003_LST3 '<row vocabulary_code="1" /><row vocabulary_code="4" /><row vocabulary_code="3" /><row vocabulary_code="7" />';
+2018-11-09 02:16:11 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:11 EXEC SPC_w002_ACT1 '8','4','9','10','beautiful girl','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" />','<p>&nbsp;</p>
+
+<p><span style="color:#ffffff"><span style="font-size:48px"><span style="background-color:#2ecc71">ASUNA</span><span style="background-color:#2ecc71"> !</span></span></span></p>
+
+<p>&nbsp;</p>
+','','','0','<row row_id="0" vocabulary_code="1" vocabulary_div="Động từ" vocabulary_nm="Hello" spelling="helou" mean="Xin chào" explain="say when meet someone" /><row row_id="1" vocabulary_code="4" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" /><row row_id="2" vocabulary_code="3" vocabulary_div="Danh từ" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" /><row row_id="3" vocabulary_code="7" vocabulary_div="Danh từ" vocabulary_nm="vicious" spelling="ˈvɪʃ.əs" mean="xấu xa,hằn học" explain="" />','','','ndq809','127.0.0.1';
+2018-11-09 02:16:12 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:12 EXEC SPC_W002_LST1 '8';
+2018-11-09 02:16:13 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:13 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:16:13 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:13 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:16:21 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:21 EXEC SPC_W002_LST1 '7';
+2018-11-09 02:16:21 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:21 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:16:21 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:21 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:16:23 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:23 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 02:16:24 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:24 EXEC SPC_p003_LST2 '<row vocabulary_code="" vocabulary_id="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />';
+2018-11-09 02:16:25 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:25 EXEC SPC_p003_LST1 '0','','','','50','1';
+2018-11-09 02:16:32 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:32 EXEC SPC_p003_LST3 '<row vocabulary_code="7" /><row vocabulary_code="6" /><row vocabulary_code="1" /><row vocabulary_code="4" /><row vocabulary_code="5" />';
+2018-11-09 02:16:35 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:35 EXEC SPC_w002_ACT1 '7','4','9','10','Bài mẫu số 1','<row tag_id="65" is_new="0" /><row tag_id="66" is_new="0" />','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>
+
+<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love game</span></span></span></span></p>
+
+<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">ilove mine =))</span></span></span></span></p>
+','','','0','<row row_id="0" vocabulary_code="7" vocabulary_div="Danh từ" vocabulary_nm="vicious" spelling="ˈvɪʃ.əs" mean="xấu xa,hằn học" explain="" /><row row_id="1" vocabulary_code="6" vocabulary_div="Động từ" vocabulary_nm="abuse" spelling="əˈbjuːz" mean="sự lạm dụng, lăng mạ, sỉ nhục, ngược đãi" explain="" /><row row_id="2" vocabulary_code="1" vocabulary_div="Động từ" vocabulary_nm="Hello" spelling="helou" mean="Xin chào" explain="say when meet someone" /><row row_id="3" vocabulary_code="4" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" /><row row_id="4" vocabulary_code="5" vocabulary_div="Danh từ" vocabulary_nm="valuable" spelling="ˈvæl.jə.bəl" mean="quý giá" explain="" />','','','ndq809','127.0.0.1';
+2018-11-09 02:16:36 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:36 EXEC SPC_W002_LST1 '7';
+2018-11-09 02:16:37 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:37 EXEC SPC_W002_LST2 '4';
+2018-11-09 02:16:37 EXEC SPC_COM_MENU '1';
+2018-11-09 02:16:37 EXEC SPC_COMMON_GROUP '9';
+2018-11-09 02:16:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:16:41 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2018-11-09 02:16:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:16:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:16:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:16:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:25:02 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 02:25:03 EXEC SPC_USER_P001_LST2 '';
+2018-11-09 02:25:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:25:57 EXEC SPC_WRITING_ACT1 '3','16','<row tag_id="1" is_new="0" />','why i'm handsome too much?','<p>because I&#39;m&nbsp;a son of Viet Nam &lt;3</p>','<row row_id="3" id="2" /><row row_id="3" id="3" /><row row_id="3" id="4" /><row row_id="3" id="5" />','khoai','127.0.0.1';
+2018-11-09 02:26:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:26:59 EXEC SPC_GRAMMAR_LST1 '3','khoai','9','10';
+2018-11-09 02:27:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:27:00 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2018-11-09 02:27:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:27:10 EXEC SPC_GRAMMAR_LST1 '2','khoai','6','7';
+2018-11-09 02:27:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:27:10 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-09 02:27:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:27:28 EXEC SPC_COM_MENU '2';
+2018-11-09 02:28:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:03 EXEC SPC_READING_LST1 '','khoai','6','6';
+2018-11-09 02:28:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:04 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-09 02:28:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:06 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-11-09 02:28:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:28:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:28:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:08 EXEC SPC_LISTENING_LST1 '','khoai','9','10';
+2018-11-09 02:28:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:09 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:28:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:10 EXEC SPC_GRAMMAR_LST1 '','khoai','8','8';
+2018-11-09 02:28:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:11 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-09 02:28:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:19 EXEC SPC_VOCABULARY_LST1 '','khoai','6','6';
+2018-11-09 02:28:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:19 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-09 02:28:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:23 EXEC SPC_LISTENING_LST1 '','khoai','2','3';
+2018-11-09 02:28:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:23 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:28:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:24 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-09 02:28:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:28:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:25 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:28:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:26 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-11-09 02:28:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:26 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-09 02:28:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:28:27 EXEC SPC_COM_MENU '2';
+2018-11-09 02:45:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:45:57 EXEC SPC_COM_MENU '2';
+2018-11-09 02:47:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:47:06 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-11-09 02:47:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:47:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:47:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:47:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:50:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:42 EXEC SPC_GRAMMAR_LST1 '','khoai','9','10';
+2018-11-09 02:50:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:43 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-09 02:50:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:47 EXEC SPC_LISTENING_LST1 '','khoai','6','6';
+2018-11-09 02:50:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:48 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:50:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:51 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-09 02:50:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:50:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:51 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:50:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:52 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-11-09 02:50:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:53 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-09 02:50:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:50:54 EXEC SPC_COM_MENU '2';
+2018-11-09 02:51:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:51:02 EXEC SPC_VOCABULARY_LST1 '','khoai','12','14';
+2018-11-09 02:51:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:51:02 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-09 02:55:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:55:15 EXEC SPC_TRANSLATE_LST1 '3','khoai';
+2018-11-09 02:55:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:55:16 EXEC SPC_TRANSLATE_LST2 'kingdom','khoai','127.0.0.1';
+2018-11-09 02:56:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:11 EXEC SPC_VOCABULARY_LST1 '','khoai','2','3';
+2018-11-09 02:56:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:12 EXEC SPC_VOCABULARY_LST2 '2','3','khoai';
+2018-11-09 02:56:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:13 EXEC SPC_GRAMMAR_LST1 '','khoai','2','3';
+2018-11-09 02:56:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:14 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-09 02:56:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:15 EXEC SPC_LISTENING_LST1 '','khoai','6','6';
+2018-11-09 02:56:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:16 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:56:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:20 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-09 02:56:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:56:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:56:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:57:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:34 EXEC SPC_LISTENING_LST1 '','khoai','9','10';
+2018-11-09 02:57:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:35 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:57:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:36 EXEC SPC_GRAMMAR_LST1 '','khoai','8','8';
+2018-11-09 02:57:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:36 EXEC SPC_GRAMMAR_LST2 '6','6','khoai';
+2018-11-09 02:57:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:49 EXEC SPC_LISTENING_LST1 '','khoai','6','6';
+2018-11-09 02:57:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:49 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:57:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:50 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2018-11-09 02:57:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 02:57:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:51 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-11-09 02:57:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:52 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-11-09 02:57:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:52 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-11-09 02:57:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:57:53 EXEC SPC_COM_MENU '2';
+2018-11-09 02:58:00 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 02:58:00 EXEC SPC_COM_MENU '1';
+2018-11-09 02:58:00 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 02:58:01 EXEC SPC_COM_MENU '1';
+2018-11-09 02:58:01 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 02:58:05 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 02:58:05 EXEC SPC_COM_MENU '1';
+2018-11-09 02:58:05 EXEC SPC_W002_FND1
+2018-11-09 02:58:08 EXEC SPC_COM_MENU '1';
+2018-11-09 02:58:08 EXEC SPC_W002_LST2 '3';
+2018-11-09 02:58:10 EXEC SPC_COM_MENU '1';
+2018-11-09 02:58:10 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 02:59:08 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:08 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 02:59:08 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:08 EXEC SPC_p003_LST2 '';
+2018-11-09 02:59:10 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:10 EXEC SPC_p003_LST1 '0','','','','50','1';
+2018-11-09 02:59:13 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:13 EXEC SPC_p003_LST3 '<row vocabulary_code="4" /><row vocabulary_code="3" /><row vocabulary_code="2" />';
+2018-11-09 02:59:19 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:19 EXEC SPC_w002_ACT1 '','3','8','8','just a game','','<p>mưa rơi cả bầu trời nắng</p>
+','/web-content/audio/listeningAudio/audio_5be4f80729bc4.mp3','audio_5be4f80729bc4.mp3','1','<row row_id="0" vocabulary_code="4" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" /><row row_id="1" vocabulary_code="3" vocabulary_div="Danh từ" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" /><row row_id="2" vocabulary_code="2" vocabulary_div="Tính từ" vocabulary_nm="king" spelling="king" mean="vua" explain="someone who leader of a country" />','','','ndq809','127.0.0.1';
+2018-11-09 02:59:20 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:20 EXEC SPC_W002_LST1 '22';
+2018-11-09 02:59:20 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:20 EXEC SPC_W002_LST2 '3';
+2018-11-09 02:59:20 EXEC SPC_COM_MENU '1';
+2018-11-09 02:59:20 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 02:59:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:59:34 EXEC SPC_LISTENING_LST1 '','khoai','12','14';
+2018-11-09 02:59:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-11-09 02:59:34 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2018-11-09 02:59:57 EXEC SPC_COM_DATA '','','';
+2018-11-09 02:59:57 EXEC SPC_LISTENING_LST1 '22','','','';
+2018-11-09 02:59:58 EXEC SPC_COM_DATA '','','';
+2018-11-09 02:59:58 EXEC SPC_LISTENING_LST2 '8','8','';
+2018-11-09 03:00:14 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-11-09 03:00:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:00:14 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 03:00:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:00:15 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 03:02:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:09 EXEC SPC_COM_ADD_COMMENT '1','3','22','hello world !','','quypro','127.0.0.1';
+2018-11-09 03:02:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:11 EXEC SPC_COM_TOGGLE_EFFECT '1','52','3','3','0','quypro','127.0.0.1';
+2018-11-09 03:02:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:12 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 03:02:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:13 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 03:02:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:17 EXEC SPC_COM_ADD_LESSON '3','8','8','quypro','127.0.0.1';
+2018-11-09 03:02:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 03:02:21 EXEC SPC_COM_DELETE_LESSON '1041','quypro','127.0.0.1';
+2018-11-09 04:31:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:31:18 EXEC SPC_COM_MENU '1';
+2018-11-09 04:33:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:06 EXEC SPC_VOCABULARY_LST1 '','quypro','8','8';
+2018-11-09 04:33:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:07 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 04:33:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:13 EXEC SPC_COM_DELETE_LESSON '1','quypro','127.0.0.1';
+2018-11-09 04:33:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:15 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:33:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:17 EXEC SPC_COM_ADD_LESSON '1','2','3','quypro','127.0.0.1';
+2018-11-09 04:33:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:22 EXEC SPC_COM_REMEMBER '1','2','4','7','quypro','127.0.0.1';
+2018-11-09 04:33:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:24 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 04:33:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:33:25 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:35:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:35:05 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 04:35:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:35:10 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:35:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:35:14 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 04:35:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:35:16 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:36:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:36:20 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 04:36:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:36:20 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:38:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:26 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 04:38:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:26 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:38:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:30 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 04:38:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:31 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:38:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:35 EXEC SPC_VOCABULARY_LST1 '7','quypro','2','3';
+2018-11-09 04:38:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:38:35 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:39:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:39:31 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 04:39:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:39:32 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:40:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:40:05 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 04:40:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:40:05 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:40:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:40:56 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 04:40:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:40:57 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 04:42:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:42:23 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 04:42:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:42:24 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 04:43:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:43:28 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','6';
+2018-11-09 04:43:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:43:28 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 04:43:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:43:32 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 04:43:43 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 04:43:43 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:43 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 04:43:45 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:45 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 04:43:53 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 04:43:53 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:53 EXEC SPC_W002_FND1
+2018-11-09 04:43:53 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:53 EXEC SPC_W002_LST1 '2';
+2018-11-09 04:43:53 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:53 EXEC SPC_W002_LST2 '2';
+2018-11-09 04:43:54 EXEC SPC_COM_MENU '1';
+2018-11-09 04:43:54 EXEC SPC_COMMON_GROUP '6';
+2018-11-09 04:44:16 EXEC SPC_COM_MENU '1';
+2018-11-09 04:44:16 EXEC SPC_w002_ACT1 '2','2','6','7','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-11-09 04:44:17 EXEC SPC_COM_MENU '1';
+2018-11-09 04:44:17 EXEC SPC_W002_LST1 '2';
+2018-11-09 04:44:17 EXEC SPC_COM_MENU '1';
+2018-11-09 04:44:17 EXEC SPC_W002_LST2 '2';
+2018-11-09 04:44:18 EXEC SPC_COM_MENU '1';
+2018-11-09 04:44:18 EXEC SPC_COMMON_GROUP '6';
+2018-11-09 04:44:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:44:22 EXEC SPC_GRAMMAR_LST1 '3','quypro','6','7';
+2018-11-09 04:44:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:44:23 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 04:45:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:45:23 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 04:45:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:45:27 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 04:45:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:45:36 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 04:45:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:45:37 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 04:45:53 EXEC SPC_COM_MENU '1';
+2018-11-09 04:45:53 EXEC SPC_W002_LST1 '';
+2018-11-09 04:45:55 EXEC SPC_COM_MENU '1';
+2018-11-09 04:45:55 EXEC SPC_W002_LST2 '3';
+2018-11-09 04:45:58 EXEC SPC_COM_MENU '1';
+2018-11-09 04:45:58 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 04:46:17 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:17 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 04:46:18 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:18 EXEC SPC_p003_LST2 '<row vocabulary_code="" vocabulary_id="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />';
+2018-11-09 04:46:19 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:19 EXEC SPC_p003_LST1 '0','','','','50','1';
+2018-11-09 04:46:22 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:22 EXEC SPC_p003_LST3 '<row vocabulary_code="4" /><row vocabulary_code="3" />';
+2018-11-09 04:46:26 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:26 EXEC SPC_w002_ACT1 '','3','8','8','test 1','','<p>lalal demacia</p>
+','/web-content/audio/listeningAudio/audio_5be51122754d3.mp3','audio_5be51122754d3.mp3','1','<row row_id="0" vocabulary_code="4" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" /><row row_id="1" vocabulary_code="3" vocabulary_div="Danh từ" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" />','','','ndq809','127.0.0.1';
+2018-11-09 04:46:27 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:27 EXEC SPC_W002_LST1 '23';
+2018-11-09 04:46:28 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:28 EXEC SPC_W002_LST2 '3';
+2018-11-09 04:46:28 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:28 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 04:46:36 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:36 EXEC SPC_W002_LST1 '';
+2018-11-09 04:46:38 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:38 EXEC SPC_W002_LST2 '3';
+2018-11-09 04:46:41 EXEC SPC_COM_MENU '1';
+2018-11-09 04:46:41 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 04:47:09 EXEC SPC_COM_MENU '1';
+2018-11-09 04:47:09 EXEC SPC_w002_ACT1 '','3','8','8','test 2','','<p>I&#39;m a man</p>
+','/web-content/audio/listeningAudio/audio_5be5114d63b8f.mp3','audio_5be5114d63b8f.mp3','1','<row row_id="0" vocabulary_code="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />','','','ndq809','127.0.0.1';
+2018-11-09 04:47:10 EXEC SPC_COM_MENU '1';
+2018-11-09 04:47:10 EXEC SPC_W002_LST1 '24';
+2018-11-09 04:47:10 EXEC SPC_COM_MENU '1';
+2018-11-09 04:47:10 EXEC SPC_W002_LST2 '3';
+2018-11-09 04:47:10 EXEC SPC_COM_MENU '1';
+2018-11-09 04:47:10 EXEC SPC_COMMON_GROUP '8';
+2018-11-09 04:47:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:47:15 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 04:47:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:47:16 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 04:48:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:48:23 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 04:48:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:48:24 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 04:48:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:48:34 EXEC SPC_COM_REMEMBER '3','3','3','24','quypro','127.0.0.1';
+2018-11-09 04:49:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:49:11 EXEC SPC_READING_LST1 '','quypro','8','8';
+2018-11-09 04:49:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:49:11 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 04:49:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:49:56 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 04:49:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:49:56 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 04:50:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:50:25 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 04:51:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:51:12 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 04:51:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:51:15 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 04:51:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:51:19 EXEC SPC_COM_FORGET '1','2','2','quypro';
+2018-11-09 04:54:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:54:16 EXEC SPC_TRANSLATE_LST1 '3','quypro';
+2018-11-09 04:54:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:54:17 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 04:54:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:54:22 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 04:54:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:54:32 EXEC SPC_COM_FORGET '2','3','2','quypro';
+2018-11-09 04:54:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:54:37 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-09 04:55:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:55:03 EXEC SPC_COM_FORGET '1','2','2','quypro';
+2018-11-09 04:55:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:55:06 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 04:55:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:55:10 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-09 04:55:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:55:16 EXEC SPC_COM_FORGET '1','2','2','quypro';
+2018-11-09 04:58:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:06 EXEC SPC_TRANSLATE_LST1 '2','quypro';
+2018-11-09 04:58:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:06 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 04:58:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:09 EXEC SPC_COM_FORGET '2','3','2','quypro';
+2018-11-09 04:58:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:24 EXEC SPC_TRANSLATE_LST1 '2','quypro';
+2018-11-09 04:58:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:25 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 04:58:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:39 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 04:58:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:48 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-09 04:58:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:58:54 EXEC SPC_COM_FORGET '1','2','2','quypro';
+2018-11-09 04:59:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:59:06 EXEC SPC_COM_FORGET '2','3','2','quypro';
+2018-11-09 04:59:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 04:59:34 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 05:07:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:07:24 EXEC SPC_TRANSLATE_LST1 '2','quypro';
+2018-11-09 05:07:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:07:25 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 05:07:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:07:31 EXEC SPC_COM_FORGET '2','3','2','quypro';
+2018-11-09 05:07:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:07:56 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 05:08:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:03 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-09 05:08:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:08 EXEC SPC_COM_FORGET '1','2','2','quypro';
+2018-11-09 05:08:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:25 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 05:08:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:27 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-11-09 05:08:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:28 EXEC SPC_TRANSLATE_LST2 'vicious','quypro','127.0.0.1';
+2018-11-09 05:08:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:29 EXEC SPC_TRANSLATE_LST2 'abuse','quypro','127.0.0.1';
+2018-11-09 05:08:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:30 EXEC SPC_TRANSLATE_LST2 'Hello','quypro','127.0.0.1';
+2018-11-09 05:08:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:08:31 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 05:09:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:09:48 EXEC SPC_GRAMMAR_LST1 '','quypro','12','14';
+2018-11-09 05:09:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:09:49 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:09:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:09:50 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:09:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:09:58 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:10:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:06 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 05:10:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:07 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:10:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:09 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:10:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:14 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:10:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:14 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:10:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:19 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 05:10:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:22 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 05:10:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:22 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:10:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:25 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 05:10:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:10:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:25 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:10:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:26 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 05:10:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:27 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 05:10:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:29 EXEC SPC_COM_MENU '1';
+2018-11-09 05:10:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:30 EXEC SPC_COM_MENU '1';
+2018-11-09 05:10:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:32 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 05:10:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:33 EXEC SPC_COM_MENU '1';
+2018-11-09 05:10:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:37 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 05:10:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:40 EXEC SPC_GRAMMAR_LST1 '','quypro','12','14';
+2018-11-09 05:10:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:41 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:10:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:42 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:10:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:10:51 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:11:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:11:18 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 05:11:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:11:50 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2018-11-09 05:11:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:11:58 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2018-11-09 05:12:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:12:15 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2018-11-09 05:14:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:14:25 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2018-11-09 05:17:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:17:23 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 05:22:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:22:00 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:22:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:22:03 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:22:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:22:15 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:23:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:23:02 EXEC SPC_VOCABULARY_LST2 '3','5','quypro';
+2018-11-09 05:23:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:23:05 EXEC SPC_VOCABULARY_LST1 '','quypro','3','5';
+2018-11-09 05:27:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:27:45 EXEC SPC_GRAMMAR_LST1 '','quypro','3','5';
+2018-11-09 05:27:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:27:46 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:30:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:30:46 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 05:30:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:30:49 EXEC SPC_GRAMMAR_LST1 '','quypro','6','7';
+2018-11-09 05:30:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:30:50 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:34:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:34:20 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:34:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:34:30 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:34:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:34:30 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:35:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:18 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:35:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:19 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:35:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:20 EXEC SPC_LISTENING_LST1 '','quypro','6','6';
+2018-11-09 05:35:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:20 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:35:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:22 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 05:35:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:22 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:35:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:22 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:35:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:23 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 05:35:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:23 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 05:35:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:24 EXEC SPC_COM_MENU '1';
+2018-11-09 05:35:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:26 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 05:35:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:27 EXEC SPC_COM_MENU '1';
+2018-11-09 05:35:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:28 EXEC SPC_READING_LST1 '','quypro','12','14';
+2018-11-09 05:35:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:28 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 05:35:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:29 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-11-09 05:35:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:30 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:35:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:30 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:35:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:31 EXEC SPC_LISTENING_LST1 '','quypro','9','10';
+2018-11-09 05:35:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:31 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:35:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:32 EXEC SPC_GRAMMAR_LST1 '','quypro','8','8';
+2018-11-09 05:35:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:32 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:35:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:33 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:35:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:34 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:35:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:35 EXEC SPC_COM_MENU '1';
+2018-11-09 05:35:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:36 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:35:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:36 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:35:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:38 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:35:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:38 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:35:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:39 EXEC SPC_LISTENING_LST1 '','quypro','6','6';
+2018-11-09 05:35:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:35:39 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:36:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:27 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 05:36:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:28 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:36:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:29 EXEC SPC_COM_MENU '1';
+2018-11-09 05:36:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:30 EXEC SPC_VOCABULARY_LST1 '','quypro','8','8';
+2018-11-09 05:36:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:30 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:32 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:36:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:32 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:33 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:36:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:33 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:34 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:36:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:35 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:36 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:36:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:36 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:40 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:36:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:40 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:36:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:42 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 05:36:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:42 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:36:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:52 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2018-11-09 05:36:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:36:54 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:37:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:23 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:37:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:23 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:37:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:26 EXEC SPC_LISTENING_LST1 '','quypro','6','6';
+2018-11-09 05:37:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:26 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:37:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:49 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 05:37:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:49 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:37:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:50 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 05:37:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:51 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 05:37:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:52 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 05:37:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:52 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:37:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:37:52 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:38:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:17 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2018-11-09 05:38:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:38:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:17 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:38:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:21 EXEC SPC_WRITING_LST2 '9','11','quypro';
+2018-11-09 05:38:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:23 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:38:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:26 EXEC SPC_WRITING_LST2 '9','11','quypro';
+2018-11-09 05:38:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:27 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:38:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:36 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 05:38:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:37 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 05:38:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:43 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 05:38:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:45 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 05:38:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:46 EXEC SPC_TRANSLATE_LST2 'Hello','quypro','127.0.0.1';
+2018-11-09 05:38:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:48 EXEC SPC_TRANSLATE_LST2 'abuse','quypro','127.0.0.1';
+2018-11-09 05:38:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:50 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 05:38:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:50 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 05:38:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:38:53 EXEC SPC_TRANSLATE_LST3 'kingdom';
+2018-11-09 05:42:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:42:57 EXEC SPC_TRANSLATE_LST2 'vicious','quypro','127.0.0.1';
+2018-11-09 05:43:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:05 EXEC SPC_TRANSLATE_LST2 'vicious','quypro','127.0.0.1';
+2018-11-09 05:43:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:08 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2018-11-09 05:43:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:09 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:43:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:18 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 05:43:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:24 EXEC SPC_TRANSLATE_LST3 'hel';
+2018-11-09 05:43:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:29 EXEC SPC_TRANSLATE_LST2 'Hello','quypro','127.0.0.1';
+2018-11-09 05:43:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:34 EXEC SPC_TRANSLATE_LST3 'Hello';
+2018-11-09 05:43:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:41 EXEC SPC_TRANSLATE_LST3 'deli';
+2018-11-09 05:43:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:43:51 EXEC SPC_TRANSLATE_LST3 'vie';
+2018-11-09 05:44:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:36 EXEC SPC_TRANSLATE_LST2 'king','quypro','127.0.0.1';
+2018-11-09 05:44:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:38 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 05:44:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:39 EXEC SPC_TRANSLATE_LST2 'Hello','quypro','127.0.0.1';
+2018-11-09 05:44:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:40 EXEC SPC_TRANSLATE_LST2 'valuable','quypro','127.0.0.1';
+2018-11-09 05:44:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:51 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 05:44:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:51 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:44:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:52 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 05:44:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:44:53 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 05:45:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:45:01 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 05:45:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:45:03 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:45:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:45:08 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:45:19 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-11-09 05:45:19 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:19 EXEC SPC_COM_M999_INQ1 '7';
+2018-11-09 05:45:21 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:21 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-11-09 05:45:25 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-11-09 05:45:25 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:25 EXEC SPC_W002_FND1
+2018-11-09 05:45:25 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:25 EXEC SPC_W002_LST1 '2';
+2018-11-09 05:45:25 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:25 EXEC SPC_W002_LST2 '2';
+2018-11-09 05:45:26 EXEC SPC_COM_MENU '1';
+2018-11-09 05:45:26 EXEC SPC_COMMON_GROUP '6';
+2018-11-09 05:48:25 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:25 EXEC SPC_w002_ACT1 '2','2','6','7','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','<row row_id="1" content="When can we meet again?" question_div="0" /><row row_id="1" content="When are you free?" verify="0" question_div="0" /><row row_id="1" content="It was two days ago." verify="0" question_div="0" /><row row_id="1" content="Can you help me?" verify="0" question_div="0" /><row row_id="1" content="nothing" verify="0" question_div="0" /><row row_id="2" content=" My aunt is going to stay with me." question_div="0" /><row row_id="2" content="How do you do?" verify="0" question_div="0" /><row row_id="2" content="How long for?" verify="0" question_div="0" /><row row_id="2" content="How was it?" verify="0" question_div="0" /><row row_id="2" content="How was it?How was it?How was it?How was it?How was it?" verify="0" question_div="0" /><row row_id="3" content=" When do you study?" question_div="0" /><row row_id="3" content="at school" verify="0" question_div="0" /><row row_id="3" content="in the evenings" verify="0" question_div="0" /><row row_id="3" content="in the library" verify="0" question_div="0" /><row row_id="3" content="in the eveningsin the eveningsin the eveningsin the eveningsin the evenings " verify="0" question_div="0" /><row row_id="4" content=" Would you prefer lemonade or orange juice?" question_div="0" /><row row_id="4" content="Have you got anything else?" verify="0" question_div="0" /><row row_id="4" content="If you like." verify="0" question_div="0" /><row row_id="4" content="Are you sure about that?" verify="0" question_div="0" /><row row_id="4" content="you got anything else?you got anything else?you got anything else?you got anything else?you got anything else?" verify="0" question_div="0" /><row row_id="5" content="Let&amp;#39;s have dinner now." question_div="0" /><row row_id="5" content="You aren&amp;#39;t eating." verify="0" question_div="0" /><row row_id="5" content="There aren&amp;#39;t any." verify="0" question_div="0" /><row row_id="5" content="Tom isn&amp;#39;t here yet" verify="0" question_div="0" /><row row_id="5" content="Tom isn&amp;#39;t here yetTom isn&amp;#39;t here yetTom isn&amp;#39;t here yetTom isn&amp;#39;t here yet" verify="0" question_div="0" />','ndq809','127.0.0.1';
+2018-11-09 05:48:27 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:27 EXEC SPC_W002_LST1 '2';
+2018-11-09 05:48:27 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:27 EXEC SPC_W002_LST2 '2';
+2018-11-09 05:48:27 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:27 EXEC SPC_COMMON_GROUP '6';
+2018-11-09 05:48:41 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:41 EXEC SPC_w002_ACT1 '2','2','6','7','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','<row row_id="1" content="When can we meet again?" question_div="0" /><row row_id="1" content="When are you free?" verify="0" question_div="0" /><row row_id="1" content="It was two days ago." verify="1" question_div="0" /><row row_id="1" content="Can you help me?" verify="0" question_div="0" /><row row_id="1" content="nothing" verify="0" question_div="0" /><row row_id="2" content=" My aunt is going to stay with me." question_div="1" /><row row_id="2" content="How do you do?" verify="1" question_div="1" /><row row_id="2" content="How long for?" verify="1" question_div="1" /><row row_id="2" content="How was it?" verify="0" question_div="1" /><row row_id="2" content="How was it?How was it?How was it?How was it?How was it?" verify="0" question_div="1" /><row row_id="3" content=" When do you study?" question_div="1" /><row row_id="3" content="at school" verify="1" question_div="1" /><row row_id="3" content="in the evenings" verify="1" question_div="1" /><row row_id="3" content="in the library" verify="1" question_div="1" /><row row_id="3" content="in the eveningsin the eveningsin the eveningsin the eveningsin the evenings " verify="0" question_div="1" /><row row_id="4" content=" Would you prefer lemonade or orange juice?" question_div="0" /><row row_id="4" content="Have you got anything else?" verify="0" question_div="0" /><row row_id="4" content="If you like." verify="1" question_div="0" /><row row_id="4" content="Are you sure about that?" verify="0" question_div="0" /><row row_id="4" content="you got anything else?you got anything else?you got anything else?you got anything else?you got anything else?" verify="0" question_div="0" /><row row_id="5" content="Let&amp;#39;s have dinner now." question_div="1" /><row row_id="5" content="You aren&amp;#39;t eating." verify="1" question_div="1" /><row row_id="5" content="There aren&amp;#39;t any." verify="0" question_div="1" /><row row_id="5" content="Tom isn&amp;#39;t here yet" verify="1" question_div="1" /><row row_id="5" content="Tom isn&amp;#39;t here yetTom isn&amp;#39;t here yetTom isn&amp;#39;t here yetTom isn&amp;#39;t here yet" verify="0" question_div="1" />','ndq809','127.0.0.1';
+2018-11-09 05:48:45 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:45 EXEC SPC_W002_LST1 '2';
+2018-11-09 05:48:45 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:45 EXEC SPC_W002_LST2 '2';
+2018-11-09 05:48:45 EXEC SPC_COM_MENU '1';
+2018-11-09 05:48:45 EXEC SPC_COMMON_GROUP '6';
+2018-11-09 05:48:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:48:51 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2018-11-09 05:48:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:48:52 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 05:48:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:48:54 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:49:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:49:50 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:51:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:51:06 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:51:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:51:34 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 05:52:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:19 EXEC SPC_COM_MENU '1';
+2018-11-09 05:52:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:21 EXEC SPC_WRITING_LST1 '','quypro','6','7';
+2018-11-09 05:52:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:21 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:52:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:21 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:52:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:24 EXEC SPC_VOCABULARY_LST1 '','quypro','9','10';
+2018-11-09 05:52:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:52:24 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:57:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:09 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 05:57:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:09 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:57:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:38 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 05:57:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:39 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:57:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:53 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 05:57:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:57:53 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 05:58:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:58:27 EXEC SPC_WRITING_LST1 '','quypro','2','3';
+2018-11-09 05:58:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:58:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:58:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:58:27 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:59:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:19 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 05:59:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:20 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:59:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 05:59:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:36 EXEC SPC_WRITING_LST1 '15','quypro','9','10';
+2018-11-09 05:59:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:37 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 05:59:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 05:59:37 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 06:02:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:02:26 EXEC SPC_VOCABULARY_LST1 '','quypro','9','10';
+2018-11-09 06:02:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:02:26 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:02:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:02:38 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 06:02:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:02:39 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 06:02:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:02:42 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 06:03:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:06 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 06:03:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:07 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 06:03:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:33 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 06:03:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:34 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 06:03:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:34 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 06:03:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:36 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 06:03:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:36 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:03:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:44 EXEC SPC_COM_MENU '1';
+2018-11-09 06:03:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:46 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 06:03:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:51 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 06:03:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:03:53 EXEC SPC_COM_FORGET '2','3','2','quypro';
+2018-11-09 06:04:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:04:13 EXEC SPC_COM_MENU '1';
+2018-11-09 06:05:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:05:05 EXEC SPC_COM_MENU '1';
+2018-11-09 06:05:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:05:27 EXEC SPC_COM_MENU '1';
+2018-11-09 06:05:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:05:55 EXEC SPC_COM_MENU '1';
+2018-11-09 06:06:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:06:07 EXEC SPC_COM_MENU '1';
+2018-11-09 06:06:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:06:17 EXEC SPC_COM_MENU '1';
+2018-11-09 06:06:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:06:46 EXEC SPC_COM_MENU '1';
+2018-11-09 06:07:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:07:08 EXEC SPC_COM_MENU '1';
+2018-11-09 06:08:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:08:49 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2018-11-09 06:08:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:08:49 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:09:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:11 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 06:09:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:11 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 06:09:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:13 EXEC SPC_LISTENING_LST1 '','quypro','6','6';
+2018-11-09 06:09:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:13 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 06:09:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:55 EXEC SPC_GRAMMAR_LST1 '','quypro','8','8';
+2018-11-09 06:09:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:09:55 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 06:10:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:10:02 EXEC SPC_WRITING_LST1 '','quypro','6','6';
+2018-11-09 06:10:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:10:03 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 06:10:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:10:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 06:10:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:10:04 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 06:10:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:10:04 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:11:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:11:25 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2018-11-09 06:11:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:11:26 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:11:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:11:37 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:11:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:11:37 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:12:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:14 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:12:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:15 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:12:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:45 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','2','quypro';
+2018-11-09 06:12:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:47 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:12:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:50 EXEC SPC_READING_LST1 '9','quypro','12','14';
+2018-11-09 06:12:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:12:51 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:13:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:13:32 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:13:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:13:36 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:13:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:13:38 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:13:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:13:43 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:14:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:14:31 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:14:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:14:32 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:14:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:14:58 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:14:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:14:58 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:15:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:15:10 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2018-11-09 06:15:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:15:11 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:15:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:15:21 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:15:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:15:21 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:19:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:19:43 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2018-11-09 06:19:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:19:44 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:20:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:20:09 EXEC SPC_COM_ADD_COMMENT '2','5','10','this is my country <3','','quypro','127.0.0.1';
+2018-11-09 06:20:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:20:13 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:20:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:20:13 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:22:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:16 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:22:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:16 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:22:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:50 EXEC SPC_COM_GET_PAGE_COMMENT '2','5','10','1','quypro';
+2018-11-09 06:22:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:53 EXEC SPC_COM_TOGGLE_EFFECT '2','1','3','3','0','quypro','127.0.0.1';
+2018-11-09 06:22:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:55 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 06:22:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:22:55 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 06:48:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:48:02 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2018-11-09 06:48:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:48:25 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2018-11-09 06:49:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:49:15 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2018-11-09 06:49:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:49:15 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:49:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:49:43 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 06:49:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:49:43 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:51:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:51:27 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:53:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:53:06 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:53:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:53:06 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:53:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:53:21 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:53:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:53:22 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:54:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:54:29 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:55:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:55:02 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:56:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:56:26 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:56:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:56:27 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:56:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:56:30 EXEC SPC_VOCABULARY_LST1 '','quypro','2','3';
+2018-11-09 06:56:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:56:31 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:57:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:57:06 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','3';
+2018-11-09 06:57:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:57:07 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:57:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:57:20 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2018-11-09 06:57:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:57:25 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 06:57:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:57:26 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:58:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:58:51 EXEC SPC_COM_ADD_EXAM '3','4','1','can u see this goal?','Bạn có thấy bàn thắng đó ko?','quypro','127.0.0.1';
+2018-11-09 06:58:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:58:51 EXEC SPC_COM_EXAM_LIST '3','4','1','1','1','quypro';
+2018-11-09 06:58:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:58:57 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 06:58:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:58:58 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:59:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:02 EXEC SPC_COM_TOGGLE_EFFECT '3','31','1','1','0','quypro','127.0.0.1';
+2018-11-09 06:59:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:04 EXEC SPC_VOCABULARY_LST1 '4','quypro','2','3';
+2018-11-09 06:59:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:05 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 06:59:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:09 EXEC SPC_COM_EXAM_LIST '3','4','0','1','1','quypro';
+2018-11-09 06:59:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:12 EXEC SPC_COM_EXAM_LIST '3','4','1','1','1','quypro';
+2018-11-09 06:59:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:13 EXEC SPC_COM_EXAM_LIST '3','4','0','1','1','quypro';
+2018-11-09 06:59:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:23 EXEC SPC_COM_EXAM_LIST '3','4','1','1','1','quypro';
+2018-11-09 06:59:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:24 EXEC SPC_COM_EXAM_LIST '3','4','2','1','1','quypro';
+2018-11-09 06:59:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:57 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 06:59:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 06:59:58 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 07:00:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:00:39 EXEC SPC_GRAMMAR_LST1 '','quypro','6','6';
+2018-11-09 07:00:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:00:39 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 07:00:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:00:42 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:00:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:00:53 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2018-11-09 07:00:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:00:54 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:01:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:01:34 EXEC SPC_VOCABULARY_LST1 '','quypro','6','7';
+2018-11-09 07:01:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:01:34 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 07:02:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:01 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','3';
+2018-11-09 07:02:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:01 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 07:02:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:06 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 07:02:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:07 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 07:02:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:12 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:02:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:48 EXEC SPC_GRAMMAR_LST1 '','quypro','6','7';
+2018-11-09 07:02:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:49 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 07:02:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:51 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:02:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:52 EXEC SPC_COM_REMEMBER '2','3','1','2','quypro','127.0.0.1';
+2018-11-09 07:02:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:56 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2018-11-09 07:02:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:56 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:02:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:02:59 EXEC SPC_COM_FORGET '1','2','3','quypro';
+2018-11-09 07:03:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:02 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2018-11-09 07:03:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:03 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:03:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:07 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:08 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:09 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:09 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:10 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:13 EXEC SPC_COM_EXAM_LIST '1','2','1','1','2','quypro';
+2018-11-09 07:03:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:14 EXEC SPC_COM_EXAM_LIST '1','2','2','1','2','quypro';
+2018-11-09 07:03:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:16 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','quypro';
+2018-11-09 07:03:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:18 EXEC SPC_COM_TOGGLE_EFFECT '1','29','1','2','0','quypro','127.0.0.1';
+2018-11-09 07:03:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:19 EXEC SPC_COM_TOGGLE_EFFECT '1','30','1','2','0','quypro','127.0.0.1';
+2018-11-09 07:03:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:21 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2018-11-09 07:03:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:21 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 07:03:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:03:25 EXEC SPC_COM_QUESTION_LIST '2';
+2018-11-09 07:06:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:06:14 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 07:06:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:06:15 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:06:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:06:49 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 07:06:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:06:49 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:06:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:06:59 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 07:07:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:00 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:07:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:21 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2018-11-09 07:07:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:21 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:07:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:23 EXEC SPC_COM_REMEMBER '3','3','1','22','quypro','127.0.0.1';
+2018-11-09 07:07:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:26 EXEC SPC_COM_FORGET '1','22','3','quypro';
+2018-11-09 07:07:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:56 EXEC SPC_COM_ADD_COMMENT '2','3','23','bài nghe hay lắm =)','','quypro','127.0.0.1';
+2018-11-09 07:07:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:58 EXEC SPC_LISTENING_LST1 '23','quypro','8','8';
+2018-11-09 07:07:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:07:59 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:08:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:01 EXEC SPC_COM_TOGGLE_EFFECT '2','2','3','3','0','quypro','127.0.0.1';
+2018-11-09 07:08:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:03 EXEC SPC_LISTENING_LST1 '23','quypro','8','8';
+2018-11-09 07:08:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:03 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 07:08:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:16 EXEC SPC_READING_LST1 '','quypro','8','8';
+2018-11-09 07:08:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:16 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 07:08:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:59 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2018-11-09 07:08:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:08:59 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 07:09:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:00 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2018-11-09 07:09:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:03 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2018-11-09 07:09:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:05 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2018-11-09 07:09:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:38 EXEC SPC_COM_ADD_COMMENT '3','5','11','it's perfect <3','','quypro','127.0.0.1';
+2018-11-09 07:09:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:42 EXEC SPC_COM_TOGGLE_EFFECT '3','3','3','3','0','quypro','127.0.0.1';
+2018-11-09 07:09:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:43 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2018-11-09 07:09:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:09:44 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 07:11:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:03 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2018-11-09 07:11:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:04 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 07:11:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:08 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 07:11:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:09 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 07:11:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:11 EXEC SPC_COM_REMEMBER '1','2','2','3','quypro','127.0.0.1';
+2018-11-09 07:11:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:23 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-09 07:11:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:38 EXEC SPC_TRANSLATE_LST1 '4','quypro';
+2018-11-09 07:11:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:38 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-09 07:11:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:50 EXEC SPC_TRANSLATE_LST1 '4','quypro';
+2018-11-09 07:11:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:11:50 EXEC SPC_TRANSLATE_LST2 'goal','quypro','127.0.0.1';
+2018-11-09 07:28:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:28:42 EXEC SPC_COM_MENU '1';
+2018-11-09 07:55:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:55:47 EXEC SPC_READING_LST1 '','quypro','12','14';
+2018-11-09 07:55:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:55:48 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 07:55:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:55:49 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2018-11-09 07:55:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:55:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 07:55:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 07:55:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 08:01:10 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 08:01:10 EXEC SPC_USER_P001_LST2 '';
+2018-11-09 08:02:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:14 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2018-11-09 08:02:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 08:02:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:14 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 08:02:19 EXEC SPC_COM_M999_INQ1 '8';
+2018-11-09 08:02:19 EXEC SPC_USER_P001_LST2 '<row row_id="4" id="1" /><row row_id="4" id="3" /><row row_id="4" id="4" />';
+2018-11-09 08:02:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:40 EXEC SPC_GRAMMAR_LST1 '','quypro','9','10';
+2018-11-09 08:02:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:41 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 08:02:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:42 EXEC SPC_VOCABULARY_LST1 '','quypro','6','6';
+2018-11-09 08:02:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:42 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 08:02:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:43 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 08:02:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:43 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2018-11-09 08:02:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:45 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 08:02:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:46 EXEC SPC_COM_ADD_LESSON '2','6','7','quypro','127.0.0.1';
+2018-11-09 08:02:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:47 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 08:02:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:48 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 08:02:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:49 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 08:02:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:50 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 08:02:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:50 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 08:02:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:51 EXEC SPC_GRAMMAR_LST1 '','quypro','9','10';
+2018-11-09 08:02:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:52 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 08:02:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:54 EXEC SPC_VOCABULARY_LST1 '','quypro','6','7';
+2018-11-09 08:02:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:55 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2018-11-09 08:02:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:58 EXEC SPC_GRAMMAR_LST1 '','quypro','2','3';
+2018-11-09 08:02:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:58 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2018-11-09 08:02:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:59 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2018-11-09 08:02:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:02:59 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 08:03:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:02 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2018-11-09 08:03:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-11-09 08:03:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:02 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-11-09 08:03:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:05 EXEC SPC_READING_LST1 '','quypro','9','10';
+2018-11-09 08:03:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:06 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 08:03:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:13 EXEC SPC_COM_MENU '1';
+2018-11-09 08:03:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:03:15 EXEC SPC_TRANSLATE_LST1 '','quypro';
+2018-11-09 08:14:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:14:41 EXEC SPC_TRANSLATE_LST2 'kingdom','quypro','127.0.0.1';
+2018-11-09 08:24:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:13 EXEC SPC_COM_MENU '1';
+2018-11-09 08:24:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:15 EXEC SPC_READING_LST1 '','quypro','12','14';
+2018-11-09 08:24:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:15 EXEC SPC_READING_LST2 '12','14','quypro';
+2018-11-09 08:24:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:19 EXEC SPC_LISTENING_LST1 '','quypro','12','14';
+2018-11-09 08:24:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:20 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2018-11-09 08:24:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:22 EXEC SPC_GRAMMAR_LST1 '','quypro','8','8';
+2018-11-09 08:24:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-11-09 08:24:22 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';

@@ -6,7 +6,7 @@
     {!!WebFunctions::public_url('web-content/js/common/library/imagepreview.js')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-list','btn-refresh'))}}
+{{Button::menu_button(array('btn-list','btn-save','btn-refresh'))}}
 @endsection
 @section('content')
 <div class="panel main-panel col-xs-12">
@@ -42,7 +42,20 @@
         </div>
     </div>
 </div>
-<div id="result" class="panel main-panel col-xs-12 ">
-    @include('Master::popup.p003.search')
+<div class="panel main-panel col-xs-12 ">
+    <div class="panel-header padding-10-l">
+        <h5 class="panel-title">Danh Sách Từ Vựng</h5>
+    </div>
+    <div class="panel-content padding-10-l" id="result" >
+        @include('Master::popup.p003.search')
+    </div>
+</div>
+<div class="panel main-panel col-xs-12 ">
+    <div class="panel-header padding-10-l">
+        <h5 class="panel-title">Danh Sách Được Chọn</h5>
+    </div>
+    <div class="panel-content padding-10-l" id="result1">
+        @include('Master::popup.p003.select')
+    </div>
 </div>
 @stop

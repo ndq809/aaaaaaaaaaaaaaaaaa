@@ -124,6 +124,19 @@ class CommonController extends ControllerUser
 
     }
 
+    public function getGrammarSuggest(Request $request)
+    {
+        $data   = Dao::call_stored_procedure('SPC_COMMON_GET_SUGGEST');
+        $data   = $this->encodeID($data);
+        $result = array(
+            'status'     => 200,
+            'data'       => $data,
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+
+    }
+
     public function addLesson(Request $request)
     {
         $param            = $request->all();
@@ -530,7 +543,7 @@ class CommonController extends ControllerUser
         foreach ($data as $key => $value) {
             foreach ($value as $key1 => $value1) {
                 foreach ($value1 as $key2 => $value2) {
-                    if($key2!='row_id' && strpos($key2, 'id')!==false || strpos($key2, 'value')!==false ){
+                    if($key2!='row_id' && strpos($key2, 'id')!==false || strpos($key2, 'value')!==false){
                         $data[$key][$key1][$key2] = $hashids->encode($value2);
                     }
                 }

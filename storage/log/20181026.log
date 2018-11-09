@@ -1,0 +1,1524 @@
+2018-10-26 00:02:42 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:04 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:04 EXEC SPC_WRITING_LST1 '','','','';
+2018-10-26 00:03:04 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:03:05 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:05 EXEC SPC_WRITING_LST2 '9','10','';
+2018-10-26 00:03:17 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-26 00:03:17 EXEC SPC_COM_DATA 'ndq809','1','2';
+2018-10-26 00:03:17 EXEC SPC_WRITING_LST1 '4','ndq809','9','10';
+2018-10-26 00:03:17 EXEC SPC_COM_DATA 'ndq809','1','2';
+2018-10-26 00:03:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:03:17 EXEC SPC_COM_DATA 'ndq809','1','2';
+2018-10-26 00:03:17 EXEC SPC_WRITING_LST2 '9','10','ndq809';
+2018-10-26 00:03:23 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:23 EXEC SPC_WRITING_LST1 '4','','','';
+2018-10-26 00:03:24 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:03:24 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:03:24 EXEC SPC_WRITING_LST2 '9','10','';
+2018-10-26 00:03:34 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-10-26 00:03:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:03:34 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:03:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:03:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:03:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:03:35 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:12:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:12:16 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:12:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:12:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:12:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:12:16 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:13:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:13:35 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:13:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:13:35 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:13:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:13:35 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:14:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:14:45 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:14:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:14:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:14:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:14:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:17:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:17:19 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:17:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:17:19 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:17:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:17:19 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:18:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:07 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:18:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:18:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:18:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:47 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:18:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:48 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:18:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:18:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:20:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:14 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:20:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:20:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:15 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:20:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:25 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:20:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:26 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:20:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:20:26 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:22:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:01 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:22:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:22:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:22:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:28 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:22:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:28 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:22:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:22:28 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:23:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:23:10 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:23:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:23:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:23:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:23:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:27:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:27:46 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:27:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:27:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:27:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:27:47 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:29:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:29:16 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:29:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:29:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:29:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:29:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:32:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:32:23 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:32:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:32:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:32:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:32:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:43:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:43:09 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:43:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:43:10 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:43:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:43:10 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:44:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:44:16 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:44:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:44:17 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:44:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:44:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:46:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:46:04 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:46:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:46:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:46:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:46:05 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:46:48 EXEC SPC_COM_DATA '','','';
+2018-10-26 00:46:58 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-26 00:46:58 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 00:46:58 EXEC SPC_COM_MENU '1';
+2018-10-26 00:46:58 EXEC SPC_W002_FND1
+2018-10-26 00:47:11 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:11 EXEC SPC_W002_LST1 '1';
+2018-10-26 00:47:12 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:12 EXEC SPC_W002_LST2 '1';
+2018-10-26 00:47:12 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:12 EXEC SPC_COMMON_GROUP '2';
+2018-10-26 00:47:14 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:14 EXEC SPC_W002_LST1 '2';
+2018-10-26 00:47:14 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:14 EXEC SPC_W002_LST2 '2';
+2018-10-26 00:47:14 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:14 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 00:47:32 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:32 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="7" is_new="0" /><row tag_nm="going to" is_new="1" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 00:47:33 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:33 EXEC SPC_W002_LST1 '2';
+2018-10-26 00:47:34 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:34 EXEC SPC_W002_LST2 '2';
+2018-10-26 00:47:34 EXEC SPC_COM_MENU '1';
+2018-10-26 00:47:34 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 00:47:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:47:39 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:47:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:47:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:47:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:47:40 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:49:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:49:58 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:49:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:49:59 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:49:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:49:59 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:55:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:55:08 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:55:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:55:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:55:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:55:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:56:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:56:44 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:56:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:56:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:56:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:56:45 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:57:55 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:57:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:57:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:57:55 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:58:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:58:59 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:59:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:59:00 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:59:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:59:00 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 00:59:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:59:35 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 00:59:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:59:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 00:59:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 00:59:36 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:00:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:00:08 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:00:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:00:08 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:00:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:00:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:01:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:01:22 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:01:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:01:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:01:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:01:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:02:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:02:45 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:02:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:02:46 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:02:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:02:46 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:04:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:04:57 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:04:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:04:58 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:04:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:04:58 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:06:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:06:04 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:06:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:06:05 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:06:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:06:05 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:07:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:07:31 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:07:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:07:32 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:07:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:07:32 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:08:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:08:48 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:08:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:08:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:08:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:08:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:10:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:10:13 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:10:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:10:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:10:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:10:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:11:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:11 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:11:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:11:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:11:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:42 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:11:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:11:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:11:43 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:18:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:18:39 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:18:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:18:40 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:18:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:18:40 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:27:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:27:56 EXEC SPC_TRANSLATE_LST1 '','khoai';
+2018-10-26 01:28:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:07 EXEC SPC_TRANSLATE_LST3 'hel';
+2018-10-26 01:28:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:21 EXEC SPC_TRANSLATE_LST3 'hel';
+2018-10-26 01:28:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:26 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:28:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:27 EXEC SPC_TRANSLATE_LST3 'Hello';
+2018-10-26 01:28:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:30 EXEC SPC_TRANSLATE_LST3 'king';
+2018-10-26 01:28:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:33 EXEC SPC_TRANSLATE_LST2 'kingdom','khoai','127.0.0.1';
+2018-10-26 01:28:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:28:56 EXEC SPC_TRANSLATE_LST3 'kingdom';
+2018-10-26 01:29:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:06 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:29:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:08 EXEC SPC_TRANSLATE_LST2 'goal','khoai','127.0.0.1';
+2018-10-26 01:29:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:10 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:29:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:11 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:29:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:12 EXEC SPC_TRANSLATE_LST2 'kingdom','khoai','127.0.0.1';
+2018-10-26 01:29:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:15 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:29:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:16 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:29:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:31 EXEC SPC_TRANSLATE_LST2 'kingdom','khoai','127.0.0.1';
+2018-10-26 01:29:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:29:32 EXEC SPC_TRANSLATE_LST2 'goal','khoai','127.0.0.1';
+2018-10-26 01:45:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:45:56 EXEC SPC_TRANSLATE_LST2 'Hello','khoai','127.0.0.1';
+2018-10-26 01:48:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:48:34 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-10-26 01:48:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:48:34 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-10-26 01:48:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:48:42 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-10-26 01:48:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:48:43 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:48:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:48:43 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:49:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:49:31 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2018-10-26 01:49:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:49:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:49:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:49:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:50:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:17 EXEC SPC_READING_LST1 '','khoai','9','10';
+2018-10-26 01:50:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:18 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-10-26 01:50:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:20 EXEC SPC_COM_MENU '2';
+2018-10-26 01:50:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:24 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-10-26 01:50:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:25 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:50:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:50:25 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:53:08 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-26 01:53:08 EXEC SPC_COM_MENU '1';
+2018-10-26 01:53:08 EXEC SPC_M007_FND1
+2018-10-26 01:53:12 EXEC SPC_COM_MENU '1';
+2018-10-26 01:53:12 EXEC SPC_m007_LST1 '7';
+2018-10-26 01:53:12 EXEC SPC_M007_FND1
+2018-10-26 01:55:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:55:14 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:55:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:55:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:55:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:55:15 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:57:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:57:35 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 01:57:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:57:36 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 01:57:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:57:36 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 01:58:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 01:58:34 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:13:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:13 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:13:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:13 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:13:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:13:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:53 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:13:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:54 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:13:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:13:54 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:18:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:18:06 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:18:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:18:06 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:18:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:18:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:29:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:29:49 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:29:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:29:49 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:29:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:29:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:38:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:14 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:38:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:15 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:38:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:15 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:38:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:24 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:38:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:24 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:38:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:25 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:38:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:56 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:38:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:38:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:38:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:39:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:39:15 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:39:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:39:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:39:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:39:16 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:42:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:42:41 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:42:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:42:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:42:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:42:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:43:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:43:13 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 02:43:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:43:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 02:43:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 02:43:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 02:51:12 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-26 02:51:12 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:12 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-26 02:51:16 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 02:51:16 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:16 EXEC SPC_W002_FND1
+2018-10-26 02:51:22 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:22 EXEC SPC_W002_LST2 '6';
+2018-10-26 02:51:30 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:30 EXEC SPC_W002_LST2 '4';
+2018-10-26 02:51:41 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:41 EXEC SPC_COMMON_GROUP '10';
+2018-10-26 02:51:51 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 02:51:51 EXEC SPC_COM_MENU '1';
+2018-10-26 02:51:51 EXEC SPC_W002_FND1
+2018-10-26 02:56:50 EXEC SPC_COM_PERMISSION '1','2','v002';
+2018-10-26 02:56:50 EXEC SPC_COM_MENU '1';
+2018-10-26 02:56:50 EXEC SPC_V002_FND1
+2018-10-26 03:05:11 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-26 03:05:12 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:12 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-26 03:05:13 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 03:05:13 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:13 EXEC SPC_W002_FND1
+2018-10-26 03:05:16 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:16 EXEC SPC_W002_LST1 '2';
+2018-10-26 03:05:16 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:16 EXEC SPC_W002_LST2 '2';
+2018-10-26 03:05:16 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:16 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 03:05:27 EXEC SPC_COM_MENU '1';
+2018-10-26 03:05:27 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 04:15:06 EXEC SPC_COM_MENU '1';
+2018-10-26 04:15:06 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 04:15:07 EXEC SPC_COM_MENU '1';
+2018-10-26 04:15:07 EXEC SPC_W002_LST1 '2';
+2018-10-26 04:15:07 EXEC SPC_COM_MENU '1';
+2018-10-26 04:15:07 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:15:07 EXEC SPC_COM_MENU '1';
+2018-10-26 04:15:07 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:16:00 EXEC SPC_COMMON_ACCOUNT '1','2';
+2018-10-26 04:16:01 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 04:16:01 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:01 EXEC SPC_W002_FND1
+2018-10-26 04:16:02 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:02 EXEC SPC_W002_LST1 '17';
+2018-10-26 04:16:06 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:06 EXEC SPC_W002_LST1 '2';
+2018-10-26 04:16:06 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:06 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:16:07 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:07 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:16:12 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:12 EXEC SPC_W002_LST1 '3';
+2018-10-26 04:16:12 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:12 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:16:13 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:13 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:16:31 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:31 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_nm="had to" is_new="1" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 04:16:33 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:33 EXEC SPC_W002_LST1 '2';
+2018-10-26 04:16:33 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:33 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:16:33 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:33 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:16:43 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:43 EXEC SPC_w002_ACT1 '3','2','6','7','ĐỘNG TỪ TRONG TIẾNG ANH','<row tag_id="5" is_new="0" /><row tag_id="6" is_new="0" /><row tag_id="7" is_new="0" /><row tag_nm="had to" is_new="1" />','<p><strong>I. Định nghĩa</strong></p>
+
+<p>Đ&ocirc;̣ng từ&nbsp;là từ dùng đ&ecirc;̉ di&ecirc;̃n tả hành đ&ocirc;̣ng hoặc trạng thái của chủ ngữ.</p>
+
+<p>Ví dụ:&nbsp;Tom&nbsp;kicked&nbsp;the ball. &ndash; Tom thực hi&ecirc;̣n hành đ&ocirc;̣ng đá quả bóng. Quả bóng là đ&ocirc;́i tượng nh&acirc;̣n tác đ&ocirc;̣ng của hành đ&ocirc;̣ng (object of the verb).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sky&nbsp;is&nbsp;blue. &ndash;&nbsp;is&nbsp;ở đ&acirc;y kh&ocirc;ng th&ecirc;̉ hi&ecirc;̣n hành đ&ocirc;̣ng mà th&ecirc;̉ hi&ecirc;̣n trạng thái của b&acirc;̀u trời là xanh. &ldquo;Blue&rdquo; ở đ&acirc;y là tính từ.</p>
+
+<p><strong>II. Ph&acirc;n loại đ&ocirc;̣ng từ</strong></p>
+
+<p>Có hai cách ph&acirc;n chia đ&ocirc;̣ng từ:</p>
+
+<p><em>1. Ordinary verb (đ&ocirc;̣ng từ thường) và auxiliary verb (trợ đ&ocirc;̣ng từ).</em></p>
+
+<p>Trợ đ&ocirc;̣ng từ (auxiliary verb)</p>
+
+<p>Ví dụ: to be, to have, to do, can, could, may, might, must, ought, shall, should, will, would, to need, to dare</p>
+
+<p>Loại này có th&ecirc;̉ chia ra làm 3 loại:</p>
+
+<p>to be, to have: vừa có th&ecirc;̉ làm đ&ocirc;̣ng từ thường, vừa có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- Tom&nbsp;is&nbsp;a doctor.</p>
+
+<p>- He&nbsp;has&nbsp;a black beard.</p>
+
+<p>- He&nbsp;is&nbsp;working now.</p>
+
+<p>- I&nbsp;have&nbsp;just finished my homework.</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u: chỉ có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ trong c&acirc;u. Ví dụ: can, may, shall, will, ought to, must</p>
+
+<p>M&ocirc;̣t s&ocirc;́ đ&ocirc;̣ng từ đặc bi&ecirc;̣t: có trường hợp dùng làm đ&ocirc;̣ng từ thường, có trường hợp dùng làm trợ đ&ocirc;̣ng từ. Ví dụ: to dare, to need, to do, used to</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- He doesn&rsquo;t&nbsp;dare&nbsp;to say anything.</p>
+
+<p>- They&nbsp;need&nbsp;new skirts.</p>
+
+<p>-&nbsp;Dare&nbsp;we interrupt?</p>
+
+<p>- I&nbsp;need&nbsp;to go home now.</p>
+
+<p>Đ&ocirc;̣ng từ thường (ordinary verbs)</p>
+
+<p>Những đ&ocirc;̣ng từ kh&ocirc;ng thu&ocirc;̣c loại tr&ecirc;n là đ&ocirc;̣ng từ thường. Ví dụ: to work, to sing, to pray, to play, to study&hellip;</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u (modal verbs)</p>
+
+<p>- Như đã n&ecirc;u ở tr&ecirc;n, đ&acirc;y là m&ocirc;̣t loại của trợ đ&ocirc;̣ng từ. Vì đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u đóng vai trò khá quan trọng trong c&acirc;u n&ecirc;n ta sẽ tách ra m&ocirc;̣t bài ri&ecirc;ng đ&ecirc;̉ tìm hi&ecirc;̉u nhé.</p>
+
+<p>- Đặc đi&ecirc;̉m:</p>
+
+<p>- Chỉ làm trợ đ&ocirc;̣ng từ.</p>
+
+<p>Ví dụ:&nbsp;(+) I&nbsp;can&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (-) I&nbsp;can&rsquo;t&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?)&nbsp;Can&nbsp;you speak English well?</p>
+
+<p>- Ở ng&ocirc;i thứ 3 s&ocirc;́ ít kh&ocirc;ng th&ecirc;m &ldquo;s&rdquo; (như đ&ocirc;̣ng từ thường)</p>
+
+<p>- Ở phủ định th&ecirc;m &ldquo;not&rdquo; vào sau.</p>
+
+<p>- Ở nghi v&acirc;́n đảo ngược đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u l&ecirc;n trước chủ ngữ.</p>
+
+<p><em>2. N&ocirc;̣i đ&ocirc;̣ng từ (intransitive verbs) và ngoại đ&ocirc;̣ng từ (transitive verbs)</em></p>
+
+<p>N&ocirc;̣i đ&ocirc;̣ng từ:</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng n&ocirc;̣i tại của người nói hay người thực hi&ecirc;̣n hành đ&ocirc;̣ng.</p>
+
+<p>Ví dụ:&nbsp;He&nbsp;walks. (Anh &acirc;́y đi b&ocirc;̣. Anh &acirc;́y tự đi chứ kh&ocirc;ng phải là do người hay v&acirc;̣t khác tác đ&ocirc;̣ng)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly. (Chim bay. Con chim tự bay theo bản năng chứ kh&ocirc;ng do người hay v&acirc;̣t tác đ&ocirc;̣ng)</p>
+
+<p>- Kh&ocirc;ng c&acirc;̀n có t&acirc;n ngữ trực ti&ecirc;́p đi kèm. N&ecirc;́u có thì phải có giới từ đi trước và cụm từ này sẽ đóng vai trò ngữ trạng từ chứ kh&ocirc;ng phải là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Ví dụ:&nbsp;She&nbsp;walks&nbsp;in the garden.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly&nbsp;in the sky.</p>
+
+<p>Ngoại đ&ocirc;̣ng từ</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng g&acirc;y ra trực ti&ecirc;́p l&ecirc;n người hoặc v&acirc;̣t.</p>
+
+<p>Ví dụ:&nbsp;The cat&nbsp;killed&nbsp;the mouse.</p>
+
+<p>- Lu&ocirc;n c&acirc;̀n th&ecirc;m y&ecirc;́u t&ocirc;́ b&ecirc;n ngoài là m&ocirc;̣t danh từ hay đại từ theo sau đ&ecirc;̉ hoàn thành nghĩa của c&acirc;u. Danh (đại từ) đi theo sau là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Trong c&acirc;u tr&ecirc;n, chúng ta kh&ocirc;ng th&ecirc;̉ nói &ldquo;The cat killed&rdquo; r&ocirc;̀i dừng lại, bởi c&acirc;u r&acirc;́t t&ocirc;́i nghĩa. Vì th&ecirc;́ phải th&ecirc;m &ldquo;the mouse&rdquo; vào sau.</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-26 04:16:46 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:46 EXEC SPC_W002_LST1 '3';
+2018-10-26 04:16:47 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:47 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:16:47 EXEC SPC_COM_MENU '1';
+2018-10-26 04:16:47 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:18:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:18:22 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:18:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:18:23 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:18:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:18:23 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 04:32:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:32:44 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:32:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:32:45 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:33:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:33:27 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:33:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:33:27 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:33:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:33:27 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 04:34:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:34:57 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:34:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:34:57 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:34:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:34:58 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 04:35:23 EXEC SPC_COM_MENU '1';
+2018-10-26 04:35:23 EXEC SPC_w002_ACT1 '3','2','6','7','ĐỘNG TỪ TRONG TIẾNG ANH','<row tag_id="5" is_new="0" /><row tag_id="6" is_new="0" /><row tag_id="7" is_new="0" /><row tag_id="11" is_new="0" /><row tag_nm="is" is_new="1" />','<p><strong>I. Định nghĩa</strong></p>
+
+<p>Đ&ocirc;̣ng từ&nbsp;là từ dùng đ&ecirc;̉ di&ecirc;̃n tả hành đ&ocirc;̣ng hoặc trạng thái của chủ ngữ.</p>
+
+<p>Ví dụ:&nbsp;Tom&nbsp;kicked&nbsp;the ball. &ndash; Tom thực hi&ecirc;̣n hành đ&ocirc;̣ng đá quả bóng. Quả bóng là đ&ocirc;́i tượng nh&acirc;̣n tác đ&ocirc;̣ng của hành đ&ocirc;̣ng (object of the verb).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sky&nbsp;is&nbsp;blue. &ndash;&nbsp;is&nbsp;ở đ&acirc;y kh&ocirc;ng th&ecirc;̉ hi&ecirc;̣n hành đ&ocirc;̣ng mà th&ecirc;̉ hi&ecirc;̣n trạng thái của b&acirc;̀u trời là xanh. &ldquo;Blue&rdquo; ở đ&acirc;y là tính từ.</p>
+
+<p><strong>II. Ph&acirc;n loại đ&ocirc;̣ng từ</strong></p>
+
+<p>Có hai cách ph&acirc;n chia đ&ocirc;̣ng từ:</p>
+
+<p><em>1. Ordinary verb (đ&ocirc;̣ng từ thường) và auxiliary verb (trợ đ&ocirc;̣ng từ).</em></p>
+
+<p>Trợ đ&ocirc;̣ng từ (auxiliary verb)</p>
+
+<p>Ví dụ: to be, to have, to do, can, could, may, might, must, ought, shall, should, will, would, to need, to dare</p>
+
+<p>Loại này có th&ecirc;̉ chia ra làm 3 loại:</p>
+
+<p>to be, to have: vừa có th&ecirc;̉ làm đ&ocirc;̣ng từ thường, vừa có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- Tom&nbsp;is&nbsp;a doctor.</p>
+
+<p>- He&nbsp;has&nbsp;a black beard.</p>
+
+<p>- He&nbsp;is&nbsp;working now.</p>
+
+<p>- I&nbsp;have&nbsp;just finished my homework.</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u: chỉ có th&ecirc;̉ làm trợ đ&ocirc;̣ng từ trong c&acirc;u. Ví dụ: can, may, shall, will, ought to, must</p>
+
+<p>M&ocirc;̣t s&ocirc;́ đ&ocirc;̣ng từ đặc bi&ecirc;̣t: có trường hợp dùng làm đ&ocirc;̣ng từ thường, có trường hợp dùng làm trợ đ&ocirc;̣ng từ. Ví dụ: to dare, to need, to do, used to</p>
+
+<p>Ví dụ:</p>
+
+<p>Đ&ocirc;̣ng từ thườngTrợ đ&ocirc;̣ng từ</p>
+
+<p>- He doesn&rsquo;t&nbsp;dare&nbsp;to say anything.</p>
+
+<p>- They&nbsp;need&nbsp;new skirts.</p>
+
+<p>-&nbsp;Dare&nbsp;we interrupt?</p>
+
+<p>- I&nbsp;need&nbsp;to go home now.</p>
+
+<p>Đ&ocirc;̣ng từ thường (ordinary verbs)</p>
+
+<p>Những đ&ocirc;̣ng từ kh&ocirc;ng thu&ocirc;̣c loại tr&ecirc;n là đ&ocirc;̣ng từ thường. Ví dụ: to work, to sing, to pray, to play, to study&hellip;</p>
+
+<p>Đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u (modal verbs)</p>
+
+<p>- Như đã n&ecirc;u ở tr&ecirc;n, đ&acirc;y là m&ocirc;̣t loại của trợ đ&ocirc;̣ng từ. Vì đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u đóng vai trò khá quan trọng trong c&acirc;u n&ecirc;n ta sẽ tách ra m&ocirc;̣t bài ri&ecirc;ng đ&ecirc;̉ tìm hi&ecirc;̉u nhé.</p>
+
+<p>- Đặc đi&ecirc;̉m:</p>
+
+<p>- Chỉ làm trợ đ&ocirc;̣ng từ.</p>
+
+<p>Ví dụ:&nbsp;(+) I&nbsp;can&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (-) I&nbsp;can&rsquo;t&nbsp;speak English well.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (?)&nbsp;Can&nbsp;you speak English well?</p>
+
+<p>- Ở ng&ocirc;i thứ 3 s&ocirc;́ ít kh&ocirc;ng th&ecirc;m &ldquo;s&rdquo; (như đ&ocirc;̣ng từ thường)</p>
+
+<p>- Ở phủ định th&ecirc;m &ldquo;not&rdquo; vào sau.</p>
+
+<p>- Ở nghi v&acirc;́n đảo ngược đ&ocirc;̣ng từ khuy&ecirc;́t thi&ecirc;́u l&ecirc;n trước chủ ngữ.</p>
+
+<p><em>2. N&ocirc;̣i đ&ocirc;̣ng từ (intransitive verbs) và ngoại đ&ocirc;̣ng từ (transitive verbs)</em></p>
+
+<p>N&ocirc;̣i đ&ocirc;̣ng từ:</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng n&ocirc;̣i tại của người nói hay người thực hi&ecirc;̣n hành đ&ocirc;̣ng.</p>
+
+<p>Ví dụ:&nbsp;He&nbsp;walks. (Anh &acirc;́y đi b&ocirc;̣. Anh &acirc;́y tự đi chứ kh&ocirc;ng phải là do người hay v&acirc;̣t khác tác đ&ocirc;̣ng)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly. (Chim bay. Con chim tự bay theo bản năng chứ kh&ocirc;ng do người hay v&acirc;̣t tác đ&ocirc;̣ng)</p>
+
+<p>- Kh&ocirc;ng c&acirc;̀n có t&acirc;n ngữ trực ti&ecirc;́p đi kèm. N&ecirc;́u có thì phải có giới từ đi trước và cụm từ này sẽ đóng vai trò ngữ trạng từ chứ kh&ocirc;ng phải là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Ví dụ:&nbsp;She&nbsp;walks&nbsp;in the garden.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Birds&nbsp;fly&nbsp;in the sky.</p>
+
+<p>Ngoại đ&ocirc;̣ng từ</p>
+
+<p>- Di&ecirc;̃n tả hành đ&ocirc;̣ng g&acirc;y ra trực ti&ecirc;́p l&ecirc;n người hoặc v&acirc;̣t.</p>
+
+<p>Ví dụ:&nbsp;The cat&nbsp;killed&nbsp;the mouse.</p>
+
+<p>- Lu&ocirc;n c&acirc;̀n th&ecirc;m y&ecirc;́u t&ocirc;́ b&ecirc;n ngoài là m&ocirc;̣t danh từ hay đại từ theo sau đ&ecirc;̉ hoàn thành nghĩa của c&acirc;u. Danh (đại từ) đi theo sau là t&acirc;n ngữ trực ti&ecirc;́p.</p>
+
+<p>Trong c&acirc;u tr&ecirc;n, chúng ta kh&ocirc;ng th&ecirc;̉ nói &ldquo;The cat killed&rdquo; r&ocirc;̀i dừng lại, bởi c&acirc;u r&acirc;́t t&ocirc;́i nghĩa. Vì th&ecirc;́ phải th&ecirc;m &ldquo;the mouse&rdquo; vào sau.</p>
+','','','0','','','','ndq809','127.0.0.1';
+2018-10-26 04:35:25 EXEC SPC_COM_MENU '1';
+2018-10-26 04:35:25 EXEC SPC_W002_LST1 '3';
+2018-10-26 04:35:25 EXEC SPC_COM_MENU '1';
+2018-10-26 04:35:25 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:35:25 EXEC SPC_COM_MENU '1';
+2018-10-26 04:35:25 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:35:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:35:50 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:35:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:35:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:35:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:35:51 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 04:36:27 EXEC SPC_COM_MENU '1';
+2018-10-26 04:36:27 EXEC SPC_W002_LST1 '2';
+2018-10-26 04:36:27 EXEC SPC_COM_MENU '1';
+2018-10-26 04:36:27 EXEC SPC_W002_LST2 '2';
+2018-10-26 04:36:27 EXEC SPC_COM_MENU '1';
+2018-10-26 04:36:27 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 04:39:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:39:10 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 04:39:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:39:11 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 04:39:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 04:39:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 06:58:18 EXEC SPC_COM_MENU '1';
+2018-10-26 06:58:18 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 06:58:20 EXEC SPC_COM_MENU '1';
+2018-10-26 06:58:20 EXEC SPC_W002_LST1 '2';
+2018-10-26 06:58:20 EXEC SPC_COM_MENU '1';
+2018-10-26 06:58:20 EXEC SPC_W002_LST2 '2';
+2018-10-26 06:58:20 EXEC SPC_COM_MENU '1';
+2018-10-26 06:58:20 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:07:40 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:07:40 EXEC SPC_COM_MENU '1';
+2018-10-26 07:07:40 EXEC SPC_W002_FND1
+2018-10-26 07:07:47 EXEC SPC_COM_MENU '1';
+2018-10-26 07:07:47 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:08:41 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:08:41 EXEC SPC_COM_MENU '1';
+2018-10-26 07:08:41 EXEC SPC_W002_FND1
+2018-10-26 07:08:47 EXEC SPC_COM_MENU '1';
+2018-10-26 07:08:47 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:08:47 EXEC SPC_COM_MENU '1';
+2018-10-26 07:08:47 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:08:47 EXEC SPC_COM_MENU '1';
+2018-10-26 07:08:47 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:17:20 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:17:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:17:20 EXEC SPC_W002_FND1
+2018-10-26 07:17:34 EXEC SPC_COM_MENU '1';
+2018-10-26 07:17:34 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:17:34 SQLSTATE[IMSSP]: The active result for the query contains no fields.
+2018-10-26 07:19:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:19:06 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:06 EXEC SPC_W002_FND1
+2018-10-26 07:19:14 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:14 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:19:14 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:14 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:19:14 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:14 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:19:42 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:19:42 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:42 EXEC SPC_W002_FND1
+2018-10-26 07:19:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:50 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:19:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:52 EXEC SPC_W002_LST1 '1';
+2018-10-26 07:19:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:52 EXEC SPC_W002_LST2 '1';
+2018-10-26 07:19:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:52 EXEC SPC_COMMON_GROUP '2';
+2018-10-26 07:19:55 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:55 EXEC SPC_W002_LST1 '3';
+2018-10-26 07:19:55 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:55 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:19:55 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:55 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:19:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:19:58 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:21:13 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-26 07:21:13 EXEC SPC_COM_MENU '1';
+2018-10-26 07:21:13 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-26 07:21:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:21:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:21:15 EXEC SPC_W002_FND1
+2018-10-26 07:21:16 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-26 07:21:16 EXEC SPC_COM_MENU '1';
+2018-10-26 07:21:16 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-26 07:21:17 EXEC SPC_COM_MENU '1';
+2018-10-26 07:21:17 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-10-26 07:22:54 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-26 07:22:54 EXEC SPC_COM_MENU '1';
+2018-10-26 07:22:54 EXEC SPC_M007_FND1
+2018-10-26 07:23:04 EXEC SPC_COM_MENU '1';
+2018-10-26 07:23:05 EXEC SPC_m007_LST1 '7';
+2018-10-26 07:23:05 EXEC SPC_M007_FND1
+2018-10-26 07:25:01 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-26 07:25:01 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:01 EXEC SPC_M007_FND1
+2018-10-26 07:25:06 EXEC SPC_COM_PERMISSION '1','2','w001';
+2018-10-26 07:25:06 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:06 EXEC SPC_COM_M999_INQ1 '7';
+2018-10-26 07:25:07 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:07 EXEC SPC_w001_LST1 '','','','','10','1';
+2018-10-26 07:25:43 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:43 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-26 07:25:44 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:44 EXEC SPC_p004_LST1 '3';
+2018-10-26 07:25:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:52 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-26 07:25:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:25:52 EXEC SPC_p004_LST1 '4';
+2018-10-26 07:31:18 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:18 EXEC SPC_COM_M999_INQ1 '8';
+2018-10-26 07:31:18 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:18 EXEC SPC_p004_LST1 '2';
+2018-10-26 07:31:23 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:31:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:23 EXEC SPC_W002_FND1
+2018-10-26 07:31:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:23 EXEC SPC_W002_LST1 'e=2';
+2018-10-26 07:31:23 SQLSTATE[22018]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]nvarchar の値 'e=2' をデータ型 int に変換できませんでした。
+2018-10-26 07:31:32 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:32 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:31:32 SQLSTATE[IMSSP]: The active result for the query contains no fields.
+2018-10-26 07:31:35 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:31:35 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:35 EXEC SPC_W002_FND1
+2018-10-26 07:31:36 EXEC SPC_COM_MENU '1';
+2018-10-26 07:31:36 EXEC SPC_W002_LST1 'e=2';
+2018-10-26 07:31:36 SQLSTATE[22018]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]nvarchar の値 'e=2' をデータ型 int に変換できませんでした。
+2018-10-26 07:32:08 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:08 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:08 EXEC SPC_W002_FND1
+2018-10-26 07:32:08 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:08 EXEC SPC_W002_LST1 'e=2';
+2018-10-26 07:32:09 SQLSTATE[22018]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]nvarchar の値 'e=2' をデータ型 int に変換できませんでした。
+2018-10-26 07:32:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:15 EXEC SPC_W002_FND1
+2018-10-26 07:32:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:15 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:32:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:15 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:32:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:15 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:32:20 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:20 EXEC SPC_W002_FND1
+2018-10-26 07:32:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:20 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:32:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:20 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:32:21 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:21 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:32:26 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:26 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:26 EXEC SPC_W002_FND1
+2018-10-26 07:32:27 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:27 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:32:28 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:28 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:32:28 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:28 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:32:32 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:32 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:32 EXEC SPC_W002_FND1
+2018-10-26 07:32:32 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:32 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:32:33 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:33 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:32:33 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:33 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:32:36 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:32:36 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:36 EXEC SPC_W002_FND1
+2018-10-26 07:32:36 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:36 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:32:37 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:37 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:32:37 EXEC SPC_COM_MENU '1';
+2018-10-26 07:32:37 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:36:57 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:36:57 EXEC SPC_COM_MENU '1';
+2018-10-26 07:36:57 EXEC SPC_W002_FND1
+2018-10-26 07:37:00 EXEC SPC_COM_MENU '1';
+2018-10-26 07:37:00 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:37:00 EXEC SPC_COM_MENU '1';
+2018-10-26 07:37:00 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:37:01 EXEC SPC_COM_MENU '1';
+2018-10-26 07:37:01 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:43:40 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:43:40 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:40 EXEC SPC_W002_FND1
+2018-10-26 07:43:41 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:41 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:43:41 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:41 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:43:42 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:42 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:43:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:43:49 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:49 EXEC SPC_W002_FND1
+2018-10-26 07:43:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:50 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:43:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:50 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:43:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:50 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:43:52 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:43:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:52 EXEC SPC_W002_FND1
+2018-10-26 07:43:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:52 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:43:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:52 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:43:53 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:53 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:43:57 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:43:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:58 EXEC SPC_W002_FND1
+2018-10-26 07:43:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:58 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:43:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:58 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:43:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:43:58 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:44:00 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:44:00 EXEC SPC_COM_MENU '1';
+2018-10-26 07:44:00 EXEC SPC_W002_FND1
+2018-10-26 07:44:01 EXEC SPC_COM_MENU '1';
+2018-10-26 07:44:01 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:44:01 EXEC SPC_COM_MENU '1';
+2018-10-26 07:44:01 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:44:01 EXEC SPC_COM_MENU '1';
+2018-10-26 07:44:01 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:47:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:47:49 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:49 EXEC SPC_W002_FND1
+2018-10-26 07:47:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:50 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:47:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:50 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:47:50 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:50 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:47:52 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:47:52 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:52 EXEC SPC_W002_FND1
+2018-10-26 07:47:53 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:53 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:47:53 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:53 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:47:53 EXEC SPC_COM_MENU '1';
+2018-10-26 07:47:54 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:17 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:17 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:17 EXEC SPC_W002_FND1
+2018-10-26 07:48:17 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:17 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:17 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:17 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:18 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:18 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:19 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:19 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:19 EXEC SPC_W002_FND1
+2018-10-26 07:48:19 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:19 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:20 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:20 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:20 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:21 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:21 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:21 EXEC SPC_W002_FND1
+2018-10-26 07:48:22 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:22 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:22 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:22 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:22 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:22 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:23 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:23 EXEC SPC_W002_FND1
+2018-10-26 07:48:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:23 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:23 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:24 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:24 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:26 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:26 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:26 EXEC SPC_W002_FND1
+2018-10-26 07:48:27 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:27 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:27 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:27 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:27 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:27 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:38 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:38 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:38 EXEC SPC_W002_FND1
+2018-10-26 07:48:39 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:39 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:40 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:40 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:40 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:40 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:48:47 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:48:47 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:47 EXEC SPC_W002_FND1
+2018-10-26 07:48:48 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:48 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:48:48 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:48 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:48:49 EXEC SPC_COM_MENU '1';
+2018-10-26 07:48:49 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:49:14 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:49:15 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:15 EXEC SPC_W002_FND1
+2018-10-26 07:49:16 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:16 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:49:16 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:16 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:49:17 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:17 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:49:22 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:49:22 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:22 EXEC SPC_W002_FND1
+2018-10-26 07:49:23 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:23 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:49:24 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:24 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:49:24 EXEC SPC_COM_MENU '1';
+2018-10-26 07:49:24 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:52:26 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:52:26 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:26 EXEC SPC_W002_FND1
+2018-10-26 07:52:27 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:28 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:52:28 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:28 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:52:29 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:29 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:52:56 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:52:56 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:56 EXEC SPC_W002_FND1
+2018-10-26 07:52:57 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:57 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:52:57 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:57 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:52:58 EXEC SPC_COM_MENU '1';
+2018-10-26 07:52:58 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:53:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:53:06 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:06 EXEC SPC_W002_FND1
+2018-10-26 07:53:08 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:08 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:53:08 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:08 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:53:09 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:09 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 07:53:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 07:53:29 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 07:53:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 07:53:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 07:53:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 07:53:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 07:53:33 EXEC SPC_COM_PERMISSION '1','2','w002';
+2018-10-26 07:53:33 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:33 EXEC SPC_W002_FND1
+2018-10-26 07:53:35 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:35 EXEC SPC_W002_LST1 '2';
+2018-10-26 07:53:35 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:35 EXEC SPC_W002_LST2 '2';
+2018-10-26 07:53:35 EXEC SPC_COM_MENU '1';
+2018-10-26 07:53:35 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 08:04:34 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:34 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 08:04:36 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:36 EXEC SPC_W002_LST1 '2';
+2018-10-26 08:04:37 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:37 EXEC SPC_W002_LST2 '2';
+2018-10-26 08:04:37 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:37 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 08:04:42 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:42 EXEC SPC_w002_ACT1 '2','2','6','6','DANH TỪ KHÔNG ĐẾM ĐƯỢC VS DANH TỪ ĐẾM ĐƯỢC','<row tag_id="3" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="10" is_new="0" /><row tag_id="11" is_new="0" />','<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ kh&ocirc;ng đếm được (uncountable - nouns) kh&ocirc;ng c&oacute; dạng số nhiều v&agrave; lu&ocirc;n đi với động từ số &iacute;t:<br />
++ chỉ những g&igrave; kh&ocirc;ng đếm được hoặc những g&igrave; c&oacute; t&iacute;nh c&aacute;ch trừu tượng, v&iacute; dụ:<br />
+Money (tiền bạc), weather (thời tiết), nature (thi&ecirc;n nhi&ecirc;n)......<br />
++ C&oacute; thể theo sau some (n&agrave;o đ&oacute;), chứ kh&ocirc;ng thể theo sau a/an (một) hoặc một số đếm.<br />
+- Danh từ kh&ocirc;ng đếm được bao gồm những danh từ chỉ:</p>
+
+<p style="margin-left:0px; margin-right:0px">a, Vật liệu, vật thể, vật chất:<br />
+Bread (b&aacute;nh m&igrave;), cream (kem), gold (v&agrave;ng), paper (giấy), tea (tr&agrave;), beer (bia), dust (bụi), ice (nước đ&aacute;), sand (c&aacute;t), water (nước), cloth (vải), wine (rượu), jam (mứt), soap (x&agrave; b&ocirc;ng), coffee (c&agrave; ph&ecirc;), glass (thủy tinh), oil (dầu lửa), stone (đ&aacute;), wood (gỗ), baggage (h&agrave;nh l&yacute;), damage (sự thiệt hại), luggage (h&agrave;nh l&yacute;), camping (sự cắm trại), furniture (đồ đạc), parking (sự đậu xe), shopping (việc mua sắm), weather (thời tiết)...</p>
+
+<p style="margin-left:0px; margin-right:0px">b, Sự trừu tượng, vật trừu tượng:<br />
+Advice (lời khuy&ecirc;n), experience (kinh nghiệm), horror (khủng khiếp), beauty (đẹp), fear (sợ h&atilde;i), information (th&ocirc;ng tin), courage (l&ograve;ng can đảm), help (sự gi&uacute;p đỡ), knowledge (kiến thức), death (c&aacute;i chết), hope (niềm hy vọng), mercy (l&ograve;ng nh&acirc;n từ), pity (sự tội nghiệp), relief (sự gồ l&ecirc;n), suspicion (sự hồ nghi), work (c&ocirc;ng việc) ...</p>
+
+<p style="margin-left:0px; margin-right:0px">3/ Danh từ kh&ocirc;ng đếm được lu&ocirc;n ở số &iacute;t v&agrave; kh&ocirc;ng theo sau a/an<br />
+V&iacute; dụ:<br />
++ Those students don&#39;t want (any) help. They only want (some) knowledge &THORN; C&aacute;c sinh vi&ecirc;n ấy kh&ocirc;ng cần sự gi&uacute;p đỡ. Họ cần kiến thức m&agrave; th&ocirc;i<br />
++ I have no experience in this field &THORN; T&ocirc;i chẳng c&oacute; kinh nghiệm về lĩnh vực n&agrave;y</p>
+
+<p style="margin-left:0px; margin-right:0px">4/ Danh từ kh&ocirc;ng đếm được th&shy;ường theo sau some, any, no, a little..., hoặc theo sau bit, piece, slice, gallon...<br />
+V&iacute; dụ:<br />
+A bit of news &THORN; một mẩu tin<br />
+a grain of sand &THORN; một hạt c&aacute;t<br />
+a pot of jam &THORN; một hủ mứt<br />
+a slice of bread &THORN; một l&aacute;t b&aacute;nh m&igrave;<br />
+a bowl of soup &THORN; một b&aacute;t s&uacute;p<br />
+a cake of soap &THORN; một b&aacute;nh x&agrave; ph&ograve;ng<br />
+a litre of petrol &THORN; một l&iacute;t xăng<br />
+a paneof glass &THORN; một &ocirc; k&iacute;nh<br />
+a sheet of paper &THORN; một tờ giấy<br />
+a glass of beer &THORN; một ly bia<br />
+a drop of oil &THORN; một giọt dầu<br />
+a group of people &THORN; một nh&oacute;m người<br />
+a piece of advice &THORN; một lời khuy&ecirc;n<br />
+...</p>
+
+<p style="margin-left:0px; margin-right:0px">5/ Một v&agrave;i danh từ trừu tượng cũng theo sau a/an, nhưng với &yacute; nghĩa đặc biệt v&agrave; ở số &iacute;t.<br />
+V&iacute; dụ:<br />
++ To have a wide knowledge of literature, we need read much &THORN; Để c&oacute; một kiến thức rộng r&atilde;i về văn học, ch&uacute;ng ta phải đọc s&aacute;ch nhiều<br />
++ This book is a great help to our study &THORN; Cuốn s&aacute;ch n&agrave;y rất c&oacute; &iacute;ch cho việc học của ch&uacute;ng t&ocirc;i<br />
++ Do you think your students have a love of music and a hatred of dishonesty? &THORN; C&ocirc; c&oacute; nghĩ rằng c&aacute;c sinh vi&ecirc;n của c&ocirc; y&ecirc;u &acirc;m nhạc v&agrave; căm gh&eacute;t sự bất lư&shy;ơng kh&ocirc;ng ?</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">🎯</span></span>&nbsp;Danh từ đếm được (countable - nouns):<br />
++ chỉ những g&igrave; đếm được, v&iacute; dụ:<br />
+a dog (một con ch&oacute;) &THORN; three dogs (ba con ch&oacute;)<br />
+a friend (một người bạn) &THORN; five friends (năm người bạn)<br />
+a cup of tea (một t&aacute;ch tr&agrave;) &THORN; four cups of tea (bốn t&aacute;ch tr&agrave;).<br />
++ c&oacute; thể ở số nhiều, v&iacute; dụ:&shy; a day (một ng&agrave;y) , many days (nhiều ng&agrave;y).<br />
++ c&oacute; thể theo sau một số đếm: a/an (một)hoặc some (một v&agrave;i).</p>
+
+<p style="margin-left:0px; margin-right:0px">Ch&uacute; &yacute;: sự &ldquo;đếm được&rdquo;ở đ&acirc;y mang t&iacute;nh đặc th&ugrave; ng&ocirc;n ngữ, c&oacute; nghĩa l&agrave; ở ng&ocirc;n ngữ n&agrave;y th&igrave; n&oacute; thuộc loại đếm được, c&ograve;n ở ng&ocirc;n ngữ kia th&igrave; n&oacute; thuộc loại đếm được, hoặc khi ở dạng đếm được th&igrave; nghĩa của n&oacute; kh&aacute;c hẳn với nghĩa ở dạng kh&ocirc;ng đếm được.<br />
+V&iacute; dụ: danh từ kh&ocirc;ng đếm được &THORN; paper (giấy) &gt; &lt; Danh từ đếm được &THORN; papers (giấy tờ: gồm chứng minh thư, giấy ph&eacute;p l&aacute;i xe,...)<br />
++ Policeman asks him to show his papers = Cảnh s&aacute;t y&ecirc;u cầu anh ta tr&igrave;nh giấy tờ.</p>
+
+<p style="margin-left:0px; margin-right:0px"><span style="font-family:inherit"><span style="color:transparent; font-family:inherit; font-size:16px">⚠</span></span>&nbsp;Ch&uacute; &yacute;: C&oacute; một số &iacute;t danh từ vừa đếm được vừa kh&ocirc;ng đếm được, v&iacute; dụ<br />
++ She has a long and black hair(Chị ấy c&oacute; một m&aacute;i t&oacute;c d&agrave;i v&agrave; đen), nhưng There are two hairs in my soup (c&oacute; hai sợi t&oacute;c trong b&aacute;t s&uacute;p của t&ocirc;i)<br />
++ Her house has six rooms (Nh&agrave; của c&ocirc; ấy c&oacute; s&aacute;u ph&ograve;ng) &gt; &lt; nhưng There is no room in the car for her dog (Xe &ocirc; t&ocirc; kh&ocirc;ng c&oacute; chỗ n&agrave;o cho con ch&oacute; của c&ocirc; ấy ngồi).</p>
+','','','0','','<row language1_content="a cat" language2_content="một con mèo" /><row language1_content="the cats" language2_content="những con mèo" />','','ndq809','127.0.0.1';
+2018-10-26 08:04:43 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:43 EXEC SPC_W002_LST1 '2';
+2018-10-26 08:04:43 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:43 EXEC SPC_W002_LST2 '2';
+2018-10-26 08:04:43 EXEC SPC_COM_MENU '1';
+2018-10-26 08:04:43 EXEC SPC_COMMON_GROUP '6';
+2018-10-26 08:19:54 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-10-26 08:19:54 EXEC SPC_COM_MENU '1';
+2018-10-26 08:19:54 EXEC SPC_M007_FND1
+2018-10-26 08:19:58 EXEC SPC_COM_MENU '1';
+2018-10-26 08:19:58 EXEC SPC_m007_LST1 '7';
+2018-10-26 08:19:58 EXEC SPC_M007_FND1
+2018-10-26 08:23:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:05 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 08:23:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:07 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:23:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 08:23:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:46 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 08:23:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:47 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:23:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:23:47 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 08:24:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:24:15 EXEC SPC_WRITING_LST1 '4','khoai','9','10';
+2018-10-26 08:24:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:24:16 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:24:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-10-26 08:24:16 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-10-26 08:24:50 EXEC SPC_COM_DATA '','','';
+2018-10-26 08:24:50 EXEC SPC_WRITING_LST1 '4','','','';
+2018-10-26 08:24:51 EXEC SPC_COM_DATA '','','';
+2018-10-26 08:24:51 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:24:51 EXEC SPC_COM_DATA '','','';
+2018-10-26 08:24:51 EXEC SPC_WRITING_LST2 '9','10','';
+2018-10-26 08:25:01 EXEC SPC_COMMON_ACCOUNT '1','1';
+2018-10-26 08:25:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:25:01 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-26 08:25:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:25:02 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:25:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:25:02 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2018-10-26 08:27:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:27:42 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2018-10-26 08:27:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:27:42 EXEC SPC_COMMON_GET_SUGGEST
+2018-10-26 08:27:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2018-10-26 08:27:42 EXEC SPC_WRITING_LST2 '9','10','quypro';

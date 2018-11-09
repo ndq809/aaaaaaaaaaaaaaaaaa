@@ -1,6 +1,7 @@
 var slider;
 var GrammarArray;
 var AnswerArray;
+var post;
 $(function() {
     try {
         initGrammar();
@@ -63,8 +64,8 @@ function initListener() {
             if ($('#eng-clause').val().trim() != '' && $('#vi-clause').val().trim() != '') {
                 current_id = $('.activeItem').attr('id');
                 voc_infor = [];
-                voc_infor.push(GrammarArray[current_id - 1]['row_id']);
-                voc_infor.push(GrammarArray[current_id - 1]['post_id']);
+                voc_infor.push(post[0]['row_id']);
+                voc_infor.push(post[0]['post_id']);
                 voc_infor.push(2);
                 voc_infor.push($('#eng-clause').val());
                 voc_infor.push($('#vi-clause').val());
@@ -91,7 +92,7 @@ function initListener() {
     $(window).resize(function() {
         
     });
-    $(document).on('keydown', function(e) {
+    $(document).on('keydown', throttle(function(e) {
         if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
                 case 37:
@@ -104,14 +105,14 @@ function initListener() {
                     break;
             }
         }
-    })
+    },33))
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
 
     $(document).on('click', '#btn-relationship', function() {
         var current_id = $('.activeItem').attr('id');
-        window.open('/translate?v='+GrammarArray[current_id - 1]['id'], '_blank');
+        window.open('/translate?v='+post[0]['id'], '_blank');
     })
 
     $(document).on('change', '#group_nm', function() {
@@ -132,8 +133,8 @@ function initListener() {
         var page = 1;
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
-        item_infor.push(GrammarArray[current_id - 1]['row_id']);
-        item_infor.push(GrammarArray[current_id - 1]['post_id']);
+        item_infor.push(post[0]['row_id']);
+        item_infor.push(post[0]['post_id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
         item_infor.push(2);
@@ -146,8 +147,8 @@ function initListener() {
         var page = $(this).attr('page');
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
-        item_infor.push(GrammarArray[current_id - 1]['row_id']);
-        item_infor.push(GrammarArray[current_id - 1]['post_id']);
+        item_infor.push(post[0]['row_id']);
+        item_infor.push(post[0]['post_id']);
         item_infor.push($('#exam-order').val());
         item_infor.push(page);
         item_infor.push(2);
@@ -160,7 +161,7 @@ function initListener() {
         var _this = this;
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
-        item_infor.push(GrammarArray[current_id - 1]['row_id']);
+        item_infor.push(post[0]['row_id']);
         item_infor.push($(this).attr('id'));
         item_infor.push(1);
         item_infor.push(2);
@@ -201,9 +202,7 @@ function previousGrammar() {
 }
 
 function selectGrammar(selectTrTag) {
-    currentItemId = selectItem(selectTrTag);
-    
-    
+    currentItemId = selectItem(selectTrTag,selectedTab);
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
     if(typeof GrammarArray[currentItemId - 1] != 'undefined')
@@ -212,8 +211,11 @@ function selectGrammar(selectTrTag) {
 
 function switchTabGrammar(current_li_tag) {
     selectedTab = current_li_tag.find("a").attr("href");
-    $('.activeItem').removeClass('activeItem');
-    selectGrammar($(selectedTab + " table tbody tr").first());
+    if($(selectedTab+' .activeItem').length==0){
+        selectGrammar($(selectedTab + " table tbody tr").first());
+    }else{
+        selectGrammar($(selectedTab + " table tbody tr.activeItem"));
+    }
 }
 
 function rememberGrammar(remember_btn) {
@@ -221,9 +223,9 @@ function rememberGrammar(remember_btn) {
     current_id = currentItem.attr('id');
     voc_infor = [];
     voc_infor.push(2);//screen div
-    voc_infor.push(1);
-    voc_infor.push(GrammarArray[current_id - 1]['row_id']);
-    voc_infor.push(GrammarArray[current_id - 1]['post_id']);
+    voc_infor.push(3);
+    voc_infor.push(post[0]['row_id']);
+    voc_infor.push(post[0]['post_id']);
     rememberItem(currentItem, "Đã quên", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextGrammar();
@@ -235,9 +237,9 @@ function forgetGrammar(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
     voc_infor = [];
-    voc_infor.push(GrammarArray[current_id - 1]['row_id']);
-    voc_infor.push(GrammarArray[current_id - 1]['post_id']);
-    voc_infor.push(1);
+    voc_infor.push(post[0]['row_id']);
+    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(3);
     forgetItem(currentItem, "Đã học", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
             nextGrammar();
@@ -253,7 +255,7 @@ function getData() {
         type: 'POST',
         url: '/grammar/getData',
         dataType: 'json',
-        loading:true,
+        // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
             switch (res.status) {
@@ -315,6 +317,11 @@ function setContentBox(word_id) {
     if($('#mySlider1 li').length==1){
         $('.choose_slider').height('235');
     }
+    if(typeof GrammarArray!='undefined'){
+        post = GrammarArray.filter(function(val){
+            return val['row_id']==Number(word_id);
+        });
+    }
 }
 
 function getRowId(id){
@@ -328,7 +335,7 @@ function getRowId(id){
 function getQuestion() {
     var current_id = $('.activeItem').attr('id');
     var item_infor = [];
-    item_infor.push(GrammarArray[current_id - 1]['post_id']);
+    item_infor.push(post[0]['post_id']);
     $.ajax({
         type: 'POST',
         url: '/common/getQuestion',

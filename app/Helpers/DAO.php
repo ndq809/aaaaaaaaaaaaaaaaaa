@@ -99,7 +99,6 @@ class Dao{
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 
-
             $result = array();
             $i = 0;
             do {

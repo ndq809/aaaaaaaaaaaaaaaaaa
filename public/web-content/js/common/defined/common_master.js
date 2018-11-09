@@ -111,7 +111,7 @@ function initCommonMaster() {
     if($('.file-caption').parents('.file-subitem').hasClass('required')){
         $('.file-caption').addClass('required');
     }
-    $("select:not('.allow-selectize,.custom-selectized')").addClass("form-control input-sm");
+    $("select:not('.allow-selectize,.custom-selectized,.tag-selectize')").addClass("form-control input-sm");
     $('select.required').prev('label').addClass('required');
     $('input.required,textarea.required').parent().prev('label').addClass('required');
 
@@ -773,7 +773,7 @@ function showFailedValidate(error_array,exe_mode){
         if(key.includes('.')){
             var target=$(parent_div+' table tbody tr:visible').eq(Number(key.split('.')[0])).find('.'+key.split('.')[1]);
         }else
-        var target=$(parent_div).find('#'+key);
+        var target=$(parent_div).find('.form-group:visible').find('#'+key);
         if(target.prop("tagName") == 'SELECT' && target.hasClass('allow-selectize')||target.hasClass('custom-selectized')){
             target=target.next('.selectize-control').find('.selectize-input');
         }else
@@ -961,7 +961,18 @@ function getInputData(exe_mode){
             if($(this).val()===null){
                 value='';
             }else{
-                value=$(this).val().trim();
+                value=$(this).val();
+                if(!$.isArray([value]) || $(this).attr('id')!='post_tag'){
+                    value = value.trim();
+                }else{
+                    value = $.map(value, function(val){
+                        if(val.indexOf('**++**eplus')!=-1){
+                            return {'tag_nm':val.split('**++**eplus')[0],'is_new':1};
+                        }else{
+                            return {'tag_id':val,'is_new':0};
+                        }
+                    });
+                }
                 if($(this).hasClass('input-refer')){
                     value=$(this).val().split('_')[0];
                 }
@@ -1005,6 +1016,23 @@ function getTableData(table){
             }
         })
         if(temp!='')
+        data.push(row_data);
+    })
+    if(data.length==0){
+        return null;
+    }else{
+        return $.extend({}, data);
+    }
+}
+
+function getTableTdData(table){
+    var data=[];
+    table.find('tbody tr:visible').each(function(i){
+        var row_data={};
+        row_data['row_id']=i;
+        $(this).find('td[refer-id]').each(function(){
+            row_data[$(this).attr('refer-id')]=$(this).text();
+        })
         data.push(row_data);
     })
     if(data.length==0){
@@ -1128,7 +1156,7 @@ function getMediaData(form){
 function clearDataSearch(){
     $('input.submit-item,select.submit-item').val('');
     $('#result table tbody').html('<tr><td colspan="100">Xin nhập điều kiện tìm kiếm</td></tr>');
-    $('.paging').remove();
+    $('.pager').remove();
     $('input.submit-item,select.submit-item').first().focus();
 }
 
@@ -1433,7 +1461,7 @@ function initFlugin(){
         //     '<audio controls=""> <source src="/web-content/audio/listeningAudio/audio_5b58278fbeaca.mp3" type="audio/mp3"> </audio>'
         // ],
     });
-    $("select:not('.allow-selectize,.custom-selectized')").addClass("form-control input-sm");
+    $("select:not('.allow-selectize,.custom-selectized,.tag-selectize')").addClass("form-control input-sm");
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         _selectize=$("select.allow-selectize:not([class*='new-allow'])").selectize({
             allowEmptyOption: true,
@@ -1453,12 +1481,25 @@ function initFlugin(){
                 this.clear();
             }
         });
+
+        _selectize=$("select.tag-selectize").each(function() {
+        var select = $(this).selectize({
+            delimiter: ',',
+            persist: false,
+            create: function(input) {
+                return {
+                    value: input+'**++**eplus',
+                    text: input
+                }
+            }
+        });
+    });
     }else{
-        $("select:not('.custom-selectized')").addClass("form-control input-sm");
+        $("select:not('.custom-selectized,.tag-selectize')").addClass("form-control input-sm");
     }
     $(".ckeditor").each(function(){
         try{
-          CKEDITOR.replace($(this).attr('name'),{language:"vi"});  
+          CKEDITOR.inline($(this).attr('name'),{language:"vi"});  
         }catch(e){
 
         }

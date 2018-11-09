@@ -40,7 +40,7 @@ BEGIN
 	,	M007.group_id
 	FROM M007
 	WHERE M007.briged_id IN (
-		SELECT briged_id FROM F009 WHERE F009.vocabulary_code = @P_target_id
+		SELECT briged_id FROM F009 WHERE F009.target_id = @P_target_id AND F009.briged_div = 1
 	)
 
 	SELECT
