@@ -96,6 +96,7 @@ BEGIN
 		,	@P_account_id
 		,	2
 		,	1
+		,	NULL
 		,	0
 		,	@P_account_id
 		,	'common'

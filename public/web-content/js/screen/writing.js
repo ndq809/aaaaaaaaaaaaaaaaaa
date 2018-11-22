@@ -49,12 +49,7 @@ function initWriting(){
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr("id") == 'btn_next') {
-            nextWriting();
-        }
-        if ($(this).attr("id") == 'btn_prev') {
-            previousWriting();
-        }
+        
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
             addLesson(4, $('#catalogue_nm').val(), $('#group_nm').val());
@@ -77,6 +72,16 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click', 'h5', function() {
+        if ($(this).attr("id") == 'btn_next') {
+            nextWriting();
+        }
+        if ($(this).attr("id") == 'btn_prev') {
+            previousWriting();
+        }
+    })
+    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');
@@ -217,6 +222,12 @@ function initListener() {
     $(document).on('click','#btn-delete',function(){
         showMessage(3,function(){
             deletePost();
+       });
+    })
+
+    $(document).on('click','#btn-share',function(){
+        showMessage(1,function(){
+            share();
        });
     })
 
@@ -747,7 +758,43 @@ function deletePost(){
                 default:
                     break;
             }
-            callback();
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function share(){
+    var data ={};
+    data['post_id'] = post[0]['post_id'];
+    $.ajax({
+        type: 'POST',
+        url: '/writing/share',
+        dataType: 'json',
+        // loading:true,
+        data: data,
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    showMessage(2,function(){
+                        var temp = $(selectedTab+' .activeItem');
+                        nextWriting();
+                        temp.remove();
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
         },
         // Ajax error
         error: function(jqXHR, textStatus, errorThrown) {

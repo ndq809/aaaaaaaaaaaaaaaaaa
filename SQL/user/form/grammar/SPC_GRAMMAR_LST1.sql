@@ -88,6 +88,8 @@ BEGIN
 			ON #TEMP.group_id = M003.group_id
 			WHERE #TEMP.catalogue_id = @P_catalogue_id 
 			AND #TEMP.group_id = @P_group_id
+			AND M002.catalogue_div = 2
+
 		END
 		ELSE
 		BEGIN
@@ -100,6 +102,7 @@ BEGIN
 			ON #TEMP.catalogue_id = M002.catalogue_id
 			INNER JOIN M003
 			ON #TEMP.group_id = M003.group_id
+			WHERE M002.catalogue_div = 2
 		END
 		
 	END

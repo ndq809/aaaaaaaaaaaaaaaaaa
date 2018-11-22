@@ -13,20 +13,20 @@ $(function() {
 function initGrammar() {
     initListener();
     if ($('.table-click tbody tr').first().hasClass('no-data')) {
-        if($('#catalogue-tranfer').attr('value')!=''){
-            var selectize_temp= $('#catalogue_nm')[0].selectize;
-            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-            updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-        }else{
+        if ($('#catalogue-tranfer').attr('value') != '') {
+            var selectize_temp = $('#catalogue_nm')[0].selectize;
+            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')), true);
+            updateGroup($('#catalogue_nm'), $('#group-transfer').attr('value'));
+        } else {
             $('#catalogue_nm').trigger('change');
         }
     } else {
         if ($('.table-click tbody tr.selected-row').length == 0) {
-            if($('#catalogue-tranfer').attr('value')!=''){
-                var selectize_temp= $('#catalogue_nm')[0].selectize;
-                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-                updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-            }else{
+            if ($('#catalogue-tranfer').attr('value') != '') {
+                var selectize_temp = $('#catalogue_nm')[0].selectize;
+                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')), true);
+                updateGroup($('#catalogue_nm'), $('#group-transfer').attr('value'));
+            } else {
                 $('.table-click tbody tr:first-child').trigger('dblclick');
             }
         } else {
@@ -38,12 +38,6 @@ function initGrammar() {
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr("id") == 'btn_next') {
-            nextGrammar();
-        }
-        if ($(this).attr("id") == 'btn_prev') {
-            previousGrammar();
-        }
         if ($(this).hasClass('btn-check-answer')) {
             checkAnswer();
         }
@@ -57,7 +51,7 @@ function initListener() {
             forgetGrammar($(this));
         }
         if ($(this).hasClass('btn-add-lesson')) {
-            $('.btn-add-lesson').prop('disabled','disabled');
+            $('.btn-add-lesson').prop('disabled', 'disabled');
             addLesson(2, $('#catalogue_nm').val(), $('#group_nm').val());
         }
         if ($(this).hasClass('btn-contribute-exa')) {
@@ -76,6 +70,14 @@ function initListener() {
             }
         }
     });
+    $(document).on('click', 'h5', function() {
+        if ($(this).attr("id") == 'btn_next') {
+            nextGrammar();
+        }
+        if ($(this).attr("id") == 'btn_prev') {
+            previousGrammar();
+        }
+    })
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
             $("." + $(this).attr("id")).show();
@@ -89,11 +91,9 @@ function initListener() {
     $(document).on("click", ".right-tab ul li", function() {
         switchTabGrammar($(this));
     });
-    $(window).resize(function() {
-        
-    });
+    $(window).resize(function() {});
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
+        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
                 case 37:
                     previousGrammar();
@@ -105,16 +105,14 @@ function initListener() {
                     break;
             }
         }
-    },33))
+    }, 33))
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
-
     $(document).on('click', '#btn-relationship', function() {
         var current_id = $('.activeItem').attr('id');
-        window.open('/translate?v='+post[0]['id'], '_blank');
+        window.open('/translate?v=' + post[0]['id'], '_blank');
     })
-
     $(document).on('change', '#group_nm', function() {
         $('.table-click tbody tr').removeClass('selected-row');
         $('.table-click tbody tr').each(function() {
@@ -122,9 +120,9 @@ function initListener() {
                 $(this).addClass('selected-row');
             }
         })
-        if($('.table-click tbody tr.selected-row').length!=0){
-            $('.btn-add-lesson').prop('disabled','disabled');
-        }else{
+        if ($('.table-click tbody tr.selected-row').length != 0) {
+            $('.btn-add-lesson').prop('disabled', 'disabled');
+        } else {
             $('.btn-add-lesson').removeAttr('disabled');
         }
         getData();
@@ -175,45 +173,37 @@ function initListener() {
             $(_this).prev('.number-clap').text(effected_count);
         });
     })
-
-    $('#popup-box1').on('show.bs.modal', function (e) {
+    $('#popup-box1').on('show.bs.modal', function(e) {
         getQuestion();
     });
 }
 
 function nextGrammar() {
     var currentItemId = setNextItem();
-    
-    
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
-    if(typeof GrammarArray[currentItemId - 1] != 'undefined')
-    history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
+    if (typeof GrammarArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
 }
 
 function previousGrammar() {
     var currentItemId = setPreviousItem();
-    
-    
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
-    if(typeof GrammarArray[currentItemId - 1] != 'undefined')
-    history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
+    if (typeof GrammarArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
 }
 
 function selectGrammar(selectTrTag) {
-    currentItemId = selectItem(selectTrTag,selectedTab);
+    currentItemId = selectItem(selectTrTag, selectedTab);
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
-    if(typeof GrammarArray[currentItemId - 1] != 'undefined')
-    history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
+    if (typeof GrammarArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + GrammarArray[currentItemId - 1]['post_id']);
 }
 
 function switchTabGrammar(current_li_tag) {
     selectedTab = current_li_tag.find("a").attr("href");
-    if($(selectedTab+' .activeItem').length==0){
+    if ($(selectedTab + ' .activeItem').length == 0) {
         selectGrammar($(selectedTab + " table tbody tr").first());
-    }else{
+    } else {
         selectGrammar($(selectedTab + " table tbody tr.activeItem"));
     }
 }
@@ -222,7 +212,7 @@ function rememberGrammar(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
     voc_infor = [];
-    voc_infor.push(2);//screen div
+    voc_infor.push(2); //screen div
     voc_infor.push(3);
     voc_infor.push(post[0]['row_id']);
     voc_infor.push(post[0]['post_id']);
@@ -263,18 +253,17 @@ function getData() {
                     $('#result1').html(res.view1);
                     $('#result2').html(res.view2);
                     GrammarArray = res.voca_array;
-                    
-                    if($('#target-id').attr('value')!=''){
-                        $('.table-right tbody tr[id='+getRowId($('#target-id').attr('value'))+']').trigger('click');
-                    }else{
+                    if ($('#target-id').attr('value') != '') {
+                        $('.table-right tbody tr[id=' + getRowId($('#target-id').attr('value')) + ']').trigger('click');
+                    } else {
                         $('#tab1 .table-right tbody tr:first').trigger('click');
                     }
-                    if($('.activeItem').parents('.tab-pane').attr('id')=='tab2'){
+                    if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
                         switchTab(2);
-                    }else{
+                    } else {
                         switchTab(1);
                     }
-                    $('#target-id').attr('value','')
+                    $('#target-id').attr('value', '')
                     break;
                 case 201:
                     clearFailedValidate();
@@ -298,8 +287,8 @@ function getData() {
 function updateGroup(change_item, sub_item_text) {
     var data = $(change_item).val();
     var selectize_sub = $('#group_nm')[0].selectize;
-    $('.group_nm .selectize-dropdown-content :not([data-parent-id='+data+'])').addClass('hidden');
-    $('.group_nm .selectize-dropdown-content [data-parent-id='+data+']').removeClass('hidden');
+    $('.group_nm .selectize-dropdown-content :not([data-parent-id=' + data + '])').addClass('hidden');
+    $('.group_nm .selectize-dropdown-content [data-parent-id=' + data + ']').removeClass('hidden');
     if (typeof sub_item_text == 'undefined') {
         selectize_sub.setValue($('.group_nm .selectize-dropdown-content :not(".hidden")').first().attr('data-value'));
     } else {
@@ -314,19 +303,19 @@ function setContentBox(word_id) {
     $('.example-item[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');
     $('.paging-item[target-id=' + (word_id) + ']').removeClass('hidden');
-    if($('#mySlider1 li').length==1){
+    if ($('#mySlider1 li').length == 1) {
         $('.choose_slider').height('235');
     }
-    if(typeof GrammarArray!='undefined'){
-        post = GrammarArray.filter(function(val){
-            return val['row_id']==Number(word_id);
+    if (typeof GrammarArray != 'undefined') {
+        post = GrammarArray.filter(function(val) {
+            return val['row_id'] == Number(word_id);
         });
     }
 }
 
-function getRowId(id){
+function getRowId(id) {
     for (var i = 0; i < GrammarArray.length; i++) {
-        if(GrammarArray[i]['post_id'] == id){
+        if (GrammarArray[i]['post_id'] == id) {
             return GrammarArray[i]['row_id'];
         }
     }
@@ -340,8 +329,8 @@ function getQuestion() {
         type: 'POST',
         url: '/common/getQuestion',
         dataType: 'json',
-        loading:true,
-        container:'#popup-box1 .modal-body>.form-group',
+        loading: true,
+        container: '#popup-box1 .modal-body>.form-group',
         data: $.extend({}, item_infor), //convert to object
         success: function(res) {
             switch (res.status) {
@@ -368,30 +357,30 @@ function getQuestion() {
     });
 }
 
-function checkAnswer(){
+function checkAnswer() {
     $('.answer-box').removeClass('wrong-answer');
     $('.answer-box').removeClass('right-answer');
-    $('.answer-box').each(function(i){
+    $('.answer-box').each(function(i) {
         check = -1;
-        if($(this).find('input:checked').length != 0){
-            $(this).find('input').each(function(j){
-                var temp = $(this).is(':checked')?1:0;
-                if(AnswerArray[(i*4)+j]['verify']!=temp){
+        if ($(this).find('input:checked').length != 0) {
+            $(this).find('input').each(function(j) {
+                var temp = $(this).is(':checked') ? 1 : 0;
+                if (AnswerArray[(i * 4) + j]['verify'] != temp) {
                     check = 1;
                 }
             })
-            if(check==-1){
+            if (check == -1) {
                 check = 0;
             }
         }
-        if(check == 1){
+        if (check == 1) {
             $(this).addClass('wrong-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-close');
-            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
-        }else if(check == 0){
+            $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
+        } else if (check == 0) {
             $(this).addClass('right-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-check');
-            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
+            $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
         }
     })
 }

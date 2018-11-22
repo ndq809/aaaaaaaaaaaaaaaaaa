@@ -259,6 +259,10 @@ BEGIN
 				@w_briged_id
 			,	#VOCABULARY.Vocabulary_code
 			,	1
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
 			FROM #VOCABULARY
 		END
 
@@ -269,6 +273,10 @@ BEGIN
 				@w_briged_id
 			,	#TAG.tag_id
 			,	2
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
 			FROM #TAG
 		END
  
@@ -400,6 +408,10 @@ BEGIN
 				@w_briged_id
 			,	#VOCABULARY.Vocabulary_code
 			,	1
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
 			FROM #VOCABULARY
 		END
 
@@ -411,6 +423,10 @@ BEGIN
 				@w_briged_id
 			,	#TAG.tag_id
 			,	2
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
 			FROM #TAG
 		END
 		DELETE FROM M012 WHERE M012.target_id = @P_post_id

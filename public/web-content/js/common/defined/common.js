@@ -1,5 +1,4 @@
-var selectedTab = "#tab1";
-var countComment = 1;
+var selectedTab = "#tab1"; var countComment = 1;
 var _popup_transfer_array=[];
 $(function() {
     try {
@@ -23,8 +22,12 @@ function initCommon() {
             window.location.reload();
         })
     }
-    $('.btn-disabled').attr('title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
-    $('.btn-disabled').attr('disabled','');
+    $('.btn-disabled').attr('data-toggle','tooltip');
+    $('.btn-disabled').attr('data-placement','bottom');
+    $('.btn-disabled').attr('data-original-title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
+    $('.btn-disabled').tooltip();
+    $('.btn-disabled').addClass('disabled');
+    // $('.btn-disabled').removeAttr('title');
     });
     $(document).ajaxError(function (evt, jqXHR, settings, err) {
       if (settings.loading) {
@@ -89,11 +92,12 @@ function initCommon() {
     })
     menuController();
     setRightMenuHeight();
-    $("select:visible.allow-selectize").each(function() {
+    $("select.allow-selectize").each(function() {
         var select = $(this).selectize({
             allowEmptyOption: false,
             create: false,
             openOnFocus: false,
+            plugins: ['restore_on_backspace'],
             render: {
                 option: function (data, escape) {
                     return "<div data-parent-id='" + data.catalogue_id + "'>" + data.text + "</div>"
@@ -112,6 +116,8 @@ function initCommon() {
         var select = $(this).selectize({
             delimiter: ',',
             persist: false,
+            plugins: ['restore_on_backspace'],
+            
             create: function(input) {
                 return {
                     value: input+'**++**eplus',
@@ -120,7 +126,9 @@ function initCommon() {
             }
         });
     });
-    editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
+    if($('textarea[name=new-question-content]').length!=0){
+        editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
+    }
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');
@@ -137,8 +145,12 @@ function initCommon() {
         }
     })
     checkError();
-    $('.btn-disabled').attr('disabled','');
-    $('.btn-disabled').attr('title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
+    $('.btn-disabled').addClass('disabled');
+    $('.btn-disabled').attr('data-toggle','tooltip');
+    $('.btn-disabled').attr('data-placement','bottom');
+    $('.btn-disabled').attr('data-original-title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
+    $('.btn-disabled').tooltip();
+    $('.btn-disabled').removeAttr('title');
     setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
 }
 
@@ -166,6 +178,7 @@ function initEvent() {
             $('.menu-btn').css('display','none');
         }
         setFooter();
+        setCollapse();
     });
     $(document).on('click', '.div-link', function(e) {
         e.preventDefault();
@@ -707,13 +720,14 @@ function toggleEffect(item_infor,callback){
 }
 
 function setCollapse() {
-    if ($(window).width() < 768) {
-        $('.close-when-small').addClass('in').removeClass('in');
+    if ($(window).width() < 1025) {
+        $('.close-when-small').removeClass('in');
         $('.close-when-small').prev('.left-header').find(".collapse-icon").html('');
         $('.close-when-small').prev('.left-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-up" style="float: right;margin-right:2px;"></i');
     } else {
         $('.close-when-small').prev('.left-header').find(".collapse-icon").html('');
         $('.close-when-small').prev('.left-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
+        $('.close-when-small').addClass('in');
     }
 
     if ($(window).width() >550) {

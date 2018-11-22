@@ -43,12 +43,7 @@ function initListening(){
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr("id") == 'btn_next') {
-            nextListening();
-        }
-        if ($(this).attr("id") == 'btn_prev') {
-            previousListening();
-        }
+        
         if ($(this).hasClass('btn-remember')) {
             rememberListening($(this));
         }
@@ -81,6 +76,16 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click', 'h5', function() {
+        if ($(this).attr("id") == 'btn_next') {
+            nextListening();
+        }
+        if ($(this).attr("id") == 'btn_prev') {
+            previousListening();
+        }
+    })
+    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');

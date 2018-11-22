@@ -33,3 +33,20 @@
 .ratemate {
 	height: 30px;
 }
+
+.commentbox .right-header{
+	display: none!important;
+}
+
+span[data-toggle=tooltip]:hover{
+	cursor: default;
+}
+
+.post-infor .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.post-infor .tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}

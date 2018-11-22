@@ -40,10 +40,6 @@
         </div>
     </div>
 </div>
-<div class="col-xs-12 no-padding margin-top">
-    <button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
-    <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
-</div>
 <div class="col-xs-12 no-padding listen-check-box">
     <textarea class="form-control input-sm margin-top col-xs-12 no-padding" id="check-listen-data" rows="3" placeholder="Nghe kỹ bài nghe sau đó nghi lại những gì bạn nghe được tại đây rồi nhấn ' Kiểm tra kết quả '"></textarea>
     <button class="btn btn-sm btn-primary margin-top {{$raw_data[0][0]['btn-check-answer']==1?'btn-popup':'btn-disabled'}}" popup-id="popup-box3">Kiểm tra kết quả</button>

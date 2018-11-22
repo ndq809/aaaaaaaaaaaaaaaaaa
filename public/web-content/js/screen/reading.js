@@ -39,12 +39,7 @@ function initReading(){
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr("id") == 'btn_next') {
-            nextReading();
-        }
-        if ($(this).attr("id") == 'btn_prev') {
-            previousReading();
-        }
+       
         if ($(this).hasClass('btn-check-answer')) {
             checkAnswer();
         }
@@ -83,6 +78,16 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click', 'h5', function() {
+         if ($(this).attr("id") == 'btn_next') {
+            nextReading();
+        }
+        if ($(this).attr("id") == 'btn_prev') {
+            previousReading();
+        }
+    })
+    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');
@@ -284,7 +289,7 @@ function getData() {
         },
         // Ajax error
         error: function(jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
+            showMessage(4);
         }
     });
 }

@@ -50,12 +50,7 @@ function initTranslate() {
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr("id") == 'btn_next') {
-            nextVocabulary();
-        }
-        if ($(this).attr("id") == 'btn_prev') {
-            previousVocabulary();
-        }
+        
         if ($(this).hasClass('btn-remember')) {
             rememberVocabulary($(this));
         }
@@ -82,6 +77,16 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click', 'h5', function() {
+        if ($(this).attr("id") == 'btn_next') {
+            nextVocabulary();
+        }
+        if ($(this).attr("id") == 'btn_prev') {
+            previousVocabulary();
+        }
+    })
+    
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
             $("." + $(this).attr("id")).show();

@@ -27,10 +27,6 @@
 <div class="col-xs-12 no-padding hint-text">
     <h6>Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng</h6>
 </div>
-<div class="col-xs-12 no-padding">
-    <button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
-    <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
-</div>
 @if(isset($data)&&$data[2][0]['id'] != '')
     @foreach($data[2] as $index => $row)
         <div class="col-xs-12 no-padding vocabulary-box hidden" target-id="{{$row['row_id']}}">

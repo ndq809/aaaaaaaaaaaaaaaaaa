@@ -105,9 +105,10 @@ label {
 
 .tooltip .tooltip-inner {
     background-color:red;
+    border: 1px solid #fff;
 }
 .tooltip .tooltip-arrow {
-      border-top:5px solid red!important;
+      border-bottom:5px solid red!important;
 }
 
 .input-group {
@@ -1333,3 +1334,76 @@ table a[type='button'] {
     padding: 2px 10px;
 }
 
+.tag-list{
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 3px 2px;
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: #080404;
+    background: white;
+    box-shadow: 0 0 1px 0px red;
+}
+
+.tag-list:hover{
+    color: #080404;
+    box-shadow: 0 0 2px 1px red;
+    text-decoration: none;
+}
+
+select.allow-selectize{
+    display: none;
+}
+
+select.tag-custom{
+    display: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.rateit.rateit-font .rateit-reset{
+    background: transparent;
+    background-image: url(/web-content/images/plugin-icon/refresh.png)!important;
+    background-size: 25px;
+    width: 25px;
+    height: 24px;
+    margin-left: 5px;
+    
+}
+
+.rateit.rateit-font .rateit-reset:hover{
+    background : transparent;
+    background-image: url(/web-content/images/plugin-icon/refresh.png)!important;
+    background-size: 25px;
+    width: 25px;
+    height: 24px;
+}
+
+.rateit.rateit-font .rateit-reset span{
+    display: none;
+}
+
+.post-infor{
+    height: 36px;
+    display: table;
+}
+
+.post-infor>span{
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 5px;
+    padding-top: 9px;
+}
+
+.post-infor >.rateit{
+    position: absolute;
+    height: 36px;
+}

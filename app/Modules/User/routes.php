@@ -27,8 +27,10 @@ Route::group(
 		Route::any('writing/getData','WritingController@getData');
 		Route::any('writing/save','WritingController@save');
 		Route::any('writing/delete','WritingController@delete');
+		Route::any('writing/share','WritingController@share');
 		Route::get('social','SocialController@getIndex');
 		Route::any('social/getData','SocialController@getData');
+		Route::any('social/vote','SocialController@vote');
 		Route::get('relax','RelaxController@getIndex');
 		Route::any('relax/getData','RelaxController@getData');
 		Route::get('reading','ReadingController@getIndex');

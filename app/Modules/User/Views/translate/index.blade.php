@@ -41,10 +41,18 @@
         </div>
 	</div>
     <div class="col-xs-12 no-padding result-box {{isset($data)&&$data[0]['id'] != ''?'':'hidden'}}">
-        <div class=" col-xs-12 no-padding right-header">
-            <h5>
-                KẾT QUẢ TÌM KIẾM
-            </h5>
+        <div class="right-header col-md-12 no-padding">
+            <div class="col-md-8 no-padding">
+                <table class="full-width">
+                    <tbody>
+                        <tr>
+                            <td class="text-left"><h5 class="noselect" id="btn_prev"><i class="glyphicon glyphicon-fast-backward"></i> TRƯỚC</h5></td>
+                            <td class="text-center"><h5><i class="glyphicon glyphicon-education"></i> KẾT QUẢ TÌM KIẾM</h5></td>
+                            <td class="text-right"><h5 class="margin-right float-right noselect" id="btn_next">TIẾP <i class="glyphicon glyphicon-fast-forward"></i></h5></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="col-xs-12 no-padding">
         	 <div class="col-md-4 col-md-push-8 right-tab no-padding" >

@@ -18,10 +18,6 @@
    
 </div>
 <div class="col-xs-12 no-padding margin-top">
-    <button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
-    <button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
-</div>
-<div class="col-xs-12 no-padding margin-top">
     <div class="right-header">
         <h5 class="inline-block"><i class="glyphicon glyphicon-star-empty"></i> Ví Dụ Thực Tế</h5>
         <select class="select-header" id="exam-order">

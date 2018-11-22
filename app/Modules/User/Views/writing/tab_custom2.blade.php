@@ -36,7 +36,6 @@
 <div class="col-xs-12 no-padding margin-top margin-bottom add-panel">
     <div class="panel-group" id="add-list">
         <div class="panel-group" id="example-list">
-            @if(isset($data)&&$data[4][0]['post_id'] != '')
             <div class="panel panel-default panel-contribute">
              <div class="panel-heading" data-toggle="collapse" data-parent="#add-list" href="#collapse6">
                 <h5 class="panel-title">
@@ -58,7 +57,9 @@
                                     </tr>
                                 </thead>
                                 <tbody id="voc-content">
-                                    @include('User::writing.add_vocabulary',array('data'=>$data[4]))
+                                    @if(isset($data)&&$data[4][0]['post_id'] != '')
+                                        @include('User::writing.add_vocabulary',array('data'=>$data[4]))
+                                    @endif
                                 </tbody>
                             </table>
                         </div>
@@ -66,7 +67,6 @@
                 </div>
               </div>
             </div>
-            @endif
         </div>
     </div> 
 </div>
@@ -74,6 +74,6 @@
     <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
     <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>
     <button class="btn btn-sm btn-primary" id="btn-save" style="float: right;">Lưu Lại</button>
-    <button class="btn btn-sm btn-success" style="float: right;margin-right: 10px">Chia Sẻ</button>
+    <button class="btn btn-sm btn-success" id="btn-share" style="float: right;margin-right: 10px">Chia Sẻ</button>
     <button class="btn btn-sm btn-danger" id="btn-delete" style="float: right;margin-right: 10px">Xóa Bài Viết</button>
 </div>

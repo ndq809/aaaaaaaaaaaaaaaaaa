@@ -1467,6 +1467,8 @@ function initFlugin(){
             allowEmptyOption: true,
             create: false,
             openOnFocus: false,
+            plugins: ['restore_on_backspace'],
+
             // onInitialize: function () {
             //     this.clear();
             // }
@@ -1477,6 +1479,8 @@ function initFlugin(){
             create: true,
             openOnFocus: false,
             isDisabled: true,
+            plugins: ['restore_on_backspace'],
+
             onInitialize: function () {
                 this.clear();
             }
@@ -1486,6 +1490,8 @@ function initFlugin(){
         var select = $(this).selectize({
             delimiter: ',',
             persist: false,
+            plugins: ['restore_on_backspace'],
+            
             create: function(input) {
                 return {
                     value: input+'**++**eplus',
