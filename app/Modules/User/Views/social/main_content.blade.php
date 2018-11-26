@@ -3,7 +3,7 @@
         @foreach($data[2] as $index => $row)
         <div class="social-box post-infor" target-id="{{$row['row_id']}}">
             <div class="rateit average-rating" data-rateit-resetable="true" data-rateit-mode="font" data-rateit-readonly="true" data-toggle="tooltip" data-placement="bottom" data-original-title="Đánh giá chung {{round($row['post_rate'],2)}} sao" data-rateit-value="{{$row['post_rate']}}" style="font-size:36px;min-width: 170px;"> </div>
-            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Lượt xem"  style="margin-left: 160px;"><i class="fa fa-leanpub"></i> {{$row['post_view']}}</span>
+            <span data-toggle="tooltip" data-placement="bottom" data-original-title="Lượt xem" class="post-view"><i class="fa fa-leanpub"></i> {{$row['post_view']}}</span>
             <span data-toggle="tooltip" data-placement="bottom" data-original-title="Tác giả"><i class="fa fa-user"></i> {{$row['post_member']}}</span>
             <span data-toggle="tooltip" data-placement="bottom" data-original-title="Ngày chia sẻ" ><i class="fa fa-calendar"></i> {{date_format(date_create($row['cre_date']),"d/m/Y H:i")}}</span>
             @if(date_create($row['cre_date'])< date_create($row['edit_date']))
@@ -31,17 +31,17 @@
         @endforeach
     @endif
 </div>
-<div class=" col-xs-12 no-padding rate-bar">
-    <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'':'btn-disabled'}}" disabled="disabled" id="{{$raw_data[0][0]['btn-vote']==1?'btn-vote':'btn-disabled'}}"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
-    <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar no-padding">
-        @if(isset($data)&&$data[2][0]['post_id'] != '')
-            @foreach($data[2] as $index => $row)
-            <div class="rateit social-box my-vote" target-id="{{$row['row_id']}}" data-rateit-resetable="true" data-rateit-mode="font" data-rateit-value="{{$row['my_rate']}}" style="font-size:36px"> </div>
-            @endforeach
-        @endif
+ @if(isset($data)&&$data[2][0]['post_id'] != '')
+    @foreach($data[2] as $index => $row)
+    <div class=" col-xs-12 no-padding rate-bar social-box" target-id="{{$row['row_id']}}">
+        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'btn-vote':'btn-disabled'}}" disabled="disabled"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
+        <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar no-padding">
+                <div class="rateit my-vote" data-rateit-resetable="true" data-rateit-mode="font" data-rateit-value="{{$row['my_rate']}}" style="font-size:36px"> </div>
+        </div>
+        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
     </div>
-    <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
-</div>
+    @endforeach
+@endif
 <div class="col-xs-12 no-padding">
       @include('vocabulary_content')
 </div>
@@ -55,7 +55,7 @@
             @include('comment_content')
         </div>
         <div id="gopy" class="tab-pane fade">
-            @include('comment_content')
+            @include('comment_content',array('cmt_div'=>2))
         </div>
     </div>
 </div>

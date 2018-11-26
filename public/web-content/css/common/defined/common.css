@@ -254,7 +254,7 @@ textarea {
 }
 
 .table-click thead tr th{
-    background: unset;
+    background: transparent;
     color: black;
     border-bottom: 1px solid #ccc!important;
     text-align: left;
@@ -1392,8 +1392,8 @@ select.tag-custom{
 }
 
 .post-infor{
-    height: 36px;
     display: table;
+    margin-bottom: 5px;
 }
 
 .post-infor>span{
@@ -1406,4 +1406,10 @@ select.tag-custom{
 .post-infor >.rateit{
     position: absolute;
     height: 36px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 }

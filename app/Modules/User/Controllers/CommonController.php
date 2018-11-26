@@ -310,6 +310,8 @@ class CommonController extends ControllerUser
         $param[4]         = $param[4]!=''?$this->hashids->decode($param[4])[0]:'';
         $param['user_id'] = Auth::user()->account_nm;
         $param['ip']      = $request->ip();
+        $param['cmt_div'] = isset($param[5])?$param[5]:1;
+        unset($param[5]);
         $data             = Dao::call_stored_procedure('SPC_COM_ADD_COMMENT', $param);
         if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
             $result = array(
@@ -323,7 +325,7 @@ class CommonController extends ControllerUser
             );
         } else {
             $data             = $this->encodeID($data);
-            $view = view('comment')->with('data', $data)->render();
+            $view = view('comment')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,
@@ -352,7 +354,7 @@ class CommonController extends ControllerUser
             );
         } else {
             $data             = $this->encodeID($data);
-            $view = view('comment')->with('data', $data)->render();
+            $view = view('comment')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,

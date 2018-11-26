@@ -61,7 +61,7 @@ BEGIN
 		,	0
 		,	0
 		,	@P_user_id
-		,	'listening'
+		,	'common'
 		,	@P_ip
 		,	SYSDATETIME()
 		,	NULL

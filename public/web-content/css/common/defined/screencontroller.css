@@ -92,6 +92,19 @@
     .web-slogan :nth-child(2) {
         font-size: 6vw!important;
     }
+    #menu{
+        height: 0px;
+    }
+
+    .navbar-nav>li{
+        display: none!important;
+        float: none!important;
+    }
+
+    .navbar-nav[aria-expanded=true]>li{
+        display: inline-block!important;
+        float: left!important;
+    }
 }
 
 @media screen and (max-width: 768px) {

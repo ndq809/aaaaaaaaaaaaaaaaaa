@@ -132,6 +132,7 @@ function initCommon() {
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');
+        $('#menu').removeClass('in');
     }else{
         $('.menu-btn').css('display','none');
     }
@@ -172,13 +173,14 @@ function initEvent() {
     })
     $(window).resize(function() {
         menuController();
+        setFooter();
+        setCollapse();
         if($(window).width() < 550){
             $('.menu-btn').css('display','inline-block');
+            $('#menu').removeClass('in');
         }else{
             $('.menu-btn').css('display','none');
         }
-        setFooter();
-        setCollapse();
     });
     $(document).on('click', '.div-link', function(e) {
         e.preventDefault();
@@ -300,6 +302,12 @@ function initEvent() {
         }
     })
 
+     window.onscroll = function() {
+        if($('.right-header:visible').length!=0){
+            sticky();
+        }
+    };
+
 }
 
 function setFooter() {
@@ -308,7 +316,7 @@ function setFooter() {
         $('.bottom-content').css('position','absolute');
     } else {
         $('.bottom-content').css('position','relative');
-        $('.container-fluid .navbar-nav').addClass('in');
+        // $('.container-fluid .navbar-nav').addClass('in');
     }
 }
 
@@ -347,6 +355,7 @@ function setNextItem(item_of_table,show_index) {
     $(".right-tab .tab-content").animate({
         scrollTop: nextItem.height() * (i+show_index)
     }, 200);
+    $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
     return nextItem.attr("id");
 }
 
@@ -375,6 +384,7 @@ function setPreviousItem(item_of_table,show_index) {
     $(".right-tab .tab-content").animate({
         scrollTop: nextItem.height() * (i - 2+show_index)
     }, 200);
+    $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
     return nextItem.attr("id");
 }
 
@@ -1185,4 +1195,14 @@ function throttle(f, delay){
         },
         delay || 500);
     };
+}
+
+function sticky(){
+    var sticky_postion = $('.change-content').offset().top;
+      if (sticky_postion-$(window).scrollTop() < 0) {
+        $('.right-header').first().addClass('sticky col-md-9');
+
+      }else{
+        $('.right-header').first().removeClass('sticky col-md-9');
+      }
 }

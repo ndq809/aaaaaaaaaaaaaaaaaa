@@ -89,6 +89,33 @@ class SocialController extends ControllerUser
         return response()->json($result);
     }
 
+    public function view(Request $request)
+    {
+        $param            = $request->all();
+        $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
+        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_SOCIAL_ACT2', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'post_view'   => $data[1][0]['post_view'],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
     /**
      * Show the application index.
      * @author mail@ans-asia.com

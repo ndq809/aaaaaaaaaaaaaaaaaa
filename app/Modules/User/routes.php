@@ -31,6 +31,7 @@ Route::group(
 		Route::get('social','SocialController@getIndex');
 		Route::any('social/getData','SocialController@getData');
 		Route::any('social/vote','SocialController@vote');
+		Route::any('social/view','SocialController@view');
 		Route::get('relax','RelaxController@getIndex');
 		Route::any('relax/getData','RelaxController@getData');
 		Route::get('reading','ReadingController@getIndex');

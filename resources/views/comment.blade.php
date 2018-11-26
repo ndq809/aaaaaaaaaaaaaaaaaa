@@ -1,6 +1,7 @@
-@if(isset($data)&&$data[0][0]['comment_id'] != '')
+@php($cmt_div = isset($cmt_div)?$cmt_div:1)
+@if(isset($data) && isset($data[0][0]['comment_id']) && $data[0][0]['comment_id'] != '')
     @foreach($data[0] as $index => $row)
-    @if($row['reply_id']=='')
+    @if($row['reply_id']=='' && $row['cmt_div']==$cmt_div)
     <li class="commentItem {{isset($row['row_id'])?'comment-box':''}}" id="{{$row['comment_id']}}" target-id="{{isset($row['row_id'])?$row['row_id']:''}}">
         <div class="commenterImage">
             <img src="{{$row['avarta']}}">

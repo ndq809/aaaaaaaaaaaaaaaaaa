@@ -74,6 +74,11 @@ function initListener() {
                 } else {
                     item_infor.push('');
                 }
+                if(_this.parents('.tab-pane').attr('id')=='chemgio'){
+                    item_infor.push(1);//cmt div
+                }else{
+                    item_infor.push(2);//cmt div
+                }
                 addComment($(this), item_infor);
             }
         }
@@ -192,27 +197,27 @@ function initListener() {
     });
 
     $(document ).on("reset",".rateit",function(){
-        if($('#btn-vote').length!=0){
+        if($('.btn-vote').length!=0){
             vote(function(){
                 showMessage(2,function(){
-                    $('.my-vote').parent().prev("button").removeClass('btn-success');
-                    $('.my-vote').parent().prev("button").attr('disabled','disabled');
-                    $('.my-vote').parent().prev("button").find("span").text("Đánh giá của bạn");
+                    $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
+                    $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
+                    $('.my-vote:visible').parent().prev("button").find("span").text("Đánh giá của bạn");
                 });
             });
         }else{
-            $('.my-vote').parent().prev("button").removeClass('btn-success');
-            $('.my-vote').parent().prev("button").attr('disabled','disabled');
-            $('.my-vote').parent().prev("button").find("span").text("Đánh giá của bạn");
+            $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
+            $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
+            $('.my-vote:visible').parent().prev("button").find("span").text("Đánh giá của bạn");
         }
     });
 
-    $(document).on('click','#btn-vote',function(){
+    $(document).on('click','.btn-vote',function(){
         vote(function(){
             showMessage(2,function(){
-                $('.my-vote').parent().prev("button").removeClass('btn-success');
-                $('.my-vote').parent().prev("button").attr('disabled','disabled');
-                $('.my-vote').parent().prev("button").find("span").text("Bạn đã vote "+$('.my-vote').rateit('value')+" sao");
+                $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
+                $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
+                $('.my-vote:visible').parent().prev("button").find("span").text("Bạn đã vote "+$('.my-vote:visible').rateit('value')+" sao");
             });
         });
     })
@@ -378,14 +383,22 @@ function setContentBox(target_id) {
         $('#post_tag').selectize()[0].selectize.refreshItems();
         $('#post_tag').selectize()[0].selectize.setValue(thisposttag);
     }
-    rating = $('.rateit:visible').rateit();
+    $.when($('.rateit:visible').rateit()).done(function(){
+        $('.average-rating .rateit-empty').each(function(){
+            $(this).parents('.average-rating').next().css('margin-left',$(this).width()+10);
+        })
+    });
     var text = '';
     if($('.my-vote:visible').rateit('value')!=0){
-        text ='Bạn đã vote '+ $('.my-vote:visible').rateit('value')+' sao';
+        if($('.my-vote:visible').parent().prev("button").hasClass('btn-success')){
+            text ='Click để vote '+ $('.my-vote:visible').rateit('value')+' sao';
+        }else{
+            text ='Bạn đã vote '+ $('.my-vote:visible').rateit('value')+' sao';
+        }
     }else{
         text = 'Đánh giá của bạn';
     }
-    $('.my-vote').parent().prev("button").find("span").text(text);
+    $('.my-vote:visible').parent().prev("button").find("span").text(text);
     $('[data-toggle="tooltip"]:visible').tooltip();
     if(typeof myVar != 'undefined'){
         clearTimeout(myVar);
@@ -396,7 +409,7 @@ function setContentBox(target_id) {
             timer = 5000;
         }
         myVar = setTimeout(function(){
-            console.log('sending...');
+            view();
         },timer);
     }
 }
@@ -412,7 +425,7 @@ function getRowId(id) {
 function vote(callback){
     var data ={};
     data['post_id'] = post[0]['post_id'];
-    data['my_vote'] = $('.my-vote').rateit('value');
+    data['my_vote'] = $('.my-vote:visible').rateit('value');
     $.ajax({
         type: 'POST',
         url: '/social/vote',
@@ -425,6 +438,39 @@ function vote(callback){
                     $('.average-rating:visible').rateit('value',res.average_rating);
                     $('.average-rating:visible').attr('data-original-title','Đánh giá chung '+Number(Number(res.average_rating).toFixed(2))+' sao');
                     callback();
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function view(){
+    var data ={};
+    data['post_id'] = post[0]['post_id'];
+    $.ajax({
+        type: 'POST',
+        url: '/social/view',
+        dataType: 'json',
+        // loading:true,
+        data: data,
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('.post-view:visible').html('<i class="fa fa-leanpub"></i> '+res.post_view);
                     break;
                 case 201:
                     clearFailedValidate();

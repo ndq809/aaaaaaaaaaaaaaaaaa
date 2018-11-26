@@ -12,7 +12,7 @@
         </div>
         <a href="" class="hidden see-back">Xem bình luận trước đó</a>
         <ul class="commentList">
-            @include('comment')
+            @include('comment',array('data'=>isset($data)?$data:'','cmt_div'=>isset($cmt_div)?$cmt_div:1))
         </ul>
     </div>
 </div>
