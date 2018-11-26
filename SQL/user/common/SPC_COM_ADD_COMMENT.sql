@@ -19,6 +19,8 @@ CREATE PROCEDURE [dbo].[SPC_COM_ADD_COMMENT]
 ,   @P_reply_id	    		INT					= 0
 ,	@P_user_id				NVARCHAR(15)		= ''
 ,	@P_ip					NVARCHAR(50)		= '' 
+,   @P_cmt_div	    		INT					= 1
+
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -57,7 +59,7 @@ BEGIN
 		,	@P_target_id
 		,	IIF(@P_reply_id=0,NULL,@P_reply_id)
 		,	@P_comment_text
-		,	1
+		,	@P_cmt_div
 		,	0
 		,	0
 		,	@P_user_id
