@@ -574,13 +574,21 @@ body {
     /*border-right: 1px solid #ccc;*/
 }
 
+.body-content{
+    min-height: calc(100vh - 82px);
+}
+
+.middle-content{
+    margin-bottom: 10px;
+    
+}
+
 .bottom-content{
     background: #191919;
     border-bottom:1px #fff solid;
     color: white;
-    margin-top: 10px;
-    position: relative;
-    bottom: 0px;
+    /*margin-top: 10px;*/
+    /*height: 82px*/
 }
 
 .bottom-content a{
@@ -1118,11 +1126,11 @@ button .is-icon{
 }
 
 #btn_next{
-    width: 80px;
+    width: 61px;
 }
 
 #btn_prev{
-    width: 80px;
+    width: 61px;
 }
 
 select.input-sm{
@@ -1411,5 +1419,6 @@ select.tag-custom{
 .sticky{
     position: fixed;
     top: 0px;
+    /*width: 100%;*/
     z-index: 1000;
 }

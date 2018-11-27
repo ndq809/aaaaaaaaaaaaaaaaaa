@@ -33,7 +33,7 @@
         </div>
     </div>
 </div>
-<div class="col-xs-12 no-padding margin-top margin-bottom add-panel">
+<div class="margin-top margin-bottom add-panel">
     <div class="panel-group" id="add-list">
         <div class="panel-group" id="example-list">
             <div class="panel panel-default panel-contribute">
@@ -68,12 +68,16 @@
               </div>
             </div>
         </div>
+    </div>
+    <div class="margin-top margin-bottom">
+        <div class="col-lg-6 col-xs-12 no-padding margin-bottom">
+            <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
+            <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>
+        </div>
+        <div class="col-lg-6 col-xs-12 no-padding">
+            <button class="btn btn-sm btn-primary" id="btn-save">Lưu Lại</button>
+            <button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>
+            <button class="btn btn-sm btn-danger" id="btn-delete">Xóa Bài Viết</button>
+        </div>
     </div> 
-</div>
-<div class="margin-top margin-bottom">
-    <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
-    <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>
-    <button class="btn btn-sm btn-primary" id="btn-save" style="float: right;">Lưu Lại</button>
-    <button class="btn btn-sm btn-success" id="btn-share" style="float: right;margin-right: 10px">Chia Sẻ</button>
-    <button class="btn btn-sm btn-danger" id="btn-delete" style="float: right;margin-right: 10px">Xóa Bài Viết</button>
 </div>

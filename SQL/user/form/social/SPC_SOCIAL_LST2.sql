@@ -133,7 +133,50 @@ BEGIN
 		WHERE M007.del_flg = 0
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
+		AND F003.item_1 IS NULL
 		ORDER BY M007.upd_date DESC
+
+		INSERT INTO #SOCIAL
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+		,	M007.post_id
+		,	M007.briged_id
+		,	M007.post_title
+		,	M007.post_content
+		,	M007.cre_user
+		,	M007.post_rating
+		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)
+		,	M007.post_view
+		,	F008.cre_date
+		,	M007.upd_date
+		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		FROM M007
+		INNER JOIN F008
+		ON M007.post_id = F008.target_id
+		AND execute_div = 4
+		AND execute_target_div = 5
+		LEFT JOIN F008 _F008
+		ON	_F008.execute_div = 5
+		AND _F008.execute_target_div = 5
+		AND _F008.target_id = M007.post_id
+		AND _F008.user_id = @P_account_id
+		LEFT JOIN F003
+		ON M007.post_id = F003.item_1
+		AND F003.connect_div = 3
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		WHERE M007.del_flg = 0
+		AND M007.catalogue_div = 4
+		AND M007.post_div = 2
+		AND F003.item_1 IS NOT NULL
+		ORDER BY M007.upd_date DESC
+
+		UPDATE temp
+		SET temp.row_id = temp.new_row_id
+		FROM (
+		  SELECT #SOCIAL.row_id, ROW_NUMBER() OVER(ORDER BY #SOCIAL.row_id ASC) AS new_row_id
+		  FROM #SOCIAL
+		  ) temp
 	END
 	ELSE
 	BEGIN

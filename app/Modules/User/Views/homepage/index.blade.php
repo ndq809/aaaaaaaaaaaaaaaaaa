@@ -9,7 +9,7 @@
 @stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content border-left">
-    <div class="col-xs-12 no-padding right-header" data-target="#menu-body" data-toggle="collapse">
+    <div class="col-xs-12 no-padding right-header no-fixed" data-target="#menu-body" data-toggle="collapse">
         <table style="width: 100%">
             <tbody>
                 <tr>
@@ -135,7 +135,7 @@
             </div>
         </div>
     </div>
-    <div class=" col-xs-12 no-padding right-header">
+    <div class=" col-xs-12 no-padding right-header no-fixed">
         <h5>
             <i class="glyphicon glyphicon-retweet">
             </i>

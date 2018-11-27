@@ -9,6 +9,7 @@
 @stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
+    <div class="temp hidden" style="height:27px"></div>
 	<div class="right-header col-md-12 no-padding">
 		<div class="col-md-8 no-padding">
             <table class="full-width">

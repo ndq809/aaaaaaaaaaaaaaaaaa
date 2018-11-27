@@ -10,9 +10,9 @@
     @include('left_tab')
 @stop
 @section('content')
-<div class="col-lg-9 col-md-12 no-padding change-content">
+<div class="col-lg-9 col-md-12 no-padding change-content no-fixed">
 	<div class="col-xs-12 no-padding">
-		<div class="col-xs-12 no-padding right-header" data-target="#menu-body" data-toggle="collapse">
+		<div class="col-xs-12 no-padding right-header no-fixed" data-target="#menu-body" data-toggle="collapse">
             <table style="width: 100%">
                 <tbody>
                     <tr>
@@ -40,7 +40,8 @@
             </div>
         </div>
 	</div>
-    <div class="col-xs-12 no-padding result-box {{isset($data)&&$data[0]['id'] != ''?'':'hidden'}}">
+    <div class="col-xs-12 no-padding result-box change-content {{isset($data)&&$data[0]['id'] != ''?'':'hidden'}}">
+        <div class="temp hidden" style="height:27px"></div>
         <div class="right-header col-md-12 no-padding">
             <div class="col-md-8 no-padding">
                 <table class="full-width">

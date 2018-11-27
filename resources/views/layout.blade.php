@@ -7,6 +7,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
         <link rel="icon" type="image/png" href="/web-content/images/icon/title-icon2.png" sizes="128x128">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <title>
             @yield('title','English Plus')
         </title>
@@ -52,111 +53,113 @@
         <input type="hidden" name="" id="target-id" value="{{isset($data_default[2][0]['target_id'])?$data_default[2][0]['target_id']:''}}">
         <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
-        <div class="col-xs-12 web-panel header-content">
-            <div class="row top-header">
-                <div class="logo-box">
-                    <div>
-                        <span class="logo-box-text">ENGLISH</span>
-                        <span class="logo-box-text "><span class="fa fa-graduation-cap logo-icon"></span> SOCIAL</span>
-                    </div>
-                    <div class="div-link" href="/">
-                        <span class="logo-box-text1">EPLUS</span>
-                    </div>
-                </div>
-                <div class="slogan-box">
-                    <span class="text-slogan">COME HERE TO LEARN , PLAY AND EXPERIENCE</span>
-                </div>
-            </div>
-            <div class="row top-header">
-                <nav class="navbar navbar-default ">
-                    <div class="container-fluid">
-                        <div class="navbar-header hover-item">
-                            @if(isset(Auth::user()->account_nm))
-                            <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
-                                <img src="
-                                {{ session::get('logined_data')[0]['avarta'] }}" height="30px" style="display: inline-block;border: 2px solid #eee;">
-                                <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
-                            </a>
-                            <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/master">Trang Quản Trị</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile">Trang Cá Nhân</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-                              <li role="presentation" class="divider"></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" id="btn-logout">Đăng Xuất</a></li>
-                            </ul>
-                            @else
-                            <a class="navbar-brand btn-popup" popup-id="popup-box0">
-                                ĐĂNG NHẬP / ĐĂNG KÝ
-                            </a>
-                            @endif
-                            <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
-                                <i class="fa fa-reorder"></i>
-                            </a>
+        <div class="body-content">
+            <div class="col-xs-12 web-panel header-content">
+                <div class="row top-header">
+                    <div class="logo-box">
+                        <div>
+                            <span class="logo-box-text">ENGLISH</span>
+                            <span class="logo-box-text "><span class="fa fa-graduation-cap logo-icon"></span> SOCIAL</span>
                         </div>
-                        <ul class="nav navbar-nav collapse in" id="menu">
-                            <li>
-                                <a href="/">
-                                    Trang chủ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vocabulary">
-                                    Học từ vựng
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/grammar">
-                                    Học Ngữ Pháp
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/listening">
-                                    Học Nghe
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/writing">
-                                    Học Viết
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/reading">
-                                    Đọc Hiểu
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/social">
-                                    Cộng Đồng E+
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/translate">
-                                    Từ Điển E+
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/relax">
-                                    Giải Trí
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/contribute">
-                                    Đóng Góp
-                                </a>
-                            </li>
-                            <li>
-                                <a class="btn-popup" popup-id="popup-box4">
-                                    Nhiệm Vụ
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="div-link" href="/">
+                            <span class="logo-box-text1">EPLUS</span>
+                        </div>
                     </div>
-                </nav>
+                    <div class="slogan-box">
+                        <span class="text-slogan">COME HERE TO LEARN , PLAY AND EXPERIENCE</span>
+                    </div>
+                </div>
+                <div class="row top-header">
+                    <nav class="navbar navbar-default ">
+                        <div class="container-fluid">
+                            <div class="navbar-header hover-item">
+                                @if(isset(Auth::user()->account_nm))
+                                <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
+                                    <img src="
+                                    {{ session::get('logined_data')[0]['avarta'] }}" height="30px" style="display: inline-block;border: 2px solid #eee;">
+                                    <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px;vertical-align: middle;"></i></span>
+                                </a>
+                                <ul class="dropdown-menu user-menu" role="menu" aria-labelledby="menu1">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/master">Trang Quản Trị</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="/profile">Trang Cá Nhân</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+                                  <li role="presentation" class="divider"></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" id="btn-logout">Đăng Xuất</a></li>
+                                </ul>
+                                @else
+                                <a class="navbar-brand btn-popup" popup-id="popup-box0">
+                                    ĐĂNG NHẬP / ĐĂNG KÝ
+                                </a>
+                                @endif
+                                <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
+                                    <i class="fa fa-reorder"></i>
+                                </a>
+                            </div>
+                            <ul class="nav navbar-nav collapse in" id="menu">
+                                <li>
+                                    <a href="/">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/vocabulary">
+                                        Học từ vựng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/grammar">
+                                        Học Ngữ Pháp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/listening">
+                                        Học Nghe
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/writing">
+                                        Học Viết
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/reading">
+                                        Đọc Hiểu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/social">
+                                        Cộng Đồng E+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/translate">
+                                        Từ Điển E+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/relax">
+                                        Giải Trí
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contribute">
+                                        Đóng Góp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="btn-popup" popup-id="popup-box4">
+                                        Nhiệm Vụ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="col-xs-12 web-panel middle-content" >
-            @yield('left-tab')
-            @yield('content')
+            <div class="col-xs-12 web-panel middle-content" >
+                @yield('left-tab')
+                @yield('content')
+            </div>
         </div>
         <div class="col-xs-12 no-padding bottom-content">
             <div class=" col-lg-3 col-sm-4 bottom-left">
