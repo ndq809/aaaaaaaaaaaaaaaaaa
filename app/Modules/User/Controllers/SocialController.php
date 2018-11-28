@@ -48,7 +48,7 @@ class SocialController extends ControllerUser
         $param['user_id']  = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
         $data              = Dao::call_stored_procedure('SPC_SOCIAL_LST2', $param);
         $data              = CommonUser::encodeID($data);
-        $view1             = view('User::Social.right_tab')->with('data', $data[2])->render();
+        $view1             = view('User::Social.right_tab')->with('data', $data[2])->with('is_end', $data[7][0]['is_end'])->render();
         $view2             = view('User::Social.main_content')->with('data', $data)->render();
         $result            = array(
             'status'       => 200,

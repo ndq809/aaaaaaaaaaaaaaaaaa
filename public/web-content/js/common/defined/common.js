@@ -22,6 +22,11 @@ function initCommon() {
             window.location.reload();
         })
     }
+
+    $('.table-fixed-width table').each(function(){
+        $(this).css('min-width',$(this).parent().attr('min-width'));
+    })
+
     $('.btn-disabled').attr('data-toggle','tooltip');
     $('.btn-disabled').attr('data-placement','bottom');
     $('.btn-disabled').attr('data-original-title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
@@ -293,7 +298,7 @@ function initEvent() {
      $(document).on('keydown', function(e) {
         switch (e.which) {
             case 13:
-                if($('.comment-input:focus').length!=0){
+                if(!e.shiftKey && $('.comment-input:focus').length!=0){
                     $('.comment-input:focus').next().find('button').trigger('click');
                 }
                 break;
@@ -301,6 +306,11 @@ function initEvent() {
                 break;
         }
     })
+
+     $(document).on('change','.pager select',function(){
+        $(this).next().attr('page',$(this).val().trim());
+        $(this).next().click();
+     })
 
      window.onscroll = function() {
         if($('.right-header:visible').length!=0){
@@ -926,8 +936,8 @@ function changePassword(username){
 
 function reIndex(table)
 {
-    table.find('tbody > tr:visible').each(function(i) {
-        $(this).find('td:visible').first().text(i+1);
+    table.find('tbody > tr:not(.hidden)').each(function(i) {
+        $(this).find('td:not(.hidden)').first().text(i+1);
     });
 }
 

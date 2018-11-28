@@ -1,4 +1,4 @@
-var slider, rating, SocialArray, TagMyPostArray, post;
+var slider, rating, SocialArray, TagMyPostArray, post,loadtime=1,data_search = [];
 $(function() {
     try {
         initSocial();
@@ -37,12 +37,15 @@ function initSocial() {
             create: false,
         });
     });
-    getData();
+    getData(1);
 }
 
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
+        if ($(this).attr('id')=='btn-load-more') {
+            getData(2);
+        }
         if ($(this).hasClass('btn-remember')) {
             rememberSocial($(this));
         }
@@ -50,7 +53,8 @@ function initListener() {
             forgetSocial($(this));
         }
         if ($(this).attr("id") == 'find-by-tag') {
-            getData();
+            loadtime = 1;
+            getData(1);
         }
         if ($(this).hasClass('btn-show-answer')) {
             var current_id = $('.activeItem').attr('id');
@@ -143,7 +147,7 @@ function initListener() {
         } else {
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        getData();
+        getData(1);
     })
     $(document).on('click', '.pager li a', function(e) {
         e.stopPropagation();
@@ -151,7 +155,7 @@ function initListener() {
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
         item_infor.push(post[0]['row_id']);
-        item_infor.push(5);
+        item_infor.push(6);
         item_infor.push(post[0]['post_id']);
         item_infor.push(page);
         getComment(item_infor, function() {
@@ -282,17 +286,23 @@ function forgetSocial(forget_btn) {
     })
 }
 
-function getData() {
+function getData(mode) {
     var data = {};
     var temp = $('#post_tag').val();
     data['post_id'] = $('#target-id').val();
-    data['post_tag'] = [];
-    if ($.isArray(temp)) {
-        for (var i = 0; i < temp.length; i++) {
-            data['post_tag'].push({
-                'tag_id': temp[i]
-            });
+    data['load_time'] = loadtime;
+    if(mode == 1){
+        data['post_tag'] = [];
+        if ($.isArray(temp)) {
+            for (var i = 0; i < temp.length; i++) {
+                data['post_tag'].push({
+                    'tag_id': temp[i]
+                });
+            }
         }
+        data_search = data['post_tag'];
+    }else{
+        data['post_tag'] = data_search;
     }
     $.ajax({
         type: 'POST',
@@ -311,10 +321,14 @@ function getData() {
                     if ($('#target-id').attr('value') != '') {
                         $('.table-right tbody tr[id=' + getRowId($('#target-id').attr('value')) + ']').trigger('click');
                     } else {
-                        if($('.table-right tbody tr:not(.no-row)').length!=0){
-                            $('.table-right tbody tr:not(.no-row)').first().trigger('click');
+                        if(typeof location.href.split('?v=')[1] != 'undefined'){
+                            $('.table-right tbody tr[id=' + getRowId(location.href.split('?v=')[1]) + ']').trigger('click');
                         }else{
-                            $('.table-right tbody tr').first().trigger('click');
+                            if($('.table-right tbody tr:not(.no-row)').length!=0){
+                            $('.table-right tbody tr:not(.no-row)').first().trigger('click');
+                            }else{
+                                $('.table-right tbody tr').first().trigger('click');
+                            }
                         }
                     }
                     if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
@@ -323,6 +337,7 @@ function getData() {
                         switchTab(1);
                     }
                     $('#target-id').attr('value', '')
+                    loadtime ++;
                     break;
                 case 201:
                     clearFailedValidate();
@@ -461,6 +476,40 @@ function vote(callback){
 function view(){
     var data ={};
     data['post_id'] = post[0]['post_id'];
+    $.ajax({
+        type: 'POST',
+        url: '/social/view',
+        dataType: 'json',
+        // loading:true,
+        data: data,
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('.post-view:visible').html('<i class="fa fa-leanpub"></i> '+res.post_view);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function loadmore(){
+    var data ={};
+    data['max_row'] = Math.max.apply(Math, SocialArray.map(function(o) { return o.row_id; }));
+    console.log(data);
     $.ajax({
         type: 'POST',
         url: '/social/view',

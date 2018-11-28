@@ -1,3 +1,14 @@
 .table-custom tbody tr td{
 	padding: 0px 1px;
 }
+
+@media screen and (max-width: 768px) {
+    .tooltip{
+        left: calc(50vw - 167px)!important;
+    }
+}
+
+.tooltip-inner {
+  min-width: 310px;
+  min-height: 250px;
+}

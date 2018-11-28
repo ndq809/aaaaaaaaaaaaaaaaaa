@@ -166,12 +166,13 @@ class Paging
         $paging .= '    <select class="form-control input-sm">';
         for($i=1;$i<=$pageMax;$i++){
             if($i!=$page){
-                $paging .= '    <option>Trang '.$i.'</option>';
+                $paging .= '    <option value = "'.$i.'">'.$i.'</option>';
             }else{
-                $paging .= '    <option selected="selected">Trang '.$i.'</option>';
+                $paging .= '    <option selected="selected value = "'.$i.'">'.$i.'</option>';
             }
         }
         $paging .= '    </select>';
+        $paging .= '    <a page="0" class="hidden"></a>';
         $paging .= '    </li>';
         $paging .= '    <li class="' . $disabledlast . '"><a class="' . $disabledlast . '" page="' . $page4 . '">Tiếp</a></li>'; // QuyND 2017/12/07
         $paging .= '    <li class="' . $disabledlast . '"><a page="' . $pageMax . '" class="' . $disabledlast . '">Cuối</a></li>'; // DuyTP 2017/02/16

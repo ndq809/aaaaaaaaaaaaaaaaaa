@@ -66,11 +66,11 @@ function p001_execute(page){
         success: function (res) {
             clearFailedValidate();
             $('#result').html(res).promise().done(function(){
-                $('.preview').attr('data-toggle','tooltip');
-                $('.preview').attr('data-placement','left');
-                $('.preview').tooltip({
+                $('#result .preview').tooltip({
                     animated: 'fade',
+                    trigger: 'hover',
                     placement: 'left',
+                    delay: { show: 100, hide: 100 },
                     html: true
                 });
             });
@@ -94,11 +94,11 @@ function p001_load(){
         success: function (res) {
             clearFailedValidate();
             $('#result1').html(res).promise().done(function(){
-                $('.preview').attr('data-toggle','tooltip');
-                $('.preview').attr('data-placement','left');
-                $('.preview').tooltip({
+                $('#result1 .preview').tooltip({
+                    trigger: 'hover',
                     animated: 'fade',
                     placement: 'left',
+                    delay: { show: 100, hide: 100 },
                     html: true
                 });
             });

@@ -1,4 +1,4 @@
-<div class="table-fixed-width no-padding-left" min-width='700px'>
+<div class="table-fixed-width no-padding-left" min-width='1200px'>
     <table class="table table-hover table-bordered table-preview table-custom">
         <thead>
             <tr>

@@ -15,7 +15,7 @@
     <input type="text" class="form-control input-sm margin-bottom submit-item" id="post_title" name="">
 </div>
 <div class="form-group">
-    <label class="title-header inline-block">Nội dung bài viết</label>
+    <label class="title-header inline-block">Nội dung</label>
      <label class="switch">
       <input type="checkbox" checked="checked" id="is_suggest">
       <span class="slider round"></span>
@@ -69,15 +69,11 @@
             </div>
         </div>
     </div>
-    <div class="margin-top margin-bottom">
-        <div class="col-lg-6 col-xs-12 no-padding margin-bottom">
-            <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
-            <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>
-        </div>
-        <div class="col-lg-6 col-xs-12 no-padding">
-            <button class="btn btn-sm btn-primary" id="btn-save">Lưu Lại</button>
-            <button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>
-            <button class="btn btn-sm btn-danger" id="btn-delete">Xóa Bài Viết</button>
-        </div>
+    <div class="margin-top btn-group">
+        <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
+        <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>
+        <button class="btn btn-sm btn-info" id="btn-save">Lưu Lại</button>
+        <button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>
+        <button class="btn btn-sm btn-danger" id="btn-delete">Xóa Bài Viết</button>
     </div> 
 </div>

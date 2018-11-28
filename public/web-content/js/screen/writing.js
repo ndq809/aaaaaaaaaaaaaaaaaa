@@ -410,13 +410,13 @@ function getData() {
             });
             
             $(".btn-add-vocabulary").fancybox({
-                'width'         : '90%',
-                'height'        : '90%',
+                'width'         : '100%',
+                'height'        : '100%',
                 'autoScale'     : true,
                 'transitionIn'  : 'none',
                 'transitionOut' : 'none',
                 'type'          : 'iframe',
-                'autoSize'      : false,
+                'margin'        : 6,
                 beforeLoad      : function() {
                     _popup_transfer_array['voc_array']=getVocabularyList(); 
                     _popup_transfer_array['row_id']=$('.activeItem:visible').attr('id'); 

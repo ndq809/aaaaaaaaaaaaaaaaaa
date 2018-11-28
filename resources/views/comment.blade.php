@@ -64,8 +64,8 @@
             @endforeach
             </ul>
             <div class="input-group hidden comment-input">
-                <input type="text" class="form-control input-sm comment-input" {{$raw_data[0][0]['btn-comment']==1?'':'disabled'}}
-                placeholder="Bình luận của bạn" />
+                <textarea type="text" class="form-control input-sm comment-input" {{$raw_data[0][0]['btn-comment']==1?'':'disabled'}}
+                placeholder="Bình luận của bạn" rows="1"></textarea>
                 <div class="input-group-btn">
                     <button class="btn btn-default btn-sm {{$raw_data[0][0]['btn-comment']==1?'btn-comment':'btn-disabled'}}" id="btBinhLuan">Bình Luận </button>
                 </div>

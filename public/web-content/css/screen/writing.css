@@ -73,7 +73,7 @@ input:checked + .slider:before {
 
 .switch-text{
 	position: absolute;
-	width: 150px;
+	width: 135px;
 	left: 50px;
 	bottom: 0px
 }
@@ -106,8 +106,19 @@ input:checked + .slider:before {
       list-style: none;
       padding-left: 10px;
     }
+
+    .tooltip{
+        top: calc(50vh - 150px)!important;
+        left: calc(50vw - 167px)!important;
+    }
 }
 
 .suggest-box{
   margin-bottom: 0px;
 }
+
+.fancybox-close{
+    top: -8px;
+    right: -8px;
+}
+

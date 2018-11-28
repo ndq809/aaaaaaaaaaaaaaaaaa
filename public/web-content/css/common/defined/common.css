@@ -989,6 +989,7 @@ td .radio-inline {
     font-size: 12px;
     text-align: justify;
     padding-right: 5px;
+    white-space: pre-wrap;
 }
 .bottomContent{
     display: block;
@@ -1422,3 +1423,18 @@ select.tag-custom{
     /*width: 100%;*/
     z-index: 1000;
 }
+
+.btn-group .btn-default{
+    border-color: #fff;
+}
+
+.btn-group>button{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-like:hover{
+    text-decoration: none;
+}
+
+

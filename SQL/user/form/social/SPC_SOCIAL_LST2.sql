@@ -12,7 +12,8 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_SOCIAL_LST2]
 	
-		@P_post_id				NVARCHAR(15)	=	'' 
+		@P_post_id				NVARCHAR(15)	=	''
+	,	@P_loadtime				INT				=	1 
 	,	@P_tag_list				XML				=	'' 
 	,	@P_account_id			NVARCHAR(15)	=	''
 AS
@@ -24,6 +25,7 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 	,	@tagcount			INT					=	0
+	,	@record_count		INT					=	0
 
 	CREATE TABLE #SOCIAL(
 		row_id				INT
@@ -99,10 +101,12 @@ BEGIN
 		tag_id						=	T.C.value('@tag_id 	  ', 'nvarchar(15)')
 		FROM @P_tag_list.nodes('row') T(C)
 	END
+
+
 	IF NOT EXISTS (SELECT * FROM #TAG)
 	BEGIN
 		INSERT INTO #SOCIAL
-		SELECT TOP 20
+		SELECT
 			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
 		,	M007.post_id
 		,	M007.briged_id
@@ -135,6 +139,30 @@ BEGIN
 		AND M007.post_div = 2
 		AND F003.item_1 IS NULL
 		ORDER BY M007.upd_date DESC
+		OFFSET 0 ROWS
+		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
+
+		SELECT
+			@record_count = COUNT(*)
+		FROM M007
+		INNER JOIN F008
+		ON M007.post_id = F008.target_id
+		AND execute_div = 4
+		AND execute_target_div = 5
+		LEFT JOIN F008 _F008
+		ON	_F008.execute_div = 5
+		AND _F008.execute_target_div = 5
+		AND _F008.target_id = M007.post_id
+		AND _F008.user_id = @P_account_id
+		LEFT JOIN F003
+		ON M007.post_id = F003.item_1
+		AND F003.connect_div = 3
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		WHERE M007.del_flg = 0
+		AND M007.catalogue_div = 4
+		AND M007.post_div = 2
+		AND F003.item_1 IS NULL
 
 		INSERT INTO #SOCIAL
 		SELECT
@@ -194,7 +222,7 @@ BEGIN
 		GROUP BY F009.briged_id
 
 		INSERT INTO #SOCIAL
-		SELECT TOP 20
+		SELECT
 			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
 		,	M007.post_id
 		,	M007.briged_id
@@ -233,6 +261,31 @@ BEGIN
 		WHEN #BRIGED.tagcount > @tagcount THEN 2
 		ELSE 3
 		END
+		OFFSET 0 ROWS
+		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
+
+		SELECT
+			@record_count = COUNT(*)
+		FROM M007
+		INNER JOIN F008
+		ON M007.post_id = F008.target_id
+		AND execute_div = 4
+		AND execute_target_div = 5
+		LEFT JOIN F008 _F008
+		ON	_F008.execute_div = 5
+		AND _F008.execute_target_div = 5
+		AND _F008.target_id = M007.post_id
+		AND _F008.user_id = @P_account_id
+		INNER JOIN #BRIGED
+		ON M007.briged_id = #BRIGED.briged_id
+		LEFT JOIN F003
+		ON M007.post_id = F003.item_1
+		AND F003.connect_div = 3
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		WHERE M007.del_flg = 0
+		AND M007.catalogue_div = 4
+		AND M007.post_div = 2
 	END
 	INSERT INTO #COMMENT
 	SELECT *
@@ -388,6 +441,8 @@ BEGIN
 	ON F009.briged_id = #SOCIAL.briged_id
 	WHERE M013.del_flg = 0
 	AND M013.tag_div = 2
+
+	SELECT IIF(@record_count <= @P_loadtime * 1,1,0) AS is_end
 
 END
 
