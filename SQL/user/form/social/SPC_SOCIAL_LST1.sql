@@ -56,6 +56,8 @@ BEGIN
 	ON F004.target_id = M007.post_id
 	WHERE
 	M007.post_div = 2
+	AND	M007.catalogue_div = 4
+
 	GROUP BY M007.post_id
 	,	M007.post_title
 	ORDER BY COUNT(M007.post_id) + ISNULL(SUM(F004.cmt_like),0) DESC
@@ -75,6 +77,7 @@ BEGIN
 	AND execute_target_div = 5
 	WHERE M007.cre_user = @P_account_id
 	AND M007.post_div = 2
+	AND	M007.catalogue_div = 4
 	AND M007.del_flg = 0
 
 	SELECT

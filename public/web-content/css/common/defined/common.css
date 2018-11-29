@@ -1437,4 +1437,9 @@ select.tag-custom{
     text-decoration: none;
 }
 
+.btn-load-more{
+    position: absolute;
+    bottom: 0px;
+}
+
 

@@ -50,8 +50,3 @@ span[data-toggle=tooltip]:hover{
       border-bottom:5px solid #ff3e00!important;
       border-top: none!important;
 }
-
-.btn-load-more{
-	position: absolute;
-	bottom: 0px;
-}

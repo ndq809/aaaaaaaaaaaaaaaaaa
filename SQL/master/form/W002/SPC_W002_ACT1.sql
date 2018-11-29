@@ -378,6 +378,48 @@ BEGIN
 		,	NULL
 		FROM @P_xml_detail1.nodes('row') T(C)
 
+		IF @P_catalogue_div IN(7,8,9)
+		BEGIN
+			INSERT INTO F008(
+				target_id
+			,	user_id
+			,	execute_div
+			,	execute_target_div
+			,	del_flg
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+			,	upd_user
+			,	upd_prg
+			,	upd_ip
+			,	upd_date
+			,	del_user
+			,	del_prg
+			,	del_ip
+			,	del_date
+
+				)
+			SELECT
+				@w_inserted_key
+			,	@P_user_id
+			,	4
+			,	5
+			,	0
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	SYSDATETIME()
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+		END
+
 	END
 	ELSE
 	BEGIN

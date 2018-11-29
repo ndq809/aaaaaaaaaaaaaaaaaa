@@ -4,234 +4,70 @@
     {!!WebFunctions::public_url('web-content/js/screen/relax.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/jquery.ratemate.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/raphael-min.js')!!}
+    {!!WebFunctions::public_url('web-content/player/build/mediaelement-and-player.js')!!}
+    {!!WebFunctions::public_url('web-content/player/build/mediaelementplayer.css')!!}
     {!!WebFunctions::public_url('web-content/css/screen/relax.css')!!}
-    <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
 @stop
 @section('left-tab')
-    @include('left_tab')
+    @include('User::relax.left_tab')
 @stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
-	<div class="col-md-12 no-padding">
-		<div class="right-header">
-			<h5><i class="glyphicon glyphicon-education"></i> GIẢI TRÍ CÙNG TIẾNG ANH</h5>
-		</div>
-	</div>
+	<div class="right-header col-md-12 no-padding">
+        <div class="col-md-8 no-padding">
+            <table class="full-width">
+                <tbody>
+                    <tr>
+                        <td class="text-left"><h5 class="noselect" id="btn_prev"><i class="glyphicon glyphicon-fast-backward"></i> TRƯỚC</h5></td>
+                        <td class="text-center"><h5><i class="fa fa-rocket"></i> GIẢI TRÍ CÙNG E+</h5></td>
+                        <td class="text-right"><h5 class="margin-right float-right noselect" id="btn_next">TIẾP <i class="glyphicon glyphicon-fast-forward"></i></h5></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 	 <div class="col-md-4 col-md-push-8 right-tab no-padding">
 	 	<div class="col-md-12 no-padding select-group">
-	 		<div class="form-group">
-                <label>Chủ đề</label>
-                <select>
-                    <option>this is select box</option>
-                </select>
-            </div>
             <div class="form-group">
-                <label>Ngôn ngữ</label>
-                <select>
-                    <option>this is select box</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Từ Khóa</label>
+                <label>Tag Bài Viết</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm">
+                    <select class="margin-bottom tag-custom submit-item" id="post_tag" multiple="multiple">
+                        @if(isset($data_default)&&$data_default[4][0]['tag_id'] != '')
+                            @foreach($data_default[4] as $index => $row)
+                            <option value="{{$row['tag_id']}}">{{$row['tag_nm']}}</option>
+                            @endforeach
+                        @endif
+                    </select>
                 </div>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top">Tìm kiếm bài đăng</button>
-	 	</div>
+            <button class="btn btn-sm btn-primary full-width margin-top" id="find-by-tag">Tìm kiếm theo tag</button>
+        </div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Hình Ảnh</a></li>
             <li class=""><a data-toggle="tab" href="#tab2" aria-expanded="false">Video</a></li>
             <li class=""><a data-toggle="tab" href="#tab3" aria-expanded="false">Truyện</a></li>
         </ul>
-        <div class="tab-content focusable">
-            <div id="tab1" class="tab-pane fade active in">
-                <div class="">
-                    <table class="table table-striped table-hover table-right relax-table">
-                         @for($i=1;$i<=10;$i+=2)
-                         @if($i==1)
-                        <tbody id="{{$i}}" class="activeItem">
-                            <tr>
-                                <td><a><img alt="loadIcon" src="https://em.wattpad.com/eb561e9fdaaba1f8c44ffb1056263e39ddf6aa39/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5370696e526755417930576344673d3d2d3335373536333234362e313439393932656337353031383837323934303339393937393537332e6a7067?s=fit&amp;amp;w=1280&amp;amp;h=1280"></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody id="{{$i+1}}">
-                            <tr>
-                                <td><a><img alt="loadIcon" src="http://anhdep99.com/wp-content/uploads/2016/12/anh-anime-dep-lung-linh-trong-dem-giang-sinh.jpg"></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        @else
-                        <tbody id="{{$i}}">
-                            <tr>
-                                <td><a><img alt="loadIcon" src="https://em.wattpad.com/eb561e9fdaaba1f8c44ffb1056263e39ddf6aa39/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5370696e526755417930576344673d3d2d3335373536333234362e313439393932656337353031383837323934303339393937393537332e6a7067?s=fit&amp;amp;w=1280&amp;amp;h=1280"></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody id="{{$i+1}}">
-                            <tr>
-                                <td><a><img alt="loadIcon" src="http://anhdep99.com/wp-content/uploads/2016/12/anh-anime-dep-lung-linh-trong-dem-giang-sinh.jpg"></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        @endif
-                        @endfor
-                    </table>
-                </div>
-            </div>
-            <div id="tab2" class="tab-pane fade">
-                <div class="">
-                    <table class="table table-striped table-hover table-right">
-                        <tbody>
-                             @for($i=6;$i<=10;$i++)
-                            @if($i==6)
-                            <tr>
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                            @else
-                            <tr id="{{$i}}">
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                            @endif
-                            @endfor
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div id="tab3" class="tab-pane fade">
-                <div class="">
-                    <table class="table table-striped table-hover table-right">
-                        <tbody>
-                             @for($i=11;$i<=15;$i++)
-                            @if($i==6)
-                            <tr id="{{$i}}" class="activeItem">
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                            @else
-                            <tr id="{{$i}}">
-                                <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> Abide by</span> </a>
-                                </td>
-                            </tr>
-                            @endif
-                            @endfor
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        <div class="tab-content focusable" id="result1">
+            @include('User::relax.right_tab')
         </div>
     </div>
 	<div class="col-md-8 col-md-pull-4 web-main">
 		<div class="col-xs-12 no-padding">
 			<ul class="nav nav-tabs nav-justified Relax-tab">
-                <li class="active"><a data-toggle="tab" href="#example">Giải trí với tiếng anh</a></li>
-                <li><a data-toggle="tab" href="#question">Đóng góp cho E+</a></li>
+                <li class="active"><a data-toggle="tab" href="#tab-custom1">Giải trí với tiếng anh</a></li>
+                <li><a data-toggle="tab" href="#tab-custom2">Đóng góp cho E+</a></li>
             </ul>
             <div class="tab-content">
-                <div id="example" class="tab-pane fade in active">
-                    <div class="example-header title-header">
-                        <span>Chủ Ngữ !</span>
-                    </div>
-                    <div class="main-content" id="noiDungNP">
-                        <p>Chủ ngữ là chủ thể của hành động trong câu, thường đứng trước động từ (verb). Chủ ngữ thường là một danh từ (noun) hoặc một ngữ danh từ (noun phrase - một nhóm từ kết thúc bằng một danh từ, trong trường hợp này ngữ danh từ không được bắt đầu bằng một giới từ). Chủ ngữ thường đứng ở đầu câu và quyết định việc chia động từ.&nbsp;&nbsp;<br>
-                        <div class="image margin-bottom">
-                            <img alt="loadIcon" src="https://em.wattpad.com/eb561e9fdaaba1f8c44ffb1056263e39ddf6aa39/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5370696e526755417930576344673d3d2d3335373536333234362e313439393932656337353031383837323934303339393937393537332e6a7067?s=fit&amp;amp;w=1280&amp;amp;h=1280">
-                        </div>
-                    </div>
+                <div id="tab-custom1" class="tab-pane fade in active">
+                    @include('User::relax.tab_custom1')
                 </div>
-                <div id="question" class="tab-pane fade input-tab">
-                    <div class="form-group width-50 inline-block float-left">
-                        <label class="title-header" style="display: inline-block;">Loại bài viết</label>
-                        <select>
-                            <option>this is select box</option>
-                        </select>
-                    </div>
-                    <div class="form-group width-50 inline-block float-left">
-                        <label class="title-header" style="display: inline-block;">Ngôn ngữ</label>
-                        <select>
-                            <option>this is select box</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="title-header">Tiêu đề bài viết</label>
-                        <input type="text" class="form-control input-sm margin-bottom" name="">
-                    </div>
-                    <div class="form-group">
-                        <label class="title-header">Mô tả</label>
-                        <textarea class="form-control input-sm margin-bottom" rows="4"></textarea>
-                    </div>
-                    <div class="form-group link">
-                        <label class="title-header">Đường dẫn ảnh / video</label>
-                        <input type="text" class="form-control input-sm margin-bottom" name="">
-                    </div>
-                    <div class="form-group non-link">
-                        <label class="title-header">Nội dung bài viết</label>
-                        <textarea name="practice-area" col-xs-12 no-paddings="5"></textarea>
-                        <script type="text/javascript">
-                          var editor = CKEDITOR.replace('practice-area',{language:"vi"});
-                        </script>
-                    </div>
-                    <div class="margin-top margin-bottom">
-                        <button class="btn btn-sm btn-default" >Làm Mới Trang</button>
-                        <button class="btn btn-sm btn-primary" style="float: right;">Đóng Góp</button>
-                    </div>
+                <div id="tab-custom2" class="tab-pane fade input-tab">
+                    @include('User::relax.tab_custom2')
                 </div>
             </div>
 		</div>
-        <div class=" col-xs-12 no-padding rate-bar">
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5"><span style="font-weight: bold;">Đánh giá</span></button>
-            <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar">
-                <div class="rateit" data-rateit-resetable="false" data-rateit-mode="font"  style="font-size:36px"> </div>
-            </div>
-            <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
-        </div>
-		<div class="col-xs-12 no-padding margin-top router-btn">
-			<button class="btn btn-sm btn-primary" id="btn_prev">Trước</button>
-			<button class="btn btn-sm btn-primary" id="btn_next" style="float: right;">Tiếp</button>
-		</div>
-		<div class="col-xs-12 no-padding">
-            <div class="commentbox">
-                <div class="titleBox">
-                    <label>Bình luận</label>
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                </div>
-                <div class="actionBox" style="padding: 0px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control input-sm"
-                            placeholder="Bình luận của bạn" />
-                        <div class="input-group-btn">
-                            <button class="btn btn-default btn-sm btn-comment" id="btBinhLuan">Bình Luận </button>
-                        </div>
-                    </div>
-                    <a href="" class="hidden see-back">Xem bình luận trước đó</a>
-                    <ul class="commentList">
-                    </ul>
-                    <button class="btn btn-default btn-sm full-width margin-top btn-more-cmt">Hiện thêm bình luận</button>
-                </div>
-            </div>
+        <div class="example-content">
+            @include('User::relax.main_content')
         </div>
 	</div>
 </div>

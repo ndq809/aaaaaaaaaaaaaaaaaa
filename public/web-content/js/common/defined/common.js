@@ -342,10 +342,10 @@ function menuController() {
 
 function setNextItem(item_of_table,show_index) {
 	if(typeof item_of_table =='undefined')
-		item_of_table="tr";
+		item_of_table="tbody tr";
 	if(typeof show_index =='undefined')
 		show_index=0;
-    listItem = $(selectedTab + " table tbody " + item_of_table +":visible");
+    listItem = $(selectedTab + " table " + item_of_table +":visible");
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
     var nextItem;
@@ -372,10 +372,10 @@ function setNextItem(item_of_table,show_index) {
 
 function setPreviousItem(item_of_table,show_index) {
 	if(typeof item_of_table =='undefined')
-		item_of_table="tr";
+		item_of_table="tbody tr";
 	if(typeof show_index =='undefined')
 		show_index=0;
-    listItem = $(selectedTab + " table tbody " + item_of_table+":visible");
+    listItem = $(selectedTab + " table " + item_of_table+":visible");
     currentSelectItem = $(selectedTab + " table .activeItem");
     itemId = currentSelectItem.attr("id");
     var nextItem;
