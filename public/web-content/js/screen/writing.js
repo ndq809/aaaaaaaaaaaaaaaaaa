@@ -417,6 +417,7 @@ function getData() {
                 'transitionOut' : 'none',
                 'type'          : 'iframe',
                 'margin'        : 6,
+                'fixed'         : false,
                 beforeLoad      : function() {
                     _popup_transfer_array['voc_array']=getVocabularyList(); 
                     _popup_transfer_array['row_id']=$('.activeItem:visible').attr('id'); 
