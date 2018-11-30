@@ -62,3 +62,14 @@
 .ratemate {
 	height: 30px;
 }
+
+.mejs__mediaelement .fb-video{
+	width: auto!important;
+	height: 100%;
+}
+
+.mejs__mediaelement{
+	text-align: center;
+	background-image: url(/web-content/images/background/body-background.gif);
+}
+

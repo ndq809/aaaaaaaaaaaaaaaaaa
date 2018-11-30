@@ -39,7 +39,7 @@
                     @if($row['post_type']==5)
                         <tbody id="{{$row['row_id']}}">
                             <tr>
-                                <td><a><img alt="loadIcon" src="https://img.youtube.com/vi/{{explode('?v=',$row['post_media'])[1]}}/0.jpg"></a></td>
+                                <td><a><img alt="loadIcon" src="https://img.youtube.com/vi/QdXdx9IaakA/0.jpg"></a></td>
                             </tr>
                             <tr>
                                 <td>

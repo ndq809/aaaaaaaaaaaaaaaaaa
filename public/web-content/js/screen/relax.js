@@ -334,7 +334,7 @@ function getData(mode) {
                     if ($('#target-id').attr('value') != '') {
                         $('.table-right tbody[id=' + getRowId($('#target-id').attr('value')) + ']').trigger('click');
                     } else {
-                        if(typeof location.href.split('?v=')[1] != 'undefined'){
+                        if(typeof location.href.split('?v=')[1] != 'undefined' && getRowId(location.href.split('?v=')[1])!=''){
                             $('.table-right tbody[id=' + getRowId(location.href.split('?v=')[1]) + ']').trigger('click');
                         }else{
                             if($('.table-right tbody:not(.no-row)').length!=0){
@@ -344,14 +344,37 @@ function getData(mode) {
                             }
                         }
                     }
-                    if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
-                        switchTab(2);
-                    } else {
-                        switchTab(1);
+                    switch($('.activeItem').parents('.tab-pane').attr('id')){
+                        case 'tab1' :
+                             switchTab(1);
+                             break;
+                        case 'tab2' :
+                            switchTab(2)
+                             break;
+                        case 'tab3' :
+                            switchTab(3);
+                             break;
                     }
+                    // if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
+                    //     switchTab(2);
+                    // } else {
+                    //     switchTab(1);
+                    // }
                     $('#target-id').attr('value', '')
                     loadtime ++;
-                    $('#player1').mediaelementplayer();
+                    players = $('.video-player').mediaelementplayer({
+                        renderers: ['html5', 'facebook', 'youtube_iframe'], // Use only M(PEG)DASH renderers
+                        success: function(mediaElement, domObject) {
+                            // mediaElement.addEventListener('loadeddata', function(e) {
+                            //     var temp = $(mediaElement).find('iframe');
+                            //     temp.load(function () {                        
+                            //         if($('.fb-video>span').length!=0)
+                            //             $('.mejs__container').height($('.fb-video>span').height());
+                            //     });
+                            // }, false);
+                        },
+                    });
+
                     break;
                 case 201:
                     clearFailedValidate();
@@ -449,6 +472,7 @@ function getRowId(id) {
             return RelaxArray[i]['row_id'];
         }
     }
+    return '';
 }
 
 function vote(callback){

@@ -5,6 +5,7 @@
     {!!WebFunctions::public_url('web-content/js/common/library/jquery.ratemate.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/raphael-min.js')!!}
     {!!WebFunctions::public_url('web-content/player/build/mediaelement-and-player.js')!!}
+    {!!WebFunctions::public_url('web-content/player/build/renderers/facebook.js')!!}
     {!!WebFunctions::public_url('web-content/player/build/mediaelementplayer.css')!!}
     {!!WebFunctions::public_url('web-content/css/screen/relax.css')!!}
 @stop

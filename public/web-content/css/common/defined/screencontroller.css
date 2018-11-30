@@ -30,7 +30,7 @@
 @media screen and (max-width:990px) {
     .right-tab .tab-content {
         height: auto!important;
-        max-height: 200px!important;
+        max-height: 223px!important;
     }
     .right-tab {
         padding: 0px;
@@ -40,6 +40,10 @@
     }
     .web-main {
         padding-right: 0px;
+    }
+
+    .btn-load-more{
+        position: relative;
     }
 }
 

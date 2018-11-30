@@ -899,6 +899,10 @@ td .radio-inline {
     background: #555!important;
 }
 
+.activeItem[id='-100'] tr{
+    background: #555!important;
+}
+
 .activeItem td a{
     color: white;
     font-weight: bold;

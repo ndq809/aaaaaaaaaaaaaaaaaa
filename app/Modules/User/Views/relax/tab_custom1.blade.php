@@ -34,8 +34,8 @@
                 @endif
                 @if($row['post_type']==5)
                     <div class="video margin-bottom">
-                        <video id="player1" width="640" height="360" style="max-width:100%;" preload="none" controls playsinline webkit-playsinline>
-                            <source src="{{$row['post_media']}}" type="video/youtube">
+                        <video class="video-player" width="640" height="360" style="max-width:100%;" preload="none" controls playsinline webkit-playsinline>
+                            <source src="{{$row['post_media']}}">
                         </video>
                     </div>
                 @endif
