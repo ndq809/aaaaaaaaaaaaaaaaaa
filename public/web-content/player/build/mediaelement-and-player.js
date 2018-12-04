@@ -3647,7 +3647,7 @@ var MediaElementPlayer = function () {
 
 		(0, _time.calculateTimeFormat)(0, t.options, t.options.framesPerSecond || 25);
 
-		t.id = 'mep_' + _mejs2.default.mepIndex++;
+		t.id = 'mep_0';
 
 		_mejs2.default.players[t.id] = t;
 

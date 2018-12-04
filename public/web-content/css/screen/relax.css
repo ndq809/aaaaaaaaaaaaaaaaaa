@@ -64,12 +64,27 @@
 }
 
 .mejs__mediaelement .fb-video{
-	width: auto!important;
-	height: 100%;
+	display: inline-block!important;
+	z-index: -100;
 }
 
 .mejs__mediaelement{
 	text-align: center;
 	background-image: url(/web-content/images/background/body-background.gif);
+}
+.fb-video>span{
+	width: 100%!important;
+	height: 100%!important;
+	margin-top: 1px;
+	z-index: -100;
+}
+
+.fb-video>span>iframe{
+	z-index: -100;
+}
+
+#video-player_youtube_iframe{
+	width: 100%!important;
+	height: 100%!important;
 }
 

@@ -470,6 +470,8 @@ function setMedia(data){
             $(".old-input-image-custom").closest('.old-content').removeClass('hidden');
             $(".input-image-custom").fileinput('clear');
             break;
+        default:
+            $('.link-media input').val(data[0][0]['post_media']);
     }
     $('#post_tag').selectize()[0].selectize.destroy();
     $('#post_tag').html('');

@@ -32,14 +32,12 @@
                     <img alt="loadIcon" src="{{$row['post_media']}}">
                 </div>
                 @endif
-                @if($row['post_type']==5)
-                    <div class="video margin-bottom">
-                        <video class="video-player" width="640" height="360" style="max-width:100%;" preload="none" controls playsinline webkit-playsinline>
-                            <source src="{{$row['post_media']}}">
-                        </video>
-                    </div>
-                @endif
             </div>
+            @if($row['post_type']==5)
+                <div class="video-source hidden">
+                    <div class ='video-item' source-id ="{{$row['row_id']}}">{{$row['post_media']}}</div>
+                </div>
+            @endif
         @endforeach
     @endif
 </div>

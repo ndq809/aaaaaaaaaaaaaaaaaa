@@ -1,20 +1,23 @@
 @extends('layout')
 @section('title','E+ Giải Trí')
 @section('asset_header')
-    {!!WebFunctions::public_url('web-content/js/screen/relax.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/jquery.ratemate.js')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/raphael-min.js')!!}
     {!!WebFunctions::public_url('web-content/player/build/mediaelement-and-player.js')!!}
     {!!WebFunctions::public_url('web-content/player/build/renderers/facebook.js')!!}
     {!!WebFunctions::public_url('web-content/player/build/mediaelementplayer.css')!!}
+    {!!WebFunctions::public_url('web-content/player-plugin/dist/playlist/playlist.js')!!}
+    {!!WebFunctions::public_url('web-content/player-plugin/dist/playlist/playlist.css')!!}
     {!!WebFunctions::public_url('web-content/css/screen/relax.css')!!}
+    {!!WebFunctions::public_url('web-content/js/screen/relax.js')!!}
 @stop
 @section('left-tab')
     @include('User::relax.left_tab')
 @stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">
-	<div class="right-header col-md-12 no-padding">
+	<div class="temp hidden" style="height:27px"></div>
+    <div class="right-header col-md-12 no-padding">
         <div class="col-md-8 no-padding">
             <table class="full-width">
                 <tbody>

@@ -35,6 +35,7 @@ BEGIN
 	,	post_title			NVARCHAR(100)
 	,	post_content		NVARCHAR(MAX)
 	,	post_media			NVARCHAR(MAX)
+	,	post_media_div		NVARCHAR(50)
 	,	post_member			NVARCHAR(50)
 	,	post_rate			MONEY
 	,	my_rate				MONEY
@@ -115,6 +116,11 @@ BEGIN
 		,	M007.post_title
 		,	M007.post_content
 		,	M007.post_media
+		,	CASE M007.media_div
+			WHEN 3 THEN 'video/youtube'
+			WHEN 4 THEN 'video/facebook'
+			ELSE 'video'
+			END
 		,	M007.cre_user
 		,	M007.post_rating
 		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)
@@ -181,6 +187,11 @@ BEGIN
 		,	M007.post_title
 		,	M007.post_content
 		,	M007.post_media
+		,	CASE M007.media_div
+			WHEN 3 THEN 'video/youtube'
+			WHEN 4 THEN 'video/facebook'
+			ELSE 'video'
+			END
 		,	M007.cre_user
 		,	M007.post_rating
 		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)

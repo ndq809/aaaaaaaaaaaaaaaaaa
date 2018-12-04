@@ -115,7 +115,7 @@
         <div class="col-md-12 col-sm-12 no-padding-right transform-content" transform-div='8,10'>
             <div class="form-group">
                 <label>Link video</label>
-                <div class="input-group">
+                <div class="input-group link-media">
                     <input type="text" id="post_media" class="input-sm form-control submit-item required" name="">
                 </div>
             </div>

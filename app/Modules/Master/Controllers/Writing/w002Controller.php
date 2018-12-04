@@ -64,7 +64,12 @@ class w002Controller extends Controller
             }
             if ($param_temp['catalogue_div'] == '8') {
                 $media = (!isset($param_temp['post_media']) || $param_temp['post_media']=='no-data'?'':$param_temp['post_media']);
-                $media_div = 3;
+                if (strpos($media, 'youtube') !== false) {
+                    $media_div = 3;
+                }elseif (strpos($media, 'facebook') !== false) {
+                    $media_div = 4;
+                }else
+                $media_div = 5;
             }
             $param['post_id']= $param_temp['post_id'];
             $param['catalogue_div']= $param_temp['catalogue_div'];

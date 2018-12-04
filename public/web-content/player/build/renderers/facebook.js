@@ -17,9 +17,9 @@ var FacebookApi = {
 
 	load: function load(settings) {
 
-		if (typeof FB !== 'undefined') {
-			FacebookApi._createPlayer(settings);
-		} else {
+		// if (typeof FB !== 'undefined') {
+		// 	FacebookApi._createPlayer(settings);
+		// } else {
 			FacebookApi.promise = FacebookApi.promise || mejs.Utils.loadScript('https://connect.facebook.net/' + settings.options.lang + '/sdk.js');
 			FacebookApi.promise.then(function () {
 				FB.init(settings.options);
@@ -28,7 +28,8 @@ var FacebookApi = {
 					FacebookApi._createPlayer(settings);
 				}, 50);
 			});
-		}
+
+		// }
 	},
 
 	_createPlayer: function _createPlayer(settings) {
@@ -316,7 +317,7 @@ var FacebookRenderer = {
 		fbContainer.className = 'fb-video';
 		fbContainer.setAttribute('data-href', src);
 		fbContainer.setAttribute('data-allowfullscreen', 'true');
-		fbContainer.setAttribute('data-controls', !!mediaElement.originalNode.controls);
+		fbContainer.setAttribute('data-controls', 'false');
 		mediaElement.originalNode.parentNode.insertBefore(fbContainer, mediaElement.originalNode);
 		mediaElement.originalNode.style.display = 'none';
 

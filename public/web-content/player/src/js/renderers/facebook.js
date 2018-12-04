@@ -379,6 +379,8 @@ const FacebookRenderer = {
 			id: fb.id
 		});
 
+		console.log(FacebookApi);
+
 		fb.hide = () => {
 			fb.pause();
 			if (fbPlayer) {
