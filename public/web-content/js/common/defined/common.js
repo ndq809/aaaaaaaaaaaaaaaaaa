@@ -97,43 +97,46 @@ function initCommon() {
     })
     menuController();
     setRightMenuHeight();
-    $("select.allow-selectize").each(function() {
-        var select = $(this).selectize({
-            allowEmptyOption: false,
-            create: false,
-            openOnFocus: false,
-            plugins: ['restore_on_backspace'],
-            render: {
-                option: function (data, escape) {
-                    return "<div data-parent-id='" + data.catalogue_id + "'>" + data.text + "</div>"
+    setTimeout(function(){
+        $("select.allow-selectize").each(function() {
+            var select = $(this).selectize({
+                allowEmptyOption: false,
+                create: false,
+                openOnFocus: false,
+                plugins: ['restore_on_backspace'],
+                render: {
+                    option: function (data, escape) {
+                        return "<div data-parent-id='" + data.catalogue_id + "'>" + data.text + "</div>"
+                    }
                 }
-            }
-        });
-        var selectize = select[0].selectize;
-        selectize.on('blur', function() {
-            if (selectize.getValue() === '') {
-                var defaultOption = selectize.options[Object.keys(selectize.options)[0]];
-                selectize.setValue(defaultOption.value);
-            }
-        });
-    });
-    $("select.tag-selectize").each(function() {
-        var select = $(this).selectize({
-            delimiter: ',',
-            persist: false,
-            plugins: ['restore_on_backspace'],
-            
-            create: function(input) {
-                return {
-                    value: input+'**++**eplus',
-                    text: input
+            });
+            var selectize = select[0].selectize;
+            selectize.on('blur', function() {
+                if (selectize.getValue() === '') {
+                    var defaultOption = selectize.options[Object.keys(selectize.options)[0]];
+                    selectize.setValue(defaultOption.value);
                 }
-            }
+            });
         });
-    });
-    if($('textarea[name=new-question-content]').length!=0){
-        editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
-    }
+        $("select.tag-selectize").each(function() {
+            var select = $(this).selectize({
+                delimiter: ',',
+                persist: false,
+                plugins: ['restore_on_backspace'],
+                
+                create: function(input) {
+                    return {
+                        value: input+'**++**eplus',
+                        text: input
+                    }
+                }
+            });
+        });
+        if($('textarea[name=new-question-content]').length!=0){
+            editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
+        }
+    },1000)
+    
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
         $('.menu-btn').css('display','inline-block');

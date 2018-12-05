@@ -263,7 +263,7 @@ BEGIN
 	INNER JOIN #RELAX
 	ON F004.target_id				= #RELAX.post_id
 	AND F004.reply_id IS NULL
-	AND F004.screen_div = 6
+	AND F004.screen_div = 7
 	)TEMP
 	WHERE
 	TEMP.count_row_id < 6
@@ -319,7 +319,7 @@ BEGIN
 	LEFT JOIN M999
 	ON M999.name_div = 14
 	AND S001.account_div = M999.number_id
-	WHERE F004.screen_div = 6
+	WHERE F004.screen_div = 7
 	)TEMP1
 	WHERE TEMP1.count_row_id < 4
 	
@@ -355,7 +355,7 @@ BEGIN
 	ON F003.item_2 = M003.group_id
 	WHERE F003.user_id = @P_account_id
 	AND	F003.connect_div = 3
-	AND F003.screen_div = 6
+	AND F003.screen_div = 7
 	AND F003.del_flg = 0
 
 	SELECT

@@ -1446,4 +1446,8 @@ select.tag-custom{
     bottom: 0px;
 }
 
+.no-background{
+    background: transparent!important;
+}
+
 

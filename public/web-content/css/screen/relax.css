@@ -11,7 +11,8 @@
 .non-link{
 	display: none;
 }
-.relax-table tbody tr td{
+
+.relax-table tbody tr td:not(.text-left){
 	text-align: center;
 }
 
@@ -86,5 +87,9 @@
 #video-player_youtube_iframe{
 	width: 100%!important;
 	height: 100%!important;
+}
+
+.main-content{
+	padding-bottom: 10px;
 }
 

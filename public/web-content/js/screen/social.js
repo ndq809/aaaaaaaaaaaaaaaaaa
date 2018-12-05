@@ -509,7 +509,6 @@ function view(){
 function loadmore(){
     var data ={};
     data['max_row'] = Math.max.apply(Math, SocialArray.map(function(o) { return o.row_id; }));
-    console.log(data);
     $.ajax({
         type: 'POST',
         url: '/social/view',

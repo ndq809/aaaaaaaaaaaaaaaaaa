@@ -19,41 +19,6 @@
     <textarea name="post_content" class="col-xs-12 no-paddings submit-item ckeditor" rows="5" id="post_content"></textarea>
 </div>
 <div class="margin-top margin-bottom add-panel">
-    <div class="panel-group" id="add-list">
-        <div class="panel-group" id="example-list">
-            <div class="panel panel-default panel-contribute">
-             <div class="panel-heading" data-toggle="collapse" data-parent="#add-list" href="#collapse6">
-                <h5 class="panel-title">
-                  <span>Thêm Từ Vựng Cho Bài Viết</span>
-                </h5>
-              </div>
-              <div id="collapse6" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <div class="col-sm-12 no-padding">
-                        <a class="btn btn-primary btn-sm btn-custom btn-add-vocabulary" href='/popup/p001' type="button">Duyệt danh sách từ vựng</a>
-                        <div class="table-fixed-width" min-width="600px">
-                            <table class="table table-bordered table-input vocabulary-table" style="min-width: 600px;">
-                                <thead>
-                                    <tr>
-                                        <th width="40px">STT</th>
-                                        <th>Tên</th>
-                                        <th>Phiên Âm</th>
-                                        <th>Nghĩa</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="voc-content">
-                                    @if(isset($data)&&$data[4][0]['post_id'] != '')
-                                        @include('User::writing.add_vocabulary',array('data'=>$data[4]))
-                                    @endif
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
     <div class="margin-top btn-group">
         <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
         <button class="btn btn-sm btn-primary" id="btn-save-new" >Lưu Như Bài Viết Mới</button>

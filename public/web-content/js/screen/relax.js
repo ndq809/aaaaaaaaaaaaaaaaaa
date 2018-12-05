@@ -70,7 +70,7 @@ function initListener() {
                 var current_id = $('.activeItem').attr('id');
                 var item_infor = [];
                 item_infor.push(post[0]['row_id']);
-                item_infor.push(6);
+                item_infor.push(7);
                 item_infor.push(post[0]['post_id']);
                 item_infor.push($(this).parent().prev().val());
                 if ($(this).closest('.input-group').hasClass('comment-input')) {
@@ -78,11 +78,7 @@ function initListener() {
                 } else {
                     item_infor.push('');
                 }
-                if(_this.parents('.tab-pane').attr('id')=='chemgio'){
-                    item_infor.push(1);//cmt div
-                }else{
-                    item_infor.push(2);//cmt div
-                }
+                item_infor.push(1);//cmt div
                 addComment($(this), item_infor);
             }
         }
@@ -155,7 +151,7 @@ function initListener() {
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
         item_infor.push(post[0]['row_id']);
-        item_infor.push(6);
+        item_infor.push(7);
         item_infor.push(post[0]['post_id']);
         item_infor.push(page);
         getComment(item_infor, function() {
@@ -229,7 +225,7 @@ function initListener() {
     $(window).resize(function(){
         setTimeout(function(){
             var temp = $('.fb-video:visible').find('iframe');
-            if(typeof temp !='undefined'){
+            if(typeof temp !='undefined' && temp.height()> temp.width()){
                 temp.css('min-width','0px');
                 temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
                 temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
@@ -237,6 +233,20 @@ function initListener() {
             }
         },200)
     })
+
+    $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange', function(e)
+    {
+         setTimeout(function(){
+            var temp = $('.fb-video:visible').find('iframe');
+            if(typeof temp !='undefined' && temp.height()> temp.width()){
+                temp.css('min-width','0px');
+                temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
+                temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
+                temp.parents('.fb-video').css('height',temp.parents('.fb-video').height()*temp1);
+            }
+        },200)
+    });
+
 }
 
 function nextRelax() {
@@ -255,6 +265,9 @@ function previousRelax() {
 
 function selectRelax(selectTrTag) {
     currentItemId = selectItem(selectTrTag, selectedTab);
+    if($('.activeItem').length==1){
+        selectedTab = '#'+ $('.activeItem').parents('.tab-pane').attr('id');
+    }
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
     if (typeof post[0] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + post[0]['post_id']);
@@ -464,29 +477,31 @@ function setContentBox(target_id) {
         },timer);
     }
     $('.main-content:visible #video-player').remove();
-    $('.main-content:visible').append('<video id="video-player" width="640" height="360" style="max-width:100%;" preload="none"><source src="'+$('.video-source .video-item[source-id='+post[0]['row_id']+']').text()+'" type= "'+post[0]['post_media_div']+'"></video>');
     if(typeof player !='undefined'){
         player.pause();
         player.remove();
         $('.mejs__container').remove();
         $('.mejs__offscreen').remove();
     }
-    $('#video-player').mediaelementplayer({
-        success: function(mediaElement, domObject) {
-            player = mediaElement;
-            mediaElement.removeEventListener('loadedmetadata');
-            mediaElement.addEventListener('loadedmetadata', function(e) {
-                var temp = $(mediaElement).find('iframe');
-                if(typeof temp !='undefined'){
-                    temp.css('min-width','0px');
-                    temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
-                    temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
-                    temp.parents('.fb-video').css('height',temp.parents('.fb-video').height()*temp1);
-                }
-            }, false);
-        },
-    });
-    player.load();
+    if(selectedTab=='#tab2'){
+        $('.main-content:visible').append('<video id="video-player" width="640" height="360" style="max-width:100%;" preload="none"><source src="'+$('.video-source .video-item[source-id='+post[0]['row_id']+']').text()+'" type= "'+post[0]['post_media_div']+'"></video>');
+        $('#video-player').mediaelementplayer({
+            success: function(mediaElement, domObject) {
+                player = mediaElement;
+                mediaElement.removeEventListener('loadedmetadata');
+                mediaElement.addEventListener('loadedmetadata', function(e) {
+                    var temp = $(mediaElement).find('iframe');
+                    if(typeof temp !='undefined' && temp.parent().height()> temp.parent().width()){
+                        temp.css('min-width','0px');
+                        temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
+                        temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
+                        temp.parents('.fb-video').css('height',temp.parents('.fb-video').height()*temp1);
+                    }
+                }, false);
+            },
+        });
+        player.load();
+    }
 }
 
 function getRowId(id) {

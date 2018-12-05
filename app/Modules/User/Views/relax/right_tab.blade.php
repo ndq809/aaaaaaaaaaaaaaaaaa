@@ -20,7 +20,7 @@
                 @endforeach
                 <tbody id="-100" class="no-row {{$count!=0?'hidden':''}}">
                     <tr>
-                         <td colspan="2">
+                         <td colspan="2" class="text-left">
                             <a class="radio-inline"><i class="fa fa-minus-circle"> </i> <span> Không có dữ liệu !</span> </a>
                         </td>
                     </tr>
@@ -52,7 +52,7 @@
                 @endforeach
                 <tbody id="-100" class="no-row {{$count!=0?'hidden':''}}">
                     <tr>
-                         <td colspan="2">
+                         <td colspan="2" class="text-left">
                             <a class="radio-inline"><i class="fa fa-minus-circle"> </i> <span> Không có dữ liệu !</span> </a>
                         </td>
                     </tr>
@@ -65,28 +65,28 @@
 <div id="tab3" class="tab-pane fade">
     <div class="">
         <table class="table table-striped table-hover table-right relax-table">
-            <tbody>
-                 @if(isset($data)&&$data[0]['post_id'] != '')
-                    @foreach($data as $index => $row)
-                        @if($row['post_type']==6)
-                            <tr id="{{$row['row_id']}}">
-                                <td>
+           @if(isset($data)&&$data[0]['post_id'] != '')
+                @foreach($data as $index => $row)
+                    @if($row['post_type']==6)
+                        <tbody id="{{$row['row_id']}}">
+                            <tr class="no-background">
+                                <td class="text-left">
                                     <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> {{$row['post_title']}}</span> </a>
                                 </td>
-                                <td >
-                                    <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-forget']==1?'btn-forget':'btn-disabled'}}">Bỏ theo dõi</button>
-                                </td>
                             </tr>
-                            @php($count = $count + 1)
-                        @endif
-                    @endforeach
-                   <tr id="-100" class="no-row {{$count!=0?'hidden':''}}">
-                        <td colspan="2">
+                        </tbody>
+                        @php($count = $count + 1)
+                    @endif
+                @endforeach
+                <tbody id="-100" class="no-row {{$count!=0?'hidden':''}}">
+                    <tr>
+                         <td colspan="2" class="text-left">
                             <a class="radio-inline"><i class="fa fa-minus-circle"> </i> <span> Không có dữ liệu !</span> </a>
                         </td>
                     </tr>
-                @endif
-            </tbody>
+                </tbody>
+            @endif
+            @php($count = 0)
         </table>
     </div>
 </div>
