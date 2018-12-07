@@ -47,6 +47,11 @@ BEGIN
 		M007.post_id
 	,	M007.post_title
 	,	COUNT(M007.post_id) + ISNULL(SUM(F004.cmt_like),0) AS popular
+	,	CASE M007.catalogue_div
+		WHEN 7 THEN	N'Hình ảnh'
+		WHEN 8 THEN	N'Video'
+		WHEN 9 THEN	N'truyện'
+		END AS catalogue_div
 	FROM M007
 	INNER JOIN F008
 	ON M007.post_id = F008.target_id
@@ -58,6 +63,7 @@ BEGIN
 		M007.catalogue_div IN (7,8,9)
 	GROUP BY M007.post_id
 	,	M007.post_title
+	,	M007.catalogue_div
 	ORDER BY COUNT(M007.post_id) + ISNULL(SUM(F004.cmt_like),0) DESC
 
 	SELECT
@@ -68,6 +74,11 @@ BEGIN
 	SELECT TOP 10
 		M007.post_id
 	,	M007.post_title
+	,	CASE M007.catalogue_div
+		WHEN 7 THEN	N'Hình ảnh'
+		WHEN 8 THEN	N'Video'
+		WHEN 9 THEN	N'truyện'
+		END AS catalogue_div
 	FROM M007
 	INNER JOIN F008
 	ON M007.post_id = F008.target_id
@@ -80,6 +91,7 @@ BEGIN
 	SELECT
 		M013.tag_id
 	,	M013.tag_nm
+	,	M013.tag_div
 	FROM M013
 	WHERE M013.tag_div IN (4,5,6)
 	AND M013.del_flg = 0

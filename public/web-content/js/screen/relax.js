@@ -1,4 +1,4 @@
-var slider, rating, RelaxArray, TagMyPostArray, post,loadtime=1,data_search = [],player;
+var slider, rating, RelaxArray, TagMyPostArray, post,loadtime=1,loadtime1=1,loadtime2=1,data_search = [],player;
 $(function() {
     try {
         initRelax();
@@ -35,15 +35,29 @@ function initRelax() {
             delimiter: ',',
             persist: false,
             create: false,
+            plugins: ['restore_on_backspace','remove_button'],
         });
     });
+    $(".input-image-custom").fileinput({
+        browseIcon : "<i class=\"glyphicon glyphicon-picture\"></i> ",
+        browseLabel : "Duyệt ảnh",
+        allowedFileTypes:['image'],
+        showFileFooterCaption:false,
+        previewClass: 'no-footer-caption',
+        defaultPreviewContent: "<img src='/web-content/images/background/tuchoitruycap.jpg' class='kv-preview-data file-preview-image'>",
+        overwriteInitial: true,
+        showRemove: true,
+        showUpload: false,
+        removeLabel: 'Xóa',
+    });
     getData(1);
+    $('#post_div').trigger('change');
 }
 
 function initListener() {
     $(document).on("click", "button", function(e) {
         e.stopPropagation();
-        if ($(this).attr('id')=='btn-load-more') {
+        if ($(this).hasClass('btn-load-more')) {
             getData(2);
         }
         if ($(this).hasClass('btn-remember')) {
@@ -54,7 +68,15 @@ function initListener() {
         }
         if ($(this).attr("id") == 'find-by-tag') {
             loadtime = 1;
+            loadtime1 = 1;
+            loadtime2 = 1;
             getData(1);
+        }
+
+        if ($(this).attr("id") == 'btn-share') {
+            showMessage(1,function(){
+                save();
+           });
         }
         if ($(this).hasClass('btn-show-answer')) {
             var current_id = $('.activeItem').attr('id');
@@ -112,6 +134,15 @@ function initListener() {
     $(document).on("click", ".right-tab ul li", function() {
         switchTabRelax($(this));
     });
+
+    $(document).on('click', '.relax-tab li a', function(e) {
+        if($(this).attr('href')=='#tab-custom1'){
+            $('.example-content').show();
+        }else{
+            $('.example-content').hide();
+        }
+    })
+
     $(document).on('keydown', throttle(function(e) {
         if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
@@ -222,6 +253,15 @@ function initListener() {
         });
     })
 
+    $(document).on('change','#post_div',function(){
+        $('.post_tag_new .selectize-dropdown-content>div[type='+$(this).val()+']').removeClass('hidden');
+        $('.post_tag_new .selectize-dropdown-content>div:not([type='+$(this).val()+'])').addClass('hidden');
+        $('.change-box[type='+$(this).val()+']').removeClass('hidden');
+        $('.change-box[type='+$(this).val()+']').find('input').attr('id','post_media').addClass('submit-item');
+        $('.change-box:not([type='+$(this).val()+'])').addClass('hidden ');
+        $('.change-box:not([type='+$(this).val()+'])').find('input').removeAttr('id').removeClass('submit-item');
+    })
+
     $(window).resize(function(){
         setTimeout(function(){
             var temp = $('.fb-video:visible').find('iframe');
@@ -316,17 +356,8 @@ function getData(mode) {
     var temp = $('#post_tag').val();
     data['post_id'] = $('#target-id').val();
     data['load_time'] = loadtime;
-    switch(selectedTab){
-    	case '#tab1' :
-    		data['post_type'] = 7;
-    		break;
-    	case '#tab2' :
-    		data['post_type'] = 8;
-    		break;
-    	case '#tab3' :
-    		data['post_type'] = 9;
-    		break;
-    }
+    data['load_time1'] = loadtime1;
+    data['load_time2'] = loadtime2;
     if(mode == 1){
         data['post_tag'] = [];
         if ($.isArray(temp)) {
@@ -337,7 +368,22 @@ function getData(mode) {
             }
         }
         data_search = data['post_tag'];
+        data['post_type'] = 0;
     }else{
+        switch(selectedTab){
+            case '#tab1' :
+                data['post_type'] = 4;
+                data['load_time'] = loadtime+1;
+                break;
+            case '#tab2' :
+                data['post_type'] = 5;
+                data['load_time1'] = loadtime1+1;
+                break;
+            case '#tab3' :
+                data['post_type'] = 6;
+                data['load_time2'] = loadtime2+1;
+                break;
+        }
         data['post_tag'] = data_search;
     }
     $.ajax({
@@ -351,7 +397,7 @@ function getData(mode) {
                 case 200:
                     $('#result1').html(res.view1);
                     $('#tab-custom1').html(res.view2);
-                    $('#tab-custom2').html(res.view3);
+                    // $('#tab-custom2').html(res.view3);
                     $('.example-content').html(res.view4);
                     RelaxArray = res.voca_array;
                     AnswerArray = res.answer_array;
@@ -385,8 +431,20 @@ function getData(mode) {
                     // } else {
                     //     switchTab(1);
                     // }
-                    $('#target-id').attr('value', '')
-                    loadtime ++;
+                    $('#target-id').attr('value', '');
+                    if(mode==2){
+                        switch(selectedTab){
+                            case '#tab1' :
+                                loadtime ++;
+                                break;
+                            case '#tab2' :
+                                loadtime1 ++;
+                                break;
+                            case '#tab3' :
+                                loadtime2 ++;
+                                break;
+                        }
+                    }
                     break;
                 case 201:
                     clearFailedValidate();
@@ -596,6 +654,69 @@ function loadmore(){
             switch (res.status) {
                 case 200:
                     $('.post-view:visible').html('<i class="fa fa-leanpub"></i> '+res.post_view);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function save(){
+    var data = getInputData();
+    $.each(data,function(key,value){
+        if(!$.isArray(value) && value.trim()==''&& key!='post_content'){
+            if($('#'+key).attr('type') != 'file'){
+                $('#'+key).addClass('input-error');
+                $('#'+key).attr('data-toggle','tooltip');
+                $('#'+key).attr('data-placement','bottom');
+                $('#'+key).attr('data-original-title','Mục này không được trống');
+            }else{
+                $('#'+key).closest('.input-group').find('.file-caption').addClass('input-error');
+                $('#'+key).closest('.input-group').find('.file-caption').attr('data-toggle','tooltip');
+                $('#'+key).closest('.input-group').find('.file-caption').attr('data-placement','bottom');
+                $('#'+key).closest('.input-group').find('.file-caption').attr('data-original-title','Mục này không được trống');
+            }
+            
+        }
+    })
+    if($('.input-error').length!=0){
+        $('[data-toggle="tooltip"]').tooltip();
+        return;
+    }
+    if(data['post_tag'].length==0){
+        data['post_tag'] = null;
+    }
+    var data_addnew=new FormData($("#upload_form")[0]);
+    data_addnew.append('header_data',JSON.stringify(data));
+    $.ajax({
+        type: 'POST',
+        url: '/relax/save',
+        dataType: 'json',
+        loading:true,
+        processData: false,
+        contentType : false,
+        data: data_addnew,
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    clearFailedValidate();
+                    $('.your-post table tbody').append('<tr> <td> <a href="/relax?v='+res.post_info['post_id']+'">'
+                        +'<i class="glyphicon glyphicon-hand-right"> </i> '+res.post_info['post_title']+'</a> </td> '
+                        +'<td width="100px" class="text-center tag-style"> <span>'+res.post_info['catalogue_div']+'</span> </td> </tr>');
+                    showMessage(2);
                     break;
                 case 201:
                     clearFailedValidate();

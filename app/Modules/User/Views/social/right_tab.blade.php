@@ -26,8 +26,8 @@
                 @php($count = 0)
             </tbody>
         </table>
-        <button class="btn btn-sm btn-default btn-block btn-load-more {{isset($is_end) && $is_end ==0?'':'disabled'}}" id="{{isset($is_end) && $is_end== 0?'btn-load-more':''}}">Tải thêm bài viết</button>
     </div>
+    <button class="btn btn-sm btn-default btn-block btn-load-more {{isset($is_end) && $is_end ==0?'':'disabled'}}" id="{{isset($is_end) && $is_end== 0?'btn-load-more':''}}">Tải thêm bài viết</button>
 </div>
 <div id="tab2" class="tab-pane fade">
     <div class="">

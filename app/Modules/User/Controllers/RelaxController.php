@@ -48,7 +48,7 @@ class RelaxController extends ControllerUser
         $param['user_id']  = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
         $data              = Dao::call_stored_procedure('SPC_RELAX_LST2', $param);
         $data              = CommonUser::encodeID($data);
-        $view1             = view('User::Relax.right_tab')->with('data', $data[2])->with('is_end', $data[7][0]['is_end'])->render();
+        $view1             = view('User::Relax.right_tab')->with('data', $data[2])->with('is_end', $data[7])->render();
         $view2            = view('User::Relax.tab_custom1')->with('data', $data)->render();
         $view3            = view('User::Relax.tab_custom2')->with('data', $data)->render();
         $view4            = view('User::Relax.main_content')->with('data', $data)->render();
@@ -114,6 +114,82 @@ class RelaxController extends ControllerUser
             $result = array(
                 'status'     => 200,
                 'post_view'   => $data[1][0]['post_view'],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
+    public function save(Request $request)
+    {
+        $data  = $request->all();
+        $media = '';
+        $media_div = 0;
+        $name = '';
+        $xml   = new SQLXML();
+        $file = $request->file('post_media');
+        $param = [];
+        $param_temp               = json_decode($data['header_data'],true);
+        //upload image file
+        if ($param_temp['post_div'] == '4' && !is_null($file)) {
+
+            if ($file->getClientSize() > 20971520) {
+                $result = array(
+                    'status'     => 209,
+                    'statusText' => 'upload failed');
+                return response()->json($result);
+            }
+            $name = 'image_' . uniqid() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('/web-content/images/relax_image/'), $name);
+            $media = '/web-content/images/relax_image/' . $name;
+            $media_div = 2;
+        }
+        if ($param_temp['post_div'] == '5') {
+            $media = (!isset($param_temp['post_media'])?'':$param_temp['post_media']);
+            if (strpos($media, 'youtube') !== false) {
+                $media_div = 3;
+            }elseif (strpos($media, 'facebook') !== false) {
+                $media_div = 4;
+            }else
+            $media_div = 5;
+        }
+        if (isset($param_temp['post_tag'])) {
+            for ($i = 0; $i < count($param_temp['post_tag']); $i++) {
+                if (isset($param_temp['post_tag'][$i]['tag_id'])) {
+                    $param_temp['post_tag'][$i]['tag_id'] = $this->hashids->decode($param_temp['post_tag'][$i]['tag_id'])[0];
+                }
+            }
+        }
+
+        $param['post_div'] = isset($param_temp['post_div'])?$param_temp['post_div'] + 3 :'';
+        $param['post_title'] = isset($param_temp['post_title'])?$param_temp['post_title']:'';
+        $param['post_tag'] = $xml->xml($param_temp['post_tag']);
+        $param['post_content'] = isset($param_temp['post_content'])?$param_temp['post_content']:'';
+        $param['post_media'] = $media;
+        $param['post_media_nm'] = $name;
+        $param['post_media_div'] = $media_div;
+        $param['user_id']    = Auth::user()->account_nm;
+        $param['ip']         = $request->ip();
+        
+        // $param['post_tag'] = $xml->xml(isset($param['post_tag'])?$param['post_tag']:array());
+
+        // var_dump($param);die;
+        $data             = Dao::call_stored_procedure('SPC_RELAX_ACT3', $param);
+        $data             = CommonUser::encodeID($data);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'post_info'   => $data[1][0],
                 'statusText' => 'success',
             );
         }

@@ -36,6 +36,7 @@ Route::group(
 		Route::any('relax/getData','RelaxController@getData');
 		Route::any('relax/vote','RelaxController@vote');
 		Route::any('relax/view','RelaxController@view');
+		Route::any('relax/save','RelaxController@save');
 		Route::get('reading','ReadingController@getIndex');
 		Route::any('reading/getData','ReadingController@getData');
 		Route::get('register','RegisterController@getIndex');

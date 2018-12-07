@@ -35,6 +35,8 @@ function initSocial() {
             delimiter: ',',
             persist: false,
             create: false,
+            plugins: ['restore_on_backspace','remove_button'],
+            
         });
     });
     getData(1);

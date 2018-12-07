@@ -63,6 +63,15 @@ a{
 
 }
 
+.right-tab .tab-content .tab-pane{
+    height: 100%;
+
+}
+
+.right-tab .tab-content .tab-pane>div{
+    min-height: calc(100% - 30px);
+}
+
 .pager{
     display: inline-block;
     margin-top: 10px;
@@ -1441,13 +1450,14 @@ select.tag-custom{
     text-decoration: none;
 }
 
-.btn-load-more{
-    position: absolute;
-    bottom: 0px;
-}
-
 .no-background{
     background: transparent!important;
 }
 
-
+.tag-style{
+    background: url(/web-content/images/plugin-icon/tag.png);
+    background-size: 90% 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+}

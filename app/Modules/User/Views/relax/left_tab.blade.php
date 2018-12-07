@@ -49,11 +49,14 @@
                             @foreach($data_default[1] as $index => $row)
                             <tr>
                                 <td>
-                                    <a href="/social?v={{$row['post_id']}}">
+                                    <a href="/relax?v={{$row['post_id']}}">
                                         <i class="glyphicon glyphicon-hand-right">
                                         </i>
                                         {{$row['post_title']}}
                                     </a>
+                                </td>
+                                <td width="100px" class="text-center tag-style">
+                                    <span>{{$row['catalogue_div']}}</span>
                                 </td>
                             </tr>
                             @endforeach
@@ -90,11 +93,14 @@
                             @foreach($data_default[3] as $index => $row)
                             <tr>
                                 <td>
-                                    <a href="/social?v={{$row['post_id']}}">
+                                    <a href="/relax?v={{$row['post_id']}}">
                                         <i class="glyphicon glyphicon-hand-right">
                                         </i>
                                         {{$row['post_title']}}
                                     </a>
+                                </td>
+                                <td width="100px" class="text-center tag-style">
+                                    <span>{{$row['catalogue_div']}}</span>
                                 </td>
                             </tr>
                             @endforeach

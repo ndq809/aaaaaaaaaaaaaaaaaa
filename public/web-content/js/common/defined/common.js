@@ -97,7 +97,7 @@ function initCommon() {
     })
     menuController();
     setRightMenuHeight();
-    setTimeout(function(){
+    // setTimeout(function(){
         $("select.allow-selectize").each(function() {
             var select = $(this).selectize({
                 allowEmptyOption: false,
@@ -122,12 +122,16 @@ function initCommon() {
             var select = $(this).selectize({
                 delimiter: ',',
                 persist: false,
-                plugins: ['restore_on_backspace'],
-                
+                plugins: ['restore_on_backspace','remove_button'],
                 create: function(input) {
                     return {
                         value: input+'**++**eplus',
                         text: input
+                    }
+                },
+                render: {
+                    option: function (data, escape) {
+                        return "<div type ='" + data.tag_div + "'>" + data.text + "</div>"
                     }
                 }
             });
@@ -135,7 +139,7 @@ function initCommon() {
         if($('textarea[name=new-question-content]').length!=0){
             editor1 = CKEDITOR.replace('new-question-content',{language:"vi",customConfig: '/web-content/ckeditor/custom_config1.js'});
         }
-    },1000)
+    // },1000)
     
     $('.open-when-small').parent().prev('.right-header').find(".collapse-icon").append('<i class="glyphicon glyphicon-menu-down" style="float: right;margin-right:2px;"></i');
     if($(window).width() < 550){
@@ -796,10 +800,10 @@ function setCollapse() {
 
 function setRightMenuHeight(){
     var number_of_item;
-    if($('.right-tab .tab-content table').hasClass("relax-table")){
-        var item_height=$('.right-tab .tab-content table tbody:visible').first().height();
+    if($('.right-tab .tab-content:visible table').hasClass("relax-table")){
+        var item_height=$('.right-tab .tab-content:visible table tbody:visible').first().height();
     }else{
-        var item_height=$('.right-tab .tab-content table tbody tr:visible').first().height();
+        var item_height=$('.right-tab .tab-content:visible table tbody tr:visible').first().height();
     }
     if(item_height<50){
         number_of_item=8;
@@ -810,8 +814,8 @@ function setRightMenuHeight(){
     if(number_of_item<number_of_item_temp){
         number_of_item=number_of_item_temp;
     }
-    if ($('.right-tab .tab-content').length != 0) {
-        $('.right-tab .tab-content').height((number_of_item-1)*item_height);
+    if ($('.right-tab .tab-content:visible').length != 0) {
+        $('.right-tab .tab-content:visible').height((number_of_item-1)*item_height);
     }
 
     $('.right-tab .tab-content').css('display','block');
@@ -1210,7 +1214,7 @@ function getInputData(){
                 value='';
             }else{
                 value=$(this).val();
-                if(!$.isArray([value]) || $(this).attr('id')!='post_tag'){
+                if(!$.isArray(value) || $(this).attr('id')!='post_tag'){
                     value = value.trim();
                 }else{
                     value = $.map(value, function(val){

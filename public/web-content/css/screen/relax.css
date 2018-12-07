@@ -1,4 +1,4 @@
-.Relax-tab>li.active>a, .Relax-tab>li.active>a:focus, .Relax-tab>li.active>a:hover{
+.relax-tab>li.active>a, .relax-tab>li.active>a:focus, .relax-tab>li.active>a:hover{
 	background: #563d7c;
     color: #fff;
 }

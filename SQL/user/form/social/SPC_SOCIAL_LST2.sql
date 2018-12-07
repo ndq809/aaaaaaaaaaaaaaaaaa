@@ -138,7 +138,11 @@ BEGIN
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
 		AND F003.item_1 IS NULL
-		ORDER BY M007.upd_date DESC
+		ORDER BY 
+		CASE
+		WHEN M007.post_id = @P_post_id THEN 1
+		END,
+		M007.upd_date DESC
 		OFFSET 0 ROWS
 		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
 
@@ -197,7 +201,11 @@ BEGIN
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
 		AND F003.item_1 IS NOT NULL
-		ORDER BY M007.upd_date DESC
+		ORDER BY 
+		CASE
+		WHEN M007.post_id = @P_post_id THEN 1
+		END,
+		M007.upd_date DESC
 
 		UPDATE temp
 		SET temp.row_id = temp.new_row_id
@@ -257,9 +265,10 @@ BEGIN
 		AND M007.post_div = 2
 		ORDER BY 
 		CASE
-		WHEN #BRIGED.tagcount = @tagcount THEN 1
-		WHEN #BRIGED.tagcount > @tagcount THEN 2
-		ELSE 3
+		WHEN M007.post_id = @P_post_id THEN 1
+		WHEN #BRIGED.tagcount = @tagcount THEN 2
+		WHEN #BRIGED.tagcount > @tagcount THEN 3
+		ELSE 4
 		END
 		OFFSET 0 ROWS
 		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
