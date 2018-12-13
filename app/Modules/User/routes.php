@@ -16,9 +16,9 @@ Route::group(
 		Route::get('','HomePageController@getIndex');
 		Route::get('vocabulary','VocabularyController@getIndex');
 		Route::any('vocabulary/getData','VocabularyController@getData');
-		Route::any('translate/getAutocomplete','TranslateController@getAutocomplete');
-		Route::get('translate','TranslateController@getIndex');
-		Route::any('translate/getData','TranslateController@getData');
+		Route::any('dictionary/getAutocomplete','DictionaryController@getAutocomplete');
+		Route::get('dictionary','DictionaryController@getIndex');
+		Route::any('dictionary/getData','DictionaryController@getData');
 		Route::get('grammar','GrammarController@getIndex');
 		Route::any('grammar/getData','GrammarController@getData');
 		Route::get('listening','ListeningController@getIndex');
@@ -39,6 +39,8 @@ Route::group(
 		Route::any('relax/save','RelaxController@save');
 		Route::get('reading','ReadingController@getIndex');
 		Route::any('reading/getData','ReadingController@getData');
+		Route::get('translation','TranslationController@getIndex');
+		Route::any('translation/getData','TranslationController@getData');
 		Route::get('register','RegisterController@getIndex');
 		Route::get('profile','ProfileController@getIndex');
 		

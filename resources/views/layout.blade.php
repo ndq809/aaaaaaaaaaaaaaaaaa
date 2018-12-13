@@ -132,13 +132,18 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/translate">
+                                    <a href="/dictionary">
                                         Từ Điển E+
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/relax">
                                         Giải Trí
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/translation">
+                                        Dịch Thuật
                                     </a>
                                 </li>
                                 <li>

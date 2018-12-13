@@ -1,0 +1,94 @@
+.choose_slider_items .next_item{
+	top:120px;
+}
+
+.choose_slider_items .previous_item{
+	top:120px;
+}
+
+.choose_slider {
+	height: 320px;
+	width: 100%;
+}
+
+#mySlider1 li a img{
+	width: 300px;
+	height: 250px;
+	box-shadow: 1px 0px 1px 1px grey;
+}
+
+.hint-text{
+	text-align: center;
+	color: red;
+	margin-top: 15px;
+}
+
+
+.hint-text h6{
+	margin-bottom: 0px;
+}
+
+.hint-text a{
+	font-weight: bold;
+}
+
+.vocabulary-box *{
+	margin-top: 5px;
+	text-align: center;
+	border-radius: 0px;
+	font-size: 14px;
+}
+
+.vocabulary-box input:nth-child(1){
+	color: #009688;
+	font-size: 16px;
+}
+
+.vocabulary-box textarea{
+	resize: none;
+	padding: 0px 10px;
+}
+
+.right-tab{
+	padding: 0px 5px!important;
+}
+
+.hwt-container{
+	display: block!important;
+}
+
+.hwt-content mark{
+	background: rgba(255, 0, 0, 0.2);
+	padding: 2px 0px!important;
+	border-radius: 3px;
+}
+
+.hwt-content {
+    border: none; 
+    padding: 10px 10px!important;
+    font-size: 13px;
+}
+
+.default-background{
+	background: #fff;
+}
+
+.btn-fix{
+	padding: 1px 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: absolute;
+    right: 5px;
+    border-bottom: none;
+    top: 1px;
+}
+
+.btn-merge{
+	right: 75px;
+}
+
+.btn-move button{
+	padding: 3px 7px;
+}
+
+

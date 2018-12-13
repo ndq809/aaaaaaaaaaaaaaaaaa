@@ -82,5 +82,10 @@ return [
             'message_title' => 'Lỗi Tìm Kiếm',
             'message_content' => 'Từ bạn vừa tìm kiếm không tồn tại trong hệ thống, xin hãy chọn từ danh sách gợi ý bên dưới và thực hiện lại!',
         ],
+        17 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Ngắt Câu',
+            'message_content' => 'Bạn không thể ngắt câu do câu này đã được dịch!',
+        ],
     ],
 ];

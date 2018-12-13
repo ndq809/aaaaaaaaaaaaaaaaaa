@@ -1,0 +1,57 @@
+{
+  "author": "Spencer Kelly <spencermountain@gmail.com> (http://spencermounta.in)",
+  "name": "compromise",
+  "description": "natural language processing in the browser",
+  "version": "11.12.4",
+  "main": "./builds/compromise.js",
+  "types": "./compromise.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nlp-compromise/compromise.git"
+  },
+  "scripts": {
+    "test": "tape \"./test/unit/**/*.test.js\" | tap-dancer",
+    "test:spec": "tape \"./test/unit/**/*.test.js\" | tap-spec",
+    "testb": "TESTENV=prod tape \"./test/unit/**/*.test.js\" | tap-spec",
+    "buildTest": "TESTENV=prod node ./scripts/test.js",
+    "test:types": "tsc --project test/types",
+    "browserTest": "node ./scripts/browserTest.js",
+    "benchmark": "node ./scripts/benchmark.js",
+    "build": "node ./scripts/build/index.js",
+    "pack": "node ./scripts/pack.js",
+    "prepublishOnly": "node ./scripts/prepublish",
+    "postpublish": "node ./scripts/postpublish",
+    "watch": "amble ./scratch.js",
+    "filesize": "node ./scripts/lib/filesize.js",
+    "coverage": "node ./scripts/postpublish/coverage.js",
+    "lint": "node ./scripts/prepublish/linter.js"
+  },
+  "files": [
+    "builds/",
+    "docs/",
+    "compromise.d.ts"
+  ],
+  "dependencies": {
+    "efrt-unpack": "2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "@babel/preset-env": "7.2.0",
+    "amble": "0.0.7",
+    "babelify": "10.0.0",
+    "babili": "0.1.4",
+    "browserify": "16.2.3",
+    "chalk": "2.4.1",
+    "codecov": "3.1.0",
+    "compromise-plugin": "0.0.8",
+    "derequire": "2.0.6",
+    "eslint": "5.9.0",
+    "nyc": "13.1.0",
+    "shelljs": "0.8.3",
+    "tap-dancer": "0.1.2",
+    "tap-spec": "5.0.0",
+    "tape": "4.9.1",
+    "uglify-js": "3.4.9"
+  },
+  "license": "MIT"
+}
