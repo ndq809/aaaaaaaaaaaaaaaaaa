@@ -78,6 +78,14 @@ function initListener() {
                 mergeSentence($(this).parent().find('textarea'));
             }
         }
+        if ($(this).hasClass('btn-extend')) {
+            $(this).parent().find('textarea').attr('rows', function(index, attr){
+                return attr == 20 ? 10 : 20;
+            });
+            $(this).text(function(index,text){
+                return text == 'Mở rộng' ? 'Thu nhỏ' : 'Mở rộng';
+            });
+        }
         if ($(this).hasClass('btn-forget')) {
             forgetTranslation($(this));
         }
@@ -168,6 +176,7 @@ function initListener() {
         En_Array = doc.sentences().out('array');
         $(this).val(En_Array.join('\n'));
         $('#en_sentence').val(En_Array[sentenceIndex]);
+        $('#en_sentence').trigger('change');
         scrollTextarea(En_Array[sentenceIndex],this);
         $('#en_sentence').focus();
         // sentenceIndex = 0;
@@ -181,6 +190,17 @@ function initListener() {
         scrollTextarea(Vi_Array[sentenceIndex],this);
         $('#en_sentence').focus();
     })
+
+    $(document).on('change', '#en_sentence', throttle(function(e) {
+        var temp =nlp($(this).val());
+        listWord(temp.nouns().out('array'),1);
+        listWord(temp.verbs().out('array'),2);
+        listWord(temp.adjectives().out('array'),3);
+        if(temp.sentences().out('normal')!=''){
+            autoTranslate();
+        }
+        // sentenceIndex = 0;
+    },500))
 }
 
 function installSlide() {
@@ -208,6 +228,7 @@ function nextSentence() {
     }
     $('#en_sentence').val(En_Array[sentenceIndex]);
     $('#vi_sentence').val(Vi_Array[sentenceIndex]);
+    $('#en_sentence').trigger('change');
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
     $('#en_sentence').focus();
@@ -221,6 +242,7 @@ function previousSentence() {
     }
     $('#en_sentence').val(En_Array[sentenceIndex]);
     $('#vi_sentence').val(Vi_Array[sentenceIndex]);
+    $('#en_sentence').trigger('change');
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
     $('#en_sentence').focus();
@@ -229,6 +251,7 @@ function previousSentence() {
 function selectTranslation(sentenceIndex) {
     $('#en_sentence').val(En_Array[sentenceIndex]);
     $('#vi_sentence').val(Vi_Array[sentenceIndex]);
+    $('#en_sentence').trigger('change');
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -410,4 +433,50 @@ function mergeSentence(textarea){
     sentenceArray[sentenceIndex-1] = sentenceArray[sentenceIndex-1]+temp;
     $(textAll).val(sentenceArray.join('\n'));
     $(textAll).trigger('change');
+}
+
+function autoTranslate() {
+    var data = {};
+    data['text'] = $('#en_sentence').val();
+    $.ajax({
+        type: 'POST',
+        url: '/translation/autoTranslate',
+        dataType: 'json',
+        loading:true,
+        container:'#auto_trans',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#auto_trans').val(res.data);
+                    if($('#auto-fill').is(':checked') && nlp($('#vi_sentence').val()).sentences().out('normal')==''){
+                        $('#vi_sentence').val(res.data);
+                    }
+                    break;
+                case 210:
+                    $('#auto_trans').val(res.data);
+                    break;
+                case 211:
+                    $('#auto_trans').val(res.data);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function listWord(array,type){
+    for (var i = 0; i < array.length; i++) {
+        array[i] = array[i].trim().replace(/[.?:,_!]/g, '');
+        if(array[i]==''){
+            array.splice(i,1);
+        }
+        array[i] = '<a target="_blank" href="/dictionary?v='+array[i]+'">'+array[i]+'</a>';
+    }
+    $('.analysis[type='+type+'] .list').html(array.join(','));
 }

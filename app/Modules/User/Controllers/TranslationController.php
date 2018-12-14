@@ -7,6 +7,7 @@ use CommonUser;
 use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
+use Stichoza\GoogleTranslate\GoogleTranslate;
 
 class TranslationController extends ControllerUser
 {
@@ -16,11 +17,15 @@ class TranslationController extends ControllerUser
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-    private $hashids;
+    private $hashids,$tr;
 
     public function __construct()
     {
         $this->hashids = new Hashids();
+        $this->tr = new GoogleTranslate(); // Translates to 'en' from auto-detected language by default
+        $this->tr->setSource('en'); // Translate from English
+        // $this->$tr->setSource(); // Detect language automatically
+        $this->tr->setTarget('vi'); // Translate to Georgian
     }
 
     public function getIndex(Request $request)
@@ -32,6 +37,7 @@ class TranslationController extends ControllerUser
         // $param['group_id']     = $request->session()->get('group_id');
         // $data                  = Dao::call_stored_procedure('SPC_TRANSLATION_LST1', $param);
         // $data                  = CommonUser::encodeID($data);
+        // var_dump($this->tr->translate('To detect language automatically, just set the source language to null'));die;
         return view('User::translation.index');
     }
 
@@ -54,6 +60,26 @@ class TranslationController extends ControllerUser
         );
         $request->session()->put('catalogue_id', $param[0]);
         $request->session()->put('group_id', $param[1]);
+        return response()->json($result);
+    }
+
+    public function autoTranslate(Request $request)
+    {
+        $param            = $request->all();
+        try {
+            $data = $this->tr->translate($param['text']);
+            $result = array(
+                'status'     => $data==null?211:200,
+                'data'       => $data==null?'Không có bản dịch tham khảo nào':$data,
+                'statusText' => 'success',
+            );
+        } catch (Exception $e) {
+            $result = array(
+                'status'     => 210,
+                'data'       => 'Hệ thống dịch bị lỗi',
+                'statusText' => 'error',
+            );
+        }
         return response()->json($result);
     }
     /**

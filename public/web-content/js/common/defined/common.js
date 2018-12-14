@@ -278,6 +278,12 @@ function initEvent() {
         $(document).on('doubletap','.table-click tbody tr',function(e){
             $(this).trigger('dblclick');
         })
+        // $(document).on('swiperight','body',function(e){
+        //     $('#btn_prev').trigger('click');
+        // })
+        // $(document).on('swipeleft','body',function(e){
+        //     $('#btn_next').trigger('click');
+        // })
     }
 
     $(document).on('click','.delete-tr-row',function(){

@@ -41,6 +41,7 @@ Route::group(
 		Route::any('reading/getData','ReadingController@getData');
 		Route::get('translation','TranslationController@getIndex');
 		Route::any('translation/getData','TranslationController@getData');
+		Route::any('translation/autoTranslate','TranslationController@autoTranslate');
 		Route::get('register','RegisterController@getIndex');
 		Route::get('profile','ProfileController@getIndex');
 		
