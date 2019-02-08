@@ -18,17 +18,35 @@
                 </table>
             </div>
             <div class="collapse in question close-when-small">
-                @if(isset($data_default)&&$data_default[0][0]['tag_id'] != '')
-                    @foreach($data_default[0] as $index => $row)
-                    <a class="tag-list" value="{{$row['tag_id']}}">{{$row['tag_nm']}}</a>
-                    @endforeach
-                    @else
-                    <a style="font-size: 12px;padding-left: 5px">
-                        <i class="fa fa-frown-o">
-                        </i>
-                        Không có dữ liệu!
-                    </a>
-                @endif
+                <table class="table table-hover table-center">
+                    <tbody>
+                        @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
+                            @foreach($data_default[0] as $index => $row)
+                            @if($row['post_div'] == 3)
+                            <tr class="{{$row['selected']==1?'selected-row':''}}" row_id="{{$row['row_id']}}">
+                                <td>
+                                    <a>
+                                        <i class="glyphicon glyphicon-hand-right">
+                                        </i>
+                                        {{$row['post_title']}}
+                                    </a>
+                                </td>
+                            </tr>
+                            @endif
+                            @endforeach
+                            @else
+                            <tr class="no-data">
+                                <td>
+                                    <a>
+                                        <i class="fa fa-frown-o">
+                                        </i>
+                                        Không có dữ liệu!
+                                    </a>
+                                </td>
+                            </tr>
+                        @endif
+                    </tbody>
+                </table>
             </div>
             <div class="left-header" data-target=".new-question" data-toggle="collapse">
                 <table style="width: 100%">
@@ -45,20 +63,22 @@
             <div class="new-question collapse in close-when-small no-padding">
                 <table class="table table-hover table-center">
                     <tbody>
-                        @if(isset($data_default)&&$data_default[1][0]['post_id'] != '')
-                            @foreach($data_default[1] as $index => $row)
-                            <tr>
+                        @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
+                            @foreach($data_default[0] as $index => $row)
+                            @if($row['post_div'] == 1 || $row['post_div'] == 2)
+                            <tr class="{{$row['selected']==1?'selected-row':''}}"  row_id="{{$row['row_id']}}">
                                 <td>
-                                    <a href="/social?v={{$row['post_id']}}">
+                                    <a>
                                         <i class="glyphicon glyphicon-hand-right">
                                         </i>
                                         {{$row['post_title']}}
                                     </a>
                                 </td>
                             </tr>
+                            @endif
                             @endforeach
                             @else
-                            <tr>
+                            <tr class="no-data">
                                 <td>
                                     <a>
                                         <i class="fa fa-frown-o">
@@ -86,11 +106,11 @@
             <div class="your-post collapse in close-when-small no-padding">
                 <table class="table table-hover table-center">
                     <tbody>
-                        @if(isset($data_default)&&$data_default[3][0]['post_id'] != '')
-                            @foreach($data_default[3] as $index => $row)
-                            <tr>
+                        @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
+                            @foreach($data_default[0] as $index => $row)
+                            <tr class="{{$row['selected']==1?'selected-row':''}}" row_id="{{$row['row_id']}}">
                                 <td>
-                                    <a href="/social?v={{$row['post_id']}}">
+                                    <a>
                                         <i class="glyphicon glyphicon-hand-right">
                                         </i>
                                         {{$row['post_title']}}
@@ -99,7 +119,48 @@
                             </tr>
                             @endforeach
                             @else
-                            <tr>
+                            <tr class="no-data">
+                                <td>
+                                    <a>
+                                        <i class="fa fa-frown-o">
+                                        </i>
+                                        Không có dữ liệu!
+                                    </a>
+                                </td>
+                            </tr>
+                        @endif
+                    </tbody>
+                </table>
+            </div>
+            <div class="left-header" data-target=".is-shared-post" data-toggle="collapse">
+                <table style="width: 100%">
+                    <tbody>
+                        <tr>
+                            <td width="95%">
+                                <h5>Bài Viết Được Chia Sẻ</h5>
+                            </td>
+                            <td class="collapse-icon" width="5%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="is-shared-post collapse in close-when-small no-padding">
+                <table class="table table-hover table-center">
+                    <tbody>
+                        @if(isset($data_default[3])&&$data_default[3][0]['post_id'] != '')
+                            @foreach($data_default[3] as $index => $row)
+                            <tr class="{{$row['selected']==1?'selected-row':''}}" row_id="{{$row['row_id']}}">
+                                <td>
+                                    <a>
+                                        <i class="glyphicon glyphicon-hand-right">
+                                        </i>
+                                        {{$row['post_title']}}
+                                    </a>
+                                </td>
+                            </tr>
+                            @endforeach
+                            @else
+                            <tr class="no-data">
                                 <td>
                                     <a>
                                         <i class="fa fa-frown-o">

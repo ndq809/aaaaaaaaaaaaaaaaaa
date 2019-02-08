@@ -1,6 +1,7 @@
 var player;
 var ReadingArray;
 var AnswerArray;
+var runtime = 0;
 $(function(){
 	try{
 		initReading();
@@ -45,6 +46,9 @@ function initListener() {
         }
         if ($(this).hasClass('btn-refresh')) {
             getQuestion();
+        }
+        if ($(this).hasClass('btn-reload')) {
+            getData();
         }
         if ($(this).hasClass('btn-remember')) {
             rememberReading($(this));
@@ -143,7 +147,14 @@ function initListener() {
         }else{
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        getData();
+        if(runtime==0){
+           if($('.post-not-found').length==0){
+                getData();
+            }     
+        }else{
+            getData();
+        }
+        runtime ++;
     })
     $(document).on('click', '.pager li a', function(e) {
         e.stopPropagation();
@@ -220,11 +231,14 @@ function switchTabReading(current_li_tag) {
 function rememberReading(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = ReadingArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(5);
     voc_infor.push(3);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     rememberItem(currentItem, "Đọc lại", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextReading();
@@ -235,9 +249,12 @@ function rememberReading(remember_btn) {
 function forgetReading(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = ReadingArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     voc_infor.push(3);
     forgetItem(currentItem, "Đã đọc", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -254,6 +271,7 @@ function getData() {
         type: 'POST',
         url: '/reading/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -309,6 +327,11 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.reading-box:not(.hidden)').addClass('hidden');
     $('.reading-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    if($('.reading-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+        $('.example-content').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+    }
     $('.question-box:not(.hidden)').addClass('hidden');
     $('.question-box[target-id=' + (target_id) + ']').removeClass('hidden');
     $('.vocabulary-box:not(.hidden)').addClass('hidden');

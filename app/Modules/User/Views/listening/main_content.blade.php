@@ -45,18 +45,24 @@
     <button class="btn btn-sm btn-primary margin-top {{$raw_data[0][0]['btn-check-answer']==1?'btn-popup':'btn-disabled'}}" popup-id="popup-box3">Kiểm tra kết quả</button>
     @if(isset($data)&&$data[2][0]['post_id'] != '')
         @foreach($data[2] as $index => $row)
-             <div class="main-content listen-answer hidden" target-id="{{$row['row_id']}}">
-                {!!$row['post_content']!!}
-            </div>
+            @if($row['del_flg']==0)
+                 <div class="main-content listen-answer hidden" target-id="{{$row['row_id']}}">
+                    {!!$row['post_content']!!}
+                </div>
+            @else
+                @include('not_found',array('class'=>'listen-answer custom','target_id'=>$row['row_id'],'no_image'=>'1'))
+            @endif
         @endforeach
     @endif
 </div>
-<div class="col-xs-12 no-padding">
-      @include('vocabulary_content')
-</div>
-<div class="col-xs-12 no-padding margin-top">
-    @include('comment_content')
-</div>
-<div class="col-xs-12 paging-list margin-top">
-   @include('paging_content')
+<div class="example-content col-xs-12 no-padding">
+    <div class="col-xs-12 no-padding">
+          @include('vocabulary_content')
+    </div>
+    <div class="col-xs-12 no-padding margin-top">
+        @include('comment_content')
+    </div>
+    <div class="col-xs-12 paging-list margin-top">
+       @include('paging_content')
+    </div>
 </div>

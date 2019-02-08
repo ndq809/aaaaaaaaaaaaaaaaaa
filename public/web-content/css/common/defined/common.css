@@ -37,6 +37,11 @@
     font-family: 'ariavh'; /*a name to be used later*/
     src: url('/web-content/css/common/fonts/UVF%20Aria%20Pro.otf'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'Jersey'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/IRON MAN OF WAR 002 NCV.ttf'); /*URL to font*/
+}
 html,body{
   height: 100%;
 }
@@ -411,6 +416,17 @@ body {
     height: 30px;
 }
 
+/*.selectize-control .selectize-input{
+    height: 30px;
+    line-height: 28px;
+    padding: 0px 10px;
+}
+
+.selectize-control .selectize-input input{
+    height: 27px;
+}
+*/
+
 .logo-box{
     width: 320px;
     border-right: 1px solid #ddd;
@@ -694,7 +710,7 @@ body {
     padding: 1px 0px;
     display: block;
     color: white;
-    border-bottom: 1px solid #fff;
+    box-shadow: 0px 0px 0px 1px;
 }
 
 .left-header:hover {
@@ -1218,6 +1234,11 @@ a.btn-add span {
     font-weight: bold;
 }
 
+.selected-row td a{
+    color: white;
+    font-weight: bold;
+}
+
 .selected-row td:first-child i{
     color: #f78a8a!important;
     font-weight: bold;
@@ -1461,3 +1482,39 @@ select.tag-custom{
     background-position: center;
     opacity: 0.9;
 }
+
+.post-not-found{
+    padding: 10px;
+}
+
+.post-not-found .content h5{
+    margin: 0px!important;
+}
+
+.display-table>div{
+    display: table-cell;
+}
+
+.display-table .content{
+    height: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.my-progress {
+    background: #d9534f;
+    display: block;
+    height: 3px;
+    text-align: center;
+    transition: width .3s;
+    width: 0;
+    position: absolute;
+    z-index: 1000;
+}
+
+.my-progress.disappear {
+  opacity: 0;
+  transition: opacity 1.3s;
+}
+

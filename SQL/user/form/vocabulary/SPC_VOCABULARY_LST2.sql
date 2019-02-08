@@ -36,6 +36,7 @@ BEGIN
 	,	explain				NVARCHAR(MAX)
 	,	remark				NVARCHAR(MAX)
 	,	remembered			INT
+	,	del_flg				INT
 	)
 
 	CREATE TABLE #PAGER(
@@ -59,6 +60,7 @@ BEGIN
 	,	M006.explain
 	,	M006.remark
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	M006.del_flg
 	FROM M006
 	INNER JOIN F009
 	ON F009.target_id = M006.id
@@ -79,7 +81,11 @@ BEGIN
 		AND M007.group_id = @P_group_id
 		AND M007.catalogue_div = 1
 	)
-	AND M006.del_flg = 0
+	AND 0 =
+		CASE 
+			WHEN F003.item_1 IS NULL THEN M006.del_flg
+			ELSE 0
+		END
 
 	SELECT * FROM 
 	(	

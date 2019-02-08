@@ -137,7 +137,9 @@ function initListener() {
 
     $(document).on('click', '.relax-tab li a', function(e) {
         if($(this).attr('href')=='#tab-custom1'){
-            $('.example-content').show();
+            setTimeout(function(){
+                $('.example-content').show();
+            },200)
         }else{
             $('.example-content').hide();
         }
@@ -390,6 +392,7 @@ function getData(mode) {
         type: 'POST',
         url: '/relax/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: data, //convert to object
         success: function(res) {

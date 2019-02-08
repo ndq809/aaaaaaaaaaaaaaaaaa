@@ -262,11 +262,14 @@ function switchTabSocial(current_li_tag) {
 function rememberSocial(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = SocialArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(6);
     voc_infor.push(3);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     rememberItem(currentItem, "Đọc lại", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextSocial();
@@ -277,9 +280,12 @@ function rememberSocial(remember_btn) {
 function forgetSocial(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = SocialArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     voc_infor.push(3);
     forgetItem(currentItem, "Đã đọc", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -310,7 +316,7 @@ function getData(mode) {
         type: 'POST',
         url: '/social/getData',
         dataType: 'json',
-        // loading:true,
+        process:true,
         data: data, //convert to object
         success: function(res) {
             switch (res.status) {
@@ -323,14 +329,10 @@ function getData(mode) {
                     if ($('#target-id').attr('value') != '') {
                         $('.table-right tbody tr[id=' + getRowId($('#target-id').attr('value')) + ']').trigger('click');
                     } else {
-                        if(typeof location.href.split('?v=')[1] != 'undefined'){
-                            $('.table-right tbody tr[id=' + getRowId(location.href.split('?v=')[1]) + ']').trigger('click');
+                        if($('.table-right tbody tr:not(.no-row)').length!=0){
+                        $('.table-right tbody tr:not(.no-row)').first().trigger('click');
                         }else{
-                            if($('.table-right tbody tr:not(.no-row)').length!=0){
-                            $('.table-right tbody tr:not(.no-row)').first().trigger('click');
-                            }else{
-                                $('.table-right tbody tr').first().trigger('click');
-                            }
+                            $('.table-right tbody tr').first().trigger('click');
                         }
                     }
                     if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {

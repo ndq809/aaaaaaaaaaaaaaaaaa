@@ -31,7 +31,11 @@ class ReadingController extends ControllerUser
         $param['group_id']     = $request->session()->get('group_id');
         $data                  = Dao::call_stored_procedure('SPC_READING_LST1', $param);
         $data                  = CommonUser::encodeID($data);
-        return view('User::reading.index')->with('data_default', $data);
+        if(!isset($request->all()['v'])||$data[2][0]['target_id']!=''){
+            return view('User::reading.index')->with('data_default', $data);
+        }else{
+            return view('User::reading.index')->with('data_default', $data)->with('blank', '1');
+        }
     }
 
     public function getData(Request $request)

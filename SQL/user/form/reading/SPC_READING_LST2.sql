@@ -31,6 +31,7 @@ BEGIN
 	,	post_title			NVARCHAR(100)
 	,	post_content		NVARCHAR(MAX)
 	,	remembered			INT
+	,	del_flg				INT
 	)
 
 	CREATE TABLE #COMMENT(
@@ -75,13 +76,18 @@ BEGIN
 	,	M007.post_title
 	,	M007.post_content
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	M007.del_flg
 	FROM M007
 	LEFT JOIN F003
 	ON M007.post_id = F003.item_1
 	AND F003.connect_div = 3
 	AND F003.user_id = @P_account_id
 	AND F003.item_2 IS NULL
-	WHERE M007.del_flg = 0
+	WHERE 0 =
+		CASE 
+			WHEN F003.item_1 IS NULL THEN M007.del_flg
+			ELSE 0
+		END
 	AND M007.catalogue_div = 5
 	AND M007.catalogue_id = @P_catalogue_id
 	AND M007.group_id = @P_group_id

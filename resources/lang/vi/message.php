@@ -87,5 +87,10 @@ return [
             'message_title' => 'Lỗi Ngắt Câu',
             'message_content' => 'Bạn không thể ngắt câu do câu này đã được dịch!',
         ],
+        18 => [
+            'message_div' => 1,
+            'message_title' => 'Xem Ngay',
+            'message_content' => 'Thêm câu hỏi thành công! Bạn có muốn hiển thị ngay bây giờ?',
+        ],
     ],
 ];

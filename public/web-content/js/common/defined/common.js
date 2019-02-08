@@ -47,6 +47,34 @@ function initCommon() {
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
+        xhr: function () {
+            var xhr = new window.XMLHttpRequest();
+            _this = this;
+            xhr.upload.addEventListener("progress", function (evt) {
+                if (_this.process) {
+                    if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        $('.my-progress').css({
+                            width: percentComplete * 100 + '%'
+                        });
+                        if (percentComplete === 1) {
+                            $('.my-progress').addClass('disappear');
+                        }
+                    }
+                }
+            }, false);
+            // xhr.addEventListener("progress", function (evt) {
+            //     if (_this.process) {
+            //         if (evt.lengthComputable) {
+            //             var percentComplete = evt.loaded / evt.total;
+            //             $('.my-progress').css({
+            //                 width: percentComplete * 100 + '%'
+            //             });
+            //         }
+            //     }
+            // }, false);
+            return xhr;
+        },
 
         //HungNV add
         beforeSend: function () {
@@ -56,6 +84,10 @@ function initCommon() {
                 }else{
                     $.LoadingOverlay("show");
                 }
+            }
+            if (this.process) {
+                $('.my-progress').removeClass('disappear');
+                $('.my-progress').width(0);
             }
         },
         success: function (res) {
@@ -168,16 +200,16 @@ function initCommon() {
 }
 
 function initEvent() {
-    $(document).on('click', "div[data-toggle='collapse']", function(e) {
-        icon_class = $(this).find(".collapse-icon").find("i").attr("class");
-        if (icon_class == "glyphicon glyphicon-menu-down") {
-            $(this).find(".collapse-icon").find("i").removeClass("glyphicon-menu-down");
-            $(this).find(".collapse-icon").find("i").addClass("glyphicon-menu-up");
-        } else {
-            $(this).find(".collapse-icon").find("i").addClass("glyphicon-menu-down");
-            $(this).find(".collapse-icon").find("i").removeClass("glyphicon-menu-up");
-        }
-    })
+    // $(document).on('click', "div[data-toggle='collapse']", function(e) {
+    //     icon_class = $(this).find(".collapse-icon").find("i").attr("class");
+    //     if (icon_class == "glyphicon glyphicon-menu-down") {
+    //         $(this).find(".collapse-icon").find("i").removeClass("glyphicon-menu-down");
+    //         $(this).find(".collapse-icon").find("i").addClass("glyphicon-menu-up");
+    //     } else {
+    //         $(this).find(".collapse-icon").find("i").addClass("glyphicon-menu-down");
+    //         $(this).find(".collapse-icon").find("i").removeClass("glyphicon-menu-up");
+    //     }
+    // })
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');
@@ -193,6 +225,7 @@ function initEvent() {
         }else{
             $('.menu-btn').css('display','none');
         }
+
     });
     $(document).on('click', '.div-link', function(e) {
         e.preventDefault();
@@ -248,16 +281,18 @@ function initEvent() {
         getComment($(this));
     })
 
+    $(document).on('click','#btn-question',function(){
+        addQuestion();
+    })
+
     $('.close-when-small').on('show.bs.collapse', function (e) {
-        if ($(window).width() <=550) {
-            $('.close-when-small').each(function(){
-                if($(this).attr('class').split(" ")[0]!=e.currentTarget.className.split(" ")[0]){
-                    $(this).collapse("hide");
-                    $(this).prev().find(".collapse-icon").find("i").removeClass("glyphicon-menu-down");
-                    $(this).prev().find(".collapse-icon").find("i").addClass("glyphicon-menu-up");
-                }
-            })
-        }
+        $(this).prev().find(".collapse-icon").find("i").addClass("glyphicon-menu-down");
+        $(this).prev().find(".collapse-icon").find("i").removeClass("glyphicon-menu-up");
+    })
+
+    $('.close-when-small').on('hidden.bs.collapse', function (e) {
+        $(this).prev().find(".collapse-icon").find("i").removeClass("glyphicon-menu-down");
+        $(this).prev().find(".collapse-icon").find("i").addClass("glyphicon-menu-up");
     })
 
     $(document).on('click','#btn-new-row',function(){
@@ -346,8 +381,9 @@ function setFooter() {
 
 function menuController() {
     if ($(window).width() < 680) {
-        var temp = Math.floor(($('.container-fluid').width()+10) / 110);
-        $('#menu>li').css('width', ($('.container-fluid').width()+10)/temp);
+        var temp = Math.floor(($('.container-fluid').width()) / 110);
+        console.log(temp);
+        $('#menu>li').css('width', ($('.container-fluid').width())/temp);
     } else {
         $('#menu>li').css('width', 'auto');
     }
@@ -467,6 +503,7 @@ function rememberItem(tr_Element, btn_label ,item_infor,callback) {
                         if (selectedTab == "#tab1") {
                             if($("#tab1 table tbody tr:visible").length==0){
                                 $("#tab1 table tbody .no-row").removeClass('hidden').addClass('activeItem');
+                                $("#tab1 table tbody .no-row").trigger('click');
                             }
                             $("#tab2 table tbody .no-row").addClass('hidden').removeClass('activeItem');
                             $("#tab2 table tbody").prepend(cloneTr);
@@ -522,15 +559,22 @@ function forgetItem(tr_Element, btn_label ,item_infor,callback) {
                          if (selectedTab == "#tab1") {
                             if($("#tab1 table tbody tr:visible").length==0){
                                 $("#tab1 table tbody .no-row").removeClass('hidden').addClass('activeItem');
+                                $("#tab1 table tbody .no-row").trigger('click');
                             }
-                            $("#tab2 table tbody .no-row").addClass('hidden').removeClass('activeItem');
-                            $("#tab2 table tbody").prepend(cloneTr);
+                            if(res.data[1][0]['del_flg']==0){
+                                $("#tab2 table tbody .no-row").addClass('hidden').removeClass('activeItem');
+                                $("#tab2 table tbody").prepend(cloneTr);
+                            }
                         } else {
                             if($("#tab2 table tbody tr:visible").length==0){
                                 $("#tab2 table tbody tr:last-child").removeClass('hidden').addClass('activeItem');
+                                $("#tab2 table tbody .no-row").trigger('click');
                             }
-                            $("#tab1 table tbody .no-row").addClass('hidden').removeClass('activeItem');
-                            $("#tab1 table tbody").prepend(cloneTr);
+                            if(res.data[1][0]['del_flg']==0){
+                                $("#tab1 table tbody .no-row").addClass('hidden').removeClass('activeItem');
+                                $("#tab1 table tbody").prepend(cloneTr);
+                            }
+                            
                         }
                     });
                    
@@ -705,6 +749,76 @@ function addExample(item_infor,callback){
                 case 207:
                     clearFailedValidate();
                     showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function addQuestion(callback){
+    var data={};
+    value = $('#new-question-tag').val();
+    value = $.map(value, function(val){
+        if(val.indexOf('**++**eplus')!=-1){
+            return {'tag_nm':val.split('**++**eplus')[0],'is_new':1};
+        }else{
+            return {'tag_id':val,'is_new':0};
+        }
+    });
+    data['id']=$('#new-question-id').val();
+    data['title']=$('#new-question-title').val();
+    data['content']=CKEDITOR.instances[$('#new-question-content').attr('id')].getData();
+    data['tag']=value;
+    $.ajax({
+        type: 'POST',
+        url: '/common/addQuestion',
+        dataType: 'json',
+        // loading:true,
+        data:data,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    clearFailedValidate();
+                    showMessage(18,function(){
+                        window.location.href = '/discuss?v='+res.data[0]['post_id'];
+                    },function(){
+                        if(data['id']==''){
+                            $('.your-post table tbody').append('<tr> <td> <a question_id="'+res.data[0]['post_id']+'">'
+                            +'<i class="glyphicon glyphicon-hand-right"> </i> '+res.data[0]['post_title']+'</a> </td> </tr>'
+                            );
+                        }
+                        $('#post_tag').selectize()[0].selectize.refreshItems();
+                        $('#post_tag').selectize()[0].selectize.setValue('');
+                        getData(1);
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    if(res.error.title!=undefined){
+                        $('#new-question-title').addClass('input-error');
+                        $('#new-question-title').attr('data-toggle','tooltip');
+                        $('#new-question-title').attr('data-placement','top');
+                        $('#new-question-title').attr('data-original-title','Tiêu đề không được rỗng');
+                        $('[data-toggle="tooltip"]').tooltip();
+                    }
+                    if(res.error.content!=undefined){
+                        $('.cke_inner').addClass('input-error');
+                        $('#cke_1_bottom').addClass('input-error');
+                        $('.cke_inner').attr('data-toggle','tooltip');
+                        $('.cke_inner').attr('data-placement','top');
+                        $('.cke_inner').attr('data-original-title','Nội dung không được rỗng');
+                        $('[data-toggle="tooltip"]').tooltip();
+                    }
                     break;
                 case 208:
                     clearFailedValidate();
@@ -1061,7 +1175,7 @@ function showFailedData(error_array){
 }
 
 function clearFailedValidate(){
-    $('input:not([readonly],[disabled],:hidden)').each(function(){
+    $('.input-error').each(function(){
         $(this).removeClass('input-error');
         $(this).removeAttr('data-toggle');
         $(this).removeAttr('data-placement');

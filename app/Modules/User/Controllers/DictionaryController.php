@@ -30,6 +30,9 @@ class DictionaryController extends ControllerUser
         $param['user_id']      = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
         $data                  = Dao::call_stored_procedure('SPC_DICTIONARY_LST1', $param);
         $data                  = CommonUser::encodeID($data);
+        if($data[0][0]['vocabulary_nm']=='' && isset($request->all()['v'])){
+            $data[0][0]['vocabulary_nm'] = $request->all()['v'];
+        }
         return view('User::dictionary.index')->with('data_default', $data[0])->with('search_history', $data[1]);;
     }
 

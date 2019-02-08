@@ -1,6 +1,7 @@
 var slider;
 var vocabularyArray;
 var post;
+var runtime = 0;
 $(function() {
     try {
         initVocabulary();
@@ -44,6 +45,9 @@ function initListener() {
         }
         if ($(this).hasClass('btn-forget')) {
             forgetVocabulary($(this));
+        }
+        if ($(this).hasClass('btn-reload')) {
+            getData();
         }
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
@@ -112,7 +116,7 @@ function initListener() {
 
     $(document).on('click', '#btn-relationship', function() {
         var current_id = $('.activeItem').attr('id');
-        window.open('/translate?v='+post[0]['id'], '_blank');
+        window.open('/dictionary?v='+post[0]['id'], '_blank');
     })
 
     $(document).on('change', '#group_nm', function() {
@@ -127,7 +131,14 @@ function initListener() {
         }else{
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        getData();
+        if(runtime==0){
+           if($('.post-not-found').length==0){
+                getData();
+            }     
+        }else{
+            getData();
+        }
+        runtime ++;
     })
     $(document).on('change', '#exam-order', function() {
         var page = 1;
@@ -150,7 +161,7 @@ function initListener() {
                     $(this)[0].currentTime = 0;
                 }
             });
-            $('.vocabulary-box:visible').find('audio')[0].play();
+            $('.vocabulary-box:visible').find('audio')[0]!=undefined?$('.vocabulary-box:visible').find('audio')[0].play():'';
         }
     })
     $(document).on('click', '.pager li a', function(e) {
@@ -189,13 +200,15 @@ function initListener() {
 }
 
 function installSlide() {
-    $("#mySlider1").AnimatedSlider({
-        visibleItems: 3,
-        infiniteScroll: true,
-    });
-    slider = $("#mySlider1").data("AnimatedSlider");
-    slider.setItem($('#tab1 table tbody tr').first().attr('id') - 1);
-    setContentBox($('#tab1 table tbody tr').first().attr('id'));
+    if($("#mySlider1").length!=0){
+        $("#mySlider1").AnimatedSlider({
+            visibleItems: 3,
+            infiniteScroll: true,
+        });
+        slider = $("#mySlider1").data("AnimatedSlider");
+        slider.setItem($('#tab1 table tbody tr').first().attr('id') - 1);
+        setContentBox($('#tab1 table tbody tr').first().attr('id'));
+    }
 }
 
 function slidePositionController() {
@@ -247,11 +260,14 @@ function switchTabVocabulary(current_li_tag) {
 function rememberVocabulary(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = vocabularyArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(1);
     voc_infor.push(2);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['id']);
     rememberItem(currentItem, "Đã quên", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextVocabulary();
@@ -262,9 +278,12 @@ function rememberVocabulary(remember_btn) {
 function forgetVocabulary(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = vocabularyArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['id']);
     voc_infor.push(2);
     forgetItem(currentItem, "Đã thuộc", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -281,6 +300,7 @@ function getData() {
         type: 'POST',
         url: '/vocabulary/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -337,6 +357,13 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(word_id) {
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
     $('.vocabulary-box[target-id=' + (word_id) + ']').removeClass('hidden');
+    if($('.vocabulary-box[target-id=' + (word_id) + ']').hasClass('post-not-found')){
+        $('.example-content').addClass('hidden');
+        $('.hint-text').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+        $('.hint-text').removeClass('hidden');
+    }
     $('.example-item:not(.hidden)').addClass('hidden');
     $('.example-item[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');

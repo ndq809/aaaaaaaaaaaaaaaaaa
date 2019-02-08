@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
 use Mail;
+use SQLXML;
+use Common;
 
 class CommonController extends ControllerUser
 {
@@ -39,7 +41,7 @@ class CommonController extends ControllerUser
         $data             = Dao::call_stored_procedure('SPC_COM_GET_PAGE_COMMENT', $param);
         // var_dump($data);die;
         $data             = $this->encodeID($data);
-        $view1            = view('comment')->with('data', $data)->render();
+        $view1            = view($param[1]!=8?'comment':'answer')->with('data', $data)->render();
         $view2            = view('paging_content')->with('data', $data)->render();
         $result           = array(
             'status'     => 200,
@@ -246,7 +248,7 @@ class CommonController extends ControllerUser
         } else {
             $result = array(
                 'status'     => 200,
-                'data'       => $data[0],
+                'data'       => $data,
                 'statusText' => 'success',
             );
         }
@@ -303,6 +305,50 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function addQuestion(Request $request)
+    {
+        $param            = $request->all();
+        if (common::checkValidate($request->all())['result']) {
+            if (isset($param['tag'])) {
+                for ($i = 0; $i < count($param['tag']); $i++) {
+                    if (isset($param['tag'][$i]['tag_id'])) {
+                        $param['tag'][$i]['tag_id'] = $this->hashids->decode($param['tag'][$i]['tag_id'])[0];
+                    }
+                }
+            }
+            $xml              = new SQLXML();
+            $param['id']         = $param['id']!=''?$this->hashids->decode($param['id'])[0]:'';
+            $param['tag'] = $xml->xml(isset($param['tag'])?$param['tag']:array());
+            $param['user_id'] = Auth::user()->account_nm;
+            $param['ip']      = $request->ip();
+            // var_dump($param);die;
+            $data             = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
+            $data             = $this->encodeID($data);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'data'       => $data[1],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+           $result = array('error'    => common::checkValidate($request->all())['error'],
+                'status'     => 201,
+                'statusText' => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
     public function addReport(Request $request)
     {
         $param            = $request->all();
@@ -352,7 +398,7 @@ class CommonController extends ControllerUser
             );
         } else {
             $data             = $this->encodeID($data);
-            $view = view('comment')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
+            $view = view($param[1]!=8?'comment':'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,
@@ -367,7 +413,9 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
+        $temp = isset($param[2])?$param[2]:0;
         $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        unset($param[2]);
         $data             = Dao::call_stored_procedure('SPC_COM_GET_MORE_COMMENT', $param);
         if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
             $result = array(
@@ -381,7 +429,7 @@ class CommonController extends ControllerUser
             );
         } else {
             $data             = $this->encodeID($data);
-            $view = view('comment')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
+            $view = view($temp!=8?'comment':'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,

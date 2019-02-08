@@ -47,6 +47,39 @@ BEGIN
 		tag_id INT	
 	)
 
+	INSERT INTO M013
+	SELECT
+		T.C.value('@tag_nm', 'nvarchar(1000)')		
+	,	CASE @P_post_div
+		WHEN 7 THEN 4	
+		WHEN 8 THEN 5	
+		WHEN 9 THEN 6
+		END	
+	,	0
+	,	0
+	,	@P_user_id
+	,	@w_program_id
+	,	@P_ip
+	,	@w_time
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	,	NULL
+	FROM @P_post_tag.nodes('row') T(C)
+	LEFT JOIN M013
+	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	AND M013.tag_div =	CASE @P_post_div
+							WHEN 7 THEN 4	
+							WHEN 8 THEN 5	
+							WHEN 9 THEN 6
+						END	
+	WHERE T.C.value('@is_new', 'int') = 1
+	AND M013.tag_id IS NULL
+
 	INSERT INTO #TAG
 	SELECT
 		M013.tag_id

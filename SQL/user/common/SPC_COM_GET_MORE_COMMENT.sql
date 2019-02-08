@@ -50,7 +50,7 @@ BEGIN
 	,	F004.cmt_content
 	,	F004.cmt_div
 	,	F004.cmt_like
-	,	IIF(F008.target_id IS NULL,0,1) AS effected
+	,	IIF(F008.target_id IS NULL,0,IIF(F008.remark IS NULL,1,F008.remark)) AS effected
 	,	FORMAT(F004.cre_date,'dd/MM/yyyy HH:mm:ss') AS cre_date
 	FROM F004
 	LEFT JOIN S001

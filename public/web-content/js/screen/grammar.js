@@ -2,6 +2,7 @@ var slider;
 var GrammarArray;
 var AnswerArray;
 var post;
+var runtime = 0;
 $(function() {
     try {
         initGrammar();
@@ -49,6 +50,9 @@ function initListener() {
         }
         if ($(this).hasClass('btn-forget')) {
             forgetGrammar($(this));
+        }
+        if ($(this).hasClass('btn-reload')) {
+            getData();
         }
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled', 'disabled');
@@ -125,7 +129,14 @@ function initListener() {
         } else {
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        getData();
+        if(runtime==0){
+           if($('.post-not-found').length==0){
+                getData();
+            }     
+        }else{
+            getData();
+        }
+        runtime ++;
     })
     $(document).on('change', '#exam-order', function() {
         var page = 1;
@@ -211,11 +222,14 @@ function switchTabGrammar(current_li_tag) {
 function rememberGrammar(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = GrammarArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(2); //screen div
     voc_infor.push(3);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     rememberItem(currentItem, "Đã quên", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextGrammar();
@@ -226,9 +240,12 @@ function rememberGrammar(remember_btn) {
 function forgetGrammar(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = GrammarArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     voc_infor.push(3);
     forgetItem(currentItem, "Đã học", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -245,6 +262,7 @@ function getData() {
         type: 'POST',
         url: '/grammar/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -299,6 +317,11 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(word_id) {
     $('.grammar-box:not(.hidden)').addClass('hidden');
     $('.grammar-box[target-id=' + (word_id) + ']').removeClass('hidden');
+    if($('.grammar-box[target-id=' + (word_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
+        $('.example-content').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+    }
     $('.example-item:not(.hidden)').addClass('hidden');
     $('.example-item[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');

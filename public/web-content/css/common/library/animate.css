@@ -1020,7 +1020,25 @@
   animation-timing-function: ease-in;
 }
 
-@keyframes rotateIn {
+@keyframes rotateInLeft {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInLeft {
+  animation-name: rotateInLeft;
+}
+
+@keyframes rotateInRight {
   from {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, -200deg);
@@ -1034,8 +1052,8 @@
   }
 }
 
-.rotateIn {
-  animation-name: rotateIn;
+.rotateInRight {
+  animation-name: rotateInRight;
 }
 
 @keyframes rotateInDownLeft {

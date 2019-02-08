@@ -32,6 +32,7 @@ BEGIN
 	,	post_content		NVARCHAR(MAX)
 	,	my_post				INT
 	,	edit_time			DATETIME2
+	,	shared				TINYINT
 	)
 
 	CREATE TABLE #COMMENT(
@@ -77,7 +78,12 @@ BEGIN
 	,	M007.post_content
 	,	0 AS my_post
 	,	NULL
+	,	IIF(F008.excute_id IS NULL,0,1)
 	FROM M007
+	LEFT JOIN F008
+	ON M007.post_id = F008.target_id
+	AND F008.execute_div = 4
+	AND F008.execute_target_div = 5
 	WHERE M007.del_flg = 0
 	AND M007.catalogue_div = 4
 	AND M007.catalogue_id = @P_catalogue_id
@@ -93,7 +99,12 @@ BEGIN
 	,	M007.post_content
 	,	1 AS my_post
 	,	IIF(M007.upd_date IS NULL,M007.cre_date,M007.upd_date)
+	,	IIF(F008.excute_id IS NULL,0,1)
 	FROM M007
+	LEFT JOIN F008
+	ON M007.post_id = F008.target_id
+	AND F008.execute_div = 4
+	AND F008.execute_target_div = 5
 	INNER JOIN F003
 	ON M007.post_id = F003.item_1
 	AND F003.connect_div = 4

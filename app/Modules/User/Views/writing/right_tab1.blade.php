@@ -9,6 +9,13 @@
                             <td>
                                 <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> {{$row['post_title']}}</span> </a>
                             </td>
+                            @if($row['shared']!=0)
+                            <td width="85px">
+                                <a>[ Đã chia sẻ ]</a>
+                            </td>
+                            @else
+                            <td></td>
+                            @endif
                         </tr>
                         @php($count = $count + 1)
                     @endif

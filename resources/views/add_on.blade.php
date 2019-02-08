@@ -104,7 +104,7 @@
                             <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Nội dung sai lệch</label>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Spam bài viết</label>
+                            <label class="checkbox-inline"><inputradio-inline="checkbox" value="" checked="" id="vocal-image">Spam bài viết</label>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-image">Chứa nội dung phản động</label>
@@ -227,6 +227,44 @@
             <div class="modal-footer">
                 <button class="btn btn-primary btn-sm" data-dismiss="modal" type="button">
                      Xác Nhận 
+                </button>
+                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+                    Hủy
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-box5" class="modal fade" role="dialog" tabindex='-1'>
+    <div class="modal-dialog">
+         <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">
+                    ×
+                </button>
+                <h5 class="modal-title">
+                    LƯU BÀI DỊCH
+                </h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <label class="radio-inline"><input type="radio" value="1" checked="" name="save-mode">Lưu như bài viết mới</label>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label class="radio-inline"><input type="radio" value="2" name="save-mode">Lưu và đánh dấu đang dịch</label>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <label class="radio-inline"><input type="radio" value="3" name="save-mode">Lưu và đánh dấu đã dịch xong</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-sm btn-save" type="button">
+                    Chấp Nhận
                 </button>
                 <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
                     Hủy

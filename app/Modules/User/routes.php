@@ -39,9 +39,16 @@ Route::group(
 		Route::any('relax/save','RelaxController@save');
 		Route::get('reading','ReadingController@getIndex');
 		Route::any('reading/getData','ReadingController@getData');
+		Route::get('discuss','DiscussController@getIndex');
+		Route::any('discuss/getData','DiscussController@getData');
+		Route::any('discuss/vote','DiscussController@vote');
+		Route::any('discuss/vote-cmt','DiscussController@voteCmt');
+		Route::any('discuss/view','DiscussController@view');
 		Route::get('translation','TranslationController@getIndex');
 		Route::any('translation/getData','TranslationController@getData');
 		Route::any('translation/autoTranslate','TranslationController@autoTranslate');
+		Route::any('translation/save','TranslationController@save');
+		Route::any('translation/delete','TranslationController@delete');
 		Route::get('register','RegisterController@getIndex');
 		Route::get('profile','ProfileController@getIndex');
 		
@@ -61,6 +68,7 @@ Route::group(
 		Route::any('forgetvoc','CommonController@forgetvoc');
 		Route::any('getExample','CommonController@getExample');
 		Route::any('addExample','CommonController@addExample');
+		Route::any('addQuestion','CommonController@addQuestion');
 		Route::any('addcomment','CommonController@addComment');
 		Route::any('toggleEffect','CommonController@toggleEffect');
 		Route::post('getcatalogue', 'CommonController@getcatalogue');

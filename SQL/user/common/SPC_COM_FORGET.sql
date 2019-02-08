@@ -25,33 +25,6 @@ BEGIN
 	,	@pageMax			INT					=	0
 	BEGIN TRANSACTION
 	BEGIN TRY
-	IF @P_connect_div <> 1
-	BEGIN
-		IF EXISTS (SELECT 1 FROM M006 WHERE M006.id = @P_item_1 AND M006.del_flg = 1) --code not exits 
-		BEGIN
-		 INSERT INTO @ERR_TBL
-		 SELECT 
-		   0
-		 , 5
-		 , 'table-right vocabulary'
-		 , @P_row_id
-		END
-
-	END
-	ELSE
-	BEGIN
-		IF EXISTS (SELECT 1 FROM M007 WHERE M007.post_id = @P_item_1 AND M007.del_flg = 1) --code not exits 
-		BEGIN
-		 INSERT INTO @ERR_TBL
-		 SELECT 
-		   0
-		 , 5
-		 , 'table-right post'
-		 , @P_row_id
-		END
-
-	END
-	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
 	DELETE FROM F003 WHERE F003.user_id = @P_user_id AND F003.item_1 = @P_item_1 AND F003.connect_div = @P_connect_div
 
@@ -93,6 +66,16 @@ EXIT_SPC:
 	FROM @ERR_TBL
 	ORDER BY Code
 	--[1]
-	
+	IF @P_connect_div <> 1 AND @P_connect_div　=　2
+	BEGIN
+		SELECT M006.del_flg FROM M006 WHERE M006.id = @P_item_1 AND M006.del_flg = 1
+	END
+	ELSE
+	IF @P_connect_div <> 1
+	BEGIN
+		SELECT 
+			M007.del_flg 
+		FROM M007 WHERE M007.post_id = @P_item_1
+	END
 END
 

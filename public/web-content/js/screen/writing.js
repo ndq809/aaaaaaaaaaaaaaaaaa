@@ -9,6 +9,8 @@ var editor;
 var _vocabularyArray = [];
 var post=[];
 var change_time = 0;
+var runtime = 0;
+
 $(function(){
 	try{
 		initWriting();
@@ -53,6 +55,13 @@ function initListener() {
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
             addLesson(4, $('#catalogue_nm').val(), $('#group_nm').val());
+        }
+        if ($(this).hasClass('btn-reload')) {
+            if(change_time==0){
+                getData();
+            }else{
+                getDataCustom();
+            }
         }
         if ($(this).hasClass('btn-comment')) {
             _this= $(this);
@@ -151,11 +160,23 @@ function initListener() {
         }else{
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        if(change_time==0){
-            getData();
+        if(runtime==0){
+           if($('.post-not-found').length==0){
+                if(change_time==0){
+                    getData();
+                }else{
+                    getDataCustom();
+                }
+            }     
         }else{
-            getDataCustom();
+            if(change_time==0){
+                getData();
+            }else{
+                getDataCustom();
+            }
         }
+        runtime ++;
+        
     })
     $(document).on('click', '.pager li a', function(e) {
         e.stopPropagation();
@@ -297,11 +318,14 @@ function switchTabWriting(current_li_tag) {
 function rememberWriting(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = WritingArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(4);
     voc_infor.push(3);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     rememberItem(currentItem, "Đọc lại", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextWriting();
@@ -312,9 +336,12 @@ function rememberWriting(remember_btn) {
 function forgetWriting(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = WritingArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     voc_infor.push(3);
     forgetItem(currentItem, "Đã đọc", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -332,6 +359,7 @@ function getData() {
         type: 'POST',
         url: '/writing/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -355,6 +383,7 @@ function getData() {
                         var select = $(this).selectize({
                             delimiter: ',',
                             persist: false,
+                            plugins: ['restore_on_backspace','remove_button'],
                             create: function(input) {
                                 return {
                                     value: input+'**++**eplus',
@@ -439,6 +468,7 @@ function getDataCustom() {
         type: 'POST',
         url: '/writing/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -509,6 +539,15 @@ function setContentBox(target_id) {
     });
     if(typeof post[0] != 'undefined')
         history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + post[0]['post_id']);
+    if(post[0]['my_post']==1){
+        if(post[0]['shared']==1){
+            $('#btn-share').remove();
+        }else{
+            if($('#btn-share').length==0){
+                $('#btn-save').after('<button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>');
+            }
+        }
+    }
 }
 
 function getRowId(id){
@@ -781,8 +820,8 @@ function share(){
                 case 200:
                     showMessage(2,function(){
                         var temp = $(selectedTab+' .activeItem');
-                        nextWriting();
-                        temp.remove();
+                        // nextWriting();
+                        temp.find('td:nth-child(2)').append('<a>[ Đã chia sẻ ]</a>');
                     });
                     break;
                 case 201:

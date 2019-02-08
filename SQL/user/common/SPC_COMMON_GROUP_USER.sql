@@ -29,8 +29,15 @@ BEGIN
 	,	 M003.group_id	 AS value
 	,	 M003.group_nm   AS text	    
 	FROM M003
+	INNER JOIN M007
+	ON M007.catalogue_div = M003.catalogue_div
+	AND M007.catalogue_id = M003.catalogue_id
+	AND M007.group_id = M003.group_id
+	AND M007.del_flg = 0
+	AND M007.post_div = 1
 	WHERE	M003.del_flg = 0 
 	AND		M003.catalogue_div = @P_catalogue_div
+	
 
 	--
 END

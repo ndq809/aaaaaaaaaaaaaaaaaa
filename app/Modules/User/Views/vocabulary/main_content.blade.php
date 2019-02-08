@@ -16,7 +16,7 @@
                 @if(isset($data)&&$data[2][0]['id'] != '')
                     @foreach($data[2] as $index => $row)
                         <li class="current_item"><a> <img
-                                src="{{$row['image']}}" />
+                                src="{{$row['del_flg']==0&&$row['image']!=''?$row['image']:'/web-content/images/plugin-icon/no-image.jpg'}}" />
                         </a></li>
                     @endforeach
                 @endif
@@ -30,6 +30,7 @@
 </div>
 @if(isset($data)&&$data[2][0]['id'] != '')
     @foreach($data[2] as $index => $row)
+        @if($row['del_flg']==0)
         <div class="col-xs-12 no-padding vocabulary-box hidden" target-id="{{$row['row_id']}}">
             <input type="text" name="" class="form-control input-sm vocal-engword" value="{{$row['vocabulary_nm']}}" disabled="">
             <input type="text" name="" class="form-control input-sm vocal-spell" value="/{{$row['spelling']}}/" disabled="">
@@ -38,9 +39,12 @@
             <textarea class="form-control input-sm vocal-explain" disabled="" rows="2">{{$row['explain']}}</textarea>
             <audio class="sound1" src="{{$row['audio']}}"></audio>
         </div>
+        @else
+            @include('not_found',array('class'=>'vocabulary-box custom','target_id'=>$row['row_id'],'no_image'=>'1'))
+        @endif
     @endforeach
 @endif
-<div class="col-xs-12 no-padding margin-top">
+<div class="col-xs-12 no-padding margin-top example-content">
     <div class="right-header">
         <h5 class="inline-block"><i class="glyphicon glyphicon-star-empty"></i> Ví Dụ Thực Tế</h5>
         <select class="select-header" id="exam-order">

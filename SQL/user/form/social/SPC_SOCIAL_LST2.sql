@@ -29,6 +29,7 @@ BEGIN
 
 	CREATE TABLE #SOCIAL(
 		row_id				INT
+	,	row_count			INT
 	,	post_id				INT
 	,	briged_id			INT
 	,	post_title			NVARCHAR(100)
@@ -106,45 +107,45 @@ BEGIN
 	IF NOT EXISTS (SELECT * FROM #TAG)
 	BEGIN
 		INSERT INTO #SOCIAL
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	M007.post_id
-		,	M007.briged_id
-		,	M007.post_title
-		,	M007.post_content
-		,	M007.cre_user
-		,	M007.post_rating
-		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)
-		,	M007.post_view
-		,	F008.cre_date
-		,	M007.upd_date
-		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-		FROM M007
-		INNER JOIN F008
-		ON M007.post_id = F008.target_id
-		AND execute_div = 4
-		AND execute_target_div = 5
-		LEFT JOIN F008 _F008
-		ON	_F008.execute_div = 5
-		AND _F008.execute_target_div = 5
-		AND _F008.target_id = M007.post_id
-		AND _F008.user_id = @P_account_id
-		LEFT JOIN F003
-		ON M007.post_id = F003.item_1
-		AND F003.connect_div = 3
-		AND F003.user_id = @P_account_id
-		AND F003.item_2 IS NULL
-		WHERE M007.del_flg = 0
-		AND M007.catalogue_div = 4
-		AND M007.post_div = 2
-		AND F003.item_1 IS NULL
-		ORDER BY 
-		CASE
-		WHEN M007.post_id = @P_post_id THEN 1
-		END,
-		M007.upd_date DESC
-		OFFSET 0 ROWS
-		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
+		SELECT * FROM(
+			SELECT
+				ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+			,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
+					ORDER BY 
+					CASE
+					WHEN M007.post_id = @P_post_id THEN 1
+					END,M007.upd_date DESC) AS row_count
+			,	M007.post_id
+			,	M007.briged_id
+			,	M007.post_title
+			,	M007.post_content
+			,	M007.cre_user
+			,	M007.post_rating
+			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
+			,	M007.post_view
+			,	F008.cre_date
+			,	M007.upd_date
+			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			FROM M007
+			INNER JOIN F008
+			ON M007.post_id = F008.target_id
+			AND execute_div = 4
+			AND execute_target_div = 5
+			LEFT JOIN F008 _F008
+			ON	_F008.execute_div = 5
+			AND _F008.execute_target_div = 5
+			AND _F008.target_id = M007.post_id
+			AND _F008.user_id = @P_account_id
+			LEFT JOIN F003
+			ON M007.post_id = F003.item_1
+			AND F003.connect_div = 3
+			AND F003.user_id = @P_account_id
+			AND F003.item_2 IS NULL
+			WHERE M007.del_flg = 0
+			AND M007.catalogue_div = 4
+			AND M007.post_div = 2
+			AND F003.item_1 IS NULL
+		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
 		SELECT
 			@record_count = COUNT(*)
@@ -169,43 +170,45 @@ BEGIN
 		AND F003.item_1 IS NULL
 
 		INSERT INTO #SOCIAL
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	M007.post_id
-		,	M007.briged_id
-		,	M007.post_title
-		,	M007.post_content
-		,	M007.cre_user
-		,	M007.post_rating
-		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)
-		,	M007.post_view
-		,	F008.cre_date
-		,	M007.upd_date
-		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-		FROM M007
-		INNER JOIN F008
-		ON M007.post_id = F008.target_id
-		AND execute_div = 4
-		AND execute_target_div = 5
-		LEFT JOIN F008 _F008
-		ON	_F008.execute_div = 5
-		AND _F008.execute_target_div = 5
-		AND _F008.target_id = M007.post_id
-		AND _F008.user_id = @P_account_id
-		LEFT JOIN F003
-		ON M007.post_id = F003.item_1
-		AND F003.connect_div = 3
-		AND F003.user_id = @P_account_id
-		AND F003.item_2 IS NULL
-		WHERE M007.del_flg = 0
-		AND M007.catalogue_div = 4
-		AND M007.post_div = 2
-		AND F003.item_1 IS NOT NULL
-		ORDER BY 
-		CASE
-		WHEN M007.post_id = @P_post_id THEN 1
-		END,
-		M007.upd_date DESC
+		SELECT * FROM(
+			SELECT
+				ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+			,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
+					ORDER BY 
+					CASE
+					WHEN M007.post_id = @P_post_id THEN 1
+					END,M007.upd_date DESC) AS row_count
+			,	M007.post_id
+			,	M007.briged_id
+			,	M007.post_title
+			,	M007.post_content
+			,	M007.cre_user
+			,	M007.post_rating
+			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
+			,	M007.post_view
+			,	F008.cre_date
+			,	M007.upd_date
+			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			FROM M007
+			INNER JOIN F008
+			ON M007.post_id = F008.target_id
+			AND execute_div = 4
+			AND execute_target_div = 5
+			LEFT JOIN F008 _F008
+			ON	_F008.execute_div = 5
+			AND _F008.execute_target_div = 5
+			AND _F008.target_id = M007.post_id
+			AND _F008.user_id = @P_account_id
+			LEFT JOIN F003
+			ON M007.post_id = F003.item_1
+			AND F003.connect_div = 3
+			AND F003.user_id = @P_account_id
+			AND F003.item_2 IS NULL
+			WHERE M007.del_flg = 0
+			AND M007.catalogue_div = 4
+			AND M007.post_div = 2
+			AND F003.item_1 IS NOT NULL
+		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
 		UPDATE temp
 		SET temp.row_id = temp.new_row_id
@@ -230,15 +233,24 @@ BEGIN
 		GROUP BY F009.briged_id
 
 		INSERT INTO #SOCIAL
+		SELECT * FROM (
 		SELECT
 			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+		,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
+				ORDER BY 
+				CASE
+				WHEN M007.post_id = @P_post_id THEN 1
+				WHEN #BRIGED.tagcount = @tagcount THEN 2
+				WHEN #BRIGED.tagcount > @tagcount THEN 3
+				ELSE 4
+				END) AS row_count
 		,	M007.post_id
 		,	M007.briged_id
 		,	M007.post_title
 		,	M007.post_content
 		,	M007.cre_user
 		,	M007.post_rating
-		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark)
+		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 		,	M007.post_view
 		,	F008.cre_date
 		,	M007.upd_date
@@ -263,15 +275,7 @@ BEGIN
 		WHERE M007.del_flg = 0
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
-		ORDER BY 
-		CASE
-		WHEN M007.post_id = @P_post_id THEN 1
-		WHEN #BRIGED.tagcount = @tagcount THEN 2
-		WHEN #BRIGED.tagcount > @tagcount THEN 3
-		ELSE 4
-		END
-		OFFSET 0 ROWS
-		FETCH NEXT (@P_loadtime * 1) ROWS ONLY
+		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
 		SELECT
 			@record_count = COUNT(*)
@@ -431,9 +435,9 @@ BEGIN
 	,	ROW_NUMBER() OVER(partition by M004.post_id ORDER BY M004.post_id ASC) AS question_num	
 	,	#SOCIAL.row_id
 	FROM M004
-	JOIN M005
+	LEFT JOIN M005
 	ON M004.question_id = M005.question_id
-	JOIN #SOCIAL
+	INNER JOIN #SOCIAL
 	ON M004.post_id = #SOCIAL.post_id
 	WHERE 
 		M004.question_id IN (SELECT TOP 5 M004.question_id FROM M004 WHERE M004.post_id IN(SELECT #SOCIAL.post_id FROM #SOCIAL) ORDER BY NEWID())
@@ -451,7 +455,7 @@ BEGIN
 	WHERE M013.del_flg = 0
 	AND M013.tag_div = 2
 
-	SELECT IIF(@record_count <= @P_loadtime * 1,1,0) AS is_end
+	SELECT IIF(@record_count <= @P_loadtime * 20,1,0) AS is_end
 
 END
 

@@ -1,0 +1,107 @@
+.discuss-tab>li.active>a, .discuss-tab>li.active>a:focus, .discuss-tab>li.active>a:hover{
+	background: #563d7c;
+    color: #fff;
+}
+
+#practice label{
+	text-align: center;
+	display: block;
+}
+
+.example-header{
+	
+}
+
+
+#rating-value{
+	display: none;
+}
+
+.question-header h5{
+	color: blue;
+	text-decoration: underline;
+	font-size: 16;
+	font-weight: bold;
+}
+
+.question-header h5 i{
+	color: red;
+	text-decoration: none;
+	
+}
+
+.ratemate {
+	height: 30px;
+}
+
+span[data-toggle=tooltip]:hover{
+	cursor: default;
+}
+
+.post-infor .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}
+
+.vote .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.vote .tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}
+
+.vote{
+	height: 30px;
+	line-height: 30px;
+}
+
+.vote i,.vote span{
+	font-size: 30px;
+	opacity: 0.7;
+}
+
+.vote a{
+	text-decoration: none;
+}
+
+.vote-comment{
+	height: 10px;
+	line-height: 10px;
+}
+
+.vote-comment i,.vote-comment span{
+	font-size: 13px!important;
+	opacity: 0.7;
+	padding: 0px;
+}
+
+.vote-comment a{
+	text-decoration: none;
+}
+
+.post-infor>span{
+	padding-top: 0px;
+}
+
+.vote-up i,.vote-down i{
+	color: #858585;
+}
+
+.vote-up.active i{
+	color: green;
+}
+
+.vote-down.active i{
+	color: red;
+}
+
+.bottomContent .vote-comment *{
+	padding-right: 0px;
+}
+

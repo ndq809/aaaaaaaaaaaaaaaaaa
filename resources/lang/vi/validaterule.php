@@ -25,5 +25,7 @@ return [
         'spelling'         => 'required',
         'mean'             => 'required',
         'target_div'       => 'required',
+        'title'            => 'required',
+        'content'          => 'required',
     ],
 ];

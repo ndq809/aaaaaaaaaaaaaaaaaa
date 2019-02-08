@@ -26,5 +26,12 @@ BEGIN
 	,	@pageMax			INT					=	0
 
 	EXEC SPC_COM_PERMISSION @P_account_div,@P_system_div,'';
+
+	SELECT
+		M013.tag_id
+	,	M013.tag_nm
+	FROM M013
+	WHERE M013.tag_div = 3
+	AND M013.del_flg = 0
 END
 

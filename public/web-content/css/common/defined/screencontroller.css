@@ -87,6 +87,10 @@
      .navbar-brand:nth-child(1) {
         padding-right: 0px;
     }
+    .navbar-nav>li>a {
+        padding: 7px 5px;
+        padding-left: 10px;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -129,6 +133,15 @@
 
     .rate-bar button:nth-child(1){
         margin-bottom: 5px;
+    }
+
+    .post-not-found>div{
+        display: block;
+        text-align: center;
+    }
+
+    .display-table .content{
+        padding-left: 0px;
     }
 }
 

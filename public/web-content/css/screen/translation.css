@@ -73,6 +73,10 @@
 	background: #fff;
 }
 
+.default-background textarea{
+	font-size: 13px;
+}
+
 .btn-fix{
 	padding: 1px 10px;
 	border-top-left-radius: 4px;
@@ -91,8 +95,13 @@
 	padding: 3px 7px;
 }
 
+.btn-group button{
+	padding: 3px 7px;
+}
+
 .analysis{
 	border-bottom: 1px solid #ccc;
 }
+
 
 

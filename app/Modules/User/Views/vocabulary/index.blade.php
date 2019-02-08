@@ -54,7 +54,14 @@
         </div>
     </div>
 	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
-		@include('User::vocabulary.main_content')
+        @if(!isset($blank))
+            @include('User::vocabulary.main_content')
+        @else
+            @include('not_found')
+            <div class="text-center">
+                <button type="button" class="btn btn-success btn-reload">Làm Mới Trang</button>
+            </div>
+        @endif
 	</div>
 </div>
 

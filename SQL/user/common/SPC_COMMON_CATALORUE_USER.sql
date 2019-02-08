@@ -28,9 +28,18 @@ BEGIN
 		 M002.catalogue_id	 AS value
 	,	 M002.catalogue_nm   AS text	    
 	FROM M002
+	INNER JOIN M003
+	ON M002.catalogue_id = M003.catalogue_id
+	AND M002.catalogue_div = M003.catalogue_div
+	AND M003.del_flg = 0
+	INNER JOIN M007
+	ON M003.group_id = M007.group_id
+	AND M002.catalogue_id = M007.catalogue_id
+	AND M002.catalogue_div = M007.catalogue_div
+	AND M007.del_flg = 0
+	AND m007.post_div = 1
 	WHERE M002.del_flg = 0 
 	AND	M002.catalogue_div		= @P_catalogue_div
-	AND M002.catalogue_id IN (SELECT M003.catalogue_id FROM M003)
 
 	--
 END

@@ -45,7 +45,7 @@
 <div class="col-xs-12 no-padding">
       @include('vocabulary_content')
 </div>
-<div class="col-xs-12 no-padding">
+<div class="col-xs-12 no-padding margin-top">
     <ul class="nav nav-tabs nav-justified comment-tabs">
         <li class="active"><a data-toggle="tab" href="#chemgio" aria-expanded="true">Bình Luận ,Chém Gió</a></li>
         <li class=""><a data-toggle="tab" href="#gopy" aria-expanded="false">Góp Ý Học Tập</a></li>

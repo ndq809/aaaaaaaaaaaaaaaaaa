@@ -64,7 +64,14 @@
             </ul>
             <div class="tab-content">
                 <div id="tab-custom1" class="tab-pane fade in active">
-                    @include('User::writing.tab_custom1')
+                    @if(!isset($blank))
+                        @include('User::writing.tab_custom1')
+                    @else
+                        @include('not_found')
+                        <div class="text-center margin-bottom">
+                            <button type="button" class="btn btn-success btn-reload">Làm Mới Trang</button>
+                        </div>
+                    @endif
                 </div>
                 <div id="tab-custom2" class="tab-pane fade input-tab">
                     @include('User::writing.tab_custom2')
@@ -72,7 +79,9 @@
             </div>
         </div>
         <div class="example-content">
-            @include('User::writing.main_content')
+            @if(!isset($blank))
+                @include('User::writing.main_content')
+            @endif
         </div>
     </div>
 </div>

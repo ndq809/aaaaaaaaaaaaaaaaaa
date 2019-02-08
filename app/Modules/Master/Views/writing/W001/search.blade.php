@@ -17,7 +17,7 @@
                 </tr>
             </thead>
             <tbody>
-                @if(isset($data)&&$data[0][0]['group_id'] != '')
+                @if(isset($data)&&$data[0][0]['post_id'] != '')
                 @foreach($data[0] as $index => $row)
                 <tr>
                     <td><a href="/master/writing/w002?{{$row['post_id']}}" ><span class="fa fa fa-pencil-square-o fa-lg"></span></a></td>

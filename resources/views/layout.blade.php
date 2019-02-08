@@ -53,6 +53,7 @@
         <input type="hidden" name="" id="target-id" value="{{isset($data_default[2][0]['target_id'])?$data_default[2][0]['target_id']:''}}">
         <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
+        <div class="my-progress"></div>
         <div class="body-content">
             <div class="col-xs-12 web-panel header-content">
                 <div class="row top-header">
@@ -98,12 +99,12 @@
                             <ul class="nav navbar-nav collapse in" id="menu">
                                 <li>
                                     <a href="/">
-                                        Trang chủ
+                                        Trang Chủ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/vocabulary">
-                                        Học từ vựng
+                                        Học Từ Vựng
                                     </a>
                                 </li>
                                 <li>
@@ -129,6 +130,11 @@
                                 <li>
                                     <a href="/social">
                                         Cộng Đồng E+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/discuss">
+                                        Hỏi Đáp
                                     </a>
                                 </li>
                                 <li>

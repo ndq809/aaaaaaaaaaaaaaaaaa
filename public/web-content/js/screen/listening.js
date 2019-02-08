@@ -1,5 +1,7 @@
 var player;
 var ListeningArray;
+var runtime = 0;
+
 $(function(){
 	try{
 		initListening();
@@ -51,12 +53,15 @@ function initListener() {
             forgetListening($(this));
         }
         if ($(this).hasClass('btn-show-answer')) {
-            var current_id = $('.activeItem').attr('id');
+            var current_id = $(selectedTab +' .activeItem').attr('id');
         	$('.listen-answer[target-id='+current_id+']').removeClass('hidden');
         }
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
             addLesson(3, $('#catalogue_nm').val(), $('#group_nm').val());
+        }
+        if ($(this).hasClass('btn-reload')) {
+            getData();
         }
         if ($(this).hasClass('btn-comment')) {
             _this= $(this);
@@ -166,7 +171,14 @@ function initListener() {
         }else{
             $('.btn-add-lesson').removeAttr('disabled');
         }
-        getData();
+        if(runtime==0){
+           if($('.post-not-found').length==0){
+                getData();
+            }     
+        }else{
+            getData();
+        }
+        runtime ++;
     })
     $(document).on('click', '.pager li a', function(e) {
         e.stopPropagation();
@@ -210,8 +222,9 @@ function initListener() {
 function installplayer(){
 	var playlist =[];
 	for (var i = 0; i < ListeningArray.length; i++) {
-		playlist.push({title:ListeningArray[i]['post_media_nm'],mp3:ListeningArray[i]['post_media']});
+		playlist.push({title:ListeningArray[i]['del_flg']==0?ListeningArray[i]['post_media_nm']:'Bài nghe đã bị xóa!',mp3:ListeningArray[i]['del_flg']==0?ListeningArray[i]['post_media']:'/web-content/audio/guitar.mp3'});
 	}
+    console.log(playlist);
 	player = new jPlayerPlaylist(
 		{
 			jPlayer : "#jquery_jplayer_2",
@@ -274,11 +287,14 @@ function switchTabListening(current_li_tag) {
 function rememberListening(remember_btn) {
     currentItem = remember_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = ListeningArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
     voc_infor.push(3);
     voc_infor.push(3);
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     rememberItem(currentItem, "Nghe lại", voc_infor, function() {
         if (remember_btn.parents("tr").hasClass('activeItem')) {
             nextListening();
@@ -289,9 +305,12 @@ function rememberListening(remember_btn) {
 function forgetListening(forget_btn) {
     currentItem = forget_btn.parents("tr");
     current_id = currentItem.attr('id');
+    temp = ListeningArray.filter(function(val){
+        return val['row_id']==Number(current_id);
+    });
     voc_infor = [];
-    voc_infor.push(post[0]['row_id']);
-    voc_infor.push(post[0]['post_id']);
+    voc_infor.push(temp[0]['row_id']);
+    voc_infor.push(temp[0]['post_id']);
     voc_infor.push(3);
     forgetItem(currentItem, "Đã nghe", voc_infor, function() {
         if (forget_btn.parents("tr").hasClass('activeItem')) {
@@ -308,6 +327,7 @@ function getData() {
         type: 'POST',
         url: '/listening/getData',
         dataType: 'json',
+        process:true,
         // loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
@@ -368,6 +388,13 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
     $('.vocabulary-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    if($('.listen-answer[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+        $('.example-content').addClass('hidden');
+        $('.listen-check-box').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+        $('.listen-check-box').removeClass('hidden');
+    }
     $('.example-item:not(.hidden)').addClass('hidden');
     $('.example-item[target-id=' + (target_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');

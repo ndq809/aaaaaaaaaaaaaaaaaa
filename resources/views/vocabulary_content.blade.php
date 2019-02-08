@@ -11,7 +11,7 @@
             <tbody>
                 @foreach($data[4] as $index => $row)
                 <tr class="vocabulary-box" target-id="{{$row['row_id']}}">
-                    <td width="33%"><a target="_blank" href="/translate?v={{$row['id']}}">{{$row['vocabulary_nm']}}</a></td>
+                    <td width="33%"><a target="_blank" href="/dictionary?v={{$row['id']}}">{{$row['vocabulary_nm']}}</a></td>
                     <td width="33%">/{{$row['spelling']}}/</td>
                     <td>{{$row['mean']}}</td>
                 </tr>
@@ -22,7 +22,7 @@
     </div>
     @endif
 
-    @if(isset($data[5][0])&&$data[5][0]['question_id'] != '')
+    @if(isset($data[5][0]['question_id'])&&$data[5][0]['question_id'] != '')
     <div class="panel panel-default panel-contribute">
      <div class="panel-heading" data-toggle="collapse" data-parent="#example-list" href="#collapse6">
         <h5 class="panel-title">
