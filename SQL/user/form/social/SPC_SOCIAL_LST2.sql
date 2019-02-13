@@ -41,6 +41,7 @@ BEGIN
 	,	cre_date			DATETIME2
 	,	edit_date			DATETIME2
 	,	remembered			INT
+	,	del_flg				INT
 	)
 
 	CREATE TABLE #COMMENT(
@@ -126,6 +127,7 @@ BEGIN
 			,	F008.cre_date
 			,	M007.upd_date
 			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			,	M007.del_flg
 			FROM M007
 			INNER JOIN F008
 			ON M007.post_id = F008.target_id
@@ -141,7 +143,11 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
-			WHERE M007.del_flg = 0
+			WHERE 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 			AND M007.catalogue_div = 4
 			AND M007.post_div = 2
 			AND F003.item_1 IS NULL
@@ -164,7 +170,11 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
-		WHERE M007.del_flg = 0
+		WHERE 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
 		AND F003.item_1 IS NULL
@@ -189,6 +199,7 @@ BEGIN
 			,	F008.cre_date
 			,	M007.upd_date
 			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			,	M007.del_flg
 			FROM M007
 			INNER JOIN F008
 			ON M007.post_id = F008.target_id
@@ -204,7 +215,11 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
-			WHERE M007.del_flg = 0
+			WHERE 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 			AND M007.catalogue_div = 4
 			AND M007.post_div = 2
 			AND F003.item_1 IS NOT NULL
@@ -255,6 +270,7 @@ BEGIN
 		,	F008.cre_date
 		,	M007.upd_date
 		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		,	M007.del_flg
 		FROM M007
 		INNER JOIN F008
 		ON M007.post_id = F008.target_id
@@ -272,7 +288,11 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
-		WHERE M007.del_flg = 0
+		WHERE 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
@@ -296,7 +316,11 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
-		WHERE M007.del_flg = 0
+		WHERE 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
 	END

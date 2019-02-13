@@ -1484,22 +1484,19 @@ select.tag-custom{
 }
 
 .post-not-found{
-    padding: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 .post-not-found .content h5{
     margin: 0px!important;
 }
 
-.display-table>div{
-    display: table-cell;
-}
-
-.display-table .content{
-    height: 100%;
-    line-height: 100%;
-    vertical-align: middle;
-    padding-left: 10px;
+.post-not-found>div{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .my-progress {

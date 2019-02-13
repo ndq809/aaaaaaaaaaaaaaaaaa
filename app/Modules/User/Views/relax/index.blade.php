@@ -63,7 +63,11 @@
             </ul>
             <div class="tab-content">
                 <div id="tab-custom1" class="tab-pane fade in active">
-                    @include('User::relax.tab_custom1')
+                    @if(!isset($blank))
+                        @include('User::relax.tab_custom1')
+                    @else
+                        @include('not_found')
+                    @endif
                 </div>
                 <div id="tab-custom2" class="tab-pane fade input-tab">
                     @include('User::relax.tab_custom2')
@@ -71,7 +75,9 @@
             </div>
 		</div>
         <div class="example-content">
-            @include('User::relax.main_content')
+            @if(!isset($blank))
+                @include('User::relax.main_content')
+            @endif
         </div>
 	</div>
 </div>

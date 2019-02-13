@@ -65,7 +65,7 @@ BEGIN
 	,	M007.post_title
 	,	M007.catalogue_div
 	ORDER BY COUNT(M007.post_id) + ISNULL(SUM(F004.cmt_like),0) DESC
-
+	SET @P_target_id = (SELECT TOP 1 M007.post_id FROM M007 WHERE M007.post_id = @P_target_id AND M007.del_flg = 0)
 	SELECT
 			''					AS catalogue_tranfer
 		,	''					AS group_transfer

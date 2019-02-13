@@ -59,9 +59,6 @@
             @include('User::listening.main_content')
         @else
             @include('not_found')
-            <div class="text-center">
-                <button type="button" class="btn btn-success btn-reload">Làm Mới Trang</button>
-            </div>
         @endif
 	</div>
 </div>

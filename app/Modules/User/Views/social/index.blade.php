@@ -48,7 +48,11 @@
         </div>
     </div>
 	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
-        @include('User::social.main_content')
+        @if(!isset($blank))
+            @include('User::social.main_content')
+        @else
+            @include('not_found')
+        @endif
     </div>
 </div>
 

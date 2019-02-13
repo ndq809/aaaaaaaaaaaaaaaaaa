@@ -50,6 +50,9 @@ function initListener() {
         if ($(this).attr('id')=='btn-load-more') {
             getData(2);
         }
+        if ($(this).hasClass('btn-reload')) {
+            getData(1);
+        }
         if ($(this).hasClass('btn-remember')) {
             rememberDiscuss($(this));
         }

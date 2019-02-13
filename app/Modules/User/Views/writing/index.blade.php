@@ -68,9 +68,6 @@
                         @include('User::writing.tab_custom1')
                     @else
                         @include('not_found')
-                        <div class="text-center margin-bottom">
-                            <button type="button" class="btn btn-success btn-reload">Làm Mới Trang</button>
-                        </div>
                     @endif
                 </div>
                 <div id="tab-custom2" class="tab-pane fade input-tab">

@@ -48,6 +48,7 @@ BEGIN
 	,	post_type			INT
 	)
 
+
 	CREATE TABLE #COMMENT(
 		row_id			INT
 	,	comment_id		INT

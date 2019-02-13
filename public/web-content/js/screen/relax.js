@@ -50,7 +50,9 @@ function initRelax() {
         showUpload: false,
         removeLabel: 'Xóa',
     });
-    getData(1);
+    if($('.post-not-found').length==0){
+        getData(1);
+    }
     $('#post_div').trigger('change');
 }
 
@@ -59,6 +61,9 @@ function initListener() {
         e.stopPropagation();
         if ($(this).hasClass('btn-load-more')) {
             getData(2);
+        }
+        if ($(this).hasClass('btn-reload')) {
+            getData(1);
         }
         if ($(this).hasClass('btn-remember')) {
             rememberRelax($(this));
@@ -471,6 +476,11 @@ function getData(mode) {
 function setContentBox(target_id) {
     $('.relax-box:not(.hidden)').addClass('hidden');
     $('.relax-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    if($('.relax-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+        $('.example-content').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+    }
     $('.question-box:not(.hidden)').addClass('hidden');
     $('.question-box[target-id=' + (target_id) + ']').removeClass('hidden');
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
