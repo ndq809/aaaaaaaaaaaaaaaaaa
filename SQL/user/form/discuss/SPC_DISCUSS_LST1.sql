@@ -57,6 +57,7 @@ BEGIN
 	WHERE
 	M007.post_div = 3
 	AND	M007.catalogue_div = 6
+	AND M007.del_flg = 0
 
 	GROUP BY M007.post_id
 	,	M007.post_title

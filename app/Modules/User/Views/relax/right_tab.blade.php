@@ -4,7 +4,7 @@
         <table class="table table-striped table-hover table-right relax-table">
             @if(isset($data)&&$data[0]['post_id'] != '')
                 @foreach($data as $index => $row)
-                    @if($row['post_type']==4)
+                    @if($row['post_type']==4&&$row['post_div']==0)
                         <tbody id="{{$row['row_id']}}">
                             <tr>
                                 <td><a><img alt="loadIcon" src="{{$row['post_media']}}"></a></td>
@@ -37,7 +37,7 @@
         <table class="table table-striped table-hover table-right relax-table">
            @if(isset($data)&&$data[0]['post_id'] != '')
                 @foreach($data as $index => $row)
-                    @if($row['post_type']==5)
+                    @if($row['post_type']==5&&$row['post_div']==0)
                         <tbody id="{{$row['row_id']}}">
                             <tr>
                                 <td><a><img alt="loadIcon" src="https://img.youtube.com/vi/QdXdx9IaakA/0.jpg"></a></td>
@@ -70,7 +70,7 @@
         <table class="table table-striped table-hover table-right relax-table">
            @if(isset($data)&&$data[0]['post_id'] != '')
                 @foreach($data as $index => $row)
-                    @if($row['post_type']==6)
+                    @if($row['post_type']==6&&$row['post_div']==0)
                         <tbody id="{{$row['row_id']}}">
                             <tr class="no-background">
                                 <td class="text-left">

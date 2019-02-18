@@ -71,6 +71,9 @@ function initListener() {
         if ($(this).hasClass('btn-forget')) {
             forgetRelax($(this));
         }
+        if ($(this).attr("id") == 'btn-clear') {
+            clearData();
+        }
         if ($(this).attr("id") == 'find-by-tag') {
             loadtime = 1;
             loadtime1 = 1;
@@ -110,6 +113,30 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click', '.my-post-link', function(e) {
+        _this = $(this);
+        if($('.relax-tab li.active a').attr('href')=='#tab-custom1'){
+            location.href='/relax?v='+_this.attr('post_id');
+        }else{
+            showEditPost(_this);
+        }
+    })
+
+    $(document).on('click','#btn-delete',function(){
+        showMessage(3,function(){
+            var data={};
+            data['post_id'] = $('#new-post-id').val();
+            deletePost(data,function(){
+                showMessage(2,function(){
+                    $('a[post_id='+data['post_id']+']').closest('tr').remove();
+                    $('#btn-clear').trigger('click');
+                    getData(1);
+                });
+            });
+       });
+    })
+
     $(document).on('click', 'h5', function() {
         if ($(this).attr("id") == 'btn_next') {
             nextRelax();
@@ -656,7 +683,6 @@ function view(){
 function loadmore(){
     var data ={};
     data['max_row'] = Math.max.apply(Math, RelaxArray.map(function(o) { return o.row_id; }));
-    console.log(data);
     $.ajax({
         type: 'POST',
         url: '/relax/view',
@@ -688,29 +714,30 @@ function loadmore(){
 }
 
 function save(){
-    var data = getInputData();
-    $.each(data,function(key,value){
-        if(!$.isArray(value) && value.trim()==''&& key!='post_content'){
-            if($('#'+key).attr('type') != 'file'){
-                $('#'+key).addClass('input-error');
-                $('#'+key).attr('data-toggle','tooltip');
-                $('#'+key).attr('data-placement','bottom');
-                $('#'+key).attr('data-original-title','Mục này không được trống');
-            }else{
-                $('#'+key).closest('.input-group').find('.file-caption').addClass('input-error');
-                $('#'+key).closest('.input-group').find('.file-caption').attr('data-toggle','tooltip');
-                $('#'+key).closest('.input-group').find('.file-caption').attr('data-placement','bottom');
-                $('#'+key).closest('.input-group').find('.file-caption').attr('data-original-title','Mục này không được trống');
-            }
+    var data = getInputData('#tab-custom2');
+    // console.log(data);
+    // $.each(data,function(key,value){
+    //     if(!$.isArray(value) && value.trim()=='' && key!='new-post-id'){
+    //         if($('#'+key).attr('type') != 'file'){
+    //             $('#'+key).addClass('input-error');
+    //             $('#'+key).attr('data-toggle','tooltip');
+    //             $('#'+key).attr('data-placement','bottom');
+    //             $('#'+key).attr('data-original-title','Mục này không được trống');
+    //         }else{
+    //             $('#'+key).closest('.input-group').find('.file-caption').addClass('input-error');
+    //             $('#'+key).closest('.input-group').find('.file-caption').attr('data-toggle','tooltip');
+    //             $('#'+key).closest('.input-group').find('.file-caption').attr('data-placement','bottom');
+    //             $('#'+key).closest('.input-group').find('.file-caption').attr('data-original-title','Mục này không được trống');
+    //         }
             
-        }
-    })
-    if($('.input-error').length!=0){
-        $('[data-toggle="tooltip"]').tooltip();
-        return;
-    }
-    if(data['post_tag'].length==0){
-        data['post_tag'] = null;
+    //     }
+    // })
+    // if($('.input-error').length!=0){
+    //     $('[data-toggle="tooltip"]').tooltip();
+    //     return;
+    // }
+    if(data['post_tag_edit'].length==0){
+        data['post_tag_edit'] = null;
     }
     var data_addnew=new FormData($("#upload_form")[0]);
     data_addnew.append('header_data',JSON.stringify(data));
@@ -726,14 +753,44 @@ function save(){
             switch (res.status) {
                 case 200:
                     clearFailedValidate();
-                    $('.your-post table tbody').append('<tr> <td> <a href="/relax?v='+res.post_info['post_id']+'">'
+                    showMessage(2,function(){
+                        getData(1);
+                        if(data['new-post-id']==''){
+                            $('.your-post table tbody').append('<tr> <td> <a href="/relax?v='+res.post_info['post_id']+'">'
                         +'<i class="glyphicon glyphicon-hand-right"> </i> '+res.post_info['post_title']+'</a> </td> '
                         +'<td width="100px" class="text-center tag-style"> <span>'+res.post_info['catalogue_div']+'</span> </td> </tr>');
-                    showMessage(2);
+                        }
+                    });
                     break;
                 case 201:
                     clearFailedValidate();
-                    showFailedValidate(res.error);
+                    if(res.error.title!=undefined){
+                        $('#post_title').addClass('input-error');
+                        $('#post_title').attr('data-toggle','tooltip');
+                        $('#post_title').attr('data-placement','top');
+                        $('#post_title').attr('data-original-title','Tiêu đề không được rỗng');
+                    }
+                    if(res.error.post_media!=undefined){
+                         if(data['post_div']!=4){
+                            $('#post_media').addClass('input-error');
+                            $('#post_media').attr('data-toggle','tooltip');
+                            $('#post_media').attr('data-placement','top');
+                            $('#post_media').attr('data-original-title','Mục này không được trống');
+                        }else{
+                            $('#post_media').closest('.input-group').find('.file-caption').addClass('input-error');
+                            $('#post_media').closest('.input-group').find('.file-caption').attr('data-toggle','tooltip');
+                            $('#post_media').closest('.input-group').find('.file-caption').attr('data-placement','bottom');
+                            $('#post_media').closest('.input-group').find('.file-caption').attr('data-original-title','Mục này không được trống');
+                        }
+                    }
+                    if(res.error.content!=undefined){
+                        $('.cke_inner').addClass('input-error');
+                        $('#cke_1_bottom').addClass('input-error');
+                        $('.cke_inner').attr('data-toggle','tooltip');
+                        $('.cke_inner').attr('data-placement','top');
+                        $('.cke_inner').attr('data-original-title','Mục này không được trống');
+                    }
+                    $('[data-toggle="tooltip"]').tooltip();
                     break;
                 case 208:
                     clearFailedValidate();
@@ -748,4 +805,71 @@ function save(){
             alert(jqXHR.status);
         }
     });
+}
+
+function showEditPost(question){
+    var item = question.attr('post_id');
+    var temp = [];
+    var post_temp = RelaxArray.filter(function(val){
+        return val['post_id']==item && val['post_div']==1;
+    });
+    var postTagArray = TagMyPostArray.filter(function(val){
+        return val['row_id']==post_temp[0]['row_id'];
+    });
+    var thisposttag=[];
+    for (var i = 0; i < postTagArray.length; i++) {
+        thisposttag.push(postTagArray[i]['tag_id']);
+    }
+    for (var i = 0; i < postTagArray.length; i++) {
+        $.each($('#post_tag_edit').selectize()[0].selectize.options,(function(key,val){
+            if(key.indexOf(postTagArray[i]['tag_nm'])!=-1){
+                val['value'] =postTagArray[i]['tag_id'];
+                $('#post_tag_edit').selectize()[0].selectize.options[postTagArray[i]['tag_id']]= $(this)[0];
+                temp.push(key);
+            } 
+        }))
+    }
+    $('#new-post-id').val(post_temp[0]['post_id']);
+    $('#post_div').val(post_temp[0]['post_type']).trigger('change');
+    if(post_temp[0]['post_type']==4){
+        $("#post_media:visible").fileinput('refresh',{
+            showCaption: true,
+            showPreview: true,
+            showRemove: true,
+            showUpload: false,
+            showCancel: false,
+            showBrowse : false,
+            showUploadedThumbs: false,
+            initialCaption : post_temp[0]['post_media_nm'],
+            initialPreview: [
+                "<img src='"+post_temp[0]['post_media']+"' class='kv-preview-data file-preview-image'>"
+            ],
+        }).trigger('previewloaded');
+    }else{
+        $('#post_media:visible').val(post_temp[0]['post_media']);
+    }
+    $('#post_tag_edit').selectize()[0].selectize.refreshItems();
+    for (var i = 0; i < temp.length; i++) {
+        delete $('#post_tag_edit').selectize()[0].selectize.options[temp[i]];
+    }
+    $('#post_tag_edit').selectize()[0].selectize.setValue(thisposttag);
+    $('#post_title').val(post_temp[0]['post_title']);
+    CKEDITOR.instances['post_content'].setData(post_temp[0]['post_content']);
+    $('#btn-share').text('Chỉnh Sửa');
+    $('#btn-delete').removeClass('hidden');
+}
+
+function clearData(){
+    $('#new-post-id').val('');
+    $('#post_tag_edit').selectize()[0].selectize.refreshItems();
+    $('#post_tag_edit').selectize()[0].selectize.setValue('');
+    $('#post_title').val('');
+    if($('#post_div').val()==4){
+        $("#post_media:visible").fileinput('clear');
+    }else{
+        $("#post_media:visible").val('');
+    }
+    CKEDITOR.instances['post_content'].setData('');
+    $('#btn-share').text('Đăng Bài');
+    $('#btn-delete').addClass('hidden');
 }

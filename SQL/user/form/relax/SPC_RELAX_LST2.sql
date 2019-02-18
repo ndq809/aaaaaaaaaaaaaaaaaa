@@ -38,6 +38,7 @@ BEGIN
 	,	post_title			NVARCHAR(100)
 	,	post_content		NVARCHAR(MAX)
 	,	post_media			NVARCHAR(MAX)
+	,	post_media_nm		NVARCHAR(MAX)
 	,	post_media_div		NVARCHAR(50)
 	,	post_member			NVARCHAR(50)
 	,	post_rate			MONEY
@@ -46,6 +47,7 @@ BEGIN
 	,	cre_date			DATETIME2
 	,	edit_date			DATETIME2
 	,	post_type			INT
+	,	post_div			INT
 	)
 
 
@@ -126,6 +128,7 @@ BEGIN
 			,	M007.post_title
 			,	M007.post_content
 			,	M007.post_media
+			,	M007.post_media_nm
 			,	CASE M007.media_div
 				WHEN 3 THEN 'video/youtube'
 				WHEN 4 THEN 'video/facebook'
@@ -142,6 +145,7 @@ BEGIN
 					WHEN 8 THEN 5
 					WHEN 9 THEN 6
 				END AS post_type
+			,	0 AS post_div
 			FROM M007
 			INNER JOIN F008
 			ON M007.post_id = F008.target_id
@@ -159,6 +163,59 @@ BEGIN
 				(TEMP.post_type = 4 AND TEMP.row_count <= 20 * @P_loadtime)
 			OR	(TEMP.post_type = 5 AND TEMP.row_count <= 20 * @P_loadtime1)
 			OR	(TEMP.post_type = 6 AND TEMP.row_count <= 20 * @P_loadtime2)
+
+
+		INSERT INTO #RELAX
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+		,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
+			ORDER BY 
+			CASE
+			WHEN M007.post_id = @P_post_id THEN 1
+			END,M007.upd_date DESC) AS row_count
+		,	M007.post_id
+		,	M007.briged_id
+		,	M007.post_title
+		,	M007.post_content
+		,	M007.post_media
+		,	M007.post_media_nm
+		,	CASE M007.media_div
+			WHEN 3 THEN 'video/youtube'
+			WHEN 4 THEN 'video/facebook'
+			ELSE 'video'
+			END AS media_div
+		,	M007.cre_user
+		,	M007.post_rating
+		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
+		,	M007.post_view
+		,	F008.cre_date
+		,	M007.upd_date
+		,	CASE M007.catalogue_div
+				WHEN 7 THEN 4
+				WHEN 8 THEN 5
+				WHEN 9 THEN 6
+			END AS post_type
+		,	1 AS post_div
+		FROM M007
+		INNER JOIN F008
+		ON M007.post_id = F008.target_id
+		AND execute_div = 4
+		AND execute_target_div = 5
+		LEFT JOIN F008 _F008
+		ON	_F008.execute_div = 5
+		AND _F008.execute_target_div = 5
+		AND _F008.target_id = M007.post_id
+		AND _F008.user_id = @P_account_id
+		WHERE M007.del_flg = 0
+		AND M007.cre_user = @P_account_id
+		AND M007.catalogue_div IN (7,8,9)
+
+		UPDATE temp
+		SET temp.row_id = temp.new_row_id
+		FROM (
+		  SELECT #RELAX.row_id, ROW_NUMBER() OVER(ORDER BY #RELAX.row_id ASC) AS new_row_id
+		  FROM #RELAX
+		  ) temp
 		
 	END
 	ELSE
@@ -193,6 +250,7 @@ BEGIN
 			,	M007.post_title
 			,	M007.post_content
 			,	M007.post_media
+			,	M007.post_media_nm
 			,	CASE M007.media_div
 				WHEN 3 THEN 'video/youtube'
 				WHEN 4 THEN 'video/facebook'
@@ -209,6 +267,7 @@ BEGIN
 					WHEN 8 THEN 5
 					WHEN 9 THEN 6
 				END AS post_type
+			,	0 AS post_div
 			FROM M007
 			INNER JOIN F008
 			ON M007.post_id = F008.target_id
@@ -229,11 +288,64 @@ BEGIN
 			WHERE M007.del_flg = 0
 			AND M007.catalogue_div IN (7,8,9)
 			
-			)TEMP
-			WHERE 
-				(TEMP.post_type = 4 AND TEMP.row_count <= 20 * @P_loadtime)
-			OR	(TEMP.post_type = 5 AND TEMP.row_count <= 20 * @P_loadtime1)
-			OR	(TEMP.post_type = 6 AND TEMP.row_count <= 20 * @P_loadtime2)
+		)TEMP
+		WHERE 
+			(TEMP.post_type = 4 AND TEMP.row_count <= 20 * @P_loadtime)
+		OR	(TEMP.post_type = 5 AND TEMP.row_count <= 20 * @P_loadtime1)
+		OR	(TEMP.post_type = 6 AND TEMP.row_count <= 20 * @P_loadtime2)
+
+
+		INSERT INTO #RELAX
+		SELECT
+				ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+			,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
+				ORDER BY 
+				CASE
+				WHEN M007.post_id = @P_post_id THEN 1
+				END,M007.upd_date DESC) AS row_count
+			,	M007.post_id
+			,	M007.briged_id
+			,	M007.post_title
+			,	M007.post_content
+			,	M007.post_media
+			,	M007.post_media_nm
+			,	CASE M007.media_div
+				WHEN 3 THEN 'video/youtube'
+				WHEN 4 THEN 'video/facebook'
+				ELSE 'video'
+				END AS media_div
+			,	M007.cre_user
+			,	M007.post_rating
+			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
+			,	M007.post_view
+			,	F008.cre_date
+			,	M007.upd_date
+			,	CASE M007.catalogue_div
+					WHEN 7 THEN 4
+					WHEN 8 THEN 5
+					WHEN 9 THEN 6
+				END AS post_type
+			,	1 AS post_div
+			FROM M007
+			INNER JOIN F008
+			ON M007.post_id = F008.target_id
+			AND execute_div = 4
+			AND execute_target_div = 5
+			LEFT JOIN F008 _F008
+			ON	_F008.execute_div = 5
+			AND _F008.execute_target_div = 5
+			AND _F008.target_id = M007.post_id
+			AND _F008.user_id = @P_account_id
+			WHERE M007.del_flg = 0
+			AND M007.cre_user = @P_account_id
+			AND M007.catalogue_div IN (7,8,9)
+
+			UPDATE temp
+			SET temp.row_id = temp.new_row_id
+			FROM (
+			  SELECT #RELAX.row_id, ROW_NUMBER() OVER(ORDER BY #RELAX.row_id ASC) AS new_row_id
+			  FROM #RELAX
+			  ) temp
 	END
 	INSERT INTO #COMMENT
 	SELECT *

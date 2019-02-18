@@ -1,4 +1,5 @@
 <div class="col-lg-6 col-xs-12 no-padding">
+    <input type="hidden" id="new-post-id" class="submit-item">
     <div class="form-group">
         <label class="title-header">Loại bài viết</label>
         <select class="form-control input-sm submit-item" id="post_div">
@@ -20,7 +21,7 @@
 </div>
 <div class="form-group">
     <label class="title-header">Thêm tag cho bài viết</label>
-    <select class="margin-bottom tag-selectize submit-item post_tag_new" id="post_tag" multiple="multiple">
+    <select class="margin-bottom tag-selectize submit-item post_tag_new" id="post_tag_edit" multiple="multiple">
         @if(isset($data_default[4])&&$data_default[4][0]['tag_id'] != '')
         @foreach($data_default[4] as $item)
             <option value="{{$item['tag_id']}}" data-data ="{{json_encode( $item)}}">{{$item['tag_nm']}}</option>
@@ -54,5 +55,6 @@
     <div class="margin-top btn-group">
         <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
         <button class="btn btn-sm btn-success" id="btn-share">Đăng Bài</button>
+        <button class="btn btn-sm btn-danger hidden" id="btn-delete">Xóa Bài Đăng</button>
     </div> 
 </div>

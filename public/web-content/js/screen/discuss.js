@@ -92,6 +92,21 @@ function initListener() {
             }
         }
     });
+
+    $(document).on('click','#btn-delete',function(){
+        showMessage(3,function(){
+            var data={};
+            data['post_id'] = $('#new-question-id').val();
+            deletePost(data,function(){
+                showMessage(2,function(){
+                    $('a[question_id='+data['post_id']+']').closest('tr').remove();
+                    $('#btn-clear').trigger('click');
+                    getData(1);
+                });
+            });
+       });
+    })
+
     $(document).on('click', 'h5', function() {
         if ($(this).attr("id") == 'btn_next') {
             nextDiscuss();
@@ -681,6 +696,7 @@ function showEditPost(question){
     $('#new-question-title').val(post_temp[0]['post_title']);
     CKEDITOR.instances['new-question-content'].setData(post_temp[0]['post_content']);
     $('#btn-question').text('Chỉnh Sửa');
+    $('#btn-delete').removeClass('hidden');
 }
 
 function clearData(){
@@ -690,4 +706,5 @@ function clearData(){
     $('#new-question-title').val('');
     CKEDITOR.instances['new-question-content'].setData('');
     $('#btn-question').text('Đặt Câu Hỏi');
+    $('#btn-delete').addClass('hidden');
 }

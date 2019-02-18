@@ -142,6 +142,7 @@ function initListener() {
 
             $('#en_text').val(En_Array.join('\n'));
             $('#en_text').trigger('change');
+            $('#btn-next').trigger('click');
         }
         if(e.which == 13 && $('#vi_sentence').is(':focus')){
             Vi_Array[sentenceIndex] = $('#vi_sentence').val().indexOf('\n')==0?$('#vi_sentence').val().replace('\n','<<CHƯA DỊCH_'+(sentenceIndex+1)+'>>\n'):$('#vi_sentence').val();
@@ -152,7 +153,7 @@ function initListener() {
             }
             $('#vi_text').val(Vi_Array.join('\n'));
             $('#vi_text').trigger('change');
-            // $('#btn-next').click();
+            $('#btn-next').click();
         }
     }, 20))
 
@@ -208,7 +209,7 @@ function nextSentence() {
     $('#en_sentence').trigger('change');
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
-    $('#en_sentence').focus();
+    $('#vi_sentence').focus();
 }
 
 function previousSentence() {
@@ -222,7 +223,7 @@ function previousSentence() {
     $('#en_sentence').trigger('change');
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
-    $('#en_sentence').focus();
+    $('#vi_sentence').focus();
 }
 
 function selectTranslation(sentenceIndex) {
@@ -232,7 +233,7 @@ function selectTranslation(sentenceIndex) {
     scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('#en_sentence').focus();
+        $('#vi_sentence').focus();
     }
 }
 

@@ -42,7 +42,6 @@
         {!!WebFunctions::public_url('web-content/alert/dist/dev/jquery.sweet-modal.css')!!}
         {!!WebFunctions::public_url('web-content/ckeditor/ckeditor.js')!!}
         {!!WebFunctions::public_url('web-content/ckeditor/custom_config.js')!!}
-        {!!WebFunctions::public_url('web-content/ckeditor/custom_config1.js')!!}
         {!!WebFunctions::public_url('web-content/ckeditor/nanospell/autoload.js')!!}
         @yield('asset_header')
     </head>

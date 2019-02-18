@@ -231,6 +231,11 @@ function initEvent() {
         e.preventDefault();
         window.location.href = $(this).attr("href");
     })
+    $(document).on('keydown', '#popup-box0 input', function(e) {
+        if(e.which==13){
+            $('#btn_login').trigger('click');
+        }
+    })
     $.fn.sizeChanged = function(handleFunction) {
         var element = this;
         var lastWidth = element.width();
@@ -282,7 +287,9 @@ function initEvent() {
     })
 
     $(document).on('click','#btn-question',function(){
-        addQuestion();
+        showMessage(1,function(){
+            addQuestion();
+       });
     })
 
     $('.close-when-small').on('show.bs.collapse', function (e) {
@@ -867,6 +874,37 @@ function addReport(item_infor,callback){
     });
 }
 
+function deletePost(data,callback){
+    $.ajax({
+        type: 'POST',
+        url: '/common/delete',
+        dataType: 'json',
+        // loading:true,
+        data: data,
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    callback();
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
 function toggleEffect(item_infor,callback){
     var data=item_infor;
     $.ajax({
@@ -1311,10 +1349,13 @@ function switchTab(tab_number){
     selectedTab = "#tab"+tab_number;
 }
 
-function getInputData(){
+function getInputData(parent){
     var data={};
     var value;
-    $(document).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
+    if(parent==undefined){
+        parent=document;
+    }
+    $(parent).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
         if($(this).hasClass('ckeditor')){
             value=CKEDITOR.instances[$(this).attr('id')].getData()
         }else
@@ -1334,7 +1375,7 @@ function getInputData(){
                 value='';
             }else{
                 value=$(this).val();
-                if(!$.isArray(value) || $(this).attr('id')!='post_tag'){
+                if(!$.isArray(value) || ($(this).attr('id')!='post_tag' && $(this).attr('id')!='post_tag_edit')){
                     value = value.trim();
                 }else{
                     value = $.map(value, function(val){

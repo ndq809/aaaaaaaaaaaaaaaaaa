@@ -8,6 +8,7 @@ use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
 use SQLXML;
+use Common;
 
 class RelaxController extends ControllerUser
 {
@@ -157,45 +158,51 @@ class RelaxController extends ControllerUser
             }else
             $media_div = 5;
         }
-        if (isset($param_temp['post_tag'])) {
-            for ($i = 0; $i < count($param_temp['post_tag']); $i++) {
-                if (isset($param_temp['post_tag'][$i]['tag_id'])) {
-                    $param_temp['post_tag'][$i]['tag_id'] = $this->hashids->decode($param_temp['post_tag'][$i]['tag_id'])[0];
+        if (isset($param_temp['post_tag_edit'])) {
+            for ($i = 0; $i < count($param_temp['post_tag_edit']); $i++) {
+                if (isset($param_temp['post_tag_edit'][$i]['tag_id'])) {
+                    $param_temp['post_tag_edit'][$i]['tag_id'] = $this->hashids->decode($param_temp['post_tag_edit'][$i]['tag_id'])[0];
                 }
             }
         }
-
+        $param['new-post-id'] = $param_temp['new-post-id'] != '' ? $this->hashids->decode($param_temp['new-post-id'])[0] : '';
         $param['post_div'] = isset($param_temp['post_div'])?$param_temp['post_div'] + 3 :'';
-        $param['post_title'] = isset($param_temp['post_title'])?$param_temp['post_title']:'';
-        $param['post_tag'] = $xml->xml($param_temp['post_tag']);
-        $param['post_content'] = isset($param_temp['post_content'])?$param_temp['post_content']:'';
-        $param['post_media'] = $media;
+        $param['title'] = isset($param_temp['post_title'])?$param_temp['post_title']:'';
+        $param['post_tag'] = $xml->xml($param_temp['post_tag_edit']);
+        $param['content'] = isset($param_temp['post_content'])?$param_temp['post_content']:'';
+        if($param['post_div']==9||$param['new-post-id']!=''){
+            $param['media'] = $media;
+        }else{
+            $param['post_media'] = $media;
+        }
         $param['post_media_nm'] = $name;
         $param['post_media_div'] = $media_div;
         $param['user_id']    = Auth::user()->account_nm;
         $param['ip']         = $request->ip();
-        
-        // $param['post_tag'] = $xml->xml(isset($param['post_tag'])?$param['post_tag']:array());
-
-        // var_dump($param);die;
-        $data             = Dao::call_stored_procedure('SPC_RELAX_ACT3', $param);
-        $data             = CommonUser::encodeID($data);
-        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
-            $result = array(
-                'status' => 208,
-                'data'   => $data[0],
-            );
-        } else if ($data[0][0]['Data'] != '') {
-            $result = array(
-                'status' => 207,
-                'data'   => $data[0],
-            );
+        if (common::checkValidate($param)['result']) {
+            $data             = Dao::call_stored_procedure('SPC_RELAX_ACT3', $param);
+            $data             = CommonUser::encodeID($data);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'post_info'   => $data[1][0],
+                    'statusText' => 'success',
+                );
+            }
         } else {
-            $result = array(
-                'status'     => 200,
-                'post_info'   => $data[1][0],
-                'statusText' => 'success',
-            );
+           $result = array('error'    => common::checkValidate($param)['error'],
+                'status'     => 201,
+                'statusText' => 'validate failed');
         }
         return response()->json($result);
     }

@@ -26,7 +26,6 @@ Route::group(
 		Route::get('writing','WritingController@getIndex');
 		Route::any('writing/getData','WritingController@getData');
 		Route::any('writing/save','WritingController@save');
-		Route::any('writing/delete','WritingController@delete');
 		Route::any('writing/share','WritingController@share');
 		Route::get('social','SocialController@getIndex');
 		Route::any('social/getData','SocialController@getData');
@@ -76,6 +75,8 @@ Route::group(
 		Route::any('getQuestion','CommonController@getQuestion');
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
 		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
+		Route::any('delete','CommonController@deletePost');
+
 	}
 );
 

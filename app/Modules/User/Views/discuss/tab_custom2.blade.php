@@ -21,5 +21,6 @@
     <div class="margin-top btn-group">
         <button class="btn btn-sm btn-default" id="btn-clear">Xóa Trắng</button>
         <button class="btn btn-sm btn-success" id="btn-question">Đặt Câu Hỏi</button>
+        <button class="btn btn-sm btn-danger hidden" id="btn-delete">Xóa Câu Hỏi</button>
     </div> 
 </div>

@@ -242,7 +242,15 @@ function initListener() {
 
     $(document).on('click','#btn-delete',function(){
         showMessage(3,function(){
-            deletePost();
+            var data={};
+            data['post_id'] = post[0]['post_id'];
+            deletePost(data,function(){
+                showMessage(2,function(){
+                    var temp = $(selectedTab+' .activeItem');
+                    nextWriting();
+                    temp.remove();
+                });
+            });
        });
     })
 
@@ -749,43 +757,6 @@ function save(mode){
                     }
                     $(selectedTab+ ' .table-right tbody tr[id='+res.row_id+']').trigger('click');
                     showMessage(2);
-                    break;
-                case 201:
-                    clearFailedValidate();
-                    showFailedValidate(res.error);
-                    break;
-                case 208:
-                    clearFailedValidate();
-                    showMessage(4);
-                    break;
-                default:
-                    break;
-            }
-        },
-        // Ajax error
-        error: function(jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function deletePost(){
-    var data ={};
-    data['post_id'] = post[0]['post_id'];
-    $.ajax({
-        type: 'POST',
-        url: '/writing/delete',
-        dataType: 'json',
-        // loading:true,
-        data: data,
-        success: function(res) {
-            switch (res.status) {
-                case 200:
-                    showMessage(2,function(){
-                        var temp = $(selectedTab+' .activeItem');
-                        nextWriting();
-                        temp.remove();
-                    });
                     break;
                 case 201:
                     clearFailedValidate();

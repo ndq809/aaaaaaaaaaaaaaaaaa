@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_WRITING_ACT3]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_COM_DELETE_POST]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
-DROP PROCEDURE [dbo].[SPC_WRITING_ACT3]
+DROP PROCEDURE [dbo].[SPC_COM_DELETE_POST]
 GO
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
 SET ANSI_NULLS ON
@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_WRITING_ACT3]
+CREATE PROCEDURE [dbo].[SPC_COM_DELETE_POST]
 	 @P_post_id				VARCHAR(15)		=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
@@ -20,54 +20,23 @@ BEGIN
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			=  SYSDATETIME()
 	,   @w_prs_user_id			VARCHAR(6)			= @P_user_id
-	,	@w_program_id			NVARCHAR(50)		= 'Writing'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Học viết'
+	,	@w_program_id			NVARCHAR(50)		= 'Common'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Xóa post'
 	,	@w_result				NVARCHAR(10)		= 'OK'
-	,	@w_mode					NVARCHAR(20)		= 'share'
+	,	@w_mode					NVARCHAR(20)		= 'delete'
 	,	@w_prs_key				NVARCHAR(1000)		= ''
 	,	@w_message				TINYINT				= 0
 	--
 	BEGIN TRANSACTION
 	BEGIN TRY
 		--
-		INSERT INTO F008(
-			target_id
-		,	user_id
-		,	execute_div
-		,	execute_target_div
-		,	del_flg
-		,	cre_user
-		,	cre_prg
-		,	cre_ip
-		,	cre_date
-		,	upd_user
-		,	upd_prg
-		,	upd_ip
-		,	upd_date
-		,	del_user
-		,	del_prg
-		,	del_ip
-		,	del_date
-
-			)
-		SELECT
-			@P_post_id
-		,	@P_user_id
-		,	4
-		,	5
-		,	0
-		,	@P_user_id
-		,	@w_program_id
-		,	@P_ip
-		,	SYSDATETIME()
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
-		,	NULL
+		UPDATE M007 SET
+			M007.del_user	=	@P_user_id
+		,	M007.del_prg	=	@w_program_id
+		,	M007.del_ip		=	@P_ip
+		,	M007.del_date	=	@w_time
+		,	M007.del_flg	=	1
+		WHERE M007.post_id = @P_post_id
 
 	END TRY
 	BEGIN CATCH

@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_WRITING_ACT2]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_COM_DELETE_POST]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
-DROP PROCEDURE [dbo].[SPC_WRITING_ACT2]
+DROP PROCEDURE [dbo].[SPC_COM_DELETE_POST]
 GO
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
 SET ANSI_NULLS ON
@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_WRITING_ACT2]
+CREATE PROCEDURE [dbo].[SPC_COM_DELETE_POST]
 	 @P_post_id				VARCHAR(15)		=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
@@ -20,8 +20,8 @@ BEGIN
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			=  SYSDATETIME()
 	,   @w_prs_user_id			VARCHAR(6)			= @P_user_id
-	,	@w_program_id			NVARCHAR(50)		= 'Writing'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Học viết'
+	,	@w_program_id			NVARCHAR(50)		= 'Common'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Xóa post'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'delete'
 	,	@w_prs_key				NVARCHAR(1000)		= ''

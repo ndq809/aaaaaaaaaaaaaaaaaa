@@ -93,7 +93,7 @@
                             @foreach($data_default[3] as $index => $row)
                             <tr>
                                 <td>
-                                    <a href="/relax?v={{$row['post_id']}}">
+                                    <a post_id="{{$row['post_id']}}" class="my-post-link">
                                         <i class="glyphicon glyphicon-hand-right">
                                         </i>
                                         {{$row['post_title']}}

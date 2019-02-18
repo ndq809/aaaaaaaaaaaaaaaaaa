@@ -7,7 +7,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_RELAX_ACT3]
-     @P_post_div     		INT					= 0
+     @P_post_id     		NVARCHAR(50)		= ''
+,    @P_post_div     		INT					= 0
 ,    @P_post_title     		NVARCHAR(200)		= ''
 ,    @P_post_tag     		XML					= ''
 ,    @P_post_content    	NTEXT				= ''
@@ -86,7 +87,9 @@ BEGIN
 	FROM @P_post_tag.nodes('row') T(C)
 	INNER JOIN M013
 	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
-
+	
+	IF @P_post_id =''
+	BEGIN
 	
 		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
@@ -116,7 +119,6 @@ BEGIN
 			,	 @w_time
 			FROM #TAG
 		END
- 
 		INSERT INTO M007 (
 			 catalogue_div     
 		,	 catalogue_id
@@ -211,6 +213,73 @@ BEGIN
 		,	NULL
 		,	NULL
 		,	NULL
+	END
+	ELSE
+	BEGIN
+		SET @w_mode='update'
+		IF NOT EXISTS (SELECT 1 FROM M007 WHERE M007.post_id = @P_post_id AND M007.del_flg = 0) --code not exits 
+		BEGIN
+		 SET @w_result = 'NG'
+		 SET @w_message = 5
+		 INSERT INTO @ERR_TBL
+		 SELECT 
+		  0
+		 , @w_message
+		 , 'post_id'
+		 , ''
+		END
+		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+		SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
+		IF @w_briged_id IS NULL
+		BEGIN
+			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
+		END
+
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1
+		IF EXISTS (SELECT 1 FROM #VOCABULARY)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#VOCABULARY.Vocabulary_code
+			,	1
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
+			FROM #VOCABULARY
+		END
+
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2
+		IF EXISTS (SELECT 1 FROM #TAG)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#TAG.tag_id
+			,	2
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
+			FROM #TAG
+		END
+		UPDATE M007 SET 
+			 catalogue_div    =	@P_post_div   
+		,	 catalogue_id	  =	NULL
+		,	 group_id		  =	NULL
+		,	 briged_id 		  =	@w_briged_id 
+		,	 post_title 	  =	@P_post_title 
+		,	 post_content 	  =	@P_post_content 
+		,	 post_media		  =	IIF(@P_post_media='',post_media,@P_post_media)
+		,	 post_media_nm	  =	IIF(@P_post_media_nm='', post_media_nm,@P_post_media_nm)
+		,	 media_div 		  =	IIF(@P_post_media_div =0,media_div,@P_post_media_div)
+		,	 upd_user		  = @P_user_id
+		,	 upd_prg		  = @w_program_id
+		,	 upd_ip			  = @P_ip
+		,	 upd_date		  = @w_time
+		WHERE M007.post_id = @P_post_id
+	END
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL
