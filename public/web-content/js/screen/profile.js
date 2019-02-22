@@ -227,14 +227,24 @@ function initListener(){
 }
 
 function initImageUpload(){
-	var imageContainer = $('#imageContainer');
-	var croppedOptions = {
-	    uploadUrl: 'common/upload-image',
-	    cropUrl: 'common/crop-image',
-	    cropData:{
-	        'width' : imageContainer.width(),
-	        'height': imageContainer.height()
-	    }
-	};
-	var cropperBox = new Croppic('imageContainer', croppedOptions);
+    var imageContainer = $('#imageContainer');
+    var croppedOptions = {
+        uploadUrl: '/common/upload-image',
+        cropUrl: '/common/crop-image',
+        rotateControls: false,
+        cropData:{
+            'width' : imageContainer.width(),
+            'height': imageContainer.height()
+        },
+        onAfterImgCrop:function(){
+            $('#avarta,#image').val($('#imageContainer .croppedImg').attr('src'));
+        },
+        onAfterRemoveCroppedImg: function(){
+            $('#avarta,#image').val('');
+        },
+        onError: function(){
+            showMessage(14);
+        },
+    };
+    cropperBox = new Croppic('imageContainer', croppedOptions);
 }

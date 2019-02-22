@@ -23,6 +23,8 @@ Route::get('master/logout', 'Auth\LoginController@logout')->name('logout');
 Route::post('keep-token-alive', function() {
     return 'Token must have been valid, and the session expiration has been extended.'; //https://stackoverflow.com/q/31449434/470749
 });
+Route::get('auth/facebook', 'Auth\FacebookAuthController@redirectToProvider')->name('facebook.login') ;
+Route::get('auth/facebook/callback', 'Auth\FacebookAuthController@handleProviderCallback');
 
 
 

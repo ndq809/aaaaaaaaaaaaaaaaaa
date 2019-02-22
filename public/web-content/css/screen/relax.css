@@ -93,3 +93,21 @@
 	padding-bottom: 10px;
 }
 
+.post-infor .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}
+
+.vote .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.vote .tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}
+

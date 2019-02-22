@@ -2955,7 +2955,7 @@
 		positionDropdown: function() {
 			var $control = this.$control;
 			var offset = this.settings.dropdownParent === 'body' ? $control.offset() : $control.position();
-			offset.top += $control.height();
+			offset.top += $control.outerHeight();
 			this.$dropdown.css({
 				width : $control[0].getBoundingClientRect().width,
 				top   : offset.top,

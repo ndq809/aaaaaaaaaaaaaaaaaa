@@ -61,6 +61,7 @@ Route::group(
 		Route::post('changepass', 'CommonController@changePass');
 		Route::post('upload-image', 'CommonController@postUpload');
 		Route::post('crop-image', 'CommonController@postCrop');
+		Route::post('delete-image', 'CommonController@postCropDelete');
 		Route::any('addLesson','CommonController@addLesson');
 		Route::any('deleteLesson','CommonController@deleteLesson');
 		Route::any('remembervoc','CommonController@remembervoc');

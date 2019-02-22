@@ -11,9 +11,9 @@
                     <span>ĐĂNG NHẬP E+</span>
                 </div>
                 <div class="login-with">
-                    <i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i>
-                    <i class="fa fa-twitter" title='Đăng nhập với twitter'></i> 
-                    <i class="fa fa-google-plus" title='Đăng nhập với google +'></i>  
+                    <a href="{{ route('facebook.login')}}"><i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i></a>
+                    <a href=""><i class="fa fa-twitter" title='Đăng nhập với twitter'></i></a> 
+                    <a href=""><i class="fa fa-google-plus" title='Đăng nhập với google +'></i></a>
                 </div>
             </div>
             <div class="modal-body">

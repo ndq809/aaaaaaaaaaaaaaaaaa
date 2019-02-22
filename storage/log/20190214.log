@@ -1,0 +1,408 @@
+2019-02-14 00:26:13 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:19 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:19 EXEC SPC_VOCABULARY_LST1 '','','','';
+2019-02-14 00:26:20 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:21 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2019-02-14 00:26:21 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:21 EXEC SPC_GRAMMAR_LST1 '','','2','1';
+2019-02-14 00:26:22 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:22 EXEC SPC_GRAMMAR_LST2 '6','7','';
+2019-02-14 00:26:24 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:24 EXEC SPC_LISTENING_LST1 '','','6','7';
+2019-02-14 00:26:25 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:25 EXEC SPC_LISTENING_LST2 '8','8','';
+2019-02-14 00:26:27 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:27 EXEC SPC_WRITING_LST1 '','','8','8';
+2019-02-14 00:26:27 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:27 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-14 00:26:27 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:27 EXEC SPC_WRITING_LST2 '9','10','';
+2019-02-14 00:26:29 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:29 EXEC SPC_READING_LST1 '','','9','10';
+2019-02-14 00:26:30 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:26:30 EXEC SPC_READING_LST2 '12','14','';
+2019-02-14 00:27:53 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:27:53 EXEC SPC_SOCIAL_LST1 '','';
+2019-02-14 00:27:54 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:27:54 EXEC SPC_SOCIAL_LST2 '','1','','';
+2019-02-14 00:27:56 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:27:56 EXEC SPC_DISCUSS_LST1 '','';
+2019-02-14 00:27:57 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:27:57 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-02-14 00:27:58 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:27:58 EXEC SPC_DICTIONARY_LST1 '','';
+2019-02-14 00:28:00 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:28:00 EXEC SPC_RELAX_LST1 '','';
+2019-02-14 00:28:00 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:28:00 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-02-14 00:28:03 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:28:04 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:28:04 EXEC SPC_TRANSLATION_LST1 '','';
+2019-02-14 00:34:54 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:34:54 EXEC SPC_RELAX_LST1 '','';
+2019-02-14 00:34:54 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:34:54 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-02-14 00:35:30 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:35:30 EXEC SPC_RELAX_ACT2 '42','','127.0.0.1';
+2019-02-14 00:38:41 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:38:41 EXEC SPC_RELAX_ACT2 '44','','127.0.0.1';
+2019-02-14 00:49:08 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:49:08 EXEC SPC_COM_DATA '','','';
+2019-02-14 00:49:08 EXEC SPC_TRANSLATION_LST1 '','';
+2019-02-14 01:05:48 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:06:24 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:06:24 EXEC SPC_TRANSLATION_LST1 '';
+2019-02-14 01:06:44 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:06:44 EXEC SPC_TRANSLATION_LST1 '';
+2019-02-14 01:08:34 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:08:34 EXEC SPC_TRANSLATION_LST1 '';
+2019-02-14 01:08:35 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:08:35 EXEC SPC_TRANSLATION_LST2 '','';
+2019-02-14 01:08:53 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:08:53 EXEC SPC_TRANSLATION_LST1 '';
+2019-02-14 01:08:53 EXEC SPC_COM_DATA '','','';
+2019-02-14 01:08:53 EXEC SPC_TRANSLATION_LST2 '','';
+2019-02-14 01:09:17 EXEC SPC_COMMON_ACCOUNT '2','1';
+2019-02-14 01:09:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:09:17 EXEC SPC_TRANSLATION_LST1 'khoai';
+2019-02-14 01:09:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:09:18 EXEC SPC_TRANSLATION_LST2 '','khoai';
+2019-02-14 01:09:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:12:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:12:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:12:11 EXEC SPC_TRANSLATION_LST2 '','khoai';
+2019-02-14 01:13:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:13:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:13:34 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-02-14 01:13:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:13:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:14:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:15:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:16:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:10 EXEC SPC_TRANSLATION_ACT1 '14','The Legendary Mechanic','<row tag_id="83" is_new="0" /><row tag_id="84" is_new="0" />','I just want some compensation, Han Xiao stated calmly.
+Isn't the money you earned from selling the blueprint enough compensation?
+The research director could not resist shooting his mouth off.
+Han Xiao shot a look at him.
+If not for you trying to steal my blueprint, I would have been able to make even more money.
+And if you had even tried asking nicely, I might have even sold it to the division!
+But ask yourself did you?
+The research director could not retort.
+What kind of compensation do you want?
+asked Gu Hui.
+Han Xiao faked a sigh and pretended to contemplate for a moment before replying, I don't want something like this to happen again.
+That's for sure.
+In any case, even if Han Xiao only chose to sell his goods privately, he would still only be selling to Division 13's own agents.
+While the quant.i.ty would not be as much as if they were ma.s.s produced, they still only benefited the division.
+Furthermore what if more valuable blueprints ended up leaking'?
+And continued Han Xiao as he rubbed his chin.
+I want to have a look at advanced mechanic knowledge.
+The tall old man furrowed his brows.
+Was it a coincidence, or had Han Xiao planned to ask for it from the very start?
+Advanced mechanic knowledge was top secret in Stardragon, and only accessible with a level 5 or higher clearance.
+In Galaxy, the equivalent requirement was an honored reputation.
+Each of the Six Nations and the Germinal Organization possessed different kinds of advanced knowledge, but only the most trusted and deserving would have a chance to obtain them.
+Although Han Xiao appeared calm and firm on the outside, he was actually extremely nervous.
+Such a request would normally be impossible to ask of.
+Now, it all depended on the tall, old man.
+Why advanced knowledge?
+Just curious.
+After five minutes of tense silence, the tall old man made up his mind.
+As he looked deeply into Han Xiao's eyes, he slowly spoke, Fine, I will allow it.
+Han Xiao was instantly overcome with relief and joy, but he suppressed his emotions.
+Suddenly, the research director interrupted, Hold on!
+Advanced knowledge requires a level 5 clearance.
+This is against the rules!
+Han Xiao's mouth twitched.
+If this b.a.s.t.a.r.d dares to spoil my plans, I'll beat him into a pulp!
+What do you suggest then?
+Gu Hui asked unhappily.
+Rules are rules.
+Although you, senior, are okay with it, I hardly think that the others will agree.
+The tall old man smirked.
+Are you threatening me?
+I wouldn't dare, answered the research director matter of factly.
+There were two levels of hierarchy in Division 13.
+Besides the thirteen section heads, there existed a higher committee comprised of the chief himself and other high ranking officials who wielded enormous influence in Stardragon.
+The tall, old man was none other than one of the higher ranking members, and he was the leader of the conservatives.
+Naturally, the hardliners had an equally powerful backer, which was why the research head dared to speak up.
+My word alone will suffice, declared the tall old man plainly.
+The research head gritted his teeth.
+Suddenly, his eyes lit up.
+Then, I suggest granting him only half an hour of browsing.
+He doesn't even have the proper clearance anyway.
+Gu Hui and the tall old man exchanged looks.
+This was a fair suggestion.
+Besides, Han Xiao himself had only asked to take a look'.
+We'll give you one hour!
+declared Gu Hui.
+The research head rejoiced secretly.
+Even an hour would not be enough time to look through a third of the advanced knowledge.
+Deep down, however, Han Xiao was laughing.
+One hour?
+Watch me take one minute with my talent points!
+He had to bite his lip to stop himself from grinning.
+Calm down… calm down…
+The advanced knowledge was protected with an extremely secure multi layered encryption.
+The code to unlocking it was a combined series of over a hundred 48-digit strings that were refreshed constantly.
+The contents itself were only able to be browsed by using a special terminal.
+Han Xiao was brought by Gu Hui to take an elevator to a secret bas.e.m.e.nt.
+When the lift doors opened, Han Xiao was greeted by the sight of a brightly lit metallic hallway lined throughout with surveillance cameras on either side.
+While there were no guards, the corridor was full of metal detectors and red lasers, and there were guns concealed behind the walls.
+They would activate automatically upon unauthorized entry.
+It was a fortress in its own right.
+How much did you guys spend on this corridor?
+A few billion, Gu Hui calmly answered.
+Han Xiao let out a soft snort.
+The terminal was Stardragon's most advanced computer.
+The amount of data that it could process in just one second alone could overload a regular computer.
+It contained all of the nation's top secrets.
+Han Xiao guessed that even if he maxed his Computing talent, it would not be enough to hack through the terminal's firewall.
+It took an entire five minutes to walk across the entire stretch of the hallway, and, as they approached the end, a spherical room appeared in Han Xiao's view.
+A transparent pa.s.sageway connected the hallway to the center of the sphere where a screen could be seen.
+There was also a panel connected with a mouse and a keyboard.
+This was the interface of the terminal.
+As they stepped into the room, Han Xiao noticed that there were actually countless optical fibers and advanced looking computer parts laid inside the gla.s.s the entire room was actually the terminal!
+Han Xiao, however, was not impressed.
+Why is the air here so stale?
+Did you guys forget the ventilation or something?
+Gu Hui's eye twitched.
+He calmed himself down and replied, That is the interface.
+The preparations have been made.
+You will not be able to access any other information apart from the advanced knowledge.
+For the sake of protocol, I will remind you that we will be watching, and you had better not try anything funny.
+Got it, I won't make you laugh.
+Han Xiao nodded and proceeded to walk to the panel.
+The terminal prompted him for a search input, so he typed in advancement knowledge", and several results appeared on the screen:
+Esper Advanced Knowledge: [DNA Strengthened Energy Level]
+Esper Advanced Knowledge: [DNA Strengthened Control]
+Pugilist Advanced Knowledge: [Shockwave Burst]
+Pugilist Advanced Knowledge: [Wave Control]','Tôi chỉ muốn một số bồi thường, Han Xiao bình tĩnh tuyên bố.
+Không phải số tiền bạn kiếm được từ việc bán bản thiết kế có đủ bồi thường không?
+Giám đốc nghiên cứu không thể cưỡng lại việc bắn ra miệng.
+Han Xiao bắn một cái nhìn anh.
+Nếu không phải vì bạn cố gắng ăn cắp bản thiết kế của tôi, tôi đã có thể kiếm được nhiều tiền hơn nữa.
+Và nếu bạn thậm chí đã cố gắng hỏi độc đáo, tôi thậm chí có thể bán nó cho bộ phận!
+Nhưng hãy tự hỏi mình đã làm gì?
+Giám đốc nghiên cứu không thể vặn lại.
+Bạn muốn loại bồi thường nào?
+Gu Hui hỏi.
+Han Xiao giả thở dài và giả vờ suy nghĩ một lúc trước khi trả lời, tôi không muốn điều gì đó như thế này xảy ra lần nữa.
+Chắc chắn rồi.
+Trong mọi trường hợp, ngay cả khi Han Xiao chỉ chọn bán hàng hóa của mình một cách riêng tư, anh ta vẫn sẽ chỉ bán cho các đại lý của Phòng 13.
+Mặc dù quant.i.ty sẽ không nhiều như thể chúng là ma.s.s được sản xuất, chúng vẫn chỉ mang lại lợi ích cho bộ phận.
+Hơn nữa, nếu bản thiết kế có giá trị hơn cuối cùng bị rò rỉ thì sao?
+Và Han Xiao tiếp tục khi anh xoa cằm.
+Tôi muốn có một cái nhìn về kiến ​​thức cơ khí tiên tiến.
+Ông già cao lớn nhíu mày.
+Đó có phải là một sự trùng hợp ngẫu nhiên, hay Han Xiao đã lên kế hoạch để yêu cầu nó ngay từ đầu?
+Kiến thức cơ học nâng cao là bí mật hàng đầu trong Stardragon, và chỉ có thể truy cập với độ thanh thải cấp 5 trở lên.
+Trong Galaxy, yêu cầu tương đương là một danh tiếng được tôn vinh.
+Mỗi quốc gia trong sáu quốc gia và Tổ chức Đức đều sở hữu những loại kiến ​​thức tiên tiến khác nhau, nhưng chỉ những người đáng tin cậy và xứng đáng nhất mới có cơ hội có được chúng.
+Mặc dù Han Xiao có vẻ bình tĩnh và cương quyết ở bên ngoài, nhưng anh thực sự vô cùng lo lắng.
+Một yêu cầu như vậy thường sẽ không thể yêu cầu.
+Bây giờ, tất cả phụ thuộc vào người đàn ông cao lớn.
+Tại sao kiến ​​thức nâng cao?
+Chỉ tò mò thôi.
+Sau năm phút im lặng căng thẳng, ông già cao lớn đã quyết định.
+Khi nhìn sâu vào mắt Han Xiao, anh chậm rãi nói, Được thôi, tôi sẽ cho phép.
+Han Xiao ngay lập tức được khắc phục với sự nhẹ nhõm và vui sướng, nhưng anh kìm nén cảm xúc.
+Đột nhiên, giám đốc nghiên cứu ngắt lời, Giữ lấy!
+Kiến thức nâng cao đòi hỏi một giải phóng mặt bằng cấp 5.
+Điều này là trái với quy tắc!
+Khóe miệng Han Xiao co giật.
+Nếu b.a.s.t.a.r.d này dám làm hỏng kế hoạch của tôi, tôi sẽ đánh anh ta vào một đống bột giấy!
+Bạn đề nghị gì sau đó?
+Gu Hui hỏi không vui.
+Quy định là quy tắc.
+Mặc dù bạn, cấp cao, vẫn ổn với nó, tôi hầu như không nghĩ rằng những người khác sẽ đồng ý.
+Ông già nhếch mép cười.
+Bạn đang đe dọa tôi?
+Tôi không dám, thực tế đã trả lời vấn đề của giám đốc nghiên cứu.
+Có hai cấp bậc trong Phân khu 13.
+Bên cạnh mười ba trưởng phòng, còn tồn tại một ủy ban cao hơn bao gồm chính ông và các quan chức cấp cao khác, người có ảnh hưởng to lớn ở Stardragon.
+Người đàn ông cao lớn, không ai khác chính là một trong những thành viên cấp cao hơn, và anh ta là thủ lĩnh của phe bảo thủ.
+Đương nhiên, những người cứng rắn có một người ủng hộ mạnh mẽ không kém, đó là lý do tại sao người đứng đầu nghiên cứu dám lên tiếng.
+Chỉ một mình tôi thôi cũng đủ, tuyên bố ông già cao ráo.
+Người đứng đầu nghiên cứu nghiến răng.
+Đột nhiên, đôi mắt anh sáng lên.
+Sau đó, tôi đề nghị cấp cho anh ta chỉ nửa giờ duyệt.
+Anh ta thậm chí không có giải phóng mặt bằng thích hợp nào.
+Gu Hui và ông già cao lớn trao đổi ngoại hình.
+Đây là một đề nghị công bằng.
+Bên cạnh đó, bản thân Han Xiao chỉ yêu cầu được nhìn .
+Chúng tôi sẽ cung cấp cho bạn một giờ!
+Gu Hui tuyên bố.
+Người đứng đầu nghiên cứu vui mừng bí mật.
+Ngay cả một giờ cũng không đủ thời gian để xem qua một phần ba kiến ​​thức nâng cao.
+Sâu thẳm, tuy nhiên, Han Xiao đã cười.
+Một giờ?
+Xem tôi mất một phút với điểm tài năng của tôi!
+Anh phải cắn môi để ngăn mình cười toe toét.
+Bình tĩnh, bình tĩnh…
+Kiến thức nâng cao đã được bảo vệ với mã hóa đa lớp cực kỳ an toàn.
+Mã để mở khóa nó là một chuỗi kết hợp gồm hơn một trăm chuỗi 48 chữ số được làm mới liên tục.
+Bản thân nội dung chỉ có thể được duyệt bằng cách sử dụng một thiết bị đầu cuối đặc biệt.
+Han Xiao được Gu Hui đưa đi thang máy đến một căn cứ bí mật.e.m.e.nt.
+Khi cửa thang máy mở ra, Han Xiao được chào đón khi nhìn thấy một hành lang kim loại sáng rực được xếp dọc theo camera giám sát ở hai bên.
+Trong khi không có lính gác, hành lang đầy máy dò kim loại và tia laser đỏ, và có những khẩu súng được giấu sau các bức tường.
+Họ sẽ tự động kích hoạt khi vào trái phép.
+Đó là một pháo đài theo đúng nghĩa của nó.
+Các bạn đã chi bao nhiêu cho hành lang này?
+Vài tỷ, Gu Hui bình tĩnh trả lời.
+Han Xiao khẽ khịt mũi.
+Thiết bị đầu cuối là máy tính tiên tiến nhất của Stardragon.
+Lượng dữ liệu mà nó có thể xử lý chỉ trong một giây có thể làm quá tải một máy tính thông thường.
+Nó chứa tất cả các bí mật hàng đầu của quốc gia.
+Han Xiao đoán rằng ngay cả khi anh phát huy tối đa tài năng Điện toán của mình, thì cũng không đủ để hack qua tường lửa của thiết bị đầu cuối.
+Phải mất toàn bộ năm phút để đi bộ trên toàn bộ hành lang, và, khi họ đến gần cuối, một căn phòng hình cầu','<row id="0" value="I just want some compensation, Han Xiao stated calmly." /><row id="1" value="Isn&amp;#39;t the money you earned from selling the blueprint enough compensation?" /><row id="2" value="The research director could not resist shooting his mouth off." /><row id="3" value="Han Xiao shot a look at him." /><row id="4" value="If not for you trying to steal my blueprint, I would have been able to make even more money." /><row id="5" value="And if you had even tried asking nicely, I might have even sold it to the division!" /><row id="6" value="But ask yourself did you?" /><row id="7" value="The research director could not retort." /><row id="8" value="What kind of compensation do you want?" /><row id="9" value="asked Gu Hui." /><row id="10" value="Han Xiao faked a sigh and pretended to contemplate for a moment before replying, I don&amp;#39;t want something like this to happen again." /><row id="11" value="That&amp;#39;s for sure." /><row id="12" value="In any case, even if Han Xiao only chose to sell his goods privately, he would still only be selling to Division 13&amp;#39;s own agents." /><row id="13" value="While the quant.i.ty would not be as much as if they were ma.s.s produced, they still only benefited the division." /><row id="14" value="Furthermore what if more valuable blueprints ended up leaking&amp;#39;?" /><row id="15" value="And continued Han Xiao as he rubbed his chin." /><row id="16" value="I want to have a look at advanced mechanic knowledge." /><row id="17" value="The tall old man furrowed his brows." /><row id="18" value="Was it a coincidence, or had Han Xiao planned to ask for it from the very start?" /><row id="19" value="Advanced mechanic knowledge was top secret in Stardragon, and only accessible with a level 5 or higher clearance." /><row id="20" value="In Galaxy, the equivalent requirement was an honored reputation." /><row id="21" value="Each of the Six Nations and the Germinal Organization possessed different kinds of advanced knowledge, but only the most trusted and deserving would have a chance to obtain them." /><row id="22" value="Although Han Xiao appeared calm and firm on the outside, he was actually extremely nervous." /><row id="23" value="Such a request would normally be impossible to ask of." /><row id="24" value="Now, it all depended on the tall, old man." /><row id="25" value="Why advanced knowledge?" /><row id="26" value="Just curious." /><row id="27" value="After five minutes of tense silence, the tall old man made up his mind." /><row id="28" value="As he looked deeply into Han Xiao&amp;#39;s eyes, he slowly spoke, Fine, I will allow it." /><row id="29" value="Han Xiao was instantly overcome with relief and joy, but he suppressed his emotions." /><row id="30" value="Suddenly, the research director interrupted, Hold on!" /><row id="31" value="Advanced knowledge requires a level 5 clearance." /><row id="32" value="This is against the rules!" /><row id="33" value="Han Xiao&amp;#39;s mouth twitched." /><row id="34" value="If this b.a.s.t.a.r.d dares to spoil my plans, I&amp;#39;ll beat him into a pulp!" /><row id="35" value="What do you suggest then?" /><row id="36" value="Gu Hui asked unhappily." /><row id="37" value="Rules are rules." /><row id="38" value="Although you, senior, are okay with it, I hardly think that the others will agree." /><row id="39" value="The tall old man smirked." /><row id="40" value="Are you threatening me?" /><row id="41" value="I wouldn&amp;#39;t dare, answered the research director matter of factly." /><row id="42" value="There were two levels of hierarchy in Division 13." /><row id="43" value="Besides the thirteen section heads, there existed a higher committee comprised of the chief himself and other high ranking officials who wielded enormous influence in Stardragon." /><row id="44" value="The tall, old man was none other than one of the higher ranking members, and he was the leader of the conservatives." /><row id="45" value="Naturally, the hardliners had an equally powerful backer, which was why the research head dared to speak up." /><row id="46" value="My word alone will suffice, declared the tall old man plainly." /><row id="47" value="The research head gritted his teeth." /><row id="48" value="Suddenly, his eyes lit up." /><row id="49" value="Then, I suggest granting him only half an hour of browsing." /><row id="50" value="He doesn&amp;#39;t even have the proper clearance anyway." /><row id="51" value="Gu Hui and the tall old man exchanged looks." /><row id="52" value="This was a fair suggestion." /><row id="53" value="Besides, Han Xiao himself had only asked to take a look&amp;#39;." /><row id="54" value="We&amp;#39;ll give you one hour!" /><row id="55" value="declared Gu Hui." /><row id="56" value="The research head rejoiced secretly." /><row id="57" value="Even an hour would not be enough time to look through a third of the advanced knowledge." /><row id="58" value="Deep down, however, Han Xiao was laughing." /><row id="59" value="One hour?" /><row id="60" value="Watch me take one minute with my talent points!" /><row id="61" value="He had to bite his lip to stop himself from grinning." /><row id="62" value="Calm down… calm down…" /><row id="63" value="The advanced knowledge was protected with an extremely secure multi layered encryption." /><row id="64" value="The code to unlocking it was a combined series of over a hundred 48-digit strings that were refreshed constantly." /><row id="65" value="The contents itself were only able to be browsed by using a special terminal." /><row id="66" value="Han Xiao was brought by Gu Hui to take an elevator to a secret bas.e.m.e.nt." /><row id="67" value="When the lift doors opened, Han Xiao was greeted by the sight of a brightly lit metallic hallway lined throughout with surveillance cameras on either side." /><row id="68" value="While there were no guards, the corridor was full of metal detectors and red lasers, and there were guns concealed behind the walls." /><row id="69" value="They would activate automatically upon unauthorized entry." /><row id="70" value="It was a fortress in its own right." /><row id="71" value="How much did you guys spend on this corridor?" /><row id="72" value="A few billion, Gu Hui calmly answered." /><row id="73" value="Han Xiao let out a soft snort." /><row id="74" value="The terminal was Stardragon&amp;#39;s most advanced computer." /><row id="75" value="The amount of data that it could process in just one second alone could overload a regular computer." /><row id="76" value="It contained all of the nation&amp;#39;s top secrets." /><row id="77" value="Han Xiao guessed that even if he maxed his Computing talent, it would not be enough to hack through the terminal&amp;#39;s firewall." /><row id="78" value="It took an entire five minutes to walk across the entire stretch of the hallway, and, as they approached the end, a spherical room appeared in Han Xiao&amp;#39;s view." /><row id="79" value="A transparent pa.s.sageway connected the hallway to the center of the sphere where a screen could be seen." /><row id="80" value="There was also a panel connected with a mouse and a keyboard." /><row id="81" value="This was the interface of the terminal." /><row id="82" value="As they stepped into the room, Han Xiao noticed that there were actually countless optical fibers and advanced looking computer parts laid inside the gla.s.s the entire room was actually the terminal!" /><row id="83" value="Han Xiao, however, was not impressed." /><row id="84" value="Why is the air here so stale?" /><row id="85" value="Did you guys forget the ventilation or something?" /><row id="86" value="Gu Hui&amp;#39;s eye twitched." /><row id="87" value="He calmed himself down and replied, That is the interface." /><row id="88" value="The preparations have been made." /><row id="89" value="You will not be able to access any other information apart from the advanced knowledge." /><row id="90" value="For the sake of protocol, I will remind you that we will be watching, and you had better not try anything funny." /><row id="91" value="Got it, I won&amp;#39;t make you laugh." /><row id="92" value="Han Xiao nodded and proceeded to walk to the panel." /><row id="93" value="The terminal prompted him for a search input, so he typed in advancement knowledge&amp;quot;, and several results appeared on the screen:" /><row id="94" value="Esper Advanced Knowledge: [DNA Strengthened Energy Level]" /><row id="95" value="Esper Advanced Knowledge: [DNA Strengthened Control]" /><row id="96" value="Pugilist Advanced Knowledge: [Shockwave Burst]" /><row id="97" value="Pugilist Advanced Knowledge: [Wave Control]" />','<row id="0" value="Tôi chỉ muốn một số bồi thường, Han Xiao bình tĩnh tuyên bố." /><row id="1" value="Không phải số tiền bạn kiếm được từ việc bán bản thiết kế có đủ bồi thường không?" /><row id="2" value="Giám đốc nghiên cứu không thể cưỡng lại việc bắn ra miệng." /><row id="3" value="Han Xiao bắn một cái nhìn anh." /><row id="4" value="Nếu không phải vì bạn cố gắng ăn cắp bản thiết kế của tôi, tôi đã có thể kiếm được nhiều tiền hơn nữa." /><row id="5" value="Và nếu bạn thậm chí đã cố gắng hỏi độc đáo, tôi thậm chí có thể bán nó cho bộ phận!" /><row id="6" value="Nhưng hãy tự hỏi mình đã làm gì?" /><row id="7" value="Giám đốc nghiên cứu không thể vặn lại." /><row id="8" value="Bạn muốn loại bồi thường nào?" /><row id="9" value="Gu Hui hỏi." /><row id="10" value="Han Xiao giả thở dài và giả vờ suy nghĩ một lúc trước khi trả lời, tôi không muốn điều gì đó như thế này xảy ra lần nữa." /><row id="11" value="Chắc chắn rồi." /><row id="12" value="Trong mọi trường hợp, ngay cả khi Han Xiao chỉ chọn bán hàng hóa của mình một cách riêng tư, anh ta vẫn sẽ chỉ bán cho các đại lý của Phòng 13." /><row id="13" value="Mặc dù quant.i.ty sẽ không nhiều như thể chúng là ma.s.s được sản xuất, chúng vẫn chỉ mang lại lợi ích cho bộ phận." /><row id="14" value="Hơn nữa, nếu bản thiết kế có giá trị hơn cuối cùng bị rò rỉ thì sao?" /><row id="15" value="Và Han Xiao tiếp tục khi anh xoa cằm." /><row id="16" value="Tôi muốn có một cái nhìn về kiến ​​thức cơ khí tiên tiến." /><row id="17" value="Ông già cao lớn nhíu mày." /><row id="18" value="Đó có phải là một sự trùng hợp ngẫu nhiên, hay Han Xiao đã lên kế hoạch để yêu cầu nó ngay từ đầu?" /><row id="19" value="Kiến thức cơ học nâng cao là bí mật hàng đầu trong Stardragon, và chỉ có thể truy cập với độ thanh thải cấp 5 trở lên." /><row id="20" value="Trong Galaxy, yêu cầu tương đương là một danh tiếng được tôn vinh." /><row id="21" value="Mỗi quốc gia trong sáu quốc gia và Tổ chức Đức đều sở hữu những loại kiến ​​thức tiên tiến khác nhau, nhưng chỉ những người đáng tin cậy và xứng đáng nhất mới có cơ hội có được chúng." /><row id="22" value="Mặc dù Han Xiao có vẻ bình tĩnh và cương quyết ở bên ngoài, nhưng anh thực sự vô cùng lo lắng." /><row id="23" value="Một yêu cầu như vậy thường sẽ không thể yêu cầu." /><row id="24" value="Bây giờ, tất cả phụ thuộc vào người đàn ông cao lớn." /><row id="25" value="Tại sao kiến ​​thức nâng cao?" /><row id="26" value="Chỉ tò mò thôi." /><row id="27" value="Sau năm phút im lặng căng thẳng, ông già cao lớn đã quyết định." /><row id="28" value="Khi nhìn sâu vào mắt Han Xiao, anh chậm rãi nói, Được thôi, tôi sẽ cho phép." /><row id="29" value="Han Xiao ngay lập tức được khắc phục với sự nhẹ nhõm và vui sướng, nhưng anh kìm nén cảm xúc." /><row id="30" value="Đột nhiên, giám đốc nghiên cứu ngắt lời, Giữ lấy!" /><row id="31" value="Kiến thức nâng cao đòi hỏi một giải phóng mặt bằng cấp 5." /><row id="32" value="Điều này là trái với quy tắc!" /><row id="33" value="Khóe miệng Han Xiao co giật." /><row id="34" value="Nếu b.a.s.t.a.r.d này dám làm hỏng kế hoạch của tôi, tôi sẽ đánh anh ta vào một đống bột giấy!" /><row id="35" value="Bạn đề nghị gì sau đó?" /><row id="36" value="Gu Hui hỏi không vui." /><row id="37" value="Quy định là quy tắc." /><row id="38" value="Mặc dù bạn, cấp cao, vẫn ổn với nó, tôi hầu như không nghĩ rằng những người khác sẽ đồng ý." /><row id="39" value="Ông già nhếch mép cười." /><row id="40" value="Bạn đang đe dọa tôi?" /><row id="41" value="Tôi không dám, thực tế đã trả lời vấn đề của giám đốc nghiên cứu." /><row id="42" value="Có hai cấp bậc trong Phân khu 13." /><row id="43" value="Bên cạnh mười ba trưởng phòng, còn tồn tại một ủy ban cao hơn bao gồm chính ông và các quan chức cấp cao khác, người có ảnh hưởng to lớn ở Stardragon." /><row id="44" value="Người đàn ông cao lớn, không ai khác chính là một trong những thành viên cấp cao hơn, và anh ta là thủ lĩnh của phe bảo thủ." /><row id="45" value="Đương nhiên, những người cứng rắn có một người ủng hộ mạnh mẽ không kém, đó là lý do tại sao người đứng đầu nghiên cứu dám lên tiếng." /><row id="46" value="Chỉ một mình tôi thôi cũng đủ, tuyên bố ông già cao ráo." /><row id="47" value="Người đứng đầu nghiên cứu nghiến răng." /><row id="48" value="Đột nhiên, đôi mắt anh sáng lên." /><row id="49" value="Sau đó, tôi đề nghị cấp cho anh ta chỉ nửa giờ duyệt." /><row id="50" value="Anh ta thậm chí không có giải phóng mặt bằng thích hợp nào." /><row id="51" value="Gu Hui và ông già cao lớn trao đổi ngoại hình." /><row id="52" value="Đây là một đề nghị công bằng." /><row id="53" value="Bên cạnh đó, bản thân Han Xiao chỉ yêu cầu được nhìn ." /><row id="54" value="Chúng tôi sẽ cung cấp cho bạn một giờ!" /><row id="55" value="Gu Hui tuyên bố." /><row id="56" value="Người đứng đầu nghiên cứu vui mừng bí mật." /><row id="57" value="Ngay cả một giờ cũng không đủ thời gian để xem qua một phần ba kiến ​​thức nâng cao." /><row id="58" value="Sâu thẳm, tuy nhiên, Han Xiao đã cười." /><row id="59" value="Một giờ?" /><row id="60" value="Xem tôi mất một phút với điểm tài năng của tôi!" /><row id="61" value="Anh phải cắn môi để ngăn mình cười toe toét." /><row id="62" value="Bình tĩnh, bình tĩnh…" /><row id="63" value="Kiến thức nâng cao đã được bảo vệ với mã hóa đa lớp cực kỳ an toàn." /><row id="64" value="Mã để mở khóa nó là một chuỗi kết hợp gồm hơn một trăm chuỗi 48 chữ số được làm mới liên tục." /><row id="65" value="Bản thân nội dung chỉ có thể được duyệt bằng cách sử dụng một thiết bị đầu cuối đặc biệt." /><row id="66" value="Han Xiao được Gu Hui đưa đi thang máy đến một căn cứ bí mật.e.m.e.nt." /><row id="67" value="Khi cửa thang máy mở ra, Han Xiao được chào đón khi nhìn thấy một hành lang kim loại sáng rực được xếp dọc theo camera giám sát ở hai bên." /><row id="68" value="Trong khi không có lính gác, hành lang đầy máy dò kim loại và tia laser đỏ, và có những khẩu súng được giấu sau các bức tường." /><row id="69" value="Họ sẽ tự động kích hoạt khi vào trái phép." /><row id="70" value="Đó là một pháo đài theo đúng nghĩa của nó." /><row id="71" value="Các bạn đã chi bao nhiêu cho hành lang này?" /><row id="72" value="Vài tỷ, Gu Hui bình tĩnh trả lời." /><row id="73" value="Han Xiao khẽ khịt mũi." /><row id="74" value="Thiết bị đầu cuối là máy tính tiên tiến nhất của Stardragon." /><row id="75" value="Lượng dữ liệu mà nó có thể xử lý chỉ trong một giây có thể làm quá tải một máy tính thông thường." /><row id="76" value="Nó chứa tất cả các bí mật hàng đầu của quốc gia." /><row id="77" value="Han Xiao đoán rằng ngay cả khi anh phát huy tối đa tài năng Điện toán của mình, thì cũng không đủ để hack qua tường lửa của thiết bị đầu cuối." /><row id="78" value="Phải mất toàn bộ năm phút để đi bộ trên toàn bộ hành lang, và, khi họ đến gần cuối, một căn phòng hình cầu" /><row id="79" value="" /><row id="80" value="" /><row id="81" value="" /><row id="82" value="" /><row id="83" value="" /><row id="84" value="" /><row id="85" value="" /><row id="86" value="" /><row id="87" value="" /><row id="88" value="" /><row id="89" value="" /><row id="90" value="" /><row id="91" value="" /><row id="92" value="" /><row id="93" value="" /><row id="94" value="" /><row id="95" value="" /><row id="96" value="" /><row id="97" value="" />','<row id="0" value="Tôi chỉ muốn một số bồi thường, Han Xiao bình tĩnh tuyên bố." /><row id="1" value="Không phải số tiền bạn kiếm được từ việc bán bản thiết kế có đủ bồi thường không?" /><row id="2" value="Giám đốc nghiên cứu không thể cưỡng lại việc bắn ra miệng." /><row id="3" value="Nếu không phải vì bạn cố gắng ăn cắp bản thiết kế của tôi, tôi đã có thể kiếm được nhiều tiền hơn nữa." /><row id="4" value="Nhưng hãy tự hỏi mình đã làm gì?" /><row id="5" value="" /><row id="6" value="Giám đốc nghiên cứu không thể vặn lại." /><row id="7" value="" /><row id="8" value="Bạn muốn loại bồi thường nào?" /><row id="9" value="" /><row id="10" value="Han Xiao giả thở dài và giả vờ suy nghĩ một lúc trước khi trả lời, tôi không muốn điều gì đó như thế này xảy ra lần nữa." /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" /><row id="19" value="" /><row id="20" value="" /><row id="21" value="" /><row id="22" value="" /><row id="23" value="" /><row id="24" value="" /><row id="25" value="" /><row id="26" value="" /><row id="27" value="" /><row id="28" value="" /><row id="29" value="" /><row id="30" value="" /><row id="31" value="" /><row id="32" value="" /><row id="33" value="" /><row id="34" value="" /><row id="35" value="" /><row id="36" value="" /><row id="37" value="" /><row id="38" value="" /><row id="39" value="" /><row id="40" value="" /><row id="41" value="" /><row id="42" value="" /><row id="43" value="" /><row id="44" value="" /><row id="45" value="" /><row id="46" value="" /><row id="47" value="" /><row id="48" value="" /><row id="49" value="" /><row id="50" value="" /><row id="51" value="" /><row id="52" value="" /><row id="53" value="" /><row id="54" value="" /><row id="55" value="" /><row id="56" value="" /><row id="57" value="" /><row id="58" value="" /><row id="59" value="" /><row id="60" value="" /><row id="61" value="" /><row id="62" value="" /><row id="63" value="" /><row id="64" value="" /><row id="65" value="" /><row id="66" value="" /><row id="67" value="" /><row id="68" value="" /><row id="69" value="" /><row id="70" value="" /><row id="71" value="" /><row id="72" value="" /><row id="73" value="" /><row id="74" value="" /><row id="75" value="" /><row id="76" value="" /><row id="77" value="" /><row id="78" value="" /><row id="79" value="" /><row id="80" value="" /><row id="81" value="" /><row id="82" value="" /><row id="83" value="" /><row id="84" value="" /><row id="85" value="" /><row id="86" value="" /><row id="87" value="" /><row id="88" value="" /><row id="89" value="" /><row id="90" value="" /><row id="91" value="" /><row id="92" value="" /><row id="93" value="" /><row id="94" value="" /><row id="95" value="" /><row id="96" value="" /><row id="97" value="" />','2','khoai','127.0.0.1';
+2019-02-14 01:17:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:17:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:21:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:45:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:45:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:45:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:46:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:46:45 EXEC SPC_COM_MENU '2';
+2019-02-14 01:47:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:14 EXEC SPC_VOCABULARY_LST1 '','khoai','12','14';
+2019-02-14 01:47:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:15 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2019-02-14 01:47:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:17 EXEC SPC_RELAX_LST1 '','khoai';
+2019-02-14 01:47:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:17 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-02-14 01:47:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:20 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-02-14 01:47:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:21 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-02-14 01:47:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:24 EXEC SPC_COM_TOGGLE_EFFECT '5','10027','3','3','0','khoai','127.0.0.1';
+2019-02-14 01:47:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:26 EXEC SPC_COM_TOGGLE_EFFECT '5','10029','3','3','0','khoai','127.0.0.1';
+2019-02-14 01:47:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:26 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-02-14 01:47:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:29 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-02-14 01:47:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:29 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-02-14 01:47:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:31 EXEC SPC_COM_TOGGLE_EFFECT '5','10029','3','3','1','khoai','127.0.0.1';
+2019-02-14 01:47:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:33 EXEC SPC_COM_TOGGLE_EFFECT '5','10027','3','3','1','khoai','127.0.0.1';
+2019-02-14 01:47:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:34 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-02-14 01:47:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:34 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-02-14 01:47:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:35 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-02-14 01:47:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:47:40 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-02-14 01:48:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:48:30 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2019-02-14 01:48:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:48:31 EXEC SPC_RELAX_LST1 '','khoai';
+2019-02-14 01:48:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:48:32 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-02-14 01:48:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:48:37 EXEC SPC_RELAX_ACT2 '46','khoai','127.0.0.1';
+2019-02-14 01:50:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:50:54 EXEC SPC_RELAX_LST1 '40','khoai';
+2019-02-14 01:50:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:50:55 EXEC SPC_RELAX_LST2 '40','1','1','1','0','','khoai';
+2019-02-14 01:51:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:51:00 EXEC SPC_RELAX_ACT2 '40','khoai','127.0.0.1';
+2019-02-14 01:51:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:51:02 EXEC SPC_WRITING_LST1 '','khoai','2','1';
+2019-02-14 01:51:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:51:02 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-14 01:51:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 01:51:03 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-02-14 02:57:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:57:22 EXEC SPC_DICTIONARY_LST1 '1','khoai';
+2019-02-14 02:57:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:57:23 EXEC SPC_DICTIONARY_LST2 'RWmeZnVo2J765DqNBGj0EM4wOzPKldxLz831bkAayOY9XgprRA','khoai','127.0.0.1';
+2019-02-14 02:57:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:57:54 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2019-02-14 02:57:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:57:54 EXEC SPC_DICTIONARY_LST2 'hello','khoai','127.0.0.1';
+2019-02-14 02:58:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:58:11 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2019-02-14 02:58:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 02:58:12 EXEC SPC_DICTIONARY_LST2 'king','khoai','127.0.0.1';
+2019-02-14 06:25:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:36 EXEC SPC_COM_MENU '2';
+2019-02-14 06:25:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:39 EXEC SPC_GRAMMAR_LST1 '','khoai','9','10';
+2019-02-14 06:25:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:39 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2019-02-14 06:25:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:47 EXEC SPC_COM_MENU '2';
+2019-02-14 06:25:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:25:52 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-02-14 06:25:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:26:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:21 EXEC SPC_RELAX_LST1 '','khoai';
+2019-02-14 06:29:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:22 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-02-14 06:29:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:27 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-02-14 06:29:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:27 EXEC SPC_RELAX_ACT2 '46','khoai','127.0.0.1';
+2019-02-14 06:29:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:27 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-02-14 06:29:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:33 EXEC SPC_DISCUSS_ACT2 '1061','khoai','127.0.0.1';
+2019-02-14 06:29:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:44 EXEC SPC_COM_ADD_QUESTION '1045','VỀ NƯỚC CHO RỒI','<p>về nh&agrave; ăn tết tết</p>
+
+<p>anh về đ&acirc;u?</p>
+
+<p>hền gia lại n&agrave;y =))</p>
+
+<p>quẩy th&ocirc;i</p>','<row tag_id="1085" is_new="0" /><row tag_id="1086" is_new="0" /><row tag_id="2084" is_new="0" /><row tag_id="2085" is_new="0" />','khoai','127.0.0.1';
+2019-02-14 06:29:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:53 EXEC SPC_DISCUSS_LST2 '','2','','khoai';
+2019-02-14 06:29:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:58 EXEC SPC_COM_ADD_QUESTION '1045','VỀ NƯỚC CHO RỒI','<p>về nh&agrave; ăn tết tết</p>
+
+<p>anh về đ&acirc;u?</p>
+
+<p>hền gia lại n&agrave;y =))</p>
+
+<p>quẩy th&ocirc;i&nbsp;em iu</p>','<row tag_id="1085" is_new="0" /><row tag_id="1086" is_new="0" /><row tag_id="2084" is_new="0" /><row tag_id="2085" is_new="0" />','khoai','127.0.0.1';
+2019-02-14 06:29:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:58 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';
+2019-02-14 06:29:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:29:59 EXEC SPC_DISCUSS_LST1 '1045','khoai';
+2019-02-14 06:30:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:30:00 EXEC SPC_DISCUSS_LST2 '1045','1','','khoai';
+2019-02-14 06:30:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-02-14 06:30:05 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';

@@ -1,0 +1,1678 @@
+2019-01-23 00:12:39 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:12:44 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:12:44 EXEC SPC_DISCUSS_LST1 '','';
+2019-01-23 00:12:44 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:12:44 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-01-23 00:12:50 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:12:50 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:21:55 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:21:55 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:21:56 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:21:56 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:23:43 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:23:43 EXEC SPC_RELAX_LST1 '','';
+2019-01-23 00:23:44 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:23:44 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-01-23 00:23:49 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:23:49 EXEC SPC_RELAX_ACT2 '43','','127.0.0.1';
+2019-01-23 00:26:58 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:26:58 EXEC SPC_DISCUSS_LST1 '','';
+2019-01-23 00:26:58 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:26:58 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-01-23 00:27:04 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:27:04 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:28:47 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:28:47 EXEC SPC_DISCUSS_LST1 '','';
+2019-01-23 00:28:47 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:28:47 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-01-23 00:28:53 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:28:53 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:29:26 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:29:26 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:29:27 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:29:27 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:29:29 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:29:29 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:29:29 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:29:29 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:29:35 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:29:35 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:30:00 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:00 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:30:01 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:01 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:30:06 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:06 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:30:28 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:28 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:30:29 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:29 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:30:39 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:39 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:30:40 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:40 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:30:45 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:45 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:30:58 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:58 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:30:59 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:30:59 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:31:04 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:04 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:31:05 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:05 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:31:06 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:06 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:31:11 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:11 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:31:41 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:41 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:31:42 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:42 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:31:47 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:47 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:31:51 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:51 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:31:52 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:52 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:31:57 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:31:57 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:34:38 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:34:38 EXEC SPC_DISCUSS_LST1 '','';
+2019-01-23 00:34:39 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:34:39 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-01-23 00:34:45 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:34:45 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:35:14 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:35:14 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:37:39 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:37:39 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:37:40 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:37:40 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:37:45 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:37:45 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:38:30 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:38:30 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:39:27 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:27 EXEC SPC_DISCUSS_LST1 '50','';
+2019-01-23 00:39:28 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:28 EXEC SPC_DISCUSS_LST2 '50','1','','';
+2019-01-23 00:39:33 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:33 EXEC SPC_DISCUSS_ACT2 '50','','127.0.0.1';
+2019-01-23 00:39:41 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:41 EXEC SPC_DISCUSS_LST2 '','1','<row tag_id="1087" /><row tag_id="1088" />','';
+2019-01-23 00:39:46 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:46 EXEC SPC_DISCUSS_LST2 '','1','','';
+2019-01-23 00:39:59 EXEC SPC_COM_DATA '','','';
+2019-01-23 00:39:59 EXEC SPC_DISCUSS_ACT2 '51','','127.0.0.1';
+2019-01-23 00:40:28 EXEC SPC_COMMON_ACCOUNT '2','1';
+2019-01-23 00:40:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:28 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:40:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:29 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:40:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:31 EXEC SPC_DISCUSS_ACT1 '51','-1','khoai','127.0.0.1';
+2019-01-23 00:40:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:32 EXEC SPC_DISCUSS_ACT1 '51','-1','khoai','127.0.0.1';
+2019-01-23 00:40:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:34 EXEC SPC_DISCUSS_ACT1 '51','1','khoai','127.0.0.1';
+2019-01-23 00:40:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:34 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:40:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:34 EXEC SPC_DISCUSS_ACT1 '51','1','khoai','127.0.0.1';
+2019-01-23 00:40:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:35 EXEC SPC_DISCUSS_ACT1 '51','-1','khoai','127.0.0.1';
+2019-01-23 00:40:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:36 EXEC SPC_DISCUSS_ACT1 '51','-1','khoai','127.0.0.1';
+2019-01-23 00:40:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:38 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:40:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:39 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:40:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:44 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:40:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:51 EXEC SPC_COM_ADD_COMMENT '4','8','51','mình hãy voãi','','khoai','127.0.0.1','1';
+2019-01-23 00:40:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:54 EXEC SPC_DISCUSS_ACT3 '10045','1','khoai','127.0.0.1';
+2019-01-23 00:40:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:56 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:40:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:40:57 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:41:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:41:02 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:41:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:41:17 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:42:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:42:39 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:42:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:42:40 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:42:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:42:45 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:44:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:44:45 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:44:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:44:45 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:44:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:44:51 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:46:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:07 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:46:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:08 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:46:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:13 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:46:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:21 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:46:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:22 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:46:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:27 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:46:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:37 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:46:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:37 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:46:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:43 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:46:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:49 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:46:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:50 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:46:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:46:55 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:47:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:47:49 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 00:47:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:47:50 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 00:47:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:47:56 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 00:48:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:14 EXEC SPC_RELAX_LST1 '','khoai';
+2019-01-23 00:48:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:15 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-01-23 00:48:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:21 EXEC SPC_RELAX_ACT2 '43','khoai','127.0.0.1';
+2019-01-23 00:48:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:37 EXEC SPC_RELAX_LST1 '43','khoai';
+2019-01-23 00:48:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:38 EXEC SPC_RELAX_LST2 '43','1','1','1','0','','khoai';
+2019-01-23 00:48:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:44 EXEC SPC_RELAX_ACT2 '43','khoai','127.0.0.1';
+2019-01-23 00:48:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:51 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 00:48:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:52 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 00:48:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:48:58 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 00:50:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:50:24 EXEC SPC_DISCUSS_LST1 '54','khoai';
+2019-01-23 00:50:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:50:24 EXEC SPC_DISCUSS_LST2 '54','1','','khoai';
+2019-01-23 00:50:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:50:30 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 00:54:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:54:36 EXEC SPC_DISCUSS_ACT3 '10041','1','khoai','127.0.0.1';
+2019-01-23 00:56:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:56:46 EXEC SPC_DISCUSS_LST1 '54','khoai';
+2019-01-23 00:56:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:56:47 EXEC SPC_DISCUSS_LST2 '54','1','','khoai';
+2019-01-23 00:56:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:56:52 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 00:57:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:57:08 EXEC SPC_DISCUSS_LST1 '54','khoai';
+2019-01-23 00:57:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:57:09 EXEC SPC_DISCUSS_LST2 '54','1','','khoai';
+2019-01-23 00:57:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:57:14 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 00:59:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:59:09 EXEC SPC_DISCUSS_LST1 '54','khoai';
+2019-01-23 00:59:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:59:09 EXEC SPC_DISCUSS_LST2 '54','1','','khoai';
+2019-01-23 00:59:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 00:59:15 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 01:00:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:00:12 EXEC SPC_COM_ADD_QUESTION 'đi đâu quẩy tết','<row tag_id="DmnO8arMgEY9ydD72b1VkBLweYAwRW03lxqG6Xe4NoJjZ5zKAp" is_new="0" /><row tag_id="ZalE4g6e72Nqn0dbYV8D3krPV6zPGzmKyJ59O1MxoZpjWRLBXA" is_new="0" /><row tag_id="RWmeZnVo2J765DqNBGj0EM4wO8RvKldxLz831bkAayOY9XgprR" is_new="0" /><row tag_id="alE4g6e72Nqn0dbYV8D3krPV01dvGzmKyJ59O1MxoZpjWRLBXA" is_new="0" />','<pre>
++-----------+---------------+----------------+--------------+
+| LastName  |  DepartmentID | DepartmentName | DepartmentID |
++-----------+---------------+----------------+--------------+
+| Smith     |            34 | Sales          |           31 |
+| Smith     |            34 | Engineering    |           33 |
+| Smith     |            34 | Clerical       |           34 |
+| Smith     |            34 | Marketing      |           35 |
+| Jones     |            33 | Sales          |           31 |
+| Jones     |            33 | Engineering    |           33 |
+| Jones     |            33 | Clerical       |           34 |
+| Jones     |            33 | Marketing      |           35 |
+| Robinson  |            34 | Sales          |           31 |
+| Robinson  |            34 | Engineering    |           33 |
+| Robinson  |            34 | Clerical       |           34 |
+| Robinson  |            34 | Marketing      |           35 |
+| Jasper    |            36 | Sales          |           31 |
+| Jasper    |            36 | Engineering    |           33 |
+| Jasper    |            36 | Clerical       |           34 |
+| Jasper    |            36 | Marketing      |           35 |
+| Steinberg |            33 | Sales          |           31 |
+| Steinberg |            33 | Engineering    |           33 |
+| Steinberg |            33 | Clerical       |           34 |
+| Steinberg |            33 | Marketing      |           35 |
+| Rafferty  |            31 | Sales          |           31 |
+| Rafferty  |            31 | Engineering    |           33 |
+| Rafferty  |            31 | Clerical       |           34 |
+| Rafferty  |            31 | Marketing      |           35 |
++-----------+---------------+----------------+--------------+</pre>','khoai','127.0.0.1';
+2019-01-23 01:00:12 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-01-23 01:02:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:03 EXEC SPC_RELAX_LST1 '','khoai';
+2019-01-23 01:02:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:05 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-01-23 01:02:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:10 EXEC SPC_RELAX_ACT2 '43','khoai','127.0.0.1';
+2019-01-23 01:02:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:13 EXEC SPC_WRITING_LST1 '','khoai','','';
+2019-01-23 01:02:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:14 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:02:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:02:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:03:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:06 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2019-01-23 01:03:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:07 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:03:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:08 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:03:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:11 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 01:03:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:11 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 01:03:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:17 EXEC SPC_DISCUSS_ACT2 '54','khoai','127.0.0.1';
+2019-01-23 01:03:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:03:47 EXEC SPC_COM_ADD_QUESTION '<row tag_id="9m2kglOVeGzNqBjx5o4KWZ1Po4ZwrdYa07R3yLXnD9pbA86EMJ" is_new="0" /><row tag_id="618LAlaO7xYDKRBqNWXJVpQbbW9Qk5oG9EjMdyzr2mgb034eZn" is_new="0" /><row tag_id="RWmeZnVo2J765DqNBGj0EM4wO8RvKldxLz831bkAayOY9XgprR" is_new="0" /><row tag_nm="tết" is_new="1" />','đi đâu quẩy tết','<pre>
++-----------+---------------+----------------+--------------+
+| LastName  |  DepartmentID | DepartmentName | DepartmentID |
++-----------+---------------+----------------+--------------+
+| Smith     |            34 | Sales          |           31 |
+| Smith     |            34 | Engineering    |           33 |
+| Smith     |            34 | Clerical       |           34 |
+| Smith     |            34 | Marketing      |           35 |
+| Jones     |            33 | Sales          |           31 |
+| Jones     |            33 | Engineering    |           33 |
+| Jones     |            33 | Clerical       |           34 |
+| Jones     |            33 | Marketing      |           35 |
+| Robinson  |            34 | Sales          |           31 |
+| Robinson  |            34 | Engineering    |           33 |
+| Robinson  |            34 | Clerical       |           34 |
+| Robinson  |            34 | Marketing      |           35 |
+| Jasper    |            36 | Sales          |           31 |
+| Jasper    |            36 | Engineering    |           33 |
+| Jasper    |            36 | Clerical       |           34 |
+| Jasper    |            36 | Marketing      |           35 |
+| Steinberg |            33 | Sales          |           31 |
+| Steinberg |            33 | Engineering    |           33 |
+| Steinberg |            33 | Clerical       |           34 |
+| Steinberg |            33 | Marketing      |           35 |
+| Rafferty  |            31 | Sales          |           31 |
+| Rafferty  |            31 | Engineering    |           33 |
+| Rafferty  |            31 | Clerical       |           34 |
+| Rafferty  |            31 | Marketing      |           35 |
++-----------+---------------+----------------+--------------+</pre>','khoai','127.0.0.1';
+2019-01-23 01:03:47 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-01-23 01:07:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:08:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:08:57 EXEC SPC_COM_ADD_QUESTION '<row tag_id="9m2kglOVeGzNqBjx5o4KWZ1Po4ZwrdYa07R3yLXnD9pbA86EMJ" is_new="0" /><row tag_id="618LAlaO7xYDKRBqNWXJVpQbbW9Qk5oG9EjMdyzr2mgb034eZn" is_new="0" /><row tag_id="RWmeZnVo2J765DqNBGj0EM4wO8RvKldxLz831bkAayOY9XgprR" is_new="0" /><row tag_nm="tết" is_new="1" />','đi đâu quẩy tết','<pre>
++-----------+---------------+----------------+--------------+
+| LastName  |  DepartmentID | DepartmentName | DepartmentID |
++-----------+---------------+----------------+--------------+
+| Smith     |            34 | Sales          |           31 |
+| Smith     |            34 | Engineering    |           33 |
+| Smith     |            34 | Clerical       |           34 |
+| Smith     |            34 | Marketing      |           35 |
+| Jones     |            33 | Sales          |           31 |
+| Jones     |            33 | Engineering    |           33 |
+| Jones     |            33 | Clerical       |           34 |
+| Jones     |            33 | Marketing      |           35 |
+| Robinson  |            34 | Sales          |           31 |
+| Robinson  |            34 | Engineering    |           33 |
+| Robinson  |            34 | Clerical       |           34 |
+| Robinson  |            34 | Marketing      |           35 |
+| Jasper    |            36 | Sales          |           31 |
+| Jasper    |            36 | Engineering    |           33 |
+| Jasper    |            36 | Clerical       |           34 |
+| Jasper    |            36 | Marketing      |           35 |
+| Steinberg |            33 | Sales          |           31 |
+| Steinberg |            33 | Engineering    |           33 |
+| Steinberg |            33 | Clerical       |           34 |
+| Steinberg |            33 | Marketing      |           35 |
+| Rafferty  |            31 | Sales          |           31 |
+| Rafferty  |            31 | Engineering    |           33 |
+| Rafferty  |            31 | Clerical       |           34 |
+| Rafferty  |            31 | Marketing      |           35 |
++-----------+---------------+----------------+--------------+</pre>','khoai','127.0.0.1';
+2019-01-23 01:08:58 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-01-23 01:09:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:09:41 EXEC SPC_COM_ADD_QUESTION '<row tag_id="1088" is_new="0" /><row tag_id="2084" is_new="0" /><row tag_id="1089" is_new="0" /><row tag_nm="tết" is_new="1" />','đi đâu quẩy tết','<pre>
++-----------+---------------+----------------+--------------+
+| LastName  |  DepartmentID | DepartmentName | DepartmentID |
++-----------+---------------+----------------+--------------+
+| Smith     |            34 | Sales          |           31 |
+| Smith     |            34 | Engineering    |           33 |
+| Smith     |            34 | Clerical       |           34 |
+| Smith     |            34 | Marketing      |           35 |
+| Jones     |            33 | Sales          |           31 |
+| Jones     |            33 | Engineering    |           33 |
+| Jones     |            33 | Clerical       |           34 |
+| Jones     |            33 | Marketing      |           35 |
+| Robinson  |            34 | Sales          |           31 |
+| Robinson  |            34 | Engineering    |           33 |
+| Robinson  |            34 | Clerical       |           34 |
+| Robinson  |            34 | Marketing      |           35 |
+| Jasper    |            36 | Sales          |           31 |
+| Jasper    |            36 | Engineering    |           33 |
+| Jasper    |            36 | Clerical       |           34 |
+| Jasper    |            36 | Marketing      |           35 |
+| Steinberg |            33 | Sales          |           31 |
+| Steinberg |            33 | Engineering    |           33 |
+| Steinberg |            33 | Clerical       |           34 |
+| Steinberg |            33 | Marketing      |           35 |
+| Rafferty  |            31 | Sales          |           31 |
+| Rafferty  |            31 | Engineering    |           33 |
+| Rafferty  |            31 | Clerical       |           34 |
+| Rafferty  |            31 | Marketing      |           35 |
++-----------+---------------+----------------+--------------+</pre>','khoai','127.0.0.1';
+2019-01-23 01:09:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:09:45 EXEC SPC_DISCUSS_LST1 '1046','khoai';
+2019-01-23 01:09:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:09:46 EXEC SPC_DISCUSS_LST2 '1046','1','','khoai';
+2019-01-23 01:10:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:20 EXEC SPC_DISCUSS_LST1 '1046','khoai';
+2019-01-23 01:10:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:21 EXEC SPC_DISCUSS_LST2 '1046','1','','khoai';
+2019-01-23 01:10:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:24 EXEC SPC_DISCUSS_LST1 '1045','khoai';
+2019-01-23 01:10:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:25 EXEC SPC_DISCUSS_LST2 '1045','1','','khoai';
+2019-01-23 01:10:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:27 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 01:10:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:28 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 01:10:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:10:33 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 01:15:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:15:41 EXEC SPC_DISCUSS_ACT2 '50','khoai','127.0.0.1';
+2019-01-23 01:22:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:22:54 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 01:22:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:22:59 EXEC SPC_DISCUSS_LST1 '48','khoai';
+2019-01-23 01:23:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:23:00 EXEC SPC_DISCUSS_LST2 '48','1','','khoai';
+2019-01-23 01:23:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:23:05 EXEC SPC_DISCUSS_ACT2 '48','khoai','127.0.0.1';
+2019-01-23 01:24:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:24:24 EXEC SPC_DISCUSS_ACT1 '48','1','khoai','127.0.0.1';
+2019-01-23 01:24:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:24:35 EXEC SPC_DISCUSS_LST2 '','1','<row tag_id="1085" /><row tag_id="1090" />','khoai';
+2019-01-23 01:24:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:24:51 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';
+2019-01-23 01:25:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:25:59 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 01:26:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:26:00 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:26:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:26:00 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:27:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:27:47 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 01:27:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:27:48 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:27:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:27:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:30:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:00 EXEC SPC_COM_MENU '2';
+2019-01-23 01:30:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:02 EXEC SPC_VOCABULARY_LST1 '','khoai','9','10';
+2019-01-23 01:30:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:02 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2019-01-23 01:30:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:04 EXEC SPC_GRAMMAR_LST1 '','khoai','2','1';
+2019-01-23 01:30:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:05 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2019-01-23 01:30:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:06 EXEC SPC_LISTENING_LST1 '','khoai','6','7';
+2019-01-23 01:30:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:07 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2019-01-23 01:30:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:09 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2019-01-23 01:30:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:09 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:30:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:10 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:30:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:11 EXEC SPC_READING_LST1 '','khoai','9','10';
+2019-01-23 01:30:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:11 EXEC SPC_READING_LST2 '12','14','khoai';
+2019-01-23 01:30:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:13 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 01:30:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:13 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 01:30:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:15 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 01:30:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:16 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 01:30:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:18 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2019-01-23 01:30:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:20 EXEC SPC_RELAX_LST1 '','khoai';
+2019-01-23 01:30:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:21 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-01-23 01:30:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:25 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-23 01:30:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:28 EXEC SPC_COM_MENU '2';
+2019-01-23 01:30:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:33 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 01:30:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:34 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 01:30:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:30:40 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';
+2019-01-23 01:45:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:33 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2019-01-23 01:45:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:34 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 01:45:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:35 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 01:45:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:36 EXEC SPC_RELAX_LST1 '','khoai';
+2019-01-23 01:45:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:37 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-01-23 01:45:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:42 EXEC SPC_RELAX_ACT2 '43','khoai','127.0.0.1';
+2019-01-23 01:45:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:45:53 EXEC SPC_RELAX_ACT2 '45','khoai','127.0.0.1';
+2019-01-23 01:51:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 01:51:15 EXEC SPC_RELAX_ACT2 '47','khoai','127.0.0.1';
+2019-01-23 02:00:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:00:31 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 02:00:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:00:32 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 02:00:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:00:37 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';
+2019-01-23 02:01:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:01:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:01:30 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-23 02:01:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:01:31 EXEC SPC_RELAX_LST1 '','khoai';
+2019-01-23 02:01:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:01:32 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2019-01-23 02:01:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:01:37 EXEC SPC_RELAX_ACT2 '45','khoai','127.0.0.1';
+2019-01-23 02:09:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:09:48 EXEC SPC_COM_MENU '2';
+2019-01-23 02:09:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:09:52 EXEC SPC_VOCABULARY_LST1 '','khoai','9','10';
+2019-01-23 02:09:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:09:53 EXEC SPC_VOCABULARY_LST2 '2','1','khoai';
+2019-01-23 02:09:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:09:55 EXEC SPC_GRAMMAR_LST1 '','khoai','2','1';
+2019-01-23 02:09:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:09:55 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2019-01-23 02:10:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:09 EXEC SPC_LISTENING_LST1 '','khoai','6','7';
+2019-01-23 02:10:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:10 EXEC SPC_LISTENING_LST2 '8','8','khoai';
+2019-01-23 02:10:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:11 EXEC SPC_WRITING_LST1 '','khoai','8','8';
+2019-01-23 02:10:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:12 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:10:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:12 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:10:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:33 EXEC SPC_READING_LST1 '','khoai','9','10';
+2019-01-23 02:10:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:33 EXEC SPC_READING_LST2 '12','14','khoai';
+2019-01-23 02:10:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:38 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 02:10:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:38 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 02:10:44 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:44 EXEC SPC_SOCIAL_ACT2 '16','khoai','127.0.0.1';
+2019-01-23 02:10:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:57 EXEC SPC_READING_LST1 '','khoai','12','14';
+2019-01-23 02:10:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:58 EXEC SPC_READING_LST2 '12','14','khoai';
+2019-01-23 02:10:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:10:59 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2019-01-23 02:11:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:00 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:11:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:00 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:11:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:10 EXEC SPC_WRITING_ACT3 '21','khoai','127.0.0.1';
+2019-01-23 02:11:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:14 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 02:11:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:15 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 02:11:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:11:20 EXEC SPC_SOCIAL_ACT2 '16','khoai','127.0.0.1';
+2019-01-23 02:12:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:12:13 EXEC SPC_SOCIAL_ACT2 '15','khoai','127.0.0.1';
+2019-01-23 02:12:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:12:23 EXEC SPC_SOCIAL_LST1 '15','khoai';
+2019-01-23 02:13:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:00 EXEC SPC_SOCIAL_LST1 '15','khoai';
+2019-01-23 02:13:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:01 EXEC SPC_SOCIAL_LST2 '15','1','','khoai';
+2019-01-23 02:13:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:06 EXEC SPC_RELAX_LST1 '21','khoai';
+2019-01-23 02:13:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:07 EXEC SPC_RELAX_LST2 '21','1','1','1','0','','khoai';
+2019-01-23 02:13:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:19 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 02:13:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:20 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 02:13:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:22 EXEC SPC_RELAX_LST1 '21','khoai';
+2019-01-23 02:13:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:23 EXEC SPC_RELAX_LST2 '21','1','1','1','0','','khoai';
+2019-01-23 02:13:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:52 EXEC SPC_RELAX_LST1 '21','khoai';
+2019-01-23 02:13:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:53 EXEC SPC_RELAX_LST2 '21','1','1','1','0','','khoai';
+2019-01-23 02:13:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:54 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 02:13:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:55 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 02:13:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:56 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-01-23 02:13:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:13:57 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-01-23 02:14:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:14:01 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-01-23 02:14:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:14:02 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-01-23 02:14:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:14:07 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 02:18:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:18:14 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-01-23 02:18:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:18:14 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-01-23 02:18:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:18:17 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-01-23 02:18:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:18:18 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-01-23 02:18:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:18:23 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 02:20:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:20:57 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 02:20:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:20:58 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:20:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:20:58 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:27:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:27:36 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 02:27:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:27:37 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 02:27:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:27:38 EXEC SPC_SOCIAL_LST1 '21','khoai';
+2019-01-23 02:27:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:27:39 EXEC SPC_SOCIAL_LST2 '21','1','','khoai';
+2019-01-23 02:27:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:27:45 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 02:33:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:33:01 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 02:33:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:33:02 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:33:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:33:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:35:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:35:10 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 02:35:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:35:10 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:35:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:35:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:37:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:16 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 02:37:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:16 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:37:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:17 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:37:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:56 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:37:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:56 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:37:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:37:57 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:38:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:38:37 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:38:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:38:38 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:38:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:38:38 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:39:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:39:08 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:39:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:39:09 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:39:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:39:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:42:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:05 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:42:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:06 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:42:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:07 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:42:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:32 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:42:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:33 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:42:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:42:33 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:44:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:32 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2019-01-23 02:44:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:33 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:44:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:33 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:44:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:47 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:44:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:48 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:44:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:44:48 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 02:45:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:45:49 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 02:45:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:45:50 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 02:45:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 02:45:51 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 03:00:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:01 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 03:00:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:03 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 03:00:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:03 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 03:00:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:30 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 03:00:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:31 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 03:00:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 03:00:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:26:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:26:45 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:26:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:26:46 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:26:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:26:46 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:27:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:27:22 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 04:27:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:27:23 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:27:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:27:24 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:28:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:28:45 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 04:28:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:28:46 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:28:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:28:46 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:31:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:31:09 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 04:31:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:31:10 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:31:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:31:10 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:35:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:21 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 04:35:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:22 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:35:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:35:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:51 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2019-01-23 04:35:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:52 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:35:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:35:52 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:37:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:10 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:37:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:11 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:37:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:11 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:37:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:42 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:37:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:42 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:37:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:37:43 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:38:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:08 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:38:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:09 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:38:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:38:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:51 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:38:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:52 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:38:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:38:52 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:39:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:39:40 EXEC SPC_WRITING_LST1 '7','khoai','9','10';
+2019-01-23 04:39:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:39:41 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:39:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:39:42 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:43:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:07 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2019-01-23 04:43:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:08 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:43:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:09 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:43:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:19 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2019-01-23 04:43:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:20 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:43:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:43:21 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:45:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:45:05 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2019-01-23 04:45:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:45:06 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:45:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:45:06 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:48:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:48:20 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2019-01-23 04:48:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:48:22 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:48:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:48:22 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:49:47 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:49:47 EXEC SPC_WRITING_LST1 '20','khoai','9','10';
+2019-01-23 04:49:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:49:48 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:49:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:49:49 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 04:54:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:54:50 EXEC SPC_WRITING_LST1 '16','khoai','9','10';
+2019-01-23 04:54:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:54:51 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 04:54:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 04:54:51 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 05:00:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:24 EXEC SPC_WRITING_ACT1 '4','20','<row tag_id="13" is_new="0" /><row tag_id="8" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="17" is_new="0" /><row tag_id="14" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="66" is_new="0" /><row tag_id="16" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="1" is_new="0" /><row tag_id="65" is_new="0" />','beautiful girl','<p>Not sure if you know this<br />
+But when we first met<br />
+I got so nervous<br />
+I couldn&#39;t speak<br />
+In that very moment I found the one and<br />
+My life had found its missing piece</p>
+
+<p>So as long as I live I&#39;ll love you<br />
+Will have and hold you<br />
+You look so beautiful in white<br />
+And from now to my very last breath<br />
+This day I&#39;ll cherish<br />
+You look so beautiful in white<br />
+Tonight</p>
+
+<p><br />
+<br />
+Read more:&nbsp;<a href="http://www.metrolyrics.com/beautiful-in-white-lyrics-westlife.html#ixzz5Wsf4ogJC">Westlife - Beautiful In White Lyrics | MetroLyrics</a>&nbsp;</p>','<row row_id="4" id="1" /><row row_id="4" id="5" />','khoai','127.0.0.1';
+2019-01-23 05:00:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:42 EXEC SPC_WRITING_ACT3 '20','khoai','127.0.0.1';
+2019-01-23 05:00:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:55 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 05:00:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:56 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 05:00:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:58 EXEC SPC_SOCIAL_LST1 '20','khoai';
+2019-01-23 05:00:59 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:00:59 EXEC SPC_SOCIAL_LST2 '20','1','','khoai';
+2019-01-23 05:01:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:01:19 EXEC SPC_SOCIAL_ACT2 '16','khoai','127.0.0.1';
+2019-01-23 05:01:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:01:25 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 05:01:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:01:25 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 05:01:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:01:31 EXEC SPC_DISCUSS_ACT2 '1045','khoai','127.0.0.1';
+2019-01-23 05:02:23 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:23 EXEC SPC_DISCUSS_LST1 '1045','khoai';
+2019-01-23 05:02:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:24 EXEC SPC_DISCUSS_LST2 '1045','1','','khoai';
+2019-01-23 05:02:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:27 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 05:02:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:28 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 05:02:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:29 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 05:02:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:29 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:02:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:30 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 05:02:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:46 EXEC SPC_WRITING_ACT1 '5','21','<row tag_id="13" is_new="0" /><row tag_id="15" is_new="0" /><row tag_id="16" is_new="0" />','tuổi tí so vs tuổi tôm','<p><span style="color:#ffffff"><span style="font-family:Courier New,Courier,monospace"><span style="font-size:28px"><span style="background-color:#1abc9c">i love music</span></span></span></span></p>','<row row_id="5" id="1" /><row row_id="5" id="3" /><row row_id="5" id="5" />','khoai','127.0.0.1';
+2019-01-23 05:02:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:52 EXEC SPC_SOCIAL_LST1 '','khoai';
+2019-01-23 05:02:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:52 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2019-01-23 05:02:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:02:58 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 05:11:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:11:25 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 05:12:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:12:29 EXEC SPC_SOCIAL_ACT2 '21','khoai','127.0.0.1';
+2019-01-23 05:12:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:12:39 EXEC SPC_DISCUSS_LST1 '','khoai';
+2019-01-23 05:12:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:12:41 EXEC SPC_DISCUSS_LST2 '','1','','khoai';
+2019-01-23 05:13:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:13:05 EXEC SPC_DISCUSS_LST1 '51','khoai';
+2019-01-23 05:13:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:13:06 EXEC SPC_DISCUSS_LST2 '51','1','','khoai';
+2019-01-23 05:13:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:13:11 EXEC SPC_DISCUSS_ACT2 '51','khoai','127.0.0.1';
+2019-01-23 05:17:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:17:42 EXEC SPC_WRITING_LST1 '','khoai','9','10';
+2019-01-23 05:17:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:17:43 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:17:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-23 05:17:43 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2019-01-23 05:17:51 EXEC SPC_COM_DATA '','','';
+2019-01-23 05:17:51 EXEC SPC_WRITING_LST1 '21','','','';
+2019-01-23 05:17:52 EXEC SPC_COM_DATA '','','';
+2019-01-23 05:17:52 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:17:52 EXEC SPC_COM_DATA '','','';
+2019-01-23 05:17:52 EXEC SPC_WRITING_LST2 '9','10','';
+2019-01-23 05:18:01 EXEC SPC_COMMON_ACCOUNT '1','1';
+2019-01-23 05:18:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:18:02 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2019-01-23 05:18:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:18:02 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:18:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:18:03 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:19:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:12 EXEC SPC_WRITING_LST1 '4','quypro','9','10';
+2019-01-23 05:19:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:13 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:19:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:13 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:19:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:21 EXEC SPC_WRITING_ACT3 '4','quypro','127.0.0.1';
+2019-01-23 05:19:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:54 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 05:19:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:19:55 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 05:20:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:00 EXEC SPC_SOCIAL_ACT2 '21','quypro','127.0.0.1';
+2019-01-23 05:20:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:01 EXEC SPC_SOCIAL_LST1 '15','quypro';
+2019-01-23 05:20:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:01 EXEC SPC_SOCIAL_LST2 '15','1','','quypro';
+2019-01-23 05:20:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:05 EXEC SPC_SOCIAL_LST1 '4','quypro';
+2019-01-23 05:20:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:05 EXEC SPC_SOCIAL_LST2 '4','1','','quypro';
+2019-01-23 05:20:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:19 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2019-01-23 05:20:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:20 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:20:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:20:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:29 EXEC SPC_WRITING_ACT1 '3','4','<row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" />','family','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&#39;t&nbsp;want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','','quypro','127.0.0.1';
+2019-01-23 05:20:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:34 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2019-01-23 05:20:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:35 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:20:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:35 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:20:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:40 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 05:20:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:41 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 05:20:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:44 EXEC SPC_SOCIAL_LST1 '4','quypro';
+2019-01-23 05:20:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:44 EXEC SPC_SOCIAL_LST2 '4','1','','quypro';
+2019-01-23 05:20:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:56 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2019-01-23 05:20:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:57 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:20:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:20:57 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:21:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:08 EXEC SPC_WRITING_ACT1 '','','<row tag_id="13" is_new="0" /><row tag_id="14" is_new="0" />','gia đình','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Too many times today, we read in the papers about families where parents abuse their children, verbally and physically. What these parents don&rsquo;t realize is that they are either beginning or involving themselves in a vicious circle of hate in families. When parents abuse their children, they are telling their children that that is the way to raise children, and this is what their children learn. I was lucky, I have learned differently, because my family cares about me, and I care about them.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">In this world of doubt, insecurity, and fear, my family is always there for me, holding their arms open to me with love. On the first day of first grade, I didn&#39;t&nbsp;want to go to school, I had butterflies in my stomach and I found it difficult to walk because I was so nervous. The only reason that I finally went into the classroom is because my mom walked in with me, and promised me that as soon as school was out, she&rsquo;d be there waiting for me, ready to bring me back to where I felt most comfortable, my family.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>','','quypro','127.0.0.1';
+2019-01-23 05:21:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:11 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2019-01-23 05:21:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:12 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:21:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:12 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:21:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:18 EXEC SPC_WRITING_ACT3 '1047','quypro','127.0.0.1';
+2019-01-23 05:21:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:21 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 05:21:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:22 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 05:21:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:25 EXEC SPC_SOCIAL_LST1 '1047','quypro';
+2019-01-23 05:21:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:21:26 EXEC SPC_SOCIAL_LST2 '1047','1','','quypro';
+2019-01-23 05:22:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:22:55 EXEC SPC_SOCIAL_ACT2 '1047','quypro','127.0.0.1';
+2019-01-23 05:25:48 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-01-23 05:25:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-01-23 05:25:49 EXEC SPC_COM_MENU '1';
+2019-01-23 05:25:49 EXEC SPC_W002_FND1
+2019-01-23 05:25:56 EXEC SPC_COM_MENU '1';
+2019-01-23 05:25:56 EXEC SPC_W002_LST2 '4';
+2019-01-23 05:25:59 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-01-23 05:25:59 EXEC SPC_COM_MENU '1';
+2019-01-23 05:25:59 EXEC SPC_COM_M999_INQ1 '7';
+2019-01-23 05:26:07 EXEC SPC_COM_MENU '1';
+2019-01-23 05:26:07 EXEC SPC_COMMON_CATALORUE '4';
+2019-01-23 05:26:10 EXEC SPC_COM_MENU '1';
+2019-01-23 05:26:10 EXEC SPC_w001_LST1 '4','','','','10','1';
+2019-01-23 05:26:20 EXEC SPC_COM_MENU '1';
+2019-01-23 05:26:20 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:26:21 EXEC SPC_COM_MENU '1';
+2019-01-23 05:26:21 EXEC SPC_w001_LST1 '4','','','','10','1';
+2019-01-23 05:36:06 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:06 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:08 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:08 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:09 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:09 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:10 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:10 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:11 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:11 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:13 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:13 EXEC SPC_w001_LST1 '4','','','','10','1';
+2019-01-23 05:36:16 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:16 EXEC SPC_w001_LST1 '4','','','','10','2';
+2019-01-23 05:36:18 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:18 EXEC SPC_w001_LST1 '4','','','','10','1';
+2019-01-23 05:36:29 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-01-23 05:36:29 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:29 EXEC SPC_W002_FND1
+2019-01-23 05:36:29 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:29 EXEC SPC_W002_LST1 '15';
+2019-01-23 05:36:30 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:30 EXEC SPC_W002_LST2 '4';
+2019-01-23 05:36:33 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:35 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:35 EXEC SPC_COMMON_GROUP '10';
+2019-01-23 05:36:38 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:42 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:42 EXEC SPC_w002_ACT1 '15','4','10','13','THE GAMER','<row tag_id="8" is_new="0" /><row tag_id="9" is_new="0" /><row tag_id="15" is_new="0" />','<p style="margin-left:0px; margin-right:0px; text-align:justify">I cannot imagine living my life without my family by my side. Family is very important and valuable to me and is something that should never be taken for granted. Without my family, a large part of my life and culture would be missing.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Whether it&rsquo;s my grandparent, my two sisters, my mom, or my dad, I know I can always count on someone to help me feel better. In fact, I think that this is probably the most important thing that my family has taught me; a family is made up of people who you can trust and who you can count on.</p>
+
+<p style="margin-left:0px; margin-right:0px; text-align:justify">Luckily, I&rsquo;m a little more grown up now; I can go into school by myself, and in a couple of years, when I go away to college, I&rsquo;ll really have to go to school by myself. There will be no one who I will know at college. Of course I know I&rsquo;ll make friends, but none of them will mean as much to me as my family does&hellip;..</p>
+','','','0','<row row_id="0" vocabulary_code="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />','','','ndq809','127.0.0.1';
+2019-01-23 05:36:43 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:43 EXEC SPC_W002_LST1 '15';
+2019-01-23 05:36:44 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:44 EXEC SPC_W002_LST2 '4';
+2019-01-23 05:36:44 EXEC SPC_COM_MENU '1';
+2019-01-23 05:36:44 EXEC SPC_COMMON_GROUP '10';
+2019-01-23 05:36:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:36:56 EXEC SPC_WRITING_LST1 '','quypro','9','10';
+2019-01-23 05:36:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:36:57 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:36:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:36:57 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:37:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:07 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 05:37:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:08 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 05:37:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:11 EXEC SPC_SOCIAL_LST1 '15','quypro';
+2019-01-23 05:37:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:11 EXEC SPC_SOCIAL_LST2 '15','1','','quypro';
+2019-01-23 05:37:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:25 EXEC SPC_SOCIAL_ACT1 '15','5','quypro','127.0.0.1';
+2019-01-23 05:37:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:37 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 05:37:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:38 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 05:37:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:43 EXEC SPC_DISCUSS_ACT2 '1045','quypro','127.0.0.1';
+2019-01-23 05:37:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:45 EXEC SPC_COM_REMEMBER '8','3','8','1045','quypro','127.0.0.1';
+2019-01-23 05:37:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:47 EXEC SPC_COM_REMEMBER '8','3','8','1045','quypro','127.0.0.1';
+2019-01-23 05:37:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:55 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 05:37:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:37:55 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 05:38:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:38:11 EXEC SPC_DISCUSS_ACT2 '1045','quypro','127.0.0.1';
+2019-01-23 05:39:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:18 EXEC SPC_VOCABULARY_LST1 '','quypro','9','10';
+2019-01-23 05:39:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:19 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2019-01-23 05:39:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:24 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:39:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:26 EXEC SPC_COM_REMEMBER '1','2','2','2','quypro','127.0.0.1';
+2019-01-23 05:39:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:31 EXEC SPC_COM_FORGET '2','2','2','quypro';
+2019-01-23 05:39:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:33 EXEC SPC_COM_REMEMBER '1','2','4','4','quypro','127.0.0.1';
+2019-01-23 05:39:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:37 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 05:39:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:38 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2019-01-23 05:39:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:39:41 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:41:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:21 EXEC SPC_COM_FORGET '1','1','2','quypro';
+2019-01-23 05:41:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:26 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 05:41:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:27 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2019-01-23 05:41:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:29 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:41:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:38 EXEC SPC_COM_REMEMBER '1','2','1','1','quypro','127.0.0.1';
+2019-01-23 05:41:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:42 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 05:41:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:43 EXEC SPC_VOCABULARY_LST2 '2','3','quypro';
+2019-01-23 05:41:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:45 EXEC SPC_COM_DELETE_LESSON '1042','quypro','127.0.0.1';
+2019-01-23 05:41:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:47 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:41:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:41:48 EXEC SPC_COM_ADD_LESSON '1','2','1','quypro','127.0.0.1';
+2019-01-23 05:50:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:18 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','1';
+2019-01-23 05:50:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:19 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:50:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:24 EXEC SPC_COM_FORGET '1','1','2','quypro';
+2019-01-23 05:50:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:25 EXEC SPC_COM_FORGET '4','4','2','quypro';
+2019-01-23 05:50:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:28 EXEC SPC_COM_REMEMBER '1','2','1','1','quypro','127.0.0.1';
+2019-01-23 05:50:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:29 EXEC SPC_COM_REMEMBER '1','2','4','4','quypro','127.0.0.1';
+2019-01-23 05:50:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:32 EXEC SPC_VOCABULARY_LST1 '2','quypro','2','1';
+2019-01-23 05:50:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:33 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 05:50:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:55 EXEC SPC_GRAMMAR_LST1 '','quypro','2','1';
+2019-01-23 05:50:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:50:56 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 05:51:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:51:43 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2019-01-23 05:51:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:51:44 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 05:52:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:11 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2019-01-23 05:52:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:12 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 05:52:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:13 EXEC SPC_COM_REMEMBER '2','3','1','2','quypro','127.0.0.1';
+2019-01-23 05:52:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:19 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2019-01-23 05:52:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:20 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 05:52:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:37 EXEC SPC_GRAMMAR_LST2 '6','6','quypro';
+2019-01-23 05:52:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:39 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 05:52:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:42 EXEC SPC_COM_QUESTION_LIST '3';
+2019-01-23 05:52:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:44 EXEC SPC_COM_QUESTION_LIST '3';
+2019-01-23 05:52:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:45 EXEC SPC_COM_QUESTION_LIST '3';
+2019-01-23 05:52:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:52:51 EXEC SPC_COM_QUESTION_LIST '2';
+2019-01-23 05:53:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:53:05 EXEC SPC_COM_QUESTION_LIST '2';
+2019-01-23 05:53:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:53:30 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2019-01-23 05:53:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:53:31 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-01-23 05:54:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:28 EXEC SPC_LISTENING_LST1 '22','quypro','8','8';
+2019-01-23 05:54:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:29 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-01-23 05:54:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:31 EXEC SPC_COM_REMEMBER '3','3','1','22','quypro','127.0.0.1';
+2019-01-23 05:54:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:32 EXEC SPC_COM_FORGET '3','24','3','quypro';
+2019-01-23 05:54:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:35 EXEC SPC_LISTENING_LST1 '','quypro','8','8';
+2019-01-23 05:54:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:54:36 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-01-23 05:55:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:55:14 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2019-01-23 05:55:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:55:14 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 05:55:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:55:15 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 05:56:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:56:18 EXEC SPC_READING_LST1 '','quypro','9','10';
+2019-01-23 05:56:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:56:19 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:57:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:43 EXEC SPC_READING_LST1 '10','quypro','12','14';
+2019-01-23 05:57:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:44 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:57:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:45 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:57:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:47 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:57:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:48 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:57:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:50 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:57:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:57:51 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:01 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 05:58:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:03 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 05:58:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:05 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:58:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:06 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:07 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:11 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:58:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:12 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:13 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:14 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 05:58:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:14 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:58:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:16 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 05:58:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:16 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:17 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:19 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 05:58:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:20 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 05:58:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:21 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:22 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:24 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:58:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:25 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:58:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:27 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:58:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:27 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 05:58:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:29 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:29 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:54 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:58:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:55 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:58:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:56 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 05:58:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:58 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 05:58:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:58:58 EXEC SPC_COM_FORGET '4','11','3','quypro';
+2019-01-23 05:59:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:01 EXEC SPC_READING_LST1 '9','quypro','12','14';
+2019-01-23 05:59:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:02 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:59:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:03 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:59:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:03 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:59:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:13 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 05:59:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:16 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:59:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:18 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 05:59:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:21 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:59:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:24 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 05:59:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:29 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 05:59:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:30 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:59:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:31 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 05:59:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:38 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 05:59:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 05:59:38 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:00:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:07 EXEC SPC_READING_LST1 '11','quypro','12','14';
+2019-01-23 06:00:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:08 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:00:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:09 EXEC SPC_COM_REMEMBER '5','3','5','11','quypro','127.0.0.1';
+2019-01-23 06:00:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:11 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:11 EXEC SPC_COM_FORGET '5','11','3','quypro';
+2019-01-23 06:00:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:12 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 06:00:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:14 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:00:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:14 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:00:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:18 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 06:00:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:19 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:21 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:23 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:23 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:25 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:00:25 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:25 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:27 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:28 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:29 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:00:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:29 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:31 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:33 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:00:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:35 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:00:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:35 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:00:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:43 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:00:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:44 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:00:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:47 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:47 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:49 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:00:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:49 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 06:00:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:50 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:51 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:52 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:54 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:00:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:55 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:00:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:56 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:00:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:57 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:00:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:00:59 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:01:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:01 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 06:01:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:01 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:01:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:03 EXEC SPC_COM_FORGET '2','10','3','quypro';
+2019-01-23 06:01:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:03 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:01:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:05 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:01:06 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:06 EXEC SPC_COM_FORGET '1','9','3','quypro';
+2019-01-23 06:01:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:07 EXEC SPC_COM_FORGET '3','11','3','quypro';
+2019-01-23 06:01:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:09 EXEC SPC_COM_REMEMBER '5','3','3','11','quypro','127.0.0.1';
+2019-01-23 06:01:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:10 EXEC SPC_COM_REMEMBER '5','3','1','9','quypro','127.0.0.1';
+2019-01-23 06:01:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:17 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:01:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:18 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:01:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:01:38 EXEC SPC_COM_ADD_LESSON '5','12','14','quypro','127.0.0.1';
+2019-01-23 06:02:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:02:02 EXEC SPC_COM_QUESTION_LIST '9','2';
+2019-01-23 06:02:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:02:12 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:02:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:02:12 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:02:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:02:55 EXEC SPC_SOCIAL_ACT2 '15','quypro','127.0.0.1';
+2019-01-23 06:02:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:02:59 EXEC SPC_SOCIAL_LST1 '15','quypro';
+2019-01-23 06:03:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:00 EXEC SPC_SOCIAL_LST2 '15','1','','quypro';
+2019-01-23 06:03:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:02 EXEC SPC_COM_REMEMBER '6','3','3','20','quypro','127.0.0.1';
+2019-01-23 06:03:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:03 EXEC SPC_COM_REMEMBER '6','3','4','21','quypro','127.0.0.1';
+2019-01-23 06:03:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:05 EXEC SPC_SOCIAL_LST2 '','1','<row tag_id="13" /><row tag_id="15" /><row tag_id="16" />','quypro';
+2019-01-23 06:03:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:10 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:03:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:11 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:03:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:15 EXEC SPC_COM_REMEMBER '6','3','1','4','quypro','127.0.0.1';
+2019-01-23 06:03:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:15 EXEC SPC_COM_REMEMBER '6','3','6','1047','quypro','127.0.0.1';
+2019-01-23 06:03:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:18 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:03:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:03:18 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:04:08 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:04:08 EXEC SPC_SOCIAL_ACT2 '15','quypro','127.0.0.1';
+2019-01-23 06:05:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:05:28 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 06:05:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:05:29 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 06:05:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:05:34 EXEC SPC_DISCUSS_ACT2 '48','quypro','127.0.0.1';
+2019-01-23 06:06:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:20 EXEC SPC_DISCUSS_LST1 '48','quypro';
+2019-01-23 06:06:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:21 EXEC SPC_DISCUSS_LST2 '48','1','','quypro';
+2019-01-23 06:06:26 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:26 EXEC SPC_COM_FORGET '4','1045','3','quypro';
+2019-01-23 06:06:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:27 EXEC SPC_COM_FORGET '5','1045','3','quypro';
+2019-01-23 06:06:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:28 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 06:06:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:29 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 06:06:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:37 EXEC SPC_COM_REMEMBER '8','3','7','54','quypro','127.0.0.1';
+2019-01-23 06:06:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:37 EXEC SPC_COM_REMEMBER '8','3','4','50','quypro','127.0.0.1';
+2019-01-23 06:06:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:38 EXEC SPC_COM_REMEMBER '8','3','5','52','quypro','127.0.0.1';
+2019-01-23 06:06:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:38 EXEC SPC_DISCUSS_ACT2 '48','quypro','127.0.0.1';
+2019-01-23 06:06:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:39 EXEC SPC_COM_REMEMBER '8','3','8','1045','quypro','127.0.0.1';
+2019-01-23 06:06:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:40 EXEC SPC_COM_REMEMBER '8','3','1','48','quypro','127.0.0.1';
+2019-01-23 06:06:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:41 EXEC SPC_COM_REMEMBER '8','3','3','49','quypro','127.0.0.1';
+2019-01-23 06:06:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:45 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 06:06:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:06:46 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 06:07:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:05 EXEC SPC_DICTIONARY_LST1 '','quypro';
+2019-01-23 06:07:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:09 EXEC SPC_DICTIONARY_LST2 'abuse','quypro','127.0.0.1';
+2019-01-23 06:07:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:12 EXEC SPC_DICTIONARY_LST2 'king','quypro','127.0.0.1';
+2019-01-23 06:07:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:14 EXEC SPC_DICTIONARY_LST2 'valuable','quypro','127.0.0.1';
+2019-01-23 06:07:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:16 EXEC SPC_DICTIONARY_LST2 'kingdom','quypro','127.0.0.1';
+2019-01-23 06:07:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:07:18 EXEC SPC_DICTIONARY_LST2 'vicious','quypro','127.0.0.1';
+2019-01-23 06:08:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:29 EXEC SPC_DICTIONARY_LST1 '7','quypro';
+2019-01-23 06:08:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:30 EXEC SPC_DICTIONARY_LST2 'vicious','quypro','127.0.0.1';
+2019-01-23 06:08:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:36 EXEC SPC_DICTIONARY_LST2 'king','quypro','127.0.0.1';
+2019-01-23 06:08:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:37 EXEC SPC_COM_REMEMBER '1','2','1','2','quypro','127.0.0.1';
+2019-01-23 06:08:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:41 EXEC SPC_DICTIONARY_LST2 'king','quypro','127.0.0.1';
+2019-01-23 06:08:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:49 EXEC SPC_RELAX_LST1 '','quypro';
+2019-01-23 06:08:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:50 EXEC SPC_RELAX_LST2 '','1','1','1','0','','quypro';
+2019-01-23 06:08:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:08:59 EXEC SPC_TRANSLATION_LST1 '','quypro';
+2019-01-23 06:09:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:09:00 EXEC SPC_COM_MENU '1';
+2019-01-23 06:09:03 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:09:03 EXEC SPC_COM_MENU '1';
+2019-01-23 06:19:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:19:49 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2019-01-23 06:19:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:19:50 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 06:19:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:19:57 EXEC SPC_GRAMMAR_LST1 '','quypro','2','1';
+2019-01-23 06:19:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:19:58 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 06:20:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:20:04 EXEC SPC_COM_QUESTION_LIST '3';
+2019-01-23 06:24:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:04 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:24:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:05 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:24:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:27 EXEC SPC_COM_ADD_COMMENT '1','6','15','game gủng cả ngày -_-','','quypro','127.0.0.1','1';
+2019-01-23 06:24:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:30 EXEC SPC_COM_TOGGLE_EFFECT '1','10046','3','3','0','quypro','127.0.0.1';
+2019-01-23 06:24:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:35 EXEC SPC_COM_ADD_COMMENT '1','6','15','kệ bố','10046','quypro','127.0.0.1','1';
+2019-01-23 06:24:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:48 EXEC SPC_SOCIAL_ACT2 '15','quypro','127.0.0.1';
+2019-01-23 06:24:54 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:54 EXEC SPC_COM_ADD_COMMENT '1','6','15','Bạn nên ghi dài hơn xi nhá!','','quypro','127.0.0.1','2';
+2019-01-23 06:24:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:24:57 EXEC SPC_COM_TOGGLE_EFFECT '1','10048','3','3','0','quypro','127.0.0.1';
+2019-01-23 06:25:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:25:00 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:25:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:25:01 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:25:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:25:44 EXEC SPC_SOCIAL_ACT2 '15','quypro','127.0.0.1';
+2019-01-23 06:27:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:27:38 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 06:27:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:27:51 EXEC SPC_DICTIONARY_LST1 '','quypro';
+2019-01-23 06:28:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:13 EXEC SPC_SOCIAL_LST2 '15','1','<row tag_id="8" /><row tag_id="9" /><row tag_id="15" />','quypro';
+2019-01-23 06:28:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:16 EXEC SPC_READING_LST1 '','quypro','6','7';
+2019-01-23 06:28:17 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:17 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:28:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:19 EXEC SPC_WRITING_LST1 '','quypro','12','14';
+2019-01-23 06:28:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:20 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 06:28:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:20 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 06:28:21 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:21 EXEC SPC_LISTENING_LST1 '','quypro','9','10';
+2019-01-23 06:28:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:22 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-01-23 06:28:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:23 EXEC SPC_GRAMMAR_LST1 '','quypro','8','8';
+2019-01-23 06:28:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:24 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 06:28:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:27 EXEC SPC_WRITING_LST1 '','quypro','6','7';
+2019-01-23 06:28:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:28 EXEC SPC_COMMON_GET_SUGGEST
+2019-01-23 06:28:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:28 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-01-23 06:28:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:30 EXEC SPC_READING_LST1 '','quypro','9','10';
+2019-01-23 06:28:30 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:30 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:28:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:39 EXEC SPC_COM_QUESTION_LIST '10','2';
+2019-01-23 06:28:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:28:45 EXEC SPC_COM_QUESTION_LIST '10','2';
+2019-01-23 06:30:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:05 EXEC SPC_READING_LST1 '9','quypro','12','14';
+2019-01-23 06:30:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:05 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:30:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:13 EXEC SPC_DICTIONARY_LST1 '','quypro';
+2019-01-23 06:30:23 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:23 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:30:24 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:24 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:30:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:28 EXEC SPC_DICTIONARY_LST1 '5','quypro';
+2019-01-23 06:30:29 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:30:29 EXEC SPC_DICTIONARY_LST2 'valuable','quypro','127.0.0.1';
+2019-01-23 06:55:51 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:55:51 EXEC SPC_COM_REMEMBER '5','3','2','10','quypro','127.0.0.1';
+2019-01-23 06:55:55 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:55:55 EXEC SPC_READING_LST1 '','quypro','12','14';
+2019-01-23 06:55:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:55:56 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:57:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:57:45 EXEC SPC_DICTIONARY_LST1 '9','quypro';
+2019-01-23 06:57:45 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:57:45 EXEC SPC_DICTIONARY_LST2 'pnYmMg1L8kGbXV7xZJojD59PZDvlpW0aKyN6EBR4rOd2qe3zAj','quypro','127.0.0.1';
+2019-01-23 06:57:56 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:57:56 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 06:57:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:57:57 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 06:58:02 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:58:02 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 06:58:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:58:10 EXEC SPC_READING_LST1 '16','quypro','12','14';
+2019-01-23 06:58:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:58:11 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:59:31 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:31 EXEC SPC_READING_LST1 '9','quypro','12','14';
+2019-01-23 06:59:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:32 EXEC SPC_READING_LST2 '12','14','quypro';
+2019-01-23 06:59:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:33 EXEC SPC_VOCABULARY_LST1 '','quypro','12','14';
+2019-01-23 06:59:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:33 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 06:59:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:38 EXEC SPC_GRAMMAR_LST1 '','quypro','2','1';
+2019-01-23 06:59:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:38 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 06:59:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:43 EXEC SPC_VOCABULARY_LST1 '','quypro','6','7';
+2019-01-23 06:59:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:43 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 06:59:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:49 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','1';
+2019-01-23 06:59:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:49 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 06:59:57 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:57 EXEC SPC_GRAMMAR_LST1 '','quypro','2','1';
+2019-01-23 06:59:58 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:58 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-01-23 06:59:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 06:59:59 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 07:00:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:00 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 07:00:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:04 EXEC SPC_VOCABULARY_LST1 '','quypro','6','7';
+2019-01-23 07:00:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:05 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 07:00:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:09 EXEC SPC_VOCABULARY_LST1 '16','quypro','2','1';
+2019-01-23 07:00:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:10 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 07:00:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:34 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 07:00:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:35 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 07:00:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:52 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 07:00:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:53 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 07:00:59 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:00:59 EXEC SPC_VOCABULARY_LST1 '','quypro','2','1';
+2019-01-23 07:01:00 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:01:00 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-01-23 07:05:04 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:04 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 07:05:05 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:05 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 07:05:09 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:09 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 07:05:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:10 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 07:05:15 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:15 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 07:05:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:16 EXEC SPC_SOCIAL_LST1 '','quypro';
+2019-01-23 07:05:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:16 EXEC SPC_SOCIAL_LST2 '','1','','quypro';
+2019-01-23 07:05:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:05:22 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 07:06:27 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:27 EXEC SPC_COM_GET_MORE_COMMENT '4','1','quypro';
+2019-01-23 07:06:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:34 EXEC SPC_COM_GET_PAGE_COMMENT '3','6','16','1','quypro';
+2019-01-23 07:06:36 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:36 EXEC SPC_COM_GET_MORE_COMMENT '4','1','quypro';
+2019-01-23 07:06:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:39 EXEC SPC_SOCIAL_LST2 '','2','','quypro';
+2019-01-23 07:06:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:42 EXEC SPC_SOCIAL_LST1 '16','quypro';
+2019-01-23 07:06:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:42 EXEC SPC_SOCIAL_LST2 '16','1','','quypro';
+2019-01-23 07:06:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:06:48 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 07:07:32 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:32 EXEC SPC_SOCIAL_LST1 '16','quypro';
+2019-01-23 07:07:33 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:33 EXEC SPC_SOCIAL_LST2 '16','1','','quypro';
+2019-01-23 07:07:38 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:38 EXEC SPC_SOCIAL_ACT2 '16','quypro','127.0.0.1';
+2019-01-23 07:07:43 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:43 EXEC SPC_DISCUSS_LST1 '','quypro';
+2019-01-23 07:07:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:44 EXEC SPC_DISCUSS_LST2 '','1','','quypro';
+2019-01-23 07:07:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:07:49 EXEC SPC_DISCUSS_ACT2 '53','quypro','127.0.0.1';
+2019-01-23 07:08:01 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:01 EXEC SPC_COM_GET_MORE_COMMENT '10033','1','quypro';
+2019-01-23 07:08:07 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:07 EXEC SPC_DISCUSS_ACT3 '10037','-1','quypro','127.0.0.1';
+2019-01-23 07:08:10 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:10 EXEC SPC_DISCUSS_LST1 '53','quypro';
+2019-01-23 07:08:11 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:11 EXEC SPC_DISCUSS_LST2 '53','1','','quypro';
+2019-01-23 07:08:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:13 EXEC SPC_COM_GET_MORE_COMMENT '10033','1','quypro';
+2019-01-23 07:08:16 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-23 07:08:16 EXEC SPC_DISCUSS_ACT2 '53','quypro','127.0.0.1';

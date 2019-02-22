@@ -64,7 +64,7 @@ return [
     |
      */
 
-    'timezone'        => 'UTC',
+    'timezone'        => 'Asia/Tokyo',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Modules\ModulesServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -236,6 +237,7 @@ return [
         'SQLXML'       => App\Helpers\Sqlxml::class,
         'Common'       => App\Modules\Master\Controllers\Common\CommonController::class,
         'CommonUser'   => App\Modules\User\Controllers\CommonController::class,
+        'Socialite'    => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

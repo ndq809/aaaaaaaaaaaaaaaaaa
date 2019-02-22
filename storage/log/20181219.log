@@ -1,0 +1,394 @@
+2018-12-19 01:12:28 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:12:31 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:12:33 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:25:57 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:25:57 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:25:59 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:26:03 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:26:15 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:26:15 EXEC SPC_DICTIONARY_LST1 '','';
+2018-12-19 01:26:16 EXEC SPC_COM_DATA '','','';
+2018-12-19 01:26:16 EXEC SPC_DICTIONARY_LST2 'relationships','','127.0.0.1';
+2018-12-19 02:02:17 EXEC SPC_COM_DATA '','','';
+2018-12-19 02:02:19 EXEC SPC_COM_DATA '','','';
+2018-12-19 02:57:26 EXEC SPC_COM_DATA '','','';
+2018-12-19 02:57:28 EXEC SPC_COM_DATA '','','';
+2018-12-19 02:57:30 EXEC SPC_COM_DATA '','','';
+2018-12-19 02:57:36 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:48 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:50 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:55 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:56 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:57 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:02:59 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:03:00 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:03:29 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:15 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:16 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:17 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:20 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:21 EXEC SPC_COM_DATA '','','';
+2018-12-19 03:47:23 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:01:13 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:01:23 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:01:38 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:01:38 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:01:41 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:03:55 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:09:09 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:09:10 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:09:12 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:09:12 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:09:20 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:19:10 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:19:12 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:19:14 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:20:08 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:20:09 EXEC SPC_COM_DATA '','','';
+2018-12-19 04:20:13 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:01:46 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:01:46 EXEC SPC_TRANSLATION_ACT1 '','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa chính về dữ liệu lớn hiện nay là ba Vs mẹ
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage.Even more so with unstructured data." /><row id="15" value="Complexity." /><row id="16" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="17" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa chính về dữ liệu lớn hiện nay là ba Vs mẹ" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="15" value="Phức tạp." /><row id="16" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="17" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" />','';
+2018-12-19 05:02:25 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:02:27 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:05:12 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:05:14 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:05:51 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:06:11 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:06:13 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:06:53 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:06:53 EXEC SPC_RELAX_LST1 '','';
+2018-12-19 05:06:55 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:06:55 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2018-12-19 05:07:00 EXEC SPC_COM_DATA '','','';
+2018-12-19 05:07:00 EXEC SPC_RELAX_ACT2 '26','','127.0.0.1';
+2018-12-19 05:07:27 EXEC SPC_COMMON_ACCOUNT '2','1';
+2018-12-19 05:07:27 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:07:27 EXEC SPC_RELAX_LST1 '26','khoai';
+2018-12-19 05:07:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:07:28 EXEC SPC_RELAX_LST2 '26','1','1','1','0','','khoai';
+2018-12-19 05:07:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:07:33 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 05:08:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:08:35 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:48 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2018-12-19 05:09:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:51 EXEC SPC_DICTIONARY_LST3 'ewewqe';
+2018-12-19 05:09:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:55 EXEC SPC_GRAMMAR_LST1 '','khoai','','';
+2018-12-19 05:09:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:09:55 EXEC SPC_GRAMMAR_LST2 '6','7','khoai';
+2018-12-19 05:10:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:10:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:10:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:11:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:11:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:11:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:12:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:12:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:13:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:13:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:13:29 EXEC SPC_WRITING_LST1 '','khoai','6','7';
+2018-12-19 05:13:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:13:51 EXEC SPC_RELAX_LST1 '','khoai';
+2018-12-19 05:14:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:14:11 EXEC SPC_RELAX_LST1 '','khoai';
+2018-12-19 05:14:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:14:12 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2018-12-19 05:14:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:14:17 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 05:14:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:14:54 EXEC SPC_RELAX_LST1 '26','khoai';
+2018-12-19 05:14:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:14:55 EXEC SPC_RELAX_LST2 '26','1','1','1','0','','khoai';
+2018-12-19 05:15:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:15:00 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 05:15:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:15:07 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2018-12-19 05:15:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:15:09 EXEC SPC_SOCIAL_LST1 '','khoai';
+2018-12-19 05:15:10 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:15:10 EXEC SPC_SOCIAL_LST2 '','1','','khoai';
+2018-12-19 05:15:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:15:16 EXEC SPC_SOCIAL_ACT2 '1','khoai','127.0.0.1';
+2018-12-19 05:18:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:18:09 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:18:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:18:09 EXEC SPC_SOCIAL_LST2 '1','1','','khoai';
+2018-12-19 05:18:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:18:15 EXEC SPC_SOCIAL_ACT2 '1','khoai','127.0.0.1';
+2018-12-19 05:19:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:00 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:19:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:00 EXEC SPC_SOCIAL_LST2 '1','1','','khoai';
+2018-12-19 05:19:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:06 EXEC SPC_SOCIAL_ACT2 '1','khoai','127.0.0.1';
+2018-12-19 05:19:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:24 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:19:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:24 EXEC SPC_SOCIAL_LST2 '1','1','','khoai';
+2018-12-19 05:19:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:19:30 EXEC SPC_SOCIAL_ACT2 '1','khoai','127.0.0.1';
+2018-12-19 05:20:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:20:30 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:20:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:20:30 EXEC SPC_SOCIAL_LST2 '1','1','','khoai';
+2018-12-19 05:20:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:20:36 EXEC SPC_SOCIAL_ACT2 '1','khoai','127.0.0.1';
+2018-12-19 05:21:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:21:45 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:23:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:15 EXEC SPC_SOCIAL_LST1 '1','khoai';
+2018-12-19 05:23:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:15 EXEC SPC_SOCIAL_LST2 '1','1','','khoai';
+2018-12-19 05:23:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:17 EXEC SPC_READING_LST1 '','khoai','6','7';
+2018-12-19 05:23:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:17 EXEC SPC_READING_LST2 '12','14','khoai';
+2018-12-19 05:23:18 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:18 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2018-12-19 05:23:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:21 EXEC SPC_DICTIONARY_LST3 'hel';
+2018-12-19 05:23:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:24 EXEC SPC_DICTIONARY_LST2 'Hello','khoai','127.0.0.1';
+2018-12-19 05:23:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:23:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:30:22 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:30:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:30:57 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:30:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:40:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:40:13 EXEC SPC_WRITING_LST1 '','khoai','12','14';
+2018-12-19 05:40:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:40:14 EXEC SPC_COMMON_GET_SUGGEST
+2018-12-19 05:40:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:40:14 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-12-19 05:44:22 EXEC SPC_COM_M999_INQ1 '8';
+2018-12-19 05:44:23 EXEC SPC_USER_P001_LST2 '<row row_id="5" id="1" /><row row_id="5" id="3" /><row row_id="5" id="5" />';
+2018-12-19 05:45:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:45:03 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-12-19 05:45:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:45:04 EXEC SPC_COMMON_GET_SUGGEST
+2018-12-19 05:45:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:45:04 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-12-19 05:48:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:30 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-12-19 05:48:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:31 EXEC SPC_COMMON_GET_SUGGEST
+2018-12-19 05:48:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:31 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-12-19 05:48:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:54 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-12-19 05:48:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:55 EXEC SPC_COMMON_GET_SUGGEST
+2018-12-19 05:48:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:48:55 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-12-19 05:50:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:50:01 EXEC SPC_WRITING_LST1 '21','khoai','9','10';
+2018-12-19 05:50:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:50:01 EXEC SPC_COMMON_GET_SUGGEST
+2018-12-19 05:50:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:50:02 EXEC SPC_WRITING_LST2 '9','10','khoai';
+2018-12-19 05:50:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:50:11 EXEC SPC_DICTIONARY_LST1 '','khoai';
+2018-12-19 05:50:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:50:50 EXEC SPC_DICTIONARY_LST3 'hel';
+2018-12-19 05:52:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:52:15 EXEC SPC_DICTIONARY_LST3 'hel';
+2018-12-19 05:52:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:52:15 EXEC SPC_RELAX_LST1 '','khoai';
+2018-12-19 05:52:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:52:16 EXEC SPC_RELAX_LST2 '','1','1','1','0','','khoai';
+2018-12-19 05:52:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:52:21 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 05:55:42 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:42 EXEC SPC_RELAX_LST1 '26','khoai';
+2018-12-19 05:55:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:43 EXEC SPC_RELAX_LST2 '26','1','1','1','0','','khoai';
+2018-12-19 05:55:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:48 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 05:55:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:49 EXEC SPC_RELAX_LST1 '26','khoai';
+2018-12-19 05:55:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:50 EXEC SPC_RELAX_LST2 '26','1','1','1','0','','khoai';
+2018-12-19 05:55:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 05:55:55 EXEC SPC_RELAX_ACT2 '26','khoai','127.0.0.1';
+2018-12-19 06:00:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:00:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:06:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:06:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:09:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:09:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:09:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:11:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:11:01 EXEC SPC_TRANSLATION_ACT1 '','bài viết của tui','<row tag_nm="my trans" is_new="1" />','undefined','undefined','<row id="0" value="undefined" />','<row id="0" value="undefined" />','<row id="0" value="chưa xác định" />','';
+2018-12-19 06:11:01 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2018-12-19 06:11:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:27:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:27:09 EXEC SPC_TRANSLATION_ACT1 '','bài viết của tui','<row tag_nm="my trans" is_new="1" />','undefined','undefined','<row id="0" value="undefined" />','<row id="0" value="undefined" />','<row id="0" value="" />','';
+2018-12-19 06:30:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:30:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:30:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:31:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:31:00 EXEC SPC_TRANSLATION_ACT1 '','big data','<row tag_nm="my trans" is_new="1" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','';
+2018-12-19 06:32:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:32:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:38 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:40 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:46:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:17 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:20 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:24 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:25 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:28 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:47:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:52:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:52:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:52:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 06:58:21 EXEC SPC_COM_PERMISSION '1','2','v002';
+2018-12-19 06:58:21 EXEC SPC_COM_MENU '1';
+2018-12-19 06:58:21 EXEC SPC_V002_FND1
+2018-12-19 06:58:35 EXEC SPC_COM_PERMISSION '1','2','m007';
+2018-12-19 06:58:35 EXEC SPC_COM_MENU '1';
+2018-12-19 06:58:35 EXEC SPC_M007_FND1
+2018-12-19 06:58:39 EXEC SPC_COM_MENU '1';
+2018-12-19 06:58:39 EXEC SPC_m007_LST1 '13';
+2018-12-19 06:58:39 EXEC SPC_M007_FND1
+2018-12-19 07:00:06 EXEC SPC_COM_MENU '1';
+2018-12-19 07:00:06 EXEC SPC_M007_ACT1 '13','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Đăng ký bài học" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-add-lesson" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Trả lời từ vựng" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-answer" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Đặt câu hỏi / chủ đề" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-question" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Ghi nhớ" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-remember" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Quên" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-forget" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Đóng góp ví dụ" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-contribute-exa" text_remark2="" text_remark3="" /><row row_id="7" number_id="7" content="Vỗ tay" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-effect" text_remark2="" text_remark3="" /><row row_id="8" number_id="8" content="Bình luận" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-comment" text_remark2="" text_remark3="" /><row row_id="9" number_id="9" content="Góp ý" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-feedback" text_remark2="" text_remark3="" /><row row_id="10" number_id="10" content="Lưu bài viết tự tạo" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-save-post" text_remark2="" text_remark3="" /><row row_id="11" number_id="11" content="Chia sẻ bài viết tự tạo" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-share-post" text_remark2="" text_remark3="" /><row row_id="12" number_id="12" content="Thêm bài tập cho bài viết" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-add-exercise" text_remark2="" text_remark3="" /><row row_id="13" number_id="13" content="Đăng ký nhiệm vụ" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-add-mission" text_remark2="" text_remark3="" /><row row_id="14" number_id="14" content="like" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-like" text_remark2="" text_remark3="" /><row row_id="15" number_id="15" content="kiểm tra đáp án" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-check-answer" text_remark2="" text_remark3="" /><row row_id="16" number_id="16" content="đánh giá bài viết" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-vote" text_remark2="" text_remark3="" /><row row_id="17" number_id="17" content="Lưu bài đã dịch" num_remark1="" num_remark2="" num_remark3="" text_remark1="btn-translation-save" text_remark2="" text_remark3="" />','ndq809','127.0.0.1';
+2018-12-19 07:00:07 EXEC SPC_COM_MENU '1';
+2018-12-19 07:00:07 EXEC SPC_m007_LST1 '13';
+2018-12-19 07:00:08 EXEC SPC_M007_FND1
+2018-12-19 08:54:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:54:15 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2018-12-19 08:54:19 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:04 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:04 EXEC SPC_TRANSLATION_ACT1 '','bài dịch 1','<row tag_id="77" is_new="0" /><row tag_id="78" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','1','khoai','127.0.0.1';
+2018-12-19 08:55:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:07 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2018-12-19 08:55:08 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:13 EXEC SPC_SOCIAL_LST1 '2','khoai';
+2018-12-19 08:55:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2018-12-19 08:55:14 EXEC SPC_SOCIAL_LST2 '2','1','','khoai';
+2018-12-19 08:55:19 EXEC SPC_COM_DATA 'khoai','2','1';

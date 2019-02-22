@@ -699,7 +699,7 @@ function getVocabularyList(){
     return $.extend({}, data);
 }
 function save(mode){
-    var data = getInputData();
+    var data = getInputData('#tab-custom2');
     if(data['post_title'].trim()==''){
         $('#post_title').addClass('input-error');
         $('#post_title').attr('data-toggle','tooltip');

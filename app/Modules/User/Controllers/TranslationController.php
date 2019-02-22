@@ -3,6 +3,7 @@ namespace App\Modules\User\Controllers;
 
 use App\Http\Controllers\ControllerUser;
 use Auth;
+use Common;
 use CommonUser;
 use DAO;
 use Hashids\Hashids;
@@ -77,7 +78,8 @@ class TranslationController extends ControllerUser
     public function save(Request $request)
     {
         $param            = $request->all();
-        $param['post_id'] = isset($this->hashids->decode($param['post_id'])[0]) ? $this->hashids->decode($param['post_id'])[0] : '';
+        $data1            = [];
+        $data1['post_id'] = isset($this->hashids->decode($param['post_id'])[0]) ? $this->hashids->decode($param['post_id'])[0] : '';
         $xml              = new SQLXML();
         if (isset($param['post_tag'])) {
             for ($i = 0; $i < count($param['post_tag']); $i++) {
@@ -86,34 +88,42 @@ class TranslationController extends ControllerUser
                 }
             }
         }
-        $param['post_tag']   = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
-        $param['en_array']   = $xml->xml(isset($param['en_array']) ? $param['en_array'] : array());
-        $param['vi_array']   = $xml->xml(isset($param['vi_array']) ? $param['vi_array'] : array());
-        $param['auto_array'] = $xml->xml(isset($param['auto_array']) ? $param['auto_array'] : array());
-        $param['user_id']    = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
-        $param['ip']         = $request->ip();
-        // var_dump($param);die;
-        $data = Dao::call_stored_procedure('SPC_TRANSLATION_ACT1', $param);
-        // var_dump($data);die;
-        if ($data[2][0]['Data'] == 'Exception' || $data[2][0]['Data'] == 'EXCEPTION') {
-            $result = array(
-                'status' => 208,
-                'data'   => $data[2],
-            );
-        } else if ($data[2][0]['Data'] != '') {
-            $result = array(
-                'status' => 207,
-                'data'   => $data[2],
-            );
+        $data1['title']      = $param['post_title'];
+        $data1['post_tag']   = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
+        $data1['en_text']    = $param['en_text'];
+        $data1['vi_text']    = $param['vi_text'];
+        $data1['en_array']   = $xml->xml(isset($param['en_array']) ? $param['en_array'] : array());
+        $data1['vi_array']   = $xml->xml(isset($param['vi_array']) ? $param['vi_array'] : array());
+        $data1['auto_array'] = $xml->xml(isset($param['auto_array']) ? $param['auto_array'] : array());
+        $data1['save_mode']  = $param['save_mode'];
+        $data1['user_id']    = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $data1['ip']         = $request->ip();
+        if (common::checkValidate($data1)['result']) {
+            $data = Dao::call_stored_procedure('SPC_TRANSLATION_ACT1', $data1);
+            if ($data[2][0]['Data'] == 'Exception' || $data[2][0]['Data'] == 'EXCEPTION') {
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[2],
+                );
+            } else if ($data[2][0]['Data'] != '') {
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[2],
+                );
+            } else {
+                $data   = CommonUser::encodeID($data);
+                $view1  = view('User::translation.left_tab')->with('data_default', $data)->render();
+                $result = array(
+                    'status'     => 200,
+                    'statusText' => 'success',
+                    'view'       => $view1,
+                    'data'       => $data,
+                );
+            }
         } else {
-            $data   = CommonUser::encodeID($data);
-            $view1  = view('User::translation.left_tab')->with('data_default', $data)->render();
-            $result = array(
-                'status'     => 200,
-                'statusText' => 'success',
-                'view'       => $view1,
-                'data'       => $data,
-            );
+            $result = array('error' => common::checkValidate($data1)['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
         }
 
         return response()->json($result);

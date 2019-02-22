@@ -21,17 +21,19 @@
             <span>Thông Tin Bắt Buộc !</span>
         </div>
 		<div class="col-xs-12 main-content">
+            <input type="hidden" id="face-id" value="{{isset($default_data)?$default_data['id']:''}}">
+            <input type="hidden" id="face-token" value="{{isset($default_data)?$default_data['token']:''}}">
             <div class="form-group">
                 <label>Họ Tên Của Bạn</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm width-50" placeholder ="Họ">
-                    <input type="text" name="" class="form-control input-sm width-50" placeholder="Tên">
+                    <input type="text" name="" class="form-control input-sm width-50" placeholder ="Họ" value="{{isset($default_data)?$default_data['last_nm']:''}}">
+                    <input type="text" name="" class="form-control input-sm width-50" placeholder="Tên" value="{{isset($default_data)?$default_data['first_nm']:''}}"">
                 </div>
             </div>
             <div class="form-group">
                 <label>Tên Tài Khoản</label>
                 <div class="input-group">
-                    <input type="text" name="" class="form-control input-sm" placeholder="Tên dùng để đăng nhập">
+                    <input type="text" name="" class="form-control input-sm" placeholder="Tên dùng để đăng nhập" value="{{isset($default_data)?$default_data['name']:''}}">
                 </div>
             </div>
             <div class="form-group width-50 inline-block float-left">
@@ -49,7 +51,7 @@
             <div class="form-group">
                 <label>Email</label>
                 <div class="input-group">
-                    <input type="email" name="" class="form-control input-sm" placeholder="Nhập email của bạn">
+                    <input type="email" name="" class="form-control input-sm" placeholder="Nhập email của bạn" value="{{isset($default_data)?$default_data['email']:''}}">
                 </div>
             </div>
             <div class="form-group width-50 inline-block float-left">
@@ -62,13 +64,17 @@
             </div>
             <div class="form-group width-50 inline-block float-left">
                 <label>Giới Tính</label>
-                <select>
-                    <option>this is select box</option>
+                <select class="form-control input-sm">
+                    @foreach($data[0] as $index => $row)
+                        <option value="{{$row['lib_id']}}">{{$row['lib_nm']}}</option>
+                    @endforeach
                 </select>
             </div>
-            <div class="form-group">
+            <div class="col-xs-12"></div>
+            <div class="form-group float-left">
                 <label>Ảnh Đại Diện</label>
-                <div id="imageContainer"></div>
+                <div id="imageContainer" class="{{isset($default_data)?'isface':''}}"></div>
+                <input type="hidden" id="avatar" value="{{isset($default_data)?$default_data['avatar_original']:''}}">
             </div>
 		</div>
 	</div>
@@ -79,14 +85,18 @@
         <div class="col-xs-12 main-content">
             <div class="form-group width-50 inline-block float-left">
                 <label>Nghề Nghiệp</label>
-                <select>
-                    <option>this is select box</option>
+                <select class="form-control input-sm">
+                    @foreach($data[1] as $index => $row)
+                        <option value="{{$row['lib_id']}}">{{$row['lib_nm']}}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="form-group width-50 inline-block float-left">
                 <label>Trình Độ Tiếng Anh</label>
-                <select>
-                    <option>this is select box</option>
+                <select class="form-control input-sm">
+                    @foreach($data[2] as $index => $row)
+                        <option value="{{$row['lib_id']}}">{{$row['lib_nm']}}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="form-group">

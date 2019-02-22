@@ -103,5 +103,17 @@
 	border-bottom: 1px solid #ccc;
 }
 
+span[data-toggle=tooltip]:hover{
+	cursor: default;
+}
+
+.post-infor .tooltip .tooltip-inner {
+    background-color:#ff3e00;
+    border: 1px solid #fff;
+}
+.tooltip .tooltip-arrow {
+      border-bottom:5px solid #ff3e00!important;
+      border-top: none!important;
+}
 
 

@@ -51,7 +51,6 @@ class DiscussController extends ControllerUser
         $param['post_tag'] = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
         $param['user_id']  = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
         $data              = Dao::call_stored_procedure('SPC_DISCUSS_LST2', $param);
-        // var_dump($data);die;
         $data   = CommonUser::encodeID($data);
         $view1  = view('User::Discuss.right_tab')->with('data', $data[2])->with('is_end', $data[7])->render();
         $view2  = view('User::Discuss.tab_custom1')->with('data', $data)->render();

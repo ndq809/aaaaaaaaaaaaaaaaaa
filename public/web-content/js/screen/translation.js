@@ -482,6 +482,16 @@ function save() {
                         $('.selected-row').first().trigger('click');
                     });
                     break;
+                case 201:
+                    $('#popup-box5').modal('hide');
+                    if(res.error.title!=undefined){
+                        $('#post_title').addClass('input-error');
+                        $('#post_title').attr('data-toggle','tooltip');
+                        $('#post_title').attr('data-placement','top');
+                        $('#post_title').attr('data-original-title','Tiêu đề không được rỗng');
+                        $('[data-toggle="tooltip"]').tooltip();
+                    }
+                    break;
                 case 210:
                     $('#auto_trans').val(res.data);
                     break;

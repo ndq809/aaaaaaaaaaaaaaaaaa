@@ -63,16 +63,16 @@ function initCommon() {
                     }
                 }
             }, false);
-            // xhr.addEventListener("progress", function (evt) {
-            //     if (_this.process) {
-            //         if (evt.lengthComputable) {
-            //             var percentComplete = evt.loaded / evt.total;
-            //             $('.my-progress').css({
-            //                 width: percentComplete * 100 + '%'
-            //             });
-            //         }
-            //     }
-            // }, false);
+            xhr.addEventListener("progress", function (evt) {
+                if (_this.process) {
+                    if (evt.lengthComputable) {
+                        var percentComplete = evt.loaded / evt.total;
+                        $('.my-progress').css({
+                            width: percentComplete * 100 + '%'
+                        });
+                    }
+                }
+            }, false);
             return xhr;
         },
 
@@ -185,7 +185,7 @@ function initCommon() {
     }
 
     $('#menu li').each(function(){
-        if(typeof $(this).find('a').attr('href')!='undefined'&&$(this).find('a').attr('href').split('/')[1]===window.location.href.split('?')[0].split('/')[3].replace('#','')){
+        if(typeof $(this).find('a').attr('href')!='undefined'&&$(this).find('a').attr('href').split('/')[1]===window.location.href.split('?')[0].split('/')[3].split('#')[0]){
             $(this).addClass('active-menu');
         }
     })
@@ -389,7 +389,6 @@ function setFooter() {
 function menuController() {
     if ($(window).width() < 680) {
         var temp = Math.floor(($('.container-fluid').width()) / 110);
-        console.log(temp);
         $('#menu>li').css('width', ($('.container-fluid').width())/temp);
     } else {
         $('#menu>li').css('width', 'auto');
@@ -1132,7 +1131,7 @@ function checkLogin(username){
                     $.each( $('#account_nm,#password'), function( key) {
                       $(this).addClass('input-error');
                       $(this).attr('data-toggle','tooltip');
-                      $(this).attr('data-placement','top');
+                      $(this).attr('data-placement','bottom');
                       $(this).attr('data-original-title','sai tên đăng nhập hoặc mật khẩu');
                     });
                     $('[data-toggle="tooltip"]').tooltip();
@@ -1180,7 +1179,7 @@ function showFailedValidate(error_array){
     $.each( error_array, function( key, value ) {
       $('#'+key).addClass('input-error');
       $('#'+key).attr('data-toggle','tooltip');
-      $('#'+key).attr('data-placement','top');
+      $('#'+key).attr('data-placement','bottom');
       $('#'+key).attr('data-original-title',value);
     });
     $('[data-toggle="tooltip"]').tooltip();
@@ -1276,6 +1275,8 @@ function showMessage(message_code,ok_callback,cancel_callback){
             title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
             content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_CONFIRM,
+            showCloseButton: false,
+            blocking: true,
             buttons: [
                 {
                     label: 'Đồng ý',
@@ -1295,6 +1296,8 @@ function showMessage(message_code,ok_callback,cancel_callback){
             title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
             content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_SUCCESS,
+            showCloseButton: false,
+            blocking: true,
             buttons: [
                 {
                     label: 'Ok',
@@ -1309,6 +1312,8 @@ function showMessage(message_code,ok_callback,cancel_callback){
             title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
             content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_WARNING,
+            showCloseButton: false,
+            blocking: true,
             buttons: [
                 {
                     label: 'Thực hiện',
@@ -1328,6 +1333,8 @@ function showMessage(message_code,ok_callback,cancel_callback){
             title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
             content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
             icon: $.sweetModal.ICON_ERROR,
+            showCloseButton: false,
+            blocking: true,
             buttons: [
                 {
                     label: 'Đã hiểu',

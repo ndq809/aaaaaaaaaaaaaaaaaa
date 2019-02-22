@@ -1,0 +1,365 @@
+2019-01-11 06:04:57 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:05:02 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:05:02 EXEC SPC_VOCABULARY_LST1 '','','','';
+2019-01-11 06:05:03 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:05:03 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2019-01-11 06:05:08 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:05:09 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:05:09 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:08:54 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:09:20 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:09:21 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:09:21 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:09:24 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:12:07 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:12:08 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:12:08 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:13:01 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:02 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:02 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:13:09 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:10 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:10 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:13:42 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:42 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:13:42 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:13:53 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:16:32 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:16:33 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:16:33 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:16:44 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:14 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:15 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:15 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 06:19:23 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:26 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:28 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:30 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:36 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:38 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:44 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:45 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:19:51 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:20:08 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:20:10 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:20:14 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:20:33 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:44 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:46 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:47 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:49 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:50 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:52 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:57:56 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:26 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:28 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:29 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:31 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:32 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:34 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:38 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:43 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:43 EXEC SPC_DICTIONARY_LST1 '','';
+2019-01-11 06:58:44 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:58:44 EXEC SPC_DICTIONARY_LST2 'industry analyst Doug Laney','','127.0.0.1';
+2019-01-11 06:59:01 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:59:01 EXEC SPC_DICTIONARY_LST1 '','';
+2019-01-11 06:59:02 EXEC SPC_COM_DATA '','','';
+2019-01-11 06:59:02 EXEC SPC_DICTIONARY_LST2 'data','','127.0.0.1';
+2019-01-11 06:59:22 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:22:46 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:22:46 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:22:48 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:22:51 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:23:11 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:23:23 EXEC SPC_COM_DATA '','','';
+2019-01-11 07:26:03 SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. 
+2019-01-11 07:26:41 SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]SQL Server Network Interfaces: Error Locating Server/Instance Specified [xFFFFFFFF]. 
+2019-01-11 08:15:09 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:11 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:16 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:17 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:18 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:22 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:23 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:25 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:30 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:42 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:49 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:54 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:57 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:15:59 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:16:00 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:57:36 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:57:50 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:57:51 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:57:53 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:57:54 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:15 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:15 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:16 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:21 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:22 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:22 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 08:58:34 EXEC SPC_COMMON_ACCOUNT '1','1';
+2019-01-11 08:58:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-11 08:58:35 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-01-11 08:58:35 EXEC SPC_TRANSLATION_LST1 '','quypro';
+2019-01-11 08:58:41 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:42 EXEC SPC_COM_DATA '','','';
+2019-01-11 08:58:42 EXEC SPC_TRANSLATION_LST1 '','';
+2019-01-11 08:58:53 EXEC SPC_COMMON_ACCOUNT '2','1';
+2019-01-11 08:58:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:58:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:58:54 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-11 08:59:02 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:11 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:12 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:13 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:15 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:16 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:37 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:43 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 08:59:52 EXEC SPC_TRANSLATION_ACT1 '3','bài dịch 2','<row tag_id="77" is_new="0" /><row tag_id="80" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Tôi chỉ muốn một số bồi thường, Han Xiao bình tĩnh tuyên bố." /><row id="1" value="" /><row id="2" value="Giám đốc nghiên cứu không thể cưỡng lại việc bắn ra miệng." /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="Và nếu bạn thậm chí đã cố gắng hỏi độc đáo, tôi thậm chí có thể bán nó cho bộ phận!" /><row id="7" value="Nhưng hãy tự hỏi mình đã làm gì?" /><row id="8" value="Đa dạng." /><row id="9" value="Gu Hui hỏi." /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','2','khoai','127.0.0.1';
+2019-01-11 09:00:21 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:00:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:00:29 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-11 09:00:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:00:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:00:41 EXEC SPC_TRANSLATION_ACT1 '3','bài dịch 2','<row tag_id="77" is_new="0" /><row tag_id="80" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','3','khoai','127.0.0.1';
+2019-01-11 09:01:41 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:01:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:01:51 EXEC SPC_TRANSLATION_ACT1 '3','bài dịch 2','<row tag_id="77" is_new="0" /><row tag_id="80" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','3','khoai','127.0.0.1';
+2019-01-11 09:03:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:06:58 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:06:58 EXEC SPC_TRANSLATION_ACT1 '3','bài dịch 2','<row tag_id="77" is_new="0" /><row tag_id="80" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','2','khoai','127.0.0.1';
+2019-01-11 09:07:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:07:14 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:07:14 EXEC SPC_TRANSLATION_ACT1 '3','bài dịch 2','<row tag_id="77" is_new="0" /><row tag_id="80" is_new="0" />','While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old.
+The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:
+Volume.
+Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data.
+In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden.
+Velocity.
+Data streams in at an unprecedented speed and must be dealt with in a timely manner.
+RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time.
+Variety.
+Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions.
+At SAS, we consider two additional dimensions when it comes to big data:
+Variability.
+In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks.
+Is something trending in social media?
+Daily, seasonal and event triggered peak data loads can be challenging to manage.
+Even more so with unstructured data.
+Complexity.
+Today's data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems.
+However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control.','Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời.
+Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:
+Âm lượng.
+Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy.
+Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng.
+Vận tốc.
+Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời.
+Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực.
+Đa dạng.
+Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính.
+Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:
+Sự đa dạng.
+Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ.
+Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?
+Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý.
+Thậm chí nhiều hơn với dữ liệu phi cấu trúc.
+Phức tạp.
+Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống.
+Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát.','<row id="0" value="While the term big data is relatively new, the act of gathering and storing large amounts of information for eventual analysis is ages old." /><row id="1" value="The concept gained momentum in the early 2000s when industry analyst Doug Laney articulated the now mainstream definition of big data as the three Vs:" /><row id="2" value="Volume." /><row id="3" value="Organizations collect data from a variety of sources, including business transactions, social media and information from sensor or machine to machine data." /><row id="4" value="In the past, storing it would’ve been a problem – but new technologies (such as Hadoop) have eased the burden." /><row id="5" value="Velocity." /><row id="6" value="Data streams in at an unprecedented speed and must be dealt with in a timely manner." /><row id="7" value="RFID tags, sensors and smart metering are driving the need to deal with torrents of data in near real time." /><row id="8" value="Variety." /><row id="9" value="Data comes in all types of formats – from structured, numeric data in traditional databases to unstructured text documents, email, video, audio, stock ticker data and financial transactions." /><row id="10" value="At SAS, we consider two additional dimensions when it comes to big data:" /><row id="11" value="Variability." /><row id="12" value="In addition to the increasing velocities and varieties of data, data flows can be highly inconsistent with periodic peaks." /><row id="13" value="Is something trending in social media?" /><row id="14" value="Daily, seasonal and event triggered peak data loads can be challenging to manage." /><row id="15" value="Even more so with unstructured data." /><row id="16" value="Complexity." /><row id="17" value="Today&amp;#39;s data comes from multiple sources, which makes it difficult to link, match, cleanse and transform data across systems." /><row id="18" value="However, it’s necessary to connect and correlate relationships, hierarchies and multiple data linkages or your data can quickly spiral out of control." />','<row id="0" value="Trong khi thuật ngữ về dữ liệu lớn, dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng đã có từ lâu đời." /><row id="1" value="Khái niệm này đã đạt được động lực vào đầu những năm 2000 khi nhà phân tích công nghiệp Doug Laney đưa ra định nghĩa về dữ liệu lớn hiện nay là ba Vs:" /><row id="2" value="Âm lượng." /><row id="3" value="Các tổ chức thu thập dữ liệu từ nhiều nguồn khác nhau, bao gồm các giao dịch kinh doanh, phương tiện truyền thông xã hội và thông tin từ cảm biến hoặc dữ liệu từ máy sang máy." /><row id="4" value="Trước đây, việc lưu trữ nó sẽ là một vấn đề nhưng các công nghệ mới (như Hadoop) đã giảm bớt gánh nặng." /><row id="5" value="Vận tốc." /><row id="6" value="Luồng dữ liệu với tốc độ chưa từng thấy và phải được xử lý kịp thời." /><row id="7" value="Thẻ RFID, cảm biến và đo sáng thông minh đang thúc đẩy nhu cầu xử lý các luồng dữ liệu trong thời gian gần như thực." /><row id="8" value="Đa dạng." /><row id="9" value="Dữ liệu có ở tất cả các loại định dạng từ dữ liệu có cấu trúc, dữ liệu số trong cơ sở dữ liệu truyền thống đến tài liệu văn bản phi cấu trúc, email, video, âm thanh, dữ liệu đánh dấu chứng khoán và giao dịch tài chính." /><row id="10" value="Tại SAS, chúng tôi xem xét hai chiều bổ sung khi nói đến dữ liệu lớn:" /><row id="11" value="Sự đa dạng." /><row id="12" value="Ngoài vận tốc ngày càng tăng và các loại dữ liệu, luồng dữ liệu có thể không nhất quán cao với các đỉnh định kỳ." /><row id="13" value="Là một cái gì đó xu hướng trong phương tiện truyền thông xã hội?" /><row id="14" value="Tải dữ liệu cao điểm hàng ngày, theo mùa và kích hoạt sự kiện có thể là thách thức để quản lý." /><row id="15" value="Thậm chí nhiều hơn với dữ liệu phi cấu trúc." /><row id="16" value="Phức tạp." /><row id="17" value="Dữ liệu ngày nay đến từ nhiều nguồn, điều này gây khó khăn cho việc liên kết, khớp, làm sạch và chuyển đổi dữ liệu trên các hệ thống." /><row id="18" value="Tuy nhiên, nó cần thiết để kết nối và tương quan các mối quan hệ, phân cấp và nhiều liên kết dữ liệu hoặc dữ liệu của bạn có thể nhanh chóng vượt khỏi tầm kiểm soát." />','<row id="0" value="Trong khi thuật ngữ dữ liệu lớn là tương đối mới, hành động thu thập và lưu trữ một lượng lớn thông tin để phân tích cuối cùng là lâu đời." /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','3','khoai','127.0.0.1';
+2019-01-11 09:09:26 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:09:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:09:31 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:09:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:09:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:10:09 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:10:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:11:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:11:03 EXEC SPC_TRANSLATION_ACT1 '','test thử','<row tag_nm="test" is_new="1" /><row tag_id="82" is_new="0" />','test thử coi ntn','thử nghiệm coi','<row id="0" value="test thử coi ntn" />','<row id="0" value="thử nghiệm coi" />','<row id="0" value="thử nghiệm coi coi ntn" /><row id="1" value="" /><row id="2" value="" /><row id="3" value="" /><row id="4" value="" /><row id="5" value="" /><row id="6" value="" /><row id="7" value="" /><row id="8" value="" /><row id="9" value="" /><row id="10" value="" /><row id="11" value="" /><row id="12" value="" /><row id="13" value="" /><row id="14" value="" /><row id="15" value="" /><row id="16" value="" /><row id="17" value="" /><row id="18" value="" />','1','khoai','127.0.0.1';
+2019-01-11 09:11:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:12:34 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:12:45 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:12:54 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-11 09:16:30 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:16:32 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:16:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:16:36 EXEC SPC_TRANSLATION_ACT2 '1015','khoai','127.0.0.1';
+2019-01-11 09:19:00 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:01 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:01 EXEC SPC_TRANSLATION_LST1 '','khoai';
+2019-01-11 09:19:03 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:05 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:06 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:07 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:36 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:39 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:19:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:21:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:21:55 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:29 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:33 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:46 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:48 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:49 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:50 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:51 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:52 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:53 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:54 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:56 EXEC SPC_COM_DATA 'khoai','2','1';
+2019-01-11 09:22:58 EXEC SPC_COM_DATA 'khoai','2','1';

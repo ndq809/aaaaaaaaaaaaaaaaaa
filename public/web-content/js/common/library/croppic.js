@@ -166,7 +166,7 @@
 					// console.log(that.croppedImg);
 					$.ajax({
 				        type: 'POST',
-				        url: '/master/common/delete-image',
+				        url: '/common/delete-image',
 				        dataType: 'json',
 				        data: {image:that.croppedImg.attr('src')},//convert to object
 				        success: function (res) {
@@ -174,6 +174,7 @@
 				                case 'success':
 				                    that.croppedImg.remove();
 									that.croppedImg = {};
+			                		that.options.loadPicture='';
 									$(this).hide();
 									
 									if (typeof (that.options.onAfterRemoveCroppedImg) === typeof(Function)) {
@@ -466,12 +467,13 @@
 				
 				$.ajax({
 			        type: 'POST',
-			        url: '/master/common/delete-image',
+			        url: '/common/delete-image',
 			        dataType: 'json',
 			        data: {image:$('.cropImgWrapper').find('img').attr('src')},//convert to object
 			        success: function (res) {
 			            switch(res.status){
 			                case 'success':
+			                	that.options.loadPicture='';
 			                   that.reset();
 			                    break;
 			                default :

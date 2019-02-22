@@ -527,22 +527,20 @@ class CommonController extends ControllerUser
         // }
 
         $photo = $form_data['img'];
-
-        $original_name             = $photo->getClientOriginalName();
+        $original_name = $photo->getClientOriginalName();
         $original_name_without_ext = substr($original_name, 0, strlen($original_name) - 4);
 
-        $filename         = $this->sanitize($original_name_without_ext);
-        $allowed_filename = $this->createUniqueFilename($filename);
+        $filename = $this->sanitize($original_name_without_ext);
+        $allowed_filename = $this->createUniqueFilename( $filename );
 
-        $filename_ext = $allowed_filename . '_' . date("Ymd HHmmss") . round(microtime(true) * 1000) . '.jpg';
+        $filename_ext = $allowed_filename .'_'.date("Ymd HHmmss").round(microtime(true) * 1000).'.jpg';
 
         $manager = new ImageManager();
-        $image   = $manager->make($photo)->encode('jpg')->save((public_path('uploads')) . '/' . $filename_ext);
-        // var_dump(public_path('uploads'));die;
-        if (!$image) {
+        $image = $manager->make( $photo->getRealPath() )->encode('jpg')->save((public_path('web-content/images/vocabulary')).'/'  . $filename_ext ,100);
+        if( !$image) {
 
             return Response::json([
-                'status'  => 'error',
+                'status' => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
@@ -552,20 +550,20 @@ class CommonController extends ControllerUser
         // $database_image->filename      = $allowed_filename;
         // $database_image->original_name = $original_name;
         // $database_image->save();
-
         return Response::json([
-            'status' => 'success',
-            'url'    => 'uploads/' . $filename_ext,
-            'width'  => $image->width(),
-            'height' => $image->height(),
+            'status'    => 'success',
+            'url'       => '/web-content/images/vocabulary/' . $filename_ext,
+            'width'     => $image->width(),
+            'height'    => $image->height()
         ], 200);
     }
+
 
     public function postCrop()
     {
         $form_data = Input::all();
         $image_url = $form_data['imgUrl'];
-
+        // var_dump($form_data);die;
         // resized sizes
         $imgW = $form_data['imgW'];
         $imgH = $form_data['imgH'];
@@ -577,29 +575,44 @@ class CommonController extends ControllerUser
         $cropH = $form_data['height'];
         // rotation angle
         $angle = $form_data['rotation'];
-
         $filename_array = explode('/', $image_url);
-        $filename       = $filename_array[sizeof($filename_array) - 1];
-
+        $filename = $filename_array[sizeof($filename_array)-1];
+        $filename_ext = 'croped_' . uniqid() . '.jpg';
         $manager = new ImageManager();
-        $image   = $manager->make($image_url);
+        if(strpos($image_url,'http')!==false){
+            $image = $manager->make($image_url);
+        }else{
+            $image = $manager->make( public_path($image_url) );
+        }   
         $image->resize($imgW, $imgH)
-            ->rotate(-$angle)
+            // ->rotate(-$angle)
             ->crop($cropW, $cropH, $imgX1, $imgY1)
-            ->save((public_path('uploads')) . '/cropped-' . $filename);
+            ->save((public_path('web-content/images/vocabulary')).'/'  . $filename_ext ,100);
 
-        if (!$image) {
+        if( !$image) {
 
             return Response::json([
-                'status'  => 'error',
+                'status' => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
         }
-
+        if(strpos($image_url,'http')!==false){
+            File::delete((public_path('web-content/images/vocabulary/'))  . $filename);
+        }
         return Response::json([
             'status' => 'success',
-            'url'    => env('URL') . 'uploads/cropped-' . $filename,
+            'url' => '/web-content/images/vocabulary/' . $filename_ext
+        ], 200);
+
+    }
+
+    public function postCropDelete(Request $request)
+    {
+        $data = $request->all();
+        File::delete((public_path('web-content/images/vocabulary/'))  . explode('/',$data['image'])[2]);
+        return Response::json([
+            'status' => 'success',
         ], 200);
 
     }

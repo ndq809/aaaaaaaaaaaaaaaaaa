@@ -768,7 +768,7 @@ function save(){
                         $('#post_title').addClass('input-error');
                         $('#post_title').attr('data-toggle','tooltip');
                         $('#post_title').attr('data-placement','top');
-                        $('#post_title').attr('data-original-title','Tiêu đề không được rỗng');
+                        $('#post_title').attr('data-original-title','Mục này không được trống');
                     }
                     if(res.error.post_media!=undefined){
                          if(data['post_div']!=4){
@@ -779,7 +779,7 @@ function save(){
                         }else{
                             $('#post_media').closest('.input-group').find('.file-caption').addClass('input-error');
                             $('#post_media').closest('.input-group').find('.file-caption').attr('data-toggle','tooltip');
-                            $('#post_media').closest('.input-group').find('.file-caption').attr('data-placement','bottom');
+                            $('#post_media').closest('.input-group').find('.file-caption').attr('data-placement','top');
                             $('#post_media').closest('.input-group').find('.file-caption').attr('data-original-title','Mục này không được trống');
                         }
                     }
