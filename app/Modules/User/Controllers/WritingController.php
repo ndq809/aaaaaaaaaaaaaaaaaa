@@ -28,7 +28,7 @@ class WritingController extends ControllerUser
     {
         $param                 = $request->all();
         $param['v']            = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
-        $param['user_id']      = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id']      = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['catalogue_id'] = $request->session()->get('catalogue_id');
         $param['group_id']     = $request->session()->get('group_id');
         $data                  = Dao::call_stored_procedure('SPC_WRITING_LST1', $param);
@@ -45,7 +45,7 @@ class WritingController extends ControllerUser
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
         $param[1]         = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data             = Dao::call_stored_procedure('SPC_WRITING_LST2', $param);
         $data             = CommonUser::encodeID($data);
         $view1            = view('User::writing.right_tab')->with('data', $data[2])->render();
@@ -90,7 +90,7 @@ class WritingController extends ControllerUser
             }
         }
         $param['voc_array'] = $xml->xml(isset($param['voc_array'])?$param['voc_array']:array());
-        $param['user_id']   = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id']   = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']        = $request->ip();
         $data               = Dao::call_stored_procedure('SPC_WRITING_ACT1', $param);
         // var_dump($data);die;
@@ -124,7 +124,7 @@ class WritingController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_WRITING_ACT3', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {

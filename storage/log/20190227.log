@@ -1,0 +1,580 @@
+2019-02-27 09:06:54 EXEC SPC_COM_DATA '','','';
+2019-02-27 09:07:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 09:07:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 09:07:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 09:07:08 EXEC SPC_REGISTER_LST1
+2019-02-27 09:07:53 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:12:49 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:12:49 EXEC SPC_REGISTER_LST1
+2019-02-27 10:13:23 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:13:23 EXEC SPC_REGISTER_LST1
+2019-02-27 10:16:43 EXEC SPC_COMMON_ACCOUNT '1','1';
+2019-02-27 10:16:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:44 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:44 EXEC SPC_COM_MENU '1';
+2019-02-27 10:16:46 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:46 EXEC SPC_LISTENING_LST1 '','quypro','','';
+2019-02-27 10:16:47 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:47 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-02-27 10:16:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:48 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2019-02-27 10:16:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:49 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-27 10:16:49 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 10:16:49 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-02-27 10:20:04 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:04 EXEC SPC_WRITING_LST1 '4','','','';
+2019-02-27 10:20:05 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:05 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-27 10:20:05 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:05 EXEC SPC_WRITING_LST2 '9','10','';
+2019-02-27 10:20:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:08 EXEC SPC_REGISTER_LST1
+2019-02-27 10:20:44 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:20:44 EXEC SPC_REGISTER_LST1
+2019-02-27 10:25:16 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:25:16 EXEC SPC_REGISTER_LST1
+2019-02-27 10:25:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:25:38 EXEC SPC_REGISTER_LST1
+2019-02-27 10:25:51 EXEC SPC_COM_DATA '','','';
+2019-02-27 10:25:51 EXEC SPC_REGISTER_LST1
+2019-02-27 10:29:30 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-02-27 10:29:30 EXEC SPC_COM_DATA 'ndq809','1','2';
+2019-02-27 10:29:30 EXEC SPC_COM_MENU '1';
+2019-02-27 10:29:33 EXEC SPC_COM_PERMISSION '1','2','g001';
+2019-02-27 10:29:33 EXEC SPC_COM_MENU '1';
+2019-02-27 10:29:40 EXEC SPC_COM_PERMISSION '1','2','m007';
+2019-02-27 10:29:40 EXEC SPC_COM_MENU '1';
+2019-02-27 10:29:40 EXEC SPC_M007_FND1
+2019-02-27 10:30:12 EXEC SPC_COM_MENU '1';
+2019-02-27 10:30:12 EXEC SPC_M007_ACT2 'Lĩnh vực','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','::1';
+2019-02-27 10:30:14 EXEC SPC_COM_MENU '1';
+2019-02-27 10:30:14 EXEC SPC_m007_LST1 '';
+2019-02-27 10:30:14 EXEC SPC_M007_FND1
+2019-02-27 10:30:14 EXEC SPC_COM_MENU '1';
+2019-02-27 10:30:14 EXEC SPC_m007_LST1 '17';
+2019-02-27 10:30:14 EXEC SPC_M007_FND1
+2019-02-27 10:47:33 EXEC SPC_COM_MENU '1';
+2019-02-27 10:47:33 EXEC SPC_M007_ACT1 '17','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Giáo dục" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Y tế" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Công nghệ" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Giải trí" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Kinh doanh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Du lịch" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','::1';
+2019-02-27 10:47:34 EXEC SPC_COM_MENU '1';
+2019-02-27 10:47:34 EXEC SPC_m007_LST1 '17';
+2019-02-27 10:47:34 EXEC SPC_M007_FND1
+2019-02-27 11:09:37 EXEC SPC_COM_PERMISSION '1','2','m007';
+2019-02-27 11:09:37 EXEC SPC_COM_MENU '1';
+2019-02-27 11:09:37 EXEC SPC_M007_FND1
+2019-02-27 11:09:40 EXEC SPC_COM_MENU '1';
+2019-02-27 11:09:40 EXEC SPC_m007_LST1 '17';
+2019-02-27 11:09:40 EXEC SPC_M007_FND1
+2019-02-27 11:10:34 EXEC SPC_COM_MENU '1';
+2019-02-27 11:10:34 EXEC SPC_m007_LST1 '16';
+2019-02-27 11:10:34 EXEC SPC_M007_FND1
+2019-02-27 11:10:37 EXEC SPC_COM_MENU '1';
+2019-02-27 11:10:37 EXEC SPC_m007_LST1 '17';
+2019-02-27 11:10:37 EXEC SPC_M007_FND1
+2019-02-27 11:11:30 EXEC SPC_COM_MENU '1';
+2019-02-27 11:11:30 EXEC SPC_M007_ACT1 '17','<row row_id="0" number_id="0" content="" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Giáo dục" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Y tế" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Công nghệ" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Giải trí" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Kinh doanh" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Du lịch" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','::1';
+2019-02-27 11:11:32 EXEC SPC_COM_MENU '1';
+2019-02-27 11:11:32 EXEC SPC_m007_LST1 '17';
+2019-02-27 11:11:32 EXEC SPC_M007_FND1
+2019-02-27 11:16:24 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:24 EXEC SPC_M007_ACT2 'Tỉnh/Thành Phố','<row row_id="0" number_id="0" content="" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="Giáo dục" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Y tế" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Công nghệ" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Giải trí" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Kinh doanh" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Du lịch" num_remark1="8" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','::1';
+2019-02-27 11:16:26 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:26 EXEC SPC_m007_LST1 '';
+2019-02-27 11:16:26 EXEC SPC_M007_FND1
+2019-02-27 11:16:26 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:26 EXEC SPC_m007_LST1 '18';
+2019-02-27 11:16:26 EXEC SPC_M007_FND1
+2019-02-27 11:16:31 EXEC SPC_COM_PERMISSION '1','2','m007';
+2019-02-27 11:16:31 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:31 EXEC SPC_M007_FND1
+2019-02-27 11:16:33 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:33 EXEC SPC_m007_LST1 '18';
+2019-02-27 11:16:33 EXEC SPC_M007_FND1
+2019-02-27 11:16:37 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:37 EXEC SPC_m007_LST1 '17';
+2019-02-27 11:16:37 EXEC SPC_M007_FND1
+2019-02-27 11:16:39 EXEC SPC_COM_MENU '1';
+2019-02-27 11:16:39 EXEC SPC_m007_LST1 '18';
+2019-02-27 11:16:39 EXEC SPC_M007_FND1
+2019-02-27 11:24:18 EXEC SPC_COM_MENU '1';
+2019-02-27 11:24:18 EXEC SPC_M007_ACT1 '18','<row row_id="0" number_id="0" content="" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="1" number_id="1" content="An Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="2" number_id="2" content="Bà Rịa - Vũng Tàu" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="3" number_id="3" content="Bắc Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="4" number_id="4" content="Bắc Kạn" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="5" number_id="5" content="Bạc Liêu" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="6" number_id="6" content="Bắc Ninh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="7" number_id="7" content="Bến Tre" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="8" number_id="8" content="Bình Định" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="9" number_id="9" content="Bình Dương" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="10" number_id="10" content="Bình Phước" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="11" number_id="11" content="Bình Thuận" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="12" number_id="12" content="Cà Mau" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="13" number_id="13" content="Cao Bằng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="14" number_id="14" content="Đắk Lắk" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="15" number_id="15" content="Đắk Nông" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="16" number_id="16" content="Điện Biên" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="17" number_id="17" content="Đồng Nai" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="18" number_id="18" content="Đồng Tháp" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="19" number_id="19" content="Gia Lai" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="20" number_id="20" content="Hà Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="21" number_id="21" content="Hà Nam" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="22" number_id="22" content="Hà Tĩnh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="23" number_id="23" content="Hải Dương" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="24" number_id="24" content="Hậu Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="25" number_id="25" content="Hòa Bình" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="26" number_id="26" content="Hưng Yên" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="27" number_id="27" content="Khánh Hòa" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="28" number_id="28" content="Kiên Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="29" number_id="29" content="Kon Tum" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="30" number_id="30" content="Lai Châu" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="31" number_id="31" content="Lâm Đồng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="32" number_id="32" content="Lạng Sơn" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="33" number_id="33" content="Lào Cai" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="34" number_id="34" content="Long An" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="35" number_id="35" content="Nam Định" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="36" number_id="36" content="Nghệ An" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="37" number_id="37" content="Ninh Bình" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="38" number_id="38" content="Ninh Thuận" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="39" number_id="39" content="Phú Thọ" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="40" number_id="40" content="Quảng Bình" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="41" number_id="41" content="Quảng Nam" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="42" number_id="42" content="Quảng Ngãi" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="43" number_id="43" content="Quảng Ninh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="44" number_id="44" content="Quảng Trị" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="45" number_id="45" content="Sóc Trăng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="46" number_id="46" content="Sơn La" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="47" number_id="47" content="Tây Ninh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="48" number_id="48" content="Thái Bình" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="49" number_id="49" content="Thái Nguyên" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="50" number_id="50" content="Thanh Hóa" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="51" number_id="51" content="Thừa Thiên Huế" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="52" number_id="52" content="Tiền Giang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="53" number_id="53" content="Trà Vinh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="54" number_id="54" content="Tuyên Quang" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="55" number_id="55" content="Vĩnh Long" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="56" number_id="56" content="Vĩnh Phúc" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="57" number_id="57" content="Yên Bái" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="58" number_id="58" content="Phú Yên" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="59" number_id="59" content="Cần Thơ" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="60" number_id="60" content="Đà Nẵng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="61" number_id="61" content="Hải Phòng" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="62" number_id="62" content="Hà Nội" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" /><row row_id="63" number_id="63" content="TP Hồ Chí Minh" num_remark1="" num_remark2="" num_remark3="" text_remark1="" text_remark2="" text_remark3="" />','ndq809','::1';
+2019-02-27 11:24:19 EXEC SPC_COM_MENU '1';
+2019-02-27 11:24:19 EXEC SPC_m007_LST1 '18';
+2019-02-27 11:24:19 EXEC SPC_M007_FND1
+2019-02-27 11:25:46 EXEC SPC_COM_PERMISSION '1','2','m007';
+2019-02-27 11:25:46 EXEC SPC_COM_MENU '1';
+2019-02-27 11:25:46 EXEC SPC_M007_FND1
+2019-02-27 11:26:33 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:26:33 EXEC SPC_REGISTER_LST1
+2019-02-27 11:29:18 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:31:05 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:32:47 EXEC SPC_COM_PERMISSION '1','2','m003';
+2019-02-27 11:32:47 EXEC SPC_COM_MENU '1';
+2019-02-27 11:32:47 EXEC SPC_M003_FND1
+2019-02-27 11:33:41 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:33:41 EXEC SPC_REGISTER_LST1
+2019-02-27 11:34:12 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:34:12 EXEC SPC_REGISTER_LST1
+2019-02-27 11:37:33 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:39:09 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:39:09 EXEC SPC_REGISTER_LST1
+2019-02-27 11:39:11 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:40:02 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:40:02 EXEC SPC_REGISTER_LST1
+2019-02-27 11:40:04 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:45:52 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:45:52 EXEC SPC_REGISTER_LST1
+2019-02-27 11:45:55 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:09 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:10 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:10 EXEC SPC_REGISTER_LST1
+2019-02-27 11:46:36 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:51 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:46:51 Array to string conversion
+2019-02-27 11:48:57 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:48:57 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','27/02/2019','1','1','1','0123456789','2','<row tag_id="4" is_new="0" /><row tag_id="2" is_new="0" />','','','','::1';
+2019-02-27 11:48:57 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]プロシージャまたは関数 SPC_REGISTER_ACT1 に指定された引数が多すぎます。
+2019-02-27 11:50:22 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:52:02 EXEC SPC_COM_DATA '','','';
+2019-02-27 11:52:02 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','27/02/2019','1','1','1','0123456789','2','<row tag_id="4" is_new="0" /><row tag_id="2" is_new="0" />','','','','::1';
+2019-02-27 11:52:02 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]データ型 nvarchar を date に変換中にエラーが発生しました。
+2019-02-27 13:02:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 13:02:08 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','27/02/2019','1','1','1','0123456789','2','<row tag_id="4" is_new="0" /><row tag_id="2" is_new="0" />','','','','::1';
+2019-02-27 13:25:59 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-02-27 13:25:59 EXEC SPC_COM_MENU '1';
+2019-02-27 13:25:59 EXEC SPC_S002_FND1
+2019-02-27 13:26:29 EXEC SPC_COM_MENU '1';
+2019-02-27 13:26:29 EXEC SPC_S001_FND2 '1';
+2019-02-27 13:47:19 EXEC SPC_COM_PERMISSION '1','2','s003';
+2019-02-27 13:47:19 EXEC SPC_COM_MENU '1';
+2019-02-27 13:47:19 EXEC SPC_S003_FND1
+2019-02-27 13:48:25 EXEC SPC_COM_MENU '1';
+2019-02-27 13:48:25 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 13:48:26 EXEC SPC_COM_MENU '1';
+2019-02-27 13:48:26 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 13:48:27 EXEC SPC_COM_MENU '1';
+2019-02-27 13:48:27 EXEC SPC_P002_LST1 '','','','0','50','1';
+2019-02-27 13:48:34 EXEC SPC_COM_MENU '1';
+2019-02-27 13:48:34 EXEC SPC_S001_FND2 '2';
+2019-02-27 13:48:57 EXEC SPC_COM_MENU '1';
+2019-02-27 13:48:58 EXEC SPC_S003_ACT1 '1','2','4','quynd','$2y$10$kbmhDUDFKMie4rsMDI.3sekUo9UlHS721jf3sMBw3n8qK8sFV7NRG','test','ndq809','::1';
+2019-02-27 13:54:39 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-02-27 13:54:39 EXEC SPC_COM_MENU '1';
+2019-02-27 13:54:39 EXEC SPC_S002_FND1
+2019-02-27 14:12:53 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:12:54 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:12:56 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:12:56 EXEC SPC_REGISTER_LST1
+2019-02-27 14:13:01 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:13:49 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:13:49 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','11122114','mr.solo_timnguoitriky@yahoo.com','/web-content/images/vocabulary/croped_5c761c5d8696b.jpg','27/02/2019','1','5','6','0123456789','3','<row tag_id="1" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="3" is_new="0" />','','','','::1';
+2019-02-27 14:14:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:14:08 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','11122114','mr.solo_timnguoitriky@yahoo.com','/web-content/images/vocabulary/croped_5c761c5d8696b.jpg','27/02/2019','1','5','6','0123456789','3','<row tag_id="1" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="3" is_new="0" />','','','','::1';
+2019-02-27 14:18:03 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:18:03 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','11122114','mr.solo_timnguoitriky@yahoo.com','/web-content/images/vocabulary/croped_5c761c5d8696b.jpg','27/02/2019','1','5','6','0123456789','3','<row tag_id="1" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="3" is_new="0" />','','','','::1';
+2019-02-27 14:22:29 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:22:29 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','11122114','mr.solo_timnguoitriky@yahoo.com','/web-content/images/vocabulary/croped_5c761c5d8696b.jpg','27/02/2019','1','5','6','0123456789','3','<row tag_id="1" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="3" is_new="0" />','','','','::1';
+2019-02-27 14:23:45 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:23:45 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','asuna','11122114','mr.solo_timnguoitriky@yahoo.com','/web-content/images/vocabulary/croped_5c761c5d8696b.jpg','27/02/2019','1','5','6','0123456789','3','<row tag_id="1" is_new="0" /><row tag_id="4" is_new="0" /><row tag_id="3" is_new="0" />','','','','::1';
+2019-02-27 14:24:40 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:24:40 EXEC SPC_REGISTER_LST1
+2019-02-27 14:24:44 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:24:45 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:24:45 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:24:45 EXEC SPC_REGISTER_LST1
+2019-02-27 14:25:00 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:25:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:25:08 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','','0','0','0','123456789','0','','','','','::1';
+2019-02-27 14:25:17 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:25:17 EXEC SPC_REGISTER_LST1
+2019-02-27 14:26:04 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:04 EXEC SPC_REGISTER_LST1
+2019-02-27 14:26:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:08 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:09 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:09 EXEC SPC_REGISTER_LST1
+2019-02-27 14:26:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:39 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:39 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:39 EXEC SPC_REGISTER_LST1
+2019-02-27 14:26:49 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:49 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','','0','0','0','','0','','','','','::1';
+2019-02-27 14:26:59 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:26:59 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','Quy Nguyen','11122114','mr.solo_timnguoitriky@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','','0','0','0','','0','','','','','::1';
+2019-02-27 14:27:13 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:27:14 EXEC SPC_REGISTER_LST1
+2019-02-27 14:29:01 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:29:01 EXEC SPC_REGISTER_LST1
+2019-02-27 14:29:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:29:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:29:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:29:07 EXEC SPC_REGISTER_LST1
+2019-02-27 14:29:55 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:30:01 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:30:05 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:30:05 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','asuna','11122114','xxx@gmail.com','/web-content/images/vocabulary/croped_5c762059f12f7.jpg','27/02/2019','1','1','5','0123456789','12','<row tag_id="2" is_new="0" /><row tag_id="6" is_new="0" /><row tag_id="3" is_new="0" />','lalal demacia','','','::1';
+2019-02-27 14:30:11 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:30:11 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','asuna','11122114','xxx@gmail.com','/web-content/images/vocabulary/croped_5c762059f12f7.jpg','27/02/2019','1','1','5','0123456789','12','<row tag_id="2" is_new="0" /><row tag_id="6" is_new="0" /><row tag_id="3" is_new="0" />','lalal demacia','','','::1';
+2019-02-27 14:31:18 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:31:19 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:31:20 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:31:20 EXEC SPC_REGISTER_LST1
+2019-02-27 14:32:56 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:33:03 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:33:03 EXEC SPC_REGISTER_LST1
+2019-02-27 14:33:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:33:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:33:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:33:07 EXEC SPC_REGISTER_LST1
+2019-02-27 14:33:11 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:35:13 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:35:22 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:35:22 EXEC SPC_REGISTER_LST1
+2019-02-27 14:35:28 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:35:29 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:35:30 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:07 EXEC SPC_REGISTER_LST1
+2019-02-27 14:38:13 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:13 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:14 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:14 EXEC SPC_REGISTER_LST1
+2019-02-27 14:38:39 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:39 EXEC SPC_REGISTER_LST1
+2019-02-27 14:38:42 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:42 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:43 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:38:43 EXEC SPC_REGISTER_LST1
+2019-02-27 14:39:06 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:39:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:39:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:39:07 EXEC SPC_REGISTER_LST1
+2019-02-27 14:39:31 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:39:31 EXEC SPC_REGISTER_LST1
+2019-02-27 14:39:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:40:24 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:40:24 EXEC SPC_REGISTER_LST1
+2019-02-27 14:40:31 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:40:32 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:40:33 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:40:33 EXEC SPC_REGISTER_LST1
+2019-02-27 14:40:36 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:05 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:05 EXEC SPC_REGISTER_LST1
+2019-02-27 14:41:10 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:10 EXEC SPC_REGISTER_LST1
+2019-02-27 14:41:14 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:14 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:15 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:41:15 EXEC SPC_REGISTER_LST1
+2019-02-27 14:41:18 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:04 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:04 EXEC SPC_REGISTER_LST1
+2019-02-27 14:46:17 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:17 EXEC SPC_REGISTER_LST1
+2019-02-27 14:46:19 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:19 EXEC SPC_REGISTER_LST1
+2019-02-27 14:46:22 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:23 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:24 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:46:24 EXEC SPC_REGISTER_LST1
+2019-02-27 14:46:27 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:53:29 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:53:45 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:53:45 EXEC SPC_REGISTER_LST1
+2019-02-27 14:58:36 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:58:36 EXEC SPC_REGISTER_LST1
+2019-02-27 14:58:41 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:58:41 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:58:42 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:58:42 EXEC SPC_REGISTER_LST1
+2019-02-27 14:59:32 EXEC SPC_COM_DATA '','','';
+2019-02-27 14:59:32 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','weed','11122114','xxyy@yahoo.com','https://graph.facebook.com/v3.0/2044308139016386/picture?width=1920','27/02/2019','1','2','4','0123456789','13','<row tag_id="3" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="5" is_new="0" />','noxus','2044308139016386','EAADg1mzKYMIBAKWHrRsJ5RmWjHbD2ZAQv4OPVaaKFM0SfZC9u3igt8DYWzwXXLKpfdavH7xLw9lP2MOtZBCN8k3BXcxRRGHs835QLCc3OWAFdP9xUT0eWucoTQ8gUMq8KRhZBaZAycEx34bY8bJ94I9YDdsLBcqo58gmG1nogWiwIwqwZANZBpj','::1';
+2019-02-27 14:59:32 EXEC SPC_COMMON_ACCOUNT '12','1';
+2019-02-27 14:59:39 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 14:59:39 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 14:59:39 EXEC SPC_COM_MENU '0';
+2019-02-27 15:00:19 EXEC SPC_COM_DATA '','','';
+2019-02-27 15:00:21 EXEC SPC_COM_DATA '','','';
+2019-02-27 15:00:22 EXEC SPC_COM_DATA '','','';
+2019-02-27 15:00:22 EXEC SPC_COMMON_ACCOUNT '12','1';
+2019-02-27 15:00:23 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 15:00:23 EXEC SPC_COM_MENU '0';
+2019-02-27 17:22:08 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:22:08 EXEC SPC_COM_MENU '0';
+2019-02-27 17:22:21 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:22:21 EXEC SPC_COM_MENU '0';
+2019-02-27 17:22:47 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:47 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:22:48 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:48 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:22:53 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:53 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:22:54 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:54 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:22:58 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:58 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:22:58 EXEC SPC_COM_MENU '1';
+2019-02-27 17:22:58 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:23:03 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:03 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:23:04 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:04 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:23:07 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:07 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:23:07 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:07 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:23:13 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:13 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:23:14 EXEC SPC_COM_MENU '1';
+2019-02-27 17:23:14 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:24:22 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:22 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:24:23 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:23 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:24:27 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:27 EXEC SPC_S001_FND2 '2';
+2019-02-27 17:24:32 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:32 EXEC SPC_S002_LST1 '','1','2','5','10','1';
+2019-02-27 17:24:50 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:50 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:24:51 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:51 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:24:53 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:53 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:24:53 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:53 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:24:57 EXEC SPC_COM_MENU '1';
+2019-02-27 17:24:57 EXEC SPC_S001_FND2 '2';
+2019-02-27 17:25:17 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:17 EXEC SPC_COM_M999_INQ1 '2';
+2019-02-27 17:25:18 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:18 EXEC SPC_P002_LST1 '','','','0','50';
+2019-02-27 17:25:43 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-02-27 17:25:43 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:43 EXEC SPC_V002_FND1
+2019-02-27 17:25:43 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-02-27 17:25:43 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:43 EXEC SPC_V002_FND1
+2019-02-27 17:25:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-02-27 17:25:49 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:49 EXEC SPC_W002_FND1
+2019-02-27 17:25:53 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:53 EXEC SPC_W002_LST2 '1';
+2019-02-27 17:25:55 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:55 EXEC SPC_W002_LST2 '2';
+2019-02-27 17:25:58 EXEC SPC_COM_MENU '1';
+2019-02-27 17:25:58 EXEC SPC_W002_LST2 '3';
+2019-02-27 17:26:00 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:00 EXEC SPC_W002_LST2 '4';
+2019-02-27 17:26:02 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:02 EXEC SPC_W002_LST2 '5';
+2019-02-27 17:26:04 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:04 EXEC SPC_COM_M999_INQ1 '8';
+2019-02-27 17:26:04 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:04 EXEC SPC_p003_LST2 '';
+2019-02-27 17:26:06 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:06 EXEC SPC_p003_LST1 '0','','','','50','1';
+2019-02-27 17:26:11 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:11 EXEC SPC_p003_LST3 '<row vocabulary_code="2" /><row vocabulary_code="3" /><row vocabulary_code="4" /><row vocabulary_code="5" />';
+2019-02-27 17:26:17 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:17 EXEC SPC_COM_M999_INQ1 '8';
+2019-02-27 17:26:17 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:17 EXEC SPC_p003_LST2 '';
+2019-02-27 17:26:45 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:45 EXEC SPC_p003_LST1 '0','','','','50','1';
+2019-02-27 17:26:49 EXEC SPC_COM_MENU '1';
+2019-02-27 17:26:49 EXEC SPC_p003_LST3 '<row vocabulary_code="5" /><row vocabulary_code="6" /><row vocabulary_code="7" /><row vocabulary_code="8" />';
+2019-02-27 17:27:03 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:03 EXEC SPC_W002_LST2 '5';
+2019-02-27 17:27:05 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:05 EXEC SPC_COM_M999_INQ1 '8';
+2019-02-27 17:27:06 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:06 EXEC SPC_p003_LST2 '';
+2019-02-27 17:27:11 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:11 EXEC SPC_COM_M999_INQ1 '8';
+2019-02-27 17:27:12 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:12 EXEC SPC_p003_LST2 '';
+2019-02-27 17:27:30 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:27:30 EXEC SPC_VOCABULARY_LST1 '','weed','','';
+2019-02-27 17:27:31 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:27:31 EXEC SPC_VOCABULARY_LST2 '2','1','weed';
+2019-02-27 17:27:34 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-02-27 17:27:34 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:34 EXEC SPC_COM_M999_INQ1 '7';
+2019-02-27 17:27:36 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:36 EXEC SPC_w001_LST1 '','','','','10','1';
+2019-02-27 17:27:47 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:47 EXEC SPC_COMMON_CATALORUE '1';
+2019-02-27 17:27:48 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:48 EXEC SPC_w001_LST1 '1','','','','10','1';
+2019-02-27 17:27:51 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-02-27 17:27:51 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:51 EXEC SPC_W002_FND1
+2019-02-27 17:27:51 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:51 EXEC SPC_W002_LST1 '2048';
+2019-02-27 17:27:52 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:52 EXEC SPC_W002_LST2 '1';
+2019-02-27 17:27:52 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:52 EXEC SPC_COMMON_GROUP '2';
+2019-02-27 17:27:55 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:55 EXEC SPC_COM_M999_INQ1 '8';
+2019-02-27 17:27:56 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:56 EXEC SPC_p003_LST2 '<row vocabulary_code="3" vocabulary_id="2" vocabulary_div="Danh từ" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" /><row vocabulary_code="8" vocabulary_id="7" vocabulary_div="Danh từ" vocabulary_nm="data" spelling="deta" mean="Dữ liệu" explain="dữ lieu nhiều voãi ra" /><row vocabulary_code="4" vocabulary_id="3" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" />';
+2019-02-27 17:27:58 EXEC SPC_COM_MENU '1';
+2019-02-27 17:27:58 EXEC SPC_p003_LST1 '0','','','<row vocabulary_code="3" /><row vocabulary_code="8" /><row vocabulary_code="4" />','50','1';
+2019-02-27 17:28:04 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:04 EXEC SPC_p003_LST3 '<row vocabulary_code="3" /><row vocabulary_code="8" /><row vocabulary_code="4" /><row vocabulary_code="9" /><row vocabulary_code="2" />';
+2019-02-27 17:28:08 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:08 EXEC SPC_w002_ACT1 '2048','1','2','1','','','','','','0','<row row_id="0" vocabulary_code="3" vocabulary_div="Danh từ" vocabulary_nm="kingdom" spelling="kingdum" mean="vương quốc" explain="the way to call a country in history" /><row row_id="1" vocabulary_code="8" vocabulary_div="Danh từ" vocabulary_nm="data" spelling="deta" mean="Dữ liệu" explain="dữ lieu nhiều voãi ra" /><row row_id="2" vocabulary_code="4" vocabulary_div="Trạng từ" vocabulary_nm="goal" spelling="ɡəul" mean="vào" explain="when the bool into the lưới" /><row row_id="3" vocabulary_code="9" vocabulary_div="Danh từ" vocabulary_nm="no image" spelling="ˈvæl.jə.bəl" mean="demacia" explain="" /><row row_id="4" vocabulary_code="2" vocabulary_div="Tính từ" vocabulary_nm="king" spelling="king" mean="vua" explain="someone who leader of a country" />','','','ndq809','::1';
+2019-02-27 17:28:10 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:10 EXEC SPC_W002_LST1 '2048';
+2019-02-27 17:28:10 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:10 EXEC SPC_W002_LST2 '1';
+2019-02-27 17:28:10 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:10 EXEC SPC_COMMON_GROUP '2';
+2019-02-27 17:28:11 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:28:11 EXEC SPC_VOCABULARY_LST1 '3','weed','2','1';
+2019-02-27 17:28:12 EXEC SPC_COM_DATA 'weed','0','1';
+2019-02-27 17:28:12 EXEC SPC_VOCABULARY_LST2 '2','1','weed';
+2019-02-27 17:28:34 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-02-27 17:28:34 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:34 EXEC SPC_S001_FND1
+2019-02-27 17:28:37 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:37 EXEC SPC_S001_FND2 '1';
+2019-02-27 17:28:39 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:39 EXEC SPC_S001_LST2 '1';
+2019-02-27 17:28:56 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:56 EXEC SPC_S001_LST2 '2';
+2019-02-27 17:28:59 EXEC SPC_COM_MENU '1';
+2019-02-27 17:28:59 EXEC SPC_S001_LST2 '1';
+2019-02-27 17:29:11 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:29:11 EXEC SPC_VOCABULARY_LST1 '3','','','';
+2019-02-27 17:29:12 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:29:12 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2019-02-27 17:29:28 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:29:28 EXEC SPC_VOCABULARY_LST1 '3','','2','1';
+2019-02-27 17:29:28 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:29:28 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2019-02-27 17:30:13 EXEC SPC_COMMON_ACCOUNT '1','1';
+2019-02-27 17:30:13 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:30:13 EXEC SPC_VOCABULARY_LST1 '3','quypro','2','1';
+2019-02-27 17:30:14 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:30:14 EXEC SPC_VOCABULARY_LST2 '2','1','quypro';
+2019-02-27 17:30:22 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:30:22 EXEC SPC_COM_REMEMBER '1','2','3','4','quypro','::1';
+2019-02-27 17:30:28 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:30:28 EXEC SPC_VOCABULARY_LST1 '3','','','';
+2019-02-27 17:30:28 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:30:28 EXEC SPC_VOCABULARY_LST2 '2','1','';
+2019-02-27 17:31:32 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:31:32 EXEC SPC_GRAMMAR_LST1 '','','2','1';
+2019-02-27 17:31:33 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:31:33 EXEC SPC_GRAMMAR_LST2 '6','7','';
+2019-02-27 17:31:39 EXEC SPC_COMMON_ACCOUNT '1','1';
+2019-02-27 17:31:39 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:39 EXEC SPC_GRAMMAR_LST1 '2','quypro','6','7';
+2019-02-27 17:31:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:40 EXEC SPC_GRAMMAR_LST2 '6','7','quypro';
+2019-02-27 17:31:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:50 EXEC SPC_LISTENING_LST1 '','quypro','6','7';
+2019-02-27 17:31:50 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:50 EXEC SPC_LISTENING_LST2 '8','8','quypro';
+2019-02-27 17:31:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:52 EXEC SPC_WRITING_LST1 '','quypro','8','8';
+2019-02-27 17:31:52 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:52 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-27 17:31:53 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:31:53 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-02-27 17:32:13 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:13 EXEC SPC_S001_ACT1 '1','1','<row screen_id="btn-add-lesson" remark="" access_per="1" /><row screen_id="btn-question" remark="" access_per="1" /><row screen_id="btn-remember" remark="" access_per="1" /><row screen_id="btn-forget" remark="" access_per="1" /><row screen_id="btn-contribute-exa" remark="" access_per="1" /><row screen_id="btn-effect" remark="" access_per="1" /><row screen_id="btn-comment" remark="" access_per="1" /><row screen_id="btn-feedback" remark="" access_per="1" /><row screen_id="btn-save-post" remark="" access_per="1" /><row screen_id="btn-share-post" remark="" access_per="1" /><row screen_id="btn-add-exercise" remark="" access_per="1" /><row screen_id="btn-add-mission" remark="" access_per="1" /><row screen_id="btn-like" remark="" access_per="1" /><row screen_id="btn-check-answer" remark="" access_per="1" /><row screen_id="btn-vote" remark="" access_per="1" /><row screen_id="btn-cmt-vote" remark="" access_per="1" /><row screen_id="btn-vote-question" remark="" access_per="1" />','ndq809','::1';
+2019-02-27 17:32:15 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-02-27 17:32:15 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:15 EXEC SPC_S001_FND1
+2019-02-27 17:32:18 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:18 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2019-02-27 17:32:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:19 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-27 17:32:19 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:19 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-02-27 17:32:30 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:30 EXEC SPC_S001_FND2 '1';
+2019-02-27 17:32:32 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:32 EXEC SPC_S001_LST2 '1';
+2019-02-27 17:32:38 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:38 EXEC SPC_S001_ACT1 '1','1','<row screen_id="btn-add-lesson" remark="" access_per="1" /><row screen_id="btn-answer" remark="" access_per="1" /><row screen_id="btn-question" remark="" access_per="1" /><row screen_id="btn-remember" remark="" access_per="1" /><row screen_id="btn-forget" remark="" access_per="1" /><row screen_id="btn-contribute-exa" remark="" access_per="1" /><row screen_id="btn-effect" remark="" access_per="1" /><row screen_id="btn-comment" remark="" access_per="1" /><row screen_id="btn-feedback" remark="" access_per="1" /><row screen_id="btn-save-post" remark="" access_per="1" /><row screen_id="btn-share-post" remark="" access_per="1" /><row screen_id="btn-add-exercise" remark="" access_per="1" /><row screen_id="btn-add-mission" remark="" access_per="1" /><row screen_id="btn-like" remark="" access_per="1" /><row screen_id="btn-check-answer" remark="" access_per="1" /><row screen_id="btn-vote" remark="" access_per="1" /><row screen_id="btn-cmt-vote" remark="" access_per="1" /><row screen_id="btn-vote-question" remark="" access_per="1" />','ndq809','::1';
+2019-02-27 17:32:39 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-02-27 17:32:39 EXEC SPC_COM_MENU '1';
+2019-02-27 17:32:39 EXEC SPC_S001_FND1
+2019-02-27 17:32:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:41 EXEC SPC_WRITING_LST1 '7','quypro','9','10';
+2019-02-27 17:32:41 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:41 EXEC SPC_COMMON_GET_SUGGEST
+2019-02-27 17:32:42 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:32:42 EXEC SPC_WRITING_LST2 '9','10','quypro';
+2019-02-27 17:34:40 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:34:40 EXEC SPC_COM_MENU '1';
+2019-02-27 17:38:48 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:38:48 EXEC SPC_COM_MENU '1';
+2019-02-27 17:39:20 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:39:20 EXEC SPC_COM_MENU '1';
+2019-02-27 17:39:20 EXEC SPC_PROFILE_LST1
+2019-02-27 17:39:20 SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]ストアド プロシージャ 'SPC_PROFILE_LST1' が見つかりませんでした。
+2019-02-27 17:39:37 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:39:37 EXEC SPC_COM_MENU '1';
+2019-02-27 17:39:37 EXEC SPC_PROFILE_LST1
+2019-02-27 17:40:12 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:40:12 EXEC SPC_COM_MENU '1';
+2019-02-27 17:40:12 EXEC SPC_PROFILE_LST1
+2019-02-27 17:44:28 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:44:28 EXEC SPC_COM_MENU '1';
+2019-02-27 17:44:28 EXEC SPC_PROFILE_LST1
+2019-02-27 17:45:34 EXEC SPC_COM_DATA 'quypro','1','1';
+2019-02-27 17:45:34 EXEC SPC_COM_MENU '1';
+2019-02-27 17:45:34 EXEC SPC_PROFILE_LST1
+2019-02-27 17:49:20 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:49:20 EXEC SPC_PROFILE_LST1
+2019-02-27 17:49:23 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:49:24 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:49:25 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:49:25 EXEC SPC_REGISTER_LST1
+2019-02-27 17:49:58 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:26 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:30 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:30 EXEC SPC_REGISTER_LST1
+2019-02-27 17:50:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:39 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:50:39 EXEC SPC_REGISTER_LST1
+2019-02-27 17:51:07 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:51:10 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:52:15 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:52:15 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','$2y$10$qQby2FNrRbjk8gd3yXheQOmDclL/wZwZfCkSKW4NxUeGUA.JdIyAO','kirito@yahoo.com','/web-content/images/vocabulary/croped_5c764f7b4a316.jpg','27/02/2019','1','3','4','0123456789','14','<row tag_id="3" is_new="0" /><row tag_id="1" is_new="0" /><row tag_id="5" is_new="0" />','lalala demacia','','','::1';
+2019-02-27 17:52:15 EXEC SPC_COMMON_ACCOUNT '13','1';
+2019-02-27 17:52:20 EXEC SPC_COM_DATA 'kirito','0','1';
+2019-02-27 17:52:21 EXEC SPC_COM_DATA 'kirito','0','1';
+2019-02-27 17:52:21 EXEC SPC_COM_MENU '0';
+2019-02-27 17:54:38 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:54:52 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:54:52 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:54:53 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:54:53 EXEC SPC_REGISTER_LST1
+2019-02-27 17:55:17 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:55:41 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:55:41 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','$2y$10$EeMuy.7Zh30pFEddIWQBp.9drkSpIKLMf/e8hgUEeP3q9AcouH5.6','kirito@yahoo.com','/web-content/images/vocabulary/croped_5c7650755c296.jpg','27/02/2019','1','3','4','0123456789','21','<row tag_id="3" is_new="0" /><row tag_id="1" is_new="0" /><row tag_id="5" is_new="0" />','lalala demacia','2044308139016386','EAADg1mzKYMIBAO03RkDIReYTnr4tJbBD0GpLVp4EnEZAPGFnBe92EFZBZArOCkqoGZAwS6KiO7tSgvVW28CERn0DM2BkdIerGNxIImMUwxZCSIEuV1dV6HpK7fgQEFVUUZC545tzktZBnfCH6Lq7OCHceG6ZBMuN0ltWI4juTri6tLFiIZBlUcQ4S','::1';
+2019-02-27 17:55:51 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:55:51 EXEC SPC_REGISTER_ACT1 'Quy','Nguyen','kirito','$2y$10$BZhcR.YY4ED9uzpNhyQQ8e8PiAjkmPIZdEro2P4/wENv.lW9gTSeW','kirito1@yahoo.com','/web-content/images/vocabulary/croped_5c7650755c296.jpg','27/02/2019','1','3','4','0123456789','21','<row tag_id="3" is_new="0" /><row tag_id="1" is_new="0" /><row tag_id="5" is_new="0" />','lalala demacia','2044308139016386','EAADg1mzKYMIBAO03RkDIReYTnr4tJbBD0GpLVp4EnEZAPGFnBe92EFZBZArOCkqoGZAwS6KiO7tSgvVW28CERn0DM2BkdIerGNxIImMUwxZCSIEuV1dV6HpK7fgQEFVUUZC545tzktZBnfCH6Lq7OCHceG6ZBMuN0ltWI4juTri6tLFiIZBlUcQ4S','::1';
+2019-02-27 17:55:51 EXEC SPC_COMMON_ACCOUNT '14','1';
+2019-02-27 17:55:53 EXEC SPC_COM_DATA 'kirito','0','1';
+2019-02-27 17:55:53 EXEC SPC_COM_DATA 'kirito','0','1';
+2019-02-27 17:55:53 EXEC SPC_COM_MENU '0';
+2019-02-27 17:55:57 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:56:00 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:56:00 EXEC SPC_COM_DATA '','','';
+2019-02-27 17:56:01 EXEC SPC_COMMON_ACCOUNT '14','1';
+2019-02-27 17:56:01 EXEC SPC_COM_DATA 'kirito','0','1';
+2019-02-27 17:56:01 EXEC SPC_COM_MENU '0';
+2019-02-27 17:56:05 EXEC SPC_COM_DATA '','','';

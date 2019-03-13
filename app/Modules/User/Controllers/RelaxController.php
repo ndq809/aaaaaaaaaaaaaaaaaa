@@ -8,7 +8,6 @@ use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
 use SQLXML;
-use Common;
 
 class RelaxController extends ControllerUser
 {
@@ -29,7 +28,7 @@ class RelaxController extends ControllerUser
     {
         $param            = $request->all();
         $param['v']       = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data             = Dao::call_stored_procedure('SPC_RELAX_LST1', $param);
         $data             = CommonUser::encodeID($data);
         if(!isset($request->all()['v'])||$data[2][0]['target_id']!=''){
@@ -50,7 +49,7 @@ class RelaxController extends ControllerUser
         }
         $xml              = new SQLXML();
         $param['post_tag'] = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
-        $param['user_id']  = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id']  = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data              = Dao::call_stored_procedure('SPC_RELAX_LST2', $param);
         $data              = CommonUser::encodeID($data);
         $view1             = view('User::Relax.right_tab')->with('data', $data[2])->with('is_end', $data[7])->render();
@@ -75,7 +74,7 @@ class RelaxController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_RELAX_ACT1', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -102,7 +101,7 @@ class RelaxController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_RELAX_ACT2', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -177,9 +176,9 @@ class RelaxController extends ControllerUser
         }
         $param['post_media_nm'] = $name;
         $param['post_media_div'] = $media_div;
-        $param['user_id']    = Auth::user()->account_nm;
+        $param['user_id']    = Auth::user()->account_id;
         $param['ip']         = $request->ip();
-        if (common::checkValidate($param)['result']) {
+        if (CommonUser::checkValidate($param)['result']) {
             $data             = Dao::call_stored_procedure('SPC_RELAX_ACT3', $param);
             $data             = CommonUser::encodeID($data);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -200,7 +199,7 @@ class RelaxController extends ControllerUser
                 );
             }
         } else {
-           $result = array('error'    => common::checkValidate($param)['error'],
+           $result = array('error'    => CommonUser::checkValidate($param)['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }

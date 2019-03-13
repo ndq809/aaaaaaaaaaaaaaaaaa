@@ -26,7 +26,7 @@ class m004Controller extends Controller
     public function m004_addnew(Request $request)
     {
         $param = $request->all();
-        $param['user_id']=Auth::user()->account_nm;
+        $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         // var_dump($param);die;
         if (common::checkValidate($request->all())['result']) {
@@ -61,7 +61,7 @@ class m004Controller extends Controller
         $data        = $request->all();
         $xml         = new SQLXML();
         $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_nm;
+        $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_M004_ACT2", $param);
         if($result_query[0][0]['Id']==''){

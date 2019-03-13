@@ -84,7 +84,7 @@ class w002Controller extends Controller
             $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_data']));
             $param['xml_detail1'] = $xml->xml((array) json_decode($data['detail_body_data']));
             $param['xml_detail2'] = $xml->xml((array) json_decode($data['pra_body_data']));
-            $param['user_id']    = Auth::user()->account_nm;
+            $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();
             // var_dump($param);die;
             $data = Dao::call_stored_procedure('SPC_w002_ACT1', $param);
@@ -118,7 +118,7 @@ class w002Controller extends Controller
     public function w002_delete(Request $request)
     {
         $param             = $request->all();
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $result_query     = DAO::call_stored_procedure("SPC_w002_ACT2", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {

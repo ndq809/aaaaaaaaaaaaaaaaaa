@@ -28,7 +28,7 @@ class DiscussController extends ControllerUser
     {
         $param            = $request->all();
         $param['v']       = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data             = Dao::call_stored_procedure('SPC_DISCUSS_LST1', $param);
         $data             = CommonUser::encodeID($data);
         if(!isset($request->all()['v'])||$data[2][0]['target_id']!=''){
@@ -49,7 +49,7 @@ class DiscussController extends ControllerUser
         }
         $xml               = new SQLXML();
         $param['post_tag'] = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
-        $param['user_id']  = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id']  = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data              = Dao::call_stored_procedure('SPC_DISCUSS_LST2', $param);
         $data   = CommonUser::encodeID($data);
         $view1  = view('User::Discuss.right_tab')->with('data', $data[2])->with('is_end', $data[7])->render();
@@ -74,7 +74,7 @@ class DiscussController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_DISCUSS_ACT1', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -101,7 +101,7 @@ class DiscussController extends ControllerUser
     {
         $param            = $request->all();
         $param[0]         = $param[0] != '' ? $this->hashids->decode($param[0])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_DISCUSS_ACT3', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -128,7 +128,7 @@ class DiscussController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_DISCUSS_ACT2', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {

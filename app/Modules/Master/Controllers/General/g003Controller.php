@@ -36,7 +36,7 @@ class g003Controller extends Controller
         $data        = $request->all();
         $xml         = new SQLXML();
         $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_nm;
+        $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_G003_ACT2", $param);
         if($result_query[0][0]['Id']==''){
@@ -59,7 +59,7 @@ class g003Controller extends Controller
         $data        = $request->all();
         $xml         = new SQLXML();
         $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_nm;
+        $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_G003_ACT1", $param);
         if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){

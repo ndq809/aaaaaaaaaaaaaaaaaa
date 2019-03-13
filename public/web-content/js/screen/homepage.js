@@ -11,6 +11,9 @@ $(function(){
 function initHomepage(){
 	initListener();
 	meniItemController();
+	if($('#show_login').val()==1){
+		$('.btn-popup[popup-id=popup-box0]').trigger('click');
+	}
 }
 
 function initListener(){

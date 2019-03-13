@@ -22,7 +22,7 @@ BEGIN
 	,	@pageMax			INT					=	0
 
 	SELECT 
-		M999.number_id  AS lib_id
+		M999.number_id  AS lib_cd
 	,	M999.content	AS lib_nm 
 	FROM M999
 	WHERE
@@ -30,7 +30,7 @@ BEGIN
 	AND M999.del_flg = 0
 
 	SELECT 
-		M999.number_id  AS lib_id
+		M999.number_id  AS lib_cd
 	,	M999.content	AS lib_nm 
 	FROM M999
 	WHERE
@@ -38,11 +38,27 @@ BEGIN
 	AND M999.del_flg = 0
 
 	SELECT 
-		M999.number_id  AS lib_id
+		M999.number_id  AS lib_cd
 	,	M999.content	AS lib_nm 
 	FROM M999
 	WHERE
 		M999.name_div = 16
+	AND M999.del_flg = 0
+
+	SELECT 
+		M999.number_id  AS lib_cd
+	,	M999.content	AS lib_nm 
+	FROM M999
+	WHERE
+		M999.name_div = 18
+	AND M999.del_flg = 0
+
+	SELECT 
+		M999.number_id  AS lib_cd
+	,	M999.content	AS lib_nm 
+	FROM M999
+	WHERE
+		M999.name_div = 17
 	AND M999.del_flg = 0
 END
 

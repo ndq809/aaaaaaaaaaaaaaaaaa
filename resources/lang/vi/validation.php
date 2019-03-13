@@ -32,7 +32,7 @@ return [
     'confirmed' => 'Giá trị xác nhận trong trường này không khớp.',
     'date' => 'Trường này không phải là định dạng của ngày-tháng.',
     'date_format' => 'Trường này không giống với định dạng :format.',
-    'different' => 'Trường này phải có giá trị khác :other',
+    'different' => 'Trường này phải có giá trị khác trường cần tạo mới',
     'digits' => 'Độ dài của trường này phải gồm :digits chữ số.',
     'digits_between' => 'Độ dài của trường này phải nằm trong khoảng :min and :max chữ số.',
     'dimensions' => 'Trường này có kích thước không hợp lệ.',
@@ -75,7 +75,7 @@ return [
     'required_with_all' => 'Trường này không được bỏ trống khi tất cả :values có giá trị.',
     'required_without' => 'Trường này không được bỏ trống khi một trong :values không có giá trị.',
     'required_without_all' => 'Trường này không được bỏ trống khi tất cả :values không có giá trị.',
-    'same' => 'Trường này và :other phải giống nhau.',
+    'same' => 'Trường này và trường cần xác nhận đang không giống nhau',
     'size' => [
         'numeric' => 'Trường này phải bằng :size.',
         'file' => 'Dung lượng tập tin trong trường này phải bằng :size kB.',

@@ -7,3 +7,6 @@
 .web-main{
 	border-right: 1px solid #ccc;
 }
+#post_tag{
+	display: none;
+}

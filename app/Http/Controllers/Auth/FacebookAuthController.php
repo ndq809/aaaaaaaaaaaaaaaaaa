@@ -14,7 +14,6 @@ class FacebookAuthController extends ControllerUser
 {
     public function redirectToProvider()
     {
-    	// var_dump(1);die;
         return Socialite::driver('facebook')->redirect();
     }
  
@@ -33,14 +32,14 @@ class FacebookAuthController extends ControllerUser
             $year = time() + 31536000;
             $data   = Dao::call_stored_procedure('SPC_COMMON_ACCOUNT', array($authUser->user_id,$authUser->system_div));
             Session::put('logined_data',$data[0]);
+            Session::put('social_token',$authUser->token);
             Auth::login($authUser, true);
             $authUser->session_id = \Session::getId();
             $authUser->save();
             return redirect(url()->previous());
         }else{
-            return redirect()->action(
-                '\App\Modules\User\Controllers\RegisterController@getIndex', ['default_data' => $authUser]
-            );
+            Session::put('accepted_data',$authUser);
+            return redirect()->route('register');
         }
     }
  
@@ -52,5 +51,18 @@ class FacebookAuthController extends ControllerUser
         }
  
         return $facebookUser;
+    }
+
+    public function publishToProfile(Request $request){
+        try {
+            $response = $this->api->post('/me/feed', [
+                'message' => $request->message
+            ])->getGraphNode()->asArray();
+            if($response['id']){
+               // post created
+            }
+        } catch (FacebookSDKException $e) {
+            dd($e); // handle exception
+        }
     }
 }

@@ -78,7 +78,7 @@ BEGIN
 		AND #CHECK_MASTER.item_id = CAST(M999_2.number_id AS NVARCHAR(15))
 		AND M999_2.del_flg = 0
 		WHERE (M999_1.number_id IS NOT NULL AND #CHECK_MASTER.item_div = 'system_div')
-		OR (M009.employee_id IS NOT NULL AND #CHECK_MASTER.item_div = 'employee_id')
+		OR (#CHECK_MASTER.item_id='' OR M009.employee_id IS NOT NULL AND #CHECK_MASTER.item_div = 'employee_id')
 		OR (M999_2.number_id IS NOT NULL AND #CHECK_MASTER.item_div = 'account_div')
 
 		IF EXISTS (SELECT * FROM #CHECK_MASTER)
@@ -126,7 +126,7 @@ BEGIN
 		--
 		UPDATE S001 SET
 			account_nm   		=	update_data.account_nm   
-		,	user_id  			=	update_data.employee_id  
+		,	user_id  			=	IIF(update_data.employee_id='',user_id,update_data.employee_id)
 		,	system_div   		=	update_data.system_div   
 		,	account_div  		=	update_data.account_div  
 		,	remark				=	update_data.remark			

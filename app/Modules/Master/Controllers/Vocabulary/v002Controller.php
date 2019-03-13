@@ -49,7 +49,7 @@ class v002Controller extends Controller
            }
             $param['post_audio'] = $media;
             $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_body_data']));
-            $param['user_id']    = Auth::user()->account_nm;
+            $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();
 
             $data = Dao::call_stored_procedure('SPC_V002_ACT1', $param);
@@ -107,7 +107,7 @@ class v002Controller extends Controller
            }
             $param['post_audio'] = $media;
             $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_body_data']));
-            $param['user_id']    = Auth::user()->account_nm;
+            $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();
 
             $data = Dao::call_stored_procedure('SPC_V002_ACT3', $param);
@@ -141,7 +141,7 @@ class v002Controller extends Controller
     public function v002_delete(Request $request)
     {
         $param             = $request->all();
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $result_query     = DAO::call_stored_procedure("SPC_V002_ACT2", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {

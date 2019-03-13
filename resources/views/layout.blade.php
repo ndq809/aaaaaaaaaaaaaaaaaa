@@ -52,6 +52,8 @@
         <input type="hidden" name="" id="target-id" value="{{isset($data_default[2][0]['target_id'])?$data_default[2][0]['target_id']:''}}">
         <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
+        <input type="hidden" name="" id="show_login" value="{{session('show_login')!==null?session('show_login'):''}}">
+        @php(Session::forget('show_login'))
         <div class="my-progress"></div>
         <div class="body-content">
             <div class="col-xs-12 web-panel header-content">
@@ -159,6 +161,11 @@
                                 <li>
                                     <a class="btn-popup" popup-id="popup-box4">
                                         Nhiệm Vụ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="post-face">
+                                        Post face
                                     </a>
                                 </li>
                             </ul>

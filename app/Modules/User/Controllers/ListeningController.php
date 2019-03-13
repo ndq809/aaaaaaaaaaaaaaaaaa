@@ -26,7 +26,7 @@ class ListeningController extends ControllerUser
     {
         $param                 = $request->all();
         $param['v']            = isset($param['v'])&&isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
-        $param['user_id']      = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id']      = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['catalogue_id'] = $request->session()->get('catalogue_id');
         $param['group_id']     = $request->session()->get('group_id');
         $data                  = Dao::call_stored_procedure('SPC_LISTENING_LST1', $param);
@@ -43,7 +43,7 @@ class ListeningController extends ControllerUser
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
         $param[1]         = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data   = Dao::call_stored_procedure('SPC_LISTENING_LST2', $param);
         $data   = CommonUser::encodeID($data);
         $view1  = view('User::listening.right_tab')->with('data', $data[2])->render();

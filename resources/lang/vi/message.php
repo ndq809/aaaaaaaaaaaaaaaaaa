@@ -92,5 +92,30 @@ return [
             'message_title' => 'Xem Ngay',
             'message_content' => 'Thêm câu hỏi thành công! Bạn có muốn hiển thị ngay bây giờ?',
         ],
+        19 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Đăng Ký',
+            'message_content' => 'Tài khoản này đã tồn tại',
+        ],
+        20 => [
+            'message_div' => 2,
+            'message_title' => 'Đăng Ký Thành Công',
+            'message_content' => 'Tài khoản của bạn đã được đăng ký thành công và sẽ được tự động đăng nhập vào hệ thống!',
+        ],
+        21 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Đăng Ký',
+            'message_content' => 'Email này đã tồn tại',
+        ],
+        22 => [
+            'message_div' => 2,
+            'message_title' => 'Cập Nhật Thành Công',
+            'message_content' => 'Thông tin của bạn đã được cập nhật',
+        ],
+        23 => [
+            'message_div' => 2,
+            'message_title' => 'Cập Nhật Thành Công',
+            'message_content' => 'Mật khẩu của bạn đã được đổi',
+        ],
     ],
 ];

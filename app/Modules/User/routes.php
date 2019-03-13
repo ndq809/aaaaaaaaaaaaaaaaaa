@@ -13,7 +13,7 @@ Route::group(
 	['namespace' => $namespace,'prefix'=>'','middleware'=>['web','CheckMultiAccess']],
 	function() {
 		Route::get('contribute','ContributeController@getIndex');	
-		Route::get('','HomePageController@getIndex');
+		Route::get('','HomePageController@getIndex')->name('home');
 		Route::get('vocabulary','VocabularyController@getIndex');
 		Route::any('vocabulary/getData','VocabularyController@getData');
 		Route::any('dictionary/getAutocomplete','DictionaryController@getAutocomplete');
@@ -48,8 +48,11 @@ Route::group(
 		Route::any('translation/autoTranslate','TranslationController@autoTranslate');
 		Route::any('translation/save','TranslationController@save');
 		Route::any('translation/delete','TranslationController@delete');
-		Route::get('register','RegisterController@getIndex');
+		Route::any('register','RegisterController@getIndex')->name('register');
+		Route::any('register/create','RegisterController@create');
 		Route::get('profile','ProfileController@getIndex');
+		Route::any('profile/updateinfor','ProfileController@updateInfor');
+		Route::any('profile/updatepass','ProfileController@updatePass');
 		
 	}
 );

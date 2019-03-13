@@ -62,7 +62,7 @@ class s001Controller extends Controller
             $param['system_div'] = $request->only('system_div')['system_div'];
             $param['account_div'] = $request->only('account_div')['account_div'];
             $param['xml']         = $xml->xml(isset($permission['data'])?$permission['data']:array());
-            $param['user_id']     = Auth::user()->account_nm;
+            $param['user_id']     = Auth::user()->account_id;
             $param['ip']          = $request->ip();
             $data = Dao::call_stored_procedure('SPC_S001_ACT1',$param);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {

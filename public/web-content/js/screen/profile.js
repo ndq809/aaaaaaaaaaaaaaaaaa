@@ -11,6 +11,16 @@ $(function(){
 function initProfile(){
 	initListener();
 	initImageUpload();
+	$('#imageContainer').attr('style', 'background-image: url("' + $('#avatar').val() +'")');
+    $('#imageContainer').css('opacity','1');
+    $("select.custom-selectize").each(function() {
+        var select = $(this).selectize({
+            delimiter: ',',
+            persist: false,
+            create: false,
+            plugins: ['restore_on_backspace','remove_button'],
+        });
+    });
 	var canvas_meter = $('#canvas_meter1');
 
 	canvas_meter.css({
@@ -187,42 +197,12 @@ function initProfile(){
 }
 
 function initListener(){
-	$(document).on("click","button",function(){
-		if($(this).attr("id")=='btn_next'){
-			nextProfile();
-		}
-		if($(this).attr("id")=='btn_prev'){
-			previousProfile();
-		}
-		if($(this).attr("type-btn")=='btn-remember'){
-			rememberProfile($(this));
-		}
-		if($(this).attr("type-btn")=='btn-forget'){
-			forgetProfile($(this));
-		}
-	});
+	$(document).on('click','#btn-update-infor',function(){
+        updateInfor();
+    })
 
-	$(document ).on("click",".focusable table tbody tr",function(){
-		selectProfile($(this));
-	});
-
-	$(document ).on("click",".right-tab ul li",function(){
-		switchTabVocabulary($(this));
-	});
-	$(window).resize(function(){
-		slidePositionController();
-	});
-	$(document).on('keydown',function(e){
-        switch(e.which){
-            case 37 :
-                previousProfile();
-                break;
-            case 39 :
-                nextProfile();
-                break;
-            default:
-                break;
-        }
+    $(document).on('click','#btn-update-pass',function(){
+        updatePass();
     })
 }
 
@@ -232,19 +212,115 @@ function initImageUpload(){
         uploadUrl: '/common/upload-image',
         cropUrl: '/common/crop-image',
         rotateControls: false,
+        // loadPicture:$('#avatar').val()!='/web-content/images/avarta/default_avarta.jpg'?$('#avatar').val():false,
         cropData:{
             'width' : imageContainer.width(),
             'height': imageContainer.height()
         },
+        onBeforeImgCrop:function(){
+        	$('#imageContainer').LoadingOverlay("show");
+        },
+        onBeforeRemoveCroppedImg: function(){
+        	$('#imageContainer').LoadingOverlay("show");
+        },
         onAfterImgCrop:function(){
-            $('#avarta,#image').val($('#imageContainer .croppedImg').attr('src'));
+            $('#avatar,#image').val($('#imageContainer .croppedImg').attr('src'));
+            $('#imageContainer').LoadingOverlay("hide");
         },
         onAfterRemoveCroppedImg: function(){
-            $('#avarta,#image').val('');
+            $('#avatar,#image').val('/web-content/images/avarta/default_avarta.jpg');
+            $('#imageContainer').LoadingOverlay("hide");
         },
         onError: function(){
             showMessage(14);
         },
+        onAfterImgUpload: function(){
+        	$('#imageContainer').LoadingOverlay("hide");
+        	$('#imageContainer').css('opacity','1');
+        },
+        onBeforeImgUpload:function(){
+        	$('#imageContainer').LoadingOverlay("show");
+        },
+        onReset:function(){
+            $('#avatar,#image').val('/web-content/images/avarta/default_avarta.jpg');
+        }
     };
     cropperBox = new Croppic('imageContainer', croppedOptions);
+}
+
+function updateInfor(){
+    var data=getInputData('.infor');
+    $.ajax({
+        type: 'POST',
+        url: '/profile/updateinfor',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    showMessage(22,function(){
+                        location.reload();
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function updatePass(){
+    var data=getInputData('.pass');
+    $.ajax({
+        type: 'POST',
+        url: '/profile/updatepass',
+        dataType: 'json',
+        loading:true,
+        data: data,
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    showMessage(23,function(){
+                    	clearFailedValidate();
+                        $('.pass input').val('');
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }

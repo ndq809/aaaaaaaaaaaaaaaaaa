@@ -3,7 +3,6 @@ namespace App\Modules\User\Controllers;
 
 use App\Http\Controllers\ControllerUser;
 use Auth;
-use Common;
 use CommonUser;
 use DAO;
 use Hashids\Hashids;
@@ -40,7 +39,7 @@ class TranslationController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = isset($param['post_id']) && isset($this->hashids->decode($param['post_id'])[0]) ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data             = Dao::call_stored_procedure('SPC_TRANSLATION_LST1', $param);
         $data             = CommonUser::encodeID($data);
         $view1            = view('User::translation.left_tab')->with('data_default', $data)->render();
@@ -96,9 +95,9 @@ class TranslationController extends ControllerUser
         $data1['vi_array']   = $xml->xml(isset($param['vi_array']) ? $param['vi_array'] : array());
         $data1['auto_array'] = $xml->xml(isset($param['auto_array']) ? $param['auto_array'] : array());
         $data1['save_mode']  = $param['save_mode'];
-        $data1['user_id']    = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $data1['user_id']    = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data1['ip']         = $request->ip();
-        if (common::checkValidate($data1)['result']) {
+        if (CommonUser::checkValidate($data1)['result']) {
             $data = Dao::call_stored_procedure('SPC_TRANSLATION_ACT1', $data1);
             if ($data[2][0]['Data'] == 'Exception' || $data[2][0]['Data'] == 'EXCEPTION') {
                 $result = array(
@@ -121,7 +120,7 @@ class TranslationController extends ControllerUser
                 );
             }
         } else {
-            $result = array('error' => common::checkValidate($data1)['error'],
+            $result = array('error' => CommonUser::checkValidate($data1)['error'],
                 'status'                => 201,
                 'statusText'            => 'validate failed');
         }
@@ -133,7 +132,7 @@ class TranslationController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_TRANSLATION_ACT2', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {

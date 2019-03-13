@@ -231,6 +231,10 @@ function initEvent() {
         e.preventDefault();
         window.location.href = $(this).attr("href");
     })
+
+    $(document).on('click', '#post-face', function(e) {
+        postFace();
+    })
     $(document).on('keydown', '#popup-box0 input', function(e) {
         if(e.which==13){
             $('#btn_login').trigger('click');
@@ -477,6 +481,29 @@ function getDataCommon(data_Array, excute_link) {
         },
         success: function(response) {
             $("#while-load").hide();
+            return response;
+        },
+        error: function(e) {
+            $("#while-load").hide();
+            return response;
+        },
+    });
+}
+
+function postFace(data_Array, excute_link) {
+    $.ajax({
+        type: "POST",
+        url: '/post-face',
+        dataType: "json",
+        data: {
+            message: 'Quy Nguyen'
+        },
+        beforeSend: function() {
+            $("#while-load").show();
+        },
+        success: function(response) {
+            $("#while-load").hide();
+            showMessage(2);
             return response;
         },
         error: function(e) {
@@ -1132,7 +1159,7 @@ function checkLogin(username){
                       $(this).addClass('input-error');
                       $(this).attr('data-toggle','tooltip');
                       $(this).attr('data-placement','bottom');
-                      $(this).attr('data-original-title','sai tên đăng nhập hoặc mật khẩu');
+                      $(this).attr('data-original-title','Sai tên đăng nhập,mật khẩu hoặc tài khoản đã bị xóa');
                     });
                     $('[data-toggle="tooltip"]').tooltip();
                     $('#account_nm,#password').first().focus();
@@ -1201,7 +1228,7 @@ function showFailedData(error_array){
         }
         target.addClass('input-error');
         target.attr('data-toggle','tooltip');
-        target.attr('data-placement','top');
+        target.attr('data-placement','bottom');
         target.attr('data-original-title',_text[error_array[i]['Code']]);
     }
     $('[data-toggle="tooltip"]').tooltip();
@@ -1392,6 +1419,9 @@ function getInputData(parent){
                             return {'tag_id':val,'is_new':0};
                         }
                     });
+                    if(value.length==0){
+                        value = '';
+                    }
                 }
                 if($(this).hasClass('input-refer')){
                     value=$(this).val().split('_')[0];

@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
 use Mail;
 use SQLXML;
-use Common;
-
+use Lang;
+use Validator;
 class CommonController extends ControllerUser
 {
     /**
@@ -34,7 +34,7 @@ class CommonController extends ControllerUser
         $param            = $request->all();
         $param[2]         = $this->hashids->decode($param[2])[0];
         if(Auth::user()!=null){
-            $param['user_id'] = Auth::user()->account_nm;
+            $param['user_id'] = Auth::user()->account_id;
         }else{
             $param['user_id'] = '';
         }
@@ -144,7 +144,7 @@ class CommonController extends ControllerUser
         $param            = $request->all();
         $param[1]         = $this->hashids->decode($param[1])[0];
         $param[2]         = $this->hashids->decode($param[2])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_ADD_LESSON', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -177,7 +177,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_DELETE_LESSON', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -205,7 +205,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[3]         = $this->hashids->decode($param[3])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_REMEMBER', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -233,7 +233,7 @@ class CommonController extends ControllerUser
     {
         $param    = $request->all();
         $param[1] = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $data     = Dao::call_stored_procedure('SPC_COM_FORGET', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
@@ -261,7 +261,7 @@ class CommonController extends ControllerUser
         $param            = $request->all();
         $param[1]         = $this->hashids->decode($param[1])[0];
         if(Auth::user()!=null){
-            $param['user_id'] = Auth::user()->account_nm;
+            $param['user_id'] = Auth::user()->account_id;
         }else{
             $param['user_id'] = '';
         }
@@ -282,7 +282,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[1]         = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_ADD_EXAM', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -308,7 +308,7 @@ class CommonController extends ControllerUser
     public function addQuestion(Request $request)
     {
         $param            = $request->all();
-        if (common::checkValidate($request->all())['result']) {
+        if ($this->checkValidate($request->all())['result']) {
             if (isset($param['tag'])) {
                 for ($i = 0; $i < count($param['tag']); $i++) {
                     if (isset($param['tag'][$i]['tag_id'])) {
@@ -319,7 +319,7 @@ class CommonController extends ControllerUser
             $xml              = new SQLXML();
             $param['id']         = $param['id']!=''?$this->hashids->decode($param['id'])[0]:'';
             $param['tag'] = $xml->xml(isset($param['tag'])?$param['tag']:array());
-            $param['user_id'] = Auth::user()->account_nm;
+            $param['user_id'] = Auth::user()->account_id;
             $param['ip']      = $request->ip();
             // var_dump($param);die;
             $data             = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
@@ -342,7 +342,7 @@ class CommonController extends ControllerUser
                 );
             }
         } else {
-           $result = array('error'    => common::checkValidate($request->all())['error'],
+           $result = array('error'    => $this->checkValidate($request->all())['error'],
                 'status'     => 201,
                 'statusText' => 'validate failed');
         }
@@ -353,7 +353,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[1]         = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_ADD_REPORT', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -381,7 +381,7 @@ class CommonController extends ControllerUser
         $param            = $request->all();
         $param[2]         = $this->hashids->decode($param[2])[0];
         $param[4]         = $param[4]!=''?$this->hashids->decode($param[4])[0]:'';
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $param['cmt_div'] = isset($param[5])?$param[5]:1;
         unset($param[5]);
@@ -413,7 +413,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_DELETE_POST', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -440,7 +440,7 @@ class CommonController extends ControllerUser
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
         $temp = isset($param[2])?$param[2]:0;
-        $param['user_id'] = isset(Auth::user()->account_nm) ? Auth::user()->account_nm : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         unset($param[2]);
         $data             = Dao::call_stored_procedure('SPC_COM_GET_MORE_COMMENT', $param);
         if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
@@ -471,7 +471,7 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[1]         = $this->hashids->decode($param[1])[0];
-        $param['user_id'] = Auth::user()->account_nm;
+        $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $data             = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
@@ -667,6 +667,22 @@ class CommonController extends ControllerUser
             }
         }
         return $data;
+    }
+
+    public static function checkValidate($data)
+    {
+        $rule=Lang::get('validateruleUser.rules');
+        foreach ($rule as $key => $value) {
+            if(!array_key_exists($key,$data)){
+                unset($rule[$key]);
+            }
+        }
+        $validator = Validator::make($data, $rule);
+        if (!$validator->passes()) {
+            return array('result' => false,'error'=>$validator->errors()->all());
+        } else {
+            return array('result' => true);
+        }
     }
 
 }

@@ -25,6 +25,12 @@ Route::post('keep-token-alive', function() {
 });
 Route::get('auth/facebook', 'Auth\FacebookAuthController@redirectToProvider')->name('facebook.login') ;
 Route::get('auth/facebook/callback', 'Auth\FacebookAuthController@handleProviderCallback');
+Route::group(['middleware' => [
+    'auth'
+]], function(){
+    Route::get('/user', 'GraphController@retrieveUserProfile');
+    Route::post('/post-face', 'GraphController@publishToProfile');
+});
 
 
 

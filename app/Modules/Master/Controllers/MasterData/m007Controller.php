@@ -45,7 +45,7 @@ class m007Controller extends Controller
         $param['name_div'] = $data['name_div'];
          $xml               = new SQLXML();
         $param['xml']      = $xml->xml($data['data']);
-        $param['user_id']  = Auth::user()->account_nm;
+        $param['user_id']  = Auth::user()->account_id;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());
         $validateMulti     = $this->checkValidateMulti($data['data']);
@@ -80,7 +80,7 @@ class m007Controller extends Controller
     {
         $data = $request->all();
         $param['name_div'] = $data['name_div'];
-        $param['user_id']  = Auth::user()->account_nm;
+        $param['user_id']  = Auth::user()->account_id;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());
         if ($validate['result']) {
@@ -117,7 +117,7 @@ class m007Controller extends Controller
         $param['name_div'] = $data['name_div'];
         $xml               = new SQLXML();
         $param['xml']      = $xml->xml($data[0]);
-        $param['user_id']  = Auth::user()->account_nm;
+        $param['user_id']  = Auth::user()->account_id;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());
         $validateMulti     = $this->checkValidateMulti($data[0]);
