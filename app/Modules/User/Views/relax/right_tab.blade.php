@@ -30,7 +30,7 @@
         </table>
         
     </div>
-    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end) && $is_end[0]['catalogue_div'] == 7 && $is_end[0]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
+    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end[0]) && $is_end[0]['catalogue_div'] == 7 && $is_end[0]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
 </div>
 <div id="tab2" class="tab-pane fade">
     <div class="">
@@ -63,7 +63,7 @@
         </table>
         
     </div>
-    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end) && $is_end[1]['catalogue_div'] == 8 && $is_end[1]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
+    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end[1]) && $is_end[1]['catalogue_div'] == 8 && $is_end[1]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
 </div>
 <div id="tab3" class="tab-pane fade">
     <div class="">
@@ -93,5 +93,5 @@
         </table>
 
     </div>
-    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end) && $is_end[2]['catalogue_div'] == 9 && $is_end[2]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
+    <button class="btn btn-sm btn-default btn-block btn-bottom {{isset($is_end[2]) && $is_end[2]['catalogue_div'] == 9 && $is_end[2]['is_end'] == 0 ?'btn-load-more':'disabled'}}">Tải thêm bài viết</button>
 </div>
