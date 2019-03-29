@@ -42,6 +42,8 @@ BEGIN
 	WHERE M007.briged_id IN (
 		SELECT briged_id FROM F009 WHERE F009.target_id = @P_target_id AND F009.briged_div = 1
 	)
+	AND M007.record_div = 2
+	AND M007.del_flg = 0
 
 	SELECT
 		F003.id 

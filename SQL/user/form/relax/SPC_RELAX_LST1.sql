@@ -61,6 +61,7 @@ BEGIN
 	ON F004.target_id = M007.post_id
 	WHERE
 		M007.catalogue_div IN (7,8,9)
+	AND M007.record_div = 2
 	GROUP BY M007.post_id
 	,	M007.post_title
 	,	M007.catalogue_div
@@ -86,6 +87,7 @@ BEGIN
 	AND execute_target_div = 5
 	WHERE M007.cre_user = @P_account_id
 	AND	M007.catalogue_div IN (7,8,9)
+	AND M007.record_div = 2
 	AND M007.del_flg = 0
 
 	SELECT

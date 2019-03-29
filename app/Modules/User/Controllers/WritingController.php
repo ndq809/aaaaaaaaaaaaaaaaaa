@@ -43,8 +43,8 @@ class WritingController extends ControllerUser
     public function getData(Request $request)
     {
         $param            = $request->all();
-        $param[0]         = $this->hashids->decode($param[0])[0];
-        $param[1]         = $this->hashids->decode($param[1])[0];
+        $param[0]         = $param[0]!=''?$this->hashids->decode($param[0])[0]:'';
+        $param[1]         = $param[1]!=''?$this->hashids->decode($param[1])[0]:'';
         $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data             = Dao::call_stored_procedure('SPC_WRITING_LST2', $param);
         $data             = CommonUser::encodeID($data);

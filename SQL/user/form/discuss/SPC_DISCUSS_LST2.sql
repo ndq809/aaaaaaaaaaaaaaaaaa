@@ -94,7 +94,9 @@ BEGIN
 		INNER JOIN F009
 		ON M007.briged_id = F009.briged_id
 		AND F009.briged_div = 2
-		WHERE M007.post_id = @P_post_id
+		WHERE 
+			M007.post_id = @P_post_id
+			AND M007.record_div = 2
 	END
 	ELSE
 	BEGIN
@@ -151,6 +153,7 @@ BEGIN
 				ELSE 0
 			END
 			AND M007.post_div = 3
+			AND M007.record_div = 2
 			AND F003.item_1 IS NULL
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
@@ -177,6 +180,7 @@ BEGIN
 				ELSE 0
 			END
 		AND M007.catalogue_div = 6
+		AND M007.record_div = 2
 		AND M007.post_div = 3
 		AND F003.item_1 IS NULL
 
@@ -223,6 +227,7 @@ BEGIN
 			END
 			AND M007.catalogue_div = 6
 			AND M007.post_div = 3
+			AND M007.record_div = 2
 			AND F003.item_1 IS NOT NULL
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
@@ -253,6 +258,7 @@ BEGIN
 		AND execute_target_div = 5
 		WHERE M007.cre_user = @P_account_id
 		AND M007.post_div = 3
+		AND M007.record_div = 2
 		AND	M007.catalogue_div = 6
 		AND M007.del_flg = 0
 
@@ -326,6 +332,7 @@ BEGIN
 			END
 		AND M007.catalogue_div = 6
 		AND M007.post_div = 3
+		AND M007.record_div = 2
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
 		SELECT
@@ -354,6 +361,7 @@ BEGIN
 			END
 		AND M007.catalogue_div = 6
 		AND M007.post_div = 2
+		AND M007.record_div = 2
 
 		INSERT INTO #DISCUSS
 		SELECT
@@ -382,6 +390,7 @@ BEGIN
 		AND execute_target_div = 5
 		WHERE M007.cre_user = @P_account_id
 		AND M007.post_div = 3
+		AND M007.record_div = 2
 		AND	M007.catalogue_div = 6
 		AND M007.del_flg = 0
 
@@ -423,7 +432,7 @@ BEGIN
 	,	IIF(F004.reply_id IS NULL,TEMP2.comment_id,F004.reply_id) AS link_id	
 	,	F004.reply_id	
 	,	F004.target_id	
-	,	F004.cre_user	
+	,	S001.account_nm AS cre_user	
 	,	M001.avarta
 	,	M999.content AS rank	
 	,	F004.cmt_content	
@@ -457,7 +466,7 @@ BEGIN
 	AND F008.execute_div = 3
 	AND F008.execute_target_div = 3
 	LEFT JOIN S001
-	ON F004.cre_user = S001.account_nm
+	ON F004.cre_user = S001.account_id
 	LEFT JOIN M001
 	ON S001.user_id = M001.user_id
 	LEFT JOIN M999
@@ -513,6 +522,7 @@ BEGIN
 	JOIN M006
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
+	AND M006.record_div = 2
 	INNER JOIN #DISCUSS
 	ON #DISCUSS.briged_id = F009.briged_id
 	ORDER BY 

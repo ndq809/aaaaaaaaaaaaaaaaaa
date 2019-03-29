@@ -48,6 +48,7 @@ BEGIN
 		SELECT
 			@w_inserted_key
 		,	@w_inserted_dtl_key
+		,	0
 		,	@P_vocabulary_nm		
 		,	@P_vocabulary_div		
 		,	@P_image

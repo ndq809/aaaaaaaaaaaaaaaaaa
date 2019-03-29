@@ -5,7 +5,7 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/vocabulary/v001.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-list','btn-delete','btn-add-page'))}}
+{{Button::menu_button(array('btn-list','btn-confirm','btn-public','btn-reset-status','btn-delete','btn-add-page'))}}
 @endsection
 @section('content')
 <div class="link-div" btn-add-page-link='/master/vocabulary/v002'></div>
@@ -38,6 +38,16 @@
                 <div class="input-group">
                     <input id="mean" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập nghĩa từ vựng" maxlength="200">
                 </div>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Trạng Thái</label>
+                <select id="record_div" class="submit-item">
+                    @foreach($data_default[1] as $item)
+                        <option value="{{$item['number_id']}}">{{$item['content']}}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
     </div>

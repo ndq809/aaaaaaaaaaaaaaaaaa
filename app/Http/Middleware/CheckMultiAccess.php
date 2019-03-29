@@ -32,7 +32,7 @@ class CheckMultiAccess
              }
             
         }
-        $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_nm:'',Auth::user()!=NULL?Auth::user()->account_div:'',Auth::user()!=NULL?Auth::user()->system_div:''));
+        $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_id:'',Auth::user()!=NULL?Auth::user()->account_div:'',Auth::user()!=NULL?Auth::user()->system_div:''));
         // var_dump($data);die;
         View::share('raw_data', $data);
         return $next($request);

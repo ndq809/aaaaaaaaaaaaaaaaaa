@@ -36,6 +36,9 @@ BEGIN
 	INNER JOIN M013
 	ON M013.tag_id = F009.target_id
 	AND M013.tag_div = 3
+	INNER JOIN M007
+	ON M007.briged_id = F009.briged_id
+	AND M007.record_div = 2
 	WHERE F009.briged_div = 2
 	GROUP BY 
 		F009.target_id
@@ -57,13 +60,14 @@ BEGIN
 	WHERE
 	M007.post_div = 3
 	AND	M007.catalogue_div = 6
+	AND M007.record_div = 2
 	AND M007.del_flg = 0
 
 	GROUP BY M007.post_id
 	,	M007.post_title
 	ORDER BY COUNT(M007.post_id) + ISNULL(SUM(F004.cmt_like),0) DESC
 
-	SET @P_target_id = (SELECT TOP 1 M007.post_id FROM M007 WHERE M007.post_id = @P_target_id AND M007.del_flg = 0)
+	SET @P_target_id = (SELECT TOP 1 M007.post_id FROM M007 WHERE M007.post_id = @P_target_id AND M007.record_div = 2 AND M007.del_flg = 0)
 
 	SELECT
 			''					AS catalogue_tranfer
@@ -81,14 +85,25 @@ BEGIN
 	WHERE M007.cre_user = @P_account_id
 	AND M007.post_div = 3
 	AND	M007.catalogue_div = 6
+	AND M007.record_div = 2
 	AND M007.del_flg = 0
 
 	SELECT
-		M013.tag_id
+		F009.target_id AS tag_id
 	,	M013.tag_nm
-	FROM M013
-	WHERE M013.tag_div = 3
-	AND M013.del_flg = 0
+	FROM F009
+	INNER JOIN M013
+	ON M013.tag_id = F009.target_id
+	AND M013.tag_div = 3
+	INNER JOIN M007
+	ON M007.briged_id = F009.briged_id
+	AND M007.record_div = 2
+	WHERE F009.briged_div = 2
+	GROUP BY 
+		F009.target_id
+	,	M013.tag_nm
+	ORDER BY
+	COUNT(F009.target_id) DESC
 
 	
 

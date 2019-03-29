@@ -35,6 +35,7 @@ BEGIN
 	AND M007.group_id = M003.group_id
 	AND M007.del_flg = 0
 	AND M007.post_div = 1
+	AND M007.record_div = 2
 	WHERE	M003.del_flg = 0 
 	AND		M003.catalogue_div = @P_catalogue_div
 	

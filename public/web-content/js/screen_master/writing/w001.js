@@ -8,7 +8,9 @@ $(function(){
 
 function init_w001(){
 	initevent_w001();
-    // selectize_sub.disable();
+    $('#btn-confirm').addClass('btn-disable-custom');
+    $('#btn-public').addClass('btn-disable-custom');
+    $('#btn-reset-status').addClass('btn-disable-custom');
 }
 
 function initevent_w001(){
@@ -23,6 +25,30 @@ function initevent_w001(){
            });
         }
 	})
+
+    $(document).on('click','#btn-confirm',function(){
+        if($('.sub-checkbox:visible:checked').length!=0){
+           showMessage(24,function(){
+                w001_confirm();
+           }); 
+        }
+    })
+
+    $(document).on('click','#btn-public',function(){
+        if($('.sub-checkbox:visible:checked').length!=0){
+           showMessage(25,function(){
+                w001_public();
+           }); 
+        }
+    })
+
+    $(document).on('click','#btn-reset-status',function(){
+        if($('.sub-checkbox:visible:checked').length!=0){
+           showMessage(26,function(){
+                w001_reset();
+           }); 
+        }
+    })
 
     $(document).on('click','#btn-refresh',function(){
         clearDataSearch();
@@ -62,6 +88,11 @@ function initevent_w001(){
 
      $(document).on('click','.btn-preview',function(){
        _popup_transfer_array['post_id']=$(this).parents('tr').find('td').eq(2).text();
+       _popup_transfer_array['called_item']=$(this);
+    })
+
+    $(document).on('change','.sub-checkbox',function(){
+        updateDeleteArray(this);
     })
 }
 
@@ -78,9 +109,35 @@ function w001_execute(page){
         data: data,
         success: function (res) {
             clearFailedValidate();
+            switch ($('#record_div').val()*1){
+                case 0:
+                    $('#btn-confirm').addClass('btn-disable-custom');
+                    $('#btn-public').addClass('btn-disable-custom');
+                    $('#btn-delete').removeClass('btn-disable-custom');
+                    $('#btn-reset-status').addClass('btn-disable-custom');
+                    break;
+                case 1:
+                    $('#btn-confirm').removeClass('btn-disable-custom');
+                    $('#btn-public').addClass('btn-disable-custom');
+                    $('#btn-delete').removeClass('btn-disable-custom');
+                    $('#btn-reset-status').addClass('btn-disable-custom');
+                    break;
+                case 2:
+                    $('#btn-confirm').addClass('btn-disable-custom');
+                    $('#btn-public').removeClass('btn-disable-custom');
+                    $('#btn-delete').removeClass('btn-disable-custom');
+                    $('#btn-reset-status').addClass('btn-disable-custom');
+                    break;
+                case 3:
+                    $('#btn-confirm').addClass('btn-disable-custom');
+                    $('#btn-public').addClass('btn-disable-custom');
+                    $('#btn-delete').removeClass('btn-disable-custom');
+                    $('#btn-reset-status').removeClass('btn-disable-custom');
+                    break;
+            }
             $('#result').html(res);
             $(".btn-preview").fancybox({
-                'width'         : '60%',
+                'width'         : '90%',
                 'height'        : '90%',
                 'autoScale'     : true,
                 'transitionIn'  : 'none',
@@ -90,80 +147,6 @@ function w001_execute(page){
             });
             _data_delete=[];
             _data_edit=[];
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function w001_delete(){
-    $.ajax({
-        type: 'POST',
-        url: '/master/general/w001/delete',
-        dataType: 'json',
-        loading:true,
-        data: $.extend({}, _data_delete),//convert to object
-        success: function (res) {
-            switch(res.status){
-                case 200:
-                    $('.sub-checkbox:checked').closest('tr').remove();
-                    $('.identity-item').val('');
-                    _data_delete=[];
-                    showMessage(2);
-                    break;
-                case 201:
-                    clearFailedValidate();
-                    showFailedValidate(res.error);
-                    break;
-                case 208:
-                    clearFailedValidate();
-                    showMessage(4);
-                    break;
-                default :
-                    break;
-            }
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function w001_update(trigger){
-    clearFailedDataTable();
-    if(typeof trigger=='undefined')
-        trigger=true;
-    $.ajax({
-        type: 'POST',
-        url: '/master/general/w001/update',
-        dataType: 'json',
-        loading:true,
-        data: $.extend({}, _data_edit),//convert to object
-        success: function (res) {
-            switch(res.status){
-                case 200:
-                    if(trigger)
-                    $('.pager li.active a').trigger('click');
-                    showMessage(2);
-                    break;
-                case 201:
-                    clearFailedValidate();
-                    showFailedValidate(res.error);
-                    break;
-                case 207:
-                    clearFailedValidate();
-                    showFailedDataTable(res.data);
-                    break;
-                case 208:
-                    clearFailedValidate();
-                    showMessage(4);
-                    break;
-                default :
-                    break;
-            }
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {
@@ -232,6 +215,155 @@ function updateGroup_s(change_item){
                 case 201:
                     clearFailedValidate();
                     showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function w001_delete(){
+    $.ajax({
+        type: 'POST',
+        url: '/master/writing/w001/delete',
+        dataType: 'json',
+        loading:true,
+        data: $.extend({}, _data_delete),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.sub-checkbox:checked').closest('tr').remove();
+                    $('.identity-item').val('');
+                    _data_delete=[];
+                    showMessage(2);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function w001_confirm(){
+    $.ajax({
+        type: 'POST',
+        url: '/master/writing/w001/confirm',
+        dataType: 'json',
+        loading:true,
+        data: $.extend({}, _data_delete),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.sub-checkbox:checked').closest('tr').remove();
+                    $('.identity-item').val('');
+                    _data_delete=[];
+                    showMessage(2,function(){
+                        $('#record_div').val(2);
+                        $('#btn-list').trigger('click');
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function w001_public(){
+    $.ajax({
+        type: 'POST',
+        url: '/master/writing/w001/public',
+        dataType: 'json',
+        loading:true,
+        data: $.extend({}, _data_delete),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.sub-checkbox:checked').closest('tr').remove();
+                    $('.identity-item').val('');
+                    _data_delete=[];
+                    showMessage(2,function(){
+                        $('#record_div').val(3);
+                        $('#btn-list').trigger('click');
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function w001_reset(){
+    $.ajax({
+        type: 'POST',
+        url: '/master/writing/w001/reset',
+        dataType: 'json',
+        loading:true,
+        data: $.extend({}, _data_delete),//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('.sub-checkbox:checked').closest('tr').remove();
+                    $('.identity-item').val('');
+                    _data_delete=[];
+                    showMessage(2,function(){
+                        $('#record_div').val(1);
+                        $('#btn-list').trigger('click');
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data,2,'#result');
                     break;
                 case 208:
                     clearFailedValidate();

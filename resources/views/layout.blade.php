@@ -16,6 +16,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
+        <script src="//js.pusher.com/3.1/pusher.min.js"></script>
         {!!WebFunctions::public_url('web-content/js/common/defined/common.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/fileinput.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}

@@ -13,17 +13,17 @@ function init_p004(){
 
 function initevent_p004(){
 	$(document).on('click','#btn-edit',function(){
-		parent.window.location.href= 'http://eplus.win/master/writing/w002?e='+parent._popup_transfer_array['post_id'];
+		window.open('/master/writing/w002?'+parent._popup_transfer_array['post_id'], '_blank');
 	})
 
-    $(document).on('click','#btn-delete',function(){
-        showMessage(3,function(){
-            p004_delete();
-       });
+    $(document).on('click','#btn-select',function(){
+        parent._popup_transfer_array['called_item'].closest('tr').find('input[type=checkbox]').prop('checked',true);
+        parent._popup_transfer_array['called_item'].closest('tr').find('input[type=checkbox]').trigger('change');
+        parent.jQuery.fancybox.close();
     })
 
     $(document).on('click','#btn-refresh',function(){
-        clearDataSearch();
+        p004_execute(parent._popup_transfer_array['post_id']);
     })
     $(document).on('click', '.pager li a', function () {
         var page = $(this).attr('page');
@@ -64,6 +64,25 @@ function p004_execute(post_id){
         success: function (res) {
             clearFailedValidate();
             $('#result').html(res);
+            if($('#post_type').val()==8){
+                var player;
+                $('#video-player').mediaelementplayer({
+                    success: function(mediaElement, domObject) {
+                        player = mediaElement;
+                        mediaElement.removeEventListener('loadedmetadata');
+                        mediaElement.addEventListener('loadedmetadata', function(e) {
+                            var temp = $(mediaElement).find('iframe');
+                            if(typeof temp !='undefined' && temp.parent().height()> temp.parent().width()){
+                                temp.css('min-width','0px');
+                                temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
+                                temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
+                                temp.parents('.fb-video').css('height',temp.parents('.fb-video').height()*temp1);
+                            }
+                        }, false);
+                    },
+                });
+                player.load();
+            }
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {

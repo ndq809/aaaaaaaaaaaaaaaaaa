@@ -95,6 +95,7 @@ BEGIN
 		ON M007.briged_id = F009.briged_id
 		AND F009.briged_div = 2
 		WHERE M007.post_id = @P_post_id
+		AND M007.record_div = 2
 	END
 	ELSE
 	BEGIN
@@ -150,6 +151,7 @@ BEGIN
 			END
 			AND M007.catalogue_div = 4
 			AND M007.post_div = 2
+			AND M007.record_div = 2
 			AND F003.item_1 IS NULL
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
@@ -177,6 +179,7 @@ BEGIN
 			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
+		AND M007.record_div = 2
 		AND F003.item_1 IS NULL
 
 		INSERT INTO #SOCIAL
@@ -222,6 +225,7 @@ BEGIN
 			END
 			AND M007.catalogue_div = 4
 			AND M007.post_div = 2
+			AND M007.record_div = 2
 			AND F003.item_1 IS NOT NULL
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
@@ -295,6 +299,7 @@ BEGIN
 			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
+		AND M007.record_div = 2
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
 		SELECT
@@ -323,6 +328,8 @@ BEGIN
 			END
 		AND M007.catalogue_div = 4
 		AND M007.post_div = 2
+		AND M007.record_div = 2
+
 	END
 	INSERT INTO #COMMENT
 	SELECT *
@@ -444,6 +451,7 @@ BEGIN
 	JOIN M006
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
+	AND M006.record_div = 2
 	INNER JOIN #SOCIAL
 	ON #SOCIAL.briged_id = F009.briged_id
 	ORDER BY 

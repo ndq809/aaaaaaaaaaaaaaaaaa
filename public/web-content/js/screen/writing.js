@@ -511,7 +511,7 @@ function getDataCustom() {
 }
 
 function updateGroup(change_item, sub_item_text) {
-    var data = $(change_item).val();
+    var data = $(change_item).val()==''?'-1':$(change_item).val();
     var selectize_sub = $('#group_nm')[0].selectize;
     $('.group_nm .selectize-dropdown-content :not([data-parent-id='+data+'])').addClass('hidden');
     $('.group_nm .selectize-dropdown-content [data-parent-id='+data+']').removeClass('hidden');

@@ -193,6 +193,7 @@ BEGIN
 		WHEN 0 THEN 1
 		ELSE (SELECT ISNULL(MAX(M006.vocabulary_dtl_id),0)+ row_index FROM M006 WHERE M006.vocabulary_id = #TABLE_DETAIL.vocabulary_id)
 		END
+	,	0
 	,	vocabulary_nm		
 	,	vocabulary_div		
 	,	NULL
@@ -281,7 +282,8 @@ BEGIN
 		END
  
 		INSERT INTO M007 (
-			 catalogue_div     
+			 record_div     
+		,	 catalogue_div     
 		,	 catalogue_id
 		,	 group_id
 		,	 post_div
@@ -308,7 +310,8 @@ BEGIN
 		,	 del_flg	
 		)
 		SELECT
-		     @P_catalogue_div     
+			 0	
+		,    @P_catalogue_div     
 		,	 IIF(@P_catalogue_nm='',NULL,@P_catalogue_nm)
 		,	 IIF(@P_group_nm='',NULL,@P_group_nm)
 		,	 1
@@ -419,6 +422,71 @@ BEGIN
 			,	NULL
 			,	NULL
 		END
+
+		MERGE INTO M004 _m004 USING #TABLE_DETAIL2 _tbl_detail2 ON 1 = 0
+		WHEN NOT MATCHED AND _tbl_detail2.verify IS NULL THEN
+			INSERT (
+				question_content
+			,	question_div
+			,	post_id
+			,	del_flg
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+			,	upd_user
+			,	upd_prg
+			,	upd_ip
+			,	upd_date
+			,	del_user
+			,	del_prg
+			,	del_ip
+			,	del_date
+			)
+			VALUES (
+				_tbl_detail2.content
+			,	_tbl_detail2.question_div
+			,	@w_inserted_key
+			,	0
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	@w_time
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			)
+			OUTPUT _tbl_detail2.row_id,INSERTED.question_id
+			INTO #TABLE_QUESTION;
+
+			INSERT INTO M005
+			SELECT
+				#TABLE_QUESTION.question_id
+			,	#TABLE_DETAIL2.content
+			,	#TABLE_DETAIL2.verify
+			,	NULL
+			,	0
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	@w_time
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			,	NULL
+			FROM #TABLE_DETAIL2
+			JOIN #TABLE_QUESTION
+			ON #TABLE_DETAIL2.row_id = #TABLE_QUESTION.row_id
+			WHERE #TABLE_DETAIL2.verify IS NOT NULL
 
 	END
 	ELSE

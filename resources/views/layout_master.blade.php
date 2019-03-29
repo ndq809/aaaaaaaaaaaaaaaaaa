@@ -5,7 +5,7 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
-        <link rel="icon" type="image/png" href="/web-content/images/icon/title-icon2.png" sizes="128x128">
+        <link rel="icon" type="image/x-icon" href="/web-content/images/icon/title_icon3.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <title>
             @yield('title','English Plus Master')
@@ -51,7 +51,7 @@
                     <div class="container-fluid">
                          <div class="navbar-header">
                             <a class="navbar-brand dropdown-toggle" id="menu1" data-toggle="dropdown">
-                                <img src="/web-content/images/icon/title-icon3.png" height="30px">
+                                <img src="{{ session::get('logined_data')[0]['avarta'] }}" height="30px">
                                 <span>{{ Auth::user()->account_nm }}<i class="fa fa-angle-double-down" style="padding-left: 5px"></i></span>
                             </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">

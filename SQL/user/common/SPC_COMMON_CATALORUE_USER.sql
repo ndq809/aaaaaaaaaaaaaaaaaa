@@ -37,7 +37,8 @@ BEGIN
 	AND M002.catalogue_id = M007.catalogue_id
 	AND M002.catalogue_div = M007.catalogue_div
 	AND M007.del_flg = 0
-	AND m007.post_div = 1
+	AND M007.post_div = 1
+	AND M007.record_div = 2
 	WHERE M002.del_flg = 0 
 	AND	M002.catalogue_div		= @P_catalogue_div
 

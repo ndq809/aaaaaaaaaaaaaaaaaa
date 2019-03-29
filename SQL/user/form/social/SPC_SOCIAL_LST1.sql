@@ -57,6 +57,7 @@ BEGIN
 	WHERE
 	M007.post_div = 2
 	AND	M007.catalogue_div = 4
+	AND M007.record_div = 2
 
 	GROUP BY M007.post_id
 	,	M007.post_title
@@ -78,6 +79,7 @@ BEGIN
 	WHERE M007.cre_user = @P_account_id
 	AND M007.post_div = 2
 	AND	M007.catalogue_div = 4
+	AND M007.record_div = 2
 	AND M007.del_flg = 0
 
 	SELECT

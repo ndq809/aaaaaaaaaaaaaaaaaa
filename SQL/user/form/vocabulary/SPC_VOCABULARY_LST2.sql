@@ -80,12 +80,14 @@ BEGIN
 		WHERE M007.catalogue_id = @P_catalogue_id
 		AND M007.group_id = @P_group_id
 		AND M007.catalogue_div = 1
+		AND M007.record_div = 2
 	)
 	AND 0 =
 		CASE 
 			WHEN F003.item_1 IS NULL THEN M006.del_flg
 			ELSE 0
 		END
+	AND M006.record_div = 2
 
 	SELECT * FROM 
 	(	

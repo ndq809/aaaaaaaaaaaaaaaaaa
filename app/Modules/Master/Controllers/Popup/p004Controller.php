@@ -16,8 +16,7 @@ class p004Controller extends Controller
      */
     public function getIndex()
     {
-        $data = Dao::call_stored_procedure('SPC_COM_M999_INQ1',array(8));
-        return view('Master::popup.p004.index')->with('data_default',$data);
+        return view('Master::popup.p004.index');
     }
 
     public function p004_search(Request $request)

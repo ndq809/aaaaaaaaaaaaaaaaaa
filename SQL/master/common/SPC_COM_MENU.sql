@@ -53,5 +53,6 @@ BEGIN
 	OR  S002.account_div = @P_account_div)
 	AND	S002.menu_per=1
 	AND S003.del_flg=0
+	AND S003.screen_group != 0
 END
 

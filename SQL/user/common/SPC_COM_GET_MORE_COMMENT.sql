@@ -44,7 +44,7 @@ BEGIN
 		F004.comment_id		AS comment_id
 	,	'' AS reply_id
 	,	F004.target_id
-	,	F004.cre_user
+	,	S001.account_nm AS cre_user
 	,	M001.avarta
 	,	M999.content
 	,	F004.cmt_content
@@ -54,7 +54,7 @@ BEGIN
 	,	FORMAT(F004.cre_date,'dd/MM/yyyy HH:mm:ss') AS cre_date
 	FROM F004
 	LEFT JOIN S001
-	ON F004.cre_user = S001.account_nm
+	ON F004.cre_user = S001.account_id
 	LEFT JOIN M001
 	ON S001.user_id = M001.user_id
 	LEFT JOIN M999

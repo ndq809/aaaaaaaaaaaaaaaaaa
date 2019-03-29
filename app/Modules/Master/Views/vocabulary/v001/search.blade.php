@@ -18,6 +18,7 @@
                     <th width="100px">Hình Ảnh</th>
                     <th width="100px">Âm Thanh</th>
                     <th>Ghi Chú</th>
+                    <th width="70px">Trạng Thái</th>
                     <th width="40px"></th>
                     <th class="hidden"></th>
                 </tr>
@@ -38,6 +39,15 @@
                     <td class="refer-item" refer_id="image"><a title="<img src='{{$row['image']}}' />" class="preview">{{$row['image']!=''?'Xem trước':''}}</a></td>
                     <td class="refer-item" refer_id="audio"><audio class="sound1" src="{{$row['audio']}}" ></audio><a type="button" class="preview-audio">{{$row['audio']!=''?'Nghe thử':''}}</a></td>
                     <td class="refer-item" refer_id="remark">{{$row['remark']}}</td>
+                    <td class="record-div-icon">
+                        @if($row['record_div']==0)
+                        <i class="fa fa-ban text-danger" title="{{$row['record_div_nm']}}"></i>
+                        @elseif($row['record_div']==1)
+                        <i class="fa fa-check text-primary" title="{{$row['record_div_nm']}}"></i>
+                        @else
+                        <i class="fa fa-send text-success" title="{{$row['record_div_nm']}}"></i>
+                        @endif
+                    </td>
                     <td><a href="/master/vocabulary/v002?{{$row['vocabulary_id']}}?{{$row['vocabulary_dtl_id']}}" ><span class="fa fa fa-pencil-square-o fa-lg"></span></a></td>
                     <td class="refer-item hidden" refer_id="vocabulary_div">{{$row['vocabulary_div']}}</td>
                 </tr>
@@ -45,9 +55,9 @@
                  @else
                  <tr>
                     @if(!isset($data))
-                        <td colspan="13">Xin nhập điều kiện tìm kiếm</td>
+                        <td colspan="14">Xin nhập điều kiện tìm kiếm</td>
                     @else
-                        <td colspan="13">Không có bản ghi nào khớp với điều kiệm tìm kiếm</td>
+                        <td colspan="14">Không có bản ghi nào khớp với điều kiệm tìm kiếm</td>
                     @endif
                 </tr>
                 @endif

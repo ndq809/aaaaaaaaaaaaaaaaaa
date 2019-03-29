@@ -88,6 +88,7 @@ BEGIN
 	AND M007.catalogue_div = 4
 	AND M007.catalogue_id = @P_catalogue_id
 	AND M007.group_id = @P_group_id
+	AND M007.record_div = 2
 	AND M007.post_div = 1
 
 	INSERT INTO #WRITING
@@ -113,6 +114,7 @@ BEGIN
 	WHERE M007.del_flg = 0
 	AND M007.catalogue_div = 4
 	AND M007.post_div = 2
+	AND M007.record_div = 2
 
 	UPDATE temp
 	SET temp.row_id = temp.new_row_id
@@ -244,6 +246,7 @@ BEGIN
 	JOIN M006
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
+	AND M006.record_div = 2
 	INNER JOIN #WRITING
 	ON #WRITING.briged_id = F009.briged_id
 	ORDER BY 

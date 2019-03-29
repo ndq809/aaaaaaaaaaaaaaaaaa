@@ -26,7 +26,7 @@ class p003Controller extends Controller
         $param = $request->all();
         $xml   = new SQLXML();
         $param['selected_list']= $xml->xml(isset($param['selected_list'])?$param['selected_list']:array());
-        $data  = Dao::call_stored_procedure('SPC_p003_LST1', $param);
+        $data  = Dao::call_stored_procedure('SPC_P003_LST1', $param);
         return view('Master::popup.p003.search')
             ->with('data', $data)
             ->with('paging', $data[1][0]);
@@ -37,7 +37,7 @@ class p003Controller extends Controller
         $param = $request->all();
         $xml   = new SQLXML();
         $param['voc_array']= $xml->xml(isset($param['voc_array'])?$param['voc_array']:array());
-        $data  = Dao::call_stored_procedure('SPC_p003_LST2', $param);
+        $data  = Dao::call_stored_procedure('SPC_P003_LST2', $param);
         return view('Master::popup.p003.select')
             ->with('data', $data[0]);
     }
@@ -47,7 +47,7 @@ class p003Controller extends Controller
         $data = $request->all();
         $xml   = new SQLXML();
         $param['voc_array']= $xml->xml(isset($data)?$data:array());
-        $result  = Dao::call_stored_procedure('SPC_p003_LST3', $param);
+        $result  = Dao::call_stored_procedure('SPC_P003_LST3', $param);
         return view('Master::writing.w002.refer_voc')->with('data_voc', $result[0])->render();
     }
     /**

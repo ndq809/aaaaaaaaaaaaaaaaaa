@@ -117,5 +117,25 @@ return [
             'message_title' => 'Cập Nhật Thành Công',
             'message_content' => 'Mật khẩu của bạn đã được đổi',
         ],
+        24 => [
+            'message_div' => 1,
+            'message_title' => 'Xác Nhận Phê Duyệt',
+            'message_content' => 'Bạn có muốn phê duyệt cho những dữ liệu đã chọn? (sau khi phê duyệt bạn có thể sử dụng trong hệ thống)',
+        ],
+        25 => [
+            'message_div' => 1,
+            'message_title' => 'Xác Nhận Công Khai',
+            'message_content' => 'Bạn có muốn công khai cho những dữ liệu đã chọn? (sau khi công khai người dùng có thể thấy những dữ liệu này)',
+        ],
+        26 => [
+            'message_div' => 1,
+            'message_title' => 'Xác Nhận Khôi Phục',
+            'message_content' => 'Bạn có muốn khôi phục lại trạng thái cho những dữ liệu đã chọn? (bạn sẽ phải phê duyệt và công khai lại sau khi đã khôi phục)',
+        ],
+        27 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Dữ Liệu',
+            'message_content' => 'Dữ liệu này đang được sử dụng trong một bài đăng ở chế độ công khai',
+        ],
     ],
 ];

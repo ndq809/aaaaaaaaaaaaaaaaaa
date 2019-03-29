@@ -1,0 +1,1324 @@
+2019-03-28 11:21:25 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:24:16 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:24:21 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:24:21 EXEC SPC_VOCABULARY_LST1 '2','','1','1';
+2019-03-28 11:24:24 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:26:25 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:26:25 EXEC SPC_VOCABULARY_LST2 '','','';
+2019-03-28 11:26:39 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:26:39 EXEC SPC_VOCABULARY_LST1 '2','','','';
+2019-03-28 11:26:41 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:26:41 EXEC SPC_VOCABULARY_LST2 '','','';
+2019-03-28 11:29:04 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:29:04 EXEC SPC_GRAMMAR_LST1 '','','','';
+2019-03-28 11:29:06 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:29:06 EXEC SPC_VOCABULARY_LST1 '','','','';
+2019-03-28 11:33:59 EXEC SPC_COM_MENU '1';
+2019-03-28 11:33:59 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-03-28 11:34:05 EXEC SPC_COM_MENU '1';
+2019-03-28 11:34:05 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 11:34:05 EXEC SPC_COM_MENU '1';
+2019-03-28 11:34:05 EXEC SPC_p004_LST1 '1';
+2019-03-28 11:34:32 EXEC SPC_COM_MENU '1';
+2019-03-28 11:34:32 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 11:34:33 EXEC SPC_COM_MENU '1';
+2019-03-28 11:34:33 EXEC SPC_p004_LST1 '1';
+2019-03-28 11:49:02 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:49:02 EXEC SPC_RELAX_LST1 '','';
+2019-03-28 11:49:02 EXEC SPC_COM_DATA '','','';
+2019-03-28 11:49:02 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-03-28 12:02:16 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 12:02:16 EXEC SPC_COM_MENU '1';
+2019-03-28 12:02:16 EXEC SPC_W001_LST1
+2019-03-28 12:02:19 EXEC SPC_COM_MENU '1';
+2019-03-28 12:02:19 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 12:02:20 EXEC SPC_COM_MENU '1';
+2019-03-28 12:02:20 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 13:02:33 EXEC SPC_COM_MENU '1';
+2019-03-28 13:02:33 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 13:03:41 EXEC SPC_COM_MENU '1';
+2019-03-28 13:03:56 EXEC SPC_COM_MENU '1';
+2019-03-28 13:03:56 EXEC SPC_p004_LST1
+2019-03-28 13:03:56 EXEC SPC_COM_MENU '1';
+2019-03-28 13:05:04 EXEC SPC_COM_MENU '1';
+2019-03-28 13:05:04 EXEC SPC_p004_LST1
+2019-03-28 13:05:24 EXEC SPC_COM_MENU '1';
+2019-03-28 13:05:24 EXEC SPC_p004_LST1
+2019-03-28 13:07:24 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 13:07:24 EXEC SPC_COM_MENU '1';
+2019-03-28 13:07:24 EXEC SPC_W001_LST1
+2019-03-28 13:07:26 EXEC SPC_COM_MENU '1';
+2019-03-28 13:07:26 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 13:07:27 EXEC SPC_COM_MENU '1';
+2019-03-28 13:07:27 EXEC SPC_COM_MENU '1';
+2019-03-28 13:07:27 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:11:56 EXEC SPC_COM_MENU '1';
+2019-03-28 13:11:56 EXEC SPC_COM_MENU '1';
+2019-03-28 13:11:56 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:13:16 EXEC SPC_COM_MENU '1';
+2019-03-28 13:13:17 EXEC SPC_COM_MENU '1';
+2019-03-28 13:13:17 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:13:46 EXEC SPC_COM_MENU '1';
+2019-03-28 13:13:47 EXEC SPC_COM_MENU '1';
+2019-03-28 13:13:47 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:17:03 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 13:17:03 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:03 EXEC SPC_W002_FND1
+2019-03-28 13:17:05 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:05 EXEC SPC_W002_LST1 '1';
+2019-03-28 13:17:05 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:05 EXEC SPC_W002_LST2 '1';
+2019-03-28 13:17:06 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:06 EXEC SPC_COMMON_GROUP '1';
+2019-03-28 13:17:07 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:07 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 13:17:07 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:07 EXEC SPC_P003_LST2 '<row vocabulary_code="1" vocabulary_id="1" vocabulary_div="Danh từ" vocabulary_nm="A" spelling="a" mean="chữ &amp;#39;A&amp;#39; trong bảng chữ cái" explain="" /><row vocabulary_code="2" vocabulary_id="2" vocabulary_div="Danh từ" vocabulary_nm="B" spelling="B" mean="Chữ cái &amp;#39;B&amp;#39;" explain="" />';
+2019-03-28 13:17:25 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:25 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 13:17:25 EXEC SPC_COM_MENU '1';
+2019-03-28 13:17:26 EXEC SPC_P003_LST2 '<row vocabulary_code="1" vocabulary_id="1" vocabulary_div="Danh từ" vocabulary_nm="A" spelling="a" mean="chữ &amp;#39;A&amp;#39; trong bảng chữ cái" explain="" /><row vocabulary_code="2" vocabulary_id="2" vocabulary_div="Danh từ" vocabulary_nm="B" spelling="B" mean="Chữ cái &amp;#39;B&amp;#39;" explain="" />';
+2019-03-28 13:20:57 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 13:20:57 EXEC SPC_COM_MENU '1';
+2019-03-28 13:20:57 EXEC SPC_W001_LST1
+2019-03-28 13:20:59 EXEC SPC_COM_MENU '1';
+2019-03-28 13:20:59 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 13:21:01 EXEC SPC_COM_MENU '1';
+2019-03-28 13:21:01 EXEC SPC_COM_MENU '1';
+2019-03-28 13:21:01 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:22:33 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 13:22:33 EXEC SPC_COM_MENU '1';
+2019-03-28 13:22:33 EXEC SPC_W001_LST1
+2019-03-28 13:22:35 EXEC SPC_COM_MENU '1';
+2019-03-28 13:22:35 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 13:22:36 EXEC SPC_COM_MENU '1';
+2019-03-28 13:22:36 EXEC SPC_COM_MENU '1';
+2019-03-28 13:22:36 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:26:19 EXEC SPC_COM_MENU '1';
+2019-03-28 13:26:20 EXEC SPC_COM_MENU '1';
+2019-03-28 13:26:20 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:40:17 EXEC SPC_COM_MENU '1';
+2019-03-28 13:40:18 EXEC SPC_COM_MENU '1';
+2019-03-28 13:40:18 EXEC SPC_p004_LST1 '1';
+2019-03-28 13:52:54 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 13:52:54 EXEC SPC_COM_MENU '1';
+2019-03-28 13:52:54 EXEC SPC_W001_LST1
+2019-03-28 13:52:57 EXEC SPC_COM_MENU '1';
+2019-03-28 13:52:57 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 13:52:58 EXEC SPC_COM_MENU '1';
+2019-03-28 13:52:58 EXEC SPC_COM_MENU '1';
+2019-03-28 13:52:58 EXEC SPC_p004_LST1 '1';
+2019-03-28 14:04:31 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 14:04:31 EXEC SPC_COM_MENU '1';
+2019-03-28 14:04:31 EXEC SPC_W002_FND1
+2019-03-28 14:04:39 EXEC SPC_COM_MENU '1';
+2019-03-28 14:04:39 EXEC SPC_W002_LST2 '2';
+2019-03-28 14:05:03 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:03 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:05:24 EXEC SPC_COM_PERMISSION '1','2','g003';
+2019-03-28 14:05:24 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:24 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 14:05:26 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:26 EXEC SPC_G003_LST1 '','','10','1';
+2019-03-28 14:05:33 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:33 EXEC SPC_COMMON_CATALORUE '5';
+2019-03-28 14:05:37 EXEC SPC_COM_PERMISSION '1','2','g004';
+2019-03-28 14:05:37 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:37 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 14:05:40 EXEC SPC_COM_MENU '1';
+2019-03-28 14:05:40 EXEC SPC_COMMON_CATALORUE '5';
+2019-03-28 14:06:02 EXEC SPC_COM_MENU '1';
+2019-03-28 14:06:02 EXEC SPC_G004_ACT1 '5','Văn hóa','1','::1';
+2019-03-28 14:06:06 EXEC SPC_COM_PERMISSION '1','2','g006';
+2019-03-28 14:06:06 EXEC SPC_COM_MENU '1';
+2019-03-28 14:06:06 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 14:06:12 EXEC SPC_COM_MENU '1';
+2019-03-28 14:06:12 EXEC SPC_COMMON_CATALORUE '5';
+2019-03-28 14:06:12 EXEC SPC_COM_MENU '1';
+2019-03-28 14:06:12 EXEC SPC_COMMON_GROUP '';
+2019-03-28 14:06:14 EXEC SPC_COM_MENU '1';
+2019-03-28 14:06:14 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:07:03 EXEC SPC_COM_MENU '1';
+2019-03-28 14:07:03 EXEC SPC_G006_ACT1 '5','3','Đông và Tây','1','::1';
+2019-03-28 14:07:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 14:07:06 EXEC SPC_COM_MENU '1';
+2019-03-28 14:07:06 EXEC SPC_W002_FND1
+2019-03-28 14:07:09 EXEC SPC_COM_MENU '1';
+2019-03-28 14:07:09 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:07:10 EXEC SPC_COM_MENU '1';
+2019-03-28 14:07:10 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:09:36 EXEC SPC_COM_MENU '1';
+2019-03-28 14:09:36 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 14:09:36 EXEC SPC_COM_MENU '1';
+2019-03-28 14:09:36 EXEC SPC_P003_LST2 '';
+2019-03-28 14:09:41 EXEC SPC_COM_MENU '1';
+2019-03-28 14:09:41 EXEC SPC_P003_LST1 '0','','','','50','1';
+2019-03-28 14:09:53 EXEC SPC_COM_MENU '1';
+2019-03-28 14:09:53 EXEC SPC_P003_LST3 '<row vocabulary_code="1" /><row vocabulary_code="2" />';
+2019-03-28 14:11:05 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:05 EXEC SPC_w002_ACT1 '','5','3','5','Sự khác nhau giữa văn hóa phương đông và phương tây','','<p>It&rsquo;s said that East and West can never meet up. As they differ in history, religion, political system and so on; differences are clearly seen in Eastern and Western ways to deal with education.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Eastern_world">Eastern world</a>&nbsp;refers to nations in the Asia and Middle East whereas Western world refers to North and South America, Europe, Australia and New Zealand. East and West may have myriad differences based on culture and education. These differences can be noted for the most part in people&rsquo;s behavior and attitudes.<br />
+The major difference between eastern and western culture is that people in the east are more conservative and traditional than the general population in the west.</p>
+
+<p>&nbsp;</p>
+
+<p><strong><em>Let&rsquo;s have a clear view on the difference between east and west in terms of culture&hellip;</em></strong></p>
+
+<h2>Eastern Culture</h2>
+
+<p>Eastern Culture (refer to the culture map above) has these characteristics listed below:</p>
+
+<ul>
+	<li>Eastern world refers to the nations in Asia and Middle East.</li>
+	<li>Hinduism, Buddhism, Jainism, Shenism, Taoism, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Eastern countries are more customary than people in the West when we consider their traditions, clothings, rituals, and so on. For example, Indians pay regard to their elders or parents by touching their feet; East Asians use bows as welcome, apologizing and expressing thank you.</li>
+	<li>People in the East are inflexible in their beliefs and ideologies; they were unwilling to challenge and question the long practiced customs and traditions.</li>
+	<li>In Eastern countries, elders are considered as the leader of the home and children regard and obey them in all choices. Important decisions related to children&rsquo;s future are normally taken by elders. And, when parents grow old, the kids are likely to take care of them.</li>
+	<li>Arranged marriages are common in the Eastern countries. They are normally arranged by parents or elders. They believe in a concept that love comes after marriage.</li>
+</ul>
+
+<p><br />
+&nbsp;</p>
+
+<h2>Western Culture</h2>
+
+<p>Western culture (as specified in the cultural map above) is defined as these types of items:</p>
+
+<ul>
+	<li>Western culture refers to Europe and North America.</li>
+	<li>Judaism, Christianity, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Western countries are more liberal than those in the East. The Westerns are more open and blunt. For example, topics like sex or birth of a child are openly discussed in&nbsp;<a href="https://en.wikipedia.org/wiki/Western_world">Western culture</a>, whereas in the East, these topics are still a taboo.</li>
+	<li>People in the West are more open to express their feelings. If they are angry, they may express. But, people in the east may cover it for tact and good manners.</li>
+	<li>Also, a person is given preference over family, so a person is more flexible and free to take decisions on his own, unlike those in the East.</li>
+	<li>Concepts like arranged marriages are not at all common in the West. They go for love marriages as they believe in a concept that love comes before marriage.</li>
+</ul>
+
+<h2>Difference Between East And West In Terms Of Education&hellip;</h2>
+
+<p>&nbsp;</p>
+
+<p><em>Image Source : http://www.teflone.com</em></p>
+
+<p>Is education in the East superior to education in the West? So, let&rsquo;s explore the future in education&hellip;</p>
+
+<h2>Creativity vs. Hard Work</h2>
+
+<p>Western educational systems focus on the&nbsp;<a href="https://digital-photography-school.com/inspire-creativity/">ideas of creativity</a>. Obviously, the system being a system means that numerous things are bound together, but still, it normally does it&rsquo;s best to elevate individual ways to deal with various students.</p>
+
+<p>Whereas in Eastern education, it is all about hard work and struggle. Nothing is difficult if you practice hard. Consequently, kids are given lots of homework and are instructed to buckle down. That is the reason Asian students are frequently considerably more profitable than their peers when they get into more casual Western educational institutions.</p>
+
+<h2>Participation vs. Reception</h2>
+
+<p>&nbsp;</p>
+
+<p>Western education moves further and facilitate along the road of transforming students into undeniable members of the training procedure. They are urged to make inquiries and debate with their instructors, to think critically.<br />
+Though in the East, students are the beneficiaries, they submit to the authority of teachers and the method itself is far less interactive.</p>
+
+<h2>Special Needs: Inclusion vs. Separation</h2>
+
+<p>Western education makes incredible efforts to include kids with extra needs into the general mass of students, they have a tendency to be educated together with ordinary kids or if nothing else it is considered to be their major right.<br />
+In the East, we normally see an oppositely inverse approach &ndash; kids with disability are quite often taught separately from the rest, and it isn&rsquo;t thought to be unfair, just logical.</p>
+
+<h2>Conclusion: East vs West</h2>
+
+<p>So, this was all about how the culture and education system of East differs from the West. We can&rsquo;t compare the cultural or education systems of eastern countries to the Western countries. But, more important is how people of both the countries adopt each other&rsquo;s cultural values and educational system.</p>
+','','','0','<row row_id="0" vocabulary_code="1" vocabulary_div="Danh từ" vocabulary_nm="A" spelling="a" mean="chữ &amp;#39;A&amp;#39; trong bảng chữ cái" explain="" /><row row_id="1" vocabulary_code="2" vocabulary_div="Danh từ" vocabulary_nm="B" spelling="B" mean="Chữ cái &amp;#39;B&amp;#39;" explain="" />','','<row row_id="1" content="It’s said that East and West can never meet up?" question_div="1" /><row row_id="1" content="yes" verify="0" question_div="1" /><row row_id="1" content="no" verify="1" question_div="1" /><row row_id="1" content="no comment" verify="0" question_div="1" /><row row_id="1" content="what ever!" verify="1" question_div="1" />','1','::1';
+2019-03-28 14:11:08 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:08 EXEC SPC_W002_LST1 '2';
+2019-03-28 14:11:09 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:09 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:11:09 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:09 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:11:12 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 14:11:12 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:12 EXEC SPC_W001_LST1
+2019-03-28 14:11:14 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:14 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 14:11:17 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:17 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:17 EXEC SPC_p004_LST1 '2';
+2019-03-28 14:11:30 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:30 EXEC SPC_COM_MENU '1';
+2019-03-28 14:11:30 EXEC SPC_p004_LST1 '2';
+2019-03-28 14:12:41 EXEC SPC_COM_MENU '1';
+2019-03-28 14:12:41 EXEC SPC_COMMON_CATALORUE '';
+2019-03-28 14:12:42 EXEC SPC_COM_MENU '1';
+2019-03-28 14:12:42 EXEC SPC_COMMON_GROUP '';
+2019-03-28 14:13:25 EXEC SPC_COM_MENU '1';
+2019-03-28 14:13:26 EXEC SPC_COM_MENU '1';
+2019-03-28 14:13:26 EXEC SPC_p004_LST1 '2';
+2019-03-28 14:14:43 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 14:14:43 EXEC SPC_COM_MENU '1';
+2019-03-28 14:14:43 EXEC SPC_W002_FND1
+2019-03-28 14:14:44 EXEC SPC_COM_MENU '1';
+2019-03-28 14:14:44 EXEC SPC_W002_LST1 '2';
+2019-03-28 14:14:44 EXEC SPC_COM_MENU '1';
+2019-03-28 14:14:44 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:14:44 EXEC SPC_COM_MENU '1';
+2019-03-28 14:14:44 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:22:00 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:00 EXEC SPC_W002_LST1 '';
+2019-03-28 14:22:03 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:03 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:22:05 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:05 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:22:32 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:32 EXEC SPC_COM_M999_INQ1 '8';
+2019-03-28 14:22:32 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:32 EXEC SPC_P003_LST2 '<row vocabulary_code="" vocabulary_id="" vocabulary_div="" vocabulary_nm="" spelling="" mean="" explain="" />';
+2019-03-28 14:22:34 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:34 EXEC SPC_P003_LST1 '0','','','','50','1';
+2019-03-28 14:22:37 EXEC SPC_COM_MENU '1';
+2019-03-28 14:22:37 EXEC SPC_P003_LST3 '<row vocabulary_code="1" /><row vocabulary_code="2" />';
+2019-03-28 14:23:16 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:16 EXEC SPC_w002_ACT1 '','5','3','5','East and West can never meet up?','','<p>It&rsquo;s said that East and West can never meet up. As they differ in history, religion, political system and so on; differences are clearly seen in Eastern and Western ways to deal with education.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Eastern_world">Eastern world</a>&nbsp;refers to nations in the Asia and Middle East whereas Western world refers to North and South America, Europe, Australia and New Zealand. East and West may have myriad differences based on culture and education. These differences can be noted for the most part in people&rsquo;s behavior and attitudes.<br />
+The major difference between eastern and western culture is that people in the east are more conservative and traditional than the general population in the west.</p>
+
+<p>&nbsp;</p>
+
+<p><strong><em>Let&rsquo;s have a clear view on the difference between east and west in terms of culture&hellip;</em></strong></p>
+
+<h2>Eastern Culture</h2>
+
+<p>Eastern Culture (refer to the culture map above) has these characteristics listed below:</p>
+
+<ul>
+	<li>Eastern world refers to the nations in Asia and Middle East.</li>
+	<li>Hinduism, Buddhism, Jainism, Shenism, Taoism, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Eastern countries are more customary than people in the West when we consider their traditions, clothings, rituals, and so on. For example, Indians pay regard to their elders or parents by touching their feet; East Asians use bows as welcome, apologizing and expressing thank you.</li>
+	<li>People in the East are inflexible in their beliefs and ideologies; they were unwilling to challenge and question the long practiced customs and traditions.</li>
+	<li>In Eastern countries, elders are considered as the leader of the home and children regard and obey them in all choices. Important decisions related to children&rsquo;s future are normally taken by elders. And, when parents grow old, the kids are likely to take care of them.</li>
+	<li>Arranged marriages are common in the Eastern countries. They are normally arranged by parents or elders. They believe in a concept that love comes after marriage.</li>
+</ul>
+
+<p><br />
+&nbsp;</p>
+
+<h2>Western Culture</h2>
+
+<p>Western culture (as specified in the cultural map above) is defined as these types of items:</p>
+
+<ul>
+	<li>Western culture refers to Europe and North America.</li>
+	<li>Judaism, Christianity, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Western countries are more liberal than those in the East. The Westerns are more open and blunt. For example, topics like sex or birth of a child are openly discussed in&nbsp;<a href="https://en.wikipedia.org/wiki/Western_world">Western culture</a>, whereas in the East, these topics are still a taboo.</li>
+	<li>People in the West are more open to express their feelings. If they are angry, they may express. But, people in the east may cover it for tact and good manners.</li>
+	<li>Also, a person is given preference over family, so a person is more flexible and free to take decisions on his own, unlike those in the East.</li>
+	<li>Concepts like arranged marriages are not at all common in the West. They go for love marriages as they believe in a concept that love comes before marriage.</li>
+</ul>
+
+<h2>Difference Between East And West In Terms Of Education&hellip;</h2>
+
+<p>&nbsp;</p>
+
+<p><em>Image Source : http://www.teflone.com</em></p>
+
+<p>Is education in the East superior to education in the West? So, let&rsquo;s explore the future in education&hellip;</p>
+
+<h2>Creativity vs. Hard Work</h2>
+
+<p>Western educational systems focus on the&nbsp;<a href="https://digital-photography-school.com/inspire-creativity/">ideas of creativity</a>. Obviously, the system being a system means that numerous things are bound together, but still, it normally does it&rsquo;s best to elevate individual ways to deal with various students.</p>
+
+<p>Whereas in Eastern education, it is all about hard work and struggle. Nothing is difficult if you practice hard. Consequently, kids are given lots of homework and are instructed to buckle down. That is the reason Asian students are frequently considerably more profitable than their peers when they get into more casual Western educational institutions.</p>
+
+<h2>Participation vs. Reception</h2>
+
+<p>&nbsp;</p>
+
+<p>Western education moves further and facilitate along the road of transforming students into undeniable members of the training procedure. They are urged to make inquiries and debate with their instructors, to think critically.<br />
+Though in the East, students are the beneficiaries, they submit to the authority of teachers and the method itself is far less interactive.</p>
+
+<h2>Special Needs: Inclusion vs. Separation</h2>
+
+<p>Western education makes incredible efforts to include kids with extra needs into the general mass of students, they have a tendency to be educated together with ordinary kids or if nothing else it is considered to be their major right.<br />
+In the East, we normally see an oppositely inverse approach &ndash; kids with disability are quite often taught separately from the rest, and it isn&rsquo;t thought to be unfair, just logical.</p>
+
+<h2>Conclusion: East vs West</h2>
+
+<p>So, this was all about how the culture and education system of East differs from the West. We can&rsquo;t compare the cultural or education systems of eastern countries to the Western countries. But, more important is how people of both the countries adopt each other&rsquo;s cultural values and educational system.</p>
+','','','0','<row row_id="0" vocabulary_code="1" vocabulary_div="Danh từ" vocabulary_nm="A" spelling="a" mean="chữ &amp;#39;A&amp;#39; trong bảng chữ cái" explain="" /><row row_id="1" vocabulary_code="2" vocabulary_div="Danh từ" vocabulary_nm="B" spelling="B" mean="Chữ cái &amp;#39;B&amp;#39;" explain="" />','','<row row_id="1" content=" East and West can never meet up?" question_div="1" /><row row_id="1" content="yes" verify="0" question_div="1" /><row row_id="1" content="no" verify="1" question_div="1" /><row row_id="1" content="no comment" verify="1" question_div="1" /><row row_id="1" content="what ever!" verify="0" question_div="1" />','1','::1';
+2019-03-28 14:23:18 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:18 EXEC SPC_W002_LST1 '3';
+2019-03-28 14:23:18 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:18 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:23:18 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:18 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:23:22 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 14:23:22 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:22 EXEC SPC_W002_FND1
+2019-03-28 14:23:22 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:22 EXEC SPC_W002_LST1 '2';
+2019-03-28 14:23:23 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:23 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:23:23 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:23 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:23:28 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:28 EXEC SPC_W002_LST1 '3';
+2019-03-28 14:23:28 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:28 EXEC SPC_W002_LST2 '5';
+2019-03-28 14:23:28 EXEC SPC_COM_MENU '1';
+2019-03-28 14:23:28 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 14:57:38 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 14:57:38 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:38 EXEC SPC_W001_LST1
+2019-03-28 14:57:41 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:41 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 14:57:43 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:43 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:43 EXEC SPC_p004_LST1 '3';
+2019-03-28 14:57:51 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 14:57:51 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:51 EXEC SPC_W001_LST1
+2019-03-28 14:57:53 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:53 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 14:57:55 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:55 EXEC SPC_COM_MENU '1';
+2019-03-28 14:57:55 EXEC SPC_p004_LST1 '3';
+2019-03-28 14:58:26 EXEC SPC_COM_MENU '1';
+2019-03-28 14:58:27 EXEC SPC_COM_MENU '1';
+2019-03-28 14:58:27 EXEC SPC_p004_LST1 '3';
+2019-03-28 14:59:22 EXEC SPC_COM_MENU '1';
+2019-03-28 14:59:23 EXEC SPC_COM_MENU '1';
+2019-03-28 14:59:23 EXEC SPC_p004_LST1 '3';
+2019-03-28 14:59:35 EXEC SPC_COM_MENU '1';
+2019-03-28 14:59:35 EXEC SPC_COM_MENU '1';
+2019-03-28 14:59:35 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:00:05 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:05 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:05 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:00:41 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 15:00:41 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:41 EXEC SPC_W002_FND1
+2019-03-28 15:00:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:42 EXEC SPC_W002_LST1 '3';
+2019-03-28 15:00:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:42 EXEC SPC_W002_LST2 '5';
+2019-03-28 15:00:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:00:42 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 15:01:40 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:40 EXEC SPC_w002_ACT1 '3','5','3','5','East and West can never meet up?','','<p>It&rsquo;s said that East and West can never meet up. As they differ in history, religion, political system and so on; differences are clearly seen in Eastern and Western ways to deal with education.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Eastern_world">Eastern world</a>&nbsp;refers to nations in the Asia and Middle East whereas Western world refers to North and South America, Europe, Australia and New Zealand. East and West may have myriad differences based on culture and education. These differences can be noted for the most part in people&rsquo;s behavior and attitudes.<br />
+The major difference between eastern and western culture is that people in the east are more conservative and traditional than the general population in the west.</p>
+
+<p>&nbsp;</p>
+
+<p><strong><em>Let&rsquo;s have a clear view on the difference between east and west in terms of culture&hellip;</em></strong></p>
+
+<h2>Eastern Culture</h2>
+
+<p>Eastern Culture (refer to the culture map above) has these characteristics listed below:</p>
+
+<ul>
+	<li>Eastern world refers to the nations in Asia and Middle East.</li>
+	<li>Hinduism, Buddhism, Jainism, Shenism, Taoism, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Eastern countries are more customary than people in the West when we consider their traditions, clothings, rituals, and so on. For example, Indians pay regard to their elders or parents by touching their feet; East Asians use bows as welcome, apologizing and expressing thank you.</li>
+	<li>People in the East are inflexible in their beliefs and ideologies; they were unwilling to challenge and question the long practiced customs and traditions.</li>
+	<li>In Eastern countries, elders are considered as the leader of the home and children regard and obey them in all choices. Important decisions related to children&rsquo;s future are normally taken by elders. And, when parents grow old, the kids are likely to take care of them.</li>
+	<li>Arranged marriages are common in the Eastern countries. They are normally arranged by parents or elders. They believe in a concept that love comes after marriage.</li>
+</ul>
+
+<p><br />
+&nbsp;</p>
+
+<h2>Western Culture</h2>
+
+<p>Western culture (as specified in the cultural map above) is defined as these types of items:</p>
+
+<ul>
+	<li>Western culture refers to Europe and North America.</li>
+	<li>Judaism, Christianity, and Islam are some common religions honed in the Western world.</li>
+	<li>The population in Western countries are more liberal than those in the East. The Westerns are more open and blunt. For example, topics like sex or birth of a child are openly discussed in&nbsp;<a href="https://en.wikipedia.org/wiki/Western_world">Western culture</a>, whereas in the East, these topics are still a taboo.</li>
+	<li>People in the West are more open to express their feelings. If they are angry, they may express. But, people in the east may cover it for tact and good manners.</li>
+	<li>Also, a person is given preference over family, so a person is more flexible and free to take decisions on his own, unlike those in the East.</li>
+	<li>Concepts like arranged marriages are not at all common in the West. They go for love marriages as they believe in a concept that love comes before marriage.</li>
+</ul>
+
+<h2>Difference Between East And West In Terms Of Education&hellip;</h2>
+
+<p>&nbsp;</p>
+
+<p><em>Image Source : http://www.teflone.com</em></p>
+
+<p>Is education in the East superior to education in the West? So, let&rsquo;s explore the future in education&hellip;</p>
+
+<h2>Creativity vs. Hard Work</h2>
+
+<p>Western educational systems focus on the&nbsp;<a href="https://digital-photography-school.com/inspire-creativity/">ideas of creativity</a>. Obviously, the system being a system means that numerous things are bound together, but still, it normally does it&rsquo;s best to elevate individual ways to deal with various students.</p>
+
+<p>Whereas in Eastern education, it is all about hard work and struggle. Nothing is difficult if you practice hard. Consequently, kids are given lots of homework and are instructed to buckle down. That is the reason Asian students are frequently considerably more profitable than their peers when they get into more casual Western educational institutions.</p>
+
+<h2>Participation vs. Reception</h2>
+
+<p>&nbsp;</p>
+
+<p>Western education moves further and facilitate along the road of transforming students into undeniable members of the training procedure. They are urged to make inquiries and debate with their instructors, to think critically.<br />
+Though in the East, students are the beneficiaries, they submit to the authority of teachers and the method itself is far less interactive.</p>
+
+<h2>Special Needs: Inclusion vs. Separation</h2>
+
+<p>Western education makes incredible efforts to include kids with extra needs into the general mass of students, they have a tendency to be educated together with ordinary kids or if nothing else it is considered to be their major right.<br />
+In the East, we normally see an oppositely inverse approach &ndash; kids with disability are quite often taught separately from the rest, and it isn&rsquo;t thought to be unfair, just logical.</p>
+
+<h2>Conclusion: East vs West</h2>
+
+<p>So, this was all about how the culture and education system of East differs from the West. We can&rsquo;t compare the cultural or education systems of eastern countries to the Western countries. But, more important is how people of both the countries adopt each other&rsquo;s cultural values and educational system.</p>
+','','','0','<row row_id="0" vocabulary_code="1" vocabulary_div="Danh từ" vocabulary_nm="A" spelling="a" mean="chữ &amp;#39;A&amp;#39; trong bảng chữ cái" explain="" /><row row_id="1" vocabulary_code="2" vocabulary_div="Danh từ" vocabulary_nm="B" spelling="B" mean="Chữ cái &amp;#39;B&amp;#39;" explain="" />','','<row row_id="1" content=" East and West can never meet up?" question_div="1" /><row row_id="1" content="yes" verify="0" question_div="1" /><row row_id="1" content="no" verify="1" question_div="1" /><row row_id="1" content="no comment" verify="1" question_div="1" /><row row_id="1" content="what ever!" verify="0" question_div="1" /><row row_id="2" content="Western culture (as specified in the cultural map above) is defined as what?" question_div="0" /><row row_id="2" content="The population in Western countries are more liberal than those in the East. The Westerns are more open and blunt. For example, topics like sex or birth of a child are openly discussed in Western culture, whereas in the East, these topics are still a taboo." verify="0" question_div="0" /><row row_id="2" content="Western culture refers to Europe and North America." verify="0" question_div="0" /><row row_id="2" content="People in the West are more open to express their feelings. If they are angry, they may express. But, people in the east may cover it for tact and good manners." verify="0" question_div="0" /><row row_id="2" content="all" verify="1" question_div="0" />','1','::1';
+2019-03-28 15:01:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:42 EXEC SPC_W002_LST1 '3';
+2019-03-28 15:01:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:42 EXEC SPC_W002_LST2 '5';
+2019-03-28 15:01:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:42 EXEC SPC_COMMON_GROUP '3';
+2019-03-28 15:01:45 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 15:01:45 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:45 EXEC SPC_W001_LST1
+2019-03-28 15:01:47 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:47 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 15:01:48 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:48 EXEC SPC_COM_MENU '1';
+2019-03-28 15:01:48 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:03:11 EXEC SPC_COM_MENU '1';
+2019-03-28 15:03:12 EXEC SPC_COM_MENU '1';
+2019-03-28 15:03:12 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:03:47 EXEC SPC_COM_MENU '1';
+2019-03-28 15:03:48 EXEC SPC_COM_MENU '1';
+2019-03-28 15:03:48 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:06:44 EXEC SPC_COM_MENU '1';
+2019-03-28 15:06:44 EXEC SPC_COM_MENU '1';
+2019-03-28 15:06:44 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:07:29 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 15:07:29 EXEC SPC_COM_MENU '1';
+2019-03-28 15:07:29 EXEC SPC_W001_LST1
+2019-03-28 15:07:32 EXEC SPC_COM_MENU '1';
+2019-03-28 15:07:32 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 15:07:33 EXEC SPC_COM_MENU '1';
+2019-03-28 15:08:43 EXEC SPC_COM_MENU '1';
+2019-03-28 15:08:49 EXEC SPC_COM_MENU '1';
+2019-03-28 15:10:43 EXEC SPC_COM_MENU '1';
+2019-03-28 15:10:43 EXEC SPC_COM_MENU '1';
+2019-03-28 15:10:43 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:11:40 EXEC SPC_COM_MENU '1';
+2019-03-28 15:11:41 EXEC SPC_COM_MENU '1';
+2019-03-28 15:11:41 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:13:08 EXEC SPC_COM_MENU '1';
+2019-03-28 15:13:08 EXEC SPC_COM_MENU '1';
+2019-03-28 15:13:08 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:15:27 EXEC SPC_COM_MENU '1';
+2019-03-28 15:15:27 EXEC SPC_COM_MENU '1';
+2019-03-28 15:15:27 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:16:06 EXEC SPC_COM_MENU '1';
+2019-03-28 15:16:07 EXEC SPC_COM_MENU '1';
+2019-03-28 15:16:07 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:16:50 EXEC SPC_COM_MENU '1';
+2019-03-28 15:16:51 EXEC SPC_COM_MENU '1';
+2019-03-28 15:16:51 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:19:10 EXEC SPC_COM_MENU '1';
+2019-03-28 15:19:11 EXEC SPC_COM_MENU '1';
+2019-03-28 15:19:11 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:20:19 EXEC SPC_COM_MENU '1';
+2019-03-28 15:20:20 EXEC SPC_COM_MENU '1';
+2019-03-28 15:20:20 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:26:41 EXEC SPC_COM_MENU '1';
+2019-03-28 15:26:42 EXEC SPC_COM_MENU '1';
+2019-03-28 15:26:42 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:27:15 EXEC SPC_COM_MENU '1';
+2019-03-28 15:27:16 EXEC SPC_COM_MENU '1';
+2019-03-28 15:27:16 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:28:16 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:16 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:16 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:28:45 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:46 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:46 EXEC SPC_p004_LST1 '2';
+2019-03-28 15:28:53 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:53 EXEC SPC_COM_MENU '1';
+2019-03-28 15:28:53 EXEC SPC_p004_LST1 '1';
+2019-03-28 15:45:30 EXEC SPC_COM_MENU '1';
+2019-03-28 15:45:30 EXEC SPC_COM_MENU '1';
+2019-03-28 15:45:30 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:45:39 EXEC SPC_COM_MENU '1';
+2019-03-28 15:45:40 EXEC SPC_COM_MENU '1';
+2019-03-28 15:45:40 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:47:16 EXEC SPC_COM_MENU '1';
+2019-03-28 15:47:17 EXEC SPC_COM_MENU '1';
+2019-03-28 15:47:17 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:47:56 EXEC SPC_COM_MENU '1';
+2019-03-28 15:47:56 EXEC SPC_COM_MENU '1';
+2019-03-28 15:47:56 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:48:23 EXEC SPC_COM_MENU '1';
+2019-03-28 15:48:23 EXEC SPC_COM_MENU '1';
+2019-03-28 15:48:23 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:48:50 EXEC SPC_COM_MENU '1';
+2019-03-28 15:48:50 EXEC SPC_COM_MENU '1';
+2019-03-28 15:48:50 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:49:29 EXEC SPC_COM_MENU '1';
+2019-03-28 15:49:36 EXEC SPC_COM_MENU '1';
+2019-03-28 15:49:36 EXEC SPC_COM_MENU '1';
+2019-03-28 15:49:37 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:50:59 EXEC SPC_COM_MENU '1';
+2019-03-28 15:51:00 EXEC SPC_COM_MENU '1';
+2019-03-28 15:51:00 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:51:38 EXEC SPC_COM_MENU '1';
+2019-03-28 15:51:38 EXEC SPC_COM_MENU '1';
+2019-03-28 15:51:38 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:52:23 EXEC SPC_COM_MENU '1';
+2019-03-28 15:52:23 EXEC SPC_COM_MENU '1';
+2019-03-28 15:52:23 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:52:57 EXEC SPC_COM_MENU '1';
+2019-03-28 15:52:58 EXEC SPC_COM_MENU '1';
+2019-03-28 15:52:58 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:53:22 EXEC SPC_COM_MENU '1';
+2019-03-28 15:53:22 EXEC SPC_COM_MENU '1';
+2019-03-28 15:53:22 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:56:27 EXEC SPC_COM_MENU '1';
+2019-03-28 15:56:28 EXEC SPC_COM_MENU '1';
+2019-03-28 15:56:28 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:57:28 EXEC SPC_COM_MENU '1';
+2019-03-28 15:57:28 EXEC SPC_COM_MENU '1';
+2019-03-28 15:57:28 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:58:11 EXEC SPC_COM_MENU '1';
+2019-03-28 15:58:11 EXEC SPC_COM_MENU '1';
+2019-03-28 15:58:11 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:59:31 EXEC SPC_COM_MENU '1';
+2019-03-28 15:59:32 EXEC SPC_COM_MENU '1';
+2019-03-28 15:59:32 EXEC SPC_p004_LST1 '3';
+2019-03-28 15:59:53 EXEC SPC_COM_MENU '1';
+2019-03-28 15:59:53 EXEC SPC_COM_MENU '1';
+2019-03-28 15:59:53 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:00:33 EXEC SPC_COM_MENU '1';
+2019-03-28 16:00:33 EXEC SPC_COM_MENU '1';
+2019-03-28 16:00:33 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:01:10 EXEC SPC_COM_MENU '1';
+2019-03-28 16:01:11 EXEC SPC_COM_MENU '1';
+2019-03-28 16:01:11 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:02:10 EXEC SPC_COM_MENU '1';
+2019-03-28 16:02:10 EXEC SPC_COM_MENU '1';
+2019-03-28 16:02:10 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:04:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:04:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:04:23 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:05:40 EXEC SPC_COM_MENU '1';
+2019-03-28 16:05:41 EXEC SPC_COM_MENU '1';
+2019-03-28 16:05:41 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:06:24 EXEC SPC_COM_MENU '1';
+2019-03-28 16:06:25 EXEC SPC_COM_MENU '1';
+2019-03-28 16:06:25 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:07:01 EXEC SPC_COM_MENU '1';
+2019-03-28 16:07:01 EXEC SPC_COM_MENU '1';
+2019-03-28 16:07:01 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:07:51 EXEC SPC_COM_MENU '1';
+2019-03-28 16:07:52 EXEC SPC_COM_MENU '1';
+2019-03-28 16:07:52 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:08:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:08:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:08:22 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:10:45 EXEC SPC_COM_MENU '1';
+2019-03-28 16:10:46 EXEC SPC_COM_MENU '1';
+2019-03-28 16:10:46 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:12:16 EXEC SPC_COM_MENU '1';
+2019-03-28 16:12:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:12:17 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:13:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:13:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:13:06 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:14:53 EXEC SPC_COM_MENU '1';
+2019-03-28 16:14:54 EXEC SPC_COM_MENU '1';
+2019-03-28 16:14:54 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:17:12 EXEC SPC_COM_MENU '1';
+2019-03-28 16:17:12 EXEC SPC_COM_MENU '1';
+2019-03-28 16:17:12 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:18:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:18:24 EXEC SPC_COM_MENU '1';
+2019-03-28 16:18:24 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:19:30 EXEC SPC_COM_MENU '1';
+2019-03-28 16:19:31 EXEC SPC_COM_MENU '1';
+2019-03-28 16:19:31 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:20:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:20:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:20:17 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:20:32 EXEC SPC_COM_MENU '1';
+2019-03-28 16:20:32 EXEC SPC_COM_MENU '1';
+2019-03-28 16:20:32 EXEC SPC_p004_LST1 '3';
+2019-03-28 16:20:58 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 16:20:58 EXEC SPC_COM_MENU '1';
+2019-03-28 16:20:58 EXEC SPC_W002_FND1
+2019-03-28 16:21:00 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:00 EXEC SPC_W002_LST2 '2';
+2019-03-28 16:21:05 EXEC SPC_COM_PERMISSION '1','2','g003';
+2019-03-28 16:21:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:05 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:21:09 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:09 EXEC SPC_COMMON_CATALORUE '2';
+2019-03-28 16:21:13 EXEC SPC_COM_PERMISSION '1','2','g004';
+2019-03-28 16:21:13 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:13 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:21:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:17 EXEC SPC_COMMON_CATALORUE '2';
+2019-03-28 16:21:35 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:35 EXEC SPC_G004_ACT1 '2','Ngữ pháp cơ bản','1','::1';
+2019-03-28 16:21:37 EXEC SPC_COM_PERMISSION '1','2','g006';
+2019-03-28 16:21:37 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:37 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:21:40 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:40 EXEC SPC_COMMON_CATALORUE '2';
+2019-03-28 16:21:40 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:40 EXEC SPC_COMMON_GROUP '';
+2019-03-28 16:21:42 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:42 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 16:21:58 EXEC SPC_COM_MENU '1';
+2019-03-28 16:21:58 EXEC SPC_G006_ACT1 '2','4','Trợ động từ','1','::1';
+2019-03-28 16:22:05 EXEC SPC_COM_PERMISSION '1','2','g005';
+2019-03-28 16:22:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:22:05 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:22:07 EXEC SPC_COM_MENU '1';
+2019-03-28 16:22:07 EXEC SPC_G005_LST1 '','','','10','1';
+2019-03-28 16:22:24 EXEC SPC_COM_MENU '1';
+2019-03-28 16:22:24 EXEC SPC_COMMON_CATALORUE '2';
+2019-03-28 16:22:24 EXEC SPC_COM_MENU '1';
+2019-03-28 16:22:24 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 16:23:01 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:05 EXEC SPC_G005_ACT1 '<row row_id="6" group_id="6" catalogue_div="2" catalogue_nm="4" group_nm="Các loại từ" />','1','::1';
+2019-03-28 16:23:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:05 EXEC SPC_G005_LST1 '','','','10','1';
+2019-03-28 16:23:22 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 16:23:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:22 EXEC SPC_W002_FND1
+2019-03-28 16:23:25 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:25 EXEC SPC_W002_LST2 '2';
+2019-03-28 16:23:26 EXEC SPC_COM_MENU '1';
+2019-03-28 16:23:26 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 16:27:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:17 EXEC SPC_w002_ACT1 '','2','4','6','Trợ động từ','<row tag_nm="_s" is_new="1" /><row tag_nm="_es" is_new="1" /><row tag_nm="_ing" is_new="1" />','<p><strong>Trợ động từ (auxiliary verbs)&nbsp;</strong>l&agrave; c&aacute;c c&aacute;c từ được theo&nbsp;sau bởi một động từ kh&aacute;c để tạo th&agrave;nh một c&acirc;u hỏi, c&acirc;u phủ định, hoặc thể bị động. C&oacute; 12 trợ động từ trong tiếng Anh: be, have, do, can, shall, will, may, must, need, ought (to), dare, used (to). Trong đ&oacute; c&oacute; 9 động từ c&ograve;n được xếp v&agrave;o loại Động từ khuyết thiếu (<a href="https://efc.edu.vn/modal-verb-la-gi-va-cach-su-dung">Modal verbs</a>). Đ&oacute; l&agrave; c&aacute;c động từ can, may, must, will, shall, need, ought (to), dare v&agrave; used (to).</p>
+
+<hr />
+<h2>3 trợ động từ th&ocirc;ng dụng nhất</h2>
+
+<p>C&oacute; 3 trợ động từ được d&ugrave;ng nhiều nhất:</p>
+
+<ul>
+	<li>Be</li>
+	<li>Do</li>
+	<li>Have</li>
+</ul>
+
+<p>Phần b&ecirc;n dưới sẽ m&ocirc; tả r&otilde; hơn về 3 loại trợ động từ th&ocirc;ng dụng cũng như c&aacute;c v&iacute; dụ để c&aacute;c bạn dễ ph&acirc;n biệt khi n&agrave;o ch&uacute;ng l&agrave; động từ ch&iacute;nh khi n&agrave;o l&agrave; động trợ động từ.</p>
+
+<h3>1. Trợ động từ&nbsp;<em><strong>be</strong></em>:</h3>
+
+<p>Động từ&nbsp;<strong>&ldquo;be&rdquo;</strong>&nbsp;hay&nbsp;<strong>&ldquo;to be&rdquo;</strong>&nbsp;l&agrave; động từ quan trọng được d&ugrave;ng rất nhiều trong&nbsp;<a href="https://efc.edu.vn/">Tiếng Anh</a>. N&oacute; c&oacute; thể được d&ugrave;ng như l&agrave; 1 động từ ch&iacute;nh đứng độc lập trong tất cả c&aacute;c th&igrave; gồm:&nbsp;<strong>be, to be, been, am, are, is, was, were, wasn&rsquo;t, was not aren&rsquo;t, are not, weren&rsquo;t v&agrave; were not</strong>.<br />
+Khi được d&ugrave;ng với chức năng l&agrave; 1 trợ động từ th&igrave;&nbsp;<strong>&ldquo;be&rdquo;</strong>&nbsp;lu&ocirc;n được theo sau bởi 1 động từ kh&aacute;c để tạo th&agrave;nh cụm động từ ho&agrave;n chỉnh, n&oacute; c&oacute; thể l&agrave; số &iacute;t hoặc số nhiều, hiện tại hoặc qu&aacute; khứ. C&aacute;c c&acirc;u phủ định sẽ được th&ecirc;m &ldquo;not&rdquo;.</p>
+
+<ul>
+	<li>Jerry is messy. (Is = Action verb = động từ h&agrave;nh động )</li>
+	<li>Although he is always complaining about his accidents, Jerry fails to pay attention. (Is = auxiliary verb = trợ động từ động từ )</li>
+	<li>Jerry is going to be doing extra laundry for the rest of his life. (to be = auxiliary verb = trợ động từ động từ )</li>
+</ul>
+
+<hr />
+<h3>2. Trợ động từ&nbsp;<em><strong>do</strong></em>:</h3>
+
+<p><strong>&ldquo;Do&rdquo;</strong>&nbsp;c&oacute; thể được d&ugrave;ng như l&agrave; 1 động từ h&agrave;nh động m&agrave; đứng độc lập trong tất cả c&aacute;c th&igrave; gồm:&nbsp;<strong>to do, do, does, done, did and didn&rsquo;t, doesn&rsquo;t or did not .</strong><br />
+Khi được d&ugrave;ng như l&agrave; 1 trợ động từ do&nbsp;<strong>lu&ocirc;n lu&ocirc;n</strong>&nbsp;kết hợp với 1 động từ kh&aacute;c để tạo th&agrave;nh 1 cụm động từ ho&agrave;n chỉnh, n&oacute; được d&ugrave;ng trong c&acirc;u khẳng định để nhấn mạnh v&iacute; dụ:&nbsp;<strong>&ldquo;I did put the garbage out!&rdquo;&nbsp;</strong>. Trợ động từ &ldquo;Do&rdquo; thường được d&ugrave;ng trong c&aacute;c c&acirc;u hỏi v&agrave; c&acirc;u phủ định. N&oacute; cũng được d&ugrave;ng trong c&acirc;u tĩnh lược, khi m&agrave; động từ ch&iacute;nh được hiểu trước đ&oacute;. V&iacute; du:&nbsp;<strong>&ldquo;He plays piano well, doesn&rsquo;t he?&rdquo; hoặc &ldquo;They all had dinner, but I didn&rsquo;t.&rdquo;</strong></p>
+
+<ul>
+	<li>Because he spills things so often, Jerry does more laundry than most people. (Does = Action verb = động từ h&agrave;nh động)</li>
+	<li>Jerry didn&rsquo;t put his coffee in a cup with a lid. (Didn&rsquo;t = auxiliary verb = trợ động từ động từ)</li>
+	<li>Jerry doesn&rsquo;t always spill things, but it happens a lot. (Doesn&rsquo;t = auxiliary verb = trợ động từ động từ )</li>
+</ul>
+
+<h3>3. Trợ động từ&nbsp;<em><strong>have</strong></em>:</h3>
+
+<p><strong>&ldquo;Have&rdquo;</strong>&nbsp;l&agrave; động từ rất quan trọng c&oacute; thể đứng 1 m&igrave;nh độc lập trong tất cả c&aacute;c th&igrave; dưới c&aacute;c dạng:&nbsp;<strong>has, have, having, had, and hadn&rsquo;t or had not.</strong>. N&oacute; được d&ugrave;ng để m&ocirc; tả sở hữu, hoặc cũng được d&ugrave;ng để m&ocirc; tả khả năng, m&ocirc; tả ngoại h&igrave;nh của 1 ai đ&oacute;. &ldquo;Have&rdquo; cũng l&agrave; 1 động từ rất phổ biến để thay thế c&aacute;c động từ &ldquo;eat&rdquo; and &ldquo;drink. V&iacute; dụ &ldquo;Let&rsquo;s have dinner.&rdquo; hoặc &ldquo;Let&rsquo;s have a drink.&rdquo;</p>
+
+<p>Khi được d&ugrave;ng như l&agrave; 1 trợ động từ, &ldquo;have&rdquo; phải kết hợp với 1 động từ ch&iacute;nh để tạo th&agrave;nh 1 cụm động từ ho&agrave;n chỉnh cho n&ecirc;n c&aacute;c bạn rất dễ ph&acirc;n biệt dựa tr&ecirc;n 3 v&iacute; dụ b&ecirc;n dưới:</p>
+
+<h3>4. Trợ động từ khuyết thiếu (Modal Auxiliary Verbs):</h3>
+
+<p>Ngo&agrave;i ba động từ trợ động ch&iacute;nh, have, do, v&agrave; be, c&ograve;n c&oacute; c&aacute;c trợ động từ&nbsp; bổ sung. Đ&acirc;y được gọi l&agrave; trợ động từ khuyết thiếu, v&agrave; ch&uacute;ng kh&ocirc;ng bao giờ thay đổi h&igrave;nh thức:</p>
+
+<ul>
+	<li>Jerry has a large coffee stain on his shirt. &rarr; (Has = Action verb = động từ h&agrave;nh động)</li>
+	<li>Jerry has bought a new shirt to replace the one that was ruined earlier. &rarr; (Has = auxiliary verb = trợ động từ động từ.)</li>
+	<li>Jerry should have been more careful! &rarr; (Have = auxiliary verb = trợ động từ động từ.)
+	<ul>
+		<li>Can</li>
+		<li>Could</li>
+		<li>May</li>
+		<li>Might</li>
+		<li>Must</li>
+		<li>Ought to</li>
+		<li>Shall</li>
+		<li>Should</li>
+		<li>Will</li>
+		<li>Would</li>
+	</ul>
+	</li>
+</ul>
+','','','0','','<row language1_content="i must eat" language2_content="tôi phải ăn" /><row language1_content="you should love me" language2_content="bạn nên yêu tôi" />','<row row_id="1" content="What ________________ they doing when you arrived? " question_div="0" /><row row_id="1" content="was" verify="0" question_div="0" /><row row_id="1" content="were" verify="1" question_div="0" /><row row_id="1" content="are" verify="0" question_div="0" /><row row_id="1" content="been" verify="0" question_div="0" />','1','::1';
+2019-03-28 16:27:18 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:18 EXEC SPC_W002_LST1 '4';
+2019-03-28 16:27:19 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:19 EXEC SPC_W002_LST2 '2';
+2019-03-28 16:27:19 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:19 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 16:27:30 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 16:27:30 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:30 EXEC SPC_W001_LST1
+2019-03-28 16:27:31 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:31 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 16:27:34 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:35 EXEC SPC_COM_MENU '1';
+2019-03-28 16:27:35 EXEC SPC_p004_LST1 '4';
+2019-03-28 16:28:20 EXEC SPC_COM_MENU '1';
+2019-03-28 16:28:20 EXEC SPC_COM_MENU '1';
+2019-03-28 16:28:20 EXEC SPC_p004_LST1 '4';
+2019-03-28 16:28:45 EXEC SPC_COM_MENU '1';
+2019-03-28 16:28:46 EXEC SPC_COM_MENU '1';
+2019-03-28 16:28:46 EXEC SPC_p004_LST1 '4';
+2019-03-28 16:37:17 EXEC SPC_COM_PERMISSION '1','2','g003';
+2019-03-28 16:37:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:17 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:37:19 EXEC SPC_COM_PERMISSION '1','2','g004';
+2019-03-28 16:37:19 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:19 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:37:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:23 EXEC SPC_COMMON_CATALORUE '7';
+2019-03-28 16:37:37 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:37 EXEC SPC_G004_ACT1 '7','anime','1','::1';
+2019-03-28 16:37:40 EXEC SPC_COM_PERMISSION '1','2','g006';
+2019-03-28 16:37:40 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:40 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:37:43 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:43 EXEC SPC_COMMON_CATALORUE '7';
+2019-03-28 16:37:44 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:44 EXEC SPC_COMMON_GROUP '';
+2019-03-28 16:37:48 EXEC SPC_COM_MENU '1';
+2019-03-28 16:37:48 EXEC SPC_COMMON_GROUP '5';
+2019-03-28 16:38:00 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:00 EXEC SPC_G006_ACT1 '7','5','girl','1','::1';
+2019-03-28 16:38:03 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 16:38:03 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:03 EXEC SPC_W002_FND1
+2019-03-28 16:38:07 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:07 EXEC SPC_W002_LST2 '7';
+2019-03-28 16:38:42 EXEC SPC_COM_PERMISSION '1','2','g003';
+2019-03-28 16:38:42 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:43 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:38:44 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:44 EXEC SPC_G003_LST1 '','','10','1';
+2019-03-28 16:38:51 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:51 EXEC SPC_COMMON_CATALORUE '7';
+2019-03-28 16:38:57 EXEC SPC_COM_MENU '1';
+2019-03-28 16:38:57 EXEC SPC_G003_ACT2 '<row row_id="4" id="5" />','1','::1';
+2019-03-28 16:39:02 EXEC SPC_COM_PERMISSION '1','2','g005';
+2019-03-28 16:39:02 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:02 EXEC SPC_COM_M999_INQ1 '7';
+2019-03-28 16:39:04 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:04 EXEC SPC_G005_LST1 '','','','10','1';
+2019-03-28 16:39:09 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:09 EXEC SPC_COMMON_CATALORUE '7';
+2019-03-28 16:39:14 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:14 EXEC SPC_G005_ACT2 '<row row_id="6" id="7" />','1','::1';
+2019-03-28 16:39:31 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 16:39:31 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:31 EXEC SPC_W002_FND1
+2019-03-28 16:39:35 EXEC SPC_COM_MENU '1';
+2019-03-28 16:39:35 EXEC SPC_W002_LST2 '7';
+2019-03-28 16:40:20 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:20 EXEC SPC_w002_ACT1 '','7','','','my waifu','<row tag_nm="anime" is_new="1" /><row tag_nm="girl" is_new="1" />','<p>the best girl in my eye</p>
+','/web-content/images/relax_image/image_5c9c7a64e5dc5.jpg','image_5c9c7a64e5dc5.jpg','2','','','','1','::1';
+2019-03-28 16:40:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:22 EXEC SPC_W002_LST1 '5';
+2019-03-28 16:40:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:22 EXEC SPC_W002_LST2 '7';
+2019-03-28 16:40:25 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 16:40:25 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:25 EXEC SPC_W001_LST1
+2019-03-28 16:40:27 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:27 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 16:40:29 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:30 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:30 EXEC SPC_p004_LST1 '5';
+2019-03-28 16:40:43 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:44 EXEC SPC_COM_MENU '1';
+2019-03-28 16:40:44 EXEC SPC_p004_LST1 '5';
+2019-03-28 16:42:31 EXEC SPC_COM_MENU '1';
+2019-03-28 16:42:32 EXEC SPC_COM_MENU '1';
+2019-03-28 16:42:32 EXEC SPC_p004_LST1 '5';
+2019-03-28 16:43:18 EXEC SPC_COM_MENU '1';
+2019-03-28 16:43:18 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-03-28 16:43:22 EXEC SPC_COM_MENU '1';
+2019-03-28 16:43:22 EXEC SPC_W001_ACT2 '<row row_id="3" id="5" />','1','::1';
+2019-03-28 16:43:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:43:23 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 16:43:28 EXEC SPC_COM_MENU '1';
+2019-03-28 16:43:28 EXEC SPC_W001_ACT3 '<row row_id="0" id="5" />','1','::1';
+2019-03-28 16:43:29 EXEC SPC_COM_MENU '1';
+2019-03-28 16:43:29 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-03-28 16:43:34 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:43:34 EXEC SPC_RELAX_LST1 '','';
+2019-03-28 16:43:35 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:43:35 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-03-28 16:43:41 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:43:41 EXEC SPC_RELAX_ACT2 '5','','::1';
+2019-03-28 16:45:05 EXEC SPC_COM_MENU '1';
+2019-03-28 16:45:06 EXEC SPC_COM_MENU '1';
+2019-03-28 16:45:06 EXEC SPC_p004_LST1 '5';
+2019-03-28 16:46:37 EXEC SPC_COM_MENU '1';
+2019-03-28 16:46:38 EXEC SPC_COM_MENU '1';
+2019-03-28 16:46:38 EXEC SPC_p004_LST1 '5';
+2019-03-28 16:52:09 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 16:52:09 EXEC SPC_COM_MENU '1';
+2019-03-28 16:52:09 EXEC SPC_W002_FND1
+2019-03-28 16:52:12 EXEC SPC_COM_MENU '1';
+2019-03-28 16:52:12 EXEC SPC_W002_LST2 '8';
+2019-03-28 16:53:16 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:16 EXEC SPC_w002_ACT1 '','8','','','funny video','<row tag_nm="funny" is_new="1" /><row tag_nm="dog" is_new="1" />','<p>c&aacute;c&nbsp;b&aacute;c&nbsp;n&iacute;n cười hộ em c&aacute;i&nbsp;=))</p>
+','https://www.youtube.com/watch?v=DODLEX4zzLQ','','3','','','','1','::1';
+2019-03-28 16:53:17 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:17 EXEC SPC_W002_LST1 '6';
+2019-03-28 16:53:18 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:18 EXEC SPC_W002_LST2 '8';
+2019-03-28 16:53:19 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 16:53:19 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:19 EXEC SPC_W001_LST1
+2019-03-28 16:53:21 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:21 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 16:53:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:23 EXEC SPC_COM_MENU '1';
+2019-03-28 16:53:23 EXEC SPC_p004_LST1 '6';
+2019-03-28 16:54:20 EXEC SPC_COM_MENU '1';
+2019-03-28 16:54:20 EXEC SPC_COM_MENU '1';
+2019-03-28 16:54:20 EXEC SPC_p004_LST1 '6';
+2019-03-28 16:54:53 EXEC SPC_COM_MENU '1';
+2019-03-28 16:54:54 EXEC SPC_COM_MENU '1';
+2019-03-28 16:54:54 EXEC SPC_p004_LST1 '6';
+2019-03-28 16:55:45 EXEC SPC_COM_MENU '1';
+2019-03-28 16:55:45 EXEC SPC_COM_MENU '1';
+2019-03-28 16:55:45 EXEC SPC_p004_LST1 '6';
+2019-03-28 16:56:30 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 16:56:30 EXEC SPC_COM_MENU '1';
+2019-03-28 16:56:30 EXEC SPC_W001_LST1
+2019-03-28 16:56:32 EXEC SPC_COM_MENU '1';
+2019-03-28 16:56:32 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 16:56:33 EXEC SPC_COM_MENU '1';
+2019-03-28 16:56:34 EXEC SPC_COM_MENU '1';
+2019-03-28 16:56:34 EXEC SPC_p004_LST1 '6';
+2019-03-28 16:57:36 EXEC SPC_COM_MENU '1';
+2019-03-28 16:57:36 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-03-28 16:57:40 EXEC SPC_COM_MENU '1';
+2019-03-28 16:57:40 EXEC SPC_W001_ACT2 '<row row_id="3" id="6" />','1','::1';
+2019-03-28 16:57:41 EXEC SPC_COM_MENU '1';
+2019-03-28 16:57:41 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 16:57:46 EXEC SPC_COM_MENU '1';
+2019-03-28 16:57:46 EXEC SPC_W001_ACT3 '<row row_id="0" id="6" />','1','::1';
+2019-03-28 16:57:47 EXEC SPC_COM_MENU '1';
+2019-03-28 16:57:47 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-03-28 16:57:51 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:57:51 EXEC SPC_RELAX_LST1 '','';
+2019-03-28 16:57:52 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:57:52 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-03-28 16:57:59 EXEC SPC_COM_DATA '','','';
+2019-03-28 16:57:59 EXEC SPC_RELAX_ACT2 '6','','::1';
+2019-03-28 17:00:32 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:33 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:33 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:00:36 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:00:36 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:36 EXEC SPC_W001_LST1
+2019-03-28 17:00:39 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:39 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:00:40 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:41 EXEC SPC_COM_MENU '1';
+2019-03-28 17:00:41 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:02:32 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:02:32 EXEC SPC_COM_MENU '1';
+2019-03-28 17:02:32 EXEC SPC_W001_LST1
+2019-03-28 17:02:34 EXEC SPC_COM_MENU '1';
+2019-03-28 17:02:34 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:02:35 EXEC SPC_COM_MENU '1';
+2019-03-28 17:02:36 EXEC SPC_COM_MENU '1';
+2019-03-28 17:02:36 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:03:42 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:03:42 EXEC SPC_COM_MENU '1';
+2019-03-28 17:03:42 EXEC SPC_W001_LST1
+2019-03-28 17:03:44 EXEC SPC_COM_MENU '1';
+2019-03-28 17:03:44 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:03:45 EXEC SPC_COM_MENU '1';
+2019-03-28 17:03:46 EXEC SPC_COM_MENU '1';
+2019-03-28 17:03:46 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:04:08 EXEC SPC_COM_MENU '1';
+2019-03-28 17:04:08 EXEC SPC_COM_MENU '1';
+2019-03-28 17:04:08 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:04:53 EXEC SPC_COM_MENU '1';
+2019-03-28 17:04:54 EXEC SPC_COM_MENU '1';
+2019-03-28 17:04:54 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:07:38 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:07:38 EXEC SPC_COM_MENU '1';
+2019-03-28 17:07:38 EXEC SPC_W001_LST1
+2019-03-28 17:07:40 EXEC SPC_COM_MENU '1';
+2019-03-28 17:07:40 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:07:41 EXEC SPC_COM_MENU '1';
+2019-03-28 17:07:42 EXEC SPC_COM_MENU '1';
+2019-03-28 17:07:42 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:09:42 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:09:42 EXEC SPC_COM_MENU '1';
+2019-03-28 17:09:42 EXEC SPC_W001_LST1
+2019-03-28 17:09:44 EXEC SPC_COM_MENU '1';
+2019-03-28 17:09:44 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:09:45 EXEC SPC_COM_MENU '1';
+2019-03-28 17:09:45 EXEC SPC_COM_MENU '1';
+2019-03-28 17:09:45 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:11:25 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:11:25 EXEC SPC_COM_MENU '1';
+2019-03-28 17:11:25 EXEC SPC_W001_LST1
+2019-03-28 17:11:31 EXEC SPC_COM_MENU '1';
+2019-03-28 17:11:31 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:11:38 EXEC SPC_COM_MENU '1';
+2019-03-28 17:11:38 EXEC SPC_COM_MENU '1';
+2019-03-28 17:11:38 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:12:59 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:13:00 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:00 EXEC SPC_W001_LST1
+2019-03-28 17:13:01 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:01 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:13:04 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:04 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:04 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:13:24 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:13:24 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:24 EXEC SPC_W001_LST1
+2019-03-28 17:13:26 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:26 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:13:28 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:28 EXEC SPC_COM_MENU '1';
+2019-03-28 17:13:28 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:20:28 EXEC SPC_COM_MENU '1';
+2019-03-28 17:20:29 EXEC SPC_COM_MENU '1';
+2019-03-28 17:20:29 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:24:23 EXEC SPC_COM_MENU '1';
+2019-03-28 17:24:24 EXEC SPC_COM_MENU '1';
+2019-03-28 17:24:24 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:28:43 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:28:43 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:43 EXEC SPC_W001_LST1
+2019-03-28 17:28:46 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:46 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:28:47 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:47 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:47 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:28:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:58 EXEC SPC_COM_MENU '1';
+2019-03-28 17:28:58 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:30:01 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:30:01 EXEC SPC_COM_MENU '1';
+2019-03-28 17:30:01 EXEC SPC_W001_LST1
+2019-03-28 17:30:12 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:30:12 EXEC SPC_COM_MENU '1';
+2019-03-28 17:30:12 EXEC SPC_W001_LST1
+2019-03-28 17:30:14 EXEC SPC_COM_MENU '1';
+2019-03-28 17:30:14 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:30:15 EXEC SPC_COM_MENU '1';
+2019-03-28 17:30:16 EXEC SPC_COM_MENU '1';
+2019-03-28 17:30:16 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:31:14 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:31:14 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:14 EXEC SPC_W001_LST1
+2019-03-28 17:31:16 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:16 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:31:17 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:18 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:18 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:31:49 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:49 EXEC SPC_COM_MENU '1';
+2019-03-28 17:31:49 EXEC SPC_p004_LST1 '5';
+2019-03-28 17:32:27 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:27 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:27 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:32:54 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:32:54 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:54 EXEC SPC_W001_LST1
+2019-03-28 17:32:56 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:56 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:32:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:32:57 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:33:57 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 17:33:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:33:57 EXEC SPC_W002_FND1
+2019-03-28 17:33:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:33:57 EXEC SPC_W002_LST1 '6';
+2019-03-28 17:33:58 EXEC SPC_COM_MENU '1';
+2019-03-28 17:33:58 EXEC SPC_W002_LST2 '8';
+2019-03-28 17:34:15 EXEC SPC_COM_MENU '1';
+2019-03-28 17:34:16 EXEC SPC_w002_ACT1 '6','8','','','funny video youtube','<row tag_id="6" is_new="0" /><row tag_id="7" is_new="0" />','<p>c&aacute;c&nbsp;b&aacute;c&nbsp;n&iacute;n cười hộ em c&aacute;i&nbsp;=))</p>
+','https://www.youtube.com/watch?v=DODLEX4zzLQ','','3','','','','1','::1';
+2019-03-28 17:34:18 EXEC SPC_COM_MENU '1';
+2019-03-28 17:34:18 EXEC SPC_W002_LST1 '6';
+2019-03-28 17:34:18 EXEC SPC_COM_MENU '1';
+2019-03-28 17:34:18 EXEC SPC_W002_LST2 '8';
+2019-03-28 17:34:20 EXEC SPC_COM_MENU '1';
+2019-03-28 17:34:20 EXEC SPC_W002_LST1 '7';
+2019-03-28 17:34:25 EXEC SPC_COM_MENU '1';
+2019-03-28 17:34:25 EXEC SPC_W002_LST2 '8';
+2019-03-28 17:35:43 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:43 EXEC SPC_w002_ACT1 '','8','','','funny video facebook','<row tag_nm="face" is_new="1" /><row tag_id="6" is_new="0" />','<p>test video vui của&nbsp;face</p>
+','https://www.facebook.com/vietfunnyvideo/videos/0215ac4d/1347814858695976/','','4','','','','1','::1';
+2019-03-28 17:35:44 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:44 EXEC SPC_W002_LST1 '7';
+2019-03-28 17:35:44 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:44 EXEC SPC_W002_LST2 '8';
+2019-03-28 17:35:46 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:35:46 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:46 EXEC SPC_W001_LST1
+2019-03-28 17:35:47 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:47 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:35:49 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:50 EXEC SPC_COM_MENU '1';
+2019-03-28 17:35:50 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:37:55 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:37:55 EXEC SPC_COM_MENU '1';
+2019-03-28 17:37:55 EXEC SPC_W001_LST1
+2019-03-28 17:37:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:37:57 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:37:58 EXEC SPC_COM_MENU '1';
+2019-03-28 17:37:59 EXEC SPC_COM_MENU '1';
+2019-03-28 17:37:59 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:38:28 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:38:30 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:38:30 EXEC SPC_TRANSLATION_LST1 '','';
+2019-03-28 17:38:30 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:38:30 EXEC SPC_RELAX_LST1 '','';
+2019-03-28 17:38:31 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:38:31 EXEC SPC_RELAX_LST2 '','1','1','1','0','','';
+2019-03-28 17:38:38 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:38:38 EXEC SPC_RELAX_ACT2 '6','','::1';
+2019-03-28 17:38:46 EXEC SPC_COM_MENU '1';
+2019-03-28 17:38:46 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-03-28 17:38:50 EXEC SPC_COM_MENU '1';
+2019-03-28 17:38:50 EXEC SPC_W001_ACT2 '<row row_id="3" id="7" />','1','::1';
+2019-03-28 17:38:51 EXEC SPC_COM_MENU '1';
+2019-03-28 17:38:51 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 17:38:56 EXEC SPC_COM_MENU '1';
+2019-03-28 17:38:56 EXEC SPC_W001_ACT3 '<row row_id="0" id="7" />','1','::1';
+2019-03-28 17:38:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:38:57 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-03-28 17:39:04 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:39:04 EXEC SPC_RELAX_LST2 '','1','1','1','<row tag_id="6" /><row tag_id="7" />','0','';
+2019-03-28 17:39:10 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:39:10 EXEC SPC_RELAX_ACT2 '6','','::1';
+2019-03-28 17:39:17 EXEC SPC_COM_DATA '','','';
+2019-03-28 17:39:17 EXEC SPC_RELAX_ACT2 '7','','::1';
+2019-03-28 17:40:58 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:40:58 EXEC SPC_COM_MENU '1';
+2019-03-28 17:40:58 EXEC SPC_W001_LST1
+2019-03-28 17:40:59 EXEC SPC_COM_MENU '1';
+2019-03-28 17:40:59 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:41:02 EXEC SPC_COM_MENU '1';
+2019-03-28 17:41:03 EXEC SPC_COM_MENU '1';
+2019-03-28 17:41:03 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:41:10 EXEC SPC_COM_MENU '1';
+2019-03-28 17:41:11 EXEC SPC_COM_MENU '1';
+2019-03-28 17:41:11 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:42:35 EXEC SPC_COM_MENU '1';
+2019-03-28 17:42:35 EXEC SPC_COM_MENU '1';
+2019-03-28 17:42:35 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:43:21 EXEC SPC_COM_MENU '1';
+2019-03-28 17:43:21 EXEC SPC_COM_MENU '1';
+2019-03-28 17:43:21 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:43:52 EXEC SPC_COM_MENU '1';
+2019-03-28 17:43:52 EXEC SPC_COM_MENU '1';
+2019-03-28 17:43:52 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:45:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:45:58 EXEC SPC_COM_MENU '1';
+2019-03-28 17:45:58 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:52:12 EXEC SPC_COM_MENU '1';
+2019-03-28 17:52:13 EXEC SPC_COM_MENU '1';
+2019-03-28 17:52:13 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:56:49 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 17:56:49 EXEC SPC_COM_MENU '1';
+2019-03-28 17:56:49 EXEC SPC_W001_LST1
+2019-03-28 17:56:52 EXEC SPC_COM_MENU '1';
+2019-03-28 17:56:52 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 17:56:56 EXEC SPC_COM_MENU '1';
+2019-03-28 17:56:57 EXEC SPC_COM_MENU '1';
+2019-03-28 17:56:57 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:57:39 EXEC SPC_COM_MENU '1';
+2019-03-28 17:57:39 EXEC SPC_COM_MENU '1';
+2019-03-28 17:57:39 EXEC SPC_p004_LST1 '6';
+2019-03-28 17:57:50 EXEC SPC_COM_MENU '1';
+2019-03-28 17:57:50 EXEC SPC_COM_MENU '1';
+2019-03-28 17:57:50 EXEC SPC_p004_LST1 '5';
+2019-03-28 17:58:11 EXEC SPC_COM_MENU '1';
+2019-03-28 17:58:11 EXEC SPC_COM_MENU '1';
+2019-03-28 17:58:11 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:58:15 EXEC SPC_COM_MENU '1';
+2019-03-28 17:58:15 EXEC SPC_p004_LST1 '7';
+2019-03-28 17:58:18 EXEC SPC_COM_MENU '1';
+2019-03-28 17:58:18 EXEC SPC_p004_LST1 '7';
+2019-03-28 18:00:09 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 18:00:09 EXEC SPC_COM_MENU '1';
+2019-03-28 18:00:09 EXEC SPC_W002_FND1
+2019-03-28 18:00:55 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 18:00:55 EXEC SPC_COM_MENU '1';
+2019-03-28 18:00:55 EXEC SPC_W002_FND1
+2019-03-28 18:01:00 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 18:01:00 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:00 EXEC SPC_W001_LST1
+2019-03-28 18:01:01 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:01 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 18:01:03 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:04 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:04 EXEC SPC_p004_LST1 '7';
+2019-03-28 18:01:12 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 18:01:12 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:12 EXEC SPC_W002_FND1
+2019-03-28 18:01:13 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:13 EXEC SPC_W002_LST1 'e=7';
+2019-03-28 18:01:13 SQLSTATE[22018]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]nvarchar の値 'e=7' をデータ型 int に変換できませんでした。
+2019-03-28 18:01:43 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-03-28 18:01:43 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:43 EXEC SPC_W001_LST1
+2019-03-28 18:01:44 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:44 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-03-28 18:01:46 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:46 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:46 EXEC SPC_p004_LST1 '7';
+2019-03-28 18:01:49 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 18:01:49 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:49 EXEC SPC_W002_FND1
+2019-03-28 18:01:50 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:50 EXEC SPC_W002_LST1 '7';
+2019-03-28 18:01:50 EXEC SPC_COM_MENU '1';
+2019-03-28 18:01:50 EXEC SPC_W002_LST2 '8';
+2019-03-28 18:02:23 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:23 EXEC SPC_w002_ACT1 '7','8','','','funny video facebook','<row tag_id="6" is_new="0" /><row tag_id="8" is_new="0" />','<p>test video vui của&nbsp;facebook&nbsp;</p>
+
+<p>đứa n&agrave;o&nbsp;coi th&igrave;&nbsp;coi&nbsp;ko coi&nbsp;th&igrave;&nbsp;phắn -_-</p>
+','https://www.facebook.com/vietfunnyvideo/videos/0215ac4d/1347814858695976/','','4','','','','1','::1';
+2019-03-28 18:02:24 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:24 EXEC SPC_W002_LST1 '7';
+2019-03-28 18:02:25 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:25 EXEC SPC_W002_LST2 '8';
+2019-03-28 18:02:27 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:27 EXEC SPC_p004_LST1 '7';
+2019-03-28 18:02:45 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:45 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-03-28 18:02:56 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:56 EXEC SPC_COM_MENU '1';
+2019-03-28 18:02:56 EXEC SPC_p004_LST1 '4';
+2019-03-28 18:03:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-03-28 18:03:06 EXEC SPC_COM_MENU '1';
+2019-03-28 18:03:06 EXEC SPC_W002_FND1
+2019-03-28 18:03:06 EXEC SPC_COM_MENU '1';
+2019-03-28 18:03:06 EXEC SPC_W002_LST1 '4';
+2019-03-28 18:03:07 EXEC SPC_COM_MENU '1';
+2019-03-28 18:03:07 EXEC SPC_W002_LST2 '2';
+2019-03-28 18:03:07 EXEC SPC_COM_MENU '1';
+2019-03-28 18:03:07 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 18:04:25 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:25 EXEC SPC_w002_ACT1 '4','2','4','6','Trợ động từ','<row tag_id="1" is_new="0" /><row tag_id="2" is_new="0" /><row tag_id="3" is_new="0" />','<p><span style="font-size:14px"><strong>Trợ động từ (auxiliary verbs)&nbsp;</strong>l&agrave; c&aacute;c c&aacute;c từ được theo&nbsp;sau bởi một động từ kh&aacute;c để tạo th&agrave;nh một c&acirc;u hỏi, c&acirc;u phủ định, hoặc thể bị động. C&oacute; 12 trợ động từ trong tiếng Anh: be, have, do, can, shall, will, may, must, need, ought (to), dare, used (to). Trong đ&oacute; c&oacute; 9 động từ c&ograve;n được xếp v&agrave;o loại Động từ khuyết thiếu (<a href="https://efc.edu.vn/modal-verb-la-gi-va-cach-su-dung">Modal verbs</a>). Đ&oacute; l&agrave; c&aacute;c động từ can, may, must, will, shall, need, ought (to), dare v&agrave; used (to).</span></p>
+
+<h2><span style="font-size:14px">3 trợ động từ th&ocirc;ng dụng nhất</span></h2>
+
+<p><span style="font-size:14px">C&oacute; 3 trợ động từ được d&ugrave;ng nhiều nhất:</span></p>
+
+<ul>
+	<li><span style="font-size:14px">Be</span></li>
+	<li><span style="font-size:14px">Do</span></li>
+	<li><span style="font-size:14px">Have</span></li>
+</ul>
+
+<p><span style="font-size:14px">Phần b&ecirc;n dưới sẽ m&ocirc; tả r&otilde; hơn về 3 loại trợ động từ th&ocirc;ng dụng cũng như c&aacute;c v&iacute; dụ để c&aacute;c bạn dễ ph&acirc;n biệt khi n&agrave;o ch&uacute;ng l&agrave; động từ ch&iacute;nh khi n&agrave;o l&agrave; động trợ động từ.</span></p>
+
+<h3><span style="font-size:14px">1. Trợ động từ&nbsp;<em><strong>be</strong></em>:</span></h3>
+
+<p><span style="font-size:14px">Động từ&nbsp;<strong>&ldquo;be&rdquo;</strong>&nbsp;hay&nbsp;<strong>&ldquo;to be&rdquo;</strong>&nbsp;l&agrave; động từ quan trọng được d&ugrave;ng rất nhiều trong&nbsp;<a href="https://efc.edu.vn/">Tiếng Anh</a>. N&oacute; c&oacute; thể được d&ugrave;ng như l&agrave; 1 động từ ch&iacute;nh đứng độc lập trong tất cả c&aacute;c th&igrave; gồm:&nbsp;<strong>be, to be, been, am, are, is, was, were, wasn&rsquo;t, was not aren&rsquo;t, are not, weren&rsquo;t v&agrave; were not</strong>.<br />
+Khi được d&ugrave;ng với chức năng l&agrave; 1 trợ động từ th&igrave;&nbsp;<strong>&ldquo;be&rdquo;</strong>&nbsp;lu&ocirc;n được theo sau bởi 1 động từ kh&aacute;c để tạo th&agrave;nh cụm động từ ho&agrave;n chỉnh, n&oacute; c&oacute; thể l&agrave; số &iacute;t hoặc số nhiều, hiện tại hoặc qu&aacute; khứ. C&aacute;c c&acirc;u phủ định sẽ được th&ecirc;m &ldquo;not&rdquo;.</span></p>
+
+<ul>
+	<li><span style="font-size:14px">Jerry is messy. (Is = Action verb = động từ h&agrave;nh động )</span></li>
+	<li><span style="font-size:14px">Although he is always complaining about his accidents, Jerry fails to pay attention. (Is = auxiliary verb = trợ động từ động từ )</span></li>
+	<li><span style="font-size:14px">Jerry is going to be doing extra laundry for the rest of his life. (to be = auxiliary verb = trợ động từ động từ )</span></li>
+</ul>
+
+<h3><span style="font-size:14px">2. Trợ động từ&nbsp;<em><strong>do</strong></em>:</span></h3>
+
+<p><span style="font-size:14px"><strong>&ldquo;Do&rdquo;</strong>&nbsp;c&oacute; thể được d&ugrave;ng như l&agrave; 1 động từ h&agrave;nh động m&agrave; đứng độc lập trong tất cả c&aacute;c th&igrave; gồm:&nbsp;<strong>to do, do, does, done, did and didn&rsquo;t, doesn&rsquo;t or did not .</strong><br />
+Khi được d&ugrave;ng như l&agrave; 1 trợ động từ do&nbsp;<strong>lu&ocirc;n lu&ocirc;n</strong>&nbsp;kết hợp với 1 động từ kh&aacute;c để tạo th&agrave;nh 1 cụm động từ ho&agrave;n chỉnh, n&oacute; được d&ugrave;ng trong c&acirc;u khẳng định để nhấn mạnh v&iacute; dụ:&nbsp;<strong>&ldquo;I did put the garbage out!&rdquo;&nbsp;</strong>. Trợ động từ &ldquo;Do&rdquo; thường được d&ugrave;ng trong c&aacute;c c&acirc;u hỏi v&agrave; c&acirc;u phủ định. N&oacute; cũng được d&ugrave;ng trong c&acirc;u tĩnh lược, khi m&agrave; động từ ch&iacute;nh được hiểu trước đ&oacute;. V&iacute; du:&nbsp;<strong>&ldquo;He plays piano well, doesn&rsquo;t he?&rdquo; hoặc &ldquo;They all had dinner, but I didn&rsquo;t.&rdquo;</strong></span></p>
+
+<ul>
+	<li><span style="font-size:14px">Because he spills things so often, Jerry does more laundry than most people. (Does = Action verb = động từ h&agrave;nh động)</span></li>
+	<li><span style="font-size:14px">Jerry didn&rsquo;t put his coffee in a cup with a lid. (Didn&rsquo;t = auxiliary verb = trợ động từ động từ)</span></li>
+	<li><span style="font-size:14px">Jerry doesn&rsquo;t always spill things, but it happens a lot. (Doesn&rsquo;t = auxiliary verb = trợ động từ động từ )</span></li>
+</ul>
+
+<h3><span style="font-size:14px">3. Trợ động từ&nbsp;<em><strong>have</strong></em>:</span></h3>
+
+<p><span style="font-size:14px"><strong>&ldquo;Have&rdquo;</strong>&nbsp;l&agrave; động từ rất quan trọng c&oacute; thể đứng 1 m&igrave;nh độc lập trong tất cả c&aacute;c th&igrave; dưới c&aacute;c dạng:&nbsp;<strong>has, have, having, had, and hadn&rsquo;t or had not.</strong>. N&oacute; được d&ugrave;ng để m&ocirc; tả sở hữu, hoặc cũng được d&ugrave;ng để m&ocirc; tả khả năng, m&ocirc; tả ngoại h&igrave;nh của 1 ai đ&oacute;. &ldquo;Have&rdquo; cũng l&agrave; 1 động từ rất phổ biến để thay thế c&aacute;c động từ &ldquo;eat&rdquo; and &ldquo;drink. V&iacute; dụ &ldquo;Let&rsquo;s have dinner.&rdquo; hoặc &ldquo;Let&rsquo;s have a drink.&rdquo;</span></p>
+
+<p><span style="font-size:14px">Khi được d&ugrave;ng như l&agrave; 1 trợ động từ, &ldquo;have&rdquo; phải kết hợp với 1 động từ ch&iacute;nh để tạo th&agrave;nh 1 cụm động từ ho&agrave;n chỉnh cho n&ecirc;n c&aacute;c bạn rất dễ ph&acirc;n biệt dựa tr&ecirc;n 3 v&iacute; dụ b&ecirc;n dưới:</span></p>
+
+<h3><span style="font-size:14px">4. Trợ động từ khuyết thiếu (Modal Auxiliary Verbs):</span></h3>
+
+<p><span style="font-size:14px">Ngo&agrave;i ba động từ trợ động ch&iacute;nh, have, do, v&agrave; be, c&ograve;n c&oacute; c&aacute;c trợ động từ&nbsp; bổ sung. Đ&acirc;y được gọi l&agrave; trợ động từ khuyết thiếu, v&agrave; ch&uacute;ng kh&ocirc;ng bao giờ thay đổi h&igrave;nh thức:</span></p>
+
+<ul>
+	<li><span style="font-size:14px">Jerry has a large coffee stain on his shirt. &rarr; (Has = Action verb = động từ h&agrave;nh động)</span></li>
+	<li><span style="font-size:14px">Jerry has bought a new shirt to replace the one that was ruined earlier. &rarr; (Has = auxiliary verb = trợ động từ động từ.)</span></li>
+	<li><span style="font-size:14px">Jerry should have been more careful! &rarr; (Have = auxiliary verb = trợ động từ động từ.)</span>
+	<ul>
+		<li><span style="font-size:14px">Can</span></li>
+		<li><span style="font-size:14px">Could</span></li>
+		<li><span style="font-size:14px">May</span></li>
+		<li><span style="font-size:14px">Might</span></li>
+		<li><span style="font-size:14px">Must</span></li>
+		<li><span style="font-size:14px">Ought to</span></li>
+		<li><span style="font-size:14px">Shall</span></li>
+		<li><span style="font-size:14px">Should</span></li>
+		<li><span style="font-size:14px">Will</span></li>
+		<li><span style="font-size:14px">Would</span></li>
+	</ul>
+	</li>
+</ul>
+','','','0','','<row language1_content="i must eat" language2_content="tôi phải ăn" /><row language1_content="you should love me" language2_content="bạn nên yêu tôi" />','<row row_id="1" content="What ________________ they doing when you arrived? " question_div="0" /><row row_id="1" content="was" verify="0" question_div="0" /><row row_id="1" content="were" verify="1" question_div="0" /><row row_id="1" content="are" verify="0" question_div="0" /><row row_id="1" content="been" verify="0" question_div="0" />','1','::1';
+2019-03-28 18:04:26 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:26 EXEC SPC_W002_LST1 '4';
+2019-03-28 18:04:26 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:26 EXEC SPC_W002_LST2 '2';
+2019-03-28 18:04:27 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:27 EXEC SPC_COMMON_GROUP '4';
+2019-03-28 18:04:31 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:31 EXEC SPC_p004_LST1 '4';
+2019-03-28 18:04:43 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:43 EXEC SPC_W001_ACT2 '','1','::1';
+2019-03-28 18:04:44 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:44 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 18:04:51 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:51 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 18:04:54 EXEC SPC_COM_MENU '1';
+2019-03-28 18:04:54 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-03-28 18:05:09 EXEC SPC_COM_MENU '1';
+2019-03-28 18:05:09 EXEC SPC_W001_ACT2 '<row row_id="2" id="4" />','1','::1';
+2019-03-28 18:05:11 EXEC SPC_COM_MENU '1';
+2019-03-28 18:05:11 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-03-28 18:06:00 EXEC SPC_COM_MENU '1';
+2019-03-28 18:06:01 EXEC SPC_COM_MENU '1';
+2019-03-28 18:06:01 EXEC SPC_p004_LST1 '4';
+2019-03-28 18:06:07 EXEC SPC_COM_MENU '1';
+2019-03-28 18:06:07 EXEC SPC_W001_ACT3 '<row row_id="0" id="4" />','1','::1';
+2019-03-28 18:06:09 EXEC SPC_COM_MENU '1';
+2019-03-28 18:06:09 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-03-28 18:06:16 EXEC SPC_COM_DATA '','','';
+2019-03-28 18:06:16 EXEC SPC_GRAMMAR_LST1 '','','','';
+2019-03-28 18:06:17 EXEC SPC_COM_DATA '','','';
+2019-03-28 18:06:18 EXEC SPC_GRAMMAR_LST2 '4','6','';
+2019-03-28 18:06:27 EXEC SPC_COM_DATA '','','';
+2019-03-28 18:06:27 EXEC SPC_COM_QUESTION_LIST '4';
+2019-03-28 18:06:39 EXEC SPC_COM_DATA '','','';
+2019-03-28 18:06:39 EXEC SPC_COM_QUESTION_LIST '4';

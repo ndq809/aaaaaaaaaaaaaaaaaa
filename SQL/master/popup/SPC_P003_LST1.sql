@@ -77,6 +77,7 @@ BEGIN
 	AND		(	(@P_vocabulary_div	= 0)
 		OR	(	M006.vocabulary_div		= @P_vocabulary_div))
 	AND	(M006.del_flg = 0)
+	AND (M006.record_div = 1 OR M006.record_div = 2)
 	AND TEMP.Vocabulary_code IS NULL
 
 	--

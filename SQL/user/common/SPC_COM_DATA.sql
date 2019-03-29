@@ -33,5 +33,23 @@ BEGIN
 	FROM M013
 	WHERE M013.tag_div = 3
 	AND M013.del_flg = 0
+
+	SELECT
+		F002.notify_id 
+	,	F002.get_user_id
+	,	F002.notify_condition
+	,	M999.text_remark1 AS notify_content
+	,	M999.text_remark2 AS notify_url
+	,	F002.cre_user
+	,	F002.cre_date
+	FROM F002
+	LEFT JOIN M999
+	ON M999.name_div = 21
+	AND M999.number_id = F002.notify_div
+	WHERE F002.get_user_id = @P_account_id
+	ORDER BY 
+	CASE
+	WHEN F002.notify_condition = 1 THEN 1
+	END,F002.cre_date DESC
 END
 

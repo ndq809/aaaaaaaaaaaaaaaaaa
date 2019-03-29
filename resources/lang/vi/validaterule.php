@@ -9,6 +9,7 @@ return [
         'birth_date'       => 'nullable',
         'employee_div'     => 'required|not_in:0',
         'account_nm'       => 'required|string|max:30',
+        'old_password'     => 'required|string|min:8',
         'password'         => 'required|string|min:8',
         'password_confirm' => 'required|same:password|string|min:8',
         'user_id'          => 'required|max:15',

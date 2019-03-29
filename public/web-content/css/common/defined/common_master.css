@@ -1186,7 +1186,6 @@ audio{
 .avarta-block{
     width: 230px;
     float: left;
-    display: table-cell;
 }
 
 .vocabulary-block{
@@ -1200,7 +1199,8 @@ audio{
     width: 100%;
 }
 .infor-block{
-    display: table-cell;
+    width: auto;
+    overflow: hidden;
 }
 
 .infor-block>div{
@@ -1268,4 +1268,12 @@ audio{
 
 #wsc_banner *{
     display: none!important;
+}
+
+.money{
+    text-align: right;
+}
+
+.numeric{
+    text-align: right;
 }

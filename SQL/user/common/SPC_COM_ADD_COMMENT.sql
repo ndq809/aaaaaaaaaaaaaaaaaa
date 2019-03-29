@@ -29,6 +29,9 @@ BEGIN
 		@ERR_TBL			ERRTABLE
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
+	,	@w_inserted_key		BIGINT				=	0
+	,	@w_time				DATETIME2			=	SYSDATETIME()
+
 	BEGIN TRANSACTION
 	BEGIN TRY
 	
@@ -65,7 +68,7 @@ BEGIN
 		,	@P_user_id
 		,	'common'
 		,	@P_ip
-		,	SYSDATETIME()
+		,	@w_time
 		,	NULL
 		,	NULL
 		,	NULL
@@ -74,6 +77,64 @@ BEGIN
 		,	NULL
 		,	NULL
 		,	NULL
+
+		SET @w_inserted_key = scope_identity()
+
+		--thông báo cho người viết bài
+		INSERT INTO F002(
+			get_user_id
+		,	notify_condition
+		,	notify_div
+		,	del_flg
+		,	cre_user
+		,	cre_prg
+		,	cre_ip
+		,	cre_date
+		)
+		SELECT
+			M007.cre_user
+		,	0
+		,	1
+		,	0
+		,	@P_user_id
+		,	'common'
+		,	@P_ip
+		,	@w_time
+		FROM M007
+		WHERE M007.post_id = @P_target_id
+		AND M007.cre_user <> @P_user_id
+		AND M007.record_div = 2
+		AND M007.post_div = 2
+		AND M007.del_flg = 0
+
+		--thông báo cho người được trả lời cmt (nếu có)
+
+		IF @P_reply_id != ''
+		BEGIN
+			INSERT INTO F002(
+				get_user_id
+			,	notify_condition
+			,	notify_div
+			,	del_flg
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+			)
+			SELECT
+				F004.cre_user
+			,	0 
+			,	2
+			,	0
+			,	@P_user_id
+			,	'common'
+			,	@P_ip
+			,	@w_time
+			FROM F004
+			WHERE F004.comment_id = @P_reply_id
+			AND F004.cre_user <> @P_user_id
+			AND F004.del_flg = 0
+		END
 
 	END TRY
 	BEGIN CATCH
@@ -109,7 +170,7 @@ EXIT_SPC:
 	,	F004.comment_id		AS comment_id
 	,	'' AS reply_id
 	,	F004.target_id
-	,	F004.cre_user
+	,	S001.account_nm AS cre_user
 	,	M001.avarta
 	,	M999.content AS rank
 	,	F004.cmt_content
@@ -118,7 +179,7 @@ EXIT_SPC:
 	,	FORMAT(F004.cre_date,'dd/MM/yyyy HH:mm:ss') AS cre_date
 	FROM F004
 	LEFT JOIN S001
-	ON F004.cre_user = S001.account_nm
+	ON F004.cre_user = S001.account_id
 	LEFT JOIN M001
 	ON S001.user_id = M001.user_id
 	LEFT JOIN M999
@@ -132,6 +193,20 @@ EXIT_SPC:
 		,	[Message]
 	FROM @ERR_TBL
 	ORDER BY Code
-	
+
+	SELECT
+		F002.notify_id 
+	,	F002.get_user_id
+	,	F002.notify_condition
+	,	M999.text_remark1 AS notify_content
+	,	M999.text_remark2 AS notify_url
+	,	F002.cre_user
+	,	F002.cre_date
+	FROM F002
+	LEFT JOIN M999
+	ON M999.name_div = 21
+	AND M999.number_id = F002.notify_div
+	WHERE F002.cre_user = @P_user_id
+	AND F002.cre_date = @w_time
 END
 

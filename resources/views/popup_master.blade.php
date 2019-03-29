@@ -61,7 +61,7 @@
                 <!-- <button type="button" onclick='swal("Good job!", "You clicked the button!", "warning");'>lalala</button> -->
             </div>
         </div>
-        <div class="col-xs-12 no-padding bottom-content hidden">
+        <div class="col-xs-12 no-padding bottom-content hidden" style="margin-top: 20px">
             <h5 class="text-center">COPYRIGHT BY EPLUS.COM 2018 ALL RIGHTS RESERVED</h5>
         </div>
     </body>

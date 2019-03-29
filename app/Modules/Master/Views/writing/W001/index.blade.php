@@ -5,7 +5,7 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/writing/w001.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-list','btn-delete-dis','btn-save-dis','btn-cancel-dis','btn-print-dis','btn-add-page'))}}
+{{Button::menu_button(array('btn-list','btn-confirm','btn-public','btn-reset-status','btn-delete','btn-add-page'))}}
 @endsection
 @section('content')
 <div class="link-div" btn-add-page-link='/master/writing/w002'></div>
@@ -37,6 +37,16 @@
                 <label>Tên Nhóm</label>
                 <select id="group_nm_s" class="submit-item allow-selectize new-allow">
                         <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Trạng Thái</label>
+                <select id="record_div" class="submit-item">
+                    @foreach($data_default[1] as $item)
+                        <option value="{{$item['number_id']}}">{{$item['content']}}</option>
+                    @endforeach
                 </select>
             </div>
         </div>

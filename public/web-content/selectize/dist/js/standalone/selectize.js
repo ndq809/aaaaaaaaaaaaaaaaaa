@@ -1321,8 +1321,10 @@
 			autoGrow($control_input);
 	
 			$control.on({
-				mousedown : function() { return self.onMouseDown.apply(self, arguments); },
-				click     : function() { return self.onClick.apply(self, arguments); }
+				// mousedown : function() { return self.onMouseDown.apply(self, arguments); },
+				click  	  : function() { return self.onClick.apply(self, arguments); },
+				dblclick  : function() { return self.ondblClick.apply(self, arguments); },
+				doubletap : function() { return self.ondblClick.apply(self, arguments); },
 			});
 	
 			$control_input.on({
@@ -1497,6 +1499,18 @@
 				self.focus();
 				e.preventDefault();
 			}
+		},
+
+		ondblClick: function(e) {
+			var self = this;
+	
+			// necessary for mobile webkit devices (manual focus triggering
+			// is ignored unless invoked within a click event)
+	    // also necessary to reopen a dropdown that has been closed by
+	    // closeAfterSelect
+				self.showInput();
+				self.focus();
+				e.preventDefault();
 		},
 	
 		/**
@@ -1742,7 +1756,6 @@
 			if (!wasFocused) self.trigger('focus');
 	
 			if (!self.$activeItems.length) {
-				self.showInput();
 				self.setActiveItem(null);
 				self.refreshOptions(!!self.settings.openOnFocus);
 			}

@@ -117,6 +117,23 @@ function initCommon() {
             // }
         }
     });
+
+    //Thay giá trị PUSHER_APP_KEY vào chỗ xxx này nhé
+    var pusher = new Pusher('4e2d4913190a110d3540', {
+        encrypted: true,
+        cluster: "ap3"
+    });
+
+    // Subscribe to the channel we specified in our Laravel Event
+    var channel = pusher.subscribe('notification');
+
+    // Bind a function to a Event (the full Laravel class)
+    channel.bind('App\\Events\\NotificationEvents', function(data) {
+        if($('.newsfeed .no-data').length==0){
+            $('.newsfeed .table tbody').prepend('<tr><td><a></a></td></tr>');
+        }
+    });
+
     setCollapse();
     initEvent();
     setFooter();
@@ -134,18 +151,18 @@ function initCommon() {
             var select = $(this).selectize({
                 allowEmptyOption: false,
                 create: false,
-                openOnFocus: false,
                 plugins: ['restore_on_backspace'],
                 render: {
                     option: function (data, escape) {
                         return "<div data-parent-id='" + data.catalogue_id + "'>" + data.text + "</div>"
                     }
-                }
+                },
             });
             var selectize = select[0].selectize;
             selectize.on('blur', function() {
                 if (selectize.getValue() === '') {
                     var defaultOption = selectize.options[Object.keys(selectize.options)[0]];
+                    if(defaultOption!=undefined)
                     selectize.setValue(defaultOption.value);
                 }
             });
@@ -357,6 +374,7 @@ function initEvent() {
      $(document).on('keydown', function(e) {
         switch (e.which) {
             case 13:
+                e.preventDefault();
                 if(!e.shiftKey && $('.comment-input:focus').length!=0){
                     $('.comment-input:focus').next().find('button').trigger('click');
                 }

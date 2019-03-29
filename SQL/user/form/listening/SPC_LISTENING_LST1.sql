@@ -41,6 +41,8 @@ BEGIN
 	FROM M007
 	WHERE 
 		M007.post_id = @P_target_id
+	AND M007.record_div = 2
+	AND M007.del_flg = 0
 
 	SELECT
 		F003.id 

@@ -121,33 +121,29 @@
             <div class="newsfeed collapse in close-when-small">
                 <table class="table table-hover table-center">
                     <tbody>
-                        @for($i=1;$i<=3;$i++)
+                        @foreach($raw_data[2] as $index=>$item)
+                        @if($item['notify_id']!='')
                         <tr>
                             <td>
                                 <a>
                                     <i class="glyphicon glyphicon-hand-right">
                                     </i>
-                                    Nhóm từ vựng
+                                    @if($item['notify_condition']==0)
                                     <span>
-                                        Thiên nhiên
+                                        {{$item['notify_content']}}
                                     </span>
-                                    đã được thêm
+                                    @else
+                                        {{$item['notify_content']}}
+                                    @endif
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Cập nhật ngữ pháp
-                                    <span>
-                                        Trợ động từ
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                        @endfor
+                        @else
+                            <tr class="no-data">
+                                <td>Bạn không có thông báo nào</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
                 <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>

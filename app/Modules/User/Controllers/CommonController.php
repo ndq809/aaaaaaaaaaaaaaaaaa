@@ -14,6 +14,7 @@ use Mail;
 use SQLXML;
 use Lang;
 use Validator;
+use App\Events\NotificationEvents;
 class CommonController extends ControllerUser
 {
     /**
@@ -404,8 +405,10 @@ class CommonController extends ControllerUser
                 'view'       => $view,
                 'statusText' => 'success',
             );
+            if($data[2][0]['notify_id']!=''){
+                event(new NotificationEvents($data[2]));
+            }
         }
-
         return response()->json($result);
     }
 

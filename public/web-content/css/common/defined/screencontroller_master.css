@@ -67,6 +67,14 @@
         float: left;
     }
 
+    .top-header{
+        right: 0px!important;
+    }
+
+    .middle-content{
+        padding-right: 0px!important;
+    }
+
     .vocabulary-wrap .infor-block [class*='col-sm']{
         padding-left: 0px;
     }

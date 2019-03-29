@@ -13,8 +13,12 @@ $(document).ready(function() {
     $('.left-menu-btn').on('click', function(e) {
         if ($('.gw-sidebar').hasClass('pin-menu')) {
             $('.gw-sidebar').removeClass('pin-menu');
+            $('.top-header').css('right','0px');
+            $('.middle-content').css('padding-right','0px');
         } else {
             $('.gw-sidebar').addClass('pin-menu');
+            $('.top-header').css('right','269px');
+            $('.middle-content').css('padding-right','269px');
         }
     })
     $('.sidebar-cover').mouseenter(function() {

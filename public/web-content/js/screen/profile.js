@@ -198,11 +198,15 @@ function initProfile(){
 
 function initListener(){
 	$(document).on('click','#btn-update-infor',function(){
-        updateInfor();
+        showMessage(1,function(){
+        	updateInfor();
+       });
     })
 
     $(document).on('click','#btn-update-pass',function(){
-        updatePass();
+        showMessage(1,function(){
+        	updatePass();
+       });
     })
 }
 
@@ -259,8 +263,9 @@ function updateInfor(){
         success: function (res) {
             switch(res.status){
                 case 200:
+                    clearFailedValidate();
                     showMessage(22,function(){
-                        location.reload();
+                        $('#menu1 img').attr('src',res.avarta);
                     });
                     break;
                 case 201:

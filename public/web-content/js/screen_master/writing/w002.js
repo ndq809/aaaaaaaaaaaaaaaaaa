@@ -37,7 +37,7 @@ function init_w002(){
         $('#post_id').val(window.location.href.split('?')[1]);
         $('#post_id').trigger('change');
     }else{
-        $('#catalogue_div')[0].selectize.focus();
+        // $('#catalogue_div')[0].selectize.focus();
         $('#catalogue_div').trigger('change');
     }
 }

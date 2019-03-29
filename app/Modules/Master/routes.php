@@ -21,6 +21,9 @@ Route::group(
 		Route::post('v001/list'  ,'v001Controller@v001_list');
 		Route::post('v001/update','v001Controller@v001_update');
 		Route::post('v001/delete','v001Controller@v001_delete');
+		Route::post('v001/confirm','v001Controller@v001_confirm');
+		Route::post('v001/public','v001Controller@v001_public');
+		Route::post('v001/reset','v001Controller@v001_reset');
 	}
 );
 
@@ -29,6 +32,9 @@ Route::group(
 	['namespace' => $namespace1,'prefix'=>'master/general','middleware'=>['web','CheckPermission']],
 	function() {
 		Route::get('g001','g001Controller@getIndex');	
+		Route::post('g001/updateprofile','g001Controller@g001_updateProfile');
+		Route::post('g001/statistic','g001Controller@g001_statistic');
+		Route::post('g001/changepass','g001Controller@g001_changepass');
 		Route::get('g002','g002Controller@getIndex');
 		Route::get('g003','g003Controller@getIndex');
 		Route::get('g004','g004Controller@getIndex');	
@@ -69,8 +75,10 @@ Route::group(
 		Route::post('w002/refer','w002Controller@w002_refer');
 		Route::post('w002/getcatalogue','w002Controller@w002_getcatalogue');
 		Route::post('w001/list'  ,'w001Controller@w001_list');
-		Route::post('w001/update','w001Controller@w001_update');
 		Route::post('w001/delete','w001Controller@w001_delete');
+		Route::post('w001/confirm','w001Controller@w001_confirm');
+		Route::post('w001/public','w001Controller@w001_public');
+		Route::post('w001/reset','w001Controller@w001_reset');
 	}
 );
 
@@ -109,16 +117,21 @@ Route::group(
 		Route::get('m004','m004Controller@getIndex');
 		Route::get('m005','m005Controller@getIndex');	
 		Route::get('m006','m006Controller@getIndex');
-		Route::get('m007','m007Controller@getIndex');
 		Route::post('m004/addnew','m004Controller@m004_addnew');
 		Route::post('m004/delete','m004Controller@m004_delete');
 		Route::post('m003/list','m003Controller@m003_list');
 		Route::post('m003/update','m003Controller@m003_update');
 		Route::post('m003/delete','m003Controller@m003_delete');
+		Route::get('m007','m007Controller@getIndex');
 		Route::post('m007/list','m007Controller@m007_list');
 		Route::post('m007/save','m007Controller@m007_save');
 		Route::post('m007/add','m007Controller@m007_add');
 		Route::post('m007/delete','m007Controller@m007_delete');
+		Route::get('m008','m008Controller@getIndex');
+		Route::post('m008/list','m008Controller@m008_list');
+		Route::post('m008/save','m008Controller@m008_save');
+		Route::post('m008/add','m008Controller@m008_add');
+		Route::post('m008/delete','m008Controller@m008_delete');
 	}
 );
 

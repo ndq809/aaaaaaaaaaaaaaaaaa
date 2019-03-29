@@ -102,6 +102,7 @@ BEGIN
 		ON M007.briged_id = F009.briged_id
 		AND F009.briged_div = 2
 		WHERE M007.post_id = @P_post_id
+		AND M007.record_div = 2
 	END
 	ELSE
 	BEGIN
@@ -158,6 +159,7 @@ BEGIN
 			AND _F008.user_id = @P_account_id
 			WHERE M007.del_flg = 0
 			AND M007.catalogue_div IN (7,8,9)
+			AND M007.record_div = 2
 		)TEMP
 		WHERE 
 				(TEMP.post_type = 4 AND TEMP.row_count <= 20 * @P_loadtime)
@@ -209,6 +211,7 @@ BEGIN
 		WHERE M007.del_flg = 0
 		AND M007.cre_user = @P_account_id
 		AND M007.catalogue_div IN (7,8,9)
+		AND M007.record_div = 2
 
 		UPDATE temp
 		SET temp.row_id = temp.new_row_id
@@ -287,6 +290,7 @@ BEGIN
 			AND F003.item_2 IS NULL
 			WHERE M007.del_flg = 0
 			AND M007.catalogue_div IN (7,8,9)
+			AND M007.record_div = 2
 			
 		)TEMP
 		WHERE 
@@ -339,6 +343,7 @@ BEGIN
 			WHERE M007.del_flg = 0
 			AND M007.cre_user = @P_account_id
 			AND M007.catalogue_div IN (7,8,9)
+			AND M007.record_div = 2
 
 			UPDATE temp
 			SET temp.row_id = temp.new_row_id
@@ -467,6 +472,7 @@ BEGIN
 	JOIN M006
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
+	AND M006.record_div = 2
 	INNER JOIN #RELAX
 	ON #RELAX.briged_id = F009.briged_id
 	ORDER BY 
@@ -516,6 +522,7 @@ BEGIN
 		AND execute_target_div = 5
 		WHERE M007.del_flg = 0
 		AND M007.catalogue_div IN (7,8,9)
+		AND M007.record_div = 2
 		GROUP BY
 		M007.catalogue_div
 

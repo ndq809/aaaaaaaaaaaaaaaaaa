@@ -1,28 +1,27 @@
-<?php 
+<?php
 namespace App\Modules\Master\Controllers\General;
 
 use App\Http\Controllers\Controller;
-use DAO;
 use Auth;
+use DAO;
 use Illuminate\Http\Request;
-use Validator;
 use SQLXML;
 
 class g003Controller extends Controller
 {
-	/**
+    /**
      * Show the application index.
-     * @author mail@ans-asia.com 
+     * @author mail@ans-asia.com
      * @created at 2017-08-16 03:29:46
      * @return \Illuminate\Http\Response
      */
-	public function getIndex()
-	{
-	    $data = Dao::call_stored_procedure('SPC_COM_M999_INQ1',array(7));
-          return view('Master::general.g003.index')->with('data_default',$data);
-	}
+    public function getIndex()
+    {
+        $data = Dao::call_stored_procedure('SPC_COM_M999_INQ1', array(7));
+        return view('Master::general.g003.index')->with('data_default', $data);
+    }
 
-      public function g003_list(Request $request)
+    public function g003_list(Request $request)
     {
         $param = $request->all();
         $data  = Dao::call_stored_procedure('SPC_G003_LST1', $param);
@@ -33,21 +32,21 @@ class g003Controller extends Controller
 
     public function g003_delete(Request $request)
     {
-        $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_id;
-        $param['ip']=$request->ip();
-        $result_query       = DAO::call_stored_procedure("SPC_G003_ACT2", $param);
-        if($result_query[0][0]['Id']==''){
+        $data             = $request->all();
+        $xml              = new SQLXML();
+        $param['xml']     = $xml->xml($data);
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_G003_ACT2", $param);
+        if ($result_query[0][0]['Id'] == '') {
             $result = array(
-                'status' => 200,
+                'status'     => 200,
                 'statusText' => 'success',
             );
-        }else{
+        } else {
             $result = array(
-                'status' => 200,
-                'error' => $result_query[0],
+                'status'     => 200,
+                'error'      => $result_query[0],
                 'statusText' => 'failed',
             );
         }
@@ -56,37 +55,37 @@ class g003Controller extends Controller
 
     public function g003_update(Request $request)
     {
-        $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_id;
-        $param['ip']=$request->ip();
-        $result_query       = DAO::call_stored_procedure("SPC_G003_ACT1", $param);
-        if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){
+        $data             = $request->all();
+        $xml              = new SQLXML();
+        $param['xml']     = $xml->xml($data);
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_G003_ACT1", $param);
+        if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
-                 'status' => 208,
-                'error' => $result_query[0],
+                'status'     => 208,
+                'error'      => $result_query[0],
                 'statusText' => 'failed',
             );
-         } else if ($result_query[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $result_query[0],
-                );
-        }else{
+        } else if ($result_query[0][0]['Data'] != '') {
             $result = array(
-                'status' => 200,
+                'status' => 207,
+                'data'   => $result_query[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
                 'statusText' => 'success',
             );
         }
         return response()->json($result);
     }
 
-	/**
+    /**
      * Show the application index.
-     * @author mail@ans-asia.com 
+     * @author mail@ans-asia.com
      * @created at 2017-08-16 03:29:46
      * @return void
      */
-   
+
 }

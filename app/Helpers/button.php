@@ -22,6 +22,11 @@ class Button
         'btn-edit'         => array('id' => 'btn-edit', 'class' => '', 'icon' => 'fa fa-wrench', 'label' => 'Chỉnh Sửa', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-upgrade'      => array('id' => 'btn-upgrade', 'class' => '', 'icon' => 'fa fa-line-chart', 'label' => 'Tái Bản', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-save-user'    => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-statistic'    => array('id' => 'btn-statistic', 'class' => '', 'icon' => 'fa fa-calculator', 'label' => 'Thống Kê', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-confirm'    => array('id' => 'btn-confirm', 'class' => '', 'icon' => 'fa fa-check', 'label' => 'Phê Duyệt', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-public'    => array('id' => 'btn-public', 'class' => '', 'icon' => 'fa fa-paper-plane', 'label' => 'Công Khai', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-reset-status'    => array('id' => 'btn-reset-status', 'class' => '', 'icon' => 'fa fa-history', 'label' => 'Đặt Lại', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-select'    => array('id' => 'btn-select', 'class' => '', 'icon' => 'fa fa-check-square-o', 'label' => 'Lựa Chọn', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

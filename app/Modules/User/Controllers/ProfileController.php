@@ -59,9 +59,12 @@ class ProfileController extends ControllerUser
                 );
             } else {
                 Session::forget('accepted_data');
+                $data = Dao::call_stored_procedure('SPC_COMMON_ACCOUNT', array(Auth::user()->user_id, Auth::user()->system_div));
+                Session::put('logined_data', $data[0]);
                 $result = array(
                     'status'     => 200,
                     'statusText' => 'success',
+                    'avarta'     => $data[0][0]['avarta'],
                 );
             }
         } else {

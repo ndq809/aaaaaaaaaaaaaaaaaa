@@ -65,7 +65,7 @@ BEGIN
 	AND F008.user_id = @P_account_id
 	ORDER BY F008.cre_date
 
-	IF　@P_vocabulary_nm <>'' AND NOT EXISTS (SELECT M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0) --code not exits 
+	IF　@P_vocabulary_nm <>'' AND NOT EXISTS (SELECT M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.record_div = 2 AND M006.del_flg = 0) --code not exits 
 	BEGIN
 	 INSERT INTO @ERR_TBL
 	 SELECT 
@@ -76,8 +76,8 @@ BEGIN
 	END
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 	
-	SET @vocabylary_id =(SELECT TOP 1 M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0)
-	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0)
+	SET @vocabylary_id =(SELECT TOP 1 M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.record_div = 2 AND M006.del_flg = 0)
+	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.record_div = 2 AND M006.del_flg = 0)
 
 	SELECT @history_number = COUNT(*) FROM #SEARCH_HISTORY
 	IF EXISTS(SELECT * FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
@@ -135,7 +135,8 @@ BEGIN
 	AND M999.name_div = 8
 	AND m999.del_flg = 0
 	WHERE
-	M006.vocabulary_id = @vocabylary_id
+		M006.vocabulary_id = @vocabylary_id
+	AND M006.record_div = 2 
 	AND M006.del_flg = 0
 
 	SELECT * FROM 
