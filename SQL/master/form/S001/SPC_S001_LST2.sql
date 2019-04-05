@@ -44,6 +44,7 @@ BEGIN
 	FROM M999
 	WHERE M999.name_div = 999
 	AND M999.number_id = 13
+	AND @P_account_div <> 0
 	AND M999.del_flg = 0
 
 	SELECT
@@ -63,6 +64,7 @@ BEGIN
 	AND #S003.screen_id=S002.screen_id
 	WHERE 
 		#S003.account_div=@P_account_div
+	AND @P_account_div <> 0
 	DROP TABLE #S003
 END
 

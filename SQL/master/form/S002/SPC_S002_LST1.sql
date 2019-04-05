@@ -4,6 +4,7 @@ DROP PROCEDURE [dbo].[SPC_S002_LST1]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPC_M001L_FND1]    Script Date: 2017/11/23 16:46:46 ******/
+--EXEC SPC_S002_LST1 '','','','','10','1'
 SET ANSI_NULLS ON
 GO
 
@@ -35,8 +36,8 @@ BEGIN
 	,	employee_nm      	NVARCHAR(100)	
 	,	system_div   		NVARCHAR(150)
 	,	account_div   		NVARCHAR(150)	
-	,	password    		NVARCHAR(100)
-	,   remark   			NVARCHAR(10)		
+	,	password    		NVARCHAR(200)
+	,   remark   			NVARCHAR(MAX)		
 	)
 	
 	--

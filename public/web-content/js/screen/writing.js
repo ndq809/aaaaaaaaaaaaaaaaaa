@@ -307,9 +307,7 @@ function switchTabWriting(current_li_tag) {
         selectWriting($(selectedTab + " table tbody tr").first());
     }else{
         if($(selectedTab + " table tbody tr.activeItem").length!=0){
-            if(selectedTab=='#tab1'){
-                selectWriting($(selectedTab + " table tbody tr.activeItem"));
-            }
+            selectWriting($(selectedTab + " table tbody tr.activeItem"));
         }else{
             selectWriting($(selectedTab + " table tbody tr").first());
         }

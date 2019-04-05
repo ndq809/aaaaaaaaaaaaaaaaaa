@@ -42,20 +42,27 @@ BEGIN
 		M014.target_div = M999.num_remark1
 	AND	M014.target_dtl_div = M999.number_id
 	WHERE
-		M999.name_div = 2
+		M999.name_div = 5
 	AND M999.del_flg = 0
 	AND M999.num_remark1 =	@P_name_div
 
 	SELECT @ColumnName = ISNULL(@ColumnName + ',','') + QUOTENAME(price_div)
 	FROM (SELECT DISTINCT price_div FROM #UPR) AS screen_ids
 
-	SET @DynamicPivotQuery = 
-	  N'SELECT DISTINCT target_dtl_div,target_dtl_nm, '+ @ColumnName + '
-		FROM #UPR
-		PIVOT( MAX(upr) 
-			  FOR price_div IN (' + @ColumnName + ')) AS PVTTable'
+	IF @ColumnName IS NOT NULL
+	BEGIN
+		SET @DynamicPivotQuery = 
+		  N'SELECT DISTINCT target_dtl_div,target_dtl_nm, '+ @ColumnName + '
+			FROM #UPR
+			PIVOT( MAX(upr) 
+				  FOR price_div IN (' + @ColumnName + ')) AS PVTTable'
 
-	EXECUTE(@DynamicPivotQuery)
+		EXECUTE(@DynamicPivotQuery)
+	END
+	ELSE
+	BEGIN
+		SELECT * FROM #UPR
+	END
 
 	SELECT M999.num_remark1 AS price_count
 	FROM M999

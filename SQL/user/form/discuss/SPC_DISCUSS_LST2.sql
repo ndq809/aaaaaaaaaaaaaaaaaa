@@ -122,7 +122,7 @@ BEGIN
 			,	M007.briged_id
 			,	M007.post_title
 			,	M007.post_content
-			,	M007.cre_user
+			,	S001.account_nm AS cre_user
 			,	M007.post_rating
 			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 			,	M007.post_view
@@ -145,6 +145,8 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			LEFT JOIN S001 
+			ON S001.account_id = M007.cre_user
 			WHERE
 				M007.catalogue_div = 6
 			AND 0 =
@@ -197,7 +199,7 @@ BEGIN
 			,	M007.briged_id
 			,	M007.post_title
 			,	M007.post_content
-			,	M007.cre_user
+			,	S001.account_nm AS cre_user
 			,	M007.post_rating
 			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 			,	M007.post_view
@@ -220,6 +222,8 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			LEFT JOIN S001 
+			ON S001.account_id = M007.cre_user
 			WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -243,7 +247,7 @@ BEGIN
 		,	M007.briged_id
 		,	M007.post_title
 		,	M007.post_content
-		,	M007.cre_user
+		,	S001.account_nm AS cre_user
 		,	M007.post_rating
 		,	IIF(F008.excute_id IS NULL,'0',F008.remark) AS my_rate
 		,	M007.post_view
@@ -256,6 +260,8 @@ BEGIN
 		ON M007.post_id = F008.target_id
 		AND execute_div = 4
 		AND execute_target_div = 5
+		LEFT JOIN S001 
+		ON S001.account_id = M007.cre_user
 		WHERE M007.cre_user = @P_account_id
 		AND M007.post_div = 3
 		AND M007.record_div = 2
@@ -300,7 +306,7 @@ BEGIN
 		,	M007.briged_id
 		,	M007.post_title
 		,	M007.post_content
-		,	M007.cre_user
+		,	S001.account_nm AS cre_user
 		,	M007.post_rating
 		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 		,	M007.post_view
@@ -325,6 +331,8 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
+		LEFT JOIN S001 
+		ON S001.account_id = M007.cre_user
 		WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -375,7 +383,7 @@ BEGIN
 		,	M007.briged_id
 		,	M007.post_title
 		,	M007.post_content
-		,	M007.cre_user
+		,	S001.account_nm AS cre_user
 		,	M007.post_rating
 		,	IIF(F008.excute_id IS NULL,'0',F008.remark) AS my_rate
 		,	M007.post_view
@@ -388,6 +396,8 @@ BEGIN
 		ON M007.post_id = F008.target_id
 		AND execute_div = 4
 		AND execute_target_div = 5
+		LEFT JOIN S001 
+		ON S001.account_id = M007.cre_user
 		WHERE M007.cre_user = @P_account_id
 		AND M007.post_div = 3
 		AND M007.record_div = 2

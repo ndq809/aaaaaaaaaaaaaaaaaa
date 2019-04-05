@@ -14,31 +14,37 @@ return [
     |
      */
 
-    'mailgun'   => [
+    'mailgun'         => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
     ],
 
-    'ses'       => [
+    'ses'             => [
         'key'    => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
     ],
 
-    'sparkpost' => [
+    'sparkpost'       => [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
-    'stripe'    => [
+    'stripe'          => [
         'model'  => App\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'facebook'  => [
+    'facebook'        => [
         'client_id'     => env('FACEBOOK_APP_ID'),
         'client_secret' => env('FACEBOOK_APP_SECRET'),
         'redirect'      => env('FACEBOOK_URL'),
+    ],
+
+    'facebook_poster' => [
+        'app_id'       => env('FACEBOOK_APP_ID'),
+        'app_secret'   => env('FACEBOOK_APP_SECRET'),
+        'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
     ],
 
 ];

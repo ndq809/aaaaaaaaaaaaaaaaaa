@@ -109,6 +109,16 @@ function initListener() {
             }
         }
     },33))
+
+    $(document).on('swiperight', throttle(function(e) {
+        e.preventDefault();
+        previousVocabulary();
+    },33))
+
+    $(document).on('swipeleft', throttle(function(e) {
+        e.preventDefault();
+        nextVocabulary();
+    },33))
     
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);

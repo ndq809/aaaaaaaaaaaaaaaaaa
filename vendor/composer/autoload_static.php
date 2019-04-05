@@ -25,11 +25,11 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         '0b0974a5566a1077e4f2e111341112c1' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_server.php',
         '1ca3bc274755662169f9629d5412a1da' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_uploaded_files.php',
         '40360c0b9b437e69bcbb7f1349ce029e' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/parse_cookie_header.php',
+        'c65d09b6820da036953a371c8c73a9b1' => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook/polyfills.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        'c65d09b6820da036953a371c8c73a9b1' => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook/polyfills.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
     );
@@ -96,6 +96,7 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         ),
         'N' => 
         array (
+            'NotificationChannels\\FacebookPoster\\' => 36,
             'Nexmo\\' => 6,
         ),
         'M' => 
@@ -291,6 +292,10 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
+        'NotificationChannels\\FacebookPoster\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src',
+        ),
         'Nexmo\\' => 
         array (
             0 => __DIR__ . '/..' . '/nexmo/client/src',
@@ -455,7 +460,6 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ControllerUser' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerUser.php',
-        'App\\Http\\Controllers\\GraphController' => __DIR__ . '/../..' . '/app/Http/Controllers/GraphController.php',
         'App\\Http\\Controllers\\auth\\FacebookAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/FacebookAuthController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\CheckMultiAccess' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckMultiAccess.php',
@@ -518,7 +522,6 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
-        'App\\Providers\\FacebookServiceProvider' => __DIR__ . '/../..' . '/app/Providers/FacebookServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
@@ -2662,6 +2665,13 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         'Nexmo\\Voice\\Call\\Inbound' => __DIR__ . '/..' . '/nexmo/client/src/Voice/Call/Inbound.php',
         'Nexmo\\Voice\\Message\\Callback' => __DIR__ . '/..' . '/nexmo/client/src/Voice/Message/Callback.php',
         'Nexmo\\Voice\\Message\\Message' => __DIR__ . '/..' . '/nexmo/client/src/Voice/Message/Message.php',
+        'NotificationChannels\\FacebookPoster\\Attachments\\Image' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/Attachments/Image.php',
+        'NotificationChannels\\FacebookPoster\\Attachments\\Link' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/Attachments/Link.php',
+        'NotificationChannels\\FacebookPoster\\Attachments\\Video' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/Attachments/Video.php',
+        'NotificationChannels\\FacebookPoster\\Exceptions\\InvalidPostContent' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/Exceptions/InvalidPostContent.php',
+        'NotificationChannels\\FacebookPoster\\FacebookPosterChannel' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/FacebookPosterChannel.php',
+        'NotificationChannels\\FacebookPoster\\FacebookPosterPost' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/FacebookPosterPost.php',
+        'NotificationChannels\\FacebookPoster\\FacebookPosterServiceProvider' => __DIR__ . '/..' . '/laravel-notification-channels/facebook-poster/src/FacebookPosterServiceProvider.php',
         'Opis\\Closure\\Analyzer' => __DIR__ . '/..' . '/opis/closure/src/Analyzer.php',
         'Opis\\Closure\\ClosureContext' => __DIR__ . '/..' . '/opis/closure/src/ClosureContext.php',
         'Opis\\Closure\\ClosureScope' => __DIR__ . '/..' . '/opis/closure/src/ClosureScope.php',

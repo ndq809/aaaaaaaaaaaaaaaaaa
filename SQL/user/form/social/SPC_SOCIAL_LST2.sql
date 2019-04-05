@@ -121,7 +121,7 @@ BEGIN
 			,	M007.briged_id
 			,	M007.post_title
 			,	M007.post_content
-			,	M007.cre_user
+			,	S001.account_nm AS cre_user
 			,	M007.post_rating
 			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 			,	M007.post_view
@@ -144,6 +144,8 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			LEFT JOIN S001 
+			ON S001.account_id = M007.cre_user
 			WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -195,7 +197,7 @@ BEGIN
 			,	M007.briged_id
 			,	M007.post_title
 			,	M007.post_content
-			,	M007.cre_user
+			,	S001.account_nm AS cre_user
 			,	M007.post_rating
 			,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 			,	M007.post_view
@@ -218,6 +220,8 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			LEFT JOIN S001 
+			ON S001.account_id = M007.cre_user
 			WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -267,7 +271,7 @@ BEGIN
 		,	M007.briged_id
 		,	M007.post_title
 		,	M007.post_content
-		,	M007.cre_user
+		,	S001.account_nm AS cre_user
 		,	M007.post_rating
 		,	IIF(_F008.excute_id IS NULL,'0',_F008.remark) AS my_rate
 		,	M007.post_view
@@ -292,6 +296,8 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
+		LEFT JOIN S001 
+		ON S001.account_id = M007.cre_user
 		WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -361,7 +367,7 @@ BEGIN
 	,	IIF(F004.reply_id IS NULL,TEMP2.comment_id,F004.reply_id) AS link_id	
 	,	F004.reply_id	
 	,	F004.target_id	
-	,	F004.cre_user	
+	,	S001.account_nm AS　cre_user	
 	,	M001.avarta
 	,	M999.content AS rank	
 	,	F004.cmt_content	
@@ -395,7 +401,7 @@ BEGIN
 	AND F008.execute_div = 3
 	AND F008.execute_target_div = 3
 	LEFT JOIN S001
-	ON F004.cre_user = S001.account_nm
+	ON F004.cre_user = S001.account_id
 	LEFT JOIN M001
 	ON S001.user_id = M001.user_id
 	LEFT JOIN M999

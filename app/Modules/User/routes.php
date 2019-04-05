@@ -80,7 +80,7 @@ Route::group(
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
 		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
 		Route::any('delete','CommonController@deletePost');
-
+    	Route::any('post-face', 'CommonController@facebookPoster');
 	}
 );
 

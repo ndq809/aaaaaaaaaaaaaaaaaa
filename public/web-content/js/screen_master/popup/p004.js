@@ -50,6 +50,16 @@ function initevent_p004(){
         })
         parent.jQuery.fancybox.close();
     })
+
+    $(document).on('click','.preview-audio',function(){
+        $(this).parents('table').find('audio').each(function(){
+            if(!$(this)[0].paused){
+                $(this)[0].pause();
+                $(this)[0].currentTime = 0;
+            }
+        });
+        $(this).parent().find('audio')[0].play();
+    })
 }
 
 function p004_execute(post_id){
@@ -63,7 +73,15 @@ function p004_execute(post_id){
         data: $.extend({}, data),
         success: function (res) {
             clearFailedValidate();
-            $('#result').html(res);
+            $('#result').html(res).promise().done(function(){
+                $('.preview').attr('data-toggle','tooltip');
+                $('.preview').attr('data-placement','top');
+                $('.preview').tooltip({
+                    animated: 'fade',
+                    placement: 'right',
+                    html: true
+                });
+            });
             if($('#post_type').val()==8){
                 var player;
                 $('#video-player').mediaelementplayer({

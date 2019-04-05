@@ -94,6 +94,7 @@ function getTarget(){
             } else {
                 selectize_sub.enable();
             }
+            $('#account_div').trigger('change');
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {

@@ -129,8 +129,32 @@ function initCommon() {
 
     // Bind a function to a Event (the full Laravel class)
     channel.bind('App\\Events\\NotificationEvents', function(data) {
-        if($('.newsfeed .no-data').length==0){
-            $('.newsfeed .table tbody').prepend('<tr><td><a></a></td></tr>');
+        for(var i = 0;i<data.message.length;i++){
+            if($('#for_notify').val()!='' && $('#for_notify').val()==data.message[i]['get_user_code']){
+                if($('.newsfeed .no-data').length==0){
+                    if($('.newsfeed #'+data.message[i]['notify_id']).length==0){
+                        $('.newsfeed .table tbody').prepend('<tr><td><a id="'+data.message[i]['notify_id']+'"><span><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
+                        $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ' ) +data.message[i]['notify_content']);
+                    }else{
+                        $('.newsfeed #'+data.message[i]['notify_id']).find('.notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ' ) +data.message[i]['notify_content']);
+                    }
+                }else{
+                    $('.newsfeed .no-data').remove();
+                    $('.newsfeed .table tbody').prepend('<tr><td><a id="'+data.message[i]['notify_id']+'"><span><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
+                    $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ') +data.message[i]['notify_content']);
+                }
+            }
+        }
+        if(('/'+data.message[0]['screen_code'])==$('.active-menu a').attr('href')){
+            switch(Number(data.message[0]['notify_div'])){
+                case 1:
+                    if(data.message[0]['parent_id']==''){
+                        $('.actionBox>.commentList').append(data.message[0]['respone']);
+                    }else{
+                        $('#'+data.message[0]['parent_id']).find('.commentList').append(data.message[0]['respone']);
+                    }
+                    break;
+            }
         }
     });
 
@@ -511,7 +535,7 @@ function getDataCommon(data_Array, excute_link) {
 function postFace(data_Array, excute_link) {
     $.ajax({
         type: "POST",
-        url: '/post-face',
+        url: 'common/post-face',
         dataType: "json",
         data: {
             message: 'Quy Nguyen'
@@ -1034,11 +1058,11 @@ function addComment(btn_comment,item_infor,callback){
         success: function (res) {
             switch(res.status){
                 case 200:
-                    if(btn_comment.closest('.input-group').hasClass('comment-input')){
-                        btn_comment.closest('.input-group').prev().append(res.view);
-                    }else{
-                        btn_comment.closest('.actionBox').find('.commentList').first().append(res.view);
-                    }
+                    // if(btn_comment.closest('.input-group').hasClass('comment-input')){
+                    //     btn_comment.closest('.input-group').prev().append(res.view);
+                    // }else{
+                    //     btn_comment.closest('.actionBox').find('.commentList').first().append(res.view);
+                    // }
                     btn_comment.parent().prev().val('');
                     break;
                 case 207:

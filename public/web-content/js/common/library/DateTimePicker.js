@@ -1510,13 +1510,13 @@ $.cf = {
 			var oDTP = this;
 			var classType, keyCode, $nextElem;
 		
-			if(!oDTP.settings.isInline)
-			{
-				$(document).on("click.DateTimePicker", function(e)
-				{
-					oDTP._hidePicker("");
-				});
-			}
+			// if(!oDTP.settings.isInline)
+			// {
+			// 	$(document).on("click.DateTimePicker", function(e)
+			// 	{
+			// 		oDTP._hidePicker("");
+			// 	});
+			// }
 		
 			$(document).on("keydown.DateTimePicker", function(e)
 			{
@@ -1557,7 +1557,9 @@ $.cf = {
 					}
 				}else if($(".dtpicker-buttonClear").is(":focus")&& keyCode === 9){
 					oDTP._setButtonAction(true);
-					oDTP.settings.inputElement.parents('.form-group').parent().next().find('input').focus();
+					var temp = $(document).find('input:visible,input:enabled,select:visible,select:enabled,textarea:enabled');
+					var index = temp.index(oDTP.settings.inputElement);
+					temp.eq(index+1).focus();
 					return false;
 				}
 			});

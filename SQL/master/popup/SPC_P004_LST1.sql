@@ -98,7 +98,8 @@ BEGIN
 	,	M012.language2_content
 	FROM M012
 	WHERE 
-	M012.target_id		= @P_post_id
+		M012.target_id		= @P_post_id
+	AND M012.target_div		<> 1
 	AND	M012.del_flg = 0
 
 	SELECT

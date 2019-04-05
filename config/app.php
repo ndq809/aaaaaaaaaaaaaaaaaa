@@ -179,6 +179,7 @@ return [
         App\Modules\ModulesServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
+        NotificationChannels\FacebookPoster\FacebookPosterServiceProvider::class,
 
     ],
 

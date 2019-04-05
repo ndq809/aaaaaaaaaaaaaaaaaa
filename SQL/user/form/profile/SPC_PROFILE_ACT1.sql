@@ -96,6 +96,8 @@ BEGIN
 	,	 @w_time
 	FROM @P_field.nodes('row') T(C) 
 
+	SET @w_inserted_key = (SELECT TOP 1 M001.user_id FROM M001 INNER JOIN S001 ON M001.user_id = S001.user_id AND S001.del_flg = 0 AND S001.account_id = @P_account_id )
+
 	UPDATE M001 SET
 		family_nm	=	@P_family_nm
 	,	first_name	=	@P_first_name
@@ -122,8 +124,8 @@ BEGIN
 	,	del_prg		=	NULL
 	,	del_ip		=	NULL
 	,	del_date	=	NULL
-
-	SET @w_inserted_key = scope_identity()
+	WHERE 
+		M001.user_id = @w_inserted_key
 	
 	UPDATE S001 SET
 		social_id		=	@P_facebook_id

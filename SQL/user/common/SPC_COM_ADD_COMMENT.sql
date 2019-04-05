@@ -30,6 +30,7 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 	,	@w_inserted_key		BIGINT				=	0
+	,	@w_notify_id		BIGINT				=	0
 	,	@w_time				DATETIME2			=	SYSDATETIME()
 
 	BEGIN TRANSACTION
@@ -81,40 +82,65 @@ BEGIN
 		SET @w_inserted_key = scope_identity()
 
 		--thông báo cho người viết bài
-		INSERT INTO F002(
-			get_user_id
-		,	notify_condition
-		,	notify_div
-		,	del_flg
-		,	cre_user
-		,	cre_prg
-		,	cre_ip
-		,	cre_date
-		)
-		SELECT
-			M007.cre_user
-		,	0
-		,	1
-		,	0
-		,	@P_user_id
-		,	'common'
-		,	@P_ip
-		,	@w_time
-		FROM M007
-		WHERE M007.post_id = @P_target_id
-		AND M007.cre_user <> @P_user_id
-		AND M007.record_div = 2
-		AND M007.post_div = 2
-		AND M007.del_flg = 0
-
-		--thông báo cho người được trả lời cmt (nếu có)
-
-		IF @P_reply_id != ''
+		SET @w_notify_id = (SELECT TOP 1 F002.notify_id FROM F002 WHERE F002.target_id = @P_target_id AND F002.screen_div = @P_screen_div AND F002.notify_div = 1)
+		IF @w_notify_id IS NULL
 		BEGIN
 			INSERT INTO F002(
 				get_user_id
+			,	target_id
+			,	screen_div
 			,	notify_condition
 			,	notify_div
+			,	notify_count
+			,	del_flg
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+			)
+			SELECT
+				M007.cre_user
+			,	@P_target_id
+			,	@P_screen_div
+			,	0
+			,	1
+			,	0
+			,	0
+			,	@P_user_id
+			,	'common'
+			,	@P_ip
+			,	@w_time
+			FROM M007
+			WHERE M007.post_id = @P_target_id
+			AND M007.cre_user <> @P_user_id
+			AND M007.record_div = 2
+			AND M007.post_div = 3
+			AND M007.del_flg = 0
+		END
+		ELSE
+		BEGIN
+			UPDATE F002 SET
+				F002.notify_count		=	F002.notify_count + 1
+			,	F002.notify_condition	=	0
+			,	F002.upd_user			=	@P_user_id
+			,	F002.upd_prg			=	'common'
+			,	F002.upd_ip				=	@P_ip
+			,	F002.upd_date			=	@w_time
+			WHERE
+				F002.notify_id			=	@w_notify_id
+			AND F002.cre_user			<>	IIF(F002.notify_condition = 0,@P_user_id,-1)
+		END
+		--thông báo cho người được trả lời cmt (nếu có)
+		SET @w_notify_id = (SELECT TOP 1 F002.notify_id FROM F002 WHERE F002.target_id = @P_target_id AND F002.screen_div = @P_screen_div AND F002.notify_div = 2)
+		IF @w_notify_id IS NULL AND @P_reply_id != ''
+		BEGIN
+			INSERT INTO F002(
+				get_user_id
+			,	target_id
+			,	screen_div
+			,	notify_condition
+			,	notify_div
+			,	notify_count
 			,	del_flg
 			,	cre_user
 			,	cre_prg
@@ -123,8 +149,11 @@ BEGIN
 			)
 			SELECT
 				F004.cre_user
+			,	@P_target_id
+			,	@P_screen_div
 			,	0 
 			,	2
+			,	0
 			,	0
 			,	@P_user_id
 			,	'common'
@@ -134,6 +163,19 @@ BEGIN
 			WHERE F004.comment_id = @P_reply_id
 			AND F004.cre_user <> @P_user_id
 			AND F004.del_flg = 0
+		END
+		ELSE
+		BEGIN
+			UPDATE F002 SET
+				F002.notify_count		=	F002.notify_count + 1
+			,	F002.notify_condition	=	0
+			,	F002.upd_user			=	@P_user_id
+			,	F002.upd_prg			=	'common'
+			,	F002.upd_ip				=	@P_ip
+			,	F002.upd_date			=	@w_time
+			WHERE
+				F002.notify_id			=	@w_notify_id
+			AND F002.cre_user			<>	IIF(F002.notify_condition = 0,@P_user_id,-1)
 		END
 
 	END TRY
@@ -185,7 +227,7 @@ EXIT_SPC:
 	LEFT JOIN M999
 	ON M999.name_div = 14
 	AND S001.account_div = M999.number_id
-	WHERE F004.comment_id = scope_identity()
+	WHERE F004.comment_id = @w_inserted_key
 	--[0]
 	SELECT  Id
 		,	Code 
@@ -196,17 +238,26 @@ EXIT_SPC:
 
 	SELECT
 		F002.notify_id 
-	,	F002.get_user_id
+	,	F002.get_user_id AS get_user_code
 	,	F002.notify_condition
 	,	M999.text_remark1 AS notify_content
 	,	M999.text_remark2 AS notify_url
-	,	F002.cre_user
+	,	S001.account_nm
 	,	F002.cre_date
+	,	F002.notify_count
+	,	M999.num_remark1 AS notify_div
+	,	S003.screen_id AS screen_code
+	,	F002.screen_div
+	,	F002.target_id
 	FROM F002
 	LEFT JOIN M999
 	ON M999.name_div = 21
 	AND M999.number_id = F002.notify_div
-	WHERE F002.cre_user = @P_user_id
-	AND F002.cre_date = @w_time
+	LEFT JOIN S001 
+	ON S001.account_id = IIF(F002.upd_user IS NULL,F002.cre_user,F002.upd_user)
+	LEFT JOIN S003
+	ON S003.remark = F002.screen_div
+	WHERE IIF(F002.upd_user IS NULL,F002.cre_user,F002.upd_user) = @P_user_id
+	AND (F002.cre_date = @w_time OR F002.upd_date = @w_time)
 END
 

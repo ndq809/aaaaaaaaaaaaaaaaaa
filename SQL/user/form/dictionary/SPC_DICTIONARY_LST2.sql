@@ -39,6 +39,7 @@ BEGIN
 	,	explain				NVARCHAR(MAX)
 	,	remark				NVARCHAR(MAX)
 	,	remembered			INT
+	,	del_flg				INT
 	)
 
 	CREATE TABLE #PAGER(
@@ -124,6 +125,7 @@ BEGIN
 	,	M006.explain
 	,	M006.remark
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	M006.del_flg
 	FROM M006
 	LEFT JOIN F003
 	ON M006.id = F003.item_1

@@ -19,7 +19,7 @@ class g001Controller extends Controller
      */
     public function getIndex()
     {
-        $data = Dao::call_stored_procedure('SPC_G001_LST1', array(Auth::user()->account_id));
+        $data = Dao::call_stored_procedure('SPC_G001_LST1', array('account_id'=>Auth::user()->account_id,'account_div'=>Auth::user()->account_div));
         return view('Master::general.g001.index')->with('data', $data);
     }
 

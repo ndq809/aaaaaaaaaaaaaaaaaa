@@ -11,7 +11,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_G001_LST1]
-	@P_user_id		NVARCHAR(50)				=	0 
+	@P_user_id		NVARCHAR(50)		=	'' 
+,	@P_user_div			INT				=	0
+
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -43,6 +45,6 @@ BEGIN
 	AND S001.del_flg = 0
 	AND S001.account_id = @P_user_id
 
-	EXEC SPC_G001_LST2 @prevmonth,@month,@P_user_id
+	EXEC SPC_G001_LST2 @prevmonth,@month,@P_user_id,@P_user_div
 END
 

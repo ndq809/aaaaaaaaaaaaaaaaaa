@@ -154,7 +154,7 @@ BEGIN
 	,	IIF(F004.reply_id IS NULL,TEMP2.comment_id,F004.reply_id) AS link_id	
 	,	F004.reply_id	
 	,	F004.target_id	
-	,	F004.cre_user	
+	,	S001.account_nm AS cre_user	
 	,	M001.avarta
 	,	M999.content AS rank	
 	,	F004.cmt_content	
@@ -188,7 +188,7 @@ BEGIN
 	AND F008.execute_div = 3
 	AND F008.execute_target_div = 3
 	LEFT JOIN S001
-	ON F004.cre_user = S001.account_nm
+	ON F004.cre_user = S001.account_id
 	LEFT JOIN M001
 	ON S001.user_id = M001.user_id
 	LEFT JOIN M999

@@ -97,7 +97,7 @@ BEGIN
 	,	M012.language1_content
 	,	M012.language2_content
 	,	M012.clap
-	,	IIF(M012.cre_prg <> 'W002',M012.cre_user,N'Hệ thống') AS cre_user
+	,	IIF(M012.cre_prg <> 'W002',S001.account_nm,N'Hệ thống') AS cre_user
 	,	FORMAT(M012.cre_date,'dd/MM/yyyy HH:mm') AS cre_date
 	,	ROW_NUMBER() OVER(partition by #VOCABULARY.row_id ORDER BY #VOCABULARY.row_id ASC) AS count_row_id
 	,	IIF(F008.target_id IS NULL,0,1) AS effected
@@ -109,6 +109,8 @@ BEGIN
 	AND F008.user_id = @P_account_id
 	AND F008.execute_div = 1
 	AND F008.execute_target_div = 1
+	LEFT JOIN S001 
+	ON S001.account_id = M012.cre_user
 	WHERE
 		M012.target_div = 1
 	)temp

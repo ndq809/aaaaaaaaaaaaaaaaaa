@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0555f5ed85d2f2ab04d894faf0395c8f",
+    "content-hash": "1e4055992e3653f411a57c4b6e1c6d44",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -819,6 +819,56 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "laravel-notification-channels/facebook-poster",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-notification-channels/facebook-poster.git",
+                "reference": "f387796be4295d431350220ff6c386b73d778e59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-notification-channels/facebook-poster/zipball/f387796be4295d431350220ff6c386b73d778e59",
+                "reference": "f387796be4295d431350220ff6c386b73d778e59",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/graph-sdk": "^5.4",
+                "illuminate/notifications": "5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
+                "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "orchestra/testbench": "~3.3|~3.4",
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NotificationChannels\\FacebookPoster\\FacebookPosterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NotificationChannels\\FacebookPoster\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmed Ashraf",
+                    "email": "ahmed29329@gmail.com"
+                }
+            ],
+            "description": "Use notification to create posts on Facebook",
+            "time": "2018-10-03T23:22:13+00:00"
         },
         {
             "name": "laravel/framework",

@@ -539,7 +539,7 @@ BEGIN
 			,	 @w_time
 			FROM #TAG
 		END
-		DELETE FROM M012 WHERE M012.target_id = @P_post_id
+		DELETE FROM M012 WHERE M012.target_id = @P_post_id AND M012.target_div = @P_catalogue_div AND @P_catalogue_div <> 1
 		INSERT INTO M012(
 			target_id
 		,	target_div

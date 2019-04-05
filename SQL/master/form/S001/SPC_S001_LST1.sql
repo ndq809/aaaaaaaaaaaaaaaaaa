@@ -51,6 +51,8 @@ BEGIN
 	LEFT JOIN M999
 	ON M999.name_div = 6
 	AND S003.screen_group = M999.number_id
+	WHERE 
+		S003.screen_group != 0
 
 	SELECT
 		 #S003.account_div
@@ -71,6 +73,7 @@ BEGIN
 	AND #S003.screen_id=S002.screen_id
 	WHERE 
 		#S003.account_div=@P_account_div
+	AND #S003.screen_group != 0
 	DROP TABLE #S003
 END
 

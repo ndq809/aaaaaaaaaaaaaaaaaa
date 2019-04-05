@@ -54,6 +54,7 @@
         <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
         <input type="hidden" name="" id="show_login" value="{{session('show_login')!==null?session('show_login'):''}}">
+        <input type="hidden" name="" id="for_notify" value="{{isset(Auth::user()->account_id)?Auth::user()->account_id:''}}">
         @php(Session::forget('show_login'))
         <div class="my-progress"></div>
         <div class="body-content">

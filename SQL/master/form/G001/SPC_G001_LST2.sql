@@ -85,8 +85,8 @@ BEGIN
 			ELSE N'Đã Phê Duyệt'
 		END AS confirmed
 	,	COUNT(*) AS qty
-	,	IIF(#DATA.confirmed=1,M014.upr,0) AS price
-	,	COUNT(*) * IIF(#DATA.confirmed=1,M014.upr,0) AS bill
+	,	IIF(#DATA.confirmed > 0,M014.upr,0) AS price
+	,	COUNT(*) * IIF(#DATA.confirmed > 0,M014.upr,0) AS bill
 	FROM #DATA
 	LEFT JOIN M014
 	ON	M014.target_div = 1
@@ -97,6 +97,7 @@ BEGIN
 	,	#DATA.confirmed
 	,	M014.upr
 	--
+
 	SELECT 
 		record_type		
 	,	record_type_nm	

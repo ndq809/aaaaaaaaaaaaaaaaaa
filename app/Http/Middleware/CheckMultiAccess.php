@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 use Common;
+use CommonUser;
 use DAO;
 use Illuminate\Support\Facades\View;
 
@@ -34,6 +35,7 @@ class CheckMultiAccess
         }
         $data = Dao::call_stored_procedure('SPC_COM_DATA',array(Auth::user()!=NULL?Auth::user()->account_id:'',Auth::user()!=NULL?Auth::user()->account_div:'',Auth::user()!=NULL?Auth::user()->system_div:''));
         // var_dump($data);die;
+        $data = CommonUser::encodeID($data);
         View::share('raw_data', $data);
         return $next($request);
     }

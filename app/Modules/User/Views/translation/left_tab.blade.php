@@ -20,6 +20,7 @@
             <div class="collapse in question close-when-small">
                 <table class="table table-hover table-center">
                     <tbody>
+                        @php($count = 0)
                         @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
                             @foreach($data_default[0] as $index => $row)
                             @if($row['post_div'] == 3)
@@ -32,9 +33,11 @@
                                     </a>
                                 </td>
                             </tr>
+                             @php($count ++)
                             @endif
                             @endforeach
-                            @else
+                        @endif
+                        @if($count == 0)
                             <tr class="no-data">
                                 <td>
                                     <a>
@@ -63,6 +66,7 @@
             <div class="new-question collapse in close-when-small no-padding">
                 <table class="table table-hover table-center">
                     <tbody>
+                        @php($count = 0)
                         @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
                             @foreach($data_default[0] as $index => $row)
                             @if($row['post_div'] == 1 || $row['post_div'] == 2)
@@ -75,9 +79,11 @@
                                     </a>
                                 </td>
                             </tr>
+                            @php($count ++)
                             @endif
                             @endforeach
-                            @else
+                        @endif
+                        @if($count == 0)
                             <tr class="no-data">
                                 <td>
                                     <a>
@@ -106,8 +112,10 @@
             <div class="your-post collapse in close-when-small no-padding">
                 <table class="table table-hover table-center">
                     <tbody>
+                        @php($count = 0)
                         @if(isset($data_default)&&$data_default[0][0]['post_id'] != '')
                             @foreach($data_default[0] as $index => $row)
+                            @if(isset(Auth::user()->account_id) && $row['cre_user'] == Auth::user()->account_id)
                             <tr class="{{$row['selected']==1?'selected-row':''}}" row_id="{{$row['row_id']}}">
                                 <td>
                                     <a>
@@ -117,8 +125,11 @@
                                     </a>
                                 </td>
                             </tr>
+                            @php($count ++)
+                            @endif
                             @endforeach
-                            @else
+                        @endif
+                        @if($count == 0)
                             <tr class="no-data">
                                 <td>
                                     <a>
@@ -181,7 +192,7 @@
                     <tbody>
                         <tr>
                             <td width="95%">
-                                <h5>Thông báo của bạn</h5>
+                                <h5><span>Thông Báo Của Bạn</span></h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
@@ -191,33 +202,29 @@
             <div class="newsfeed collapse in close-when-small">
                 <table class="table table-hover table-center">
                     <tbody>
-                        @for($i=1;$i<=3;$i++)
+                        @foreach($raw_data[2] as $index=>$item)
+                        @if($item['notify_id']!='')
                         <tr>
                             <td>
                                 <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Nhóm từ vựng
+                                    @if($item['notify_condition']==0)
                                     <span>
-                                        Thiên nhiên
+                                        <i class="glyphicon glyphicon-hand-right"></i>
+                                        <span class="notify_content">{{$item['account_nm'].' '.$item['notify_content']}}</span>
                                     </span>
-                                    đã được thêm
+                                    @else
+                                        <i class="glyphicon glyphicon-hand-right"></i>
+                                        {{$item['account_nm'].' '.$item['notify_content']}}
+                                    @endif
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Cập nhật ngữ pháp
-                                    <span>
-                                        Trợ động từ
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                        @endfor
+                        @else
+                            <tr class="no-data">
+                                <td>Bạn không có thông báo nào</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
                 <a class="btn btn-sm btn-default full-width btn-refresh">Làm mới thông báo</a>
@@ -238,16 +245,22 @@
             <div class="top-rank collapse in close-when-small">
                 <table class="table table-hover table-left">
                     <tbody>
-                        @for($i=1;$i<=5;$i++)
+                        @foreach($raw_data[3] as $index=>$item)
+                        @if($item['account_id']!='')
                         <tr>
                             <td width="70%">
-                                <label class="radio-inline"><img src="web-content/images/icon/rank/rank{{$i}}.png" width="25px">Quy Nguyen</label>
+                                <label class="radio-inline"><img src="web-content/images/icon/rank/rank{{$index+1}}.png" width="25px">{{$item['account_nm']}}</label>
                             </td>
                             <td>
-                                <label class="radio-inline"><img src="web-content/images/icon/point.png" width="35px">10,000</label>
+                                <label class="radio-inline"><img src="web-content/images/icon/point.png" width="35px">{{$item['ep']}}</label>
                             </td>
                         </tr>
-                        @endfor
+                        @else
+                            <tr class="no-data">
+                                <td>Không có dữ liệu</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -256,7 +269,7 @@
                     <tbody>
                         <tr>
                             <td width="95%">
-                                <h5>Tin tức mới nhất</h5>
+                                <h5><span>Tin Tức Mới Nhất</span></h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
@@ -266,33 +279,29 @@
             <div class="news collapse in close-when-small">
                 <table class="table table-hover table-center">
                     <tbody>
-                        @for($i=1;$i<=3;$i++)
+                        @foreach($raw_data[4] as $index=>$item)
+                        @if($item['notify_id']!='')
                         <tr>
                             <td>
                                 <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Nhóm từ vựng
+                                    @if($item['notify_condition']==0)
                                     <span>
-                                        Thiên nhiên
+                                        <i class="glyphicon glyphicon-hand-right"></i>
+                                        <span class="notify_content">{{$item['account_nm'].' '.$item['notify_content']}}</span>
                                     </span>
-                                    đã được thêm
+                                    @else
+                                        <i class="glyphicon glyphicon-hand-right"></i>
+                                        {{$item['account_nm'].' '.$item['notify_content']}}
+                                    @endif
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <a>
-                                    <i class="glyphicon glyphicon-hand-right">
-                                    </i>
-                                    Cập nhật ngữ pháp
-                                    <span>
-                                        Trợ động từ
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                        @endfor
+                        @else
+                            <tr class="no-data">
+                                <td>Không có thông báo nào</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
             </div>

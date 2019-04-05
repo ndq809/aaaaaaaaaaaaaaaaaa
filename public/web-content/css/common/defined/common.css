@@ -250,6 +250,7 @@ label {
 textarea {
     resize: none;
     border-radius: 0px!important;
+    overflow-x: hidden;
 }
 
 .checkbox-inline, .radio-inline {
@@ -1513,5 +1514,25 @@ select.tag-custom{
 .my-progress.disappear {
   opacity: 0;
   transition: opacity 1.3s;
+}
+
+.notify_count{
+    position: relative;
+}
+
+.notify_count>img{
+    position: absolute;
+    top: -13px;
+    left: -4px;
+}
+
+.notify_count>span{
+    position: absolute;
+    left: 18px;
+    top: -5px;
+    padding: 0px 5px;
+    background: red;
+    border-radius: 4px;
+    font-size: 11px;
 }
 

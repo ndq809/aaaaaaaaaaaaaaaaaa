@@ -15,6 +15,7 @@ use SQLXML;
 use Lang;
 use Validator;
 use App\Events\NotificationEvents;
+use App\Notifications\ArticlePublished;
 class CommonController extends ControllerUser
 {
     /**
@@ -96,6 +97,11 @@ class CommonController extends ControllerUser
             $pass .= $n;
         }
         return $pass;
+    }
+
+    public function facebookPoster(){
+        ArticlePublished::toFacebookPoster('quy nguyen');
+        return 0;
     }
 
     public function getcatalogue(Request $request)
@@ -406,6 +412,8 @@ class CommonController extends ControllerUser
                 'statusText' => 'success',
             );
             if($data[2][0]['notify_id']!=''){
+                $data[2][0]['respone'] = $view;
+                $data[2][0]['parent_id'] = $request->all()[4];
                 event(new NotificationEvents($data[2]));
             }
         }

@@ -39,7 +39,7 @@
                                 <td>
                                     <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> {{$row['vocabulary_nm']}}</span> </a>
                                 </td>
-                                <td >
+                                <td>
                                     <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-forget']==1?'btn-forget':'btn-disabled'}}">{{$row['del_flg']==0?'Đã quên':'Xóa'}}</button>
                                 </td>
                             </tr>
