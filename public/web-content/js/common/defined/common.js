@@ -1,8 +1,10 @@
 var selectedTab = "#tab1"; var countComment = 1;
 var _popup_transfer_array=[];
+var _current_screen;
 $(function() {
     try {
         initCommon();
+        _current_screen = getScreenId($('.active-menu a').attr('href').split('/')[1]);
     } catch (e) {
         alert("some thing went wrong :" + e);
     }
@@ -129,30 +131,52 @@ function initCommon() {
 
     // Bind a function to a Event (the full Laravel class)
     channel.bind('App\\Events\\NotificationEvents', function(data) {
-        for(var i = 0;i<data.message.length;i++){
-            if($('#for_notify').val()!='' && $('#for_notify').val()==data.message[i]['get_user_code']){
-                if($('.newsfeed .no-data').length==0){
-                    if($('.newsfeed #'+data.message[i]['notify_id']).length==0){
-                        $('.newsfeed .table tbody').prepend('<tr><td><a id="'+data.message[i]['notify_id']+'"><span><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
-                        $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ' ) +data.message[i]['notify_content']);
+        console.log(data);
+        for(var i = 0;i<data.message[0].length;i++){
+            if($('#for_notify').val()!='' && $('#for_notify').val()==data.message[0][i]['get_user_code']&&data.message[0][i]['notify_count']!=-1){
+                if($('.newsfeed .no-data:visible').length==0){
+                    if($('.newsfeed a[notify_id='+data.message[0][i]['notify_id']+']').length==0){
+                        $('.newsfeed .table tbody').prepend('<tr><td><a notify_id="'+data.message[0][i]['notify_id']+'"><span class="active-notify"><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
+                        $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[0][i]['account_nm'] + (Number(data.message[0][i]['notify_count'])!=0?' và '+data.message[0][i]['notify_count']+' người khác ':' ' ) +data.message[0][i]['notify_content']);
                     }else{
-                        $('.newsfeed #'+data.message[i]['notify_id']).find('.notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ' ) +data.message[i]['notify_content']);
+                        $('.newsfeed a[notify_id='+data.message[0][i]['notify_id']+']').find('.notify_content').text(' ' +data.message[0][i]['account_nm'] + (Number(data.message[0][i]['notify_count'])!=0?' và '+data.message[0][i]['notify_count']+' người khác ':' ' ) +data.message[0][i]['notify_content']);
                     }
                 }else{
-                    $('.newsfeed .no-data').remove();
-                    $('.newsfeed .table tbody').prepend('<tr><td><a id="'+data.message[i]['notify_id']+'"><span><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
-                    $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[i]['account_nm'] + (Number(data.message[i]['notify_count'])!=0?' và '+data.message[i]['notify_count']+' người khác ':' ') +data.message[i]['notify_content']);
+                    $('.newsfeed .no-data').addClass('hidden');
+                    $('.newsfeed .table tbody').prepend('<tr><td><a notify_id="'+data.message[0][i]['notify_id']+'"><span class="active-notify"><i class="glyphicon glyphicon-hand-right"></i> <span class="notify_content"></span> </span></a></td></tr>');
+                    $('.newsfeed .table tbody tr:first-child>td>a .notify_content').text(' ' +data.message[0][i]['account_nm'] + (Number(data.message[0][i]['notify_count'])!=0?' và '+data.message[0][i]['notify_count']+' người khác ':' ') +data.message[0][i]['notify_content']);
+                }
+                $('.notify_count').removeClass('hidden');
+                $('.notify_count span').text($('.newsfeed a[notify_id]').length);
+            }else{
+                if(data.message[0][i]['notify_count']==-1){
+                    $('.newsfeed a[notify_id='+data.message[0][i]['notify_id']+']').parents('tr').remove();
+                    if($('.newsfeed a[notify_id]').length==0){
+                        $('.newsfeed .no-data').removeClass('hidden');
+                        $('.notify_count').addClass('hidden');
+                    }else{
+                        $('.notify_count span').text($('.newsfeed a[notify_id]').length);
+                    }
                 }
             }
         }
-        if(('/'+data.message[0]['screen_code'])==$('.active-menu a').attr('href')){
-            switch(Number(data.message[0]['notify_div'])){
+        if(('/'+data.message[1][0]['screen_code'])==$('.active-menu a').attr('href')&&data.message[1][0]['user_code']!=$('#for_notify').val()){
+            switch(Number(data.message[1][0]['notify_type'])){
                 case 1:
-                    if(data.message[0]['parent_id']==''){
-                        $('.actionBox>.commentList').append(data.message[0]['respone']);
+                    if(data.message[1][0]['parent_id']==''){
+                        $('.actionBox>.commentList').append(data.message[1][0]['respone']);
                     }else{
-                        $('#'+data.message[0]['parent_id']).find('.commentList').append(data.message[0]['respone']);
+                        $('#'+data.message[1][0]['parent_id']).find('.commentList').first().append(data.message[1][0]['respone']);
                     }
+                    break;
+                case 2:
+                        $('#'+data.message[1][0]['target_id']).find('a.btn-like .like_count').text(' '+data.message[1][0]['respone']);
+                    break;
+                case 4:
+                        $('#'+data.message[1][0]['target_id']).prev('.number-clap').text(data.message[1][0]['respone']);
+                    break;
+                case 7:
+                        $('#example-list .panel-contribute').after(data.message[1][0]['respone']);
                     break;
             }
         }
@@ -271,6 +295,11 @@ function initEvent() {
     $(document).on('click', '.div-link', function(e) {
         e.preventDefault();
         window.location.href = $(this).attr("href");
+    })
+
+    $(document).on('click', '.active-notify', function(e) {
+        e.preventDefault();
+        $(this).removeClass('active-notify');
     })
 
     $(document).on('click', '#post-face', function(e) {
@@ -402,6 +431,9 @@ function initEvent() {
                 if(!e.shiftKey && $('.comment-input:focus').length!=0){
                     $('.comment-input:focus').next().find('button').trigger('click');
                 }
+                if(!e.shiftKey && $('.panel-contribute #vi-clause:focus').length!=0){
+                    $('.btn-contribute-exa').trigger('click');
+                }
                 break;
             default:
                 break;
@@ -467,7 +499,7 @@ function setNextItem(item_of_table,show_index) {
     $(".right-tab .tab-content").animate({
         scrollTop: nextItem.height() * (i+show_index)
     }, 200);
-    $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
+    // $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
     return nextItem.attr("id");
 }
 
@@ -496,7 +528,7 @@ function setPreviousItem(item_of_table,show_index) {
     $(".right-tab .tab-content").animate({
         scrollTop: nextItem.height() * (i - 2+show_index)
     }, 200);
-    $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
+    // $("html, body").animate({scrollTop: $('.change-content').offset().top}, 100);
     return nextItem.attr("id");
 }
 
@@ -819,7 +851,10 @@ function addExample(item_infor,callback){
         success: function (res) {
             switch(res.status){
                 case 200:
-                    callback();
+                    $('#example-list .panel-contribute').after(res.view);
+                    $('.panel-contribute #eng-clause').val('');
+                    $('.panel-contribute #vi-clause').val('');
+                    $('.panel-contribute #eng-clause').focus();
                     break;
                 case 207:
                     clearFailedValidate();
@@ -975,6 +1010,7 @@ function deletePost(data,callback){
 
 function toggleEffect(item_infor,callback){
     var data=item_infor;
+    data.push(_current_screen);
     $.ajax({
         type: 'POST',
         url: '/common/toggleEffect',
@@ -1058,11 +1094,11 @@ function addComment(btn_comment,item_infor,callback){
         success: function (res) {
             switch(res.status){
                 case 200:
-                    // if(btn_comment.closest('.input-group').hasClass('comment-input')){
-                    //     btn_comment.closest('.input-group').prev().append(res.view);
-                    // }else{
-                    //     btn_comment.closest('.actionBox').find('.commentList').first().append(res.view);
-                    // }
+                    if(btn_comment.closest('.input-group').hasClass('comment-input')){
+                        btn_comment.closest('.input-group').prev().append(res.view);
+                    }else{
+                        btn_comment.closest('.actionBox').find('.commentList').first().append(res.view);
+                    }
                     btn_comment.parent().prev().val('');
                     break;
                 case 207:
@@ -1105,7 +1141,6 @@ function loadMoreComment(btn_load_more,item_infor,callback){
                         btn_load_more.parent().find('.load-more.prev').removeClass('hidden');
                         btn_load_more.parent().find('.load-more.prev').attr('page',res.data[0]['page_prev']);
                     }
-                    console.log(btn_load_more.parent());
                     if(res.data[0]['page_next']==0){
                         btn_load_more.parent().find('.load-more.next').addClass('hidden');
                     }else{
@@ -1140,11 +1175,13 @@ function getComment(item_infor,callback){
         dataType: 'json',
         data: $.extend({}, item_infor),
         success: function (res) {
-            $('.commentList:first .commentItem:visible').remove();
-            $('.commentList:first').prepend(res.view1);
-            $('.paging-list .paging-item:visible').remove();
-            $('.paging-list').prepend(res.view2);
-            // callback();
+            if(typeof item_infor[4]=='undefined'){
+                $('.commentList:first .commentItem:visible').remove();
+                $('.commentList:first').prepend(res.view1);
+                $('.paging-list .paging-item:visible').remove();
+                $('.paging-list').prepend(res.view2);
+            }
+            callback(res);
         },
         // Ajax error
         error: function (res) {
@@ -1496,4 +1533,27 @@ function sticky(){
         $('.change-content .temp').addClass('hidden');
         $('.right-header:not(.no-fixed)').first().removeClass('sticky col-lg-9 col-xs-12');
       }
+}
+
+function getScreenId(screen_nm){
+    switch(screen_nm){
+        case 'vocabulary':
+            return 1;
+        case 'grammar':
+            return 2;
+        case 'listening':
+            return 3;
+        case 'writing':
+            return 4;
+        case 'reading':
+            return 5;
+        case 'social':
+            return 6;
+        case 'relax':
+            return 7;
+        case 'discuss':
+            return 8;
+        default:
+            return 0;
+    }
 }

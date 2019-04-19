@@ -27,7 +27,7 @@
             </select>
         </div>
         <div class="panel-group" id="example-list">
-            @include('exam_content')
+            @include('exam',array('data'=>isset($data[0])?$data[0]:array()))
           </div> 
         <div class="paging-list">
            @include('paging_content')

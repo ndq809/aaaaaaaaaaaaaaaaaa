@@ -15,6 +15,7 @@ CREATE PROCEDURE [dbo].[SPC_COM_GET_PAGE_COMMENT]
 	,	@P_screen_div			INT	=	0
 	,	@P_target_id			INT	=	0
 	,	@P_page					INT	=	0
+	,	@P_cmt_div				INT	=	1
 	,	@P_account_id			NVARCHAR(15)	=	'' 
 AS
 BEGIN
@@ -69,6 +70,7 @@ BEGIN
 	F004.target_id				= @P_target_id
 	AND F004.reply_id IS NULL
 	AND F004.screen_div = @P_screen_div
+	AND F004.cmt_div = @P_cmt_div
 	ORDER BY
 	F004.comment_id
 	OFFSET (@P_page-1) * 5 ROWS
@@ -143,6 +145,8 @@ BEGIN
 	WHERE
 		F004.target_id				= @P_target_id
 	AND F004.reply_id IS NULL
+	AND F004.cmt_div = @P_cmt_div
+	AND F004.screen_div = @P_screen_div
 	GROUP BY 
 		F004.target_id
 END

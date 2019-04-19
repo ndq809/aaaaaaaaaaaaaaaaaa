@@ -41,11 +41,11 @@ BEGIN
 	BEGIN TRANSACTION
 	BEGIN TRY
 	BEGIN
-		SELECT @w_inserted_key = @P_vocabulary_id
-		SELECT @w_inserted_dtl_key= ISNULL(MAX(M006.vocabulary_dtl_id),0)+ 1 FROM M006 WHERE M006.vocabulary_id = @P_vocabulary_id
+		SET @w_inserted_key = (SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_id = @P_vocabulary_id AND M006.vocabulary_dtl_id = @P_vocabulary_dtl_id)
+		SELECT @w_inserted_dtl_key= ISNULL(MAX(M006.vocabulary_dtl_id),0)+ 1 FROM M006 WHERE M006.id = @w_inserted_key
 		INSERT INTO M012(
 			target_id
-		,	target_dtl_id
+		,	target_div
 		,	language1_content
 		,	language2_content
 		,	clap
@@ -65,8 +65,8 @@ BEGIN
 
 		)
 		SELECT
-			@P_vocabulary_id
-		,	@w_inserted_dtl_key
+			@w_inserted_key
+		,	1
 		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
 		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
 		,	0
@@ -90,8 +90,9 @@ BEGIN
 		END
 		INSERT INTO M006
 		SELECT
-			@w_inserted_key
+			@P_vocabulary_id
 		,	@w_inserted_dtl_key
+		,	0
 		,	@P_vocabulary_nm		
 		,	@P_vocabulary_div		
 		,	@P_image

@@ -337,6 +337,7 @@ BEGIN
 		AND M007.record_div = 2
 
 	END
+
 	INSERT INTO #COMMENT
 	SELECT *
 	FROM
@@ -352,6 +353,27 @@ BEGIN
 	ON F004.target_id				= #SOCIAL.post_id
 	AND F004.reply_id IS NULL
 	AND F004.screen_div = 6
+	AND F004.cmt_div = 1
+	)TEMP
+	WHERE
+	TEMP.count_row_id < 6
+
+	INSERT INTO #COMMENT
+	SELECT *
+	FROM
+	(
+	SELECT
+		#SOCIAL.row_id
+	,	F004.comment_id	
+	,	F004.reply_id
+	,	F004.target_id
+	,	ROW_NUMBER() OVER(partition by F004.target_id ORDER BY F004.target_id ASC) AS count_row_id
+	FROM F004
+	INNER JOIN #SOCIAL
+	ON F004.target_id				= #SOCIAL.post_id
+	AND F004.reply_id IS NULL
+	AND F004.screen_div = 6
+	AND F004.cmt_div = 2
 	)TEMP
 	WHERE
 	TEMP.count_row_id < 6
@@ -425,6 +447,24 @@ BEGIN
 	INNER JOIN #SOCIAL
 	ON F004.target_id				= #SOCIAL.post_id
 	AND F004.reply_id IS NULL
+	AND F004.cmt_div = 1
+	AND F004.screen_div = 6
+	GROUP BY 
+		F004.target_id
+
+	INSERT INTO #PAGER
+	SELECT
+		MAX(#SOCIAL.row_id)	 
+	,	COUNT(*)
+	,	CEILING(CAST(COUNT(*) AS FLOAT) / 5)
+	,	1
+	,	5
+	FROM F004
+	INNER JOIN #SOCIAL
+	ON F004.target_id				= #SOCIAL.post_id
+	AND F004.reply_id IS NULL
+	AND F004.cmt_div = 2
+	AND F004.screen_div = 6
 	GROUP BY 
 		F004.target_id
 

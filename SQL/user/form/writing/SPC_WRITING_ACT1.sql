@@ -179,6 +179,7 @@ BEGIN
 		,	 catalogue_id
 		,	 group_id
 		,	 post_div
+		,	 record_div
 		,	 briged_id 
 		,	 post_title 
 		,	 post_content 
@@ -205,6 +206,7 @@ BEGIN
 		     4     
 		,	 NULL
 		,	 NULL
+		,	 2
 		,	 2
 		,	 @w_briged_id 
 		,	 @P_post_title 

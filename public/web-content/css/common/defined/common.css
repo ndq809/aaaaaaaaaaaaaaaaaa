@@ -885,7 +885,7 @@ td .radio-inline {
     vertical-align: middle;
 }
 
-.table-center tbody tr td a span{
+.table-center tbody tr td a span.active-notify{
     font-weight: bold;
     color: #4CAF50;
 }
@@ -1081,6 +1081,10 @@ td .radio-inline {
 
 .bottomContent .dislike{
     color: blueviolet;
+}
+
+.bottomContent .like_count{
+    padding-left: 3px;
 }
 
 a.see-back{

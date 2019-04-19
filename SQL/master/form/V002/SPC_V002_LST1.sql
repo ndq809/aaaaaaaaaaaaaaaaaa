@@ -46,6 +46,7 @@ BEGIN
 		M006.vocabulary_id				= @P_vocabulary_id
 	AND	M006.vocabulary_dtl_id			= @P_vocabulary_dtl_id
 	AND	M012.del_flg = 0
+	AND M012.target_div = 1
 
 	--
 END

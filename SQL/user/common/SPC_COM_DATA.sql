@@ -48,8 +48,10 @@ BEGIN
 	ON M999.name_div = 21
 	AND M999.number_id = F002.notify_div
 	LEFT JOIN S001 
-	ON S001.account_id = F002.cre_user
+	ON S001.account_id = IIF(F002.upd_user IS NULL,F002.cre_user,F002.upd_user)
 	WHERE F002.get_user_id = @P_account_id
+	AND F002.notify_count <> -1
+
 	ORDER BY 
 	CASE
 	WHEN F002.notify_condition = 1 THEN 1
@@ -82,9 +84,10 @@ BEGIN
 	ON M999.name_div = 21
 	AND M999.number_id = F002.notify_div
 	LEFT JOIN S001 
-	ON S001.account_id = F002.cre_user
+	ON S001.account_id = IIF(F002.upd_user IS NULL,F002.cre_user,F002.upd_user)
 	WHERE F002.get_user_id IS NULL
 	AND F002.notify_condition = 0
+	AND F002.notify_count <> -1
 	ORDER BY 
 	CASE
 	WHEN F002.notify_condition = 1 THEN 1

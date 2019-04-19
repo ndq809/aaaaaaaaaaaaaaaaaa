@@ -235,39 +235,6 @@ BEGIN
 			AND F003.item_1 IS NOT NULL
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)
 
-		INSERT INTO #DISCUSS
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
-				ORDER BY 
-				CASE
-				WHEN M007.post_id = @P_post_id THEN 1
-				END,M007.upd_date DESC) AS row_count
-		,	M007.post_id
-		,	M007.briged_id
-		,	M007.post_title
-		,	M007.post_content
-		,	S001.account_nm AS cre_user
-		,	M007.post_rating
-		,	IIF(F008.excute_id IS NULL,'0',F008.remark) AS my_rate
-		,	M007.post_view
-		,	F008.cre_date
-		,	M007.upd_date
-		,	2 AS remembered
-		,	M007.del_flg
-		FROM M007
-		LEFT JOIN F008
-		ON M007.post_id = F008.target_id
-		AND execute_div = 4
-		AND execute_target_div = 5
-		LEFT JOIN S001 
-		ON S001.account_id = M007.cre_user
-		WHERE M007.cre_user = @P_account_id
-		AND M007.post_div = 3
-		AND M007.record_div = 2
-		AND	M007.catalogue_div = 6
-		AND M007.del_flg = 0
-
 		UPDATE temp
 		SET temp.row_id = temp.new_row_id
 		FROM (
@@ -370,39 +337,6 @@ BEGIN
 		AND M007.catalogue_div = 6
 		AND M007.post_div = 2
 		AND M007.record_div = 2
-
-		INSERT INTO #DISCUSS
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	ROW_NUMBER() OVER(PARTITION BY M007.catalogue_div 
-				ORDER BY 
-				CASE
-				WHEN M007.post_id = @P_post_id THEN 1
-				END,M007.upd_date DESC) AS row_count
-		,	M007.post_id
-		,	M007.briged_id
-		,	M007.post_title
-		,	M007.post_content
-		,	S001.account_nm AS cre_user
-		,	M007.post_rating
-		,	IIF(F008.excute_id IS NULL,'0',F008.remark) AS my_rate
-		,	M007.post_view
-		,	F008.cre_date
-		,	M007.upd_date
-		,	2 AS remembered
-		,	M007.del_flg
-		FROM M007
-		LEFT JOIN F008
-		ON M007.post_id = F008.target_id
-		AND execute_div = 4
-		AND execute_target_div = 5
-		LEFT JOIN S001 
-		ON S001.account_id = M007.cre_user
-		WHERE M007.cre_user = @P_account_id
-		AND M007.post_div = 3
-		AND M007.record_div = 2
-		AND	M007.catalogue_div = 6
-		AND M007.del_flg = 0
 
 		UPDATE temp
 		SET temp.row_id = temp.new_row_id

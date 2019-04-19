@@ -94,7 +94,7 @@ BEGIN
 	END
 	ELSE
 	BEGIN
-		DELETE F008 WHERE F008.target_id = @P_target_id AND F008.execute_div = @P_execute_div AND F008.execute_target_div = @P_execute_target_div
+		DELETE F008 WHERE F008.target_id = @P_target_id AND F008.execute_div = @P_execute_div AND F008.execute_target_div = @P_execute_target_div AND F008.cre_user = @P_user_id
 		IF @P_execute_div = 1
 		BEGIN
 			UPDATE M012 SET

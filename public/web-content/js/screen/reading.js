@@ -91,6 +91,16 @@ function initListener() {
             previousReading();
         }
     })
+
+    $(document).on('swiperight', throttle(function(e) {
+        e.preventDefault();
+        previousReading();
+    },10))
+
+    $(document).on('swipeleft', throttle(function(e) {
+        e.preventDefault();
+        nextReading();
+    },10))
     
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
@@ -187,9 +197,9 @@ function initListener() {
         toggleEffect(item_infor, function(effected_count) {
             $(_this).toggleClass('liked bounceIn');
             if($(_this).hasClass('liked')){
-                $(_this).text(' '+effected_count+' Đã Thích');
+                $(_this).html('<span class="like_count">'+effected_count+'</span> Đã thích');
             }else{
-                $(_this).text(' '+effected_count+' Thích');
+                $(_this).html('<span class="like_count">'+effected_count+'</span> Thích');
             }
         });
     })

@@ -139,6 +139,17 @@ function initListener() {
             }
         }
     }, 33))
+
+    $(document).on('swiperight', throttle(function(e) {
+        e.preventDefault();
+        previousSocial();
+    },10))
+
+    $(document).on('swipeleft', throttle(function(e) {
+        e.preventDefault();
+        nextSocial();
+    },10))
+    
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
@@ -165,7 +176,23 @@ function initListener() {
         item_infor.push(6);
         item_infor.push(post[0]['post_id']);
         item_infor.push(page);
-        getComment(item_infor, function() {
+        if($('.comment-tabs li.active a').attr('href')=='#chemgio'){
+            item_infor.push(1);
+        }else{
+            item_infor.push(2);
+        }
+        getComment(item_infor, function(res) {
+            if($('.comment-tabs li.active a').attr('href')=='#chemgio'){
+                $('#chemgio .commentList:first .commentItem:visible').remove();
+                $('#chemgio .commentList:first').prepend(res.view1);
+                $('#chemgio .paging-list .paging-item:visible').remove();
+                $('#chemgio .paging-list').prepend(res.view2);
+            }else{
+                $('#gopy .commentList:first .commentItem:visible').remove();
+                $('#gopy .commentList:first').prepend(res.view1);
+                $('#gopy .paging-list .paging-item:visible').remove();
+                $('#gopy .paging-list').prepend(res.view2);
+            }
             setContentBox(current_id);
         });
     })
@@ -185,10 +212,10 @@ function initListener() {
         }
         toggleEffect(item_infor, function(effected_count) {
             $(_this).toggleClass('liked bounceIn');
-            if ($(_this).hasClass('liked')) {
-                $(_this).text(' ' + effected_count + ' Đã Thích');
-            } else {
-                $(_this).text(' ' + effected_count + ' Thích');
+            if($(_this).hasClass('liked')){
+                $(_this).html('<span class="like_count">'+effected_count+'</span> Đã thích');
+            }else{
+                $(_this).html('<span class="like_count">'+effected_count+'</span> Thích');
             }
         });
     })

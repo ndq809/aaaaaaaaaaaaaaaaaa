@@ -67,10 +67,7 @@ function initListener() {
                 voc_infor.push(2);
                 voc_infor.push($('#eng-clause').val());
                 voc_infor.push($('#vi-clause').val());
-                addExample(voc_infor, function() {
-                    $('#exam-order').val(1);
-                    $('#exam-order').trigger('change');
-                });
+                addExample(voc_infor);
             }
         }
     });
@@ -110,6 +107,17 @@ function initListener() {
             }
         }
     }, 33))
+
+    $(document).on('swiperight', throttle(function(e) {
+        e.preventDefault();
+        previousGrammar();
+    },10))
+
+    $(document).on('swipeleft', throttle(function(e) {
+        e.preventDefault();
+        nextGrammar();
+    },10))
+    
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })

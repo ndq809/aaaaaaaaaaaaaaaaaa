@@ -27,6 +27,7 @@ BEGIN
 		@ERR_TBL			ERRTABLE
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
+	,	@w_inserted_key		BIGINT				=	0
 	BEGIN TRANSACTION
 	BEGIN TRY
 	
@@ -70,6 +71,8 @@ BEGIN
 		,	NULL
 		,	NULL
 		,	NULL
+
+		SET @w_inserted_key = scope_identity()
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL
@@ -106,6 +109,27 @@ EXIT_SPC:
 		,	[Message]
 	FROM @ERR_TBL
 	ORDER BY Code
+
+	SELECT
+		@P_row_id AS row_id
+	,	M012.example_id		AS id
+	,	M012.language1_content
+	,	M012.language2_content
+	,	M012.clap
+	,	IIF(M012.cre_prg <> 'W002',S001.account_nm,N'Hệ thống') AS cre_user
+	,	FORMAT(M012.cre_date,'dd/MM/yyyy HH:mm') AS cre_date
+	,	ROW_NUMBER() OVER(partition by @P_row_id ORDER BY @P_row_id ASC) AS count_row_id
+	,	IIF(F008.target_id IS NULL,0,1) AS effected
+	FROM M012
+	LEFT JOIN F008
+	ON M012.example_id = F008.target_id
+	AND F008.user_id = @P_user_id
+	AND F008.execute_div = 1
+	AND F008.execute_target_div = 1
+	LEFT JOIN S001 
+	ON S001.account_id = M012.cre_user
+	WHERE
+	M012.example_id = @w_inserted_key
 	
 END
 

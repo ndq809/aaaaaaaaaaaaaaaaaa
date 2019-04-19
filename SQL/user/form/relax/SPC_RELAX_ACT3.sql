@@ -123,6 +123,7 @@ BEGIN
 			 catalogue_div     
 		,	 catalogue_id
 		,	 group_id
+		,	 record_div
 		,	 post_div
 		,	 briged_id 
 		,	 post_title 
@@ -150,6 +151,7 @@ BEGIN
 		     @P_post_div    
 		,	 NULL
 		,	 NULL
+		,	 2
 		,	 2
 		,	 @w_briged_id 
 		,	 @P_post_title 

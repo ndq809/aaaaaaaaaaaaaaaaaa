@@ -1,7 +1,15 @@
 <div class="col-lg-3 col-md-12 no-padding left-tab" style="padding-right: 1px;">
     <ul class="nav nav-tabs nav-justified">
         <li class="active col-sm-6 no-padding"><a data-toggle="tab" href="#sectionA" aria-expanded="true">Điểm Nóng</a></li>
-        <li class="col-sm-6 no-padding"><a data-toggle="tab" href="#sectionB" aria-expanded="false">Tin Tức Mới</a></li>
+        <li class="col-sm-6 no-padding">
+            <a data-toggle="tab" href="#sectionB" aria-expanded="false">
+            <span>Tin Tức Mới</span>
+            <span class="notify_count {{$raw_data[2][0]['notify_id']==''?'hidden':''}}">
+                <img src="/web-content/images/icon/JD-23-512.png" width="42px" height="42px">
+                <span class="animated tada">{{count($raw_data[2])}}</span>
+            </span>
+            </a>
+        </li>
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade active in">
@@ -206,15 +214,15 @@
                         @if($item['notify_id']!='')
                         <tr>
                             <td>
-                                <a>
+                                <a notify_id="{{$item['notify_id']}}">
                                     @if($item['notify_condition']==0)
-                                    <span>
+                                    <span class="active-notify">
                                         <i class="glyphicon glyphicon-hand-right"></i>
-                                        <span class="notify_content">{{$item['account_nm'].' '.$item['notify_content']}}</span>
+                                        <span class="notify_content">{{$item['account_nm'].((int)$item['notify_count']!=0?' và '.$item['notify_count'].' người khác ':' ').$item['notify_content']}}</span>
                                     </span>
                                     @else
                                         <i class="glyphicon glyphicon-hand-right"></i>
-                                        {{$item['account_nm'].' '.$item['notify_content']}}
+                                        {{$item['account_nm'].((int)$item['notify_count']!=0?' và '.$item['notify_count'].' người khác ':' ').$item['notify_content']}}
                                     @endif
                                 </a>
                             </td>

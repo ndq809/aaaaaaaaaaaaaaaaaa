@@ -71,10 +71,7 @@ function initListener() {
                 voc_infor.push(1);
                 voc_infor.push($('#eng-clause').val());
                 voc_infor.push($('#vi-clause').val());
-                addExample(voc_infor, function() {
-                    $('#exam-order').val(1);
-                    $('#exam-order').trigger('change');
-                });
+                addExample(voc_infor);
             }
         }
     });
@@ -86,6 +83,17 @@ function initListener() {
             previousVocabulary();
         }
     })
+
+    $(document).on('swiperight', throttle(function(e) {
+        e.preventDefault();
+        previousVocabulary();
+    },10))
+
+    $(document).on('swipeleft', throttle(function(e) {
+        e.preventDefault();
+        nextVocabulary();
+    },10))
+
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
             $("." + $(this).attr("id")).show();

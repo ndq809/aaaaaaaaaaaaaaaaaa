@@ -1,7 +1,9 @@
 <?php
 namespace App\Modules\User\Controllers;
 
+use App\Events\NotificationEvents;
 use App\Http\Controllers\ControllerUser;
+use App\Notifications\ArticlePublished;
 use Auth;
 use DAO;
 use Hashids\Hashids;
@@ -10,12 +12,11 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
+use Lang;
 use Mail;
 use SQLXML;
-use Lang;
 use Validator;
-use App\Events\NotificationEvents;
-use App\Notifications\ArticlePublished;
+
 class CommonController extends ControllerUser
 {
     /**
@@ -33,19 +34,20 @@ class CommonController extends ControllerUser
 
     public function getComment(Request $request)
     {
-        $param            = $request->all();
-        $param[2]         = $this->hashids->decode($param[2])[0];
-        if(Auth::user()!=null){
+        $param    = $request->all();
+        $param[2] = $this->hashids->decode($param[2])[0];
+        $param[4] = isset($param[4])?$param[4]:1;
+        if (Auth::user() != null) {
             $param['user_id'] = Auth::user()->account_id;
-        }else{
+        } else {
             $param['user_id'] = '';
         }
-        $data             = Dao::call_stored_procedure('SPC_COM_GET_PAGE_COMMENT', $param);
+        $data = Dao::call_stored_procedure('SPC_COM_GET_PAGE_COMMENT', $param);
         // var_dump($data);die;
-        $data             = $this->encodeID($data);
-        $view1            = view($param[1]!=8?'comment':'answer')->with('data', $data)->render();
-        $view2            = view('paging_content')->with('data', $data)->render();
-        $result           = array(
+        $data   = $this->encodeID($data);
+        $view1  = view($param[1] != 8 ? 'comment' : 'answer')->with('data', $data)->with('cmt_div',$param[4])->render();
+        $view2  = view('paging_content')->with('data', $data)->render();
+        $result = array(
             'status'     => 200,
             'view1'      => $view1,
             'view2'      => $view2,
@@ -99,7 +101,8 @@ class CommonController extends ControllerUser
         return $pass;
     }
 
-    public function facebookPoster(){
+    public function facebookPoster()
+    {
         ArticlePublished::toFacebookPoster('quy nguyen');
         return 0;
     }
@@ -238,10 +241,10 @@ class CommonController extends ControllerUser
 
     public function forgetvoc(Request $request)
     {
-        $param    = $request->all();
-        $param[1] = $this->hashids->decode($param[1])[0];
+        $param            = $request->all();
+        $param[1]         = $this->hashids->decode($param[1])[0];
         $param['user_id'] = Auth::user()->account_id;
-        $data     = Dao::call_stored_procedure('SPC_COM_FORGET', $param);
+        $data             = Dao::call_stored_procedure('SPC_COM_FORGET', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status' => 208,
@@ -265,18 +268,18 @@ class CommonController extends ControllerUser
 
     public function getExample(Request $request)
     {
-        $param            = $request->all();
-        $param[1]         = $this->hashids->decode($param[1])[0];
-        if(Auth::user()!=null){
+        $param    = $request->all();
+        $param[1] = $this->hashids->decode($param[1])[0];
+        if (Auth::user() != null) {
             $param['user_id'] = Auth::user()->account_id;
-        }else{
+        } else {
             $param['user_id'] = '';
         }
-        $data             = Dao::call_stored_procedure('SPC_COM_EXAM_LIST', $param);
-        $data             = $this->encodeID($data);
-        $view1            = view('exam_content')->with('data', $data)->render();
-        $view2            = view('paging_content')->with('data', $data)->render();
-        $result           = array(
+        $data   = Dao::call_stored_procedure('SPC_COM_EXAM_LIST', $param);
+        $data   = $this->encodeID($data);
+        $view1  = view('exam')->with('data', $data[0])->render();
+        $view2  = view('paging_content')->with('data', $data)->render();
+        $result = array(
             'status'     => 200,
             'view1'      => $view1,
             'view2'      => $view2,
@@ -303,10 +306,21 @@ class CommonController extends ControllerUser
                 'data'   => $data[0],
             );
         } else {
+            $data   = $this->encodeID($data);
+            $view   = view('exam_content')->with('data',$data[1])->render();
             $result = array(
                 'status'     => 200,
+                'view'      => $view,
                 'statusText' => 'success',
             );
+            $notify_param             = [];
+            $notify_param[0]          = $param[2];
+            $notify_param[1]          = $param[1];
+            $notify_param[2]          = '';
+            $notify_param['notify_type'] = 7;
+            $notify_param['user_id']  = Auth::user()->account_id;
+            $notify_param['ip']       = $request->ip();
+            event(new NotificationEvents($notify_param,$view,''));
         }
 
         return response()->json($result);
@@ -314,7 +328,7 @@ class CommonController extends ControllerUser
 
     public function addQuestion(Request $request)
     {
-        $param            = $request->all();
+        $param = $request->all();
         if ($this->checkValidate($request->all())['result']) {
             if (isset($param['tag'])) {
                 for ($i = 0; $i < count($param['tag']); $i++) {
@@ -324,13 +338,13 @@ class CommonController extends ControllerUser
                 }
             }
             $xml              = new SQLXML();
-            $param['id']         = $param['id']!=''?$this->hashids->decode($param['id'])[0]:'';
-            $param['tag'] = $xml->xml(isset($param['tag'])?$param['tag']:array());
+            $param['id']      = $param['id'] != '' ? $this->hashids->decode($param['id'])[0] : '';
+            $param['tag']     = $xml->xml(isset($param['tag']) ? $param['tag'] : array());
             $param['user_id'] = Auth::user()->account_id;
             $param['ip']      = $request->ip();
             // var_dump($param);die;
-            $data             = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
-            $data             = $this->encodeID($data);
+            $data = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
+            $data = $this->encodeID($data);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
                     'status' => 208,
@@ -349,9 +363,9 @@ class CommonController extends ControllerUser
                 );
             }
         } else {
-           $result = array('error'    => $this->checkValidate($request->all())['error'],
-                'status'     => 201,
-                'statusText' => 'validate failed');
+            $result = array('error' => $this->checkValidate($request->all())['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
         }
         return response()->json($result);
     }
@@ -387,12 +401,12 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[2]         = $this->hashids->decode($param[2])[0];
-        $param[4]         = $param[4]!=''?$this->hashids->decode($param[4])[0]:'';
+        $param[4]         = $param[4] != '' ? $this->hashids->decode($param[4])[0] : '';
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
-        $param['cmt_div'] = isset($param[5])?$param[5]:1;
+        $param['cmt_div'] = isset($param[5]) ? $param[5] : 1;
         unset($param[5]);
-        $data             = Dao::call_stored_procedure('SPC_COM_ADD_COMMENT', $param);
+        $data = Dao::call_stored_procedure('SPC_COM_ADD_COMMENT', $param);
         if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status' => 208,
@@ -404,18 +418,21 @@ class CommonController extends ControllerUser
                 'data'   => $data[0],
             );
         } else {
-            $data             = $this->encodeID($data);
-            $view = view($param[1]!=8?'comment':'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
+            $data   = $this->encodeID($data);
+            $view   = view($param[1] != 8 ? 'comment' : 'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,
                 'statusText' => 'success',
             );
-            if($data[2][0]['notify_id']!=''){
-                $data[2][0]['respone'] = $view;
-                $data[2][0]['parent_id'] = $request->all()[4];
-                event(new NotificationEvents($data[2]));
-            }
+            $notify_param             = [];
+            $notify_param[0]          = $param[1];
+            $notify_param[1]          = $param[2];
+            $notify_param[2]          = $param[4];
+            $notify_param['notify_type'] = 1;
+            $notify_param['user_id']  = Auth::user()->account_id;
+            $notify_param['ip']       = $request->ip();
+            event(new NotificationEvents($notify_param,$view,(int)$param[1] == 6 ? $param['cmt_div'] : ''));
         }
         return response()->json($result);
     }
@@ -450,10 +467,10 @@ class CommonController extends ControllerUser
     {
         $param            = $request->all();
         $param[0]         = $this->hashids->decode($param[0])[0];
-        $temp = isset($param[2])?$param[2]:0;
+        $temp             = isset($param[2]) ? $param[2] : 0;
         $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         unset($param[2]);
-        $data             = Dao::call_stored_procedure('SPC_COM_GET_MORE_COMMENT', $param);
+        $data = Dao::call_stored_procedure('SPC_COM_GET_MORE_COMMENT', $param);
         if ($data[1][0]['Data'] == 'Exception' || $data[1][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status' => 208,
@@ -465,8 +482,8 @@ class CommonController extends ControllerUser
                 'data'   => $data[0],
             );
         } else {
-            $data             = $this->encodeID($data);
-            $view = view($temp!=8?'comment':'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
+            $data   = $this->encodeID($data);
+            $view   = view($temp != 8 ? 'comment' : 'answer')->with('data', $data)->with('cmt_div', $data[0][0]['cmt_div'])->render();
             $result = array(
                 'status'     => 200,
                 'view'       => $view,
@@ -481,9 +498,11 @@ class CommonController extends ControllerUser
     public function toggleEffect(Request $request)
     {
         $param            = $request->all();
+        $screen_div       = $param[5];
         $param[1]         = $this->hashids->decode($param[1])[0];
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
+        unset($param[5]);
         $data             = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
@@ -501,6 +520,14 @@ class CommonController extends ControllerUser
                 'data'       => $data[1],
                 'statusText' => 'success',
             );
+            $notify_param             = [];
+            $notify_param[0]          = $screen_div;
+            $notify_param[1]          = $param[1];
+            $notify_param[2]          = '';
+            $notify_param['notify_type'] = $this->getNotifyType($param[2],$param[3]);
+            $notify_param['user_id']  = Auth::user()->account_id;
+            $notify_param['ip']       = $request->ip();
+            event(new NotificationEvents($notify_param,$data[1][0]['effected_count'],''));
         }
 
         return response()->json($result);
@@ -508,12 +535,12 @@ class CommonController extends ControllerUser
 
     public function getQuestion(Request $request)
     {
-        $param            = $request->all();
-        $param[0]         = $this->hashids->decode($param[0])[0];
-        $data             = Dao::call_stored_procedure('SPC_COM_QUESTION_LIST', $param);
-        $data             = $this->encodeID($data);
-        $view1            = view('practice')->with('data', $data[0])->render();
-        $result           = array(
+        $param    = $request->all();
+        $param[0] = $this->hashids->decode($param[0])[0];
+        $data     = Dao::call_stored_procedure('SPC_COM_QUESTION_LIST', $param);
+        $data     = $this->encodeID($data);
+        $view1    = view('practice')->with('data', $data[0])->render();
+        $result   = array(
             'status'     => 200,
             'view1'      => $view1,
             'data'       => $data[0],
@@ -537,21 +564,21 @@ class CommonController extends ControllerUser
 
         // }
 
-        $photo = $form_data['img'];
-        $original_name = $photo->getClientOriginalName();
+        $photo                     = $form_data['img'];
+        $original_name             = $photo->getClientOriginalName();
         $original_name_without_ext = substr($original_name, 0, strlen($original_name) - 4);
 
-        $filename = $this->sanitize($original_name_without_ext);
-        $allowed_filename = $this->createUniqueFilename( $filename );
+        $filename         = $this->sanitize($original_name_without_ext);
+        $allowed_filename = $this->createUniqueFilename($filename);
 
-        $filename_ext = $allowed_filename .'_'.date("Ymd HHmmss").round(microtime(true) * 1000).'.jpg';
+        $filename_ext = $allowed_filename . '_' . date("Ymd HHmmss") . round(microtime(true) * 1000) . '.jpg';
 
         $manager = new ImageManager();
-        $image = $manager->make( $photo->getRealPath() )->encode('jpg')->save((public_path('web-content/images/vocabulary')).'/'  . $filename_ext ,100);
-        if( !$image) {
+        $image   = $manager->make($photo->getRealPath())->encode('jpg')->save((public_path('web-content/images/vocabulary')) . '/' . $filename_ext, 100);
+        if (!$image) {
 
             return Response::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
@@ -562,13 +589,12 @@ class CommonController extends ControllerUser
         // $database_image->original_name = $original_name;
         // $database_image->save();
         return Response::json([
-            'status'    => 'success',
-            'url'       => '/web-content/images/vocabulary/' . $filename_ext,
-            'width'     => $image->width(),
-            'height'    => $image->height()
+            'status' => 'success',
+            'url'    => '/web-content/images/vocabulary/' . $filename_ext,
+            'width'  => $image->width(),
+            'height' => $image->height(),
         ], 200);
     }
-
 
     public function postCrop()
     {
@@ -585,35 +611,35 @@ class CommonController extends ControllerUser
         $cropW = $form_data['width'];
         $cropH = $form_data['height'];
         // rotation angle
-        $angle = $form_data['rotation'];
+        $angle          = $form_data['rotation'];
         $filename_array = explode('/', $image_url);
-        $filename = $filename_array[sizeof($filename_array)-1];
-        $filename_ext = 'croped_' . uniqid() . '.jpg';
-        $manager = new ImageManager();
-        if(strpos($image_url,'http')!==false){
+        $filename       = $filename_array[sizeof($filename_array) - 1];
+        $filename_ext   = 'croped_' . uniqid() . '.jpg';
+        $manager        = new ImageManager();
+        if (strpos($image_url, 'http') !== false) {
             $image = $manager->make($image_url);
-        }else{
-            $image = $manager->make( public_path($image_url) );
-        }   
+        } else {
+            $image = $manager->make(public_path($image_url));
+        }
         $image->resize($imgW, $imgH)
-            // ->rotate(-$angle)
+        // ->rotate(-$angle)
             ->crop($cropW, $cropH, $imgX1, $imgY1)
-            ->save((public_path('web-content/images/vocabulary')).'/'  . $filename_ext ,100);
+            ->save((public_path('web-content/images/vocabulary')) . '/' . $filename_ext, 100);
 
-        if( !$image) {
+        if (!$image) {
 
             return Response::json([
-                'status' => 'error',
+                'status'  => 'error',
                 'message' => 'Server error while uploading',
             ], 208);
 
         }
-        if(strpos($image_url,'http')!==false){
-            File::delete((public_path('web-content/images/vocabulary/'))  . $filename);
+        if (strpos($image_url, 'http') !== false) {
+            File::delete((public_path('web-content/images/vocabulary/')) . $filename);
         }
         return Response::json([
             'status' => 'success',
-            'url' => '/web-content/images/vocabulary/' . $filename_ext
+            'url'    => '/web-content/images/vocabulary/' . $filename_ext,
         ], 200);
 
     }
@@ -621,7 +647,7 @@ class CommonController extends ControllerUser
     public function postCropDelete(Request $request)
     {
         $data = $request->all();
-        File::delete((public_path('web-content/images/vocabulary/'))  . explode('/',$data['image'])[2]);
+        File::delete((public_path('web-content/images/vocabulary/')) . explode('/', $data['image'])[2]);
         return Response::json([
             'status' => 'success',
         ], 200);
@@ -670,11 +696,11 @@ class CommonController extends ControllerUser
         foreach ($data as $key => $value) {
             foreach ($value as $key1 => $value1) {
                 foreach ($value1 as $key2 => $value2) {
-                    if($key2!='row_id' && strpos($key2, 'id')!==false || strpos($key2, 'value')!==false){
-                        $data[$key][$key1][$key2] = $hashids->encode($value2);
+                    if ($key2 != 'row_id' && strpos($key2, 'id') !== false || strpos($key2, 'value') !== false) {
+                        $data[$key][$key1][$key2] = is_numeric($value2)?$hashids->encode($value2):$value2;
                     }
                 }
-                
+
             }
         }
         return $data;
@@ -682,18 +708,28 @@ class CommonController extends ControllerUser
 
     public static function checkValidate($data)
     {
-        $rule=Lang::get('validateruleUser.rules');
+        $rule = Lang::get('validateruleUser.rules');
         foreach ($rule as $key => $value) {
-            if(!array_key_exists($key,$data)){
+            if (!array_key_exists($key, $data)) {
                 unset($rule[$key]);
             }
         }
         $validator = Validator::make($data, $rule);
         if (!$validator->passes()) {
-            return array('result' => false,'error'=>$validator->errors()->all());
+            return array('result' => false, 'error' => $validator->errors()->all());
         } else {
             return array('result' => true);
         }
+    }
+
+    public static function getNotifyType($execute_div,$execute_target_div){
+        if($execute_div==3 && $execute_target_div == 3){
+            return 2;
+        }
+        if($execute_div==1 && ($execute_target_div == 1||$execute_target_div == 2)){
+            return 4;
+        }
+        return 0;
     }
 
 }
