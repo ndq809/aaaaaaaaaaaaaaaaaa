@@ -5,7 +5,7 @@
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
-        <link rel="icon" type="image/png" href="/web-content/images/icon/title-icon2.png" sizes="128x128">
+        <link rel="icon" type="image/x-icon" href="/web-content/images/icon/title_icon3.png">
         <title>
             @yield('title','Đăng Nhập Hệ Thống')
         </title>

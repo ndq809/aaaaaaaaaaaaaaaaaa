@@ -41,6 +41,16 @@
     	</div>
     </div>
     @endif
+    @if(isset($data)&&$data[0][0]['catalogue_div']==3)
+        <div class="col-xs-3">
+            <div class="form-group">
+                <label>Âm thanh</label>
+                <div class="input-group">
+                    <input type="file" id="post_media" name="" class="input-audio hidden" title="{{$data[0][0]['post_media_nm']}}" link="{{$data[0][0]['post_media']}}" placeholder="ID của từ vựng">
+                </div>
+            </div>
+        </div>
+    @endif
     @if(isset($data)&&$data[0][0]['catalogue_div']==7)
         <div class="image margin-bottom text-center">
             <img alt="loadIcon" src="{{$data[0][0]['post_media']}}">
@@ -70,10 +80,8 @@
 		                    <th width="100px">Loại Từ Vựng</th>
 		                    <th width="150px">Phiên Âm</th>
 		                    <th>Nghĩa</th>
-		                    <th>Giải Thích</th>
 		                    <th width="100px">Hình Ảnh</th>
 		                    <th width="100px">Âm Thanh</th>
-		                    <th>Ghi Chú</th>
 		                </tr>
 		            </thead>
 		            <tbody>
@@ -85,10 +93,8 @@
 		                    <td >{{$row['vocabulary_div_nm']}}</td>
 		                    <td class="refer-item" refer_id="spelling">{{$row['spelling']}}</td>
 		                    <td class="refer-item" refer_id="mean">{{$row['mean']}}</td>
-		                    <td class="refer-item" refer_id="explain">{{$row['explain']}}</td>
 		                    <td class="refer-item" refer_id="image"><a title="<img src='{{$row['image']}}' />" class="preview">{{$row['image']!=''?'Xem trước':''}}</a></td>
 		                    <td class="refer-item" refer_id="audio"><audio class="sound1" src="{{$row['audio']}}" ></audio><a type="button" class="preview-audio">{{$row['audio']!=''?'Nghe thử':''}}</a></td>
-		                    <td class="refer-item" refer_id="remark">{{$row['remark']}}</td>
 		                </tr>
 		                @endforeach
 		                @endif

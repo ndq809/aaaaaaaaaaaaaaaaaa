@@ -1,10 +1,10 @@
 var player;
-var WritingArray;
-var AnswerArray;
-var SuggestArrayFull;
-var SuggestArraySpecial;
-var TagPostArray;
-var TagMyPostArray;
+var WritingArray=[];
+var AnswerArray=[];
+var SuggestArrayFull=[];
+var SuggestArraySpecial=[];
+var TagPostArray=[];
+var TagMyPostArray=[];
 var editor;
 var _vocabularyArray = [];
 var post=[];
@@ -45,7 +45,40 @@ function initWriting(){
                 $('.table-click tbody tr.selected-row').trigger('dblclick');
             }
         }
+    });
+
+    editor = CKEDITOR.instances['post_content'];
+    editor.on('key', function(e) {
+        if(e.data.keyCode == 32&&$('#is_suggest').is(':checked')){
+            var text_all = this.document.getBody().getText().trim();
+            showSuggest(text_all);
+        }
+
+        if((e.data.keyCode == 8||e.data.keyCode == 46)&&$('#is_suggest').is(':checked')){
+            var text_all = this.document.getBody().getText();
+            var is_blank_text = text_all[text_all.length-1].trim();
+            if(is_blank_text==''){
+                showSuggest(text_all);
+            }
+        }
+
+        //sử dụng index of + length
     }); 
+
+    $(".btn-add-vocabulary").fancybox({
+        'width'         : '100%',
+        'height'        : '100%',
+        'autoScale'     : true,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'type'          : 'iframe',
+        'margin'        : 6,
+        'fixed'         : false,
+        beforeLoad      : function() {
+            _popup_transfer_array['voc_array']=getVocabularyList(); 
+            _popup_transfer_array['row_id']=$('.activeItem:visible').attr('id'); 
+          },
+    });
 }
 
 function initListener() {
@@ -91,16 +124,6 @@ function initListener() {
         }
     })
 
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousWriting();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextWriting();
-    },10))
-    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');
@@ -135,7 +158,7 @@ function initListener() {
     // });
     
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
+        if (e.ctrlKey&& $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
                 case 37:
                     e.preventDefault();
@@ -553,14 +576,15 @@ function setContentBox(target_id) {
     post = WritingArray.filter(function(val){
         return val['row_id']==Number(target_id);
     });
-    if(typeof post[0] != 'undefined')
+    if(typeof post[0] != 'undefined'){
         history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + post[0]['post_id']);
-    if(post[0]['my_post']==1){
-        if(post[0]['shared']==1){
-            $('#btn-share').remove();
-        }else{
-            if($('#btn-share').length==0){
-                $('#btn-save').after('<button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>');
+        if(post[0]['my_post']==1){
+            if(post[0]['shared']==1){
+                $('#btn-share').remove();
+            }else{
+                if($('#btn-share').length==0){
+                    $('#btn-save').after('<button class="btn btn-sm btn-success" id="btn-share">Chia Sẻ</button>');
+                }
             }
         }
     }
@@ -671,6 +695,9 @@ function showEditPost(tr_tag){
     var post_temp = WritingArray.filter(function(val){
         return val['row_id']==item;
     });
+    if(post_temp[0]==undefined){
+        return;
+    }
     var postTagArray = TagMyPostArray.filter(function(val){
         return val['row_id']==item;
     });

@@ -9,10 +9,10 @@ GO
 CREATE PROCEDURE [dbo].[SPC_WRITING_ACT1]
 	 @P_row_id		        INT					= 0
 ,	 @P_post_id		        NVARCHAR(15)		= ''
-,    @P_post_tag     		XML					= ''
+,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_title     		NVARCHAR(200)		= ''
 ,    @P_post_content    	NTEXT				= ''
-,    @P_xml_detail   		XML					= ''
+,    @P_json_detail   		NVARCHAR(MAX)		= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -92,29 +92,41 @@ BEGIN
 	)
 
 	INSERT INTO #TABLE_DETAIL
-	SELECT
-		vocabulary_id		=	T.C.value('@vocabulary_id 		  ', 'int')
-	,	vocabulary_dtl_id 	=	T.C.value('@vocabulary_dtl_id 	  ', 'tinyint')
-	,	edit_confirm 		=	T.C.value('@edit-confirm 	  ', 'tinyint')
-	,	vocabulary_div 		=	T.C.value('@vocabulary_div 	  ', 'tinyint')
-	,	vocabulary_nm 		=	T.C.value('@vocabulary_nm 	  ', 'nvarchar(200)')
-	,	spelling 			=	T.C.value('@spelling 	  ', 'nvarchar(200)')
-	,	mean 				=	T.C.value('@mean 	  ', 'nvarchar(MAX)')
-	,	explain 			=	T.C.value('@explain 	  ', 'nvarchar(MAX)')
-	,	row_index 			=	row_number() over(partition by T.C.value('@vocabulary_id', 'int'),T.C.value('@vocabulary_dtl_id', 'tinyint') order by T.C.value('@vocabulary_id', 'int'),T.C.value('@vocabulary_dtl_id', 'tinyint'))
-	FROM @P_xml_detail.nodes('row') T(C)
-	WHERE T.C.value('@edit-confirm 	  ', 'nvarchar(15)') IS NOT NULL 
+	SELECT              
+       		vocabulary_id		AS vocabulary_id		
+		,	vocabulary_dtl_id 	AS vocabulary_dtl_id 	
+		,	edit_confirm 		AS edit_confirm 		
+		,	vocabulary_div 		AS vocabulary_div 		          
+		,	vocabulary_nm 		AS vocabulary_nm 		          
+		,	spelling 			AS spelling 			          
+		,	mean 				AS mean 				          
+		,	explain 			AS explain 			          
+		,	row_number() over(partition by vocabulary_id,vocabulary_dtl_id order by vocabulary_id,vocabulary_dtl_id)	AS row_index 			          
+		FROM OPENJSON(@P_json_detail) WITH(
+    		vocabulary_id				NVARCHAR(100)	'$.vocabulary_id		 '
+		,	vocabulary_dtl_id 		    NVARCHAR(100)	'$.vocabulary_dtl_id 	'
+		,	edit_confirm 			    NVARCHAR(100)	'$.edit_confirm 		'
+		,	vocabulary_div 			    NVARCHAR(100)	'$.vocabzulary_div 		'
+		,	vocabulary_nm 			    NVARCHAR(100)	'$.vocabulary_nm 		'
+		,	spelling 				    NVARCHAR(100)	'$.spelling 			'
+		,	mean 					    NVARCHAR(100)	'$.mean 				'
+		,	explain 				    NVARCHAR(100)	'$.explain 			'
+    ) AS #TEMP
+	WHERE #TEMP.edit_confirm IS NOT NULL 
 
 	INSERT INTO #VOCABULARY
-	SELECT
-		row_id						=	T.C.value('@row_id 	  ', 'nvarchar(15)')
-	,	Vocabulary_id				=	T.C.value('@id 	  ', 'INT')
-	FROM @P_xml_detail.nodes('row') T(C)
+	SELECT              
+       		row_id			AS row_id		
+		,	Vocabulary_id	AS Vocabulary_id
+		FROM OPENJSON(@P_json_detail) WITH(
+    		row_id		       NVARCHAR(100)	'$.row_id		 '
+		,	Vocabulary_id	    NVARCHAR(100)	'$.id'
+    )
 
 	INSERT INTO M013
-	SELECT
-		T.C.value('@tag_nm', 'nvarchar(1000)')		
-	,	2	
+	SELECT              
+    	#TEMP2.tag_nm	
+	,	2
 	,	0
 	,	0
 	,	@P_user_id
@@ -128,24 +140,32 @@ BEGIN
 	,	NULL
 	,	NULL
 	,	NULL
-	,	NULL
-	FROM @P_post_tag.nodes('row') T(C)
+	,	NULL   
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+	,	is_new			    NVARCHAR(100)	'$.is_new'
+    ) AS #TEMP2
 	LEFT JOIN M013
-	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	ON #TEMP2.tag_nm = M013.tag_nm
 	AND M013.tag_div = 2
-	WHERE T.C.value('@is_new', 'int') = 1
+	WHERE #TEMP2.is_new = 1
 	AND M013.tag_id IS NULL
 
 	INSERT INTO #TAG
-	SELECT
-		M013.tag_id
-	FROM @P_post_tag.nodes('row') T(C)
+	SELECT              
+    	M013.tag_id
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+    ,	tag_id	            NVARCHAR(1000)	'$.tag_id	     '
+    ) AS #TEMP3
 	INNER JOIN M013
-	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
+	ON #TEMP3.tag_nm = M013.tag_nm 
+	OR #TEMP3.tag_id = M013.tag_id
 
 	IF @P_post_id = ''
 	BEGIN
 		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
+
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
 		BEGIN
 			INSERT INTO F009
@@ -173,6 +193,7 @@ BEGIN
 			,	 @w_time			
 			FROM #TAG
 		END
+
  
 		INSERT INTO M007 (
 			 catalogue_div     

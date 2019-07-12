@@ -10,7 +10,7 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_M008_ACT1]
 	 @P_name_div			TINYINT			=   0
-,	 @P_type_xml				XML			=   ''
+,	 @P_type_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -54,26 +54,30 @@ BEGIN
 		,	del_flg
 		
 		)	
-			SELECT
-			name_div			=	@P_name_div
-		,	target_dtl_div 		=	T.C.value('@target_dtl_div 	  ', 'tinyint')
-		,	price_div 			=	T.C.value('@price_div 	  ', 'tinyint')
-		,	upr 				=	T.C.value('@upr	  ', 'money')
-		,	@P_user_id
-		,	@w_program_id
-		,	@P_ip
-		,	@w_time
-		,	''
-		,	''
-		,	''
-		,	NULL
-		,	''
-		,	''
-		,	''
-		,	NULL
-		,	 0
-		FROM @P_type_xml.nodes('row') T(C)
-		
+		SELECT              
+			@P_name_div
+		,	target_dtl_div
+		,	price_div
+		,	IIF(upr='',NULL,upr)
+		,	@P_user_id        
+		,	@w_program_id       
+		,	@P_ip      
+		,	@w_time        
+		,	''        
+		,	''       
+		,	''      
+		,	NULL        
+		,	''        
+		,	''       
+		,	''      
+		,	NULL        
+		,	 0       
+        FROM OPENJSON(@P_type_json) WITH(
+        	target_dtl_div 	NVARCHAR(100)	'$.target_dtl_div'
+        ,	price_div 		NVARCHAR(100)	'$.price_div'
+        ,	upr 			NVARCHAR(100)	'$.upr'
+        )	
+
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL

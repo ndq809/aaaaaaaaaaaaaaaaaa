@@ -114,6 +114,10 @@ function initevent_w002(){
         w002_refer($(this).val());
     })
 
+    $('#catalogue_nm')[0].selectize.on('option_add',function(){
+        updateGroup('');
+    })
+
     $(document).on('change','#post_title',function(){
         if($(this).val()!=''){
             $('.title-header span').text($(this).val());

@@ -6,7 +6,6 @@ use DAO;
 use Auth;
 use Illuminate\Http\Request;
 use Validator;
-use SQLXML;
 
 class w001Controller extends Controller
 {
@@ -35,8 +34,7 @@ class w001Controller extends Controller
     public function w001_delete(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_W001_ACT1", $param);
@@ -58,8 +56,7 @@ class w001Controller extends Controller
     public function w001_confirm(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_W001_ACT2", $param);
@@ -81,8 +78,7 @@ class w001Controller extends Controller
     public function w001_public(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_W001_ACT3", $param);
@@ -104,8 +100,7 @@ class w001Controller extends Controller
     public function w001_reset(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_W001_ACT4", $param);

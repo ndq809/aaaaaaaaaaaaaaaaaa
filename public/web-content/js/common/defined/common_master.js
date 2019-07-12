@@ -307,6 +307,7 @@ function initEvent() {
     $(document).on('click','#btn-new-row',function(){
         $(this).parents('table').find('tbody').append("<tr></tr>");
         $(this).parents('table').find('tbody tr:last-child').append($(this).parents('table').find('tbody tr:first').html());
+        $(this).parents('table').find('tbody tr:last-child input:first').focus();
         reIndex($(this).parents('table'));
         $(".btn-popup").fancybox({
             'width'         : '90%',
@@ -317,7 +318,7 @@ function initEvent() {
             'type'          : 'iframe',
             'autoSize'      : false,
         });
-
+        $(this).trigger('addrow');
     })
     $(document).on('click','#btn-new-body',function(){
         $(this).parents('table').append("<tbody></tbody>");
@@ -993,7 +994,8 @@ function getInputData(exe_mode,parent_class){
     }
     $(parent_div).find('input.submit-item,select.submit-item,textarea.submit-item').each(function(){
         if($(this).hasClass('ckeditor')){
-            value=CKEDITOR.instances[$(this).attr('id')].getData()
+            value=CKEDITOR.instances[$(this).attr('id')].getData();
+            console.log(value);
         }else
         if($(this).hasClass('money')){
             var text = jQuery.grep($(this).val().split(','), function(item) {
@@ -1038,7 +1040,7 @@ function getTableData(table){
         var row_data={};
         var temp='';
         row_data['row_id']=i;
-        $(this).find('input[refer-id],select[refer-id],input[type=checkbox]').each(function(){
+        $(this).find('input[refer-id],textarea[refer-id],select[refer-id],input[type=checkbox]').each(function(){
             if($(this).hasClass('money')){
                 var text = jQuery.grep($(this).val().split(','), function(value) {
                   return value;
@@ -1518,10 +1520,11 @@ function initFlugin(){
             create: false,
             openOnFocus: true,
             plugins: ['restore_on_backspace'],
-
-            // onInitialize: function () {
-            //     this.clear();
-            // }
+            onFocus: function () {
+                if(this.getItem((this.getValue())[0]!=undefined?this.getItem(this.getValue())[0].innerHTML.trim():'')==''){
+                    this.clear();
+                }
+            }
         });
 
         _selectize=$("select.allow-selectize.new-allow").selectize({
@@ -1529,6 +1532,11 @@ function initFlugin(){
             create: true,
             isDisabled: true,
             plugins: ['restore_on_backspace'],
+            onFocus: function () {
+                if(this.getItem((this.getValue())[0]!=undefined?this.getItem(this.getValue())[0].innerHTML.trim():'')==''){
+                    this.clear();
+                }
+            }
         });
 
         _selectize=$("select.tag-selectize").each(function() {

@@ -10,7 +10,7 @@ CREATE PROCEDURE [dbo].[SPC_COM_ADD_QUESTION]
      @P_post_id     		NVARCHAR(200)		= ''
 ,    @P_post_title     		NVARCHAR(200)		= ''
 ,    @P_post_content    	NTEXT				= ''
-,     @P_post_tag     		XML					= ''
+,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -45,9 +45,9 @@ BEGIN
 	)
 
 	INSERT INTO M013
-	SELECT
-		T.C.value('@tag_nm', 'nvarchar(1000)')		
-	,	3
+	SELECT              
+    	#TEMP2.tag_nm	
+	,	3	
 	,	0
 	,	0
 	,	@P_user_id
@@ -61,20 +61,27 @@ BEGIN
 	,	NULL
 	,	NULL
 	,	NULL
-	,	NULL
-	FROM @P_post_tag.nodes('row') T(C)
+	,	NULL   
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+	,	is_new			    NVARCHAR(100)	'$.is_new'
+    ) AS #TEMP2
 	LEFT JOIN M013
-	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	ON #TEMP2.tag_nm = M013.tag_nm
 	AND M013.tag_div = 3
-	WHERE T.C.value('@is_new', 'int') = 1
+	WHERE #TEMP2.is_new = 1
 	AND M013.tag_id IS NULL
 
 	INSERT INTO #TAG
-	SELECT
-		M013.tag_id
-	FROM @P_post_tag.nodes('row') T(C)
+	SELECT              
+    	M013.tag_id
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+    ,	tag_id	            NVARCHAR(1000)	'$.tag_id	     '
+    ) AS #TEMP3
 	INNER JOIN M013
-	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
+	ON #TEMP3.tag_nm = M013.tag_nm 
+	OR #TEMP3.tag_id = M013.tag_id
 
 	
 		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009

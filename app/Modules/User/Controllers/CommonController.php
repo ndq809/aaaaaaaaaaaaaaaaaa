@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Response;
 use Intervention\Image\ImageManager;
 use Lang;
 use Mail;
-use SQLXML;
 use Validator;
 
 class CommonController extends ControllerUser
@@ -337,12 +336,10 @@ class CommonController extends ControllerUser
                     }
                 }
             }
-            $xml              = new SQLXML();
             $param['id']      = $param['id'] != '' ? $this->hashids->decode($param['id'])[0] : '';
-            $param['tag']     = $xml->xml(isset($param['tag']) ? $param['tag'] : array());
+            $param['tag']     = json_encode(isset($param['tag']) ? $param['tag'] : array());
             $param['user_id'] = Auth::user()->account_id;
             $param['ip']      = $request->ip();
-            // var_dump($param);die;
             $data = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
             $data = $this->encodeID($data);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {

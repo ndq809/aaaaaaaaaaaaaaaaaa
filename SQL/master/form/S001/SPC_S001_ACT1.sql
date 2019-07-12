@@ -11,7 +11,7 @@ GO
 CREATE PROCEDURE [dbo].[SPC_S001_ACT1]
 	 @P_system_div			TINYINT			=   0
 ,	 @P_account_div			TINYINT			=   0
-,	 @P_per_xml				XML				=   ''
+,	 @P_per_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -88,18 +88,18 @@ BEGIN
 		,	del_ip
 		,	del_date
 		,	del_flg
-		)	
-			SELECT
-			system_div			=	@P_system_div
-		,	account_div			=	@P_account_div
-		,	screen_id 	 		=	T.C.value('@screen_id 	  ', 'nvarchar(100)')
-		,	access_per 	 		=	T.C.value('@access_per 	  ', 'tinyint')
-		,	menu_per	 		=	T.C.value('@menu_per	  ', 'tinyint')
-		,	add_per		 		=	T.C.value('@add_per		  ', 'tinyint')
-		,	edit_per	 		=	T.C.value('@edit_per	  ', 'tinyint')
-		,	delete_per			=	T.C.value('@delete_per	  ', 'tinyint')
-		,	report_per 			=	T.C.value('@report_per    ', 'tinyint')
-		,	remark				=	T.C.value('@remark ', 'nvarchar(MAX)')
+		)
+		SELECT              
+           	@P_system_div
+		,	@P_account_div
+		,	screen_id
+		,	access_per 	
+		,	menu_per	
+		,	add_per		
+		,	edit_per	
+		,	delete_per	
+		,	report_per
+		,	remark
 		,	@P_user_id
 		,	@w_program_id
 		,	@P_ip
@@ -113,7 +113,16 @@ BEGIN
 		,	''
 		,	NULL
 		,	 0
-		FROM @P_per_xml.nodes('row') T(C)
+		FROM OPENJSON(@P_per_json) WITH(
+        	screen_id 	 			NVARCHAR(100)	'$.screen_id 	 '
+		,	access_per 	 		    NVARCHAR(100)	'$.access_per 	'
+		,	menu_per	 		    NVARCHAR(100)	'$.menu_per	'
+		,	add_per		 		    NVARCHAR(100)	'$.add_per		'
+		,	edit_per	 		    NVARCHAR(100)	'$.edit_per	'
+		,	delete_per			    NVARCHAR(100)	'$.delete_per	'
+		,	report_per 			    NVARCHAR(100)	'$.report_per 	'
+		,	remark				    NVARCHAR(100)	'$.remark		'
+        )	
 		
 	--EXEC SPC_S999_ACT1 @P_company_cd_u,@w_prs_user_id,@w_prs_prg,@w_prs_prg_nm,@w_prs_mode,@w_prs_key,@w_prs_result,@w_remarks
 

@@ -22,6 +22,18 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 
-	SELECT M006.vocabulary_nm FROM M006 WHERE M006.vocabulary_nm LIKE '%' +@P_target_nm +'%' AND M006.record_div = 2 AND M006.del_flg = 0
+	SELECT TOP 100 
+		M006.vocabulary_nm 
+	FROM M006 
+	WHERE 
+		M006.vocabulary_nm LIKE '%' +@P_target_nm +'%' 
+	AND M006.vocabulary_dtl_id = 0
+	AND M006.record_div = 2 
+	AND M006.del_flg = 0
+	ORDER BY
+		CASE WHEN M006.vocabulary_nm = @P_target_nm THEN 1
+		ELSE
+		2
+		END
 END
 

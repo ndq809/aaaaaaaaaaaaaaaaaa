@@ -146,16 +146,6 @@ function initListener() {
         }
     })
 
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousRelax();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextRelax();
-    },10))
-    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId = $(this).attr('popup-id');
@@ -189,7 +179,7 @@ function initListener() {
     })
 
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
+        if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
                 case 37:
                     e.preventDefault();
@@ -275,11 +265,11 @@ function initListener() {
     $(document ).on("reset",".rateit",function(){
         if($('.btn-vote').length!=0){
             vote(function(){
-                showMessage(2,function(){
+                // showMessage(2,function(){
                     $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
                     $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
                     $('.my-vote:visible').parent().prev("button").find("span").text("Đánh giá của bạn");
-                });
+                // });
             });
         }else{
             $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
@@ -290,11 +280,11 @@ function initListener() {
 
     $(document).on('click','.btn-vote',function(){
         vote(function(){
-            showMessage(2,function(){
+            // showMessage(2,function(){
                 $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
                 $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
                 $('.my-vote:visible').parent().prev("button").find("span").text("Bạn đã vote "+$('.my-vote:visible').rateit('value')+" sao");
-            });
+            // });
         });
     })
 
@@ -404,6 +394,7 @@ function getData(mode) {
     data['load_time1'] = loadtime1;
     data['load_time2'] = loadtime2;
     if(mode == 1){
+        data['post_type'] = 0;
         data['post_tag'] = [];
         if ($.isArray(temp)) {
             for (var i = 0; i < temp.length; i++) {
@@ -413,7 +404,6 @@ function getData(mode) {
             }
         }
         data_search = data['post_tag'];
-        data['post_type'] = 0;
     }else{
         switch(selectedTab){
             case '#tab1' :

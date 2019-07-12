@@ -16,8 +16,8 @@ CREATE PROCEDURE [dbo].[SPC_RELAX_LST2]
 	,	@P_loadtime				INT				=	1 
 	,	@P_loadtime1			INT				=	1 
 	,	@P_loadtime2			INT				=	1 
-	,	@P_tag_list				XML				=	'' 
 	,	@P_post_type			INT				=	0 
+	,	@P_tag_list				NVARCHAR(MAX)	=	'' 
 	,	@P_account_id			NVARCHAR(15)	=	''
 AS
 BEGIN
@@ -108,8 +108,10 @@ BEGIN
 	BEGIN
 		INSERT INTO #TAG
 		SELECT
-		tag_id						=	T.C.value('@tag_id 	  ', 'nvarchar(15)')
-		FROM @P_tag_list.nodes('row') T(C)
+		tag_id					
+		FROM OPENJSON(@P_tag_list) WITH(
+        tag_id	            NVARCHAR(100)	'$.tag_id	     '
+    )
 	END
 
 

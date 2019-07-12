@@ -22,7 +22,7 @@ CREATE PROCEDURE [dbo].[SPC_PROFILE_ACT1]
 	,	@P_eng_level			INT				=	''
 	,	@P_cellphone			NVARCHAR(20)	=	''
 	,	@P_position				INT				=	''
-	,	@P_field				XML				=	''
+	,	@P_field				NVARCHAR(MAX)	=	''
 	,	@P_slogan				NVARCHAR(MAX)	=	''
 	,	@P_facebook_id			NVARCHAR(200)	=	''
 	,	@P_facebook_token		NVARCHAR(500)	=	''
@@ -86,15 +86,17 @@ BEGIN
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 	SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 	INSERT INTO F009
-	SELECT 
-		@w_briged_id
-	,	T.C.value('@tag_id', 'int')
-	,	3
-	,	 @P_account_nm
-	,	 @w_program_id
-	,	 @P_ip
-	,	 @w_time
-	FROM @P_field.nodes('row') T(C) 
+	SELECT              
+           	@w_briged_id
+		,	tag_id
+		,	3
+		,	 @P_account_nm
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time
+	FROM OPENJSON(@P_field) WITH(
+        tag_id	            NVARCHAR(100)	'$.tag_id	     '
+    )
 
 	SET @w_inserted_key = (SELECT TOP 1 M001.user_id FROM M001 INNER JOIN S001 ON M001.user_id = S001.user_id AND S001.del_flg = 0 AND S001.account_id = @P_account_id )
 

@@ -5,7 +5,7 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/masterdata/m008.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-add','btn-save','btn-delete'))}}
+{{Button::menu_button(array('btn-save'))}}
 @endsection
 @section('content')
 <div class="panel main-panel col-xs-12">

@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_G003_ACT1]
-	 @P_emp_id_xml			XML				=   ''
+	 @P_emp_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -44,12 +44,17 @@ BEGIN
 		)
 
 		INSERT INTO #SCREEN_DATA
-		SELECT
-			row_id				=	T.C.value('@row_id		 ', 'INT')
-		,	catalogue_div		=	T.C.value('@catalogue_div		 ', 'nvarchar(15)')
-		,	catalogue_nm   		=	T.C.value('@catalogue_nm    ', 'nvarchar(50)')
-		,	catalogue_id  		=	T.C.value('@catalogue_id   ', 'nvarchar(20)')
-		FROM @P_emp_id_xml.nodes('row') T(C)
+		SELECT              
+           	row_id		
+		,	catalogue_div
+		,	catalogue_nm 
+		,	catalogue_id              
+        FROM OPENJSON(@P_emp_id_json) WITH(
+        	row_id	            NVARCHAR(100)	'$.row_id	     '
+        ,	catalogue_div	    NVARCHAR(100)	'$.catalogue_div'
+        ,	catalogue_nm 	    NVARCHAR(100)	'$.catalogue_nm '
+        ,	catalogue_id 	    NVARCHAR(100)	'$.catalogue_id '
+        )
 		
 		INSERT INTO #CHECK_MASTER
 		SELECT
@@ -119,11 +124,17 @@ BEGIN
 		,	del_date			=	NULL
 		,	del_flg				=	0	   	  
 		FROM (
-		SELECT
-			catalogue_div		=	T.C.value('@catalogue_div		 ', 'nvarchar(15)')
-		,	catalogue_nm   		=	T.C.value('@catalogue_nm    ', 'nvarchar(50)')
-		,	catalogue_id  		=	T.C.value('@catalogue_id   ', 'nvarchar(20)')
-		FROM @P_emp_id_xml.nodes('row') T(C)) update_data
+			SELECT              
+           		row_id			AS row_id		
+			,	catalogue_div	AS catalogue_div
+			,	catalogue_nm 	AS catalogue_nm 
+			,	catalogue_id    AS catalogue_id           
+			FROM OPENJSON(@P_emp_id_json) WITH(
+        		row_id	            NVARCHAR(100)	'$.row_id	     '
+			,	catalogue_div	    NVARCHAR(100)	'$.catalogue_div'
+			,	catalogue_nm 	    NVARCHAR(100)	'$.catalogue_nm '
+			,	catalogue_id 	    NVARCHAR(100)	'$.catalogue_id '
+        )) update_data
 		WHERE
 			M002.catalogue_id = update_data.catalogue_id
 

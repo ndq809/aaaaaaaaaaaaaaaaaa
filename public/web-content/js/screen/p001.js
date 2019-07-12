@@ -52,7 +52,7 @@ function initevent_p001(){
 
 function p001_execute(page){
 	var data=getInputData();
-    data['row_id'] = parent._popup_transfer_array['row_id'];
+    data['row_id'] = parent._popup_transfer_array['row_id']==undefined?-1:parent._popup_transfer_array['row_id'];
     data['selected_list'] = typeof getVocabularyList()[0]!='undefined'?getVocabularyList():'';
     _pageSize=50;
     data['page_size'] = _pageSize;
@@ -121,9 +121,9 @@ function p001_refer(){
         data: data,
         success: function (res) {
             clearFailedValidate();
-            parent.$('#voc-content .vocabulary-box[target-id='+res.row_id+']').removeClass('vocabulary-box').addClass('old-content hidden');
+            parent.$('#voc-content .vocabulary-box[target-id='+(res.row_id==''?-1:res.row_id)+']').removeClass('vocabulary-box').addClass('old-content hidden');
             parent.$('#voc-content').append(res.view);
-            parent.$('#voc-content .vocabulary-box[target-id='+res.row_id+']:not(.old-content)').addClass('new-content');
+            parent.$('#voc-content .vocabulary-box[target-id='+(res.row_id==''?-1:res.row_id)+']:not(.old-content)').addClass('new-content');
             parent.jQuery.fancybox.close();
         },
         // Ajax error

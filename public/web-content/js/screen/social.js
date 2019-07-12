@@ -124,7 +124,7 @@ function initListener() {
         switchTabSocial($(this));
     });
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
+        if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
                 case 37:
                     e.preventDefault();
@@ -140,16 +140,6 @@ function initListener() {
         }
     }, 33))
 
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousSocial();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextSocial();
-    },10))
-    
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
@@ -237,11 +227,11 @@ function initListener() {
     $(document ).on("reset",".rateit",function(){
         if($('.btn-vote').length!=0){
             vote(function(){
-                showMessage(2,function(){
+                // showMessage(2,function(){
                     $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
                     $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
                     $('.my-vote:visible').parent().prev("button").find("span").text("Đánh giá của bạn");
-                });
+                // });
             });
         }else{
             $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
@@ -252,11 +242,11 @@ function initListener() {
 
     $(document).on('click','.btn-vote',function(){
         vote(function(){
-            showMessage(2,function(){
+            // showMessage(2,function(){
                 $('.my-vote:visible').parent().prev("button").removeClass('btn-success');
                 $('.my-vote:visible').parent().prev("button").attr('disabled','disabled');
                 $('.my-vote:visible').parent().prev("button").find("span").text("Bạn đã vote "+$('.my-vote:visible').rateit('value')+" sao");
-            });
+            // });
         });
     })
 }

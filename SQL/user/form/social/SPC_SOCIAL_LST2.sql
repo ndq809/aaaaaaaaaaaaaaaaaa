@@ -14,7 +14,7 @@ CREATE PROCEDURE [dbo].[SPC_SOCIAL_LST2]
 	
 		@P_post_id				NVARCHAR(15)	=	''
 	,	@P_loadtime				INT				=	1 
-	,	@P_tag_list				XML				=	'' 
+	,	@P_tag_list				NVARCHAR(MAX)	=	'' 
 	,	@P_account_id			NVARCHAR(15)	=	''
 AS
 BEGIN
@@ -85,6 +85,7 @@ BEGIN
 	,	pageMax			INT
 	,	page			INT
 	,	pagesize		INT
+	,	pagetype		INT
 	)
 	IF @P_post_id <> ''
 	BEGIN
@@ -101,8 +102,10 @@ BEGIN
 	BEGIN
 		INSERT INTO #TAG
 		SELECT
-		tag_id						=	T.C.value('@tag_id 	  ', 'nvarchar(15)')
-		FROM @P_tag_list.nodes('row') T(C)
+		tag_id				
+		FROM OPENJSON(@P_tag_list) WITH(
+        tag_id	            NVARCHAR(100)	'$.tag_id	     '
+    )
 	END
 
 
@@ -443,6 +446,7 @@ BEGIN
 	,	CEILING(CAST(COUNT(*) AS FLOAT) / 5)
 	,	1
 	,	5
+	,	1
 	FROM F004
 	INNER JOIN #SOCIAL
 	ON F004.target_id				= #SOCIAL.post_id
@@ -459,6 +463,7 @@ BEGIN
 	,	CEILING(CAST(COUNT(*) AS FLOAT) / 5)
 	,	1
 	,	5
+	,	2
 	FROM F004
 	INNER JOIN #SOCIAL
 	ON F004.target_id				= #SOCIAL.post_id

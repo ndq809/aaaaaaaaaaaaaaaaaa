@@ -27,19 +27,29 @@ BEGIN
 	,	@vocabylary_code	INT					=	0
 	,	@history_number 	INT					=	0
 
+	CREATE TABLE #WORD(
+		src_id				INT
+	,	target_id			INT
+	,	relationship_div	INT
+
+	)
+
 	CREATE TABLE #VOCABULARY(
-		row_id				INT
-	,	id					INT
-	,	vocabulary_nm		NVARCHAR(100)
-	,	vocabulary_div		NVARCHAR(100)
-	,	image				NVARCHAR(MAX)
-	,	audio				NVARCHAR(MAX)
-	,	mean				NVARCHAR(MAX)
-	,	spelling			NVARCHAR(100)
-	,	explain				NVARCHAR(MAX)
-	,	remark				NVARCHAR(MAX)
-	,	remembered			INT
-	,	del_flg				INT
+		row_id					INT
+	,	id						INT
+	,	vocabulary_nm			NVARCHAR(500)
+	,	vocabulary_div			INT	
+	,	vocabulary_div_nm		NVARCHAR(50)
+	,	specialized_div			INT	
+	,	specialized_div_nm		NVARCHAR(500)
+	,	field_div				INT	
+	,	field_div_nm			NVARCHAR(500)
+	,   spelling				NVARCHAR(500)
+	,	mean					NVARCHAR(MAX)
+	,	image					NVARCHAR(500)
+	,	audio					NVARCHAR(500)
+	,	remembered				INT
+	,	del_flg					INT
 	)
 
 	CREATE TABLE #PAGER(
@@ -78,14 +88,14 @@ BEGIN
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 	
 	SET @vocabylary_id =(SELECT TOP 1 M006.vocabulary_id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.record_div = 2 AND M006.del_flg = 0)
-	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.record_div = 2 AND M006.del_flg = 0)
+	SET @vocabylary_code =(SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_id = @vocabylary_id)
 
 	SELECT @history_number = COUNT(*) FROM #SEARCH_HISTORY
 	IF EXISTS(SELECT * FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
 	BEGIN
 		DELETE F008 WHERE F008.excute_id IN (SELECT #SEARCH_HISTORY.id FROM #SEARCH_HISTORY WHERE #SEARCH_HISTORY.target_id = @vocabylary_code)
 	END
-	IF @history_number = 10
+	IF @history_number = 11
 	BEGIN
 	DELETE F008 WHERE F008.excute_id IN (SELECT TOP 1 #SEARCH_HISTORY.id FROM #SEARCH_HISTORY)
 	END
@@ -112,18 +122,22 @@ BEGIN
 		,	NULL
 		,	NULL
 	END
+
 	INSERT INTO #VOCABULARY
 	SELECT
 		ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
 	,	M006.id
-	,	M006.vocabulary_nm
-	,	M999.content
+	,	M006.Vocabulary_nm
+	,	M999_1.number_id     
+	,	M999_1.content
+	,	M999_2.number_id     
+	,	M999_2.content
+	,	M999_3.number_id     
+	,	M999_3.content		
+	,   M006.spelling		
+	,	M006.mean			
 	,	M006.image
-	,	M006.audio
-	,	M006.mean
-	,	M006.spelling
-	,	M006.explain
-	,	M006.remark
+	,	M006.audio			
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
 	,	M006.del_flg
 	FROM M006
@@ -132,14 +146,28 @@ BEGIN
 	AND F003.connect_div = 2
 	AND F003.user_id = @P_account_id
 	AND F003.item_2 IS NULL
-	INNER JOIN M999
-	ON M006.vocabulary_div = M999.number_id
-	AND M999.name_div = 8
-	AND m999.del_flg = 0
+	LEFT JOIN M999 M999_1
+	ON	M006.vocabulary_div = M999_1.number_id
+	AND	M999_1.name_div = 8
+	LEFT JOIN M999 M999_2
+	ON	M006.specialized = M999_2.number_id
+	AND	M999_2.name_div = 23
+	LEFT JOIN M999 M999_3
+	ON	M006.field = M999_3.number_id
+	AND	M999_3.name_div = 24
 	WHERE
 		M006.vocabulary_id = @vocabylary_id
 	AND M006.record_div = 2 
 	AND M006.del_flg = 0
+
+	INSERT INTO #WORD
+	SELECT
+		F012.vocabulary_src
+	,	F012.vocabulary_target
+	,	F012.relationship_div
+	FROM F012
+	INNER JOIN #VOCABULARY
+	ON F012.vocabulary_src = #VOCABULARY.id
 
 	SELECT * FROM 
 	(	
@@ -186,6 +214,9 @@ BEGIN
 	SELECT * FROM #PAGER
 
 	SELECT * FROM #VOCABULARY
+	ORDER BY 
+		#VOCABULARY.specialized_div
+	,	#VOCABULARY.field_div
 
 	SELECT
 		F003.id 
@@ -201,7 +232,10 @@ BEGIN
 	AND F003.screen_div = 1
 	AND F003.del_flg = 0
 
-	SELECT TOP 1 M006.id FROM M006 WHERE M006.vocabulary_nm = @P_vocabulary_nm AND M006.del_flg = 0
+	SELECT TOP 1 #VOCABULARY.id FROM #VOCABULARY
+	ORDER BY 
+		#VOCABULARY.specialized_div
+	,	#VOCABULARY.field_div
 
 	SELECT TOP 10
 		F008.target_id
@@ -216,6 +250,17 @@ BEGIN
 	AND F008.user_id = @P_account_id
 	ORDER BY
 		F008.cre_date DESC
+
+	SELECT
+		#WORD.src_id				AS	src_id		
+	,	#WORD.target_id				AS	target_id		
+	,	M006.Vocabulary_nm	AS	vocabulary_nm		
+	,   M006.spelling			
+	,	M006.mean
+	,	#WORD.relationship_div 				
+	FROM M006
+	INNER JOIN #WORD
+	ON #WORD.target_id = M006.id
 
 EXIT_SPC:
 

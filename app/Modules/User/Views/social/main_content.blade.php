@@ -47,13 +47,13 @@
             <div id="chemgio" class="tab-pane fade active in">
                 @include('comment_content')
                 <div class="col-xs-12 paging-list margin-top">
-                   @include('paging_content',array('paging_div'=>0))
+                   @include('paging_content',array('paging_div'=>1))
                 </div>
             </div>
             <div id="gopy" class="tab-pane fade">
                 @include('comment_content',array('cmt_div'=>2))
                 <div class="col-xs-12 paging-list margin-top">
-                   @include('paging_content',array('paging_div'=>1))
+                   @include('paging_content',array('paging_div'=>2))
                 </div>
             </div>
         </div>

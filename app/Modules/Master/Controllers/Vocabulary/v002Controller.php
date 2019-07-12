@@ -5,7 +5,6 @@ use Auth;
 use Common;
 use DAO;
 use Illuminate\Http\Request;
-use SQLXML;
 use File;
 
 class v002Controller extends Controller
@@ -27,15 +26,12 @@ class v002Controller extends Controller
         $data  = $request->all();
         $media = '';
         $name = '';
-        $xml   = new SQLXML();
         $file = $request->file('post_audio');
         // var_dump($file);die;
 
         $validate = common::checkValidate((array) json_decode($data['header_data']));
         if ($validate['result']) {
             $param               = (array) json_decode($data['header_data']);
-            // var_dump($param);die;
-            //upload audio file
            if(!is_null($file)){
                if ($file->getClientSize() > 20971520) {
                     $result = array(
@@ -48,7 +44,9 @@ class v002Controller extends Controller
                 $media = '/web-content/audio/listeningAudio/' . $name;
            }
             $param['post_audio'] = $media;
-            $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_body_data']));
+            $param['json_detail1'] = json_encode((array) json_decode($data['same_data']));
+            $param['json_detail2'] = json_encode((array) json_decode($data['different_data']));
+            $param['json_detail3'] = json_encode((array) json_decode($data['detail_body_data']));
             $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();
 
@@ -85,7 +83,6 @@ class v002Controller extends Controller
         $data  = $request->all();
         $media = '';
         $name = '';
-        $xml   = new SQLXML();
         $file = $request->file('post_audio');
         // var_dump($file);die;
 
@@ -106,7 +103,7 @@ class v002Controller extends Controller
                 $media = '/web-content/audio/listeningAudio/' . $name;
            }
             $param['post_audio'] = $media;
-            $param['xml_detail'] = $xml->xml((array) json_decode($data['detail_body_data']));
+            $param['json_detail'] = json_encode((array) json_decode($data['detail_body_data']));
             $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();
 
@@ -165,6 +162,13 @@ class v002Controller extends Controller
         $result_query     = DAO::call_stored_procedure("SPC_v002_LST1", $data);
         // var_dump($result_query[1][0]['vocabulary_div']);die;
         return view('Master::vocabulary.v002.refer')->with('data', $result_query);
+    }
+
+    public function v002_getAutocomplete(Request $request)
+    {
+        $param            = $request->all();
+        $data   = Dao::call_stored_procedure('SPC_V002_LST2', $param);
+        return response()->json($data[0]);
     }
 
     /**

@@ -8,7 +8,6 @@ use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
 use Session;
-use SQLXML;
 use App\User;
 use Hash;
 
@@ -61,8 +60,7 @@ class RegisterController extends ControllerUser
     {
         $param                   = $request->all();
         $this->facebook_info = (array) Session::get('accepted_data');
-        $xml               = new SQLXML();
-        $param['post_tag'] = $xml->xml(is_array($param['post_tag']) ? $param['post_tag'] : array());
+        $param['post_tag'] = json_encode(is_array($param['post_tag']) ? $param['post_tag'] : array());
         $param['facebook_id']    = isset($this->facebook_info['id']) ? $this->facebook_info['id'] : '';
         $param['facebook_token'] = isset($this->facebook_info['token']) ? $this->facebook_info['token'] : '';
         $param['ip']             = $request->ip();

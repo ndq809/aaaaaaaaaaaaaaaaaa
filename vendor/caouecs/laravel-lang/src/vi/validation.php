@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -31,6 +32,7 @@ return [
     'boolean'              => 'Trường :attribute phải là true hoặc false.',
     'confirmed'            => 'Giá trị xác nhận trong trường :attribute không khớp.',
     'date'                 => 'Trường :attribute không phải là định dạng của ngày-tháng.',
+    'date_equals'          => 'Trường :attribute phải là một ngày bằng với :date.',
     'date_format'          => 'Trường :attribute không giống với định dạng :format.',
     'different'            => 'Trường :attribute và :other phải khác nhau.',
     'digits'               => 'Độ dài của trường :attribute phải gồm :digits chữ số.',
@@ -106,12 +108,13 @@ return [
         'string'  => 'Trường :attribute phải chứa :size ký tự.',
         'array'   => 'Trường :attribute phải chứa :size phần tử.',
     ],
+    'starts_with'          => 'Trường :attribute phải được bắt đầu bằng một trong những giá trị sau: :values',
     'string'               => 'Trường :attribute phải là một chuỗi ký tự.',
     'timezone'             => 'Trường :attribute phải là một múi giờ hợp lệ.',
     'unique'               => 'Trường :attribute đã có trong cơ sở dữ liệu.',
     'uploaded'             => 'Trường :attribute tải lên thất bại.',
     'url'                  => 'Trường :attribute không giống với định dạng một URL.',
-    'uuid'                 => 'The :attribute must be a valid UUID.',
+    'uuid'                 => 'Trường :attribute phải là một chuỗi UUID hợp lệ.',
 
     /*
     |--------------------------------------------------------------------------
@@ -142,5 +145,38 @@ return [
     */
 
     'attributes' => [
+        'name'                  => 'tên',
+        'username'              => 'tên đăng nhập',
+        'email'                 => 'email',
+        'first_name'            => 'tên',
+        'last_name'             => 'họ',
+        'password'              => 'mật khẩu',
+        'password_confirmation' => 'xác nhận mật khẩu',
+        'city'                  => 'thành phố',
+        'country'               => 'quốc gia',
+        'address'               => 'địa chỉ',
+        'phone'                 => 'số điện thoại',
+        'mobile'                => 'di động',
+        'age'                   => 'tuổi',
+        'sex'                   => 'giới tính',
+        'gender'                => 'giới tính',
+        'year'                  => 'năm',
+        'month'                 => 'tháng',
+        'day'                   => 'ngày',
+        'hour'                  => 'giờ',
+        'minute'                => 'phút',
+        'second'                => 'giây',
+        'title'                 => 'tiêu đề',
+        'content'               => 'nội dung',
+        'body'                  => 'nội dung',
+        'description'           => 'mô tả',
+        'excerpt'               => 'trích dẫn',
+        'date'                  => 'ngày',
+        'time'                  => 'thời gian',
+        'subject'               => 'tiêu đề',
+        'message'               => 'lời nhắn',
+        'available'             => 'có sẵn',
+        'size'                  => 'kích thước',
     ],
+
 ];

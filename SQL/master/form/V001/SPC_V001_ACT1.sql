@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_V001_ACT1]
-	 @P_voc_id_xml			XML				=   ''
+	 @P_voc_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -36,11 +36,14 @@ BEGIN
 		,	M006.del_date	=	@w_time
 		,	M006.del_flg	=	1
 		FROM M006 _M006
-		INNER JOIN( 
-		SELECT
-			vocabulary_id		=	T.C.value('@id', 'nvarchar(15)')
-		,	vocabulary_dtl_id	=	T.C.value('@dtl_id', 'nvarchar(15)')
-		FROM @P_voc_id_xml.nodes('row') T(C)) TEMP
+		INNER JOIN(
+		SELECT              
+           		vocabulary_id		AS	vocabulary_id	
+			,	vocabulary_dtl_id	AS	vocabulary_dtl_id
+			FROM OPENJSON(@P_voc_id_json) WITH(
+        		vocabulary_id	       NVARCHAR(100)	'$.id	  '
+			,	vocabulary_dtl_id	    NVARCHAR(100)	'$.dtl_id'
+        )) TEMP
 		ON TEMP.vocabulary_id= _M006.vocabulary_id
 		AND TEMP.vocabulary_dtl_id = _M006.vocabulary_dtl_id
 

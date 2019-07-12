@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_G003_ACT2]
-	 @P_catalogue_id_xml	XML				=   ''
+	 @P_catalogue_id_json	NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -28,6 +28,8 @@ BEGIN
 	--
 	BEGIN TRANSACTION
 	BEGIN TRY
+
+		
 		--
 		UPDATE M002 SET
 			M002.del_user	=	@P_user_id
@@ -36,9 +38,11 @@ BEGIN
 		,	M002.del_date	=	@w_time
 		,	M002.del_flg	=	1
 		WHERE M002.catalogue_id IN (
-		SELECT
-			role_id		=	T.C.value('@id', 'nvarchar(15)')
-		FROM @P_catalogue_id_xml.nodes('row') T(C))
+		SELECT              
+            id              
+        FROM OPENJSON(@P_catalogue_id_json) WITH(
+        	id	            VARCHAR(10)	'$.id'
+        ))
 
 	END TRY
 	BEGIN CATCH

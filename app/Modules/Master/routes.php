@@ -18,12 +18,17 @@ Route::group(
 		Route::post('v002/upgrage','v002Controller@v002_upgrage');
 		Route::post('v002/delete','v002Controller@v002_delete');
 		Route::post('v002/refer','v002Controller@v002_refer');
+		Route::post('v002/getAutocomplete','v002Controller@v002_getAutocomplete');
 		Route::post('v001/list'  ,'v001Controller@v001_list');
 		Route::post('v001/update','v001Controller@v001_update');
 		Route::post('v001/delete','v001Controller@v001_delete');
 		Route::post('v001/confirm','v001Controller@v001_confirm');
 		Route::post('v001/public','v001Controller@v001_public');
 		Route::post('v001/reset','v001Controller@v001_reset');
+		Route::get('v003','v003Controller@getIndex');
+		Route::post('v003/excute','v003Controller@v003_read');
+		Route::post('v003/save','v003Controller@v003_save');
+
 	}
 );
 

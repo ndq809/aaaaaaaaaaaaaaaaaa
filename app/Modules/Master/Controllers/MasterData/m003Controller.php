@@ -2,11 +2,9 @@
 namespace App\Modules\Master\Controllers\MasterData;
 
 use App\Http\Controllers\Controller;
-use DAO;
 use Auth;
+use DAO;
 use Illuminate\Http\Request;
-use Validator;
-use SQLXML;
 
 class m003Controller extends Controller
 {
@@ -33,21 +31,20 @@ class m003Controller extends Controller
 
     public function m003_delete(Request $request)
     {
-        $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_id;
-        $param['ip']=$request->ip();
-        $result_query       = DAO::call_stored_procedure("SPC_M003_ACT2", $param);
-       if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){
+        $data             = $request->all();
+        $param['json']     = json_encode($data);
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_M003_ACT2", $param);
+        if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
-                 'status' => 208,
-                'error' => $result_query[0],
+                'status'     => 208,
+                'error'      => $result_query[0],
                 'statusText' => 'failed',
             );
-        }else{
+        } else {
             $result = array(
-                'status' => 200,
+                'status'     => 200,
                 'statusText' => 'success',
             );
         }
@@ -56,26 +53,25 @@ class m003Controller extends Controller
 
     public function m003_update(Request $request)
     {
-        $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
-        $param['user_id']=Auth::user()->account_id;
-        $param['ip']=$request->ip();
-        $result_query       = DAO::call_stored_procedure("SPC_M003_ACT1", $param);
-       if($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION'){
+        $data             = $request->all();
+        $param['json']     = json_encode($data);
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_M003_ACT1", $param);
+        if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
-                 'status' => 208,
-                'error' => $result_query[0],
+                'status'     => 208,
+                'error'      => $result_query[0],
                 'statusText' => 'failed',
             );
-         } else if ($result_query[0][0]['Data'] != '') {
-                $result = array(
-                    'status' => 207,
-                    'data' => $result_query[0],
-                );
-        }else{
+        } else if ($result_query[0][0]['Data'] != '') {
             $result = array(
-                'status' => 200,
+                'status' => 207,
+                'data'   => $result_query[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
                 'statusText' => 'success',
             );
         }

@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_M004_ACT2]
-	 @P_emp_id_xml			XML				=   ''
+	 @P_emp_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -33,9 +33,11 @@ BEGIN
 		--
 		DELETE FROM M009
 		WHERE M009.employee_id IN (
-		SELECT
-			role_id		=	T.C.value('@id', 'nvarchar(15)')
-		FROM @P_emp_id_xml.nodes('row') T(C))
+		SELECT              
+            id              
+        FROM OPENJSON(@P_emp_id_json) WITH(
+        	id	            VARCHAR(10)	'$.id'
+        ))
 	--EXEC SPC_S999_ACT1 @P_company_cd_u,@w_prs_user_id,@w_prs_prg,@w_prs_prg_nm,@w_prs_mode,@w_prs_key,@w_prs_result,@w_remarks
 
 	END TRY

@@ -42,6 +42,11 @@
     font-family: 'Jersey'; /*a name to be used later*/
     src: url('/web-content/css/common/fonts/IRON MAN OF WAR 002 NCV.ttf'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'HapnaSlab'; /*a name to be used later*/
+    src: url('/web-content/css/common/fonts/SVN-Batman%20Forever%20Alternate.otf'); /*URL to font*/
+}
 html,body{
   height: 100%;
 }
@@ -931,7 +936,6 @@ td .radio-inline {
 
 .activeItem td a{
     color: white;
-    font-weight: bold;
 }
 
 .activeItem td a i{
@@ -1538,5 +1542,13 @@ select.tag-custom{
     background: red;
     border-radius: 4px;
     font-size: 11px;
+}
+
+.tr-disabled {
+    pointer-events: none;
+    
+    /*Button disabled - CSS color class*/
+    background-color: #43030552!important;
+    color: #FFF;
 }
 

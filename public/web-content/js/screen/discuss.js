@@ -116,16 +116,6 @@ function initListener() {
         }
     })
 
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousDiscuss();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextDiscuss();
-    },10))
-    
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId = $(this).attr('popup-id');
@@ -149,7 +139,7 @@ function initListener() {
         switchTabDiscuss($(this));
     });
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
+        if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
                 case 37:
                     e.preventDefault();

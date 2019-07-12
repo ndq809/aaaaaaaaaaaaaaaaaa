@@ -78,9 +78,26 @@ function initListener() {
 
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
-            $("." + $(this).attr("id")).show();
+            $("." + $(this).attr("id")+'.current').show();
+            $("." + $(this).attr("id")+'.current').removeClass('current');
+            if($(this).attr('id')=='vocal-engword'){
+                $('.input-wrap').addClass('hidden');
+            }
         } else {
-            $("." + $(this).attr("id")).hide();
+            $("." + $(this).attr("id")+':visible').addClass('current');
+            $("." + $(this).attr("id")+':visible').hide();
+            if($(this).attr('id')=='vocal-audio'){
+                $('.vocabulary-box').find('audio').each(function() {
+                    if (!$(this)[0].paused) {
+                        $(this)[0].pause();
+                        $(this)[0].currentTime = 0;
+                    }
+                });
+            }
+            if($(this).attr('id')=='vocal-engword'){
+                $('.input-wrap').removeClass('hidden');
+                $('.vocal-engword-input:visible').val('').focus();
+            }
         }
     });
     $(document).on("click", ".focusable table tbody tr", function() {
@@ -93,29 +110,21 @@ function initListener() {
         slidePositionController();
     });
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA')&& $('.sweet-modal-overlay').length==0) {
+        if (e.ctrlKey&& $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
                 case 37:
                     previousVocabulary();
+                    $('.vocal-engword-input:visible').val('').focus();
                     break;
                 case 39:
                     nextVocabulary();
+                    $('.vocal-engword-input:visible').val('').focus();
                     break;
                 default:
                     break;
             }
         }
     },33))
-
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousVocabulary();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextVocabulary();
-    },10))
     
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
@@ -124,6 +133,23 @@ function initListener() {
     $(document).on('click', '#btn-relationship', function() {
         var current_id = $('.activeItem').attr('id');
         window.open('/dictionary?v='+post[0]['id'], '_blank');
+    })
+
+     $(document).on('keyup', '.vocal-engword-input:visible', function() {
+        //remove all special charracter and unless space in string to compare
+        var value = $(this).val().substring(0,$(this).val().length-1).replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
+        var root_value = $('.vocal-engword.current').val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
+        var temp = $(this).val().substring($(this).val().length-1);
+        console.log(value + ' --- '+root_value);
+        if(temp == "#"){
+            if(value == root_value){
+                $('.input-icon').removeClass().addClass('fa fa-check input-icon text-success');
+            }else{
+                $('.input-icon').removeClass().addClass('fa fa-close input-icon text-danger');
+            }
+        }else{
+            $('.input-icon').addClass('hidden');
+        }
     })
 
     $(document).on('change', '#group_nm', function() {
@@ -329,6 +355,9 @@ function getData() {
                         switchTab(1);
                     }
                     $('#target-id').attr('value','')
+                    $('.relationship').filter(function() { 
+                        return  $(this).find('a').length==0; 
+                    }).remove();
                     break;
                 case 201:
                     clearFailedValidate();
@@ -382,6 +411,19 @@ function setContentBox(word_id) {
         post = vocabularyArray.filter(function(val){
             return val['row_id']==Number(word_id);
         });
+    }
+    $('.vocabulary-box:visible input:text').filter(function() { return this.value == ""; }).addClass('hidden');
+    $('.vocabulary-box:visible input:text').filter(function() { return this.value != ""; }).removeClass('hidden');
+    $('.title-bar input:checkbox').filter(function() { 
+        return  $('.vocabulary-box:visible .hidden.'+$(this).attr('id')).length!=0; 
+    }).parent().addClass('hidden');
+    $('.title-bar input:checkbox').filter(function() { 
+        return  $('.vocabulary-box:visible .hidden.'+$(this).attr('id')).length==0; 
+    }).parent().removeClass('hidden');
+    if($('.vocabulary-box:visible .vocal-audio').attr('src')==''){
+        $('.hint').text('Không có âm thanh cho từ vựng này');
+    }else{
+        $('.hint').text('Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng');
     }
 }
 

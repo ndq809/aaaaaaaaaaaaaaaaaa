@@ -175,13 +175,13 @@
                     ×
                 </button>
                 <h5 class="modal-title">
-                    ĐĂNG KÝ NHIỆM VỤ
+                    CHI TIẾT NHIỆM VỤ
                 </h5>
             </div>
             <div class="modal-body" style="padding: 0px 10px">
                 <div class="row">
                     <div class="col-xs-12">
-                        <label><span style="color: #009688;font-family: 'textfont';font-size: 20px">Nhiệm Vụ Từ Vựng</span></label>
+                        <label><span style="color: #009688;font-family: 'textfont';font-size: 20px">Chinh Phục Từ Vựng</span></label>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <label>Danh Mục: <span style="color: #d9534f">600 từ vựng toleic</span></label>

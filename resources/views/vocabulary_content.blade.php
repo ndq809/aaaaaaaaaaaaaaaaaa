@@ -12,7 +12,7 @@
                 @foreach($data[4] as $index => $row)
                 <tr class="vocabulary-box" target-id="{{$row['row_id']}}">
                     <td width="33%"><a target="_blank" href="/dictionary?v={{$row['id']}}">{{$row['vocabulary_nm']}}</a></td>
-                    <td width="33%">/{{$row['spelling']}}/</td>
+                    <td width="33%">{{$row['spelling']}}</td>
                     <td>{{$row['mean']}}</td>
                 </tr>
                 @endforeach

@@ -4,7 +4,7 @@ var _current_screen;
 $(function() {
     try {
         initCommon();
-        _current_screen = getScreenId($('.active-menu a').attr('href').split('/')[1]);
+        _current_screen = getScreenId($('.active-menu a').length!=0?$('.active-menu a').attr('href').split('/')[1]:'');
     } catch (e) {
         alert("some thing went wrong :" + e);
     }
@@ -57,11 +57,11 @@ function initCommon() {
                     if (evt.lengthComputable) {
                         var percentComplete = evt.loaded / evt.total;
                         $('.my-progress').css({
-                            width: percentComplete * 100 + '%'
+                            width: percentComplete * 90 + '%'
                         });
-                        if (percentComplete === 1) {
-                            $('.my-progress').addClass('disappear');
-                        }
+                        // if (percentComplete === 1) {
+                        //     $('.my-progress').addClass('disappear');
+                        // }
                     }
                 }
             }, false);
@@ -70,7 +70,7 @@ function initCommon() {
                     if (evt.lengthComputable) {
                         var percentComplete = evt.loaded / evt.total;
                         $('.my-progress').css({
-                            width: percentComplete * 100 + '%'
+                            width: percentComplete * 90 + '%'
                         });
                     }
                 }
@@ -114,6 +114,12 @@ function initCommon() {
             } else if (res.status == 409) {
                 location.href = '/example';
             }
+            if (this.process) {
+                $('.my-progress').width('100%');
+            }
+            setTimeout(function(){
+                $('.my-progress').addClass('disappear');
+            })
             // if (res.status != null && res.status == 401) {
             //     location.href = '/';
             // }
@@ -131,7 +137,6 @@ function initCommon() {
 
     // Bind a function to a Event (the full Laravel class)
     channel.bind('App\\Events\\NotificationEvents', function(data) {
-        console.log(data);
         for(var i = 0;i<data.message[0].length;i++){
             if($('#for_notify').val()!='' && $('#for_notify').val()==data.message[0][i]['get_user_code']&&data.message[0][i]['notify_count']!=-1){
                 if($('.newsfeed .no-data:visible').length==0){
@@ -394,12 +399,15 @@ function initEvent() {
         $(document).on('doubletap','.table-click tbody tr',function(e){
             $(this).trigger('dblclick');
         })
-        // $(document).on('swiperight','body',function(e){
-        //     $('#btn_prev').trigger('click');
-        // })
-        // $(document).on('swipeleft','body',function(e){
-        //     $('#btn_next').trigger('click');
-        // })
+        $(document).on('swiperight', throttle(function(e) {
+            e.preventDefault();
+            $('#btn_prev').trigger('click');
+        },10))
+
+        $(document).on('swipeleft', throttle(function(e) {
+            e.preventDefault();
+            $('#btn_next').trigger('click');
+        },10))
     }
 
     $(document).on('click','.delete-tr-row',function(){
@@ -475,7 +483,7 @@ function menuController() {
 
 function setNextItem(item_of_table,show_index) {
 	if(typeof item_of_table =='undefined')
-		item_of_table="tbody tr";
+		item_of_table="tbody tr:not(.tr-disabled)";
 	if(typeof show_index =='undefined')
 		show_index=0;
     listItem = $(selectedTab + " table " + item_of_table +":visible");
@@ -505,7 +513,7 @@ function setNextItem(item_of_table,show_index) {
 
 function setPreviousItem(item_of_table,show_index) {
 	if(typeof item_of_table =='undefined')
-		item_of_table="tbody tr";
+		item_of_table="tbody tr:not(.tr-disabled)";
 	if(typeof show_index =='undefined')
 		show_index=0;
     listItem = $(selectedTab + " table " + item_of_table+":visible");

@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_M003_ACT1]
-	 @P_emp_id_xml			XML				=   ''
+	 @P_emp_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -52,20 +52,33 @@ BEGIN
 		)
 
 		INSERT INTO #SCREEN_DATA
-		SELECT
-			row_id				=	T.C.value('@row_id		 ', 'INT')
-		,	emp_id	    		=	T.C.value('@emp_id		 ', 'nvarchar(15)')
-		,	family_nm    		=	T.C.value('@family_nm    ', 'nvarchar(50)')
-		,	first_name   		=	T.C.value('@first_name   ', 'nvarchar(20)')
-		,	email        		=	T.C.value('@email        ', 'nvarchar(50)')
-		,	cellphone    		=	T.C.value('@cellphone    ', 'nvarchar(15)')
-		,	sex      			=	T.C.value('@sex      	 ', 'tinyint	 ')
-		,	birth_date   		=	IIF(T.C.value('@birth_date  ', 'nvarchar(15)') IS NULL , N'', CONVERT(date, T.C.value('@birth_date   ', 'nvarchar(15)'), 105))
-		,	department_id		=	T.C.value('@department_id', 'nvarchar(15)')
-		,	employee_div		=	T.C.value('@employee_div ', 'tinyint	 ')
-		,	remark				=	T.C.value('@remark		 ', 'nvarchar(MAX)')
-		,	avarta   	  		=	T.C.value('@avarta   	 ', 'nvarchar(MAX)')
-		FROM @P_emp_id_xml.nodes('row') T(C)
+		SELECT              
+        	row_id			
+		,	emp_id	    	
+		,	family_nm    
+		,	first_name   
+		,	email        
+		,	cellphone    
+		,	sex      		
+		,	IIF(birth_date='',NULL,birth_date)   
+		,	department_id
+		,	employee_div	
+		,	remark			
+		,	avarta   	  
+        FROM OPENJSON(@P_emp_id_json) WITH(
+        	row_id					NVARCHAR(100)	'$.row_id			 '
+        ,	emp_id	    		    NVARCHAR(100)	'$.emp_id	    	'
+        ,	family_nm    		    NVARCHAR(100)	'$.family_nm    	'
+        ,	first_name   		    NVARCHAR(100)	'$.first_name   	'
+        ,	email        		    NVARCHAR(100)	'$.email        	'
+        ,	cellphone    		    NVARCHAR(100)	'$.cellphone    	'
+        ,	sex      			    NVARCHAR(100)	'$.sex      		'
+        ,	birth_date   		    NVARCHAR(100)	'$.birth_date   	'
+        ,	department_id		    NVARCHAR(100)	'$.department_id	'
+        ,	employee_div		    NVARCHAR(100)	'$.employee_div	'
+        ,	remark				    NVARCHAR(100)	'$.remark			'
+        ,	avarta   	  		    NVARCHAR(100)	'$.avarta   	  	'
+        )
 
 		INSERT INTO #CHECK_MASTER
 		SELECT #SCREEN_DATA.row_id, CAST(employee_div AS NVARCHAR(15)),'employee_div' FROM #SCREEN_DATA
@@ -126,19 +139,33 @@ BEGIN
 		,	del_date			=	NULL
 		,	del_flg				=	0	   	  
 		FROM (
-		SELECT
-			emp_id	    		=	T.C.value('@emp_id		 ', 'nvarchar(15)')
-		,	family_nm    		=	T.C.value('@family_nm    ', 'nvarchar(50)')
-		,	first_name   		=	T.C.value('@first_name   ', 'nvarchar(20)')
-		,	email        		=	T.C.value('@email        ', 'nvarchar(50)')
-		,	cellphone    		=	T.C.value('@cellphone    ', 'nvarchar(15)')
-		,	sex      			=	T.C.value('@sex      	 ', 'tinyint	 ')
-		,	birth_date   		=	IIF(T.C.value('@birth_date   ', 'nvarchar(15)') IS NULL , N'', CONVERT(date, T.C.value('@birth_date   ', 'nvarchar(15)'), 105))
-		,	department_id		=	T.C.value('@department_id', 'nvarchar(15)')
-		,	employee_div		=	T.C.value('@employee_div ', 'tinyint	 ')
-		,	remark				=	T.C.value('@remark		 ', 'nvarchar(MAX)')
-		,	avarta   	  		=	T.C.value('@avarta   	 ', 'nvarchar(MAX)')
-		FROM @P_emp_id_xml.nodes('row') T(C)) update_data
+		SELECT              
+        	row_id			AS 	row_id		
+		,	emp_id	    	AS 	emp_id	    
+		,	family_nm    	AS 	family_nm    
+		,	first_name   	AS 	first_name   
+		,	email        	AS 	email        
+		,	cellphone    	AS 	cellphone    
+		,	sex      		AS 	sex      	
+		,	IIF(birth_date='',NULL,birth_date)     	AS 	birth_date   
+		,	department_id	AS 	department_id
+		,	employee_div	AS 	employee_div
+		,	remark			AS 	remark		
+		,	avarta   	  	AS 	avarta   	 
+        FROM OPENJSON(@P_emp_id_json) WITH(
+        	row_id					NVARCHAR(100)	'$.row_id			'
+        ,	emp_id	    		    NVARCHAR(100)	'$.emp_id	    	'
+        ,	family_nm    		    NVARCHAR(100)	'$.family_nm    	'
+        ,	first_name   		    NVARCHAR(100)	'$.first_name   	'
+        ,	email        		    NVARCHAR(100)	'$.email        	'
+        ,	cellphone    		    NVARCHAR(100)	'$.cellphone    	'
+        ,	sex      			    NVARCHAR(100)	'$.sex      		'
+        ,	birth_date   		    NVARCHAR(100)	'$.birth_date   	'
+        ,	department_id		    NVARCHAR(100)	'$.department_id	'
+        ,	employee_div		    NVARCHAR(100)	'$.employee_div	'
+        ,	remark				    NVARCHAR(100)	'$.remark			'
+        ,	avarta   	  		    NVARCHAR(100)	'$.avarta   	  	'
+        )) update_data
 		WHERE
 			M009.employee_id = update_data.emp_id
 

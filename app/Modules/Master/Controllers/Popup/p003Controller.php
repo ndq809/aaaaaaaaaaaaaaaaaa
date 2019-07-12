@@ -5,7 +5,6 @@ use App\Http\Controllers\Controller;
 use DAO;
 use Illuminate\Http\Request;
 use Validator;
-use SQLXML;
 
 class p003Controller extends Controller
 {
@@ -17,15 +16,14 @@ class p003Controller extends Controller
      */
     public function getIndex()
     {
-        $data = Dao::call_stored_procedure('SPC_COM_M999_INQ1',array(8));
+        $data = Dao::call_stored_procedure('SPC_P003_INQ1');
         return view('Master::popup.p003.index')->with('data_default',$data);
     }
 
     public function p003_search(Request $request)
     {
         $param = $request->all();
-        $xml   = new SQLXML();
-        $param['selected_list']= $xml->xml(isset($param['selected_list'])?$param['selected_list']:array());
+        $param['selected_list']= json_encode(isset($param['selected_list'])&&$param['selected_list']!=''?$param['selected_list']:array());
         $data  = Dao::call_stored_procedure('SPC_P003_LST1', $param);
         return view('Master::popup.p003.search')
             ->with('data', $data)
@@ -35,8 +33,7 @@ class p003Controller extends Controller
     public function p003_load(Request $request)
     {
         $param = $request->all();
-        $xml   = new SQLXML();
-        $param['voc_array']= $xml->xml(isset($param['voc_array'])?$param['voc_array']:array());
+        $param['voc_array']= json_encode(isset($param['voc_array'])?$param['voc_array']:array());
         $data  = Dao::call_stored_procedure('SPC_P003_LST2', $param);
         return view('Master::popup.p003.select')
             ->with('data', $data[0]);
@@ -45,8 +42,7 @@ class p003Controller extends Controller
     public function p003_refer(Request $request)
     {
         $data = $request->all();
-        $xml   = new SQLXML();
-        $param['voc_array']= $xml->xml(isset($data)?$data:array());
+        $param['voc_array']= json_encode(isset($data)?$data:array());
         $result  = Dao::call_stored_procedure('SPC_P003_LST3', $param);
         return view('Master::writing.w002.refer_voc')->with('data_voc', $result[0])->render();
     }

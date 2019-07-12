@@ -81,12 +81,70 @@
                 </table>
             </div>
             @endif
+            <div class="left-header" data-target=".mission" data-toggle="collapse">
+                <table style="width: 100%">
+                    <tbody>
+                        <tr>
+                            <td width="95%">
+                               <h5><span>Nhiệm Vụ Hằng Ngày</span></h5>
+                            </td>
+                            <td class="collapse-icon" width="5%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mission collapse in close-when-small">
+                <table class="table table-hover table-left">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    CHINH PHỤC TỪ VỰNG
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    LÀM CHỦ NGỮ PHÁP
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    BẬC THẦY ĐỌC HIỂU
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    TRÙM GIAO TIẾP
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    VIỆT NAM QUÊ HƯƠNG TÔI
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="left-header" data-target=".question" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
                             <td width="90%">
-                                <h5>Nghĩa của từ "<span>Hello</span>" là gì?</h5>
+                                <h5><span>VIỆT NAM - ĐẤT NƯỚC - CON NGƯỜI</span></h5>
                             </td>
                             <td class="collapse-icon" width="10%"></td>
                         </tr>
@@ -95,7 +153,7 @@
             </div>
             <div class="collapse in question close-when-small">
                 <div class="left-content ">
-                <label class="radio-inline"><input type="radio" name="optradio">Thời tiết</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Thời tiết</label>
                 </div>
                 <div class="left-content ">
                     <label class="radio-inline"><input type="radio" name="optradio">Gia đình</label>

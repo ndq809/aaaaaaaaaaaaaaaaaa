@@ -10,12 +10,12 @@ CREATE PROCEDURE [dbo].[SPC_V002_ACT3]
 	 @P_vocabulary_id		INT					= 0
 ,    @P_vocabulary_dtl_id   INT					= 0
 ,    @P_vocabulary_nm     	NVARCHAR(200)		= ''
-,    @P_vocabulary_div     	INT					= 0
 ,    @P_spelling     		NVARCHAR(200)		= ''
-,    @P_mean    			NVARCHAR(200)		= ''
+,    @P_specialized     	INT					= 0
+,    @P_field     			INT					= 0
+,    @P_vocabulary_div     	INT					= 0
 ,    @P_image     			NVARCHAR(200)		= ''
-,    @P_explain     		NVARCHAR(MAX)		= ''
-,    @P_remark     			NVARCHAR(MAX)		= ''
+,    @P_mean    			NVARCHAR(200)		= ''
 ,    @P_post_audio   		NVARCHAR(200)		= ''
 ,    @P_xml_detail   		XML					= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
@@ -88,19 +88,45 @@ BEGIN
 		BEGIN
 			SELECT @P_post_audio = M006.audio FROM M006 WHERE M006.vocabulary_id = @P_vocabulary_id AND M006.vocabulary_dtl_id = @P_vocabulary_dtl_id
 		END
-		INSERT INTO M006
+		INSERT INTO M006(
+			vocabulary_id
+		,	vocabulary_dtl_id
+		,	vocabulary_nm
+		,	specialized
+		,	field
+		,	vocabulary_div
+		,	image
+		,	audio
+		,	mean
+		,	spelling
+		,	record_div
+		,	del_flg
+		,	cre_user
+		,	cre_prg
+		,	cre_ip
+		,	cre_date
+		,	upd_user
+		,	upd_prg
+		,	upd_ip
+		,	upd_date
+		,	del_user
+		,	del_prg
+		,	del_ip
+		,	del_date
+
+		)
 		SELECT
 			@P_vocabulary_id
 		,	@w_inserted_dtl_key
-		,	0
 		,	@P_vocabulary_nm		
+		,	@P_specialized	
+		,	@P_field	
 		,	@P_vocabulary_div		
 		,	@P_image
 		,	@P_post_audio
 		,	@P_mean				
 		,	@P_spelling			
-		,	@P_explain			
-		,	@P_remark
+		,	0
 		,	0
 		,	@P_user_id
 		,	@w_program_id
@@ -155,7 +181,7 @@ EXIT_SPC:
 	ORDER BY Code
 	--[1]
 	SELECT 
-		@w_inserted_key		AS vocabulary_id
+		@P_vocabulary_id		AS vocabulary_id
 	,	@w_inserted_dtl_key AS vocabulary_dtl_id
 	
 END

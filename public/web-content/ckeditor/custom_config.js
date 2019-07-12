@@ -26,5 +26,5 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeButtons = 'Source,Print,Templates,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,Form,Checkbox,RemoveFormat,CopyFormatting,Outdent,Indent,CreateDiv,Blockquote,Anchor,Image,Flash,PageBreak,Iframe,ShowBlocks,About';
 	config.toolbarCanCollapse = true;
 	config.toolbarStartupExpanded = false;
-
+	config.entities_latin = false;
 };

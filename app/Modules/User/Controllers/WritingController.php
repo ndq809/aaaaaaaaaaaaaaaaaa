@@ -7,7 +7,6 @@ use CommonUser;
 use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
-use SQLXML;
 
 class WritingController extends ControllerUser
 {
@@ -75,21 +74,20 @@ class WritingController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        $xml              = new SQLXML();
-        if (isset($param['post_tag'])) {
+        if (isset($param['post_tag'])&&$param['post_tag']!='') {
             for ($i = 0; $i < count($param['post_tag']); $i++) {
                 if (isset($param['post_tag'][$i]['tag_id'])) {
                     $param['post_tag'][$i]['tag_id'] = $this->hashids->decode($param['post_tag'][$i]['tag_id'])[0];
                 }
             }
         }
-        $param['post_tag'] = $xml->xml(isset($param['post_tag'])?$param['post_tag']:array());
+        $param['post_tag'] = json_encode(isset($param['post_tag'])&&$param['post_tag']!=''?$param['post_tag']:array());
         if (isset($param['voc_array'])) {
             for ($i = 0; $i < count($param['voc_array']); $i++) {
                 $param['voc_array'][$i]['id'] = $this->hashids->decode($param['voc_array'][$i]['id'])[0];
             }
         }
-        $param['voc_array'] = $xml->xml(isset($param['voc_array'])?$param['voc_array']:array());
+        $param['voc_array'] = json_encode(isset($param['voc_array'])?$param['voc_array']:array());
         $param['user_id']   = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['ip']        = $request->ip();
         $data               = Dao::call_stored_procedure('SPC_WRITING_ACT1', $param);

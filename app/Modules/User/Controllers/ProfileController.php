@@ -9,7 +9,6 @@ use DAO;
 use Hash;
 use Illuminate\Http\Request;
 use Session;
-use SQLXML;
 
 class ProfileController extends ControllerUser
 {
@@ -39,8 +38,7 @@ class ProfileController extends ControllerUser
     {
         $param                   = $request->all();
         $this->facebook_info     = (array) Session::get('accepted_data');
-        $xml                     = new SQLXML();
-        $param['post_tag']       = $xml->xml(is_array($param['post_tag']) ? $param['post_tag'] : array());
+        $param['post_tag']       = json_encode(is_array($param['post_tag']) ? $param['post_tag'] : array());
         $param['facebook_id']    = isset($this->facebook_info['id']) ? $this->facebook_info['id'] : Auth::user()->social_id;
         $param['facebook_token'] = isset($this->facebook_info['token']) ? $this->facebook_info['token'] : Auth::user()->social_token;
         $param['user_id']        = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';

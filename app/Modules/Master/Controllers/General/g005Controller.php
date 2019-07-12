@@ -6,7 +6,6 @@ use DAO;
 use Auth;
 use Illuminate\Http\Request;
 use Validator;
-use SQLXML;
 
 class g005Controller extends Controller
 {
@@ -34,8 +33,7 @@ class g005Controller extends Controller
     public function g005_delete(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_G005_ACT2", $param);
@@ -57,8 +55,7 @@ class g005Controller extends Controller
     public function g005_update(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_G005_ACT1", $param);

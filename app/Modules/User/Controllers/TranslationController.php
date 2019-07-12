@@ -7,7 +7,6 @@ use CommonUser;
 use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
-use SQLXML;
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 class TranslationController extends ControllerUser
@@ -79,8 +78,7 @@ class TranslationController extends ControllerUser
         $param            = $request->all();
         $data1            = [];
         $data1['post_id'] = isset($this->hashids->decode($param['post_id'])[0]) ? $this->hashids->decode($param['post_id'])[0] : '';
-        $xml              = new SQLXML();
-        if (isset($param['post_tag'])) {
+        if (isset($param['post_tag'])&&$param['post_tag']!='') {
             for ($i = 0; $i < count($param['post_tag']); $i++) {
                 if (isset($param['post_tag'][$i]['tag_id'])) {
                     $param['post_tag'][$i]['tag_id'] = $this->hashids->decode($param['post_tag'][$i]['tag_id'])[0];
@@ -88,12 +86,12 @@ class TranslationController extends ControllerUser
             }
         }
         $data1['title']      = $param['post_title'];
-        $data1['post_tag']   = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
+        $data1['post_tag']   = json_encode(isset($param['post_tag'])&&$param['post_tag']!='' ? $param['post_tag'] : array());
         $data1['en_text']    = $param['en_text'];
         $data1['vi_text']    = $param['vi_text'];
-        $data1['en_array']   = $xml->xml(isset($param['en_array']) ? $param['en_array'] : array());
-        $data1['vi_array']   = $xml->xml(isset($param['vi_array']) ? $param['vi_array'] : array());
-        $data1['auto_array'] = $xml->xml(isset($param['auto_array']) ? $param['auto_array'] : array());
+        $data1['en_array']   = json_encode(isset($param['en_array']) ? $param['en_array'] : array());
+        $data1['vi_array']   = json_encode(isset($param['vi_array']) ? $param['vi_array'] : array());
+        $data1['auto_array'] = json_encode(isset($param['auto_array']) ? $param['auto_array'] : array());
         $data1['save_mode']  = $param['save_mode'];
         $data1['user_id']    = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data1['ip']         = $request->ip();

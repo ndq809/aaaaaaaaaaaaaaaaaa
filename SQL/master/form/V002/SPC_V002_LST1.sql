@@ -17,7 +17,26 @@ CREATE PROCEDURE [dbo].[SPC_V002_LST1]
 AS
 BEGIN
 	SET NOCOUNT ON;
-	EXEC SPC_COM_M999_INQ1 '8'
+
+	CREATE TABLE #WORD(
+		id					INT
+	,	relationship_div	INT
+
+	)
+
+	INSERT INTO #WORD
+	SELECT
+		F012.vocabulary_target
+	,	F012.relationship_div
+	FROM M006
+	INNER JOIN F012
+	ON M006.id = F012.vocabulary_src
+	WHERE 
+		M006.vocabulary_id			= @P_vocabulary_id
+	AND	M006.vocabulary_dtl_id		= @P_vocabulary_dtl_id
+	AND	M006.del_flg = 0
+
+	EXEC SPC_V002_FND1
 	SELECT
 		M006.vocabulary_id
 	,	M006.vocabulary_dtl_id
@@ -27,8 +46,8 @@ BEGIN
 	,	M006.audio
 	,	M006.mean
 	,	M006.spelling
-	,	M006.explain
-	,	M006.remark	    
+	,	M006.specialized
+	,	M006.field	    
 	FROM M006
 	WHERE 
 		M006.vocabulary_id			= @P_vocabulary_id
@@ -48,6 +67,28 @@ BEGIN
 	AND	M012.del_flg = 0
 	AND M012.target_div = 1
 
+	SELECT
+		M006.Vocabulary_id		AS	vocabulary_id		
+	,	M006.Vocabulary_dtl_id  AS	vocabulary_dtl_id  
+	,	M006.Vocabulary_nm		AS	vocabulary_nm		
+	,	M999_1.content			AS vocabulary_div
+	,	M999_2.content			AS specialized
+	,	M999_3.content			AS field			
+	,   M006.spelling			
+	,	M006.mean
+	,	#WORD.relationship_div 				
+	FROM M006
+	LEFT JOIN M999 M999_1
+	ON	M006.vocabulary_div = M999_1.number_id
+	AND	M999_1.name_div = 8
+	LEFT JOIN M999 M999_2
+	ON	M006.specialized = M999_2.number_id
+	AND	M999_2.name_div = 23
+	LEFT JOIN M999 M999_3
+	ON	M006.field = M999_3.number_id
+	AND	M999_3.name_div = 24
+	INNER JOIN #WORD
+	ON #WORD.id = M006.id
 	--
 END
 

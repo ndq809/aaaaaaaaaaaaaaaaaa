@@ -32,7 +32,7 @@
 	font-weight: bold;
 }
 
-.vocabulary-box *{
+.vocabulary-box input,.vocabulary-box textarea{
 	margin-top: 5px;
 	text-align: center;
 	border-radius: 0px;
@@ -52,4 +52,19 @@
 }
 .display-table.custom>div{
 	display: block;
+}
+.analysis{
+	border-bottom: 1px solid #ccc;
+	margin-top: 5px;
+}
+
+.vocal-engword-input{
+	font-size: 14px;
+}
+
+.input-icon{
+	position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 24px;
 }

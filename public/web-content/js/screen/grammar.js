@@ -94,7 +94,7 @@ function initListener() {
     });
     $(window).resize(function() {});
     $(document).on('keydown', throttle(function(e) {
-        if (!(e.target.tagName == 'INPUT' || e.target.tagName == 'TEXTAREA') && $('.sweet-modal-overlay').length == 0) {
+        if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
                 case 37:
                     previousGrammar();
@@ -108,16 +108,6 @@ function initListener() {
         }
     }, 33))
 
-    $(document).on('swiperight', throttle(function(e) {
-        e.preventDefault();
-        previousGrammar();
-    },10))
-
-    $(document).on('swipeleft', throttle(function(e) {
-        e.preventDefault();
-        nextGrammar();
-    },10))
-    
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })

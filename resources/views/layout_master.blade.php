@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="{{ csrf_token() }}" name="csrf-token"/>
         <link rel="icon" type="image/x-icon" href="/web-content/images/icon/title_icon3.png">
@@ -11,9 +12,11 @@
             @yield('title','English Plus Master')
         </title>
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-ui.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/autoresize.jquery.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/defined/common_master.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/defined/message.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
@@ -26,6 +29,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/jquery-ui.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/fileinput.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/defined/common_master.css')!!}

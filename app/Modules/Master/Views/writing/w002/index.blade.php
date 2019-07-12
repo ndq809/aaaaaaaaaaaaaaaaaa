@@ -35,7 +35,7 @@
         <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5'>
             <div class="form-group">
                 <label>Tên Danh Mục</label>
-                <select class="submit-item allow-selectize required" id="catalogue_nm">
+                <select class="submit-item allow-selectize new-allow required" id="catalogue_nm">
                     <option>Tất cả</option>
                 </select>
             </div>
@@ -43,7 +43,7 @@
         <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5'>
             <div class="form-group">
                 <label>Tên Nhóm</label>
-                <select id="group_nm" class="submit-item allow-selectize required">
+                <select id="group_nm" class="submit-item allow-selectize new-allow required">
                         <option value=""></option>
                 </select>
             </div>
@@ -146,8 +146,14 @@
             </div>
         </div>
 
-        <div class="col-sm-12 no-padding-right transform-content" transform-div='1,3,4,5' id="result">
-            @include('Master::writing.w002.refer_voc')
+        <div class="col-sm-12 no-padding-right transform-content" transform-div='1,3,4,5'>
+            <div class="form-group table-fixed-width" min-width="1024px">
+                <a type="button" href="/master/popup/p003" class="btn btn-sm btn-primary btn-popup">Duyệt danh sách từ vựng</a>
+                <div id="result">
+                    @include('Master::writing.w002.refer_voc')
+                </div>
+            </div>
+
         </div>
 
         <div class="col-sm-12 no-padding-right transform-content" transform-div='2' id="result1">

@@ -5,7 +5,6 @@ use DAO;
 use Auth;
 use Illuminate\Http\Request;
 use Validator;
-use SQLXML;
 use Common;
 use Hash;
 
@@ -58,8 +57,7 @@ class g006Controller extends Controller
     public function g006_delete(Request $request)
     {
         $data        = $request->all();
-        $xml         = new SQLXML();
-        $param['xml']    = $xml->xml($data);
+        $param['json']    = json_encode($data);
         $param['user_id']=Auth::user()->account_id;
         $param['ip']=$request->ip();
         $result_query       = DAO::call_stored_procedure("SPC_G006_ACT2", $param);

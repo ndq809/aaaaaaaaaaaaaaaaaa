@@ -7,7 +7,6 @@ use CommonUser;
 use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
-use SQLXML;
 
 class RelaxController extends ControllerUser
 {
@@ -42,13 +41,12 @@ class RelaxController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        if (isset($param['post_tag'])) {
+        if (isset($param['post_tag'])&&$param['post_tag']!='') {
             for ($i = 0; $i < count($param['post_tag']); $i++) {
                 $param['post_tag'][$i]['tag_id'] = $this->hashids->decode($param['post_tag'][$i]['tag_id'])[0];
             }
         }
-        $xml              = new SQLXML();
-        $param['post_tag'] = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
+        $param['post_tag'] = json_encode(isset($param['post_tag'])&&$param['post_tag']!='' ? $param['post_tag'] : array());
         $param['user_id']  = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data              = Dao::call_stored_procedure('SPC_RELAX_LST2', $param);
         $data              = CommonUser::encodeID($data);
@@ -130,7 +128,6 @@ class RelaxController extends ControllerUser
         $media = '';
         $media_div = 0;
         $name = '';
-        $xml   = new SQLXML();
         $file = $request->file('post_media');
         $param = [];
         $param_temp               = json_decode($data['header_data'],true);
@@ -157,7 +154,7 @@ class RelaxController extends ControllerUser
             }else
             $media_div = 5;
         }
-        if (isset($param_temp['post_tag_edit'])) {
+        if (isset($param_temp['post_tag_edit'])&&$param['post_tag_edit']!='') {
             for ($i = 0; $i < count($param_temp['post_tag_edit']); $i++) {
                 if (isset($param_temp['post_tag_edit'][$i]['tag_id'])) {
                     $param_temp['post_tag_edit'][$i]['tag_id'] = $this->hashids->decode($param_temp['post_tag_edit'][$i]['tag_id'])[0];
@@ -167,7 +164,7 @@ class RelaxController extends ControllerUser
         $param['new-post-id'] = $param_temp['new-post-id'] != '' ? $this->hashids->decode($param_temp['new-post-id'])[0] : '';
         $param['post_div'] = isset($param_temp['post_div'])?$param_temp['post_div'] + 3 :'';
         $param['title'] = isset($param_temp['post_title'])?$param_temp['post_title']:'';
-        $param['post_tag'] = $xml->xml($param_temp['post_tag_edit']);
+        $param['post_tag'] = json_encode(isset($param_temp['post_tag_edit'])&&$param['post_tag_edit']!=''?$param_temp['post_tag_edit']:array());
         $param['content'] = isset($param_temp['post_content'])?$param_temp['post_content']:'';
         if($param['post_div']==9||$param['new-post-id']!=''){
             $param['media'] = $media;

@@ -32,12 +32,13 @@
 	font-weight: bold;
 }
 
-.vocabulary-box *{
+.vocabulary-box input,.vocabulary-box textarea{
 	margin-top: 5px;
 	text-align: center;
 	border-radius: 0px;
 	font-size: 14px;
 }
+
 
 .vocabulary-box input:nth-child(1){
 	color: #009688;
@@ -114,6 +115,10 @@ span[data-toggle=tooltip]:hover{
 .tooltip .tooltip-arrow {
       border-bottom:5px solid #ff3e00!important;
       border-top: none!important;
+}
+.analysis{
+	border-bottom: 1px solid #ccc;
+	margin-top: 5px;
 }
 
 

@@ -16,6 +16,13 @@ function init_v002(){
     }else{
         $('#vocabulary_nm').focus();
     }
+    createAutocomplete($("#vocabulary_nm"),function(event, ui){
+        event.preventDefault();
+        $("#vocabulary_nm").val(ui.item.vocabulary_nm);
+        $("#vocabulary_id").val(ui.item.vocabulary_id);
+        $("#vocabulary_dtl_id").val(ui.item.vocabulary_dtl_id);
+        $("#vocabulary_id").trigger('change');
+    });
 }
 
 function initevent_v002(){
@@ -82,6 +89,17 @@ function initevent_v002(){
         updateGroup(this);
     })
 
+    $(document).on('addrow','.btn-add',function(){
+        var temp = $(this).parents('table').find('tbody tr:last-child');
+        createAutocomplete(temp.find('.auto-fill'),function(event, ui){
+            event.preventDefault();
+            temp.find('.auto-fill').val(ui.item.vocabulary_nm);
+            temp.find('td[refer-id]').each(function(){
+                $(this).text(ui.item[$(this).attr('refer-id')]);
+            })
+        });
+    })
+
     $(document).on('change','#vocabulary_id,#vocabulary_dtl_id',function(){
         if($('#vocabulary_id').val()!='' && $('#vocabulary_dtl_id').val()!=''){
             v002_refer();
@@ -101,7 +119,11 @@ function initevent_v002(){
 function v002_addNew(){
     var data_addnew=new FormData($("#upload_form")[0]);
     var header_data=getInputData(1);
+    var same_data = getWorData($('#same-data'));
+    var different_data = getWorData($('#different-data'));
     data_addnew.append('header_data',JSON.stringify(header_data));
+    data_addnew.append('same_data',JSON.stringify(same_data));
+    data_addnew.append('different_data',JSON.stringify(different_data));
     data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.submit-table-body'))));
 	$.ajax({
         type: 'POST',
@@ -261,10 +283,75 @@ function v002_refer(){
                     '<audio controls=""><source src="'+$(".old-input-audio").attr('value')+'" type="audio/mp3"></audio>'
                 ],
             });
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
+            createAutocomplete($("#vocabulary_nm"),function(event, ui){
+                event.preventDefault();
+                $("#vocabulary_nm").val(ui.item.vocabulary_nm);
+                $("#vocabulary_id").val(ui.item.vocabulary_id);
+                $("#vocabulary_dtl_id").val(ui.item.vocabulary_dtl_id);
+                $("#vocabulary_id").trigger('change');
+            });
         }
     });
+}
+
+function createAutocomplete(target,callback){
+    target.autocomplete({
+        source: function(request, response) {
+            $.ajax({
+                type: 'POST',
+                url: "/master/vocabulary/v002/getAutocomplete",
+                dataType: "json",
+                data: {
+                    q: request.term
+                },
+                success: function(data) {
+                    var temp = [];
+                    if (data[0]['vocabulary_nm'] != '') {
+                        for (var i = 0; i < data.length; i++) {
+                            temp.push
+                            ({
+                                    label: data[i]['Vocabulary_nm']+' ---- '+data[i]['mean']
+                                ,   vocabulary_id: data[i]['Vocabulary_id']
+                                ,   vocabulary_dtl_id: data[i]['Vocabulary_dtl_id']
+                                ,   vocabulary_nm: data[i]['Vocabulary_nm'] 
+                                ,   vocabulary_div: data[i]['Vocabulary_div'] 
+                                ,   specialized: data[i]['specialized'] 
+                                ,   field: data[i]['field'] 
+                                ,   spelling: data[i]['spelling'] 
+                                ,   mean: data[i]['mean'] 
+                            });
+                        }
+                    }
+                    response(temp);
+                }
+            });
+        },
+        select: function(event, ui){
+            callback(event, ui)
+        },
+        // open: function(event, ui){
+        //     $('#ui-id-1').css('top',($("#vocabulary_nm").offset().top+50)+'px');
+        // },
+        // minLength: 3,
+        delay: 500,
+        autoFocus: true
+    });
+}
+
+function getWorData(table){
+    var data = [];
+    table.find('tbody tr:visible').each(function(i){
+        var row_data={};
+        row_data['row_id'] = i+1;
+        row_data['word_id'] = $(this).find('td[refer-id=vocabulary_id]').text();
+        row_data['word_dtl_id'] = $(this).find('td[refer-id=vocabulary_dtl_id]').text();
+        if(row_data['word_id']!=''){
+            data.push(row_data);
+        }
+    })
+    if(data.length==0){
+        return null;
+    }else{
+        return $.extend({}, data);
+    }
 }

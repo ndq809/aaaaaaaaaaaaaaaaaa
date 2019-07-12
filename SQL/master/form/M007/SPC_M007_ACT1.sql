@@ -10,7 +10,7 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_M007_ACT1]
 	 @P_name_div			TINYINT			=   0
-,	 @P_type_xml				XML			=   ''
+,	 @P_type_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -58,30 +58,39 @@ BEGIN
 		,	del_date
 		,	del_flg
 		)	
-			SELECT
-			name_div			=	@P_name_div
-		,	number_id 			=	T.C.value('@number_id 	  ', 'tinyint')
-		,	content 			=	T.C.value('@content 	  ', 'nvarchar(MAX)')
-		,	num_remark1 		=	IIF(T.C.value('@num_remark1	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark1	  ', 'nvarchar(10)'))
-		,	num_remark2 		=	IIF(T.C.value('@num_remark2	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark2	  ', 'nvarchar(10)'))
-		,	num_remark3 		=	IIF(T.C.value('@num_remark3	  ', 'nvarchar(10)')='',NULL,T.C.value('@num_remark3	  ', 'nvarchar(10)'))
-		,	text_remark1		=	T.C.value('@text_remark1  ', 'nvarchar(MAX)')
-		,	text_remark2		=	T.C.value('@text_remark2  ', 'nvarchar(MAX)')
-		,	text_remark3		=	T.C.value('@text_remark3  ', 'nvarchar(MAX)')
-		,	@P_user_id
-		,	@w_program_id
-		,	@P_ip
-		,	@w_time
-		,	''
-		,	''
-		,	''
-		,	NULL
-		,	''
-		,	''
-		,	''
-		,	NULL
-		,	 0
-		FROM @P_type_xml.nodes('row') T(C)
+			SELECT              
+           	@P_name_div
+		,	number_id
+		,	content
+		,	IIF(num_remark1='',NULL,num_remark1)          
+		,	IIF(num_remark2='',NULL,num_remark2)          
+		,	IIF(num_remark3='',NULL,num_remark3)          
+		,	text_remark1          
+		,	text_remark2          
+		,	text_remark3          
+		,	@P_user_id        
+		,	@w_program_id       
+		,	@P_ip      
+		,	@w_time        
+		,	''        
+		,	''       
+		,	''      
+		,	NULL        
+		,	''        
+		,	''       
+		,	''      
+		,	NULL        
+		,	 0       
+        FROM OPENJSON(@P_type_json) WITH(
+        	number_id	    NVARCHAR(100)	'$.number_id'
+        ,	content 	    NVARCHAR(100)	'$.content'
+        ,	num_remark1 	NVARCHAR(100)	'$.num_remark1'
+        ,	num_remark2 	NVARCHAR(100)	'$.num_remark2'
+        ,	num_remark3 	NVARCHAR(100)	'$.num_remark3'
+        ,	text_remark1 	NVARCHAR(100)	'$.text_remark1'
+        ,	text_remark2 	NVARCHAR(100)	'$.text_remark2'
+        ,	text_remark3 	NVARCHAR(100)	'$.text_remark3'
+        )	
 		
 	END TRY
 	BEGIN CATCH

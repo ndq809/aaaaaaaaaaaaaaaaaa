@@ -51,15 +51,6 @@ function initevent_p004(){
         parent.jQuery.fancybox.close();
     })
 
-    $(document).on('click','.preview-audio',function(){
-        $(this).parents('table').find('audio').each(function(){
-            if(!$(this)[0].paused){
-                $(this)[0].pause();
-                $(this)[0].currentTime = 0;
-            }
-        });
-        $(this).parent().find('audio')[0].play();
-    })
 }
 
 function p004_execute(post_id){
@@ -82,6 +73,22 @@ function p004_execute(post_id){
                     html: true
                 });
             });
+            if($('#post_type').val()==3){
+                $(".input-audio").fileinput('refresh',{
+                    showCaption: true,
+                    showPreview: true,
+                    showRemove: false,
+                    showUpload: false,
+                    showCancel: false,
+                    showBrowse : false,
+                    showUploadedThumbs: false,
+                    initialCaption : $(".input-audio").attr('title'),
+                    initialPreview: [
+                        '<audio controls=""><source src="'+$(".input-audio").attr('link')+'" type="audio/mp3"></audio>'
+                    ],
+                });
+            }
+
             if($('#post_type').val()==8){
                 var player;
                 $('#video-player').mediaelementplayer({

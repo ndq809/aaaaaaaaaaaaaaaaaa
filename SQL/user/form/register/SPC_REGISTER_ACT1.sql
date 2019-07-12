@@ -23,7 +23,7 @@ CREATE PROCEDURE [dbo].[SPC_REGISTER_ACT1]
 	,	@P_eng_level			INT				=	''
 	,	@P_cellphone			NVARCHAR(20)	=	''
 	,	@P_position				INT				=	''
-	,	@P_field				XML				=	''
+	,	@P_field				NVARCHAR(MAX)	=	''
 	,	@P_slogan				NVARCHAR(MAX)	=	''
 	,	@P_facebook_id			NVARCHAR(200)	=	''
 	,	@P_facebook_token		NVARCHAR(500)	=	''
@@ -107,15 +107,17 @@ BEGIN
 	SET @w_inserted_key = scope_identity()
 
 	INSERT INTO F009
-	SELECT 
-		@w_briged_id
-	,	T.C.value('@tag_id', 'int')
-	,	3
-	,	 @w_inserted_key
-	,	 @w_program_id
-	,	 @P_ip
-	,	 @w_time
-	FROM @P_field.nodes('row') T(C) 
+	SELECT              
+           	@w_briged_id
+		,	tag_id
+		,	3
+		,	 @P_account_nm
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time
+	FROM OPENJSON(@P_field) WITH(
+        tag_id	            NVARCHAR(100)	'$.tag_id	     '
+    )
 	
 	INSERT INTO S001
 	SELECT

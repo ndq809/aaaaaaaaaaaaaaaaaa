@@ -9,7 +9,7 @@
     {!!WebFunctions::public_url('web-content/css/screen/profile.css')!!}
 @stop
 @section('left-tab')
-    @include('left_tab_1')
+    @include('User::profile.left_tab')
 @stop
 @section('content')
 <div class="col-lg-9 col-md-12 no-padding change-content">

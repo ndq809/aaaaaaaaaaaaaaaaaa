@@ -40,6 +40,14 @@
             </div>
         </div>
 	</div>
+    <div class="post-not-found col-xs-12 hidden">
+        <div class="image-nf">
+            <img src="/web-content/images/icon/no-result.png" width="400px">
+        </div>
+        <div class="content">
+            <h5 class="text-center" style="font-size: 20px;">TỪ BẠN VỪA TÌM KHÔNG ĐƯỢC TÌM THẤY TRONG HỆ THỐNG !!!</h5>
+        </div>
+    </div>
     <div class="col-xs-12 no-padding result-box change-content {{isset($data)&&$data[0]['id'] != ''?'':'hidden'}}">
         <div class="temp hidden" style="height:27px"></div>
         <div class="right-header col-md-12 no-padding">

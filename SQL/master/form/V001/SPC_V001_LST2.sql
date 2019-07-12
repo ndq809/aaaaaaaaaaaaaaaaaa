@@ -11,10 +11,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_V001_LST2]
-	@P_vocabulary_div		INT					=	0
+	@P_specialized_div		INT					=	0
+,	@P_field_div			INT					=	0
+,	@P_vocabulary_div		INT					=	0
+,	@P_record_div			INT					=	-1
 ,	@P_Vocabulary_nm		NVARCHAR(50)		=	''
 ,	@P_mean					NVARCHAR(200)		=	''
-,	@P_record_div			INT					=	-1
 ,	@P_page_size			INT					=	50
 ,	@P_page					INT					=	1
 
@@ -32,15 +34,17 @@ BEGIN
 	CREATE TABLE #P003(
 		vocabulary_id			NVARCHAR(15)
 	,	vocabulary_dtl_id    	NVARCHAR(15)
-	,	vocabulary_nm           NVARCHAR(50)
+	,	vocabulary_nm           NVARCHAR(500)
 	,	vocabulary_div			INT	
 	,	vocabulary_div_nm		NVARCHAR(50)
-	,   spelling				NVARCHAR(50)	
-	,	mean					NVARCHAR(200)
-	,	explain					NVARCHAR(200)
-	,	image					NVARCHAR(200)
-	,	audio					NVARCHAR(200)
-	,	remark					NVARCHAR(150)	
+	,	specialized_div			INT	
+	,	specialized_div_nm		NVARCHAR(500)
+	,	field_div				INT	
+	,	field_div_nm			NVARCHAR(500)
+	,   spelling				NVARCHAR(500)	
+	,	mean					NVARCHAR(MAX)
+	,	image					NVARCHAR(500)
+	,	audio					NVARCHAR(500)
 	,	record_div				INT	
 	,	record_div_nm			NVARCHAR(150)	
 	)
@@ -51,14 +55,16 @@ BEGIN
 		M006.Vocabulary_id		
 	,	M006.Vocabulary_dtl_id  
 	,	M006.Vocabulary_nm
-	,	M999.number_id      
-	,	M999.content				
+	,	M999_1.number_id      
+	,	M999_1.content
+	,	M999_2.number_id      
+	,	M999_2.content
+	,	M999_3.number_id      
+	,	M999_3.content				
 	,   M006.spelling			
 	,	M006.mean				
-	,	M006.explain
 	,	M006.image
 	,	M006.audio			
-	,	M006.remark	
 	,	M006.record_div
 	,	CASE M006.record_div
 		WHEN 0 THEN N'Chưa phê duyệt'			       
@@ -66,14 +72,24 @@ BEGIN
 		WHEN 2 THEN N'Đã công khai'
 		END			       
 	FROM M006
-	LEFT JOIN M999
-	ON	M006.vocabulary_div = M999.number_id
-	AND	M999.name_div = 8
+	LEFT JOIN M999 M999_1
+	ON	M006.vocabulary_div = M999_1.number_id
+	AND	M999_1.name_div = 8
+	LEFT JOIN M999 M999_2
+	ON	M006.specialized = M999_2.number_id
+	AND	M999_2.name_div = 23
+	LEFT JOIN M999 M999_3
+	ON	M006.field = M999_3.number_id
+	AND	M999_3.name_div = 24
 	WHERE M006.del_flg = 0 
 	AND		(	(@P_Vocabulary_nm		= '')
 		OR	(	M006.Vocabulary_nm	LIKE '%' + @P_Vocabulary_nm + '%'))
 	AND		(	(@P_mean		= '')
 		OR	(	M006.mean	LIKE '%' + @P_mean + '%'))
+	AND		(	(@P_specialized_div	= 0)
+		OR	(	M006.specialized		= @P_specialized_div))
+	AND		(	(@P_field_div	= 0)
+		OR	(	M006.field		= @P_field_div))
 	AND		(	(@P_vocabulary_div	= 0)
 		OR	(	M006.vocabulary_div		= @P_vocabulary_div))
 	AND		(	(@P_record_div	= -1)

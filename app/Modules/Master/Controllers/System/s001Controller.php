@@ -5,7 +5,6 @@ use App\Http\Controllers\Controller;
 use Auth;
 use DAO;
 use Illuminate\Http\Request;
-use SQLXML;
 use Common;
 
 class s001Controller extends Controller
@@ -58,10 +57,9 @@ class s001Controller extends Controller
          if (common::checkValidate($request->all())['result']) {
             $permission           = $request->except('account_div');
             // var_dump($permission);die;
-            $xml                  = new SQLXML();
             $param['system_div'] = $request->only('system_div')['system_div'];
             $param['account_div'] = $request->only('account_div')['account_div'];
-            $param['xml']         = $xml->xml(isset($permission['data'])?$permission['data']:array());
+            $param['json']         = json_encode(isset($permission['data'])?$permission['data']:array());
             $param['user_id']     = Auth::user()->account_id;
             $param['ip']          = $request->ip();
             $data = Dao::call_stored_procedure('SPC_S001_ACT1',$param);

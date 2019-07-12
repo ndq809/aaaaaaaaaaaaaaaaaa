@@ -27,21 +27,34 @@ BEGIN
 	EXEC SPC_COM_M999_INQ1 '8'
 
 	SELECT
-		M006.id AS vocabulary_code
-	,	M006.vocabulary_id
-	,	M999.content AS vocabulary_div
-	,	M006.vocabulary_nm
-	,	M006.spelling
-	,	M006.mean
-	,	M006.explain
-	FROM F009
-	JOIN M006
+		M006.id 					AS	vocabulary_code		
+	,	M006.Vocabulary_id			AS	vocabulary_id		
+	,	M006.Vocabulary_dtl_id  	AS	vocabulary_dtl_id   
+	,	M006.Vocabulary_nm			AS	vocabulary_nm       
+	,	M999_1.number_id			AS	vocabulary_div		
+	,	M999_1.content				AS	vocabulary_div_nm	
+	,	M999_2.number_id      		AS	specialized_div		
+	,	M999_2.content				AS	specialized_div_nm	
+	,	M999_3.number_id      		AS	field_div			
+	,	M999_3.content				AS	field_div_nm		
+	,   M006.spelling				AS	spelling			
+	,	M006.mean					AS	mean				
+	,	M006.image					AS	image				
+	,	M006.audio					AS	audio				
+	FROM M006
+	LEFT JOIN F009
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
 	AND M006.del_flg = 0 
-	LEFT JOIN M999
-	ON M999.name_div = 8
-	AND M999.number_id = M006.vocabulary_div
+	LEFT JOIN M999 M999_1
+	ON	M006.vocabulary_div = M999_1.number_id
+	AND	M999_1.name_div = 8
+	LEFT JOIN M999 M999_2
+	ON	M006.specialized = M999_2.number_id
+	AND	M999_2.name_div = 23
+	LEFT JOIN M999 M999_3
+	ON	M006.field = M999_3.number_id
+	AND	M999_3.name_div = 24
 	WHERE F009.briged_id 
 	IN (SELECT
 		 M007.briged_id	    

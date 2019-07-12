@@ -5,7 +5,6 @@ use App\Http\Controllers\Controller;
 use Auth;
 use DAO;
 use Illuminate\Http\Request;
-use SQLXML;
 
 class g003Controller extends Controller
 {
@@ -33,8 +32,7 @@ class g003Controller extends Controller
     public function g003_delete(Request $request)
     {
         $data             = $request->all();
-        $xml              = new SQLXML();
-        $param['xml']     = $xml->xml($data);
+        $param['json']     = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $result_query     = DAO::call_stored_procedure("SPC_G003_ACT2", $param);
@@ -56,8 +54,7 @@ class g003Controller extends Controller
     public function g003_update(Request $request)
     {
         $data             = $request->all();
-        $xml              = new SQLXML();
-        $param['xml']     = $xml->xml($data);
+        $param['json']     = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         $result_query     = DAO::call_stored_procedure("SPC_G003_ACT1", $param);

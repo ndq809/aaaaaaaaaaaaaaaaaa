@@ -1,0 +1,924 @@
+2019-06-27 09:08:11 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:27:04 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-27 09:27:05 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-27 09:27:05 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:05 EXEC SPC_V002_FND1
+2019-06-27 09:27:05 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-27 09:27:05 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:05 EXEC SPC_V002_FND1
+2019-06-27 09:27:08 EXEC SPC_COM_PERMISSION '1','2','v001';
+2019-06-27 09:27:08 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:08 EXEC SPC_V001_LST1
+2019-06-27 09:27:11 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:11 EXEC SPC_V001_LST2 '0','0','0','-1','','','50','1';
+2019-06-27 09:27:18 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:27:18 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:18 EXEC SPC_W001_LST1
+2019-06-27 09:27:19 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:19 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:27:25 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:51 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:52 EXEC SPC_COM_MENU '1';
+2019-06-27 09:27:52 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:29:49 EXEC SPC_COM_MENU '1';
+2019-06-27 09:29:50 EXEC SPC_COM_MENU '1';
+2019-06-27 09:29:50 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:32:09 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:32:09 EXEC SPC_COM_MENU '1';
+2019-06-27 09:32:09 EXEC SPC_W001_LST1
+2019-06-27 09:32:13 EXEC SPC_COM_MENU '1';
+2019-06-27 09:32:13 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:32:18 EXEC SPC_COM_MENU '1';
+2019-06-27 09:32:18 EXEC SPC_COM_MENU '1';
+2019-06-27 09:32:18 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:34:13 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:34:13 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:13 EXEC SPC_W001_LST1
+2019-06-27 09:34:17 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:17 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:34:19 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:20 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:20 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:34:53 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-27 09:34:53 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:53 EXEC SPC_W002_FND1
+2019-06-27 09:34:54 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:54 EXEC SPC_W002_LST1 '6';
+2019-06-27 09:34:54 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:54 EXEC SPC_W002_LST2 '3';
+2019-06-27 09:34:55 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:55 EXEC SPC_COMMON_GROUP
+2019-06-27 09:34:55 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:55 EXEC SPC_COMMON_GROUP '8';
+2019-06-27 09:34:55 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:55 EXEC SPC_COMMON_GROUP
+2019-06-27 09:34:55 EXEC SPC_COM_MENU '1';
+2019-06-27 09:34:55 EXEC SPC_COMMON_GROUP
+2019-06-27 09:35:02 EXEC SPC_COM_MENU '1';
+2019-06-27 09:35:02 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:35:54 EXEC SPC_COM_MENU '1';
+2019-06-27 09:35:54 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:35:57 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:35:57 EXEC SPC_COM_MENU '1';
+2019-06-27 09:35:57 EXEC SPC_W001_LST1
+2019-06-27 09:35:58 EXEC SPC_COM_MENU '1';
+2019-06-27 09:35:58 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:36:01 EXEC SPC_COM_MENU '1';
+2019-06-27 09:36:01 EXEC SPC_COM_MENU '1';
+2019-06-27 09:36:02 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:39:10 EXEC SPC_COM_MENU '1';
+2019-06-27 09:39:10 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:39:11 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:39:11 EXEC SPC_COM_MENU '1';
+2019-06-27 09:39:11 EXEC SPC_W001_LST1
+2019-06-27 09:39:20 EXEC SPC_COM_MENU '1';
+2019-06-27 09:39:20 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:39:23 EXEC SPC_COM_MENU '1';
+2019-06-27 09:39:24 EXEC SPC_COM_MENU '1';
+2019-06-27 09:39:24 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:40:28 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:40:28 EXEC SPC_COM_MENU '1';
+2019-06-27 09:40:28 EXEC SPC_W001_LST1
+2019-06-27 09:40:30 EXEC SPC_COM_MENU '1';
+2019-06-27 09:40:30 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:40:33 EXEC SPC_COM_MENU '1';
+2019-06-27 09:40:33 EXEC SPC_COM_MENU '1';
+2019-06-27 09:40:33 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:41:33 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:41:33 EXEC SPC_COM_MENU '1';
+2019-06-27 09:41:33 EXEC SPC_W001_LST1
+2019-06-27 09:41:35 EXEC SPC_COM_MENU '1';
+2019-06-27 09:41:35 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:41:38 EXEC SPC_COM_MENU '1';
+2019-06-27 09:41:39 EXEC SPC_COM_MENU '1';
+2019-06-27 09:41:39 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:42:09 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:42:09 EXEC SPC_COM_MENU '1';
+2019-06-27 09:42:09 EXEC SPC_W001_LST1
+2019-06-27 09:42:11 EXEC SPC_COM_MENU '1';
+2019-06-27 09:42:11 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:42:13 EXEC SPC_COM_MENU '1';
+2019-06-27 09:42:14 EXEC SPC_COM_MENU '1';
+2019-06-27 09:42:14 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:45:12 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:45:13 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:13 EXEC SPC_W001_LST1
+2019-06-27 09:45:15 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:15 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:45:16 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:17 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:17 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:45:42 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:45:42 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:42 EXEC SPC_W001_LST1
+2019-06-27 09:45:45 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:45 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:45:46 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:47 EXEC SPC_COM_MENU '1';
+2019-06-27 09:45:47 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:46:40 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:46:40 EXEC SPC_COM_MENU '1';
+2019-06-27 09:46:40 EXEC SPC_W001_LST1
+2019-06-27 09:46:41 EXEC SPC_COM_MENU '1';
+2019-06-27 09:46:41 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:46:42 EXEC SPC_COM_MENU '1';
+2019-06-27 09:46:43 EXEC SPC_COM_MENU '1';
+2019-06-27 09:46:43 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:47:10 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:47:10 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:10 EXEC SPC_W001_LST1
+2019-06-27 09:47:11 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:11 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:47:12 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:13 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:13 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:47:45 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:47:45 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:45 EXEC SPC_W001_LST1
+2019-06-27 09:47:46 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:47 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:47:48 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:49 EXEC SPC_COM_MENU '1';
+2019-06-27 09:47:49 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:48:06 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 09:48:06 EXEC SPC_COM_MENU '1';
+2019-06-27 09:48:06 EXEC SPC_W001_LST1
+2019-06-27 09:48:07 EXEC SPC_COM_MENU '1';
+2019-06-27 09:48:07 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 09:48:09 EXEC SPC_COM_MENU '1';
+2019-06-27 09:48:09 EXEC SPC_COM_MENU '1';
+2019-06-27 09:48:10 EXEC SPC_p004_LST1 '6';
+2019-06-27 09:51:52 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-06-27 09:51:52 EXEC SPC_COM_MENU '1';
+2019-06-27 09:51:52 EXEC SPC_S001_FND1
+2019-06-27 09:51:55 EXEC SPC_COM_MENU '1';
+2019-06-27 09:51:55 EXEC SPC_S001_FND2 '2';
+2019-06-27 09:51:56 EXEC SPC_COM_MENU '1';
+2019-06-27 09:51:56 EXEC SPC_S001_LST1 '';
+2019-06-27 09:51:57 EXEC SPC_COM_MENU '1';
+2019-06-27 09:51:57 EXEC SPC_S001_LST1 '1';
+2019-06-27 09:52:09 EXEC SPC_COM_MENU '1';
+2019-06-27 09:52:09 EXEC SPC_S001_ACT1 '2','1','[{"screen_id":"g001","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"g003","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"g004","remark":"","access_per":"0","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"g005","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"g006","remark":"","access_per":"0","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m001","remark":"","access_per":"1","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m002","remark":"","access_per":"1","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m003","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m004","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m005","remark":"","access_per":"1","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m006","remark":"","access_per":"1","menu_per":"0","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m007","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"m008","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"s001","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"s002","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"s003","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"v001","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"v002","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"v003","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"w001","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"},{"screen_id":"w002","remark":"","access_per":"1","menu_per":"1","add_per":"1","edit_per":"1","delete_per":"1","report_per":"1"}]','1','::1';
+2019-06-27 09:52:10 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-06-27 09:52:10 EXEC SPC_COM_MENU '1';
+2019-06-27 09:52:10 EXEC SPC_S001_FND1
+2019-06-27 09:55:18 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:19 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:19 EXEC SPC_TRANSLATION_LST1 '','';
+2019-06-27 09:55:29 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:48 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:54 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:57 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:55:59 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:01 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:02 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:03 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:03 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:05 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:06 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:08 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:10 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:11 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:13 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:15 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:17 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:18 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:20 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:22 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:24 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:26 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:56:28 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:08 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:09 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:29 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:33 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:36 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:46 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:50 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:59 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:57:59 EXEC SPC_COM_DATA '','','';
+2019-06-27 09:58:00 EXEC SPC_COMMON_ACCOUNT '18','1';
+2019-06-27 09:58:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:01 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 09:58:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:15 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:25 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:29 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:36 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:39 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:42 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:49 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:58:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:18 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 09:59:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:01:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:06:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:07:23 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:07:23 EXEC SPC_TRANSLATION_ACT1 '','Sức khỏe là vàng','""','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.
+Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all.
+A good health is including physical health and mental health.
+When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift … thus doing the work of limbs comfortably like carrying, controlling machines, use tools.
+Besides, a person has a good health, he will have a lucid head.
+They focus on working, studying, have a good memory and high energy.
+How to have a good health?
+It’s a question that has lasted for thousands of years since people became aware.
+However, until now, not everyone know the proper method to stay healthy.
+The father of Hippocrates also said, Let food be your medicine”, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption.
+Besides that, we should not be subjective to the effects that spiritual joys bring to health.
+When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease.
+To sum up, health is the most important, invaluable asset.
+Money, material … will help each individual’s life become more prosperous and full but does not mean it will guarantee you a good health.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.
+Sức khỏe đóng một vai trò đáng kinh ngạc của cuộc sống, có một sức khỏe tốt, chúng ta có được tất cả; mất sức khỏe, có nghĩa là mất tất cả.
+Một sức khỏe tốt bao gồm sức khỏe thể chất và sức khỏe tinh thần.
+Khi cơ thể bạn khỏe mạnh, điều đó có nghĩa là khả năng của các cơ bắp là mạnh mẽ, đẩy, kéo, nâng, do đó làm việc chân tay thoải mái như mang, điều khiển máy móc, sử dụng các công cụ.
+Bên cạnh đó, một người có sức khỏe tốt, anh ta sẽ có một cái đầu sáng suốt.
+Họ tập trung vào làm việc, học tập, có trí nhớ tốt và năng lượng cao.
+Làm thế nào để có một sức khỏe tốt?
+Đó là một câu hỏi đã tồn tại hàng ngàn năm kể từ khi mọi người biết đến.
+Tuy nhiên, cho đến bây giờ, không phải ai cũng biết phương pháp thích hợp để giữ sức khỏe.
+Cha đẻ của Hippocrates cũng cho biết, Hãy để thực phẩm là thuốc của bạn, không có loại thuốc nào có giá trị và hiệu quả bằng cách lựa chọn cẩn thận, thông minh các loại thực phẩm mà bạn và gia đình bạn tiêu thụ hàng ngày.
+Bên cạnh đó, chúng ta không nên chủ quan với những tác động mà niềm vui tinh thần mang lại cho sức khỏe.
+Khi bạn lạc quan, vui vẻ, suy nghĩ tích cực, cơ thể chúng ta sẽ giải phóng các hormone khỏe mạnh, thậm chí các hormone tiết ra khi bạn hạnh phúc cũng có thể hỗ trợ tích cực trong việc điều trị bệnh.
+Tóm lại, sức khỏe là tài sản quan trọng nhất, vô giá.
+Tiền bạc, vật chất sẽ giúp cuộc sống của mỗi cá nhân trở nên thịnh vượng và đầy đủ hơn nhưng không có nghĩa là nó sẽ đảm bảo cho bạn một sức khỏe tốt.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."},{"id":"1","value":"Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all."},{"id":"2","value":"A good health is including physical health and mental health."},{"id":"3","value":"When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift \u2026 thus doing the work of limbs comfortably like carrying, controlling machines, use tools."},{"id":"4","value":"Besides, a person has a good health, he will have a lucid head."},{"id":"5","value":"They focus on working, studying, have a good memory and high energy."},{"id":"6","value":"How to have a good health?"},{"id":"7","value":"It\u2019s a question that has lasted for thousands of years since people became aware."},{"id":"8","value":"However, until now, not everyone know the proper method to stay healthy."},{"id":"9","value":"The father of Hippocrates also said, Let food be your medicine\u201d, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption."},{"id":"10","value":"Besides that, we should not be subjective to the effects that spiritual joys bring to health."},{"id":"11","value":"When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease."},{"id":"12","value":"To sum up, health is the most important, invaluable asset."},{"id":"13","value":"Money, material \u2026 will help each individual\u2019s life become more prosperous and full but does not mean it will guarantee you a good health."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"B\u00ean c\u1ea1nh \u0111\u00f3, m\u1ed9t ng\u01b0\u1eddi c\u00f3 s\u1ee9c kh\u1ecfe t\u1ed1t, anh ta s\u1ebd c\u00f3 m\u1ed9t c\u00e1i \u0111\u1ea7u s\u00e1ng su\u1ed1t."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','2','14','::1';
+2019-06-27 10:07:24 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-06-27 10:07:30 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:07:30 EXEC SPC_TRANSLATION_ACT1 '','Sức khỏe là vàng','""','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.
+Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all.
+A good health is including physical health and mental health.
+When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift … thus doing the work of limbs comfortably like carrying, controlling machines, use tools.
+Besides, a person has a good health, he will have a lucid head.
+They focus on working, studying, have a good memory and high energy.
+How to have a good health?
+It’s a question that has lasted for thousands of years since people became aware.
+However, until now, not everyone know the proper method to stay healthy.
+The father of Hippocrates also said, Let food be your medicine”, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption.
+Besides that, we should not be subjective to the effects that spiritual joys bring to health.
+When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease.
+To sum up, health is the most important, invaluable asset.
+Money, material … will help each individual’s life become more prosperous and full but does not mean it will guarantee you a good health.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.
+Sức khỏe đóng một vai trò đáng kinh ngạc của cuộc sống, có một sức khỏe tốt, chúng ta có được tất cả; mất sức khỏe, có nghĩa là mất tất cả.
+Một sức khỏe tốt bao gồm sức khỏe thể chất và sức khỏe tinh thần.
+Khi cơ thể bạn khỏe mạnh, điều đó có nghĩa là khả năng của các cơ bắp là mạnh mẽ, đẩy, kéo, nâng, do đó làm việc chân tay thoải mái như mang, điều khiển máy móc, sử dụng các công cụ.
+Bên cạnh đó, một người có sức khỏe tốt, anh ta sẽ có một cái đầu sáng suốt.
+Họ tập trung vào làm việc, học tập, có trí nhớ tốt và năng lượng cao.
+Làm thế nào để có một sức khỏe tốt?
+Đó là một câu hỏi đã tồn tại hàng ngàn năm kể từ khi mọi người biết đến.
+Tuy nhiên, cho đến bây giờ, không phải ai cũng biết phương pháp thích hợp để giữ sức khỏe.
+Cha đẻ của Hippocrates cũng cho biết, Hãy để thực phẩm là thuốc của bạn, không có loại thuốc nào có giá trị và hiệu quả bằng cách lựa chọn cẩn thận, thông minh các loại thực phẩm mà bạn và gia đình bạn tiêu thụ hàng ngày.
+Bên cạnh đó, chúng ta không nên chủ quan với những tác động mà niềm vui tinh thần mang lại cho sức khỏe.
+Khi bạn lạc quan, vui vẻ, suy nghĩ tích cực, cơ thể chúng ta sẽ giải phóng các hormone khỏe mạnh, thậm chí các hormone tiết ra khi bạn hạnh phúc cũng có thể hỗ trợ tích cực trong việc điều trị bệnh.
+Tóm lại, sức khỏe là tài sản quan trọng nhất, vô giá.
+Tiền bạc, vật chất sẽ giúp cuộc sống của mỗi cá nhân trở nên thịnh vượng và đầy đủ hơn nhưng không có nghĩa là nó sẽ đảm bảo cho bạn một sức khỏe tốt.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."},{"id":"1","value":"Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all."},{"id":"2","value":"A good health is including physical health and mental health."},{"id":"3","value":"When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift \u2026 thus doing the work of limbs comfortably like carrying, controlling machines, use tools."},{"id":"4","value":"Besides, a person has a good health, he will have a lucid head."},{"id":"5","value":"They focus on working, studying, have a good memory and high energy."},{"id":"6","value":"How to have a good health?"},{"id":"7","value":"It\u2019s a question that has lasted for thousands of years since people became aware."},{"id":"8","value":"However, until now, not everyone know the proper method to stay healthy."},{"id":"9","value":"The father of Hippocrates also said, Let food be your medicine\u201d, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption."},{"id":"10","value":"Besides that, we should not be subjective to the effects that spiritual joys bring to health."},{"id":"11","value":"When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease."},{"id":"12","value":"To sum up, health is the most important, invaluable asset."},{"id":"13","value":"Money, material \u2026 will help each individual\u2019s life become more prosperous and full but does not mean it will guarantee you a good health."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"B\u00ean c\u1ea1nh \u0111\u00f3, m\u1ed9t ng\u01b0\u1eddi c\u00f3 s\u1ee9c kh\u1ecfe t\u1ed1t, anh ta s\u1ebd c\u00f3 m\u1ed9t c\u00e1i \u0111\u1ea7u s\u00e1ng su\u1ed1t."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','2','14','::1';
+2019-06-27 10:07:30 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-06-27 10:14:21 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:28 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:32 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:14:41 EXEC SPC_TRANSLATION_ACT1 '','Sức khỏe là vàng','""','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','2','14','::1';
+2019-06-27 10:14:41 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-06-27 10:15:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:07 EXEC SPC_TRANSLATION_ACT1 '','Sức khỏe là vàng','""','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','2','14','::1';
+2019-06-27 10:15:07 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-06-27 10:15:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:29 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:35 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:36 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:36 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 10:15:39 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:15:51 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:16:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:16:04 EXEC SPC_TRANSLATION_ACT1 '','sức khỏe là vàng','""','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','1','14','::1';
+2019-06-27 10:16:04 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]現在のトランザクションのコミットおよびログ ファイルに書き込む操作はサポートできません。トランザクションをロールバックしてください。
+2019-06-27 10:18:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:18:05 EXEC SPC_TRANSLATION_ACT1 '','sức khỏe là vàng','[]','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."}]','1','14','::1';
+2019-06-27 10:18:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:19:49 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:19:57 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:11 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:13 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:20:25 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:48 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:50 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:54 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:57 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:21:59 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:11 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:13 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:19 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:19 EXEC SPC_TRANSLATION_ACT1 '1','sức khỏe là vàng','[]','Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life.
+Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all.
+A good health is including physical health and mental health.
+When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift … thus doing the work of limbs comfortably like carrying, controlling machines, use tools.
+Besides, a person has a good health, he will have a lucid head.
+They focus on working, studying, have a good memory and high energy.
+How to have a good health?
+It’s a question that has lasted for thousands of years since people became aware.
+However, until now, not everyone know the proper method to stay healthy.
+The father of Hippocrates also said, Let food be your medicine”, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption.
+Besides that, we should not be subjective to the effects that spiritual joys bring to health.
+When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease.
+To sum up, health is the most important, invaluable asset.
+Money, material … will help each individual’s life become more prosperous and full but does not mean it will guarantee you a good health.','Sống một cuộc sống bận rộn, mọi người bị cuốn vào dòng tiền và danh vọng, điều này khiến họ mù mờ giá trị đích thực của cuộc sống.
+Sức khỏe đóng một vai trò đáng kinh ngạc của cuộc sống, có một sức khỏe tốt, chúng ta có được tất cả; mất sức khỏe, có nghĩa là mất tất cả.
+Một sức khỏe tốt bao gồm sức khỏe thể chất và sức khỏe tinh thần.
+Khi cơ thể bạn khỏe mạnh, điều đó có nghĩa là khả năng của các cơ bắp là mạnh mẽ, đẩy, kéo, nâng, do đó làm việc chân tay thoải mái như mang, điều khiển máy móc, sử dụng các công cụ.
+Bên cạnh đó, một người có sức khỏe tốt, anh ta sẽ có một cái đầu sáng suốt.
+Họ tập trung vào làm việc, học tập, có trí nhớ tốt và năng lượng cao.
+Làm thế nào để có một sức khỏe tốt?
+Đó là một câu hỏi đã tồn tại hàng ngàn năm kể từ khi mọi người biết đến.
+Tuy nhiên, cho đến bây giờ, không phải ai cũng biết phương pháp thích hợp để giữ sức khỏe.
+Cha đẻ của Hippocrates cũng cho biết, Hãy để thực phẩm là thuốc của bạn, không có loại thuốc nào có giá trị và hiệu quả bằng cách lựa chọn cẩn thận, thông minh các loại thực phẩm mà bạn và gia đình bạn tiêu thụ hàng ngày.
+Bên cạnh đó, chúng ta không nên chủ quan với những tác động mà niềm vui tinh thần mang lại cho sức khỏe.
+Khi bạn lạc quan, vui vẻ, suy nghĩ tích cực, cơ thể chúng ta sẽ giải phóng các hormone khỏe mạnh, thậm chí các hormone tiết ra khi bạn hạnh phúc cũng có thể hỗ trợ tích cực trong việc điều trị bệnh.
+Tóm lại, sức khỏe là tài sản quan trọng nhất, vô giá.
+Tiền bạc, vật chất sẽ giúp cuộc sống của mỗi cá nhân trở nên thịnh vượng và đầy đủ hơn nhưng không có nghĩa là nó sẽ đảm bảo cho bạn một sức khỏe tốt.','[{"id":"0","value":"Living a hectic life, people are caught up in the flow of money and fame, which is make them foget the true value of life."},{"id":"1","value":"Health plays an incredible role of life, having a good health, we get all; loosing health, it means loosing all."},{"id":"2","value":"A good health is including physical health and mental health."},{"id":"3","value":"When your body is healthy, it means the ability of the muscles to be strong, push, pull, lift \u2026 thus doing the work of limbs comfortably like carrying, controlling machines, use tools."},{"id":"4","value":"Besides, a person has a good health, he will have a lucid head."},{"id":"5","value":"They focus on working, studying, have a good memory and high energy."},{"id":"6","value":"How to have a good health?"},{"id":"7","value":"It\u2019s a question that has lasted for thousands of years since people became aware."},{"id":"8","value":"However, until now, not everyone know the proper method to stay healthy."},{"id":"9","value":"The father of Hippocrates also said, Let food be your medicine\u201d, there is no valuable and effective medicine by choosing carefully, smartly the foods that you and your family Daily consumption."},{"id":"10","value":"Besides that, we should not be subjective to the effects that spiritual joys bring to health."},{"id":"11","value":"When you are optimistic, happy, positive thinking, our body will release healthy hormones, even the hormones secreted when you are happy can also actively support in treating the disease."},{"id":"12","value":"To sum up, health is the most important, invaluable asset."},{"id":"13","value":"Money, material \u2026 will help each individual\u2019s life become more prosperous and full but does not mean it will guarantee you a good health."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"M\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t bao g\u1ed3m s\u1ee9c kh\u1ecfe th\u1ec3 ch\u1ea5t v\u00e0 s\u1ee9c kh\u1ecfe tinh th\u1ea7n."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"B\u00ean c\u1ea1nh \u0111\u00f3, m\u1ed9t ng\u01b0\u1eddi c\u00f3 s\u1ee9c kh\u1ecfe t\u1ed1t, anh ta s\u1ebd c\u00f3 m\u1ed9t c\u00e1i \u0111\u1ea7u s\u00e1ng su\u1ed1t."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','[{"id":"0","value":"S\u1ed1ng m\u1ed9t cu\u1ed9c s\u1ed1ng b\u1eadn r\u1ed9n, m\u1ecdi ng\u01b0\u1eddi b\u1ecb cu\u1ed1n v\u00e0o d\u00f2ng ti\u1ec1n v\u00e0 danh v\u1ecdng, \u0111i\u1ec1u n\u00e0y khi\u1ebfn h\u1ecd m\u00f9 m\u1edd gi\u00e1 tr\u1ecb \u0111\u00edch th\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng."},{"id":"1","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"2","value":"S\u1ee9c kh\u1ecfe \u0111\u00f3ng m\u1ed9t vai tr\u00f2 \u0111\u00e1ng kinh ng\u1ea1c c\u1ee7a cu\u1ed9c s\u1ed1ng, c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t, ch\u00fang ta c\u00f3 \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3; m\u1ea5t s\u1ee9c kh\u1ecfe, c\u00f3 ngh\u0129a l\u00e0 m\u1ea5t t\u1ea5t c\u1ea3."},{"id":"3","value":"Khi c\u01a1 th\u1ec3 b\u1ea1n kh\u1ecfe m\u1ea1nh, \u0111i\u1ec1u \u0111\u00f3 c\u00f3 ngh\u0129a l\u00e0 kh\u1ea3 n\u0103ng c\u1ee7a c\u00e1c c\u01a1 b\u1eafp l\u00e0 m\u1ea1nh m\u1ebd, \u0111\u1ea9y, k\u00e9o, n\u00e2ng, do \u0111\u00f3 l\u00e0m vi\u1ec7c ch\u00e2n tay tho\u1ea3i m\u00e1i nh\u01b0 mang, \u0111i\u1ec1u khi\u1ec3n m\u00e1y m\u00f3c, s\u1eed d\u1ee5ng c\u00e1c c\u00f4ng c\u1ee5."},{"id":"4","value":"B\u00ean c\u1ea1nh \u0111\u00f3, m\u1ed9t ng\u01b0\u1eddi c\u00f3 s\u1ee9c kh\u1ecfe t\u1ed1t, anh ta s\u1ebd c\u00f3 m\u1ed9t c\u00e1i \u0111\u1ea7u s\u00e1ng su\u1ed1t."},{"id":"5","value":"H\u1ecd t\u1eadp trung v\u00e0o l\u00e0m vi\u1ec7c, h\u1ecdc t\u1eadp, c\u00f3 tr\u00ed nh\u1edb t\u1ed1t v\u00e0 n\u0103ng l\u01b0\u1ee3ng cao."},{"id":"6","value":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 c\u00f3 m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t?"},{"id":"7","value":"\u0110\u00f3 l\u00e0 m\u1ed9t c\u00e2u h\u1ecfi \u0111\u00e3 t\u1ed3n t\u1ea1i h\u00e0ng ng\u00e0n n\u0103m k\u1ec3 t\u1eeb khi m\u1ecdi ng\u01b0\u1eddi bi\u1ebft \u0111\u1ebfn."},{"id":"8","value":"Tuy nhi\u00ean, cho \u0111\u1ebfn b\u00e2y gi\u1edd, kh\u00f4ng ph\u1ea3i ai c\u0169ng bi\u1ebft ph\u01b0\u01a1ng ph\u00e1p th\u00edch h\u1ee3p \u0111\u1ec3 gi\u1eef s\u1ee9c kh\u1ecfe."},{"id":"9","value":"Cha \u0111\u1ebb c\u1ee7a Hippocrates c\u0169ng cho bi\u1ebft, H\u00e3y \u0111\u1ec3 th\u1ef1c ph\u1ea9m l\u00e0 thu\u1ed1c c\u1ee7a b\u1ea1n, kh\u00f4ng c\u00f3 lo\u1ea1i thu\u1ed1c n\u00e0o c\u00f3 gi\u00e1 tr\u1ecb v\u00e0 hi\u1ec7u qu\u1ea3 b\u1eb1ng c\u00e1ch l\u1ef1a ch\u1ecdn c\u1ea9n th\u1eadn, th\u00f4ng minh c\u00e1c lo\u1ea1i th\u1ef1c ph\u1ea9m m\u00e0 b\u1ea1n v\u00e0 gia \u0111\u00ecnh b\u1ea1n ti\u00eau th\u1ee5 h\u00e0ng ng\u00e0y."},{"id":"10","value":"B\u00ean c\u1ea1nh \u0111\u00f3, ch\u00fang ta kh\u00f4ng n\u00ean ch\u1ee7 quan v\u1edbi nh\u1eefng t\u00e1c \u0111\u1ed9ng m\u00e0 ni\u1ec1m vui tinh th\u1ea7n mang l\u1ea1i cho s\u1ee9c kh\u1ecfe."},{"id":"11","value":"Khi b\u1ea1n l\u1ea1c quan, vui v\u1ebb, suy ngh\u0129 t\u00edch c\u1ef1c, c\u01a1 th\u1ec3 ch\u00fang ta s\u1ebd gi\u1ea3i ph\u00f3ng c\u00e1c hormone kh\u1ecfe m\u1ea1nh, th\u1eadm ch\u00ed c\u00e1c hormone ti\u1ebft ra khi b\u1ea1n h\u1ea1nh ph\u00fac c\u0169ng c\u00f3 th\u1ec3 h\u1ed7 tr\u1ee3 t\u00edch c\u1ef1c trong vi\u1ec7c \u0111i\u1ec1u tr\u1ecb b\u1ec7nh."},{"id":"12","value":"T\u00f3m l\u1ea1i, s\u1ee9c kh\u1ecfe l\u00e0 t\u00e0i s\u1ea3n quan tr\u1ecdng nh\u1ea5t, v\u00f4 gi\u00e1."},{"id":"13","value":"Ti\u1ec1n b\u1ea1c, v\u1eadt ch\u1ea5t s\u1ebd gi\u00fap cu\u1ed9c s\u1ed1ng c\u1ee7a m\u1ed7i c\u00e1 nh\u00e2n tr\u1edf n\u00ean th\u1ecbnh v\u01b0\u1ee3ng v\u00e0 \u0111\u1ea7y \u0111\u1ee7 h\u01a1n nh\u01b0ng kh\u00f4ng c\u00f3 ngh\u0129a l\u00e0 n\u00f3 s\u1ebd \u0111\u1ea3m b\u1ea3o cho b\u1ea1n m\u1ed9t s\u1ee9c kh\u1ecfe t\u1ed1t."}]','3','14','::1';
+2019-06-27 10:22:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:33 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:35 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:36 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:22:36 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:47:14 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:21 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:21 EXEC SPC_COM_MENU '2';
+2019-06-27 10:48:24 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:25 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:25 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 10:48:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:37 EXEC SPC_VOCABULARY_LST1 '','14','','';
+2019-06-27 10:48:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:37 EXEC SPC_VOCABULARY_LST2 '4','4','14';
+2019-06-27 10:48:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:55 EXEC SPC_LISTENING_LST1 '','14','4','4';
+2019-06-27 10:48:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:48:55 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 10:49:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:00 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 10:49:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:00 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 10:49:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:01 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 10:49:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:04 EXEC SPC_LISTENING_LST1 '','14','6','6';
+2019-06-27 10:49:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:04 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 10:49:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:46 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 10:49:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:46 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 10:49:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:49:47 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 10:50:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:50:02 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 10:50:21 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-27 10:50:21 EXEC SPC_COM_MENU '1';
+2019-06-27 10:50:21 EXEC SPC_W002_FND1
+2019-06-27 10:50:27 EXEC SPC_COM_MENU '1';
+2019-06-27 10:50:27 EXEC SPC_W002_LST2 '5';
+2019-06-27 10:50:27 EXEC SPC_COM_MENU '1';
+2019-06-27 10:50:27 EXEC SPC_COMMON_GROUP
+2019-06-27 10:50:34 EXEC SPC_COM_MENU '1';
+2019-06-27 10:50:34 EXEC SPC_COMMON_GROUP
+2019-06-27 10:51:02 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:02 EXEC SPC_P003_INQ1
+2019-06-27 10:51:03 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:03 EXEC SPC_P003_LST2 '[]';
+2019-06-27 10:51:05 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:05 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-27 10:51:08 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:08 EXEC SPC_P003_LST3 '[{"vocabulary_code":"19"},{"vocabulary_code":"16"},{"vocabulary_code":"15"},{"vocabulary_code":"17"}]';
+2019-06-27 10:51:50 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:50 EXEC SPC_w002_ACT1 '','5','đoc hiểu 1','đọc hiểu 1','This is my story','[]','<p>my story!</p>
+','','','0','[{"row_id":0,"vocabulary_code":"19"},{"row_id":1,"vocabulary_code":"16"},{"row_id":2,"vocabulary_code":"15"},{"row_id":3,"vocabulary_code":"17"}]','[]','[{"row_id":1,"content":"3+4=???","question_div":0},{"row_id":1,"content":"1","verify":0,"question_div":0},{"row_id":1,"content":"2","verify":0,"question_div":0},{"row_id":1,"content":"3","verify":0,"question_div":0},{"row_id":1,"content":"7","verify":1,"question_div":0},{"row_id":2,"content":"2+6=???","question_div":1},{"row_id":2,"content":"6","verify":1,"question_div":1},{"row_id":2,"content":"3","verify":1,"question_div":1},{"row_id":2,"content":"6","verify":0,"question_div":1},{"row_id":2,"content":"8","verify":0,"question_div":1}]','1','::1';
+2019-06-27 10:51:52 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:52 EXEC SPC_W002_LST1 '7';
+2019-06-27 10:51:52 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:52 EXEC SPC_W002_LST2 '5';
+2019-06-27 10:51:53 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:53 EXEC SPC_COMMON_GROUP
+2019-06-27 10:51:53 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:53 EXEC SPC_COMMON_GROUP
+2019-06-27 10:51:53 EXEC SPC_COM_MENU '1';
+2019-06-27 10:51:53 EXEC SPC_COMMON_GROUP '9';
+2019-06-27 10:52:02 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 10:52:02 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:02 EXEC SPC_W001_LST1
+2019-06-27 10:52:04 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:04 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 10:52:07 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:07 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-06-27 10:52:10 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:10 EXEC SPC_W001_ACT2 '[{"row_id":"0","id":"7"}]','1','::1';
+2019-06-27 10:52:12 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:12 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-06-27 10:52:17 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:17 EXEC SPC_W001_ACT3 '[{"row_id":"0","id":"7"}]','1','::1';
+2019-06-27 10:52:19 EXEC SPC_COM_MENU '1';
+2019-06-27 10:52:19 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-06-27 10:52:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:52:22 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 10:52:23 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:52:23 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 10:52:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 10:52:37 EXEC SPC_COM_QUESTION_LIST '7','1';
+2019-06-27 10:58:19 EXEC SPC_COM_MENU '1';
+2019-06-27 10:58:19 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-06-27 10:58:30 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-27 10:58:30 EXEC SPC_COM_MENU '1';
+2019-06-27 10:58:30 EXEC SPC_W002_FND1
+2019-06-27 10:58:37 EXEC SPC_COM_MENU '1';
+2019-06-27 10:58:37 EXEC SPC_W002_LST2 '7';
+2019-06-27 10:59:28 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:28 EXEC SPC_w002_ACT1 '','7','','','beautiful girl','[{"tag_nm":"beauty","is_new":1},{"tag_nm":"girl","is_new":1}]','<p>my idol</p>
+','/web-content/images/relax_image/image_5d142300e2c93.jpg','image_5d142300e2c93.jpg','2','[]','[]','[]','1','::1';
+2019-06-27 10:59:30 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:30 EXEC SPC_W002_LST1 '8';
+2019-06-27 10:59:31 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:31 EXEC SPC_W002_LST2 '7';
+2019-06-27 10:59:31 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:31 EXEC SPC_COMMON_GROUP
+2019-06-27 10:59:31 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:31 EXEC SPC_COMMON_GROUP '10';
+2019-06-27 10:59:38 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:38 EXEC SPC_W002_LST2 '8';
+2019-06-27 10:59:38 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:38 EXEC SPC_COMMON_GROUP '';
+2019-06-27 10:59:43 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-27 10:59:43 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:43 EXEC SPC_W002_FND1
+2019-06-27 10:59:48 EXEC SPC_COM_MENU '1';
+2019-06-27 10:59:48 EXEC SPC_W002_LST2 '8';
+2019-06-27 11:00:17 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:17 EXEC SPC_w002_ACT1 '','8','','','tuổi tí so vs tuổi tôm','[{"tag_nm":"t\u00ed","is_new":1},{"tag_nm":"t\u00f4m","is_new":1}]','<p>test youtube</p>
+','https://www.youtube.com/watch?v=-O5kNPlUV7w','','3','[]','[]','[]','1','::1';
+2019-06-27 11:00:18 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:18 EXEC SPC_W002_LST1 '9';
+2019-06-27 11:00:19 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:19 EXEC SPC_W002_LST2 '8';
+2019-06-27 11:00:19 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:19 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:19 EXEC SPC_COMMON_GROUP '11';
+2019-06-27 11:00:26 EXEC SPC_COM_PERMISSION '1','2','w001';
+2019-06-27 11:00:26 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:26 EXEC SPC_W001_LST1
+2019-06-27 11:00:28 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:28 EXEC SPC_W001_LST2 '','','','-1','','10','1';
+2019-06-27 11:00:32 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:32 EXEC SPC_W001_LST2 '','','','0','','10','1';
+2019-06-27 11:00:36 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:36 EXEC SPC_W001_ACT2 '[{"row_id":"0","id":"8"},{"row_id":"1","id":"9"}]','1','::1';
+2019-06-27 11:00:37 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:37 EXEC SPC_W001_LST2 '','','','1','','10','1';
+2019-06-27 11:00:42 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:42 EXEC SPC_W001_ACT3 '[{"row_id":"0","id":"8"},{"row_id":"1","id":"9"}]','1','::1';
+2019-06-27 11:00:44 EXEC SPC_COM_MENU '1';
+2019-06-27 11:00:44 EXEC SPC_W001_LST2 '','','','2','','10','1';
+2019-06-27 11:00:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:00:52 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 11:00:54 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:00:54 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 11:00:55 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2019-06-27 11:01:29 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:01:29 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 11:01:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:01:31 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 11:01:31 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2019-06-27 11:07:30 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:07:30 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 11:07:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:07:31 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 11:07:40 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:07:40 EXEC SPC_RELAX_ACT2 '9','14','::1';
+2019-06-27 11:07:54 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:07:54 EXEC SPC_RELAX_ACT2 '9','14','::1';
+2019-06-27 11:08:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:06 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 11:08:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:07 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 11:08:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:10 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 11:08:12 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:12 EXEC SPC_COM_MENU '2';
+2019-06-27 11:08:16 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:17 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:17 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 11:08:59 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:08:59 EXEC SPC_DICTIONARY_LST1 '','14';
+2019-06-27 11:09:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:02 EXEC SPC_DICTIONARY_LST2 'doctor','14','::1';
+2019-06-27 11:09:42 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:42 EXEC SPC_LISTENING_LST1 '','14','9','9';
+2019-06-27 11:09:42 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:42 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 11:09:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:44 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 11:09:45 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:45 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 11:09:45 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:45 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 11:09:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:46 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 11:09:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:47 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 11:09:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:47 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:09:48 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:09:48 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:10:23 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:23 EXEC SPC_COM_ADD_QUESTION '','đi đâu quẩy tết','<p>quẩy ở đâu ae?</p>','[{"tag_nm":"h\u1ecfi ngu","is_new":"1"},{"tag_nm":"vkl","is_new":"1"}]','14','::1';
+2019-06-27 11:10:25 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:25 EXEC SPC_DISCUSS_LST1 '10','14';
+2019-06-27 11:10:26 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:26 EXEC SPC_DISCUSS_LST2 '10','1','[]','14';
+2019-06-27 11:10:29 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:29 EXEC SPC_DISCUSS_ACT1 '10','1','14','::1';
+2019-06-27 11:10:31 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:31 EXEC SPC_DISCUSS_ACT2 '10','14','::1';
+2019-06-27 11:10:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:41 EXEC SPC_COM_ADD_COMMENT '1','8','10','đéo hiểu luôn','','14','::1','1';
+2019-06-27 11:10:41 EXEC SPC_COM_ADD_NOTIFY '8','10','','1','14','::1';
+2019-06-27 11:10:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:44 EXEC SPC_DISCUSS_ACT3 '1','1','14','::1';
+2019-06-27 11:10:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:55 EXEC SPC_COM_ADD_COMMENT '1','8','10','hiểu làm cái lol gì','1','14','::1','1';
+2019-06-27 11:10:55 EXEC SPC_COM_ADD_NOTIFY '8','10','1','1','14','::1';
+2019-06-27 11:10:58 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:10:58 EXEC SPC_DISCUSS_ACT3 '2','-1','14','::1';
+2019-06-27 11:11:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:11:10 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:11:11 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:11:11 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:11:16 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:11:16 EXEC SPC_DISCUSS_ACT2 '10','14','::1';
+2019-06-27 11:13:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:13:41 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:13:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:13:41 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:13:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:13:44 EXEC SPC_SOCIAL_ACT1 '4','4.5','14','::1';
+2019-06-27 11:13:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:13:47 EXEC SPC_SOCIAL_ACT2 '4','14','::1';
+2019-06-27 11:15:40 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:15:40 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:15:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:15:41 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:15:43 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:15:43 EXEC SPC_SOCIAL_ACT1 '4','3.5','14','::1';
+2019-06-27 11:15:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:15:46 EXEC SPC_SOCIAL_ACT2 '4','14','::1';
+2019-06-27 11:16:16 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:16 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:16:17 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:17 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:16:20 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:20 EXEC SPC_SOCIAL_ACT1 '4','5','14','::1';
+2019-06-27 11:16:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:22 EXEC SPC_SOCIAL_ACT2 '4','14','::1';
+2019-06-27 11:16:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:44 EXEC SPC_SOCIAL_ACT1 '4','0','14','::1';
+2019-06-27 11:16:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:16:47 EXEC SPC_SOCIAL_ACT1 '4','5','14','::1';
+2019-06-27 11:17:14 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:14 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:17:15 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:15 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:17:20 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:20 EXEC SPC_DISCUSS_ACT2 '10','14','::1';
+2019-06-27 11:17:23 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:23 EXEC SPC_READING_LST1 '','14','9','9';
+2019-06-27 11:17:24 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:24 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 11:17:26 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:26 EXEC SPC_WRITING_LST1 '','14','9','9';
+2019-06-27 11:17:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:27 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 11:17:27 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:27 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 11:17:33 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:33 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:17:34 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:34 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:17:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:37 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:17:38 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:38 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:17:43 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:43 EXEC SPC_DISCUSS_ACT2 '10','14','::1';
+2019-06-27 11:17:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:46 EXEC SPC_DICTIONARY_LST1 '','14';
+2019-06-27 11:17:48 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:48 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 11:17:49 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:49 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 11:17:51 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:51 EXEC SPC_DICTIONARY_LST1 '','14';
+2019-06-27 11:17:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:52 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:17:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:52 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:17:54 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:54 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:17:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:17:55 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:18:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:00 EXEC SPC_SOCIAL_ACT2 '4','14','::1';
+2019-06-27 11:18:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:01 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 11:18:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:02 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 11:18:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:03 EXEC SPC_WRITING_LST1 '','14','9','9';
+2019-06-27 11:18:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:04 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 11:18:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:04 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 11:18:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:06 EXEC SPC_LISTENING_LST1 '','14','6','6';
+2019-06-27 11:18:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:06 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 11:18:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:08 EXEC SPC_GRAMMAR_LST1 '','14','8','8';
+2019-06-27 11:18:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:18:09 EXEC SPC_GRAMMAR_LST2 '5','5','14';
+2019-06-27 11:34:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:47 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','14';
+2019-06-27 11:34:48 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:48 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','14';
+2019-06-27 11:34:50 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:50 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','14';
+2019-06-27 11:34:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:52 EXEC SPC_COM_EXAM_LIST '1','2','2','1','2','14';
+2019-06-27 11:34:54 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:54 EXEC SPC_COM_EXAM_LIST '1','2','1','1','2','14';
+2019-06-27 11:34:56 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:34:56 EXEC SPC_COM_EXAM_LIST '1','2','0','1','2','14';
+2019-06-27 11:35:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:35:03 EXEC SPC_LISTENING_LST1 '','14','5','5';
+2019-06-27 11:35:04 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:35:04 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 11:35:19 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:35:19 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 11:35:19 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:35:19 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 11:35:20 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:35:20 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 11:37:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:07 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 11:37:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:08 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 11:37:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:09 EXEC SPC_SOCIAL_LST1 '','14';
+2019-06-27 11:37:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:09 EXEC SPC_SOCIAL_LST2 '','1','[]','14';
+2019-06-27 11:37:11 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:11 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 11:37:12 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:12 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 11:37:13 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:14 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:37:14 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 11:38:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:38:59 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:38:59 EXEC SPC_DICTIONARY_LST1 '','14';
+2019-06-27 11:39:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:39:00 EXEC SPC_DICTIONARY_LST2 'people','14','::1';
+2019-06-27 11:39:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:39:00 EXEC SPC_DICTIONARY_LST3 'people';
+2019-06-27 11:39:21 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:39:21 EXEC SPC_DICTIONARY_LST1 '','14';
+2019-06-27 11:39:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:39:22 EXEC SPC_DICTIONARY_LST2 'are caught up','14','::1';
+2019-06-27 11:39:22 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:39:22 EXEC SPC_DICTIONARY_LST3 'are caught up';
+2019-06-27 11:42:58 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:42:59 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:43:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:43:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:43:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:43:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:02 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:08 EXEC SPC_TRANSLATION_LST1 '','14';
+2019-06-27 11:44:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:10 EXEC SPC_COM_MENU '2';
+2019-06-27 11:44:13 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:13 EXEC SPC_VOCABULARY_LST1 '','14','9','9';
+2019-06-27 11:44:13 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 11:44:13 EXEC SPC_VOCABULARY_LST2 '4','4','14';
+2019-06-27 12:40:34 EXEC SPC_COM_DATA '1','1','2';
+2019-06-27 12:40:34 EXEC SPC_COM_MENU '1';
+2019-06-27 13:14:32 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:32 EXEC SPC_GRAMMAR_LST1 '','14','4','4';
+2019-06-27 13:14:33 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:33 EXEC SPC_GRAMMAR_LST2 '5','5','14';
+2019-06-27 13:14:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:41 EXEC SPC_LISTENING_LST1 '','14','5','5';
+2019-06-27 13:14:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:41 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 13:14:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:44 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 13:14:45 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:45 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 13:14:45 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:45 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 13:14:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:47 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 13:14:48 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 13:14:48 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 13:17:11 EXEC SPC_COM_PERMISSION '1','2','g001';
+2019-06-27 13:17:11 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:11 EXEC SPC_G001_LST1 '1','1';
+2019-06-27 13:17:16 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-27 13:17:16 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:16 EXEC SPC_W002_FND1
+2019-06-27 13:17:19 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:19 EXEC SPC_W002_LST2 '3';
+2019-06-27 13:17:20 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:20 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:20 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:20 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:20 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:20 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:23 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:23 EXEC SPC_W002_LST2 '1';
+2019-06-27 13:17:24 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:24 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:25 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:25 EXEC SPC_W002_LST2 '3';
+2019-06-27 13:17:26 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:26 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:26 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:26 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:26 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:26 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:28 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:28 EXEC SPC_W002_LST2 '7';
+2019-06-27 13:17:28 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:28 EXEC SPC_COMMON_GROUP
+2019-06-27 13:17:29 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:29 EXEC SPC_W002_LST2 '2';
+2019-06-27 13:17:30 EXEC SPC_COM_MENU '1';
+2019-06-27 13:17:30 EXEC SPC_COMMON_GROUP
+2019-06-27 14:43:28 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:29 EXEC SPC_COM_MENU '2';
+2019-06-27 14:43:38 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:38 EXEC SPC_LISTENING_LST1 '','14','9','9';
+2019-06-27 14:43:41 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:41 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 14:43:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:44 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 14:43:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:46 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 14:43:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:46 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 14:43:49 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:49 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 14:43:50 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:50 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 14:43:52 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:52 EXEC SPC_LISTENING_LST1 '','14','9','9';
+2019-06-27 14:43:53 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:53 EXEC SPC_LISTENING_LST2 '8','8','14';
+2019-06-27 14:43:55 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:55 EXEC SPC_WRITING_LST1 '','14','8','8';
+2019-06-27 14:43:56 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:56 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 14:43:56 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:43:57 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 14:44:00 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:00 EXEC SPC_WRITING_LST1 '','14','6','6';
+2019-06-27 14:44:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:01 EXEC SPC_COMMON_GET_SUGGEST
+2019-06-27 14:44:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:01 EXEC SPC_WRITING_LST2 '6','6','14';
+2019-06-27 14:44:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:03 EXEC SPC_READING_LST1 '','14','6','6';
+2019-06-27 14:44:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:03 EXEC SPC_READING_LST2 '9','9','14';
+2019-06-27 14:44:07 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:07 EXEC SPC_DISCUSS_LST1 '','14';
+2019-06-27 14:44:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:08 EXEC SPC_DISCUSS_LST2 '','1','[]','14';
+2019-06-27 14:44:14 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:44:14 EXEC SPC_DISCUSS_ACT2 '10','14','::1';
+2019-06-27 14:45:28 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:45:28 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 14:45:29 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:45:29 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 14:45:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:45:37 EXEC SPC_RELAX_ACT1 '8','5','14','::1';
+2019-06-27 14:45:38 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:45:38 EXEC SPC_RELAX_ACT2 '8','14','::1';
+2019-06-27 14:46:35 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:35 EXEC SPC_RELAX_ACT1 '8','2.5','14','::1';
+2019-06-27 14:46:38 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:38 EXEC SPC_RELAX_LST1 '8','14';
+2019-06-27 14:46:39 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:39 EXEC SPC_RELAX_LST2 '8','1','1','1','0','[]','14';
+2019-06-27 14:46:42 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:42 EXEC SPC_RELAX_ACT1 '8','5','14','::1';
+2019-06-27 14:46:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:44 EXEC SPC_RELAX_ACT1 '8','2','14','::1';
+2019-06-27 14:46:45 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:45 EXEC SPC_RELAX_ACT2 '8','14','::1';
+2019-06-27 14:46:50 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:46:50 EXEC SPC_RELAX_ACT1 '8','0','14','::1';
+2019-06-27 14:51:40 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:40 EXEC SPC_RELAX_LST2 '','1','1','1','[{"tag_id":31},{"tag_id":32}]','0','14';
+2019-06-27 14:51:40 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2019-06-27 14:51:46 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:46 EXEC SPC_RELAX_LST1 '8','14';
+2019-06-27 14:51:47 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:47 EXEC SPC_RELAX_LST2 '8','1','1','1','0','[]','14';
+2019-06-27 14:51:50 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:50 EXEC SPC_RELAX_LST1 '9','14';
+2019-06-27 14:51:51 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:51 EXEC SPC_RELAX_LST2 '9','1','1','1','0','[]','14';
+2019-06-27 14:51:56 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:51:56 EXEC SPC_RELAX_ACT2 '9','14','::1';
+2019-06-27 14:52:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:52:05 EXEC SPC_RELAX_ACT2 '9','14','::1';
+2019-06-27 14:52:15 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:52:15 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 14:52:26 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 14:52:26 EXEC SPC_RELAX_ACT2 '8','14','::1';
+2019-06-27 15:08:12 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:12 EXEC SPC_RELAX_ACT1 '8','4.5','14','::1';
+2019-06-27 15:08:12 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:12 EXEC SPC_RELAX_ACT1 '8','4.5','14','::1';
+2019-06-27 15:08:19 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:19 EXEC SPC_RELAX_LST1 '8','14';
+2019-06-27 15:08:23 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:23 EXEC SPC_RELAX_LST2 '8','1','1','1','0','[]','14';
+2019-06-27 15:08:25 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:25 EXEC SPC_RELAX_LST2 '','1','1','1','[{"tag_id":31},{"tag_id":32}]','0','14';
+2019-06-27 15:08:26 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2019-06-27 15:08:30 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:30 EXEC SPC_RELAX_ACT2 '8','14','::1';
+2019-06-27 15:08:36 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:08:36 EXEC SPC_RELAX_LST2 '','1','1','1','[{"tag_id":31},{"tag_id":32}]','0','14';
+2019-06-27 15:08:36 SQLSTATE[42000]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]データ型 nvarchar を int に変換中にエラーが発生しました。
+2019-06-27 15:10:37 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:10:37 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 15:10:39 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:10:39 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 15:10:44 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:10:44 EXEC SPC_RELAX_ACT2 '8','14','::1';
+2019-06-27 15:14:01 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:01 EXEC SPC_RELAX_LST1 '','14';
+2019-06-27 15:14:03 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:03 EXEC SPC_RELAX_LST2 '','1','1','1','0','[]','14';
+2019-06-27 15:14:05 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:05 EXEC SPC_RELAX_LST2 '','1','1','1','0','[{"tag_id":31},{"tag_id":32}]','14';
+2019-06-27 15:14:08 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:08 EXEC SPC_RELAX_LST2 '','1','1','1','0','[{"tag_id":31},{"tag_id":32}]','14';
+2019-06-27 15:14:10 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:11 EXEC SPC_RELAX_LST2 '','1','1','1','0','[{"tag_id":31},{"tag_id":32}]','14';
+2019-06-27 15:14:19 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:19 EXEC SPC_RELAX_LST2 '','1','1','1','0','[{"tag_id":31},{"tag_id":34}]','14';
+2019-06-27 15:14:28 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 15:14:28 EXEC SPC_RELAX_ACT2 '9','14','::1';
+2019-06-27 16:54:06 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 16:54:06 EXEC SPC_COM_MENU '2';
+2019-06-27 18:34:09 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 18:34:09 EXEC SPC_COM_MENU '2';
+2019-06-27 20:14:12 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 20:14:12 EXEC SPC_COM_MENU '2';
+2019-06-27 21:54:15 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 21:54:15 EXEC SPC_COM_MENU '2';
+2019-06-27 23:34:18 EXEC SPC_COM_DATA '14','2','1';
+2019-06-27 23:34:18 EXEC SPC_COM_MENU '2';

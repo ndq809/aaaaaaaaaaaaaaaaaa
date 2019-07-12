@@ -6,7 +6,6 @@
         <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-spell">Phiên âm</label>
         <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-div">Loại từ</label>
         <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-mean">Nghĩa</label>
-        <label class="checkbox-inline"><input type="checkbox" value="" checked="" id="vocal-explain">Giải thích</label>
     </div>
 </div>
 <div class="col-xs-12 no-padding slider-wrap">
@@ -16,7 +15,7 @@
                 @if(isset($data)&&$data[2][0]['id'] != '')
                     @foreach($data[2] as $index => $row)
                         <li class="current_item"><a> <img
-                                src="{{$row['image']}}" />
+                                src="{{$row['del_flg']==0&&$row['image']!=''?$row['image']:'/web-content/images/plugin-icon/no-image.jpg'}}" />
                         </a></li>
                     @endforeach
                 @endif
@@ -27,15 +26,44 @@
 <div class="col-xs-12 no-padding hint-text">
     <h6>Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng</h6>
 </div>
+<div class="input-wrap col-xs-12 no-padding hidden">
+    <input type="text" name="hidden" class="form-control input-sm vocal-engword-input text-center" value="" placeholder="Nhập từ hiện tại kết thúc bằng dấu # để kiểm tra">
+    <i class="fa fa-check input-icon hidden"></i>
+</div>
 @if(isset($data)&&$data[2][0]['id'] != '')
     @foreach($data[2] as $index => $row)
         <div class="col-xs-12 no-padding vocabulary-box hidden" target-id="{{$row['row_id']}}">
             <input type="text" name="" class="form-control input-sm vocal-engword" value="{{$row['vocabulary_nm']}}" disabled="">
-            <input type="text" name="" class="form-control input-sm vocal-spell" value="/{{$row['spelling']}}/" disabled="">
-            <input type="text" name="" class="form-control input-sm vocal-div" value="{{$row['vocabulary_div']}}" disabled="">
+            <input type="text" name="" class="form-control input-sm vocal-type" value="{{(($row['specialized_div_nm']!=''?('☆ Chuyên nghành: '.$row['specialized_div_nm']).' ':'').($row['field_div_nm']!=''?('★ Lĩnh vực: '.$row['field_div_nm']):''))}}" disabled="">
+            <input type="text" name="" class="form-control input-sm vocal-spell" value="{{$row['spelling']}}" disabled="">
+            <input type="text" name="" class="form-control input-sm vocal-div" value="{{$row['vocabulary_div_nm']}}" disabled="">
             <textarea class="form-control input-sm vocal-mean" disabled="" rows="2">{{$row['mean']}}</textarea>
-            <textarea class="form-control input-sm vocal-explain" disabled="" rows="2">{{$row['explain']}}</textarea>
-            <audio class="sound1" src="{{$row['audio']}}"></audio>
+            <audio class="sound1 vocal-audio" src="{{$row['audio']}}"></audio>
+            @if(isset($data)&&$data[6][0]['src_id'] != '')
+            <div class="form-group relationship">
+                <label>Những từ liên quan</label>
+                <div class="analysis" type = "1">
+                    <span>Từ đồng nghĩa: </span>
+                    <span class="list">
+                        @foreach($data[6] as $index1 => $row1)
+                            @if($row1['src_id']==$row['id']&&$row1['relationship_div']==1)
+                            <a target="_blank" href="/dictionary?v={{$row1['target_id']}}" title="{{$row1['mean']}}">{{$row1['vocabulary_nm']}} |</a>
+                            @endif
+                        @endforeach
+                    </span>
+                </div>
+                <div class="analysis" type = "2">
+                    <span>Từ trái nghĩa: </span>
+                    <span class="list">
+                        @foreach($data[6] as $index1 => $row1)
+                            @if($row1['src_id']==$row['id']&&$row1['relationship_div']==2)
+                            <a target="_blank" href="/dictionary?v={{$row1['target_id']}}" title="{{$row1['mean']}}">{{$row1['vocabulary_nm']}} |</a>
+                            @endif
+                        @endforeach
+                    </span>
+                </div>
+            </div>
+            @endif
         </div>
     @endforeach
 @endif

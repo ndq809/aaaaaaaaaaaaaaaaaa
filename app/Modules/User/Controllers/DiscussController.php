@@ -7,7 +7,6 @@ use CommonUser;
 use DAO;
 use Hashids\Hashids;
 use Illuminate\Http\Request;
-use SQLXML;
 
 class DiscussController extends ControllerUser
 {
@@ -42,13 +41,12 @@ class DiscussController extends ControllerUser
     {
         $param            = $request->all();
         $param['post_id'] = $param['post_id'] != '' ? $this->hashids->decode($param['post_id'])[0] : '';
-        if (isset($param['post_tag'])) {
+        if (isset($param['post_tag'])&&$param['post_tag']!='') {
             for ($i = 0; $i < count($param['post_tag']); $i++) {
                 $param['post_tag'][$i]['tag_id'] = $this->hashids->decode($param['post_tag'][$i]['tag_id'])[0];
             }
         }
-        $xml               = new SQLXML();
-        $param['post_tag'] = $xml->xml(isset($param['post_tag']) ? $param['post_tag'] : array());
+        $param['post_tag'] = json_encode(isset($param['post_tag'])&&$param['post_tag']!='' ? $param['post_tag'] : array());
         $param['user_id']  = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $data              = Dao::call_stored_procedure('SPC_DISCUSS_LST2', $param);
         $data   = CommonUser::encodeID($data);

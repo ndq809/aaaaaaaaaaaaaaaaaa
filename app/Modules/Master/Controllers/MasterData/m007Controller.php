@@ -6,7 +6,6 @@ use Auth;
 use Common;
 use DAO;
 use Illuminate\Http\Request;
-use SQLXML;
 use Validator;
 
 class m007Controller extends Controller
@@ -43,8 +42,7 @@ class m007Controller extends Controller
     {
         $data = $request->all();
         $param['name_div'] = $data['name_div'];
-         $xml               = new SQLXML();
-        $param['xml']      = $xml->xml($data['data']);
+        $param['json']      = json_encode($data['data']);
         $param['user_id']  = Auth::user()->account_id;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());
@@ -115,8 +113,7 @@ class m007Controller extends Controller
         $data = $request->all();
         // var_dump($data);die;
         $param['name_div'] = $data['name_div'];
-        $xml               = new SQLXML();
-        $param['xml']      = $xml->xml($data[0]);
+        $param['json']      = json_encode($data[0]);
         $param['user_id']  = Auth::user()->account_id;
         $param['ip']       = $request->ip();
         $validate          = common::checkValidate($request->all());

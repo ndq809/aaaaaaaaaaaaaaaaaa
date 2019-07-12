@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_S002_ACT2]
-	 @P_account_id_xml			XML				=   ''
+	 @P_account_id_jaon		NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -36,9 +36,11 @@ BEGIN
 		,	S001.del_date	=	@w_time
 		,	S001.del_flg	=	1
 		WHERE S001.account_id IN (
-		SELECT
-			role_id		=	T.C.value('@id', 'nvarchar(15)')
-		FROM @P_account_id_xml.nodes('row') T(C))
+		SELECT              
+            id              
+        FROM OPENJSON(@P_account_id_jaon) WITH(
+        	id	            VARCHAR(10)	'$.id'
+        ))
 
 	END TRY
 	BEGIN CATCH

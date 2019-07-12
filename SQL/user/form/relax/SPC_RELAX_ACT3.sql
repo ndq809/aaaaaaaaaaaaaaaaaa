@@ -10,7 +10,7 @@ CREATE PROCEDURE [dbo].[SPC_RELAX_ACT3]
      @P_post_id     		NVARCHAR(50)		= ''
 ,    @P_post_div     		INT					= 0
 ,    @P_post_title     		NVARCHAR(200)		= ''
-,    @P_post_tag     		XML					= ''
+,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_content    	NTEXT				= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
@@ -50,7 +50,7 @@ BEGIN
 
 	INSERT INTO M013
 	SELECT
-		T.C.value('@tag_nm', 'nvarchar(1000)')		
+		#TEMP.tag_nm	
 	,	CASE @P_post_div
 		WHEN 7 THEN 4	
 		WHEN 8 THEN 5	
@@ -70,23 +70,29 @@ BEGIN
 	,	NULL
 	,	NULL
 	,	NULL
-	FROM @P_post_tag.nodes('row') T(C)
+	FROM OPENJSON(@P_post_tag) WITH(
+        is_new	            NVARCHAR(100)	'$.is_new	     '
+    ,   tag_nm	            NVARCHAR(100)	'$.tag_nm	     '
+    ) AS #TEMP
 	LEFT JOIN M013
-	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	ON #TEMP.tag_nm = M013.tag_nm
 	AND M013.tag_div =	CASE @P_post_div
 							WHEN 7 THEN 4	
 							WHEN 8 THEN 5	
 							WHEN 9 THEN 6
 						END	
-	WHERE T.C.value('@is_new', 'int') = 1
+	WHERE #TEMP.is_new = 1
 	AND M013.tag_id IS NULL
 
 	INSERT INTO #TAG
 	SELECT
 		M013.tag_id
-	FROM @P_post_tag.nodes('row') T(C)
+	FROM OPENJSON(@P_post_tag) WITH(
+        tag_id	            NVARCHAR(100)	'$.tag_id	     '
+    ,   tag_nm	            NVARCHAR(100)	'$.tag_nm	     '
+    ) AS #TEMP
 	INNER JOIN M013
-	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
+	ON (#TEMP.tag_nm = M013.tag_nm OR #TEMP.tag_id = M013.tag_id)
 	
 	IF @P_post_id =''
 	BEGIN

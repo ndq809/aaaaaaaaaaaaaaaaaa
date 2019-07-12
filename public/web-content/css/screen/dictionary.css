@@ -23,12 +23,13 @@
 	margin-top: 15px;
 }
 
-.vocabulary-box *{
-	margin-top: 5px;
-	text-align: center;
-	border-radius: 0px;
-	font-size: 14px;
+.vocabulary-box input,.vocabulary-box textarea{
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 14px;
 }
+
 
 .vocabulary-box input:nth-child(1){
 	color: #009688;
@@ -129,5 +130,20 @@
     opacity: 0.8;
 }
 
+#ui-id-1{
+    max-height: 500px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
 
+.analysis{
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+}
 
+.input-icon{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 24px;
+}

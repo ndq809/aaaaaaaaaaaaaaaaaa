@@ -1,0 +1,698 @@
+2019-06-21 09:03:22 EXEC SPC_COM_PERMISSION '1','2','v003';
+2019-06-21 09:03:22 EXEC SPC_COM_MENU '1';
+2019-06-21 09:03:24 EXEC SPC_COM_MENU '1';
+2019-06-21 09:03:52 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 09:03:52 EXEC SPC_COM_MENU '1';
+2019-06-21 09:03:52 EXEC SPC_V002_FND1
+2019-06-21 09:03:52 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 09:03:52 EXEC SPC_COM_MENU '1';
+2019-06-21 09:03:52 EXEC SPC_V002_FND1
+2019-06-21 09:04:05 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:04:05 EXEC SPC_COM_MENU '1';
+2019-06-21 09:04:05 EXEC SPC_W002_FND1
+2019-06-21 09:04:07 EXEC SPC_COM_MENU '1';
+2019-06-21 09:04:07 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:04:08 EXEC SPC_COM_MENU '1';
+2019-06-21 09:04:08 EXEC SPC_P003_INQ1
+2019-06-21 09:04:08 EXEC SPC_COM_MENU '1';
+2019-06-21 09:04:08 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:04:10 EXEC SPC_COM_MENU '1';
+2019-06-21 09:04:10 EXEC SPC_P003_LST1 '0','0','0','','','""','50','1';
+2019-06-21 09:09:06 EXEC SPC_COM_MENU '1';
+2019-06-21 09:09:07 EXEC SPC_P003_LST1 '0','0','0','','','""','50','1';
+2019-06-21 09:09:07 SQLSTATE[21S01]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]列名または指定された値の数がテーブルの定義と一致しません。
+2019-06-21 09:10:37 EXEC SPC_COM_MENU '1';
+2019-06-21 09:10:38 EXEC SPC_P003_LST1 '0','0','0','','','""','50','1';
+2019-06-21 09:13:53 EXEC SPC_COM_MENU '1';
+2019-06-21 09:13:53 EXEC SPC_P003_INQ1
+2019-06-21 09:13:53 EXEC SPC_COM_MENU '1';
+2019-06-21 09:13:53 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:13:55 EXEC SPC_COM_MENU '1';
+2019-06-21 09:13:55 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:14:14 EXEC SPC_COM_MENU '1';
+2019-06-21 09:14:14 EXEC SPC_P003_LST1 '0','0','2','','','[]','50','1';
+2019-06-21 09:14:25 EXEC SPC_COM_MENU '1';
+2019-06-21 09:14:25 EXEC SPC_P003_LST1 '0','1','0','','','[]','50','1';
+2019-06-21 09:14:36 EXEC SPC_COM_MENU '1';
+2019-06-21 09:14:36 EXEC SPC_P003_LST1 '1','4','0','','','[]','50','1';
+2019-06-21 09:14:39 EXEC SPC_COM_MENU '1';
+2019-06-21 09:14:39 EXEC SPC_P003_LST1 '0','4','0','','','[]','50','1';
+2019-06-21 09:15:33 EXEC SPC_COM_MENU '1';
+2019-06-21 09:15:33 EXEC SPC_P003_LST1 '0','4','0','','','[]','50','1';
+2019-06-21 09:16:30 EXEC SPC_COM_MENU '1';
+2019-06-21 09:16:30 EXEC SPC_P003_LST1 '0','4','0','','','[]','50','1';
+2019-06-21 09:17:28 EXEC SPC_COM_MENU '1';
+2019-06-21 09:17:28 EXEC SPC_P003_LST1 '0','4','0','','','[]','50','1';
+2019-06-21 09:20:19 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:20:19 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:19 EXEC SPC_W002_FND1
+2019-06-21 09:20:23 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:23 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:20:24 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:24 EXEC SPC_P003_INQ1
+2019-06-21 09:20:25 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:25 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:20:26 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:26 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:20:56 EXEC SPC_COM_MENU '1';
+2019-06-21 09:20:56 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:21:03 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:03 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:21:05 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:21:05 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:05 EXEC SPC_W002_FND1
+2019-06-21 09:21:08 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:08 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:21:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:09 EXEC SPC_P003_INQ1
+2019-06-21 09:21:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:10 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:21:11 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:11 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:21:28 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:28 EXEC SPC_P003_LST1 '0','16','0','','','[]','50','1';
+2019-06-21 09:21:36 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:36 EXEC SPC_P003_LST1 '0','10','0','','','[]','50','1';
+2019-06-21 09:21:45 EXEC SPC_COM_MENU '1';
+2019-06-21 09:21:45 EXEC SPC_P003_LST1 '0','12','0','','','[]','50','1';
+2019-06-21 09:22:19 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:19 EXEC SPC_COMMON_GROUP '6';
+2019-06-21 09:22:23 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:23 EXEC SPC_P003_INQ1
+2019-06-21 09:22:23 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:23 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:22:25 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:25 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:22:34 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:34 EXEC SPC_P003_LST1 '0','0','0','','','[]','50','1';
+2019-06-21 09:22:47 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:47 EXEC SPC_P003_LST1 '0','8','0','','','[]','50','1';
+2019-06-21 09:22:53 EXEC SPC_COM_MENU '1';
+2019-06-21 09:22:53 EXEC SPC_P003_LST3 '[{"vocabulary_code":"133"}]';
+2019-06-21 09:23:15 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:23:15 EXEC SPC_COM_MENU '1';
+2019-06-21 09:23:15 EXEC SPC_W002_FND1
+2019-06-21 09:26:00 EXEC SPC_COM_MENU '1';
+2019-06-21 09:26:00 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:26:01 EXEC SPC_COM_MENU '1';
+2019-06-21 09:26:01 EXEC SPC_P003_INQ1
+2019-06-21 09:26:02 EXEC SPC_COM_MENU '1';
+2019-06-21 09:26:02 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:26:05 EXEC SPC_COM_MENU '1';
+2019-06-21 09:26:05 EXEC SPC_P003_LST1 '0','8','0','','','[]','50','1';
+2019-06-21 09:26:12 EXEC SPC_COM_MENU '1';
+2019-06-21 09:26:12 EXEC SPC_P003_LST3 '[{"vocabulary_code":"133"}]';
+2019-06-21 09:27:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:27:06 EXEC SPC_COM_MENU '1';
+2019-06-21 09:27:06 EXEC SPC_W002_FND1
+2019-06-21 09:27:08 EXEC SPC_COM_MENU '1';
+2019-06-21 09:27:08 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:27:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:27:09 EXEC SPC_P003_INQ1
+2019-06-21 09:27:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:27:09 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:27:10 EXEC SPC_COM_MENU '1';
+2019-06-21 09:27:10 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:28:47 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:28:47 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:47 EXEC SPC_W002_FND1
+2019-06-21 09:28:50 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:50 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:28:50 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:50 EXEC SPC_P003_INQ1
+2019-06-21 09:28:51 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:51 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:28:52 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:52 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:28:57 EXEC SPC_COM_MENU '1';
+2019-06-21 09:28:57 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:29:38 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:29:38 EXEC SPC_COM_MENU '1';
+2019-06-21 09:29:38 EXEC SPC_W002_FND1
+2019-06-21 09:29:41 EXEC SPC_COM_MENU '1';
+2019-06-21 09:29:41 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:29:42 EXEC SPC_COM_MENU '1';
+2019-06-21 09:29:42 EXEC SPC_P003_INQ1
+2019-06-21 09:29:43 EXEC SPC_COM_MENU '1';
+2019-06-21 09:29:43 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:29:44 EXEC SPC_COM_MENU '1';
+2019-06-21 09:29:44 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:30:24 EXEC SPC_COM_MENU '1';
+2019-06-21 09:30:24 EXEC SPC_COMMON_GROUP '6';
+2019-06-21 09:30:26 EXEC SPC_COM_MENU '1';
+2019-06-21 09:30:26 EXEC SPC_P003_INQ1
+2019-06-21 09:30:27 EXEC SPC_COM_MENU '1';
+2019-06-21 09:30:27 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:36:06 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:06 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:36:06 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:36:06 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:06 EXEC SPC_W002_FND1
+2019-06-21 09:36:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:09 EXEC SPC_W002_LST2 '1';
+2019-06-21 09:36:10 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:10 EXEC SPC_P003_INQ1
+2019-06-21 09:36:11 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:11 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:36:12 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:12 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:36:16 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:16 EXEC SPC_P003_INQ1
+2019-06-21 09:36:16 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:16 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:36:18 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:18 EXEC SPC_P003_LST3 '[]';
+2019-06-21 09:36:21 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:21 EXEC SPC_P003_INQ1
+2019-06-21 09:36:22 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:22 EXEC SPC_P003_LST2 '[]';
+2019-06-21 09:36:30 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:30 EXEC SPC_P003_LST1 '0','8','0','','','[]','50','1';
+2019-06-21 09:36:33 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:33 EXEC SPC_P003_LST3 '[{"vocabulary_code":"133"}]';
+2019-06-21 09:36:37 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:37 EXEC SPC_COMMON_GROUP '6';
+2019-06-21 09:36:42 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:42 EXEC SPC_w002_ACT1 '','1','6','6','','','','','','0','<row row_id="0" vocabulary_code="133" />','','','1','::1';
+2019-06-21 09:36:44 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:44 EXEC SPC_W002_LST1 '28673';
+2019-06-21 09:36:44 SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]列名 'explain' が無効です。
+2019-06-21 09:36:50 EXEC SPC_COM_PERMISSION '1','2','w002';
+2019-06-21 09:36:50 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:50 EXEC SPC_W002_FND1
+2019-06-21 09:36:52 EXEC SPC_COM_MENU '1';
+2019-06-21 09:36:52 EXEC SPC_W002_LST1 '28673';
+2019-06-21 09:36:52 SQLSTATE[42S22]: [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]列名 'explain' が無効です。
+2019-06-21 09:45:21 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-06-21 09:45:21 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:21 EXEC SPC_S001_FND1
+2019-06-21 09:45:32 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:32 EXEC SPC_S001_FND2 '1';
+2019-06-21 09:45:32 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:32 EXEC SPC_S001_LST2 '';
+2019-06-21 09:45:34 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:34 EXEC SPC_S001_LST2 '1';
+2019-06-21 09:45:42 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:42 EXEC SPC_S001_ACT1 '1','1','[{"screen_id":"btn-add-lesson","remark":"","access_per":"1"},{"screen_id":"btn-answer","remark":"","access_per":"1"},{"screen_id":"btn-question","remark":"","access_per":"1"},{"screen_id":"btn-remember","remark":"","access_per":"1"},{"screen_id":"btn-forget","remark":"","access_per":"1"},{"screen_id":"btn-contribute-exa","remark":"","access_per":"1"},{"screen_id":"btn-effect","remark":"","access_per":"1"},{"screen_id":"btn-comment","remark":"","access_per":"1"},{"screen_id":"btn-feedback","remark":"","access_per":"1"},{"screen_id":"btn-save-post","remark":"","access_per":"1"},{"screen_id":"btn-share-post","remark":"","access_per":"1"},{"screen_id":"btn-add-exercise","remark":"","access_per":"1"},{"screen_id":"btn-add-mission","remark":"","access_per":"1"},{"screen_id":"btn-like","remark":"","access_per":"1"},{"screen_id":"btn-check-answer","remark":"","access_per":"1"},{"screen_id":"btn-vote","remark":"","access_per":"1"},{"screen_id":"btn-cmt-vote","remark":"","access_per":"1"},{"screen_id":"btn-vote-question","remark":"","access_per":"1"}]','1','::1';
+2019-06-21 09:45:43 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-06-21 09:45:43 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:43 EXEC SPC_S001_FND1
+2019-06-21 09:45:46 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:46 EXEC SPC_S001_FND2 '1';
+2019-06-21 09:45:47 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:47 EXEC SPC_S001_LST2 '';
+2019-06-21 09:45:48 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:48 EXEC SPC_S001_LST2 '1';
+2019-06-21 09:45:59 EXEC SPC_COM_MENU '1';
+2019-06-21 09:45:59 EXEC SPC_S001_ACT1 '1','1','[{"screen_id":"btn-add-lesson","remark":"","access_per":"1"},{"screen_id":"btn-answer","remark":"","access_per":"1"},{"screen_id":"btn-question","remark":"","access_per":"1"},{"screen_id":"btn-remember","remark":"","access_per":"1"},{"screen_id":"btn-forget","remark":"","access_per":"1"},{"screen_id":"btn-contribute-exa","remark":"","access_per":"1"},{"screen_id":"btn-effect","remark":"","access_per":"1"},{"screen_id":"btn-comment","remark":"","access_per":"1"},{"screen_id":"btn-feedback","remark":"","access_per":"1"},{"screen_id":"btn-save-post","remark":"","access_per":"1"},{"screen_id":"btn-share-post","remark":"","access_per":"1"},{"screen_id":"btn-add-exercise","remark":"","access_per":"1"},{"screen_id":"btn-add-mission","remark":"","access_per":"1"},{"screen_id":"btn-like","remark":"","access_per":"1"}]','1','::1';
+2019-06-21 09:46:01 EXEC SPC_COM_PERMISSION '1','2','s001';
+2019-06-21 09:46:01 EXEC SPC_COM_MENU '1';
+2019-06-21 09:46:01 EXEC SPC_S001_FND1
+2019-06-21 09:46:03 EXEC SPC_COM_MENU '1';
+2019-06-21 09:46:03 EXEC SPC_S001_FND2 '1';
+2019-06-21 09:46:03 EXEC SPC_COM_MENU '1';
+2019-06-21 09:46:03 EXEC SPC_S001_LST2 '';
+2019-06-21 09:46:05 EXEC SPC_COM_MENU '1';
+2019-06-21 09:46:05 EXEC SPC_S001_LST2 '1';
+2019-06-21 09:52:43 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-06-21 09:52:43 EXEC SPC_COM_MENU '1';
+2019-06-21 09:52:43 EXEC SPC_S002_FND1
+2019-06-21 09:52:48 EXEC SPC_COM_MENU '1';
+2019-06-21 09:52:48 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 09:52:51 EXEC SPC_COM_MENU '1';
+2019-06-21 09:52:51 EXEC SPC_S001_FND2 '2';
+2019-06-21 09:52:56 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:02 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:02 EXEC SPC_S001_FND2 '1';
+2019-06-21 09:53:06 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:09 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:09 EXEC SPC_S001_FND2 '1';
+2019-06-21 09:53:16 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:21 EXEC SPC_COM_MENU '1';
+2019-06-21 09:53:21 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"17","remark":""}]','1','::1';
+2019-06-21 09:54:23 EXEC SPC_COM_PERMISSION '1','2','m007';
+2019-06-21 09:54:23 EXEC SPC_COM_MENU '1';
+2019-06-21 09:54:23 EXEC SPC_M007_FND1
+2019-06-21 09:54:37 EXEC SPC_COM_MENU '1';
+2019-06-21 09:54:37 EXEC SPC_m007_LST1 '14';
+2019-06-21 09:54:37 EXEC SPC_M007_FND1
+2019-06-21 09:55:36 EXEC SPC_COM_MENU '1';
+2019-06-21 09:55:40 EXEC SPC_COM_MENU '1';
+2019-06-21 09:55:40 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 09:59:16 EXEC SPC_COM_MENU '1';
+2019-06-21 09:59:16 EXEC SPC_S001_FND2 '1';
+2019-06-21 10:02:43 EXEC SPC_COM_MENU '1';
+2019-06-21 10:02:43 EXEC SPC_m007_LST1 '4';
+2019-06-21 10:02:43 EXEC SPC_M007_FND1
+2019-06-21 10:02:46 EXEC SPC_COM_MENU '1';
+2019-06-21 10:02:46 EXEC SPC_m007_LST1 '5';
+2019-06-21 10:02:46 EXEC SPC_M007_FND1
+2019-06-21 10:03:11 EXEC SPC_COM_MENU '1';
+2019-06-21 10:03:11 EXEC SPC_m007_LST1 '14';
+2019-06-21 10:03:11 EXEC SPC_M007_FND1
+2019-06-21 10:07:41 EXEC SPC_COM_MENU '1';
+2019-06-21 10:07:41 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 10:07:51 EXEC SPC_COM_MENU '1';
+2019-06-21 10:07:51 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 10:08:04 EXEC SPC_COM_MENU '1';
+2019-06-21 10:08:04 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 10:10:38 EXEC SPC_COM_MENU '1';
+2019-06-21 10:10:38 EXEC SPC_m007_LST1 '4';
+2019-06-21 10:10:38 EXEC SPC_M007_FND1
+2019-06-21 10:12:09 EXEC SPC_COM_MENU '1';
+2019-06-21 10:12:09 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 10:12:43 EXEC SPC_COM_MENU '1';
+2019-06-21 10:12:43 EXEC SPC_S002_ACT1 '[{"row_id":"1","account_id":"1","account_nm":"ndq809","employee_id":"1","system_div":"2","account_div":"2","remark":""},{"row_id":"3","account_id":"14","account_nm":"kirito","employee_id":"","system_div":"1","account_div":"2","remark":""},{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"10","remark":""}]','1','::1';
+2019-06-21 11:34:26 EXEC SPC_COM_DATA '','','';
+2019-06-21 11:50:47 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-21 11:50:48 EXEC SPC_COM_PERMISSION '2','2','s002';
+2019-06-21 11:50:48 EXEC SPC_COM_PERMISSION '2','2','master';
+2019-06-21 11:50:48 EXEC SPC_COM_PERMISSION '2','2','g001';
+2019-06-21 11:50:56 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-21 11:50:57 EXEC SPC_COM_PERMISSION '2','2','g001';
+2019-06-21 11:51:11 EXEC SPC_COMMON_ACCOUNT '18','1';
+2019-06-21 11:51:12 EXEC SPC_COM_PERMISSION '2','1','g001';
+2019-06-21 11:54:14 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-21 11:54:15 EXEC SPC_COM_PERMISSION '2','2','g001';
+2019-06-21 11:54:30 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-21 11:54:30 EXEC SPC_COM_PERMISSION '2','2','v003';
+2019-06-21 11:54:30 EXEC SPC_COM_PERMISSION '2','2','master';
+2019-06-21 11:54:30 EXEC SPC_COM_PERMISSION '2','2','g001';
+2019-06-21 11:55:47 EXEC SPC_COMMON_ACCOUNT '1','2';
+2019-06-21 11:55:48 EXEC SPC_COM_PERMISSION '1','2','g001';
+2019-06-21 11:55:48 EXEC SPC_COM_MENU '1';
+2019-06-21 11:55:48 EXEC SPC_G001_LST1 '1','1';
+2019-06-21 11:55:58 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-06-21 11:55:58 EXEC SPC_COM_MENU '1';
+2019-06-21 11:55:58 EXEC SPC_S002_FND1
+2019-06-21 11:56:03 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:03 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 11:56:09 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:09 EXEC SPC_S001_FND2 '1';
+2019-06-21 11:56:13 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:14 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:14 EXEC SPC_S001_FND2 '1';
+2019-06-21 11:56:20 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:24 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:24 EXEC SPC_S002_ACT1 '[{"row_id":"5","account_id":"4","account_nm":"quypro","employee_id":"1","system_div":"1","account_div":"17","remark":""},{"row_id":"4","account_id":"2","account_nm":"khoai","employee_id":"","system_div":"1","account_div":"6","remark":""}]','1','::1';
+2019-06-21 11:56:25 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:25 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 11:56:29 EXEC SPC_COM_MENU '1';
+2019-06-21 11:56:29 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 11:58:13 EXEC SPC_COM_PERMISSION '1','2','s003';
+2019-06-21 11:58:13 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:13 EXEC SPC_S003_FND1
+2019-06-21 11:58:17 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:17 EXEC SPC_S001_FND2 '1';
+2019-06-21 11:58:43 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:43 EXEC SPC_S003_ACT1 '','1','1','super','$2y$10$DNmlOy0g3pPSg9iWSlkiQOuvyHYnOD/qDRPBaqleOsfl7rF8MEwxS','','1','::1';
+2019-06-21 11:58:48 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:48 EXEC SPC_S003_ACT1 '','1','1','super','$2y$10$opd9Pjcdn2QBlI/deOFZROByvHK3svk8.OZ2Q29z7tXUFCBwxE7L6','','1','::1';
+2019-06-21 11:58:53 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:53 EXEC SPC_S003_ACT1 '','1','1','super_man','$2y$10$giDODhu2glG4dcuF0igx1eqfjIJpTGreyCBP.B6VqSgg.H7FHNQL6','','1','::1';
+2019-06-21 11:58:59 EXEC SPC_COM_MENU '1';
+2019-06-21 11:58:59 EXEC SPC_S003_ACT2 '<row row_id="2" id="1015" />','1','::1';
+2019-06-21 11:59:03 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-06-21 11:59:03 EXEC SPC_COM_MENU '1';
+2019-06-21 11:59:03 EXEC SPC_S002_FND1
+2019-06-21 11:59:05 EXEC SPC_COM_MENU '1';
+2019-06-21 11:59:05 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 11:59:19 EXEC SPC_COM_MENU '1';
+2019-06-21 11:59:19 EXEC SPC_S002_ACT2 '[{"row_id":"2","id":"1014"}]','1','::1';
+2019-06-21 11:59:22 EXEC SPC_COM_MENU '1';
+2019-06-21 11:59:22 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:03:31 EXEC SPC_COM_MENU '1';
+2019-06-21 13:03:31 EXEC SPC_S001_FND2 '2';
+2019-06-21 13:03:33 EXEC SPC_COM_MENU '1';
+2019-06-21 13:03:33 EXEC SPC_S001_FND2 '3';
+2019-06-21 13:04:06 EXEC SPC_COM_MENU '1';
+2019-06-21 13:04:12 EXEC SPC_COM_MENU '1';
+2019-06-21 13:04:12 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"6","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:04:12 EXEC SPC_COM_MENU '1';
+2019-06-21 13:04:12 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:04:17 EXEC SPC_COM_MENU '1';
+2019-06-21 13:04:17 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:05:20 EXEC SPC_COM_MENU '1';
+2019-06-21 13:05:20 EXEC SPC_S001_FND2 '3';
+2019-06-21 13:05:24 EXEC SPC_COM_MENU '1';
+2019-06-21 13:05:41 EXEC SPC_COM_MENU '1';
+2019-06-21 13:05:41 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"1","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:05:41 EXEC SPC_COM_MENU '1';
+2019-06-21 13:05:41 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:13:01 EXEC SPC_COM_MENU '1';
+2019-06-21 13:13:01 EXEC SPC_S001_FND2 '3';
+2019-06-21 13:14:29 EXEC SPC_COM_DATA '1','1','2';
+2019-06-21 13:14:29 EXEC SPC_COM_MENU '1';
+2019-06-21 13:20:31 EXEC SPC_COM_MENU '1';
+2019-06-21 13:20:34 EXEC SPC_COM_MENU '1';
+2019-06-21 13:20:34 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"1","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:30:56 EXEC SPC_COM_MENU '1';
+2019-06-21 13:30:56 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"1","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:31:08 EXEC SPC_COM_MENU '1';
+2019-06-21 13:31:08 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"1","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:31:17 EXEC SPC_COM_MENU '1';
+2019-06-21 13:31:17 EXEC SPC_S002_ACT1 '[{"row_id":"2","account_id":"1013","account_nm":"\u30af\u30a4","employee_id":"4","system_div":"3","account_div":"1","remark":"lalala demacia"}]','1','::1';
+2019-06-21 13:31:17 EXEC SPC_COM_MENU '1';
+2019-06-21 13:31:17 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:34:21 EXEC SPC_COM_PERMISSION '1','2','s003';
+2019-06-21 13:34:21 EXEC SPC_COM_MENU '1';
+2019-06-21 13:34:21 EXEC SPC_S003_FND1
+2019-06-21 13:34:32 EXEC SPC_COM_MENU '1';
+2019-06-21 13:34:32 EXEC SPC_S001_FND2 '1';
+2019-06-21 13:34:41 EXEC SPC_COM_MENU '1';
+2019-06-21 13:34:52 EXEC SPC_COM_MENU '1';
+2019-06-21 13:34:52 EXEC SPC_S003_ACT1 '','1','1','asrdsadsads','$2y$10$NVfqOM/FcIsuFL4ur4MZ3.ZKqahJ19r7vGNz6pQ4QqUoZbsTb12EG','','1','::1';
+2019-06-21 13:34:59 EXEC SPC_COM_MENU '1';
+2019-06-21 13:34:59 EXEC SPC_S003_ACT2 '[{"row_id":"1","id":"1016"}]','1','::1';
+2019-06-21 13:35:02 EXEC SPC_COM_PERMISSION '1','2','s002';
+2019-06-21 13:35:02 EXEC SPC_COM_MENU '1';
+2019-06-21 13:35:02 EXEC SPC_S002_FND1
+2019-06-21 13:35:03 EXEC SPC_COM_MENU '1';
+2019-06-21 13:35:03 EXEC SPC_S002_LST1 '','','','','10','1';
+2019-06-21 13:43:39 EXEC SPC_COM_PERMISSION '1','2','v001';
+2019-06-21 13:43:39 EXEC SPC_COM_MENU '1';
+2019-06-21 13:43:39 EXEC SPC_V001_LST1
+2019-06-21 13:43:42 EXEC SPC_COM_MENU '1';
+2019-06-21 13:43:42 EXEC SPC_V001_LST2 '0','0','0','-1','','','50','1';
+2019-06-21 13:43:51 EXEC SPC_COM_MENU '1';
+2019-06-21 13:43:51 EXEC SPC_V001_LST2 '0','0','0','0','','','50','1';
+2019-06-21 13:44:03 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:03 EXEC SPC_V001_ACT2 '[{"row_id":"0","id":"1","dtl_id":"0"},{"row_id":"1","id":"1","dtl_id":"1"},{"row_id":"2","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:44:04 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:04 EXEC SPC_V001_LST2 '0','0','0','1','','','50','1';
+2019-06-21 13:44:09 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:09 EXEC SPC_V001_ACT3 '[{"row_id":"0","id":"1","dtl_id":"0"},{"row_id":"1","id":"1","dtl_id":"1"},{"row_id":"2","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:44:10 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:10 EXEC SPC_V001_LST2 '0','0','0','2','','','50','1';
+2019-06-21 13:44:18 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:18 EXEC SPC_V001_ACT4 '[{"row_id":"0","id":"1","dtl_id":"0"},{"row_id":"1","id":"1","dtl_id":"1"},{"row_id":"2","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:44:47 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:47 EXEC SPC_V001_ACT4 '[{"row_id":"1","id":"1","dtl_id":"1"},{"row_id":"2","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:44:57 EXEC SPC_COM_MENU '1';
+2019-06-21 13:44:57 EXEC SPC_V001_ACT4 '[{"row_id":"1","id":"1","dtl_id":"1"},{"row_id":"2","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:45:49 EXEC SPC_COM_MENU '1';
+2019-06-21 13:45:50 EXEC SPC_V001_ACT4 '[{"row_id":"1","id":"1","dtl_id":"1"}]','1','::1';
+2019-06-21 13:46:10 EXEC SPC_COM_MENU '1';
+2019-06-21 13:46:10 EXEC SPC_V001_ACT4 '[{"row_id":"3","id":"10","dtl_id":"0"}]','1','::1';
+2019-06-21 13:46:12 EXEC SPC_COM_MENU '1';
+2019-06-21 13:46:12 EXEC SPC_V001_LST2 '0','0','0','0','','','50','1';
+2019-06-21 13:46:34 EXEC SPC_COM_MENU '1';
+2019-06-21 13:46:34 EXEC SPC_V001_LST2 '0','0','0','2','','','50','1';
+2019-06-21 13:53:31 EXEC SPC_COM_PERMISSION '1','2','v003';
+2019-06-21 13:53:31 EXEC SPC_COM_MENU '1';
+2019-06-21 13:53:32 EXEC SPC_COM_MENU '1';
+2019-06-21 13:53:38 EXEC SPC_COM_MENU '1';
+2019-06-21 13:53:38 EXEC SPC_v003_ACT1 '[{"row_id":"0","word_id":"1","word_dtl_id":"0","word":"abandonment value","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"gi\u00e1 tr\u1ecb thanh to\u00e1n","audio":""},{"row_id":"1","word_id":"1","word_dtl_id":"1","word":"abandonment value","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"gi\u00e1 tr\u1ecb t\u1eeb b\u1ecf","audio":""},{"row_id":"2","word_id":"2","word_dtl_id":"0","word":"abapikal","specialized":"","field":"","word_div":"t\u00ednh t\u1eeb","spell":"","mean":"(sinh h\u1ecdc) xa \u0111\u1ec9nh; xa ng\u1ecdn","audio":""},{"row_id":"3","word_id":"2","word_dtl_id":"1","word":"abapikal","specialized":"","field":"","word_div":"t\u00ednh t\u1eeb","spell":"","mean":"d\u01b0\u1edbi v\u1ef1c","audio":""},{"row_id":"4","word_id":"3","word_dtl_id":"0","word":"abarticular","specialized":"","field":"","word_div":"t\u00ednh t\u1eeb","spell":"","mean":"(gi\u1ea3i ph\u1eabu) h\u1ecdc ngo\u00e0i kh\u1edbp; tr\u1eadt kh\u1edbp","audio":""},{"row_id":"5","word_id":"4","word_dtl_id":"0","word":"abase","specialized":"","field":"","word_div":"ngo\u1ea1i \u0111\u1ed9ng t\u1eeb","spell":"\/\u0259'beis\/","mean":"l\u00e0m h\u1ea1 ph\u1ea9m gi\u00e1, l\u00e0m m\u1ea5t th\u1ec3 di\u1ec7n, l\u00e0m nh\u1ee5c","audio":"\/web-content\/dictonary\/audio\/a\/abase.wav"},{"row_id":"6","word_id":"5","word_dtl_id":"0","word":"abasement","specialized":"","field":"","word_div":"danh t\u1eeb","spell":"\/\u0259'beism\u0259nt\/","mean":"s\u1ef1 l\u00e0m h\u1ea1 ph\u1ea9m gi\u00e1, s\u1ef1 l\u00e0m m\u1ea5t th\u1ec3 di\u1ec7n, s\u1ef1 l\u00e0m nh\u1ee5c","audio":"\/web-content\/dictonary\/audio\/a\/abasement.wav"},{"row_id":"7","word_id":"6","word_dtl_id":"0","word":"abash","specialized":"","field":"","word_div":"ngo\u1ea1i \u0111\u1ed9ng t\u1eeb","spell":"\/\u0259'b\u00e6\u0283\/","mean":"l\u00e0m b\u1ed1i r\u1ed1i, l\u00e0m l\u00fang t\u00fang, l\u00e0m lu\u1ed1ng cu\u1ed1ng","audio":"\/web-content\/dictonary\/audio\/a\/abash.wav"},{"row_id":"8","word_id":"7","word_dtl_id":"0","word":"abashed","specialized":"","field":"","word_div":"t\u00ednh t\u1eeb","spell":"","mean":"b\u1ed1i r\u1ed1i, x\u1ea5u h\u1ed5","audio":""},{"row_id":"9","word_id":"8","word_dtl_id":"0","word":"abashment","specialized":"","field":"","word_div":"danh t\u1eeb","spell":"\/\u0259'b\u00e6\u0283m\u0259nt\/","mean":"s\u1ef1 b\u1ed1i r\u1ed1i, s\u1ef1 l\u00fang t\u00fang, s\u1ef1 lu\u1ed1ng cu\u1ed1ng","audio":"\/web-content\/dictonary\/audio\/a\/abashment.wav"}]','1','::1';
+2019-06-21 13:53:39 EXEC SPC_COM_MENU '1';
+2019-06-21 13:54:39 EXEC SPC_COM_MENU '1';
+2019-06-21 14:00:46 EXEC SPC_COM_MENU '1';
+2019-06-21 14:01:45 EXEC SPC_COM_MENU '1';
+2019-06-21 14:01:45 EXEC SPC_v003_ACT1 '[{"row_id":"0","word_id":"1","word_dtl_id":"0","word":"\"A\" licence","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"gi\u1ea5y ph\u00e9p \"A\"","audio":""},{"row_id":"1","word_id":"1","word_dtl_id":"1","word":"\"A\" licence","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"m\u00f4n b\u00e0i \"A\"","audio":""},{"row_id":"2","word_id":"2","word_dtl_id":"0","word":"\"acid test\" (ratio)","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"t\u1ec9 l\u1ec7 t\u00edch s\u1ea3n-tr\u00e1i v\u1ee5","audio":""},{"row_id":"3","word_id":"3","word_dtl_id":"0","word":"\"and\" tube","specialized":"k\u1ef9 thu\u1eadt","field":"to\u00e1n & tin","word_div":"","spell":"","mean":"\u0111\u00e8n \"v\u00e0\"","audio":""},{"row_id":"4","word_id":"4","word_dtl_id":"0","word":"\"as if\" statistics","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"th\u1ed1ng k\u00ea \" gi\u1ea3 thi\u1ebft\"","audio":""},{"row_id":"5","word_id":"5","word_dtl_id":"0","word":"\"ask-give\" mechanism","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"c\u01a1 ch\u1ebf \"xin-cho\"","audio":""},{"row_id":"6","word_id":"6","word_dtl_id":"0","word":"\"at\" mark","specialized":"k\u1ef9 thu\u1eadt","field":"to\u00e1n & tin","word_div":"","spell":"","mean":"nh\u00e3n \"at\"","audio":""},{"row_id":"7","word_id":"7","word_dtl_id":"0","word":"\"B\" licence","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"gi\u1ea5y ph\u00e9p \"B\"","audio":""},{"row_id":"8","word_id":"7","word_dtl_id":"1","word":"\"B\" licence","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"m\u00f4n b\u00e0i \"B\"","audio":""},{"row_id":"9","word_id":"8","word_dtl_id":"0","word":"\"B\" share","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"c\u1ed5 phi\u1ebfu B","audio":""},{"row_id":"10","word_id":"9","word_dtl_id":"0","word":"\"B\" stock","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"c\u1ed5 phi\u1ebfu nh\u00e2n l\u00e3i tr\u01b0\u1edbc","audio":""},{"row_id":"11","word_id":"9","word_dtl_id":"1","word":"\"B\" stock","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"c\u1ed5 phi\u1ebfu \u01b0u ti\u00ean l\u00e3i \"B\"","audio":""},{"row_id":"12","word_id":"9","word_dtl_id":"2","word":"\"B\" stock","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"c\u1ed5 phi\u1ebfu \u01b0u ti\u00ean th\u01b0\u1eddng","audio":""},{"row_id":"13","word_id":"10","word_dtl_id":"0","word":"\"back-door\" deal","specialized":"kinh t\u1ebf","field":"","word_div":"","spell":"","mean":"giao d\u1ecbch c\u1eeda sau","audio":""}]','1','::1';
+2019-06-21 14:01:47 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:01 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:02:01 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:01 EXEC SPC_V002_FND1
+2019-06-21 14:02:02 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:02:02 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:02 EXEC SPC_V002_FND1
+2019-06-21 14:02:09 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:09 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:02:13 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:13 EXEC SPC_V002_LST2 '"as if" statistics';
+2019-06-21 14:02:16 EXEC SPC_COM_MENU '1';
+2019-06-21 14:02:16 EXEC SPC_V002_LST2 '"as if" statistics';
+2019-06-21 14:06:26 EXEC SPC_COM_MENU '1';
+2019-06-21 14:06:26 EXEC SPC_V002_LST2 '"as if" statis';
+2019-06-21 14:06:29 EXEC SPC_COM_MENU '1';
+2019-06-21 14:06:29 EXEC SPC_V002_LST2 '"as if"';
+2019-06-21 14:06:33 EXEC SPC_COM_MENU '1';
+2019-06-21 14:06:33 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:08:47 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:08:47 EXEC SPC_COM_MENU '1';
+2019-06-21 14:08:47 EXEC SPC_V002_FND1
+2019-06-21 14:08:47 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:08:47 EXEC SPC_COM_MENU '1';
+2019-06-21 14:08:47 EXEC SPC_V002_FND1
+2019-06-21 14:08:52 EXEC SPC_COM_MENU '1';
+2019-06-21 14:08:52 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:08:59 EXEC SPC_COM_MENU '1';
+2019-06-21 14:08:59 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:10:56 EXEC SPC_COM_PERMISSION '1','2','v003';
+2019-06-21 14:10:56 EXEC SPC_COM_MENU '1';
+2019-06-21 14:10:57 EXEC SPC_COM_MENU '1';
+2019-06-21 14:11:17 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:11:17 EXEC SPC_COM_MENU '1';
+2019-06-21 14:11:17 EXEC SPC_V002_FND1
+2019-06-21 14:11:18 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:11:18 EXEC SPC_COM_MENU '1';
+2019-06-21 14:11:18 EXEC SPC_V002_FND1
+2019-06-21 14:17:28 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:17:28 EXEC SPC_COM_MENU '1';
+2019-06-21 14:17:28 EXEC SPC_V002_FND1
+2019-06-21 14:17:29 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:17:29 EXEC SPC_COM_MENU '1';
+2019-06-21 14:17:29 EXEC SPC_V002_FND1
+2019-06-21 14:17:31 EXEC SPC_COM_MENU '1';
+2019-06-21 14:17:31 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:17:34 EXEC SPC_COM_MENU '1';
+2019-06-21 14:17:34 EXEC SPC_V002_LST2 '"as if" statistics';
+2019-06-21 14:18:46 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:18:46 EXEC SPC_COM_MENU '1';
+2019-06-21 14:18:46 EXEC SPC_V002_FND1
+2019-06-21 14:18:47 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:18:47 EXEC SPC_COM_MENU '1';
+2019-06-21 14:18:47 EXEC SPC_V002_FND1
+2019-06-21 14:18:53 EXEC SPC_COM_MENU '1';
+2019-06-21 14:18:53 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:28:42 EXEC SPC_COM_DATA '1','1','2';
+2019-06-21 14:28:42 EXEC SPC_COM_MENU '1';
+2019-06-21 14:28:56 EXEC SPC_COM_PERMISSION '1','2','g001';
+2019-06-21 14:28:56 EXEC SPC_COM_MENU '1';
+2019-06-21 14:28:56 EXEC SPC_G001_LST1 '1','1';
+2019-06-21 14:29:01 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:29:01 EXEC SPC_COM_MENU '1';
+2019-06-21 14:29:01 EXEC SPC_V002_FND1
+2019-06-21 14:29:02 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:29:02 EXEC SPC_COM_MENU '1';
+2019-06-21 14:29:02 EXEC SPC_V002_FND1
+2019-06-21 14:52:38 EXEC SPC_COM_MENU '1';
+2019-06-21 14:52:38 EXEC SPC_V002_LST2 'b';
+2019-06-21 14:52:38 EXEC SPC_COM_MENU '1';
+2019-06-21 14:52:38 EXEC SPC_V002_LST2 'bccc';
+2019-06-21 14:52:50 EXEC SPC_COM_MENU '1';
+2019-06-21 14:52:50 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:52:53 EXEC SPC_COM_MENU '1';
+2019-06-21 14:52:53 EXEC SPC_V002_LST2 'v';
+2019-06-21 14:52:58 EXEC SPC_COM_MENU '1';
+2019-06-21 14:53:13 EXEC SPC_COM_MENU '1';
+2019-06-21 14:53:54 EXEC SPC_COM_MENU '1';
+2019-06-21 14:54:23 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:16 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:55:16 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:16 EXEC SPC_V002_FND1
+2019-06-21 14:55:17 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:55:17 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:17 EXEC SPC_V002_FND1
+2019-06-21 14:55:24 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:24 EXEC SPC_V002_LST2 'bbbbbb';
+2019-06-21 14:55:32 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:32 EXEC SPC_V002_LST2 'a';
+2019-06-21 14:55:35 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:35 EXEC SPC_V002_LST2 'v';
+2019-06-21 14:55:43 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:43 EXEC SPC_V002_ACT1 '','','bbbbbb','確認お願い致します。１','0','0','0','','','','[]','[{"row_id":1,"word_id":"316","word_dtl_id":"0"}]','[]','1','::1';
+2019-06-21 14:55:45 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:45 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 14:55:46 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:55:46 EXEC SPC_COM_MENU '1';
+2019-06-21 14:55:46 EXEC SPC_V002_FND1
+2019-06-21 14:56:41 EXEC SPC_COM_MENU '1';
+2019-06-21 14:56:41 EXEC SPC_V002_ACT1 '322','1','bbbbbb','確認お願い致します。１','0','0','0','','','','[]','[]','[{"language1_content":"a","language2_content":"b"}]','1','::1';
+2019-06-21 14:56:43 EXEC SPC_COM_MENU '1';
+2019-06-21 14:56:43 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 14:56:43 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 14:56:43 EXEC SPC_COM_MENU '1';
+2019-06-21 14:56:43 EXEC SPC_V002_FND1
+2019-06-21 15:57:59 EXEC SPC_COM_MENU '1';
+2019-06-21 15:57:59 EXEC SPC_V002_LST2 'a';
+2019-06-21 15:58:03 EXEC SPC_COM_MENU '1';
+2019-06-21 15:58:03 EXEC SPC_V002_LST2 'v';
+2019-06-21 15:58:08 EXEC SPC_COM_MENU '1';
+2019-06-21 15:58:08 EXEC SPC_V002_LST2 'f';
+2019-06-21 15:58:14 EXEC SPC_COM_MENU '1';
+2019-06-21 15:58:14 EXEC SPC_V002_ACT1 '322','1','bbbbbb','確認お願い致します。１','0','0','0','','','','[]','[{"row_id":1,"word_id":"316","word_dtl_id":"0"},{"row_id":2,"word_id":"315","word_dtl_id":"0"}]','[{"language1_content":"a","language2_content":"b"}]','1','::1';
+2019-06-21 15:58:16 EXEC SPC_COM_MENU '1';
+2019-06-21 15:58:16 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 15:58:16 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 15:58:16 EXEC SPC_COM_MENU '1';
+2019-06-21 15:58:16 EXEC SPC_V002_FND1
+2019-06-21 15:59:41 EXEC SPC_COM_MENU '1';
+2019-06-21 15:59:41 EXEC SPC_V002_LST2 'a';
+2019-06-21 15:59:43 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 15:59:43 EXEC SPC_COM_MENU '1';
+2019-06-21 15:59:43 EXEC SPC_V002_FND1
+2019-06-21 15:59:43 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 15:59:43 EXEC SPC_COM_MENU '1';
+2019-06-21 15:59:43 EXEC SPC_V002_FND1
+2019-06-21 15:59:55 EXEC SPC_COM_PERMISSION '1','2','v001';
+2019-06-21 15:59:55 EXEC SPC_COM_MENU '1';
+2019-06-21 15:59:55 EXEC SPC_V001_LST1
+2019-06-21 16:00:04 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:04 EXEC SPC_V001_LST2 '0','0','0','-1','bbbb','','50','1';
+2019-06-21 16:00:06 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:00:06 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:06 EXEC SPC_V002_FND1
+2019-06-21 16:00:07 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:00:07 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:07 EXEC SPC_V002_FND1
+2019-06-21 16:00:07 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:07 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 16:00:11 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:11 EXEC SPC_V002_LST2 'a';
+2019-06-21 16:00:15 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:15 EXEC SPC_V002_LST2 'd';
+2019-06-21 16:00:20 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:20 EXEC SPC_V002_LST2 'g';
+2019-06-21 16:00:25 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:25 EXEC SPC_V002_ACT1 '322','1','bbbbbb','確認お願い致します。１','0','0','0','','','','[{"row_id":1,"word_id":"312","word_dtl_id":"1"}]','[{"row_id":1,"word_id":"314","word_dtl_id":"0"},{"row_id":2,"word_id":"316","word_dtl_id":"0"}]','[{"language1_content":"a","language2_content":"b"},{"language1_content":"a","language2_content":"b"}]','1','::1';
+2019-06-21 16:00:26 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:26 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 16:00:26 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:00:26 EXEC SPC_COM_MENU '1';
+2019-06-21 16:00:26 EXEC SPC_V002_FND1
+2019-06-21 16:36:24 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:36:24 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:24 EXEC SPC_V002_FND1
+2019-06-21 16:36:25 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:36:25 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:25 EXEC SPC_V002_FND1
+2019-06-21 16:36:25 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:25 EXEC SPC_v002_LST1 '322','1';
+2019-06-21 16:36:33 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:36:33 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:33 EXEC SPC_V002_FND1
+2019-06-21 16:36:33 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:36:33 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:33 EXEC SPC_V002_FND1
+2019-06-21 16:36:37 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:37 EXEC SPC_V002_LST2 'cccccc';
+2019-06-21 16:36:42 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:42 EXEC SPC_V002_LST2 'c';
+2019-06-21 16:36:46 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:46 EXEC SPC_V002_LST2 'c';
+2019-06-21 16:36:50 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:50 EXEC SPC_V002_LST2 'v';
+2019-06-21 16:36:54 EXEC SPC_COM_MENU '1';
+2019-06-21 16:36:54 EXEC SPC_V002_LST2 'b';
+2019-06-21 16:37:00 EXEC SPC_COM_MENU '1';
+2019-06-21 16:37:00 EXEC SPC_V002_ACT1 '','','cccccc','','0','0','0','','','','[{"row_id":1,"word_id":"318","word_dtl_id":"1"},{"row_id":2,"word_id":"320","word_dtl_id":"1"}]','[{"row_id":1,"word_id":"316","word_dtl_id":"0"},{"row_id":2,"word_id":"319","word_dtl_id":"0"}]','[]','1','::1';
+2019-06-21 16:55:30 EXEC SPC_COM_MENU '1';
+2019-06-21 16:55:30 EXEC SPC_V002_ACT1 '','','cccccc','','0','0','0','','','','[{"row_id":1,"word_id":"318","word_dtl_id":"1"},{"row_id":2,"word_id":"320","word_dtl_id":"1"}]','[{"row_id":1,"word_id":"316","word_dtl_id":"0"},{"row_id":2,"word_id":"319","word_dtl_id":"0"}]','[]','1','::1';
+2019-06-21 16:55:32 EXEC SPC_COM_MENU '1';
+2019-06-21 16:55:32 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 16:55:32 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 16:55:32 EXEC SPC_COM_MENU '1';
+2019-06-21 16:55:32 EXEC SPC_V002_FND1
+2019-06-21 17:08:18 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:08:18 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:18 EXEC SPC_V002_FND1
+2019-06-21 17:08:19 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:08:19 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:19 EXEC SPC_V002_FND1
+2019-06-21 17:08:21 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:21 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 17:08:32 EXEC SPC_COM_PERMISSION '1','2','v001';
+2019-06-21 17:08:32 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:32 EXEC SPC_V001_LST1
+2019-06-21 17:08:33 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:33 EXEC SPC_V001_LST2 '0','0','0','-1','','','50','1';
+2019-06-21 17:08:37 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:08:37 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:37 EXEC SPC_V002_FND1
+2019-06-21 17:08:37 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:08:37 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:37 EXEC SPC_V002_FND1
+2019-06-21 17:08:38 EXEC SPC_COM_MENU '1';
+2019-06-21 17:08:38 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 17:09:00 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:09:00 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:00 EXEC SPC_V002_FND1
+2019-06-21 17:09:01 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:09:01 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:01 EXEC SPC_V002_FND1
+2019-06-21 17:09:01 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:01 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 17:09:24 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:09:24 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:24 EXEC SPC_V002_FND1
+2019-06-21 17:09:24 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 17:09:24 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:25 EXEC SPC_V002_FND1
+2019-06-21 17:09:25 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:25 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 17:09:32 EXEC SPC_COM_MENU '1';
+2019-06-21 17:09:32 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:04:31 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:04:31 EXEC SPC_COM_MENU '1';
+2019-06-21 18:04:31 EXEC SPC_V002_FND1
+2019-06-21 18:04:32 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:04:32 EXEC SPC_COM_MENU '1';
+2019-06-21 18:04:32 EXEC SPC_V002_FND1
+2019-06-21 18:04:32 EXEC SPC_COM_MENU '1';
+2019-06-21 18:04:32 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:04:37 EXEC SPC_COM_MENU '1';
+2019-06-21 18:04:37 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:10:07 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:10:07 EXEC SPC_COM_MENU '1';
+2019-06-21 18:10:07 EXEC SPC_V002_FND1
+2019-06-21 18:10:07 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:10:08 EXEC SPC_COM_MENU '1';
+2019-06-21 18:10:08 EXEC SPC_V002_FND1
+2019-06-21 18:10:08 EXEC SPC_COM_MENU '1';
+2019-06-21 18:10:08 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:10:11 EXEC SPC_COM_MENU '1';
+2019-06-21 18:10:11 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:12:56 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:12:56 EXEC SPC_COM_MENU '1';
+2019-06-21 18:12:56 EXEC SPC_V002_FND1
+2019-06-21 18:12:57 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:12:57 EXEC SPC_COM_MENU '1';
+2019-06-21 18:12:57 EXEC SPC_V002_FND1
+2019-06-21 18:12:58 EXEC SPC_COM_MENU '1';
+2019-06-21 18:12:58 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:13:03 EXEC SPC_COM_MENU '1';
+2019-06-21 18:13:03 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:13:53 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:13:53 EXEC SPC_COM_MENU '1';
+2019-06-21 18:13:54 EXEC SPC_V002_FND1
+2019-06-21 18:13:54 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:13:54 EXEC SPC_COM_MENU '1';
+2019-06-21 18:13:54 EXEC SPC_V002_FND1
+2019-06-21 18:13:55 EXEC SPC_COM_MENU '1';
+2019-06-21 18:13:55 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:13:57 EXEC SPC_COM_MENU '1';
+2019-06-21 18:13:57 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:14:38 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:14:38 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:38 EXEC SPC_V002_FND1
+2019-06-21 18:14:38 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:14:38 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:38 EXEC SPC_V002_FND1
+2019-06-21 18:14:39 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:39 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:14:41 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:41 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:14:57 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:14:57 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:57 EXEC SPC_V002_FND1
+2019-06-21 18:14:57 EXEC SPC_COM_PERMISSION '1','2','v002';
+2019-06-21 18:14:57 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:57 EXEC SPC_V002_FND1
+2019-06-21 18:14:57 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:57 EXEC SPC_v002_LST1 '312','0';
+2019-06-21 18:14:59 EXEC SPC_COM_MENU '1';
+2019-06-21 18:14:59 EXEC SPC_v002_LST1 '322','0';
+2019-06-21 18:15:04 EXEC SPC_COM_MENU '1';
+2019-06-21 18:15:04 EXEC SPC_V002_ACT1 '322','0','cccccc','','0','0','0','','','','[{"row_id":1,"word_id":"318","word_dtl_id":"1"},{"row_id":2,"word_id":"320","word_dtl_id":"1"}]','[{"row_id":1,"word_id":"316","word_dtl_id":"0"},{"row_id":2,"word_id":"319","word_dtl_id":"0"}]','[]','1','::1';
+2019-06-21 18:15:06 EXEC SPC_COM_MENU '1';
+2019-06-21 18:15:06 EXEC SPC_v002_LST1 '322','0';

@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_W001_ACT1]
-	 @P_voc_id_xml			XML				=   ''
+	 @P_voc_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -37,9 +37,11 @@ BEGIN
 		,	M007.del_flg	=	1
 		FROM M007 _M007
 		INNER JOIN( 
-		SELECT
-			post_id		=	T.C.value('@id', 'nvarchar(15)')
-		FROM @P_voc_id_xml.nodes('row') T(C)) TEMP
+		SELECT              
+            id    AS post_id          
+        FROM OPENJSON(@P_voc_id_json) WITH(
+        	id	            VARCHAR(10)	'$.id'
+        )) TEMP
 		ON TEMP.post_id= _M007.post_id
 
 	END TRY

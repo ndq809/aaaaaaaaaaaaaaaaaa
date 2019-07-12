@@ -1,18 +1,18 @@
 <?php
 namespace App\Helpers;
-use Common;
+
 class Button
 {
 
     //register button
     protected static $button_val = array(
         'btn-list'         => array('id' => 'btn-list', 'class' => '', 'icon' => 'fa fa-file-text', 'label' => 'Danh Sách', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-add'          => array('id' => 'btn-add', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'add'),
-        'btn-update'       => array('id' => 'btn-update', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Cập Nhật', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'edit'),
-        'btn-delete'       => array('id' => 'btn-delete', 'class' => '', 'icon' => 'fa fa-remove', 'label' => 'Xóa', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'delete'),
+        'btn-add'          => array('id' => 'btn-add', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Mới', 'data_popup' => 'tooltip', 'color' => '', 'execute_type' => 'add'),
+        'btn-update'       => array('id' => 'btn-update', 'class' => '', 'icon' => 'fa fa-refresh', 'label' => 'Cập Nhật', 'data_popup' => 'tooltip', 'color' => '', 'execute_type' => 'edit'),
+        'btn-delete'       => array('id' => 'btn-delete', 'class' => '', 'icon' => 'fa fa-remove', 'label' => 'Xóa', 'data_popup' => 'tooltip', 'color' => '', 'execute_type' => 'delete'),
         'btn-search'       => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-search', 'label' => 'Tìm Kiếm', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-save'         => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'edit'),
-        'btn-print'        => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => '','execute_type' => 'export'),
+        'btn-save'         => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => '', 'execute_type' => 'edit'),
+        'btn-print'        => array('id' => 'btn-search', 'class' => '', 'icon' => 'fa fa-print', 'label' => 'In Dữ Liệu', 'data_popup' => 'tooltip', 'color' => '', 'execute_type' => 'export'),
         'btn-cancel'       => array('id' => 'btn-cancel', 'class' => '', 'icon' => 'fa fa-minus-circle', 'label' => 'Hủy', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-new-row'      => array('id' => 'btn-new-row', 'class' => '', 'icon' => 'fa fa-plus', 'label' => 'Thêm Hàng', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-manager-page' => array('id' => 'btn-manager', 'class' => '', 'icon' => 'fa fa-share', 'label' => 'Quản Lý', 'data_popup' => 'tooltip', 'color' => ''),
@@ -23,42 +23,43 @@ class Button
         'btn-upgrade'      => array('id' => 'btn-upgrade', 'class' => '', 'icon' => 'fa fa-line-chart', 'label' => 'Tái Bản', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-save-user'    => array('id' => 'btn-save', 'class' => '', 'icon' => 'fa fa-save', 'label' => 'Lưu Lại', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-statistic'    => array('id' => 'btn-statistic', 'class' => '', 'icon' => 'fa fa-calculator', 'label' => 'Thống Kê', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-confirm'    => array('id' => 'btn-confirm', 'class' => '', 'icon' => 'fa fa-check', 'label' => 'Phê Duyệt', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-public'    => array('id' => 'btn-public', 'class' => '', 'icon' => 'fa fa-paper-plane', 'label' => 'Công Khai', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-reset-status'    => array('id' => 'btn-reset-status', 'class' => '', 'icon' => 'fa fa-history', 'label' => 'Đặt Lại', 'data_popup' => 'tooltip', 'color' => ''),
-        'btn-select'    => array('id' => 'btn-select', 'class' => '', 'icon' => 'fa fa-check-square-o', 'label' => 'Lựa Chọn', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-confirm'      => array('id' => 'btn-confirm', 'class' => '', 'icon' => 'fa fa-check', 'label' => 'Phê Duyệt', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-public'       => array('id' => 'btn-public', 'class' => '', 'icon' => 'fa fa-paper-plane', 'label' => 'Công Khai', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-reset-status' => array('id' => 'btn-reset-status', 'class' => '', 'icon' => 'fa fa-history', 'label' => 'Đặt Lại', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-select'       => array('id' => 'btn-select', 'class' => '', 'icon' => 'fa fa-check-square-o', 'label' => 'Lựa Chọn', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-execute'      => array('id' => 'btn-execute', 'class' => '', 'icon' => 'fa fa-hourglass-2', 'label' => 'Xử lý', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)
     {
         $permission = \Session::get('permission');
         foreach ($array as $key => $value) {
-            $disable='';
+            $disable = '';
 
-            if(isset(self::$button_val[$value]['execute_type'])){
+            if (isset(self::$button_val[$value]['execute_type'])) {
                 switch (self::$button_val[$value]['execute_type']) {
                     case 'add':
-                        if($permission['add_per']==0){
-                            $disable='btn-disable';
-                            self::$button_val[$value]['id']='disable';
+                        if ($permission['add_per'] == 0) {
+                            $disable                        = 'btn-disable';
+                            self::$button_val[$value]['id'] = 'disable';
                         }
                         break;
                     case 'edit':
-                        if($permission['edit_per']==0){
-                           $disable='btn-disable';
-                            self::$button_val[$value]['id']='disable'; 
+                        if ($permission['edit_per'] == 0) {
+                            $disable                        = 'btn-disable';
+                            self::$button_val[$value]['id'] = 'disable';
                         }
                         break;
                     case 'delete':
-                        if($permission['delete_per']==0){
-                            $disable='btn-disable';
-                            self::$button_val[$value]['id']='disable';
+                        if ($permission['delete_per'] == 0) {
+                            $disable                        = 'btn-disable';
+                            self::$button_val[$value]['id'] = 'disable';
                         }
                         break;
                     case 'export':
-                        if($permission['report_per']==0){
-                            $disable='btn-disable';
-                            self::$button_val[$value]['id']='disable';
+                        if ($permission['report_per'] == 0) {
+                            $disable                        = 'btn-disable';
+                            self::$button_val[$value]['id'] = 'disable';
                         }
                         break;
                     default:

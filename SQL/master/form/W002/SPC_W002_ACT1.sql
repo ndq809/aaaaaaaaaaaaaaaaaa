@@ -12,14 +12,14 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_catalogue_nm     	NVARCHAR(200)		= ''
 ,    @P_group_nm     		NVARCHAR(200)		= ''
 ,    @P_post_title     		NVARCHAR(200)		= ''
-,    @P_post_tag     		XML					= ''
+,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_content    	NTEXT				= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
 ,    @P_post_media_div     	TINYINT				= 0
-,    @P_xml_detail   		XML					= ''
-,    @P_xml_detail1   		XML					= ''
-,    @P_xml_detail2   		XML					= ''
+,    @P_json_detail   		NVARCHAR(MAX)		= ''
+,    @P_json_detail1   		NVARCHAR(MAX)		= ''
+,    @P_json_detail2   		NVARCHAR(MAX)		= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -27,18 +27,18 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 	DECLARE 
-		@ERR_TBL				ERRTABLE
-	,	@w_time					DATETIME			= SYSDATETIME()
-	,	@w_program_id			NVARCHAR(50)		= 'W002'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Thêm bài viết'
-	,	@w_result				NVARCHAR(10)		= 'OK'
-	,	@w_mode					NVARCHAR(20)		= 'insert'
-	,	@w_prs_key				NVARCHAR(1000)		= ''
-	,	@w_message				TINYINT				= 0
-	,	@w_inserted_key			VARCHAR(15)			= ''
-	,	@w_briged_id			INT					= NULL
-	,	@w_increase_id			INT					= 0
-	,	@w_old_media			NVARCHAR(1000)		= ''
+		@ERR_TBL					ERRTABLE
+	,	@w_time						DATETIME			= SYSDATETIME()
+	,	@w_program_id				NVARCHAR(50)		= 'W002'
+	,	@w_prs_prg_nm				NVARCHAR(50)		= N'Thêm bài viết'
+	,	@w_result					NVARCHAR(10)		= 'OK'
+	,	@w_mode						NVARCHAR(20)		= 'insert'
+	,	@w_prs_key					NVARCHAR(1000)		= ''
+	,	@w_message					TINYINT				= 0
+	,	@w_inserted_key				VARCHAR(15)			= ''
+	,	@w_briged_id				INT					= NULL
+	,	@w_increase_id				INT					= 0
+	,	@w_old_media				NVARCHAR(1000)		= ''
 
 	BEGIN TRANSACTION
 	BEGIN TRY
@@ -80,6 +80,103 @@ BEGIN
 	END
 
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+
+	IF NOT EXISTS(SELECT 1
+			  FROM M002 
+			  WHERE 
+				  CONVERT(NVARCHAR(15),M002.catalogue_id)		=	@P_catalogue_nm
+			  AND LOWER(M002.catalogue_div)	=	LOWER(@P_catalogue_div) 
+			  AND M002.del_flg			=	0
+	)
+	BEGIN
+		--
+		INSERT INTO M002(
+			 catalogue_div     
+		,	 catalogue_nm     	   
+		,	 cre_user
+		,	 cre_prg
+		,	 cre_ip
+		,	 cre_date
+		,	 upd_user
+		,	 upd_prg
+		,	 upd_ip
+		,	 upd_date
+		,	 del_user
+		,	 del_prg
+		,	 del_ip
+		,	 del_date
+		,	 del_flg	
+		)
+		SELECT
+		     @P_catalogue_div  
+		,	 @P_catalogue_nm   		
+		,	 @P_user_id
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	  0
+
+		SET @P_catalogue_nm = SCOPE_IDENTITY()
+		
+	END
+
+	IF NOT EXISTS(SELECT 1
+			  FROM M003 
+			  WHERE 
+				  CONVERT(NVARCHAR(15),M003.group_id)		=	@P_group_nm
+			  AND M003.catalogue_div	=	@P_catalogue_div
+			  AND LOWER(M003.catalogue_id)	=	LOWER(@P_catalogue_nm) 
+			  AND M003.del_flg			=	0
+	)
+	BEGIN
+		--
+		INSERT INTO M003 (
+			 catalogue_div
+		,	 catalogue_id     
+		,	 group_nm     	   
+		,	 cre_user
+		,	 cre_prg
+		,	 cre_ip
+		,	 cre_date
+		,	 upd_user
+		,	 upd_prg
+		,	 upd_ip
+		,	 upd_date
+		,	 del_user
+		,	 del_prg
+		,	 del_ip
+		,	 del_date
+		,	 del_flg	
+		)
+		SELECT
+			 @P_catalogue_div
+		,    @P_catalogue_nm  
+		,	 @P_group_nm   		
+		,	 @P_user_id
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	 NULL
+		,	  0
+
+		SET @P_group_nm = SCOPE_IDENTITY()
+
+	END
 
 	CREATE TABLE #VOCABULARY(
 		row_id	INT
@@ -127,33 +224,53 @@ BEGIN
 	)
 
 	INSERT INTO #TABLE_DETAIL2
-	SELECT
-		row_id	=	T.C.value('@row_id 		  ', 'int')
-	,	content	=	T.C.value('@content 	  ', 'nvarchar(max)')
-	,	verify	=	T.C.value('@verify	  ', 'tinyint')
-	,	question_div	=	T.C.value('@question_div	  ', 'tinyint')
-	FROM @P_xml_detail2.nodes('row') T(C)
+	SELECT              
+			row_id			AS row_id		
+		,	content			AS content		
+		,	verify			AS verify		
+		,	question_div	AS question_div          
+		FROM OPENJSON(@P_json_detail2) WITH(
+     		row_id				NVARCHAR(100)	'$.row_id		 '
+		,	content			    NVARCHAR(100)	'$.content		'
+		,	verify			    NVARCHAR(100)	'$.verify		'
+		,	question_div	    NVARCHAR(100)	'$.question_div'
+    )
 
 	INSERT INTO #TABLE_DETAIL
-	SELECT
-		vocabulary_id		=	T.C.value('@vocabulary_id 		  ', 'int')
-	,	vocabulary_dtl_id 	=	T.C.value('@vocabulary_dtl_id 	  ', 'tinyint')
-	,	edit_confirm 		=	T.C.value('@edit-confirm 	  ', 'tinyint')
-	,	vocabulary_div 		=	T.C.value('@vocabulary_div 	  ', 'tinyint')
-	,	vocabulary_nm 		=	T.C.value('@vocabulary_nm 	  ', 'nvarchar(200)')
-	,	spelling 			=	T.C.value('@spelling 	  ', 'nvarchar(200)')
-	,	mean 				=	T.C.value('@mean 	  ', 'nvarchar(MAX)')
-	,	explain 			=	T.C.value('@explain 	  ', 'nvarchar(MAX)')
-	,	row_index 			=	row_number() over(partition by T.C.value('@vocabulary_id', 'int'),T.C.value('@vocabulary_dtl_id', 'tinyint') order by T.C.value('@vocabulary_id', 'int'),T.C.value('@vocabulary_dtl_id', 'tinyint'))
-	FROM @P_xml_detail.nodes('row') T(C)
-	WHERE T.C.value('@edit-confirm 	  ', 'nvarchar(15)') IS NOT NULL 
+	SELECT              
+			vocabulary_id			AS vocabulary_id		
+		,	vocabulary_dtl_id 		AS vocabulary_dtl_id 	
+		,	edit_confirm 			AS edit_confirm 		
+		,	vocabulary_div 			AS vocabulary_div 		         
+		,	vocabulary_nm 			AS vocabulary_nm 		         
+		,	spelling 				AS spelling 			         
+		,	mean 					AS mean 				         
+		,	explain 				AS explain 			         
+		,	row_number() over(partition by vocabulary_id,vocabulary_dtl_id order by vocabulary_id,vocabulary_dtl_id)	AS row_index 			         
+		FROM OPENJSON(@P_json_detail) WITH(
+     		vocabulary_id				NVARCHAR(100)	'$.vocabulary_id		 '
+		,	vocabulary_dtl_id 		    NVARCHAR(100)	'$.vocabulary_dtl_id 	'
+		,	edit_confirm 			    NVARCHAR(100)	'$.edit_confirm 		'
+		,	vocabulary_div 			    NVARCHAR(100)	'$.vocabulary_div 		'
+		,	vocabulary_nm 			    NVARCHAR(100)	'$.vocabulary_nm 		'
+		,	spelling 				    NVARCHAR(100)	'$.spelling 			'
+		,	mean 					    NVARCHAR(100)	'$.mean 				'
+		,	explain 				    NVARCHAR(100)	'$.explain 			'
+    ) AS #TEMP
+	WHERE 
+		#TEMP.edit_confirm IS NOT NULL
 
 	INSERT INTO #VOCABULARY
-	SELECT
-		row_id						=	T.C.value('@row_id 	  ', 'nvarchar(15)')
-	,	Vocabulary_id				=	T.C.value('@vocabulary_code 	  ', 'INT')
-	FROM @P_xml_detail.nodes('row') T(C)
-	WHERE T.C.value('@edit-confirm 	  ', 'nvarchar(15)') IS NULL
+	SELECT              
+			row_id			AS row_id		
+		,	Vocabulary_id		AS Vocabulary_id
+		FROM OPENJSON(@P_json_detail) WITH(
+			row_id						NVARCHAR(100)	'$.vocabulary_id		'
+		,	vocabulary_id				NVARCHAR(100)	'$.vocabulary_code		'
+		,	edit_confirm 				NVARCHAR(100)	'$.edit_confirm 		'
+    ) AS #TEMP1
+	WHERE 
+		#TEMP1.edit_confirm IS NULL
 
 	IF EXISTS(
 	SELECT *
@@ -219,9 +336,9 @@ BEGIN
 	WHERE #TABLE_DETAIL.edit_confirm IS NOT NULL
 
 	INSERT INTO M013
-	SELECT
-		T.C.value('@tag_nm', 'nvarchar(1000)')		
-	,	(SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.number_id = @P_catalogue_div)		
+	SELECT              
+    	#TEMP2.tag_nm	
+	,	(SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.number_id = @P_catalogue_div)	
 	,	0
 	,	0
 	,	@P_user_id
@@ -235,20 +352,27 @@ BEGIN
 	,	NULL
 	,	NULL
 	,	NULL
-	,	NULL
-	FROM @P_post_tag.nodes('row') T(C)
+	,	NULL   
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+	,	is_new			    NVARCHAR(100)	'$.is_new'
+    ) AS #TEMP2
 	LEFT JOIN M013
-	ON T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm
+	ON #TEMP2.tag_nm = M013.tag_nm
 	AND M013.tag_div = (SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.number_id = @P_catalogue_div)
-	WHERE T.C.value('@is_new', 'int') = 1
+	WHERE #TEMP2.is_new = 1
 	AND M013.tag_id IS NULL
 
 	INSERT INTO #TAG
-	SELECT
-		M013.tag_id
-	FROM @P_post_tag.nodes('row') T(C)
+	SELECT              
+    	M013.tag_id
+	FROM OPENJSON(@P_post_tag) WITH(
+    	tag_nm	            NVARCHAR(1000)	'$.tag_nm	     '
+    ,	tag_id	            NVARCHAR(1000)	'$.tag_id	     '
+    ) AS #TEMP3
 	INNER JOIN M013
-	ON (T.C.value('@tag_nm', 'nvarchar(1000)') = M013.tag_nm OR T.C.value('@tag_id', 'nvarchar(1000)') = M013.tag_id)
+	ON #TEMP3.tag_nm = M013.tag_nm 
+	OR #TEMP3.tag_id = M013.tag_id
 
 	IF @P_post_id = ''
 	BEGIN
@@ -360,11 +484,11 @@ BEGIN
 		,	del_date
 
 		)
-		SELECT
-			@w_inserted_key
+		SELECT              
+        	@w_inserted_key
 		,	@P_catalogue_div
-		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
-		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
+		,	language1_content
+		,	language2_content
 		,	0
 		,	0
 		,	@P_user_id
@@ -378,8 +502,11 @@ BEGIN
 		,	NULL
 		,	NULL
 		,	NULL
-		,	NULL
-		FROM @P_xml_detail1.nodes('row') T(C)
+		,	NULL        
+		FROM OPENJSON(@P_json_detail1) WITH(
+        	language1_content       NVARCHAR(100)	'$.language1_content '
+		,	language2_content	    NVARCHAR(100)	'$.language2_content'
+        )
 
 		IF @P_catalogue_div IN(7,8,9)
 		BEGIN
@@ -561,11 +688,11 @@ BEGIN
 		,	del_date
 
 		)
-		SELECT
-			@P_post_id
+		SELECT              
+        	@w_inserted_key
 		,	@P_catalogue_div
-		,	language1_content		=	T.C.value('@language1_content 		', 'nvarchar(MAX)')
-		,	language2_content		=	T.C.value('@language2_content 		', 'nvarchar(MAX)')
+		,	language1_content
+		,	language2_content
 		,	0
 		,	0
 		,	@P_user_id
@@ -579,8 +706,12 @@ BEGIN
 		,	NULL
 		,	NULL
 		,	NULL
-		,	NULL
-		FROM @P_xml_detail1.nodes('row') T(C)
+		,	NULL        
+		FROM OPENJSON(@P_json_detail1) WITH(
+        	language1_content       NVARCHAR(100)	'$.language1_content '
+		,	language2_content	    NVARCHAR(100)	'$.language2_content'
+        )
+
 		UPDATE M007 SET 
 			 catalogue_div    =	@P_catalogue_div   
 		,	 catalogue_id	  =	IIF(@P_catalogue_nm='',NULL,@P_catalogue_nm)

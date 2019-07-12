@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_S002_ACT1]
-	 @P_emp_id_xml			XML				=   ''
+	 @P_emp_id_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -26,6 +26,9 @@ BEGIN
 	,	@w_prs_key				NVARCHAR(1000)		= ''
 	,	@w_message				TINYINT				= 0
 	,	@w_inserted_key			VARCHAR(15)			= ''
+	,	@DynamicPivotQuery		NVARCHAR(MAX)
+	,	@ColumnName				NVARCHAR(MAX)
+
 	--
 	BEGIN TRANSACTION
 	BEGIN TRY
@@ -47,15 +50,23 @@ BEGIN
 		)
 
 		INSERT INTO #SCREEN_DATA
-		SELECT
-			row_id				=	T.C.value('@row_id		 ', 'INT')
-		,	account_id			=	T.C.value('@account_id		 ', 'nvarchar(15)')
-		,	account_nm   		=	T.C.value('@account_nm    ',	'nvarchar(50)')
-		,	employee_id  		=	T.C.value('@employee_id   ',	'nvarchar(20)')
-		,	system_div   		=	T.C.value('@system_div        ','nvarchar(50)')
-		,	account_div  		=	T.C.value('@account_div    ',	'nvarchar(15)')
-		,	remark				=	T.C.value('@remark		 ',		'nvarchar(MAX)')
-		FROM @P_emp_id_xml.nodes('row') T(C)
+		SELECT              
+           		row_id			AS	row_id		
+			,	account_id		AS	account_id	
+			,	account_nm		AS	account_nm  
+			,	employee_id		AS	employee_id        
+			,	system_div		AS	system_div         
+			,	account_div		AS	account_div        
+			,	remark			AS	remark		       
+			FROM OPENJSON(@P_emp_id_json) WITH(
+        		row_id				NVARCHAR(100)	'$.row_id		 '
+			,	account_id		    NVARCHAR(100)	'$.account_id	'
+			,	account_nm		    NVARCHAR(100)	'$.account_nm	'
+			,	employee_id		    NVARCHAR(100)	'$.employee_id	'
+			,	system_div		    NVARCHAR(100)	'$.system_div	'
+			,	account_div		    NVARCHAR(100)	'$.account_div	'
+			,	remark			    NVARCHAR(100)	'$.remark		'
+        )
 
 		INSERT INTO #CHECK_MASTER
 		SELECT #SCREEN_DATA.row_id, CAST(employee_id AS NVARCHAR(15)),'employee_id' FROM #SCREEN_DATA
@@ -64,24 +75,43 @@ BEGIN
 		UNION
 		SELECT #SCREEN_DATA.row_id,CAST(account_div AS NVARCHAR(15)),'account_div' FROM #SCREEN_DATA
 
-		DELETE #CHECK_MASTER
-		FROM #CHECK_MASTER
+			  SELECT DISTINCT row_id,employee_id,system_div,account_div
+				INTO #TEMP FROM #CHECK_MASTER
+				PIVOT( MAX(item_id) 
+					  FOR item_div IN (employee_id,system_div,account_div)) AS #PVTTable
+		
+
+		UPDATE #TEMP SET
+			#TEMP.system_div = IIF(M999_1.number_id IS NULL,999,M999_1.number_id)
+		,	#TEMP.employee_id = M009.employee_id
+		,	#TEMP.account_div = IIF(M999_2.number_id IS NULL,IIF(M999_3.number_id IS NULL,999,M999_3.number_id),M999_2.number_id)
+		FROM #TEMP
 		LEFT JOIN M999 M999_1
 		ON M999_1.name_div = 4
-		AND #CHECK_MASTER.item_id = CAST(M999_1.number_id AS NVARCHAR(15))
+		AND #TEMP.system_div = CAST(M999_1.number_id AS NVARCHAR(15))
 		AND M999_1.del_flg = 0
 		LEFT JOIN M009
-		ON #CHECK_MASTER.item_id = M009.employee_id
+		ON #TEMP.employee_id = M009.employee_id
 		AND M009.del_flg = 0
 		LEFT JOIN M999 M999_2
 		ON M999_2.name_div = 5
-		AND #CHECK_MASTER.item_id = CAST(M999_2.number_id AS NVARCHAR(15))
+		AND #TEMP.account_div = CAST(M999_2.number_id AS NVARCHAR(15))
+		AND M999_1.num_remark1 = 5
 		AND M999_2.del_flg = 0
-		WHERE (M999_1.number_id IS NOT NULL AND #CHECK_MASTER.item_div = 'system_div')
-		OR (#CHECK_MASTER.item_id='' OR M009.employee_id IS NOT NULL AND #CHECK_MASTER.item_div = 'employee_id')
-		OR (M999_2.number_id IS NOT NULL AND #CHECK_MASTER.item_div = 'account_div')
+		LEFT JOIN M999 M999_3
+		ON M999_3.name_div = 14
+		AND #TEMP.account_div = CAST(M999_3.number_id AS NVARCHAR(15))
+		AND M999_1.num_remark1 = 14
+		AND M999_3.del_flg = 0
+		
+		SELECT row_id, item_id, item_div INTO #CHECK
+		FROM (SELECT row_id,employee_id,account_div,system_div FROM #TEMP) p
+		UNPIVOT  
+		   (item_id FOR item_div IN   
+			  (employee_id,account_div,system_div)  
+		)AS unpvt; 
 
-		IF EXISTS (SELECT * FROM #CHECK_MASTER)
+		IF EXISTS (SELECT * FROM #CHECK)
 		BEGIN
 			SET @w_result = 'NG'
 			SET @w_message = 5
@@ -89,11 +119,14 @@ BEGIN
 			SELECT 
 			 1
 			, @w_message
-			, #CHECK_MASTER.item_div
-			, #CHECK_MASTER.row_id
-			FROM #CHECK_MASTER
+			, #CHECK.item_div
+			, #CHECK.row_id
+			FROM #CHECK
+			WHERE #CHECK.item_id = 999
 		END
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
+
+		DELETE #CHECK_MASTER
 
 		INSERT INTO #CHECK_MASTER
 		SELECT
@@ -140,14 +173,23 @@ BEGIN
 		,	del_date			=	NULL
 		,	del_flg				=	0	   	  
 		FROM (
-		SELECT
-			account_id			=	T.C.value('@account_id		 ', 'nvarchar(15)')
-		,	account_nm   		=	T.C.value('@account_nm    ',	'nvarchar(50)')
-		,	employee_id  		=	T.C.value('@employee_id   ',	'nvarchar(20)')
-		,	system_div   		=	T.C.value('@system_div        ','nvarchar(50)')
-		,	account_div  		=	T.C.value('@account_div    ',	'nvarchar(15)')
-		,	remark				=	T.C.value('@remark		 ',		'nvarchar(MAX)')
-		FROM @P_emp_id_xml.nodes('row') T(C)) update_data
+		SELECT              
+           		row_id			AS	row_id		
+			,	account_id		AS	account_id	
+			,	account_nm		AS	account_nm  
+			,	employee_id		AS	employee_id        
+			,	system_div		AS	system_div         
+			,	account_div		AS	account_div        
+			,	remark			AS	remark		       
+			FROM OPENJSON(@P_emp_id_json) WITH(
+        		row_id				NVARCHAR(100)	'$.row_id		 '
+			,	account_id		    NVARCHAR(100)	'$.account_id	'
+			,	account_nm		    NVARCHAR(100)	'$.account_nm	'
+			,	employee_id		    NVARCHAR(100)	'$.employee_id	'
+			,	system_div		    NVARCHAR(100)	'$.system_div	'
+			,	account_div		    NVARCHAR(100)	'$.account_div	'
+			,	remark			    NVARCHAR(100)	'$.remark		'
+        )) update_data
 		WHERE
 			S001.account_id = update_data.account_id
 	--EXEC SPC_S999_ACT1 @P_company_cd_u,@w_prs_user_id,@w_prs_prg,@w_prs_prg_nm,@w_prs_mode,@w_prs_key,@w_prs_result,@w_remarks
