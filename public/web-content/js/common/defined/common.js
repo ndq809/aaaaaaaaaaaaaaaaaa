@@ -1383,7 +1383,6 @@ function keepTokenAlive() {
 }
 
 function showMessage(message_code,ok_callback,cancel_callback,parameter){
-    console.log(1);
     if(typeof _text!='undefined'){
         _text[message_code] = parameter!=undefined?fixMessage(_text[message_code]):_text[message_code];
     }else{
