@@ -88,9 +88,10 @@ $namespace3 = 'App\Modules\User\Controllers';
 Route::group(
 	['namespace' => $namespace3,'prefix'=>'popup','middleware'=>['web']],
 	function() {
-		Route::get('p001','PopupController@getIndex');
-		Route::post('p001','PopupController@p001_search');
-		Route::post('p001/load','PopupController@p001_load');
-		Route::post('p001/refer','PopupController@p001_refer');
+		Route::get('p001','Popup1Controller@getIndex');
+		Route::post('p001','Popup1Controller@p001_search');
+		Route::post('p001/load','Popup1Controller@p001_load');
+		Route::post('p001/refer','Popup1Controller@p001_refer');
+		Route::get('p002','Popup2Controller@getIndex');
 	}
 );

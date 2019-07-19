@@ -8,7 +8,7 @@
                         @if($row['remembered']==0)
                             <tr id="{{$row['row_id']}}">
                                 <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> {{$row['vocabulary_nm']}}</span> </a>
+                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span class="voc_nm"> {{$row['vocabulary_nm']}}</span><span class="voc_pass hidden">*****</span> </a>
                                 </td>
                                 <td >
                                     <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-remember']==1?'btn-remember':'btn-disabled'}}">Đã thuộc</button>
@@ -37,7 +37,7 @@
                         @if($row['remembered']==1)
                             <tr id="{{$row['row_id']}}">
                                 <td>
-                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span> {{$row['vocabulary_nm']}}</span> </a>
+                                    <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span class="voc_nm"> {{$row['vocabulary_nm']}}</span><span class="voc_pass hidden">***</span> </a> </a>
                                 </td>
                                 <td >
                                     <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-forget']==1?'btn-forget':'btn-disabled'}}">{{$row['del_flg']==0?'Đã quên':'Xóa'}}</button>

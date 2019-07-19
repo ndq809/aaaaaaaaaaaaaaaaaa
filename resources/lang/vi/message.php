@@ -137,5 +137,20 @@ return [
             'message_title' => 'Lỗi Dữ Liệu',
             'message_content' => 'Dữ liệu này đang được sử dụng trong một bài đăng ở chế độ công khai',
         ],
+        28 => [
+            'message_div' => 2,
+            'message_title' => 'Qua Ải Thành Công',
+            'message_content' => 'Trả lời hoàn toàn chính xác!<br>Chúc mừng bạn đã vượt qua ải này nhấn OK để chuyển đến ải tiếp theo',
+        ],
+        29 => [
+            'message_div' => 3,
+            'message_title' => 'Qua Ải Thất Bại',
+            'message_content' => 'Bạn mới chỉ trả lời được xxx/xxx câu hỏi!<br>Cố gắng lần nữa nào!',
+        ],
+        30 => [
+            'message_div' => 4,
+            'message_title' => 'Lỗi Dữ Liệu',
+            'message_content' => 'Dữ liệu này đang được sử dụng trong một bài đăng ở chế độ công khai',
+        ],
     ],
 ];

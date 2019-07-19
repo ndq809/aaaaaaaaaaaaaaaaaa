@@ -161,11 +161,6 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="btn-popup" popup-id="popup-box4">
-                                        Nhiệm Vụ
-                                    </a>
-                                </li>
-                                <li>
                                     <a id="post-face">
                                         Post face
                                     </a>

@@ -273,3 +273,34 @@
         </div>
     </div>
 </div>
+<div id="popup-box6" class="modal fade" role="dialog" tabindex='-1'>
+    <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button">
+                    ×
+                </button>
+                <h5 class="modal-title">
+                    KIỂM TRA TỪ VỰNG
+                </h5>
+            </div>
+            <div class="modal-body" style="padding-top: 0px">
+                <div class="form-group" min-width="1024px">
+                    <div id="bonds" style="overflow: auto;"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-sm btn-refresh" type="button">
+                    Làm mới câu hỏi
+                </button>
+                <button class="btn btn-danger btn-sm btn-check-answer" type="button">
+                    Xem kết quả
+                </button>
+                <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+                    Hủy
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

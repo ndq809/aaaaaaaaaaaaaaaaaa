@@ -661,7 +661,12 @@ function changePassword(){
     });
 }
 
-function showMessage(message_code,ok_callback,cancel_callback){
+function showMessage(message_code,ok_callback,cancel_callback,parameter){
+    if(typeof _text!='undefined'){
+        _text[message_code] = parameter!=undefined?fixMessage(_text[message_code],parameter):_text[message_code];
+    }else{
+        parent._text[message_code] = parameter!=undefined?fixMessage(parent._text[message_code],parameter):parent._text[message_code];
+    }
     switch(typeof _type!='undefined'?_type[message_code]:parent._type[message_code]){
         case 1:
            $.sweetModal({
@@ -1563,6 +1568,13 @@ function initFlugin(){
 
         }
     })
+}
+
+function fixMessage(mes,parameter){
+    for (var i = 0; i < parameter.length; i++) {
+        mes = mes.replace('xxx',parameter[i]);
+    }
+    return mes;
 }
 
 

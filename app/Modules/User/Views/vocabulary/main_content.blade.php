@@ -25,7 +25,7 @@
     <h6 class="hint">Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng</h6>
     <a id="btn-relationship"><span class="fa fa-sitemap"></span> Xem Họ Từ</a>
 </div>
-<div class="input-wrap col-xs-12 no-padding hidden">
+<div class="input-wrap col-xs-12 no-padding margin-top hidden">
     <input type="text" name="hidden" class="form-control input-sm vocal-engword-input text-center" value="" placeholder="Nhập từ hiện tại kết thúc bằng dấu # để kiểm tra">
     <i class="fa fa-check input-icon hidden"></i>
 </div>

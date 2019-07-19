@@ -68,3 +68,9 @@
     right: 10px;
     font-size: 24px;
 }
+
+canvas {  max-width: 100%; }
+
+.FL-main.fieldsLinker{
+	overflow: auto;
+}

@@ -1382,7 +1382,13 @@ function keepTokenAlive() {
     });
 }
 
-function showMessage(message_code,ok_callback,cancel_callback){
+function showMessage(message_code,ok_callback,cancel_callback,parameter){
+    console.log(1);
+    if(typeof _text!='undefined'){
+        _text[message_code] = parameter!=undefined?fixMessage(_text[message_code]):_text[message_code];
+    }else{
+        parent._text[message_code] = parameter!=undefined?fixMessage(parent._text[message_code]):parent._text[message_code];
+    }
     switch(typeof _type!='undefined'?_type[message_code]:parent._type[message_code]){
         case 1:
            $.sweetModal({
@@ -1564,4 +1570,30 @@ function getScreenId(screen_nm){
         default:
             return 0;
     }
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function fixMessage(mes,parameter){
+    for (var i = 0; i < parameter.length; i++) {
+        mes = mes.replace('xxx',parameter[i]);
+    }
+    return mes;
 }

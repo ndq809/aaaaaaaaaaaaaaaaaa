@@ -86,14 +86,9 @@ function initListener() {
 
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
-            $("." + $(this).attr("id")+'.current').show();
-            $("." + $(this).attr("id")+'.current').removeClass('current');
-            if($(this).attr('id')=='vocal-engword'){
-                $('.input-wrap').addClass('hidden');
-            }
+            $(".vocabulary-box ." + $(this).attr("id")).show();
         } else {
-            $("." + $(this).attr("id")).addClass('current');
-            $("." + $(this).attr("id")).hide();
+            $(".vocabulary-box ." + $(this).attr("id")).hide();
             if($(this).attr('id')=='vocal-audio'){
                 $('.vocabulary-box').find('audio').each(function() {
                     if (!$(this)[0].paused) {
@@ -102,28 +97,9 @@ function initListener() {
                     }
                 });
             }
-            if($(this).attr('id')=='vocal-engword'){
-                $('.input-wrap').removeClass('hidden');
-            }
         }
     });
 
-    $(document).on('keyup', '.vocal-engword-input:visible', function() {
-        //remove all special charracter and unless space in string to compare
-        var value = $(this).val().substring(0,$(this).val().length-1).replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
-        var root_value = $('.vocal-engword.current').val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
-        var temp = $(this).val().substring($(this).val().length-1);
-        console.log(value + ' --- '+root_value);
-        if(temp == "#"){
-            if(value == root_value){
-                $('.input-icon').removeClass().addClass('fa fa-check input-icon text-success');
-            }else{
-                $('.input-icon').removeClass().addClass('fa fa-close input-icon text-danger');
-            }
-        }else{
-            $('.input-icon').addClass('hidden');
-        }
-    })
     $(document).on("focus", "#key-word", function() {
         $(this).autocomplete("search", $(this).val());
     });

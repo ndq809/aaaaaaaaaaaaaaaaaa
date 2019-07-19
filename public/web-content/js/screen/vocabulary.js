@@ -78,14 +78,14 @@ function initListener() {
 
     $(document).on("change", ":checkbox", function() {
         if (this.checked) {
-            $("." + $(this).attr("id")+'.current').show();
-            $("." + $(this).attr("id")+'.current').removeClass('current');
+            $("." + $(this).attr("id")).show();
             if($(this).attr('id')=='vocal-engword'){
                 $('.input-wrap').addClass('hidden');
+                $('.voc_nm').removeClass('hidden');
+                $('.voc_pass').addClass('hidden');
             }
         } else {
-            $("." + $(this).attr("id")+':visible').addClass('current');
-            $("." + $(this).attr("id")+':visible').hide();
+            $("." + $(this).attr("id")).hide();
             if($(this).attr('id')=='vocal-audio'){
                 $('.vocabulary-box').find('audio').each(function() {
                     if (!$(this)[0].paused) {
@@ -97,6 +97,8 @@ function initListener() {
             if($(this).attr('id')=='vocal-engword'){
                 $('.input-wrap').removeClass('hidden');
                 $('.vocal-engword-input:visible').val('').focus();
+                $('.voc_nm').addClass('hidden');
+                $('.voc_pass').removeClass('hidden');
             }
         }
     });
@@ -114,11 +116,9 @@ function initListener() {
             switch (e.which) {
                 case 37:
                     previousVocabulary();
-                    $('.vocal-engword-input:visible').val('').focus();
                     break;
                 case 39:
                     nextVocabulary();
-                    $('.vocal-engword-input:visible').val('').focus();
                     break;
                 default:
                     break;
@@ -138,9 +138,8 @@ function initListener() {
      $(document).on('keyup', '.vocal-engword-input:visible', function() {
         //remove all special charracter and unless space in string to compare
         var value = $(this).val().substring(0,$(this).val().length-1).replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
-        var root_value = $('.vocal-engword.current').val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
+        var root_value = $('.vocabulary-box:visible .vocal-engword').val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
         var temp = $(this).val().substring($(this).val().length-1);
-        console.log(value + ' --- '+root_value);
         if(temp == "#"){
             if(value == root_value){
                 $('.input-icon').removeClass().addClass('fa fa-check input-icon text-success');
@@ -230,6 +229,24 @@ function initListener() {
             $(_this).prev('.number-clap').text(effected_count);
         });
     })
+    $('.btn-do-exam').on('click', function(e) {
+        $.fancybox({
+            'width'         : $(window).width()>1024?'70%':'100%',
+            'height'        : 'auto',
+            'autoScale'     : true,
+            'transitionIn'  : 'none',
+            'transitionOut' : 'none',
+            'type'          : 'iframe',
+            'margin'        : 6,
+            'fixed'         : false,
+            'href'          : '/popup/p002',
+            beforeLoad      : function() {
+                _popup_transfer_array['voc_array']=vocabularyArray.map(function (value,index){return {'from':value['vocabulary_nm'],'to':value['mean']};});
+                _popup_transfer_array['voc'] = shuffle(_popup_transfer_array['voc_array']);
+                _popup_transfer_array['mean'] = shuffle([..._popup_transfer_array['voc']]);
+            },
+        });
+    });
 }
 
 function installSlide() {
@@ -259,6 +276,7 @@ function nextVocabulary() {
     $('.current_item').trigger('click');
     if(typeof vocabularyArray[currentItemId - 1] != 'undefined')
     history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
+    $('.vocal-engword-input:visible').val('').focus();
 }
 
 function previousVocabulary() {
@@ -269,6 +287,7 @@ function previousVocabulary() {
     $('.current_item').trigger('click');
     if(typeof vocabularyArray[currentItemId - 1] != 'undefined')
     history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
+    $('.vocal-engword-input:visible').val('').focus();
 }
 
 function selectVocabulary(selectTrTag) {
@@ -279,6 +298,7 @@ function selectVocabulary(selectTrTag) {
     $('.current_item').trigger('click');
     if(typeof vocabularyArray[currentItemId - 1] != 'undefined')
     history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
+    $('.vocal-engword-input:visible').val('').focus();
 }
 
 function switchTabVocabulary(current_li_tag) {
@@ -433,4 +453,82 @@ function getRowId(id){
             return vocabularyArray[i]['row_id'];
         }
     }
+}
+
+function getQuestion() {
+    var input = {
+        "localization":{
+        },
+        "options":{
+            "associationMode":"manyToMany", // oneToOne,manyToMany
+            "lineStyle":"square-ends",
+            // "buttonErase":"Erase Links",
+        },
+            "Lists":[
+                {
+                    "name":"Columns in files",
+                    "list" : [
+                        "firstName",
+                        "lastName",
+                        "phone",
+                        "email",
+                        "role",
+                        "Birthday",
+                        "Adress",
+                        "Sales",
+                        "City"
+                    ]
+                },
+                {
+                    "name":"Available Fields",
+                    "list" : [
+                        "Company",
+                        "jobTitle",
+                        "adress",   
+                        "adress",
+                        "adress",                               
+                        "first_name",
+                        "last_name",
+                        "email_adress",
+                        "Phone number"
+                    ],
+                    "mandatories" :[
+                        "last_name",
+                        "email_adress"
+                    ]
+                }
+                ],
+
+            "existingLinks" : [{"from":"lastName","to":"last_name"},{"from":"firstName","to":"first_name"},{"from":"role","to":"jobTitle"}]
+    };
+    
+    fieldLinks=$("#bonds").fieldsLinker("init",input);
+}
+
+function checkAnswer() {
+    $('.answer-box').removeClass('wrong-answer');
+    $('.answer-box').removeClass('right-answer');
+    $('.answer-box').each(function(i) {
+        check = -1;
+        if ($(this).find('input:checked').length != 0) {
+            $(this).find('input').each(function(j) {
+                var temp = $(this).is(':checked') ? 1 : 0;
+                if (AnswerArray[(i * 4) + j]['verify'] != temp) {
+                    check = 1;
+                }
+            })
+            if (check == -1) {
+                check = 0;
+            }
+        }
+        if (check == 1) {
+            $(this).addClass('wrong-answer');
+            $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-close');
+            $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
+        } else if (check == 0) {
+            $(this).addClass('right-answer');
+            $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-check');
+            $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
+        }
+    })
 }
