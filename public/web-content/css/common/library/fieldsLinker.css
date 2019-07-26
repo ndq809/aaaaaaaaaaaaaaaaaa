@@ -45,3 +45,18 @@
 .activeTag{
     background: rgb(244,67,54,0.36)!important;
 }
+
+.fieldsLinker.mobile li {
+    padding: 2px 2px 2px 4px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+.fieldsLinker.mobile li div {
+    font-size: 12px;
+}
+
+.fieldsLinker.mobile .FL-mid canvas {
+    margin-top: 16px!important;
+}
+

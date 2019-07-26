@@ -28,6 +28,7 @@ class Button
         'btn-reset-status' => array('id' => 'btn-reset-status', 'class' => '', 'icon' => 'fa fa-history', 'label' => 'Đặt Lại', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-select'       => array('id' => 'btn-select', 'class' => '', 'icon' => 'fa fa-check-square-o', 'label' => 'Lựa Chọn', 'data_popup' => 'tooltip', 'color' => ''),
         'btn-execute'      => array('id' => 'btn-execute', 'class' => '', 'icon' => 'fa fa-hourglass-2', 'label' => 'Xử lý', 'data_popup' => 'tooltip', 'color' => ''),
+        'btn-close'        => array('id' => 'btn-close', 'class' => '', 'icon' => 'fa fa-window-close-o', 'label' => 'Đóng', 'data_popup' => 'tooltip', 'color' => ''),
     );
 
     public static function menu_button(array $array)

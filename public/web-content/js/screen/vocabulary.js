@@ -240,10 +240,12 @@ function initListener() {
             'margin'        : 6,
             'fixed'         : false,
             'href'          : '/popup/p002',
+            'closeBtn'      : true,
             beforeLoad      : function() {
                 _popup_transfer_array['voc_array']=vocabularyArray.map(function (value,index){return {'from':value['vocabulary_nm'],'to':value['mean']};});
                 _popup_transfer_array['voc'] = shuffle(_popup_transfer_array['voc_array']);
                 _popup_transfer_array['mean'] = shuffle([..._popup_transfer_array['voc']]);
+                _popup_transfer_array['parent_width'] = $(window).width();
             },
         });
     });

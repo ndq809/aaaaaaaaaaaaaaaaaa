@@ -9,7 +9,10 @@ $(function(){
 function init_p002(){
 	initevent_p002();
     getQuestion();
-    console.log(parent._popup_transfer_array);
+    if(parent._popup_transfer_array['parent_width']<500){
+        $('.fieldsLinker').addClass('mobile');
+        $('.fieldsLinker canvas').height($('.fieldsLinker .FL-left').height()-5);
+    }
 }
 
 function initevent_p002(){
@@ -19,6 +22,10 @@ function initevent_p002(){
 
     $(document).on('click','#btn-refresh',function(){
         clearDataSearch();
+    })
+
+    $(document).on('click','#btn-close',function(){
+        parent.$('.fancybox-close').trigger('click');
     })
     $(document).on('click', '.pager li a', function () {
         var page = $(this).attr('page');
@@ -171,8 +178,8 @@ function getQuestion() {
     $("#btn-save").on("click",function(){
         var results = fieldLinks.fieldsLinker("getLinks");
         var count = 0;
-        $("#Output").html("output => " + JSON.stringify(results.links));
-        $("#Output1").html("output1 => " + JSON.stringify(parent._popup_transfer_array['voc']));
+        // $("#Output").html("output => " + JSON.stringify(results.links));
+        // $("#Output1").html("output1 => " + JSON.stringify(parent._popup_transfer_array['voc']));
         for (var i = 0; i < results.links.length; i++) {
             for (var j = 0; j < parent._popup_transfer_array['voc'].length; j++) {
                 if(JSON.stringify(parent._popup_transfer_array['voc'][j]) == JSON.stringify(results.links[i])){
@@ -182,10 +189,18 @@ function getQuestion() {
             }
         }
         if(count == parent._popup_transfer_array['voc'].length){
-            showMessage(28);
+            showMessage(28,function(){
+
+            });
         }else{
             showMessage(29,function(){},function(){},[count,parent._popup_transfer_array['voc'].length]);
             // alert('Bạn mới chỉ đạt được '+count+'/'+parent._popup_transfer_array['voc'].length+' câu đúng!');
         }
     });
+}
+
+function setInputQuestion(){
+    for (var i = 0; i < parent._popup_transfer_array['voc'].length; i++) {
+        parent._popup_transfer_array['voc'][i]
+    }
 }
