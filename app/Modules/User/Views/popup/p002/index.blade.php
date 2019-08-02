@@ -7,30 +7,40 @@
     {!!WebFunctions::public_url('web-content/css/screen/p002.css')!!}
 @stop
 @section('button')
-    {{Button::menu_button(array('btn-save-user','btn-refresh','btn-close'))}}
+    {{Button::menu_button(array('btn-check','btn-refresh','btn-close'))}}
 @endsection
 @section('content')
-<div class="panel main-panel col-xs-12">
+<div class="panel main-panel col-xs-12 test1">
 	<div class="panel-header">
 		<label class="text-danger">Nối từ tiếng anh ở cột bên trái với nghĩa tương ứng ở cột bên phải</label>
 	</div>
     <div class="panel-content no-padding-left search-block">
-        <div class="form-group" min-width="1024px">
-            <div id="bonds" style="overflow: auto;"></div>
-            <div id="bonds1" style="overflow: auto;">
-                <div class="table-fixed-width no-padding-left" min-width='1160px'>
-                    <table class="table table-hover table-bordered table-focus">
+        <div class="form-group">
+            <div id="test1" style="overflow: auto;"></div>
+        </div>
+    </div>
+</div>
+<div class="panel main-panel col-xs-12 test2 hidden">
+    <div class="panel-header">
+        <label class="text-danger">Điền từ tiếng anh của nghĩa được ghi ở bên trái</label>
+    </div>
+    <div class="panel-content no-padding-left search-block">
+        <div class="form-group">
+            <div id="test2" style="overflow: auto;">
+                <div class="table-fixed-width no-padding-left" min-width='320px'>
+                    <table class="table table-hover table-bordered table-focus table-input">
                         <thead>
                             <tr>
-                                <th width="100px">Nghĩa Tiếng Việt</th>
-                                <th width="80px">Nhập Từ Tiếng Anh</th>
+                                <th >STT</th>
+                                <th >Nghĩa Tiếng Việt</th>
+                                <th width="200px">Nhập Từ Tiếng Anh</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="hidden">
+                                <td width="40px"></td>
                                 <td></td>
-                                <td></td>
-                                <td><input type="" name=""></td>
+                                <td><input type="text" name="" class="form-control input-sm voc-list"></td>
                             </tr>
                         </tbody>
                     </table>

@@ -216,6 +216,7 @@ BEGIN
 	,	content NVARCHAR(MAX)
 	,	verify TINYINT
 	,	question_div TINYINT
+	,	explan NVARCHAR(MAX)
 	)
 
 	CREATE TABLE #TABLE_QUESTION(
@@ -229,11 +230,13 @@ BEGIN
 		,	content			AS content		
 		,	verify			AS verify		
 		,	question_div	AS question_div          
+		,	explan			AS explan          
 		FROM OPENJSON(@P_json_detail2) WITH(
      		row_id				NVARCHAR(100)	'$.row_id		 '
 		,	content			    NVARCHAR(100)	'$.content		'
 		,	verify			    NVARCHAR(100)	'$.verify		'
 		,	question_div	    NVARCHAR(100)	'$.question_div'
+		,	explan				NVARCHAR(100)	'$.explan'
     )
 
 	INSERT INTO #TABLE_DETAIL
@@ -556,6 +559,7 @@ BEGIN
 				question_content
 			,	question_div
 			,	post_id
+			,	explan
 			,	del_flg
 			,	cre_user
 			,	cre_prg
@@ -574,6 +578,7 @@ BEGIN
 				_tbl_detail2.content
 			,	_tbl_detail2.question_div
 			,	@w_inserted_key
+			,	_tbl_detail2.explan
 			,	0
 			,	@P_user_id
 			,	@w_program_id
@@ -743,6 +748,7 @@ BEGIN
 				question_content
 			,	question_div
 			,	post_id
+			,	explan
 			,	del_flg
 			,	cre_user
 			,	cre_prg
@@ -761,6 +767,7 @@ BEGIN
 				_tbl_detail2.content
 			,	_tbl_detail2.question_div
 			,	@w_inserted_key
+			,	_tbl_detail2.explan
 			,	0
 			,	@P_user_id
 			,	@w_program_id

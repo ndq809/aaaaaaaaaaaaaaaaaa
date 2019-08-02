@@ -176,3 +176,24 @@ Route::group(
 	}
 );
 
+$namespace = 'App\Modules\Master\Controllers\Mission';
+Route::group(
+	['namespace' => $namespace,'prefix'=>'master/mission','middleware'=>['web','CheckPermission']],
+	function() {
+		Route::get('mi001','mi001Controller@getIndex');	
+		Route::get('mi002','mi002Controller@getIndex');
+		Route::post('mi002/addnew','mi002Controller@mi002_addnew');
+		Route::post('mi002/upgrage','mi002Controller@mi002_upgrage');
+		Route::post('mi002/delete','mi002Controller@mi002_delete');
+		Route::post('mi002/refer','mi002Controller@mi002_refer');
+		Route::post('mi002/getAutocomplete','mi002Controller@mi002_getAutocomplete');
+		Route::post('mi001/list'  ,'mi001Controller@mi001_list');
+		Route::post('mi001/update','mi001Controller@mi001_update');
+		Route::post('mi001/delete','mi001Controller@mi001_delete');
+		Route::post('mi001/confirm','mi001Controller@mi001_confirm');
+		Route::post('mi001/public','mi001Controller@mi001_public');
+		Route::post('mi001/reset','mi001Controller@mi001_reset');
+
+	}
+);
+

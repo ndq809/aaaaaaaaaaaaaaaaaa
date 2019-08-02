@@ -75,6 +75,7 @@ BEGIN
 	SELECT
 		M004.question_id 
 	,	M004.question_content
+	,	M004.explan
 	,	M005.answer_content
 	,	M005.verify
 	FROM M004

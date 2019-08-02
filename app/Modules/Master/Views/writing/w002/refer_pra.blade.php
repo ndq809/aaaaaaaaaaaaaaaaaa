@@ -10,11 +10,11 @@
        </thead>
         <tbody class="hidden">
             <tr>
-                <td rowspan="5">1</td>
+                <td rowspan="6">1</td>
                 <td style="font-weight: bold;">Câu Hỏi</td>
-                <td><input type="text" name="" refer-id='content' class="form-control input-sm"></td>
+                <td><input type="text" name="" refer-id='content' class="form-control input-sm question"></td>
                 <td>Đáp án</td>
-                <td rowspan="5"><button type="button" class="btn-danger delete-tr-body"><span class="fa fa-close"></span></button></td>
+                <td rowspan="6"><button type="button" class="btn-danger delete-tr-body"><span class="fa fa-close"></span></button></td>
             </tr>
            <tr>
                 <td style="font-weight: bold;">Câu Trả Lời 1</td>
@@ -36,16 +36,20 @@
                 <td><input type="text" name="" refer-id='content' class="form-control input-sm"></td>
                 <td><input type="checkbox" name="" refer-id='verify'></td>
             </tr>
+            <tr>
+                <td style="font-weight: bold;">Giải thích</td>
+                <td colspan="2"><textarea type="text" name="" rows="1" class="form-control input-sm auto-resize"></textarea></td>
+            </tr>
         </tbody>
         @if(isset($data[4])&&Count($data[4])>1)
             @for($i = 1;$i<=Count($data[4]);$i=$i+4)
                 <tbody>
                      <tr>
-                        <td rowspan="5">{{$i==1?$i:($i+3)/4}}</td>
+                        <td rowspan="6">{{$i==1?$i:($i+3)/4}}</td>
                         <td style="font-weight: bold;">Câu Hỏi</td>
-                        <td><input type="text" name="" refer-id='content' class="form-control input-sm" value="{{$data[4][$i-1]['question_content']}}"></td>
+                        <td><input type="text" name="" refer-id='content' class="form-control input-sm question" value="{{$data[4][$i-1]['question_content']}}"></td>
                         <td>Đáp án</td>
-                        <td rowspan="5"><button type="button" class="btn-danger delete-tr-body"><span class="fa fa-close"></span></button></td>
+                        <td rowspan="6"><button type="button" class="btn-danger delete-tr-body"><span class="fa fa-close"></span></button></td>
                     </tr>
                    <tr>
                         <td style="font-weight: bold;">Câu Trả Lời 1</td>
@@ -66,6 +70,10 @@
                         <td style="font-weight: bold;">Câu Trả Lời 4</td>
                         <td><input type="text" name="" refer-id='content' class="form-control input-sm" value="{{$data[4][$i+2]['answer_content']}}"></td>
                         <td><input type="checkbox" name="" refer-id='verify' {{$data[4][$i+2]['verify']==1?'checked':''}}></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Giải thích</td>
+                        <td colspan="2"><textarea type="text" name="" rows="1" class="form-control input-sm auto-resize">{{$data[4][$i-1]['explan']}}</textarea></td>
                     </tr>
                 </tbody>
             @endfor

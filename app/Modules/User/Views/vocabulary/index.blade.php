@@ -53,7 +53,7 @@
             @include('User::vocabulary.right_tab')
         </div>
         <a href="/popup/p002" id="test"></a>
-        <button class="btn btn-primary btn-sm btn-do-exam full-width" href="/popup/p002" type="button">Làm Bài Kiểm Tra</button>
+        <button class="btn btn-primary btn-sm full-width {{$raw_data[0][0]['btn-do-exam']==1?'btn-do-exam':'btn-disabled'}}" href="/popup/p002" type="button">Làm Bài Kiểm Tra</button>
     </div>
 	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
         @if(!isset($blank))

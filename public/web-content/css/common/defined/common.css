@@ -1552,3 +1552,7 @@ select.tag-custom{
     color: #FFF;
 }
 
+.btn-disabled{
+  pointer-events: auto!important;
+}
+

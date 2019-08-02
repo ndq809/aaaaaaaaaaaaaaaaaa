@@ -5,7 +5,7 @@
     {!!WebFunctions::public_url('web-content/css/screen_master/writing/w002.css')!!}
 @stop
 @section('button')
-{{Button::menu_button(array('btn-save','btn-delete','btn-manager-page'))}}
+{{Button::menu_button(array('btn-add','btn-save','btn-delete','btn-manager-page'))}}
 @endsection
 @section('content')
 <div class="link-div" btn-manager-page-link='/master/writing/w001'></div>
@@ -32,7 +32,7 @@
                 </select>
             </div>
         </div>
-        <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5'>
+        <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5,11'>
             <div class="form-group">
                 <label>Tên Danh Mục</label>
                 <select class="submit-item allow-selectize new-allow required" id="catalogue_nm">
@@ -40,7 +40,7 @@
                 </select>
             </div>
         </div>
-        <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5'>
+        <div class="col-sm-3 no-padding-right transform-content" transform-div='1,2,3,4,5,11'>
             <div class="form-group">
                 <label>Tên Nhóm</label>
                 <select id="group_nm" class="submit-item allow-selectize new-allow required">
@@ -153,14 +153,13 @@
                     @include('Master::writing.w002.refer_voc')
                 </div>
             </div>
-
         </div>
 
         <div class="col-sm-12 no-padding-right transform-content" transform-div='2' id="result1">
             @include('Master::writing.w002.refer_exa')
         </div>
 
-        <div class="col-sm-12 no-padding-right transform-content" transform-div='2,5' id="result2">
+        <div class="col-sm-12 no-padding-right transform-content" transform-div='2,5,11' id="result2">
             @include('Master::writing.w002.refer_pra')
         </div>
     </div>

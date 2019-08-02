@@ -1,3 +1,4 @@
+var level = 0;
 $(function(){
 	try{
 		init_p002();
@@ -173,34 +174,88 @@ function getQuestion() {
                 ],
     };
     
-    fieldLinks=$("#bonds").fieldsLinker("init",input);
+    fieldLinks=$("#test1").fieldsLinker("init",input);
     // $('[data-toggle="tooltip"]:visible').tooltip();
-    $("#btn-save").on("click",function(){
-        var results = fieldLinks.fieldsLinker("getLinks");
-        var count = 0;
-        // $("#Output").html("output => " + JSON.stringify(results.links));
-        // $("#Output1").html("output1 => " + JSON.stringify(parent._popup_transfer_array['voc']));
-        for (var i = 0; i < results.links.length; i++) {
-            for (var j = 0; j < parent._popup_transfer_array['voc'].length; j++) {
-                if(JSON.stringify(parent._popup_transfer_array['voc'][j]) == JSON.stringify(results.links[i])){
-                    count++;
-                    break;
-                } 
-            }
+    $("#btn-check").on("click",function(){
+        switch(level){
+            case 0 :
+                var results = fieldLinks.fieldsLinker("getLinks");
+                var count = 0;
+                for (var i = 0; i < results.links.length; i++) {
+                    for (var j = 0; j < parent._popup_transfer_array['voc'].length; j++) {
+                        if(JSON.stringify(parent._popup_transfer_array['voc'][j]) == JSON.stringify(results.links[i])){
+                            count++;
+                            break;
+                        } 
+                    }
+                }
+                if(count == parent._popup_transfer_array['voc'].length){
+                    showMessage(28,function(){
+                        $('.test1').addClass('hidden');
+                        $('.test2').removeClass('hidden');
+                        setInputQuestion();
+                        level++;
+                    });
+                }else{
+                    var param = {};
+                    param['value'] = [count,parent._popup_transfer_array['voc'].length];
+                    param['buttons'] = [
+                        {
+                            label: 'Đã hiểu',
+                            classes: 'btn btn-sm btn-warning',
+                        }
+                    ];
+                    showMessage(29,function(){},function(){},param);
+                    // alert('Bạn mới chỉ đạt được '+count+'/'+parent._popup_transfer_array['voc'].length+' câu đúng!');
+                }
+                break;
+            case 1 :
+                var check = parent._popup_transfer_array['voc'].length;
+                $('.voc-list:visible').each(function(i){
+                    var value = $(this).val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
+                    var root_value = parent._popup_transfer_array['voc'][i]['from'].replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ').replace(/\s\s+/g, ' ').toLowerCase().trim();
+                    if(value!=root_value){
+                        check --;
+                    }
+                })
+                if(check == parent._popup_transfer_array['voc'].length){
+                    var param = {};
+                    param['label'] = ['Kiểm tra lại','Thoát'];
+                    // param['value'] = ['2114'];
+                    showMessage(31,function(){
+                        // $('.test1').addClass('hidden');
+                        // $('.test2').removeClass('hidden');
+                        // setInputQuestion();
+                        // level++;
+                    },function(){},param);
+                }else{
+                    var param = {};
+                    param['value'] = [check,parent._popup_transfer_array['voc'].length];
+                    param['buttons'] = [
+                        {
+                            label: 'Đã hiểu',
+                            classes: 'btn btn-sm btn-warning',
+                        }
+                    ];
+                    showMessage(29,function(){},function(){},param);
+                    // alert('Bạn mới chỉ đạt được '+count+'/'+parent._popup_transfer_array['voc'].length+' câu đúng!');
+                }
+                break;
+            default :
+            break;
         }
-        if(count == parent._popup_transfer_array['voc'].length){
-            showMessage(28,function(){
-
-            });
-        }else{
-            showMessage(29,function(){},function(){},[count,parent._popup_transfer_array['voc'].length]);
-            // alert('Bạn mới chỉ đạt được '+count+'/'+parent._popup_transfer_array['voc'].length+' câu đúng!');
-        }
+        
     });
 }
 
 function setInputQuestion(){
+    var trClone;
+    parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
     for (var i = 0; i < parent._popup_transfer_array['voc'].length; i++) {
-        parent._popup_transfer_array['voc'][i]
+        trClone = $('#test2 table tbody tr').first().clone();
+        trClone.find('td').eq(0).text(i+1);
+        trClone.find('td').eq(1).text(parent._popup_transfer_array['voc'][i]['to']);
+        trClone.removeClass('hidden');
+        $('#test2 table tbody').append(trClone);
     }
 }

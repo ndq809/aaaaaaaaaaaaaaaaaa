@@ -233,6 +233,7 @@ function initListener() {
         $.fancybox({
             'width'         : $(window).width()>1024?'70%':'100%',
             'height'        : 'auto',
+            'minHeight'     : $(window).height()/2,
             'autoScale'     : true,
             'transitionIn'  : 'none',
             'transitionOut' : 'none',

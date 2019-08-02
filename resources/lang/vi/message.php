@@ -148,9 +148,14 @@ return [
             'message_content' => 'Bạn mới chỉ trả lời được xxx/xxx câu hỏi!<br>Cố gắng lần nữa nào!',
         ],
         30 => [
-            'message_div' => 4,
-            'message_title' => 'Lỗi Dữ Liệu',
-            'message_content' => 'Dữ liệu này đang được sử dụng trong một bài đăng ở chế độ công khai',
+            'message_div' => 2,
+            'message_title' => 'Nhiệm Vụ Hoàn Thành',
+            'message_content' => 'Chúc mừng bạn đã hoàn thành nhiệm vụ<br><span class="text-left">Phần Thưởng Nhận Được</span><br><span class="text-left">Điểm kinh nghiệm : + xxx</span>',
+        ],
+        31 => [
+            'message_div' => 1,
+            'message_title' => 'Kiểm Tra Hoàn Thành',
+            'message_content' => 'Chúc mừng bạn đã hoàn thành xuất sắc bài kiểm tra<br>Bạn có muốn kiểm tra một lần nữa?',
         ],
     ],
 ];

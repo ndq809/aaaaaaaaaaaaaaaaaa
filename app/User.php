@@ -32,4 +32,10 @@ class User extends Authenticatable
     public $incrementing = false;
     const CREATED_AT = 'cre_date';
     const UPDATED_AT = 'upd_date';
+
+    public function getDateFormat()
+    {
+        return 'Y-m-d H:i:s.u';
+    }
+
 }

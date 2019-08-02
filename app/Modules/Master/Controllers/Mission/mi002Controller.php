@@ -1,0 +1,181 @@
+<?php
+namespace App\Modules\Master\Controllers\mission;
+use App\Http\Controllers\Controller;
+use Auth;
+use Common;
+use DAO;
+use Illuminate\Http\Request;
+use File;
+
+class mi002Controller extends Controller
+{
+    /**
+     * Show the application index.
+     * @author mail@ans-asia.com
+     * @created at 2017-08-16 03:29:46
+     * @return \Illuminate\Http\Response
+     */
+    public function getIndex()
+    {
+        $data = Dao::call_stored_procedure('SPC_Mi002_FND1');
+        return view('Master::mission.mi002.index')->with('data_default', $data);
+    }
+
+    public function mi002_addnew(Request $request)
+    {
+        $data  = $request->all();
+        $media = '';
+        $name = '';
+        $file = $request->file('post_audio');
+        // var_dump($file);die;
+
+        $validate = common::checkValidate((array) json_decode($data['header_data']));
+        if ($validate['result']) {
+            $param               = (array) json_decode($data['header_data']);
+           if(!is_null($file)){
+               if ($file->getClientSize() > 20971520) {
+                    $result = array(
+                        'status'     => 209,
+                        'statusText' => 'upload failed');
+                    return response()->json($result);
+                }
+                $name = 'audio_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('/web-content/audio/listeningAudio/'), $name);
+                $media = '/web-content/audio/listeningAudio/' . $name;
+           }
+            $param['post_audio'] = $media;
+            $param['json_detail1'] = json_encode((array) json_decode($data['same_data']));
+            $param['json_detail2'] = json_encode((array) json_decode($data['different_data']));
+            $param['json_detail3'] = json_encode((array) json_decode($data['detail_body_data']));
+            $param['user_id']    = Auth::user()->account_id;
+            $param['ip']         = $request->ip();
+
+            $data = Dao::call_stored_procedure('SPC_mi002_ACT1', $param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                File::delete($media);
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                File::delete($media);
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'data'       => $data[1],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            $result = array('error' => $validate['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
+    public function mi002_upgrage(Request $request)
+    {
+        $data  = $request->all();
+        $media = '';
+        $name = '';
+        $file = $request->file('post_audio');
+        // var_dump($file);die;
+
+        $validate = common::checkValidate((array) json_decode($data['header_data']));
+        if ($validate['result']) {
+            $param               = (array) json_decode($data['header_data']);
+            // var_dump($param);die;
+            //upload audio file
+           if(!is_null($file)){
+               if ($file->getClientSize() > 20971520) {
+                    $result = array(
+                        'status'     => 209,
+                        'statusText' => 'upload failed');
+                    return response()->json($result);
+                }
+                $name = 'audio_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('/web-content/audio/listeningAudio/'), $name);
+                $media = '/web-content/audio/listeningAudio/' . $name;
+           }
+            $param['post_audio'] = $media;
+            $param['json_detail'] = json_encode((array) json_decode($data['detail_body_data']));
+            $param['user_id']    = Auth::user()->account_id;
+            $param['ip']         = $request->ip();
+
+            $data = Dao::call_stored_procedure('SPC_mi002_ACT3', $param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                File::delete($media);
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                File::delete($media);
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'data'       => $data[1],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            $result = array('error' => $validate['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
+    public function mi002_delete(Request $request)
+    {
+        $param             = $request->all();
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        $result_query     = DAO::call_stored_procedure("SPC_mi002_ACT2", $param);
+        if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status'     => 208,
+                'error'      => $result_query[0],
+                'statusText' => 'failed',
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
+    public function mi002_refer(Request $request)
+    {
+        $data             = $request->all();
+        $result_query     = DAO::call_stored_procedure("SPC_mi002_LST1", $data);
+        // var_dump($result_query[1][0]['mission_div']);die;
+        return view('Master::mission.mi002.refer')->with('data', $result_query);
+    }
+
+    public function mi002_getAutocomplete(Request $request)
+    {
+        $param            = $request->all();
+        $data   = Dao::call_stored_procedure('SPC_mi002_LST2', $param);
+        return response()->json($data[0]);
+    }
+
+    /**
+     * Show the application index.
+     * @author mail@ans-asia.com
+     * @created at 2017-08-16 03:29:46
+     * @return void
+     */
+
+}

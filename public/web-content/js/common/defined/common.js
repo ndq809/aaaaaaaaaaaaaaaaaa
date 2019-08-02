@@ -33,7 +33,7 @@ function initCommon() {
     $('.btn-disabled').attr('data-placement','bottom');
     $('.btn-disabled').attr('data-original-title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
     $('.btn-disabled').tooltip();
-    $('.btn-disabled').addClass('disabled');
+    // $('.btn-disabled').attr('disabled','disabled');
     // $('.btn-disabled').removeAttr('title');
     });
     $(document).ajaxError(function (evt, jqXHR, settings, err) {
@@ -1383,83 +1383,82 @@ function keepTokenAlive() {
 }
 
 function showMessage(message_code,ok_callback,cancel_callback,parameter){
+    if (parameter==undefined) {
+        parameter={};
+    }
     if(typeof _text!='undefined'){
-        _text[message_code] = parameter!=undefined?fixMessage(_text[message_code]):_text[message_code];
+        content = parameter['value']!=undefined?fixMessage(_text[message_code]):_text[message_code];
     }else{
-        parent._text[message_code] = parameter!=undefined?fixMessage(parent._text[message_code]):parent._text[message_code];
+        parent_content = parameter['value']!=undefined?fixMessage(parent._text[message_code]):parent._text[message_code];
     }
     switch(typeof _type!='undefined'?_type[message_code]:parent._type[message_code]){
         case 1:
-           $.sweetModal({
-            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
-            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
-            icon: $.sweetModal.ICON_CONFIRM,
-            showCloseButton: false,
-            blocking: true,
-            buttons: [
+            var buttons = [
                 {
-                    label: 'Đồng ý',
+                    label: parameter['label']!=undefined&&parameter['label'][0]!=undefined?parameter['label'][0]:'Đồng ý',
                     classes: 'btn btn-sm btn-info float-left',
                     action: ok_callback,
                 },
                 {
-                    label: 'Từ chối',
+                    label: parameter['label']!=undefined&&parameter['label'][1]!=undefined?parameter['label'][1]:'Từ chối',
                     classes: 'btn btn-sm btn-default float-right',
                     action: cancel_callback,
                 }
             ]
+           $.sweetModal({
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?content:parent_content,
+            icon: $.sweetModal.ICON_CONFIRM,
+            buttons: parameter['buttons']!=undefined?parameter['buttons']:buttons
         });
         break;
         case 2:
-           $.sweetModal({
-            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
-            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
-            icon: $.sweetModal.ICON_SUCCESS,
-            showCloseButton: false,
-            blocking: true,
-            buttons: [
+            var buttons = [
                 {
-                    label: 'Ok',
+                    label: parameter['label']!=undefined&&parameter['label'][0]!=undefined?parameter['label'][0]:'Ok',
                     classes: 'btn btn-sm btn-success',
                     action: ok_callback,
                 },
             ]
+           $.sweetModal({
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?content:parent_content,
+            icon: $.sweetModal.ICON_SUCCESS,
+            buttons: parameter['buttons']!=undefined?parameter['buttons']:buttons
         });
         break; 
         case 3:
-           $.sweetModal({
-            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
-            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
-            icon: $.sweetModal.ICON_WARNING,
-            showCloseButton: false,
-            blocking: true,
-            buttons: [
+            var buttons = [
                 {
-                    label: 'Thực hiện',
+                    label: parameter['label']!=undefined&&parameter['label'][0]!=undefined?parameter['label'][0]:'Thực hiện',
                     classes: 'btn btn-sm btn-warning float-left',
                     action: ok_callback,
                 },
                 {
-                    label: 'Hủy',
+                    label: parameter['label']!=undefined&&parameter['label'][1]!=undefined?parameter['label'][1]:'Hủy',
                     classes: 'btn btn-sm btn-default float-right',
                     action: cancel_callback,
                 }
             ]
+           $.sweetModal({
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?content:parent_content,
+            icon: $.sweetModal.ICON_WARNING,
+            buttons: parameter['buttons']!=undefined?parameter['buttons']:buttons
         });
         break; 
         case 4:
-           $.sweetModal({
-            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
-            content: typeof _text!='undefined'?_text[message_code]:parent._text[message_code],
-            icon: $.sweetModal.ICON_ERROR,
-            showCloseButton: false,
-            blocking: true,
-            buttons: [
+            var buttons = [
                 {
-                    label: 'Đã hiểu',
+                    label: parameter['label']!=undefined&&parameter['label'][0]!=undefined?parameter['label'][0]:'Đã hiểu',
                     classes: 'btn btn-sm btn-danger',
                 },
             ]
+           $.sweetModal({
+            title:typeof _title!='undefined'?_title[message_code]:parent._title[message_code],
+            content: typeof _text!='undefined'?content:parent_content,
+            icon: $.sweetModal.ICON_ERROR,
+            buttons: parameter['buttons']!=undefined?parameter['buttons']:buttons
         });
         break;  
     }
@@ -1591,8 +1590,8 @@ function shuffle(array) {
 }
 
 function fixMessage(mes,parameter){
-    for (var i = 0; i < parameter.length; i++) {
-        mes = mes.replace('xxx',parameter[i]);
+    for (var i = 0; i < parameter.value.length; i++) {
+        mes = mes.replace('xxx',parameter.value[i]);
     }
     return mes;
 }
