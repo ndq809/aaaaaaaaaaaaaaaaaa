@@ -215,8 +215,7 @@ BEGIN
 
 	SELECT * FROM #VOCABULARY
 	ORDER BY 
-		#VOCABULARY.specialized_div
-	,	#VOCABULARY.field_div
+		#VOCABULARY.row_id
 
 	SELECT
 		F003.id 
@@ -234,8 +233,7 @@ BEGIN
 
 	SELECT TOP 1 #VOCABULARY.id FROM #VOCABULARY
 	ORDER BY 
-		#VOCABULARY.specialized_div
-	,	#VOCABULARY.field_div
+		#VOCABULARY.row_id
 
 	SELECT TOP 10
 		F008.target_id
