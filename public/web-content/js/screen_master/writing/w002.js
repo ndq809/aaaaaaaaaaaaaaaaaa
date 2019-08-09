@@ -174,7 +174,7 @@ function initevent_w002(){
     });
 
     $(document).on('click','.btn-popup',function(){
-         _popup_transfer_array['voc_array']=_vocabularyArray;
+         _popup_transfer_array['voc_array']=getTableTdData($('.submit-table'));
     })
 
     $(document).on('addrow','#btn-new-body',function(){
@@ -308,7 +308,7 @@ function w002_refer(post_id){
                     });
                     }, 100);
                     
-                    $('#result').html(res.table_voc);
+                    $('.result:visible').html(res.table_voc);
                     $('#result1').html(res.table_exa);
                     $('#result2').html(res.table_pra);
                     transform($('#catalogue_div'));

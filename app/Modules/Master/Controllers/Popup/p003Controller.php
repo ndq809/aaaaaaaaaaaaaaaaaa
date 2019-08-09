@@ -33,7 +33,7 @@ class p003Controller extends Controller
     public function p003_load(Request $request)
     {
         $param = $request->all();
-        $param['voc_array']= json_encode(isset($param['voc_array'])?$param['voc_array']:array());
+        $param['voc_array']= json_encode(isset($param['voc_array'])&&is_array($param['voc_array'])?$param['voc_array']:array());
         $data  = Dao::call_stored_procedure('SPC_P003_LST2', $param);
         return view('Master::popup.p003.select')
             ->with('data', $data[0]);

@@ -149,7 +149,7 @@
         <div class="col-sm-12 no-padding-right transform-content" transform-div='1,3,4,5'>
             <div class="form-group table-fixed-width" min-width="1024px">
                 <a type="button" href="/master/popup/p003" class="btn btn-sm btn-primary btn-popup">Duyệt danh sách từ vựng</a>
-                <div id="result">
+                <div class="result">
                     @include('Master::writing.w002.refer_voc')
                 </div>
             </div>

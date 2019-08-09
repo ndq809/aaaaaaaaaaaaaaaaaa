@@ -1,6 +1,7 @@
 var selectedTab = "#tab1"; var countComment = 1;
 var _popup_transfer_array=[];
 var _current_screen;
+var _current_answer = [];
 $(function() {
     try {
         initCommon();
@@ -267,6 +268,8 @@ function initCommon() {
     $('.btn-disabled').tooltip();
     $('.btn-disabled').removeAttr('title');
     setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
+    getMissionQuestion();
+    // setInterval(getMissionQuestion, 1000 * 10);
 }
 
 function initEvent() {
@@ -424,12 +427,16 @@ function initEvent() {
 
     })
 
-     $(document).on('click','#btn_login',function(){
+    $(document).on('click','#btn_login',function(){
         checkLogin('Quy Nguyen');
     })
 
-     $(document).on('click','#btn-logout',function(){
+    $(document).on('click','#btn-logout',function(){
         logout('Quy Nguyen');
+    })
+
+    $(document).on('click','.question .btn-answer',function(){
+        checkMissionAnswer();
     })
 
      $(document).on('keydown', function(e) {
@@ -1195,6 +1202,75 @@ function getComment(item_infor,callback){
         error: function (res) {
         }
     });
+}
+
+function getMissionQuestion() {
+    $.ajax({
+        type: 'POST',
+        url: '/common/getMissionQuestion',
+        dataType: 'json',
+        loading: true,
+        container: '.question',
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('.question .question-content').html(res.view1);
+                    _current_answer = res.data;
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function checkMissionAnswer(){
+    $('.question').removeClass('wrong-answer');
+    $('.question').removeClass('right-answer');
+    $('.question-content .answer-box').each(function(i){
+        check = -1;
+        if($(this).find('input:checked').length != 0){
+            $(this).find('input').each(function(j){
+                var temp = $(this).is(':checked')?1:0;
+                if(_current_answer[(i*4)+j]['verify']!=temp){
+                    check = 1;
+                }
+            })
+            if(check==-1){
+                check = 0;
+            }
+        }
+        if(check == 1){
+            $(this).closest('.question').addClass('wrong-answer');
+            $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-close');
+            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
+        }else if(check == 0){
+            $(this).closest('.question').addClass('right-answer');
+            $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-check');
+            $(this).find('.result-icon').css('top',($(this).height()/2)-25);
+        }
+    })
+    setTimeout(function(){
+        if(check==0){
+            $('.question').removeClass('right-answer');
+            getMissionQuestion();
+        }else{
+            $('.question-content .answer-box input').prop('checked',false);
+            $('.question').removeClass('wrong-answer');
+        }
+    },1000)
 }
 
 function changePassword(username){

@@ -29,7 +29,7 @@
           <span>Bài Tập Tự Luyện</span>
         </h5>
       </div>
-      <div id="collapse6" class="panel-collapse collapse">
+      <div id="collapse6" class="panel-collapse collapse question-list">
         <div class="panel-body">
             <div class="form-group" min-width="1024px">
                 @include('practice',array('data'=>$data[5]))

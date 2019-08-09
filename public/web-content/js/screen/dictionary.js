@@ -311,12 +311,13 @@ function getData(value) {
                     vocabularyArray = res.voca_array;
                     installSlide();
                     slidePositionController();
-                    $('.table-right tbody tr[id=' + getRowId(res.selected_id.id) + ']').trigger('click');
                     if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
                         switchTab(2);
                     } else {
                         switchTab(1);
                     }
+                    $('.table-right tbody tr[id=' + getRowId($('#key-id').val()!=''?$('#key-id').val():res.selected_id.id) + ']').trigger('click');
+                    $('#key-id').val('');
                     $('#target-id').attr('value', '')
                     $('#key-word').blur();
                     $('.relationship').filter(function() { 

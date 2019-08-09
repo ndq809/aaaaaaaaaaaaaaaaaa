@@ -1,19 +1,19 @@
 $(function(){
 	try{
-		init_p003();
+		init_p005();
 	}catch(e){
 		alert('エラーがあった :'+e);
 	}
 })
 
-function init_p003(){
-	initevent_p003();
-    p003_load();
+function init_p005(){
+	initevent_p005();
+    p005_load();
 }
 
-function initevent_p003(){
+function initevent_p005(){
 	$(document).on('click','#btn-list',function(){
-		p003_execute(1);
+		p005_execute(1);
 	})
 
     $(document).on('click','#btn-refresh',function(){
@@ -21,7 +21,7 @@ function initevent_p003(){
     })
     $(document).on('click', '.pager li a', function () {
         var page = $(this).attr('page');
-        p003_execute(parseInt(page, 10));
+        p005_execute(parseInt(page, 10));
     })
 
     $(document).on('click','.preview-audio',function(){
@@ -46,19 +46,24 @@ function initevent_p003(){
     })
 
     $(document).on('click','#btn-save',function(){
-        p003_refer();
+        p005_refer();
+    })
+
+    $(document).on('change','#catalogue_nm',function(){
+        updateGroup(this);
     })
 }
 
-function p003_execute(page){
+function p005_execute(page){
 	var data=getInputData();
+    data['catalogue_div'] = parent._popup_transfer_array['catalogue_div'];
     data['selected_list'] = getVocabularyList();
     _pageSize=50;
     data['page_size'] = _pageSize;
     data['page'] = page;
 	$.ajax({
         type: 'POST',
-        url: '/master/popup/p003',
+        url: '/master/popup/p005',
         dataType: 'html',
         loading:true,
         data: data,
@@ -81,12 +86,13 @@ function p003_execute(page){
     });
 }
 
-function p003_load(){
+function p005_load(){
     var data = {};
-    data['voc_array'] =  parent._popup_transfer_array['voc_array'];
+    data['catalogue_div'] =  parent._popup_transfer_array['catalogue_div'];
+    data['post_array'] =  parent._popup_transfer_array['post_array'];
     $.ajax({
         type: 'POST',
-        url: '/master/popup/p003/load',
+        url: '/master/popup/p005/load',
         dataType: 'html',
         loading:true,
         data: data,
@@ -109,11 +115,13 @@ function p003_load(){
     });
 }
 
-function p003_refer(){
-    var data = getVocabularyList();
+function p005_refer(){
+    var data = {};
+    data['post_list'] = getVocabularyList();
+    data['catalogue_div'] =  parent._popup_transfer_array['catalogue_div'];
     $.ajax({
         type: 'POST',
-        url: '/master/popup/p003/refer',
+        url: '/master/popup/p005/refer',
         dataType: 'html',
         loading:true,
         data: data,
@@ -132,10 +140,46 @@ function p003_refer(){
 function getVocabularyList(){
     var data =[];
     $('.table-refer tbody tr:visible').each(function(){
-        data.push({'vocabulary_code':$(this).find('td[refer_id=vocabulary_code]').text()});
+        data.push({'post_id':$(this).find('td[refer-id=post_id]').text()});
     })
     if(data.length==0){
         return null;
     }
     return $.extend({}, data);
+}
+
+function updateGroup(change_item){
+    var data=$(change_item).val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/common/getgroup',
+        dataType: 'json',
+        loading:false,
+        data:{
+            data:data
+        } ,//convert to object
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    $('#group_nm')[0].selectize.setValue('',true);
+                    $('#group_nm')[0].selectize.clearOptions();
+                    $('#group_nm')[0].selectize.addOption(res.data);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }

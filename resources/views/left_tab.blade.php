@@ -152,17 +152,8 @@
                 </table>
             </div>
             <div class="collapse in question close-when-small">
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Thời tiết</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Gia đình</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Chào buổi sáng</label>
-                </div>
-                <div class="left-content ">
-                    <label class="radio-inline"><input type="radio" name="optradio">Xin chào</label>
+                <div class="question-content">
+                    @include('practice')
                 </div>
                 <button class="btn btn-sm btn-primary margin-bottom margin-left {{$raw_data[0][0]['btn-answer']==1?'btn-answer':'btn-disabled'}}" type="button">Trả Lời</button>
                 <div class="left-hint ">

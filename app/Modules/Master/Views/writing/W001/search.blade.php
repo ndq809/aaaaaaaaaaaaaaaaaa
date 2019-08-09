@@ -9,7 +9,7 @@
                     <th width="50px"><input type="checkbox" name="" class="super-checkbox"></th>
                     <th width="50px">ID</th>
                     <th width="100px">Mã Bài Viết</th>
-                    <th width="150px">Loại Danh Mục</th>
+                    <th width="200px">Loại Danh Mục</th>
                     <th width="250px">Tên Danh Mục</th>
                     <th width="250px">Tên Nhóm</th>
                     <th >Tiêu Đề Bài Viết</th>

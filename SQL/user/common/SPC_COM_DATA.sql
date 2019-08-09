@@ -92,5 +92,7 @@ BEGIN
 	CASE
 	WHEN F002.notify_condition = 1 THEN 1
 	END,F002.cre_date DESC
+
+	--EXEC SPC_COM_MISSION_QUESTION_LIST
 END
 

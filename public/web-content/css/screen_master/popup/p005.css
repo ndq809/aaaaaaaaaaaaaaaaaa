@@ -1,0 +1,7 @@
+.table-custom tbody tr td{
+	padding: 0px 1px;
+}
+
+.table-custom tbody tr td.text-left{
+	padding: 0px 4px;
+}

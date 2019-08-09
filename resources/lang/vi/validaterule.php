@@ -25,5 +25,8 @@ return [
         'target_div'       => 'required',
         'title'            => 'required',
         'content'          => 'required',
+        'mission_div'      => 'required|not_in:0',
+        'mission_data_div' => 'required|not_in:0',
+        'mission_nm'       => 'required',
     ],
 ];

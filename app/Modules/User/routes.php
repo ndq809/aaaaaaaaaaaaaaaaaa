@@ -77,6 +77,7 @@ Route::group(
 		Route::post('getcatalogue', 'CommonController@getcatalogue');
 		Route::post('getgroup', 'CommonController@getgroup');
 		Route::any('getQuestion','CommonController@getQuestion');
+		Route::any('getMissionQuestion','CommonController@getMissionQuestion');
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
 		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
 		Route::any('delete','CommonController@deletePost');

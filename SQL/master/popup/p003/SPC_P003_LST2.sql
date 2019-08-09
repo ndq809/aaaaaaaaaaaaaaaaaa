@@ -26,7 +26,8 @@ BEGIN
 	--
 	--
 	CREATE TABLE #P003(
-		vocabulary_id			NVARCHAR(15)
+		vocabulary_code			NVARCHAR(15)
+	,	vocabulary_id			NVARCHAR(15)
 	,	vocabulary_dtl_id    	NVARCHAR(15)
 	,	vocabulary_nm           NVARCHAR(500)
 	,	vocabulary_div			INT	
@@ -44,7 +45,7 @@ BEGIN
 	--
 	INSERT INTO #P003
 	SELECT
-		M006.id
+		M006.id		
 	,	M006.Vocabulary_id		
 	,	M006.Vocabulary_dtl_id  
 	,	M006.Vocabulary_nm
@@ -68,7 +69,7 @@ BEGIN
 	LEFT JOIN M999 M999_3
 	ON	M006.field = M999_3.number_id
 	AND	M999_3.name_div = 24
-	LEFT JOIN
+	INNER JOIN
 	(
 	SELECT              
             vocabulary_code AS vocabulary_code              

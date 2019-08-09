@@ -233,10 +233,10 @@ BEGIN
 		,	explan			AS explan          
 		FROM OPENJSON(@P_json_detail2) WITH(
      		row_id				NVARCHAR(100)	'$.row_id		 '
-		,	content			    NVARCHAR(100)	'$.content		'
+		,	content			    NVARCHAR(MAX)	'$.content		'
 		,	verify			    NVARCHAR(100)	'$.verify		'
 		,	question_div	    NVARCHAR(100)	'$.question_div'
-		,	explan				NVARCHAR(100)	'$.explan'
+		,	explan				NVARCHAR(MAX)	'$.explan'
     )
 
 	INSERT INTO #TABLE_DETAIL

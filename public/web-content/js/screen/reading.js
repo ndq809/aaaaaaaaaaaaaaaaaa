@@ -332,8 +332,8 @@ function setContentBox(target_id) {
     }else{
         $('.example-content').removeClass('hidden');
     }
-    $('.question-box:not(.hidden)').addClass('hidden');
-    $('.question-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    $('.question-list .question-box:not(.hidden)').addClass('hidden');
+    $('.question-list .question-box[target-id=' + (target_id) + ']').removeClass('hidden');
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
     $('.vocabulary-box[target-id=' + (target_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');
@@ -418,9 +418,9 @@ function getQuestion() {
 }
 
 function checkAnswer(){
-    $('.answer-box').removeClass('wrong-answer');
-    $('.answer-box').removeClass('right-answer');
-    $('.answer-box').each(function(i){
+    $('.question-list .answer-box').removeClass('wrong-answer');
+    $('.question-list .answer-box').removeClass('right-answer');
+    $('.question-list .answer-box').each(function(i){
         check = -1;
         if($(this).find('input:checked').length != 0){
             $(this).find('input').each(function(j){

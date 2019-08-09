@@ -171,6 +171,10 @@ Route::group(
 		Route::post('p003','p003Controller@p003_search');
 		Route::post('p003/load','p003Controller@p003_load');
 		Route::post('p003/refer','p003Controller@p003_refer');
+		Route::get('p005','p005Controller@getIndex');
+		Route::post('p005','p005Controller@p005_search');
+		Route::post('p005/load','p005Controller@p005_load');
+		Route::post('p005/refer','p005Controller@p005_refer');
 		Route::get('p004','p004Controller@getIndex');
 		Route::post('p004','p004Controller@p004_search');	
 	}
@@ -186,6 +190,8 @@ Route::group(
 		Route::post('mi002/upgrage','mi002Controller@mi002_upgrage');
 		Route::post('mi002/delete','mi002Controller@mi002_delete');
 		Route::post('mi002/refer','mi002Controller@mi002_refer');
+		Route::post('mi002/refer_catalogue','mi002Controller@refer_catalogue');
+		Route::post('mi002/refer_group','mi002Controller@refer_group');
 		Route::post('mi002/getAutocomplete','mi002Controller@mi002_getAutocomplete');
 		Route::post('mi001/list'  ,'mi001Controller@mi001_list');
 		Route::post('mi001/update','mi001Controller@mi001_update');

@@ -125,7 +125,7 @@ BEGIN
 
 	INSERT INTO #VOCABULARY
 	SELECT
-		ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
+		ROW_NUMBER() OVER(ORDER BY M006.specialized , M006.field ASC) AS row_id
 	,	M006.id
 	,	M006.Vocabulary_nm
 	,	M999_1.number_id     

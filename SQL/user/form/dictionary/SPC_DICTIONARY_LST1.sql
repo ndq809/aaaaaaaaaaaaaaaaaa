@@ -23,7 +23,10 @@ BEGIN
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 
-	SELECT M006.vocabulary_nm FROM M006 WHERE M006.id = @P_target_id AND M006.del_flg = 0 AND M006.record_div = 2
+	SELECT 
+		M006.vocabulary_nm
+	,	M006.id	
+	FROM M006 WHERE M006.id = @P_target_id AND M006.del_flg = 0 AND M006.record_div = 2
 
 	SELECT TOP 10
 		F008.target_id

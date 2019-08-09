@@ -1,18 +1,19 @@
 var catalogue_id=0;
 var group_id=0;
+var rank_to= 0;
 var first_time = 0;
 $(function(){
 	try{
-		init_v002();
+		init_mi002();
 	}catch(e){
 		alert('エラーがあった :'+e);
 	}
 })
 
-function init_v002(){
+function init_mi002(){
     $('#catalogue_nm')[0].selectize.disable();
     $('#group_nm')[0].selectize.disable();
-	initevent_v002();
+	initevent_mi002();
     initImageUpload();
     if(typeof window.location.href.split('?')[1] != 'undefined'){
         $('#vocabulary_id').val(window.location.href.split('?')[1]);
@@ -21,26 +22,19 @@ function init_v002(){
     }else{
         $('#vocabulary_nm').focus();
     }
-    createAutocomplete($("#vocabulary_nm"),function(event, ui){
-        event.preventDefault();
-        $("#vocabulary_nm").val(ui.item.vocabulary_nm);
-        $("#vocabulary_id").val(ui.item.vocabulary_id);
-        $("#vocabulary_dtl_id").val(ui.item.vocabulary_dtl_id);
-        $("#vocabulary_id").trigger('change');
-    });
 }
 
-function initevent_v002(){
+function initevent_mi002(){
 	$(document).on('click','#btn-save',function(){
 		showMessage(1,function(){
-            v002_addNew();
+            mi002_addNew();
        });
 	})
 
     $(document).on('click','#btn-delete',function(){
         if($('#vocabulary_id').val()!='' && $('#vocabulary_dtl_id').val()!=''){
             showMessage(3,function(){
-                v002_delete();
+                mi002_delete();
            });
         }
     })
@@ -48,7 +42,7 @@ function initevent_v002(){
     $(document).on('click','#btn-upgrade',function(){
         if($('#vocabulary_id').val()!='' && $('#vocabulary_dtl_id').val()!=''){
             showMessage(15,function(){
-                v002_upgrage();
+                mi002_upgrage();
            });
         }
     })
@@ -71,33 +65,77 @@ function initevent_v002(){
         switch(true){
             case ($(this).val()*1==1&&$('#catalogue_div').val()*1!=0) :
                 $('#catalogue_nm')[0].selectize.enable();
-                $('#group_nm')[0].selectize.setValue(0); 
+                $('#group_nm')[0].selectize.setValue(0,false); 
                 $('#group_nm')[0].selectize.disable(); 
                 break;
             case ($(this).val()*1==2&&$('#catalogue_div').val()*1!=0&&$('#catalogue_nm').val()*1==0) :
                 $('#catalogue_nm')[0].selectize.enable();
-                $('#group_nm')[0].selectize.setValue(0); 
+                $('#group_nm')[0].selectize.setValue(0,false); 
                 $('#group_nm')[0].selectize.disable(); 
                 break;
             case ($(this).val()*1==2&&$('#catalogue_div').val()*1!=0&&$('#catalogue_nm').val()*1!=0) :
                 $('#catalogue_nm')[0].selectize.enable();
                 $('#group_nm')[0].selectize.enable(); 
                 break;
-            default :
-                $('#catalogue_nm')[0].selectize.setValue(0);
+            case ($(this).val()*1==3) :
+                $('#catalogue_nm')[0].selectize.setValue(0,false);
                 $('#catalogue_nm')[0].selectize.disable();
-                $('#group_nm')[0].selectize.setValue(0); 
+                $('#group_nm')[0].selectize.setValue(0,false); 
+                $('#group_nm')[0].selectize.disable(); 
+                break;
+            default :
+                $('#catalogue_nm')[0].selectize.setValue(0,false);
+                $('#catalogue_nm')[0].selectize.disable();
+                $('#group_nm')[0].selectize.setValue(0,false); 
                 $('#group_nm')[0].selectize.disable(); 
                 break;
         }
+
     })
 
     $(document).on('change','#catalogue_div',function(){
-        updateCatalogue(this);
+        _this = this;
+        updateCatalogue(this,function(){
+            switch(true){
+                case ($('#mission_data_div').val()*1==3&&$(_this).val()*1==1) :
+                    $('.transform-content[type=0]').removeClass('hidden');
+                    $('.transform-content[type!=0]').addClass('hidden');
+                    $('#catalogue_nm')[0].selectize.setValue(0,false);
+                    $('#catalogue_nm')[0].selectize.disable();
+                    $('#group_nm')[0].selectize.setValue(0,false); 
+                    $('#group_nm')[0].selectize.disable(); 
+                    break;
+                case ($('#mission_data_div').val()*1==3&&$(_this).val()*1!=1) :
+                    $('.transform-content[type=1]').removeClass('hidden');
+                    $('.transform-content[type!=1]').addClass('hidden');
+                    $('#catalogue_nm')[0].selectize.setValue(0,false);
+                    $('#catalogue_nm')[0].selectize.disable();
+                    $('#group_nm')[0].selectize.setValue(0,false); 
+                    $('#group_nm')[0].selectize.disable(); 
+                    $('.btn-popup:visible').attr('href',$('.btn-popup:visible').attr('href').split('?')[0]+'?catalogue_div='+$('#catalogue_div').val());
+                    break;
+                case ($('#mission_data_div').val()*1!=3) :
+                    $('.transform-content[type=2]').removeClass('hidden');
+                    $('.transform-content[type!=2]').addClass('hidden');
+                    break;
+                default :
+                    break;
+            }
+        });
     })
 
     $(document).on('change','#catalogue_nm',function(){
-        updateGroup(this);
+        if($('#mission_data_div').val()*1==1){
+            referCatalogue(this); 
+        }else{
+            updateGroup(this);
+        }
+    })
+
+    $(document).on('change','#group_nm',function(){
+        if($('#mission_data_div').val()*1==2){
+            referGroup(this); 
+        }
     })
 
     $(document).on('change','#rank-from',function(){
@@ -110,6 +148,9 @@ function initevent_v002(){
         $('#rank-to option').filter(function(){
             return $(this).attr('value')*1 < $(_this).val()*1;
         }).addClass('hidden');
+        if(rank_to!=0){
+            $('#rank-to').val(rank_to);
+        }
     })
 
     $(document).on('addrow','.btn-add',function(){
@@ -123,11 +164,9 @@ function initevent_v002(){
         });
     })
 
-    $(document).on('change','#vocabulary_id,#vocabulary_dtl_id',function(){
-        if($('#vocabulary_id').val()!='' && $('#vocabulary_dtl_id').val()!=''){
-            v002_refer();
-        }
-        })
+    $(document).on('change','#mission_id',function(){
+        mi002_refer();
+    })
 
     $(document).on('change','#post_title',function(){
         if($(this).val()!=''){
@@ -137,33 +176,34 @@ function initevent_v002(){
         }
     })
 
+    $(document).on('click','.btn-popup',function(){
+         _popup_transfer_array['post_array']=getTableTdData($('.submit-table:visible'));
+         _popup_transfer_array['voc_array']=getTableTdData($('.submit-table:visible'));
+        _popup_transfer_array['catalogue_div'] = $('#catalogue_div').val();
+    })
+
 }
 
-function v002_addNew(){
-    var data_addnew=new FormData($("#upload_form")[0]);
-    var header_data=getInputData(1);
-    var same_data = getWorData($('#same-data'));
-    var different_data = getWorData($('#different-data'));
-    data_addnew.append('header_data',JSON.stringify(header_data));
-    data_addnew.append('same_data',JSON.stringify(same_data));
-    data_addnew.append('different_data',JSON.stringify(different_data));
-    data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.submit-table-body'))));
+function mi002_addNew(){
+    var data_addnew={};
+    var detail_data = $.map(getTableTdData($('.submit-table:visible')),function(value,key){
+        return {'id':value['id']};
+    })
+    data_addnew['header_data']=getInputData(1);
+    data_addnew['detail_data']=detail_data;
 	$.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v002/addnew',
+        url: '/master/mission/mi002/addnew',
         dataType: 'json',
         loading:true,
-        processData: false,
-        contentType : false,
         data: data_addnew,
         success: function (res) {
             switch(res.status){
                 case 200:
                     clearFailedValidate();
-                    $('#vocabulary_id').val(res.data[0].vocabulary_id);
-                    $('#vocabulary_dtl_id').val(res.data[0].vocabulary_dtl_id);
                     showMessage(2,function(){
-                        $('#vocabulary_id').trigger('change');
+                        $('#mission_id').val(res.data[0].mission_id);
+                        $('#mission_id').trigger('change');
                     });
                     break;
                 case 201:
@@ -193,14 +233,14 @@ function v002_addNew(){
     });
 }
 
-function v002_upgrage(){
+function mi002_upgrage(){
     var data_addnew=new FormData($("#upload_form")[0]);
     var header_data=getInputData(1);
     data_addnew.append('header_data',JSON.stringify(header_data));
     data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.submit-table-body'))));
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v002/upgrage',
+        url: '/master/vocabulary/mi002/upgrage',
         dataType: 'json',
         loading:true,
         processData: false,
@@ -243,13 +283,13 @@ function v002_upgrage(){
     });
 }
 
-function v002_delete(){
+function mi002_delete(){
      var data=[];
     data.push($('#vocabulary_id').val());
     data.push($('#vocabulary_dtl_id').val());
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v002/delete',
+        url: '/master/vocabulary/mi002/delete',
         dataType: 'json',
         loading:true,
         data: $.extend({}, data),//convert to object
@@ -279,85 +319,31 @@ function v002_delete(){
     });
 }
 
-function v002_refer(){
+function mi002_refer(){
     var data={};
-    data['vocabulary_id']=$('#vocabulary_id').val();
-    data['vocabulary_dtl_id']=$('#vocabulary_dtl_id').val();
+    data['mission_id']=$('#mission_id').val();
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v002/refer',
-        dataType: 'html',
+        url: '/master/mission/mi002/refer',
+        dataType: 'json',
         loading:true,
         data: data,//convert to object
         success: function (res) {
-            $('#result').html(res);
+            $('.update-block').html(res.view1);
+            if(res.data.catalogue_div==1){
+                $('.transform-content[type=0] .result').html(res.view2);
+            }else{
+                $('.transform-content[type=1] .result').html(res.view2);
+            }
             initFlugin();
-            initImageUpload();
-            $(".old-input-audio").fileinput({
-                showCaption: true,
-                showPreview: true,
-                showRemove: false,
-                showUpload: false,
-                showCancel: false,
-                showBrowse : false,
-                showUploadedThumbs: false,
-                initialCaption : 'Âm thanh cũ của từ vựng',
-                initialPreview: [
-                    '<audio controls=""><source src="'+$(".old-input-audio").attr('value')+'" type="audio/mp3"></audio>'
-                ],
-            });
-            createAutocomplete($("#vocabulary_nm"),function(event, ui){
-                event.preventDefault();
-                $("#vocabulary_nm").val(ui.item.vocabulary_nm);
-                $("#vocabulary_id").val(ui.item.vocabulary_id);
-                $("#vocabulary_dtl_id").val(ui.item.vocabulary_dtl_id);
-                $("#vocabulary_id").trigger('change');
-            });
+            // $('.result').html(res.view2);
+            catalogue_id = res.data.catalogue_id;
+            group_id = res.data.group_id;
+            rank_to = res.data.rank_to;
+            $('#rank-from').trigger('change');
+            $('#catalogue_div').trigger('change');
+            $('#mission_data_div').trigger('change');
         }
-    });
-}
-
-function createAutocomplete(target,callback){
-    target.autocomplete({
-        source: function(request, response) {
-            $.ajax({
-                type: 'POST',
-                url: "/master/vocabulary/v002/getAutocomplete",
-                dataType: "json",
-                data: {
-                    q: request.term
-                },
-                success: function(data) {
-                    var temp = [];
-                    if (data[0]['vocabulary_nm'] != '') {
-                        for (var i = 0; i < data.length; i++) {
-                            temp.push
-                            ({
-                                    label: data[i]['Vocabulary_nm']+' ---- '+data[i]['mean']
-                                ,   vocabulary_id: data[i]['Vocabulary_id']
-                                ,   vocabulary_dtl_id: data[i]['Vocabulary_dtl_id']
-                                ,   vocabulary_nm: data[i]['Vocabulary_nm'] 
-                                ,   vocabulary_div: data[i]['Vocabulary_div'] 
-                                ,   specialized: data[i]['specialized'] 
-                                ,   field: data[i]['field'] 
-                                ,   spelling: data[i]['spelling'] 
-                                ,   mean: data[i]['mean'] 
-                            });
-                        }
-                    }
-                    response(temp);
-                }
-            });
-        },
-        select: function(event, ui){
-            callback(event, ui)
-        },
-        // open: function(event, ui){
-        //     $('#ui-id-1').css('top',($("#vocabulary_nm").offset().top+50)+'px');
-        // },
-        // minLength: 3,
-        delay: 500,
-        autoFocus: true
     });
 }
 
@@ -379,7 +365,7 @@ function getWorData(table){
     }
 }
 
-function updateCatalogue(change_item){
+function updateCatalogue(change_item,callback){
     var data=$(change_item).val();
     $.ajax({
         type: 'POST',
@@ -405,6 +391,7 @@ function updateCatalogue(change_item){
                             $('.update-block #catalogue_nm')[0].selectize.setValue(catalogue_id);
                         }
                     }
+                    callback();
                     break;
                 case 201:
                     clearFailedValidate();
@@ -417,6 +404,26 @@ function updateCatalogue(change_item){
                 default :
                     break;
             }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function referCatalogue(change_item){
+    var data={};
+    data['catalogue_div'] = $('#catalogue_div').val();
+    data['catalogue_nm'] = $('#catalogue_nm').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/mission/mi002/refer_catalogue',
+        dataType: 'html',
+        loading:false,
+        data:data ,//convert to object
+        success: function (res) {
+            $('.result:visible').html(res);
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {
@@ -461,6 +468,27 @@ function updateGroup(change_item){
                 default :
                     break;
             }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function referGroup(change_item){
+    var data={};
+    data['catalogue_div'] = $('#catalogue_div').val();
+    data['catalogue_nm'] = $('#catalogue_nm').val();
+    data['group_nm'] = $('#group_nm').val();
+    $.ajax({
+        type: 'POST',
+        url: '/master/mission/mi002/refer_group',
+        dataType: 'html',
+        loading:false,
+        data:data ,//convert to object
+        success: function (res) {
+            $('.result:visible').html(res);
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {

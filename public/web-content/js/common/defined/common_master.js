@@ -1573,7 +1573,8 @@ function initFlugin(){
     }
     $(".ckeditor").each(function(){
         try{
-          CKEDITOR.inline($(this).attr('name'),{language:"vi"});  
+            CKEDITOR.replace($(this).attr('id'));
+          // CKEDITOR.inline($(this).attr('name'),{language:"vi"});  
         }catch(e){
 
         }

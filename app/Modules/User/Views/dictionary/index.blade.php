@@ -31,6 +31,7 @@
                         <div class="input-group">
                           <input type="text" class="form-control input-sm" id="key-word" placeholder="Nhập từ vựng cần tìm" maxlength="100" value="{{isset($data_default[0]['vocabulary_nm'])?$data_default[0]['vocabulary_nm']:''}}">
                           <span class="form-control-feedback"><img width="60px" height="40px" src="/web-content/images/plugin-icon/open-book.png"></span>
+                          <input type="hidden" name="" id="key-id" value="{{isset($data_default[0]['id'])?$data_default[0]['id']:''}}">
                         </div><!-- /input-group -->
                     </div>
                 </div>

@@ -1160,6 +1160,10 @@ button .is-icon{
     padding: 0px 10px;
 }
 
+.question .question-content{
+    margin-left: 10px;
+}
+
 .form-group{
     margin-bottom: 10px;
 }
@@ -1305,6 +1309,10 @@ a.btn-add span {
     border-bottom: 1px double #ddd;
     position: relative;
     margin-top: -10px;
+}
+
+.question .question-content .answer-box{
+    border: none;
 }
 
 .answer-box .result-icon{
@@ -1556,3 +1564,16 @@ select.tag-custom{
   pointer-events: auto!important;
 }
 
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: brown;
+    /*transition: width .7s;*/
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
