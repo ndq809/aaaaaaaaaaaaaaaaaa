@@ -1,27 +1,27 @@
 $(function(){
 	try{
-		init_v001();
+		init_mi001();
 	}catch(e){
 		alert('エラーがあった :'+e);
 	}
 })
 
-function init_v001(){
+function init_mi001(){
     $('#btn-confirm').addClass('btn-disable-custom');
     $('#btn-public').addClass('btn-disable-custom');
     $('#btn-reset-status').addClass('btn-disable-custom');
-	initevent_v001();
+	initevent_mi001();
 }
 
-function initevent_v001(){
+function initevent_mi001(){
 	$(document).on('click','#btn-list',function(){
-		v001_execute(1);
+		mi001_execute(1);
 	})
 
 	$(document).on('click','#btn-delete',function(){
 		if($('.sub-checkbox:visible:checked').length!=0){
            showMessage(3,function(){
-                v001_delete();
+                mi001_delete();
            }); 
         }
 	})
@@ -29,7 +29,7 @@ function initevent_v001(){
     $(document).on('click','#btn-confirm',function(){
         if($('.sub-checkbox:visible:checked').length!=0){
            showMessage(24,function(){
-                v001_confirm();
+                mi001_confirm();
            }); 
         }
     })
@@ -37,7 +37,7 @@ function initevent_v001(){
     $(document).on('click','#btn-public',function(){
         if($('.sub-checkbox:visible:checked').length!=0){
            showMessage(25,function(){
-                v001_public();
+                mi001_public();
            }); 
         }
     })
@@ -45,14 +45,14 @@ function initevent_v001(){
     $(document).on('click','#btn-reset-status',function(){
         if($('.sub-checkbox:visible:checked').length!=0){
            showMessage(26,function(){
-                v001_reset();
+                mi001_reset();
            }); 
         }
     })
 
     $(document).on('click', '.pager li a', function () {
         var page = $(this).attr('page');
-        v001_execute(parseInt(page, 10));
+        mi001_execute(parseInt(page, 10));
     })
 
     $(document).on('click','.preview-audio',function(){
@@ -69,16 +69,31 @@ function initevent_v001(){
         updateDeleteArray(this,1);
     })
 
+    $(document).on('change','#rank-from',function(){
+        _this = this;
+        $('#rank-to').val(0);
+        $('#rank-to option').filter(function(){
+            return $(this).attr('value')*1 >= $(_this).val()*1;
+        }).removeClass('hidden');
+
+        $('#rank-to option').filter(function(){
+            return $(this).attr('value')*1 < $(_this).val()*1;
+        }).addClass('hidden');
+        if(rank_to!=0){
+            $('#rank-to').val(rank_to);
+        }
+    })
+
 }
 
-function v001_execute(page){
+function mi001_execute(page){
 	var data=getInputData();
     _pageSize=50;
     data['page_size'] = _pageSize;
     data['page'] = page;
 	$.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v001/list',
+        url: '/master/mission/mi001/list',
         dataType: 'html',
         loading:true,
         data: data,
@@ -127,10 +142,10 @@ function v001_execute(page){
     });
 }
 
-function v001_delete(){
+function mi001_delete(){
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v001/delete',
+        url: '/master/mission/mi001/delete',
         dataType: 'json',
         loading:true,
         data: $.extend({}, _data_delete),//convert to object
@@ -161,10 +176,10 @@ function v001_delete(){
     });
 }
 
-function v001_confirm(){
+function mi001_confirm(){
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v001/confirm',
+        url: '/master/mission/mi001/confirm',
         dataType: 'json',
         loading:true,
         data: $.extend({}, _data_delete),//convert to object
@@ -198,10 +213,10 @@ function v001_confirm(){
     });
 }
 
-function v001_public(){
+function mi001_public(){
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v001/public',
+        url: '/master/mission/mi001/public',
         dataType: 'json',
         loading:true,
         data: $.extend({}, _data_delete),//convert to object
@@ -235,10 +250,10 @@ function v001_public(){
     });
 }
 
-function v001_reset(){
+function mi001_reset(){
     $.ajax({
         type: 'POST',
-        url: '/master/vocabulary/v001/reset',
+        url: '/master/mission/mi001/reset',
         dataType: 'json',
         loading:true,
         data: $.extend({}, _data_delete),//convert to object

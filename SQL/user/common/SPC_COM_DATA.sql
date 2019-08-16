@@ -93,6 +93,14 @@ BEGIN
 	WHEN F002.notify_condition = 1 THEN 1
 	END,F002.cre_date DESC
 
+	SELECT
+		F001.mission_id
+	,	F001.title
+	FROM F001
+	INNER JOIN F013
+	ON F001.mission_id = F013.mission_id
+	WHERE F013.account_id = @P_account_id
+
 	--EXEC SPC_COM_MISSION_QUESTION_LIST
 END
 

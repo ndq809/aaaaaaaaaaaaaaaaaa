@@ -119,7 +119,7 @@ function p003_refer(){
         data: data,
         success: function (res) {
             clearFailedValidate();
-            parent.$('.result:visible').html(res);
+            parent._popup_transfer_array['result'].html(res);
             parent.jQuery.fancybox.close();
         },
         // Ajax error

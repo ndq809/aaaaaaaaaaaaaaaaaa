@@ -2,43 +2,47 @@
     <h5 class="panel-title">Danh Sách Từ Vựng</h5>
 </div>
 <div class="panel-content padding-10-l">
-    <div class="table-fixed-width no-padding-left" min-width='700px'>
+    <div class="table-fixed-width no-padding-left" min-width='1200px'>
         <table class="table table-hover table-bordered table-checkbox table-preview">
             <thead>
                 <tr>
                     <th width="50px"><input type="checkbox" name="" class="super-checkbox"></th>
                     <th width="50px">ID</th>
-                    <th width="50px">Mã TV</th>
-                    <th width="70px">Phiên Bản</th>
-                    <th width="300px">Tên Từ Vựng</th>
-                    <th width="150px">Chuyên Nghành</th>
-                    <th width="150px">Lĩnh Vực</th>
-                    <th width="100px">Loại Từ Vựng</th>
-                    <th width="150px">Phiên Âm</th>
-                    <th>Nghĩa</th>
-                    <th width="100px">Hình Ảnh</th>
-                    <th width="100px">Âm Thanh</th>
+                    <th width="50px">Mã NV</th>
+                    <th width="150px">Loại NV</th>
+                    <th width="150px">Loại Dữ Liệu NV</th>
+                    <th width="150px">Loại Danh Mục</th>
+                    <th width="150px">Tên Danh Mục</th>
+                    <th width="100px">Tên Nhóm</th>
+                    <th>Tên NV</th>
+                    <th width="150px">Điểm KN</th>
+                    <th width="100px">Điểm ĐG</th>
+                    <th width="100px">Thời Gian</th>
+                    <th width="100px">Giới Hạn Rank</th>
+                    <th width="100px">SL Tối Thiểu</th>
                     <th width="70px">Trạng Thái</th>
                     <th width="40px"></th>
                     <th class="hidden"></th>
                 </tr>
             </thead>
             <tbody>
-                @if(isset($data)&&$data[0][0]['vocabulary_id'] != '')
+                @if(isset($data)&&$data[0][0]['mission_id'] != '')
                 @foreach($data[0] as $index => $row)
                 <tr>
                     <td><input type="checkbox" name="" class="sub-checkbox"></td>
                     <td>{{$index+1}}</td>
-                    <td class="refer-item" refer_id="vocabulary_id">{{$row['vocabulary_id']}}</td>
-                    <td class="refer-item" refer_id="vocabulary_dtl_id">{{$row['vocabulary_dtl_id']}}</td>
-                    <td class="refer-item" refer_id="vocabulary_nm">{{$row['vocabulary_nm']}}</td>
-                    <td >{{$row['specialized_div_nm']}}</td>
-                    <td >{{$row['field_div_nm']}}</td>
-                    <td >{{$row['vocabulary_div_nm']}}</td>
-                    <td class="refer-item" refer_id="spelling">{{$row['spelling']}}</td>
-                    <td class="refer-item" refer_id="mean">{{$row['mean']}}</td>
-                    <td class="refer-item" refer_id="image"><a title="<img src='{{$row['image']}}' />" class="preview">{{$row['image']!=''?'Xem trước':''}}</a></td>
-                    <td class="refer-item" refer_id="audio"><audio class="sound1" src="{{$row['audio']}}" ></audio><a type="button" class="preview-audio">{{$row['audio']!=''?'Nghe thử':''}}</a></td>
+                    <td class="refer-item" refer_id="mission_id">{{$row['mission_id']}}</td>
+                    <td class="refer-item" refer_id="mission_div">{{$row['mission_div']}}</td>
+                    <td class="refer-item" refer_id="mission_data_div">{{$row['mission_data_div']}}</td>
+                    <td >{{$row['catalogue_div']}}</td>
+                    <td >{{$row['catalogue_nm']}}</td>
+                    <td >{{$row['group_nm']}}</td>
+                    <td class="refer-item" refer_id="mission_nm">{{$row['mission_nm']}}</td>
+                    <td class="refer-item" refer_id="exp">{{$row['exp']}}</td>
+                    <td class="refer-item" refer_id="cop">{{$row['cop']}}</td>
+                    <td class="refer-item" refer_id="period">{{$row['period']}}</td>
+                    <td class="refer-item" refer_id="rank">{{$row['rank']}}</td>
+                    <td class="refer-item" refer_id="unit_per_times">{{$row['unit_per_times']}}</td>
                     <td class="record-div-icon">
                         @if($row['record_div']==0)
                         <i class="fa fa-ban text-danger" title="{{$row['record_div_nm']}}"></i>
@@ -48,16 +52,16 @@
                         <i class="fa fa-send text-success" title="{{$row['record_div_nm']}}"></i>
                         @endif
                     </td>
-                    <td><a href="/master/vocabulary/v002?{{$row['vocabulary_id']}}?{{$row['vocabulary_dtl_id']}}" ><span class="fa fa fa-pencil-square-o fa-lg"></span></a></td>
-                    <td class="refer-item hidden" refer_id="vocabulary_div">{{$row['vocabulary_div']}}</td>
+                    <td><a href="/master/mission/mi002?{{$row['mission_id']}}" ><span class="fa fa fa-pencil-square-o fa-lg"></span></a></td>
+                    <td class="refer-item hidden" refer_id="mission_div">{{$row['mission_div']}}</td>
                 </tr>
                 @endforeach
                  @else
                  <tr>
                     @if(!isset($data))
-                        <td colspan="14">Xin nhập điều kiện tìm kiếm</td>
+                        <td colspan="16">Xin nhập điều kiện tìm kiếm</td>
                     @else
-                        <td colspan="14">Không có bản ghi nào khớp với điều kiệm tìm kiếm</td>
+                        <td colspan="16">Không có bản ghi nào khớp với điều kiệm tìm kiếm</td>
                     @endif
                 </tr>
                 @endif

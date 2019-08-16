@@ -35,7 +35,7 @@ class CommonController extends ControllerUser
     {
         $param    = $request->all();
         $param[2] = $this->hashids->decode($param[2])[0];
-        $param[4] = isset($param[4])?$param[4]:1;
+        $param[4] = isset($param[4]) ? $param[4] : 1;
         if (Auth::user() != null) {
             $param['user_id'] = Auth::user()->account_id;
         } else {
@@ -44,7 +44,7 @@ class CommonController extends ControllerUser
         $data = Dao::call_stored_procedure('SPC_COM_GET_PAGE_COMMENT', $param);
         // var_dump($data);die;
         $data   = $this->encodeID($data);
-        $view1  = view($param[1] != 8 ? 'comment' : 'answer')->with('data', $data)->with('cmt_div',$param[4])->render();
+        $view1  = view($param[1] != 8 ? 'comment' : 'answer')->with('data', $data)->with('cmt_div', $param[4])->render();
         $view2  = view('paging_content')->with('data', $data)->render();
         $result = array(
             'status'     => 200,
@@ -306,20 +306,20 @@ class CommonController extends ControllerUser
             );
         } else {
             $data   = $this->encodeID($data);
-            $view   = view('exam_content')->with('data',$data[1])->render();
+            $view   = view('exam_content')->with('data', $data[1])->render();
             $result = array(
                 'status'     => 200,
-                'view'      => $view,
+                'view'       => $view,
                 'statusText' => 'success',
             );
-            $notify_param             = [];
-            $notify_param[0]          = $param[2];
-            $notify_param[1]          = $param[1];
-            $notify_param[2]          = '';
+            $notify_param                = [];
+            $notify_param[0]             = $param[2];
+            $notify_param[1]             = $param[1];
+            $notify_param[2]             = '';
             $notify_param['notify_type'] = 7;
-            $notify_param['user_id']  = Auth::user()->account_id;
-            $notify_param['ip']       = $request->ip();
-            event(new NotificationEvents($notify_param,$view,''));
+            $notify_param['user_id']     = Auth::user()->account_id;
+            $notify_param['ip']          = $request->ip();
+            event(new NotificationEvents($notify_param, $view, ''));
         }
 
         return response()->json($result);
@@ -340,8 +340,8 @@ class CommonController extends ControllerUser
             $param['tag']     = json_encode(isset($param['tag']) ? $param['tag'] : array());
             $param['user_id'] = Auth::user()->account_id;
             $param['ip']      = $request->ip();
-            $data = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
-            $data = $this->encodeID($data);
+            $data             = Dao::call_stored_procedure('SPC_COM_ADD_QUESTION', $param);
+            $data             = $this->encodeID($data);
             if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
                 $result = array(
                     'status' => 208,
@@ -422,14 +422,14 @@ class CommonController extends ControllerUser
                 'view'       => $view,
                 'statusText' => 'success',
             );
-            $notify_param             = [];
-            $notify_param[0]          = $param[1];
-            $notify_param[1]          = $param[2];
-            $notify_param[2]          = $param[4];
+            $notify_param                = [];
+            $notify_param[0]             = $param[1];
+            $notify_param[1]             = $param[2];
+            $notify_param[2]             = $param[4];
             $notify_param['notify_type'] = 1;
-            $notify_param['user_id']  = Auth::user()->account_id;
-            $notify_param['ip']       = $request->ip();
-            event(new NotificationEvents($notify_param,$view,(int)$param[1] == 6 ? $param['cmt_div'] : ''));
+            $notify_param['user_id']     = Auth::user()->account_id;
+            $notify_param['ip']          = $request->ip();
+            event(new NotificationEvents($notify_param, $view, (int) $param[1] == 6 ? $param['cmt_div'] : ''));
         }
         return response()->json($result);
     }
@@ -500,7 +500,7 @@ class CommonController extends ControllerUser
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
         unset($param[5]);
-        $data             = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT', $param);
+        $data = Dao::call_stored_procedure('SPC_COM_TOGGLE_EFFECT', $param);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status' => 208,
@@ -517,14 +517,14 @@ class CommonController extends ControllerUser
                 'data'       => $data[1],
                 'statusText' => 'success',
             );
-            $notify_param             = [];
-            $notify_param[0]          = $screen_div;
-            $notify_param[1]          = $param[1];
-            $notify_param[2]          = '';
-            $notify_param['notify_type'] = $this->getNotifyType($param[2],$param[3]);
-            $notify_param['user_id']  = Auth::user()->account_id;
-            $notify_param['ip']       = $request->ip();
-            event(new NotificationEvents($notify_param,$data[1][0]['effected_count'],''));
+            $notify_param                = [];
+            $notify_param[0]             = $screen_div;
+            $notify_param[1]             = $param[1];
+            $notify_param[2]             = '';
+            $notify_param['notify_type'] = $this->getNotifyType($param[2], $param[3]);
+            $notify_param['user_id']     = Auth::user()->account_id;
+            $notify_param['ip']          = $request->ip();
+            event(new NotificationEvents($notify_param, $data[1][0]['effected_count'], ''));
         }
 
         return response()->json($result);
@@ -546,12 +546,76 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
-     public function getMissionQuestion(Request $request)
+    public function getMission(Request $request)
     {
-        $data     = Dao::call_stored_procedure('SPC_COM_MISSION_QUESTION_LIST');
-        $data     = $this->encodeID($data);
-        $view1    = view('practice')->with('data', $data[0])->render();
-        $result   = array(
+        $param               = $request->all();
+        $param['mission_id'] = $this->hashids->decode($param['mission_id'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $data                = Dao::call_stored_procedure('SPC_COM_MISSION', $param);
+        $data                = $this->encodeID($data);
+        $view1               = view('mission')->with('data', $data[0])->render();
+        $result              = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
+
+    public function acceptMission(Request $request)
+    {
+        $param               = $request->all();
+        $param['mission_id'] = $this->hashids->decode($param['mission_id'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
+        $data                = Dao::call_stored_procedure('SPC_COM_ACCEPT_MISSION', $param);
+        $data                = $this->encodeID($data);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $view1  = view('mission')->with('data', $data[1])->render();
+            $result = array(
+                'status'     => 200,
+                'view1'      => $view1,
+                'data'       => $data[1],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
+    public function refuseMission(Request $request)
+    {
+        $param               = $request->all();
+        $param['mission_id'] = $this->hashids->decode($param['mission_id'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $data                = Dao::call_stored_procedure('SPC_COM_REFUSE_MISSION', $param);
+        $data                = $this->encodeID($data);
+        $view1               = view('mission')->with('data', $data[0])->render();
+        $result              = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
+
+    public function getMissionQuestion(Request $request)
+    {
+        $data   = Dao::call_stored_procedure('SPC_COM_MISSION_QUESTION_LIST');
+        $data   = $this->encodeID($data);
+        $view1  = view('practice')->with('data', $data[0])->render();
+        $result = array(
             'status'     => 200,
             'view1'      => $view1,
             'data'       => $data[0],
@@ -708,7 +772,7 @@ class CommonController extends ControllerUser
             foreach ($value as $key1 => $value1) {
                 foreach ($value1 as $key2 => $value2) {
                     if ($key2 != 'row_id' && strpos($key2, 'id') !== false || strpos($key2, 'value') !== false) {
-                        $data[$key][$key1][$key2] = is_numeric($value2)?$hashids->encode($value2):$value2;
+                        $data[$key][$key1][$key2] = is_numeric($value2) ? $hashids->encode($value2) : $value2;
                     }
                 }
 
@@ -733,11 +797,12 @@ class CommonController extends ControllerUser
         }
     }
 
-    public static function getNotifyType($execute_div,$execute_target_div){
-        if($execute_div==3 && $execute_target_div == 3){
+    public static function getNotifyType($execute_div, $execute_target_div)
+    {
+        if ($execute_div == 3 && $execute_target_div == 3) {
             return 2;
         }
-        if($execute_div==1 && ($execute_target_div == 1||$execute_target_div == 2)){
+        if ($execute_div == 1 && ($execute_target_div == 1 || $execute_target_div == 2)) {
             return 4;
         }
         return 0;

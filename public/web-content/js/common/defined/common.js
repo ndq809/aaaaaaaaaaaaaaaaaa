@@ -2,6 +2,7 @@ var selectedTab = "#tab1"; var countComment = 1;
 var _popup_transfer_array=[];
 var _current_screen;
 var _current_answer = [];
+var _clicked_modal;
 $(function() {
     try {
         initCommon();
@@ -286,6 +287,7 @@ function initEvent() {
     $(document).on('click', '.btn-popup', function(e) {
         e.preventDefault();
         var popupId=$(this).attr('popup-id');
+        _clicked_modal = this;
         $('#'+popupId).modal('show')
     })
     $(window).resize(function() {
@@ -465,6 +467,26 @@ function initEvent() {
             sticky();
         }
     };
+
+    $(document).on('shown.bs.modal', '#popup-box4', function (event) {
+        getMission(_clicked_modal);
+    });
+
+    $(document).on('hidden.bs.modal', '#popup-box4', function (event) {
+        $(this).find('.modal-body .form-group').html('');
+    });
+
+    $(document).on('change','#popup-box4 #mission-level',function(){
+        $('#popup-box4 #exp').text('+ '+$('#popup-box4 #exp').attr('value')*$(this).val());
+        $('#popup-box4 #failed_exp').text('- '+$('#popup-box4 #failed_exp').attr('value')*$(this).val());
+        $('#popup-box4 #cop').text('+ '+$('#popup-box4 #cop').attr('value')*$(this).val());
+        $('#popup-box4 #failed_cop').text('- '+$('#popup-box4 #failed_cop').attr('value')*$(this).val());
+        $('#popup-box4 #unit_per_times').text($(this).find('option:selected').text());
+    })
+
+    $(document).on('click','#btn-accept-mission',function(){
+        acceptMission();
+    })
 
 }
 
@@ -1271,6 +1293,110 @@ function checkMissionAnswer(){
             $('.question').removeClass('wrong-answer');
         }
     },1000)
+}
+
+function getMission(target) {
+    var data = {};
+    data['mission_id'] = $(target).attr('id');
+    $.ajax({
+        type: 'POST',
+        url: '/common/getMission',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#popup-box4 .modal-content').html(res.view1);
+                    $('#popup-box4 #mission-level').trigger('change');
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function acceptMission(target) {
+    var data = {};
+    data['mission_id'] = $('.modal-body:visible #mission-id').val();
+    data['mission-level'] = $('.modal-body #mission-level:visible option:selected').text();
+    $.ajax({
+        type: 'POST',
+        url: '/common/acceptMission',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#popup-box4 .modal-content').html(res.view1);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function refuseMission(target) {
+    var data = {};
+    data['mission_id'] = $(target).attr('id');
+    $.ajax({
+        type: 'POST',
+        url: '/common/refuseMission',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#popup-box4 .modal-body>.form-group').html(res.view1);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }
 
 function changePassword(username){

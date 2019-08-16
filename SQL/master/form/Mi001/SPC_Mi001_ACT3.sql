@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_V001_ACT3]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_Mi001_ACT3]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
-DROP PROCEDURE [dbo].[SPC_V001_ACT3]
+DROP PROCEDURE [dbo].[SPC_Mi001_ACT3]
 GO
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
 SET ANSI_NULLS ON
@@ -8,8 +8,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_V001_ACT3]
-	 @P_voc_id_json			NVARCHAR(MAX)	=   ''
+CREATE PROCEDURE [dbo].[SPC_Mi001_ACT3]
+	 @P_mission_id_json		NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -19,8 +19,8 @@ BEGIN
 	DECLARE 
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			= SYSDATETIME()
-	,	@w_program_id			NVARCHAR(50)		= 'V001'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Danh sách từ vựng'
+	,	@w_program_id			NVARCHAR(50)		= 'Mi001'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Công khai nhiệm vụ'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'public'
 	,	@w_prs_key				NVARCHAR(1000)		= ''
@@ -29,23 +29,116 @@ BEGIN
 	BEGIN TRANSACTION
 	BEGIN TRY
 		--
-		UPDATE M006 SET
-			M006.record_div =	2
-		,	M006.upd_user	=	@P_user_id
-		,	M006.upd_prg	=	@w_program_id
-		,	M006.upd_ip		=	@P_ip
-		,	M006.upd_date	=	@w_time
-		FROM M006 _M006
-		INNER JOIN( 
+		CREATE TABLE #MISSION(
+			mission_id			NVARCHAR(15)
+		,	account_id			NVARCHAR(15)
+		,	unit_this_times		INT
+		)
+
+		INSERT INTO #MISSION
+		SELECT
+			F001.mission_id
+		,	F009.target_id
+		,	F001.unit_per_times
+		FROM F009
+		INNER JOIN F001
+		ON F009.briged_id = F001.briged_id
+		AND F009.briged_div = 4
+		INNER JOIN(
 		SELECT              
-           		vocabulary_id		AS	vocabulary_id	
-			,	vocabulary_dtl_id	AS	vocabulary_dtl_id
-			FROM OPENJSON(@P_voc_id_json) WITH(
-        		vocabulary_id	       NVARCHAR(100)	'$.id	  '
-			,	vocabulary_dtl_id	    NVARCHAR(100)	'$.dtl_id'
+           		mission_id		AS	mission_id	
+			FROM OPENJSON(@P_mission_id_json) WITH(
+        		mission_id	       NVARCHAR(100)	'$.id	  '
         )) TEMP
-		ON TEMP.vocabulary_id= _M006.vocabulary_id
-		AND TEMP.vocabulary_dtl_id = _M006.vocabulary_dtl_id
+		ON TEMP.mission_id= F001.mission_id
+		WHERE F001.mission_user_div = 2
+
+		INSERT INTO #MISSION
+		SELECT
+			F001.mission_id
+		,	S001.account_id
+		,	F001.unit_per_times
+		FROM S001
+		INNER JOIN F001
+		ON S001.account_div >= F001.rank_from
+		AND S001.account_div <= F001.rank_to
+		AND S001.system_div = 1
+		INNER JOIN(
+		SELECT              
+           		mission_id		AS	mission_id	
+			FROM OPENJSON(@P_mission_id_json) WITH(
+        		mission_id	       NVARCHAR(100)	'$.id	  '
+        )) TEMP
+		ON TEMP.mission_id= F001.mission_id
+		WHERE F001.mission_user_div <> 2
+		AND S001.del_flg = 0
+
+
+		INSERT INTO F013(
+			mission_id
+		,	account_id
+		,	condition
+		,	unit_this_times
+		,	try_times_count
+		,	success_count
+		,	failed_count
+		,	ignore_count
+		,	start_time
+		,	finished_time
+		,	del_flg
+		,	cre_user
+		,	cre_prg
+		,	cre_ip
+		,	cre_date
+		,	upd_user
+		,	upd_prg
+		,	upd_ip
+		,	upd_date
+		,	del_user
+		,	del_prg
+		,	del_ip
+		,	del_date
+		)
+		SELECT
+			#MISSION.mission_id
+		,	#MISSION.account_id
+		,	0
+		,	#MISSION.unit_this_times
+		,	0
+		,	0
+		,	0
+		,	0
+		,	NULL
+		,	NULL
+		,	0
+		,	@P_user_id
+		,	@w_program_id
+		,	@P_ip
+		,	@w_time
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		,	NULL
+		FROM #MISSION
+		
+		UPDATE F001 SET
+			F001.record_div =	2
+		,	F001.upd_user	=	@P_user_id
+		,	F001.upd_prg	=	@w_program_id
+		,	F001.upd_ip		=	@P_ip
+		,	F001.upd_date	=	@w_time
+		FROM F001 _F001
+		INNER JOIN(
+		SELECT              
+           		mission_id		AS	mission_id	
+			FROM OPENJSON(@P_mission_id_json) WITH(
+        		mission_id	       NVARCHAR(100)	'$.id	  '
+        )) TEMP
+		ON TEMP.mission_id= _F001.mission_id
 
 	END TRY
 	BEGIN CATCH

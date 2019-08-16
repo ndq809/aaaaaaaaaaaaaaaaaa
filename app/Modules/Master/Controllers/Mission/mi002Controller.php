@@ -38,10 +38,20 @@ class mi002Controller extends Controller
                 # code...
                 break;
         }
+        switch ($data['header_data']['mission_user_div'] * 1) {
+            case 2:
+                unset($validate_data['rank-from']);
+                unset($validate_data['rank-to']);
+                break;
+            default:
+                # code...
+                break;
+        }
         $validate = common::checkValidate($validate_data);
         if ($validate['result']) {
             $param                = $data['header_data'];
-            $param['detail_data'] = json_encode(isset($data['detail_data'])?$data['detail_data']:array());
+            $param['detail_data1'] = json_encode(isset($data['detail_data1'])?$data['detail_data1']:array());
+            $param['detail_data2'] = json_encode(isset($data['detail_data2'])?$data['detail_data2']:array());
             $param['user_id']     = Auth::user()->account_id;
             $param['ip']          = $request->ip();
 
@@ -155,16 +165,18 @@ class mi002Controller extends Controller
         $data         = $request->all();
         $result_query = DAO::call_stored_procedure("SPC_Mi002_LST1", $data);
         $view1        = view('Master::mission.mi002.refer')->with('data_default', $result_query)->render();
-        if ($result_query[4][0]['catalogue_div']*1 == 1) {
-            $view2        = view('Master::mission.mi002.refer_voc')->with('data_voc', $result_query[5])->render();
+        if ($result_query[5][0]['catalogue_div']!=''&&$result_query[5][0]['catalogue_div'] == 1) {
+            $view2        = view('Master::mission.mi002.refer_voc')->with('data_voc', $result_query[6])->render();
         }else{
-            $view2        = view('Master::mission.mi002.refer_post')->with('data_post', $result_query[5])->render();
+            $view2        = view('Master::mission.mi002.refer_post')->with('data_post', $result_query[6])->render();
         }
+        $view3        = view('Master::mission.mi002.refer_user')->with('data_user', $result_query[7])->render();
         $result       = array(
             'status'     => 200,
             'view1'      => $view1,
             'view2'      => $view2,
-            'data'       => $result_query[4][0],
+            'view3'      => $view3,
+            'data'       => $result_query[5][0],
             'statusText' => 'success',
         );
         return response()->json($result);

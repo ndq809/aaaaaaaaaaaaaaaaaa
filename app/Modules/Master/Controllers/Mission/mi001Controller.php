@@ -24,7 +24,7 @@ class mi001Controller extends Controller
     {
         $param               = $request->all();
         $param['record_div'] = (int) $param['record_div'] - 1;
-        $data                = Dao::call_stored_procedure('SPC_mi001_LST2', $param);
+        $data                = Dao::call_stored_procedure('SPC_Mi001_LST2', $param);
         return view('Master::mission.mi001.search')
             ->with('data', $data)
             ->with('paging', $data[1][0]);
@@ -36,7 +36,7 @@ class mi001Controller extends Controller
         $param['json']    = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
-        $result_query     = DAO::call_stored_procedure("SPC_mi001_ACT1", $param);
+        $result_query     = DAO::call_stored_procedure("SPC_Mi001_ACT1", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status'     => 208,
@@ -58,7 +58,7 @@ class mi001Controller extends Controller
         $param['json']    = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
-        $result_query     = DAO::call_stored_procedure("SPC_mi001_ACT2", $param);
+        $result_query     = DAO::call_stored_procedure("SPC_Mi001_ACT2", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status'     => 208,
@@ -80,7 +80,7 @@ class mi001Controller extends Controller
         $param['json']    = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
-        $result_query     = DAO::call_stored_procedure("SPC_mi001_ACT3", $param);
+        $result_query     = DAO::call_stored_procedure("SPC_Mi001_ACT3", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status'     => 208,
@@ -102,7 +102,7 @@ class mi001Controller extends Controller
         $param['json']    = json_encode($data);
         $param['user_id'] = Auth::user()->account_id;
         $param['ip']      = $request->ip();
-        $result_query     = DAO::call_stored_procedure("SPC_mi001_ACT4", $param);
+        $result_query     = DAO::call_stored_procedure("SPC_Mi001_ACT4", $param);
         if ($result_query[0][0]['Data'] == 'Exception' || $result_query[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status'     => 208,

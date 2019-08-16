@@ -61,6 +61,18 @@ function initevent_mi002(){
         updateDeleteArray(this);
     })
 
+    $(document).on('change','#mission_user_div',function(){
+        if($(this).val()*1!=2){
+            $('.mission-user-panel').addClass('hidden');
+            $('#rank-from').prop('disabled',false).val(0);
+            $('#rank-to').prop('disabled',false).val(0);
+        }else{
+            $('.mission-user-panel').removeClass('hidden');
+            $('#rank-from').prop('disabled',true).val(0);
+            $('#rank-to').prop('disabled',true).val(0);
+        }
+    })
+
     $(document).on('change','#mission_data_div',function(){
         switch(true){
             case ($(this).val()*1==1&&$('#catalogue_div').val()*1!=0) :
@@ -176,21 +188,40 @@ function initevent_mi002(){
         }
     })
 
-    $(document).on('click','.btn-popup',function(){
-         _popup_transfer_array['post_array']=getTableTdData($('.submit-table:visible'));
-         _popup_transfer_array['voc_array']=getTableTdData($('.submit-table:visible'));
+    $(document).on('click','.transform-content .btn-popup',function(){
+         _popup_transfer_array['post_array']=getTableTdData($(this).closest('.panel').find('.submit-table:visible'));
+         _popup_transfer_array['voc_array']=getTableTdData($(this).closest('.panel').find('.submit-table:visible'));
         _popup_transfer_array['catalogue_div'] = $('#catalogue_div').val();
+         _popup_transfer_array['result']=$(this).closest('.panel').find('.result');
+    })
+
+    $(document).on('click','.mission-user-panel .btn-popup',function(){
+         _popup_transfer_array['user_array']=getTableTdData($(this).closest('.panel').find('.submit-table:visible'));
+         _popup_transfer_array['result']=$(this).closest('.panel').find('.result');
+
+    })
+
+    $(document).on('change','#exp',function(){
+        $('#failed_exp').val(Number($(this).val())*20/100).tofix(0);
+    })
+
+    $(document).on('change','#cop',function(){
+        $('#failed_cop').val(Number($(this).val())*20/100).tofix(0);
     })
 
 }
 
 function mi002_addNew(){
     var data_addnew={};
-    var detail_data = $.map(getTableTdData($('.submit-table:visible')),function(value,key){
+    var detail_data1 = $.map(getTableTdData($('.mission-user-panel .submit-table:visible')),function(value,key){
+        return {'id':value['account_id']};
+    })
+    var detail_data2 = $.map(getTableTdData($('.transform-content .submit-table:visible')),function(value,key){
         return {'id':value['id']};
     })
     data_addnew['header_data']=getInputData(1);
-    data_addnew['detail_data']=detail_data;
+    data_addnew['detail_data1']=detail_data1;
+    data_addnew['detail_data2']=detail_data2;
 	$.ajax({
         type: 'POST',
         url: '/master/mission/mi002/addnew',
@@ -335,6 +366,9 @@ function mi002_refer(){
             }else{
                 $('.transform-content[type=1] .result').html(res.view2);
             }
+            if(res.data.mission_user_div==2){
+                $('.mission-user-panel .result').html(res.view3);
+            }
             initFlugin();
             // $('.result').html(res.view2);
             catalogue_id = res.data.catalogue_id;
@@ -343,6 +377,9 @@ function mi002_refer(){
             $('#rank-from').trigger('change');
             $('#catalogue_div').trigger('change');
             $('#mission_data_div').trigger('change');
+            if($('#mission_user_div').val()==2){
+                $('#mission_user_div').trigger('change');
+            }
         }
     });
 }

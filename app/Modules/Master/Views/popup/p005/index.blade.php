@@ -45,7 +45,7 @@
 </div>
 <div class="panel main-panel col-xs-12 ">
     <div class="panel-header padding-10-l">
-        <h5 class="panel-title">Danh Sách Từ Vựng</h5>
+        <h5 class="panel-title">Danh Sách Bài Học</h5>
     </div>
     <div class="panel-content padding-10-l" id="result" >
         @include('Master::popup.p005.search')

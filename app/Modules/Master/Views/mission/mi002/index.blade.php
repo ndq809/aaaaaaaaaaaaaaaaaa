@@ -17,6 +17,19 @@
         @include('Master::mission.mi002.refer')
     </div>
 </div>
+<div class="panel main-panel col-xs-12 mission-user-panel hidden">
+    <div class="panel-header">
+        <h5 class="panel-title">Đối Tượng Thực Hiện</h5>
+    </div>
+    <div class="col-sm-12 no-padding-right" type="">
+	    <div class="form-group table-fixed-width" min-width="1024px">
+	        <a type="button" href="/master/popup/p006" class="btn btn-sm btn-primary btn-popup">Duyệt danh sách đối tượng</a>
+	        <div class="result">
+	            @include('Master::mission.mi002.refer_user')
+	        </div>
+	    </div>
+	</div>
+</div>
 <div class="panel main-panel col-xs-12">
     <div class="panel-header">
         <h5 class="panel-title">Chi Tiết Nhiệm Vụ</h5>

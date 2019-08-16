@@ -17,7 +17,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Nhiệm Vụ</label>
-                <select id="specialized_div" class="submit-item">
+                <select id="mission_div" class="submit-item">
                     @foreach($data_default[0] as $item)
                         <option value="{{$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -27,7 +27,7 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Dữ Liệu Nhiệm Vụ</label>
-                <select id="field_div" class="submit-item">
+                <select id="mission_data_div" class="submit-item">
                     @foreach($data_default[1] as $item)
                         <option value="{{$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
@@ -37,18 +37,46 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Danh Mục</label>
-                <select id="mission_div" class="submit-item">
+                <select id="catalogue_div" class="submit-item">
                     @foreach($data_default[2] as $item)
                         <option value="{{$item['number_id']}}">{{$item['content']}}</option>
                     @endforeach
                 </select>
             </div>
         </div>
-        <div class="col-sm-12 no-padding-right">
+        <div class="col-sm-3 no-padding-right">
+            <div class="form-group">
+                <label>Trạng Thái</label>
+                <select id="record_div" class="submit-item">
+                    @foreach($data_default[3] as $item)
+                        <option value="{{$item['number_id']}}">{{$item['content']}}</option>
+                    @endforeach
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4 no-padding-right">
+            <div class="form-group">
+                <label>Giới Hạn Rank</label>
+                <div class="input-group">
+                    <select id="rank-from" class="submit-item">
+                        @foreach($data_default[4] as $item)
+                            <option value="{{$item['number_id']}}" placeholder="Rank bắt đầu">{{$item['content']}}</option>
+                        @endforeach
+                    </select>
+                    <span class="input-group-text">~</span>
+                    <select id="rank-to" class="submit-item">
+                        @foreach($data_default[4] as $item)
+                            <option value="{{$item['number_id']}}" placeholder="Rank kết thúc" class="hidden">{{$item['content']}}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 no-padding-right">
             <div class="form-group">
                 <label>Tên Nhiệm Vụ</label>
                 <div class="input-group">
-                    <input id="mission_nm" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập tên từ vựng" maxlength="50">
+                    <input id="mission_nm" type="text" name="" class="form-control input-sm submit-item" placeholder="Nhập tên nhiệm vụ" maxlength="50">
                 </div>
             </div>
         </div>

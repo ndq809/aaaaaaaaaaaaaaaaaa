@@ -53,6 +53,20 @@ a{
     cursor: pointer;
 }
 
+.input-sm:not(textarea){
+    height: 28px!important;
+    line-height: 28px!important;
+    padding: 4px 10px!important;
+}
+
+.btn-sm{
+    padding: 4px 10px!important;
+}
+
+.input-group-addon{
+    padding: 5px 12px;
+}
+
 .tooltip .tooltip-inner {
     background-color:red;
 }
@@ -135,7 +149,7 @@ table button[type='button']{
 }
 
 .pager select.input-sm{
-    height: 28px;
+    height: 26px;
     padding-top: -1px;
     text-align: center;
 }

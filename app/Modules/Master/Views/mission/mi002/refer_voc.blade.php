@@ -15,6 +15,7 @@
         @foreach($data_voc as $index=>$value)
         <tr>
             <td>{{$index+1}}</td>
+            <td class="hidden" refer-id="id">{{isset($value)?$value['vocabulary_code']:''}}</td>
             <td class="hidden" refer-id="vocabulary_code">{{isset($value)?$value['vocabulary_code']:''}}</td>
             <td class="refer-item" refer_id="vocabulary_nm">{{$value['vocabulary_nm']}}</td>
             <td class="refer-item" refer_id="specialized">{{$value['specialized_div_nm']}}</td>

@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_V001_ACT4]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_Mi001_ACT4]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
-DROP PROCEDURE [dbo].[SPC_V001_ACT4]
+DROP PROCEDURE [dbo].[SPC_Mi001_ACT4]
 GO
 /****** Object:  StoredProcedure [dbo].[SPC_M001_ACT2]    Script Date: 2017/11/23 15:16:49 ******/
 SET ANSI_NULLS ON
@@ -8,8 +8,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_V001_ACT4]
-	 @P_voc_id_json			NVARCHAR(MAX)	=   ''
+CREATE PROCEDURE [dbo].[SPC_Mi001_ACT4]
+	 @P_mission_id_json		NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''
 AS
@@ -19,8 +19,8 @@ BEGIN
 	DECLARE 
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			= SYSDATETIME()
-	,	@w_program_id			NVARCHAR(50)		= 'V001'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Danh sách từ vựng'
+	,	@w_program_id			NVARCHAR(50)		= 'Mi001'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'reset nhiệm vụ'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'reset'
 	,	@w_prs_key				NVARCHAR(1000)		= ''
@@ -30,63 +30,56 @@ BEGIN
 	BEGIN TRANSACTION
 	BEGIN TRY
 
-		CREATE TABLE #VOCABULARY(
+		CREATE TABLE #MISSION(
 			row_id				INT
-		,	Vocabulary_id		INT
-		,	Vocabulary_dtl_id	INT	
+		,	mission_id		INT
 		)
 
-		INSERT INTO #VOCABULARY
+		INSERT INTO #MISSION
 		SELECT              
            		row_id				AS	row_id	
-           	,	vocabulary_id		AS	vocabulary_id	
-			,	vocabulary_dtl_id	AS	vocabulary_dtl_id
-			FROM OPENJSON(@P_voc_id_json) WITH(
+           	,	mission_id			AS	mission_id	
+			FROM OPENJSON(@P_mission_id_json) WITH(
         		row_id					NVARCHAR(100)	'$.row_id	  '
-        	,	vocabulary_id			NVARCHAR(100)	'$.id	  '
-			,	vocabulary_dtl_id	    NVARCHAR(100)	'$.dtl_id'
+        	,	mission_id			NVARCHAR(100)	'$.id	  '
         )
 
-		INSERT INTO @ERR_TBL
-		 SELECT 
-		  1
-		 , 27
-		 , 'table-preview'
-		 , #VOCABULARY.row_id
-		 FROM #VOCABULARY
-		 INNER JOIN M006 ON
-			 M006.vocabulary_id = #VOCABULARY.Vocabulary_id
-		 AND M006.vocabulary_dtl_id = #VOCABULARY.Vocabulary_dtl_id
-		 AND M006.record_div = 2
-		 AND M006.del_flg = 0
-		 LEFT JOIN F009 ON
-			F009.briged_div = 1
-		AND F009.target_id = M006.id
-		LEFT JOIN M007 ON
-		M007.briged_id = F009.briged_id
-		AND M007.record_div = 2
-		WHERE F009.target_id IS NOT NULL
-		AND	M007.post_id IS NOT NULL
+		--INSERT INTO @ERR_TBL
+		-- SELECT 
+		--  1
+		-- , 27
+		-- , 'table-preview'
+		-- , #MISSION.row_id
+		-- FROM #MISSION
+		-- INNER JOIN F001 ON
+		--	 F001.mission_id = #MISSION.mission_id
+		-- AND F001.record_div = 2
+		-- AND F001.del_flg = 0
+		-- LEFT JOIN F009 ON
+		--	F009.briged_div = 1
+		--AND F009.target_id = F001.id
+		--LEFT JOIN M007 ON
+		--M007.briged_id = F009.briged_id
+		--AND M007.record_div = 2
+		--WHERE F009.target_id IS NOT NULL
+		--AND	M007.post_id IS NOT NULL
 
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO COMPLETE_QUERY
 		--
-		UPDATE M006 SET
-			M006.record_div =	0
-		,	M006.upd_user	=	@P_user_id
-		,	M006.upd_prg	=	@w_program_id
-		,	M006.upd_ip		=	@P_ip
-		,	M006.upd_date	=	@w_time
-		FROM M006 _M006
-		INNER JOIN( 
+		UPDATE F001 SET
+			F001.record_div =	0
+		,	F001.upd_user	=	@P_user_id
+		,	F001.upd_prg	=	@w_program_id
+		,	F001.upd_ip		=	@P_ip
+		,	F001.upd_date	=	@w_time
+		FROM F001 _F001
+		INNER JOIN(
 		SELECT              
-           		vocabulary_id		AS	vocabulary_id	
-			,	vocabulary_dtl_id	AS	vocabulary_dtl_id
-			FROM OPENJSON(@P_voc_id_json) WITH(
-        		vocabulary_id	       NVARCHAR(100)	'$.id	  '
-			,	vocabulary_dtl_id	    NVARCHAR(100)	'$.dtl_id'
+           		mission_id		AS	mission_id	
+			FROM OPENJSON(@P_mission_id_json) WITH(
+        		mission_id	       NVARCHAR(100)	'$.id	  '
         )) TEMP
-		ON TEMP.vocabulary_id= _M006.vocabulary_id
-		AND TEMP.vocabulary_dtl_id = _M006.vocabulary_dtl_id
+		ON TEMP.mission_id= _F001.mission_id
 
 	END TRY
 	BEGIN CATCH

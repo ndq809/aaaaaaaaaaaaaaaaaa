@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_Mi002_LST1]
-	@P_mission_id			NVARCHAR(15)				=	'1'
+	@P_mission_id			NVARCHAR(15)				=	''
 
 AS
 BEGIN
@@ -36,16 +36,20 @@ BEGIN
 	,	F001.catalogue_id
 	,	F001.group_id
 	,	F001.exp
+	,	F001.failed_exp
 	,	F001.cop
+	,	F001.failed_cop
 	,	F001.period
+	,	F001.mission_user_div
 	,	F001.rank_from
 	,	F001.rank_to
 	,	F001.unit_per_times
 	FROM F001
 	WHERE F001.mission_id = @P_mission_id
-
-	SELECT @w_briged_id= (SELECT F001.briged_id FROM F001 WHERE F001.mission_id = @P_mission_id)
-	SELECT @w_catalogue_div= (SELECT F001.catalogue_div FROM F001 WHERE F001.mission_id = @P_mission_id)
+	AND F001.del_flg = 0
+	
+	SELECT @w_briged_id= (SELECT F001.briged_id FROM F001 WHERE F001.mission_id = @P_mission_id AND F001.del_flg = 0)
+	SELECT @w_catalogue_div= (SELECT F001.catalogue_div FROM F001 WHERE F001.mission_id = @P_mission_id AND F001.del_flg = 0)
 
 	IF @w_catalogue_div = 1
 	BEGIN
@@ -75,7 +79,7 @@ BEGIN
 		ON	M006.field = M999_3.number_id
 		AND	M999_3.name_div = 24
 		INNER JOIN F009
-		ON M006.vocabulary_id = F009.target_id
+		ON M006.id = F009.target_id
 		AND F009.briged_div = 1
 		AND F009.briged_id = @w_briged_id
 	END
@@ -109,8 +113,32 @@ BEGIN
 		AND M007.catalogue_div = @w_catalogue_div
 	END
 
-
-
+	SELECT
+		S001.account_id		AS	account_id	
+	,	S001.account_nm     AS	account_nm	
+	,	_M999_1.content		AS	rank		
+	,	_M999_2.content		AS	job			
+	,	_M999_3.content		AS	city		
+	FROM S001
+	LEFT JOIN M001
+	ON S001.user_id = M001.user_id
+	AND M001.del_flg = 0
+	LEFT JOIN M999 _M999_1
+	ON	_M999_1.name_div = 14
+	AND _M999_1.number_id = S001.account_div
+	AND _M999_1.del_flg = 0
+	LEFT JOIN M999 _M999_2
+	ON	_M999_2.name_div = 15
+	AND _M999_2.number_id = M001.job
+	AND _M999_2.del_flg = 0
+	LEFT JOIN M999 _M999_3
+	ON	_M999_3.name_div = 18
+	AND _M999_3.number_id = M001.position
+	AND _M999_3.del_flg = 0
+	INNER JOIN F009
+	ON S001.account_id = F009.target_id
+	AND F009.briged_div = 4
+	AND F009.briged_id = @w_briged_id
 
 	
 	--

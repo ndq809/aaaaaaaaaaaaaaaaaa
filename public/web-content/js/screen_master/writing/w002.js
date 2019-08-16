@@ -175,6 +175,7 @@ function initevent_w002(){
 
     $(document).on('click','.btn-popup',function(){
          _popup_transfer_array['voc_array']=getTableTdData($('.submit-table'));
+         _popup_transfer_array['result']=$(this).closest('.panel').find('.result');
     })
 
     $(document).on('addrow','#btn-new-body',function(){

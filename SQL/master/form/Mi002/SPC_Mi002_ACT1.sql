@@ -15,15 +15,19 @@ CREATE PROCEDURE [dbo].[SPC_Mi002_ACT1]
 ,	 @P_catalogue_div			INT				=   0
 ,	 @P_catalogue_nm			INT				=   0
 ,	 @P_group_nm				INT				=   0
-,	 @P_mission_nm				NVARCHAR(255)	=   ''
-,	 @P_exp						INT				=   0
-,	 @P_cop						INT				=   0
-,	 @P_period					INT				=   0
+,	 @P_mission_user_div		INT				=   0
 ,	 @P_rank_from				INT				=   0
 ,	 @P_rank_to					INT				=   0
+,	 @P_exp						INT				=   0
+,	 @P_failed_exp				INT				=   0
+,	 @P_cop						INT				=   0
+,	 @P_failed_cop				INT				=   0
+,	 @P_period					INT				=   0
 ,	 @P_unit_per_times			INT				=   0
+,	 @P_mission_nm				NVARCHAR(255)	=   ''
 ,	 @P_mission_content			NVARCHAR(MAX)	=   ''
-,	 @P_json_detail				NVARCHAR(MAX)	=   ''
+,	 @P_json_detail1			NVARCHAR(MAX)	=   ''
+,	 @P_json_detail2			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id					VARCHAR(10)		=	''
 ,	 @P_ip						VARCHAR(20)		=	''
 AS
@@ -54,7 +58,7 @@ BEGIN
 		SELECT              
             id			AS id              
         ,   IIF(@P_catalogue_div=1,1,3)	AS data_div              
-        FROM OPENJSON(@P_json_detail) WITH(
+        FROM OPENJSON(@P_json_detail2) WITH(
         	id	        VARCHAR(10)	'$.id'
         )
 		
@@ -75,6 +79,25 @@ BEGIN
 				FROM #DETAIL
 			END
 
+			IF @P_mission_user_div = 2
+			BEGIN
+				INSERT INTO F009
+				SELECT 
+					@w_briged_id
+				,	#TEMP.account_id
+				,	4
+				,	 @P_user_id
+				,	 @w_program_id
+				,	 @P_ip
+				,	 @w_time
+				FROM 
+				(SELECT              
+					account_id			AS account_id              
+				FROM OPENJSON(@P_json_detail1) WITH(
+        			account_id	        VARCHAR(10)	'$.id'
+				))#TEMP
+			END
+
 			INSERT INTO F001(
 				mission_div
 			,	mission_data_div
@@ -84,12 +107,16 @@ BEGIN
 			,	catalogue_id
 			,	group_id
 			,	exp
+			,	failed_exp
 			,	cop
+			,	failed_cop
 			,	period
+			,	mission_user_div
 			,	rank_from
 			,	rank_to
 			,	unit_per_times
 			,	briged_id
+			,	record_div
 			,	del_flg
 			,	cre_user
 			,	cre_prg
@@ -114,12 +141,16 @@ BEGIN
 			,	@P_catalogue_nm
 			,	@P_group_nm
 			,	@P_exp
+			,	@P_failed_exp
 			,	@P_cop
+			,	@P_failed_cop
 			,	@P_period
+			,	@P_mission_user_div
 			,	@P_rank_from
 			,	@P_rank_to
 			,	@P_unit_per_times
 			,	@w_briged_id
+			,	0
 			,	0
 			,	@P_user_id
 			,	@w_program_id
@@ -159,6 +190,25 @@ BEGIN
 				FROM #DETAIL
 			END
 
+			IF @P_mission_user_div = 2
+			BEGIN
+				INSERT INTO F009
+				SELECT 
+					@w_briged_id
+				,	#TEMP.account_id
+				,	4
+				,	 @P_user_id
+				,	 @w_program_id
+				,	 @P_ip
+				,	 @w_time
+				FROM 
+				(SELECT              
+					account_id			AS account_id              
+				FROM OPENJSON(@P_json_detail1) WITH(
+        			account_id	        VARCHAR(10)	'$.id'
+				))#TEMP
+			END
+
 			UPDATE F001 SET
 				F001.mission_div		=	@P_mission_div
 			,	F001.mission_data_div	=	@P_mission_data_div
@@ -168,12 +218,16 @@ BEGIN
 			,	F001.catalogue_id		=	@P_catalogue_nm
 			,	F001.group_id			=	@P_group_nm
 			,	F001.exp				=	@P_exp
+			,	F001.failed_exp			=	@P_failed_exp
 			,	F001.cop				=	@P_cop
+			,	F001.failed_cop			=	@P_failed_cop
 			,	F001.period				=	@P_period
+			,	F001.mission_user_div	=	@P_mission_user_div
 			,	F001.rank_from			=	@P_rank_from
 			,	F001.rank_to			=	@P_rank_to
 			,	F001.unit_per_times		=	@P_unit_per_times
 			,	F001.briged_id			=	@w_briged_id
+			,	F001.record_div			=	IIF(F001.record_div	IS NOT NULL,F001.record_div,0)
 			,	F001.upd_user			=	@P_user_id
 			,	F001.upd_prg			=	@w_program_id
 			,	F001.upd_ip				=	@P_ip

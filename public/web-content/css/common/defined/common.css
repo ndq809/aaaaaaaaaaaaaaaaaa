@@ -63,6 +63,20 @@ a{
     cursor: pointer;
 }
 
+.input-sm:not(textarea){
+    height: 28px!important;
+    line-height: 28px!important;
+    padding: 4px 10px!important;
+}
+
+.btn-sm{
+    padding: 4px 10px!important;
+}
+
+.input-group-addon{
+    padding: 5px 12px;
+}
+
 .width-50{
     width: 50%!important;
 }
@@ -1103,7 +1117,7 @@ a.see-back{
 }
 
 .margin-bottom{
-    margin-bottom: 5px;
+    margin-bottom: 5px!important;
 }
 
 .margin-left {
@@ -1348,7 +1362,8 @@ a.btn-add span {
     vertical-align: middle;
     right: 30px;
     top: 20px;
-    opacity: 0.7;
+    opacity: 0.9;
+    z-index: 1000;
 }
 
 .load-more{
@@ -1576,4 +1591,33 @@ select.tag-custom{
 .cool-link:hover::after {
     width: 100%;
     //transition: width .3s;
+}
+
+.mission-content{
+    border-style: solid;
+    border-width: 30px;
+    border-image-source: url("/web-content/images/plugin-icon/tag3.png");
+    border-image-slice: 1000;
+}
+
+.title-label{
+    color: tomato;
+}
+
+.mission-part{
+    border-bottom: 1px solid #ddd;
+}
+
+#popup-box4 .row{
+    margin-left: -5px;
+}
+
+#popup-box4 .input-sm:not(textarea) {
+    height: 24px!important;
+    line-height: 24px!important;
+    padding: 3px 10px!important;
+}
+
+#popup-box4 .input-group-text{
+    font-size: 12px;
 }

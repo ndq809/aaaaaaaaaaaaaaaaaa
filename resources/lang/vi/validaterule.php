@@ -28,5 +28,8 @@ return [
         'mission_div'      => 'required|not_in:0',
         'mission_data_div' => 'required|not_in:0',
         'mission_nm'       => 'required',
+        'rank-from'        => 'required|not_in:0',
+        'rank-to'          => 'required|not_in:0',
+        'mission_user_div' => 'required|not_in:0',
     ],
 ];

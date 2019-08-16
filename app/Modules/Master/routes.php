@@ -175,6 +175,10 @@ Route::group(
 		Route::post('p005','p005Controller@p005_search');
 		Route::post('p005/load','p005Controller@p005_load');
 		Route::post('p005/refer','p005Controller@p005_refer');
+		Route::get('p006','p006Controller@getIndex');
+		Route::post('p006','p006Controller@p006_search');
+		Route::post('p006/load','p006Controller@p006_load');
+		Route::post('p006/refer','p006Controller@p006_refer');
 		Route::get('p004','p004Controller@getIndex');
 		Route::post('p004','p004Controller@p004_search');	
 	}

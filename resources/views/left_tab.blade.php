@@ -86,7 +86,7 @@
                     <tbody>
                         <tr>
                             <td width="95%">
-                               <h5><span>Nhiệm Vụ Hằng Ngày</span></h5>
+                               <h5><span>Bảng Nhiệm Vụ</span></h5>
                             </td>
                             <td class="collapse-icon" width="5%"></td>
                         </tr>
@@ -96,46 +96,22 @@
             <div class="mission collapse in close-when-small">
                 <table class="table table-hover table-left">
                     <tbody>
+                        @foreach($raw_data[5] as $index=>$item)
+                        @if($item['mission_id']!='')
                         <tr>
                             <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4" id="{{$item['mission_id']}}" type="button">
                                     <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    CHINH PHỤC TỪ VỰNG
+                                    {{$item['title']}}
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    LÀM CHỦ NGỮ PHÁP
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    BẬC THẦY ĐỌC HIỂU
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    TRÙM GIAO TIẾP
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    VIỆT NAM QUÊ HƯƠNG TÔI
-                                </a>
-                            </td>
-                        </tr>
+                        @else
+                            <tr class="no-data">
+                                <td>Bạn chưa đăng nhập hoặc không có nhiệm vụ nào</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
             </div>
