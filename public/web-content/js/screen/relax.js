@@ -504,7 +504,7 @@ function getData(mode) {
 function setContentBox(target_id) {
     $('.relax-box:not(.hidden)').addClass('hidden');
     $('.relax-box[target-id=' + (target_id) + ']').removeClass('hidden');
-    if($('.relax-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+    if($('.relax-box[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
     }else{
         $('.example-content').removeClass('hidden');

@@ -327,7 +327,7 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.reading-box:not(.hidden)').addClass('hidden');
     $('.reading-box[target-id=' + (target_id) + ']').removeClass('hidden');
-    if($('.reading-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+    if($('.reading-box[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
     }else{
         $('.example-content').removeClass('hidden');

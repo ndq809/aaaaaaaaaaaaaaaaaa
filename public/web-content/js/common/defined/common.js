@@ -473,7 +473,7 @@ function initEvent() {
     });
 
     $(document).on('hidden.bs.modal', '#popup-box4', function (event) {
-        $(this).find('.modal-body .form-group').html('');
+        $(this).find('.modal-content').html('');
     });
 
     $(document).on('change','#popup-box4 #mission-level',function(){
@@ -486,6 +486,16 @@ function initEvent() {
 
     $(document).on('click','#btn-accept-mission',function(){
         acceptMission();
+    })
+
+    $(document).on('click','#btn-refuse-mission',function(){
+     	showMessage(32,function(){
+            refuseMission();
+        })
+    })
+
+    $(document).on('click','#btn-do-mission',function(){
+        doMission();
     })
 
 }
@@ -1365,9 +1375,9 @@ function acceptMission(target) {
     });
 }
 
-function refuseMission(target) {
+function refuseMission() {
     var data = {};
-    data['mission_id'] = $(target).attr('id');
+    data['mission_id'] = $('.modal-body:visible #mission-id').val();
     $.ajax({
         type: 'POST',
         url: '/common/refuseMission',
@@ -1378,7 +1388,74 @@ function refuseMission(target) {
         success: function(res) {
             switch (res.status) {
                 case 200:
-                    $('#popup-box4 .modal-body>.form-group').html(res.view1);
+                    $('#popup-box4 .modal-content').html(res.view1);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function doMission() {
+    var data = {};
+    data['mission_id'] = $('.modal-body:visible #mission-id').val();
+    $.ajax({
+        type: 'POST',
+        url: '/common/doMission',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                	location.href = res.data.link;
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function completeMission(callback) {
+    var data = {};
+    $.ajax({
+        type: 'POST',
+        url: '/common/completeMission',
+        dataType: 'json',
+        loading: false,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    callback(res);
                     break;
                 case 201:
                     clearFailedValidate();

@@ -29,7 +29,11 @@ function initVocabulary() {
                 selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
                 updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
             }else{
-                $('.table-click tbody tr:first-child').trigger('dblclick');
+                if($('#catalogue_nm').is(':disabled')){
+                    getData();
+                }else{
+                    $('.table-click tbody tr:first-child').trigger('dblclick');
+                }
             }
         } else {
             $('.table-click tbody tr.selected-row').trigger('dblclick');
@@ -193,7 +197,9 @@ function initListener() {
                     $(this)[0].currentTime = 0;
                 }
             });
-            $('.vocabulary-box:visible').find('audio')[0]!=undefined?$('.vocabulary-box:visible').find('audio')[0].play():'';
+            if($('.vocabulary-box:visible').find('audio').attr('src')!=''){
+                $('.vocabulary-box:visible').find('audio')[0].play();
+            }
         }
     })
     $(document).on('click', '.pager li a', function(e) {

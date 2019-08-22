@@ -224,7 +224,6 @@ function installplayer(){
 	for (var i = 0; i < ListeningArray.length; i++) {
 		playlist.push({title:ListeningArray[i]['del_flg']==0?ListeningArray[i]['post_media_nm']:'Bài nghe đã bị xóa!',mp3:ListeningArray[i]['del_flg']==0?ListeningArray[i]['post_media']:'/web-content/audio/guitar.mp3'});
 	}
-    console.log(playlist);
 	player = new jPlayerPlaylist(
 		{
 			jPlayer : "#jquery_jplayer_2",
@@ -388,12 +387,14 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
     $('.vocabulary-box[target-id=' + (target_id) + ']').removeClass('hidden');
-    if($('.listen-answer[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+    if($('.listen-answer[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
         $('.listen-check-box').addClass('hidden');
+        $('#result2 .jp-audio').addClass('hidden');
     }else{
         $('.example-content').removeClass('hidden');
         $('.listen-check-box').removeClass('hidden');
+        $('#result2 .jp-audio').removeClass('hidden');
     }
     $('.example-item:not(.hidden)').addClass('hidden');
     $('.example-item[target-id=' + (target_id) + ']').removeClass('hidden');

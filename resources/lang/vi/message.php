@@ -150,12 +150,17 @@ return [
         30 => [
             'message_div' => 2,
             'message_title' => 'Nhiệm Vụ Hoàn Thành',
-            'message_content' => 'Chúc mừng bạn đã hoàn thành nhiệm vụ<br><span class="text-left">Phần Thưởng Nhận Được</span><br><span class="text-left">Điểm kinh nghiệm : + xxx</span>',
+            'message_content' => 'Chúc mừng bạn đã hoàn thành nhiệm vụ<br><span class="text-left">Phần Thưởng Nhận Được</span><br><span class="text-left">Điểm kinh nghiệm : + xxx</span><br><span class="text-left">Điểm đóng góp : + xxx</span>',
         ],
         31 => [
             'message_div' => 1,
             'message_title' => 'Kiểm Tra Hoàn Thành',
-            'message_content' => 'Chúc mừng bạn đã hoàn thành xuất sắc bài kiểm tra<br>Bạn có muốn kiểm tra một lần nữa?',
+            'message_content' => 'Chúc mừng bạn đã hoàn thành xuất sắc bài kiểm tra',
+        ],
+        32 => [
+            'message_div' => 1,
+            'message_title' => 'Xác Nhận Từ Chối',
+            'message_content' => 'Bạn có chắc chắn muốn từ chối nhiệm vụ này?',
         ],
     ],
 ];

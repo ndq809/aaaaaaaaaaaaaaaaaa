@@ -453,7 +453,7 @@ function getData(mode) {
 function setContentBox(target_id) {
     $('.discuss-box:not(.hidden)').addClass('hidden');
     $('.discuss-box[target-id=' + (target_id) + ']').removeClass('hidden');
-    if($('.discuss-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+    if($('.discuss-box[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
     }else{
         $('.example-content').removeClass('hidden');

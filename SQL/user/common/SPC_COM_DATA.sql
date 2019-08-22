@@ -96,6 +96,7 @@ BEGIN
 	SELECT
 		F001.mission_id
 	,	F001.title
+	,	F013.condition
 	FROM F001
 	INNER JOIN F013
 	ON F001.mission_id = F013.mission_id

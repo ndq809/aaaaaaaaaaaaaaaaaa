@@ -387,7 +387,7 @@ function getData(mode) {
 function setContentBox(target_id) {
     $('.social-box:not(.hidden)').addClass('hidden');
     $('.social-box[target-id=' + (target_id) + ']').removeClass('hidden');
-    if($('.social-box[target-id=' + (target_id) + ']').hasClass('post-not-found')){
+    if($('.social-box[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
     }else{
         $('.example-content').removeClass('hidden');

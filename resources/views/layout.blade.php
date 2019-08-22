@@ -55,6 +55,7 @@
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
         <input type="hidden" name="" id="show_login" value="{{session('show_login')!==null?session('show_login'):''}}">
         <input type="hidden" name="" id="for_notify" value="{{isset(Auth::user()->account_id)?Auth::user()->account_id:''}}">
+        <input type="hidden" name="" id="do-mission" value="{{session('mission')!=null&&session('mission')['link']==('/'.Request::path())?'1':'0'}}">
         @php(Session::forget('show_login'))
         <div class="my-progress"></div>
         <div class="body-content">

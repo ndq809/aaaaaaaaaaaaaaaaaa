@@ -22,7 +22,15 @@ function initevent_p002(){
 	})
 
     $(document).on('click','#btn-refresh',function(){
-        clearDataSearch();
+        if(level==0){
+            parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
+            parent._popup_transfer_array['mean'] = shuffle([...parent._popup_transfer_array['mean']]);
+            $('#test1').html('');
+            getQuestion();
+        }else{
+            $('#test2 table tbody tr:visible').remove();
+            setInputQuestion();
+        }
     })
 
     $(document).on('click','#btn-close',function(){
@@ -33,124 +41,6 @@ function initevent_p002(){
         p002_execute(parseInt(page, 10));
     })
 
-    $(document).on('click','.preview-audio',function(){
-        $(this).parents('table').find('audio').each(function(){
-            if(!$(this)[0].paused){
-                $(this)[0].pause();
-                $(this)[0].currentTime = 0;
-            }
-        });
-        $(this).parent().find('audio')[0].play();
-    })
-
-    $(document).on('click','.btn-add',function(){
-        var tr_clone = $(this).closest('tr');
-        tr_clone.find('.btn-add').find('span').removeClass().addClass('fa fa-close');
-        tr_clone.find('.btn-add').removeClass().addClass('btn btn-danger btn-delete-row');
-        $('.table-refer tbody').append(tr_clone);
-    })
-
-    $(document).on('click','.btn-delete-row',function(){
-        $(this).closest('tr').remove();
-    })
-
-    // $(document).on('click','#btn-save',function(){
-    //     p002_refer();
-    // })
-}
-
-function p002_execute(page){
-	var data=getInputData();
-    data['row_id'] = parent._popup_transfer_array['row_id']==undefined?-1:parent._popup_transfer_array['row_id'];
-    data['selected_list'] = typeof getVocabularyList()[0]!='undefined'?getVocabularyList():'';
-    _pageSize=50;
-    data['page_size'] = _pageSize;
-    data['page'] = page;
-	$.ajax({
-        type: 'POST',
-        url: '/popup/p002',
-        dataType: 'html',
-        loading:true,
-        data: data,
-        success: function (res) {
-            clearFailedValidate();
-            $('#result').html(res).promise().done(function(){
-                $('#result .preview').tooltip({
-                    animated: 'fade',
-                    trigger: 'hover',
-                    placement: 'left',
-                    delay: { show: 100, hide: 100 },
-                    html: true
-                });
-            });
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function p002_load(){
-    var data = {};
-    data['voc_array'] =  parent._popup_transfer_array['voc_array'];
-    $.ajax({
-        type: 'POST',
-        url: '/popup/p002/load',
-        dataType: 'html',
-        loading:true,
-        data: data,
-        success: function (res) {
-            clearFailedValidate();
-            $('#result1').html(res).promise().done(function(){
-                $('#result1 .preview').tooltip({
-                    trigger: 'hover',
-                    animated: 'fade',
-                    placement: 'left',
-                    delay: { show: 100, hide: 100 },
-                    html: true
-                });
-            });
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function p002_refer(){
-    var data = getVocabularyList();
-    data['row_id_parent'] = parent._popup_transfer_array['row_id'];
-    $.ajax({
-        type: 'POST',
-        url: '/popup/p002/refer',
-        dataType: 'json',
-        loading:true,
-        data: data,
-        success: function (res) {
-            clearFailedValidate();
-            parent.$('#voc-content .vocabulary-box[target-id='+(res.row_id==''?-1:res.row_id)+']').removeClass('vocabulary-box').addClass('old-content hidden');
-            parent.$('#voc-content').append(res.view);
-            parent.$('#voc-content .vocabulary-box[target-id='+(res.row_id==''?-1:res.row_id)+']:not(.old-content)').addClass('new-content');
-            parent.jQuery.fancybox.close();
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
-}
-
-function getVocabularyList(){
-    var data =[];
-    $('.table-refer tbody tr:visible').each(function(){
-        data.push({'row_id':$(this).find('td[refer_id=row_id]').text(),'id':$(this).find('td[refer_id=id]').text()});
-    })
-    if(data.length==0){
-        return {};
-    }
-    return $.extend({}, data);
 }
 
 function getQuestion() {
@@ -162,20 +52,22 @@ function getQuestion() {
             "lineStyle":"square-ends",
             // "buttonErase":"Erase Links",
         },
-            "Lists":[
-                {
-                    "name":"Từ Tiếng Anh",
-                    "list" : parent._popup_transfer_array['voc'].map(function (value,index){return value['from'];}),
-                },
-                {
-                    "name":"Nghĩa",
-                    "list" : parent._popup_transfer_array['mean'].map(function (value,index){return value['to'];}),
-                }
-                ],
+        "Lists":[
+            {
+                "name":"Từ Tiếng Anh",
+                "list" : parent._popup_transfer_array['voc'].map(function (value,index){return value['from'];}),
+            },
+            {
+                "name":"Nghĩa",
+                "list" : parent._popup_transfer_array['mean'].map(function (value,index){return value['to'];}),
+            }
+        ],
+        "existingLinks" : []
     };
     
     fieldLinks=$("#test1").fieldsLinker("init",input);
     // $('[data-toggle="tooltip"]:visible').tooltip();
+    $("#btn-check").off("click");
     $("#btn-check").on("click",function(){
         switch(level){
             case 0 :
@@ -190,12 +82,28 @@ function getQuestion() {
                     }
                 }
                 if(count == parent._popup_transfer_array['voc'].length){
+                    var param = {};
+                    param['buttons'] = [
+                        {
+                            label: 'Ải kế tiếp ➡',
+                            classes: 'btn btn-sm btn-success float-right',
+                            action: function(){
+                                $('.test1').addClass('hidden');
+                                $('.test2').removeClass('hidden');
+                                setInputQuestion();
+                                level++;
+                            },
+                        },
+                        {
+                            label: 'Kiểm tra lại',
+                            classes: 'btn btn-sm btn-default float-left',
+                            action: function(){
+                                $('#btn-refresh').trigger('click');
+                            },
+                        }
+                    ];
                     showMessage(28,function(){
-                        $('.test1').addClass('hidden');
-                        $('.test2').removeClass('hidden');
-                        setInputQuestion();
-                        level++;
-                    });
+                    },function(){},param);
                 }else{
                     var param = {};
                     param['value'] = [count,parent._popup_transfer_array['voc'].length];
@@ -220,14 +128,33 @@ function getQuestion() {
                 })
                 if(check == parent._popup_transfer_array['voc'].length){
                     var param = {};
-                    param['label'] = ['Kiểm tra lại','Thoát'];
-                    // param['value'] = ['2114'];
-                    showMessage(31,function(){
-                        // $('.test1').addClass('hidden');
-                        // $('.test2').removeClass('hidden');
-                        // setInputQuestion();
-                        // level++;
-                    },function(){},param);
+                    var mission = parent.$('#do-mission').val();
+                    if(mission*1==0){
+                        param['label'] = ['Làm lại từ đầu','Làm lại màn này'];
+                        // param['value'] = ['2114'];
+                        showMessage(31,function(){
+                            level = 0;
+                            $('#test2 table tbody tr:visible').remove();
+                            $('.test1').removeClass('hidden');
+                            $('.test2').addClass('hidden');
+                            parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
+                            parent._popup_transfer_array['mean'] = shuffle([...parent._popup_transfer_array['mean']]);
+                            $('#test1').html('');
+                            getQuestion();
+                        },function(){
+                            $('#btn-refresh').trigger('click');
+                        },param);
+                    }else{
+                        var param = {};
+                        parent.completeMission(function(res){
+                            param['value'] = [res.data.exp,res.data.cop];
+                            showMessage(30,function(){
+                                $('#btn-close').trigger('click');
+                                parent.location.reload();
+                            },function(){
+                            },param);
+                        })
+                    }
                 }else{
                     var param = {};
                     param['value'] = [check,parent._popup_transfer_array['voc'].length];

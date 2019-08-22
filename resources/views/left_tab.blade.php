@@ -101,7 +101,17 @@
                         <tr>
                             <td>
                                 <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4" id="{{$item['mission_id']}}" type="button">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
+                                    @if($item['condition']==0)
+                                    <i class="fa fa-bullseye" style="font-size: 16px"></i>
+                                    @elseif($item['condition']==1)
+                                    <i class="fa fa-futbol-o fa-spin" style="font-size: 16px"></i>
+                                    @elseif($item['condition']==2)
+                                    <i class="fa fa-smile-o" style="font-size: 18px"></i>
+                                    @elseif($item['condition']==3)
+                                    <i class="fa fa-meh-o" style="font-size: 18px"></i>
+                                    @elseif($item['condition']==4)
+                                    <i class="fa fa-frown-o" style="font-size: 18px"></i>
+                                    @endif
                                     {{$item['title']}}
                                 </a>
                             </td>

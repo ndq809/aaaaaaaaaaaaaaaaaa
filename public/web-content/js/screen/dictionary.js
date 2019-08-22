@@ -363,6 +363,11 @@ function setContentBox(word_id) {
     $('.example-item[target-id=' + (word_id) + ']').removeClass('hidden');
     $('.paging-item:not(.hidden)').addClass('hidden');
     $('.paging-item[target-id=' + (word_id) + ']').removeClass('hidden');
+    if($(selectedTab+' .activeItem').hasClass('no-row')){
+        $('.example-content').addClass('hidden');
+    }else{
+        $('.example-content').removeClass('hidden');
+    }
     if ($('#mySlider1 li').length == 1) {
         $('.choose_slider').height('235');
     }

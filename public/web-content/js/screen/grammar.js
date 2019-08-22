@@ -274,8 +274,9 @@ function getData() {
                     } else {
                         $('#tab1 .table-right tbody tr:first').trigger('click');
                     }
-                    if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2') {
+                    if ($('.activeItem').parents('.tab-pane').attr('id') == 'tab2'||$('.activeItem').hasClass('no-row')) {
                         switchTab(2);
+                        $('#tab2 .table-right tbody tr:first').trigger('click');
                     } else {
                         switchTab(1);
                     }

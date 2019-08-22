@@ -557,7 +557,7 @@ class CommonController extends ControllerUser
         $result              = array(
             'status'     => 200,
             'view1'      => $view1,
-            'data'       => $data[0],
+            // 'data'       => $data[0],
             'statusText' => 'success',
         );
         return response()->json($result);
@@ -586,7 +586,7 @@ class CommonController extends ControllerUser
             $result = array(
                 'status'     => 200,
                 'view1'      => $view1,
-                'data'       => $data[1],
+                // 'data'       => $data[1],
                 'statusText' => 'success',
             );
         }
@@ -598,15 +598,86 @@ class CommonController extends ControllerUser
         $param               = $request->all();
         $param['mission_id'] = $this->hashids->decode($param['mission_id'])[0];
         $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
         $data                = Dao::call_stored_procedure('SPC_COM_REFUSE_MISSION', $param);
         $data                = $this->encodeID($data);
-        $view1               = view('mission')->with('data', $data[0])->render();
-        $result              = array(
-            'status'     => 200,
-            'view1'      => $view1,
-            'data'       => $data[0],
-            'statusText' => 'success',
-        );
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $view1  = view('mission')->with('data', $data[1])->render();
+            $result = array(
+                'status'     => 200,
+                'view1'      => $view1,
+                // 'data'       => $data[1],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
+    public function completeMission(Request $request)
+    {
+        $param               = $request->all();
+        $param['mission_id'] = $this->hashids->decode(\Session::get('mission')['mission_id'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
+        $data                = Dao::call_stored_procedure('SPC_COM_COMPLETE_MISSION', $param);
+        $data                = $this->encodeID($data);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            \Session::forget('mission');
+            $result = array(
+                'status'     => 200,
+                'data'   => $data[1][0],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
+    public function doMission(Request $request)
+    {
+        $param               = $request->all();
+        $param['mission_id'] = $this->hashids->decode($param['mission_id'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
+        $data                = Dao::call_stored_procedure('SPC_COM_DO_MISSION', $param);
+        $data                = $this->encodeID($data);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            \Session::put('mission',$data[1][0]);
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[1][0],
+                'statusText' => 'success',
+            );
+        }
         return response()->json($result);
     }
 

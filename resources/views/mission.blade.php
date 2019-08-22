@@ -22,7 +22,7 @@
                 <div class="form-group margin-bottom">
                     <label class="title-label">Độ khó nhiệm vụ</label>
                     <div class="input-group">
-                        <select style="width: 100px" class="inline-block form-control input-sm" id="mission-level" {{$data[0]['condition']==1?'disabled':''}}>
+                        <select style="width: 100px" class="inline-block form-control input-sm" id="mission-level" {{$data[0]['condition']==0?'':'disabled'}}>
                             @if(isset($data[0]['unit_per_times']))
                                 @for($i=1;$i<=5;$i++)
                                 <option value="{{$i}}" {{$data[0]['unit_per_times']*$i==$data[0]['unit_this_times']?'selected':''}}>{{$data[0]['unit_per_times']*$i}}</option>
@@ -58,18 +58,45 @@
         </div>
     </div>
 </div>
-@if(isset($data[0]['condition'])&&$data[0]['condition']!=1)
+@if(Session::get('mission')!=null||(Session::get('doMission')!=null&&Session::get('doMission')==1))
+<div class="modal-footer">
+    <button class="btn btn-warning btn-sm" type="button" disabled="">
+        {{isset($data[0]['mission_id'])&&$data[0]['mission_id']==Session::get('mission')['mission_id']?'Bạn đang thực hiện nhiệm vụ này':'Bạn đang thực hiện nhiệm vụ khác!'}}
+    </button>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+        Đóng
+    </button>
+</div>
+@elseif(isset($data[0]['condition'])&&$data[0]['condition']==0)
 <div class="modal-footer">
     <button class="btn btn-primary btn-sm" id="btn-accept-mission" type="button">
         Chấp Nhận Nhiệm Vụ 
     </button>
-    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button" id="btn-refuse-mission">
+    <button class="btn btn-default btn-sm" type="button" id="btn-refuse-mission">
         Từ Chối Nhiệm Vụ
+    </button>
+</div>
+@elseif(isset($data[0]['condition'])&&$data[0]['condition']==3)
+<div class="modal-footer">
+    <button class="btn btn-danger btn-sm" data-dismiss="modal" type="button" disabled="disabled">
+        Bạn đã từ chối nhiệm vụ này!
+    </button>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+        Đóng
+    </button>
+</div>
+@elseif(isset($data[0]['condition'])&&$data[0]['condition']==2)
+<div class="modal-footer">
+    <button class="btn btn-success btn-sm" type="button" disabled="disabled">
+        Bạn đã hoàn thành nhiệm vụ này!
+    </button>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+        Đóng
     </button>
 </div>
 @else
 <div class="modal-footer">
-    <button class="btn btn-primary btn-sm" data-dismiss="modal" id="btn-do-mission" type="button">
+    <button class="btn btn-primary btn-sm" id="btn-do-mission" type="button" {{isset($data[0]['try_times_count'])&&$data[0]['try_times_count']==3?'disabled':''}}>
         Thực Hiện Nhiệm Vụ(Còn {{isset($data[0]['try_times_count'])?(3-$data[0]['try_times_count']):'0'}}/3)
     </button>
     <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">

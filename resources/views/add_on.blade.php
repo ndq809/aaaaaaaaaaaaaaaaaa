@@ -169,7 +169,7 @@
 <div id="popup-box4" class="modal fade" role="dialog">
     <div class="modal-dialog">
     <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content" style="min-height: 200px">
         </div>
     </div>
 </div>

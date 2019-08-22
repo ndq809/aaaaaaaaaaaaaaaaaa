@@ -285,7 +285,7 @@
 
 .sweet-modal-buttons a{
     margin-bottom: 5px;
-    width: 100px;
+    min-width: 100px;
 }
 
 .sweet-modal-buttons a.button:hover, .sweet-modal-buttons button:hover {
