@@ -3,6 +3,7 @@
 </div>
 <div class="col-sm-2 no-padding-right no-padding-left">
     <label>Tổng số bài cần học : {{isset($data[1][0])?$data[1][0]['post_sum']:''}}</label>
+    <input type="hidden" class="total_unit" name="" value="{{isset($data[1][0])?$data[1][0]['post_sum']:'0'}}">
 </div>
 <div class="col-xs-12 no-padding-right no-padding-left">
     <div class="table-fixed-width no-padding-left" min-width="700px">

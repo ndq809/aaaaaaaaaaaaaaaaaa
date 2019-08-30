@@ -30,12 +30,14 @@ BEGIN
 	,	F001.content
 	,	F001.exp
 	,	F001.failed_exp
-	,	F001.cop
-	,	F001.failed_cop
+	,	F001.ctp
+	,	F001.failed_ctp
 	,	F001.unit_per_times
+	,	ISNULL(F001.try_times,0) AS try_times
 	,	F013.unit_this_times
 	,	F013.try_times_count
 	,	F013.condition
+	,	F001.mission_div
 	FROM F001
 	INNER JOIN F013
 	ON F013.mission_id = F001.mission_id

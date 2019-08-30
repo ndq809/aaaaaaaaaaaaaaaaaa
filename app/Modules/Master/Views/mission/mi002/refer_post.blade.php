@@ -25,3 +25,4 @@
         @endif
     </tbody>
 </table>
+<input type="hidden" class="total_unit" name="" value="{{isset($data_post)?count($data_post):'0'}}">

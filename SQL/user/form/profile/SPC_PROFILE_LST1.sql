@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_PROFILE_LST1]
-	@P_account_nm		        NVARCHAR(30)		= ''
+	@P_account_id		        NVARCHAR(30)		= ''
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -75,11 +75,22 @@ BEGIN
 	,	M001.field
 	,	M001.slogan
 	,	S001.account_nm
+	,	S001.exp - ISNULL(M999.num_remark1,0) AS exp
+	,	S001.ctp - ISNULL(M999.num_remark2,0) AS ctp
+	,	M999.content AS rank
+	,	_M999.num_remark1 AS rank_exp
+	,	_M999.num_remark2 AS rank_ctp
 	FROM S001
 	INNER JOIN M001
 	ON S001.user_id = M001.user_id
+	LEFT JOIN M999
+	ON M999.name_div = 14
+	AND M999.number_id = S001.account_div
+	LEFT JOIN M999 _M999
+	ON _M999.name_div = 14
+	AND _M999.number_id = S001.account_div +1
 	WHERE
-		S001.account_nm = @P_account_nm
+		S001.account_id = @P_account_id
 
 	--6
 	SELECT
@@ -94,7 +105,31 @@ BEGIN
 	ON M999.name_div = 17
 	AND M999.number_id = F009.target_id
 	WHERE
-		S001.account_nm = @P_account_nm
+		S001.account_id = @P_account_id
 
+	--7
+	SELECT 
+		#TEMP.catalogue_div_nm
+	,	#TEMP.success_count
+	,	#TEMP.ignore_count
+	,	#TEMP.failed_count
+	,	IIF(#TEMP.all_count<>0, 10-((#TEMP.ignore_count*(10.0/#TEMP.all_count)/2)+(#TEMP.failed_count*(10.0/#TEMP.all_count))),0) AS point --error div with int
+	FROM (
+	SELECT
+		MAX(M999.text_remark2) AS catalogue_div_nm
+	,	SUM(F013.success_count) AS success_count
+	,	SUM(F013.ignore_count) AS ignore_count
+	,	SUM(F013.failed_count) AS failed_count
+	,	SUM(F013.success_count) + SUM(F013.ignore_count) + SUM(F013.failed_count) AS all_count
+	FROM F013
+	INNER JOIN F001
+	ON F001.mission_id = F013.mission_id
+	LEFT JOIN M999
+	ON M999.name_div = 7
+	AND M999.number_id = F001.catalogue_div
+	WHERE F013.account_id = @P_account_id
+	GROUP BY
+		F001.catalogue_div
+	) AS #TEMP
 END
 

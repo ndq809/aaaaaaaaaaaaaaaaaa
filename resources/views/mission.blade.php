@@ -41,7 +41,7 @@
                     <label>Điểm kinh nghiệm: <span style="color: #3c763d" id="exp" value ='{{isset($data[0]['exp'])?$data[0]['exp']:'0'}}'>{{isset($data[0]['exp'])&&$data[0]['exp']!=''?'+ '.$data[0]['exp']:'+ 0'}}</span></label>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <label>Điểm đóng góp: <span style="color: #3c763d" id="cop" value='{{isset($data[0]['cop'])?$data[0]['cop']:'0'}}'>{{isset($data[0]['cop'])&&$data[0]['cop']!=''?'+ '.$data[0]['cop']:'+ 0'}}</span></label>
+                    <label>Điểm đóng góp: <span style="color: #3c763d" id="cop" value='{{isset($data[0]['ctp'])?$data[0]['ctp']:'0'}}'>{{isset($data[0]['ctp'])&&$data[0]['ctp']!=''?'+ '.$data[0]['ctp']:'+ 0'}}</span></label>
                 </div>
             </div>
             <div class="col-xs-12 no-padding">
@@ -52,31 +52,13 @@
                     <label>Điểm kinh nghiệm: <span style="color: #d9534f" id="failed_exp" value ='{{isset($data[0]['failed_exp'])?$data[0]['failed_exp']:'0'}}'>{{isset($data[0]['failed_exp'])&&$data[0]['failed_exp']!=''?'- '.$data[0]['failed_exp']:'- 0'}}</span></label>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <label>Điểm đóng góp: <span style="color: #d9534f" id="failed_cop" value='{{isset($data[0]['failed_cop'])?$data[0]['failed_cop']:'0'}}'>{{isset($data[0]['failed_cop'])&&$data[0]['failed_cop']!=''?'- '.$data[0]['failed_cop']:'- 0'}}</span></label>
+                    <label>Điểm đóng góp: <span style="color: #d9534f" id="failed_cop" value='{{isset($data[0]['failed_ctp'])?$data[0]['failed_ctp']:'0'}}'>{{isset($data[0]['failed_ctp'])&&$data[0]['failed_ctp']!=''?'- '.$data[0]['failed_ctp']:'- 0'}}</span></label>
                 </div>
             </div>
         </div>
     </div>
 </div>
-@if(Session::get('mission')!=null||(Session::get('doMission')!=null&&Session::get('doMission')==1))
-<div class="modal-footer">
-    <button class="btn btn-warning btn-sm" type="button" disabled="">
-        {{isset($data[0]['mission_id'])&&$data[0]['mission_id']==Session::get('mission')['mission_id']?'Bạn đang thực hiện nhiệm vụ này':'Bạn đang thực hiện nhiệm vụ khác!'}}
-    </button>
-    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
-        Đóng
-    </button>
-</div>
-@elseif(isset($data[0]['condition'])&&$data[0]['condition']==0)
-<div class="modal-footer">
-    <button class="btn btn-primary btn-sm" id="btn-accept-mission" type="button">
-        Chấp Nhận Nhiệm Vụ 
-    </button>
-    <button class="btn btn-default btn-sm" type="button" id="btn-refuse-mission">
-        Từ Chối Nhiệm Vụ
-    </button>
-</div>
-@elseif(isset($data[0]['condition'])&&$data[0]['condition']==3)
+@if(isset($data[0]['condition'])&&$data[0]['condition']==3)
 <div class="modal-footer">
     <button class="btn btn-danger btn-sm" data-dismiss="modal" type="button" disabled="disabled">
         Bạn đã từ chối nhiệm vụ này!
@@ -94,10 +76,37 @@
         Đóng
     </button>
 </div>
+@elseif(isset($data[0]['condition'])&&$data[0]['condition']==4)
+<div class="modal-footer">
+    <button class="btn btn-danger btn-sm" type="button" disabled="disabled">
+        Nhiệm vụ này đã thất bại!
+    </button>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+        Đóng
+    </button>
+</div>
+@elseif(Session::get('mission')!=null||(Session::get('doMission')!=null&&Session::get('doMission')==1))
+<div class="modal-footer">
+    <button class="btn btn-warning btn-sm" type="button" disabled="">
+        {{isset($data[0]['mission_id'])&&$data[0]['mission_id']==Session::get('mission')['mission_id']?'Bạn đang thực hiện nhiệm vụ này':'Bạn đang thực hiện nhiệm vụ khác!'}}
+    </button>
+    <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
+        Đóng
+    </button>
+</div>
+@elseif(isset($data[0]['condition'])&&$data[0]['condition']==0)
+<div class="modal-footer">
+    <button class="btn btn-primary btn-sm" id="btn-accept-mission" type="button">
+        Chấp Nhận Nhiệm Vụ 
+    </button>
+    <button class="btn btn-default btn-sm" type="button" id="btn-refuse-mission">
+        Từ Chối Nhiệm Vụ
+    </button>
+</div>
 @else
 <div class="modal-footer">
-    <button class="btn btn-primary btn-sm" id="btn-do-mission" type="button" {{isset($data[0]['try_times_count'])&&$data[0]['try_times_count']==3?'disabled':''}}>
-        Thực Hiện Nhiệm Vụ(Còn {{isset($data[0]['try_times_count'])?(3-$data[0]['try_times_count']):'0'}}/3)
+    <button class="btn btn-primary btn-sm" id="btn-do-mission" type="button" {{isset($data[0]['try_times_count'])&&$data[0]['try_times_count']>=$data[0]['try_times']?'disabled':''}}>
+        Thực Hiện Nhiệm Vụ(Còn {{isset($data[0]['try_times_count'])?($data[0]['try_times']-$data[0]['try_times_count']):'0'}}/{{$data[0]['try_times']}})
     </button>
     <button class="btn btn-default btn-sm" data-dismiss="modal" type="button">
         Đóng

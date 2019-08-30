@@ -34,12 +34,33 @@ BEGIN
 	BEGIN TRY
 		UPDATE F013 SET
 			F013.condition			= 3
+		,	F013.ignore_count		= ISNULL(F013.ignore_count,0)+1
 		,	F013.upd_user			= @P_user_id
 		,	F013.upd_prg			= @w_program_id
 		,	F013.upd_ip				= @P_ip
 		,	F013.upd_date			= @w_time
 		WHERE F013.account_id = @P_user_id
 		AND F013.mission_id = @P_mission_id
+
+		UPDATE _S001 SET
+			_S001.exp = IIF(_S001.exp - (F001.failed_exp/2) < 0,0,_S001.exp - (F001.failed_exp/2))
+		,	_S001.ctp = IIF(_S001.ctp - (F001.failed_ctp/2) < 0,0,_S001.ctp - (F001.failed_ctp/2))
+		,	_S001.account_div = IIF(IIF(_S001.exp - F001.failed_exp < 0,0,_S001.exp - F001.failed_exp) - ISNULL(_M999.num_remark1,0) < 0,_S001.account_div-1,_S001.account_div)
+		FROM S001 _S001
+		INNER JOIN F013
+		ON _S001.account_id = F013.account_id
+		INNER JOIN F001
+		ON F013.mission_id = F001.mission_id
+		LEFT JOIN M999
+		ON M999.name_div = 14 
+		AND M999.number_id = _S001.account_div + 1
+		LEFT JOIN M999 _M999
+		ON _M999.name_div = 14 
+		AND _M999.number_id = _S001.account_div
+		WHERE _S001.del_flg = 0
+		AND F013.mission_id = @P_mission_id
+		AND F013.account_id = @P_user_id
+
 	END TRY
 	BEGIN CATCH
 		DELETE FROM @ERR_TBL

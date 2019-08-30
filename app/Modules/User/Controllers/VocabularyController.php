@@ -25,6 +25,9 @@ class VocabularyController extends ControllerUser
 
     public function getIndex(Request $request)
     {
+        if (\Session::get('mission') != null && \Session::get('mission')['link'] == '/vocabulary') {
+            return view('User::vocabulary.index');
+        }
         $param                 = $request->all();
         $param['v']            = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
         $param['user_id']      = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
@@ -32,9 +35,6 @@ class VocabularyController extends ControllerUser
         $param['group_id']     = $request->session()->get('group_id');
         $data                  = Dao::call_stored_procedure('SPC_VOCABULARY_LST1', $param);
         $data                  = CommonUser::encodeID($data);
-        if (\Session::get('mission') != null && \Session::get('mission')['link'] == '/vocabulary') {
-            return view('User::vocabulary.index');
-        }
         if (!isset($request->all()['v']) || $data[2][0]['target_id'] != '') {
             return view('User::vocabulary.index')->with('data_default', $data);
         } else {

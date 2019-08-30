@@ -100,7 +100,7 @@
                         @if($item['mission_id']!='')
                         <tr>
                             <td>
-                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4" id="{{$item['mission_id']}}" type="button">
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4" mission_id="{{$item['mission_id']}}" type="button">
                                     @if($item['condition']==0)
                                     <i class="fa fa-bullseye" style="font-size: 16px"></i>
                                     @elseif($item['condition']==1)

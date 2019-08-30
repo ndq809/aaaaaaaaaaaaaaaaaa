@@ -96,6 +96,11 @@
                                     ĐĂNG NHẬP / ĐĂNG KÝ
                                 </a>
                                 @endif
+                                 @if(session('mission')!=null&&session('mission')['link']==('/'.Request::path()))
+                                <a class="navbar-brand" id="btn-cancel-mission">
+                                    Hủy Nhiệm Vụ
+                                </a>
+                                @endif
                                 <a class="btn btn-sm navbar-brand menu-btn" data-target="#menu" data-toggle="collapse">
                                     <i class="fa fa-reorder"></i>
                                 </a>

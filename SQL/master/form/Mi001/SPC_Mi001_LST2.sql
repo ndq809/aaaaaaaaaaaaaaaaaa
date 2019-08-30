@@ -41,7 +41,7 @@ BEGIN
 	,	group_nm			NVARCHAR(255)
 	,	mission_nm			NVARCHAR(255)	
 	,	exp					INT
-	,   cop					INT	
+	,   ctp					INT	
 	,	period				INT
 	,	rank				NVARCHAR(20)
 	,	unit_per_times		INT
@@ -60,7 +60,7 @@ BEGIN
 	,	M003.group_nm     
 	,	F001.title
 	,	F001.exp      
-	,	F001.cop				
+	,	F001.ctp				
 	,   F001.period			
 	,	CONCAT(M999_4.content,N' ➡ ',M999_5.content)				
 	,	F001.unit_per_times

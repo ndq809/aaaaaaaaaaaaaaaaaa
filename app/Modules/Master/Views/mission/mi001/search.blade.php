@@ -39,7 +39,7 @@
                     <td >{{$row['group_nm']}}</td>
                     <td class="refer-item" refer_id="mission_nm">{{$row['mission_nm']}}</td>
                     <td class="refer-item" refer_id="exp">{{$row['exp']}}</td>
-                    <td class="refer-item" refer_id="cop">{{$row['cop']}}</td>
+                    <td class="refer-item" refer_id="cop">{{$row['ctp']}}</td>
                     <td class="refer-item" refer_id="period">{{$row['period']}}</td>
                     <td class="refer-item" refer_id="rank">{{$row['rank']}}</td>
                     <td class="refer-item" refer_id="unit_per_times">{{$row['unit_per_times']}}</td>

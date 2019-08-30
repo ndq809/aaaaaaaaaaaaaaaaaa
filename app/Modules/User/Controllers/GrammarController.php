@@ -24,6 +24,9 @@ class GrammarController extends ControllerUser
     }
     public function getIndex(Request $request)
     {
+        if (\Session::get('mission') != null && \Session::get('mission')['link'] == '/grammar') {
+            return view('User::grammar.index');
+        }
         $param                 = $request->all();
         $param['v']            = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
         $param['user_id']      = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
@@ -40,11 +43,20 @@ class GrammarController extends ControllerUser
 
     public function getData(Request $request)
     {
-        $param            = $request->all();
-        $param[0]         = $param[0]!=''?$this->hashids->decode($param[0])[0]:'';
-        $param[1]         = $param[1]!=''?$this->hashids->decode($param[1])[0]:'';
-        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
-        $data   = Dao::call_stored_procedure('SPC_GRAMMAR_LST2', $param);
+        $param = [];
+        if (\Session::get('mission') != null && \Session::get('mission')['link'] == '/grammar') {
+            $param['mission_id'] = $this->hashids->decode(\Session::get('mission')['mission_id'])[0];
+            $param['user_id']    = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
+            $data                = Dao::call_stored_procedure('SPC_GRAMMAR_LST3', $param);
+        } else {
+            $param            = $request->all();
+            $param[0]         = $param[0]!=''?$this->hashids->decode($param[0])[0]:'';
+            $param[1]         = $param[1]!=''?$this->hashids->decode($param[1])[0]:'';
+            $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
+            $request->session()->put('catalogue_id', $param[0]);
+            $request->session()->put('group_id', $param[1]);
+            $data   = Dao::call_stored_procedure('SPC_GRAMMAR_LST2', $param);
+        }
         $data   = CommonUser::encodeID($data);
         $view1  = view('User::grammar.right_tab')->with('data', $data[2])->render();
         $view2  = view('User::grammar.main_content')->with('data', $data)->render();
@@ -55,8 +67,6 @@ class GrammarController extends ControllerUser
             'view2'      => $view2,
             'statusText' => 'success',
         );
-        $request->session()->put('catalogue_id', $param[0]);
-        $request->session()->put('group_id', $param[1]);
         return response()->json($result);
     }
 

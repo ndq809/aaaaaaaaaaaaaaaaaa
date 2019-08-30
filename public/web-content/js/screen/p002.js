@@ -23,8 +23,8 @@ function initevent_p002(){
 
     $(document).on('click','#btn-refresh',function(){
         if(level==0){
-            parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
-            parent._popup_transfer_array['mean'] = shuffle([...parent._popup_transfer_array['mean']]);
+            parent._popup_transfer_array['voc'] = shuffle(JSON.parse(JSON.stringify(parent._popup_transfer_array['voc'])));
+            parent._popup_transfer_array['mean'] = shuffle(JSON.parse(JSON.stringify(parent._popup_transfer_array['mean'])));
             $('#test1').html('');
             getQuestion();
         }else{
@@ -137,8 +137,8 @@ function getQuestion() {
                             $('#test2 table tbody tr:visible').remove();
                             $('.test1').removeClass('hidden');
                             $('.test2').addClass('hidden');
-                            parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
-                            parent._popup_transfer_array['mean'] = shuffle([...parent._popup_transfer_array['mean']]);
+                            parent._popup_transfer_array['voc'] = shuffle(JSON.parse(JSON.stringify(parent._popup_transfer_array['voc'])));
+                            parent._popup_transfer_array['mean'] = shuffle(JSON.parse(JSON.stringify(parent._popup_transfer_array['mean'])));
                             $('#test1').html('');
                             getQuestion();
                         },function(){
@@ -147,10 +147,19 @@ function getQuestion() {
                     }else{
                         var param = {};
                         parent.completeMission(function(res){
-                            param['value'] = [res.data.exp,res.data.cop];
+                            param['value'] = [res.data.exp,res.data.ctp];
                             showMessage(30,function(){
-                                $('#btn-close').trigger('click');
-                                parent.location.reload();
+                                if(res.rank['account_div']!=res.rank['account_prev_div']){
+                                    var param1 = {};
+                                    param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                                    showMessage(39,function(){
+                                        $('#btn-close').trigger('click');
+                                        parent.location.reload();
+                                    },function(){},param1);
+                                }else{
+                                    $('#btn-close').trigger('click');
+                                    parent.location.reload();
+                                }
                             },function(){
                             },param);
                         })
@@ -177,7 +186,7 @@ function getQuestion() {
 
 function setInputQuestion(){
     var trClone;
-    parent._popup_transfer_array['voc'] = shuffle([...parent._popup_transfer_array['voc']]);
+    parent._popup_transfer_array['voc'] = shuffle(JSON.parse(JSON.stringify(parent._popup_transfer_array['voc'])));
     for (var i = 0; i < parent._popup_transfer_array['voc'].length; i++) {
         trClone = $('#test2 table tbody tr').first().clone();
         trClone.find('td').eq(0).text(i+1);

@@ -7,7 +7,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-
+--EXEC SPC_Mi002_ACT1 '','1','3','1','','','1','1','8','','','','','','','','chiếm lấy e đi','<p>nothing to say</p>','[]','[{"id":"1"}]','1','::1';
 CREATE PROCEDURE [dbo].[SPC_Mi002_ACT1]
 	 @P_mission_id				NVARCHAR(15)	=   ''
 ,	 @P_mission_div				INT				=   0
@@ -20,12 +20,14 @@ CREATE PROCEDURE [dbo].[SPC_Mi002_ACT1]
 ,	 @P_rank_to					INT				=   0
 ,	 @P_exp						INT				=   0
 ,	 @P_failed_exp				INT				=   0
-,	 @P_cop						INT				=   0
-,	 @P_failed_cop				INT				=   0
+,	 @P_ctp						INT				=   0
+,	 @P_failed_ctp				INT				=   0
 ,	 @P_period					INT				=   0
 ,	 @P_unit_per_times			INT				=   0
+,	 @P_try_times				INT				=   0
 ,	 @P_mission_nm				NVARCHAR(255)	=   ''
 ,	 @P_mission_content			NVARCHAR(MAX)	=   ''
+,	 @P_total_unit				INT				=   0
 ,	 @P_json_detail1			NVARCHAR(MAX)	=   ''
 ,	 @P_json_detail2			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id					VARCHAR(10)		=	''
@@ -48,7 +50,6 @@ BEGIN
 	--
 	BEGIN TRANSACTION
 	BEGIN TRY
-
 		CREATE TABLE #DETAIL(
 			id			NVARCHAR(15)
 		,	data_div	TINYINT
@@ -108,13 +109,15 @@ BEGIN
 			,	group_id
 			,	exp
 			,	failed_exp
-			,	cop
-			,	failed_cop
+			,	ctp
+			,	failed_ctp
 			,	period
 			,	mission_user_div
 			,	rank_from
 			,	rank_to
 			,	unit_per_times
+			,	total_unit
+			,	try_times
 			,	briged_id
 			,	record_div
 			,	del_flg
@@ -142,13 +145,15 @@ BEGIN
 			,	@P_group_nm
 			,	@P_exp
 			,	@P_failed_exp
-			,	@P_cop
-			,	@P_failed_cop
+			,	@P_ctp
+			,	@P_failed_ctp
 			,	@P_period
 			,	@P_mission_user_div
 			,	@P_rank_from
 			,	@P_rank_to
 			,	@P_unit_per_times
+			,	@P_total_unit
+			,	@P_try_times
 			,	@w_briged_id
 			,	0
 			,	0
@@ -219,13 +224,15 @@ BEGIN
 			,	F001.group_id			=	@P_group_nm
 			,	F001.exp				=	@P_exp
 			,	F001.failed_exp			=	@P_failed_exp
-			,	F001.cop				=	@P_cop
-			,	F001.failed_cop			=	@P_failed_cop
+			,	F001.ctp				=	@P_ctp
+			,	F001.failed_ctp			=	@P_failed_ctp
 			,	F001.period				=	@P_period
 			,	F001.mission_user_div	=	@P_mission_user_div
 			,	F001.rank_from			=	@P_rank_from
 			,	F001.rank_to			=	@P_rank_to
 			,	F001.unit_per_times		=	@P_unit_per_times
+			,	F001.total_unit			=	@P_total_unit
+			,	F001.try_times			=	@P_try_times
 			,	F001.briged_id			=	@w_briged_id
 			,	F001.record_div			=	IIF(F001.record_div	IS NOT NULL,F001.record_div,0)
 			,	F001.upd_user			=	@P_user_id

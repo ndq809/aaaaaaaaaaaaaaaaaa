@@ -37,13 +37,14 @@ BEGIN
 	,	F001.group_id
 	,	F001.exp
 	,	F001.failed_exp
-	,	F001.cop
-	,	F001.failed_cop
+	,	F001.ctp
+	,	F001.failed_ctp
 	,	F001.period
 	,	F001.mission_user_div
 	,	F001.rank_from
 	,	F001.rank_to
 	,	F001.unit_per_times
+	,	F001.try_times
 	FROM F001
 	WHERE F001.mission_id = @P_mission_id
 	AND F001.del_flg = 0

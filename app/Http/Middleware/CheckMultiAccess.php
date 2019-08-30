@@ -37,6 +37,7 @@ class CheckMultiAccess
         // var_dump($data);die;
         $data = CommonUser::encodeID($data);
         View::share('raw_data', $data);
+        \Session::put('hidden_mission',$data[6][0]);
         return $next($request);
     }
 }

@@ -34,7 +34,11 @@ function initListening(){
                 selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
                 updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
             }else{
-                $('.table-click tbody tr:first-child').trigger('dblclick');
+                if($('#catalogue_nm').is(':disabled')){
+                    getData();
+                }else{
+                    $('.table-click tbody tr:first-child').trigger('dblclick');
+                }
             }
         } else {
             $('.table-click tbody tr.selected-row').trigger('dblclick');
@@ -51,10 +55,6 @@ function initListener() {
         }
         if ($(this).hasClass('btn-forget')) {
             forgetListening($(this));
-        }
-        if ($(this).hasClass('btn-show-answer')) {
-            var current_id = $(selectedTab +' .activeItem').attr('id');
-        	$('.listen-answer[target-id='+current_id+']').removeClass('hidden');
         }
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
@@ -91,12 +91,9 @@ function initListener() {
         }
     })
 
-    $(document).on('click', '.btn-popup', function(e) {
+    $(document).on('click', '.btn-check-answer', function(e) {
         e.preventDefault();
-        var popupId=$(this).attr('popup-id');
-        if(popupId=='popup-box3'){
-        	$('.result-text').html(checkAnswer());
-        }
+        checkAnswer();
     })
 
     $(document).on('click', '.load-more', function(e) {
@@ -425,25 +422,90 @@ function checkAnswer(){
 	var text = '';
 	switch(true){
 		case parseInt(similarity_percent)<10 :
-			text = 'Bạn chỉ mới nghe được <span class ="listen_result" >'+similarity_percent+'%</span><h4>Kết quả còn quá thấp hãy nghe lại thật kỹ!</h4>';
+			text = '<span>Bạn chỉ mới nghe được <span class ="listen_result" >'+similarity_percent+'%</span></br>Kết quả còn quá thấp hãy nghe lại thật kỹ!</span>';
 			break;
 		case parseInt(similarity_percent)<30 :
-			text = 'Bạn chỉ đạt được <span class ="listen_result" >'+similarity_percent+'%</span> của bài nghe<h4>Hãy cố gắng chinh phục nó!</h4>';
+			text = '<span>Bạn chỉ đạt được <span class ="listen_result" >'+similarity_percent+'%</span> của bài nghe</br>Hãy cố gắng chinh phục nó!</span>';
 			break;
 		case parseInt(similarity_percent)<60 :
-			text = 'Kết quả nghe của bạn chỉ đạt <span class ="listen_result" >'+similarity_percent+'%</span><h4>Vẫn còn 1 chặng đường dài để hoàn thành!</h4>';
+			text = '<span>Kết quả nghe của bạn chỉ đạt <span class ="listen_result" >'+similarity_percent+'%</span></br>Vẫn còn 1 chặng đường dài để hoàn thành!</span>';
 			break;
 		case parseInt(similarity_percent)<80 :
-			text = 'Bạn đã nghe được <span class ="listen_result" >'+similarity_percent+'%</span><h4>Chỉ cần cố gắng 1 chút nữa bạn sẽ vượt qua nó!</h4>';
+			text = '<span>Bạn đã nghe được <span class ="listen_result" >'+similarity_percent+'%</span></br>Chỉ cần cố gắng 1 chút nữa bạn sẽ vượt qua!</span>';
 			break;
 		case parseInt(similarity_percent)<99 :
-			text = 'Bạn đã vượt qua bài nghe ở mức <span class ="listen_result" >'+similarity_percent+'%</span><h4>Nhưng thành công thực sự chỉ khi bạn đạt số điểm tuyệt đối!</h4>';
+			text = '<span>Bạn đã vượt qua bài nghe ở mức <span class ="listen_result" >'+similarity_percent+'%</span></br>Nhưng thành công thực sự chỉ khi bạn đạt số điểm tuyệt đối!</span>';
 			break;
 		case parseInt(similarity_percent)==100 :
-			text = 'Kết quả nghe tuyệt đối <span class ="listen_result" >'+similarity_percent+'%</span><h4>Bạn thật tuyệt vời!</h4>';
+			text = '<span>Kết quả nghe tuyệt đối <span class ="listen_result" >'+similarity_percent+'%</span></br>Bạn thật tuyệt vời!</span>';
 			break;
 	}
-	return text;
+    if($('#do-mission').val()==1){
+        if(parseInt(similarity_percent)>=80){
+            $('.activeItem i').removeClass().addClass('fa fa-check-circle test-done');
+            if(ListeningArray.length == $('.test-done').length){
+                completeMission(function(res){
+                    var param = {};
+                    param['value'] = [res.data.exp,res.data.ctp];
+                    showMessage(30,function(){
+                        if(res.rank['account_div']!=res.rank['account_prev_div']){
+                            var param1 = {};
+                            param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                            showMessage(39,function(){
+                                location.reload();
+                            },function(){},param1);
+                        }else{
+                            location.reload();
+                        }
+                    },function(){
+                    },param);
+                })
+            }else{
+                var param = {};
+                param['buttons'] = [
+                    {
+                        label: 'Ải tiếp theo ➡',
+                        classes: 'btn btn-sm btn-success float-right',
+                        action: function(){
+                            nextListening();
+                        }
+                    },
+                    {
+                        label: 'Xem đáp án',
+                        classes: 'btn btn-sm btn-default float-left',
+                        action: function(){
+                            var current_id = $(selectedTab +' .activeItem').attr('id');
+                            $('.listen-answer[target-id='+current_id+']').removeClass('hidden');
+                        },
+                    }
+                ];
+                showMessage(28,function(){},function(){},param);
+            }
+        }else{
+            var param = {};
+            param['value'] = [text];
+            param['label'] = ['Tiếp tục nghe'];
+            showMessage(37,function(){},function(){},param);
+        }
+    }else{
+        var param = {};
+        param['value'] = [text];
+        param['buttons'] = [
+            {
+                label: 'Tiếp tục nghe',
+                classes: 'btn btn-sm btn-success float-right',
+            },
+            {
+                label: 'Xem đáp án',
+                classes: 'btn btn-sm btn-default float-left',
+                action: function(){
+                    var current_id = $(selectedTab +' .activeItem').attr('id');
+                    $('.listen-answer[target-id='+current_id+']').removeClass('hidden');
+                },
+            }
+        ];
+        showMessage(37,function(){},function(){},param);
+    }
 }
 
 function similarity(s1, s2) {

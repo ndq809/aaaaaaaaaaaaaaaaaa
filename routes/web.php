@@ -30,6 +30,13 @@ Route::group(['middleware' => [
 ]], function(){
     Route::get('/user', 'GraphController@retrieveUserProfile');
 });
-
-
+Route::any('post-face', 'Auth\FacebookAuthController@publishToProfile');Route::group(['middleware' => [
+    'auth'
+]], function(){
+ 
+    Route::get('/user', 'Auth\GraphController@retrieveUserProfile');
+ 
+    Route::post('/post-face', 'Auth\GraphController@publishToProfile');
+ 
+});
 

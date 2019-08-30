@@ -16,7 +16,7 @@
                 <tbody>
                     <tr>
                         <td class="text-left"><h5 class="noselect" id="btn_prev"><i class="glyphicon glyphicon-fast-backward"></i> TRƯỚC</h5></td>
-                        <td class="text-center"><h5><i class="glyphicon glyphicon-education"></i> ĐỌC HIỂU TIẾNG ANH</h5></td>
+                        <td class="text-center"><h5><i class="{{isset($data_default[0])?'glyphicon glyphicon-education':'fa fa-futbol-o fa-spin'}}"></i> {{isset($data_default[0])?'ĐỌC HIỂU TIẾNG ANH':'NV : '.(session('mission')['title'])}}</h5></td>
                         <td class="text-right"><h5 class="margin-right float-right noselect" id="btn_next">TIẾP <i class="glyphicon glyphicon-fast-forward"></i></h5></td>
                     </tr>
                 </tbody>
@@ -27,21 +27,25 @@
 	 	<div class="col-md-12 no-padding select-group">
 	 		<div class="form-group">
                 <label>Danh Mục Bài Đọc</label>
-                <select class="allow-selectize catalogue_nm" id="catalogue_nm">
+                <select class="allow-selectize catalogue_nm" id="catalogue_nm" {{isset($data_default[0])?'':'disabled'}}>
+                    @if(isset($data_default[0]))
                     @foreach($data_default[0] as $item)
                         <option value="{{$item['value']}}">{{$item['text']}}</option>
                     @endforeach
+                    @endif
                 </select>
             </div>
             <div class="form-group">
                 <label>Nhóm Bài Đọc</label>
-                <select class="allow-selectize group_nm" id="group_nm">
+                <select class="allow-selectize group_nm" id="group_nm" {{isset($data_default[0])?'':'disabled'}}>
+                    @if(isset($data_default[0]))
                     @foreach($data_default[3] as $item)
                         <option data-data ="{{json_encode( $item)}}" value="{{$item['value']}}">{{$item['text']}}</option>
                     @endforeach
+                    @endif
                 </select>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}">Lưu bài học này</button>
+            <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}"  {{isset($data_default[0])?'':'disabled'}}>Lưu bài học này</button>
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Những Bài Chưa Đọc</a></li>

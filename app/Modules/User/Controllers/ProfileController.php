@@ -24,7 +24,7 @@ class ProfileController extends ControllerUser
             Session::put('show_login', 1);
             return redirect()->route('home');
         }
-        $data = Dao::call_stored_procedure('SPC_PROFILE_LST1', array(Auth::User()->account_nm));
+        $data = Dao::call_stored_procedure('SPC_PROFILE_LST1', array(Auth::User()->account_id));
         $data = CommonUser::encodeID($data);
         return view('User::profile.index')->with('data', $data);
     }

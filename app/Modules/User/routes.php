@@ -81,12 +81,12 @@ Route::group(
 		Route::any('acceptMission','CommonController@acceptMission');
 		Route::any('refuseMission','CommonController@refuseMission');
 		Route::any('doMission','CommonController@doMission');
+		Route::any('cancelMission','CommonController@cancelMission');
 		Route::any('completeMission','CommonController@completeMission');
 		Route::any('getMissionQuestion','CommonController@getMissionQuestion');
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
 		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
 		Route::any('delete','CommonController@deletePost');
-    	Route::any('post-face', 'CommonController@facebookPoster');
 	}
 );
 

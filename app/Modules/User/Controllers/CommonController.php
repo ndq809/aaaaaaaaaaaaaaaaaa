@@ -586,7 +586,7 @@ class CommonController extends ControllerUser
             $result = array(
                 'status'     => 200,
                 'view1'      => $view1,
-                // 'data'       => $data[1],
+                'mission_id' => $data[1][0]['mission_id'],
                 'statusText' => 'success',
             );
         }
@@ -616,7 +616,7 @@ class CommonController extends ControllerUser
             $result = array(
                 'status'     => 200,
                 'view1'      => $view1,
-                // 'data'       => $data[1],
+                'mission_id' => $data[1][0]['mission_id'],
                 'statusText' => 'success',
             );
         }
@@ -625,12 +625,17 @@ class CommonController extends ControllerUser
 
     public function completeMission(Request $request)
     {
-        $param               = $request->all();
-        $param['mission_id'] = $this->hashids->decode(\Session::get('mission')['mission_id'])[0];
-        $param['user_id']    = Auth::user()->account_id;
-        $param['ip']         = $request->ip();
-        $data                = Dao::call_stored_procedure('SPC_COM_COMPLETE_MISSION', $param);
-        $data                = $this->encodeID($data);
+        $param = $request->all();
+        if ($param['mode'] == 0) {
+            $param['mission_id'] = $this->hashids->decode(\Session::get('mission')['mission_id'])[0];
+        } else {
+            $param['mission_id'] = $this->hashids->decode(\Session::get('hidden_mission')['mission_id'])[0];
+        }
+        $param['user_id'] = Auth::user()->account_id;
+        $param['ip']      = $request->ip();
+        unset($param['mode']);
+        $data = Dao::call_stored_procedure('SPC_COM_COMPLETE_MISSION', $param);
+        $data = $this->encodeID($data);
         if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
             $result = array(
                 'status' => 208,
@@ -645,7 +650,8 @@ class CommonController extends ControllerUser
             \Session::forget('mission');
             $result = array(
                 'status'     => 200,
-                'data'   => $data[1][0],
+                'data'       => $data[1][0],
+                'rank'       => $data[2][0],
                 'statusText' => 'success',
             );
         }
@@ -671,7 +677,7 @@ class CommonController extends ControllerUser
                 'data'   => $data[0],
             );
         } else {
-            \Session::put('mission',$data[1][0]);
+            \Session::put('mission', $data[1][0]);
             $result = array(
                 'status'     => 200,
                 'data'       => $data[1][0],
@@ -681,8 +687,85 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function cancelMission(Request $request)
+    {
+        $param = $request->all();
+        if ($param['mode'] == 0) {
+            if (\Session::get('mission')['try_times_count'] == \Session::get('mission')['try_times']) {
+                $result = array(
+                    'status'     => 200,
+                    'mgs_no'     => '34',
+                    'mgs_param'  => [''],
+                    'statusText' => 'success',
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'mgs_no'     => '33',
+                    'mgs_param'  => [\Session::get('mission')['try_times']-\Session::get('mission')['try_times_count'], \Session::get('mission')['try_times']],
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            if (\Session::get('mission')['try_times_count'] == \Session::get('mission')['try_times']) {
+                $param['mission_id'] = $this->hashids->decode(\Session::get('mission')['mission_id'])[0];
+                $param['user_id']    = Auth::user()->account_id;
+                $param['ip']         = $request->ip();
+                unset($param['mode']);
+                $data = Dao::call_stored_procedure('SPC_COM_MISSION_FAILED', $param);
+                $data = $this->encodeID($data);
+                if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                    $result = array(
+                        'status' => 208,
+                        'data'   => $data[0],
+                    );
+                } else if ($data[0][0]['Data'] != '') {
+                    $result = array(
+                        'status' => 207,
+                        'data'   => $data[0],
+                    );
+                } else {
+                    \Session::forget('mission');
+                    $result = array(
+                        'status'     => 200,
+                        'mgs_no'     => '36',
+                        'mgs_param'  => [$data[1][0]['failed_exp'], $data[1][0]['failed_ctp']],
+                        'rank'       => $data[2][0],
+                        'statusText' => 'success',
+                    );
+                }
+            } else {
+                \Session::forget('mission');
+                $result = array(
+                    'status'     => 200,
+                    'mgs_no'     => '35',
+                    'mgs_param'  => [''],
+                    'statusText' => 'success',
+                );
+            }
+        }
+        return response()->json($result);
+    }
+
     public function getMissionQuestion(Request $request)
     {
+        $result           = [];
+        $result['status'] = 0;
+        $param            = $request->all();
+        if (\Session::get('hidden_mission') != null && \Session::get('hidden_mission')['mission_id'] != '') {
+            if ($param['mode'] == 0) {
+                if (\Session::get('hidden_mission_count') == null) {
+                    \Session::put('hidden_mission_count', 0);
+                }
+            } else {
+                \Session::put('hidden_mission_count', ((int) \Session::get('hidden_mission_count')) + 1);
+            }
+            if (\Session::get('hidden_mission_count') == \Session::get('hidden_mission')['unit_per_times']) {
+                $result['status'] = 1;
+                $result['remark'] = (\Session::get('hidden_mission')['title']);
+                \Session::forget('hidden_mission');
+            }
+        }
         $data   = Dao::call_stored_procedure('SPC_COM_MISSION_QUESTION_LIST');
         $data   = $this->encodeID($data);
         $view1  = view('practice')->with('data', $data[0])->render();
@@ -690,6 +773,7 @@ class CommonController extends ControllerUser
             'status'     => 200,
             'view1'      => $view1,
             'data'       => $data[0],
+            'result'     => $result,
             'statusText' => 'success',
         );
         return response()->json($result);

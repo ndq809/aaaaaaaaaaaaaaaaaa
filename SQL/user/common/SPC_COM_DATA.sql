@@ -101,6 +101,22 @@ BEGIN
 	INNER JOIN F013
 	ON F001.mission_id = F013.mission_id
 	WHERE F013.account_id = @P_account_id
+	AND F001.mission_div <> 4
+	AND F013.status = 1
+	ORDER BY F013.condition
+
+	SELECT TOP 1
+		F001.mission_id
+	,	F001.title
+	,	F013.condition
+	,	F001.unit_per_times
+	FROM F001
+	INNER JOIN F013
+	ON F001.mission_id = F013.mission_id
+	WHERE F013.account_id = @P_account_id
+	AND F001.mission_div = 4
+	AND F013.condition < 2
+	AND F013.status = 1
 
 	--EXEC SPC_COM_MISSION_QUESTION_LIST
 END

@@ -42,7 +42,7 @@
 </div>
 <div class="col-xs-12 no-padding listen-check-box">
     <textarea class="form-control input-sm margin-top col-xs-12 no-padding" id="check-listen-data" rows="3" placeholder="Nghe kỹ bài nghe sau đó nghi lại những gì bạn nghe được tại đây rồi nhấn ' Kiểm tra kết quả '"></textarea>
-    <button class="btn btn-sm btn-primary margin-top {{$raw_data[0][0]['btn-check-answer']==1?'btn-popup':'btn-disabled'}}" popup-id="popup-box3">Kiểm tra kết quả</button>
+    <button class="btn btn-sm btn-primary margin-top {{$raw_data[0][0]['btn-check-answer']==1?'btn-check-answer':'btn-disabled'}}" popup-id="popup-box3">Kiểm tra kết quả</button>
     @if(isset($data)&&$data[2][0]['post_id'] != '')
         @foreach($data[2] as $index => $row)
             @if($row['del_flg']==0)

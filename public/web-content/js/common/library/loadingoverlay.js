@@ -131,7 +131,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
             })
             .addClass(settings.backgroundClass)
             .css(_css.overlay);
-            if (typeof settings.zIndex !== "undefined") data.overlay.css("z-index", settings.zIndex);
+            if (typeof settings.zIndex !== "undefined") data.overlay.css("z-index", container.is(':visible')?settings.zIndex:'-1');
             
             // Image
             if (settings.image) {

@@ -1,9 +1,24 @@
 Google Translate PHP
 ====================
 
-[![Build Status](https://travis-ci.org/Stichoza/google-translate-php.svg?branch=master)](https://travis-ci.org/Stichoza/google-translate-php) [![Latest Stable Version](https://img.shields.io/packagist/v/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Total Downloads](https://img.shields.io/packagist/dt/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Downloads Month](https://img.shields.io/packagist/dm/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Petreon donation](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/stichoza)
+[![Build Status](https://travis-ci.org/Stichoza/google-translate-php.svg?branch=master)](https://travis-ci.org/Stichoza/google-translate-php) [![Latest Stable Version](https://img.shields.io/packagist/v/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Total Downloads](https://img.shields.io/packagist/dt/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Downloads Month](https://img.shields.io/packagist/dm/Stichoza/google-translate-php.svg)](https://packagist.org/packages/stichoza/google-translate-php) [![Petreon donation](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/stichoza) [![PayPal donation](https://img.shields.io/badge/paypal-donate-blue.svg)](https://paypal.me/stichoza)
 
 Free Google Translate API PHP Package. Translates totally free of charge.
+
+---
+
+ - **[Installation](#installation)**
+ - **[Basic Usage](#basic-usage)**
+ - [Advanced Usage](#advanced-usage)
+   - [Language Detection](#language-detection)
+   - [Using Raw Response](#using-raw-response)
+   - [Custom URL](#custom-url)
+   - [HTTP Client Configuration](#http-client-configuration)
+   - [Custom Token Generator](#custom-token-generator)
+   - [Errors and Exception Handling](#errors-and-exception-handling)
+ - [Known Limitations](#known-limitations)
+ - [Disclaimer](#disclaimer)
+ - [Donation](#donation)
 
 ## Installation
 
@@ -48,7 +63,7 @@ echo GoogleTranslate::trans('Hello again', 'ka', 'en');
 
 ### Language Detection
 
-To detect language automatically, just set the source language to `null`
+To detect language automatically, just set the source language to `null`:
 
 ```php
 $tr = new GoogleTranslate('es', null); // Or simply do not pass the second parameter 
@@ -58,9 +73,7 @@ $tr = new GoogleTranslate('es', null); // Or simply do not pass the second param
 $tr->setSource(); // Another way
 ```
 
-#### Get Detected Language
-
-You can also use `getLastDetectedSource()` to get detected language.
+Use `getLastDetectedSource()` to get detected language:
 
 ```php
 $tr = new GoogleTranslate('fr');
@@ -72,9 +85,15 @@ echo $tr->getLastDetectedSource(); // Output: en
 
 Return value will be `null` if the language couldn't be detected.
 
-#### Available languages
-
 Supported languages are listed in [Google API docs](https://cloud.google.com/translate/docs/languages).
+
+### Using Raw Response
+
+For advanced usage, you might need the raw results that Google Translate provides. you can use `getResponse` method for that.
+
+```php
+$responseArray = $tr->getResponse('Hello world!');
+```
 
 ### Custom URL
 
@@ -113,12 +132,28 @@ $tr->setOptions(['proxy' => 'socks5://localhost:1080'])->translate('World');
 
 For more information, see [Creating a Client](http://guzzle.readthedocs.org/en/latest/quickstart.html#creating-a-client) section in Guzzle docs (6.x version).
 
-### Using Raw Response
+### Custom Token Generator
 
-For advanced usage, you might need the raw results that Google Translate provides. you can use `getResponse` method for that.
+You can override the token generator class by passing a generator object as a fourth parameter of constructor or just use `setTokenProvider` method.
+
+Generator must implement `Stichoza\GoogleTranslate\Tokens\TokenProviderInterface`.
 
 ```php
-$responseArray = $tr->getResponse('Hello world!');
+use Stichoza\GoogleTranslate\Tokens\TokenProviderInterface;
+
+class MyTokenGenerator implements TokenProviderInterface
+{
+    public function generateToken(string $source, string $target, string $text) : string
+    {
+        // Your code here
+    }
+}
+```
+
+And use:
+
+```php
+$tr->setTokenProvider(new MyTokenGenerator);
 ```
 
 ### Errors and Exception Handling
@@ -130,7 +165,7 @@ Static method `trans()` and non-static `translate()` and `getResponse()` will th
 
 In addition, `translate()` and `trans()` methods will return `null` if there is no translation available.
 
-### Known Limitations
+## Known Limitations
  
  - `503 Service Unavailable` response:  
    If you are getting this error, it is most likely that Google has banned your external IP address and/or [requires you to solve a CAPTCHA](https://github.com/Stichoza/google-translate-php/issues/18). This is not a bug in this package. Google has become stricter, and it seems like they keep lowering the number of allowed requests per IP per a certain amount of time. Try sending less requests to stay under the radar, or change your IP frequently ([for example using proxies](#http-client-configuration)). Please note that once an IP is banned, even if it's only temporary, the ban can last from a few minutes to more than 12-24 hours, as each case is different.

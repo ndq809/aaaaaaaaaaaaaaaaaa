@@ -269,7 +269,7 @@ function initCommon() {
     $('.btn-disabled').tooltip();
     $('.btn-disabled').removeAttr('title');
     setInterval(keepTokenAlive, 1000 * 60*100); // every 15 mins
-    getMissionQuestion();
+    getMissionQuestion(0);
     // setInterval(getMissionQuestion, 1000 * 10);
 }
 
@@ -480,7 +480,7 @@ function initEvent() {
         $('#popup-box4 #exp').text('+ '+$('#popup-box4 #exp').attr('value')*$(this).val());
         $('#popup-box4 #failed_exp').text('- '+$('#popup-box4 #failed_exp').attr('value')*$(this).val());
         $('#popup-box4 #cop').text('+ '+$('#popup-box4 #cop').attr('value')*$(this).val());
-        $('#popup-box4 #failed_cop').text('- '+$('#popup-box4 #failed_cop').attr('value')*$(this).val());
+        $('#popup-box4 #failed_ctp').text('- '+$('#popup-box4 #failed_ctp').attr('value')*$(this).val());
         $('#popup-box4 #unit_per_times').text($(this).find('option:selected').text());
     })
 
@@ -496,6 +496,10 @@ function initEvent() {
 
     $(document).on('click','#btn-do-mission',function(){
         doMission();
+    })
+
+     $(document).on('click','#btn-cancel-mission',function(){
+        cancelMission(0);
     })
 
 }
@@ -614,7 +618,7 @@ function getDataCommon(data_Array, excute_link) {
 function postFace(data_Array, excute_link) {
     $.ajax({
         type: "POST",
-        url: 'common/post-face',
+        url: 'post-face',
         dataType: "json",
         data: {
             message: 'Quy Nguyen'
@@ -629,7 +633,6 @@ function postFace(data_Array, excute_link) {
         },
         error: function(e) {
             $("#while-load").hide();
-            return response;
         },
     });
 }
@@ -1236,22 +1239,42 @@ function getComment(item_infor,callback){
     });
 }
 
-function getMissionQuestion() {
+function getMissionQuestion(mode) {
+    var data = {};
+    data['mode'] = mode;
     $.ajax({
         type: 'POST',
         url: '/common/getMissionQuestion',
         dataType: 'json',
         loading: true,
         container: '.question',
-        success: function(res) {
-            switch (res.status) {
+        data: data,
+        success: function(respon) {
+            switch (respon.status) {
                 case 200:
-                    $('.question .question-content').html(res.view1);
-                    _current_answer = res.data;
+                    $('.question .question-content').html(respon.view1);
+                    _current_answer = respon.data;
+                    if(respon.result.status==1){
+                        completeMission(function(res){
+                            var param = {};
+                            param['value'] = [respon.result.remark,res.data.exp,res.data.ctp];
+                            showMessage(38,function(){
+                                if(res.rank['account_div']!=res.rank['account_prev_div']){
+                                    var param1 = {};
+                                    param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                                    showMessage(39,function(){
+                                        location.reload();
+                                    },function(){},param1);
+                                }else{
+                                    location.reload();
+                                }
+                            },function(){},param);
+                        },1)
+                    }
                     break;
                 case 201:
                     clearFailedValidate();
-                    showFailedValidate(res.error);
+                    showFailedValidate(respon.error);
                     break;
                 case 208:
                     clearFailedValidate();
@@ -1297,7 +1320,7 @@ function checkMissionAnswer(){
     setTimeout(function(){
         if(check==0){
             $('.question').removeClass('right-answer');
-            getMissionQuestion();
+            getMissionQuestion(1);
         }else{
             $('.question-content .answer-box input').prop('checked',false);
             $('.question').removeClass('wrong-answer');
@@ -1307,7 +1330,7 @@ function checkMissionAnswer(){
 
 function getMission(target) {
     var data = {};
-    data['mission_id'] = $(target).attr('id');
+    data['mission_id'] = $(target).attr('mission_id');
     $.ajax({
         type: 'POST',
         url: '/common/getMission',
@@ -1319,6 +1342,10 @@ function getMission(target) {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
+                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    if(isChrome){//fix border-image in chorme
+                        $('#popup-box4 .mission-content').addClass('chorme');
+                    }
                     $('#popup-box4 #mission-level').trigger('change');
                     break;
                 case 201:
@@ -1355,6 +1382,11 @@ function acceptMission(target) {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
+                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    if(isChrome){//fix border-image in chorme
+                        $('#popup-box4 .mission-content').addClass('chorme');
+                    }
+                    $('a[mission_id='+res.mission_id+'] i').removeClass().addClass('fa fa-futbol-o fa-spin');
                     break;
                 case 201:
                     clearFailedValidate();
@@ -1389,6 +1421,11 @@ function refuseMission() {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
+                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    if(isChrome){//fix border-image in chorme
+                        $('#popup-box4 .mission-content').addClass('chorme');
+                    }
+                    $('a[mission_id='+res.mission_id+'] i').removeClass().addClass('fa fa-meh-o');
                     break;
                 case 201:
                     clearFailedValidate();
@@ -1443,8 +1480,9 @@ function doMission() {
     });
 }
 
-function completeMission(callback) {
+function completeMission(callback,mode) {
     var data = {};
+    data['mode'] = (mode==undefined?0:mode);
     $.ajax({
         type: 'POST',
         url: '/common/completeMission',
@@ -1456,6 +1494,67 @@ function completeMission(callback) {
             switch (res.status) {
                 case 200:
                     callback(res);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function cancelMission(mode) {
+    var data = {};
+    data['mode'] = mode;
+    $.ajax({
+        type: 'POST',
+        url: '/common/cancelMission',
+        dataType: 'json',
+        // loading: true,
+        container: '#popup-box4 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    if(mode==0){
+                        var param = {};
+                        param['value'] = res.mgs_param;
+                        showMessage(res.mgs_no,function(){
+                            cancelMission(1);
+                        },function(){},param);
+                    }else{
+                        var param = {};
+                        param['value'] = res.mgs_param;
+                        param['buttons'] = [
+                            {
+                                label: 'Đã hiểu',
+                                classes: 'btn btn-sm btn-warning',
+                                action: function(){
+                                    if(res.rank!=undefined && res.rank['account_div']!=res.rank['account_prev_div']){
+                                        var param1 = {};
+                                        param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                                        showMessage(40,function(){
+                                            location.reload();
+                                        },function(){},param1);
+                                    }else{
+                                        location.reload();
+                                    }
+                                }
+                            }
+                        ];
+                        showMessage(res.mgs_no,function(){},function(){},param);
+                    }
                     break;
                 case 201:
                     clearFailedValidate();
@@ -1666,9 +1765,9 @@ function showMessage(message_code,ok_callback,cancel_callback,parameter){
         parameter={};
     }
     if(typeof _text!='undefined'){
-        content = parameter['value']!=undefined?fixMessage(_text[message_code]):_text[message_code];
+        content = parameter.value!=undefined?fixMessage(_text[message_code],parameter):_text[message_code];
     }else{
-        parent_content = parameter['value']!=undefined?fixMessage(parent._text[message_code]):parent._text[message_code];
+        parent_content = parameter.value!=undefined?fixMessage(parent._text[message_code],parameter):parent._text[message_code];
     }
     switch(typeof _type!='undefined'?_type[message_code]:parent._type[message_code]){
         case 1:

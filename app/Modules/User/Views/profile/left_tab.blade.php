@@ -19,13 +19,13 @@
             </div>
             <div class="newsfeed collapse in close-when-small">
                 <div class="width-50 inline-block float-left" style="text-align: center;">
-                    <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_meter1"></canvas></div>
+                    <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_meter1" value="{{isset($data)?$data[5][0]['exp']:'0'}}" max="{{isset($data)?$data[5][0]['rank_exp']:'0'}}"></canvas></div>
                 </div>
                 <div class="width-50 inline-block" style="text-align: center;">
-                    <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_meter2"></canvas></div>
+                    <div style="margin:0px auto;display: inline-block;"><canvas id="canvas_meter2" value="{{isset($data)?$data[5][0]['ctp']:'0'}}" max="{{isset($data)?$data[5][0]['rank_ctp']:'0'}}"></canvas></div>
                 </div>
                 <div class="left-hint ">
-                    <h6 style="font-size: 16px"><span style="font-family: titlefont">Cấp Độ</span> : <span style="font-family: 'headerfont1'">S+++</span></h6>
+                    <h6 style="font-size: 16px"><span style="font-family: titlefont">Cấp Độ</span> : <span style="font-family: 'headerfont1'">{{isset($data)?$data[5][0]['rank']:''}}</span></h6>
                 </div>
             </div>
             <div class="left-header" data-target=".radar-chart" data-toggle="collapse">
@@ -62,66 +62,29 @@
                     <thead>
                         <th>Nhiệm vụ</th>
                         <th>Hoàn thành</th>
+                        <th>Từ chối</th>
                         <th>Thất bại</th>
-                        <th>Đã đạt được</th>
                     </thead>
                     <tbody>
+                        @if(isset($data)&&$data[7][0]['catalogue_div_nm']!='')
+                        @foreach($data[7] AS $index=>$row)
                         <tr>
                             <td>
-                                <label >Từ vựng</label>
+                                <label class="mission-label">{{$row['catalogue_div_nm']}}</label>
                             </td>
                             <td>
-                                <label >10</label>
+                                <label >{{$row['success_count']}}</label>
                             </td>
                             <td>
-                                <label >7</label>
+                                <label >{{$row['ignore_count']}}</label>
                             </td>
                             <td>
-                                <label >1234</label>
+                                <label >{{$row['failed_count']}}</label>
                             </td>
+                            <td class="hidden mission-point">{{$row['point']}}</td>
                         </tr>
-                        <tr>
-                            <td>
-                                <label >Nghe</label>
-                            </td>
-                            <td>
-                                <label >10</label>
-                            </td>
-                            <td>
-                                <label >7</label>
-                            </td>
-                            <td>
-                                <label >125</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label >Ngữ pháp</label>
-                            </td>
-                            <td>
-                                <label >10</label>
-                            </td>
-                            <td>
-                                <label >7</label>
-                            </td>
-                            <td>
-                                <label >33</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label >Viết</label>
-                            </td>
-                            <td>
-                                <label >10</label>
-                            </td>
-                            <td>
-                                <label >7</label>
-                            </td>
-                            <td>
-                                <label >20</label>
-                            </td>
-                        </tr>
+                        @endforeach
+                       @endif
                     </tbody>
                 </table>
             </div>
@@ -142,46 +105,32 @@
             <div class="top-rank collapse in close-when-small">
                 <table class="table table-hover table-left">
                     <tbody>
+                        @foreach($raw_data[5] as $index=>$item)
+                        @if($item['mission_id']!='')
                         <tr>
                             <td>
-                                <a style="font-family: HapnaSlab" class="text-success">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    CHINH PHỤC TỪ VỰNG
+                                <a style="font-family: HapnaSlab" class="text-success btn-popup" popup-id="popup-box4" mission_id="{{$item['mission_id']}}" type="button">
+                                    @if($item['condition']==0)
+                                    <i class="fa fa-bullseye" style="font-size: 16px"></i>
+                                    @elseif($item['condition']==1)
+                                    <i class="fa fa-futbol-o fa-spin" style="font-size: 16px"></i>
+                                    @elseif($item['condition']==2)
+                                    <i class="fa fa-smile-o" style="font-size: 18px"></i>
+                                    @elseif($item['condition']==3)
+                                    <i class="fa fa-meh-o" style="font-size: 18px"></i>
+                                    @elseif($item['condition']==4)
+                                    <i class="fa fa-frown-o" style="font-size: 18px"></i>
+                                    @endif
+                                    {{$item['title']}}
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    LÀM CHỦ NGỮ PHÁP
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    BẬC THẦY ĐỌC HIỂU
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    TRÙM GIAO TIẾP
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a style="font-family: HapnaSlab" class="text-success">
-                                    <img src="/web-content/images/icon/Mission-Icon.png" width="20px" height="20px">
-                                    VIỆT NAM QUÊ HƯƠNG TÔI
-                                </a>
-                            </td>
-                        </tr>
+                        @else
+                            <tr class="no-data">
+                                <td>Bạn chưa đăng nhập hoặc không có nhiệm vụ nào</td>
+                            </tr>
+                        @endif
+                        @endforeach
                     </tbody>
                 </table>
             </div>

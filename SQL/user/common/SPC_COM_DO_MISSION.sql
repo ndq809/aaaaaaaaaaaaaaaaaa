@@ -81,6 +81,8 @@ EXIT_SPC:
 	SELECT
 		F001.mission_id
 	,	F001.title
+	,	F013.try_times_count
+	,	F001.try_times
 	,	M999.text_remark1 AS link
 	FROM F001
 	INNER JOIN F013

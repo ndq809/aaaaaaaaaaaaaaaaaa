@@ -11,7 +11,6 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_VOCABULARY_LST3]
-	
 		@P_mission_id			NVARCHAR(15)	=	''
 	,	@P_account_id			NVARCHAR(15)	=	'' 
 AS
@@ -22,6 +21,9 @@ BEGIN
 		@ERR_TBL			ERRTABLE
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
+	,	@mission_data_div	INT					=	0
+	,	@current_unit		INT					=	0
+	,	@unit_this_times	INT					=	0
 
 	CREATE TABLE #WORD(
 		src_id				INT
@@ -56,50 +58,185 @@ BEGIN
 	,	pagesize		INT
 	)
 
-	INSERT INTO #VOCABULARY
-	SELECT
-		ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
-	,	M006.id
-	,	M006.Vocabulary_nm
-	,	M999_1.number_id     
-	,	M999_1.content
-	,	M999_2.number_id     
-	,	M999_2.content
-	,	M999_3.number_id     
-	,	M999_3.content		
-	,   M006.spelling		
-	,	M006.mean			
-	,	M006.image
-	,	M006.audio			
-	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-	,	M006.del_flg
-	FROM F001
-	INNER JOIN F009
-	ON F009.briged_id = F001.briged_id
-	AND F009.briged_div = 1
-	INNER JOIN M006
-	ON F009.target_id = M006.id
-	LEFT JOIN F003
-	ON M006.id = F003.item_1
-	AND F003.connect_div = 2
-	AND F003.user_id = @P_account_id
-	AND F003.item_2 IS NULL
-	LEFT JOIN M999 M999_1
-	ON	M006.vocabulary_div = M999_1.number_id
-	AND	M999_1.name_div = 8
-	LEFT JOIN M999 M999_2
-	ON	M006.specialized = M999_2.number_id
-	AND	M999_2.name_div = 23
-	LEFT JOIN M999 M999_3
-	ON	M006.field = M999_3.number_id
-	AND	M999_3.name_div = 24
-	WHERE F001.mission_id = @P_mission_id
-	AND 0 =
-		CASE 
-			WHEN F003.item_1 IS NULL THEN M006.del_flg
-			ELSE 0
-		END
-	AND M006.record_div = 2
+	SET @mission_data_div = (SELECT F001.mission_data_div FROM F001 WHERE F001.mission_id = @P_mission_id)
+	SET @current_unit = (SELECT ISNULL(F013.current_unit,0) FROM F013 WHERE F013.mission_id = @P_mission_id AND F013.account_id = @P_account_id)
+	SET @unit_this_times = (SELECT F013.unit_this_times FROM F013 WHERE F013.mission_id = @P_mission_id AND F013.account_id = @P_account_id)
+
+	IF @mission_data_div = 3
+	BEGIN
+		INSERT INTO #VOCABULARY
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
+		,	M006.id
+		,	M006.Vocabulary_nm
+		,	M999_1.number_id     
+		,	M999_1.content
+		,	M999_2.number_id     
+		,	M999_2.content
+		,	M999_3.number_id     
+		,	M999_3.content		
+		,   M006.spelling		
+		,	M006.mean			
+		,	M006.image
+		,	M006.audio			
+		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		,	M006.del_flg
+		FROM F001
+		INNER JOIN F009
+		ON F009.briged_id = F001.briged_id
+		AND F009.briged_div = 1
+		INNER JOIN F013
+		ON F001.mission_id = F013.mission_id
+		AND F013.account_id = @P_account_id
+		INNER JOIN M006
+		ON F009.target_id = M006.id
+		LEFT JOIN F003
+		ON M006.id = F003.item_1
+		AND F003.connect_div = 2
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		LEFT JOIN M999 M999_1
+		ON	M006.vocabulary_div = M999_1.number_id
+		AND	M999_1.name_div = 8
+		LEFT JOIN M999 M999_2
+		ON	M006.specialized = M999_2.number_id
+		AND	M999_2.name_div = 23
+		LEFT JOIN M999 M999_3
+		ON	M006.field = M999_3.number_id
+		AND	M999_3.name_div = 24
+		WHERE F001.mission_id = @P_mission_id
+		AND 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M006.del_flg
+				ELSE 0
+			END
+		AND M006.record_div = 2
+		ORDER BY
+		M006.id ASC
+		OFFSET @current_unit ROWS
+		FETCH NEXT @unit_this_times ROWS ONLY
+	END
+
+	IF @mission_data_div = 2
+	BEGIN
+		INSERT INTO #VOCABULARY
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
+		,	M006.id
+		,	M006.Vocabulary_nm
+		,	M999_1.number_id     
+		,	M999_1.content
+		,	M999_2.number_id     
+		,	M999_2.content
+		,	M999_3.number_id     
+		,	M999_3.content		
+		,   M006.spelling		
+		,	M006.mean			
+		,	M006.image
+		,	M006.audio			
+		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		,	M006.del_flg
+		FROM F001
+		INNER JOIN F013
+		ON F001.mission_id = F013.mission_id
+		AND F013.account_id = @P_account_id
+		INNER JOIN M007
+		ON F001.catalogue_div = M007.catalogue_div
+		AND F001.catalogue_id = M007.catalogue_id
+		AND F001.group_id = M007.group_id
+		AND M007.del_flg = 0
+		INNER JOIN F009
+		ON M007.briged_id = F009.briged_id
+		AND F009.briged_div = 1
+		INNER JOIN M006
+		ON F009.target_id = M006.id
+		AND M006.del_flg = 0
+		LEFT JOIN F003
+		ON M006.id = F003.item_1
+		AND F003.connect_div = 2
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		LEFT JOIN M999 M999_1
+		ON	M006.vocabulary_div = M999_1.number_id
+		AND	M999_1.name_div = 8
+		LEFT JOIN M999 M999_2
+		ON	M006.specialized = M999_2.number_id
+		AND	M999_2.name_div = 23
+		LEFT JOIN M999 M999_3
+		ON	M006.field = M999_3.number_id
+		AND	M999_3.name_div = 24
+		WHERE F001.mission_id = @P_mission_id
+		AND 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M006.del_flg
+				ELSE 0
+			END
+		AND M006.record_div = 2
+		ORDER BY
+		M006.id ASC
+		OFFSET @current_unit ROWS
+		FETCH NEXT @unit_this_times ROWS ONLY
+	END
+
+	IF @mission_data_div = 1
+	BEGIN
+		INSERT INTO #VOCABULARY
+		SELECT
+			ROW_NUMBER() OVER(ORDER BY M006.vocabulary_id , M006.vocabulary_dtl_id ASC) AS row_id
+		,	M006.id
+		,	M006.Vocabulary_nm
+		,	M999_1.number_id     
+		,	M999_1.content
+		,	M999_2.number_id     
+		,	M999_2.content
+		,	M999_3.number_id     
+		,	M999_3.content		
+		,   M006.spelling		
+		,	M006.mean			
+		,	M006.image
+		,	M006.audio			
+		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		,	M006.del_flg
+		FROM F001
+		INNER JOIN F013
+		ON F001.mission_id = F013.mission_id
+		AND F013.account_id = @P_account_id
+		INNER JOIN M007
+		ON F001.catalogue_div = M007.catalogue_div
+		AND F001.catalogue_id = M007.catalogue_id
+		AND M007.del_flg = 0
+		INNER JOIN F009
+		ON M007.briged_id = F009.briged_id
+		AND F009.briged_div = 1
+		INNER JOIN M006
+		ON F009.target_id = M006.id
+		AND M006.del_flg = 0
+		LEFT JOIN F003
+		ON M006.id = F003.item_1
+		AND F003.connect_div = 2
+		AND F003.user_id = @P_account_id
+		AND F003.item_2 IS NULL
+		LEFT JOIN M999 M999_1
+		ON	M006.vocabulary_div = M999_1.number_id
+		AND	M999_1.name_div = 8
+		LEFT JOIN M999 M999_2
+		ON	M006.specialized = M999_2.number_id
+		AND	M999_2.name_div = 23
+		LEFT JOIN M999 M999_3
+		ON	M006.field = M999_3.number_id
+		AND	M999_3.name_div = 24
+		WHERE F001.mission_id = @P_mission_id
+		AND 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M006.del_flg
+				ELSE 0
+			END
+		AND M006.record_div = 2
+		ORDER BY
+		M006.id ASC
+		OFFSET @current_unit ROWS
+		FETCH NEXT @unit_this_times ROWS ONLY
+	END
 
 	INSERT INTO #WORD
 	SELECT

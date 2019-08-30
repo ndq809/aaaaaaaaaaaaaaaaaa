@@ -14,21 +14,25 @@ $(function() {
 function initGrammar() {
     initListener();
     if ($('.table-click tbody tr').first().hasClass('no-data')) {
-        if ($('#catalogue-tranfer').attr('value') != '') {
-            var selectize_temp = $('#catalogue_nm')[0].selectize;
-            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')), true);
-            updateGroup($('#catalogue_nm'), $('#group-transfer').attr('value'));
-        } else {
+        if($('#catalogue-tranfer').attr('value')!=''){
+            var selectize_temp= $('#catalogue_nm')[0].selectize;
+            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
+            updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
+        }else{
             $('#catalogue_nm').trigger('change');
         }
     } else {
         if ($('.table-click tbody tr.selected-row').length == 0) {
-            if ($('#catalogue-tranfer').attr('value') != '') {
-                var selectize_temp = $('#catalogue_nm')[0].selectize;
-                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')), true);
-                updateGroup($('#catalogue_nm'), $('#group-transfer').attr('value'));
-            } else {
-                $('.table-click tbody tr:first-child').trigger('dblclick');
+            if($('#catalogue-tranfer').attr('value')!=''){
+                var selectize_temp= $('#catalogue_nm')[0].selectize;
+                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
+                updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
+            }else{
+                if($('#catalogue_nm').is(':disabled')){
+                    getData();
+                }else{
+                    $('.table-click tbody tr:first-child').trigger('dblclick');
+                }
             }
         } else {
             $('.table-click tbody tr.selected-row').trigger('dblclick');
@@ -382,6 +386,7 @@ function getQuestion() {
 function checkAnswer() {
     $('.answer-box').removeClass('wrong-answer');
     $('.answer-box').removeClass('right-answer');
+    var result = true;
     $('.answer-box').each(function(i) {
         check = -1;
         if ($(this).find('input:checked').length != 0) {
@@ -399,10 +404,41 @@ function checkAnswer() {
             $(this).addClass('wrong-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-close');
             $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
+            if(result){
+                result = false;
+            }
         } else if (check == 0) {
             $(this).addClass('right-answer');
             $(this).find('.result-icon').removeClass().addClass('result-icon fa fa-check');
             $(this).find('.result-icon').css('top', ($(this).height() / 2) - 25);
         }
     })
+    if($('#do-mission').val()==1){
+        if(result){
+            $('.activeItem i').removeClass().addClass('fa fa-check-circle test-done');
+            if(GrammarArray.length == $('.test-done').length){
+                completeMission(function(res){
+                    var param = {};
+                    param['value'] = [res.data.exp,res.data.ctp];
+                    showMessage(30,function(){
+                        if(res.rank['account_div']!=res.rank['account_prev_div']){
+                            var param1 = {};
+                            param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                            showMessage(39,function(){
+                                location.reload();
+                            },function(){},param1);
+                        }else{
+                            location.reload();
+                        }
+                    },function(){
+                    },param);
+                })
+            }else{
+                showMessage(28,function(){
+                    $('.modal-header button.close').trigger('click');
+                    nextGrammar();
+                });
+            }
+        }
+    }
 }

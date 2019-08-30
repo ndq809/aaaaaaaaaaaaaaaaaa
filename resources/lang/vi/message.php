@@ -160,7 +160,47 @@ return [
         32 => [
             'message_div' => 1,
             'message_title' => 'Xác Nhận Từ Chối',
-            'message_content' => 'Bạn có chắc chắn muốn từ chối nhiệm vụ này?',
+            'message_content' => 'Từ chối nhiệm vụ vẫn sẽ phải chịu hình phạt bằng 1 nửa giá trị khi thất bại<br>Bạn vẫn muốn từ chối nhiệm vụ này?',
+        ],
+        33 => [
+            'message_div' => 1,
+            'message_title' => 'Hủy Nhiệm Vụ',
+            'message_content' => 'Nếu bạn hủy nhiệm vụ thì nhiệm vụ này chỉ còn xxx/xxx lần thử!<br>Bạn có chắc chắn muốn hủy?',
+        ],
+        34 => [
+            'message_div' => 1,
+            'message_title' => 'Hủy Nhiệm Vụ',
+            'message_content' => 'Số lần thử của nhiệm vụ này đã hết nếu bạn hủy thì nhiệm vụ sẽ bị coi như thất bại!<br>Bạn có chắc chắn muốn hủy?',
+        ],
+        35 => [
+            'message_div' => 3,
+            'message_title' => 'Đã Hủy Nhiêm Vụ',
+            'message_content' => 'Nhiệm vụ đã được hủy để tiếp tục thực hiện hãy chọn lại trong bảng nhiệm vụ!',
+        ],
+        36 => [
+            'message_div' => 3,
+            'message_title' => 'Nhiêm Vụ Thất Bại',
+            'message_content' => 'Nhiệm vụ thất bại!<br><span class="text-left">Hình phạt phải nhận</span><br><span class="text-left">Điểm kinh nghiệm : - xxx</span><br><span class="text-left">Điểm đóng góp : - xxx</span>',
+        ],
+        37 => [
+            'message_div' => 2,
+            'message_title' => 'Kết Quả Nghe',
+            'message_content' => 'xxx',
+        ],
+        38 => [
+            'message_div' => 2,
+            'message_title' => 'Nhiệm Vụ Ẩn',
+            'message_content' => 'Bạn vừa hoàn thành 1 nhiệm vụ ẩn<br><label style ="font-size:16px;color:#a94242">xxx</label><br><span class="text-left">Phần Thưởng Nhận Được</span><br><span class="text-left">Điểm kinh nghiệm : + xxx</span><br><span class="text-left">Điểm đóng góp : + xxx</span>',
+        ],
+        39 => [
+            'message_div' => 2,
+            'message_title' => 'Thăng Hạng Thành Công',
+            'message_content' => 'Chúc mừng bạn đã thăng hạng từ <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label> lên <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label><br>Hãy tiếp tục cố gắng nữa nhé!',
+        ],
+        40 => [
+            'message_div' => 4,
+            'message_title' => 'Rớt Hạng',
+            'message_content' => 'Rất tiếc hạng của bạn đã bị hạ từ <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label> xuống <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label><br>Hãy tiếp tục cố gắng nữa nhé!',
         ],
     ],
 ];

@@ -39,12 +39,10 @@ function initevent_mi002(){
         }
     })
 
-    $(document).on('click','#btn-upgrade',function(){
-        if($('#vocabulary_id').val()!='' && $('#vocabulary_dtl_id').val()!=''){
-            showMessage(15,function(){
-                mi002_upgrage();
-           });
-        }
+    $(document).on('click','#btn-add',function(){
+        showMessage(1,function(){
+            mi002_addNew(1);
+       });
     })
 
     $(document).on('click','.btn-copy',function(){
@@ -64,8 +62,8 @@ function initevent_mi002(){
     $(document).on('change','#mission_user_div',function(){
         if($(this).val()*1!=2){
             $('.mission-user-panel').addClass('hidden');
-            $('#rank-from').prop('disabled',false).val(0);
-            $('#rank-to').prop('disabled',false).val(0);
+            $('#rank-from').prop('disabled',false);
+            $('#rank-to').prop('disabled',false);
         }else{
             $('.mission-user-panel').removeClass('hidden');
             $('#rank-from').prop('disabled',true).val(0);
@@ -206,12 +204,12 @@ function initevent_mi002(){
     })
 
     $(document).on('change','#cop',function(){
-        $('#failed_cop').val(Number($(this).val())*20/100).tofix(0);
+        $('#failed_ctp').val(Number($(this).val())*20/100).tofix(0);
     })
 
 }
 
-function mi002_addNew(){
+function mi002_addNew(mode){
     var data_addnew={};
     var detail_data1 = $.map(getTableTdData($('.mission-user-panel .submit-table:visible')),function(value,key){
         return {'id':value['account_id']};
@@ -220,6 +218,10 @@ function mi002_addNew(){
         return {'id':value['id']};
     })
     data_addnew['header_data']=getInputData(1);
+    if(mode!=undefined&&mode==1){
+        data_addnew['header_data']['mission_id']= '';
+    }
+    data_addnew['header_data']['total_unit'] = $('.transform-content:not(.hidden) .total_unit').first().val();
     data_addnew['detail_data1']=detail_data1;
     data_addnew['detail_data2']=detail_data2;
 	$.ajax({
@@ -360,6 +362,7 @@ function mi002_refer(){
         loading:true,
         data: data,//convert to object
         success: function (res) {
+            $('.result').html('');
             $('.update-block').html(res.view1);
             if(res.data.catalogue_div==1){
                 $('.transform-content[type=0] .result').html(res.view2);
@@ -377,9 +380,9 @@ function mi002_refer(){
             $('#rank-from').trigger('change');
             $('#catalogue_div').trigger('change');
             $('#mission_data_div').trigger('change');
-            if($('#mission_user_div').val()==2){
+            // if($('#mission_user_div').val()==2){
                 $('#mission_user_div').trigger('change');
-            }
+            // }
         }
     });
 }

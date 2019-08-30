@@ -28,3 +28,5 @@
         @endif
     </tbody>
 </table>
+<input type="hidden" class="total_unit" name="" value="{{isset($data_voc)?count($data_voc):'0'}}">
+

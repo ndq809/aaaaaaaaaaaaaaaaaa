@@ -24,12 +24,12 @@ function initProfile(){
 	var canvas_meter = $('#canvas_meter1');
 
 	canvas_meter.css({
-	    width: 150,
+	    width: 180,
 	    height: 150
 	}).Meter({
-	    target: 80,                
+	    target: Number($('#canvas_meter1').attr('value')),                
 	    min: 0,                    
-	    max: 500,                  
+	    max:  Number($('#canvas_meter1').attr('max')),                  
 	    background: 'transparent', 
 	    frames: 60,                 
 	    startAngle: 0.8,           
@@ -79,7 +79,7 @@ function initProfile(){
 	        fontFamily: 'Roboto' 
 	    },
 	    scoreText: {
-	        fontSize: 30,
+	        fontSize: 26,
 	        fontFamily: 'Roboto',
 	        type: 0,   // 0 or 1
 	        color: '#333333',
@@ -89,12 +89,12 @@ function initProfile(){
 
 	canvas_meter = $('#canvas_meter2');
 	canvas_meter.css({
-	    width: 150,
+	    width: 180,
 	    height: 150
 	}).Meter({
-	    target: 130,                
+	    target: Number($('#canvas_meter2').attr('value')),                
 	    min: 0,                    
-	    max: 300,                  
+	    max:  Number($('#canvas_meter2').attr('max')),                  
 	    background: 'transparent', 
 	    frames: 60,                 
 	    startAngle: 0.8,           
@@ -144,7 +144,7 @@ function initProfile(){
 	        fontFamily: 'Roboto' 
 	    },
 	    scoreText: {
-	        fontSize: 30,
+	        fontSize: 26,
 	        fontFamily: 'Roboto',
 	        type: 0,   // 0 or 1
 	        color: '#333333',
@@ -153,18 +153,25 @@ function initProfile(){
 	}).draw();
 
 	var canvas_radar = $('#canvas_radar');
+	var pointArray = $('.mission-point').map(function(){
+		return $(this).text();
+	})
+
+	var labelArray = $('.mission-label').map(function(){
+		return $(this).text();
+	})
 
 	canvas_radar.css({
-	    width: 250,
+	    width: 400,
 	    height: 250
 	}).Radar({
-	    data: [8, 8, 6, 4, 7],
+	    data: pointArray,
 	    background: 'transparent',  //背景颜色
 	    min: 0,
 	    max: 10,
 	    dimensions: {
-	        data: ['Từ vựng', 'Ngữ pháp', 'Nghe', 'Đọc', 'Viết'],
-	        fontSize: 13,                                   //文字大小
+	        data: labelArray,
+	        fontSize: 14,                                   //文字大小
 	        fontFamily: 'textfont',                  //字体
 	        color: '#666666',                              //文字颜色
 	        margin: 5

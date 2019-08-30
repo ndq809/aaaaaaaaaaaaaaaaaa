@@ -53,16 +53,4 @@ class FacebookAuthController extends ControllerUser
         return $facebookUser;
     }
 
-    public function publishToProfile(Request $request){
-        try {
-            $response = $this->api->post('/me/feed', [
-                'message' => $request->message
-            ])->getGraphNode()->asArray();
-            if($response['id']){
-               // post created
-            }
-        } catch (FacebookSDKException $e) {
-            dd($e); // handle exception
-        }
-    }
 }

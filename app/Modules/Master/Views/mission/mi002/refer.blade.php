@@ -81,41 +81,27 @@
     </div>
 </div>
 <div class="col-xs-12"></div>
-<div class="col-sm-2 no-padding-right">
+<div class="col-sm-3 no-padding-right">
     <div class="form-group">
-        <label>Điểm Kinh Nghiệm(Thưởng)</label>
+        <label class="text-overflow">Điểm Kinh Nghiệm(Thưởng/Phạt)</label>
         <div class="input-group">
-            <input type="text" name="" id="exp" class="form-control input-sm submit-item" placeholder="Điểm kinh nghiệm" value="{{isset($data_default[5])?$data_default[5][0]['exp']:''}}">
+            <input type="text" name="" id="exp" class="form-control input-sm submit-item width-50" placeholder="Thưởng" value="{{isset($data_default[5])?$data_default[5][0]['exp']:''}}">
+            <input type="text" name="" id="failed_exp" class="form-control input-sm submit-item width-50" placeholder="Phạt" value="{{isset($data_default[5])?$data_default[5][0]['failed_exp']:''}}">
+        </div>
+    </div>
+</div>
+<div class="col-sm-3 no-padding-right">
+    <div class="form-group">
+        <label class="text-overflow">Điểm Đóng Góp(Thưởng/Phạt)</label>
+        <div class="input-group">
+            <input type="text" name="" id="cop" class="form-control input-sm submit-item width-50" placeholder="Thưởng" value="{{isset($data_default[5])?$data_default[5][0]['ctp']:''}}">
+            <input type="text" name="" id="failed_cop" class="form-control input-sm submit-item width-50" placeholder="Phạt" value="{{isset($data_default[5])?$data_default[5][0]['failed_ctp']:''}}">
         </div>
     </div>
 </div>
 <div class="col-sm-2 no-padding-right">
     <div class="form-group">
-        <label>Điểm Kinh Nghiệm(Phạt)</label>
-        <div class="input-group">
-            <input type="text" name="" id="failed_exp" class="form-control input-sm submit-item" placeholder="Điểm kinh nghiệm" value="{{isset($data_default[5])?$data_default[5][0]['failed_exp']:''}}">
-        </div>
-    </div>
-</div>
-<div class="col-sm-2 no-padding-right">
-    <div class="form-group">
-        <label>Điểm Đóng Góp(Thưởng)</label>
-        <div class="input-group">
-            <input type="text" name="" id="cop" class="form-control input-sm submit-item" placeholder="Điểm đóng góp" value="{{isset($data_default[5])?$data_default[5][0]['cop']:''}}">
-        </div>
-    </div>
-</div>
-<div class="col-sm-2 no-padding-right">
-    <div class="form-group">
-        <label>Điểm Đóng Góp(Phạt)</label>
-        <div class="input-group">
-            <input type="text" name="" id="failed_cop" class="form-control input-sm submit-item" placeholder="Điểm đóng góp" value="{{isset($data_default[5])?$data_default[5][0]['failed_cop']:''}}">
-        </div>
-    </div>
-</div>
-<div class="col-sm-2 no-padding-right">
-    <div class="form-group">
-        <label>Thời Gian Cần Thực Hiện</label>
+        <label class="text-overflow">Thời Gian Cần Thực Hiện</label>
         <div class="input-group">
             <input type="text" name="" class="form-control input-sm submit-item" value="{{isset($data_default[5])?$data_default[5][0]['period']:''}}" id="period" placeholder="Thời gian cần thực hiện">
             <span class="input-group-text">Giờ</span>
@@ -124,9 +110,17 @@
 </div>
 <div class="col-sm-2 no-padding-right">
     <div class="form-group">
-        <label>Số lượng tối thiểu</label>
+        <label class="text-overflow">Số lượng tối thiểu</label>
         <div class="input-group">
             <input type="text" name="" id="unit_per_times" class="form-control input-sm submit-item" placeholder="Số lượng tối thiểu 1 lần thực hiện" value="{{isset($data_default[5])?$data_default[5][0]['unit_per_times']:''}}">
+        </div>
+    </div>
+</div>
+<div class="col-sm-2 no-padding-right">
+    <div class="form-group">
+        <label class="text-overflow">Số lần Thử</label>
+        <div class="input-group">
+            <input type="text" name="" id="try_times" class="form-control input-sm submit-item" placeholder="Số lần có thể thực hiện nhiệm vụ" value="{{isset($data_default[5])?$data_default[5][0]['try_times']:''}}">
         </div>
     </div>
 </div>
