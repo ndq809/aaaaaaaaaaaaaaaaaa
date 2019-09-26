@@ -39,14 +39,13 @@ class v003Controller extends Controller
         $file     = fopen($filename, "r");
         $data= [];
         while (!feof($file)) {
-            if($count<$page * 10){
+            if($count<$page * 100){
                 $count++;
                 fgets($file);
                 continue;
             }
-            if ($count < ($page * 10) + 10) {
+            if ($count < ($page * 100) + 100) {
                 array_push($data,fgets($file));
-
             } else {
                 break;
             }
@@ -54,7 +53,7 @@ class v003Controller extends Controller
         }
         fclose($file);
         $result = array(
-                    'status'     => 200,
+                    'status'     => $page<3876?200:201,
                     'data'       => $data,
                     'statusText' => 'success',
                 );
@@ -67,6 +66,11 @@ class v003Controller extends Controller
         $page = $request->input('page');
         $validate = common::checkValidate($data);
         if ($validate['result']) {
+        	for ($i=0; $i <count($data) ; $i++) { 
+        		if(!file_exists(public_path($data[$i]['audio']))){
+        			$data[$i]['audio'] = '';
+        		}
+        	}
             $param['json_detail'] = json_encode($data);
             $param['user_id']    = Auth::user()->account_id;
             $param['ip']         = $request->ip();

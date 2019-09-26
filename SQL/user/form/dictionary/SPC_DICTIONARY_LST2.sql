@@ -49,6 +49,9 @@ BEGIN
 	,	image					NVARCHAR(500)
 	,	audio					NVARCHAR(500)
 	,	remembered				INT
+	,	word_vote				INT
+	,	my_vote					INT
+	,	total_vote				INT
 	,	del_flg					INT
 	)
 
@@ -139,6 +142,9 @@ BEGIN
 	,	M006.image
 	,	M006.audio			
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	ISNULL(M006.word_vote,0)
+	,	F008.remark
+	,	0
 	,	M006.del_flg
 	FROM M006
 	LEFT JOIN F003
@@ -155,10 +161,31 @@ BEGIN
 	LEFT JOIN M999 M999_3
 	ON	M006.field = M999_3.number_id
 	AND	M999_3.name_div = 24
+	LEFT JOIN F008
+	ON M006.id = F008.target_id
+	AND F008.user_id = @P_account_id
+	AND F008.execute_div = 5
+	AND F008.execute_target_div = 6
 	WHERE
 		M006.vocabulary_id = @vocabylary_id
 	AND M006.record_div = 2 
 	AND M006.del_flg = 0
+
+	UPDATE #VOCABULARY
+	SET total_vote = #TEMP.total_vote
+	FROM #VOCABULARY
+	INNER JOIN (
+		SELECT
+			#VOCABULARY.specialized_div
+		,	#VOCABULARY.field_div
+		,	SUM(#VOCABULARY.word_vote) AS total_vote
+		FROM #VOCABULARY
+		GROUP BY 
+			#VOCABULARY.specialized_div
+		,	#VOCABULARY.field_div
+	)#TEMP
+	ON #VOCABULARY.specialized_div = #TEMP.specialized_div
+	AND #VOCABULARY.field_div = #TEMP.field_div
 
 	INSERT INTO #WORD
 	SELECT
@@ -214,8 +241,12 @@ BEGIN
 	SELECT * FROM #PAGER
 
 	SELECT * FROM #VOCABULARY
-	ORDER BY 
-		#VOCABULARY.row_id
+	ORDER BY
+		#VOCABULARY.total_vote DESC
+	,	#VOCABULARY.specialized_div
+	,	#VOCABULARY.field_div
+	,	#VOCABULARY.word_vote DESC
+	,	#VOCABULARY.row_id
 
 	SELECT
 		F003.id 
@@ -232,8 +263,12 @@ BEGIN
 	AND F003.del_flg = 0
 
 	SELECT TOP 1 #VOCABULARY.id FROM #VOCABULARY
-	ORDER BY 
-		#VOCABULARY.row_id
+	ORDER BY
+		#VOCABULARY.total_vote DESC
+	,	#VOCABULARY.specialized_div
+	,	#VOCABULARY.field_div
+	,	#VOCABULARY.word_vote DESC
+	,	#VOCABULARY.row_id
 
 	SELECT TOP 10
 		F008.target_id

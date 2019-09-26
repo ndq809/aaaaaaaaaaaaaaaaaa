@@ -26,7 +26,7 @@ BEGIN
 		M006.vocabulary_nm 
 	FROM M006 
 	WHERE 
-		M006.vocabulary_nm LIKE '%' +@P_target_nm +'%' 
+		M006.vocabulary_nm LIKE @P_target_nm +'%' 
 	AND M006.vocabulary_dtl_id = 0
 	AND M006.record_div = 2 
 	AND M006.del_flg = 0

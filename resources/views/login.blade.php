@@ -54,7 +54,7 @@
                 </div>
                 <div class="login-form" style="max-width: 600px;margin: 0 auto;padding: 0px 10px;">
                     <div class="form-group ">
-                        <input type="text" class="form-control login-input " id="account_nm" placeholder="Email đăng nhập" tabindex="1" value="<?php if(isset($_COOKIE['account_nm'])){echo($_COOKIE['account_nm']); } ?>">
+                        <input type="text" class="form-control login-input " id="account_nm" placeholder="Email đăng nhập" tabindex="1" value="{{Cookie::get('account_nm')}}">
                     </div>
 
                     <div class="form-group ">

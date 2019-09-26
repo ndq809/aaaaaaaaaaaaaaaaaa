@@ -479,7 +479,7 @@ function initEvent() {
     $(document).on('change','#popup-box4 #mission-level',function(){
         $('#popup-box4 #exp').text('+ '+$('#popup-box4 #exp').attr('value')*$(this).val());
         $('#popup-box4 #failed_exp').text('- '+$('#popup-box4 #failed_exp').attr('value')*$(this).val());
-        $('#popup-box4 #cop').text('+ '+$('#popup-box4 #cop').attr('value')*$(this).val());
+        $('#popup-box4 #ctp').text('+ '+$('#popup-box4 #ctp').attr('value')*$(this).val());
         $('#popup-box4 #failed_ctp').text('- '+$('#popup-box4 #failed_ctp').attr('value')*$(this).val());
         $('#popup-box4 #unit_per_times').text($(this).find('option:selected').text());
     })
@@ -1342,10 +1342,10 @@ function getMission(target) {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
-                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-                    if(isChrome){//fix border-image in chorme
-                        $('#popup-box4 .mission-content').addClass('chorme');
-                    }
+                    // var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    // if(isChrome){//fix border-image in chorme
+                    //     $('#popup-box4 .mission-content').addClass('chorme');
+                    // }
                     $('#popup-box4 #mission-level').trigger('change');
                     break;
                 case 201:
@@ -1382,10 +1382,11 @@ function acceptMission(target) {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
-                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-                    if(isChrome){//fix border-image in chorme
-                        $('#popup-box4 .mission-content').addClass('chorme');
-                    }
+                    // var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    // if(isChrome){//fix border-image in chorme
+                    //     $('#popup-box4 .mission-content').addClass('chorme');
+                    // }
+                    $('#popup-box4 #mission-level').trigger('change');
                     $('a[mission_id='+res.mission_id+'] i').removeClass().addClass('fa fa-futbol-o fa-spin');
                     break;
                 case 201:
@@ -1421,10 +1422,11 @@ function refuseMission() {
             switch (res.status) {
                 case 200:
                     $('#popup-box4 .modal-content').html(res.view1);
-                    var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
-                    if(isChrome){//fix border-image in chorme
-                        $('#popup-box4 .mission-content').addClass('chorme');
-                    }
+                    // var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+                    // if(isChrome){//fix border-image in chorme
+                    //     $('#popup-box4 .mission-content').addClass('chorme');
+                    // }
+                    $('#popup-box4 #mission-level').trigger('change');
                     $('a[mission_id='+res.mission_id+'] i').removeClass().addClass('fa fa-meh-o');
                     break;
                 case 201:
@@ -1601,7 +1603,7 @@ function checkLogin(username){
     var data={};
         data['account_nm']=$('#account_nm').val();
         data['password']=$('#password').val();
-        data['remember']=$('#remember').val();
+        data['remember']=$('#remember').prop('checked');
     $.ajax({
         type: 'POST',
         url: '/master/checkLogin',

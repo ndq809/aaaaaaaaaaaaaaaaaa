@@ -39,7 +39,7 @@ function initDictionary() {
             $('#ui-id-1').css('top',($("#key-word").offset().top+50)+'px');
         },
         // minLength: 3,
-        delay: 500,
+        delay: 300,
         autoFocus: true
     });
     if ($("#key-word").val() != '') {
@@ -136,9 +136,9 @@ function initListener() {
                     break;
             }
         }
-        if ($(e.target).attr('id') == 'key-word'&&e.which==13&&$(e.target).val()!=''){
-            getData($( "#key-word" ).val());
-        }
+        // if ($(e.target).attr('id') == 'key-word'&&e.which==13&&$(e.target).val()!=''){
+        //     getData($( "#key-word" ).val());
+        // }
     }, 33))
     $(document).on('change', '#exam-order', function() {
         var page = 1;
@@ -154,13 +154,13 @@ function initListener() {
         });
     })
     $(document).on('click', '.current_item', function() {
-        if ($('#vocal-audio').prop('checked')) {
-            $('.vocabulary-box').find('audio').each(function() {
-                if (!$(this)[0].paused) {
-                    $(this)[0].pause();
-                    $(this)[0].currentTime = 0;
-                }
-            });
+        $('.vocabulary-box').find('audio').each(function() {
+            if (!$(this)[0].paused) {
+                $(this)[0].pause();
+                $(this)[0].currentTime = 0;
+            }
+        });
+        if($('.vocabulary-box:visible').find('audio').attr('src')!=''){
             $('.vocabulary-box:visible').find('audio')[0].play();
         }
     })
@@ -197,6 +197,49 @@ function initListener() {
             $(_this).prev('.number-clap').text(effected_count);
         });
     })
+
+    $(document).on('click','.btn-vote-word', throttle(function(){
+        my_button = $(this);
+        if(my_button.hasClass('active')){
+            return;
+        }
+        if($(this).hasClass('vote-up')){
+            vote_word(1,function(data){
+                my_button.find('i').addClass('rotateInRight');
+                my_button.closest('.vote').find('.rating-value:visible').text(data.rating);
+                if(data.mode==0){
+                    my_button.find('i').removeClass('rotateInRight');
+                    my_button.closest('.vote').find('.btn-vote-word:visible').removeClass('active');
+                    my_button.closest('.vote').find('.vote-up:visible').attr('data-original-title','Từ vựng chuẩn xác');
+                    my_button.closest('.vote').find('.vote-down:visible').attr('data-original-title','Từ vựng không chuẩn xác');
+                    my_button.closest('.vote').find('.vote-up:visible i').removeClass('rotateInRight');
+                    my_button.closest('.vote').find('.vote-down:visible i').removeClass('rotateInLeft');
+                }else{
+                    my_button.closest('.vote').find('.btn-vote-word:visible').removeClass('active');
+                    my_button.addClass('active');
+                    my_button.attr('data-original-title','Bạn đã vote up cho từ vựng này!');
+                }
+            });
+        }else{
+            vote_word(-1,function(data){
+                my_button.find('i').addClass('rotateInLeft');
+                my_button.closest('.vote').find('.rating-value:visible').text(data.rating);
+                if(data.mode==0){
+                    my_button.find('i').removeClass('rotateInLeft');
+                    my_button.closest('.vote').find('.btn-vote-word:visible').removeClass('active');
+                    my_button.closest('.vote').find('.vote-up:visible').attr('data-original-title','Từ vựng chuẩn xác');
+                    my_button.closest('.vote').find('.vote-down:visible').attr('data-original-title','Từ vựng không chuẩn xác');
+                    my_button.closest('.vote').find('.vote-up:visible i').removeClass('rotateInRight');
+                    my_button.closest('.vote').find('.vote-down:visible i').removeClass('rotateInLeft');
+                }else{
+                    my_button.closest('.vote').find('.btn-vote-word:visible').removeClass('active');
+                    my_button.addClass('active');
+                    my_button.attr('data-original-title','Bạn đã vote down cho từ vựng này!');
+                }
+            });
+        }
+        
+    },200))
 }
 
 function installSlide() {
@@ -221,7 +264,7 @@ function nextVocabulary() {
     slider.setItem(currentItemId - 1);
     slidePositionController();
     setContentBox(currentItemId);
-    $('.current_item').trigger('click');
+    // $('.current_item').trigger('click');
     if (typeof vocabularyArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
 }
 
@@ -230,7 +273,7 @@ function previousVocabulary() {
     slider.setItem(currentItemId - 1);
     slidePositionController();
     setContentBox(currentItemId);
-    $('.current_item').trigger('click');
+    // $('.current_item').trigger('click');
     if (typeof vocabularyArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
 }
 
@@ -239,7 +282,7 @@ function selectVocabulary(selectTrTag) {
     slider.setItem(currentItemId - 1);
     slidePositionController();
     setContentBox(currentItemId);
-    $('.current_item').trigger('click');
+    // $('.current_item').trigger('click');
     if (typeof vocabularyArray[currentItemId - 1] != 'undefined') history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + vocabularyArray[currentItemId - 1]['id']);
 }
 
@@ -298,7 +341,7 @@ function getData(value) {
         url: '/dictionary/getData',
         dataType: 'json',
         process:true,
-        // loading:true,
+        loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
             switch (res.status) {
@@ -385,10 +428,46 @@ function setContentBox(word_id) {
         return  $('.vocabulary-box:visible .hidden.'+$(this).attr('id')).length==0; 
     }).parent().removeClass('hidden');
     if($('.vocabulary-box:visible .vocal-audio').attr('src')==''){
-        $('.hint').text('Không có âm thanh cho từ vựng này');
+        $('.hint-text').text('Không có âm thanh cho từ vựng này');
     }else{
-        $('.hint').text('Bạn có thể click vào hình ảnh để nghe đọc lại từ vựng');
+        $('.hint-text').text('Bạn có thể click vào hình ảnh để nghe đọc từ vựng');
     }
+    $('[data-toggle="tooltip"]:visible').tooltip();
+
+}
+
+function vote_word(value,callback){
+    var data ={};
+    data['word_id'] = post[0]['id'];
+    data['my_vote'] = value;
+    $.ajax({
+        type: 'POST',
+        url: '/dictionary/vote-word',
+        dataType: 'json',
+        // loading:true,
+        data: $.extend({}, data),
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    callback(res.data);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }
 
 function getRowId(id) {

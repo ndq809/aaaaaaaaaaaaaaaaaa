@@ -18,25 +18,25 @@
     <table class="table table-bordered table-input submit-table table-hover" id="import-data">
        <thead>
            <th width="50px"><a id="btn-new-row" class="btn-add"><span class="fa fa-plus"></span></a></th>
-           <th width="200px">Tên Từ Vựng</th>
+           <th width="400px">Tên Từ Vựng</th>
            <th width="200px">Chuyên Ngành</th>
            <th width="200px">Lĩnh Vực</th>
            <th width="200px">Loại Từ</th>
            <th width="200px">Phiên Âm</th>
            <th>Nghĩa</th>
-           <th width="200px">Âm Thanh</th>
+           <!-- <th width="100px">Âm Thanh</th> -->
            <th width="50px">Xóa</th>
        </thead>
         <tbody>
             <tr class="hidden" id="rowclone">
                 <td></td>
-                <td><input type="text" name="" refer-id='word' class="form-control input-sm" value=""></td>
+                <td><textarea type="text" name="" refer-id='word' rows="1" class="form-control input-sm auto-resize"></textarea></td>
                 <td><input type="text" name="" refer-id='specialized' class="form-control input-sm" value=""></td>
                 <td><input type="text" name="" refer-id='field' class="form-control input-sm" value=""></td>
                 <td><input type="text" name="" refer-id='word_div' class="form-control input-sm" value=""></td>
                 <td><input type="text" name="" refer-id='spell' class="form-control input-sm" value=""></td>
                 <td><textarea type="text" name="" refer-id='mean' rows="1" class="form-control input-sm auto-resize"></textarea></td>
-                <td refer-id='audio' class="audio"></td>
+                <td refer-id='audio' class="audio hidden"></td>
                 <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
             </tr>
         </tbody>

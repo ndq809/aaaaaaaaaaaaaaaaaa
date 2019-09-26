@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Common;
 use DAO;
-use Illuminate\Cookie\CookieJar;
+use Cookie;
 class LoginController extends Controller
 {
     /*
@@ -147,18 +147,18 @@ class LoginController extends Controller
         Auth::user()->session_id = \Session::getId();
         Auth::user()->save();
         $remember_me = $request->remember;
-        $year = time() + 31536000;
+        $year = 527040; //1 year per minutes
         $data   = Dao::call_stored_procedure('SPC_COMMON_ACCOUNT', array(Auth::user()->user_id,Auth::user()->system_div));
         Session::put('logined_data',$data[0]);
         if ($remember_me == 'true') {
-            setcookie('remember_me', $remember_me, $year);
-            setcookie('account_nm', $request->account_nm, $year);
-            setcookie('password', $request->password, $year);
+            Cookie::queue(Cookie::make('remember_me', $remember_me, $year));
+            Cookie::queue(Cookie::make('account_nm', $request->account_nm, $year));
+            Cookie::queue(Cookie::make('password', $request->password, $year));
         } else {
-            setcookie('remember_me', NULL, $year);
-            setcookie('account_nm', '', $year);
-            setcookie('password', '', $year);
-        }       
+            Cookie::queue(Cookie::make('remember_me', NULL, $year));
+            Cookie::queue(Cookie::make('account_nm', $request->account_nm, $year));
+            Cookie::queue(Cookie::make('password', '', $year));
+        }
     }
 
     /**
@@ -197,6 +197,37 @@ class LoginController extends Controller
                                                           'statusText'   => 'access denied']);
         }
         
+    }
+
+    /**
+     * Redirect the user after determining they are locked out.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     *
+     * @throws \Illuminate\Validation\ValidationException
+     */
+    protected function sendLockoutResponse(Request $request)
+    {
+        $seconds = $this->limiter()->availableIn(
+            $this->throttleKey($request)
+        );
+        $message = \Lang::get('auth.throttle', ['seconds' => $seconds]);
+
+       $errors = [$this->username() => $message];
+
+       if ($request->expectsJson()) {
+           return response()->json([   'seconds'    => $seconds,
+                                       'status'   => 203,
+                                       'statusText'   => 'locked']);
+       }
+
+       return redirect()->back()
+           ->withInput($request->only($this->username(), 'remember'))
+           ->withErrors($errors);
+        throw ValidationException::withMessages([
+            $this->username() => [Lang::get('auth.throttle', ['seconds' => $seconds])],
+        ])->status(429);
     }
 
 }

@@ -41,7 +41,7 @@
                     <label>Điểm kinh nghiệm: <span style="color: #3c763d" id="exp" value ='{{isset($data[0]['exp'])?$data[0]['exp']:'0'}}'>{{isset($data[0]['exp'])&&$data[0]['exp']!=''?'+ '.$data[0]['exp']:'+ 0'}}</span></label>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <label>Điểm đóng góp: <span style="color: #3c763d" id="cop" value='{{isset($data[0]['ctp'])?$data[0]['ctp']:'0'}}'>{{isset($data[0]['ctp'])&&$data[0]['ctp']!=''?'+ '.$data[0]['ctp']:'+ 0'}}</span></label>
+                    <label>Điểm đóng góp: <span style="color: #3c763d" id="ctp" value='{{isset($data[0]['ctp'])?$data[0]['ctp']:'0'}}'>{{isset($data[0]['ctp'])&&$data[0]['ctp']!=''?'+ '.$data[0]['ctp']:'+ 0'}}</span></label>
                 </div>
             </div>
             <div class="col-xs-12 no-padding">
@@ -52,7 +52,7 @@
                     <label>Điểm kinh nghiệm: <span style="color: #d9534f" id="failed_exp" value ='{{isset($data[0]['failed_exp'])?$data[0]['failed_exp']:'0'}}'>{{isset($data[0]['failed_exp'])&&$data[0]['failed_exp']!=''?'- '.$data[0]['failed_exp']:'- 0'}}</span></label>
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <label>Điểm đóng góp: <span style="color: #d9534f" id="failed_cop" value='{{isset($data[0]['failed_ctp'])?$data[0]['failed_ctp']:'0'}}'>{{isset($data[0]['failed_ctp'])&&$data[0]['failed_ctp']!=''?'- '.$data[0]['failed_ctp']:'- 0'}}</span></label>
+                    <label>Điểm đóng góp: <span style="color: #d9534f" id="failed_ctp" value='{{isset($data[0]['failed_ctp'])?$data[0]['failed_ctp']:'0'}}'>{{isset($data[0]['failed_ctp'])&&$data[0]['failed_ctp']!=''?'- '.$data[0]['failed_ctp']:'- 0'}}</span></label>
                 </div>
             </div>
         </div>

@@ -71,6 +71,33 @@ class DictionaryController extends ControllerUser
         return response()->json($result);
     }
 
+    public function voteWord(Request $request)
+    {
+        $param            = $request->all();
+        $param['word_id'] = $param['word_id'] != '' ? $this->hashids->decode($param['word_id'])[0] : '';
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
+        $param['ip']      = $request->ip();
+        $data             = Dao::call_stored_procedure('SPC_DICTIONARY_ACT1', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $result = array(
+                'status'     => 200,
+                'data'       => $data[1][0],
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
     public function getAutocomplete(Request $request)
     {
         $param            = $request->all();

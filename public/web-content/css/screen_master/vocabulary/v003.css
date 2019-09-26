@@ -3,3 +3,11 @@
 	height: 25px;
 	overflow: hidden;
 }
+
+.table-hover>tbody>tr:hover{
+	background: #ddd;
+}
+
+.active-row{
+	background : rgba(244, 67, 54, 0.29)!important;
+}

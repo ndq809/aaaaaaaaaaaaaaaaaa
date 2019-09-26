@@ -67,8 +67,7 @@
         <div class="col-xs-12 no-padding">
         	 <div class="col-md-4 col-md-push-8 right-tab no-padding" >
                 <ul class="nav nav-tabs nav-justified">
-                    <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Từ Vựng Chưa Thuộc</a></li>
-                    <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Từ Vựng Đã Thuộc</a></li>
+                    <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Danh sách nghĩa tìm được</a></li>
                 </ul>
                 <div class="tab-content focusable" id="result1">
                     @include('User::dictionary.right_tab')

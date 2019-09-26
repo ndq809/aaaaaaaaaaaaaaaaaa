@@ -147,3 +147,40 @@
     right: 10px;
     font-size: 24px;
 }
+
+.vote{
+    font-size: 13px;
+    padding-right: 3px;
+}
+
+.activeItem .rating-value{
+    color: white;
+}
+
+.vote i,.vote span{
+    opacity: 0.7;
+}
+
+.vote-up i,.vote-down i{
+    color: #858585!important;
+}
+
+.activeItem .vote-up i,.activeItem .vote-down i{
+    color: #dad8d8!important;
+}
+
+.vote-up.active i{
+    color: green!important;
+}
+
+.vote-down.active i{
+    color: red!important;
+}
+
+.activeItem .vote-up.active i{
+    color: #01cb01!important;
+}
+
+.activeItem .vote-down.active i{
+    color: #ff9999!important;
+}

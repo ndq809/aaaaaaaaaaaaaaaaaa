@@ -19,6 +19,7 @@ Route::group(
 		Route::any('dictionary/getAutocomplete','DictionaryController@getAutocomplete');
 		Route::get('dictionary','DictionaryController@getIndex');
 		Route::any('dictionary/getData','DictionaryController@getData');
+		Route::any('dictionary/vote-word','DictionaryController@voteWord');
 		Route::get('grammar','GrammarController@getIndex');
 		Route::any('grammar/getData','GrammarController@getData');
 		Route::get('listening','ListeningController@getIndex');

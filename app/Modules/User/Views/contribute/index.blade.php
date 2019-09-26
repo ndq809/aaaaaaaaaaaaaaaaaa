@@ -408,7 +408,7 @@
 			</div>
 		</div>
     </div>
-    <div class=" col-xs-12 no-padding right-header">
+    <div class=" col-xs-12 no-padding right-header no-fixed">
         <h5>
             <i class="fa fa-hand-o-right">
             </i>
@@ -519,7 +519,7 @@
 			</div>
 		</div>
     </div>
-	<div class=" col-xs-12 no-padding right-header">
+	<div class=" col-xs-12 no-padding right-header no-fixed">
         <h5>
             <i class="fa fa-hand-o-right">
             </i>

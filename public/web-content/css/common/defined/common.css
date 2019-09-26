@@ -952,7 +952,7 @@ td .radio-inline {
     color: white;
 }
 
-.activeItem td a i{
+.activeItem td a.radio-inline i{
     color: #f78a8a!important;
     font-weight: bold;
 }
@@ -1603,10 +1603,10 @@ select.tag-custom{
     /*border-image-slice: 1000;*/
 }
 
-.mission-content.chorme{
+/*.mission-content.chorme{
     -webkit-border-image: url("/web-content/images/plugin-icon/tag3.png") 1000;
     /*border-image-slice: 1000;*/
-}
+}*/
 
 
 .title-label{

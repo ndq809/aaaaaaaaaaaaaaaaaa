@@ -1,3 +1,98 @@
+var word_div_array =
+[   
+    'danh từ & phó từ'
+,   'phó từ & tính từ'
+,   'tính từ & phó từ'
+,   'giới từ & phó từ'
+,   'phó từ,  tính từ'
+,   'phó từ & giới từ'
+,   'ngoại động từ'
+,   'nội động từ'
+,   'thán từ'
+,   'liên từ'
+,   'tính từ'
+,   'động từ'
+,   'trạng từ'
+,   'giới từ'
+,   'mạo từ'
+,   'phó từ'
+,   'danh từ'
+,   ''
+];
+
+var cal_div_array = ['','kinh tế','kỹ thuật'];
+
+var field_array = 
+[   'toán & tin'
+,   ''
+,   'cơ khí & công trình'
+,   'điện lạnh'
+,   'điện tử & viễn thông'
+,   'xây dựng'
+,   'điện'
+,   'ô tô'
+,   'âm nhạc'
+,   'giao thông & vận tải'
+,   'y học'
+,   'hàng hải'
+,   'kiến trúc'
+,   'đo lường & điều khiển'
+,   'hóa học & vật liệu'
+,   'pháp lý'
+,   'trò chơi'
+,   'toán học'
+,   'vật lí'
+,   'chứng khoán'
+,   'động vật'
+,   'tư pháp'
+,   'thơ ca'
+,   'quân sự'
+,   'vật lý'
+,   'sinh học'
+,   'giải phẫu'
+,   'thực vật'
+,   'sinh vật học'
+,   'thiên văn học'
+,   'văn học'
+,   'thương nghiệp'
+,   'tôn giáo'
+,   'địa lý,địa chất'
+,   'ngôn ngữ học'
+,   'sử học'
+,   'kỹ thuật'
+,   'dệt may'
+,   'chính trị'
+,   'môi trường'
+,   'tin học'
+,   'thực phẩm'
+,   'hóa học'
+,   'thể thao'
+,   'hóa'
+,   'hình học'
+,   'sân khấu'
+,   'khoáng'
+,   'triết học'
+,   'nghệ thuật'
+,   'sinh vật'
+,   'luật'
+,   'toán'
+,   'máy tính'
+,   'điện học'
+,   'khí tượng'
+,   'ngôn ngữ'
+,   'tâm lý học'
+,   'hàng không'
+,   'ngành mỏ'
+,   'y'
+,   'địa chất'
+,   'tài chính'
+,   'nông nghiệp'
+,   'ngoại giao'
+,   'hoá học'
+];
+
+var _mode = 0;
+
 $(function(){
 	try{
 		init_v003();
@@ -17,6 +112,11 @@ function initevent_v003(){
             v003_execute();
        // });
 	})
+
+    $(document).on('focus','.table input,.table textarea',function(){
+        $('.active-row').removeClass('active-row');
+        $(this).closest('tr').addClass('active-row');
+    })
 
     $(document).on('click','.preview-audio',function(){
         $(this).parents('table').find('audio').each(function(){
@@ -41,9 +141,21 @@ function initevent_v003(){
     })
 
     $(document).on('click','#btn-save',function(){
+        // showMessage(1,function(){
+            _mode = 0;
+            v003_save();
+       // });
+    })
+
+    $(document).on('click','#btn-execute',function(){
         showMessage(1,function(){
+            _mode = 1;
             v003_save();
        });
+    })
+
+    $(document).on('focus','#import-data tbody input',function(){
+        $(this).select();
     })
 
     $(document).on('addrow','.btn-add',function(){
@@ -117,6 +229,10 @@ function initevent_v003(){
 
 function v003_save(){
     var data=getWordTableData($('#import-data'));
+    if(data.length==0){
+        $('.btn-next').trigger('click');
+        return;
+    }
     data['page'] = $('#block_no').val()==''?0:$('#block_no').val();
 	$.ajax({
         type: 'POST',
@@ -128,9 +244,18 @@ function v003_save(){
             switch(res.status){
                 case 200:
                     clearFailedValidate();
-                    showMessage(2,function(){
+                    if(_mode==0){
+                        // param = {};
+                        // param['timeout'] = 200;
+                        // param['buttons'] = [];
+                        // param['onClose'] = function(){
+                        //     $('.btn-next').trigger('click');
+                        // };
+                        // showMessage(2,function(){},function(){},param);
                         $('.btn-next').trigger('click');
-                    });
+                    }else{
+                        $('.btn-next').trigger('click');
+                    }
                     break;
                 case 201:
                     clearFailedValidate();
@@ -180,10 +305,17 @@ function v003_execute(){
                     })
                     // result.push(analysis(res.data[4]));
                     showData(result);
+                    var data=getWordTableData($('#import-data'));
+                    if(data.length==0){
+                        $('.btn-next').trigger('click');
+                        return;
+                    }
+                    if(_mode==1){
+                        v003_save();
+                    }
                     break;
                 case 201:
-                    clearFailedValidate();
-                    showFailedValidate(res.error);
+                    _mode = 0;
                     break;
                 case 208:
                     clearFailedValidate();
@@ -365,10 +497,70 @@ function showData(data){
     })
     reIndex($('#import-data'));
     $('#import-data').find('.textarea-temp').remove();
-    $('#import-data').find('[refer-id=mean]').autoResize();
-    $('#import-data').find('[refer-id=mean]').trigger('change');
+    $('#import-data').find('tbody textarea.auto-resize').autoResize().trigger('change');
 }
 function createRow(word,specialized,field,word_div,spell,mean,explan){
+    var temp1 = mean;
+    if(mean.charAt(0)=='('){
+        temp = mean.substring(1,mean.indexOf(')'));
+        switch(temp.toLowerCase()){
+            case 'tech' :
+                specialized = (specialized==''?'kỹ thuật': specialized);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case 'econ' :
+                specialized = (specialized==''?'kinh tế': specialized);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'động vật học' :
+                field = (field==''?'động vật': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'thực vật học' :
+                field = (field==''?'thực vật': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'nhạc' :
+                field = (field==''?'âm nhạc': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'thể dục,thể thao' :
+                field = (field==''?'thể thao': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'sử' :
+                field = (field==''?'sử học': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            case  'giải phẩu học' :
+                field = (field==''?'giải phẫu': field);
+                temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                break;
+            default :
+                var check = 0;
+                if($.inArray(temp,field_array)!=-1){
+                    field = temp.toLowerCase();
+                    temp1 = mean.substring(mean.indexOf(')')+1,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+                }
+                break;
+        }
+    }else{
+        temp1 = mean.substring(0,mean.indexOf('=')==-1?mean.length:mean.indexOf('=')).trim();
+    }
+    for (var i = 0; i < word_div_array.length; i++) {
+        if(word_div!=undefined && word_div_array[i]!=''&& word_div.indexOf(word_div_array[i])!=-1){
+            word_div = word_div_array[i];
+            break;
+        }
+    }
+    for (var i = 0; i < field_array.length; i++) {
+        if(word_div!=undefined && field_array[i]!=''&& word_div.indexOf(field_array[i])!=-1){
+            field = field_array[i];
+            word_div = '';
+            break;
+        }
+    }
+    mean = temp1;
     var rowClone= $('#rowclone').clone();
     var audio = '/web-content/dictonary/audio/'+word.replace(/"/g, '').charAt(0).replace(/"/g, '').toLowerCase()+'/'+word.trim().replace(/"/g, '')+'.wav';
     rowClone.find('[refer-id=word]').val(word);
@@ -377,14 +569,50 @@ function createRow(word,specialized,field,word_div,spell,mean,explan){
     rowClone.find('[refer-id=word_div]').val(word_div);
     rowClone.find('[refer-id=spell]').val(spell);
     rowClone.find('[refer-id=mean]').val(mean);
-    rowClone.find('[refer-id=audio]').append('<audio class="sound1" onerror="audioError(this)" src="'+audio+'"></audio>');
-    rowClone.find('[refer-id=audio]').append('<a type="button" class="preview-audio">Nghe thử</a>');
+    // rowClone.find('[refer-id=audio]').append('<audio class="sound1" src="'+audio+'"/></audio>');
+    // rowClone.find('[refer-id=audio]').append('<a type="button" class="preview-audio">Nghe thử</a>');
+    rowClone.find('[refer-id=audio]').append('<input type="text" class="sound1" value="'+audio+'"/>');
     rowClone.removeClass('hidden');
-    $('#import-data tbody').append(rowClone);
-}
+    var isinput = true;
+    rowClone.find('[refer-id]').each(function(){
+        switch($(this).attr('refer-id')){
+            case 'word' :
+                if($(this).val().indexOf('=')!=-1||$(this).val().indexOf('-')!=-1){
+                    isinput = false;
+                }
+                break;
+            case 'specialized' :
+                if($.inArray($(this).val(),cal_div_array)==-1){
+                    isinput = false;
+                }
+                break;
+            case 'field' :
+                if($.inArray($(this).val(),field_array)==-1){
+                    isinput = false;
+                }
+                break;
+            case 'word_div' :
+                if($.inArray($(this).val(),word_div_array)==-1){
+                    isinput = false;
+                }
+                break;
+            case 'spell' :
+                if($(this).val()!=''&&($(this).val().match(/[/]/gi)!=null&&$(this).val().match(/[/]/gi).length!=2)){
+                    isinput = false;
+                    if($(this).val()!=''){
+                        word_index = $(this).val().indexOf("("+rowClone.find('[refer-id=word]').val()+")")==-1?0:$(this).val().indexOf(rowClone.find('[refer-id=word]').val());
+                        first_postion = $(this).val().indexOf('/',word_index);
+                        last_postion = $(this).val().indexOf('/',first_postion+1);
+                        rowClone.find('[refer-id=spell]').val($(this).val().substring(first_postion,last_postion+1));
+                    }
+                }
+                break;
 
-function audioError(audio){
-    $(audio).parent().addClass('btn-disable').text('Không có audio');
+        }
+    })
+    if(mean.indexOf('/')==-1){
+        $('#import-data tbody').append(rowClone);
+    }
 }
 
 function createWordMean(data){
@@ -410,7 +638,7 @@ function getWordTableData(table){
     table.find('tbody tr:visible').each(function(i){
         var row_data={};
         row_data['row_id']=i;
-        if($(this).find('input[refer-id=word]').val().trim()!=temp){
+        if($(this).find('textarea[refer-id=word]').val().trim()!=temp){
             word_id++;
             word_dtl_id = 0;
         }else{
@@ -432,16 +660,16 @@ function getWordTableData(table){
                 row_data[$(this).attr('refer-id')]=text.join('');
             }else
             if($(this).hasClass('audio')){
-                row_data[$(this).attr('refer-id')]=$(this).hasClass('btn-disable')?'':$(this).find('audio').attr('src');
+                row_data[$(this).attr('refer-id')]=$(this).find('input').val();
             }else{
                 row_data[$(this).attr('refer-id')]=$(this).val();
             }
         })
-        temp = $(this).find('input[refer-id=word]').val();
+        temp = $(this).find('textarea[refer-id=word]').val();
         data.push(row_data);
     })
     if(data.length==0){
-        return null;
+        return [];
     }else{
         return $.extend({}, data);
     }

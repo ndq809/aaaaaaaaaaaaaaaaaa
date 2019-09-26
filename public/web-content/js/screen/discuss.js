@@ -208,7 +208,7 @@ function initListener() {
         });
     })
 
-    $(document).on('click', '.btn-cmt-vote', function(e) {
+    $(document).on('click', '.btn-cmt-vote', throttle( function(e) {
         e.stopPropagation();
         my_button = $(this);
         if(my_button.hasClass('active')){
@@ -235,7 +235,7 @@ function initListener() {
                 my_button.addClass('active');
             }
         });
-    })
+    },200))
 
     $(document).on('click', '.tag-list', function() {
         var temp = $('#post_tag').val();
@@ -271,7 +271,7 @@ function initListener() {
         }
     })
 
-    $(document).on('click','.btn-vote-question',function(){
+    $(document).on('click','.btn-vote-question', throttle(function(){
         my_button = $(this);
         if(my_button.hasClass('active')){
             return;
@@ -312,7 +312,7 @@ function initListener() {
             });
         }
         
-    })
+    },200))
 }
 
 function nextDiscuss() {
