@@ -43,3 +43,36 @@
         </table>
     </div>
 </div>
+<div id="tab2" class="tab-pane fade">
+    <div class="col-xs-12 no-padding add-voc-box" style="height: 100%">
+        <input type="hidden" class="submit-item" id="word-id" value="{{isset($data)?$data[0]['id']:''}}">
+        <div class="form-group text-center">
+            <label>Từ tiếng anh</label>
+            <input type="text" id="engword" class="form-control input-sm text-center submit-item" value="{{isset($data)?$data[0]['vocabulary_nm']:''}}" disabled="">
+        </div>
+        <div class="form-group text-center">
+            <label>Phiên âm</label>
+            <input type="text" id="word-spelling" class="form-control input-sm submit-item text-center" value="{{isset($data)?$data[0]['spelling']:''}}">
+        </div>
+        <div class="form-group text-center margin-bottom">
+            <label>Nghĩa</label>
+            <textarea id="word-mean" class="form-control input-sm submit-item text-center" rows="2"></textarea>
+        </div>
+        <div class="form-group text-center" style="margin-top: 10px">
+            <label>Hình ảnh</label>
+            <div id="imageContainer" class="" style="margin: auto"></div>
+            <input type="hidden" class="submit-item" id="word-image" value="/web-content/images/plugin-icon/no-image.jpg">
+        </div>
+        <form enctype="multipart/form-data" id="upload_form" role="form" method="POST" action="">
+            <div class="form-group text-center">
+                <label>Âm Thanh</label>
+                <div class="input-group">
+                    <input type="file" id="word-audio" name="post_audio" class="input-audio" placeholder="ID của từ vựng">
+                </div>
+            </div>
+        </form>
+        <input type="hidden" class="submit-item" id="old-audio" value="">
+        <button class="btn btn-sm btn-primary margin-top full-width {{$raw_data[0][0]['btn-add-voc']==1?'btn-add-voc':'btn-disabled'}}" style="bottom: 0px;">Đóng góp</button>
+    </div>
+</div>
+

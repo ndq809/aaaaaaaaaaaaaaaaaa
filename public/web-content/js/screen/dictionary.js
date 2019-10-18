@@ -240,6 +240,12 @@ function initListener() {
         }
         
     },200))
+
+    $(document).on("click", ".btn-add-voc", function() {
+        showMessage(1,function(){
+            contributeVoc();
+        })
+    });
 }
 
 function installSlide() {
@@ -288,10 +294,25 @@ function selectVocabulary(selectTrTag) {
 
 function switchTabVocabulary(current_li_tag) {
     selectedTab = current_li_tag.find("a").attr("href");
-    if ($(selectedTab + ' .activeItem').length == 0) {
-        selectVocabulary($(selectedTab + " table tbody tr:not(.tr-disabled)").first());
-    } else {
+    if ($(selectedTab + ' .activeItem').length != 0) {
         selectVocabulary($(selectedTab + " table tbody tr:not(.tr-disabled).activeItem"));
+    }
+    if($('#mySlider1 .current_item img').attr('src')!=''){
+        $('#imageContainer').attr('style', 'background-image: url("' + $('#mySlider1 .current_item img').attr('src') +'")');
+        $('#word-image').val($('#mySlider1 .current_item img').attr('src'));
+    }
+    if($('.vocabulary-box:visible audio').attr('src')!=''){
+        $(".input-audio").fileinput('refresh',{
+            showUploadedThumbs: false,
+            browseIcon : "<i class=\"glyphicon glyphicon-headphones\"></i> ",
+            browseLabel : "Duyệt audio",
+            allowedFileTypes:['audio'],
+            showFileFooterCaption:true,
+            initialPreview: [
+                '<audio controls=""> <source src="'+$('.vocabulary-box:visible audio').attr('src')+'"> </audio>'
+            ],
+        });
+        $('#old-audio').val($('.vocabulary-box:visible audio').attr('src'));
     }
 }
 
@@ -346,8 +367,8 @@ function getData(value) {
         success: function(res) {
             switch (res.status) {
                 case 200:
-                    $('.post-not-found').addClass('hidden');
                     $('.result-box').removeClass('hidden');
+                    $('.post-not-found').addClass('hidden');
                     $('#result1').html(res.view1);
                     $('#result2').html(res.view2);
                     $('.bookmark').html(res.view3);
@@ -366,10 +387,36 @@ function getData(value) {
                     $('.relationship').filter(function() { 
                         return  $(this).find('a').length==0; 
                     }).remove();
+                    initImageUpload();
+                    $('#imageContainer').attr('style', 'background-image: url("' + $('#mySlider1 .current_item img').attr('src') +'")');
+                    $(".input-audio").fileinput({
+                        showUploadedThumbs: false,
+                        browseIcon : "<i class=\"glyphicon glyphicon-headphones\"></i> ",
+                        browseLabel : "Duyệt audio",
+                        allowedFileTypes:['audio'],
+                        showFileFooterCaption:true,
+                        // initialPreview: [
+                        //     '<audio controls=""> <source src="/web-content/audio/listeningAudio/audio_5b6d57b090b94.mp3" type="audio/mp3"> </audio>'
+                        // ],
+                    });
                     break;
                 case 207:
-                    $('.result-box').addClass('hidden');
+                    $('.result-box').removeClass('hidden');
+                    $('#result2>div:not(.post-not-found)').addClass('hidden');
                     $('.post-not-found').removeClass('hidden');
+                    initImageUpload();
+                    $('#imageContainer').attr('style', 'background-image: url("' + $('#word-image').val() +'")');
+                    $(".input-audio").fileinput({
+
+                        showUploadedThumbs: false,
+                        browseIcon : "<i class=\"glyphicon glyphicon-headphones\"></i> ",
+                        browseLabel : "Duyệt audio",
+                        allowedFileTypes:['audio'],
+                        showFileFooterCaption:true,
+                        // initialPreview: [
+                        //     '<audio controls=""> <source src="/web-content/audio/listeningAudio/audio_5b6d57b090b94.mp3" type="audio/mp3"> </audio>'
+                        // ],
+                    });
                     $('#key-word').focus();
                     break;
                 case 208:
@@ -382,6 +429,53 @@ function getData(value) {
         },
         // Ajax error
         error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function contributeVoc(){
+    var data_addnew=new FormData($("#upload_form")[0]);
+    var header_data=getInputData('.add-voc-box');
+    data_addnew.append('header_data',JSON.stringify(header_data));
+    $.ajax({
+        type: 'POST',
+        url: '/dictionary/addWord',
+        dataType: 'json',
+        loading:true,
+        processData: false,
+        contentType : false,
+        data: data_addnew,
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    clearFailedValidate();
+                    showMessage(41,function(){
+                        getData($("#key-word").val());
+                    });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                case 209:
+                    clearFailedValidate();
+                    showMessage(12);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
             alert(jqXHR.status);
         }
     });
@@ -476,4 +570,46 @@ function getRowId(id) {
             return vocabularyArray[i]['row_id'];
         }
     }
+}
+
+function initImageUpload(){
+    var imageContainer = $('#imageContainer');
+    var croppedOptions = {
+        uploadUrl: '/common/upload-image',
+        cropUrl: '/common/crop-image',
+        rotateControls: false,
+        loadPicture:$('#avatar').val()!='/web-content/images/plugin-icon/no-image.jpg'?$('#avatar').val():false,
+        cropData:{
+            'width' : imageContainer.width(),
+            'height': imageContainer.height()
+        },
+        onBeforeImgCrop:function(){
+            $('#imageContainer').LoadingOverlay("show");
+        },
+        onBeforeRemoveCroppedImg: function(){
+            $('#imageContainer').LoadingOverlay("show");
+        },
+        onAfterImgCrop:function(){
+            $('#avatar,#word-image').val($('#imageContainer .croppedImg').attr('src'));
+            $('#imageContainer').LoadingOverlay("hide");
+        },
+        onAfterRemoveCroppedImg: function(){
+            $('#avatar,#word-image').val('/web-content/images/plugin-icon/no-image.jpg');
+            $('#imageContainer').LoadingOverlay("hide");
+        },
+        onError: function(){
+            showMessage(14);
+        },
+        onAfterImgUpload: function(){
+            $('#imageContainer').LoadingOverlay("hide");
+            $('#imageContainer').css('opacity','1');
+        },
+        onBeforeImgUpload:function(){
+            $('#imageContainer').LoadingOverlay("show");
+        },
+        onReset:function(){
+            $('#avatar,#word-image').val('/web-content/images/plugin-icon/no-image.jpg');
+        }
+    };
+    cropperBox = new Croppic('imageContainer', croppedOptions);
 }

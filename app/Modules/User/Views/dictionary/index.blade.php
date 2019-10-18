@@ -1,6 +1,8 @@
 @extends('layout')
 @section('title','Từ Điển E+')
 @section('asset_header')
+    {!!WebFunctions::public_url('web-content/js/common/library/croppic.js')!!}
+    {!!WebFunctions::public_url('web-content/css/common/library/croppic.css')!!}
     {!!WebFunctions::public_url('web-content/js/common/library/jquery.cssslider.js')!!}
     {!!WebFunctions::public_url('web-content/js/screen/dictionary.js')!!}
     {!!WebFunctions::public_url('web-content/css/common/library/animated-slider.css')!!}
@@ -41,14 +43,6 @@
             </div>
         </div>
 	</div>
-    <div class="post-not-found col-xs-12 hidden">
-        <div class="image-nf">
-            <img src="/web-content/images/icon/no-result.png" width="400px">
-        </div>
-        <div class="content">
-            <h5 class="text-center" style="font-size: 20px;">TỪ BẠN VỪA TÌM KHÔNG ĐƯỢC TÌM THẤY TRONG HỆ THỐNG !!!</h5>
-        </div>
-    </div>
     <div class="col-xs-12 no-padding result-box change-content {{isset($data)&&$data[0]['id'] != ''?'':'hidden'}}">
         <div class="temp hidden" style="height:27px"></div>
         <div class="right-header col-md-12 no-padding">
@@ -68,12 +62,21 @@
         	 <div class="col-md-4 col-md-push-8 right-tab no-padding" >
                 <ul class="nav nav-tabs nav-justified">
                     <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Danh sách nghĩa tìm được</a></li>
+                    <li class=""><a class="{{$raw_data[0][0]['btn-add-voc']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Đóng góp từ vựng</a></li>
                 </ul>
                 <div class="tab-content focusable" id="result1">
                     @include('User::dictionary.right_tab')
                 </div>
             </div>
         	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
+                <div class="post-not-found col-xs-12 hidden">
+                    <div class="image-nf">
+                        <img src="/web-content/images/icon/no-result.png" width="400px">
+                    </div>
+                    <div class="content">
+                        <h5 class="text-center" style="font-size: 20px;">TỪ BẠN VỪA TÌM KHÔNG ĐƯỢC TÌM THẤY TRONG HỆ THỐNG !!!</h5>
+                    </div>
+                </div>
         		@include('User::dictionary.main_content')
         	</div>
         </div>

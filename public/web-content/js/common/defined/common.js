@@ -340,9 +340,9 @@ function initEvent() {
         }, 100);
         return element;
     };
-    $('.web-main').sizeChanged(function() {
-        setRightMenuHeight();
-    })
+    // $('.web-main').sizeChanged(function() {
+    //     setRightMenuHeight();
+    // })
     $('.middle-content').sizeChanged(function() {
         setFooter();
     })
@@ -1111,26 +1111,29 @@ function setCollapse() {
 }
 
 function setRightMenuHeight(){
-    var number_of_item;
-    if($('.right-tab .tab-content:visible table').hasClass("relax-table")){
-        var item_height=$('.right-tab .tab-content:visible table tbody:visible').first().height();
-    }else{
-        var item_height=$('.right-tab .tab-content:visible table tbody tr:visible').first().height();
-    }
-    if(item_height<50){
-        number_of_item=8;
-    }else{
-        number_of_item=4;
-    }
-    number_of_item_temp=parseInt(($('.web-main').height() - $('.select-group').height())/item_height);
-    if(number_of_item<number_of_item_temp){
-        number_of_item=number_of_item_temp;
-    }
-    if ($('.right-tab .tab-content:visible').length != 0) {
-        $('.right-tab .tab-content:visible').height((number_of_item-1)*item_height);
-    }
-
+    // var number_of_item;
+    // if($('.right-tab .tab-content:visible table').hasClass("relax-table")){
+    //     var item_height=$('.right-tab .tab-content:visible table tbody:visible').first().height();
+    // }else{
+    //     var item_height=$('.right-tab .tab-content:visible table tbody tr:visible').first().height();
+    // }
+    // if(item_height<50){
+    //     number_of_item=8;
+    // }else{
+    //     number_of_item=4;
+    // }
+    // number_of_item_temp=parseInt(($('.web-main').height() - $('.select-group').height())/item_height);
+    // if(number_of_item<number_of_item_temp){
+    //     number_of_item=number_of_item_temp;
+    // }
+    // if ($('.right-tab .tab-content:visible').length != 0) {
+    //     $('.right-tab .tab-content:visible').height((number_of_item-1)*item_height);
+    // }
+    
+    tab_offset = $('.right-tab .tab-content').offset().top;
+    bottom_offset = $('.bottom-content').offset().top;
     $('.right-tab .tab-content').css('display','block');
+    $('.right-tab .tab-content').height(bottom_offset-tab_offset-310);
 }
 
 function addComment(btn_comment,item_infor,callback){

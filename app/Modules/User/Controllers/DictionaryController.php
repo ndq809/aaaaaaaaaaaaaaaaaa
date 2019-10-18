@@ -98,6 +98,62 @@ class DictionaryController extends ControllerUser
         return response()->json($result);
     }
 
+    public function addWord(Request $request)
+    {
+        $data  = $request->all();
+        $media = '';
+        $name = '';
+        $file = $request->file('post_audio');
+        // var_dump($file);die;
+
+        $validate = commonUser::checkValidate((array) json_decode($data['header_data']));
+        if ($validate['result']) {
+            $param               = (array) json_decode($data['header_data']);
+           if(!is_null($file)){
+               if ($file->getClientSize() > 20971520) {
+                    $result = array(
+                        'status'     => 209,
+                        'statusText' => 'upload failed');
+                    return response()->json($result);
+                }
+                $name = 'audio_' . uniqid() . '.' . $file->getClientOriginalExtension();
+                $file->move(public_path('/web-content/audio/listeningAudio/'), $name);
+                $media = '/web-content/audio/listeningAudio/' . $name;
+           }else{
+                $media = $param['old-audio'];
+           }
+            $param['word-id'] = $param['word-id'] != '' ? $this->hashids->decode($param['word-id'])[0] : '';
+            $param['post_audio'] = $media;
+            $param['user_id']    = Auth::user()->account_id;
+            $param['ip']         = $request->ip();
+            unset($param['old-audio']);
+            $data = Dao::call_stored_procedure('SPC_DICTIONARY_ACT2', $param);
+            if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+                File::delete($media);
+                $result = array(
+                    'status' => 208,
+                    'data'   => $data[0],
+                );
+            } else if ($data[0][0]['Data'] != '') {
+                File::delete($media);
+                $result = array(
+                    'status' => 207,
+                    'data'   => $data[0],
+                );
+            } else {
+                $result = array(
+                    'status'     => 200,
+                    'statusText' => 'success',
+                );
+            }
+        } else {
+            $result = array('error' => $validate['error'],
+                'status'                => 201,
+                'statusText'            => 'validate failed');
+        }
+        return response()->json($result);
+    }
+
     public function getAutocomplete(Request $request)
     {
         $param            = $request->all();

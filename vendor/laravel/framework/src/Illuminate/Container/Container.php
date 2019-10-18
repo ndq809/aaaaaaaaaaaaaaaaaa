@@ -2,15 +2,16 @@
 
 namespace Illuminate\Container;
 
+use ArrayAccess;
 use Closure;
 use Exception;
-use ArrayAccess;
-use LogicException;
-use ReflectionClass;
-use ReflectionParameter;
-use Illuminate\Support\Arr;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Container\Container as ContainerContract;
+use Illuminate\Support\Arr;
+use LogicException;
+use ReflectionClass;
+use ReflectionException;
+use ReflectionParameter;
 
 class Container implements ArrayAccess, ContainerContract
 {
@@ -358,6 +359,20 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
+     * Register a shared binding if it hasn't already been registered.
+     *
+     * @param  string  $abstract
+     * @param  \Closure|string|null  $concrete
+     * @return void
+     */
+    public function singletonIf($abstract, $concrete = null)
+    {
+        if (! $this->bound($abstract)) {
+            $this->singleton($abstract, $concrete);
+        }
+    }
+
+    /**
      * "Extend" an abstract type in the container.
      *
      * @param  string    $abstract
@@ -627,7 +642,7 @@ class Container implements ArrayAccess, ContainerContract
                 throw $e;
             }
 
-            throw new EntryNotFoundException;
+            throw new EntryNotFoundException($id);
         }
     }
 
@@ -753,9 +768,7 @@ class Container implements ArrayAccess, ContainerContract
      */
     protected function findInContextualBindings($abstract)
     {
-        if (isset($this->contextual[end($this->buildStack)][$abstract])) {
-            return $this->contextual[end($this->buildStack)][$abstract];
-        }
+        return $this->contextual[end($this->buildStack)][$abstract] ?? null;
     }
 
     /**
@@ -787,7 +800,11 @@ class Container implements ArrayAccess, ContainerContract
             return $concrete($this, $this->getLastParameterOverride());
         }
 
-        $reflector = new ReflectionClass($concrete);
+        try {
+            $reflector = new ReflectionClass($concrete);
+        } catch (ReflectionException $e) {
+            throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+        }
 
         // If the type is not instantiable, the developer is attempting to resolve
         // an abstract type such as an Interface or Abstract Class and there is
@@ -814,9 +831,13 @@ class Container implements ArrayAccess, ContainerContract
         // Once we have all the constructor's parameters we can create each of the
         // dependency instances and then use the reflection instances to make a
         // new instance of this class, injecting the created dependencies in.
-        $instances = $this->resolveDependencies(
-            $dependencies
-        );
+        try {
+            $instances = $this->resolveDependencies($dependencies);
+        } catch (BindingResolutionException $e) {
+            array_pop($this->buildStack);
+
+            throw $e;
+        }
 
         array_pop($this->buildStack);
 
@@ -1179,7 +1200,7 @@ class Container implements ArrayAccess, ContainerContract
     }
 
     /**
-     * Set the globally available instance of the container.
+     * Get the globally available instance of the container.
      *
      * @return static
      */

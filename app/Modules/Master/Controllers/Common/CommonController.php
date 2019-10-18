@@ -161,9 +161,9 @@ class CommonController extends Controller
 
     }
 
-    public function postUpload()
+    public function postUpload(Request $request)
     {
-        $form_data = Input::all();
+        $form_data = $request->all();
 
         // $validator = Validator::make($form_data, Image::$rules, Image::$messages);
 
@@ -211,9 +211,9 @@ class CommonController extends Controller
     }
 
 
-    public function postCrop()
+    public function postCrop(Request $request)
     {
-        $form_data = Input::all();
+        $form_data = $request->all();
         $image_url = $form_data['imgUrl'];
 
         // resized sizes

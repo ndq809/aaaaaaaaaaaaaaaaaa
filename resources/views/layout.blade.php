@@ -18,7 +18,7 @@
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
         <script src="//js.pusher.com/3.1/pusher.min.js"></script>
         {!!WebFunctions::public_url('web-content/js/common/defined/common.js')!!}
-        {!!WebFunctions::public_url('web-content/js/common/library/fileinput.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/fileinput.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/DateTimePicker.js')!!}
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}

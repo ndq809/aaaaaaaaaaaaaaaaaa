@@ -1,0 +1,39 @@
+	padding: 3px 10px;
+	height: 25px;
+	overflow: hidden;
+}
+
+.table-hover>tbody>tr:hover{
+	background: #ddd;
+}
+
+.active-row{
+	background : rgba(244, 67, 54, 0.29)!important;
+}
+
+.file-preview-frame{
+	width: 100%;
+}
+
+.file-preview-text{
+	width: 100%!important;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.autocomplete-wrap{
+	position: relative;
+}
+
+.autocomplete-wrap:after{
+	content: '\25BC';
+    font-size: 9px!important;
+    vertical-align: middle;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}

@@ -19,6 +19,7 @@
  *
  */
 namespace App\Helpers;
+use Illuminate\Support\Str;
 class WebFunctions
 {
 
@@ -64,9 +65,9 @@ class WebFunctions
                     }
                 }
                 $attr = rtrim($attr);
-                if (ends_with($url, '.css')) {
+                if (Str::endsWith($url, '.css')) {
                     return '<link rel="stylesheet" href="' . WebFunctions::file_cached($url, true) . '" type="text/css" ' . $attr . '>';
-                } elseif (ends_with($url, '.js')) {
+                } elseif (Str::endsWith($url, '.js')) {
                     return '<script src="' . WebFunctions::file_cached($url, true) . '" type="text/javascript" charset="utf-8" ' . $attr . '></script>';
                 } else {
                     return asset($url);

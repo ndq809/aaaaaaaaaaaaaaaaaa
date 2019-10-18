@@ -42,7 +42,7 @@ BEGIN
 	ON	M006.field = M999_3.number_id
 	AND	M999_3.name_div = 24
 	WHERE 
-		M006.vocabulary_nm LIKE '%' +@P_target_nm +'%' 
+		M006.vocabulary_nm LIKE +@P_target_nm +'%' 
 	AND M006.record_div = 2
 	AND M006.del_flg = 0
 	ORDER BY

@@ -184,3 +184,14 @@
 .activeItem .vote-down.active i{
     color: #ff9999!important;
 }
+
+#imageContainer{
+    margin: auto;
+    width: 300px!important;
+    height: 250px;
+}
+
+.file-preview-frame {
+    width: 100%!important;
+    height: 80px!important;
+}

@@ -187,6 +187,21 @@ BEGIN
 	ON #VOCABULARY.specialized_div = #TEMP.specialized_div
 	AND #VOCABULARY.field_div = #TEMP.field_div
 
+	UPDATE #VOCABULARY
+	SET row_id = #TEMP.row_id_new
+	FROM #VOCABULARY
+	INNER JOIN (
+		SELECT
+			#VOCABULARY.id
+		,	ROW_NUMBER() OVER(ORDER BY #VOCABULARY.total_vote DESC
+	,	#VOCABULARY.specialized_div
+	,	#VOCABULARY.field_div
+	,	#VOCABULARY.word_vote DESC) AS row_id_new
+		FROM #VOCABULARY
+	) #TEMP
+	ON #TEMP.id = #VOCABULARY.id
+	
+
 	INSERT INTO #WORD
 	SELECT
 		F012.vocabulary_src

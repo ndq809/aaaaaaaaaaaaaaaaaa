@@ -3,22 +3,23 @@
 namespace Illuminate\Foundation\Testing;
 
 use Closure;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
-use Illuminate\Support\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Traits\Macroable;
 use Illuminate\Foundation\Testing\Assert as PHPUnit;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 use Illuminate\Foundation\Testing\Constraints\SeeInOrder;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
+use Illuminate\Support\Traits\Macroable;
+use Illuminate\Support\Traits\Tappable;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * @mixin \Illuminate\Http\Response
  */
 class TestResponse
 {
-    use Macroable {
+    use Tappable, Macroable {
         __call as macroCall;
     }
 
@@ -464,6 +465,20 @@ class TestResponse
     }
 
     /**
+     * Assert that the expected value exists at the given path in the response.
+     *
+     * @param  string  $path
+     * @param  mixed  $expect
+     * @return $this
+     */
+    public function assertJsonPath($path, $expect)
+    {
+        PHPUnit::assertEquals($expect, $this->json($path));
+
+        return $this;
+    }
+
+    /**
      * Assert that the response has the exact given JSON.
      *
      * @param  array  $data
@@ -651,15 +666,16 @@ class TestResponse
      * Assert that the response has the given JSON validation errors.
      *
      * @param  string|array  $errors
+     * @param  string  $responseKey
      * @return $this
      */
-    public function assertJsonValidationErrors($errors)
+    public function assertJsonValidationErrors($errors, $responseKey = 'errors')
     {
         $errors = Arr::wrap($errors);
 
         PHPUnit::assertNotEmpty($errors, 'No validation errors were provided.');
 
-        $jsonErrors = $this->json()['errors'] ?? [];
+        $jsonErrors = $this->json()[$responseKey] ?? [];
 
         $errorMessage = $jsonErrors
                 ? 'Response has the following JSON validation errors:'.
@@ -674,15 +690,21 @@ class TestResponse
             );
 
             if (! is_int($key)) {
+                $hasError = false;
+
                 foreach (Arr::wrap($jsonErrors[$key]) as $jsonErrorMessage) {
                     if (Str::contains($jsonErrorMessage, $value)) {
-                        return $this;
+                        $hasError = true;
+
+                        break;
                     }
                 }
 
-                PHPUnit::fail(
-                    "Failed to find a validation error in the response for key and message: '$key' => '$value'".PHP_EOL.PHP_EOL.$errorMessage
-                );
+                if (! $hasError) {
+                    PHPUnit::fail(
+                        "Failed to find a validation error in the response for key and message: '$key' => '$value'".PHP_EOL.PHP_EOL.$errorMessage
+                    );
+                }
             }
         }
 
@@ -693,9 +715,10 @@ class TestResponse
      * Assert that the response has no JSON validation errors for the given keys.
      *
      * @param  string|array|null  $keys
+     * @param  string  $responseKey
      * @return $this
      */
-    public function assertJsonMissingValidationErrors($keys = null)
+    public function assertJsonMissingValidationErrors($keys = null, $responseKey = 'errors')
     {
         if ($this->getContent() === '') {
             PHPUnit::assertTrue(true);
@@ -705,13 +728,13 @@ class TestResponse
 
         $json = $this->json();
 
-        if (! array_key_exists('errors', $json)) {
-            PHPUnit::assertArrayNotHasKey('errors', $json);
+        if (! array_key_exists($responseKey, $json)) {
+            PHPUnit::assertArrayNotHasKey($responseKey, $json);
 
             return $this;
         }
 
-        $errors = $json['errors'];
+        $errors = $json[$responseKey];
 
         if (is_null($keys) && count($errors) > 0) {
             PHPUnit::fail(
@@ -913,6 +936,41 @@ class TestResponse
     }
 
     /**
+     * Assert that the session has a given value in the flashed input array.
+     *
+     * @param  string|array  $key
+     * @param  mixed  $value
+     * @return $this
+     */
+    public function assertSessionHasInput($key, $value = null)
+    {
+        if (is_array($key)) {
+            foreach ($key as $k => $v) {
+                if (is_int($k)) {
+                    $this->assertSessionHasInput($v);
+                } else {
+                    $this->assertSessionHasInput($k, $v);
+                }
+            }
+
+            return $this;
+        }
+
+        if (is_null($value)) {
+            PHPUnit::assertTrue(
+                $this->session()->getOldInput($key),
+                "Session is missing expected key [{$key}]."
+            );
+        } elseif ($value instanceof Closure) {
+            PHPUnit::assertTrue($value($this->session()->getOldInput($key)));
+        } else {
+            PHPUnit::assertEquals($value, $this->session()->getOldInput($key));
+        }
+
+        return $this;
+    }
+
+    /**
      * Assert that the session has the given errors.
      *
      * @param  string|array  $keys
@@ -1042,7 +1100,7 @@ class TestResponse
     /**
      * Dump the content from the response.
      *
-     * @return void
+     * @return $this
      */
     public function dump()
     {
@@ -1054,17 +1112,21 @@ class TestResponse
             $content = $json;
         }
 
-        dd($content);
+        dump($content);
+
+        return $this;
     }
 
     /**
      * Dump the headers from the response.
      *
-     * @return void
+     * @return $this
      */
     public function dumpHeaders()
     {
-        dd($this->headers->all());
+        dump($this->headers->all());
+
+        return $this;
     }
 
     /**

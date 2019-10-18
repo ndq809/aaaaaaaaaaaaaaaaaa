@@ -84,6 +84,11 @@ Route::group(
 		Route::post('w001/confirm','w001Controller@w001_confirm');
 		Route::post('w001/public','w001Controller@w001_public');
 		Route::post('w001/reset','w001Controller@w001_reset');
+		Route::get('w003','w003Controller@getIndex');
+		Route::post('w003/excute','w003Controller@w003_read');
+		Route::post('w003/save','w003Controller@w003_save');
+		Route::post('w003/readFile','w003Controller@w003_read');
+		Route::post('w003/getAutocomplete','w003Controller@w003_getAutocomplete');
 	}
 );
 

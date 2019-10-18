@@ -3,7 +3,6 @@ namespace App\Modules\User\Controllers;
 
 use App\Events\NotificationEvents;
 use App\Http\Controllers\ControllerUser;
-use App\Notifications\ArticlePublished;
 use Auth;
 use DAO;
 use Hashids\Hashids;
@@ -98,12 +97,6 @@ class CommonController extends ControllerUser
             $pass .= $n;
         }
         return $pass;
-    }
-
-    public function facebookPoster()
-    {
-        ArticlePublished::toFacebookPoster('quy nguyen');
-        return 0;
     }
 
     public function getcatalogue(Request $request)
@@ -779,9 +772,9 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
-    public function postUpload()
+    public function postUpload(Request $request)
     {
-        $form_data = Input::all();
+        $form_data = $request->all();
 
         // $validator = Validator::make($form_data, Image::$rules, Image::$messages);
 
@@ -826,9 +819,9 @@ class CommonController extends ControllerUser
         ], 200);
     }
 
-    public function postCrop()
+    public function postCrop(Request $request)
     {
-        $form_data = Input::all();
+        $form_data = $request->all();
         $image_url = $form_data['imgUrl'];
         // var_dump($form_data);die;
         // resized sizes

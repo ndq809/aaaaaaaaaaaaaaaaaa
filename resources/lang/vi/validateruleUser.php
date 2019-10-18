@@ -28,6 +28,7 @@ return [
         'vocabulary_div'     => 'required|not_in:0',
         'spelling'           => 'required',
         'mean'               => 'required',
+        'word-mean'          => 'required',
         'target_div'         => 'required',
         'title'              => 'required',
         'content'            => 'required',

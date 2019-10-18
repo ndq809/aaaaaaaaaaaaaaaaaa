@@ -202,5 +202,15 @@ return [
             'message_title' => 'Rớt Hạng',
             'message_content' => 'Rất tiếc hạng của bạn đã bị hạ từ <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label> xuống <label style ="font-family: headerfont1;font-size:16px;color:#a94242">xxx</label><br>Hãy tiếp tục cố gắng nữa nhé!',
         ],
+        41 => [
+            'message_div' => 2,
+            'message_title' => 'Đóng Góp Thành Công',
+            'message_content' => 'Cảm ơn bạn đã đóng góp tri thức của mình cho cộng đồng!<br>Dữ liệu bạn đóng góp sẽ được xét duyệt và bạn sẽ được cộng 1 lượng điểm đóng góp tương ứng nếu được xét duyệt thành công',
+        ],
+        42 => [
+            'message_div' => 1,
+            'message_title' => 'Xem Ngay',
+            'message_content' => 'Thêm bài viết từ vựng thành công! Bạn có muốn hiển thị ngay bây giờ?',
+        ],
     ],
 ];

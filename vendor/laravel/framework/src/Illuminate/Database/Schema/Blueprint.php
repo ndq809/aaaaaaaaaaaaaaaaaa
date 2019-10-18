@@ -2,13 +2,13 @@
 
 namespace Illuminate\Database\Schema;
 
-use Closure;
 use BadMethodCallException;
-use Illuminate\Support\Fluent;
+use Closure;
 use Illuminate\Database\Connection;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Database\SQLiteConnection;
 use Illuminate\Database\Schema\Grammars\Grammar;
+use Illuminate\Database\SQLiteConnection;
+use Illuminate\Support\Fluent;
+use Illuminate\Support\Traits\Macroable;
 
 class Blueprint
 {
@@ -1220,6 +1220,38 @@ class Blueprint
         $this->string("{$name}_type")->nullable();
 
         $this->unsignedBigInteger("{$name}_id")->nullable();
+
+        $this->index(["{$name}_type", "{$name}_id"], $indexName);
+    }
+
+    /**
+     * Add the proper columns for a polymorphic table using UUIDs.
+     *
+     * @param  string  $name
+     * @param  string|null  $indexName
+     * @return void
+     */
+    public function uuidMorphs($name, $indexName = null)
+    {
+        $this->string("{$name}_type");
+
+        $this->uuid("{$name}_id");
+
+        $this->index(["{$name}_type", "{$name}_id"], $indexName);
+    }
+
+    /**
+     * Add nullable columns for a polymorphic table using UUIDs.
+     *
+     * @param  string  $name
+     * @param  string|null  $indexName
+     * @return void
+     */
+    public function nullableUuidMorphs($name, $indexName = null)
+    {
+        $this->string("{$name}_type")->nullable();
+
+        $this->uuid("{$name}_id")->nullable();
 
         $this->index(["{$name}_type", "{$name}_id"], $indexName);
     }

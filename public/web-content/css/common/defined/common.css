@@ -65,7 +65,6 @@ a{
 
 .input-sm:not(textarea){
     height: 28px!important;
-    line-height: 28px!important;
     padding: 4px 10px!important;
 }
 
@@ -83,7 +82,7 @@ a{
 
 .right-tab .tab-content{
     display: none;
-    max-height: 750px;
+    /*max-height: 750px;*/
 
 }
 
@@ -1571,7 +1570,7 @@ select.tag-custom{
     pointer-events: none;
     
     /*Button disabled - CSS color class*/
-    background-color: #43030552!important;
+    background-color: rgba(67, 3, 5, 0.3215686274509804)!important;
     color: #FFF;
 }
 

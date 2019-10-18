@@ -436,36 +436,37 @@ function initEvent() {
                 break;
             case 38 :
                 e.preventDefault();
-                if($('.submit-table input').is(':focus')){
-                    var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
-                    var input_now = $('input:focus').closest('tr').find('td:has(input):visible').index( $('input:focus').closest('td'));
-                    var row_length = $('input:focus').closest('tbody').find('tr:visible').length;
-                    if(row_now==0){
-                        $('input:focus').closest('tbody').find('tr:visible').eq(row_length-1).find('input:visible').eq(input_now).focus();
-                    }else{
-                        $('input:focus').closest('tbody').find('tr:visible').eq(row_now-1).find('input:visible').eq(input_now).focus();
+                if(e.ctrlKey){
+                    if($('.submit-table input').is(':focus')){
+                        var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
+                        var input_now = $('input:focus').closest('tr').find('td:has(input):visible').index( $('input:focus').closest('td'));
+                        var row_length = $('input:focus').closest('tbody').find('tr:visible').length;
+                        if(row_now==0){
+                            $('input:focus').closest('tbody').find('tr:visible').eq(row_length-1).find('input:visible').eq(input_now).focus();
+                        }else{
+                            $('input:focus').closest('tbody').find('tr:visible').eq(row_now-1).find('input:visible').eq(input_now).focus();
+                        }
                     }
+                    prevRow($('.table-focus tbody'));
                 }
-                prevRow($('.table-focus tbody'));
                 break;
             case 40 :
                 if(e.ctrlKey){
                     e.preventDefault();
                     $('.table-focus tbody tr.active-row').trigger('dblclick');
+                    if($('.submit-table input').is(':focus')){
+                        var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
+                        var input_now = $('input:focus').closest('tr').find('td:has(input):visible').index( $('input:focus').closest('td'));
+                        var row_length = $('input:focus').closest('tbody').find('tr:visible').length;
+                        if(row_now==row_length-1){
+                            $('input:focus').closest('tbody').find('tr:visible').eq(0).find('input:visible').eq(input_now).focus();
+                        }else{
+                            $('input:focus').closest('tbody').find('tr:visible').eq(row_now+1).find('input:visible').eq(input_now).focus();
+                        }
+                    }
+                    nextRow($('.table-focus tbody'));
                     break;
                 }
-                if($('.submit-table input').is(':focus')){
-                    var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
-                    var input_now = $('input:focus').closest('tr').find('td:has(input):visible').index( $('input:focus').closest('td'));
-                    var row_length = $('input:focus').closest('tbody').find('tr:visible').length;
-                    if(row_now==row_length-1){
-                        $('input:focus').closest('tbody').find('tr:visible').eq(0).find('input:visible').eq(input_now).focus();
-                    }else{
-                        $('input:focus').closest('tbody').find('tr:visible').eq(row_now+1).find('input:visible').eq(input_now).focus();
-                    }
-                }
-                e.preventDefault();
-                nextRow($('.table-focus tbody'));
                 break;
             default:
                 break;
