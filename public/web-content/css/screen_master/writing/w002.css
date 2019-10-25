@@ -68,3 +68,8 @@
 .pra-table-body tbody .auto-resize{
 	padding: 3px 10px;
 }
+
+.preview-box p{
+	margin: 0px;
+    margin-left: 5px!important;
+}

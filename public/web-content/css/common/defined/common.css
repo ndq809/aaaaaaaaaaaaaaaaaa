@@ -785,7 +785,17 @@ body {
 .left-content {}
 
 .main-content{
-    padding: 0px 5px;
+    padding: 5px 5px;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.6784313725490196);
+    border-radius: 6px;
+}
+
+.main-content p{
+    margin: 0px;
+    margin-left: 5px!important;
 }
 
 .left-content:hover {

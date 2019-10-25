@@ -51,7 +51,7 @@ function initevent_v003(){
 
     $(document).on('change','#block_no',function(){
         $('#import-data tbody tr:visible').remove();
-        $('#render-name').val(word_array[index_array[$(this).val()]]!=undefined?word_array[index_array[$(this).val()]].split('|||')[0].trim():'');
+        $('#render-name').val(word_array[index_array[$(this).val()]]!=undefined&&word_array[index_array[$(this).val()]]!=''?word_array[index_array[$(this).val()]].split('|||')[0].trim():'');
         for (var i = index_array[$(this).val()]+1; i < word_array.length; i++) {
             if(word_array[i]!=''&&word_array[i].charAt(0)=='|'){
                 var clone = $('#rowclone').clone();

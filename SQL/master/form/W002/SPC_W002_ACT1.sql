@@ -302,42 +302,6 @@ BEGIN
 	END  
 	IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
-	INSERT INTO M006
-	OUTPUT 0,INSERTED.id INTO #VOCABULARY
-	SELECT
-		CASE vocabulary_id
-		WHEN 0 THEN (SELECT ISNULL(MAX(M006.vocabulary_id),0) + row_index FROM M006 WHERE M006.vocabulary_id = #TABLE_DETAIL.vocabulary_id)
-		ELSE vocabulary_id
-		END
-	,	CASE vocabulary_dtl_id
-		WHEN 0 THEN 1
-		ELSE (SELECT ISNULL(MAX(M006.vocabulary_dtl_id),0)+ row_index FROM M006 WHERE M006.vocabulary_id = #TABLE_DETAIL.vocabulary_id)
-		END
-	,	0
-	,	vocabulary_nm		
-	,	vocabulary_div		
-	,	NULL
-	,	NULL
-	,	mean				
-	,	spelling			
-	,	explain			
-	,	NULL
-	,	0
-	,	@P_user_id
-	,	@w_program_id
-	,	@P_ip
-	,	@w_time
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	,	NULL
-	FROM #TABLE_DETAIL
-	WHERE #TABLE_DETAIL.edit_confirm IS NOT NULL
-
 	INSERT INTO M013
 	SELECT              
     	#TEMP2.tag_nm	
