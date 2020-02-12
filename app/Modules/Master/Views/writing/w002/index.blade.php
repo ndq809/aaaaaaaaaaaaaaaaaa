@@ -2,6 +2,7 @@
 @section('title','Quản Lý Bài Viết')
 @section('asset_header')
     {!!WebFunctions::public_url('web-content/js/screen_master/writing/w002.js')!!}
+    {!!WebFunctions::public_url('web-content/compromise/builds/compromise.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen_master/writing/w002.css')!!}
 @stop
 @section('button')
@@ -130,6 +131,10 @@
                     <textarea name="gra-content" id="post_content" contenteditable="true" class="form-control input-sm ckeditor submit-item" rows="3"></textarea>
                 </div>
             </div>
+        </div>
+
+        <div class="col-sm-6 no-padding-right transform-content" transform-div='3' id="result3">
+            @include('Master::writing.w002.refer_listen')
         </div>
 
         <div class="col-sm-6 no-padding-right transform-content" transform-div='2,4,5,6,7,8,9,10'>

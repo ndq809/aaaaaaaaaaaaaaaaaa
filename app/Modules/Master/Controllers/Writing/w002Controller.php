@@ -83,6 +83,7 @@ class w002Controller extends Controller
             $param['json_detail']     = json_encode((array) json_decode($data['detail_data']));
             $param['json_detail1']    = json_encode((array) json_decode($data['detail_body_data']));
             $param['json_detail2']    = json_encode((array) json_decode($data['pra_body_data']));
+            $param['json_detail3']    = json_encode((array) json_decode($data['listen_detail_data']));
             $param['user_id']        = Auth::user()->account_id;
             $param['ip']             = $request->ip();
             // var_dump($param);die;
@@ -142,12 +143,14 @@ class w002Controller extends Controller
         $view1        = view('Master::writing.w002.refer_voc')->with('data_voc', $result_query[2])->render();
         $view2        = view('Master::writing.w002.refer_exa')->with('data', $result_query)->render();
         $view3        = view('Master::writing.w002.refer_pra')->with('data', $result_query)->render();
+        $view4        = view('Master::writing.w002.refer_listen')->with('data', $result_query)->render();
         $result       = array(
             'status'     => 200,
             'data'       => $result_query,
             'table_voc'  => $view1,
             'table_exa'  => $view2,
             'table_pra'  => $view3,
+            'table_listen'  => $view4,
             'statusText' => 'success',
         );
         return response()->json($result);

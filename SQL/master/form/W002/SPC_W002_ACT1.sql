@@ -20,6 +20,7 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_json_detail   		NVARCHAR(MAX)		= ''
 ,    @P_json_detail1   		NVARCHAR(MAX)		= ''
 ,    @P_json_detail2   		NVARCHAR(MAX)		= ''
+,    @P_json_detail3   		NVARCHAR(MAX)		= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
 
@@ -219,10 +220,30 @@ BEGIN
 	,	explan NVARCHAR(MAX)
 	)
 
+	CREATE TABLE #TABLE_DETAIL3(
+		row_id INT
+	,	content NVARCHAR(MAX)
+	,	start_time MONEY	
+	,	end_time MONEY
+	)
+
 	CREATE TABLE #TABLE_QUESTION(
 		row_id INT
 	,	question_id INT
 	)
+
+	INSERT INTO #TABLE_DETAIL3
+	SELECT              
+			row_id			AS row_id		
+		,	content			AS listen_cut_content		
+		,	start_time		AS start_time		
+		,	end_time		AS end_time          
+		FROM OPENJSON(@P_json_detail3) WITH(
+     		row_id				NVARCHAR(100)	'$.row_id		 '
+		,	content			    NVARCHAR(MAX)	'$.listen_cut_content		'
+		,	start_time			NVARCHAR(100)	'$.start_time		'
+		,	end_time			NVARCHAR(100)	'$.end_time'
+    )
 
 	INSERT INTO #TABLE_DETAIL2
 	SELECT              
@@ -475,6 +496,30 @@ BEGIN
 		,	language2_content	    NVARCHAR(100)	'$.language2_content'
         )
 
+		IF @P_catalogue_div IN(3)
+		BEGIN
+			INSERT INTO M015(
+				post_id
+			,	listen_cut_content
+			,	listen_cut_start
+			,	listen_cut_end
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+				)
+			SELECT
+				@w_inserted_key
+			,	content
+			,	start_time
+			,	end_time
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	SYSDATETIME()
+			FROM #TABLE_DETAIL3
+		END
+
 		IF @P_catalogue_div IN(7,8,9)
 		BEGIN
 			INSERT INTO F008(
@@ -635,6 +680,35 @@ BEGIN
 			,	 @w_time
 			FROM #TAG
 		END
+
+
+		IF @P_catalogue_div IN(3)
+		BEGIN
+			DELETE FROM M015 WHERE M015.post_id = @P_post_id
+
+			INSERT INTO M015(
+				post_id
+			,	listen_cut_content
+			,	listen_cut_start
+			,	listen_cut_end
+			,	cre_user
+			,	cre_prg
+			,	cre_ip
+			,	cre_date
+				)
+			SELECT
+				@P_post_id
+			,	content
+			,	start_time
+			,	end_time
+			,	@P_user_id
+			,	@w_program_id
+			,	@P_ip
+			,	SYSDATETIME()
+			FROM #TABLE_DETAIL3
+		END
+		
+		
 		DELETE FROM M012 WHERE M012.target_id = @P_post_id AND M012.target_div = @P_catalogue_div AND @P_catalogue_div <> 1
 		INSERT INTO M012(
 			target_id

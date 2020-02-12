@@ -133,9 +133,23 @@ function initevent_w002(){
     })
 
     CKEDITOR.instances['post_content'].on("change",function() {
-        $('.main-content').html(CKEDITOR.instances['post_content'].getData());
+        var post_content = CKEDITOR.instances['post_content'].getData();
+        $('.main-content').html(post_content);
         if(CKEDITOR.instances['post_content'].getData()==''){
             $('.main-content').html('nội dung bài viết');
+        }
+        if($('#catalogue_div').val()==3){
+            var doc = nlp(post_content.replace(/<\/?[^>]+>/ig, " "));
+            Listen_Cut_Array = doc.sentences().out('array');
+            $('.listen-table-body tbody tr:visible').remove();
+            for (var i = 0; i < Listen_Cut_Array.length; i++) {
+                trClone = $('.listen-table-body tbody tr:first-child').clone();
+                trClone.removeClass('hidden');
+                trClone.find('td input').first().val(Listen_Cut_Array[i]);
+                $('.listen-table-body tbody').append(trClone);
+            }
+            reIndex($('.listen-table-body')); 
+            $('.listen-table-body tbody tr:visible td input').eq(1).focus(); 
         }
     });
 
@@ -182,6 +196,32 @@ function initevent_w002(){
         $(this).parents('table').find('.textarea-temp').remove();
         $(this).parents('table').find('tbody textarea.auto-resize').autoResize();
     })
+
+    $(document).on('keydown', function(e) {
+        switch (e.which) {
+            case 32:
+            e.stopPropagation();
+            if($('.file-preview-frame audio')[0].paused){
+                $('.file-preview-frame audio')[0].play();
+            }else{
+                $('.file-preview-frame audio')[0].pause();
+            }
+                break;
+            case 37:
+            e.stopPropagation();
+            $('.file-preview-frame audio')[0].currentTime = $('.file-preview-frame audio')[0].currentTime-2;
+                break;
+            case 39:
+            e.stopPropagation();
+            $('.file-preview-frame audio')[0].currentTime = $('.file-preview-frame audio')[0].currentTime+2;
+                break;
+            case 40:
+                $('input:focus').val($('.file-preview-frame audio')[0].currentTime.toFixed(4)) ;
+                break;
+            default:
+                break;
+        }
+    })
 }
 
 function w002_addNew(mode){
@@ -197,6 +237,7 @@ function w002_addNew(mode){
     data_addnew.append('detail_data',JSON.stringify(getTableTdData($('.submit-table'))));
     data_addnew.append('detail_body_data',JSON.stringify(getTableBodyData($('.exa-table-body'))));
     data_addnew.append('pra_body_data',JSON.stringify(getTableQuestionData($('.pra-table-body'))));
+    data_addnew.append('listen_detail_data',JSON.stringify(getTableData($('.listen-table-body'))));
 	$.ajax({
         type: 'POST',
         url: '/master/writing/w002/addnew',
@@ -312,6 +353,7 @@ function w002_refer(post_id){
                     $('.result:visible').html(res.table_voc);
                     $('#result1').html(res.table_exa);
                     $('#result2').html(res.table_pra);
+                    $('#result3').html(res.table_listen);
                     transform($('#catalogue_div'));
                      $(".btn-popup").fancybox({
                         'width'         : '90%',

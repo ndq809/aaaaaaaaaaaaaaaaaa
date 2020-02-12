@@ -95,6 +95,14 @@ BEGIN
 	AND F009.briged_id = (SELECT TOP 1 F009.briged_id FROM F009 INNER JOIN M007 ON F009.briged_id = M007.briged_id AND M007.post_id = @P_post_id)
 	WHERE M013.del_flg = 0
 	AND M013.tag_div = @w_tag_div
+
+	SELECT
+		M015.listen_cut_id
+	,	M015.listen_cut_content
+	,	M015.listen_cut_start
+	,	M015.listen_cut_end
+	FROM M015
+	WHERE M015.post_id = @P_post_id
 	--
 END
 
