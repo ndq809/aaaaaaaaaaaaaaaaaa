@@ -20,6 +20,16 @@ BEGIN
 		@ERR_TBL			ERRTABLE
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
+
+	CREATE TABLE #DATA(
+		number_id			INT
+	,	catalogue_div_nm	NVARCHAR(500)
+	,	success_count		INT
+	,	ignore_count		INT
+	,	failed_count		INT
+	,	point				FLOAT
+	)
+
 	--0
 	SELECT 
 		M999.number_id  AS lib_cd
@@ -107,16 +117,19 @@ BEGIN
 	WHERE
 		S001.account_id = @P_account_id
 
-	--7
+	
+	INSERT INTO #DATA
 	SELECT 
-		#TEMP.catalogue_div_nm
+		#TEMP.number_id
+	,	#TEMP.catalogue_div_nm
 	,	#TEMP.success_count
 	,	#TEMP.ignore_count
 	,	#TEMP.failed_count
 	,	IIF(#TEMP.all_count<>0, 10-((#TEMP.ignore_count*(10.0/#TEMP.all_count)/2)+(#TEMP.failed_count*(10.0/#TEMP.all_count))),0) AS point --error div with int
 	FROM (
 	SELECT
-		MAX(M999.text_remark2) AS catalogue_div_nm
+		MAX(M999.number_id) AS number_id
+	,	MAX(M999.text_remark2) AS catalogue_div_nm
 	,	SUM(F013.success_count) AS success_count
 	,	SUM(F013.ignore_count) AS ignore_count
 	,	SUM(F013.failed_count) AS failed_count
@@ -131,5 +144,21 @@ BEGIN
 	GROUP BY
 		F001.catalogue_div
 	) AS #TEMP
+
+
+	--7
+	SELECT 
+		M999.number_id
+	,	M999.text_remark2	AS catalogue_div_nm
+	,	IIF(#DATA.success_count IS NULL,0,#DATA.success_count)	AS success_count
+	,	IIF(#DATA.ignore_count IS NULL,0,#DATA.success_count)	AS ignore_count
+	,	IIF(#DATA.failed_count IS NULL,0,#DATA.success_count)	AS failed_count
+	,	IIF(#DATA.point IS NULL,0,#DATA.success_count)			AS point
+	FROM M999
+	LEFT JOIN #DATA
+	ON M999.number_id = #DATA.number_id
+	WHERE
+		M999.name_div = 7
+	AND M999.num_remark2 = 1
 END
 

@@ -10,3 +10,6 @@
 #post_tag{
 	display: none;
 }
+.web-main .main-content{
+	background: inherit;
+}

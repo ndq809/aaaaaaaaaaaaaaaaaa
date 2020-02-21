@@ -323,5 +323,18 @@ BEGIN
 	ORDER BY 
 	#LISTENING.post_id
 
+	
+	SELECT
+		#LISTENING.row_id
+	,	#LISTENING.post_id
+	,	ROW_NUMBER() OVER(partition by #LISTENING.post_id ORDER BY #LISTENING.post_id ASC) AS part_code
+	,	M015.listen_cut_id
+	,	M015.listen_cut_content
+	,	M015.listen_cut_start
+	,	M015.listen_cut_end
+	FROM M015
+	INNER JOIN #LISTENING
+	ON #LISTENING.post_id = M015.post_id
+
 END
 

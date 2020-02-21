@@ -1,4 +1,4 @@
-@if(isset($data)&&Count($data)>1)
+@if(isset($data)&&Count($data)>1&&isset($data[0]['question_num']))
     @for($i = 1;$i<=Count($data);$i=$i+4)
         <div class="{{isset($data[$i-1]['row_id'])?'question-box':''}}" target-id="{{isset($data[$i-1]['row_id'])?$data[$i-1]['row_id']:''}}">
             <label>Câu {{$data[$i-1]['question_num']==1?$data[$i-1]['question_num']:($data[$i-1]['question_num']+3)/4}}. {{$data[$i-1]['question_content']}}</label>

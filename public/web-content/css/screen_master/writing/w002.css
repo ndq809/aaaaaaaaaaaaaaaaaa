@@ -73,3 +73,7 @@
 	margin: 0px;
     margin-left: 5px!important;
 }
+
+label.btn{
+	padding: 0px 10px!important;
+}

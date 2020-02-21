@@ -119,10 +119,10 @@ function initListener() {
     $(document).on('keydown', throttle(function(e) {
         if (e.ctrlKey) {
             switch (e.which) {
-                case 37:
+                case 38:
                     previousSentence();
                     break;
-                case 39:
+                case 40:
                     nextSentence();
                     break;
                 default:

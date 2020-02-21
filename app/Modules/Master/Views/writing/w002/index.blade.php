@@ -127,6 +127,7 @@
         <div class="col-sm-6 no-padding-right transform-content" transform-div='2,3,4,5,6,7,8,9,10'>
             <div class="form-group">
                 <label>Nội Dung Bài Viết</label>
+                <label class="btn btn-primary btn-sm float-right transform-content" transform-div='3'>Phân tách bài nghe</label>
                 <div class="input-group content-box">
                     <textarea name="gra-content" id="post_content" contenteditable="true" class="form-control input-sm ckeditor submit-item" rows="3"></textarea>
                 </div>

@@ -181,11 +181,11 @@ function initListener() {
     $(document).on('keydown', throttle(function(e) {
         if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
-                case 37:
+                case 38:
                     e.preventDefault();
                     previousRelax();
                     break;
-                case 39:
+                case 40:
                     e.preventDefault();
                     nextRelax();
                     break;

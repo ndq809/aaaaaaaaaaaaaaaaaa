@@ -40,7 +40,7 @@
         </div>
     </div>
 </div>
-<div class="col-xs-12 no-padding listen-check-box">
+{{--<div class="col-xs-12 no-padding listen-check-box">
     <textarea class="form-control input-sm margin-top col-xs-12 no-padding" id="check-listen-data" rows="3" placeholder="Nghe kỹ bài nghe sau đó nghi lại những gì bạn nghe được tại đây rồi nhấn ' Kiểm tra kết quả '"></textarea>
     <button class="btn btn-sm btn-primary margin-top {{$raw_data[0][0]['btn-check-answer']==1?'btn-check-answer':'btn-disabled'}}" popup-id="popup-box3">Kiểm tra kết quả</button>
     @if(isset($data)&&$data[2][0]['post_id'] != '')
@@ -54,8 +54,12 @@
             @endif
         @endforeach
     @endif
-</div>
+</div>--}}
+
 <div class="example-content col-xs-12 no-padding">
+    <div class="panel-group" id="listen-list">
+          @include('listen_content',array('data'=>isset($data[5])?$data[5]:array()))
+    </div>
     <div class="col-xs-12 no-padding">
           @include('vocabulary_content')
     </div>

@@ -1,6 +1,10 @@
 var player;
 var ListeningArray;
 var runtime = 0;
+var startTime = 0;
+var endTime = 0;
+var timer;
+var jpData;
 
 $(function(){
 	try{
@@ -96,6 +100,68 @@ function initListener() {
         checkAnswer();
     })
 
+    $(document).on('click', '.btn-check-listen', function(e) {
+        e.preventDefault();
+        checkAnswer($(this));
+    })
+
+    $(document).on('click', '.btn-show-answer', function(e) {
+        e.preventDefault();
+        var current_id;
+        var listen_id = $(this).closest('.panel-collapse').attr('id');// 
+	    for (var i = 0; i < ListenCutArray.length; i++) {
+	        if('collapse'+ListenCutArray[i]['listen_cut_id']==listen_id){
+	            current_id = i;
+	            break;
+	        }
+	    } 
+        result_span = $(this).closest('.panel').find('.panel-heading span.float-right');
+        $(this).closest('.input-group').find('input:first-child').val(ListenCutArray[current_id]['listen_cut_content']);
+        $(this).closest('.input-group').find('input:first-child').prop('disabled',true)
+        $(this).closest('.input-group').find('.btn').prop('disabled',true);
+        $(this).off('click');
+        if(!result_span.hasClass('text-success')){
+            result_span.html('đầu hàng').addClass('text-danger');
+            checkShowContent();
+        }
+    })
+
+    $(document).on('click', '.btn-show-content', function(e) {
+        e.preventDefault();
+        $('.main-content').removeClass('hidden').html(post[0]['post_content']);
+    })
+
+    $(document).on('shown.bs.collapse', '#listen-list .panel:visible .panel-collapse', function(e) {
+        e.preventDefault();
+        var current_id;
+        var listen_id = $(this).attr('id');// 
+        for (var i = 0; i < ListenCutArray.length; i++) {
+            if('collapse'+ListenCutArray[i]['listen_cut_id']==listen_id){
+                current_id = i;
+                break;
+            }
+        } 
+        startTime = ListenCutArray[current_id]!=undefined?ListenCutArray[current_id]['listen_cut_start']:0;
+        endTime = ListenCutArray[current_id]!=undefined?ListenCutArray[current_id]['listen_cut_end']:parseFloat(jpData.status.duration);
+        timer=undefined;
+        $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
+        if(listen_id!='collapse0'){
+            $('.main-content').html('').addClass('hidden');
+        }
+    })
+
+    $(document).on('hidden.bs.collapse', '#listen-list .panel:visible .panel-collapse', function(e) {
+        e.preventDefault();
+        var listen_id = $(this).attr('id');// 
+        if($('#listen-list .panel:visible .panel-collapse.in').length==0){
+            startTime = 0;
+            endTime = parseFloat(jpData.status.duration);
+            timer=undefined;
+            $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
+        }
+
+    })
+
     $(document).on('click', '.load-more', function(e) {
         e.preventDefault();
         var current_id = $('.activeItem').attr('id');
@@ -121,37 +187,62 @@ function initListener() {
     $(document).on('keydown', throttle(function(e) {
         if (e.ctrlKey&& $('.sweet-modal-overlay').length==0) {
             switch (e.which) {
-                case 37:
+                case 38:
                     e.preventDefault();
                     previousListening();
                     break;
-                case 39:
+                case 40:
                     e.preventDefault();    
                     nextListening();
                     break;
-                case 49:
+                case 37:
                     e.preventDefault();
                     var current_per = parseFloat($("#jquery_jplayer_2").jPlayer()[0].childNodes[1].currentTime)
                     $("#jquery_jplayer_2").jPlayer( "play", current_per-5);
                     break;
-                case 50:
+                case 39:
                     e.preventDefault();
                     var current_per = parseFloat($("#jquery_jplayer_2").jPlayer()[0].childNodes[1].currentTime)
                     $("#jquery_jplayer_2").jPlayer( "play", current_per+5);
                     break;
                 case 32:
                     e.preventDefault();
-                    if($("#jquery_jplayer_2").jPlayer()[0].childNodes[1].paused){
-                        $("#jquery_jplayer_2").jPlayer( "play");
-                    }else{
-                        $("#jquery_jplayer_2").jPlayer( "pause");
-                    }
+                    $('.jp-play').trigger('click');
                     break;
                 default:
                     break;
             }
         }
     },33))
+
+    $(document).on('click', '.jp-play', function(e) {
+        e.stopPropagation();
+        if(startTime==0 && endTime ==0){
+            startTime = 0;
+            endTime = parseFloat(jpData.status.duration);
+        }
+        if(jpData.status.paused){
+            if(timer!=undefined){
+                $("#jquery_jplayer_2").jPlayer( "play");
+                timer.resume();
+            }else{
+                $("#jquery_jplayer_2").jPlayer( "play",parseFloat(startTime));
+                timer = new Timer(function(){
+                    if(!jpData.status.paused){
+                        $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
+                    }
+                    timer=undefined;
+                },(parseFloat(endTime)-parseFloat(startTime))*1000);
+
+            }
+        }else{
+            if(timer!=undefined){
+                timer.pause();
+            }
+            $("#jquery_jplayer_2").jPlayer( "pause");
+        }
+    })
+
     $(document).on('change', '#catalogue_nm', function() {
         if ($('#catalogue_nm').val() != '') updateGroup(this);
     })
@@ -233,10 +324,14 @@ function installplayer(){
 			wmode : "window",
 			useStateClassSkin : true,
 			autoBlur : false,
-			smoothPlayBar : true,
+			smoothPlayBar : false,
 			keyEnabled : true
 	});
-	$('.jp-playlist').hide();
+    $('.jp-playlist').hide();
+    $('.jp-seek-bar').off('click');
+	$('.jp-play').off('click');
+    jpData = $("#jquery_jplayer_2").data('jPlayer');
+    // console.log(jpData);
 }
 
 function playerPositionController(item_size){
@@ -332,6 +427,7 @@ function getData() {
                     $('#result1').html(res.view1);
                     $('#result2').html(res.view2);
                     ListeningArray = res.voca_array;
+                    ListenCutArray = res.listen_array;
                     installplayer();
                     if($( window ).width()>680)
 						playerPositionController(210);
@@ -384,6 +480,8 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.vocabulary-box:not(.hidden)').addClass('hidden');
     $('.vocabulary-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    $('.listen-cut-box:not(.hidden)').addClass('hidden');
+    $('.listen-cut-box[target-id=' + (target_id) + ']').removeClass('hidden');
     if($('.listen-answer[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
         $('.listen-check-box').addClass('hidden');
@@ -401,6 +499,8 @@ function setContentBox(target_id) {
     $('#check-listen-data').val('');
     $('.comment-box:not(.hidden)').addClass('hidden');
     $('.comment-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    $('.main-content').addClass('hidden');
+    checkShowContent();
     if(typeof ListeningArray!='undefined'){
         post = ListeningArray.filter(function(val){
             return val['row_id']==Number(target_id);
@@ -416,9 +516,19 @@ function getRowId(id){
     }
 }
 
-function checkAnswer(){
-	var current_id = $('.activeItem').attr('id');
-	var similarity_percent = similarity($('.listen-answer[target-id='+current_id+']').text().trim(),$('#check-listen-data').val().trim()).toFixed(0);
+function checkAnswer(target){
+	// var current_id = $('.activeItem').attr('id');
+    var listen_id = target.closest('.panel-collapse').attr('id');// 
+    var listenCut; 
+    var current_id;
+    for (var i = 0; i < ListenCutArray.length; i++) {
+        if('collapse'+ListenCutArray[i]['listen_cut_id']==listen_id){
+            listenCut = ListenCutArray[i];
+            current_id = i;
+            break;
+        }
+    } 
+	var similarity_percent = similarity(listenCut['listen_cut_content'].trim(),target.closest('.input-group').find('input:first-child').val().trim()).toFixed(0);
 	var text = '';
 	switch(true){
 		case parseInt(similarity_percent)<10 :
@@ -441,68 +551,49 @@ function checkAnswer(){
 			break;
 	}
     if($('#do-mission').val()==1){
-        if(parseInt(similarity_percent)>=80){
-            $('.activeItem i').removeClass().addClass('fa fa-check-circle test-done');
-            if(ListeningArray.length == $('.test-done').length){
-                completeMission(function(res){
-                    var param = {};
-                    param['value'] = [res.data.exp,res.data.ctp];
-                    showMessage(30,function(){
-                        if(res.rank['account_div']!=res.rank['account_prev_div']){
-                            var param1 = {};
-                            param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
-                            showMessage(39,function(){
-                                location.reload();
-                            },function(){},param1);
-                        }else{
-                            location.reload();
-                        }
-                    },function(){
-                    },param);
-                })
-            }else{
-                var param = {};
-                param['buttons'] = [
-                    {
-                        label: 'Ải tiếp theo ➡',
-                        classes: 'btn btn-sm btn-success float-right',
-                        action: function(){
-                            nextListening();
-                        }
-                    },
-                    {
-                        label: 'Xem đáp án',
-                        classes: 'btn btn-sm btn-default float-left',
-                        action: function(){
-                            var current_id = $(selectedTab +' .activeItem').attr('id');
-                            $('.listen-answer[target-id='+current_id+']').removeClass('hidden');
-                        },
+        var param = {};
+        param['value'] = [text];
+        param['buttons'] = [
+            {
+                label: 'Đã hiểu',
+                classes: 'btn btn-sm btn-success',
+                action: function(){
+                    result_span = target.closest('.panel').find('.panel-heading span.float-right');
+                    if(parseInt(similarity_percent)>=80){
+                        result_span.html(similarity_percent+'%');
+                        result_span.removeClass('text-warning').addClass('text-success');
+                        checkShowContent();
+                    }else{
+                        result_span.html(similarity_percent+'%');
+                        result_span.removeClass('text-success').addClass('text-warning');
+                        checkShowContent();
                     }
-                ];
-                showMessage(28,function(){},function(){},param);
-            }
-        }else{
-            var param = {};
-            param['value'] = [text];
-            param['label'] = ['Tiếp tục nghe'];
-            showMessage(37,function(){},function(){},param);
-        }
+                    checkMission();
+                },
+            },
+        ];
+        showMessage(37,function(){},function(){},param);
+        
     }else{
         var param = {};
         param['value'] = [text];
         param['buttons'] = [
             {
-                label: 'Tiếp tục nghe',
-                classes: 'btn btn-sm btn-success float-right',
-            },
-            {
-                label: 'Xem đáp án',
-                classes: 'btn btn-sm btn-default float-left',
+                label: 'Đã hiểu',
+                classes: 'btn btn-sm btn-success',
                 action: function(){
-                    var current_id = $(selectedTab +' .activeItem').attr('id');
-                    $('.listen-answer[target-id='+current_id+']').removeClass('hidden');
+                    result_span = target.closest('.panel').find('.panel-heading span.float-right');
+                    if(parseInt(similarity_percent)>=80){
+                        result_span.html(similarity_percent+'%');
+                        result_span.removeClass('text-warning').addClass('text-success');
+                        checkShowContent();
+                    }else{
+                        result_span.html(similarity_percent+'%');
+                        result_span.removeClass('text-success').addClass('text-warning');
+                        checkShowContent();
+                    }
                 },
-            }
+            },
         ];
         showMessage(37,function(){},function(){},param);
     }
@@ -547,4 +638,80 @@ function editDistance(s1, s2) {
       costs[s2.length] = lastValue;
   }
   return costs[s2.length];
+}
+
+var Timer = function(callback, delay) {
+    var timerId, start, remaining = delay;
+
+    this.pause = function() {
+        window.clearTimeout(timerId);
+        remaining -= Date.now() - start;
+    };
+
+    this.resume = function() {
+        start = Date.now();
+        window.clearTimeout(timerId);
+        timerId = window.setTimeout(callback, remaining);
+    };
+
+    this.resume();
+};
+
+function checkShowContent(){
+    if($('#listen-list .panel:visible span.float-right').length!=$('#listen-list .panel:visible span.float-right.text-success,#listen-list .panel:visible span.float-right.text-danger').length){
+        $('#collapse0 .btn').attr('data-toggle','tooltip');
+        $('#collapse0 .btn').attr('data-placement','bottom');
+        $('#collapse0 .btn').attr('data-original-title','Bạn chưa hoàn thành các phần của bài nghe nên chưa xem được nội dung này');
+        $('#collapse0 .btn').tooltip();
+        $('#collapse0 .btn').removeClass('btn-show-content');
+    }else{
+        $('#collapse0 .btn').addClass('btn-show-content');
+        $('.btn-show-content').removeClass('btn-disabled');
+        $('.btn-show-content').prop('disabled',false);
+        $('#collapse0 .btn').tooltip('destroy');
+    }
+}
+
+function checkMission(){
+    if($('#listen-list .panel:visible span.float-right').length==$('#listen-list .panel:visible span.float-right.text-success').length){
+        $('.activeItem i').removeClass().addClass('fa fa-check-circle test-done');
+        if(ListeningArray.length == $('.test-done').length){
+            completeMission(function(res){
+                var param = {};
+                param['value'] = [res.data.exp,res.data.ctp];
+                showMessage(30,function(){
+                    if(res.rank['account_div']!=res.rank['account_prev_div']){
+                        var param1 = {};
+                        param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
+                        showMessage(39,function(){
+                            location.reload();
+                        },function(){},param1);
+                    }else{
+                        location.reload();
+                    }
+                },function(){
+                },param);
+            })
+        }else{
+            var param = {};
+            param['buttons'] = [
+                {
+                    label: 'Ải tiếp theo ➡',
+                    classes: 'btn btn-sm btn-success float-right',
+                    action: function(){
+                        nextListening();
+                    }
+                },
+                {
+                    label: 'Xem đáp án',
+                    classes: 'btn btn-sm btn-default float-left',
+                    action: function(){
+                        var current_id = $(selectedTab +' .activeItem').attr('id');
+                        $('.listen-answer[target-id='+current_id+']').removeClass('hidden');
+                    },
+                }
+            ];
+            showMessage(28,function(){},function(){},param);
+        }
+    }
 }

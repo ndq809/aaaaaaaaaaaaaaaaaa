@@ -23,8 +23,39 @@
     content: "\f11e"; /* FontAwesome Unicode */
 }
 
-#example-list{
+#listen-list .panel-heading .panel-title span:before{
+    content: "\f025"; /* FontAwesome Unicode */
+}
+
+/*#listen-list .panel-heading .panel-title span.float-right{
+	font-weight: bold;
+}*/
+
+#listen-list .panel-heading .panel-title span.float-right:before{
+    content: none;
+}
+
+#listen-list .panel-heading .panel-title span.float-right.text-success:before{
+    content: "\f058"; /* FontAwesome Unicode */
+    color: #1e7e34;
+}
+
+#listen-list .panel-heading .panel-title span.float-right.text-warning:before{
+    content: "\f071"; /* FontAwesome Unicode */
+    color: #d39e00;
+}
+
+#listen-list .panel-heading .panel-title span.float-right.text-danger:before{
+    content: "\f057"; /* FontAwesome Unicode */
+    color: #bd2130;
+}
+
+#example-list,#listen-list{
 	margin-left: 0px;
+}
+
+.panel-group .panel+.panel{
+	margin-top: 1px;
 }
 
 .listen-answer{

@@ -62,6 +62,7 @@ class ListeningController extends ControllerUser
         $result = array(
             'status'     => 200,
             'voca_array' => $data[2],
+            'listen_array' => $data[5],
             'view1'      => $view1,
             'view2'      => $view2,
             'statusText' => 'success',

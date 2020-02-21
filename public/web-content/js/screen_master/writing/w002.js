@@ -138,20 +138,28 @@ function initevent_w002(){
         if(CKEDITOR.instances['post_content'].getData()==''){
             $('.main-content').html('nội dung bài viết');
         }
+    });
+
+    $(document).on('click','label.btn',function(){
         if($('#catalogue_div').val()==3){
+            var post_content = CKEDITOR.instances['post_content'].getData();
             var doc = nlp(post_content.replace(/<\/?[^>]+>/ig, " "));
             Listen_Cut_Array = doc.sentences().out('array');
-            $('.listen-table-body tbody tr:visible').remove();
+            currentTr = $('.listen-table-body tbody tr:visible');
             for (var i = 0; i < Listen_Cut_Array.length; i++) {
-                trClone = $('.listen-table-body tbody tr:first-child').clone();
-                trClone.removeClass('hidden');
-                trClone.find('td input').first().val(Listen_Cut_Array[i]);
-                $('.listen-table-body tbody').append(trClone);
+                if(currentTr.eq(i).length==0){
+                    trClone = $('.listen-table-body tbody tr:first-child').clone();
+                    trClone.removeClass('hidden');
+                    trClone.find('td input').first().val(Listen_Cut_Array[i]);
+                    $('.listen-table-body tbody').append(trClone);
+                }else{
+                    currentTr.eq(i).find('td:first-child input').first().val(Listen_Cut_Array[i]);
+                }
             }
             reIndex($('.listen-table-body')); 
             $('.listen-table-body tbody tr:visible td input').eq(1).focus(); 
         }
-    });
+    })
 
     $(document).on('change','.edit-confirm',function(){
         if(this.checked){
@@ -215,8 +223,13 @@ function initevent_w002(){
             e.stopPropagation();
             $('.file-preview-frame audio')[0].currentTime = $('.file-preview-frame audio')[0].currentTime+2;
                 break;
+            case 38:
+                jumpInput($('input:focus'),1);
+                break;
             case 40:
-                $('input:focus').val($('.file-preview-frame audio')[0].currentTime.toFixed(4)) ;
+                time = $('.file-preview-frame audio')[0].currentTime.toFixed(4);
+                $('input:focus').val(time) ;
+                jumpInput($('input:focus'),0,time);
                 break;
             default:
                 break;
@@ -580,5 +593,19 @@ function transform(target){
         $(this).find('#post_media').removeAttr('name');
     })
     sub_item.hide();
+}
+
+function jumpInput(target,direction,time){
+    jumpArray = $('.time-input');
+    if(direction==0){
+        $('.time-input').eq(jumpArray.index(target)+1).focus();
+        if(time!=undefined){
+            $('input:focus').val(time);
+            jumpInput($('input:focus'),0);
+        }
+    }else{
+        $('.time-input').eq(jumpArray.index(target)-1).focus();
+
+    }
 }
 

@@ -124,11 +124,11 @@ function initListener() {
     $(document).on('keydown', throttle(function(e) {
         if (e.ctrlKey && $('.sweet-modal-overlay').length == 0) {
             switch (e.which) {
-                case 37:
+                case 38:
                     previousVocabulary();
                     $('.vocal-engword-input:visible').val('').focus();
                     break;
-                case 39:
+                case 40:
                     nextVocabulary();
                     $('.vocal-engword-input:visible').val('').focus();
                     break;

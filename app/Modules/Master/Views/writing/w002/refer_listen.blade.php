@@ -21,8 +21,8 @@
                 <tr>
                     <td>{{$index+1}}</td>
                     <td><input type="text" name="" refer-id='listen_cut_content' class="form-control input-sm" value="{{$value['listen_cut_content']}}"></td>
-                    <td><input type="text" name="" refer-id='start_time' class="form-control input-sm" value="{{$value['listen_cut_start']}}"></td>
-                    <td><input type="text" name="" refer-id='end_time' class="form-control input-sm" value="{{$value['listen_cut_end']}}"></td>
+                    <td><input type="text" name="" refer-id='start_time' class="form-control input-sm time-input" value="{{$value['listen_cut_start']}}"></td>
+                    <td><input type="text" name="" refer-id='end_time' class="form-control input-sm time-input" value="{{$value['listen_cut_end']}}"></td>
                     <td><button type="button" class="btn-danger delete-tr-row"><span class="fa fa-close"></span></button></td>
                 </tr>
             @endforeach

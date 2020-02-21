@@ -784,7 +784,7 @@ body {
 
 .left-content {}
 
-.main-content{
+.web-main .main-content{
     padding: 5px 5px;
     float: left;
     width: 100%;
@@ -793,9 +793,12 @@ body {
     border-radius: 6px;
 }
 
-.main-content p{
+.web-main .main-content p{
     margin: 0px;
-    margin-left: 5px!important;
+}
+
+.web-main .main-content td{
+    padding-left: 5px!important;
 }
 
 .left-content:hover {
