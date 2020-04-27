@@ -80,6 +80,7 @@
         };
 
         options = $.extend(true, options, params);
+        
 
         /**
          * 获取x的值
