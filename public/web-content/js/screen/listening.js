@@ -147,6 +147,7 @@ function initListener() {
         $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
         if(listen_id!='collapse0'){
             $('.main-content').html('').addClass('hidden');
+            $('.jp-progress>div').addClass('unclickable');
         }
     })
 
@@ -158,6 +159,8 @@ function initListener() {
             endTime = parseFloat(jpData.status.duration);
             timer=undefined;
             $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
+            $('.jp-progress>div').removeClass('unclickable');
+
         }
 
     })
@@ -328,7 +331,6 @@ function installplayer(){
 			keyEnabled : true
 	});
     $('.jp-playlist').hide();
-    $('.jp-seek-bar').off('click');
 	$('.jp-play').off('click');
     jpData = $("#jquery_jplayer_2").data('jPlayer');
     // console.log(jpData);

@@ -142,7 +142,7 @@ function initevent_w002(){
 
     $(document).on('click','label.btn',function(){
         if($('#catalogue_div').val()==3){
-            var post_content = CKEDITOR.instances['post_content'].getData();
+            var post_content = $('.preview-box .main-content').text();
             var doc = nlp(post_content.replace(/<\/?[^>]+>/ig, " "));
             Listen_Cut_Array = doc.sentences().out('array');
             currentTr = $('.listen-table-body tbody tr:visible');
@@ -229,7 +229,7 @@ function initevent_w002(){
             case 40:
                 time = $('.file-preview-frame audio')[0].currentTime.toFixed(4);
                 $('input:focus').val(time) ;
-                jumpInput($('input:focus'),0,time);
+                jumpInput($('input:focus'),0);
                 break;
             default:
                 break;
@@ -602,6 +602,9 @@ function jumpInput(target,direction,time){
         if(time!=undefined){
             $('input:focus').val(time);
             jumpInput($('input:focus'),0);
+        }
+        if(jumpArray.index(target)%2!=0){
+            $('.file-preview-frame audio')[0].pause();
         }
     }else{
         $('.time-input').eq(jumpArray.index(target)-1).focus();
