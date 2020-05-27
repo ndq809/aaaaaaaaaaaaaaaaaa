@@ -2,13 +2,27 @@
     @foreach($data[2] as $index => $row)
     @if($row['del_flg']==0)
         <div class="col-xs-12 no-padding reading-box" target-id="{{$row['row_id']}}">
-            <div class="example-header title-header">
-                <span>{{$row['post_title']}}</span>
+            <div class="col-xs-6 padding-custom">
+                <div class="example-header title-header">
+                    <span>{{$row['post_title']}}</span>
+                </div>
+            </div>
+             <div class="col-xs-6 padding-custom">
+                <div class="example-header title-header">
+                    <span>{{$row['post_title_tran']}}</span>
+                </div>
             </div>
         </div>
         <div class="col-xs-12 no-padding reading-box" target-id="{{$row['row_id']}}">
-             <div class="main-content" id="noiDungNP" style="border-left: #ccc solid 1px; border-bottom: #ccc solid 1px;">
-                {!!$row['post_content']!!}
+            <div class="col-xs-6 padding-custom">
+                <div class="main-content hidden en_content" id="noiDungNP" style="border-left: #ccc solid 1px; border-bottom: #ccc solid 1px;">
+                    {!!$row['post_content']!!}
+                </div>
+            </div>
+             <div class="col-xs-6 padding-custom">
+                <div class="main-content vi_content hidden" id="noiDungNP" style="border-left: #ccc solid 1px; border-bottom: #ccc solid 1px;">
+                    {!!$row['post_content_tran']!!}
+                </div>
             </div>
         </div>
     @else
@@ -16,7 +30,15 @@
     @endif
     @endforeach
 @endif
-<div class="col-xs-12 no-padding example-content">
+<div class="col-xs-12 no-padding">
+    <div class="col-xs-6 padding-custom">
+        <textarea class="form-control input-sm" readonly="readonly" id="en_textarea" rows="25" placeholder="Copy nội dung cần dịch của bạn vào"></textarea>
+    </div>
+     <div class="col-xs-6 padding-custom">
+        <textarea class="form-control input-sm" readonly="readonly" id="vi_textarea" rows="25" placeholder="Copy nội dung cần dịch của bạn vào"></textarea>
+    </div>
+</div>
+<div class="col-xs-12 padding-custom example-content">
     <div class="col-xs-12 no-padding">
           @include('vocabulary_content')
     </div>

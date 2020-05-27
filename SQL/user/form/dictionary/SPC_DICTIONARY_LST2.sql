@@ -288,6 +288,7 @@ BEGIN
 	SELECT TOP 10
 		F008.target_id
 	,	M006.vocabulary_nm
+	,	F008.excute_id
 	FROM F008
 	LEFT JOIN M006
 	ON F008.target_id = M006.id

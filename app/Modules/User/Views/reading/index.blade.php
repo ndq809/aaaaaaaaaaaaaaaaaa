@@ -1,17 +1,22 @@
 @extends('layout')
 @section('title','E+ Đọc Hiểu')
 @section('asset_header')
+    {!!WebFunctions::public_url('web-content/compromise/builds/compromise.js')!!}
+    {!!WebFunctions::public_url('web-content/js/common/library/jquery.highlight-within-textarea.js')!!}
+    {!!WebFunctions::public_url('web-content/css/common/library/jquery.highlight-within-textarea.css')!!}
     {!!WebFunctions::public_url('web-content/js/screen/reading.js')!!}
     {!!WebFunctions::public_url('web-content/css/screen/reading.css')!!}
 @stop
+{{--
 @section('left-tab')
     @include('left_tab')
 @stop
+--}}
 @section('content')
-<div class="col-lg-9 col-md-12 no-padding change-content">
+<div class="col-lg-12 col-md-12 no-padding change-content">
     <div class="temp hidden" style="height:27px"></div>
 	<div class="right-header col-md-12 no-padding">
-        <div class="col-md-8 no-padding">
+        <div class="col-md-9 no-padding">
             <table class="full-width">
                 <tbody>
                     <tr>
@@ -23,7 +28,7 @@
             </table>
         </div>
     </div>
-	 <div class="col-md-4 col-md-push-8 right-tab no-padding" >
+	 <div class="col-md-3 col-md-push-9 right-tab no-padding" >
 	 	<div class="col-md-12 no-padding select-group">
 	 		<div class="form-group">
                 <label>Danh Mục Bài Đọc</label>
@@ -55,7 +60,7 @@
             @include('User::reading.right_tab')
         </div>
     </div>
-	<div class="col-md-8 col-md-pull-4 web-main" id="result2">
+	<div class="col-md-9 col-md-pull-3 web-main" id="result2">
         @if(!isset($blank))
             @include('User::reading.main_content')
         @else

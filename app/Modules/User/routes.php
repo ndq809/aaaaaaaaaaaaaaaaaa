@@ -21,6 +21,7 @@ Route::group(
 		Route::any('dictionary/getData','DictionaryController@getData');
 		Route::any('dictionary/addWord','DictionaryController@addWord');
 		Route::any('dictionary/vote-word','DictionaryController@voteWord');
+		Route::any('dictionary/deleteBookmark','DictionaryController@deleteBookmark');
 		Route::get('grammar','GrammarController@getIndex');
 		Route::any('grammar/getData','GrammarController@getData');
 		Route::get('listening','ListeningController@getIndex');

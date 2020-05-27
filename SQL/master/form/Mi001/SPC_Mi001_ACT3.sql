@@ -109,7 +109,7 @@ BEGIN
 		,	0
 		,	0
 		,	NULL
-		,	NULL
+		,	1
 		,	0
 		,	@P_user_id
 		,	@w_program_id

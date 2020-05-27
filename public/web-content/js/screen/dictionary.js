@@ -118,6 +118,9 @@ function initListener() {
             getData($("#key-word").val());
         }
     });
+    $(document).on("click", ".bookmark_delete", function() {
+        deleteBookmark($(this).prev('.history-item').find('.bookmark_cd').attr('value'));
+    });
     $(window).resize(function() {
         slidePositionController();
     });
@@ -453,6 +456,51 @@ function contributeVoc(){
                     showMessage(41,function(){
                         getData($("#key-word").val());
                     });
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 207:
+                    clearFailedValidate();
+                    showFailedData(res.data);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                case 209:
+                    clearFailedValidate();
+                    showMessage(12);
+                    break;
+                default :
+                    break;
+            }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function deleteBookmark(id){
+    var data = {};
+    data['bookmark_id']=id;
+    $.ajax({
+        type: 'POST',
+        url: '/dictionary/deleteBookmark',
+        dataType: 'json',
+        loading:true,
+        container:'.bookmark',
+        data: data,
+        success: function (res) {
+            switch(res.status){
+                case 200:
+                    clearFailedValidate();
+                    // showMessage(2,function(){
+                    $('.bookmark').html(res.view1);
+                    // });
                     break;
                 case 201:
                     clearFailedValidate();

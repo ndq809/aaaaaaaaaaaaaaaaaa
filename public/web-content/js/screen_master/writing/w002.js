@@ -355,11 +355,16 @@ function w002_refer(post_id){
                     setMedia(res.data);
                     $('.update-block #catalogue_div')[0].selectize.setValue(Number(res.data[0][0]['catalogue_div']));
                     $('#post_title').val(res.data[0][0]['post_title']);
+                    $('#post_title_tran').val(res.data[0][0]['post_title_tran']);
                     $('#post_title').trigger('change');
                     setTimeout(function(){
                       CKEDITOR.instances['post_content'].setData(res.data[0][0]['post_content'],function(){
                         // this.setReadOnly(true);
                         $('.main-content').html(CKEDITOR.instances['post_content'].getData());
+                    });
+                      CKEDITOR.instances['post_content_tran'].setData(res.data[0][0]['post_content_tran'],function(){
+                        // this.setReadOnly(true);
+                        $('.main-content').html(CKEDITOR.instances['post_content_tran'].getData());
                     });
                     }, 100);
                     

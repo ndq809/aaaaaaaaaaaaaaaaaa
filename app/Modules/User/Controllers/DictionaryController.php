@@ -71,6 +71,34 @@ class DictionaryController extends ControllerUser
         return response()->json($result);
     }
 
+    public function deleteBookmark(Request $request)
+    {
+        $param            = $request->all();
+        $param['bookmark_id'] = $this->hashids->decode($param['bookmark_id'])[0];
+        $param['user_id'] = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
+        $data   = Dao::call_stored_procedure('SPC_DICTIONARY_ACT3', $param);
+        if (isset($data[0][0]['Data'])&&($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION')) {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if (isset($data[0][0]['Data'])&&$data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $data   = CommonUser::encodeID($data);
+            $view1  = view('User::dictionary.search_history')->with('search_history', $data[1])->render();
+            $result = array(
+                'status'     => 200,
+                'view1'      => $view1,
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
     public function voteWord(Request $request)
     {
         $param            = $request->all();

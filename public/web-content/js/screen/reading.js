@@ -2,6 +2,7 @@ var player;
 var ReadingArray;
 var AnswerArray;
 var runtime = 0;
+var En_Array=[],Vi_Array=[],Auto_Array=[], sentenceIndex = 0;
 $(function(){
 	try{
 		initReading();
@@ -13,32 +14,33 @@ $(function(){
 
 function initReading(){
 	initListener();
+    getData();
 	// installplayer();
-	if ($('.table-click tbody tr').first().hasClass('no-data')) {
-        if($('#catalogue-tranfer').attr('value')!=''){
-            var selectize_temp= $('#catalogue_nm')[0].selectize;
-            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-            updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-        }else{
-            $('#catalogue_nm').trigger('change');
-        }
-    } else {
-        if ($('.table-click tbody tr.selected-row').length == 0) {
-            if($('#catalogue-tranfer').attr('value')!=''){
-                var selectize_temp= $('#catalogue_nm')[0].selectize;
-                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
-                updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
-            }else{
-                if($('#catalogue_nm').is(':disabled')){
-                    getData();
-                }else{
-                    $('.table-click tbody tr:first-child').trigger('dblclick');
-                }
-            }
-        } else {
-            $('.table-click tbody tr.selected-row').trigger('dblclick');
-        }
-    }
+	// if ($('.table-click tbody tr').first().hasClass('no-data')) {
+ //        if($('#catalogue-tranfer').attr('value')!=''){
+ //            var selectize_temp= $('#catalogue_nm')[0].selectize;
+ //            selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
+ //            updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
+ //        }else{
+ //            $('#catalogue_nm').trigger('change');
+ //        }
+ //    } else {
+ //        if ($('.table-click tbody tr.selected-row').length == 0) {
+ //            if($('#catalogue-tranfer').attr('value')!=''){
+ //                var selectize_temp= $('#catalogue_nm')[0].selectize;
+ //                selectize_temp.setValue(selectize_temp.getValueByText($('#catalogue-tranfer').attr('value')),true);
+ //                updateGroup($('#catalogue_nm'),$('#group-transfer').attr('value'));
+ //            }else{
+ //                if($('#catalogue_nm').is(':disabled')){
+ //                    getData();
+ //                }else{
+ //                    $('.table-click tbody tr:first-child').trigger('dblclick');
+ //                }
+ //            }
+ //        } else {
+ //            $('.table-click tbody tr.selected-row').trigger('dblclick');
+ //        }
+ //    }
 }
 
 function initListener() {
@@ -197,6 +199,29 @@ function initListener() {
             }
         });
     })
+
+    $(document).on('mouseup', throttle(function(e) {
+        if($('#en_textarea').is(':focus')||$('#vi_textarea').is(':focus')){
+            if($('textarea:focus').val()!=''&&window.getSelection()==''){
+                sentenceIndex = $('textarea:focus')[0].value.substr(0, $('textarea:focus')[0].selectionStart).split("\n").length-1;
+                selectText(sentenceIndex);
+            }
+        }
+    }, 20))
+
+    $(document).on('change', '#en_textarea', function() {
+        var doc = nlp($(this).val());
+        En_Array = doc.sentences().out('array');
+        $(this).val(En_Array.join('\n'));
+        scrollTextarea(En_Array[sentenceIndex],this);
+    })
+
+    $(document).on('change', '#vi_textarea', function() {
+        var doc = nlp($(this).val());
+        Vi_Array = doc.sentences().out('array');
+        $(this).val(Vi_Array.join('\n'));
+        scrollTextarea(Vi_Array[sentenceIndex],this);
+    })
 }
 
 function nextReading() {
@@ -331,6 +356,10 @@ function updateGroup(change_item, sub_item_text) {
 function setContentBox(target_id) {
     $('.reading-box:not(.hidden)').addClass('hidden');
     $('.reading-box[target-id=' + (target_id) + ']').removeClass('hidden');
+    en_content=$('.reading-box[target-id=' + (target_id) + ']').find('.en_content').text();
+    vi_content=$('.reading-box[target-id=' + (target_id) + ']').find('.vi_content').text();
+    $('#en_textarea').val(en_content.trim()).trigger('change');
+    $('#vi_textarea').val(vi_content.trim()).trigger('change');
     if($('.reading-box[target-id=' + (target_id) + ']').hasClass('post-not-found')||$(selectedTab+' .activeItem').hasClass('no-row')){
         $('.example-content').addClass('hidden');
     }else{
@@ -484,6 +513,45 @@ function checkAnswer(){
 function insertArrayAt(array, index, arrayToInsert) {
     Array.prototype.splice.apply(array, [index, 0].concat(arrayToInsert));
     return array;
+}
+
+function scrollTextarea(text,textarea){
+    var parola_cercata = text; // the searched word
+    var posi = jQuery(textarea).val().indexOf(parola_cercata); // take the position of the word in the text
+    if (posi != -1) {
+        var target = textarea;
+            // select the textarea and the word
+        target.focus();
+            if (target.setSelectionRange)
+                // target.setSelectionRange(posi, posi+parola_cercata.length);
+                $(textarea).highlightWithinTextarea({
+                    highlight: text // string, regexp, array, function, or custom object
+                });
+            else {
+                var r = target.createTextRange();
+                r.collapse(true);
+                r.moveEnd('character',  posi+parola_cercata);
+                r.moveStart('character', posi);
+                r.select();
+            }
+        var objDiv = textarea;
+        var sh = objDiv.scrollHeight; //height in pixel of the textarea (n_rows*line_height)
+        var line_ht = jQuery(textarea).css('line-height').replace('px',''); //height in pixel of each row
+        var n_lines = sh/line_ht; // the total amount of lines
+        var char_in_line = jQuery(textarea).val().length / n_lines; // amount of chars for each line
+        var height = Math.floor(posi/char_in_line); // amount of lines in the textarea
+        jQuery(textarea).scrollTop(height*line_ht - 100); // scroll to the selected line
+    } else {
+        $(textarea).highlightWithinTextarea({
+            highlight: '' // string, regexp, array, function, or custom object
+        });
+        // console.log('Không tìm thấy : '+text); // alert word not found@
+    }
+}
+
+function selectText(sentenceIndex) {
+    scrollTextarea(En_Array[sentenceIndex],$('#en_textarea')[0]);
+    scrollTextarea(Vi_Array[sentenceIndex],$('#vi_textarea')[0]);
 }
 
 

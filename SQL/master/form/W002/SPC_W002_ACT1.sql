@@ -12,8 +12,10 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_catalogue_nm     	NVARCHAR(200)		= ''
 ,    @P_group_nm     		NVARCHAR(200)		= ''
 ,    @P_post_title     		NVARCHAR(200)		= ''
+,    @P_post_title_tran    	NVARCHAR(200)		= ''
 ,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_content    	NTEXT				= ''
+,    @P_post_content_tran   NTEXT				= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
 ,    @P_post_media_div     	TINYINT				= 0
@@ -401,7 +403,9 @@ BEGIN
 		,	 post_div
 		,	 briged_id 
 		,	 post_title 
+		,	 post_title_tran 
 		,	 post_content 
+		,	 post_content_tran 
 		,	 post_media
 		,	 post_media_nm
 		,	 media_div 
@@ -429,7 +433,9 @@ BEGIN
 		,	 1
 		,	 @w_briged_id 
 		,	 @P_post_title 
+		,	 @P_post_title_tran
 		,	 @P_post_content 
+		,	 @P_post_content_tran
 		,	 @P_post_media
 		,	 @P_post_media_nm 
 		,	 @P_post_media_div 

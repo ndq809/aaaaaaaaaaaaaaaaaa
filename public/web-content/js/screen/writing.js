@@ -14,6 +14,11 @@ var runtime = 0;
 $(function(){
 	try{
 		initWriting();
+        if(change_time==0){
+            getData();
+        }else{
+            getDataCustom();
+        }
 	}
 	catch(e){
 		alert("some thing went wrong :"+e);

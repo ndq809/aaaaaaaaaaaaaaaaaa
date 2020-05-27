@@ -50,12 +50,20 @@
             </div>
         </div>
 
-
-        <div class="col-sm-12 no-padding-right transform-content" transform-div='2,3,4,5,6,7,8,9,10'>
+        <div class="col-sm-6 no-padding-right transform-content" transform-div='2,3,4,5,6,7,8,9,10'>
             <div class="form-group">
                 <label>Tiêu Đề Của Bài Viết</label>
                 <div class="input-group">
                     <input type="text" id="post_title" name="" class="form-control input-sm submit-item" placeholder="Tiêu đề bài viết">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 no-padding-right transform-content" transform-div='5'>
+            <div class="form-group">
+                <label>Tiêu Đề Của Bài Viết (Dịch)</label>
+                <div class="input-group">
+                    <input type="text" id="post_title_tran" name="" class="form-control input-sm submit-item" placeholder="Tiêu đề bài viết">
                 </div>
             </div>
         </div>
@@ -138,7 +146,7 @@
             @include('Master::writing.w002.refer_listen')
         </div>
 
-        <div class="col-sm-6 no-padding-right transform-content" transform-div='2,4,5,6,7,8,9,10'>
+        <div class="col-sm-6 no-padding-right transform-content" transform-div='2,4,6,7,8,9,10'>
             <div class="form-group">
                 <label>Preview Bài Viết</label>
                 <div class="input-group preview-box">
@@ -148,6 +156,15 @@
                         </div>
                     </div>
                     <div class="main-content" id="noiDungNP">Nội dung bài viết</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 no-padding-right transform-content" transform-div='5'>
+            <div class="form-group">
+                <label>Nội Dung Bài Viết (Dịch)</label>
+                <div class="input-group content-box">
+                    <textarea name="gra-content" id="post_content_tran" contenteditable="true" class="form-control input-sm ckeditor submit-item" rows="3"></textarea>
                 </div>
             </div>
         </div>

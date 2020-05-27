@@ -29,7 +29,9 @@ BEGIN
 	,	post_id				INT
 	,	briged_id			INT
 	,	post_title			NVARCHAR(100)
+	,	post_title_tran		NVARCHAR(100)
 	,	post_content		NVARCHAR(MAX)
+	,	post_content_tran	NVARCHAR(MAX)
 	,	remembered			INT
 	,	del_flg				INT
 	)
@@ -74,7 +76,9 @@ BEGIN
 	,	M007.post_id
 	,	M007.briged_id
 	,	M007.post_title
+	,	M007.post_title_tran
 	,	M007.post_content
+	,	M007.post_content_tran
 	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
 	,	M007.del_flg
 	FROM M007

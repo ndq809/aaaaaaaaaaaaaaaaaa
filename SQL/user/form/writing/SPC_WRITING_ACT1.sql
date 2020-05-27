@@ -22,7 +22,7 @@ BEGIN
 	DECLARE 
 		@ERR_TBL				ERRTABLE
 	,	@w_time					DATETIME			= SYSDATETIME()
-	,	@w_program_id			NVARCHAR(50)		= 'W002'
+	,	@w_program_id			NVARCHAR(50)		= 'Writing'
 	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Thêm bài viết'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'insert'
