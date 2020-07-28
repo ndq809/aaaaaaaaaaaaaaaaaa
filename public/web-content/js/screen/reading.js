@@ -1,7 +1,7 @@
 var player;
 var ReadingArray;
 var AnswerArray;
-var runtime = 0;
+var runtime = 0,separate=0;
 var En_Array=[],Vi_Array=[],Auto_Array=[], sentenceIndex = 0;
 $(function(){
 	try{
@@ -69,6 +69,17 @@ function initListener() {
         if ($(this).hasClass('btn-add-lesson')) {
             $('.btn-add-lesson').prop('disabled','disabled');
             addLesson(5, $('#catalogue_nm').val(), $('#group_nm').val());
+        }
+        if ($(this).attr("id")=='btn-separate') {
+            separate=(separate==0?1:0);
+            $(this).text(separate==0?'Phân tách thành từng câu':'Gộp lại như cũ')
+            if(separate==0){
+                var current_id = $('.activeItem').attr('id');
+                en_content=$('.reading-box[target-id=' + (current_id) + ']').find('.en_content').text();
+                vi_content=$('.reading-box[target-id=' + (current_id) + ']').find('.vi_content').text();
+            }
+            $('#en_textarea').val(en_content.trim()).trigger('change');
+            $('#vi_textarea').val(vi_content.trim()).trigger('change');
         }
         if ($(this).hasClass('btn-comment')) {
             _this= $(this);
@@ -210,16 +221,20 @@ function initListener() {
     }, 20))
 
     $(document).on('change', '#en_textarea', function() {
-        var doc = nlp($(this).val());
-        En_Array = doc.sentences().out('array');
-        $(this).val(En_Array.join('\n'));
+        if(separate==1){
+            var doc = nlp($(this).val());
+            En_Array = doc.sentences().out('array');
+            $(this).val(En_Array.join('\n'));
+        }
         scrollTextarea(En_Array[sentenceIndex],this);
     })
 
     $(document).on('change', '#vi_textarea', function() {
-        var doc = nlp($(this).val());
-        Vi_Array = doc.sentences().out('array');
-        $(this).val(Vi_Array.join('\n'));
+        if(separate==1){
+            var doc = nlp($(this).val());
+            Vi_Array = doc.sentences().out('array');
+            $(this).val(Vi_Array.join('\n'));
+        }
         scrollTextarea(Vi_Array[sentenceIndex],this);
     })
 }
@@ -517,7 +532,7 @@ function insertArrayAt(array, index, arrayToInsert) {
 
 function scrollTextarea(text,textarea){
     var parola_cercata = text; // the searched word
-    var posi = jQuery(textarea).val().indexOf(parola_cercata); // take the position of the word in the text
+    var posi = separate==0?-1:jQuery(textarea).val().indexOf(parola_cercata); // take the position of the word in the text
     if (posi != -1) {
         var target = textarea;
             // select the textarea and the word

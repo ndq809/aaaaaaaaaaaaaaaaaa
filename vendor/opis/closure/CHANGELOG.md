@@ -1,5 +1,27 @@
 CHANGELOG
 ---------
+### v3.5.3, 2020.05.25
+
+- Improved parser
+- The class scope optimisation is no longer used. We always bind now to the closure's original class scope.
+If the class scope was `null`, then the optimisation didn't work as expected and kept the `SerializableClosure` scope.
+
+### v3.5.2, 2020.05.21
+
+- Removed extra semicolon in short closures, since is not part of the closure's body.
+
+### v3.5.1, 2019.11.30
+
+- Bugfix. See #47
+
+### v3.5.0, 2019.11.29
+
+- Added support for short closures (arrow functions)
+- Added `isShortClosure` method to `Opis\Closure\ReflectionClosure`
+
+### v3.4.2, 2019.11.29
+
+- Added `stream_set_option()`
 
 ### v3.4.1, 2019.10.19
 

@@ -10,6 +10,7 @@
             @yield('title','English Plus Master')
         </title>
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-3.2.1.min.js')!!}
+        {!!WebFunctions::public_url('web-content/js/common/library/jquery-ui.min.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery-migrate-3.0.0.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/jquery.mobile-events.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/bootstrap.min.js')!!}
@@ -21,6 +22,7 @@
         {!!WebFunctions::public_url('web-content/selectize/dist/js/standalone/selectize.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/liquidmetal.js')!!}
         {!!WebFunctions::public_url('web-content/js/common/library/loadingoverlay.js')!!}
+        {!!WebFunctions::public_url('web-content/css/common/library/jquery-ui.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/bootstrap.min.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/DateTimePicker.css')!!}
         {!!WebFunctions::public_url('web-content/css/common/library/selectize.bootstrap2.css')!!}

@@ -86,6 +86,7 @@ class TranslationController extends ControllerUser
             }
         }
         $data1['title']      = $param['post_title'];
+        $data1['title_tran'] = $param['post_title_tran'];
         $data1['post_tag']   = json_encode(isset($param['post_tag'])&&$param['post_tag']!='' ? $param['post_tag'] : array());
         $data1['en_text']    = $param['en_text'];
         $data1['vi_text']    = $param['vi_text'];

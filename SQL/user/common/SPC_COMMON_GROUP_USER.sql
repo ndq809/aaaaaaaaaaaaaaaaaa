@@ -24,7 +24,7 @@ BEGIN
 	,	@pageMax			INT					=	0
 
 	--
-	SELECT
+	SELECT DISTINCT
 		 M003.catalogue_id	
 	,	 M003.group_id	 AS value
 	,	 M003.group_nm   AS text	    

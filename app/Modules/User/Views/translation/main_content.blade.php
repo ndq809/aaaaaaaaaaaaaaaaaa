@@ -15,11 +15,17 @@
 <input type="hidden" id="post_id" class="submit-item" name="" value="">
 <div class="col-md-6 col-xs-12 right-tab" >
     <div class="form-group">
-        <label class="inline-block">Tiêu Đề Của Bài Dịch</label>
-        <textarea class="form-control input-sm submit-item" rows="1" id="post_title" placeholder="Tiêu đề của bài dịch"></textarea>
+        <label class="inline-block">Tiêu Đề Bài Viết</label>
+        <textarea class="form-control input-sm submit-item" rows="1" id="post_title" placeholder="Tiêu đề của bài viết"></textarea>
     </div>
 </div>
 <div class="col-md-6 col-xs-12 right-tab" >
+    <div class="form-group">
+        <label class="inline-block">Tiêu Đề Bài Viết (Dịch)</label>
+        <textarea class="form-control input-sm submit-item" rows="1" id="post_title_tran" placeholder="Tiêu đề của bài dịch"></textarea>
+    </div>
+</div>
+<div class="col-md-12 col-xs-12 right-tab" >
     <div class="form-group">
         <label class="inline-block">Tag Của Bài Dịch</label>
         <select class="tag-selectize submit-item post_tag_new selectized" style="opacity: 0" id="post_tag" multiple="multiple">

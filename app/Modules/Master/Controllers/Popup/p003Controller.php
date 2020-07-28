@@ -46,6 +46,21 @@ class p003Controller extends Controller
         $result  = Dao::call_stored_procedure('SPC_P003_LST3', $param);
         return view('Master::writing.w002.refer_voc')->with('data_voc', $result[0])->render();
     }
+
+    public function p003_getAutocomplete(Request $request)
+    {
+        $param            = $request->all();
+        $data   = Dao::call_stored_procedure('SPC_P003_LST4', $param);
+        $view   = view('Master::popup.p003.search')
+            ->with('data', $data)->render();
+        $result = array(
+                    'status'     => 200,
+                    'data'       => $data[0],
+                    'view'       => $view,
+                    'statusText' => 'success',
+                );
+        return response()->json($result);
+    }
     /**
      * Show the application index.
      * @author mail@ans-asia.com

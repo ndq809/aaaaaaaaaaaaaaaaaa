@@ -767,7 +767,9 @@ BEGIN
 		,	 group_id		  =	IIF(@P_group_nm='',NULL,@P_group_nm)
 		,	 briged_id 		  =	@w_briged_id 
 		,	 post_title 	  =	@P_post_title 
+		,	 post_title_tran  =	@P_post_title_tran 
 		,	 post_content 	  =	@P_post_content 
+		,	 post_content_tran 	  =	@P_post_content_tran 
 		,	 post_media		  =	IIF(@P_post_media='',post_media,@P_post_media)
 		,	 post_media_nm	  =	IIF(@P_post_media_nm='', post_media_nm,@P_post_media_nm)
 		,	 media_div 		  =	IIF(@P_post_media_div =0,media_div,@P_post_media_div)

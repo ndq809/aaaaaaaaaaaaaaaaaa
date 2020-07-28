@@ -9,6 +9,15 @@ $(function(){
 function init_p003(){
 	initevent_p003();
     p003_load();
+    createAutocomplete($("#vocabulary_nm"),function(event, ui){
+        event.preventDefault();
+        $("#vocabulary_nm").val('');
+        var vocal = $(ui.item.html).find('table tbody tr td[refer_id="vocabulary_code"]:contains("'+ui.item.vocabulary_code+'")');
+        var tr_clone = vocal.closest('tr');
+        tr_clone.find('.btn-add').find('span').removeClass().addClass('fa fa-close');
+        tr_clone.find('.btn-add').removeClass().addClass('btn btn-danger btn-delete-row');
+        $('.table-refer tbody').append(tr_clone);
+    });
 }
 
 function initevent_p003(){
@@ -138,4 +147,50 @@ function getVocabularyList(){
         return null;
     }
     return $.extend({}, data);
+}
+
+function createAutocomplete(target,callback){
+    target.autocomplete({
+        source: function(request, response) {
+            $.ajax({
+                type: 'POST',
+                url: "/master/popup/p003/getAutocomplete",
+                dataType: "json",
+                data: {
+                    q: request.term
+                },
+                success: function(result) {
+                    var temp = [];
+                    if (result['data'][0]['vocabulary_nm'] != '') {
+                        for (var i = 0; i < result['data'].length; i++) {
+                            temp.push
+                            ({
+                                    label: result['data'][i]['vocabulary_nm']+' ---- '+result['data'][i]['mean']
+                                ,   vocabulary_code: result['data'][i]['vocabulary_code']
+                                ,   vocabulary_id: result['data'][i]['vocabulary_id']
+                                ,   vocabulary_dtl_id: result['data'][i]['vocabulary_dtl_id']
+                                ,   vocabulary_nm: result['data'][i]['vocabulary_nm'] 
+                                ,   vocabulary_div: result['data'][i]['vocabulary_div'] 
+                                ,   specialized: result['data'][i]['specialized'] 
+                                ,   field: result['data'][i]['field'] 
+                                ,   spelling: result['data'][i]['spelling'] 
+                                ,   mean: result['data'][i]['mean'] 
+                                ,   html: result['view'] 
+                            });
+                        }
+                    }
+                    response(temp);
+                }
+            });
+        },
+        select: function(event, ui){
+            callback(event, ui)
+        },
+        // open: function(event, ui){
+        //     $('#ui-id-1').css('top',($("#vocabulary_nm").offset().top+50)+'px');
+        // },
+        // minLength: 3,
+        delay: 500,
+        autoFocus: true
+    });
 }

@@ -24,7 +24,7 @@
 		</div>
 		<div class="col-xs-12"></div>
 		<div class="col-sm-3 no-padding-right">
-		    <div class="form-group">
+		    <div class="form-group col-xs-12 no-padding">
 		        <label>Block No</label>
 		        <div class="input-group" style="max-width: 200px">
 		          <span class="input-group-btn">

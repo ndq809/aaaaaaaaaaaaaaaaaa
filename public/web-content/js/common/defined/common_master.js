@@ -429,13 +429,11 @@ function initEvent() {
                     $('.edit-save').trigger('click');
                     break;
                 }
-                e.preventDefault();
                 $('#btn_login').trigger('click');
                 if($('.fancybox-opened').length!=0)
                 $('#btn-list').trigger('click');
                 break;
             case 38 :
-                e.preventDefault();
                 if(e.ctrlKey){
                     if($('.submit-table input').is(':focus')){
                         var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
@@ -452,7 +450,6 @@ function initEvent() {
                 break;
             case 40 :
                 if(e.ctrlKey){
-                    e.preventDefault();
                     $('.table-focus tbody tr.active-row').trigger('dblclick');
                     if($('.submit-table input').is(':focus')){
                         var row_now = $('input:focus').closest('tbody').find('tr:visible').index($('input:focus').closest('tr:visible'));
@@ -1608,6 +1605,17 @@ function shuffle(array) {
   return array;
 }
 
+function throttle(f, delay){
+    var timer = null;
+    return function(){
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = window.setTimeout(function(){
+            f.apply(context, args);
+        },
+        delay || 500);
+    };
+}
 
 
 

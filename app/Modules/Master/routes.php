@@ -89,6 +89,14 @@ Route::group(
 		Route::post('w003/save','w003Controller@w003_save');
 		Route::post('w003/readFile','w003Controller@w003_read');
 		Route::post('w003/getAutocomplete','w003Controller@w003_getAutocomplete');
+		Route::get('w004','w004Controller@getIndex');
+		Route::post('w004/excute','w004Controller@w004_read');
+		Route::post('w004/save','w004Controller@w004_save');
+		Route::post('w004/readFile','w004Controller@w004_read');
+		Route::post('w004/getAutocomplete','w004Controller@w004_getAutocomplete');
+		Route::post('w004/getPost','w004Controller@w004_getPost');
+		Route::post('w004/getcatalogue','w004Controller@w004_getcatalogue');
+		Route::post('w004/autoTranslate','w004Controller@autoTranslate');
 	}
 );
 
@@ -176,6 +184,7 @@ Route::group(
 		Route::post('p003','p003Controller@p003_search');
 		Route::post('p003/load','p003Controller@p003_load');
 		Route::post('p003/refer','p003Controller@p003_refer');
+		Route::post('p003/getAutocomplete','p003Controller@p003_getAutocomplete');
 		Route::get('p005','p005Controller@getIndex');
 		Route::post('p005','p005Controller@p005_search');
 		Route::post('p005/load','p005Controller@p005_load');

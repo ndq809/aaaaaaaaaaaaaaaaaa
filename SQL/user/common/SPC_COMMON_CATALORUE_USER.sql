@@ -24,7 +24,7 @@ BEGIN
 	,	@pageMax			INT					=	0
 
 	--
-	SELECT
+	SELECT DISTINCT
 		 M002.catalogue_id	 AS value
 	,	 M002.catalogue_nm   AS text	    
 	FROM M002
@@ -41,6 +41,8 @@ BEGIN
 	AND M007.record_div = 2
 	WHERE M002.del_flg = 0 
 	AND	M002.catalogue_div		= @P_catalogue_div
+	AND M002.del_flg = 0
+	AND M003.del_flg = 0
 
 	--
 END

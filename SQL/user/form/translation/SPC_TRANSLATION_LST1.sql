@@ -24,43 +24,45 @@ BEGIN
 	,	@pageMax			INT					=	0
 
 	CREATE TABLE #TRANSLATION(
-		row_id			INT
-	,	post_id			NVARCHAR(15)
-	,	post_title		NVARCHAR(250)
-	,	en_text			NTEXT
-	,	vi_text			NTEXT
-	,	post_div		INT
-	,	briged_id		NVARCHAR(15)
-	,	cre_user		NVARCHAR(50)
-	,	cre_date		DATETIME2
-	,	upd_user		NVARCHAR(50)
-	,	upd_date		DATETIME2
-	,	selected		INT
+		row_id				INT
+	,	post_id				NVARCHAR(15)
+	,	post_title			NVARCHAR(250)
+	,	post_title_tran		NVARCHAR(250)
+	,	en_text				NTEXT
+	,	vi_text				NTEXT
+	,	post_div			INT
+	,	briged_id			NVARCHAR(15)
+	,	cre_user			NVARCHAR(50)
+	,	cre_date			DATETIME2
+	,	upd_user			NVARCHAR(50)
+	,	upd_date			DATETIME2
+	,	selected			INT
 	)
 
 	INSERT INTO #TRANSLATION
 	SELECT
-		ROW_NUMBER() OVER(ORDER BY F010.post_id ASC) AS row_id
+		ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
 	,	post_id		
 	,	post_title	
-	,	en_text		
-	,	vi_text		
+	,	post_title_tran	
+	,	post_content AS en_text		
+	,	post_content_tran AS vi_text		
 	,	post_div	
 	,	briged_id	
 	,	cre_user	
 	,	cre_date	
 	,	upd_user	
 	,	upd_date	
-	,	IIF(F010.post_id = @P_target_id,1,0) AS selected
-	FROM F010
+	,	IIF(M007.post_id = @P_target_id,1,0) AS selected
+	FROM M007
 	WHERE 
-		F010.cre_user = @P_account_id 
+		M007.cre_user = @P_account_id 
 	AND del_flg = 0
 	ORDER BY 
 	CASE
-	WHEN F010.post_id = @P_target_id THEN 1
+	WHEN M007.post_id = @P_target_id THEN 1
 	END
-	,	F010.upd_date DESC 
+	,	M007.upd_date DESC 
 
 	SELECT * FROM #TRANSLATION
 

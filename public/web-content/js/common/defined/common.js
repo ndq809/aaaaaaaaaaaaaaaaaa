@@ -444,7 +444,6 @@ function initEvent() {
      $(document).on('keydown', function(e) {
         switch (e.which) {
             case 13:
-                e.preventDefault();
                 if(!e.shiftKey && $('.comment-input:focus').length!=0){
                     $('.comment-input:focus').next().find('button').trigger('click');
                 }

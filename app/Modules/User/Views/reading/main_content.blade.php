@@ -32,11 +32,14 @@
 @endif
 <div class="col-xs-12 no-padding">
     <div class="col-xs-6 padding-custom">
-        <textarea class="form-control input-sm" readonly="readonly" id="en_textarea" rows="25" placeholder="Copy nội dung cần dịch của bạn vào"></textarea>
+        <textarea class="form-control input-sm" readonly="readonly" id="en_textarea" rows="30" placeholder=""></textarea>
     </div>
      <div class="col-xs-6 padding-custom">
-        <textarea class="form-control input-sm" readonly="readonly" id="vi_textarea" rows="25" placeholder="Copy nội dung cần dịch của bạn vào"></textarea>
+        <textarea class="form-control input-sm" readonly="readonly" id="vi_textarea" rows="30" placeholder=""></textarea>
     </div>
+</div>
+<div class="col-xs-12 padding-custom">
+    <button class="btn btn-sm btn-primary col-xs-12 margin-top" id="btn-separate" type="button">Phân tách thành từng câu</button>
 </div>
 <div class="col-xs-12 padding-custom example-content">
     <div class="col-xs-12 no-padding">

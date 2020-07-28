@@ -9,6 +9,7 @@ GO
 CREATE PROCEDURE [dbo].[SPC_TRANSLATION_ACT1]
 	 @P_post_id		        NVARCHAR(15)		= ''
 ,	 @P_post_title		    NVARCHAR(250)		= ''
+,	 @P_post_title_tran		NVARCHAR(250)		= ''
 ,	 @P_post_tag		    NVARCHAR(MAX)		= ''
 ,    @P_en_text     		NTEXT				= ''
 ,    @P_vi_text     		NTEXT				= ''
@@ -98,12 +99,22 @@ BEGIN
 			FROM #TAG
 		END
 
-		INSERT INTO F010(
-			 post_title
-		,	 en_text
-		,	 vi_text
+		INSERT INTO M007 (
+			 record_div     
+		,	 catalogue_div     
+		,	 catalogue_id
+		,	 group_id
 		,	 post_div
-		,	 briged_id
+		,	 briged_id 
+		,	 post_title 
+		,	 post_title_tran 
+		,	 post_content 
+		,	 post_content_tran 
+		,	 post_media
+		,	 post_media_nm
+		,	 media_div 
+		,	 post_view 
+		,	 post_rating 
 		,	 cre_user
 		,	 cre_prg
 		,	 cre_ip
@@ -119,11 +130,21 @@ BEGIN
 		,	 del_flg	
 		)
 		SELECT
-			 @P_post_title
+			 0	
+		,    NULL     
+		,	 NULL
+		,	 NULL
+		,	 1
+		,	 @w_briged_id 
+		,	 @P_post_title 
+		,	 @P_post_title_tran
 		,	 @P_en_text
 		,	 @P_vi_text
-		,	 @P_save_mode
-		,	 @w_briged_id
+		,	 NULL
+		,	 NULL
+		,	 NULL 
+		,	 0 
+		,	 0   		
 		,	 @P_user_id
 		,	 @w_program_id
 		,	 @P_ip
@@ -193,7 +214,7 @@ BEGIN
 	BEGIN
 		SET @w_mode='update'
 		SET @w_inserted_key = @P_post_id
-		IF NOT EXISTS (SELECT 1 FROM F010 WHERE F010.post_id = @P_post_id AND F010.del_flg = 0) --code not exits 
+		IF NOT EXISTS (SELECT 1 FROM M007 WHERE M007.post_id = @P_post_id AND M007.del_flg = 0) --code not exits 
 		BEGIN
 		 SET @w_result = 'NG'
 		 SET @w_message = 5
@@ -206,7 +227,7 @@ BEGIN
 		END
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
 
-		SELECT @w_briged_id = F010.briged_id FROM F010 WHERE F010.post_id = @P_post_id
+		SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
 		IF @w_briged_id IS NULL
 		BEGIN
 			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
@@ -227,16 +248,17 @@ BEGIN
 			FROM #TAG
 		END
 		
-		UPDATE F010 SET 
-			 en_text		=	@P_en_text   
-		,	 vi_text		=	@P_vi_text   
-		,	 post_div		=	@P_save_mode   
-		,	 upd_user		=	@P_user_id
-		,	 upd_prg		=	@w_program_id
-		,	 upd_ip			=	@P_ip
-		,	 upd_date		=	@w_time
-		WHERE F010.post_id	=	@P_post_id
-		AND F010.del_flg	=	0
+		UPDATE M007 SET 
+			 briged_id 			=	@w_briged_id 
+		,	 post_title 		=	@P_post_title 
+		,	 post_title_tran	=	@P_post_title_tran 
+		,	 post_content 		=	@P_en_text
+		,	 post_content_tran 	=	@P_vi_text
+		,	 upd_user			=	@P_user_id
+		,	 upd_prg			=	@w_program_id
+		,	 upd_ip				=	@P_ip
+		,	 upd_date			=	@w_time
+		WHERE M007.post_id = @P_post_id
 
 		SET @w_inserted_key = @P_post_id
 

@@ -531,6 +531,7 @@ function showEditPost(tr_tag){
     $('#post_tag').selectize()[0].selectize.setValue(thisposttag);
     $('#post_id').val(post[0]['post_id']);
     $('#post_title').val(post[0]['post_title']);
+    $('#post_title_tran').val(post[0]['post_title_tran']);
     $('#en_text').val(post[0]['en_text']);
     $('#vi_text').val(post[0]['vi_text']);
     $('#en_text').trigger('change');

@@ -86,7 +86,7 @@ BEGIN
 	TEMP.vocabulary_code = M006.id
 	WHERE M006.del_flg = 0 
 	AND		(	(@P_Vocabulary_nm		= '')
-		OR	(	M006.Vocabulary_nm	LIKE '%' + @P_Vocabulary_nm + '%'))
+		OR	(	M006.Vocabulary_nm	LIKE @P_Vocabulary_nm + '%'))
 	AND		(	(@P_mean		= '')
 		OR	(	M006.mean	LIKE '%' + @P_mean + '%'))
 	AND		(	(@P_specialized_div	= 0)
@@ -104,8 +104,7 @@ BEGIN
 		*
 	FROM #P003
 	ORDER BY
-		#P003.vocabulary_id ASC
-	,	#P003.vocabulary_dtl_id ASC
+		#P003.vocabulary_nm
 	OFFSET (@P_page-1) * @P_page_size ROWS
 	FETCH NEXT @P_page_size ROWS ONLY
 

@@ -50,7 +50,7 @@
 </div>
 @if(!isset($paging))
     @php
-        $paging=array('page' => 6,'pagesize' => 15,'totalRecord' => 0,'pageMax'=>10 )
+        $paging=array('page' => 1,'pagesize' => 100,'totalRecord' => 100,'pageMax'=>1 )
     @endphp
 @endif
 @if($paging['totalRecord'] != 0)
