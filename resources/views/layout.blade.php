@@ -142,35 +142,35 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/discuss">
-                                        Hỏi Đáp
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="/dictionary">
                                         Từ Điển E+
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="/relax">
                                         Giải Trí
                                     </a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="/translation">
                                         Dịch Thuật
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="/discuss">
+                                        Hỏi Đáp
+                                    </a>
+                                </li>
+                                <!-- <li>
                                     <a href="/contribute">
                                         Đóng Góp
                                     </a>
-                                </li>
-                                <li>
+                                </li> -->
+                                <!-- <li>
                                     <a id="post-face">
                                         Post face
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </nav>

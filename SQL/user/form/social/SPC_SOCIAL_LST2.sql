@@ -41,6 +41,7 @@ BEGIN
 	,	cre_date			DATETIME2
 	,	edit_date			DATETIME2
 	,	remembered			INT
+	,	reported			INT
 	,	del_flg				INT
 	)
 
@@ -67,6 +68,7 @@ BEGIN
 	,	link_id			INT
 	,	reply_id		INT
 	,	target_id		INT
+	,	account_id		NVARCHAR(50)
 	,	cre_user		NVARCHAR(50)
 	,	avarta			NVARCHAR(1000)
 	,	rank			NVARCHAR(50)
@@ -108,7 +110,6 @@ BEGIN
     )
 	END
 
-
 	IF NOT EXISTS (SELECT * FROM #TAG)
 	BEGIN
 		INSERT INTO #SOCIAL
@@ -131,6 +132,7 @@ BEGIN
 			,	F008.cre_date
 			,	M007.upd_date
 			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			,	IIF(F006.report_id IS NULL,0,1) AS reported
 			,	M007.del_flg
 			FROM M007
 			INNER JOIN F008
@@ -149,6 +151,10 @@ BEGIN
 			AND F003.item_2 IS NULL
 			LEFT JOIN S001 
 			ON S001.account_id = M007.cre_user
+			LEFT JOIN F006
+			ON M007.post_id = F006.target_id
+			AND F006.execute_div = 1
+			AND F006.user_id = @P_account_id
 			WHERE 0 =
 			CASE 
 				WHEN F003.item_1 IS NULL THEN M007.del_flg
@@ -207,6 +213,7 @@ BEGIN
 			,	F008.cre_date
 			,	M007.upd_date
 			,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+			,	IIF(F006.report_id IS NULL,0,1) AS reported
 			,	M007.del_flg
 			FROM M007
 			INNER JOIN F008
@@ -223,6 +230,10 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			LEFT JOIN F006
+			ON M007.post_id = F006.target_id
+			AND F006.execute_div = 1
+			AND F006.user_id = @P_account_id
 			LEFT JOIN S001 
 			ON S001.account_id = M007.cre_user
 			WHERE 0 =
@@ -281,6 +292,7 @@ BEGIN
 		,	F008.cre_date
 		,	M007.upd_date
 		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+		,	IIF(F006.report_id IS NULL,0,1) AS reported
 		,	M007.del_flg
 		FROM M007
 		INNER JOIN F008
@@ -299,6 +311,10 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
+		LEFT JOIN F006
+		ON M007.post_id = F006.target_id
+		AND F006.execute_div = 1
+		AND F006.user_id = @P_account_id
 		LEFT JOIN S001 
 		ON S001.account_id = M007.cre_user
 		WHERE 0 =
@@ -392,6 +408,7 @@ BEGIN
 	,	IIF(F004.reply_id IS NULL,TEMP2.comment_id,F004.reply_id) AS link_id	
 	,	F004.reply_id	
 	,	F004.target_id	
+	,	S001.account_id	
 	,	S001.account_nm AS　cre_user	
 	,	M001.avarta
 	,	M999.content AS rank	

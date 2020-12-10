@@ -138,13 +138,7 @@
                 </table>
             </div>
             <div class="collapse in question close-when-small">
-                <div class="question-content">
-                    @include('practice')
-                </div>
-                <button class="btn btn-sm btn-primary margin-bottom margin-left {{$raw_data[0][0]['btn-answer']==1?'btn-answer':'btn-disabled'}}" type="button">Trả Lời</button>
-                <div class="left-hint ">
-                    <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
-                </div>
+                @include('practice')
             </div>
         </div>
         <div id="sectionB" class="tab-pane fade">

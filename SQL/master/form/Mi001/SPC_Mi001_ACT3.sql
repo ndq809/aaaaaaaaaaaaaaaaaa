@@ -73,6 +73,12 @@ BEGIN
 		WHERE F001.mission_user_div <> 2
 		AND S001.del_flg = 0
 
+		UPDATE _F013
+		SET _F013.status = NULL
+		FROM F013 _F013
+		INNER JOIN #MISSION _MISSION ON
+			_F013.mission_id = _MISSION.mission_id
+		AND _F013.account_id = _MISSION.account_id
 
 		INSERT INTO F013(
 			mission_id
@@ -109,7 +115,7 @@ BEGIN
 		,	0
 		,	0
 		,	NULL
-		,	1
+		,	NULL
 		,	0
 		,	@P_user_id
 		,	@w_program_id
@@ -124,6 +130,10 @@ BEGIN
 		,	NULL
 		,	NULL
 		FROM #MISSION
+		INNER JOIN F013
+		ON
+			F013.mission_id <> #MISSION.mission_id
+		AND F013.account_id <> #MISSION.account_id
 		
 		UPDATE F001 SET
 			F001.record_div =	2

@@ -476,7 +476,8 @@ function vote(callback){
         type: 'POST',
         url: '/social/vote',
         dataType: 'json',
-        // loading:true,
+        loading:true,
+        container: '.btn-vote',
         data: data,
         success: function(res) {
             switch (res.status) {

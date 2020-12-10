@@ -556,6 +556,27 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function getDenounce(Request $request)
+    {
+        $param               = $request->all();
+        $target              = $param['target'];      
+        $param['target'] = $this->hashids->decode($param['target'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
+        $data                = Dao::call_stored_procedure('SPC_COM_DENOUNCE', $param);
+        $view1               = view('denounce')
+                                ->with('denounce_data', $data[0])
+                                ->with('report_div', $param['report-div'])
+                                ->with('target', $target)->render();
+        $result              = array(
+            'status'     => 200,
+            'view1'      => $view1,
+            // 'data'       => $data[0],
+            'statusText' => 'success',
+        );
+        return response()->json($result);
+    }
+
     public function acceptMission(Request $request)
     {
         $param               = $request->all();
@@ -740,6 +761,34 @@ class CommonController extends ControllerUser
         return response()->json($result);
     }
 
+    public function Report(Request $request)
+    {
+        $param               = $request->all();
+        $param['target']    = $this->hashids->decode($param['target'])[0];
+        $param['user_id']    = Auth::user()->account_id;
+        $param['ip']         = $request->ip();
+        $data                = Dao::call_stored_procedure('SPC_COM_REPORT', $param);
+        if ($data[0][0]['Data'] == 'Exception' || $data[0][0]['Data'] == 'EXCEPTION') {
+            $result = array(
+                'status' => 208,
+                'data'   => $data[0],
+            );
+        } else if ($data[0][0]['Data'] != '') {
+            $result = array(
+                'status' => 207,
+                'data'   => $data[0],
+            );
+        } else {
+            $view  = view('denounce')->with('done', 1)->render();
+            $result = array(
+                'status'     => 200,
+                'view'       => $view,
+                'statusText' => 'success',
+            );
+        }
+        return response()->json($result);
+    }
+
     public function getMissionQuestion(Request $request)
     {
         $result           = [];
@@ -761,7 +810,7 @@ class CommonController extends ControllerUser
         }
         $data   = Dao::call_stored_procedure('SPC_COM_MISSION_QUESTION_LIST');
         $data   = $this->encodeID($data);
-        $view1  = view('practice')->with('data', $data[0])->render();
+        $view1  = view('practice')->with('data', $data[0])->with('type', 1)->render();
         $result = array(
             'status'     => 200,
             'view1'      => $view1,

@@ -13,7 +13,7 @@
     </ul>
     <div class="tab-content">
         <div id="sectionA" class="tab-pane fade active in">
-            <div class="left-header" data-target=".question" data-toggle="collapse">
+            <div class="left-header" data-target=".tag" data-toggle="collapse">
                 <table style="width: 100%">
                     <tbody>
                         <tr>
@@ -25,7 +25,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="collapse in question close-when-small">
+            <div class="collapse in tag close-when-small">
                 @if(isset($data_default)&&$data_default[0][0]['tag_id'] != '')
                     @foreach($data_default[0] as $index => $row)
                     <a class="tag-list" value="{{$row['tag_id']}}">{{$row['tag_nm']}}</a>

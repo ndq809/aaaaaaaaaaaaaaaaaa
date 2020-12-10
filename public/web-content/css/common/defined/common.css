@@ -1668,3 +1668,15 @@ select.tag-custom{
 #btn-cancel-mission:hover{
     text-decoration: underline;
 }
+
+.explan-content{
+    border-style: solid;
+    border-width: 10px;
+    border-image: url(/web-content/images/plugin-icon/tag4.png) 30;
+    /* -webkit-border-image: url(/web-content/images/plugin-icon/tag3.png) 150; */
+    -moz-border-image: url(/web-content/images/plugin-icon/tag4.png) 30;
+    -o-border-image: url(/web-content/images/plugin-icon/tag4.png) 30;
+    /* border-image-slice: 1000; */
+}
+
+

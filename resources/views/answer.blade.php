@@ -13,10 +13,12 @@
                   <a class="setting fa fa-gear dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   </a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle-o"></span> Xóa câu trả lời</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-info-circle"></span> Xóa câu trả lời,cảnh cáo</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-minus-circle"></span> Xóa câu trả lời,khóa acc</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle"></span> Xóa câu trả lời,xóa acc</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" class="btn-popup" popup-id="popup-box2" type='5' target="{{$row['comment_id']}}" report-div="2"><span class="fa fa-times-circle-o" ></span> Báo cáo vi phạm</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" class="btn-popup" popup-id="popup-box2" type='6' target="{{$row['account_id']}}" report-div="3"><span class="fa fa-times-circle-o" ></span> Báo cáo người dùng</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle-o"></span> Xóa câu trả lời</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-info-circle"></span> Xóa câu trả lời,cảnh cáo</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-minus-circle"></span> Xóa câu trả lời,khóa acc</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle"></span> Xóa câu trả lời,xóa acc</a></li>
                     </ul>
                 </div>
                 <span class="date sub-text float-right comment-date">{{$row['cre_date']}}</span>
@@ -52,10 +54,12 @@
                                   <a class="setting fa fa-gear dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   </a>
                                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle-o"></span> Xóa câu trả lời</a></li>
-                                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-info-circle"></span> Xóa câu trả lời,cảnh cáo</a></li>
-                                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-minus-circle"></span> Xóa câu trả lời,khóa acc</a></li>
-                                      <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle"></span> Xóa câu trả lời,xóa acc</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" class="btn-popup" popup-id="popup-box2" type='5' target="{{$row1['comment_id']}}" report-div="2"><span class="fa fa-times-circle-o" ></span> Báo cáo vi phạm</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" class="btn-popup" popup-id="popup-box2" type='6' target="{{$row1['account_id']}}" report-div="3"><span class="fa fa-times-circle-o" ></span> Báo cáo người dùng</a></li>  
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle-o"></span> Xóa câu trả lời</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-info-circle"></span> Xóa câu trả lời,cảnh cáo</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-minus-circle"></span> Xóa câu trả lời,khóa acc</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1"><span class="fa fa-times-circle"></span> Xóa câu trả lời,xóa acc</a></li>
                                     </ul>
                                 </div>
                                <span class="date sub-text comment-date float-right">{{$row1['cre_date']}}</span>

@@ -23,11 +23,18 @@
         </div>
     </div>
     <div class=" col-xs-12 no-padding rate-bar social-box" target-id="{{$row['row_id']}}">
-        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'btn-vote':'btn-disabled'}}" disabled="disabled"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
+        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'btn-vote btn-default':'btn-disabled'}}" disabled="disabled"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
         <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar no-padding">
                 <div class="rateit my-vote" data-rateit-resetable="true" data-rateit-mode="font" data-rateit-value="{{$row['my_rate']}}" style="font-size:36px"> </div>
         </div>
-        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 btn-popup" popup-id="popup-box2"><span style="font-weight: bold;">Báo Cáo Bài Viết !</span></button>
+        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-12 {{$row['reported']==0?'btn-warning':'btn-danger'}} btn-popup" popup-id="popup-box2" type='7' target="{{$row['post_id']}}" report-div="1">
+            @if($row['reported']==0)
+            <span style="font-weight: bold;">Báo Cáo Bài Viết !</span>
+            @else
+            <i class="fa fa-warning"></i>
+            <span style="font-weight: bold;"> Đã Báo Cáo !</span>
+            @endif
+        </button>
     </div>
     @else
         @include('not_found',array('class'=>'social-box custom','target_id'=>$row['row_id']))

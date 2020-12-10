@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_M007_ACT1]
-	 @P_name_div			TINYINT			=   0
+	 @P_name_div			INT				=   0
 ,	 @P_type_json			NVARCHAR(MAX)	=   ''
 ,	 @P_user_id				VARCHAR(10)		=	''
 ,	 @P_ip					VARCHAR(20)		=	''

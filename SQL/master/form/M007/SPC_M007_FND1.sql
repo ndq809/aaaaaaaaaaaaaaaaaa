@@ -20,6 +20,5 @@ BEGIN
 	FROM M999
 	WHERE M999.name_div	= 999
 	AND M999.del_flg = 0
-	AND M999.number_id	!=	999
 END
 GO

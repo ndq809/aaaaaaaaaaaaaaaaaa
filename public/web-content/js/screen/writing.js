@@ -436,7 +436,7 @@ function getData() {
                             }
                         });
                     });
-                    if($('.table-right tbody tr[id='+getRowId($('#target-id').attr('value'))+']').parents('.tab-pane').attr('id')=='tab2'){
+                    if($('#target-id').attr('value')!='' && $('.table-right tbody tr[id='+getRowId($('#target-id').attr('value'))+']').parents('.tab-pane').attr('id')=='tab2'){
                         switchTabCustom(2);
                         switchTab(2);
                     }else{

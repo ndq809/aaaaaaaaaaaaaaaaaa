@@ -27,6 +27,7 @@ BEGIN
 	,	M004.question_div
 	,	M005.answer_id
 	,	M005.answer_content
+	,	M004.explan
 	,	M005.verify
 	,	ROW_NUMBER() OVER(partition by M004.post_id ORDER BY M004.post_id ASC) AS question_num	
 	,	-1 AS row_id
@@ -36,4 +37,3 @@ BEGIN
 	WHERE 
 		M004.question_id IN (SELECT TOP 1 M004.question_id FROM M004 INNER JOIN M007 ON M004.post_id = M007.post_id AND M007.catalogue_div = 11 AND M007.record_div <> 0 ORDER BY NEWID())
 END
-

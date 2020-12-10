@@ -441,6 +441,15 @@ function initEvent() {
         checkMissionAnswer();
     })
 
+    $(document).on('click','.btn-report',function(){
+        report();
+    })
+
+    
+    $(document).on('click','.question .btn-refresh',function(){
+        getMissionQuestion(1);
+    })
+
      $(document).on('keydown', function(e) {
         switch (e.which) {
             case 13:
@@ -471,7 +480,12 @@ function initEvent() {
         getMission(_clicked_modal);
     });
 
-    $(document).on('hidden.bs.modal', '#popup-box4', function (event) {
+    $(document).on('shown.bs.modal', '#popup-box2', function (event) {
+        getDenounce(_clicked_modal);
+    });
+
+
+    $(document).on('hidden.bs.modal', '#popup-box4,#popup-box2', function (event) {
         $(this).find('.modal-content').html('');
     });
 
@@ -1254,7 +1268,7 @@ function getMissionQuestion(mode) {
         success: function(respon) {
             switch (respon.status) {
                 case 200:
-                    $('.question .question-content').html(respon.view1);
+                    $('.question').html(respon.view1);
                     _current_answer = respon.data;
                     if(respon.result.status==1){
                         completeMission(function(res){
@@ -1322,7 +1336,10 @@ function checkMissionAnswer(){
     setTimeout(function(){
         if(check==0){
             $('.question').removeClass('right-answer');
-            getMissionQuestion(1);
+            $('.explan-content').removeClass('hidden');
+            $('.btn-answer').addClass('hidden');
+            $('.btn-refresh').removeClass('hidden');
+            // getMissionQuestion(1);
         }else{
             $('.question-content .answer-box input').prop('checked',false);
             $('.question').removeClass('wrong-answer');
@@ -1349,6 +1366,42 @@ function getMission(target) {
                     //     $('#popup-box4 .mission-content').addClass('chorme');
                     // }
                     $('#popup-box4 #mission-level').trigger('change');
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function getDenounce(target) {
+    var data = {};
+    data['type'] = $(target).attr('type');
+    data['target'] = $(target).attr('target');
+    data['report-div'] = $(target).attr('report-div');
+    $.ajax({
+        type: 'POST',
+        url: '/common/getDenounce',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box2 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#popup-box2 .modal-content').html(res.view1);
                     break;
                 case 201:
                     clearFailedValidate();
@@ -1498,6 +1551,49 @@ function completeMission(callback,mode) {
             switch (res.status) {
                 case 200:
                     callback(res);
+                    break;
+                case 201:
+                    clearFailedValidate();
+                    showFailedValidate(res.error);
+                    break;
+                case 208:
+                    clearFailedValidate();
+                    showMessage(4);
+                    break;
+                default:
+                    break;
+            }
+        },
+        // Ajax error
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function report(callback,mode) {
+    var data = {};
+    data['target'] = $('.report-box #target').val();
+    data['report_div'] = $('.report-box #report-div').val();
+    data['checklist'] = '';
+    $('.report-box .checkbox:checked').each(function(){
+        data['checklist'] += $(this).attr('id').split('report')[1]+',';
+    })
+    data['checklist'] = data['checklist'].slice(0, -1);
+    data['note'] = $('.report-box textarea').val();
+    $.ajax({
+        type: 'POST',
+        url: '/common/report',
+        dataType: 'json',
+        loading: true,
+        container: '#popup-box2 .modal-content',
+        data: data, //convert to object
+        success: function(res) {
+            switch (res.status) {
+                case 200:
+                    $('#popup-box2 .modal-content').html(res.view);
+                    $(_clicked_modal).addClass('btn-danger');
+                    $(_clicked_modal).html('<i class="fa fa-warning"></i><span style="font-weight: bold;"> Đã Báo Cáo !</span>');
                     break;
                 case 201:
                     clearFailedValidate();
@@ -1871,6 +1967,13 @@ function getInputData(parent){
               return item;
             });
             value=text.join('');
+        }else
+        if($(this).hasClass('checkbox')){
+            if($(this).is(':checked')){
+                value = 1;
+            }else{
+                value = 0;
+            }
         }else
         if($(this).hasClass('tel')){
             var text = jQuery.grep($(this).val().split('-'), function(item) {

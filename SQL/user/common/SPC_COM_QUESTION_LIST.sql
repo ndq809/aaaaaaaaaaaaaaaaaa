@@ -30,6 +30,7 @@ BEGIN
 	,	M005.answer_id
 	,	M005.answer_content
 	,	M005.verify
+	,	M004.explan
 	,	ROW_NUMBER() OVER(partition by M004.post_id ORDER BY M004.post_id ASC) AS question_num	
 	,	@P_row_id AS row_id
 	FROM M004

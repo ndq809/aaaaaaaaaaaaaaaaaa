@@ -148,6 +148,7 @@ function initListener() {
         if(listen_id!='collapse0'){
             $('.main-content').html('').addClass('hidden');
             $('.jp-progress>div').addClass('unclickable');
+            $('.jp-controls>.jp-stop').addClass('unclickable');
         }
     })
 
@@ -160,6 +161,7 @@ function initListener() {
             timer=undefined;
             $("#jquery_jplayer_2").jPlayer( "pause",parseFloat(startTime));
             $('.jp-progress>div').removeClass('unclickable');
+            $('.jp-controls>.jp-stop').removeClass('unclickable');
 
         }
 

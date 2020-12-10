@@ -134,6 +134,7 @@ function mi001_execute(page){
                     html: true
                 });
             });
+            _data_delete = [];
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {

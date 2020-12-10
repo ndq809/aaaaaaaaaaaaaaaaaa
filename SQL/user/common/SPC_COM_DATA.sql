@@ -118,6 +118,18 @@ BEGIN
 	AND F013.condition < 2
 	AND F013.status = 1
 
+	SELECT 
+		m999.number_id		AS	denounce_code
+	,	M999.num_remark1	AS	denounce_remark
+	,	M999.content		AS	denounce_name
+	,	value				AS	type
+	FROM M999
+	CROSS APPLY STRING_SPLIT(M999.text_remark1, ',')
+	WHERE 
+		name_div=10
+	AND number_id !=0
+	ORDER BY value,num_remark1
+
 	--EXEC SPC_COM_MISSION_QUESTION_LIST
 END
 

@@ -115,6 +115,7 @@ EXIT_SPC:
 	,	F004.comment_id		AS comment_id
 	,	'' AS reply_id
 	,	F004.target_id
+	,	S001.account_id	
 	,	S001.account_nm AS cre_user
 	,	M001.avarta
 	,	M999.content AS rank

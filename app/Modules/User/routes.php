@@ -81,6 +81,7 @@ Route::group(
 		Route::post('getgroup', 'CommonController@getgroup');
 		Route::any('getQuestion','CommonController@getQuestion');
 		Route::any('getMission','CommonController@getMission');
+		Route::any('getDenounce','CommonController@getDenounce');
 		Route::any('acceptMission','CommonController@acceptMission');
 		Route::any('refuseMission','CommonController@refuseMission');
 		Route::any('doMission','CommonController@doMission');
@@ -90,6 +91,7 @@ Route::group(
 		Route::any('loadMoreComment','CommonController@loadMoreComment');
 		Route::post('getGrammarSuggest', 'CommonController@getGrammarSuggest');
 		Route::any('delete','CommonController@deletePost');
+		Route::any('report','CommonController@Report');
 	}
 );
 

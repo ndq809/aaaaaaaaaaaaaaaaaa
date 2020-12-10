@@ -11,7 +11,7 @@
                     <th width="50px">Mã NV</th>
                     <th width="150px">Loại NV</th>
                     <th width="150px">Loại Dữ Liệu NV</th>
-                    <th width="150px">Loại Danh Mục</th>
+                    <th width="180px">Loại Danh Mục</th>
                     <th width="150px">Tên Danh Mục</th>
                     <th width="100px">Tên Nhóm</th>
                     <th>Tên NV</th>
