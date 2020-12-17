@@ -2,11 +2,14 @@
 
 namespace Illuminate\Mail;
 
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Mail\Factory as MailFactory;
 use Illuminate\Contracts\Mail\Mailable as MailableContract;
-use Illuminate\Contracts\Mail\Mailer as MailerContract;
 
 class SendQueuedMailable
 {
+    use Queueable;
+
     /**
      * The mailable message instance.
      *
@@ -39,17 +42,18 @@ class SendQueuedMailable
         $this->mailable = $mailable;
         $this->tries = property_exists($mailable, 'tries') ? $mailable->tries : null;
         $this->timeout = property_exists($mailable, 'timeout') ? $mailable->timeout : null;
+        $this->afterCommit = property_exists($mailable, 'afterCommit') ? $mailable->afterCommit : null;
     }
 
     /**
      * Handle the queued job.
      *
-     * @param  \Illuminate\Contracts\Mail\Mailer  $mailer
+     * @param  \Illuminate\Contracts\Mail\Factory  $factory
      * @return void
      */
-    public function handle(MailerContract $mailer)
+    public function handle(MailFactory $factory)
     {
-        $this->mailable->send($mailer);
+        $this->mailable->send($factory);
     }
 
     /**
@@ -65,7 +69,7 @@ class SendQueuedMailable
     /**
      * Call the failed method on the mailable instance.
      *
-     * @param  \Exception  $e
+     * @param  \Throwable  $e
      * @return void
      */
     public function failed($e)
@@ -76,17 +80,17 @@ class SendQueuedMailable
     }
 
     /**
-     * Get the retry delay for the mailable object.
+     * Get number of seconds before a released mailable will be available.
      *
      * @return mixed
      */
-    public function retryAfter()
+    public function backoff()
     {
-        if (! method_exists($this->mailable, 'retryAfter') && ! isset($this->mailable->retryAfter)) {
+        if (! method_exists($this->mailable, 'backoff') && ! isset($this->mailable->backoff)) {
             return;
         }
 
-        return $this->mailable->retryAfter ?? $this->mailable->retryAfter();
+        return $this->mailable->backoff ?? $this->mailable->backoff();
     }
 
     /**

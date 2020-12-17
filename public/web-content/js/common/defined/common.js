@@ -21,7 +21,7 @@ function initCommon() {
             $.LoadingOverlay("hide");
         }
     }
-    if(jqXHR.responseJSON.status =='206'){
+    if(jqXHR.responseJSON != undefined && jqXHR.responseJSON.status =='206'){
         showMessage(9,function(){
             window.location.reload();
         })

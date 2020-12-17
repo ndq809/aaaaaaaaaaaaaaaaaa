@@ -18,8 +18,8 @@ Route::get('/template', function () {
 });
 Route::get('master/', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('master/checkLogin', 'Auth\LoginController@login');
-Route::post('master/logout', 'Auth\LoginController@logout')->name('logout');
-Route::get('master/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('master/logout', 'Auth\LoginController@logout')->name('logoutpost');
+Route::get('master/logout', 'Auth\LoginController@logout')->name('logoutget');
 Route::post('keep-token-alive', function() {
     return 'Token must have been valid, and the session expiration has been extended.'; //https://stackoverflow.com/q/31449434/470749
 });

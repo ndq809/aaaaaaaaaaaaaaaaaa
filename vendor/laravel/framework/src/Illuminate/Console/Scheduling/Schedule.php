@@ -19,6 +19,14 @@ class Schedule
 {
     use Macroable;
 
+    const SUNDAY = 0;
+    const MONDAY = 1;
+    const TUESDAY = 2;
+    const WEDNESDAY = 3;
+    const THURSDAY = 4;
+    const FRIDAY = 5;
+    const SATURDAY = 6;
+
     /**
      * All of the events on the schedule.
      *
@@ -66,7 +74,7 @@ class Schedule
 
         if (! class_exists(Container::class)) {
             throw new RuntimeException(
-                'A container implementation is required to use the scheduler. Please install illuminate/container.'
+                'A container implementation is required to use the scheduler. Please install the illuminate/container package.'
             );
         }
 
@@ -91,7 +99,7 @@ class Schedule
     public function call($callback, array $parameters = [])
     {
         $this->events[] = $event = new CallbackEvent(
-            $this->eventMutex, $callback, $parameters
+            $this->eventMutex, $callback, $parameters, $this->timezone
         );
 
         return $event;
@@ -149,7 +157,7 @@ class Schedule
         if ($job instanceof Closure) {
             if (! class_exists(CallQueuedClosure::class)) {
                 throw new RuntimeException(
-                    'To enable support for closure jobs, please install illuminate/queue.'
+                    'To enable support for closure jobs, please install the illuminate/queue package.'
                 );
             }
 
@@ -278,11 +286,11 @@ class Schedule
      */
     public function useCache($store)
     {
-        if ($this->eventMutex instanceof CacheEventMutex) {
+        if ($this->eventMutex instanceof CacheAware) {
             $this->eventMutex->useStore($store);
         }
 
-        if ($this->schedulingMutex instanceof CacheSchedulingMutex) {
+        if ($this->schedulingMutex instanceof CacheAware) {
             $this->schedulingMutex->useStore($store);
         }
 
@@ -301,7 +309,7 @@ class Schedule
                 $this->dispatcher = Container::getInstance()->make(Dispatcher::class);
             } catch (BindingResolutionException $e) {
                 throw new RuntimeException(
-                    'Unable to resolve the dispatcher from the service container. Please bind it or install illuminate/bus.',
+                    'Unable to resolve the dispatcher from the service container. Please bind it or install the illuminate/bus package.',
                     $e->getCode(), $e
                 );
             }

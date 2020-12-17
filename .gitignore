@@ -6,3 +6,9 @@
 *.png
 *.jpg
 public/web-content/file/temp
+*.bak
+*.mp3
+*.bak
+*.bak
+SQL/database/EPLUS.bak
+.env
