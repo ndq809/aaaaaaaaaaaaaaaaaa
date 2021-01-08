@@ -423,7 +423,7 @@ function getData() {
         url: '/listening/getData',
         dataType: 'json',
         process:true,
-        // loading:true,
+        loading:true,
         data: $.extend({}, data), //convert to object
         success: function(res) {
             switch (res.status) {

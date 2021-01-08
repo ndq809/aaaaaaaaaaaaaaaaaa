@@ -1,0 +1,12 @@
+.table-fixed-width {
+    overflow-x: unset;
+    overflow-y: unset;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown a{
+    pointer-events: none;
+}

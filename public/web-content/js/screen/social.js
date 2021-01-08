@@ -339,6 +339,7 @@ function getData(mode) {
         url: '/social/getData',
         dataType: 'json',
         process:true,
+        loading:true,
         data: data, //convert to object
         success: function(res) {
             switch (res.status) {

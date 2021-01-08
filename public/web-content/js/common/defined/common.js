@@ -27,6 +27,12 @@ function initCommon() {
         })
     }
 
+    if(jqXHR.responseJSON != undefined && jqXHR.responseJSON.status =='204'){
+        showMessage(43,function(){
+            window.location.reload();
+        })
+    }
+
     $('.table-fixed-width table').each(function(){
         $(this).css('min-width',$(this).parent().attr('min-width'));
     })

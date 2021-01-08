@@ -29,6 +29,5 @@ BEGIN
 	WHERE ((@P_name_div	=	100)
 	OR (M999.name_div	=	@P_name_div))
 	AND M999.del_flg	=	0
-	AND M999.number_id	!=	999
 END
 

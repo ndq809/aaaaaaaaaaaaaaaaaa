@@ -212,5 +212,10 @@ return [
             'message_title' => 'Xem Ngay',
             'message_content' => 'Thêm bài viết từ vựng thành công! Bạn có muốn hiển thị ngay bây giờ?',
         ],
+        43 => [
+            'message_div' => 4,
+            'message_title' => 'Rớt Hạng',
+            'message_content' => 'Bạn đã treo máy quá lâu!<br>Trình duyệt sẽ tự tải lại xin lỗi bạn vì sự bất tiện này',
+        ],
     ],
 ];

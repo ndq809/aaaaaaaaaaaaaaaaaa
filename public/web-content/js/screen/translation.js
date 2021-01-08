@@ -241,7 +241,7 @@ function getData() {
         type: 'POST',
         url: '/translation/getData',
         dataType: 'json',
-        // loading:true,
+        loading:true,
         data: data, //convert to object
         success: function(res) {
             switch (res.status) {

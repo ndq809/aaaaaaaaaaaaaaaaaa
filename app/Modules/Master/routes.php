@@ -221,3 +221,15 @@ Route::group(
 	}
 );
 
+$namespace10 = 'App\Modules\Master\Controllers\Denounce';
+Route::group(
+	['namespace' => $namespace10,'prefix'=>'master/denounce','middleware'=>['web','CheckPermission']],
+	function() {
+		Route::get('d001','d001Controller@getIndex');
+		Route::post('d001/list'  ,'d001Controller@d001_list');
+		Route::post('d001/list-user'  ,'d001Controller@d001_listUser');
+		Route::post('d001/update','d001Controller@d001_update');
+		Route::post('d001/target','d001Controller@d001_target');	
+	}
+);
+
