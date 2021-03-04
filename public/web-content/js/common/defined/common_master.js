@@ -1044,9 +1044,18 @@ function getInputData(exe_mode,parent_class){
     return data;
 }
 
-function getTableData(table){
+function getTableData(table,invisible){
+    if(invisible==undefined){
+        invisible = false;
+    }
     var data=[];
-    table.find('tbody tr:visible').each(function(i){
+    var executeList;
+    if(invisible){
+        executeList = table.find('tbody tr');
+    }else{
+        executeList = table.find('tbody tr:visible');
+    }
+    executeList.each(function(i){
         var row_data={};
         var temp='';
         row_data['row_id']=i;
@@ -1103,8 +1112,12 @@ function getTableTdData(table){
     }
 }
 
-function getTableBodyData(table){
+function getTableBodyData(table,row_select){
     var data=[];
+    var checkbox;
+    if(row_select==undefined){
+        row_select = false;
+    }
     table.find('tbody:visible').each(function(){
         var row_data={};
         var temp='';
@@ -1127,6 +1140,7 @@ function getTableBodyData(table){
                 }else{
                     row_data[$(this).attr('refer-id')]=0;
                 }
+                checkbox = row_data[$(this).attr('refer-id')];
             }else{
                 row_data[$(this).attr('refer-id')]=$(this).val();
             }
@@ -1136,8 +1150,10 @@ function getTableBodyData(table){
                 temp+=$(this).val().trim();
             }
         })
-        if(temp!='')
-        data.push(row_data);
+        if(row_select==false||(row_select==true&&checkbox==1)){
+            if(temp!='')
+            data.push(row_data);
+        }
     })
     if(data.length==0){
         return null;
