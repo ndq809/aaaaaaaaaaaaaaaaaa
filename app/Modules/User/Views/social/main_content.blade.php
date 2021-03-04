@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="col-xs-12 no-padding social-box" target-id="{{$row['row_id']}}">
-         <div class="main-content" id="noiDungNP" style="border-left: #ccc solid 1px; border-bottom: #ccc solid 1px;">
+         <div class="main-content" id="noiDungNP" style="border-left: rgb(97, 97, 97) solid 1px; border-bottom: #ccc solid 1px;">
             {!!$row['post_content']!!}
         </div>
     </div>

@@ -214,8 +214,13 @@ return [
         ],
         43 => [
             'message_div' => 4,
-            'message_title' => 'Rớt Hạng',
+            'message_title' => 'Hết Phiên Làm Việc',
             'message_content' => 'Bạn đã treo máy quá lâu!<br>Trình duyệt sẽ tự tải lại xin lỗi bạn vì sự bất tiện này',
+        ],
+        44 => [
+            'message_div' => 4,
+            'message_title' => 'Tài Khoản Bị Khóa',
+            'message_content' => 'Tài khoản của bạn đã bị tố cáo bởi những người dùng khác và bị khóa đến xxx do vi phạm các quy tắc cộng đồng của chúng tôi!<br>tài khoản của bạn sẽ tự động đăng xuất.<br><a>xem chi tiết</a>',
         ],
     ],
 ];

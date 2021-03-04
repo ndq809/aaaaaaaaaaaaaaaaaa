@@ -149,18 +149,19 @@ BEGIN
 			AND F003.connect_div = 3
 			AND F003.user_id = @P_account_id
 			AND F003.item_2 IS NULL
+			AND 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 			LEFT JOIN S001 
 			ON S001.account_id = M007.cre_user
 			LEFT JOIN F006
 			ON M007.post_id = F006.target_id
 			AND F006.execute_div = 1
 			AND F006.user_id = @P_account_id
-			WHERE 0 =
-			CASE 
-				WHEN F003.item_1 IS NULL THEN M007.del_flg
-				ELSE 0
-			END
-			AND M007.catalogue_div = 4
+			WHERE 
+				M007.catalogue_div = 4
 			AND M007.post_div = 2
 			AND M007.record_div = 2
 			AND F003.item_1 IS NULL
@@ -311,18 +312,19 @@ BEGIN
 		AND F003.connect_div = 3
 		AND F003.user_id = @P_account_id
 		AND F003.item_2 IS NULL
+		AND 0 =
+			CASE 
+				WHEN F003.item_1 IS NULL THEN M007.del_flg
+				ELSE 0
+			END
 		LEFT JOIN F006
 		ON M007.post_id = F006.target_id
 		AND F006.execute_div = 1
 		AND F006.user_id = @P_account_id
 		LEFT JOIN S001 
 		ON S001.account_id = M007.cre_user
-		WHERE 0 =
-			CASE 
-				WHEN F003.item_1 IS NULL THEN M007.del_flg
-				ELSE 0
-			END
-		AND M007.catalogue_div = 4
+		WHERE 
+			M007.catalogue_div = 4
 		AND M007.post_div = 2
 		AND M007.record_div = 2
 		)TEMP WHERE (TEMP.row_count <= 20 * @P_loadtime)

@@ -39,6 +39,7 @@ BEGIN
 	,	link_id			INT
 	,	reply_id		INT
 	,	target_id		INT
+	,	account_id		NVARCHAR(50)
 	,	cre_user		NVARCHAR(50)
 	,	avarta			NVARCHAR(1000)
 	,	rank			NVARCHAR(50)
@@ -88,6 +89,7 @@ BEGIN
 	,	IIF(F004.reply_id IS NULL,TEMP2.comment_id,F004.reply_id) AS link_id	
 	,	F004.reply_id	
 	,	F004.target_id	
+	,	S001.account_id	
 	,	S001.account_nm AS cre_user	
 	,	M001.avarta
 	,	M999.content AS rank	

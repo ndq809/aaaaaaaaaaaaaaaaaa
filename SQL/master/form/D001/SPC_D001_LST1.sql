@@ -12,12 +12,13 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_D001_LST1]
-	@P_denounce_div			INT					=	0
-,	@P_date_from			NVARCHAR(15)		=	''
+	@P_date_from			NVARCHAR(15)		=	''
 ,	@P_date_to				NVARCHAR(15)		=	'' 
-,	@P_is_done				INT					=	0
+,	@P_user_name			NVARCHAR(50)		=	'' 
 ,	@P_page_size			INT					=	50
 ,	@P_page					INT					=	1
+,	@P_user_id				VARCHAR(10)			=	''
+,	@P_ip					VARCHAR(20)			=	''
 
 AS
 BEGIN
@@ -26,6 +27,7 @@ BEGIN
 	--
 	DECLARE 
 		@ERR_TBL			ERRTABLE
+	,	@w_time				DATETIME2			= SYSDATETIME()
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
 	,	@w_date_from		DATETIME2			=	NULL
@@ -39,6 +41,7 @@ BEGIN
 		report_id	      	INT
 	,	target_id	      	NVARCHAR(15)
 	,	target_nm	      	NVARCHAR(MAX)
+	,	target_nm_detail	NVARCHAR(MAX)
 	,	denounce_div      	INT	
 	,	target_own_id    	INT
 	,	checklist		    NVARCHAR(MAX)
@@ -58,6 +61,7 @@ BEGIN
 		id					INT				IDENTITY(1,1) NOT NULL
 	,	target_id	      	NVARCHAR(15)
 	,	target_nm	      	NVARCHAR(MAX)
+	,	target_nm_detail	NVARCHAR(MAX)
 	,	denounce_div      	INT	
 	,	denounce_div_nm     NVARCHAR(100)	
 	,	denounce_count    	INT
@@ -79,6 +83,14 @@ BEGIN
 	)
 
 	--
+
+	UPDATE F006
+	SET
+		F006.status = 0
+	WHERE 
+		F006.status = 1
+	AND F006.upd_user = @P_user_id
+
 	INSERT INTO #D001_ALL
 	SELECT
 		 F006.report_id
@@ -89,8 +101,13 @@ BEGIN
 		 END
 	,	 CASE F006.execute_div
 		 WHEN 1 THEN M007.post_title
-		 WHEN 2 THEN F004.cmt_content
+		 WHEN 2 THEN SUBSTRING(F004.cmt_content,0,100)
 		 WHEN 3 THEN S001.account_nm
+		 END
+	,	 CASE F006.execute_div
+		 WHEN 1 THEN M007.post_content
+		 WHEN 2 THEN F004.cmt_content
+		 WHEN 3 THEN M001.avarta
 		 END
 	,	 F006.execute_div
 	,	 CASE F006.execute_div
@@ -103,21 +120,38 @@ BEGIN
 	FROM F006
 	LEFT JOIN S001 
 	ON	S001.account_id = F006.target_id
+	LEFT JOIN M001 
+	ON	S001.user_id = M001.user_id
 	LEFT JOIN F004
 	ON	F006.target_id = F004.comment_id
 	LEFT JOIN M007
 	ON	F006.target_id = M007.post_id
-	WHERE 
-			(	(@P_denounce_div		= 0)
-		OR	(	F006.execute_div = @P_denounce_div))
-	AND		(	(@P_is_done	= 0)
-		OR	(	F006.execute_div = @P_denounce_div))
-	AND		(	(@w_date_from		IS NULL)
+	WHERE
+			(	(@w_date_from		IS NULL)
 		OR	(	F006.cre_date>=@w_date_from))
 	AND		(	(@w_date_to		IS NULL)
 		OR	(	F006.cre_date<=@w_date_to))
+	AND		(	(ISNULL(F006.status,0) = 0)
+		OR	(	ISNULL(F006.status,0) = 1 AND F006.upd_user=@P_user_id)
+		OR	(	ISNULL(F006.status,0) = 1 AND F006.upd_user<>@P_user_id AND F006.upd_date<DATEADD(day,-1,@w_time))) 
 
-	SELECT * FROM #D001_ALL
+	DELETE _D001_ALL FROM #D001_ALL _D001_ALL
+	LEFT JOIN S001 
+	ON	S001.account_id = _D001_ALL.target_own_id
+	WHERE 
+		@P_user_name <> ''
+	AND	S001.account_nm NOT LIKE CONCAT('%',@P_user_name,'%')
+
+	UPDATE _F006
+	SET
+		_F006.status = 1
+	,	_F006.upd_user = @P_user_id
+	,	_F006.upd_ip = @P_ip
+	,	_F006.upd_prg = 'd001'
+	,	_F006.upd_date = @w_time
+	FROM F006 _F006
+	INNER JOIN #D001_ALL
+	ON _F006.report_id = #D001_ALL.report_id
 
 	INSERT INTO #D001_HEADER
 	SELECT 
@@ -162,6 +196,7 @@ BEGIN
 	SELECT
 		#D001_ALL.target_id
 	,	MAX(#D001_ALL.target_nm)
+	,	MAX(#D001_ALL.target_nm_detail)
 	,	#D001_ALL.denounce_div
 	,	MAX(M999.content)
 	,	COUNT(1)
@@ -180,13 +215,22 @@ BEGIN
 
 	--
 	SELECT 
-		*
+		_#D001_HEADER.id
+	,	ROW_NUMBER() OVER(PARTITION BY #D001_HEADER.target_own_id ORDER BY #D001_HEADER.target_own_id ASC) AS row_id
+	,	#D001_HEADER.target_own_id  
+	,	#D001_HEADER.target_own_nm  
+	,	#D001_HEADER.denounce_div   
+	,	#D001_HEADER.denounce_div_nm
+	,	#D001_HEADER.denounce_count
+	,	_#D001_HEADER.target_count
 	INTO #D001_HEADER_SIZE
 	FROM #D001_HEADER
-	ORDER BY
-		#D001_HEADER.denounce_count DESC
-	OFFSET (@P_page-1) * @P_page_size ROWS
-	FETCH NEXT @P_page_size ROWS ONLY
+	LEFT JOIN 
+	(SELECT ROW_NUMBER() OVER(ORDER BY #D001_HEADER.target_own_id ASC) AS id,target_own_id,COUNT(1) AS target_count FROM #D001_HEADER GROUP BY target_own_id)
+	AS _#D001_HEADER
+	ON #D001_HEADER.target_own_id = _#D001_HEADER.target_own_id
+	WHERE _#D001_HEADER.id <= @P_page_size
+	ORDER BY _#D001_HEADER.id
 
 	IF @P_page < 1
 	BEGIN
@@ -195,8 +239,13 @@ BEGIN
 	
 	-- GET TOTAL OF RECORDS
 	SET @totalRecord = (
-		SELECT COUNT(W1.id)	AS	total 
+	SELECT
+		COUNT(1)
+	FROM(
+		SELECT W1.target_own_id
 		FROM #D001_HEADER AS W1
+		GROUP BY W1.target_own_id
+		)AS W2
 	)
 
 	--

@@ -10,3 +10,11 @@
 .dropdown a{
     pointer-events: none;
 }
+
+.detail{
+    display: block;
+}
+
+.btn-detail{
+    padding: 0px 10px!important;
+}

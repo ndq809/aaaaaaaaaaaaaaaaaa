@@ -21,6 +21,23 @@ class CheckMultiAccess
      */
     public function handle($request, Closure $next, $guard = null)
     {
+        //check blocked account
+        if (Auth::guard($guard)->check()&&Auth::guard()->user()!==null&&Auth::guard()->user()->block_div!='') {
+            $block_end = Auth::user()->block_end!=''?date("d/m/Y H:m:s", strtotime(Auth::user()->block_end)):'Vĩnh Viễn';
+            Auth::guard()->logout();
+             $request->session()->invalidate();
+             if($request->ajax()){
+                return response()->json(['status'      => 205,
+                                        'data'   => $block_end,
+                                        'statusText'   => 'account blocked']);
+             }else{
+                return redirect()->back()->with('error', ['status'     => 205,
+                                                        'data'   => $block_end,
+                                                        'statusText'   => 'account blocked']);
+             }
+            
+        }
+        //check multi access
         if (Auth::guard($guard)->check()&&Auth::guard()->user()!==null&&\Session::getId()!==Auth::guard()->user()->session_id) {
             Auth::guard()->logout();
              $request->session()->invalidate();

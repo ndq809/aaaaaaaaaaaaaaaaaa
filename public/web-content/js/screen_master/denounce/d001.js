@@ -16,12 +16,10 @@ function initevent_d001(){
 		d001_execute(1);
 	})
 
-	$(document).on('click','#btn-save',function(){
-        if($('.table-focus tbody tr td.edit-row').length!=0){
-            showMessage(1,function(){
-                d001_update();
-           });
-        }
+	$(document).on('click','#btn-execute',function(){
+        showMessage(1,function(){
+            d001_update();
+        });
 	})
 
     $(document).on('click','#btn-refresh',function(){
@@ -44,12 +42,33 @@ function initevent_d001(){
     })
 
     $(document).on('change','.do-denounce',function(){
-        if($(this).val()!=0){
-            $(this).closest('tr').find('input[type=checkbox]').prop('checked',true);
-        }else{
-            $(this).closest('tr').find('input[type=checkbox]').prop('checked',false);
-        }
-        $(this).closest('tr').find('input[type=checkbox]').trigger('change');
+        var status = 0;
+        var result = $(this);
+        var executeList = $(this).closest('tbody').find('.do-denounce');
+        executeList.each(function(){
+            if($(this).val()>status){
+                status = $(this).val();
+                result = $(this);
+            }
+        })
+        $(this).closest('tbody').find('.result-flag span').text(result.find('option:selected').text());
+        $(this).closest('tbody').find('.result-flag input').val(status);
+    })
+
+    $(document).on('change','.do-denounce-detail',function(){
+        var own = $(this).closest('tr').attr('own');
+        var role = $(this).closest('tr').attr('role');
+        var status = 0;
+        var result = $(this);
+        var executeList = $(this).closest('tbody').find('tr[own='+own+'][role='+role+'] .do-denounce-detail');
+        executeList.each(function(){
+            if($(this).val()>status){
+                status = $(this).val();
+                result = $(this);
+            }
+        })
+        var parent = $('#denounce-header tbody tr').find('.data-filter[own='+own+'][role='+role+']').closest('tr');
+        parent.find('.do-denounce').val(status).trigger('change');
     })
 
     $(document).on('change','#time_div_s',function(){
@@ -62,6 +81,10 @@ function initevent_d001(){
             $('#date-from').prop('disabled',true);
             $('#date-to').prop('disabled',true);
             switch ($(this).val()) {
+                case '0':
+                    $('#date-from').val('');
+                    $('#date-to').val('');
+                    break;
                 case '1':
                     $('#date-from').val($.datepicker.formatDate('dd/m/yy',new Date(d.setDate(d.getDate()))));
                     $('#date-to').val($.datepicker.formatDate('dd/m/yy',new Date(now.setDate(now.getDate() + 1))));
@@ -87,6 +110,10 @@ function initevent_d001(){
         }
     })
 
+    $(document).on('click','.btn-detail',function(){
+        $(this).next('span').toggle();
+    })
+
     $(document).on('click','.data-filter',function(){
         var filteredTbody = $('#denounce-detail tbody');
         if($(this).attr('role')==undefined){
@@ -95,8 +122,6 @@ function initevent_d001(){
         }else{
             filteredTbody.find('tr[own='+$(this).attr("own")+'][role='+$(this).attr("role")+']').removeClass('hidden');
             filteredTbody.find('tr[own!='+$(this).attr("own")+'],tr[role!='+$(this).attr("role")+']').addClass('hidden');
-            console.log(filteredTbody.find('tr[own='+$(this).attr("own")+'][role='+$(this).attr("role")+']'));
-            console.log(filteredTbody.find('tr[own!='+$(this).attr("own")+'],tr[role!='+$(this).attr("role")+']'));
         }
     })
 
@@ -169,6 +194,12 @@ function d001_delete(){
 }
 
 function d001_update(trigger){
+    var data={};
+    data['data_header'] = getTableBodyData($('#denounce-header'));
+    data['data_detail'] = getTableData($('#denounce-detail'),true);
+    // data['data_validate']=getValidateTable();
+    // console.log(data['data_validate']);
+    // return;
     clearFailedDataTable();
     if(typeof trigger=='undefined')
         trigger=true;
@@ -177,7 +208,7 @@ function d001_update(trigger){
         url: '/master/denounce/d001/update',
         dataType: 'json',
         loading:true,
-        data: $.extend({}, _data_delete),//convert to object
+        data: data,//convert to object
         success: function (res) {
             switch(res.status){
                 case 200:
@@ -206,4 +237,16 @@ function d001_update(trigger){
             alert(jqXHR.status);
         }
     });
+}
+
+function getValidateTable(){
+    var data=[];
+    var row_data={};
+    $('#denounce-header tbody tr:visible').each(function(index){
+        row_data={};
+        row_data['row_id']=index;
+        row_data['denounce_div'] = $(this).find('.do-denounce').val();
+        data.push(row_data);
+    })
+    return data;
 }

@@ -32,5 +32,6 @@ return [
         'target_div'         => 'required',
         'title'              => 'required',
         'content'            => 'required',
+        'save_type'          => 'required|not_in:0',
     ],
 ];

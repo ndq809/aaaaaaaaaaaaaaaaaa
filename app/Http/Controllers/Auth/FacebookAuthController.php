@@ -27,6 +27,10 @@ class FacebookAuthController extends ControllerUser
         $user = Socialite::driver('facebook')->scopes([
             "publish_actions, manage_pages", "publish_pages"])->user();
         $authUser = $this->findOrCreateUser($user);
+        if($authUser->block_div!=''){
+            return redirect()->back()->with('error', ['status'       => 205,
+                                                      'statusText'   => 'account blocked']);
+        }
         if(isset($authUser->user_id)){
             $remember_me = true;
             $year = time() + 31536000;

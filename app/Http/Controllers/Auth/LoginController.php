@@ -127,12 +127,22 @@ class LoginController extends Controller
 
     protected function sendLoginResponse(Request $request)
     {
-        $request->session()->regenerate();
         $this->clearLoginAttempts($request);
-        $this->authenticated($request, $this->guard()->user());
-        return response()->json(['status'       => 200,
+        if(Auth::user()->block_div!=''){
+            $block_end = Auth::user()->block_end!=''?date("d/m/Y H:m:s", strtotime(Auth::user()->block_end)):'Vĩnh Viễn';
+            $this->guard()->logout();
+            $request->session()->invalidate();
+            return response()->json(['status'      => 205,
+                                    'block_time'   => $block_end,
+                                    'statusText'   => 'account_blocked',
+                                    ]);
+        }else{
+            $request->session()->regenerate();
+            $this->authenticated($request, $this->guard()->user());
+            return response()->json(['status'   => 200,
                                  'statusText'   => 'login success',
                                  ]);
+        }
     }
 
     /**

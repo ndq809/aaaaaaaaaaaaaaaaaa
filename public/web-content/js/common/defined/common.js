@@ -27,6 +27,14 @@ function initCommon() {
         })
     }
 
+    if(jqXHR.responseJSON != undefined && jqXHR.responseJSON.status =='205' && jqXHR.responseJSON.data !=undefined){
+        var param1 = {};
+        param1['value'] = [jqXHR.responseJSON.data];
+        showMessage(44,function(){
+            location.reload();
+        },function(){},param1);
+    }
+
     if(jqXHR.responseJSON != undefined && jqXHR.responseJSON.status =='204'){
         showMessage(43,function(){
             window.location.reload();
@@ -1752,6 +1760,14 @@ function checkLogin(username){
                     }, 1000);
                     }
                     break;
+                    case 205:
+                    // alert('tài khoản bị block do tố cáo');
+                        var param1 = {};
+                        param1['value'] = [res.block_time];
+                        showMessage(44,function(){
+                            location.reload();
+                        },function(){},param1);
+                    break;
                 default :
                     break;
             }
@@ -1851,6 +1867,13 @@ function checkError(){
         case '206':
             showMessage(9);
             break;
+        case '205':
+            var param1 = {};
+            param1['value'] = [$('#check-error').attr('param')];
+            showMessage(44,function(){
+                location.reload();
+            },function(){},param1);
+            break;
     }
 }
 
@@ -1936,6 +1959,7 @@ function showMessage(message_code,ok_callback,cancel_callback,parameter){
                 {
                     label: parameter['label']!=undefined&&parameter['label'][0]!=undefined?parameter['label'][0]:'Đã hiểu',
                     classes: 'btn btn-sm btn-danger',
+                    action: ok_callback,
                 },
             ]
            $.sweetModal({
