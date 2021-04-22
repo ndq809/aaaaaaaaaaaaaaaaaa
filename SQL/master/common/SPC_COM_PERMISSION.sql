@@ -65,7 +65,24 @@ BEGIN
 		 screen_id	   NVARCHAR(50)
 	,	 access_per	   NVARCHAR(50)
 	)
-	IF @P_account_div !=''
+	IF @P_system_div =''
+	BEGIN
+	INSERT INTO #PERMISSION
+	SELECT
+		 M999.text_remark1
+	,	 IIF(S002.screen_id IS NULL,0,1)
+	FROM M999
+	LEFT JOIN S002
+	ON M999.text_remark1 = S002.screen_id
+	AND S002.system_div = @P_system_div
+	AND S002.account_div = @P_account_div
+	WHERE 
+		M999.name_div = 13
+	AND M999.number_id != 0
+	AND M999.del_flg = 0
+	END
+	ELSE
+	IF @P_system_div ='1'
 	BEGIN
 	INSERT INTO #PERMISSION
 	SELECT 
@@ -101,7 +118,7 @@ BEGIN
 	INSERT INTO #PERMISSION
 	SELECT
 		 M999.text_remark1
-	,	 IIF(S002.screen_id IS NULL,0,1)
+	,	 1
 	FROM M999
 	LEFT JOIN S002
 	ON M999.text_remark1 = S002.screen_id
@@ -112,6 +129,7 @@ BEGIN
 	AND M999.number_id != 0
 	AND M999.del_flg = 0
 	END
+
 	SELECT @ColumnName= ISNULL(@ColumnName + ',','') + QUOTENAME(screen_id)
 	FROM (SELECT DISTINCT screen_id FROM #PERMISSION) AS screen_ids
 	SET @DynamicPivotQuery = 

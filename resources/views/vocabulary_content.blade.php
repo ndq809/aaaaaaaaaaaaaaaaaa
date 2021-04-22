@@ -39,7 +39,7 @@
             <button class="btn btn-primary btn-sm btn-refresh" type="button">
                 Làm mới câu hỏi
             </button>
-            <button class="btn btn-danger btn-sm {{$raw_data[0][0]['btn-check-answer']==1?'btn-check-answer':'btn-disabled'}}" type="button">
+            <button class="btn btn-danger btn-sm {{$raw_data[0][0]['btn-check-answer']==1?'btn-check-answer':'btn-disabled'}}" {{$raw_data[0][0]['btn-check-answer']==1?'':'rank='.$raw_data[0][0]['btn-check-answer']}} type="button">
                 Xem kết quả
             </button>
         </div>
