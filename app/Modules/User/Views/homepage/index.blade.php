@@ -45,7 +45,8 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều chủ đề</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Cập nhật liên tục</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Dễ học dễ nhớ</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ hình ảnh</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hình ảnh,âm thanh</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đóng góp ví dụ</h5>
                 </div>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-4 option">
@@ -60,9 +61,8 @@
                 <div class="option-body" option-link="/grammar">
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Chi tiết,dễ hiểu</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Dễ dàng tra cứu</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Ví dụ rõ ràng</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ bài tập</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Bình luận, trao đổi</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đóng góp ví dụ</h5>
                 </div>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-4 option" >
@@ -78,8 +78,9 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều mức độ</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nhiều chủ đề</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Cập nhật liên tục</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hỗ trợ đánh giá</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" style="opacity: 0"></i> kết quả nghe được</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Phân tách từng câu</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đánh giá từng câu</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Danh sách từ mới</h5>
                 </div>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-4 option" >
@@ -96,43 +97,45 @@
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Bố cục tùy chỉnh</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Gợi ý ngữ pháp</h5>
                     <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Kiểm tra chính tả</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Chia sẻ bài viết</h5>
                 </div>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-4 option" >
                 <div class="option-header">
                     <h5>
-                        Cộng Đồng E+
+                        Đọc Hiểu
                     </h5>
                 </div>
-                <a href="/social">
+                <a href="/reading">
                     <img src="web-content/images/background/option-background.png" width="100%"/>
                 </a>
                 <div class="option-body" option-link="/social">
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Xem bài viết chia sẻ</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đánh giá bài viết</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Góp ý thảo luận</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Theo dõi bài viết</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Học theo đoạn văn</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Phân tách câu</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Danh sách từ mới</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Bài tập tự luyện</h5>
                 </div>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-4 option" >
                 <div class="option-header">
                     <h5>
-                        Giải Trí
+                        Từ Điển
                     </h5>
                 </div>
                 <a href="">
                     <img src="web-content/images/background/option-background.png" width="100%"/>
                 </a>
-                <div class="option-body" option-link="/relax">
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Nội dung tiếng anh</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hình ảnh</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Video</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Truyện</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Chém gió,thảo luận</h5>
-                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Đóng góp bài viết</h5>
+                <div class="option-body" option-link="/dictonary">
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Tra cứu nhanh</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Cập nhật liên tục</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Hình ảnh,âm thanh</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Xếp hạng ngữ nghĩa</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Lịch sử tra cứu</h5>
+                    <h5 class="option-item"><i class="glyphicon glyphicon-flash" ></i> Người dùng hỗ trợ</h5>
                 </div>
             </div>
+        </div>
+        <div class='col-xs-12 '>
+            <div class='special-content'></div>
         </div>
     </div>
     <div class=" col-xs-12 no-padding right-header no-fixed">

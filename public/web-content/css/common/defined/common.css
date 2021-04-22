@@ -175,6 +175,7 @@ label {
 
 .form-control{
     border-radius: 0px!important;
+    padding: 4px 10px;
 }
 
 .form-control.required {
@@ -766,7 +767,7 @@ body {
 .login-with{
     display: inline-block;
     float: right;
-    font-size: 18px;
+    font-size: 15px;
     padding-right: 20px;
 }
 

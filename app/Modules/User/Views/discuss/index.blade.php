@@ -41,7 +41,7 @@
 	 	</div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Bài Bạn Chưa Xem</a></li>
-            <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Bài Bạn Theo Dõi</a></li>
+            <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled rank='.$raw_data[0][0]['btn-forget']}} aria-expanded="false" >Bài Bạn Theo Dõi</a></li>
         </ul>
         <div class="tab-content focusable" id="result1">
             @include('User::discuss.right_tab')
@@ -51,7 +51,7 @@
         <div class="col-xs-12 no-padding">
             <ul class="nav nav-tabs nav-justified discuss-tab">
                 <li class="active"><a data-toggle="tab" href="#tab-custom1">Câu hỏi / Thảo luận</a></li>
-                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled'}} aria-expanded="false" > Đặt Câu hỏi / Chủ đề</a></li>
+                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled rank='.$raw_data[0][0]['btn-forget']}} aria-expanded="false" > Đặt Câu hỏi / Chủ đề</a></li>
             </ul>
             <div class="tab-content">
                 <div id="tab-custom1" class="tab-pane fade in active">

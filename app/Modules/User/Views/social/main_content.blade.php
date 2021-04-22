@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class=" col-xs-12 no-padding rate-bar social-box" target-id="{{$row['row_id']}}">
-        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'btn-vote btn-default':'btn-disabled'}}" disabled="disabled"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
+        <button class="btn btn-sm col-md-3 col-sm-3 col-xs-5 {{$raw_data[0][0]['btn-vote']==1?'btn-vote btn-default':'btn-disabled'}}" {{$raw_data[0][0]['btn-vote']==1?'':'rank='.$raw_data[0][0]['btn-vote']}} disabled="disabled"><span style="font-weight: bold;">Đánh giá của bạn</span></button>
         <div class="col-md-6 col-sm-6 col-xs-7 ratestar-bar no-padding">
                 <div class="rateit my-vote" data-rateit-resetable="true" data-rateit-mode="font" data-rateit-value="{{$row['my_rate']}}" style="font-size:36px"> </div>
         </div>

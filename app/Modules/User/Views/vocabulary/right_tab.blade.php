@@ -11,7 +11,7 @@
                                     <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span class="voc_nm"> {{$row['vocabulary_nm']}}</span><span class="voc_pass hidden">*****</span> </a>
                                 </td>
                                 <td >
-                                    <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-remember']==1?'btn-remember':'btn-disabled'}}">Đã thuộc</button>
+                                    <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-remember']==1?'btn-remember':'btn-disabled'}}" {{$raw_data[0][0]['btn-remember']==1?'':'rank='.$raw_data[0][0]['btn-remember']}}>Đã thuộc</button>
                                 </td>
                             </tr>
                             @php($count = $count + 1)
@@ -40,7 +40,7 @@
                                     <a class="radio-inline"><i class="glyphicon glyphicon-hand-right"> </i> <span class="voc_nm"> {{$row['vocabulary_nm']}}</span><span class="voc_pass hidden">***</span> </a> </a>
                                 </td>
                                 <td >
-                                    <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-forget']==1?'btn-forget':'btn-disabled'}}">{{$row['del_flg']==0?'Đã quên':'Xóa'}}</button>
+                                    <button class="btn btn-sm btn-default {{$raw_data[0][0]['btn-forget']==1?'btn-forget':'btn-disabled'}}" {{$raw_data[0][0]['btn-forget']==1?'':'rank='.$raw_data[0][0]['btn-forget']}}>{{$row['del_flg']==0?'Đã quên':'Xóa'}}</button>
                                 </td>
                             </tr>
                             @php($count = $count + 1)

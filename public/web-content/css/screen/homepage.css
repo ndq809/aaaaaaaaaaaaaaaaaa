@@ -21,3 +21,12 @@
 .option-item i{
 	color: red;
 }
+
+.special-content{
+	border-style: solid;
+    border-width: 30px;
+    border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
+    -webkit-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
+    -moz-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
+    -o-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
+}

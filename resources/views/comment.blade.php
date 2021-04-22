@@ -27,7 +27,7 @@
             <span class="commentText">{{$row['cmt_content']}}</span>
             <div class="bottomContent">
                <a class="btn-reply">Trả lời</a>
-               <a class="fa fa-thumbs-o-up {{$raw_data[0][0]['btn-like']==1?'btn-like':'btn-disabled'}} animated {{isset($row['effected'])&&$row['effected']!=0?'liked bounceIn':''}}"><span class="like_count">{{$row['cmt_like']}}</span> {{isset($row['effected'])&&$row['effected']!=0?'Đã Thích':'Thích'}}</a>
+               <a class="fa fa-thumbs-o-up {{$raw_data[0][0]['btn-like']==1?'btn-like':'btn-disabled'}} animated {{isset($row['effected'])&&$row['effected']!=0?'liked bounceIn':''}}" {{$raw_data[0][0]['btn-like']==1?'':'rank='.$raw_data[0][0]['btn-like']}}><span class="like_count">{{$row['cmt_like']}}</span> {{isset($row['effected'])&&$row['effected']!=0?'Đã Thích':'Thích'}}</a>
             </div>
             @if(isset($row['load_more'])&&$row['load_more']>3)
             <a class="load-more prev hidden" page ='1'>Tải lại bình luận trước</a>
@@ -60,7 +60,7 @@
                             <span class="commentText">{{$row1['cmt_content']}}</span>
                             <div class="bottomContent">
                                <a class="btn-reply">Trả lời</a>
-                               <a class="fa fa-thumbs-o-up {{$raw_data[0][0]['btn-like']==1?'btn-like':'btn-disabled'}} animated {{isset($row1['effected'])&&$row1['effected']!=0?'liked bounceIn':''}}"><span class="like_count">{{$row1['cmt_like']}}</span> {{isset($row1['effected'])&&$row1['effected']!=0?'Đã Thích':'Thích'}}</a>
+                               <a class="fa fa-thumbs-o-up {{$raw_data[0][0]['btn-like']==1?'btn-like':'btn-disabled'}} animated {{isset($row1['effected'])&&$row1['effected']!=0?'liked bounceIn':''}}" {{$raw_data[0][0]['btn-like']==1?'':'rank='.$raw_data[0][0]['btn-like']}}><span class="like_count">{{$row1['cmt_like']}}</span> {{isset($row1['effected'])&&$row1['effected']!=0?'Đã Thích':'Thích'}}</a>
                             </div>
                         </div>
                     </li>
@@ -71,7 +71,7 @@
                 <textarea type="text" class="form-control input-sm comment-input" {{$raw_data[0][0]['btn-comment']==1?'':'disabled'}}
                 placeholder="Bình luận của bạn" rows="1"></textarea>
                 <div class="input-group-btn">
-                    <button class="btn btn-default btn-sm {{$raw_data[0][0]['btn-comment']==1?'btn-comment':'btn-disabled'}}" id="btBinhLuan">Bình Luận </button>
+                    <button class="btn btn-default btn-sm {{$raw_data[0][0]['btn-comment']==1?'btn-comment':'btn-disabled'}}" {{$raw_data[0][0]['btn-comment']==1?'':'rank='.$raw_data[0][0]['btn-comment']}} id="btBinhLuan">Bình Luận </button>
                 </div>
             </div>
             @if(isset($row['load_more'])&&$row['load_more']>3)

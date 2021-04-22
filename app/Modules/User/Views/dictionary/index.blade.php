@@ -62,7 +62,7 @@
         	 <div class="col-md-4 col-md-push-8 right-tab no-padding" >
                 <ul class="nav nav-tabs nav-justified">
                     <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Danh sách nghĩa tìm được</a></li>
-                    <li class=""><a class="{{$raw_data[0][0]['btn-add-voc']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Đóng góp từ vựng</a></li>
+                    <li class=""><a class="{{$raw_data[0][0]['btn-add-voc']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-add-voc']==1?'href=#tab2':'btn-disabled rank='.$raw_data[0][0]['btn-add-voc']}} aria-expanded="false" >Đóng góp từ vựng</a></li>
                 </ul>
                 <div class="tab-content focusable" id="result1">
                     @include('User::dictionary.right_tab')

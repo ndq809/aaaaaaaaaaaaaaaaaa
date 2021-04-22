@@ -32,8 +32,8 @@
     @endif   
 </div>
 @if(isset($type)&&$type==1)
-<button class="btn btn-sm btn-primary margin-bottom margin-left {{$raw_data[0][0]['btn-answer']==1?'btn-answer':'btn-disabled'}}" type="button">Trả Lời</button>
-<button class="btn btn-sm btn-default margin-bottom margin-left hidden {{$raw_data[0][0]['btn-answer']==1?'btn-refresh':'btn-disabled'}}" type="button">Tải Câu Hỏi Khác</button>
+<button class="btn btn-sm btn-primary margin-bottom margin-left {{$raw_data[0][0]['btn-answer']==1?'btn-answer':'btn-disabled'}}" {{$raw_data[0][0]['btn-answer']==1?'':'rank='.$raw_data[0][0]['btn-answer']}} type="button">Trả Lời</button>
+<button class="btn btn-sm btn-default margin-bottom margin-left hidden {{$raw_data[0][0]['btn-answer']==1?'btn-refresh':'btn-disabled'}}" {{$raw_data[0][0]['btn-answer']==1?'':'rank='.$raw_data[0][0]['btn-answer']}} type="button">Tải Câu Hỏi Khác</button>
 <div class="left-hint ">
     <h6>Trả lời đúng mỗi câu được cộng 2 điểm sai bị trừ 1 điểm</h6>
 </div>

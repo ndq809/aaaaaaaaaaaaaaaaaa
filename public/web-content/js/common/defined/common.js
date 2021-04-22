@@ -47,7 +47,13 @@ function initCommon() {
 
     $('.btn-disabled').attr('data-toggle','tooltip');
     $('.btn-disabled').attr('data-placement','bottom');
-    $('.btn-disabled').attr('data-original-title','Bạn chưa đăng nhập hoặc rank chưa đủ để sử dụng tính năng này!');
+    $('.btn-disabled').each(function(){
+        if($(this).attr('rank')!=undefined&&$(this).attr('rank')!='0'){
+            $(this).attr('data-original-title','Bạn phải đạt rank '+$(this).attr('rank')+' trở lên để có thể sử dụng tính năng này!');
+        }else{
+            $(this).attr('data-original-title','Bạn phải đăng nhập để có thể sử dụng tính năng này!');
+        }
+    })
     $('.btn-disabled').tooltip();
     // $('.btn-disabled').attr('disabled','disabled');
     // $('.btn-disabled').removeAttr('title');

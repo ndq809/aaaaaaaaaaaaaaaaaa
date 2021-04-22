@@ -27,11 +27,11 @@
             <div class="bottomContent">
                <a class="btn-reply">Phản hồi</a>
                <div class="vote-comment">
-                    <a class="vote-down {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row['effected'])&&(int)$row['effected']==-1?'active':''}}" type="button">
+                    <a class="vote-down {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row['effected'])&&(int)$row['effected']==-1?'active':''}}" {{$raw_data[0][0]['btn-cmt-vote']==1?'':'rank='.$raw_data[0][0]['btn-cmt-vote']}} type="button">
                         <i class="fa fa-arrow-down animated {{isset($row['effected'])&&(int)$row['effected']==-1?'rotateInLeft':''}}"></i>
                     </a>
                     <span style="font-family: Jersey" class="rating-value">{{(int)$row['cmt_like']}}</span>
-                    <a class="vote-up {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row['effected'])&&(int)$row['effected']==1?'active':''}}" type="button">
+                    <a class="vote-up {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}}  {{isset($row['effected'])&&(int)$row['effected']==1?'active':''}}" {{$raw_data[0][0]['btn-cmt-vote']==1?'':'rank='.$raw_data[0][0]['btn-cmt-vote']}} type="button">
                         <i class="fa fa-arrow-up animated {{isset($row['effected'])&&(int)$row['effected']==1?'rotateInRight':''}}"></i>
                     </a>
                 </div>
@@ -68,11 +68,11 @@
                             <div class="bottomContent">
                                <a class="btn-reply">Phản hồi</a>
                                <div class="vote-comment">
-                                    <a class="vote-down {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row1['effected'])&&(int)$row1['effected']==-1?'active':''}}" type="button">
+                                    <a class="vote-down {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row1['effected'])&&(int)$row1['effected']==-1?'active':''}}" {{$raw_data[0][0]['btn-cmt-vote']==1?'':'rank='.$raw_data[0][0]['btn-cmt-vote']}} type="button">
                                         <i class="fa fa-arrow-down animated {{isset($row1['effected'])&&(int)$row1['effected']==-1?'rotateInLeft':''}}"></i>
                                     </a>
                                     <span style="font-family: Jersey" class="rating-value">{{(int)$row1['cmt_like']}}</span>
-                                    <a class="vote-up {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row1['effected'])&&(int)$row1['effected']==1?'active':''}}" type="button">
+                                    <a class="vote-up {{$raw_data[0][0]['btn-cmt-vote']==1?'btn-cmt-vote':'btn-disabled'}} {{isset($row1['effected'])&&(int)$row1['effected']==1?'active':''}}" {{$raw_data[0][0]['btn-cmt-vote']==1?'':'rank='.$raw_data[0][0]['btn-cmt-vote']}} type="button">
                                         <i class="fa fa-arrow-up animated {{isset($row1['effected'])&&(int)$row1['effected']==1?'rotateInRight':''}}"></i>
                                     </a>
                                 </div>
@@ -86,7 +86,7 @@
                 <textarea type="text" class="form-control input-sm comment-input" {{$raw_data[0][0]['btn-comment']==1?'':'disabled'}}
                 placeholder="Phản hồi của bạn" rows="1"></textarea>
                 <div class="input-group-btn">
-                    <button class="btn btn-default btn-sm {{$raw_data[0][0]['btn-comment']==1?'btn-comment':'btn-disabled'}}" id="btBinhLuan">Phản hồi</button>
+                    <button class="btn btn-default btn-sm {{$raw_data[0][0]['btn-comment']==1?'btn-comment':'btn-disabled'}}" {{$raw_data[0][0]['btn-comment']==1?'':'rank='.$raw_data[0][0]['btn-comment']}} id="btBinhLuan">Phản hồi</button>
                 </div>
             </div>
             @if(isset($row['load_more'])&&$row['load_more']>3)

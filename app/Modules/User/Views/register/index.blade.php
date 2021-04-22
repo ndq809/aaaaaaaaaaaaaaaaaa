@@ -22,6 +22,11 @@
         </div>
 		<div class="col-xs-12 main-content">
             <div class="form-group">
+                <label>Ảnh Đại Diện</label>
+                <div id="imageContainer" class="{{isset($default_data)?'isface':''}}"></div>
+                <input type="hidden" class="submit-item" id="avatar" value="{{isset($default_data)?$default_data['avatar_original']:'/web-content/images/avarta/default_avarta.jpg'}}">
+            </div>
+            <div class="form-group">
                 <label>Họ Tên Của Bạn</label>
                 <div class="input-group">
                     <input type="text" name="" class="form-control submit-item input-sm width-50" placeholder ="Họ" value="{{isset($default_data)?$default_data['first_nm']:''}}" id="first_name">
@@ -51,12 +56,6 @@
                 <div class="input-group">
                     <input type="email" name="" class="form-control submit-item input-sm" placeholder="Nhập email của bạn" value="{{isset($default_data)?$default_data['email']:''}}" id="email">
                 </div>
-            </div>
-            <div class="col-xs-12"></div>
-            <div class="form-group float-left">
-                <label>Ảnh Đại Diện</label>
-                <div id="imageContainer" class="{{isset($default_data)?'isface':''}}"></div>
-                <input type="hidden" class="submit-item" id="avatar" value="{{isset($default_data)?$default_data['avatar_original']:'/web-content/images/avarta/default_avarta.jpg'}}">
             </div>
 		</div>
 	</div>

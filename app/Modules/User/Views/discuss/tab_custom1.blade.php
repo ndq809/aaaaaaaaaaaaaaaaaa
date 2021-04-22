@@ -25,11 +25,11 @@
         <span class="btn btn-sm btn-success col-md-3 col-sm-3 col-xs-5"><span style="font-weight: bold;">Điểm đánh giá</span></span>
         <div class="col-md-6 col-sm-6 col-xs-7">
             <div class="vote">
-                <a class="vote-down {{$raw_data[0][0]['btn-vote-question']==1?'btn-vote-question':'btn-disabled'}} {{(int)$row['my_rate']==-1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_rate']==-1?'Bạn đã vote down cho bài viết này!':'Câu hỏi KHÔNG rõ ràng/ dễ hiểu/ thú vị/ hữu ích!'}}" type="button">
+                <a class="vote-down {{$raw_data[0][0]['btn-vote-question']==1?'btn-vote-question':'btn-disabled'}} {{$raw_data[0][0]['btn-vote-question']==1?'':'rank='.$raw_data[0][0]['btn-vote-question']}} {{(int)$row['my_rate']==-1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_rate']==-1?'Bạn đã vote down cho bài viết này!':'Câu hỏi KHÔNG rõ ràng/ dễ hiểu/ thú vị/ hữu ích!'}}" type="button">
                     <i class="fa fa-arrow-down animated {{(int)$row['my_rate']==-1?'rotateInLeft':''}}"></i>
                 </a>
                 <span style="font-family: Jersey" class="rating-value">{{(int)$row['post_rate']}}</span>
-                <a class="vote-up {{$raw_data[0][0]['btn-vote-question']==1?'btn-vote-question':'btn-disabled'}} {{(int)$row['my_rate']==1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_rate']==1?'Bạn đã vote up cho bài viết này!':'Câu hỏi rõ ràng/ dễ hiểu/ thú vị/ hữu ích!'}}" type="button">
+                <a class="vote-up {{$raw_data[0][0]['btn-vote-question']==1?'btn-vote-question':'btn-disabled'}} {{$raw_data[0][0]['btn-vote-question']==1?'':'rank='.$raw_data[0][0]['btn-vote-question']}} {{(int)$row['my_rate']==1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_rate']==1?'Bạn đã vote up cho bài viết này!':'Câu hỏi rõ ràng/ dễ hiểu/ thú vị/ hữu ích!'}}" type="button">
                     <i class="fa fa-arrow-up animated {{(int)$row['my_rate']==1?'rotateInRight':''}}"></i>
                 </a>
             </div>

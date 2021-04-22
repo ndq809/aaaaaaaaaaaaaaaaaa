@@ -41,11 +41,11 @@
                     @endforeach
                 </select>
             </div>
-            <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}">Lưu bài học này</button>
+            <button class="btn btn-sm btn-primary full-width margin-top {{$raw_data[0][0]['btn-add-lesson']==1?'btn-add-lesson':'btn-disabled'}}" {{$raw_data[0][0]['btn-add-lesson']==1?'':'rank='.$raw_data[0][0]['btn-add-lesson']}}>Lưu bài học này</button>
         </div>
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">Bài Mẫu Hệ Thống</a></li>
-            <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled'}} aria-expanded="false" >Bài Viết Của Bạn</a></li>
+            <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab2':'btn-disabled rank='.$raw_data[0][0]['btn-forget']}} aria-expanded="false" >Bài Viết Của Bạn</a></li>
         </ul>
         <div class="tab-content focusable">
             <div id="tab1" class="tab-pane fade active in">
@@ -60,7 +60,7 @@
         <div class="col-xs-12 no-padding writing-tab">
             <ul class="nav nav-tabs nav-justified">
                 <li class="active"><a data-toggle="tab" href="#tab-custom1">Xem Bài Viết Mẫu</a></li>
-                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled'}} aria-expanded="false" >Bắt Đầu Tập Viết</a></li>
+                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled rank='.$raw_data[0][0]['btn-forget']}} aria-expanded="false" >Bắt Đầu Tập Viết</a></li>
             </ul>
             <div class="tab-content">
                 <div id="tab-custom1" class="tab-pane fade in active">

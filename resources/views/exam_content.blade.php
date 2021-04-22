@@ -7,7 +7,7 @@
                     <span>{{$row['language1_content']}}</span>
                 </h5>
                 <span class="number-clap">{{$row['clap']}}</span>
-                <a type="button" id="{{$row['id']}}" class="fa fa-signing {{$raw_data[0][0]['btn-effect']==1?'btn-effect':'btn-disabled'}} animated {{$row['effected']==1?'claped tada':''}}" title="{{$row['effected']==1?'Bỏ vỗ tay!!!':'Hay quá ! Vỗ tay!!!'}}"></a>
+                <a type="button" id="{{$row['id']}}" class="fa fa-signing {{$raw_data[0][0]['btn-effect']==1?'btn-effect':'btn-disabled'}} animated {{$row['effected']==1?'claped tada':''}}" {{$raw_data[0][0]['btn-effect']==1?'':'rank='.$raw_data[0][0]['btn-effect']}} title="{{$row['effected']==1?'Bỏ vỗ tay!!!':'Hay quá ! Vỗ tay!!!'}}"></a>
             </div>
             <div id="collapse{{$row['id']}}" class="panel-collapse collapse">
                 <div class="panel-body">{{$row['language2_content']}}</div>

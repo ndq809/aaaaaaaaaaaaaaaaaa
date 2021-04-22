@@ -49,7 +49,7 @@
     <body>
         @include('add_on')
         @include('comment')
-        <input type="hidden" name="" id="check-error" value="{{session('error')!==null ? session('error')['status']: ''}}" param={{session('error')!==null ? session('error')['data']: ''}}>
+        <input type="hidden" name="" id="check-error" value="{{isset(session('error')['status']) ? session('error')['status']: ''}}" param={{isset(session('error')['data'])? session('error')['data']: ''}}>
         <input type="hidden" name="" id="target-id" value="{{isset($data_default[2][0]['target_id'])?$data_default[2][0]['target_id']:''}}">
         <input type="hidden" name="" id="catalogue-tranfer" value="{{isset($data_default[2][0]['catalogue_tranfer'])?$data_default[2][0]['catalogue_tranfer']:''}}">
         <input type="hidden" name="" id="group-transfer" value="{{isset($data_default[2][0]['group_transfer'])?$data_default[2][0]['group_transfer']:''}}">
@@ -136,11 +136,11 @@
                                         Đọc Hiểu
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="/social">
                                         Cộng Đồng E+
                                     </a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="/dictionary">
                                         Từ Điển E+

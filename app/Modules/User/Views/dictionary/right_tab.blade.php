@@ -20,11 +20,11 @@
                             </td>
                             <td width="100px">
                                 <div class="vote float-right">
-                                    <a class="vote-down {{$raw_data[0][0]['btn-vote-word']==1?'btn-vote-word':'btn-disabled'}} {{(int)$row['word_vote']==-1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_vote']==-1?'Bạn đã vote down cho từ vựng này!':'Từ vựng không chuẩn xác'}}" >
+                                    <a class="vote-down {{$raw_data[0][0]['btn-vote-word']==1?'btn-vote-word':'btn-disabled'}} {{(int)$row['word_vote']==-1?'active':''}}" {{$raw_data[0][0]['btn-vote-word']==1?'':'rank='.$raw_data[0][0]['btn-vote-word']}} data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_vote']==-1?'Bạn đã vote down cho từ vựng này!':'Từ vựng không chuẩn xác'}}" >
                                         <i class="fa fa-arrow-down animated {{(int)$row['my_vote']==-1?'rotateInLeft':''}}"></i>
                                     </a>
                                     <span style="font-family: Jersey" class="rating-value">{{(int)$row['word_vote']}}</span>
-                                    <a class="vote-up {{$raw_data[0][0]['btn-vote-word']==1?'btn-vote-word':'btn-disabled'}} {{(int)$row['my_vote']==1?'active':''}}" data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_vote']==1?'Bạn đã vote up cho từ vựng này!':'Từ vựng chuẩn xác'}}">
+                                    <a class="vote-up {{$raw_data[0][0]['btn-vote-word']==1?'btn-vote-word':'btn-disabled'}} {{(int)$row['my_vote']==1?'active':''}}" {{$raw_data[0][0]['btn-vote-word']==1?'':'rank='.$raw_data[0][0]['btn-vote-word']}} data-toggle="tooltip" data-placement="bottom" data-original-title="{{(int)$row['my_vote']==1?'Bạn đã vote up cho từ vựng này!':'Từ vựng chuẩn xác'}}">
                                         <i class="fa fa-arrow-up animated {{(int)$row['my_vote']==1?'rotateInRight':''}}"></i>
                                     </a>
                                 </div>
@@ -72,7 +72,7 @@
             </div>
         </form>
         <input type="hidden" class="submit-item" id="old-audio" value="">
-        <button class="btn btn-sm btn-primary margin-top full-width {{$raw_data[0][0]['btn-add-voc']==1?'btn-add-voc':'btn-disabled'}}" style="bottom: 0px;">Đóng góp</button>
+        <button class="btn btn-sm btn-primary margin-top full-width {{$raw_data[0][0]['btn-add-voc']==1?'btn-add-voc':'btn-disabled'}}" {{$raw_data[0][0]['btn-add-voc']==1?'':'rank='.$raw_data[0][0]['btn-add-voc']}} style="bottom: 0px;">Đóng góp</button>
     </div>
 </div>
 

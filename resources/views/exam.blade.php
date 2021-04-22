@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-sm btn-danger {{$raw_data[0][0]['btn-contribute-exa']==1?'btn-contribute-exa':'btn-disabled'}}" type="button">Đóng Góp</button>
+        <button class="btn btn-sm btn-danger {{$raw_data[0][0]['btn-contribute-exa']==1?'btn-contribute-exa':'btn-disabled'}}" {{$raw_data[0][0]['btn-contribute-exa']==1?'':'rank='.$raw_data[0][0]['btn-contribute-exa']}} type="button">Đóng Góp</button>
     </div>
   </div>
 </div>

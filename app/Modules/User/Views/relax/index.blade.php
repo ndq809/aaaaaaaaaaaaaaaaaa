@@ -59,7 +59,7 @@
 		<div class="col-xs-12 no-padding">
 			<ul class="nav nav-tabs nav-justified relax-tab">
                 <li class="active"><a data-toggle="tab" href="#tab-custom1">Giải trí với tiếng anh</a></li>
-                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled'}} aria-expanded="false" >Đóng góp cho E+</a></li>
+                <li class=""><a class="{{$raw_data[0][0]['btn-forget']==1?'':'btn-disabled'}}" data-toggle="tab" {{$raw_data[0][0]['btn-forget']==1?'href=#tab-custom2':'btn-disabled rank='.$raw_data[0][0]['btn-forget']}} aria-expanded="false" >Đóng góp cho E+</a></li>
             </ul>
             <div class="tab-content">
                 <div id="tab-custom1" class="tab-pane fade in active">
