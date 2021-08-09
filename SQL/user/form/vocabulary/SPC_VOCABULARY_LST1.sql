@@ -13,6 +13,7 @@ GO
 CREATE PROCEDURE [dbo].[SPC_VOCABULARY_LST1]
 	
 	@P_target_id			NVARCHAR(15)	=	'' 
+,	@P_is_post				TINYINT			=	0
 ,	@P_account_id			NVARCHAR(15)	=	''
 ,	@P_catalogue_id			NVARCHAR(15)	=	''
 ,	@P_group_id				NVARCHAR(15)	=	''
@@ -39,9 +40,13 @@ BEGIN
 	,	M007.catalogue_id
 	,	M007.group_id
 	FROM M007
-	WHERE M007.briged_id IN (
-		SELECT briged_id FROM F009 WHERE F009.target_id = @P_target_id AND F009.briged_div = 1
-	)
+	WHERE 
+	
+		((@P_is_post=0 AND M007.briged_id IN (
+			SELECT briged_id FROM F009 WHERE F009.target_id = @P_target_id AND F009.briged_div = 1
+		))
+		OR
+		(@P_is_post=1 AND M007.post_id = @P_target_id))
 	AND M007.record_div = 2
 	AND M007.del_flg = 0
 

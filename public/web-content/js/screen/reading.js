@@ -80,6 +80,7 @@ function initListener() {
             }
             $('#en_textarea').val(en_content.trim()).trigger('change');
             $('#vi_textarea').val(vi_content.trim()).trigger('change');
+            selectText(0);
         }
         if ($(this).hasClass('btn-comment')) {
             _this= $(this);
@@ -235,7 +236,7 @@ function initListener() {
             Vi_Array = doc.sentences().out('array');
             $(this).val(Vi_Array.join('\n'));
         }
-        scrollTextarea(Vi_Array[sentenceIndex],this);
+        scrollTextarea(Vi_Array[0],this);
     })
 }
 
@@ -565,8 +566,8 @@ function scrollTextarea(text,textarea){
 }
 
 function selectText(sentenceIndex) {
-    scrollTextarea(En_Array[sentenceIndex],$('#en_textarea')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_textarea')[0]);
+    scrollTextarea(En_Array[sentenceIndex],$('#en_textarea')[0]);
 }
 
 

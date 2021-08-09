@@ -35,6 +35,7 @@ return array(
     'App\\Listeners\\EventListener' => $baseDir . '/app/Listeners/EventListener.php',
     'App\\Listeners\\NotificationEventsListener' => $baseDir . '/app/Listeners/NotificationEventsListener.php',
     'App\\Modules\\Master\\Controllers\\Common\\CommonController' => $baseDir . '/app/Modules/Master/Controllers/Common/CommonController.php',
+    'App\\Modules\\Master\\Controllers\\Denounce\\d001Controller' => $baseDir . '/app/Modules/Master/Controllers/Denounce/d001Controller.php',
     'App\\Modules\\Master\\Controllers\\Example1Controller' => $baseDir . '/app/Modules/Master/Controllers/Example1Controller.php',
     'App\\Modules\\Master\\Controllers\\General\\g001Controller' => $baseDir . '/app/Modules/Master/Controllers/General/g001Controller.php',
     'App\\Modules\\Master\\Controllers\\General\\g002Controller' => $baseDir . '/app/Modules/Master/Controllers/General/g002Controller.php',

@@ -65,40 +65,10 @@ BEGIN
 		
 		IF @P_mission_id = ''
 		BEGIN
-			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 			IF EXISTS (SELECT 1 FROM #DETAIL)
 			BEGIN
-				INSERT INTO F009
-				SELECT 
-					@w_briged_id
-				,	#DETAIL.id
-				,	#DETAIL.data_div
-				,	 @P_user_id
-				,	 @w_program_id
-				,	 @P_ip
-				,	 @w_time
-				FROM #DETAIL
+				SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 			END
-
-			IF @P_mission_user_div = 2
-			BEGIN
-				INSERT INTO F009
-				SELECT 
-					@w_briged_id
-				,	#TEMP.account_id
-				,	4
-				,	 @P_user_id
-				,	 @w_program_id
-				,	 @P_ip
-				,	 @w_time
-				FROM 
-				(SELECT              
-					account_id			AS account_id              
-				FROM OPENJSON(@P_json_detail1) WITH(
-        			account_id	        VARCHAR(10)	'$.id'
-				))#TEMP
-			END
-
 			INSERT INTO F001(
 				mission_div
 			,	mission_data_div
@@ -172,22 +142,65 @@ BEGIN
 
 		SET @P_mission_id = SCOPE_IDENTITY()
 
-		END
-		ELSE
-		BEGIN
-			SELECT @w_briged_id= (SELECT F001.briged_id FROM F001 WHERE F001.mission_id = @P_mission_id)
-			IF @w_briged_id IS NULL
-			BEGIN
-				SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
-			END
-			DELETE FROM F009 WHERE F009.briged_id = @w_briged_id
-			IF EXISTS (SELECT 1 FROM #DETAIL)
+		IF EXISTS (SELECT 1 FROM #DETAIL)
+			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 			BEGIN
 				INSERT INTO F009
 				SELECT 
 					@w_briged_id
 				,	#DETAIL.id
 				,	#DETAIL.data_div
+				,	 @P_mission_id
+				,	 1
+				,	 @P_user_id
+				,	 @w_program_id
+				,	 @P_ip
+				,	 @w_time
+				FROM #DETAIL
+			END
+
+			IF @P_mission_user_div = 2
+			BEGIN
+				IF @w_briged_id IS NULL
+				BEGIN
+					SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
+				END
+				INSERT INTO F009
+				SELECT 
+					@w_briged_id
+				,	#TEMP.account_id
+				,	4
+				,	 @P_mission_id
+				,	 1
+				,	 @P_user_id
+				,	 @w_program_id
+				,	 @P_ip
+				,	 @w_time
+				FROM 
+				(SELECT              
+					account_id			AS account_id              
+				FROM OPENJSON(@P_json_detail1) WITH(
+        			account_id	        VARCHAR(10)	'$.id'
+				))#TEMP
+			END
+
+		END
+		ELSE
+		BEGIN
+			SET @w_briged_id = (SELECT TOP 1 F001.briged_id FROM F001 WHERE F001.mission_id = @P_mission_id)
+			IF @w_briged_id IS NULL AND (EXISTS (SELECT 1 FROM #DETAIL))
+			BEGIN
+				SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
+			END
+			DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_own_id = @P_mission_id
+			BEGIN
+				INSERT INTO F009
+				SELECT 
+					@w_briged_id
+				,	#DETAIL.id
+				,	#DETAIL.data_div
+				,	 @P_mission_id
+				,	 1
 				,	 @P_user_id
 				,	 @w_program_id
 				,	 @P_ip
@@ -202,6 +215,8 @@ BEGIN
 					@w_briged_id
 				,	#TEMP.account_id
 				,	4
+				,	 @P_mission_id
+				,	 1
 				,	 @P_user_id
 				,	 @w_program_id
 				,	 @P_ip

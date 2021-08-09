@@ -64,7 +64,7 @@
                     <div class="logo-box">
                         <div>
                             <span class="logo-box-text">ENGLISH</span>
-                            <span class="logo-box-text "><span class="fa fa-graduation-cap logo-icon"></span> SOCIAL</span>
+                            <span class="logo-box-text "><span class="fa fa-graduation-cap logo-icon"></span> WORLD</span>
                         </div>
                         <div class="div-link" href="/">
                             <span class="logo-box-text1">EPLUS</span>

@@ -185,6 +185,14 @@
         <div class="col-sm-12 no-padding-right transform-content" transform-div='2,5,11' id="result2">
             @include('Master::writing.w002.refer_pra')
         </div>
+        <div class="col-sm-12 no-padding-right">
+            <div class="form-group">
+                <label>Ghi chú(nội dung thêm mới,thay đổi)</label>
+                <div class="input-group">
+                    <textarea id="notes" type="text" name="" rows="4" class="form-control input-sm submit-item required" placeholder="Ghi chú về nội dung đã thêm hoặc thay đổi dùng để thông báo cho người dùng"></textarea>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @stop

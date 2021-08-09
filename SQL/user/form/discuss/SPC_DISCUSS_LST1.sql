@@ -40,6 +40,7 @@ BEGIN
 	ON M007.briged_id = F009.briged_id
 	AND M007.record_div = 2
 	WHERE F009.briged_div = 2
+	AND F009.briged_own_div = 0
 	GROUP BY 
 		F009.target_id
 	,	M013.tag_nm
@@ -99,6 +100,7 @@ BEGIN
 	ON M007.briged_id = F009.briged_id
 	AND M007.record_div = 2
 	WHERE F009.briged_div = 2
+	AND F009.briged_own_div = 0
 	GROUP BY 
 		F009.target_id
 	,	M013.tag_nm

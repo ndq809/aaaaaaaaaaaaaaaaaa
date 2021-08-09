@@ -76,6 +76,7 @@ BEGIN
 	AND F009.briged_div = 2
 	INNER JOIN #TRANSLATION 
 	ON F009.briged_id = #TRANSLATION.briged_id
+	AND  F009.briged_own_div = 0
 	WHERE M013.tag_div = 6
 	AND M013.del_flg = 0
 

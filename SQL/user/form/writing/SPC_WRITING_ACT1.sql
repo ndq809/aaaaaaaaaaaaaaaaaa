@@ -164,37 +164,11 @@ BEGIN
 
 	IF @P_post_id = ''
 	BEGIN
-		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
-
-		IF EXISTS (SELECT 1 FROM #VOCABULARY)
+		IF EXISTS (SELECT 1 FROM #VOCABULARY) OR EXISTS (SELECT 1 FROM #TAG)
 		BEGIN
-			INSERT INTO F009
-			SELECT 
-				@w_briged_id
-			,	#VOCABULARY.Vocabulary_code
-			,	1
-			,	 @P_user_id
-			,	 @w_program_id
-			,	 @P_ip
-			,	 @w_time
-			FROM #VOCABULARY
+			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		END
 
-		IF EXISTS (SELECT 1 FROM #TAG)
-		BEGIN
-			INSERT INTO F009
-			SELECT 
-				@w_briged_id
-			,	#TAG.tag_id
-			,	2
-			,	 @P_user_id
-			,	 @w_program_id
-			,	 @P_ip
-			,	 @w_time			
-			FROM #TAG
-		END
-
- 
 		INSERT INTO M007 (
 			 catalogue_div     
 		,	 catalogue_id
@@ -253,6 +227,38 @@ BEGIN
 
 	SET @w_inserted_key = scope_identity()
 
+	IF EXISTS (SELECT 1 FROM #VOCABULARY)
+	BEGIN
+		INSERT INTO F009
+		SELECT 
+			@w_briged_id
+		,	#VOCABULARY.Vocabulary_code
+		,	1
+		,	 @w_inserted_key
+		,	 0
+		,	 @P_user_id
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time
+		FROM #VOCABULARY
+	END
+
+	IF EXISTS (SELECT 1 FROM #TAG)
+	BEGIN
+		INSERT INTO F009
+		SELECT 
+			@w_briged_id
+		,	#TAG.tag_id
+		,	2
+		,	 @w_inserted_key
+		,	 0
+		,	 @P_user_id
+		,	 @w_program_id
+		,	 @P_ip
+		,	 @w_time			
+		FROM #TAG
+	END
+
 	INSERT INTO F003
 	SELECT
 		@P_user_id
@@ -291,13 +297,12 @@ BEGIN
 		 , ''
 		END
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
-		SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
-		IF @w_briged_id IS NULL
+		SET @w_briged_id = (SELECT TOP 1 M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id)
+		IF @w_briged_id IS NULL AND (EXISTS (SELECT 1 FROM #VOCABULARY) OR EXISTS (SELECT 1 FROM #TAG))
 		BEGIN
 			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		END
-
-		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1 AND F009.briged_own_id = @P_post_id
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
 		BEGIN
 			INSERT INTO F009
@@ -312,7 +317,7 @@ BEGIN
 			FROM #VOCABULARY
 		END
 
-		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2 AND F009.briged_own_id = @P_post_id
 		IF EXISTS (SELECT 1 FROM #TAG)
 		BEGIN
 			INSERT INTO F009

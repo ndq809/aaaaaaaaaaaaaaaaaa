@@ -92,6 +92,8 @@ BEGIN
 	LEFT JOIN F009
 	ON F009.target_id = M013.tag_id
 	AND F009.briged_div = 2
+	AND F009.briged_own_id = @P_post_id
+	AND F009.briged_own_div = 0
 	AND F009.briged_id = (SELECT TOP 1 F009.briged_id FROM F009 INNER JOIN M007 ON F009.briged_id = M007.briged_id AND M007.post_id = @P_post_id)
 	WHERE M013.del_flg = 0
 	AND M013.tag_div = @w_tag_div
@@ -103,6 +105,13 @@ BEGIN
 	,	M015.listen_cut_end
 	FROM M015
 	WHERE M015.post_id = @P_post_id
+
+	SELECT TOP 1 * FROM M016 
+	WHERE 
+		target_div = 0 
+	AND M016.target_id = @P_post_id
+	ORDER BY
+		target_row_no DESC
 	--
 END
 

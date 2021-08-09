@@ -120,7 +120,7 @@ class CommonController extends Controller
 
     }
 
-     public static function getPermission($account_div,$system_div,$url)
+    public static function getPermission($account_div,$system_div,$url)
     {
         // var_dump(URL::current());die;
         $screen_id= explode("/",$url);

@@ -16,6 +16,7 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_content    	NTEXT				= ''
 ,    @P_post_content_tran   NTEXT				= ''
+,    @P_notes		   		NVARCHAR(MAX)		= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
 ,    @P_post_media_div     	TINYINT				= 0
@@ -366,35 +367,10 @@ BEGIN
 
 	IF @P_post_id = ''
 	BEGIN
-		SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
-		IF EXISTS (SELECT 1 FROM #VOCABULARY)
+		IF EXISTS (SELECT 1 FROM #VOCABULARY) OR EXISTS (SELECT 1 FROM #TAG)
 		BEGIN
-			INSERT INTO F009
-			SELECT 
-				@w_briged_id
-			,	#VOCABULARY.Vocabulary_code
-			,	1
-			,	 @P_user_id
-			,	 @w_program_id
-			,	 @P_ip
-			,	 @w_time
-			FROM #VOCABULARY
+			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		END
-
-		IF EXISTS (SELECT 1 FROM #TAG)
-		BEGIN
-			INSERT INTO F009
-			SELECT 
-				@w_briged_id
-			,	#TAG.tag_id
-			,	2
-			,	 @P_user_id
-			,	 @w_program_id
-			,	 @P_ip
-			,	 @w_time
-			FROM #TAG
-		END
- 
 		INSERT INTO M007 (
 			 record_div     
 		,	 catalogue_div     
@@ -456,6 +432,38 @@ BEGIN
 		,	  0
 
 	SET @w_inserted_key = scope_identity()
+
+	IF EXISTS (SELECT 1 FROM #VOCABULARY)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#VOCABULARY.Vocabulary_code
+			,	1
+			,	@w_inserted_key
+			,	0
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
+			FROM #VOCABULARY
+		END
+
+		IF EXISTS (SELECT 1 FROM #TAG)
+		BEGIN
+			INSERT INTO F009
+			SELECT 
+				@w_briged_id
+			,	#TAG.tag_id
+			,	2
+			,	@w_inserted_key
+			,	0
+			,	 @P_user_id
+			,	 @w_program_id
+			,	 @P_ip
+			,	 @w_time
+			FROM #TAG
+		END
 
 		INSERT INTO M012(
 			target_id
@@ -635,6 +643,8 @@ BEGIN
 			ON #TABLE_DETAIL2.row_id = #TABLE_QUESTION.row_id
 			WHERE #TABLE_DETAIL2.verify IS NOT NULL
 
+		EXEC SPC_M016_ACT1 @w_inserted_key,0,0,@P_notes,@P_user_id,@P_ip,@w_program_id,@w_time
+
 	END
 	ELSE
 	BEGIN
@@ -651,13 +661,13 @@ BEGIN
 		 , ''
 		END
 		IF EXISTS (SELECT 1 FROM @ERR_TBL) GOTO EXIT_SPC
-		SELECT @w_briged_id = M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id
-		IF @w_briged_id IS NULL
+		SET @w_briged_id = (SELECT TOP 1 M007.briged_id FROM M007 WHERE M007.post_id = @P_post_id)
+		IF @w_briged_id IS NULL AND (EXISTS (SELECT 1 FROM #VOCABULARY) OR EXISTS (SELECT 1 FROM #TAG))
 		BEGIN
 			SELECT @w_briged_id= ISNULL(MAX(F009.briged_id),0)+1 FROM F009
 		END
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1 AND F009.briged_own_id = @P_post_id
 
-		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 1
 		IF EXISTS (SELECT 1 FROM #VOCABULARY)
 		BEGIN
 			INSERT INTO F009
@@ -665,6 +675,8 @@ BEGIN
 				@w_briged_id
 			,	#VOCABULARY.Vocabulary_code
 			,	1
+			,	@P_post_id
+			,	0
 			,	 @P_user_id
 			,	 @w_program_id
 			,	 @P_ip
@@ -672,7 +684,7 @@ BEGIN
 			FROM #VOCABULARY
 		END
 
-		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2
+		DELETE FROM F009 WHERE F009.briged_id = @w_briged_id AND F009.briged_div = 2 AND F009.briged_own_id = @P_post_id
 		IF EXISTS (SELECT 1 FROM #TAG)
 		BEGIN
 			INSERT INTO F009
@@ -680,13 +692,14 @@ BEGIN
 				@w_briged_id
 			,	#TAG.tag_id
 			,	2
+			,	@P_post_id
+			,	0
 			,	 @P_user_id
 			,	 @w_program_id
 			,	 @P_ip
 			,	 @w_time
 			FROM #TAG
 		END
-
 
 		IF @P_catalogue_div IN(3)
 		BEGIN
@@ -854,6 +867,8 @@ BEGIN
 			JOIN #TABLE_QUESTION
 			ON #TABLE_DETAIL2.row_id = #TABLE_QUESTION.row_id
 			WHERE #TABLE_DETAIL2.verify IS NOT NULL
+
+		EXEC SPC_M016_ACT1 @w_inserted_key,0,0,@P_notes,@P_user_id,@P_ip,@w_program_id,@w_time
 	END
 	END TRY
 	BEGIN CATCH

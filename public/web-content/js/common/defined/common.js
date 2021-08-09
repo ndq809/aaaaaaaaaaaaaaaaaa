@@ -1665,10 +1665,11 @@ function cancelMission(mode) {
                                         var param1 = {};
                                         param1['value'] = [res.rank['account_prev_div_nm'],res.rank['account_div_nm']];
                                         showMessage(40,function(){
-                                            location.reload();
+                                            location.href=location.origin + location.pathname;
                                         },function(){},param1);
                                     }else{
-                                        location.reload();
+                                            location.href=location.origin + location.pathname;
+                                            // location.reload();
                                     }
                                 }
                             }

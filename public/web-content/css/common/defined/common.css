@@ -82,8 +82,7 @@ a{
 
 .right-tab .tab-content{
     display: none;
-    /*max-height: 750px;*/
-
+    /* max-height: 750px; */
 }
 
 .right-tab .tab-content .tab-pane{

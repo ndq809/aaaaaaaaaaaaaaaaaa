@@ -356,6 +356,7 @@ function w002_refer(post_id){
                     $('.update-block #catalogue_div')[0].selectize.setValue(Number(res.data[0][0]['catalogue_div']));
                     $('#post_title').val(res.data[0][0]['post_title']);
                     $('#post_title_tran').val(res.data[0][0]['post_title_tran']);
+                    $('#notes').val(res.data[7][0]['notes']);
                     $('#post_title').trigger('change');
                     setTimeout(function(){
                       CKEDITOR.instances['post_content'].setData(res.data[0][0]['post_content'],function(){

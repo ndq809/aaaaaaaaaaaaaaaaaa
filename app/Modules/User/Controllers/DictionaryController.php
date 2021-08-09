@@ -138,7 +138,7 @@ class DictionaryController extends ControllerUser
         if ($validate['result']) {
             $param               = (array) json_decode($data['header_data']);
            if(!is_null($file)){
-               if ($file->getClientSize() > 20971520) {
+               if ($file->getSize() > 20971520) {
                     $result = array(
                         'status'     => 209,
                         'statusText' => 'upload failed');

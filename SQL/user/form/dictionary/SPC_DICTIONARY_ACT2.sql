@@ -46,7 +46,7 @@ BEGIN
 		,	@w_dtl_id + 1
 		,	@P_engword
 		,	0
-		,	0
+		,	999
 		,	0
 		,	@P_word_image
 		,	@P_word_audio

@@ -10,7 +10,7 @@
                         @if(($data[$index]['specialized_div'].$data[$index]['field_div'])!=($data[$temp]['specialized_div'].$data[$temp]['field_div'])||$count==0)
                            <tr class="tr-disabled">
                                 <td colspan="2">
-                                    <label style="font-size: 13px"><span> {{$data[$index]['specialized_div_nm'].$data[$index]['field_div_nm']==''?'☆ Nghĩa thông thường':(($row['specialized_div_nm']!=''?('☆ Chuyên nghành: '.$row['specialized_div_nm']).' ':'').($row['field_div_nm']!=''?('★ Lĩnh vực: '.$row['field_div_nm']):''))}}</span></label>
+                                    <label style="font-size: 13px"><span> {{$data[$index]['specialized_div_nm'].$data[$index]['field_div_nm']==''?'☆ Nghĩa thông thường':(($row['specialized_div_nm']!=''?('☆ Chuyên nghành: '.$row['specialized_div_nm']).' ':'').($row['field_div_nm']!=''&&$row['field_div']!='999'?('★ Lĩnh vực: '.$row['field_div_nm']):($row['field_div']=='999'?'👊 Người dùng đóng góp':'')))}}</span></label>
                                 </td>
                             </tr>
                         @endif

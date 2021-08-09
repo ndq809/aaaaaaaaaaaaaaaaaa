@@ -10,10 +10,10 @@ $(function(){
 
 function initHomepage(){
 	initListener();
-	meniItemController();
 	if($('#show_login').val()==1){
 		$('.btn-popup[popup-id=popup-box0]').trigger('click');
 	}
+	meniItemController();
 }
 
 function initListener(){
@@ -28,9 +28,37 @@ function initListener(){
 	$(document).on("click",".right-header",function(){
 		meniItemController();
 	})
+
+	$(document).on('click', '.pager li a', function () {
+        var page = $(this).attr('page');
+        getList(parseInt(page, 10));
+    })
 }
 
 function meniItemController(){
 	item_size=$(".option-header:first").width()/10;
 	$(".option-item").css("font-size",item_size);
+}
+
+function getList(page){
+	_pageSize=4;
+	var data={};
+    data['page_size'] = _pageSize;
+    data['page'] = page;
+	$.ajax({
+        type: 'POST',
+        url: '/homepage/list',
+        dataType: 'html',
+        loading:true,
+        data: data,
+        container:'#result',
+        success: function (res) {
+            clearFailedValidate();
+            $('#result').html(res);
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
 }

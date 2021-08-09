@@ -462,6 +462,7 @@ function getRowId(id){
             return vocabularyArray[i]['row_id'];
         }
     }
+    return 1;
 }
 
 function getQuestion() {

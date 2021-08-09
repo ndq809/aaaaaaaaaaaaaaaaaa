@@ -25,11 +25,15 @@ BEGIN
 	,	@w_mode					NVARCHAR(20)		= 'reset'
 	,	@w_prs_key				NVARCHAR(1000)		= ''
 	,	@w_message				TINYINT				= 0
+	,	@w_inserted_key			BIGINT				= 0
 	--
 	
 	BEGIN TRANSACTION
 	BEGIN TRY
-
+		CREATE TABLE #UPDATE_ROWS(
+			post_id INT
+		,	record_div TINYINT
+		)
 		--
 		UPDATE M007 SET
 			M007.record_div =	0
@@ -37,6 +41,10 @@ BEGIN
 		,	M007.upd_prg	=	@w_program_id
 		,	M007.upd_ip		=	@P_ip
 		,	M007.upd_date	=	@w_time
+		OUTPUT
+			inserted.post_id
+		,	inserted.record_div
+		INTO #UPDATE_ROWS
 		FROM M007 _M007
 		INNER JOIN( 
 		SELECT              
@@ -45,6 +53,22 @@ BEGIN
         	id	            VARCHAR(10)	'$.id'
         )) TEMP
 		ON TEMP.post_id= _M007.post_id
+
+		-- Iterate over all customers
+		WHILE (1 = 1) 
+		BEGIN  
+
+		  -- Get next customerId
+		  SELECT TOP 1 @w_inserted_key = #UPDATE_ROWS.post_id
+		  FROM #UPDATE_ROWS
+		  WHERE #UPDATE_ROWS.post_id > @w_inserted_key 
+		  ORDER BY #UPDATE_ROWS.post_id
+		  -- Exit loop if no more customers
+		  IF @@ROWCOUNT = 0 BREAK;
+
+		  -- call your sproc
+		EXEC SPC_M016_ACT1 @w_inserted_key,0,1,N'Đã bỏ công khai',@P_user_id,@P_ip,@w_program_id,@w_time
+		END
 
 	END TRY
 	BEGIN CATCH

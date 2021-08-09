@@ -522,6 +522,7 @@ class ComposerStaticInitefaccad1db392f888ac9d33d8462fab2
         'App\\Listeners\\EventListener' => __DIR__ . '/../..' . '/app/Listeners/EventListener.php',
         'App\\Listeners\\NotificationEventsListener' => __DIR__ . '/../..' . '/app/Listeners/NotificationEventsListener.php',
         'App\\Modules\\Master\\Controllers\\Common\\CommonController' => __DIR__ . '/../..' . '/app/Modules/Master/Controllers/Common/CommonController.php',
+        'App\\Modules\\Master\\Controllers\\Denounce\\d001Controller' => __DIR__ . '/../..' . '/app/Modules/Master/Controllers/Denounce/d001Controller.php',
         'App\\Modules\\Master\\Controllers\\Example1Controller' => __DIR__ . '/../..' . '/app/Modules/Master/Controllers/Example1Controller.php',
         'App\\Modules\\Master\\Controllers\\General\\g001Controller' => __DIR__ . '/../..' . '/app/Modules/Master/Controllers/General/g001Controller.php',
         'App\\Modules\\Master\\Controllers\\General\\g002Controller' => __DIR__ . '/../..' . '/app/Modules/Master/Controllers/General/g002Controller.php',

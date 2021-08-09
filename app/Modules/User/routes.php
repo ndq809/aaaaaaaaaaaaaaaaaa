@@ -14,6 +14,7 @@ Route::group(
 	function() {
 		Route::get('contribute','ContributeController@getIndex');	
 		Route::get('','HomePageController@getIndex')->name('home');
+		Route::post('homepage/list','HomePageController@getList');
 		Route::get('vocabulary','VocabularyController@getIndex');
 		Route::any('vocabulary/getData','VocabularyController@getData');
 		Route::any('dictionary/getAutocomplete','DictionaryController@getAutocomplete');

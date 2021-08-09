@@ -22,11 +22,40 @@
 	color: red;
 }
 
-.special-content{
+.special-box{
 	border-style: solid;
-    border-width: 30px;
-    border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
-    -webkit-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
-    -moz-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
-    -o-border-image: url(/web-content/images/plugin-icon/tag6.png) 150;
+    border-width: 150px;
+    border-image: url(/web-content/images/plugin-icon/tag7.png) 150;
+    -webkit-border-image: url(/web-content/images/plugin-icon/tag7.png) 150;
+    -moz-border-image: url(/web-content/images/plugin-icon/tag7.png) 150;
+    -o-border-image: url(/web-content/images/plugin-icon/tag7.png) 150;
+}
+
+.special-content{
+	margin: -135px;
+}
+.special-content h4{
+	text-align: center;
+	font-family: 'ariavh';
+}
+
+.special-title{
+	background-image: url(/web-content/images/background/body-background.gif);
+	margin: auto;
+  	position: absolute;
+	top: 35px; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+	width: fit-content;
+	height: 25px;
+	font-weight: bold;
+	padding: 0px 5px;
+	font-family: 'HapnaSlab';
+	z-index: 10;
+}
+
+.target-nm{
+	/* font-weight: bold; */
+	color: green;
 }

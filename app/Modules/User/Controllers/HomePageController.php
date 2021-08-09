@@ -3,6 +3,10 @@ namespace App\Modules\User\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ControllerUser;
 use Illuminate\Support\Facades\DB;
+use Auth;
+use CommonUser;
+use DAO;
+use Hashids\Hashids;
 
 class HomePageController extends ControllerUser
 {
@@ -14,14 +18,22 @@ class HomePageController extends ControllerUser
      */
 	public function getIndex(Request $request)
 	{
-          $data = $request-> except('_token');
-          if(isset($data['user'])){
-               return view('User::homepage.index')->with('user',$data['user']);
-          }else{
-               return view('User::homepage.index');
-          }
+          $data                  = Dao::call_stored_procedure('SPC_HOMEPAGE_LST1');
+          $data                  = CommonUser::encodeID($data);
+          return view('User::homepage.index')
+          ->with('data', $data)
+          ->with('paging', $data[1][0]);
 		
-	}
+     }
+     
+     public function getList(Request $request)
+     {
+        $param               = $request->all();
+        $data                = Dao::call_stored_procedure('SPC_HOMEPAGE_LST1', $param);
+        return view('User::homepage.search')
+            ->with('data', $data)
+            ->with('paging', $data[1][0]);
+     }
 
 
 	/**

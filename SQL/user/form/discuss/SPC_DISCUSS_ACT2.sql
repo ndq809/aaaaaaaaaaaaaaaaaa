@@ -32,11 +32,7 @@ BEGIN
 	BEGIN TRY
 		--
 	UPDATE M007 SET
-		M007.upd_user	=	@P_user_id
-	,	M007.upd_prg	=	@w_program_id
-	,	M007.upd_ip		=	@P_ip
-	,	M007.upd_date	=	@w_time
-	,	M007.post_view	=	M007.post_view + 1
+		M007.post_view	=	M007.post_view + 1
 	WHERE M007.post_id  = @P_post_id
 
 			

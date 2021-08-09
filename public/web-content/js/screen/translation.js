@@ -227,8 +227,8 @@ function selectTranslation(sentenceIndex) {
     $('#en_sentence').val(En_Array[sentenceIndex]);
     $('#vi_sentence').val(Vi_Array[sentenceIndex]==undefined || Vi_Array[sentenceIndex].indexOf('<<CHƯA DỊCH_') != -1?'':Vi_Array[sentenceIndex]);
     $('#en_sentence').trigger('change');
-    scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     scrollTextarea(Vi_Array[sentenceIndex],$('#vi_text')[0]);
+    scrollTextarea(En_Array[sentenceIndex],$('#en_text')[0]);
     if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('#vi_sentence').focus();
     }
@@ -534,8 +534,8 @@ function showEditPost(tr_tag){
     $('#post_title_tran').val(post[0]['post_title_tran']);
     $('#en_text').val(post[0]['en_text']);
     $('#vi_text').val(post[0]['vi_text']);
-    $('#en_text').trigger('change');
     $('#vi_text').trigger('change');
+    $('#en_text').trigger('change');
 }
 
 function deletePost(){

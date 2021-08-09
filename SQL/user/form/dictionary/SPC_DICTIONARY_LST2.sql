@@ -128,7 +128,7 @@ BEGIN
 
 	INSERT INTO #VOCABULARY
 	SELECT
-		ROW_NUMBER() OVER(ORDER BY M006.specialized , M006.field ASC) AS row_id
+		ROW_NUMBER() OVER(ORDER BY M006.specialized , CASE M006.field WHEN 999 THEN 0 ELSE M006.field + 1 END ASC) AS row_id
 	,	M006.id
 	,	M006.Vocabulary_nm
 	,	M999_1.number_id     
@@ -195,7 +195,7 @@ BEGIN
 			#VOCABULARY.id
 		,	ROW_NUMBER() OVER(ORDER BY #VOCABULARY.total_vote DESC
 	,	#VOCABULARY.specialized_div
-	,	#VOCABULARY.field_div
+	,	 CASE #VOCABULARY.field_div WHEN 999 THEN 0 ELSE #VOCABULARY.field_div + 1 END
 	,	#VOCABULARY.word_vote DESC) AS row_id_new
 		FROM #VOCABULARY
 	) #TEMP
@@ -259,7 +259,10 @@ BEGIN
 	ORDER BY
 		#VOCABULARY.total_vote DESC
 	,	#VOCABULARY.specialized_div
-	,	#VOCABULARY.field_div
+	,	CASE #VOCABULARY.field_div
+		WHEN 999 THEN 0
+		ELSE #VOCABULARY.field_div + 1
+		END
 	,	#VOCABULARY.word_vote DESC
 	,	#VOCABULARY.row_id
 

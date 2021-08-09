@@ -30,6 +30,7 @@ class VocabularyController extends ControllerUser
         }
         $param                 = $request->all();
         $param['v']            = isset($param['v']) && isset($this->hashids->decode($param['v'])[0]) ? $this->hashids->decode($param['v'])[0] : '';
+        $param['p']            = isset($param['p'])? $param['p'] : '0';
         $param['user_id']      = isset(Auth::user()->account_id) ? Auth::user()->account_id : '';
         $param['catalogue_id'] = $request->session()->get('catalogue_id');
         $param['group_id']     = $request->session()->get('group_id');

@@ -79,6 +79,7 @@ class w002Controller extends Controller
             $param['post_tag']       = json_encode(json_decode($data['header_data'], true)['post_tag']);
             $param['post_content']   = isset($param_temp['post_content']) ? $param_temp['post_content'] : '';
             $param['post_content_tran']   = isset($param_temp['post_content_tran']) ? $param_temp['post_content_tran'] : '';
+            $param['notes']   = isset($param_temp['notes']) ? $param_temp['notes'] : '';
             $param['post_media']     = (!isset($param_temp['post_media']) || $param_temp['post_media'] == 'no-data' ? '' : $media);
             $param['post_media_nm']  = $name;
             $param['post_media_div'] = $media_div;

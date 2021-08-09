@@ -108,6 +108,8 @@ BEGIN
 		INNER JOIN F009
 		ON M007.post_id = F009.target_id
 		AND F009.briged_div = 3
+		AND F009.briged_own_div = 1
+		AND F009.briged_own_id = @P_mission_id
 		AND F009.briged_id = @w_briged_id
 		WHERE M007.del_flg = 0 
 		AND (M007.record_div = 1 OR M007.record_div = 2)

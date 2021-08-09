@@ -4,7 +4,7 @@
             <ul id="mySlider1">
                 @if(isset($data)&&$data[2][0]['id'] != '')
                     @foreach($data[2] as $index => $row)
-                        <li class="current_item"><a> <img
+                        <li class="current_item" row_id='{{$row["row_id"]}}'><a> <img
                                 src="{{$row['del_flg']==0&&$row['image']!=''?$row['image']:'/web-content/images/plugin-icon/no-image.jpg'}}" />
                         </a></li>
                     @endforeach

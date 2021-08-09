@@ -1,6 +1,6 @@
-﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_LISTENING_LST3]') AND type IN (N'P', N'PC'))
+﻿IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[SPC_LISTENING_LST2]') AND type IN (N'P', N'PC'))
 /****** Object:  StoredProcedure [dbo].[SPC_M001L_FND1]    Script Date: 2017/11/23 16:46:46 ******/
-DROP PROCEDURE [dbo].[SPC_LISTENING_LST3]
+DROP PROCEDURE [dbo].[SPC_LISTENING_LST2]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPC_M001L_FND1]    Script Date: 2017/11/23 16:46:46 ******/
@@ -10,9 +10,11 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[SPC_LISTENING_LST3]
-	@P_mission_id			NVARCHAR(15)	=	''
-,	@P_account_id			NVARCHAR(15)	=	''  
+CREATE PROCEDURE [dbo].[SPC_LISTENING_LST2]
+	
+		@P_catalogue_id			NVARCHAR(15)	=	''
+	,	@P_group_id				NVARCHAR(15)	=	''
+	,	@P_account_id			NVARCHAR(15)	=	'' 
 AS
 BEGIN
 	SET NOCOUNT ON;
@@ -21,9 +23,6 @@ BEGIN
 		@ERR_TBL			ERRTABLE
 	,	@totalRecord		DECIMAL(18,0)		=	0
 	,	@pageMax			INT					=	0
-	,	@mission_data_div	INT					=	0
-	,	@current_unit		INT					=	0
-	,	@unit_this_times	INT					=	0
 
 	CREATE TABLE #LISTENING(
 		row_id				INT
@@ -72,131 +71,32 @@ BEGIN
 	,	pagesize		INT
 	)
 
-	SET @mission_data_div = (SELECT F001.mission_data_div FROM F001 WHERE F001.mission_id = @P_mission_id)
-	SET @current_unit = (SELECT ISNULL(F013.current_unit,0) FROM F013 WHERE F013.mission_id = @P_mission_id AND F013.account_id = @P_account_id)
-	SET @unit_this_times = (SELECT F013.unit_this_times FROM F013 WHERE F013.mission_id = @P_mission_id AND F013.account_id = @P_account_id)
-
-	IF @mission_data_div = 3
-	BEGIN
-		INSERT INTO #LISTENING
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	M007.post_id
-		,	M007.post_title
-		,	M007.post_content
-		,	M007.post_media
-		,	M007.post_media_nm
-		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-		,	M007.briged_id
-		,	M007.del_flg
-		FROM F001
-		INNER JOIN F009
-		ON F009.briged_id = F001.briged_id
-		AND F009.briged_div = 3
-		INNER JOIN F013
-		ON F001.mission_id = F013.mission_id
-		AND F013.account_id = @P_account_id
-		INNER JOIN M007
-		ON F009.target_id = M007.post_id
-		LEFT JOIN F003
-		ON M007.post_id = F003.item_1
-		AND F003.connect_div = 3
-		AND F003.user_id = @P_account_id
-		AND F003.item_2 IS NULL
-		WHERE F001.mission_id = @P_mission_id
-		AND 0 =
-			CASE 
-				WHEN F003.item_1 IS NULL THEN M007.del_flg
-				ELSE 0
-			END
-		AND M007.catalogue_div = 3
-		AND M007.record_div = 2
-		ORDER BY
-		M007.post_id ASC
-		OFFSET @current_unit ROWS
-		FETCH NEXT @unit_this_times ROWS ONLY
-	END
-
-	IF @mission_data_div = 2
-	BEGIN
-		INSERT INTO #LISTENING
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	M007.post_id
-		,	M007.post_title
-		,	M007.post_content
-		,	M007.post_media
-		,	M007.post_media_nm
-		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-		,	M007.briged_id
-		,	M007.del_flg
-		FROM F001
-		INNER JOIN F013
-		ON F001.mission_id = F013.mission_id
-		AND F013.account_id = @P_account_id
-		INNER JOIN M007
-		ON F001.catalogue_div = M007.catalogue_div
-		AND F001.catalogue_id = M007.catalogue_id
-		AND F001.group_id = M007.group_id
-		AND M007.del_flg = 0
-		LEFT JOIN F003
-		ON M007.post_id = F003.item_1
-		AND F003.connect_div = 3
-		AND F003.user_id = @P_account_id
-		AND F003.item_2 IS NULL
-		WHERE F001.mission_id = @P_mission_id
-		AND 0 =
-			CASE 
-				WHEN F003.item_1 IS NULL THEN M007.del_flg
-				ELSE 0
-			END
-		AND M007.catalogue_div = 3
-		AND M007.record_div = 2
-		ORDER BY
-		M007.post_id ASC
-		OFFSET @current_unit ROWS
-		FETCH NEXT @unit_this_times ROWS ONLY
-	END
-
-	IF @mission_data_div = 1
-	BEGIN
-		INSERT INTO #LISTENING
-		SELECT
-			ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
-		,	M007.post_id
-		,	M007.post_title
-		,	M007.post_content
-		,	M007.post_media
-		,	M007.post_media_nm
-		,	IIF(F003.item_1 IS NULL,0,1) AS remembered
-		,	M007.briged_id
-		,	M007.del_flg
-		FROM F001
-		INNER JOIN F013
-		ON F001.mission_id = F013.mission_id
-		AND F013.account_id = @P_account_id
-		INNER JOIN M007
-		ON F001.catalogue_div = M007.catalogue_div
-		AND F001.catalogue_id = M007.catalogue_id
-		AND M007.del_flg = 0
-		LEFT JOIN F003
-		ON M007.post_id = F003.item_1
-		AND F003.connect_div = 3
-		AND F003.user_id = @P_account_id
-		AND F003.item_2 IS NULL
-		WHERE F001.mission_id = @P_mission_id
-		AND 0 =
-			CASE 
-				WHEN F003.item_1 IS NULL THEN M007.del_flg
-				ELSE 0
-			END
-		AND M007.catalogue_div = 3
-		AND M007.record_div = 2
-		ORDER BY
-		M007.post_id ASC
-		OFFSET @current_unit ROWS
-		FETCH NEXT @unit_this_times ROWS ONLY
-	END
+	INSERT INTO #LISTENING
+	SELECT
+		ROW_NUMBER() OVER(ORDER BY M007.post_id ASC) AS row_id
+	,	M007.post_id
+	,	M007.post_title
+	,	M007.post_content
+	,	M007.post_media
+	,	M007.post_media_nm
+	,	IIF(F003.item_1 IS NULL,0,1) AS remembered
+	,	M007.briged_id
+	,	M007.del_flg
+	FROM M007
+	LEFT JOIN F003
+	ON M007.post_id = F003.item_1
+	AND F003.connect_div = 3
+	AND F003.user_id = @P_account_id
+	AND F003.item_2 IS NULL
+	WHERE 0 =
+		CASE 
+			WHEN F003.item_1 IS NULL THEN M007.del_flg
+			ELSE 0
+		END
+	AND M007.catalogue_div = 3
+	AND M007.catalogue_id = @P_catalogue_id
+	AND M007.group_id = @P_group_id
+	AND M007.record_div = 2
 
 	INSERT INTO #COMMENT
 	SELECT *
@@ -325,7 +225,6 @@ BEGIN
 	ORDER BY 
 	#LISTENING.post_id
 
-	
 	SELECT
 		#LISTENING.row_id
 	,	#LISTENING.post_id
@@ -337,6 +236,7 @@ BEGIN
 	FROM M015
 	INNER JOIN #LISTENING
 	ON #LISTENING.post_id = M015.post_id
+
 
 END
 
