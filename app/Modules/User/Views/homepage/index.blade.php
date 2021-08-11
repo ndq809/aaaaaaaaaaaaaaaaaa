@@ -136,7 +136,7 @@
         </div>
         <div class='col-xs-12'>
             <div class='special-title'>
-                ĐIỀU GÌ TẠO RA SỰ KHÁC BIỆT CHO EPLUS
+                SỰ KHÁC BIỆT CỦA <span class="text-danger">EPLUS</span> 
             </div>
         </div>
         <div class='col-xs-12 margin-top margin-bottom'>
