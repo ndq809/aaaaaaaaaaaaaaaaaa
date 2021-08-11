@@ -846,6 +846,7 @@ body {
 
 .vocabulary-table tbody tr td{
     padding : 3px;
+    vertical-align: middle;
 }
 
 .vocabulary-table tbody tr td:nth-child(2){
@@ -1507,7 +1508,7 @@ select.tag-custom{
     position: fixed;
     top: 0px;
     /*width: 100%;*/
-    z-index: 1000;
+    z-index: 499;
 }
 
 .btn-group .btn-default{

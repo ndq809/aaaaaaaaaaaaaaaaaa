@@ -176,17 +176,20 @@ function initListener() {
         }
         runtime ++;
     })
-    $(document).on('change', '#exam-order', function() {
+    $(document).on('click', '.exam-order', function() {
         var page = 1;
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
+        var _this = $(this);
         item_infor.push(post[0]['row_id']);
         item_infor.push(post[0]['id']);
-        item_infor.push($('#exam-order').val());
+        item_infor.push($(this).attr('value'));
         item_infor.push(page);
         item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
+            $("#exam-order-menu .option").text(_this.text());
+            $("#exam-order-menu .option").attr('value',_this.attr('value'));
         });
     })
     $(document).on('click', '.current_item', function() {
@@ -207,13 +210,16 @@ function initListener() {
         var page = $(this).attr('page');
         var current_id = $('.activeItem').attr('id');
         var item_infor = [];
+        var _this = $(this);
         item_infor.push(post[0]['row_id']);
         item_infor.push(post[0]['id']);
-        item_infor.push($('#exam-order').val());
+        item_infor.push($("#exam-order-menu .option").attr('value'));
         item_infor.push(page);
         item_infor.push(1);
         getExample(parseInt(page, 10), item_infor, function() {
             setContentBox(current_id);
+            $("#exam-order-menu .option").text(_this.text());
+            $("#exam-order-menu .option").attr('value',_this.attr('value'));
         });
     })
     $(document).on('click', '.btn-effect', function(e) {
