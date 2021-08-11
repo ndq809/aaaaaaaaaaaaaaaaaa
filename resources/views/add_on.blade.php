@@ -11,8 +11,8 @@
                     <span>ĐĂNG NHẬP E+</span>
                 </div>
                 <div class="login-with">
-                    <a class='btn-btn-primary' href="{{ route('facebook.login')}}"><i class="fa fa-facebook-f" title='Đăng nhập với facebook'></i>
-                        Đăng nhập với facebook
+                    <a class='btn-btn-primary' href="{{ route('facebook.login')}}"><i class="fa fa-facebook-official" title='Đăng nhập với facebook'></i>
+                        Đăng nhập
                     </a>
                 </div>
             </div>
