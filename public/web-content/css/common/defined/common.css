@@ -533,8 +533,9 @@ body {
 
 
 .title-header{
-    font-family: titlefont;
-    font-size: 20px;
+    /* font-family: titlefont; */
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .text-header{
@@ -854,10 +855,10 @@ body {
     border-right: 1px solid #ddd;
 }
 
-.vocabulary-table tbody tr td:nth-child(odd){
+.vocabulary-table tbody tr td:nth-child(odd) a{
     font-weight: bold;
-    font-style: italic;
-    color: #2e6da4;
+    /* font-style: italic; */
+    /* color: #2e6da4; */
 }
 
 .table-left {
