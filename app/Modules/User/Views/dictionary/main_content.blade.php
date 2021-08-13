@@ -56,11 +56,17 @@
 <div class="col-xs-12 no-padding margin-top">
     <div class="right-header">
         <h5 class="inline-block"><i class="glyphicon glyphicon-star-empty"></i> Ví Dụ Thực Tế</h5>
-        <select class="select-header" id="exam-order">
-            <option value="0">Tự động</option>
-            <option value="1">Mới nhất</option>
-            <option value="2">Đánh giá</option>
-        </select>
+        <div class="dropdown inline-block float-right">
+            <h5 class="dropdown-toggle" type="button" id="exam-order-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span value="0" class="option">Tự động</span>
+                <span class="caret"></span>
+            </h5>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a value="0" class="exam-order">Tự động</a></li>
+                <li><a value="1" class="exam-order">Mới nhất</a></li>
+                <li><a value="2" class="exam-order">Đánh giá</a></li>
+            </ul>
+        </div>
     </div>
     <div class="panel-group" id="example-list">
         @include('exam',array('data'=>isset($data[0])?$data[0]:array()))
