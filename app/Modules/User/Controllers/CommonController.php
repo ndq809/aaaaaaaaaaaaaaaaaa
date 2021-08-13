@@ -312,7 +312,7 @@ class CommonController extends ControllerUser
             $notify_param['notify_type'] = 7;
             $notify_param['user_id']     = Auth::user()->account_id;
             $notify_param['ip']          = $request->ip();
-            event(new NotificationEvents($notify_param, $view, ''));
+            // event(new NotificationEvents($notify_param, $view, ''));
         }
 
         return response()->json($result);
@@ -422,7 +422,7 @@ class CommonController extends ControllerUser
             $notify_param['notify_type'] = 1;
             $notify_param['user_id']     = Auth::user()->account_id;
             $notify_param['ip']          = $request->ip();
-            event(new NotificationEvents($notify_param, $view, (int) $param[1] == 6 ? $param['cmt_div'] : ''));
+            //event(new NotificationEvents($notify_param, $view, (int) $param[1] == 6 ? $param['cmt_div'] : ''));
         }
         return response()->json($result);
     }
@@ -517,7 +517,7 @@ class CommonController extends ControllerUser
             $notify_param['notify_type'] = $this->getNotifyType($param[2], $param[3]);
             $notify_param['user_id']     = Auth::user()->account_id;
             $notify_param['ip']          = $request->ip();
-            event(new NotificationEvents($notify_param, $data[1][0]['effected_count'], ''));
+            //event(new NotificationEvents($notify_param, $data[1][0]['effected_count'], ''));
         }
 
         return response()->json($result);
