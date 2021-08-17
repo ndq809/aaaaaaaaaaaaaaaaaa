@@ -73,7 +73,7 @@ input:checked + .slider:before {
 
 .switch-text{
 	position: absolute;
-	width: 135px;
+	width: 107px;
 	left: 50px;
 	bottom: 0px
 }
