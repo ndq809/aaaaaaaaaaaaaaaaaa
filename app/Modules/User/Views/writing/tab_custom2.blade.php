@@ -16,9 +16,10 @@
 </div>
 <div class="form-group row no-margin">
     <label class="title-header inline-block">Nội dung</label>
-    <div class="form-check form-check-inline float-right">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">Gợi ý ngữ pháp</label>
+    <div class="checkbox float-right no-margin">
+        <label class="title-header">
+            <input type="checkbox" id="is_suggest" checked> Gợi ý ngữ pháp
+        </label>
     </div>
 </div>
 <div class="form-group">
