@@ -14,13 +14,14 @@
     <label class="title-header">Tiêu đề bài viết</label>
     <input type="text" class="form-control input-sm margin-bottom submit-item" id="post_title" name="">
 </div>
-<div class="form-group">
+<div class="form-group row no-margin">
     <label class="title-header inline-block">Nội dung</label>
-     <label class="switch">
-      <input type="checkbox" checked="checked" id="is_suggest">
-      <span class="slider round"></span>
-      <span class="switch-text title-header">Gợi ý ngữ pháp</span>
-    </label>
+    <div class="form-check form-check-inline float-right">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Gợi ý ngữ pháp</label>
+    </div>
+</div>
+<div class="form-group">
     <textarea name="post_content" class="col-xs-12 no-paddings submit-item ckeditor" rows="5" id="post_content"></textarea>
     <div class="panel suggest-box">
         <div class="panel-body">

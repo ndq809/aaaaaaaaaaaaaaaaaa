@@ -1333,6 +1333,10 @@ a.btn-add span {
     margin-bottom: 0px!important;
 }
 
+.no-margin{
+    margin: 0px!important;
+}
+
 #example-list{
     margin-left: 0px;
 }
