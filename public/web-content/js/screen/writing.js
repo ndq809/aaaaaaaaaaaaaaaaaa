@@ -650,10 +650,10 @@ function showSuggest(text_all){
     for (var i = 0; i < SuggestArrayFull.length; i++) {
         tag_nm = SuggestArrayFull[i]['tag_nm'];
         if(tag_nm.indexOf(' ')==-1){
-            text = text_all.split(' ')[text_all.split(' ').length-1].trim();
+            text = text_all.split(' ')[text_all.split(' ').length-1].trim().toLowerCase();
             rootpostion = 0;
         }else{
-            text = text_all.trim();
+            text = text_all.trim().toLowerCase();
             rootpostion = text.lastIndexOf(tag_nm);
         }
         text_length = text.length;
@@ -667,9 +667,9 @@ function showSuggest(text_all){
         for (var i = 0; i < SuggestArraySpecial.length; i++) {
             tag_nm = SuggestArraySpecial[i]['tag_nm'].replace('_', '');
             if(tag_nm.indexOf(' ')==-1){
-                text = text_all.split(' ')[text_all.split(' ').length-1].trim();
+                text = text_all.split(' ')[text_all.split(' ').length-1].trim().toLowerCase();
             }else{
-                text = text_all.trim();
+                text = text_all.trim().toLowerCase();
             }
             text_length = text.length;
             postion = text.lastIndexOf(tag_nm);

@@ -12,14 +12,14 @@ GO
 
 CREATE PROCEDURE [dbo].[SPC_COMMON_GET_SUGGEST]
 AS
-BEGIN
+BEGIN 
 	SET NOCOUNT ON;
 	--
 	SELECT 
 		M007.post_id
 	,	M007.post_title
 	,	M013.tag_id
-	,	M013.tag_nm
+	,	LOWER(M013.tag_nm) AS tag_nm
 	FROM F009
 	INNER JOIN M013
 	ON M013.tag_id = F009.target_id
@@ -27,11 +27,13 @@ BEGIN
 	INNER JOIN M007 
 	ON M007.briged_id = F009.briged_id 
 	WHERE 
-	F009.briged_div = 2 
+		F009.briged_div = 2
+	AND F009.briged_own_id = M007.post_id
+	AND F009.briged_own_div = 0
 
 	SELECT
 		tag_id
-	,	tag_nm
+	,	LOWER(M013.tag_nm) AS tag_nm
 	FROM M013
 	WHERE M013.tag_div = 2
 
