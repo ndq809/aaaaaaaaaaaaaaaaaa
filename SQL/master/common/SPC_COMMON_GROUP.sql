@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_COMMON_GROUP]
-		@P_catalogue_id			NVARCHAR(15)				=	0
+		@P_catalogue_id			NVARCHAR(15)				=	''
 
 AS
 BEGIN
@@ -25,11 +25,17 @@ BEGIN
 
 	--
 	SELECT
-		 M003.group_id	 AS value
-	,	 M003.group_nm   AS text	    
+		M003.group_id			AS value
+	,	M003.group_nm			AS text	 
+	,	M002.catalogue_id		AS catalogue_id
+	,	M002.catalogue_div		AS catalogue_div
 	FROM M003
+	INNER JOIN M002
+	ON M003.catalogue_id = M002.catalogue_id
+	AND M002.del_flg = 0
 	WHERE	M003.del_flg = 0 
-	AND		M003.catalogue_id		= @P_catalogue_id
+	AND		(	(@P_catalogue_id	= '')
+		OR	(	M003.catalogue_id		= @P_catalogue_id))
 
 	--
 END

@@ -21,7 +21,7 @@ BEGIN
 	,	@w_time					DATETIME			=  SYSDATETIME()
 	,   @w_prs_user_id			VARCHAR(6)			= @P_user_id
 	,	@w_program_id			NVARCHAR(50)		= 'S003'
-	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Thêm tài khoản'
+	,	@w_prs_prg_nm			NVARCHAR(50)		= N'Xóa tài khoản'
 	,	@w_result				NVARCHAR(10)		= 'OK'
 	,	@w_mode					NVARCHAR(20)		= 'delete psc'
 	,	@w_prs_key				NVARCHAR(1000)		= ''

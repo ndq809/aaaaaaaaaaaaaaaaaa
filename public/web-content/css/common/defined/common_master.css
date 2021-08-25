@@ -519,8 +519,8 @@ body.preview-body {
 
 
 .title-header{
-    font-family: titlefont;
-    font-size: 23px;
+    /* font-family: titlefont; */
+    font-size: 20px;
 }
 
 .text-header{
@@ -1302,4 +1302,8 @@ audio{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.selectize-control.multi .selectize-input > div{
+    padding: 0px 3px;
 }

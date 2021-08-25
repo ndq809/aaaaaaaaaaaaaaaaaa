@@ -12,6 +12,7 @@ CREATE PROCEDURE [dbo].[SPC_S003_ACT1]
 ,    @P_account_div          TINYINT				= 0
 ,    @P_account_nm     		NVARCHAR(30)		= ''
 ,	 @P_password      		NVARCHAR(100)		= ''
+,    @P_signature   		NVARCHAR(MAX)		= ''
 ,    @P_remark   			NVARCHAR(MAX)		= ''
 ,	 @P_user_id				NVARCHAR(15)		= ''
 ,	 @P_ip					NVARCHAR(50)		= ''
@@ -93,6 +94,7 @@ BEGIN
 	,	 account_div     
 	,	 account_nm      
 	,	 password    
+	,    signature   		
 	,	 remark   	   
 	,	 cre_user
 	,	 cre_prg
@@ -114,6 +116,7 @@ BEGIN
 	,    @P_account_div  
 	,    @P_account_nm   
 	,	 @P_password    
+	,    @P_signature   		
 	,    @P_remark   		
 	,	 @P_user_id
 	,	 @w_program_id

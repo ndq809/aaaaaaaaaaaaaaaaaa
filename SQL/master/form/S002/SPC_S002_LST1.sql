@@ -37,6 +37,7 @@ BEGIN
 	,	system_div   		NVARCHAR(150)
 	,	account_div   		NVARCHAR(150)	
 	,	password    		NVARCHAR(200)
+	,   signature   		NVARCHAR(MAX)		
 	,   remark   			NVARCHAR(MAX)		
 	)
 	
@@ -49,6 +50,7 @@ BEGIN
 	,	 M999_1.content
 	,	 M999_2.content
 	,	 S001.password
+	,	 S001.signature   	    
 	,	 S001.remark   	    
 	FROM S001
 	LEFT JOIN M009 

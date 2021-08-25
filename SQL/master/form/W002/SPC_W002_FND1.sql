@@ -16,5 +16,18 @@ BEGIN
 	--[0]: 
 	EXEC SPC_COM_M999_INQ1 '7'
 	EXEC SPC_COM_M999_INQ1 '8'
+	EXEC SPC_COMMON_CATALORUE
+	EXEC SPC_COMMON_GROUP
+	SELECT
+		M013.tag_id
+	,	M013.tag_nm
+	,	M999.number_id AS tag_div
+	FROM M013
+	LEFT JOIN M999
+	ON M999.name_div = 7
+	AND M999.num_remark1 = M013.tag_div
+	WHERE M013.del_flg = 0
+	AND M013.tag_div IN
+	(SELECT M999.num_remark1 FROM M999 WHERE M999.name_div = 7 AND M999.num_remark1 IS NOT NULL)
 END
 GO

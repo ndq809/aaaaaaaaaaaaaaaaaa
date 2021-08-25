@@ -8,6 +8,11 @@ $(function(){
 
 function init_s001(){
 	initevent_s001();
+    $('#target_div').val(localStorage.getItem("target_div"));
+    if(localStorage.getItem("account_div")!=null){
+        $('#account_div option[user_div='+$('#target_div').val()+'][value='+localStorage.getItem("account_div")+']').prop('selected',true);
+        $('#account_div').trigger('change');
+    }
     $('#target_div').trigger('change');
 }
 
@@ -69,38 +74,39 @@ function getPermissionUser(){
 }
 
 function getTarget(){
-    var selectize_sub= $('#account_div')[0].selectize;
+    // var selectize_sub= $('#account_div')[0].selectize;
+    $('#account_div option[user_div='+$('#target_div').val()+']').removeClass('hidden');
+    $('#account_div option[user_div!='+$('#target_div').val()+']').addClass('hidden');
     if($('#target_div').val()==0){
-        selectize_sub.setValue('', true);
-        selectize_sub.clearOptions();
-        selectize_sub.disable();
-        return;
+        $('#account_div').prop('disabled',true);
+    }else{
+        $('#account_div').prop('disabled',false);
     }
-    var data={};
-    data['system_div'] = $('#target_div').val();
-    $.ajax({
-        type: 'POST',
-        url: '/master/system/s001/target',
-        dataType: 'json',
-        loading:true,
-        data: data,
-        success: function (res) {
-            selectize_sub.setValue('', true);
-            selectize_sub.clearOptions();
-            selectize_sub.addOption(res.data);
-            selectize_sub.removeOption(0);
-            if ($('#target_div').val() == 0) {
-                selectize_sub.disable();
-            } else {
-                selectize_sub.enable();
-            }
-            $('#account_div').trigger('change');
-        },
-        // Ajax error
-        error: function (jqXHR, textStatus, errorThrown) {
-            alert(jqXHR.status);
-        }
-    });
+    // var data={};
+    // data['system_div'] = $('#target_div').val();
+    // $.ajax({
+    //     type: 'POST',
+    //     url: '/master/system/s001/target',
+    //     dataType: 'json',
+    //     loading:true,
+    //     data: data,
+    //     success: function (res) {
+    //         selectize_sub.setValue('', true);
+    //         selectize_sub.clearOptions();
+    //         selectize_sub.addOption(res.data);
+    //         selectize_sub.removeOption(0);
+    //         if ($('#target_div').val() == 0) {
+    //             selectize_sub.disable();
+    //         } else {
+    //             selectize_sub.enable();
+    //         }
+    //         $('#account_div').trigger('change');
+    //     },
+    //     // Ajax error
+    //     error: function (jqXHR, textStatus, errorThrown) {
+    //         alert(jqXHR.status);
+    //     }
+    // });
 }
 
 function setPermission(){
@@ -120,6 +126,8 @@ function setPermission(){
                 case 200:
                     clearFailedValidate();
                     showMessage(2,function(){
+                        localStorage.setItem("target_div", $('#target_div').val());
+                        localStorage.setItem("account_div", $('#account_div').val());
                         window.location.reload();
                     });
                     break;

@@ -30,6 +30,7 @@ BEGIN
 		F009.briged_div = 2
 	AND F009.briged_own_id = M007.post_id
 	AND F009.briged_own_div = 0
+	AND M007.record_div = 2
 
 	SELECT
 		tag_id

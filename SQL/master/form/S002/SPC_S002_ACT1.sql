@@ -40,6 +40,7 @@ BEGIN
 		,	employee_id 	nvarchar(20)
 		,	system_div  	nvarchar(50)
 		,	account_div 	nvarchar(15)
+		,	signature			nvarchar(MAX)
 		,	remark			nvarchar(MAX)
 		)
 
@@ -57,6 +58,7 @@ BEGIN
 			,	employee_id		AS	employee_id        
 			,	system_div		AS	system_div         
 			,	account_div		AS	account_div        
+			,	signature		AS	signature		       
 			,	remark			AS	remark		       
 			FROM OPENJSON(@P_emp_id_json) WITH(
         		row_id				NVARCHAR(100)	'$.row_id		 '
@@ -65,7 +67,8 @@ BEGIN
 			,	employee_id		    NVARCHAR(100)	'$.employee_id	'
 			,	system_div		    NVARCHAR(100)	'$.system_div	'
 			,	account_div		    NVARCHAR(100)	'$.account_div	'
-			,	remark			    NVARCHAR(100)	'$.remark		'
+			,	signature			NVARCHAR(255)	'$.signature		'
+			,	remark			    NVARCHAR(MAX)	'$.remark		'
         )
 
 		INSERT INTO #CHECK_MASTER
@@ -162,6 +165,7 @@ BEGIN
 		,	user_id  			=	IIF(update_data.employee_id='',user_id,update_data.employee_id)
 		,	system_div   		=	update_data.system_div   
 		,	account_div  		=	update_data.account_div  
+		,	signature			=	update_data.signature			
 		,	remark				=	update_data.remark			
 		,	upd_user			=	@P_user_id
 		,	upd_prg				=	@w_program_id
@@ -180,6 +184,7 @@ BEGIN
 			,	employee_id		AS	employee_id        
 			,	system_div		AS	system_div         
 			,	account_div		AS	account_div        
+			,	signature		AS	signature		       
 			,	remark			AS	remark		       
 			FROM OPENJSON(@P_emp_id_json) WITH(
         		row_id				NVARCHAR(100)	'$.row_id		 '
@@ -188,7 +193,8 @@ BEGIN
 			,	employee_id		    NVARCHAR(100)	'$.employee_id	'
 			,	system_div		    NVARCHAR(100)	'$.system_div	'
 			,	account_div		    NVARCHAR(100)	'$.account_div	'
-			,	remark			    NVARCHAR(100)	'$.remark		'
+			,	signature			NVARCHAR(255)	'$.signature		'
+			,	remark			    NVARCHAR(MAX)	'$.remark		'
         )) update_data
 		WHERE
 			S001.account_id = update_data.account_id

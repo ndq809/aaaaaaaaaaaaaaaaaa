@@ -81,6 +81,14 @@
         </div>
         <div class="col-sm-12 no-padding-right">
             <div class="form-group">
+                <label>Chữ Ký</label>
+                <div class="input-group">
+                    <textarea id="signature" class="form-control input-sm submit-item" placeholder="Dùng để khai báo nguồn của bài đăng của bạn trên hệ thống" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 no-padding-right">
+            <div class="form-group">
                 <label>Ghi Chú</label>
                 <div class="input-group">
                     <textarea id="remark" class="form-control input-sm submit-item" placeholder="Ghi chú của tài khoản này" rows="4"></textarea>
@@ -106,6 +114,7 @@
                         <th>Nhân Viên</th>
                         <th>Loại Hệ Thống</th>
                         <th>Loại Tài Khoản</th>
+                        <th>Chữ ký</th>
                         <th>Ghi Chú</th>
                     </tr>
                 </thead>
@@ -118,6 +127,7 @@
                         <td refer-id='employee_id'></td>
                         <td refer-id='system_div'></td>
                         <td refer-id='account_div'></td>
+                        <td refer-id='signature'></td>
                         <td refer-id='remark'></td>
                     </tr>
                 </tbody>

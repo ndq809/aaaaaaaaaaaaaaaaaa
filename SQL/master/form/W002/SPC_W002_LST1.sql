@@ -18,12 +18,13 @@ BEGIN
 	SET NOCOUNT ON;
 	DECLARE 
 		@w_tag_div				INT
+
 	SELECT
-		 *	    
-		FROM M007
-		WHERE 
+	 *	    
+	FROM M007
+	WHERE 
 		M007.post_id		= @P_post_id
-		AND	M007.del_flg = 0
+	AND	M007.del_flg = 0
 	EXEC SPC_COM_M999_INQ1 '8'
 
 	SELECT

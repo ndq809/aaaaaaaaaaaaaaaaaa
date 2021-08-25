@@ -26,9 +26,9 @@
         <div class="col-sm-3 no-padding-right">
             <div class="form-group">
                 <label>Loại Tài Khoản</label>
-                <select id="account_div" class="submit-item allow-selectize required">
+                <select id="account_div" class="submit-item required">
                     @foreach($data_default[1] as $item)
-                        <option value="{{$item['number_id']==0?'':$item['number_id']}}">{{$item['content']}}</option>
+                        <option value="{{$item['value']==0?'':$item['value']}}" user_div ='{{$item["user_div"]}}'>{{$item['text']}}</option>
                     @endforeach
                 </select>
             </div>

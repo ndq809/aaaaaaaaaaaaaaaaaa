@@ -16,6 +16,7 @@ CREATE PROCEDURE [dbo].[SPC_W002_ACT1]
 ,    @P_post_tag     		NVARCHAR(MAX)		= ''
 ,    @P_post_content    	NTEXT				= ''
 ,    @P_post_content_tran   NTEXT				= ''
+,    @P_source		   		NVARCHAR(MAX)		= ''
 ,    @P_notes		   		NVARCHAR(MAX)		= ''
 ,    @P_post_media     		NVARCHAR(200)		= ''
 ,    @P_post_media_nm     	NVARCHAR(200)		= ''
@@ -387,6 +388,7 @@ BEGIN
 		,	 media_div 
 		,	 post_view 
 		,	 post_rating 
+		,	 source
 		,	 cre_user
 		,	 cre_prg
 		,	 cre_ip
@@ -417,6 +419,7 @@ BEGIN
 		,	 @P_post_media_div 
 		,	 0 
 		,	 0   		
+		,	 @P_source
 		,	 @P_user_id
 		,	 @w_program_id
 		,	 @P_ip
@@ -786,6 +789,7 @@ BEGIN
 		,	 post_media		  =	IIF(@P_post_media='',post_media,@P_post_media)
 		,	 post_media_nm	  =	IIF(@P_post_media_nm='', post_media_nm,@P_post_media_nm)
 		,	 media_div 		  =	IIF(@P_post_media_div =0,media_div,@P_post_media_div)
+		,	 source			  = @P_source
 		,	 upd_user		  = @P_user_id
 		,	 upd_prg		  = @w_program_id
 		,	 upd_ip			  = @P_ip

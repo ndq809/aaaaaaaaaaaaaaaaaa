@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[SPC_COMMON_CATALORUE]
-	@P_catalogue_div			TINYINT				=	100
+	@P_catalogue_div			INT				=	-1
 
 AS
 BEGIN
@@ -27,9 +27,10 @@ BEGIN
 	SELECT
 		 M002.catalogue_id	 AS value
 	,	 M002.catalogue_nm   AS text	    
+	,	 M002.catalogue_div   AS catalogue_div	    
 	FROM M002
 	WHERE M002.del_flg = 0 
-	AND		(	(@P_catalogue_div	= 100)
+	AND		(	(@P_catalogue_div	= -1)
 		OR	(	M002.catalogue_div		= @P_catalogue_div))
 
 	--

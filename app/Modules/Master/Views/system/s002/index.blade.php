@@ -115,7 +115,14 @@
                 </select>
             </div>
         </div>
-        
+        <div class="col-sm-12 no-padding-right">
+            <div class="form-group">
+                <label>Chữ Ký</label>
+                <div class="input-group">
+                    <textarea id="signature" class="form-control input-sm submit-item" placeholder="Dùng để khai báo nguồn của bài đăng của bạn trên hệ thống" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
         <div class="col-sm-12 no-padding-right">
             <div class="form-group">
                 <label>Ghi Chú</label>

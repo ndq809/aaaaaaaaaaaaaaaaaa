@@ -13,6 +13,7 @@
                     <th>Nhân Viên</th>
                     <th>Loại Hệ Thống</th>
                     <th>Loại Tài Khoản</th>
+                    <th>Chữ ký</th>
                     <th>Ghi Chú</th>
                     <th width="80px">Chỉnh Sửa?</th>
                 </tr>
@@ -28,6 +29,7 @@
                     <td refer-id='employee_id'><span>{{$row['employee_nm']}}</span></td>
                     <td refer-id='system_div'><span>{{$row['system_div']}}</span></td>
                     <td refer-id='account_div'><span>{{$row['account_div']}}</span></td>
+                    <td refer-id='signature'><span>{{$row['signature']}}</span></td>
                     <td refer-id='remark'>{{$row['remark']}}</td>
                     <td class="edit-flag">Không</td>
                 </tr>
