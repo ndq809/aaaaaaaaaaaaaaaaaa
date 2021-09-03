@@ -110,23 +110,26 @@ function initListener() {
 
     $(document).on('click', '.btn-show-answer', function(e) {
         e.preventDefault();
-        var current_id;
-        var listen_id = $(this).closest('.panel-collapse').attr('id');// 
-	    for (var i = 0; i < ListenCutArray.length; i++) {
-	        if('collapse'+ListenCutArray[i]['listen_cut_id']==listen_id){
-	            current_id = i;
-	            break;
-	        }
-	    } 
-        result_span = $(this).closest('.panel').find('.panel-heading span.float-right');
-        $(this).closest('.input-group').find('input:first-child').val(ListenCutArray[current_id]['listen_cut_content']);
-        $(this).closest('.input-group').find('input:first-child').prop('disabled',true)
-        $(this).closest('.input-group').find('.btn').prop('disabled',true);
-        $(this).off('click');
-        if(!result_span.hasClass('text-success')){
-            result_span.html('đầu hàng').addClass('text-danger');
-            checkShowContent();
-        }
+        _this = $(this);
+        showMessage(45,function(){
+            var current_id;
+            var listen_id = _this.closest('.panel-collapse').attr('id');// 
+            for (var i = 0; i < ListenCutArray.length; i++) {
+                if('collapse'+ListenCutArray[i]['listen_cut_id']==listen_id){
+                    current_id = i;
+                    break;
+                }
+            } 
+            result_span = _this.closest('.panel').find('.panel-heading span.float-right');
+            _this.closest('.input-group').find('input:first-child').val(ListenCutArray[current_id]['listen_cut_content']);
+            _this.closest('.input-group').find('input:first-child').prop('disabled',true)
+            _this.closest('.input-group').find('.btn').prop('disabled',true);
+            _this.off('click');
+            if(!result_span.hasClass('text-success')){
+                result_span.html('đầu hàng').addClass('text-danger');
+                checkShowContent();
+            }
+        })
     })
 
     $(document).on('click', '.btn-show-content', function(e) {

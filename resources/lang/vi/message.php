@@ -222,5 +222,10 @@ return [
             'message_title' => 'Tài Khoản Bị Khóa',
             'message_content' => 'Tài khoản của bạn đã bị tố cáo bởi những người dùng khác và bị khóa đến xxx do vi phạm các quy tắc cộng đồng của chúng tôi!<br>tài khoản của bạn sẽ tự động đăng xuất.<br><a>xem chi tiết</a>',
         ],
+        45 => [
+            'message_div' => 3,
+            'message_title' => 'Từ Bỏ',
+            'message_content' => 'Xem đáp án đồng nghĩa với việc bạn đã đầu hàng đoạn nghe này!<br>Bạn chắc chắn chứ?',
+        ],
     ],
 ];
