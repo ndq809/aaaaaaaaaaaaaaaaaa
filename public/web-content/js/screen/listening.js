@@ -84,6 +84,9 @@ function initListener() {
                 addComment($(this),item_infor);
             }
         }
+        if ($(this).hasClass('btn-listen')) {
+            $('.jp-play').trigger('click');
+        }
     });
 
     $(document).on('click', 'h5', function() {
@@ -367,7 +370,7 @@ function selectListening(selectTrTag) {
     setContentBox(currentItemId);
     $('.current_item').trigger('click');
     if(typeof ListeningArray[currentItemId - 1] != 'undefined')
-    history.pushState({}, null, window.location.href.split('?')[0] + '?project_no=' + ListeningArray[currentItemId - 1]['post_id']);
+    history.pushState({}, null, window.location.href.split('?')[0] + '?v=' + ListeningArray[currentItemId - 1]['post_id']);
 }
 
 function switchTabListening(current_li_tag) {

@@ -1,3 +1,42 @@
 .record-div-icon .fa{
 	font-size: 17px;
 }
+
+.preview-box{
+	text-align: left;
+	background: white;
+}
+
+.preview-box.in{
+	display: table-cell;
+	text-align: left;
+}
+.btn-refresh-preview{
+	float: right;
+	font-size: 20px;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.preview-label{
+	padding: 0px 5px;
+}
+
+.preview-label .title{
+	font-weight: bold;
+}
+
+.preview-label .tag{
+	border-radius: 2px;
+	border: 1px solid #ddd;
+	margin-left: 2px;
+	padding: 0px 2px;
+	font-size: 13px;;
+}

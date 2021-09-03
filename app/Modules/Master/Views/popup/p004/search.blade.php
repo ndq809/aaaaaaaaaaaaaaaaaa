@@ -1,32 +1,16 @@
 <input type="hidden" id="post_type" value="{{isset($data)?$data[0][0]['catalogue_div']:''}}">
 <div class="input-group">
-    <div class="col-xs-12 no-padding">
-        <div class="preview-label">
-            <span class="text-danger">Loại Bài Viết: </span>{{isset($data)?$data[0][0]['content']:''}}
-        </div>
-    </div>
     @if(isset($data)&&$data[4][0]['tag_id']!='')
     <div class="col-xs-12 no-padding">
         <div class="preview-label">
-        	<span class="text-danger">Tag Bài Viết: </span>
+        	<span class="title">Tags:</span>
     		@foreach($data[4] as $index => $row)
-				{{$row['tag_nm']}},
+				<span class="tag">{{$row['tag_nm']}}</span>
         	@endforeach
         </div>
     </div>
     @endif
-    @if(isset($data)&&$data[0][0]['catalogue_nm']!='')
-    <div class="col-xs-6 no-padding">
-        <div class="preview-label">
-            <span class="text-danger">Tên Danh Mục: </span>{{isset($data)?$data[0][0]['catalogue_nm']:''}}
-        </div>
-    </div>
-    <div class="col-xs-6 no-padding">
-        <div class="preview-label">
-            <span class="text-danger">Tên Nhóm: </span>{{isset($data)?$data[0][0]['group_nm']:''}}
-        </div>
-    </div>
-    @endif
+	{{--
     @if(isset($data)&&$data[0][0]['post_title']!='')
     <div class="col-xs-12 no-padding">
         <div class="preview-label has-border">
@@ -34,6 +18,7 @@
         </div>
     </div>
     @endif
+	--}}
     @if(isset($data)&&$data[0][0]['post_content']!='')
     <div class="col-xs-12 no-padding margin-top" id="noiDungNP">
     	<div class="main-content">
@@ -41,7 +26,8 @@
     	</div>
     </div>
     @endif
-    @if(isset($data)&&$data[0][0]['catalogue_div']==3)
+    {{--
+	@if(isset($data)&&$data[0][0]['catalogue_div']==3)
         <div class="col-xs-3">
             <div class="form-group">
                 <label>Âm thanh</label>
@@ -51,6 +37,7 @@
             </div>
         </div>
     @endif
+	--}}
     @if(isset($data)&&$data[0][0]['catalogue_div']==7)
         <div class="image margin-bottom text-center">
             <img alt="loadIcon" src="{{$data[0][0]['post_media']}}">
@@ -89,7 +76,7 @@
 		                @foreach($data[1] as $index => $row)
 		                <tr>
 		                    <td>{{$index+1}}</td>
-		                    <td class="refer-item" refer_id="vocabulary_nm">{{$row['vocabulary_nm']}}</td>
+		                    <td class="refer-item" refer_id="vocabulary_nm"><a href='/master/vocabulary/v002?{{$row["vocabulary_id"]}}?{{$row["vocabulary_dtl_id"]}}' target="_blank">{{$row['vocabulary_nm']}}</a></td>
 		                    <td >{{$row['vocabulary_div_nm']}}</td>
 		                    <td class="refer-item" refer_id="spelling">{{$row['spelling']}}</td>
 		                    <td class="refer-item" refer_id="mean">{{$row['mean']}}</td>
@@ -191,4 +178,36 @@
 		</div>
 	</div>
     @endif
+	@if(isset($data)&&$data[5][0]['listen_cut_id']!='')
+    <div class="col-xs-12 table-detail">
+        <div class="padding-10-l">
+		    <span class="table-title text-danger">Phân Tách Của Bài Nghe</span>
+		</div>
+		<div class="panel-content padding-10-l">
+		    <div class="table-fixed-width no-padding-left" min-width='700px'>
+		        <table class="table table-hover table-bordered table-checkbox table-preview">
+		            <thead>
+		                <tr>
+		                    <th width="50px">ID</th>
+		                    <th>Đoạn Nghe</th>
+		                    <th width="100px">Âm Thanh</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+		                @if(isset($data)&&$data[5][0]['listen_cut_id'] != '')
+		                @foreach($data[5] as $index => $row)
+		                <tr>
+		                    <td>{{$index+1}}</td>
+		                    <td class="refer-item" refer_id="listen_cut_content">{{$row['listen_cut_content']}}</td>
+		                    <td class="refer-item" refer_id="post_media"><audio class="sound1" preload="auto" src=""></audio><a type="button" class="preview-audio" src="{{$row['post_media']}}#t={{$row['listen_cut_start']}},{{$row['listen_cut_end']}}">{{$row['post_media']!=''?'Nghe thử':''}}</a></td>
+		                </tr>
+		                @endforeach
+		                @endif
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+    @endif
+	<a class="btn-refresh-preview"><i class="fa fa-refresh"></i></a>
 </div>

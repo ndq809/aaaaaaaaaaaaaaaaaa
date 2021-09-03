@@ -19,7 +19,13 @@ class CheckPermission
      */
     public function handle($request, Closure $next, $guard = null)
     {
+        // var_dump(\Session::get('logined_data'));die;
         if ($request->isMethod('get')) {
+            if (\Session::get('logined_data')===null) {
+                Auth::guard()->logout();
+                $request->session()->invalidate();
+                return redirect()->back();
+            }
             $permission = common::getPermission(Auth::user()->account_div,Auth::user()->system_div,URL::current());
             \Session::put('permission',$permission);
 

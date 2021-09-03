@@ -417,7 +417,7 @@ function w002_refer(post_id){
 
                     setTimeout(() => {
                         $('.main-content').html(CKEDITOR.instances['post_content'].getData());
-                    }, 100);
+                    }, 500);
                     
                     $('.result:visible').html(res.table_voc);
                     $('#result1').html(res.table_exa);

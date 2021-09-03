@@ -86,13 +86,43 @@ function initevent_w001(){
         updateGroup_s(this);
     })
 
-     $(document).on('click','.btn-preview',function(){
-       _popup_transfer_array['post_id']=$(this).parents('tr').find('td').eq(2).text();
-       _popup_transfer_array['called_item']=$(this);
+    $(document).on('click','.btn-preview-row',function(){
+        var active_collapse = $('.preview-box.in').attr('id');
+        $('a[data-target=#'+active_collapse+']').trigger('click');
     })
+
+    $(document).on('click','.btn-preview-row.blank',function(){
+       _popup_transfer_array['post_id']=$(this).parents('tr').find('td').eq(2).text();
+       load_preview($(this).attr('data-target'),_popup_transfer_array['post_id']);
+    //    _popup_transfer_array['called_item']=$(this);
+    })
+
+    $(document).on('click','.btn-refresh-preview',function(){
+        _popup_transfer_array['post_id']=$(this).closest('tr').prev('tr').find('td').eq(2).text();
+        load_preview('#'+$(this).parents('td').attr('id'),_popup_transfer_array['post_id']);
+     //    _popup_transfer_array['called_item']=$(this);
+     })
 
     $(document).on('change','.sub-checkbox',function(){
         updateDeleteArray(this);
+    })
+
+    $(document).on('click','.preview-audio',function(){
+        $(this).closest('table').find('audio').each(function(){
+            $(this).attr('src','');
+        });
+        $(this).parent().find('audio').attr('src',$(this).attr('src'));
+        $(this).parent().find('audio')[0].play();
+    })
+
+    $(document).on('shown.bs.collapse','.preview-box', function () {
+        var target = $(this).attr('id');
+        $('a[data-target=#'+target+']').html('<span class="	fa fa-eye-slash" style="padding-bottom: 2px;"></span> Đóng preview');
+    })
+
+    $(document).on('hidden.bs.collapse','.preview-box', function () {
+        var target = $(this).attr('id');
+        $('a[data-target=#'+target+']').html('<span class="	fa fa-eye" style="padding-bottom: 2px;"></span> Xem preview');
     })
 }
 
@@ -372,6 +402,72 @@ function w001_reset(){
                 default :
                     break;
             }
+        },
+        // Ajax error
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+        }
+    });
+}
+
+function load_preview(target,post_id){
+	var data=[];
+    data.push(post_id);
+	$.ajax({
+        type: 'POST',
+        url: '/master/popup/p004',
+        dataType: 'html',
+        loading:true,
+        container: target,
+        data: $.extend({}, data),
+        success: function (res) {
+            clearFailedValidate();
+            $(target).html(res).promise().done(function(){
+                $(target).find('.preview').attr('data-toggle','tooltip');
+                $(target).find('.preview').attr('data-placement','bottom');
+                $(target).find('.preview').tooltip({
+                    animated: 'fade',
+                    placement: 'bottom',
+                    html: true
+                });
+            });
+            if($(target).find('#post_type').val()==3){
+                $(target).find(".input-audio").fileinput('refresh',{
+                    showCaption: true,
+                    showPreview: true,
+                    showRemove: false,
+                    showUpload: false,
+                    showCancel: false,
+                    showBrowse : false,
+                    showUploadedThumbs: false,
+                    initialCaption : $(target).find(".input-audio").attr('title'),
+                    initialPreview: [
+                        '<audio controls=""><source src="'+$(target).find(".input-audio").attr('link')+'" type="audio/mp3"></audio>'
+                    ],
+                });
+            }
+
+            if($(target).find('#post_type').val()==8){
+                var player;
+                $(target).find('#video-player').mediaelementplayer({
+                    success: function(mediaElement, domObject) {
+                        player = mediaElement;
+                        mediaElement.removeEventListener('loadedmetadata');
+                        mediaElement.addEventListener('loadedmetadata', function(e) {
+                            var temp = $(mediaElement).find('iframe');
+                            if(typeof temp !='undefined' && temp.parent().height()> temp.parent().width()){
+                                temp.css('min-width','0px');
+                                temp1 =$('.mejs__mediaelement').height() / temp.parent().height() ; 
+                                temp.parents('.fb-video').css('width',temp.parents('.fb-video').width()*temp1);
+                                temp.parents('.fb-video').css('height',temp.parents('.fb-video').height()*temp1);
+                            }
+                        }, false);
+                    },
+                });
+                player.load();
+            }
+            $('a[data-target='+target+']').removeClass('blank');
+            $('a[data-target='+target+']').addClass('loaded');
         },
         // Ajax error
         error: function (jqXHR, textStatus, errorThrown) {

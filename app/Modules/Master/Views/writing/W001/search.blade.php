@@ -38,9 +38,10 @@
                         <i class="fa fa-send text-success" title="{{$row['record_div_nm']}}"></i>
                         @endif
                     </td>
-                    <td><a href="/master/popup/p004" type="button" class="btn-preview"><span class="fa fa-low-vision" style="padding-bottom: 2px;"></span> Xem preview</a></td>
+                    <td><a data-toggle="collapse" data-target='#preview{{$index}}' type="button" class="btn-preview-row blank"><span class="fa fa-eye" style="padding-bottom: 2px;"></span> Xem preview</a></td>
                     <td><a href="/master/writing/w002?{{$row['post_id']}}" ><span class="fa fa fa-pencil-square-o fa-lg"></span></a></td>
                 </tr>
+                <tr><td colspan="100" id='preview{{$index}}' class="collapse preview-box"></td></tr>
                 @endforeach
                  @else
                  <tr>

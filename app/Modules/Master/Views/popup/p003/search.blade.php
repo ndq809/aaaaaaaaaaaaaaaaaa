@@ -25,7 +25,7 @@
                 <td class="refer-item hidden" refer_id="vocabulary_code">{{$row['vocabulary_code']}}</td>
                 <td >{{$row['vocabulary_id']}}</td>
                 <td >{{$row['vocabulary_dtl_id']}}</td>
-                <td class="refer-item text-left" refer_id="vocabulary_nm">{{$row['vocabulary_nm']}}</td>
+		        <td class="refer-item text-left" refer_id="vocabulary_nm"><a href='/master/vocabulary/v002?{{$row["vocabulary_id"]}}?{{$row["vocabulary_dtl_id"]}}' target="_blank">{{$row['vocabulary_nm']}}</a></td>
                 <td >{{$row['specialized_div_nm']}}</td>
                 <td >{{$row['field_div_nm']}}</td>
                 <td >{{$row['vocabulary_div_nm']}}</td>

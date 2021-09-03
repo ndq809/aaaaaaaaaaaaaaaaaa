@@ -72,8 +72,8 @@ BEGIN
 	,	M006.mean				
 	,	M006.image
 	,	M006.audio			
-	FROM F009
-	LEFT JOIN M006
+	FROM M006
+	LEFT JOIN F009
 	ON F009.target_id = M006.id
 	AND F009.briged_div = 1
 	AND M006.del_flg = 0 
@@ -81,7 +81,7 @@ BEGIN
 	ON M999.name_div = 8
 	AND M999.number_id = M006.vocabulary_div
 	WHERE F009.briged_id 
-	IN (SELECT
+	IN (SELECT DISTINCT
 		 M007.briged_id	    
 	FROM M007
 	WHERE 
@@ -115,12 +115,27 @@ BEGIN
 	,	M013.tag_nm
 	,	IIF(F009.briged_id IS NULL,0,1) AS selected
 	FROM M013
-	LEFT JOIN F009
+	INNER JOIN F009
 	ON F009.target_id = M013.tag_id
 	AND F009.briged_div = 2
 	AND F009.briged_id = (SELECT TOP 1 F009.briged_id FROM F009 INNER JOIN M007 ON F009.briged_id = M007.briged_id AND M007.post_id = @P_post_id)
+	AND F009.briged_own_div = 0
+	AND F009.briged_own_id = @P_post_id
 	WHERE M013.del_flg = 0
 	AND M013.tag_div = @w_tag_div
+
+	SELECT 
+		M015.post_id
+	,	M015.listen_cut_id
+	,	M015.listen_cut_content
+	,	FORMAT(M015.listen_cut_start,'0.0000')	AS listen_cut_start
+	,	FORMAT(M015.listen_cut_end,'0.0000')	AS listen_cut_end
+	,	M007.post_media
+	FROM M015
+	LEFT JOIN M007
+	ON M015.post_id = M007.post_id
+	WHERE M015.post_id = @P_post_id
+
 	--
 END
 
