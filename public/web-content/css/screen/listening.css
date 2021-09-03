@@ -69,3 +69,15 @@
     pointer-events: none!important;
     opacity: 0.5;
 }
+
+@media screen and (max-width:680px) {
+    .listen-group-btn{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .listen-group-btn .btn{
+        flex-grow: 1;
+    }
+}

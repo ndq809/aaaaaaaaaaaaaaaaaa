@@ -243,11 +243,13 @@ function initListener() {
                 },(parseFloat(endTime)-parseFloat(startTime))*1000);
 
             }
+            // $('.listen-cut-box .collapse.in .btn-listen').text('Dừng');
         }else{
             if(timer!=undefined){
                 timer.pause();
             }
             $("#jquery_jplayer_2").jPlayer( "pause");
+            // $('.listen-cut-box .collapse.in .btn-listen').text('Nghe');
         }
     })
 
@@ -323,7 +325,13 @@ function installplayer(){
 	player = new jPlayerPlaylist(
 		{
 			jPlayer : "#jquery_jplayer_2",
-			cssSelectorAncestor : "#jp_container_2"
+			cssSelectorAncestor : "#jp_container_2",
+            ended : function(){
+                $('.listen-cut-box .collapse.in .btn-listen').text('Nghe');
+            },
+            pause : function(){
+                $('.listen-cut-box .collapse.in .btn-listen').text('Nghe');
+            }
 		},
 		playlist
 		, {
@@ -333,7 +341,16 @@ function installplayer(){
 			useStateClassSkin : true,
 			autoBlur : false,
 			smoothPlayBar : false,
-			keyEnabled : true
+			keyEnabled : true,
+            play : function(){
+                $('.listen-cut-box .collapse.in .btn-listen').text('Dừng');
+            },
+            ended : function(){
+                $('.listen-cut-box .collapse.in .btn-listen').text('Nghe');
+            },
+            pause : function(){
+                $('.listen-cut-box .collapse.in .btn-listen').text('Nghe');
+            }
 	});
     $('.jp-playlist').hide();
 	$('.jp-play').off('click');
