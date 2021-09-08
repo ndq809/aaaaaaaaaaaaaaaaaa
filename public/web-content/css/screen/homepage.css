@@ -4,7 +4,8 @@
 }
 
 .option-item{
-	font-family: itemfont1;
+	/* font-family: itemfont1; */
+	font-weight: bold;
 }
 
 .option{

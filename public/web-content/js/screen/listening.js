@@ -554,8 +554,10 @@ function checkAnswer(target){
             current_id = i;
             break;
         }
-    } 
-	var similarity_percent = similarity(listenCut['listen_cut_content'].trim(),target.closest('.input-group').find('input:first-child').val().trim()).toFixed(0);
+    }
+    var source_text = listenCut['listen_cut_content'].trim().replace(/[&\/\\#,+()$~%.":*?<>{}]/g,'').toLowerCase();
+    var input_text = target.closest('.input-group').find('input:first-child').val().trim().replace(/[&\/\\#,+()$~%.":*?<>{}]/g,'').toLowerCase();
+	var similarity_percent = similarity(source_text,input_text).toFixed(0);
 	var text = '';
 	switch(true){
 		case parseInt(similarity_percent)<10 :

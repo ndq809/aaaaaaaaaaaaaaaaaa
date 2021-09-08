@@ -25,8 +25,8 @@
                   <input type="text" class="form-control input-sm" placeholder="Nội dung nghe được">
                   <span class="input-group-btn listen-group-btn">
                     <button class="btn btn-default btn-sm btn-show-answer" type="button">Đáp án</button>
-                    <button class="btn btn-danger btn-sm btn-check-listen" type="button">Kiểm tra</button>
-                    <button class="btn btn-primary btn-sm btn-listen" type="button">Nghe</button>
+                    <button class="btn btn-default btn-sm btn-check-listen" type="button">Kiểm tra</button>
+                    <button class="btn btn-default btn-sm btn-listen" type="button">Nghe</button>
                   </span>
                 </div><!-- /input-group -->
             </div>

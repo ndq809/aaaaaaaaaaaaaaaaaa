@@ -36,7 +36,7 @@ function initListener(){
 }
 
 function meniItemController(){
-	item_size=$(".option-header:first").width()/10;
+	item_size=$(".option-header:first").width()/12;
 	$(".option-item").css("font-size",item_size);
 }
 
